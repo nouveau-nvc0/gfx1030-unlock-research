@@ -1,0 +1,31 @@
+
+/tmp/tmpuxn3ines/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000051cc <.data+0x51cc>:
+000051cc: 364100   entry        a1, 0x20 ; Capstone
+    51cf:	206f00        	rsil	a2, 15
+    51d2:	51e4df        	l32r	a5, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    51d5:	6197e0        	l32r	a6, 0xffffd434 (0x6003aa00) ; inferred DRAM map 0x5ffec000
+    51d8:	0c07      	movi.n	a7, 0
+    51da:	726580        	s32i	a7, a5, 0x200
+    51dd:	72668f        	s32i	a7, a6, 0x23c
+    51e0:	20e613        	wsr.ps	a2
+    51e3:	102000        	rsync
+    51e6:	312ee0        	l32r	a3, 0xffffd2a0 (0x6803ae00) ; inferred DRAM map 0x5ffec000
+    51e9:	42238c        	l32i	a4, a3, 0x230
+    51ec:	82238c        	l32i	a8, a3, 0x230
+    51ef:	4088c0        	sub	a8, a8, a4
+    51f2:	1668ff        	beqz	a8, 0x51ec
+    51f5:	a06f00        	rsil	a10, 15
+    51f8:	726580        	s32i	a7, a5, 0x200
+    51fb:	0c1b      	movi.n	a11, 1
+    51fd:	b2668f        	s32i	a11, a6, 0x23c
+    5200:	a0e613        	wsr.ps	a10
+    5203:	102000        	rsync
+    5206:	9198e0        	l32r	a9, 0xffffd468 (0x5ffee574) ; inferred DRAM map 0x5ffec000
+    5209:	724900        	s8i	a7, a9, 0
+0000520c: 1df0     retw.n        ; Capstone
+	...

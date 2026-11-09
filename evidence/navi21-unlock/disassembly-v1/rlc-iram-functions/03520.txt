@@ -1,0 +1,43 @@
+
+/tmp/tmp5oujoyv8/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00003520 <.data+0x3520>:
+00003520: 368100   entry        a1, 0x40 ; Capstone
+    3523:	815fe7        	l32r	a8, 0xffffd2a0 (0x6803ae00) ; inferred DRAM map 0x5ffec000
+    3526:	8228c9        	l32i	a8, a8, 0x324
+    3529:	4135e7        	l32r	a4, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    352c:	0c1d      	movi.n	a13, 1
+    352e:	17680e        	bbci	a8, 1, 0x3540
+    3531:	3224ee        	l32i	a3, a4, 0x3b8
+    3534:	309304        	extui	a9, a3, 3, 1
+    3537:	979207        	bne	a2, a9, 0x3542
+    353a:	30a305        	extui	a10, a3, 19, 1
+    353d:	a79201        	bne	a2, a10, 0x3542
+00003540: 1df0     retw.n        ; Capstone
+    3542:	ed02      	mov.n	a14, a2
+    3544:	d931      	s32i.n	a13, a1, 12
+    3546:	d24100        	s8i	a13, a1, 0
+    3549:	2941      	s32i.n	a2, a1, 16
+    354b:	b159e7        	l32r	a11, 0xffffd2b0 (0x1fff) ; inferred DRAM map 0x5ffec000
+    354e:	c157e7        	l32r	a12, 0xffffd2ac (0xf0003) ; inferred DRAM map 0x5ffec000
+    3551:	c921      	s32i.n	a12, a1, 8
+    3553:	b911      	s32i.n	a11, a1, 4
+    3555:	a801      	l32i.n	a10, a1, 0
+00003557: e54802   call8        . +0x2490 ; Capstone ; target=0x59e4
+    355a:	7c7b      	movi.n	a11, -9
+    355c:	20d004        	extui	a13, a2, 0, 1
+    355f:	d0cd11        	slli	a12, a13, 3
+    3562:	b0b310        	and	a11, a3, a11
+    3565:	c0bb20        	or	a11, a11, a12
+    3568:	c160e7        	l32r	a12, 0xffffd2e8 (0xfff7ffff) ; inferred DRAM map 0x5ffec000
+    356b:	c0bb10        	and	a11, a11, a12
+    356e:	c15ae7        	l32r	a12, 0xffffd2d8 (0xffadfffa) ; inferred DRAM map 0x5ffec000
+    3571:	d0dd01        	slli	a13, a13, 19
+    3574:	d0bb20        	or	a11, a11, a13
+    3577:	c0bb10        	and	a11, a11, a12
+    357a:	b264ee        	s32i	a11, a4, 0x3b8
+0000357d: 1df0     retw.n        ; Capstone
+	...

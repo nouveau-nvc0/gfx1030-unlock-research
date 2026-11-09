@@ -1,0 +1,43 @@
+
+/tmp/tmpygccsjki/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00009f78 <.data+0x9f78>:
+    9f78:	30b103        	rsr.epc1	a3
+    9f7b:	2841      	l32i.n	a2, a1, 16
+    9f7d:	3b33      	addi.n	a3, a3, 3
+    9f7f:	30b113        	wsr.epc1	a3
+    9f82:	322105        	l32i	a3, a1, 20
+    9f85:	566204        	bnez	a2, 0x9fcf
+    9f88:	326111        	s32i	a3, a1, 68
+    9f8b:	426112        	s32i	a4, a1, 72
+    9f8e:	526113        	s32i	a5, a1, 76
+    9f91:	31f7cd        	l32r	a3, 0xffffd770 (0x50021) ; inferred DRAM map 0x5ffec000
+    9f94:	20e603        	rsr.ps	a2
+    9f97:	30e613        	wsr.ps	a3
+    9f9a:	30b103        	rsr.epc1	a3
+    9f9d:	12c160        	addi	a1, a1, 96
+    9fa0:	102000        	rsync
+    9fa3:	42a000        	movi	a4, 0
+00009fa6: 368100   entry        a1, 0x40 ; Capstone
+00009fa9: f50100   call12       . +0x20 ; Capstone ; target=0x9fc8
+    9fac:	e1f9cd        	l32r	a14, 0xffffd790 (0x80000007) ; inferred DRAM map 0x5ffec000
+    9faf:	ea0c      	add.n	a0, a12, a14
+00009fb1: 1df0     retw.n        ; Capstone
+    9fb3:	20e613        	wsr.ps	a2
+    9fb6:	0c02      	movi.n	a2, 0
+    9fb8:	48a5      	l32i.n	a4, a5, 40
+    9fba:	102000        	rsync
+    9fbd:	30b113        	wsr.epc1	a3
+    9fc0:	3895      	l32i.n	a3, a5, 36
+    9fc2:	58b5      	l32i.n	a5, a5, 44
+    9fc4:	003000        	rfe
+    9fc7:	003661        	excw
+    9fca:	00fd0f        	excw
+00009fcd: 1df0     retw.n        ; Capstone
+    9fcf:	7cf2      	movi.n	a2, -1
+    9fd1:	12c160        	addi	a1, a1, 96
+    9fd4:	003000        	rfe
+	...

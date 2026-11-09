@@ -1,0 +1,132 @@
+
+/tmp/tmp45jao7l3/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00009fd8 <.data+0x9fd8>:
+00009fd8: 204803   rsr          a2, windowbase ; Capstone
+    9fdb:	1b22      	addi.n	a2, a2, 1
+    9fdd:	000240        	ssr	a2
+00009fe0: 304903   rsr          a3, windowstart ; Capstone
+    9fe3:	302091        	srl	a2, a3
+    9fe6:	0033a1        	sll	a3, a3
+    9fe9:	d6f30b        	bgez	a3, 0xa0ac
+    9fec:	303875        	extui	a3, a3, 24, 8
+    9fef:	302220        	or	a2, a2, a3
+    9ff2:	203060        	neg	a3, a2
+    9ff5:	203310        	and	a3, a3, a2
+    9ff8:	30f340        	nsau	a3, a3
+    9ffb:	001340        	ssl	a3
+    9ffe:	202091        	srl	a2, a2
+0000a001: 204913   wsr          a2, windowstart ; Capstone
+0000a004: 204803   rsr          a2, windowbase ; Capstone
+    a007:	22c21f        	addi	a2, a2, 31
+    a00a:	3032c0        	sub	a3, a2, a3
+0000a00d: 304813   wsr          a3, windowbase ; Capstone
+    a010:	102000        	rsync
+0000a013: 204903   rsr          a2, windowstart ; Capstone
+    a016:	16a207        	beqz	a2, 0xa094
+    a019:	07e208        	bbsi	a2, 0, 0xa025
+    a01c:	17e219        	bbsi	a2, 1, 0xa039
+    a01f:	27e23a        	bbsi	a2, 2, 0xa05d
+    a022:	c62200        	j	0xa0b1
+    a025:	32c9f0        	addi	a3, a9, -16
+    a028:	4903      	s32i.n	a4, a3, 0
+    a02a:	5913      	s32i.n	a5, a3, 4
+    a02c:	6923      	s32i.n	a6, a3, 8
+    a02e:	7933      	s32i.n	a7, a3, 12
+    a030:	206141        	srli	a6, a2, 1
+0000a033: 108040   rotw         1 ; Capstone
+    a036:	06f7ff        	j	0xa016
+    a039:	32cdf0        	addi	a3, a13, -16
+    a03c:	4903      	s32i.n	a4, a3, 0
+    a03e:	5913      	s32i.n	a5, a3, 4
+    a040:	6923      	s32i.n	a6, a3, 8
+    a042:	7933      	s32i.n	a7, a3, 12
+    a044:	32c5f4        	addi	a3, a5, -12
+    a047:	3803      	l32i.n	a3, a3, 0
+    a049:	32c3e0        	addi	a3, a3, -32
+    a04c:	8903      	s32i.n	a8, a3, 0
+    a04e:	9913      	s32i.n	a9, a3, 4
+    a050:	a923      	s32i.n	a10, a3, 8
+    a052:	b933      	s32i.n	a11, a3, 12
+    a054:	20a241        	srli	a10, a2, 2
+0000a057: 208040   rotw         2 ; Capstone
+    a05a:	06eeff        	j	0xa016
+0000a05d: 108040   rotw         1 ; Capstone
+    a060:	d2cdf0        	addi	a13, a13, -16
+    a063:	090d      	s32i.n	a0, a13, 0
+    a065:	191d      	s32i.n	a1, a13, 4
+    a067:	292d      	s32i.n	a2, a13, 8
+    a069:	393d      	s32i.n	a3, a13, 12
+    a06b:	32c1f4        	addi	a3, a1, -12
+    a06e:	3803      	l32i.n	a3, a3, 0
+    a070:	d2cd10        	addi	a13, a13, 16
+    a073:	32c3d0        	addi	a3, a3, -48
+    a076:	4903      	s32i.n	a4, a3, 0
+    a078:	5913      	s32i.n	a5, a3, 4
+    a07a:	6923      	s32i.n	a6, a3, 8
+    a07c:	7933      	s32i.n	a7, a3, 12
+    a07e:	8943      	s32i.n	a8, a3, 16
+    a080:	9953      	s32i.n	a9, a3, 20
+    a082:	a963      	s32i.n	a10, a3, 24
+    a084:	b973      	s32i.n	a11, a3, 28
+0000a086: f08040   rotw         -1 ; Capstone
+    a089:	20e341        	srli	a14, a2, 3
+0000a08c: 308040   rotw         3 ; Capstone
+    a08f:	c6e0ff        	j	0xa016
+    a092:	000010        	and	a0, a0, a0
+    a095:	804020        	or	a4, a0, a8
+    a098:	4803      	l32i.n	a4, a3, 0
+    a09a:	001240        	ssl	a2
+    a09d:	0c12      	movi.n	a2, 1
+    a09f:	0022a1        	sll	a2, a2
+0000a0a2: 204913   wsr          a2, windowstart ; Capstone
+    a0a5:	102000        	rsync
+    a0a8:	0c02      	movi.n	a2, 0
+    a0aa:	0df0      	ret.n
+    a0ac:	0c12      	movi.n	a2, 1
+    a0ae:	0df0      	ret.n
+0000a0b0: 00f022   orb          b15, b0, b0 ; Capstone
+    a0b3:	1122c2        	l32r	a1, 0xffffa93c
+    a0b6:	013048        	l32r	a0, 0xfffdc178
+    a0b9:	0377e2        	excw
+    a0bc:	0a0b      	add.n	a0, a11, a0
+    a0be:	33f022        	excw
+    a0c1:	117762        	l32r	a1, 0xfffe2aa0
+    a0c4:	f73030        	bltu	a0, a15, 0xa0f8
+    a0c7:	240013        	excw
+0000a0ca: 408032   orbc         b8, b0, b4 ; Capstone
+    a0cd:	013022        	l32r	a0, 0xfffd2990
+    a0d0:	812020        	l32r	a8, 0xfffd2150
+0000a0d3: 742049   mula.da.hl.ldinc m2, a0, m0, a7 ; Capstone
+    a0d6:	133003        	excw
+    a0d9:	032c02        	excw
+    a0dc:	3032c0        	sub	a3, a2, a3
+0000a0df: 304813   wsr          a3, windowbase ; Capstone
+    a0e2:	102000        	rsync
+    a0e5:	0c22      	movi.n	a2, 2
+    a0e7:	0df0      	ret.n
+    a0e9:	000000        	ill
+
+; Alternate branch-target decode
+0000a094: 108040   rotw         1 ; Capstone
+0000a097: 204803   rsr          a2, windowbase ; Capstone
+
+; Alternate branch-target decode
+    a0b1:	f02211        	slli	a2, a2, 1
+    a0b4:	22c201        	addi	a2, a2, 1
+0000a0b7: 304803   rsr          a3, windowbase ; Capstone
+    a0ba:	77e20a        	bbsi	a2, 7, 0xa0c8
+    a0bd:	0b33      	addi.n	a3, a3, -1
+    a0bf:	f02211        	slli	a2, a2, 1
+    a0c2:	7762f7        	bbci	a2, 7, 0xa0bd
+    a0c5:	303024        	extui	a3, a3, 0, 3
+    a0c8:	001340        	ssl	a3
+    a0cb:	803201        	slli	a3, a2, 24
+    a0ce:	302281        	src	a2, a2, a3
+    a0d1:	202074        	extui	a2, a2, 0, 8
+0000a0d4: 204913   wsr          a2, windowstart ; Capstone
+    a0d7:	300303        	rsr.sar	a3
+    a0da:	2c02      	movi.n	a2, 32

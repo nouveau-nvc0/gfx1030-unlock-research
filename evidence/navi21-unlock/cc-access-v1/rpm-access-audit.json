@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "file": "amdgpu_reg_access.c",
+      "same_as_downloaded": true,
+      "sha256": "60ee0b99d513c67b7774e91c8e61e2d0e74ec2be4be4bd66a85b91f1681e422a"
+    },
+    {
+      "file": "amdgpu_reg_access.h",
+      "same_as_downloaded": true,
+      "sha256": "e47ffc00971107c3ed9aaf06e589dcabb826daaacc14596431e8b5f744476504"
+    },
+    {
+      "file": "amdgpu_virt.c",
+      "same_as_downloaded": true,
+      "sha256": "7337c6a10f62bb06d4493bd964c855aade6e5c2bf6a5afff403d55f5c4a2cce1"
+    },
+    {
+      "file": "amdgpu_virt.h",
+      "same_as_downloaded": true,
+      "sha256": "2b03c5507528aa4fbb48643290ff401152a7245c909d77c9f165dd9509871e25"
+    }
+  ],
+  "patches_mentioning_files": []
+}

@@ -1,0 +1,42 @@
+
+/tmp/tmpwejz_pm9/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000054c8 <.data+0x54c8>:
+000054c8: 36a100   entry        a1, 0x50 ; Capstone
+    54cb:	20a0f4        	extui	a10, a2, 0, 16
+    54ce:	a0aaa0        	addx4	a10, a10, a10
+    54d1:	a0a0f4        	extui	a10, a10, 0, 16
+000054d4: 65d6ff   call8        . -0x298 ; Capstone ; target=0x523c
+    54d7:	a020f4        	extui	a2, a10, 0, 16
+    54da:	8bc1      	addi.n	a12, a1, 8
+    54dc:	0c03      	movi.n	a3, 0
+    54de:	b26101        	s32i	a11, a1, 4
+000054e1: 030101   lsi          f0, a1, 4 ; Capstone
+    54e4:	a0b0f5        	extui	a11, a10, 16, 16
+    54e7:	326c00        	s32i	a3, a12, 0
+    54ea:	325c02        	s16i	a3, a12, 4
+    54ed:	b25108        	s16i	a11, a1, 16
+000054f0: 034105   ssi          f0, a1, 0x14 ; Capstone
+    54f3:	ad02      	mov.n	a10, a2
+000054f5: e5adfe   call8        . -0x1520 ; Capstone ; target=0x3fd4
+    54f8:	b2c110        	addi	a11, a1, 16
+    54fb:	a22b00        	l32i	a10, a11, 0
+    54fe:	b22b01        	l32i	a11, a11, 4
+00005501: 65c304   call8        . +0x4c38 ; Capstone ; target=0xa138
+    5504:	ad02      	mov.n	a10, a2
+00005506: a5e9fb   call8        . -0x4164 ; Capstone ; target=0x13a0
+    5509:	d1dbdf        	l32r	a13, 0xffffd478 (0x5ffee578) ; inferred DRAM map 0x5ffec000
+    550c:	0c1c      	movi.n	a12, 1
+    550e:	a0e0f4        	extui	a14, a10, 0, 16
+    5511:	a0f0f5        	extui	a15, a10, 16, 16
+    5514:	325106        	s16i	a3, a1, 12
+    5517:	3831      	l32i.n	a3, a1, 12
+    5519:	f25105        	s16i	a15, a1, 10
+    551c:	e25104        	s16i	a14, a1, 8
+    551f:	c24d00        	s8i	a12, a13, 0
+    5522:	2821      	l32i.n	a2, a1, 8
+00005524: 1df0     retw.n        ; Capstone
+	...

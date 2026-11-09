@@ -1,0 +1,32 @@
+
+/tmp/tmp2godsa9z/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00025ad4 <.data+0x25ad4>:
+00025ad4: 366100   entry        a1, 0x30 ; Capstone
+00025ad7: 5016fa   wfr          f1, a6 ; Capstone
+00025ada: 5025fa   wfr          f2, a5 ; Capstone
+00025add: 5033fa   wfr          f3, a3 ; Capstone
+00025ae0: 5052fa   wfr          f5, a2 ; Capstone
+00025ae3: 5044fa   wfr          f4, a4 ; Capstone
+00025ae6: 50041a   sub.s        f0, f4, f5 ; Capstone
+00025ae9: 534100   ssi          f5, a1, 0 ; Capstone
+00025aec: 334101   ssi          f3, a1, 4 ; Capstone
+00025aef: 234102   ssi          f2, a1, 8 ; Capstone
+00025af2: 40a0fa   rfr          a10, f0 ; Capstone
+00025af5: 134103   ssi          f1, a1, 0xc ; Capstone
+00025af8: 252a13   call8        . +0x132a4 ; Capstone ; target=0x38d9c
+00025afb: 50aafa   wfr          f10, a10 ; Capstone
+00025afe: d30100   lsi          f13, a1, 0 ; Capstone
+00025b01: c30103   lsi          f12, a1, 0xc ; Capstone
+00025b04: d0bc1a   sub.s        f11, f12, f13 ; Capstone
+00025b07: 630101   lsi          f6, a1, 4 ; Capstone
+00025b0a: 930102   lsi          f9, a1, 8 ; Capstone
+00025b0d: 60891a   sub.s        f8, f9, f6 ; Capstone
+00025b10: b07a2a   mul.s        f7, f10, f11 ; Capstone
+00025b13: 80674a   madd.s       f6, f7, f8 ; Capstone
+00025b16: 4026fa   rfr          a2, f6 ; Capstone
+00025b19: 1df0     retw.n        ; Capstone
+	...

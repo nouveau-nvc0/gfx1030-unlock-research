@@ -1,0 +1,27 @@
+
+/tmp/tmpetpy73dq/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00033604 <.data+0x33604>:
+00033604: 364100   entry        a1, 0x20 ; Capstone
+   33607:	507074        	extui	a7, a5, 0, 8
+   3360a:	606200        	rsil	a6, 2
+   3360d:	7cfa      	movi.n	a10, -1
+   3360f:	816583        	l32r	a8, 0x143a4 (0x71e0)
+   33612:	001340        	ssl	a3
+   33615:	707790        	addx2	a7, a7, a7
+   33618:	8077a0        	addx4	a7, a7, a8
+   3361b:	42675d        	s32i	a4, a7, 0x174
+   3361e:	22675c        	s32i	a2, a7, 0x170
+   33621:	9217bc        	l16ui	a9, a7, 0x178
+   33624:	0c18      	movi.n	a8, 1
+   33626:	0088a1        	sll	a8, a8
+   33629:	a0a830        	xor	a10, a8, a10
+   3362c:	a09910        	and	a9, a9, a10
+   3362f:	908820        	or	a8, a8, a9
+   33632:	8257bc        	s16i	a8, a7, 0x178
+   33635:	60e613        	wsr.ps	a6
+00033638: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,29 @@
+
+/tmp/tmpp3iionbi/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00022f80 <.data+0x22f80>:
+00022f80: 364100   entry        a1, 0x20 ; Capstone
+   22f83:	ad02      	mov.n	a10, a2
+00022f85: a513df   call8        . -0x20ec4 ; Capstone ; target=0x20c0
+   22f88:	81cdc1        	l32r	a8, 0x136bc (0xa2c0)
+   22f8b:	82087e        	l8ui	a8, a8, 126
+   22f8e:	66181d        	bnei	a8, 1, 0x22faf
+   22f91:	91cbc1        	l32r	a9, 0x136c0 (0xbd74)
+   22f94:	a0b0f5        	extui	a11, a10, 16, 16
+   22f97:	a0c0f4        	extui	a12, a10, 0, 16
+00022f9a: 001cda   ufloat.s     f1, a12, 0 ; Capstone
+00022f9d: 000bda   ufloat.s     f0, a11, 0 ; Capstone
+   22fa0:	ad02      	mov.n	a10, a2
+   22fa2:	0c1b      	movi.n	a11, 1
+00022fa4: 134980   ssi          f1, a9, 0x200 ; Capstone
+00022fa7: 03497f   ssi          f0, a9, 0x1fc ; Capstone
+00022faa: 250fdf   call8        . -0x20f0c ; Capstone ; target=0x209c
+00022fad: 1df0     retw.n        ; Capstone
+   22faf:	ad02      	mov.n	a10, a2
+   22fb1:	b2a0ff        	movi	a11, 255
+00022fb4: 650edf   call8        . -0x20f18 ; Capstone ; target=0x209c
+00022fb7: 1df0     retw.n        ; Capstone
+   22fb9:	000000        	ill

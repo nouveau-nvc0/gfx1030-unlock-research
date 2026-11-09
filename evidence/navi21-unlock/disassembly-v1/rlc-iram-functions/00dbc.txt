@@ -1,0 +1,59 @@
+
+/tmp/tmpn98vplb0/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000dbc <.data+0xdbc>:
+00000dbc: 366100   entry        a1, 0x30 ; Capstone
+     dbf:	81e8f0        	l32r	a8, 0xffffd160 (0x5ffee25c) ; inferred DRAM map 0x5ffec000
+     dc2:	820800        	l8ui	a8, a8, 0
+     dc5:	cc48      	bnez.n	a8, 0xdcd
+     dc7:	0c12      	movi.n	a2, 1
+00000dc9: 1df0     retw.n        ; Capstone
+     dcb:	000020        	or	a0, a0, a0
+     dce:	50f520        	or	a15, a5, a5
+     dd1:	6874      	l32i.n	a6, a4, 28
+     dd3:	a1f4f0        	l32r	a10, 0xffffd1a4 (0x5ffed978) ; inferred DRAM map 0x5ffec000
+     dd6:	3040f4        	extui	a4, a3, 0, 16
+     dd9:	207074        	extui	a7, a2, 0, 8
+     ddc:	3030f5        	extui	a3, a3, 16, 16
+     ddf:	724a1a        	s8i	a7, a10, 26
+     de2:	425a0f        	s16i	a4, a10, 30
+     de5:	624a1b        	s8i	a6, a10, 27
+     de8:	525a0e        	s16i	a5, a10, 28
+     deb:	325a10        	s16i	a3, a10, 32
+     dee:	a2a028        	movi	a10, 40
+00000df1: 65c600   call8        . +0xc68 ; Capstone ; target=0x1a58
+     df4:	2c9a      	movi.n	a10, 41
+00000df6: 25c600   call8        . +0xc64 ; Capstone ; target=0x1a58
+     df9:	7ce2      	movi.n	a2, -2
+     dfb:	202a10        	and	a2, a10, a2
+     dfe:	2c9a      	movi.n	a10, 41
+     e00:	bd02      	mov.n	a11, a2
+00000e02: 25be00   call8        . +0xbe4 ; Capstone ; target=0x19e4
+     e05:	2c8a      	movi.n	a10, 40
+     e07:	d1edf0        	l32r	a13, 0xffffd1bc (0x1fffff) ; inferred DRAM map 0x5ffec000
+     e0a:	40c0a4        	extui	a12, a4, 0, 11
+     e0d:	50b094        	extui	a11, a5, 0, 10
+     e10:	60cc11        	slli	a12, a12, 10
+     e13:	c0bb20        	or	a11, a11, a12
+     e16:	b0c301        	slli	a12, a3, 21
+     e19:	d0bb10        	and	a11, a11, a13
+     e1c:	c0bb20        	or	a11, a11, a12
+00000e1f: 65bc00   call8        . +0xbc8 ; Capstone ; target=0x19e4
+     e22:	2c9a      	movi.n	a10, 41
+     e24:	d2affd        	movi	a13, -3
+     e27:	70b004        	extui	a11, a7, 0, 1
+     e2a:	60c004        	extui	a12, a6, 0, 1
+     e2d:	f0cc11        	slli	a12, a12, 1
+     e30:	b0b220        	or	a11, a2, a11
+     e33:	d0bb10        	and	a11, a11, a13
+     e36:	c0bb20        	or	a11, a11, a12
+00000e39: a5ba00   call8        . +0xbac ; Capstone ; target=0x19e4
+     e3c:	0c02      	movi.n	a2, 0
+00000e3e: 1df0     retw.n        ; Capstone
+
+; Alternate branch-target decode
+     dcd:	2050f5        	extui	a5, a2, 16, 16
+     dd0:	206874        	extui	a6, a2, 8, 8

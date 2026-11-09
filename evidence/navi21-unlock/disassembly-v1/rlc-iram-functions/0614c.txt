@@ -1,0 +1,81 @@
+
+/tmp/tmp4x7w03jn/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000614c <.data+0x614c>:
+0000614c: 36c100   entry        a1, 0x60 ; Capstone
+    614f:	525102        	s16i	a5, a1, 4
+    6152:	b104dc        	l32r	a11, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    6155:	a1d1dc        	l32r	a10, 0xffffd49c (0x60030200) ; inferred DRAM map 0x5ffec000
+    6158:	325100        	s16i	a3, a1, 0
+    615b:	0c0c      	movi.n	a12, 0
+    615d:	3d02      	mov.n	a3, a2
+    615f:	2d04      	mov.n	a2, a4
+    6161:	e06f00        	rsil	a14, 15
+    6164:	c26b80        	s32i	a12, a11, 0x200
+    6167:	d8aa      	l32i.n	a13, a10, 40
+    6169:	e0e613        	wsr.ps	a14
+    616c:	102000        	rsync
+    616f:	d0de15        	extui	a13, a13, 30, 2
+    6172:	262deb        	beqi	a13, 2, 0x6161
+    6175:	d06f00        	rsil	a13, 15
+    6178:	81cadc        	l32r	a8, 0xffffd4a0 (0x6002fe00) ; inferred DRAM map 0x5ffec000
+    617b:	c26b80        	s32i	a12, a11, 0x200
+    617e:	3268e4        	s32i	a3, a8, 0x390
+    6181:	d0e613        	wsr.ps	a13
+    6184:	102000        	rsync
+    6187:	f06f00        	rsil	a15, 15
+    618a:	c26b80        	s32i	a12, a11, 0x200
+    618d:	9801      	l32i.n	a9, a1, 0
+    618f:	9268e5        	s32i	a9, a8, 0x394
+    6192:	f0e613        	wsr.ps	a15
+    6195:	102000        	rsync
+    6198:	e06f00        	rsil	a14, 15
+    619b:	c26b80        	s32i	a12, a11, 0x200
+    619e:	2268e6        	s32i	a2, a8, 0x398
+    61a1:	e0e613        	wsr.ps	a14
+    61a4:	102000        	rsync
+    61a7:	906f00        	rsil	a9, 15
+    61aa:	c26b80        	s32i	a12, a11, 0x200
+    61ad:	d811      	l32i.n	a13, a1, 4
+    61af:	d268e7        	s32i	a13, a8, 0x39c
+    61b2:	90e613        	wsr.ps	a9
+    61b5:	102000        	rsync
+    61b8:	f06f00        	rsil	a15, 15
+    61bb:	c26b80        	s32i	a12, a11, 0x200
+    61be:	c268e3        	s32i	a12, a8, 0x38c
+    61c1:	f0e613        	wsr.ps	a15
+    61c4:	102000        	rsync
+    61c7:	d06f00        	rsil	a13, 15
+    61ca:	e1b6dc        	l32r	a14, 0xffffd4a4 (0x3ffffff) ; inferred DRAM map 0x5ffec000
+    61cd:	f1b7dc        	l32r	a15, 0xffffd4ac (0x28000000) ; inferred DRAM map 0x5ffec000
+    61d0:	c26b80        	s32i	a12, a11, 0x200
+    61d3:	e0e610        	and	a14, a6, a14
+    61d6:	f0ee20        	or	a14, a14, a15
+    61d9:	e26a68        	s32i	a14, a10, 0x1a0
+    61dc:	d0e613        	wsr.ps	a13
+    61df:	102000        	rsync
+    61e2:	8bf1      	addi.n	a15, a1, 8
+    61e4:	212fdc        	l32r	a2, 0xffffd2a0 (0x6803ae00) ; inferred DRAM map 0x5ffec000
+    61e7:	0c18      	movi.n	a8, 1
+    61e9:	91b1dc        	l32r	a9, 0xffffd4b0 (0x3b0a8) ; inferred DRAM map 0x5ffec000
+    61ec:	0c4a      	movi.n	a10, 4
+    61ee:	0c0b      	movi.n	a11, 0
+    61f0:	b951      	s32i.n	a11, a1, 20
+    61f2:	b931      	s32i.n	a11, a1, 12
+    61f4:	a961      	s32i.n	a10, a1, 24
+    61f6:	9941      	s32i.n	a9, a1, 16
+    61f8:	8921      	s32i.n	a8, a1, 8
+    61fa:	c262aa        	s32i	a12, a2, 0x2a8
+    61fd:	d83f      	l32i.n	a13, a15, 12
+    61ff:	e84f      	l32i.n	a14, a15, 16
+    6201:	a80f      	l32i.n	a10, a15, 0
+    6203:	b81f      	l32i.n	a11, a15, 4
+    6205:	c82f      	l32i.n	a12, a15, 8
+    6207:	f85f      	l32i.n	a15, a15, 20
+00006209: 25eaff   call8        . -0x15c ; Capstone ; target=0x60ac
+    620c:	e222aa        	l32i	a14, a2, 0x2a8
+    620f:	169eff        	beqz	a14, 0x620c
+00006212: 1df0     retw.n        ; Capstone

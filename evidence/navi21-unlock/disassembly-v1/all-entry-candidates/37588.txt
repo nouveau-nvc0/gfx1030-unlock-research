@@ -1,0 +1,18 @@
+
+/tmp/tmpv2owtyt5/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00037588 <.data+0x37588>:
+00037588: 364100   entry        a1, 0x20 ; Capstone
+   3758b:	ad02      	mov.n	a10, a2
+0003758d: 25b3ca   call8        . -0x354cc ; Capstone ; target=0x20c0
+   37590:	bd0a      	mov.n	a11, a10
+   37592:	a1b673        	l32r	a10, 0x1446c (0x9e20)
+00037595: 252100   call8        . +0x214 ; Capstone ; target=0x377a8
+   37598:	ad02      	mov.n	a10, a2
+   3759a:	0c1b      	movi.n	a11, 1
+0003759c: e5afca   call8        . -0x35500 ; Capstone ; target=0x209c
+0003759f: 1df0     retw.n        ; Capstone
+   375a1:	000000        	ill

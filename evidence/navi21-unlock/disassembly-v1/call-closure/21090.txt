@@ -1,0 +1,13 @@
+
+/tmp/tmps5yajmr4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00021090 <.data+0x21090>:
+00021090: 364100   entry        a1, 0x20 ; Capstone
+   21093:	310dc9        	l32r	a3, 0x134c8 (0xfd24)
+   21096:	0c02      	movi.n	a2, 0
+   21098:	22637f        	s32i	a2, a3, 0x1fc
+0002109b: 1df0     retw.n        ; Capstone
+   2109d:	000000        	ill

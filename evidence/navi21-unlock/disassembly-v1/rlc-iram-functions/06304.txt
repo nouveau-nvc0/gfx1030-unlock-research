@@ -1,0 +1,12 @@
+
+/tmp/tmpf34gtk70/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00006304 <.data+0x6304>:
+00006304: 364100   entry        a1, 0x20 ; Capstone
+    6307:	316cdc        	l32r	a3, 0xffffd4b8 (0x5ffee5c0) ; inferred DRAM map 0x5ffec000
+    630a:	2923      	s32i.n	a2, a3, 8
+0000630c: 1df0     retw.n        ; Capstone
+	...

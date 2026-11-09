@@ -1,0 +1,38 @@
+{
+  "rpm_sha256": "d7d9aeadba94ec0de4cb786acceec5475ce9c1297fd539eac11c49e0cab855bf",
+  "source_files": [
+    {
+      "file": "amdgpu_bios.c",
+      "member": "linux-7.3/drivers/gpu/drm/amd/amdgpu/amdgpu_bios.c",
+      "sha256": "a1c8a3d1d18c6c047757f72136673da8635bca3c19f626d084b851aa8057569e",
+      "same_as_downloaded": true
+    },
+    {
+      "file": "amdgpu_debugfs.c",
+      "member": "linux-7.3/drivers/gpu/drm/amd/amdgpu/amdgpu_debugfs.c",
+      "sha256": "cd2c02e05835eabb2a8ca53675a5d51f7dfeaf93a60b956b603b7b4cab0cdb84",
+      "same_as_downloaded": true
+    },
+    {
+      "file": "amdgpu_discovery.c",
+      "member": "linux-7.3/drivers/gpu/drm/amd/amdgpu/amdgpu_discovery.c",
+      "sha256": "453490aaca40862b021102a19deab78c3647fbac09828713470170b4798763f9",
+      "same_as_downloaded": true
+    },
+    {
+      "file": "amdgpu_kms.c",
+      "member": "linux-7.3/drivers/gpu/drm/amd/amdgpu/amdgpu_kms.c",
+      "sha256": "526bde5264d953972aadd2857eafb17484e5a987b0c452a845a2f8d65ff8da0a",
+      "same_as_downloaded": true
+    },
+    {
+      "file": "gfx_v10_0.c",
+      "member": "linux-7.3/drivers/gpu/drm/amd/amdgpu/gfx_v10_0.c",
+      "sha256": "3b2013dcb603845c3785fe02fc9aeee848b391f10d462e9384a1e4f370a4fb1b",
+      "same_as_downloaded": true
+    }
+  ],
+  "missing": {},
+  "patches_touching_selected_files": [],
+  "rpm_signature": "/workspace/gfx1030-unlock-research/inputs/research/kernel-source-7.3.1-1.1.src.rpm: digests signatures OK\n"
+}

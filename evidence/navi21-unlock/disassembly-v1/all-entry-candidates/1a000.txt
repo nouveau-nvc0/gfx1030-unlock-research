@@ -1,0 +1,48 @@
+
+/tmp/tmpi3cs4crp/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001a000 <.data+0x1a000>:
+0001a000: 366100   entry        a1, 0x30 ; Capstone
+   1a003:	0c8a      	movi.n	a10, 8
+   1a005:	2901      	s32i.n	a2, a1, 0
+0001a007: a557e8   call8        . -0x17a84 ; Capstone ; target=0x2580
+   1a00a:	0c04      	movi.n	a4, 0
+   1a00c:	a185e3        	l32r	a10, 0x12e20 (0x12264)
+   1a00f:	6186e3        	l32r	a6, 0x12e28 (0x9c00)
+   1a012:	0c03      	movi.n	a3, 0
+   1a014:	8184e3        	l32r	a8, 0x12e24 (0xbf7c)
+   1a017:	8911      	s32i.n	a8, a1, 4
+   1a019:	f02411        	slli	a2, a4, 1
+   1a01c:	a07411        	slli	a7, a4, 6
+   1a01f:	8811      	l32i.n	a8, a1, 4
+   1a021:	a054a0        	addx4	a5, a4, a10
+   1a024:	52257f        	l32i	a5, a5, 0x1fc
+   1a027:	8a77      	add.n	a7, a7, a8
+   1a029:	8226e9        	l32i	a8, a6, 0x3a4
+   1a02c:	870520        	bnone	a5, a8, 0x1a050
+   1a02f:	c801      	l32i.n	a12, a1, 0
+   1a031:	b17ee3        	l32r	a11, 0x12e2c (0xbf54)
+   1a034:	3aa2      	add.n	a10, a2, a3
+0001a036: 002cda   ufloat.s     f2, a12, 0 ; Capstone
+   1a039:	b0aaa0        	addx4	a10, a10, a11
+0001a03c: 234a7f   ssi          f2, a10, 0x1fc ; Capstone
+0001a03f: 130b8f   lsi          f1, a11, 0x23c ; Capstone
+0001a042: 20012a   mul.s        f0, f1, f2 ; Capstone
+   1a045:	ad07      	mov.n	a10, a7
+0001a047: 40b0fa   rfr          a11, f0 ; Capstone
+0001a04a: a5cb1b   call8        . +0x1bcbc ; Capstone ; target=0x35d04
+   1a04d:	a174e3        	l32r	a10, 0x12e20 (0x12264)
+   1a050:	1b33      	addi.n	a3, a3, 1
+   1a052:	303074        	extui	a3, a3, 0, 8
+   1a055:	6623d0        	bnei	a3, 2, 0x1a029
+   1a058:	0c03      	movi.n	a3, 0
+   1a05a:	1b44      	addi.n	a4, a4, 1
+   1a05c:	404074        	extui	a4, a4, 0, 8
+   1a05f:	6644b6        	bnei	a4, 4, 0x1a019
+   1a062:	0c8a      	movi.n	a10, 8
+0001a064: e540e8   call8        . -0x17bf0 ; Capstone ; target=0x2474
+0001a067: 1df0     retw.n        ; Capstone
+   1a069:	000000        	ill

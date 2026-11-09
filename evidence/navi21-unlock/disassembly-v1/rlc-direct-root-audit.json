@@ -1,0 +1,48 @@
+{
+  "scan_hashes": {
+    "rlc-iram-store-scan.json": "9cc4d7459fbed824ebcecf2ef6f8826a5b8a5c7db698ea01dac6332a536eabe1",
+    "rlc-startup-cfg.json": "9f7a30285a45b047d3fd0ac37e6b8ead5c3c7f2f4f3df65a7b07dc2be78c0b15",
+    "rlc-interrupt-entry-cfg.json": "7d0f8af88a9b3fe0c61002cd991b936c16754b4f9d6f101968d2fee7f5ce0370",
+    "rlc-context-restore-cfg.json": "72eb605c3b1bd7462cfaaee3d5241b9b8644aed030836ac540c37c4e13ac84fa",
+    "rlc-context-save-cfg.json": "6ee3823ceeae20bfc21930cceeaacf99f99996d277ad7e0afb79a7e1f171d754",
+    "rlc-window-spill-cfg.json": "c83882de4ee9efb9e72e8f3a01a4799f06115cd4e5def9fb7a03aa2d1fe4aa82",
+    "rlc-alternate-save-cfg.json": "311fa0b891cafe57257de37f906d0e8e7ff791c5c011b14582aa4202a3ffac30"
+  },
+  "direct_call_sites": 668,
+  "missing_separate_target_roots": [],
+  "raw_listing_targets_without_roots": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/047c0.txt",
+      "pc": "0x4868",
+      "target": "0x354cc",
+      "in_reached_call_inventory": false
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/065d8.txt",
+      "pc": "0x692e",
+      "target": "0x7d94",
+      "in_reached_call_inventory": false
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06e10.txt",
+      "pc": "0x6f2a",
+      "target": "0x37d80",
+      "in_reached_call_inventory": false
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06e10.txt",
+      "pc": "0x6f4e",
+      "target": "0x6cb70",
+      "in_reached_call_inventory": false
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0953c.txt",
+      "pc": "0x96da",
+      "target": "0x3c7dc",
+      "in_reached_call_inventory": false
+    }
+  ],
+  "alternate_save_byte_checks": 57,
+  "alternate_save_literal_offsets": [],
+  "scope": "Coverage of direct calls in listed local CFG scans only. Root availability does not prove complete callee traversal, semantics, non-ENTRY/vector coverage or indirect-call closure."
+}

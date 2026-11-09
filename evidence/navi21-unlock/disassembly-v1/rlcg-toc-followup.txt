@@ -1,0 +1,77 @@
+Concrete SOS TOC and LX6 DRAM descriptor pair — offline,2026-11-09
+
+New evidence
+The local sienna_cichlid_sos image contains the concrete descriptor table
+used by this firmware family. It supplies a boot/snapshot pair for the same
+4000-byte LX6 DRAM port. This is relevant to savedCC/gatee452 because the
+candidate span includes those offsets, unlike the earlier35word PACE copy.
+No current snapshot contents, modified-mask producer, or hardware acceptance
+are established by finding the descriptors.
+
+Extraction and primary layout source
+Decompressed SOS SHA25667706b9e1545bf68850bf9cea97660af5972574ecb0ca30041174efbb59fac37.
+Header1.3: payload100,TOC descriptor version9/offset35ad0/size600.
+Driver1.3 parsing adds payloadbase, giving wrapper35bd0. Its $PS1 marker
+at+10 and payloadsize400 at+14 match body[35cd0,360d0), after100-byte prefix.
+The400-byte body has36 four-DWORD descriptors followed by a zero descriptor,
+then additional data. Do not interpret the rest as more TOC descriptors.
+Source structure is retained in sources/amdgpu_rlc.h.v6.12, with source URL
+and hash receipt. It defines DW0 offset25/id7; DW1 flags then size18 atbit14;
+DW2 low16 addressregister/high16 index; DW3 low16 dataregister/high16 start.
+Firmware30d3/3173 reads matching four-word records startingGPM0208 and
+increments its record offset by4, skipping the firsttwo entries.
+The source enum after ID10 does not match all Sienna-specific entries; retain
+numeric IDs instead of applying older names indiscriminately.
+
+Independent check of313f source displacement
+ID1:offset0,size6000,portfb60,start2000 (mainRLCG).
+ID2:offset6000,size400,addrfb75/datafb76,start200 (the TOC itself).
+ID3:offset6400,size800,sameports,start0 (GPM data).
+ID2 exactly agrees with313f's6000 operand,400length,andGPM200 destination.
+This positively supports addition of6000 to the bootloadbase. It remains
+correspondence, not independent documentation of operation11 for all inputs.
+
+Descriptor destination construction
+3101/3102 extract DW2 index;3108..310d derive size from DW1>>14, multiply4,
+and apply another leftshift4 when bit12 is set. The older structure calls
+bit12 reserved; therefore its base-size field alone is not the final byte
+length for every Sienna entry. IDs10/27 have bit12clear.
+3110 tests DW1bit9 (direct-load field). The indirect path takes DW2low16 and
+DW3high16 to35d7, then311e..3122 takes DW3low16*4 as transferdestination.
+3123..3126 take DW0low25*4 as sourceoffset. Sourcebase comes from bootload
+HI/LO or words011e/011f for another memory-destination value.3135 submits
+through30ae.3173 has analogous construction with an additional offset term.
+These statements use the same partial RLCG field reading; the public TOC
+layout now gives independent evidence for their input masks and shifts.
+
+Relevant concrete pair
+ID10 raw14008720/04002001/0000fb55/0000fb56:
+ offset21c80,size4000,addrfb55/datafb56,start0,index0,bootflag1.
+ID27 raw36151400/04000412/0000fb55/0000fb56:
+ offset545000,size4000,sameports/start/index,load_at_vddgfx1,
+ save_for_vddgfx1,memory_destination2,bootflag0.
+ID9 usesfb57/fb58,size10000,which additionally matches the LX6 IRAM size.
+Thus ID10/27 are a strong candidate boot/snapshot DRAM pair. Exact names for
+fb55/fb56 are absent from the retained GC10.3 header; physical mapping is
+still inferred from sizes, paired ports and the initial firmware structure.
+
+Under the existing5ffec000 DRAM mapping,4000bytes include:
+ CC_WGP savedarray offset1fc4 (32bytes), CC_RB offset1fe4 (32bytes),
+ restoregate offset2452 (1byte).
+If ID27 represents that same snapshot, corresponding buffer offsets would
+be546fc4,546fe4,547452 relative to its selected base. These are conditional
+offset calculations, not actual GPU addresses or demonstrated editable data.
+The initial RLC DRAM image has zeros in all three regions. Its zero gate
+prevents treating zero savedmasks as an established restore operation.
+
+Next concrete work
+Trace the descriptor save consumers3226/3269 and other545000-buffer producers,
+including whether they merely preserve existingDRAM or introduce new values.
+Determine actual handling of the table's boot/snapshot pair before claiming
+fullDRAM delivery or changedCC state. No hardware work is needed for these
+remaining offline questions.
+
+Reproduction: python3 scripts/navi21-rlcg-toc-audit.py
+Receipt rlcg-toc-audit.json pins bothfirmwares,132rawRLCGwords,36entries,
+sourcehashes,threeinitialDRAMregions,and explicit interpretation limits.
+No GPU register,firmware,boot,driver or service state was changed.

@@ -1,0 +1,68 @@
+
+/tmp/tmpm4w1j2zn/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00025eb8 <.data+0x25eb8>:
+00025eb8: 364100   entry        a1, 0x20 ; Capstone
+   25ebb:	91dbb3        	l32r	a9, 0x12e28 (0x9c00)
+   25ebe:	0c2c      	movi.n	a12, 2
+   25ec0:	219db6        	l32r	a2, 0x13934 (0x9c90)
+   25ec3:	32293a        	l32i	a3, a9, 232
+   25ec6:	a19fb6        	l32r	a10, 0x13944 (0x110e0)
+   25ec9:	42027f        	l8ui	a4, a2, 127
+   25ecc:	cc33      	bnez.n	a3, 0x25ed3
+   25ece:	220258        	l8ui	a2, a2, 88
+00025ed1: 1df0     retw.n        ; Capstone
+   25ed3:	cc54      	bnez.n	a4, 0x25edc
+   25ed5:	c24a7d        	s8i	a12, a10, 125
+   25ed8:	2d0c      	mov.n	a2, a12
+00025eda: 1df0     retw.n        ; Capstone
+   25edc:	0c1b      	movi.n	a11, 1
+   25ede:	bc14      	beqz.n	a4, 0x25f13
+   25ee0:	82a080        	movi	a8, 128
+   25ee3:	620a7c        	l8ui	a6, a10, 124
+   25ee6:	72027e        	l8ui	a7, a2, 126
+00025ee9: b0d473   maxu         a13, a4, a11 ; Capstone
+   25eec:	0c02      	movi.n	a2, 0
+00025eee: 769d1a   loopnez      a13, . +0x1e ; Capstone
+   25ef1:	9052a0        	addx4	a5, a2, a9
+   25ef4:	8a55      	add.n	a5, a5, a8
+   25ef6:	e20593        	l8ui	a14, a5, 147
+   25ef9:	1b22      	addi.n	a2, a2, 1
+   25efb:	202074        	extui	a2, a2, 0, 8
+   25efe:	779e08        	bne	a14, a7, 0x25f0a
+   25f01:	d20591        	l8ui	a13, a5, 145
+   25f04:	606d20        	or	a6, a13, a6
+   25f07:	606074        	extui	a6, a6, 0, 8
+   25f0a:	3df0      	nop.n
+   25f0c:	624a7c        	s8i	a6, a10, 124
+   25f0f:	c60000        	j	0x25f16
+00025f12: 00620a   add.s        f6, f2, f0 ; Capstone
+   25f15:	7ccc      	movi.n	a12, -4
+   25f17:	56c24a        	bnez	a2, 0x263c7
+   25f1a:	7d0c      	mov.n	a7, a12
+   25f1c:	221df0        	l16ui	a2, a13, 0x1e0
+   25f1f:	0c02      	movi.n	a2, 0
+   25f21:	420a7e        	l8ui	a4, a10, 126
+   25f24:	b24a7d        	s8i	a11, a10, 125
+   25f27:	0c23      	movi.n	a3, 2
+00025f29: 76a312   loopgtz      a3, . +0x16 ; Capstone
+   25f2c:	000240        	ssr	a2
+   25f2f:	1b22      	addi.n	a2, a2, 1
+   25f31:	6080b1        	sra	a8, a6
+   25f34:	076804        	bbci	a8, 0, 0x25f3c
+   25f37:	1b44      	addi.n	a4, a4, 1
+   25f39:	424a7e        	s8i	a4, a10, 126
+   25f3c:	202074        	extui	a2, a2, 0, 8
+   25f3f:	0c12      	movi.n	a2, 1
+00025f41: 1df0     retw.n        ; Capstone
+	...
+
+; Alternate branch-target decode
+   25f13:	620a7c        	l8ui	a6, a10, 124
+   25f16:	cc56      	bnez.n	a6, 0x25f1f
+   25f18:	c24a7d        	s8i	a12, a10, 125
+   25f1b:	0c22      	movi.n	a2, 2
+00025f1d: 1df0     retw.n        ; Capstone

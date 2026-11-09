@@ -1,0 +1,49 @@
+
+/tmp/tmp0qhqspw8/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002ca24 <.data+0x2ca24>:
+0002ca24: 368100   entry        a1, 0x40 ; Capstone
+0002ca27: 3000fa   const.s      f0, 0 ; Capstone
+   2ca2a:	1c98      	movi.n	a8, 25
+   2ca2c:	87923d        	bne	a2, a8, 0x2ca6d
+   2ca2f:	cd03      	mov.n	a12, a3
+   2ca31:	ad02      	mov.n	a10, a2
+0002ca33: 40b0fa   rfr          a11, f0 ; Capstone
+   2ca36:	0c0d      	movi.n	a13, 0
+   2ca38:	e2c110        	addi	a14, a1, 16
+   2ca3b:	f2c114        	addi	a15, a1, 20
+   2ca3e:	92c118        	addi	a9, a1, 24
+   2ca41:	9901      	s32i.n	a9, a1, 0
+0002ca43: 25e2ff   call8        . -0x1dc ; Capstone ; target=0x2c864
+   2ca46:	1c9a      	movi.n	a10, 25
+0002ca48: 65e0ff   call8        . -0x1f8 ; Capstone ; target=0x2c850
+   2ca4b:	b20110        	l8ui	a11, a1, 16
+   2ca4e:	2d0a      	mov.n	a2, a10
+   2ca50:	b7ba04        	bgeu	a10, a11, 0x2ca58
+   2ca53:	1c9a      	movi.n	a10, 25
+0002ca55: 657208   call8        . +0x8728 ; Capstone ; target=0x3517c
+   2ca58:	1c9a      	movi.n	a10, 25
+   2ca5a:	b861      	l32i.n	a11, a1, 24
+0002ca5c: 25cbff   call8        . -0x34c ; Capstone ; target=0x2c710
+   2ca5f:	b20110        	l8ui	a11, a1, 16
+   2ca62:	27bb26        	bgeu	a11, a2, 0x2ca8c
+   2ca65:	1c9a      	movi.n	a10, 25
+0002ca67: 657108   call8        . +0x8718 ; Capstone ; target=0x3517c
+   2ca6a:	860700        	j	0x2ca8c
+   2ca6d:	cd03      	mov.n	a12, a3
+0002ca6f: 40b0fa   rfr          a11, f0 ; Capstone
+   2ca72:	0c0d      	movi.n	a13, 0
+   2ca74:	e2c110        	addi	a14, a1, 16
+   2ca77:	a2c118        	addi	a10, a1, 24
+   2ca7a:	f2c114        	addi	a15, a1, 20
+   2ca7d:	a901      	s32i.n	a10, a1, 0
+   2ca7f:	ad02      	mov.n	a10, a2
+0002ca81: 25deff   call8        . -0x21c ; Capstone ; target=0x2c864
+   2ca84:	ad02      	mov.n	a10, a2
+   2ca86:	b20110        	l8ui	a11, a1, 16
+0002ca89: 256f08   call8        . +0x86f4 ; Capstone ; target=0x3517c
+   2ca8c:	2851      	l32i.n	a2, a1, 20
+0002ca8e: 1df0     retw.n        ; Capstone

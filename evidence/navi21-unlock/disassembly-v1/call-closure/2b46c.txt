@@ -1,0 +1,50 @@
+
+/tmp/tmphcwsaca7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002b46c <.data+0x2b46c>:
+0002b46c: 364100   entry        a1, 0x20 ; Capstone
+   2b46f:	2138a1        	l32r	a2, 0x13950 (0xc958)
+   2b472:	ad02      	mov.n	a10, a2
+0002b474: e5ea09   call8        . +0x9eb0 ; Capstone ; target=0x35324
+   2b477:	31bea1        	l32r	a3, 0x13b70 (0xc82c)
+   2b47a:	ad02      	mov.n	a10, a2
+   2b47c:	b22351        	l32i	a11, a3, 0x144
+0002b47f: 25e509   call8        . +0x9e54 ; Capstone ; target=0x352d0
+0002b482: 500afa   wfr          f0, a10 ; Capstone
+   2b485:	92037d        	l8ui	a9, a3, 125
+0002b488: 034354   ssi          f0, a3, 0x150 ; Capstone
+   2b48b:	3159a2        	l32r	a3, 0x13df0 (0xc94c)
+   2b48e:	661905        	bnei	a9, 1, 0x2b497
+0002b491: 657900   call8        . +0x798 ; Capstone ; target=0x2bc28
+   2b494:	c60900        	j	0x2b4bf
+   2b497:	ec49      	bnez.n	a9, 0x2b4bf
+0002b499: 430308   lsi          f4, a3, 0x20 ; Capstone
+0002b49c: 330309   lsi          f3, a3, 0x24 ; Capstone
+0002b49f: 40231a   sub.s        f2, f3, f4 ; Capstone
+0002b4a2: 130397   lsi          f1, a3, 0x25c ; Capstone
+0002b4a5: 1022fa   abs.s        f2, f2 ; Capstone
+0002b4a8: 20016b   ole.s        b0, f1, f2 ; Capstone
+0002b4ab: 760010   bf           b0, . +0x14 ; Capstone
+   2b4ae:	a14ea2        	l32r	a10, 0x13de8 (0xcd2c)
+   2b4b1:	b13fa2        	l32r	a11, 0x13db0 (0xc9f0)
+   2b4b4:	c22317        	l32i	a12, a3, 92
+   2b4b7:	d20368        	l8ui	a13, a3, 104
+   2b4ba:	1c9e      	movi.n	a14, 25
+0002b4bc: a5f1ff   call8        . -0xe4 ; Capstone ; target=0x2b3d8
+   2b4bf:	a223f7        	l32i	a10, a3, 0x3dc
+0002b4c2: 65efff   call8        . -0x108 ; Capstone ; target=0x2b3b8
+   2b4c5:	2d0a      	mov.n	a2, a10
+   2b4c7:	0c0a      	movi.n	a10, 0
+0002b4c9: 65df09   call8        . +0x9df8 ; Capstone ; target=0x352c0
+0002b4cc: 13030c   lsi          f1, a3, 0x30 ; Capstone
+0002b4cf: 505afa   wfr          f5, a10 ; Capstone
+0002b4d2: 10154b   olt.s        b1, f5, f1 ; Capstone
+0002b4d5: 760107   bf           b1, . +0xb ; Capstone
+0002b4d8: 40b1fa   rfr          a11, f1 ; Capstone
+   2b4db:	0c0a      	movi.n	a10, 0
+0002b4dd: 25d809   call8        . +0x9d84 ; Capstone ; target=0x35260
+0002b4e0: 1df0     retw.n        ; Capstone
+	...

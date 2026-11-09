@@ -1,0 +1,40 @@
+
+/tmp/tmpk6mfssnb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000235c <.data+0x235c>:
+0000235c: 364100   entry        a1, 0x20 ; Capstone
+    235f:	315bfa        	l32r	a3, 0xccc (0x7ca0)
+    2362:	206200        	rsil	a2, 2
+    2365:	a2231c        	l32i	a10, a3, 112
+    2368:	88ba      	l32i.n	a8, a10, 44
+    236a:	9c08      	beqz.n	a8, 0x237e
+    236c:	0c0c      	movi.n	a12, 0
+    236e:	0c1b      	movi.n	a11, 1
+    2370:	d1fef9        	l32r	a13, 0xb68 (0x300fe00)
+    2373:	0c1a      	movi.n	a10, 1
+    2375:	c02000        	memw
+    2378:	d22d8a        	l32i	a13, a13, 0x228
+0000237b: 252900   call8        . +0x294 ; Capstone ; target=0x260c
+    237e:	0c0b      	movi.n	a11, 0
+00002380: 25f3ff   call8        . -0xcc ; Capstone ; target=0x22b4
+    2383:	82231c        	l32i	a8, a3, 112
+    2386:	9152fa        	l32r	a9, 0xcd0 (0x7cb0)
+    2389:	820829        	l8ui	a8, a8, 41
+    238c:	9a88      	add.n	a8, a8, a9
+    238e:	f20880        	l8ui	a15, a8, 128
+    2391:	0bff      	addi.n	a15, a15, -1
+    2393:	f24880        	s8i	a15, a8, 128
+    2396:	e2038c        	l8ui	a14, a3, 140
+    2399:	0bee      	addi.n	a14, a14, -1
+    239b:	e0e074        	extui	a14, a14, 0, 8
+    239e:	e2438c        	s8i	a14, a3, 140
+    23a1:	8cae      	beqz.n	a14, 0x23af
+    23a3:	20e613        	wsr.ps	a2
+000023a6: 00f513   wsr.misc1    a0 ; verified QEMU encoding
+    23a9:	458000        	call0	0x2bb0
+    23ac:	206200        	rsil	a2, 2
+    23af:	20e613        	wsr.ps	a2
+000023b2: 1df0     retw.n        ; Capstone

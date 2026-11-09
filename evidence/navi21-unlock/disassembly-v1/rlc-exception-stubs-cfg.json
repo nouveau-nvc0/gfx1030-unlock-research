@@ -1,0 +1,129 @@
+{
+  "scope": "Local targeted-listing locator; no memory-value propagation or global completeness claim. Optional JX edges describe initial tables, not runtime immutability.",
+  "indirect_edges": null,
+  "reports": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-vector-roots/0057c.txt",
+      "reachable_in_window": 2,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 2,
+      "unresolved_or_external_edges": [
+        [
+          "0x57f",
+          "indirect jump a2"
+        ]
+      ],
+      "unknown_operations": [
+        "xsr.excsave2"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-vector-roots/0059c.txt",
+      "reachable_in_window": 4,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 4,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "simcall",
+        "wsr.excsave3"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-vector-roots/005bc.txt",
+      "reachable_in_window": 1,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 1,
+      "unresolved_or_external_edges": [
+        [
+          "0x5bc",
+          "exception return; dynamic resumption outside local CFG"
+        ]
+      ],
+      "unknown_operations": [
+        "rfi"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-vector-roots/005dc.txt",
+      "reachable_in_window": 1,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 2,
+      "unresolved_or_external_edges": [
+        [
+          "0x5dc",
+          "debug exception; handler/resumption unresolved"
+        ]
+      ],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-vector-roots/005fc.txt",
+      "reachable_in_window": 9,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 9,
+      "unresolved_or_external_edges": [
+        [
+          "0x610",
+          "indirect jump a3"
+        ]
+      ],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x5ff",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a2",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "16"
+        },
+        {
+          "pc": "0x601",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a3",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "20"
+        },
+        {
+          "pc": "0x60e",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a4",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "24"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-vector-roots/0061c.txt",
+      "reachable_in_window": 1,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 2,
+      "unresolved_or_external_edges": [
+        [
+          "0x61c",
+          "debug exception; handler/resumption unresolved"
+        ]
+      ],
+      "unknown_operations": [],
+      "stores": []
+    }
+  ]
+}

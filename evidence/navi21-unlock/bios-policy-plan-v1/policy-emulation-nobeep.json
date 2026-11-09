@@ -1,0 +1,144 @@
+{
+  "module_sha256": "c2e8315af4199c267380d419cf3ea369c1bdb9367402a2f040510358180df537",
+  "scope": "Offline emulation of original BDS policy instructions; mocked UEFI services; no physical hardware/firmware execution",
+  "initialization_cases": 6,
+  "policy_cases": 12,
+  "success": true,
+  "samples": [
+    {
+      "csm_protocol_present": false,
+      "configured_video": 0,
+      "effective_video": 1,
+      "mocked_services": [
+        "GetVariable(Setup), mocked input",
+        "LocateHandle(LegacyBios), mocked presence=False",
+        "Deferred protocol-notification registration, mocked"
+      ],
+      "results": [
+        {
+          "rom_kind": "legacy",
+          "efi_status": "0x8000000000000003",
+          "allowed": false
+        },
+        {
+          "rom_kind": "uefi",
+          "efi_status": "0x0",
+          "allowed": true
+        }
+      ]
+    },
+    {
+      "csm_protocol_present": false,
+      "configured_video": 1,
+      "effective_video": 1,
+      "mocked_services": [
+        "GetVariable(Setup), mocked input",
+        "LocateHandle(LegacyBios), mocked presence=False",
+        "Deferred protocol-notification registration, mocked"
+      ],
+      "results": [
+        {
+          "rom_kind": "legacy",
+          "efi_status": "0x8000000000000003",
+          "allowed": false
+        },
+        {
+          "rom_kind": "uefi",
+          "efi_status": "0x0",
+          "allowed": true
+        }
+      ]
+    },
+    {
+      "csm_protocol_present": false,
+      "configured_video": 2,
+      "effective_video": 1,
+      "mocked_services": [
+        "GetVariable(Setup), mocked input",
+        "LocateHandle(LegacyBios), mocked presence=False",
+        "Deferred protocol-notification registration, mocked"
+      ],
+      "results": [
+        {
+          "rom_kind": "legacy",
+          "efi_status": "0x8000000000000003",
+          "allowed": false
+        },
+        {
+          "rom_kind": "uefi",
+          "efi_status": "0x0",
+          "allowed": true
+        }
+      ]
+    },
+    {
+      "csm_protocol_present": true,
+      "configured_video": 0,
+      "effective_video": 0,
+      "mocked_services": [
+        "GetVariable(Setup), mocked input",
+        "LocateHandle(LegacyBios), mocked presence=True",
+        "LocateHandle(LegacyBios), mocked presence=True",
+        "Real CSM callback copied original policy; remaining callback skipped"
+      ],
+      "results": [
+        {
+          "rom_kind": "legacy",
+          "efi_status": "0x8000000000000003",
+          "allowed": false
+        },
+        {
+          "rom_kind": "uefi",
+          "efi_status": "0x8000000000000003",
+          "allowed": false
+        }
+      ]
+    },
+    {
+      "csm_protocol_present": true,
+      "configured_video": 1,
+      "effective_video": 1,
+      "mocked_services": [
+        "GetVariable(Setup), mocked input",
+        "LocateHandle(LegacyBios), mocked presence=True",
+        "LocateHandle(LegacyBios), mocked presence=True",
+        "Real CSM callback copied original policy; remaining callback skipped"
+      ],
+      "results": [
+        {
+          "rom_kind": "legacy",
+          "efi_status": "0x8000000000000003",
+          "allowed": false
+        },
+        {
+          "rom_kind": "uefi",
+          "efi_status": "0x0",
+          "allowed": true
+        }
+      ]
+    },
+    {
+      "csm_protocol_present": true,
+      "configured_video": 2,
+      "effective_video": 2,
+      "mocked_services": [
+        "GetVariable(Setup), mocked input",
+        "LocateHandle(LegacyBios), mocked presence=True",
+        "LocateHandle(LegacyBios), mocked presence=True",
+        "Real CSM callback copied original policy; remaining callback skipped"
+      ],
+      "results": [
+        {
+          "rom_kind": "legacy",
+          "efi_status": "0x0",
+          "allowed": true
+        },
+        {
+          "rom_kind": "uefi",
+          "efi_status": "0x8000000000000003",
+          "allowed": false
+        }
+      ]
+    }
+  ]
+}

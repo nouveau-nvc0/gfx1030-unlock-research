@@ -1,0 +1,17 @@
+
+/tmp/tmp720sgmx9/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00020a6c <.data+0x20a6c>:
+00020a6c: 364100   entry        a1, 0x20 ; Capstone
+   20a6f:	ad02      	mov.n	a10, a2
+00020a71: e564e1   call8        . -0x1e9b0 ; Capstone ; target=0x20c0
+   20a74:	8181ca        	l32r	a8, 0x13478 (0xfc3c)
+   20a77:	0c1b      	movi.n	a11, 1
+   20a79:	a2487e        	s8i	a10, a8, 126
+   20a7c:	ad02      	mov.n	a10, a2
+00020a7e: e561e1   call8        . -0x1e9e0 ; Capstone ; target=0x209c
+00020a81: 1df0     retw.n        ; Capstone
+	...

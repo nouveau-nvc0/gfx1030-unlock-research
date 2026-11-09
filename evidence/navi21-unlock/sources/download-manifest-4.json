@@ -1,0 +1,42 @@
+[
+  {
+    "file": "umr-register-access.c",
+    "url": "https://raw.githubusercontent.com/guaguagua/amd-umr/master/src/lib/read_reg.c",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "bc250-live-manager-README.md",
+    "url": "https://raw.githubusercontent.com/WinnieLV/bc250-cu-live-manager/main/README.md",
+    "bytes": 16250,
+    "sha256": "bd6deb0219c9468b628291358b3ab912595adc92c5d4c76db858b8de63d65ed5"
+  },
+  {
+    "file": "suse-config.sh",
+    "url": "https://raw.githubusercontent.com/openSUSE/kernel-source/stable/config.sh",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "amdgpu-kernel-history.json",
+    "url": "https://api.github.com/repos/openSUSE/kernel/commits?per_page=1&path=drivers/gpu/drm/amd/amdgpu/gfx_v10_0.c&until=2026-11-01T00:00:00Z",
+    "bytes": 3655,
+    "sha256": "c14ed83a1a5eb19049f8cbff87cbbce39229c6eccc67e75dd18df072571160c7"
+  },
+  {
+    "file": "kfd_mqd_manager_v10.c",
+    "url": "https://raw.githubusercontent.com/gregkh/linux/v7.3.1/drivers/gpu/drm/amd/amdkfd/kfd_mqd_manager_v10.c",
+    "bytes": 16349,
+    "sha256": "98bf0604a3746d483ad16027fe438ad2faf4b77d05fe2ab5770e0003c10c9ebb"
+  },
+  {
+    "file": "kfd_mqd_manager.c",
+    "url": "https://raw.githubusercontent.com/gregkh/linux/v7.3.1/drivers/gpu/drm/amd/amdkfd/kfd_mqd_manager.c",
+    "bytes": 10531,
+    "sha256": "163f49ea6cd5cf437691587970e5876f4fae3df95d565f2b4ccadfa97fb8b87c"
+  },
+  {
+    "file": "ac_gpu_info.c",
+    "url": "https://raw.githubusercontent.com/chaotic-cx/mesa-mirror/mesa-26.2.5/src/amd/common/ac_gpu_info.c",
+    "bytes": 110571,
+    "sha256": "0cede344881cdac51dcdc2f3ca5ba1ffc7bdf6ee1a89d5eed4c90b0b37fc15e1"
+  }
+]

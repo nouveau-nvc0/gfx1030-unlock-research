@@ -1,0 +1,21 @@
+
+/tmp/tmpuml9yyui/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000035b0 <.data+0x35b0>:
+000035b0: 364100   entry        a1, 0x20 ; Capstone
+    35b3:	4113e7        	l32r	a4, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    35b6:	8224ec        	l32i	a8, a4, 0x3b0
+    35b9:	203004        	extui	a3, a2, 0, 1
+    35bc:	7ce6      	movi.n	a6, -2
+    35be:	608810        	and	a8, a8, a6
+    35c1:	808320        	or	a8, a3, a8
+    35c4:	8264ec        	s32i	a8, a4, 0x3b0
+    35c7:	5224ed        	l32i	a5, a4, 0x3b4
+    35ca:	605510        	and	a5, a5, a6
+    35cd:	503320        	or	a3, a3, a5
+    35d0:	3264ed        	s32i	a3, a4, 0x3b4
+000035d3: 1df0     retw.n        ; Capstone
+    35d5:	000000        	ill

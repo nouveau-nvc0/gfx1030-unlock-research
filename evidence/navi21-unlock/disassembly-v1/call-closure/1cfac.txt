@@ -1,0 +1,25 @@
+
+/tmp/tmpxgh4cleq/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001cfac <.data+0x1cfac>:
+0001cfac: 366100   entry        a1, 0x30 ; Capstone
+0001cfaf: 5003fa   wfr          f0, a3 ; Capstone
+0001cfb2: 5012fa   wfr          f1, a2 ; Capstone
+0001cfb5: 134100   ssi          f1, a1, 0 ; Capstone
+0001cfb8: 034101   ssi          f0, a1, 4 ; Capstone
+0001cfbb: 65fdff   call8        . -0x28 ; Capstone ; target=0x1cf90
+0001cfbe: 004ada   ufloat.s     f4, a10, 0 ; Capstone
+   1cfc1:	215bd8        	l32r	a2, 0x13130 (0x2f800000)
+0001cfc4: 230101   lsi          f2, a1, 4 ; Capstone
+0001cfc7: 630100   lsi          f6, a1, 0 ; Capstone
+0001cfca: 20361a   sub.s        f3, f6, f2 ; Capstone
+0001cfcd: 5052fa   wfr          f5, a2 ; Capstone
+0001cfd0: 50442a   mul.s        f4, f4, f5 ; Capstone
+0001cfd3: 1033fa   abs.s        f3, f3 ; Capstone
+0001cfd6: 40234a   madd.s       f2, f3, f4 ; Capstone
+0001cfd9: 4022fa   rfr          a2, f2 ; Capstone
+0001cfdc: 1df0     retw.n        ; Capstone
+	...

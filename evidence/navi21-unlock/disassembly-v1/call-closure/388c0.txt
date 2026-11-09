@@ -1,0 +1,24 @@
+
+/tmp/tmp1_k9a0ty/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000388c0 <.data+0x388c0>:
+000388c0: 364100   entry        a1, 0x20 ; Capstone
+   388c3:	91b26f        	l32r	a9, 0x1478c (0xfc1c)
+   388c6:	820980        	l8ui	a8, a9, 128
+   388c9:	d17e69        	l32r	a13, 0x12ec4 (0x300fe00)
+   388cc:	0c0a      	movi.n	a10, 0
+   388ce:	8c98      	beqz.n	a8, 0x388db
+   388d0:	c02000        	memw
+   388d3:	a26d8c        	s32i	a10, a13, 0x230
+   388d6:	a24980        	s8i	a10, a9, 128
+000388d9: 1df0     retw.n        ; Capstone
+   388db:	0c0c      	movi.n	a12, 0
+   388dd:	0c5b      	movi.n	a11, 5
+   388df:	1c0a      	movi.n	a10, 16
+   388e1:	c02000        	memw
+   388e4:	d22d8a        	l32i	a13, a13, 0x228
+000388e7: 65d2c9   call8        . -0x362d8 ; Capstone ; target=0x260c
+	...

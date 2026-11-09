@@ -1,0 +1,44 @@
+
+/tmp/tmpla81vtkg/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001ca8 <.data+0x1ca8>:
+00001ca8: 364100   entry        a1, 0x20 ; Capstone
+    1cab:	0c78      	movi.n	a8, 7
+    1cad:	a156ed        	l32r	a10, 0xffffd208 (0x503f) ; inferred DRAM map 0x5ffec000
+    1cb0:	9155ed        	l32r	a9, 0xffffd204 (0x6803b200) ; inferred DRAM map 0x5ffec000
+    1cb3:	3cfb      	movi.n	a11, 63
+    1cb5:	d152ed        	l32r	a13, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    1cb8:	0c3c      	movi.n	a12, 3
+    1cba:	0c02      	movi.n	a2, 0
+    1cbc:	226d80        	s32i	a2, a13, 0x200
+    1cbf:	226d82        	s32i	a2, a13, 0x208
+    1cc2:	226d81        	s32i	a2, a13, 0x204
+    1cc5:	c26d83        	s32i	a12, a13, 0x20c
+    1cc8:	b2698e        	s32i	a11, a9, 0x238
+    1ccb:	a2698d        	s32i	a10, a9, 0x234
+    1cce:	82698c        	s32i	a8, a9, 0x230
+00001cd1: 256a02   call8        . +0x26a4 ; Capstone ; target=0x4374
+    1cd4:	e2a0ff        	movi	a14, 255
+    1cd7:	82a1f4        	movi	a8, 0x1f4
+    1cda:	f14ced        	l32r	a15, 0xffffd20c (0x5ffee264) ; inferred DRAM map 0x5ffec000
+    1cdd:	92a0c8        	movi	a9, 200
+    1ce0:	0c1a      	movi.n	a10, 1
+    1ce2:	a24f08        	s8i	a10, a15, 8
+    1ce5:	a24f0a        	s8i	a10, a15, 10
+    1ce8:	a24f0b        	s8i	a10, a15, 11
+    1ceb:	a24f0c        	s8i	a10, a15, 12
+    1cee:	a24f0d        	s8i	a10, a15, 13
+    1cf1:	a24f02        	s8i	a10, a15, 2
+    1cf4:	a24f00        	s8i	a10, a15, 0
+    1cf7:	226f5e        	s32i	a2, a15, 0x178
+    1cfa:	226f71        	s32i	a2, a15, 0x1c4
+    1cfd:	226f70        	s32i	a2, a15, 0x1c0
+    1d00:	226f72        	s32i	a2, a15, 0x1c8
+    1d03:	926f5f        	s32i	a9, a15, 0x17c
+    1d06:	826f73        	s32i	a8, a15, 0x1cc
+    1d09:	e26f74        	s32i	a14, a15, 0x1d0
+00001d0c: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,948 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "toc_receipt_sha256": "07f497dcf1eced46ddf8f08f8e72bd49033214941eac8c73b1969c5826fbaf09",
+  "header_sha256": "96352168616063a2715ee676e8290b99e9fd0596ad442434ab08687450ecbda5",
+  "save_entry": "0x31e5",
+  "direct_callers": [
+    "0x2a59",
+    "0x2a8c"
+  ],
+  "selected_toc_ids": [
+    23,
+    24,
+    25,
+    26,
+    27,
+    35,
+    36
+  ],
+  "id27_candidate": {
+    "source_port_byte": "0x3ed58",
+    "destination_relative": "0x545000",
+    "byte_count": 16384,
+    "command": "0x14004000",
+    "public_CP_DMA_ME_field_comparison": {
+      "BYTE_COUNT": 16384,
+      "SAS": 1,
+      "DAS": 0,
+      "SAIC": 1,
+      "DAIC": 0,
+      "RAW_WAIT": 0,
+      "DIS_WC": 0
+    }
+  },
+  "raw_words": [
+    {
+      "pc": "0x31e5",
+      "word": "c43ffb5c"
+    },
+    {
+      "pc": "0x31e6",
+      "word": "97c0003f"
+    },
+    {
+      "pc": "0x31e7",
+      "word": "d80300eb"
+    },
+    {
+      "pc": "0x31e8",
+      "word": "c0140000"
+    },
+    {
+      "pc": "0x31e9",
+      "word": "c54b0208"
+    },
+    {
+      "pc": "0x31ea",
+      "word": "94800039"
+    },
+    {
+      "pc": "0x31eb",
+      "word": "c54b0209"
+    },
+    {
+      "pc": "0x31ec",
+      "word": "248c0400"
+    },
+    {
+      "pc": "0x31ed",
+      "word": "94c00034"
+    },
+    {
+      "pc": "0x31ee",
+      "word": "c0260000"
+    },
+    {
+      "pc": "0x31ef",
+      "word": "c54b020a"
+    },
+    {
+      "pc": "0x31f0",
+      "word": "14ac0010"
+    },
+    {
+      "pc": "0x31f1",
+      "word": "96c00005"
+    },
+    {
+      "pc": "0x31f2",
+      "word": "cec300eb"
+    },
+    {
+      "pc": "0x31f3",
+      "word": "0aec0001"
+    },
+    {
+      "pc": "0x31f4",
+      "word": "12ec0010"
+    },
+    {
+      "pc": "0x31f5",
+      "word": "8c0035ce"
+    },
+    {
+      "pc": "0x31f6",
+      "word": "c54b020b"
+    },
+    {
+      "pc": "0x31f7",
+      "word": "14ac0010"
+    },
+    {
+      "pc": "0x31f8",
+      "word": "c54b020a"
+    },
+    {
+      "pc": "0x31f9",
+      "word": "c020ffff"
+    },
+    {
+      "pc": "0x31fa",
+      "word": "7e0a4009"
+    },
+    {
+      "pc": "0x31fb",
+      "word": "8c0035d7"
+    },
+    {
+      "pc": "0x31fc",
+      "word": "c54b0209"
+    },
+    {
+      "pc": "0x31fd",
+      "word": "1490000e"
+    },
+    {
+      "pc": "0x31fe",
+      "word": "11100002"
+    },
+    {
+      "pc": "0x31ff",
+      "word": "248c1000"
+    },
+    {
+      "pc": "0x3200",
+      "word": "94c00002"
+    },
+    {
+      "pc": "0x3201",
+      "word": "11100004"
+    },
+    {
+      "pc": "0x3202",
+      "word": "c0361400"
+    },
+    {
+      "pc": "0x3203",
+      "word": "7f53400a"
+    },
+    {
+      "pc": "0x3204",
+      "word": "c54b020b"
+    },
+    {
+      "pc": "0x3205",
+      "word": "c02cffff"
+    },
+    {
+      "pc": "0x3206",
+      "word": "7ecac009"
+    },
+    {
+      "pc": "0x3207",
+      "word": "12ec0002"
+    },
+    {
+      "pc": "0x3208",
+      "word": "c0300000"
+    },
+    {
+      "pc": "0x3209",
+      "word": "c54b0208"
+    },
+    {
+      "pc": "0x320a",
+      "word": "c02701ff"
+    },
+    {
+      "pc": "0x320b",
+      "word": "7e4a4009"
+    },
+    {
+      "pc": "0x320c",
+      "word": "12640002"
+    },
+    {
+      "pc": "0x320d",
+      "word": "c43bfb5e"
+    },
+    {
+      "pc": "0x320e",
+      "word": "c42bfb5d"
+    },
+    {
+      "pc": "0x320f",
+      "word": "c54b0209"
+    },
+    {
+      "pc": "0x3210",
+      "word": "14880003"
+    },
+    {
+      "pc": "0x3211",
+      "word": "24880003"
+    },
+    {
+      "pc": "0x3212",
+      "word": "30880003"
+    },
+    {
+      "pc": "0x3213",
+      "word": "94800003"
+    },
+    {
+      "pc": "0x3214",
+      "word": "c43b011f"
+    },
+    {
+      "pc": "0x3215",
+      "word": "c42b011e"
+    },
+    {
+      "pc": "0x3216",
+      "word": "53b80020"
+    },
+    {
+      "pc": "0x3217",
+      "word": "7faa801a"
+    },
+    {
+      "pc": "0x3218",
+      "word": "7e6a4011"
+    },
+    {
+      "pc": "0x3219",
+      "word": "56680020"
+    },
+    {
+      "pc": "0x321a",
+      "word": "c0380000"
+    },
+    {
+      "pc": "0x321b",
+      "word": "8c0030ae"
+    },
+    {
+      "pc": "0x321c",
+      "word": "c43300eb"
+    },
+    {
+      "pc": "0x321d",
+      "word": "97000004"
+    },
+    {
+      "pc": "0x321e",
+      "word": "d80300eb"
+    },
+    {
+      "pc": "0x321f",
+      "word": "c02ee000"
+    },
+    {
+      "pc": "0x3220",
+      "word": "8c0035ce"
+    },
+    {
+      "pc": "0x3221",
+      "word": "05540004"
+    },
+    {
+      "pc": "0x3222",
+      "word": "800031e9"
+    },
+    {
+      "pc": "0x3223",
+      "word": "8c0035bd"
+    },
+    {
+      "pc": "0x3224",
+      "word": "8c0035c8"
+    },
+    {
+      "pc": "0x3225",
+      "word": "90000000"
+    },
+    {
+      "pc": "0x3226",
+      "word": "c0140000"
+    },
+    {
+      "pc": "0x3227",
+      "word": "c54b0294"
+    },
+    {
+      "pc": "0x3228",
+      "word": "94800040"
+    },
+    {
+      "pc": "0x3229",
+      "word": "c00e0100"
+    },
+    {
+      "pc": "0x322a",
+      "word": "7c8cc009"
+    },
+    {
+      "pc": "0x322b",
+      "word": "98c0001c"
+    },
+    {
+      "pc": "0x322c",
+      "word": "148c0019"
+    },
+    {
+      "pc": "0x322d",
+      "word": "38d0001f"
+    },
+    {
+      "pc": "0x322e",
+      "word": "c51b02ff"
+    },
+    {
+      "pc": "0x322f",
+      "word": "95000002"
+    },
+    {
+      "pc": "0x3230",
+      "word": "08cc001f"
+    },
+    {
+      "pc": "0x3231",
+      "word": "7d8d0005"
+    },
+    {
+      "pc": "0x3232",
+      "word": "25100001"
+    },
+    {
+      "pc": "0x3233",
+      "word": "95000033"
+    },
+    {
+      "pc": "0x3247",
+      "word": "148c0008"
+    },
+    {
+      "pc": "0x3248",
+      "word": "24ccffff"
+    },
+    {
+      "pc": "0x3249",
+      "word": "c55b0295"
+    },
+    {
+      "pc": "0x324a",
+      "word": "14900005"
+    },
+    {
+      "pc": "0x324b",
+      "word": "25100007"
+    },
+    {
+      "pc": "0x324c",
+      "word": "0510324e"
+    },
+    {
+      "pc": "0x324d",
+      "word": "85000000"
+    },
+    {
+      "pc": "0x324e",
+      "word": "80003256"
+    },
+    {
+      "pc": "0x324f",
+      "word": "80003258"
+    },
+    {
+      "pc": "0x3250",
+      "word": "8000325a"
+    },
+    {
+      "pc": "0x3251",
+      "word": "80003265"
+    },
+    {
+      "pc": "0x3252",
+      "word": "80003265"
+    },
+    {
+      "pc": "0x3253",
+      "word": "80003265"
+    },
+    {
+      "pc": "0x3254",
+      "word": "80003265"
+    },
+    {
+      "pc": "0x3255",
+      "word": "80003265"
+    },
+    {
+      "pc": "0x3256",
+      "word": "cd8d0000"
+    },
+    {
+      "pc": "0x3257",
+      "word": "80003266"
+    },
+    {
+      "pc": "0x3258",
+      "word": "cd8d0000"
+    },
+    {
+      "pc": "0x3259",
+      "word": "80003266"
+    },
+    {
+      "pc": "0x325a",
+      "word": "c433fb5e"
+    },
+    {
+      "pc": "0x325b",
+      "word": "c43bfb5d"
+    },
+    {
+      "pc": "0x325c",
+      "word": "53300020"
+    },
+    {
+      "pc": "0x325d",
+      "word": "7f3b001a"
+    },
+    {
+      "pc": "0x325e",
+      "word": "11980002"
+    },
+    {
+      "pc": "0x325f",
+      "word": "7f1b0011"
+    },
+    {
+      "pc": "0x3260",
+      "word": "24900010"
+    },
+    {
+      "pc": "0x3261",
+      "word": "95000002"
+    },
+    {
+      "pc": "0x3262",
+      "word": "57300020"
+    },
+    {
+      "pc": "0x3263",
+      "word": "cf0d0000"
+    },
+    {
+      "pc": "0x3264",
+      "word": "80003266"
+    },
+    {
+      "pc": "0x3265",
+      "word": "80003265"
+    },
+    {
+      "pc": "0x3266",
+      "word": "05540002"
+    },
+    {
+      "pc": "0x3267",
+      "word": "80003227"
+    },
+    {
+      "pc": "0x3268",
+      "word": "90000000"
+    },
+    {
+      "pc": "0x3269",
+      "word": "c43bfb5c"
+    },
+    {
+      "pc": "0x326a",
+      "word": "97800055"
+    },
+    {
+      "pc": "0x326b",
+      "word": "c0140000"
+    },
+    {
+      "pc": "0x326c",
+      "word": "c54b0294"
+    },
+    {
+      "pc": "0x326d",
+      "word": "94800052"
+    },
+    {
+      "pc": "0x326e",
+      "word": "c00e0100"
+    },
+    {
+      "pc": "0x326f",
+      "word": "7c8cc009"
+    },
+    {
+      "pc": "0x3270",
+      "word": "98c0000d"
+    },
+    {
+      "pc": "0x3271",
+      "word": "148c0019"
+    },
+    {
+      "pc": "0x3272",
+      "word": "38d0001f"
+    },
+    {
+      "pc": "0x3273",
+      "word": "c51b02ff"
+    },
+    {
+      "pc": "0x3274",
+      "word": "95000002"
+    },
+    {
+      "pc": "0x3275",
+      "word": "08cc001f"
+    },
+    {
+      "pc": "0x3276",
+      "word": "7d8d0005"
+    },
+    {
+      "pc": "0x3277",
+      "word": "25100001"
+    },
+    {
+      "pc": "0x3278",
+      "word": "95000045"
+    },
+    {
+      "pc": "0x3279",
+      "word": "c54b0294"
+    },
+    {
+      "pc": "0x327a",
+      "word": "248c0001"
+    },
+    {
+      "pc": "0x327b",
+      "word": "94c00042"
+    },
+    {
+      "pc": "0x327c",
+      "word": "8000327d"
+    },
+    {
+      "pc": "0x327d",
+      "word": "c54b0294"
+    },
+    {
+      "pc": "0x327e",
+      "word": "148c0008"
+    },
+    {
+      "pc": "0x327f",
+      "word": "24ccffff"
+    },
+    {
+      "pc": "0x3280",
+      "word": "c55b0295"
+    },
+    {
+      "pc": "0x3281",
+      "word": "14900005"
+    },
+    {
+      "pc": "0x3282",
+      "word": "25100007"
+    },
+    {
+      "pc": "0x3283",
+      "word": "05103285"
+    },
+    {
+      "pc": "0x3284",
+      "word": "85000000"
+    },
+    {
+      "pc": "0x3291",
+      "word": "c433fb5e"
+    },
+    {
+      "pc": "0x3292",
+      "word": "c43bfb5d"
+    },
+    {
+      "pc": "0x3293",
+      "word": "53300020"
+    },
+    {
+      "pc": "0x3294",
+      "word": "7f3b001a"
+    },
+    {
+      "pc": "0x3295",
+      "word": "11980002"
+    },
+    {
+      "pc": "0x3296",
+      "word": "7f1b0011"
+    },
+    {
+      "pc": "0x32b6",
+      "word": "c54b0294"
+    },
+    {
+      "pc": "0x32b7",
+      "word": "24900010"
+    },
+    {
+      "pc": "0x32b8",
+      "word": "95000002"
+    },
+    {
+      "pc": "0x32b9",
+      "word": "57300020"
+    },
+    {
+      "pc": "0x32ba",
+      "word": "cf0d0000"
+    },
+    {
+      "pc": "0x32bb",
+      "word": "800032bd"
+    },
+    {
+      "pc": "0x32bc",
+      "word": "800032bc"
+    },
+    {
+      "pc": "0x32bd",
+      "word": "05540002"
+    },
+    {
+      "pc": "0x32be",
+      "word": "8000326c"
+    },
+    {
+      "pc": "0x32bf",
+      "word": "90000000"
+    }
+  ],
+  "post_toc_pairs": [
+    {
+      "file_offset": "0x35f20",
+      "word0": "0x24f84047",
+      "word1": "0x1d000",
+      "register_field": "0xf840",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x35f28",
+      "word0": "0x24f84157",
+      "word1": "0x1d000",
+      "register_field": "0xf841",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x35f30",
+      "word0": "0x24f84207",
+      "word1": "0x10",
+      "register_field": "0xf842",
+      "operation_field": 0
+    },
+    {
+      "file_offset": "0x35f38",
+      "word0": "0x24f84306",
+      "word1": "0x1",
+      "register_field": "0xf843",
+      "operation_field": 0
+    },
+    {
+      "file_offset": "0x35f40",
+      "word0": "0x26f84447",
+      "word1": "0x2e000",
+      "register_field": "0xf844",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x35f48",
+      "word0": "0x26f84557",
+      "word1": "0x2e000",
+      "register_field": "0xf845",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x35f50",
+      "word0": "0x26f84607",
+      "word1": "0x10",
+      "register_field": "0xf846",
+      "operation_field": 0
+    },
+    {
+      "file_offset": "0x35f58",
+      "word0": "0x26f84706",
+      "word1": "0x1",
+      "register_field": "0xf847",
+      "operation_field": 0
+    },
+    {
+      "file_offset": "0x35f60",
+      "word0": "0x22f84847",
+      "word1": "0xc000",
+      "register_field": "0xf848",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x35f68",
+      "word0": "0x22f84957",
+      "word1": "0xc000",
+      "register_field": "0xf849",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x35f70",
+      "word0": "0x22f84a07",
+      "word1": "0x10",
+      "register_field": "0xf84a",
+      "operation_field": 0
+    },
+    {
+      "file_offset": "0x35f78",
+      "word0": "0x22f84b06",
+      "word1": "0x1",
+      "register_field": "0xf84b",
+      "operation_field": 0
+    },
+    {
+      "file_offset": "0x35f80",
+      "word0": "0x28f84c47",
+      "word1": "0x3f000",
+      "register_field": "0xf84c",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x35f88",
+      "word0": "0x28f84d57",
+      "word1": "0x3f000",
+      "register_field": "0xf84d",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x35f90",
+      "word0": "0x28f84e07",
+      "word1": "0x10",
+      "register_field": "0xf84e",
+      "operation_field": 0
+    },
+    {
+      "file_offset": "0x35f98",
+      "word0": "0x28f84f06",
+      "word1": "0x1",
+      "register_field": "0xf84f",
+      "operation_field": 0
+    },
+    {
+      "file_offset": "0x35fa0",
+      "word0": "0x2af85047",
+      "word1": "0x80000",
+      "register_field": "0xf850",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x35fa8",
+      "word0": "0x2af85157",
+      "word1": "0x80000",
+      "register_field": "0xf851",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x35fb0",
+      "word0": "0x2af85b27",
+      "word1": "0x1fffff",
+      "register_field": "0xf85b",
+      "operation_field": 1
+    },
+    {
+      "file_offset": "0x35fb8",
+      "word0": "0x2af85c37",
+      "word1": "0x0",
+      "register_field": "0xf85c",
+      "operation_field": 1
+    },
+    {
+      "file_offset": "0x35fc0",
+      "word0": "0x2af85206",
+      "word1": "0x0",
+      "register_field": "0xf852",
+      "operation_field": 0
+    },
+    {
+      "file_offset": "0x35fc8",
+      "word0": "0x2ac82006",
+      "word1": "0x1",
+      "register_field": "0xc820",
+      "operation_field": 0
+    },
+    {
+      "file_offset": "0x35fd0",
+      "word0": "0x2cf85447",
+      "word1": "0x140000",
+      "register_field": "0xf854",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x35fd8",
+      "word0": "0x2cf85557",
+      "word1": "0x140000",
+      "register_field": "0xf855",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x35fe0",
+      "word0": "0x2cf85d27",
+      "word1": "0x3ffff",
+      "register_field": "0xf85d",
+      "operation_field": 1
+    },
+    {
+      "file_offset": "0x35fe8",
+      "word0": "0x2cf85e37",
+      "word1": "0x0",
+      "register_field": "0xf85e",
+      "operation_field": 1
+    },
+    {
+      "file_offset": "0x35ff0",
+      "word0": "0x2cc83607",
+      "word1": "0x0",
+      "register_field": "0xc836",
+      "operation_field": 0
+    },
+    {
+      "file_offset": "0x35ff8",
+      "word0": "0x2cc83706",
+      "word1": "0x1",
+      "register_field": "0xc837",
+      "operation_field": 0
+    },
+    {
+      "file_offset": "0x36000",
+      "word0": "0x39f88247",
+      "word1": "0x152400",
+      "register_field": "0xf882",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x36008",
+      "word0": "0x39f88357",
+      "word1": "0x152400",
+      "register_field": "0xf883",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x36010",
+      "word0": "0x3bf8a247",
+      "word1": "0x152d60",
+      "register_field": "0xf8a2",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x36018",
+      "word0": "0x3bf8a357",
+      "word1": "0x152d60",
+      "register_field": "0xf8a3",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x36020",
+      "word0": "0x3df8c247",
+      "word1": "0x1536c0",
+      "register_field": "0xf8c2",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x36028",
+      "word0": "0x3df8c357",
+      "word1": "0x1536c0",
+      "register_field": "0xf8c3",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x36030",
+      "word0": "0x3ff8e247",
+      "word1": "0x154020",
+      "register_field": "0xf8e2",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x36038",
+      "word0": "0x3ff8e357",
+      "word1": "0x154020",
+      "register_field": "0xf8e3",
+      "operation_field": 2
+    },
+    {
+      "file_offset": "0x36040",
+      "word0": "0xeec4507",
+      "word1": "0x3",
+      "register_field": "0xec45",
+      "operation_field": 0
+    },
+    {
+      "file_offset": "0x36048",
+      "word0": "0x10fb4607",
+      "word1": "0x1",
+      "register_field": "0xfb46",
+      "operation_field": 0
+    },
+    {
+      "file_offset": "0x36050",
+      "word0": "0x12ed8007",
+      "word1": "0x4",
+      "register_field": "0xed80",
+      "operation_field": 0
+    },
+    {
+      "file_offset": "0x36058",
+      "word0": "0x8ec8007",
+      "word1": "0x3",
+      "register_field": "0xec80",
+      "operation_field": 0
+    }
+  ],
+  "correction": "3226/3269 process two-word register initialization records atGPM294, not four-word snapshot descriptors atGPM208. The actual snapshot producer is31e5.",
+  "scope": "Direction, address construction and port behavior still depend on partial RLCG ISA interpretation. This path copies existing port data; no transformation of CC masks or gate is visible in the transfer setup. Other producers and runtime buffer contents remain open."
+}

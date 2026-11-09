@@ -1,0 +1,30 @@
+
+/tmp/tmpsiwea9m3/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000015d0 <.data+0x15d0>:
+000015d0: 364100   entry        a1, 0x20 ; Capstone
+    15d3:	205014        	extui	a5, a2, 0, 2
+    15d6:	dc85      	bnez.n	a5, 0x15f2
+    15d8:	308014        	extui	a8, a3, 0, 2
+    15db:	dc38      	bnez.n	a8, 0x15f2
+    15dd:	409014        	extui	a9, a4, 0, 2
+    15e0:	cce9      	bnez.n	a9, 0x15f2
+    15e2:	40a241        	srli	a10, a4, 2
+000015e5: 769a07   loopnez      a10, . +0xb ; Capstone
+    15e8:	b802      	l32i.n	a11, a2, 0
+    15ea:	b903      	s32i.n	a11, a3, 0
+    15ec:	4b22      	addi.n	a2, a2, 4
+    15ee:	4b33      	addi.n	a3, a3, 4
+000015f0: 1df0     retw.n        ; Capstone
+000015f2: 769409   loopnez      a4, . +0xd ; Capstone
+    15f5:	c20200        	l8ui	a12, a2, 0
+    15f8:	c24300        	s8i	a12, a3, 0
+    15fb:	1b22      	addi.n	a2, a2, 1
+    15fd:	1b33      	addi.n	a3, a3, 1
+000015ff: 1df0     retw.n        ; Capstone
+    1601:	000000        	ill
+    1604:	000000        	ill
+	...

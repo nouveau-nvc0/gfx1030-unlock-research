@@ -1,0 +1,75 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/Koshak1013/HuananzhiX99_BIOS_mods/b27e6e0909c1288639f5adfc5b8708d9f342acc6/Huananzhi%20X99-TF/2020-05-25%20%28%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D1%83%D0%B5%D1%82%D1%81%D1%8F%29/HNX99TF_200525_kot.zip",
+    "file": "/workspace/gfx1030-unlock-research/inputs/research/bios-reference/repository/Huananzhi X99-TF/2020-05-25 (\u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0443\u0435\u0442\u0441\u044f)/HNX99TF_200525_kot.zip",
+    "sha256": "2795bfe02821536e49b6f5f3aa44964c22b59ca42c2ae7071dbb0645aba87c28",
+    "git_blob_verified": true,
+    "release_digest_verified": false,
+    "bytes": 3941233,
+    "extracted": [
+      "HNX99TF_200525_kot_v011_5B7C6A7F.bin"
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Koshak1013/HuananzhiX99_BIOS_mods/b27e6e0909c1288639f5adfc5b8708d9f342acc6/Huananzhi%20X99-TF/2020-05-25%20%28%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D1%83%D0%B5%D1%82%D1%81%D1%8F%29/HNX99TF_200525_kot_nobeep.zip",
+    "file": "/workspace/gfx1030-unlock-research/inputs/research/bios-reference/repository/Huananzhi X99-TF/2020-05-25 (\u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0443\u0435\u0442\u0441\u044f)/HNX99TF_200525_kot_nobeep.zip",
+    "sha256": "5378b179759e0bc9e9cb73cc574e4e8839ff16e3fae3547e8a0308da752d6ebe",
+    "git_blob_verified": true,
+    "release_digest_verified": false,
+    "bytes": 3941264,
+    "extracted": [
+      "HNX99TF_200525_kot_v011_nobeep_4B0F504A.bin"
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Koshak1013/HuananzhiX99_BIOS_mods/b27e6e0909c1288639f5adfc5b8708d9f342acc6/Huananzhi%20X99-TF/2020-05-25%20%28%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D1%83%D0%B5%D1%82%D1%81%D1%8F%29/HNX99TF_200525_original.zip",
+    "file": "/workspace/gfx1030-unlock-research/inputs/research/bios-reference/repository/Huananzhi X99-TF/2020-05-25 (\u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0443\u0435\u0442\u0441\u044f)/HNX99TF_200525_original.zip",
+    "sha256": "2db72ed9cfe2f10fc733752231200d677b6eefc802867d955a3e38a7c81cd3dd",
+    "git_blob_verified": true,
+    "release_digest_verified": false,
+    "bytes": 4141900,
+    "extracted": [
+      "HNX99TF_200525_original_E5C88C6F.bin"
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Koshak1013/HuananzhiX99_BIOS_mods/b27e6e0909c1288639f5adfc5b8708d9f342acc6/Huananzhi%20X99-TF/2020-05-25%20%28%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D1%83%D0%B5%D1%82%D1%81%D1%8F%29/README.md",
+    "file": "/workspace/gfx1030-unlock-research/inputs/research/bios-reference/repository/Huananzhi X99-TF/2020-05-25 (\u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0443\u0435\u0442\u0441\u044f)/README.md",
+    "sha256": "03251d40d2475ff71d484b306c98fee93e91facdfafda608d9f605a0aedcd5f6",
+    "git_blob_verified": true,
+    "release_digest_verified": false,
+    "bytes": 8919,
+    "extracted": []
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Koshak1013/HuananzhiX99_BIOS_mods/b27e6e0909c1288639f5adfc5b8708d9f342acc6/README.md",
+    "file": "/workspace/gfx1030-unlock-research/inputs/research/bios-reference/repository/README.md",
+    "sha256": "4b0a44189e30b48401004a39670f20968104ccc4662c14b5acc809e963189dad",
+    "git_blob_verified": true,
+    "release_digest_verified": false,
+    "bytes": 56845,
+    "extracted": []
+  },
+  {
+    "url": "https://github.com/LongSoft/UEFITool/releases/download/A76/UEFIExtract_NE_A76_x64_linux.zip",
+    "file": "/workspace/gfx1030-unlock-research/inputs/research/bios-reference/tools/UEFIExtract_NE_A76_x64_linux.zip",
+    "sha256": "1bee0a3556d47288a0cfbfb8f08ca791a35826686cf8fb998b5f2cefdc860619",
+    "git_blob_verified": false,
+    "release_digest_verified": true,
+    "bytes": 820975,
+    "extracted": [
+      "uefiextract"
+    ]
+  },
+  {
+    "url": "https://github.com/LongSoft/IFRExtractor-RS/releases/download/v1.6.1/ifrextractor_1.6.1_linux.zip",
+    "file": "/workspace/gfx1030-unlock-research/inputs/research/bios-reference/tools/ifrextractor_1.6.1_linux.zip",
+    "sha256": "5a18e253e560270387657d0165f317d7319cf6296cd5e58b1f13074557514c57",
+    "git_blob_verified": false,
+    "release_digest_verified": true,
+    "bytes": 304409,
+    "extracted": [
+      "ifrextractor"
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+
+/tmp/tmpeg3ygiug/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001e5a4 <.data+0x1e5a4>:
+0001e5a4: 364100   entry        a1, 0x20 ; Capstone
+0001e5a7: 1df0     retw.n        ; Capstone
+   1e5a9:	000000        	ill

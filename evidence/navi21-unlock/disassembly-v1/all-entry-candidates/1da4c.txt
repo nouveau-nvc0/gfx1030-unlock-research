@@ -1,0 +1,14 @@
+
+/tmp/tmpahrayrpg/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001da4c <.data+0x1da4c>:
+0001da4c: 364100   entry        a1, 0x20 ; Capstone
+   1da4f:	a136d5        	l32r	a10, 0x12f28 (0xff8c)
+   1da52:	0c0b      	movi.n	a11, 0
+   1da54:	0c1c      	movi.n	a12, 1
+0001da56: a5120b   call8        . +0xb12c ; Capstone ; target=0x28b80
+0001da59: 1df0     retw.n        ; Capstone
+	...

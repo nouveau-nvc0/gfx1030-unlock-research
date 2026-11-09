@@ -1,0 +1,14 @@
+
+/tmp/tmpc_tayktg/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00027e04 <.data+0x27e04>:
+00027e04: 364100   entry        a1, 0x20 ; Capstone
+00027e07: 25ffff   call8        . -0xc ; Capstone ; target=0x27df8
+   27e0a:	0c08      	movi.n	a8, 0
+   27e0c:	0c12      	movi.n	a2, 1
+   27e0e:	a02883        	moveqz	a2, a8, a10
+00027e11: 1df0     retw.n        ; Capstone
+	...

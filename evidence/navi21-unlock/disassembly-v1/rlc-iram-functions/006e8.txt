@@ -1,0 +1,32 @@
+
+/tmp/tmpfmdkqpy9/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000006e8 <.data+0x6e8>:
+000006e8: 364100   entry        a1, 0x20 ; Capstone
+     6eb:	3197f2        	l32r	a3, 0xffffd148 (0x5ffee240) ; inferred DRAM map 0x5ffec000
+     6ee:	820300        	l8ui	a8, a3, 0
+     6f1:	ecf8      	bnez.n	a8, 0x724
+     6f3:	2196f2        	l32r	a2, 0xffffd14c (0x5ffed974) ; inferred DRAM map 0x5ffec000
+     6f6:	b802      	l32i.n	a11, a2, 0
+     6f8:	a80b      	l32i.n	a10, a11, 0
+     6fa:	16ea00        	beqz	a10, 0x70c
+     6fd:	4b9b      	addi.n	a9, a11, 4
+     6ff:	9902      	s32i.n	a9, a2, 0
+00000701: e00a00   callx8       a10 ; Capstone
+     704:	b802      	l32i.n	a11, a2, 0
+     706:	a22b00        	l32i	a10, a11, 0
+     709:	560aff        	bnez	a10, 0x6fd
+     70c:	a191f2        	l32r	a10, 0xffffd150 (0x0) ; inferred DRAM map 0x5ffec000
+     70f:	0c0b      	movi.n	a11, 0
+     711:	b71a08        	beq	a10, a11, 0x71d
+     714:	a190f2        	l32r	a10, 0xffffd154 (0x5ffed0e8) ; inferred DRAM map 0x5ffec000
+     717:	818ef2        	l32r	a8, 0xffffd150 (0x0) ; inferred DRAM map 0x5ffec000
+0000071a: e00800   callx8       a8 ; Capstone
+     71d:	0c1c      	movi.n	a12, 1
+     71f:	c24300        	s8i	a12, a3, 0
+00000722: 1df0     retw.n        ; Capstone
+00000724: 1df0     retw.n        ; Capstone
+	...

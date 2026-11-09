@@ -1,0 +1,136 @@
+{
+  "scope": "Static registration/signature identification. External callback implementation not supplied or executed.",
+  "source": {
+    "url": "https://raw.githubusercontent.com/tianocore/edk2/master/MdePkg/Include/Protocol/DriverHealth.h",
+    "sha256": "caa99bd1236f29801203b53d2b9e6c4e88c4cb511fd0ebd416e843a195719c11"
+  },
+  "images": [
+    {
+      "variant": "baseline",
+      "image_sha256": "a9966b48d5bdfc35387eb38572b4babbf4537da8d2b2ae4796076af9ed44f54a",
+      "guid": "2a534210-9280-41d8-ae79-cada01a2b127",
+      "registration": [
+        {
+          "pc": "0x926",
+          "bytes": "4c8d4348",
+          "instruction": "lea r8, [rbx + 0x48]"
+        },
+        {
+          "pc": "0x92a",
+          "bytes": "488d0527430000",
+          "instruction": "lea rax, [rip + 0x4327]"
+        },
+        {
+          "pc": "0x931",
+          "bytes": "498900",
+          "instruction": "mov qword ptr [r8], rax"
+        },
+        {
+          "pc": "0x934",
+          "bytes": "488d0585440000",
+          "instruction": "lea rax, [rip + 0x4485]"
+        },
+        {
+          "pc": "0x93b",
+          "bytes": "488d152eb00000",
+          "instruction": "lea rdx, [rip + 0xb02e]"
+        },
+        {
+          "pc": "0x942",
+          "bytes": "48894350",
+          "instruction": "mov qword ptr [rbx + 0x50], rax"
+        },
+        {
+          "pc": "0x946",
+          "bytes": "488b0543c50000",
+          "instruction": "mov rax, qword ptr [rip + 0xc543]"
+        },
+        {
+          "pc": "0x94d",
+          "bytes": "498d4c2428",
+          "instruction": "lea rcx, [r12 + 0x28]"
+        },
+        {
+          "pc": "0x952",
+          "bytes": "4533c9",
+          "instruction": "xor r9d, r9d"
+        },
+        {
+          "pc": "0x955",
+          "bytes": "ff9048010000",
+          "instruction": "call qword ptr [rax + 0x148]"
+        }
+      ],
+      "repair": "0x4dc0",
+      "repair_body_sha256": "0aa462c2a9255e2cb026b663b0e896223aae2f27f2bc9ec1ee49c0eba1970bdd",
+      "notify_calls": [
+        "0x4e19",
+        "0x4e21"
+      ]
+    },
+    {
+      "variant": "candidate",
+      "image_sha256": "9a68a83c01767545b9ba1713468731d6db1ea77946a142cbcbb4b4213e08674a",
+      "guid": "2a534210-9280-41d8-ae79-cada01a2b127",
+      "registration": [
+        {
+          "pc": "0x99a",
+          "bytes": "4c8d4348",
+          "instruction": "lea r8, [rbx + 0x48]"
+        },
+        {
+          "pc": "0x99e",
+          "bytes": "488d05cb420000",
+          "instruction": "lea rax, [rip + 0x42cb]"
+        },
+        {
+          "pc": "0x9a5",
+          "bytes": "498900",
+          "instruction": "mov qword ptr [r8], rax"
+        },
+        {
+          "pc": "0x9a8",
+          "bytes": "488d0529440000",
+          "instruction": "lea rax, [rip + 0x4429]"
+        },
+        {
+          "pc": "0x9af",
+          "bytes": "488d15faaf0000",
+          "instruction": "lea rdx, [rip + 0xaffa]"
+        },
+        {
+          "pc": "0x9b6",
+          "bytes": "48894350",
+          "instruction": "mov qword ptr [rbx + 0x50], rax"
+        },
+        {
+          "pc": "0x9ba",
+          "bytes": "488b050fc50000",
+          "instruction": "mov rax, qword ptr [rip + 0xc50f]"
+        },
+        {
+          "pc": "0x9c1",
+          "bytes": "498d4c2428",
+          "instruction": "lea rcx, [r12 + 0x28]"
+        },
+        {
+          "pc": "0x9c6",
+          "bytes": "4533c9",
+          "instruction": "xor r9d, r9d"
+        },
+        {
+          "pc": "0x9c9",
+          "bytes": "ff9048010000",
+          "instruction": "call qword ptr [rax + 0x148]"
+        }
+      ],
+      "repair": "0x4dd8",
+      "repair_body_sha256": "505748157bb7e2f6487621d0d3ae3ba2f391bd8fba68651e3942c3f9c1c96cc3",
+      "notify_calls": [
+        "0x4e31",
+        "0x4e39"
+      ]
+    }
+  ],
+  "passed": true
+}

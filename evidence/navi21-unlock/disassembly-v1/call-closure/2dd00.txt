@@ -1,0 +1,54 @@
+
+/tmp/tmpoumganws/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002dd00 <.data+0x2dd00>:
+0002dd00: 364100   entry        a1, 0x20 ; Capstone
+   2dd03:	0caa      	movi.n	a10, 10
+0002dd05: a587d4   call8        . -0x2b784 ; Capstone ; target=0x2580
+0002dd08: e5d5ff   call8        . -0x2a0 ; Capstone ; target=0x2da68
+   2dd0b:	cc5a      	bnez.n	a10, 0x2dd14
+   2dd0d:	0caa      	movi.n	a10, 10
+0002dd0f: 6576d4   call8        . -0x2b898 ; Capstone ; target=0x2474
+0002dd12: 1df0     retw.n        ; Capstone
+   2dd14:	b17598        	l32r	a11, 0x13ee8 (0x153ac)
+   2dd17:	0c1e      	movi.n	a14, 1
+   2dd19:	c20b82        	l8ui	a12, a11, 130
+   2dd1c:	920b7e        	l8ui	a9, a11, 126
+   2dd1f:	d20b7d        	l8ui	a13, a11, 125
+   2dd22:	a20b81        	l8ui	a10, a11, 129
+   2dd25:	17e902        	bbsi	a9, 1, 0x2dd2b
+   2dd28:	076907        	bbci	a9, 0, 0x2dd33
+   2dd2b:	276904        	bbci	a9, 2, 0x2dd33
+   2dd2e:	0c09      	movi.n	a9, 0
+   2dd30:	460000        	j	0x2dd35
+   2dd33:	0c19      	movi.n	a9, 1
+0002dd35: 909d73   maxu         a9, a13, a9 ; Capstone
+   2dd38:	820b83        	l8ui	a8, a11, 131
+   2dd3b:	c09a93        	movnez	a9, a10, a12
+   2dd3e:	c20b78        	l8ui	a12, a11, 120
+   2dd41:	909074        	extui	a9, a9, 0, 8
+   2dd44:	924b79        	s8i	a9, a11, 121
+   2dd47:	90ccc0        	sub	a12, a12, a9
+   2dd4a:	cc38      	bnez.n	a8, 0x2dd51
+   2dd4c:	0c0a      	movi.n	a10, 0
+   2dd4e:	860100        	j	0x2dd58
+   2dd51:	0c1a      	movi.n	a10, 1
+   2dd53:	0c0f      	movi.n	a15, 0
+   2dd55:	f24b83        	s8i	a15, a11, 131
+   2dd58:	a08074        	extui	a8, a10, 0, 8
+   2dd5b:	c08e93        	movnez	a8, a14, a12
+   2dd5e:	8ce8      	beqz.n	a8, 0x2dd70
+   2dd60:	a16698        	l32r	a10, 0x13ef8 (0x2dbc4)
+   2dd63:	0c1b      	movi.n	a11, 1
+   2dd65:	0c0c      	movi.n	a12, 0
+   2dd67:	0c0d      	movi.n	a13, 0
+   2dd69:	0c0e      	movi.n	a14, 0
+   2dd6b:	0c0f      	movi.n	a15, 0
+0002dd6d: a53cd4   call8        . -0x2bc34 ; Capstone ; target=0x2138
+   2dd70:	0caa      	movi.n	a10, 10
+0002dd72: 2570d4   call8        . -0x2b8fc ; Capstone ; target=0x2474
+0002dd75: 1df0     retw.n        ; Capstone
+	...

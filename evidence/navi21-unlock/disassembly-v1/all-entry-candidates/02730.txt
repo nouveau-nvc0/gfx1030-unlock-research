@@ -1,0 +1,22 @@
+
+/tmp/tmpzdhl5ljh/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00002730 <.data+0x2730>:
+00002730: 366100   entry        a1, 0x30 ; Capstone
+    2733:	ad01      	mov.n	a10, a1
+00002735: e5c7ff   call8        . -0x380 ; Capstone ; target=0x23b4
+    2738:	92010b        	l8ui	a9, a1, 11
+    273b:	0769f4        	bbci	a9, 0, 0x2733
+    273e:	a811      	l32i.n	a10, a1, 4
+    2740:	c801      	l32i.n	a12, a1, 0
+    2742:	176908        	bbci	a9, 1, 0x274e
+    2745:	b21104        	l16ui	a11, a1, 8
+00002748: e00c00   callx8       a12 ; Capstone
+    274b:	860000        	j	0x2751
+0000274e: e00c00   callx8       a12 ; Capstone
+00002751: a5c0ff   call8        . -0x3f4 ; Capstone ; target=0x235c
+    2754:	c6f6ff        	j	0x2733
+	...

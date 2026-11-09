@@ -1,0 +1,18 @@
+
+/tmp/tmp0gouy1dl/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00002e2c <.data+0x2e2c>:
+00002e2c: 362100   entry        a1, 0x10 ; Capstone
+    2e2f:	204034        	extui	a4, a2, 0, 4
+    2e32:	4a33      	add.n	a3, a3, a4
+    2e34:	fb33      	addi.n	a3, a3, 15
+    2e36:	303441        	srli	a3, a3, 4
+00002e39: 769305   loopnez      a3, . +9 ; Capstone
+00002e3c: 627200   dhi          a2, 0 ; verified QEMU encoding
+    2e3f:	22c210        	addi	a2, a2, 16
+    2e42:	302000        	dsync
+00002e45: 1df0     retw.n        ; Capstone
+	...

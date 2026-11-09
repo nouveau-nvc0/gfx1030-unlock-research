@@ -1,0 +1,409 @@
+{
+  "status": "Static data interpreted using observed load expressions; runtime mutability not excluded. MODE1 handler selects0; MODE2 core uses record1.",
+  "records": [
+    {
+      "mode_selector": 0,
+      "record": "0x11460",
+      "pointer": "0x11cf0",
+      "count": 19,
+      "descriptors": [
+        {
+          "word": "0xb",
+          "argument": 0,
+          "flags": "0x39",
+          "control_address_formula": "0x100b008"
+        },
+        {
+          "word": "0xc",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x100c008"
+        },
+        {
+          "word": "0x114",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1114008"
+        },
+        {
+          "word": "0x29",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1029008"
+        },
+        {
+          "word": "0x28",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1028008"
+        },
+        {
+          "word": "0x10",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1010008"
+        },
+        {
+          "word": "0xf",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x100f008"
+        },
+        {
+          "word": "0x22",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1022008"
+        },
+        {
+          "word": "0x23",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1023008"
+        },
+        {
+          "word": "0x2e",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x102e008"
+        },
+        {
+          "word": "0x80",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1080008"
+        },
+        {
+          "word": "0x96",
+          "argument": 0,
+          "flags": "0x3",
+          "control_address_formula": "0x1096008"
+        },
+        {
+          "word": "0x97",
+          "argument": 0,
+          "flags": "0x3",
+          "control_address_formula": "0x1097008"
+        },
+        {
+          "word": "0x98",
+          "argument": 0,
+          "flags": "0x3",
+          "control_address_formula": "0x1098008"
+        },
+        {
+          "word": "0x99",
+          "argument": 0,
+          "flags": "0x3",
+          "control_address_formula": "0x1099008"
+        },
+        {
+          "word": "0x9a",
+          "argument": 0,
+          "flags": "0x3",
+          "control_address_formula": "0x109a008"
+        },
+        {
+          "word": "0x9b",
+          "argument": 0,
+          "flags": "0x3",
+          "control_address_formula": "0x109b008"
+        },
+        {
+          "word": "0x9c",
+          "argument": 0,
+          "flags": "0x3",
+          "control_address_formula": "0x109c008"
+        },
+        {
+          "word": "0x9d",
+          "argument": 0,
+          "flags": "0x3",
+          "control_address_formula": "0x109d008"
+        }
+      ]
+    },
+    {
+      "mode_selector": 1,
+      "record": "0x11470",
+      "pointer": "0x11d90",
+      "count": 1,
+      "descriptors": [
+        {
+          "word": "0xb",
+          "argument": 0,
+          "flags": "0x31",
+          "control_address_formula": "0x100b008"
+        }
+      ]
+    },
+    {
+      "mode_selector": 2,
+      "record": "0x11480",
+      "pointer": "0x11da0",
+      "count": 21,
+      "descriptors": [
+        {
+          "word": "0xb",
+          "argument": 0,
+          "flags": "0x39",
+          "control_address_formula": "0x100b008"
+        },
+        {
+          "word": "0xc",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x100c008"
+        },
+        {
+          "word": "0x114",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1114008"
+        },
+        {
+          "word": "0x29",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1029008"
+        },
+        {
+          "word": "0x28",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1028008"
+        },
+        {
+          "word": "0x10",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1010008"
+        },
+        {
+          "word": "0xf",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x100f008"
+        },
+        {
+          "word": "0x12",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1012008"
+        },
+        {
+          "word": "0x22",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1022008"
+        },
+        {
+          "word": "0x23",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1023008"
+        },
+        {
+          "word": "0x2e",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x102e008"
+        },
+        {
+          "word": "0x80",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1080008"
+        },
+        {
+          "word": "0x96",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1096008"
+        },
+        {
+          "word": "0x97",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1097008"
+        },
+        {
+          "word": "0x98",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1098008"
+        },
+        {
+          "word": "0x99",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1099008"
+        },
+        {
+          "word": "0x9a",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x109a008"
+        },
+        {
+          "word": "0x9b",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x109b008"
+        },
+        {
+          "word": "0x9c",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x109c008"
+        },
+        {
+          "word": "0x9d",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x109d008"
+        },
+        {
+          "word": "0xaa",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x10aa008"
+        }
+      ]
+    },
+    {
+      "mode_selector": 3,
+      "record": "0x11490",
+      "pointer": "0x11da0",
+      "count": 21,
+      "descriptors": [
+        {
+          "word": "0xb",
+          "argument": 0,
+          "flags": "0x39",
+          "control_address_formula": "0x100b008"
+        },
+        {
+          "word": "0xc",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x100c008"
+        },
+        {
+          "word": "0x114",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1114008"
+        },
+        {
+          "word": "0x29",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1029008"
+        },
+        {
+          "word": "0x28",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1028008"
+        },
+        {
+          "word": "0x10",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1010008"
+        },
+        {
+          "word": "0xf",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x100f008"
+        },
+        {
+          "word": "0x12",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1012008"
+        },
+        {
+          "word": "0x22",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1022008"
+        },
+        {
+          "word": "0x23",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1023008"
+        },
+        {
+          "word": "0x2e",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x102e008"
+        },
+        {
+          "word": "0x80",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1080008"
+        },
+        {
+          "word": "0x96",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1096008"
+        },
+        {
+          "word": "0x97",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1097008"
+        },
+        {
+          "word": "0x98",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1098008"
+        },
+        {
+          "word": "0x99",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x1099008"
+        },
+        {
+          "word": "0x9a",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x109a008"
+        },
+        {
+          "word": "0x9b",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x109b008"
+        },
+        {
+          "word": "0x9c",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x109c008"
+        },
+        {
+          "word": "0x9d",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x109d008"
+        },
+        {
+          "word": "0xaa",
+          "argument": 0,
+          "flags": "0x1",
+          "control_address_formula": "0x10aa008"
+        }
+      ]
+    }
+  ]
+}

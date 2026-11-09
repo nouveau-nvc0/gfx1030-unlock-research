@@ -1,0 +1,5 @@
+# Keep separate from Xtensa's Capstone 6 environment.
+capstone==5.0.9
+pefile==2024.8.26
+unicorn==2.1.4
+uefi_firmware==1.16

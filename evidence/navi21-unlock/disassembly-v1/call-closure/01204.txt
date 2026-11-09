@@ -1,0 +1,31 @@
+
+/tmp/tmp2rgusj0c/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001204 <.data+0x1204>:
+00001204: 364100   entry        a1, 0x20 ; Capstone
+    1207:	b170fe        	l32r	a11, 0xbc8 (0x326fe00)
+    120a:	820211        	l8ui	a8, a2, 17
+    120d:	c20210        	l8ui	a12, a2, 16
+    1210:	ecc8      	bnez.n	a8, 0x1240
+    1212:	b0bcb0        	addx8	a11, a12, a11
+    1215:	0cfd      	movi.n	a13, 15
+    1217:	c02000        	memw
+    121a:	a22bc0        	l32i	a10, a11, 0x300
+    121d:	a0a034        	extui	a10, a10, 0, 4
+    1220:	8c1a      	beqz.n	a10, 0x1225
+    1222:	d79af1        	bne	a10, a13, 0x1217
+    1225:	b15ffe        	l32r	a11, 0xba4 (0x7c6c)
+    1228:	babc      	add.n	a11, a12, a11
+    122a:	a24b80        	s8i	a10, a11, 128
+    122d:	d79a0f        	bne	a10, a13, 0x1240
+    1230:	0c2b      	movi.n	a11, 2
+    1232:	d14dfe        	l32r	a13, 0xb68 (0x300fe00)
+    1235:	0c3a      	movi.n	a10, 3
+    1237:	c02000        	memw
+    123a:	d22d8a        	l32i	a13, a13, 0x228
+0000123d: e53c01   call8        . +0x13d0 ; Capstone ; target=0x260c
+00001240: 1df0     retw.n        ; Capstone
+	...

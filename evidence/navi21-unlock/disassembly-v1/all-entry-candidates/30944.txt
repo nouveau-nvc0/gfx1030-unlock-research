@@ -1,0 +1,34 @@
+
+/tmp/tmp4m03vwf7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00030944 <.data+0x30944>:
+00030944: 364100   entry        a1, 0x20 ; Capstone
+   30947:	a2a06c        	movi	a10, 108
+   3094a:	0c0b      	movi.n	a11, 0
+0003094c: e5fdff   call8        . -0x20 ; Capstone ; target=0x3092c
+   3094f:	5c4a      	movi.n	a10, 84
+   30951:	0c0b      	movi.n	a11, 0
+00030953: a5fdff   call8        . -0x24 ; Capstone ; target=0x3092c
+   30956:	a2a0aa        	movi	a10, 170
+   30959:	0c0b      	movi.n	a11, 0
+0003095b: 25fdff   call8        . -0x2c ; Capstone ; target=0x3092c
+   3095e:	2cba      	movi.n	a10, 43
+   30960:	0c0b      	movi.n	a11, 0
+00030962: a5fcff   call8        . -0x34 ; Capstone ; target=0x3092c
+   30965:	0c3a      	movi.n	a10, 3
+   30967:	0c0b      	movi.n	a11, 0
+00030969: 25fcff   call8        . -0x3c ; Capstone ; target=0x3092c
+   3096c:	3c1a      	movi.n	a10, 49
+   3096e:	0c0b      	movi.n	a11, 0
+00030970: a5fbff   call8        . -0x44 ; Capstone ; target=0x3092c
+   30973:	4c6a      	movi.n	a10, 70
+   30975:	0c0b      	movi.n	a11, 0
+00030977: 65fbff   call8        . -0x48 ; Capstone ; target=0x3092c
+   3097a:	2c4a      	movi.n	a10, 36
+   3097c:	0c0b      	movi.n	a11, 0
+0003097e: e5faff   call8        . -0x50 ; Capstone ; target=0x3092c
+00030981: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,19 @@
+
+/tmp/tmpfh__g29r/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000017c0 <.data+0x17c0>:
+000017c0: 364100   entry        a1, 0x20 ; Capstone
+    17c3:	206200        	rsil	a2, 2
+    17c6:	9119fd        	l32r	a9, 0xc2c (0x7660)
+    17c9:	0c0a      	movi.n	a10, 0
+    17cb:	0c48      	movi.n	a8, 4
+000017cd: 76a804   loopgtz      a8, . +8 ; Capstone
+    17d0:	a2697f        	s32i	a10, a9, 0x1fc
+    17d3:	4b99      	addi.n	a9, a9, 4
+000017d5: e52600   call8        . +0x270 ; Capstone ; target=0x1a44
+    17d8:	20e613        	wsr.ps	a2
+000017db: 1df0     retw.n        ; Capstone
+    17dd:	000000        	ill

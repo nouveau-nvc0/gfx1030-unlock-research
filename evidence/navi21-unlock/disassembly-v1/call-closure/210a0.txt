@@ -1,0 +1,13 @@
+
+/tmp/tmpk5udmsw_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000210a0 <.data+0x210a0>:
+000210a0: 364100   entry        a1, 0x20 ; Capstone
+   210a3:	3109c9        	l32r	a3, 0x134c8 (0xfd24)
+   210a6:	22237f        	l32i	a2, a3, 0x1fc
+   210a9:	1b22      	addi.n	a2, a2, 1
+   210ab:	22637f        	s32i	a2, a3, 0x1fc
+000210ae: 1df0     retw.n        ; Capstone

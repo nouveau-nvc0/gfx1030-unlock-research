@@ -1,0 +1,17 @@
+
+/tmp/tmpwhzskn65/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000251cc <.data+0x251cc>:
+000251cc: 364100   entry        a1, 0x20 ; Capstone
+   251cf:	3116b7        	l32r	a3, 0x12e28 (0x9c00)
+   251d2:	81a1b9        	l32r	a8, 0x13858 (0xa634)
+   251d5:	3223e9        	l32i	a3, a3, 0x3a4
+   251d8:	82287f        	l32i	a8, a8, 0x1fc
+   251db:	202310        	and	a2, a3, a2
+   251de:	0c13      	movi.n	a3, 1
+   251e0:	202810        	and	a2, a8, a2
+   251e3:	202393        	movnez	a2, a3, a2
+000251e6: 1df0     retw.n        ; Capstone

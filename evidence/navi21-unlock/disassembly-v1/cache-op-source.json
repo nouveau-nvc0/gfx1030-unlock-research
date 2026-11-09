@@ -1,0 +1,10 @@
+{
+  "url": "https://raw.githubusercontent.com/NationalSecurityAgency/ghidra/master/Ghidra/Processors/Xtensa/data/languages/xtensaInstructions.sinc",
+  "sha256": "d7fcfdc28dd216ba02e5b202c1c4fd61d35885c7b525e6ded7c3ab2dfa40196d",
+  "qemu": {
+    "url": "https://raw.githubusercontent.com/qemu/qemu/master/target/xtensa/core-de233_fpu/xtensa-modules.c.inc",
+    "sha256": "70717c4060f356ad038def74241c4de76cbd57758edd19616ad449222a04d0a7"
+  },
+  "cadence": "https://www.cadence.com/content/dam/cadence-www/global/en_US/documents/tools/silicon-solutions/compute-ip/isa-summary.pdf table218 PDF page667",
+  "note": "Ghidra LICW pattern disagrees; use QEMU/Cadence r=2, not Ghidra op1=2."
+}

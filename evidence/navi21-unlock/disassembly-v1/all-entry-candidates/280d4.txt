@@ -1,0 +1,33 @@
+
+/tmp/tmpk_9qy154/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000280d4 <.data+0x280d4>:
+000280d4: 364100   entry        a1, 0x20 ; Capstone
+   280d7:	51deab        	l32r	a5, 0x13050 (0xaaf0)
+   280da:	2042f0        	subx8	a4, a2, a2
+   280dd:	5044a0        	addx4	a4, a4, a5
+   280e0:	92047d        	l8ui	a9, a4, 125
+   280e3:	81f5ab        	l32r	a8, 0x130b8 (0xafbc)
+   280e6:	1caa      	movi.n	a10, 26
+   280e8:	a099d1        	mul16s	a9, a9, a10
+   280eb:	62241c        	l32i	a6, a4, 112
+   280ee:	9a88      	add.n	a8, a8, a9
+   280f0:	82087d        	l8ui	a8, a8, 125
+   280f3:	91c4ab        	l32r	a9, 0x13004 (0xfffff)
+   280f6:	8a66      	add.n	a6, a6, a8
+   280f8:	81d8ab        	l32r	a8, 0x13058 (0x11ffe00)
+   280fb:	906610        	and	a6, a6, a9
+   280fe:	8a66      	add.n	a6, a6, a8
+   28100:	c02000        	memw
+   28103:	81eeab        	l32r	a8, 0x130bc (0xffffdfff)
+   28106:	522680        	l32i	a5, a6, 0x200
+   28109:	805510        	and	a5, a5, a8
+   2810c:	c02000        	memw
+   2810f:	526680        	s32i	a5, a6, 0x200
+   28112:	0c03      	movi.n	a3, 0
+   28114:	324480        	s8i	a3, a4, 128
+00028117: 1df0     retw.n        ; Capstone
+   28119:	000000        	ill

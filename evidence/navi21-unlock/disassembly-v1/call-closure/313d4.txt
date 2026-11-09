@@ -1,0 +1,26 @@
+
+/tmp/tmp9jlyhj8i/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000313d4 <.data+0x313d4>:
+000313d4: 364100   entry        a1, 0x20 ; Capstone
+   313d7:	814487        	l32r	a8, 0x130e8 (0x3a83126f)
+000313da: 5012fa   wfr          f1, a2 ; Capstone
+000313dd: 5008fa   wfr          f0, a8 ; Capstone
+000313e0: 10004b   olt.s        b0, f0, f1 ; Capstone
+000313e3: 3001fa   const.s      f0, 1 ; Capstone
+000313e6: 76001d   bf           b0, . +0x21 ; Capstone
+   313e9:	915488        	l32r	a9, 0x1353c (0x49742400)
+000313ec: 5029fa   wfr          f2, a9 ; Capstone
+000313ef: 10122a   mul.s        f1, f2, f1 ; Capstone
+000313f2: 40a1fa   rfr          a10, f1 ; Capstone
+000313f5: 659a07   call8        . +0x79a8 ; Capstone ; target=0x38d9c
+   313f8:	b12887        	l32r	a11, 0x13098 (0x447a0000)
+000313fb: 503afa   wfr          f3, a10 ; Capstone
+000313fe: 504bfa   wfr          f4, a11 ; Capstone
+00031401: 40032a   mul.s        f0, f3, f4 ; Capstone
+   31404:	c6ffff        	j	0x31407
+00031407: 4020fa   rfr          a2, f0 ; Capstone
+0003140a: 1df0     retw.n        ; Capstone

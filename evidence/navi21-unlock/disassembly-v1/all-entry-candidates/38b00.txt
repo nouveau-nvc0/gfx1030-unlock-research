@@ -1,0 +1,57 @@
+
+/tmp/tmpou1_6cse/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00038b00 <.data+0x38b00>:
+00038b00: 364100   entry        a1, 0x20 ; Capstone
+   38b03:	0c8a      	movi.n	a10, 8
+00038b05: a5a7c9   call8        . -0x36584 ; Capstone ; target=0x2580
+   38b08:	0c0a      	movi.n	a10, 0
+00038b0a: e5e1ff   call8        . -0x1e0 ; Capstone ; target=0x38928
+   38b0d:	0c0a      	movi.n	a10, 0
+   38b0f:	0c0b      	movi.n	a11, 0
+00038b11: a5ddff   call8        . -0x224 ; Capstone ; target=0x388ec
+00038b14: a5daff   call8        . -0x254 ; Capstone ; target=0x388c0
+   38b17:	0c8a      	movi.n	a10, 8
+00038b19: a595c9   call8        . -0x366a4 ; Capstone ; target=0x2474
+   38b1c:	b14f69        	l32r	a11, 0x13058 (0x11ffe00)
+   38b1f:	a13969        	l32r	a10, 0x13004 (0xfffff)
+   38b22:	21606a        	l32r	a2, 0x134a4 (0xef94)
+   38b25:	92a004        	movi	a9, 4
+   38b28:	82a00d        	movi	a8, 13
+   38b2b:	92624d        	s32i	a9, a2, 0x134
+   38b2e:	911e6f        	l32r	a9, 0x147a8 (0xee24)
+00038b31: 76a812   loopgtz      a8, . +0x16 ; Capstone
+   38b34:	c2297f        	l32i	a12, a9, 0x1fc
+   38b37:	a0cc10        	and	a12, a12, a10
+   38b3a:	bacc      	add.n	a12, a12, a11
+   38b3c:	c02000        	memw
+   38b3f:	c22c80        	l32i	a12, a12, 0x200
+   38b42:	c26980        	s32i	a12, a9, 0x200
+   38b45:	8b99      	addi.n	a9, a9, 8
+   38b47:	f1f369        	l32r	a15, 0x13314 (0x3010f00)
+   38b4a:	0c09      	movi.n	a9, 0
+   38b4c:	92427c        	s8i	a9, a2, 124
+   38b4f:	e80f      	l32i.n	a14, a15, 0
+   38b51:	82ac03        	movi	a8, 0xfffffc03
+   38b54:	80ee10        	and	a14, a14, a8
+   38b57:	e90f      	s32i.n	a14, a15, 0
+   38b59:	d1f269        	l32r	a13, 0x13324 (0x3010a00)
+   38b5c:	f1a76a        	l32r	a15, 0x135f8 (0x50010000)
+   38b5f:	e1ef69        	l32r	a14, 0x1331c (0x3030600)
+   38b62:	c02000        	memw
+   38b65:	d22d24        	l32i	a13, a13, 144
+   38b68:	80dd11        	slli	a13, a13, 8
+   38b6b:	f0dd20        	or	a13, a13, a15
+   38b6e:	c02000        	memw
+   38b71:	d90e      	s32i.n	a13, a14, 0
+   38b73:	a1b66a        	l32r	a10, 0x1364c (0xf150)
+00038b76: a58dc9   call8        . -0x36724 ; Capstone ; target=0x2450
+00038b79: 658bc9   call8        . -0x36748 ; Capstone ; target=0x2430
+   38b7c:	a2626c        	s32i	a10, a2, 0x1b0
+   38b7f:	0c1a      	movi.n	a10, 1
+   38b81:	a2427d        	s8i	a10, a2, 125
+00038b84: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,156 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01ca8.txt",
+      "sha256": "723a9e1c6e03570c7954fe81d0a12c809bf8037aa3ca3043a68b59de325872a8",
+      "byte_checked_records": 36
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+      "sha256": "f31bcf379136937e42694717f8a664afdb55971590916f669b1aeec1cbd812e3",
+      "byte_checked_records": 237
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/029c4.txt",
+      "sha256": "004b90de153e099f16910b7750fc576aed06af1f5bfdccc9a85167e073a7e644",
+      "byte_checked_records": 15
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/029ec.txt",
+      "sha256": "33bd262af9bcf162bc9478839addb334254b0d02dddcb69430f9b9aedb1bd481",
+      "byte_checked_records": 11
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02a0c.txt",
+      "sha256": "72e2de85cd3fb803b168baee5875e0a2af639a0f772ecb9c2d9259cd95833def",
+      "byte_checked_records": 67
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02ab8.txt",
+      "sha256": "55dee59ff9c26cbd15a16bca58a1c093a036d914bc070a47130429715765a905",
+      "byte_checked_records": 55
+    }
+  ],
+  "locator_sha256": "9cc4d7459fbed824ebcecf2ef6f8826a5b8a5c7db698ea01dac6332a536eabe1",
+  "selector_29c4": {
+    "coefficient_reads": [
+      "0x5ffee27c",
+      "0x5ffee280",
+      "0x5ffee284",
+      "0x5ffee288",
+      "0x5ffee28c",
+      "0x5ffee290",
+      "0x5ffee294",
+      "0x5ffee298",
+      "0x5ffee29c",
+      "0x5ffee2a0",
+      "0x5ffee2a4",
+      "0x5ffee2a8",
+      "0x5ffee2ac",
+      "0x5ffee2b0",
+      "0x5ffee2b4"
+    ],
+    "abstract_outcomes": 32768,
+    "possible_return_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  "selector_29ec": {
+    "derived_integer_reads": [
+      "0x5ffee388",
+      "0x5ffee38c",
+      "0x5ffee390",
+      "0x5ffee394",
+      "0x5ffee398",
+      "0x5ffee39c",
+      "0x5ffee3a0",
+      "0x5ffee3a4",
+      "0x5ffee3a8",
+      "0x5ffee3ac",
+      "0x5ffee3b0",
+      "0x5ffee3b4",
+      "0x5ffee3b8",
+      "0x5ffee3bc",
+      "0x5ffee3c0"
+    ],
+    "same_return_bound": [
+      0,
+      15
+    ]
+  },
+  "ring": {
+    "index_address": "0x5ffee424",
+    "known_fixed_writers": [
+      {
+        "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01ca8.txt",
+        "pc": "0x1cfd",
+        "operation": "s32i",
+        "address": "0x5ffee424",
+        "address_candidates": [],
+        "source": "a2",
+        "source_constant": 0,
+        "base": "a15",
+        "offset": "0x1c0"
+      },
+      {
+        "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02a0c.txt",
+        "pc": "0x2a70",
+        "operation": "s32i",
+        "address": "0x5ffee424",
+        "address_candidates": [],
+        "source": "a14",
+        "source_constant": null,
+        "base": "a2",
+        "offset": "0x1c0"
+      },
+      {
+        "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02ab8.txt",
+        "pc": "0x2aff",
+        "operation": "s32i",
+        "address": "0x5ffee424",
+        "address_candidates": [],
+        "source": "a10",
+        "source_constant": null,
+        "base": "a12",
+        "offset": "0x1c0"
+      }
+    ],
+    "write_addresses": [
+      "0x5ffee3e4",
+      "0x5ffee3e8",
+      "0x5ffee3ec",
+      "0x5ffee3f0",
+      "0x5ffee3f4",
+      "0x5ffee3f8",
+      "0x5ffee3fc",
+      "0x5ffee400",
+      "0x5ffee404",
+      "0x5ffee408",
+      "0x5ffee40c",
+      "0x5ffee410",
+      "0x5ffee414",
+      "0x5ffee418",
+      "0x5ffee41c",
+      "0x5ffee420"
+    ],
+    "gate_word_index": 27,
+    "invariant": "Initializer0, both updates (old+1)&15; conditional on no other writer."
+  },
+  "scope": "Local selector bounds and conditional ring invariant. No proof of all index writers, all coefficient consumers, or complete later dataflow."
+}

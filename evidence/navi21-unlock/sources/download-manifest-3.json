@@ -1,0 +1,53 @@
+[
+  {
+    "file": "bc250-cu_map.sh",
+    "url": "https://raw.githubusercontent.com/duggasco/bc250-40cu-unlock/main/scripts/cu_map.sh",
+    "bytes": 3919,
+    "sha256": "123cac725f66a3c5e02927cae0fc39cd220b78215b54bdb67620f62e6a1be513"
+  },
+  {
+    "file": "umr-current-CMakeLists.txt",
+    "url": "https://gitlab.freedesktop.org/tomstdenis/umr/-/raw/master/CMakeLists.txt",
+    "error": "HTTP Error 404: "
+  },
+  {
+    "file": "umr-mirror-tree.json",
+    "url": "https://api.github.com/repos/guaguagua/amd-umr/git/trees/master?recursive=1",
+    "bytes": 56318,
+    "sha256": "7435e1ba9b2c15997dd762dcf0410af157a579d800eb1f2d7cc1a710e8c2095c"
+  },
+  {
+    "file": "suse-kernel-branch.json",
+    "url": "https://api.github.com/repos/openSUSE/kernel-source/branches/stable",
+    "bytes": 5744,
+    "sha256": "bfc08260336571c81b3a7a45a95d415ed298c9670dbdf52972e46734d6ce2539"
+  },
+  {
+    "file": "atomfirmware.h",
+    "url": "https://raw.githubusercontent.com/gregkh/linux/v7.3.1/drivers/gpu/drm/amd/include/atomfirmware.h",
+    "bytes": 176062,
+    "sha256": "b389f8aed3dc383b9a3273bb7ea2c46234c48febe1e00d35405821ae2d6fee97"
+  },
+  {
+    "file": "atom.h",
+    "url": "https://raw.githubusercontent.com/gregkh/linux/v7.3.1/drivers/gpu/drm/amd/include/atom.h",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "amdgpu_atomfirmware.c",
+    "url": "https://raw.githubusercontent.com/gregkh/linux/v7.3.1/drivers/gpu/drm/amd/amdgpu/amdgpu_atomfirmware.c",
+    "bytes": 33608,
+    "sha256": "de59a1fd434475ce1805dacce31cdcef4f7464cdd463d002c42cf1d86736601c"
+  },
+  {
+    "file": "gfx_v10_0-v7.3.c",
+    "url": "https://raw.githubusercontent.com/torvalds/linux/v7.3/drivers/gpu/drm/amd/amdgpu/gfx_v10_0.c",
+    "bytes": 462750,
+    "sha256": "3b2013dcb603845c3785fe02fc9aeee848b391f10d462e9384a1e4f370a4fb1b"
+  },
+  {
+    "file": "gfx10_hwreg.rst",
+    "url": "https://raw.githubusercontent.com/llvm/llvm-project/main/llvm/docs/AMDGPU/gfx10_hwreg.rst",
+    "error": "HTTP Error 404: Not Found"
+  }
+]

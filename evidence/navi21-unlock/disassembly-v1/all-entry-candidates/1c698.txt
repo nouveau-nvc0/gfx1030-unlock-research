@@ -1,0 +1,29 @@
+
+/tmp/tmp6bcxawkp/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001c698 <.data+0x1c698>:
+0001c698: 364100   entry        a1, 0x20 ; Capstone
+   1c69b:	206074        	extui	a6, a2, 0, 8
+   1c69e:	7180da        	l32r	a7, 0x130a0 (0x74e0)
+   1c6a1:	206200        	rsil	a2, 2
+   1c6a4:	82271d        	l32i	a8, a7, 116
+   1c6a7:	520788        	l8ui	a5, a7, 136
+   1c6aa:	376820        	bbci	a8, 3, 0x1c6ce
+0001c6ad: 25d8e5   call8        . -0x1a27c ; Capstone ; target=0x2430
+   1c6b0:	b17dda        	l32r	a11, 0x130a4 (0x7374)
+   1c6b3:	1b95      	addi.n	a9, a5, 1
+   1c6b5:	c0c511        	slli	a12, a5, 4
+   1c6b8:	cabb      	add.n	a11, a11, a12
+   1c6ba:	426b82        	s32i	a4, a11, 0x208
+   1c6bd:	626b81        	s32i	a6, a11, 0x204
+   1c6c0:	326b80        	s32i	a3, a11, 0x200
+   1c6c3:	a26b7f        	s32i	a10, a11, 0x1fc
+   1c6c6:	0caa      	movi.n	a10, 10
+0001c6c8: a099e2   remu         a9, a9, a10 ; Capstone
+   1c6cb:	924788        	s8i	a9, a7, 136
+   1c6ce:	20e613        	wsr.ps	a2
+0001c6d1: 1df0     retw.n        ; Capstone
+	...

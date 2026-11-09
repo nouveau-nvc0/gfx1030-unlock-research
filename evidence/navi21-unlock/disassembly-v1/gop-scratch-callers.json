@@ -1,0 +1,391 @@
+{
+  "scope": "Reference x64 direct references in linear listing, PE runtime-function entry CFG. Calls conservatively kill Microsoft x64 volatile registers; preserved registers assumed ABI compliant. No runtime ROM immutability or alternate-entry proof.",
+  "variant": "baseline",
+  "writer": "0x2cb8",
+  "image_sha256": "a9966b48d5bdfc35387eb38572b4babbf4537da8d2b2ae4796076af9ed44f54a",
+  "transfer_fixtures_passed": 6,
+  "callers": [
+    {
+      "site": "0x8a9",
+      "function": "0x720",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x8c2",
+      "function": "0x720",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x9b0",
+      "function": "0x720",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x9e0",
+      "function": "0x720",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0xa5c",
+      "function": "0x720",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0xaaa",
+      "function": "0x720",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0xb57",
+      "function": "0x720",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0xbef",
+      "function": "0x720",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0xc8e",
+      "function": "0x720",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0xce0",
+      "function": "0x720",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0xd20",
+      "function": "0x720",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0xe66",
+      "function": "0xdfc",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0xf3e",
+      "function": "0xdfc",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x1a74",
+      "function": "0x1914",
+      "reachable": true,
+      "input_index": 10,
+      "register_index": 86,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x1bed",
+      "function": "0x1914",
+      "reachable": true,
+      "input_index": 0,
+      "register_index": 76,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x2860",
+      "function": "0x27d4",
+      "reachable": true,
+      "input_index": 6,
+      "register_index": 82,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x29fd",
+      "function": "0x29b4",
+      "reachable": true,
+      "input_index": 0,
+      "register_index": 76,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x2af1",
+      "function": "0x2ab0",
+      "reachable": true,
+      "input_index": 0,
+      "register_index": 76,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x2b28",
+      "function": "0x2ab0",
+      "reachable": true,
+      "input_index": 0,
+      "register_index": 76,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x2bee",
+      "function": "0x2bb4",
+      "reachable": true,
+      "input_index": 2,
+      "register_index": 78,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x350e",
+      "function": "0x348c",
+      "reachable": true,
+      "input_index": 3,
+      "register_index": 79,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x353b",
+      "function": "0x3514",
+      "reachable": true,
+      "input_index": 5,
+      "register_index": 81,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x3a22",
+      "function": "0x3a00",
+      "reachable": true,
+      "input_index": 0,
+      "register_index": 76,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x3a63",
+      "function": "0x3a00",
+      "reachable": true,
+      "input_index": 0,
+      "register_index": 76,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x3ad2",
+      "function": "0x3a00",
+      "reachable": true,
+      "input_index": 0,
+      "register_index": 76,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x4ffb",
+      "function": "0x4ed0",
+      "reachable": true,
+      "input_index": 0,
+      "register_index": 76,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x5013",
+      "function": "0x4ed0",
+      "reachable": true,
+      "input_index": 0,
+      "register_index": 76,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x6ce9",
+      "function": "0x6bd4",
+      "reachable": true,
+      "input_index": 7,
+      "register_index": 83,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x6da3",
+      "function": "0x6bd4",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x7090",
+      "function": "0x6e58",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x721b",
+      "function": "0x6e58",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x7361",
+      "function": "0x6e58",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x738d",
+      "function": "0x6e58",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x7502",
+      "function": "0x6e58",
+      "reachable": true,
+      "input_index": 8,
+      "register_index": 84,
+      "flow_gaps": 0
+    },
+    {
+      "site": "0x7b8a",
+      "function": "0x7b24",
+      "reachable": true,
+      "input_index": 10,
+      "register_index": 86,
+      "flow_gaps": 0
+    }
+  ],
+  "functions": [
+    {
+      "begin": "0x720",
+      "end": "0xdfb",
+      "instructions": 426,
+      "iterations": 628,
+      "gaps": []
+    },
+    {
+      "begin": "0xdfc",
+      "end": "0xf6b",
+      "instructions": 98,
+      "iterations": 138,
+      "gaps": []
+    },
+    {
+      "begin": "0x1914",
+      "end": "0x1e22",
+      "instructions": 301,
+      "iterations": 310,
+      "gaps": []
+    },
+    {
+      "begin": "0x27d4",
+      "end": "0x29b3",
+      "instructions": 129,
+      "iterations": 135,
+      "gaps": []
+    },
+    {
+      "begin": "0x29b4",
+      "end": "0x2aae",
+      "instructions": 72,
+      "iterations": 75,
+      "gaps": []
+    },
+    {
+      "begin": "0x2ab0",
+      "end": "0x2bb2",
+      "instructions": 66,
+      "iterations": 66,
+      "gaps": []
+    },
+    {
+      "begin": "0x2bb4",
+      "end": "0x2c37",
+      "instructions": 37,
+      "iterations": 37,
+      "gaps": []
+    },
+    {
+      "begin": "0x348c",
+      "end": "0x3513",
+      "instructions": 38,
+      "iterations": 38,
+      "gaps": []
+    },
+    {
+      "begin": "0x3514",
+      "end": "0x3540",
+      "instructions": 12,
+      "iterations": 12,
+      "gaps": []
+    },
+    {
+      "begin": "0x3a00",
+      "end": "0x3afb",
+      "instructions": 79,
+      "iterations": 84,
+      "gaps": []
+    },
+    {
+      "begin": "0x4ed0",
+      "end": "0x5036",
+      "instructions": 92,
+      "iterations": 98,
+      "gaps": []
+    },
+    {
+      "begin": "0x6bd4",
+      "end": "0x6e57",
+      "instructions": 154,
+      "iterations": 154,
+      "gaps": []
+    },
+    {
+      "begin": "0x6e58",
+      "end": "0x75fe",
+      "instructions": 500,
+      "iterations": 638,
+      "gaps": []
+    },
+    {
+      "begin": "0x7b24",
+      "end": "0x7bbd",
+      "instructions": 44,
+      "iterations": 44,
+      "gaps": []
+    }
+  ],
+  "unresolved": [],
+  "cc_matches": []
+}

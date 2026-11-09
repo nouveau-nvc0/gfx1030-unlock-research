@@ -1,0 +1,22 @@
+
+/tmp/tmpotcm8om9/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002fa5c <.data+0x2fa5c>:
+0002fa5c: 364100   entry        a1, 0x20 ; Capstone
+   2fa5f:	1c6a      	movi.n	a10, 22
+   2fa61:	0c0b      	movi.n	a11, 0
+   2fa63:	217091        	l32r	a2, 0x14024 (0xfc38)
+   2fa66:	0c0c      	movi.n	a12, 0
+   2fa68:	0c18      	movi.n	a8, 1
+   2fa6a:	824280        	s8i	a8, a2, 128
+0002fa6d: 65f103   call8        . +0x3f18 ; Capstone ; target=0x33984
+   2fa70:	a17b91        	l32r	a10, 0x1405c (0xfcc4)
+   2fa73:	0c1b      	movi.n	a11, 1
+   2fa75:	0c29      	movi.n	a9, 2
+   2fa77:	924280        	s8i	a9, a2, 128
+0002fa7a: e5e003   call8        . +0x3e10 ; Capstone ; target=0x33888
+0002fa7d: 1df0     retw.n        ; Capstone
+	...

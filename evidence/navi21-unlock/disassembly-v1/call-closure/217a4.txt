@@ -1,0 +1,60 @@
+
+/tmp/tmpvzczspw_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000217a4 <.data+0x217a4>:
+000217a4: 366100   entry        a1, 0x30 ; Capstone
+   217a7:	3911      	s32i.n	a3, a1, 4
+   217a9:	ad02      	mov.n	a10, a2
+   217ab:	0c0b      	movi.n	a11, 0
+   217ad:	fd04      	mov.n	a15, a4
+   217af:	5901      	s32i.n	a5, a1, 0
+   217b1:	4d06      	mov.n	a4, a6
+   217b3:	f921      	s32i.n	a15, a1, 8
+000217b5: a5f4ff   call8        . -0xb4 ; Capstone ; target=0x21700
+   217b8:	ad02      	mov.n	a10, a2
+000217ba: 65f2ff   call8        . -0xd8 ; Capstone ; target=0x216e0
+   217bd:	ad02      	mov.n	a10, a2
+   217bf:	0c09      	movi.n	a9, 0
+   217c1:	3110c6        	l32r	a3, 0x13004 (0xfffff)
+   217c4:	515dc7        	l32r	a5, 0x13538 (0x5a16c)
+   217c7:	806211        	slli	a6, a2, 8
+   217ca:	7123c6        	l32r	a7, 0x13058 (0x11ffe00)
+   217cd:	5a56      	add.n	a5, a6, a5
+   217cf:	305510        	and	a5, a5, a3
+   217d2:	7a55      	add.n	a5, a5, a7
+   217d4:	c02000        	memw
+   217d7:	926580        	s32i	a9, a5, 0x200
+   217da:	b811      	l32i.n	a11, a1, 4
+000217dc: 65e0ff   call8        . -0x1f8 ; Capstone ; target=0x215e4
+   217df:	0c5b      	movi.n	a11, 5
+   217e1:	9821      	l32i.n	a9, a1, 8
+   217e3:	c02000        	memw
+   217e6:	a157c7        	l32r	a10, 0x13544 (0x5a138)
+   217e9:	b26580        	s32i	a11, a5, 0x200
+   217ec:	1c8d      	movi.n	a13, 24
+   217ee:	aaa6      	add.n	a10, a6, a10
+   217f0:	30aa10        	and	a10, a10, a3
+   217f3:	7aaa      	add.n	a10, a10, a7
+   217f5:	dc34      	bnez.n	a4, 0x2180c
+   217f7:	e801      	l32i.n	a14, a1, 0
+   217f9:	0c0d      	movi.n	a13, 0
+   217fb:	0bce      	addi.n	a12, a14, -1
+   217fd:	c0c074        	extui	a12, a12, 0, 8
+   21800:	e0cd83        	moveqz	a12, a13, a14
+   21803:	c02000        	memw
+   21806:	c26a80        	s32i	a12, a10, 0x200
+   21809:	460100        	j	0x21812
+   2180c:	c02000        	memw
+   2180f:	d26a80        	s32i	a13, a10, 0x200
+   21812:	f14dc7        	l32r	a15, 0x13548 (0x5a104)
+   21815:	90e141        	srli	a14, a9, 1
+   21818:	faf6      	add.n	a15, a6, a15
+   2181a:	30ff10        	and	a15, a15, a3
+   2181d:	7aff      	add.n	a15, a15, a7
+   2181f:	c02000        	memw
+   21822:	e26f80        	s32i	a14, a15, 0x200
+00021825: 1df0     retw.n        ; Capstone
+	...

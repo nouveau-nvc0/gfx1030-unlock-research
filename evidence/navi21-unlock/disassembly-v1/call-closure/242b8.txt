@@ -1,0 +1,47 @@
+
+/tmp/tmplxq47320/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000242b8 <.data+0x242b8>:
+000242b8: 364100   entry        a1, 0x20 ; Capstone
+   242bb:	0c16      	movi.n	a6, 1
+   242bd:	511dbc        	l32r	a5, 0x13334 (0x125a200)
+   242c0:	9ce3      	beqz.n	a3, 0x242e2
+   242c2:	261333        	beqi	a3, 1, 0x242f9
+   242c5:	262347        	beqi	a3, 2, 0x24310
+   242c8:	66332b        	bnei	a3, 3, 0x242f7
+   242cb:	001240        	ssl	a2
+   242ce:	0046a1        	sll	a4, a6
+   242d1:	c02000        	memw
+   242d4:	3225da        	l32i	a3, a5, 0x368
+   242d7:	403320        	or	a3, a3, a4
+   242da:	c02000        	memw
+   242dd:	3265da        	s32i	a3, a5, 0x368
+000242e0: 1df0     retw.n        ; Capstone
+   242e2:	001240        	ssl	a2
+   242e5:	0096a1        	sll	a9, a6
+   242e8:	c02000        	memw
+   242eb:	8225d7        	l32i	a8, a5, 0x35c
+   242ee:	908820        	or	a8, a8, a9
+   242f1:	c02000        	memw
+   242f4:	8265d7        	s32i	a8, a5, 0x35c
+000242f7: 1df0     retw.n        ; Capstone
+   242f9:	001240        	ssl	a2
+   242fc:	00b6a1        	sll	a11, a6
+   242ff:	c02000        	memw
+   24302:	a225d8        	l32i	a10, a5, 0x360
+   24305:	b0aa20        	or	a10, a10, a11
+   24308:	c02000        	memw
+   2430b:	a265d8        	s32i	a10, a5, 0x360
+0002430e: 1df0     retw.n        ; Capstone
+   24310:	001240        	ssl	a2
+   24313:	00d6a1        	sll	a13, a6
+   24316:	c02000        	memw
+   24319:	c225d9        	l32i	a12, a5, 0x364
+   2431c:	d0cc20        	or	a12, a12, a13
+   2431f:	c02000        	memw
+   24322:	c265d9        	s32i	a12, a5, 0x364
+00024325: 1df0     retw.n        ; Capstone
+	...

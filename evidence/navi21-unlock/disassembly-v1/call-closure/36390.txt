@@ -1,0 +1,37 @@
+
+/tmp/tmp7lmj7ori/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00036390 <.data+0x36390>:
+00036390: 364100   entry        a1, 0x20 ; Capstone
+   36393:	91a873        	l32r	a9, 0x13234 (0xe170)
+   36396:	92097f        	l8ui	a9, a9, 127
+   36399:	b1a372        	l32r	a11, 0x12e28 (0x9c00)
+   3639c:	dc69      	bnez.n	a9, 0x363b6
+   3639e:	a14876        	l32r	a10, 0x13cc0 (0xe484)
+   363a1:	2ccd      	movi.n	a13, 44
+   363a3:	d0d282        	mull	a13, a2, a13
+   363a6:	c14776        	l32r	a12, 0x13cc4 (0xe328)
+   363a9:	dabb      	add.n	a11, a11, a13
+   363ab:	b2db49        	addmi	a11, a11, 0x4900
+   363ae:	b2cb78        	addi	a11, a11, 120
+000363b1: 652ef5   call8        . -0xad18 ; Capstone ; target=0x2b698
+000363b4: 1df0     retw.n        ; Capstone
+   363b6:	661913        	bnei	a9, 1, 0x363cd
+   363b9:	a14376        	l32r	a10, 0x13cc8 (0xe6d8)
+   363bc:	20c290        	addx2	a12, a2, a2
+   363bf:	b0bca0        	addx4	a11, a12, a11
+   363c2:	b2db4b        	addmi	a11, a11, 0x4b00
+   363c5:	b2cbf8        	addi	a11, a11, -8
+000363c8: 251af3   call8        . -0xce5c ; Capstone ; target=0x2956c
+000363cb: 1df0     retw.n        ; Capstone
+   363cd:	0c0c      	movi.n	a12, 0
+   363cf:	2cbb      	movi.n	a11, 43
+   363d1:	d1bc72        	l32r	a13, 0x12ec4 (0x300fe00)
+   363d4:	1c0a      	movi.n	a10, 16
+   363d6:	c02000        	memw
+   363d9:	d22d8a        	l32i	a13, a13, 0x228
+000363dc: e522cc   call8        . -0x33dd0 ; Capstone ; target=0x260c
+	...

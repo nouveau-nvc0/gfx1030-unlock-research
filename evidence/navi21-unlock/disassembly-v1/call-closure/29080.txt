@@ -1,0 +1,49 @@
+
+/tmp/tmpjpfsgp_7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00029080 <.data+0x29080>:
+00029080: 364100   entry        a1, 0x20 ; Capstone
+   29083:	2182aa        	l32r	a2, 0x13a8c (0xe16c)
+   29086:	a22222        	l32i	a10, a2, 136
+   29089:	ac3a      	beqz.n	a10, 0x290b0
+   2908b:	0cca      	movi.n	a10, 12
+0002908d: e5160c   call8        . +0xc170 ; Capstone ; target=0x351fc
+   29090:	81cda7        	l32r	a8, 0x12fc4 (0x38d1b717)
+00029093: 503afa   wfr          f3, a10 ; Capstone
+00029096: 23024c   lsi          f2, a2, 0x130 ; Capstone
+00029099: 30121a   sub.s        f1, f2, f3 ; Capstone
+0002909c: 5008fa   wfr          f0, a8 ; Capstone
+0002909f: 1011fa   abs.s        f1, f1 ; Capstone
+000290a2: 10006b   ole.s        b0, f0, f1 ; Capstone
+   290a5:	92027d        	l8ui	a9, a2, 125
+000290a8: 760040   bf           b0, . +0x44 ; Capstone
+   290ab:	fcd9      	bnez.n	a9, 0x290ec
+   290ad:	a22222        	l32i	a10, a2, 136
+   290b0:	1bba      	addi.n	a11, a10, 1
+   290b2:	b26222        	s32i	a11, a2, 136
+   290b5:	0c1a      	movi.n	a10, 1
+   290b7:	a2427d        	s8i	a10, a2, 125
+000290ba: 6537d9   call8        . -0x26c88 ; Capstone ; target=0x2430
+   290bd:	c167a7        	l32r	a12, 0x12e5c (0x69a0)
+   290c0:	c21c25        	l16ui	a12, a12, 74
+   290c3:	a26238        	s32i	a10, a2, 224
+   290c6:	661c07        	bnei	a12, 1, 0x290d1
+   290c9:	0c0a      	movi.n	a10, 0
+000290cb: 25d6ff   call8        . -0x29c ; Capstone ; target=0x28e2c
+   290ce:	860600        	j	0x290ec
+   290d1:	a1f7aa        	l32r	a10, 0x13cb0 (0x28e2c)
+   290d4:	0c2b      	movi.n	a11, 2
+   290d6:	0c0c      	movi.n	a12, 0
+   290d8:	0c0d      	movi.n	a13, 0
+   290da:	0c0e      	movi.n	a14, 0
+   290dc:	0c0f      	movi.n	a15, 0
+000290de: a505d9   call8        . -0x26fa4 ; Capstone ; target=0x2138
+   290e1:	d2027d        	l8ui	a13, a2, 125
+   290e4:	0c0e      	movi.n	a14, 0
+   290e6:	a0de93        	movnez	a13, a14, a10
+   290e9:	d2427d        	s8i	a13, a2, 125
+   290ec:	0c02      	movi.n	a2, 0
+000290ee: 1df0     retw.n        ; Capstone

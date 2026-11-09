@@ -1,0 +1,21 @@
+
+/tmp/tmpp6e9okz1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000371c8 <.data+0x371c8>:
+000371c8: 364100   entry        a1, 0x20 ; Capstone
+   371cb:	3812      	l32i.n	a3, a2, 4
+   371cd:	5802      	l32i.n	a5, a2, 0
+   371cf:	7cf8      	movi.n	a8, -1
+   371d1:	803330        	xor	a3, a3, a8
+   371d4:	805530        	xor	a5, a5, a8
+   371d7:	5902      	s32i.n	a5, a2, 0
+   371d9:	1b33      	addi.n	a3, a3, 1
+   371db:	3912      	s32i.n	a3, a2, 4
+   371dd:	cc23      	bnez.n	a3, 0x371e3
+   371df:	1b85      	addi.n	a8, a5, 1
+   371e1:	8902      	s32i.n	a8, a2, 0
+000371e3: 1df0     retw.n        ; Capstone
+   371e5:	000000        	ill

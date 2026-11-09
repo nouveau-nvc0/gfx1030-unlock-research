@@ -1,0 +1,43 @@
+
+/tmp/tmpndhxqp4o/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001b0c <.data+0x1b0c>:
+00001b0c: 364100   entry        a1, 0x20 ; Capstone
+    1b0f:	906f00        	rsil	a9, 15
+    1b12:	5194ed        	l32r	a5, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    1b15:	61b6ed        	l32r	a6, 0xffffd1f0 (0x60058a00) ; inferred DRAM map 0x5ffec000
+    1b18:	0c07      	movi.n	a7, 0
+    1b1a:	726580        	s32i	a7, a5, 0x200
+    1b1d:	726618        	s32i	a7, a6, 96
+    1b20:	90e613        	wsr.ps	a9
+    1b23:	102000        	rsync
+    1b26:	806f00        	rsil	a8, 15
+    1b29:	726580        	s32i	a7, a5, 0x200
+    1b2c:	2906      	s32i.n	a2, a6, 0
+    1b2e:	80e613        	wsr.ps	a8
+    1b31:	102000        	rsync
+    1b34:	306f00        	rsil	a3, 15
+    1b37:	726580        	s32i	a7, a5, 0x200
+    1b3a:	222618        	l32i	a2, a6, 96
+    1b3d:	30e613        	wsr.ps	a3
+    1b40:	102000        	rsync
+    1b43:	ecb2      	bnez.n	a2, 0x1b72
+    1b45:	20ea03        	rsr.ccount	a2
+    1b48:	b0ea03        	rsr.ccount	a11
+    1b4b:	20bbc0        	sub	a11, a11, a2
+    1b4e:	a2a01d        	movi	a10, 29
+    1b51:	b73a0b        	bltu	a10, a11, 0x1b60
+    1b54:	d0ea03        	rsr.ccount	a13
+    1b57:	20ddc0        	sub	a13, a13, a2
+    1b5a:	c2a01d        	movi	a12, 29
+    1b5d:	d7bcf3        	bgeu	a12, a13, 0x1b54
+    1b60:	e06f00        	rsil	a14, 15
+    1b63:	726580        	s32i	a7, a5, 0x200
+    1b66:	222618        	l32i	a2, a6, 96
+    1b69:	e0e613        	wsr.ps	a14
+    1b6c:	102000        	rsync
+    1b6f:	1622fd        	beqz	a2, 0x1b45
+00001b72: 1df0     retw.n        ; Capstone

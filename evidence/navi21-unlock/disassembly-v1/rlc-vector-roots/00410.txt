@@ -1,0 +1,115 @@
+
+/tmp/tmpy50pnno5/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000410 <.data+0x410>:
+     410:	2841      	l32i.n	a2, a1, 16
+     412:	3851      	l32i.n	a3, a1, 20
+     414:	4861      	l32i.n	a4, a1, 24
+     416:	12c160        	addi	a1, a1, 96
+     419:	00d113        	wsr.excsave1	a0
+0000041c: 004803   rsr          a0, windowbase ; Capstone
+0000041f: f08040   rotw         -1 ; Capstone
+     422:	20e603        	rsr.ps	a2
+     425:	203834        	extui	a3, a2, 8, 4
+     428:	403330        	xor	a3, a3, a4
+     42b:	460800        	j	0x450
+	...
+     43e:	000000        	ill
+     441:	c50910        	call0	0x104e0 ; target=0x104e0
+00000444: d50920   call4        . +0x200a0 ; Capstone ; target=0x204e4
+00000447: e50930   call8        . +0x300a0 ; Capstone ; target=0x304e4
+0000044a: f50900   call12       . +0xa0 ; Capstone ; target=0x4e8
+0000044d: 350000   call12       . +4 ; Capstone ; target=0x450
+     450:	40d103        	rsr.excsave1	a4
+     453:	803311        	slli	a3, a3, 8
+     456:	302230        	xor	a2, a2, a3
+     459:	20e613        	wsr.ps	a2
+     45c:	102000        	rsync
+     45f:	f774dd        	bbci	a4, 31, 0x440
+00000462: f08040   rotw         -1 ; Capstone
+     465:	e77857        	bbci	a8, 30, 0x4c0
+00000468: f08040   rotw         -1 ; Capstone
+     46b:	463400        	j	0x540
+	...
+     47e:	000000        	ill
+     481:	c949      	s32i.n	a12, a9, 16
+00000483: 00d109   l32e         a0, a1, -0xc ; Capstone
+00000486: 10d949   s32e         a1, a9, -0xc ; Capstone
+00000489: 20e949   s32e         a2, a9, -8 ; Capstone
+0000048c: 30f949   s32e         a3, a9, -4 ; Capstone
+0000048f: 408049   s32e         a4, a0, -0x20 ; Capstone
+00000492: 509049   s32e         a5, a0, -0x1c ; Capstone
+00000495: 60a049   s32e         a6, a0, -0x18 ; Capstone
+00000498: 70b049   s32e         a7, a0, -0x14 ; Capstone
+0000049b: 003400   rfwo          ; Capstone
+	...
+     4be:	000000        	ill
+     4c1:	c909      	s32i.n	a12, a9, 0
+000004c3: 10d909   l32e         a1, a9, -0xc ; Capstone
+000004c6: 20e909   l32e         a2, a9, -8 ; Capstone
+000004c9: 70d109   l32e         a7, a1, -0xc ; Capstone
+000004cc: 30f909   l32e         a3, a9, -4 ; Capstone
+000004cf: 408709   l32e         a4, a7, -0x20 ; Capstone
+000004d2: 509709   l32e         a5, a7, -0x1c ; Capstone
+000004d5: 60a709   l32e         a6, a7, -0x18 ; Capstone
+000004d8: 70b709   l32e         a7, a7, -0x14 ; Capstone
+000004db: 003500   rfwu          ; Capstone
+	...
+     4fe:	000000        	ill
+     501:	cd49      	excw
+00000503: 00d109   l32e         a0, a1, -0xc ; Capstone
+00000506: 10dd49   s32e         a1, a13, -0xc ; Capstone
+00000509: 20ed49   s32e         a2, a13, -8 ; Capstone
+0000050c: 30fd49   s32e         a3, a13, -4 ; Capstone
+0000050f: 404049   s32e         a4, a0, -0x30 ; Capstone
+00000512: 505049   s32e         a5, a0, -0x2c ; Capstone
+00000515: 606049   s32e         a6, a0, -0x28 ; Capstone
+00000518: 707049   s32e         a7, a0, -0x24 ; Capstone
+0000051b: 808049   s32e         a8, a0, -0x20 ; Capstone
+0000051e: 909049   s32e         a9, a0, -0x1c ; Capstone
+00000521: a0a049   s32e         a10, a0, -0x18 ; Capstone
+00000524: b0b049   s32e         a11, a0, -0x14 ; Capstone
+00000527: 003400   rfwo          ; Capstone
+	...
+     53e:	000000        	ill
+     541:	cd09      	mov.n	a12, a9
+00000543: 10dd09   l32e         a1, a13, -0xc ; Capstone
+00000546: 20ed09   l32e         a2, a13, -8 ; Capstone
+00000549: b0d109   l32e         a11, a1, -0xc ; Capstone
+0000054c: 30fd09   l32e         a3, a13, -4 ; Capstone
+0000054f: 404b09   l32e         a4, a11, -0x30 ; Capstone
+00000552: 505b09   l32e         a5, a11, -0x2c ; Capstone
+00000555: 606b09   l32e         a6, a11, -0x28 ; Capstone
+00000558: 707b09   l32e         a7, a11, -0x24 ; Capstone
+0000055b: 808b09   l32e         a8, a11, -0x20 ; Capstone
+0000055e: 909b09   l32e         a9, a11, -0x1c ; Capstone
+00000561: a0ab09   l32e         a10, a11, -0x18 ; Capstone
+00000564: b0bb09   l32e         a11, a11, -0x14 ; Capstone
+00000567: 003500   rfwu          ; Capstone
+     56a:	000000        	ill
+     56d:	000000        	ill
+
+; Alternate branch-target decode
+00000440: 00c509   l32e         a0, a5, -0x10 ; Capstone
+00000443: 10d509   l32e         a1, a5, -0xc ; Capstone
+00000446: 20e509   l32e         a2, a5, -8 ; Capstone
+00000449: 30f509   l32e         a3, a5, -4 ; Capstone
+0000044c: 003500   rfwu          ; Capstone
+     44f:	0040d1        	mul16s	a4, a0, a0
+00000452: 038033   lsip         f0, a0, 0xcc ; Capstone
+     455:	113022        	l32r	a1, 0xfffc8d18
+00000458: 3020e6   ee.ldf.64.xp f2, f14, a3, a0 ; Capstone
+     45b:	131020        	excw
+     45e:	00f774        	extui	a15, a0, 7, 8
+     461:	ddf0      	excw
+00000463: 8040e7   ee.stf.64.xp f4, f14, a8, a0 ; Capstone
+     466:	7857      	l32i.n	a7, a7, 20
+
+; Alternate branch-target decode
+000004c0: 00c909   l32e         a0, a9, -0x10 ; Capstone
+
+; Alternate branch-target decode
+00000540: 00cd09   l32e         a0, a13, -0x10 ; Capstone

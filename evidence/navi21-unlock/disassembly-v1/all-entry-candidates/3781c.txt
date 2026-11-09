@@ -1,0 +1,26 @@
+
+/tmp/tmpflupu0_7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0003781c <.data+0x3781c>:
+0003781c: 364100   entry        a1, 0x20 ; Capstone
+   3781f:	d16073        	l32r	a13, 0x145a0 (0x4)
+   37822:	ad02      	mov.n	a10, a2
+   37824:	c20d00        	l8ui	a12, a13, 0
+   37827:	b20d03        	l8ui	a11, a13, 3
+   3782a:	e20d02        	l8ui	a14, a13, 2
+   3782d:	d20d01        	l8ui	a13, a13, 1
+   37830:	80bb11        	slli	a11, a11, 8
+   37833:	e0bb20        	or	a11, a11, a14
+   37836:	80bb11        	slli	a11, a11, 8
+   37839:	d0bb20        	or	a11, a11, a13
+   3783c:	80bb11        	slli	a11, a11, 8
+   3783f:	c0bb20        	or	a11, a11, a12
+00037842: e558ca   call8        . -0x35a70 ; Capstone ; target=0x1dd0
+   37845:	ad02      	mov.n	a10, a2
+   37847:	0c1b      	movi.n	a11, 1
+00037849: 2585ca   call8        . -0x357ac ; Capstone ; target=0x209c
+0003784c: 1df0     retw.n        ; Capstone
+	...

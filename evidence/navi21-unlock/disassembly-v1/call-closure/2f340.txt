@@ -1,0 +1,23 @@
+
+/tmp/tmpsfizt1l0/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002f340 <.data+0x2f340>:
+0002f340: 364100   entry        a1, 0x20 ; Capstone
+   2f343:	a12892        	l32r	a10, 0x13be4 (0x11ef8)
+0002f346: 65adf8   call8        . -0x7528 ; Capstone ; target=0x27e1c
+   2f349:	41ae90        	l32r	a4, 0x13604 (0xe1f4)
+   2f34c:	21b78f        	l32r	a2, 0x13228 (0x11e78)
+   2f34f:	820480        	l8ui	a8, a4, 128
+   2f352:	4b32      	addi.n	a3, a2, 4
+   2f354:	9c28      	beqz.n	a8, 0x2f36a
+   2f356:	a20280        	l8ui	a10, a2, 128
+0002f359: 257804   call8        . +0x4784 ; Capstone ; target=0x33adc
+   2f35c:	b22422        	l32i	a11, a4, 136
+   2f35f:	c21441        	l16ui	a12, a4, 130
+0002f362: e545ed   call8        . -0x12ba0 ; Capstone ; target=0x1c7c0
+   2f365:	1b22      	addi.n	a2, a2, 1
+   2f367:	3792eb        	bne	a2, a3, 0x2f356
+0002f36a: 1df0     retw.n        ; Capstone

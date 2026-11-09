@@ -1,0 +1,12 @@
+
+/tmp/tmpk_4kurd9/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001eca8 <.data+0x1eca8>:
+0001eca8: 364100   entry        a1, 0x20 ; Capstone
+   1ecab:	21a1d0        	l32r	a2, 0x12f30 (0xb67c)
+   1ecae:	220280        	l8ui	a2, a2, 128
+0001ecb1: 1df0     retw.n        ; Capstone
+	...

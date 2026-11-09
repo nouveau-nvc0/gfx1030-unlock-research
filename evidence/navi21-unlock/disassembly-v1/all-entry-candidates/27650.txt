@@ -1,0 +1,22 @@
+
+/tmp/tmpytaqktg6/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00027650 <.data+0x27650>:
+00027650: 366100   entry        a1, 0x30 ; Capstone
+   27653:	0c28      	movi.n	a8, 2
+   27655:	0c09      	movi.n	a9, 0
+   27657:	9911      	s32i.n	a9, a1, 4
+   27659:	9901      	s32i.n	a9, a1, 0
+   2765b:	91e0af        	l32r	a9, 0x135dc (0xa3c0)
+0002765e: 76a808   loopgtz      a8, . +0xc ; Capstone
+   27661:	a802      	l32i.n	a10, a2, 0
+   27663:	a2697f        	s32i	a10, a9, 0x1fc
+   27666:	4b22      	addi.n	a2, a2, 4
+   27668:	4b99      	addi.n	a9, a9, 4
+   2766a:	ad01      	mov.n	a10, a1
+0002766c: e5420e   call8        . +0xe430 ; Capstone ; target=0x35a9c
+0002766f: 1df0     retw.n        ; Capstone
+   27671:	000000        	ill

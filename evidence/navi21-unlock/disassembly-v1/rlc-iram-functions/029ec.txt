@@ -1,0 +1,19 @@
+
+/tmp/tmp8hyt9z73/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000029ec <.data+0x29ec>:
+000029ec: 364100   entry        a1, 0x20 ; Capstone
+    29ef:	5109ea        	l32r	a5, 0xffffd214 (0x5ffee278) ; inferred DRAM map 0x5ffec000
+    29f2:	62a000        	movi	a6, 0
+    29f5:	72c53c        	addi	a7, a5, 60
+    29f8:	322544        	l32i	a3, a5, 0x110
+    29fb:	4b55      	addi.n	a5, a5, 4
+    29fd:	273304        	bltu	a3, a2, 0x2a05
+    2a00:	1b66      	addi.n	a6, a6, 1
+    2a02:	7795f2        	bne	a5, a7, 0x29f8
+    2a05:	602074        	extui	a2, a6, 0, 8
+00002a08: 1df0     retw.n        ; Capstone
+	...

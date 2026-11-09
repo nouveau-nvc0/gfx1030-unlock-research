@@ -1,0 +1,18 @@
+
+/tmp/tmp1zkjuzts/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001acc <.data+0x1acc>:
+00001acc: 364100   entry        a1, 0x20 ; Capstone
+    1acf:	31c6ed        	l32r	a3, 0xffffd1e8 (0x43200000) ; inferred DRAM map 0x5ffec000
+    1ad2:	81c4ed        	l32r	a8, 0xffffd1e4 (0x3fc66666) ; inferred DRAM map 0x5ffec000
+00001ad5: 5002fa   wfr          f0, a2 ; Capstone
+00001ad8: 5033fa   wfr          f3, a3 ; Capstone
+00001adb: 5048fa   wfr          f4, a8 ; Capstone
+00001ade: 00241a   sub.s        f2, f4, f0 ; Capstone
+00001ae1: 30122a   mul.s        f1, f2, f3 ; Capstone
+00001ae4: 0021ea   utrunc.s     a2, f1, 0 ; Capstone
+    1ae7:	2020f4        	extui	a2, a2, 0, 16
+00001aea: 1df0     retw.n        ; Capstone

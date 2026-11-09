@@ -1,0 +1,36 @@
+
+/tmp/tmpgb3qe685/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0003796c <.data+0x3796c>:
+0003796c: 364100   entry        a1, 0x20 ; Capstone
+0003796f: 25acca   call8        . -0x3553c ; Capstone ; target=0x2430
+   37972:	7d0a      	mov.n	a7, a10
+   37974:	512d6d        	l32r	a5, 0x12e28 (0x9c00)
+   37977:	0c02      	movi.n	a2, 0
+   37979:	1c86      	movi.n	a6, 24
+   3797b:	2245e0        	s8i	a2, a5, 224
+0003797e: 25abca   call8        . -0x3554c ; Capstone ; target=0x2430
+   37981:	5032a0        	addx4	a3, a2, a5
+   37984:	8803      	l32i.n	a8, a3, 0
+   37986:	4d0a      	mov.n	a4, a10
+00037988: e00800   callx8       a8 ; Capstone
+0003798b: 65aaca   call8        . -0x35558 ; Capstone ; target=0x2430
+   3798e:	1b22      	addi.n	a2, a2, 1
+   37990:	408ac0        	sub	a8, a10, a4
+   37993:	826318        	s32i	a8, a3, 96
+   37996:	202074        	extui	a2, a2, 0, 8
+   37999:	6792de        	bne	a2, a6, 0x3797b
+   3799c:	206200        	rsil	a2, 2
+0003799f: 25a9ca   call8        . -0x3556c ; Capstone ; target=0x2430
+   379a2:	70bac0        	sub	a11, a10, a7
+   379a5:	b26530        	s32i	a11, a5, 192
+   379a8:	a12d6d        	l32r	a10, 0x12e5c (0x69a0)
+   379ab:	0c09      	movi.n	a9, 0
+   379ad:	c02000        	memw
+   379b0:	990a      	s32i.n	a9, a10, 0
+   379b2:	20e613        	wsr.ps	a2
+000379b5: 1df0     retw.n        ; Capstone
+	...

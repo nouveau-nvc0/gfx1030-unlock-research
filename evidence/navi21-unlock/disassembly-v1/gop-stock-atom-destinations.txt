@@ -1,0 +1,38 @@
+Stock ATOM register destinations in the reference ROMs
+
+Reproducible byte-checked audit:scripts/navi21-gop-atom-write-audit.py.
+Input:full-reference-comparison.json disassembly, checked row-by-row against
+the current full-ROM files and their pinned SHA256 hashes. Seven populated
+command tables per ROM:0,6,13,22,41,53,66. All parsed rows included, not just
+one sampled branch.56 REG-destination write operations per ROM.
+
+XL GOP8824 initializes interpreter register-block field(context+2c) to0 at
+88a7. None of the seven tables contains SET_REGBLOCK or writes WS_REGPTR48.
+The only CALLTABLE target is13, already included. Therefore under this entry
+initialization, no table in this set changes the register base.
+Byte-checked GOP dispatch records atbcb0 confirm REG destination type0 for
+the stock write opcodes. The ordinary REG handler8fb8 adds the operand and
+base, then supplies6468; partial-width operations may read/merge first but
+do not change the destination index. There is no direct2249/226f destination.
+
+Eight writes target REG0/1; six write the index port, two the data port.
+All index-port source values are immediate DWORDs:
+16061 -> GOP-shifted58184;1a86c ->6a1b0;1a86d ->6a1b4;168e5 ->5a394.
+GOP's special REG0 handling shifts data left2 at8fe5, independently of the
+register-index-to-BAR-offset shift in6468.
+
+Two data-port pairs, same in XL/XT:
+table53:data write61 has sole immediate CFG predecessor59, which selects168e5.
+table66:data write11a has sole immediate CFG predecessor112, which selects16061.
+All decoded jump/switch targets and ordinary fall-through were included when
+checking those incoming edges; entry is table offset6, not the data write.
+Thus stock commands select5a394/58184 at these two data stores, not8924/89bc.
+This is a code-path property without concurrency or hardware side-effect proof.
+
+Scope limits: this closes direct CC destinations and these specific REG0/1
+selection pairs for the seven unchanged tables under the XL GOP entry state.
+It does not close writes from other GOP callers, hardware engines programmed
+by the tables, shared-register interference, changed ROM contents, or actual
+hardware acceptance. XT table bytes were audited; XT interpreter entry-state
+equivalence has not yet been proved by this audit.
+Machine-readable rows, dispatch handlers, pairs:gop-atom-write-audit.json.

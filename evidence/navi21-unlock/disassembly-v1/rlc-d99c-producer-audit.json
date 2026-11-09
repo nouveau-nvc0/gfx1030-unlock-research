@@ -1,0 +1,591 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03300.txt",
+      "sha256": "fb5d1b61f5f1290c7a672ba3c4ea3debcd03ba0756658fceb9ac9f4078fb8fe3",
+      "instructions": [
+        {
+          "pc": "0x3300",
+          "bytes": "364100",
+          "operation": "entry",
+          "operands": "a1, 0x20 ; Capstone"
+        },
+        {
+          "pc": "0x3303",
+          "bytes": "51f8e7",
+          "operation": "l32r",
+          "operands": "a5, 0xffffd2e4 (0x2710) ; inferred DRAM map 0x5ffec000"
+        },
+        {
+          "pc": "0x3306",
+          "bytes": "41dde7",
+          "operation": "l32r",
+          "operands": "a4, 0xffffd27c (0x5ffed99c) ; inferred DRAM map 0x5ffec000"
+        },
+        {
+          "pc": "0x3309",
+          "bytes": "303583",
+          "operation": "moveqz",
+          "operands": "a3, a5, a3"
+        },
+        {
+          "pc": "0x330c",
+          "bytes": "224400",
+          "operation": "s8i",
+          "operands": "a2, a4, 0"
+        },
+        {
+          "pc": "0x330f",
+          "bytes": "3914",
+          "operation": "s32i.n",
+          "operands": "a3, a4, 4"
+        },
+        {
+          "pc": "0x3311",
+          "bytes": "1df0",
+          "operation": "retw.n",
+          "operands": "; Capstone"
+        }
+      ]
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07d24.txt",
+      "sha256": "64fd5a806fce8774e8890113ffddad35e806a733764e4a02b2f4f4ad47c4a278",
+      "instructions": [
+        {
+          "pc": "0x7d24",
+          "bytes": "364101",
+          "operation": "entry",
+          "operands": "a1, 0xa0 ; Capstone"
+        },
+        {
+          "pc": "0x7d27",
+          "bytes": "b137d5",
+          "operation": "l32r",
+          "operands": "a11, 0xffffd204 (0x6803b200) ; inferred DRAM map 0x5ffec000"
+        },
+        {
+          "pc": "0x7d2a",
+          "bytes": "0c1c",
+          "operation": "movi.n",
+          "operands": "a12, 1"
+        },
+        {
+          "pc": "0x7d2c",
+          "bytes": "215dd5",
+          "operation": "l32r",
+          "operands": "a2, 0xffffd2a0 (0x6803ae00) ; inferred DRAM map 0x5ffec000"
+        },
+        {
+          "pc": "0x7d2f",
+          "bytes": "a22b29",
+          "operation": "l32i",
+          "operands": "a10, a11, 164"
+        },
+        {
+          "pc": "0x7d32",
+          "bytes": "d14ed6",
+          "operation": "l32r",
+          "operands": "a13, 0xffffd66c (0x5ffecc50) ; inferred DRAM map 0x5ffec000"
+        },
+        {
+          "pc": "0x7d35",
+          "bytes": "1c58",
+          "operation": "movi.n",
+          "operands": "a8, 21"
+        },
+        {
+          "pc": "0x7d37",
+          "bytes": "a2caf0",
+          "operation": "addi",
+          "operands": "a10, a10, -16"
+        },
+        {
+          "pc": "0x7d3a",
+          "bytes": "87ba07",
+          "operation": "bgeu",
+          "operands": "a10, a8, 0x7d45"
+        },
+        {
+          "pc": "0x7d3d",
+          "bytes": "d0daa0",
+          "operation": "addx4",
+          "operands": "a13, a10, a13"
+        },
+        {
+          "pc": "0x7d40",
+          "bytes": "d80d",
+          "operation": "l32i.n",
+          "operands": "a13, a13, 0"
+        },
+        {
+          "pc": "0x7d42",
+          "bytes": "a00d00",
+          "operation": "jx",
+          "operands": "a13"
+        },
+        {
+          "pc": "0x7ef0",
+          "bytes": "f22b2b",
+          "operation": "l32i",
+          "operands": "a15, a11, 172"
+        },
+        {
+          "pc": "0x7ef3",
+          "bytes": "522b2c",
+          "operation": "l32i",
+          "operands": "a5, a11, 176"
+        },
+        {
+          "pc": "0x7ef6",
+          "bytes": "422b65",
+          "operation": "l32i",
+          "operands": "a4, a11, 0x194"
+        },
+        {
+          "pc": "0x7ef9",
+          "bytes": "322b66",
+          "operation": "l32i",
+          "operands": "a3, a11, 0x198"
+        },
+        {
+          "pc": "0x7efc",
+          "bytes": "f0a004",
+          "operation": "extui",
+          "operands": "a10, a15, 0, 1"
+        },
+        {
+          "pc": "0x7eff",
+          "bytes": "f0b841",
+          "operation": "srli",
+          "operands": "a11, a15, 8"
+        },
+        {
+          "pc": "0x7f02",
+          "bytes": "e53ffb",
+          "operation": "call8",
+          "operands": ". -0x4c00 ; Capstone ; target=0x3300"
+        }
+      ]
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/083fc.txt",
+      "sha256": "bb9d185ae7779438ca1b135be32b1285ecad7d7a58973b36953aa2ea53c45816",
+      "instructions": [
+        {
+          "pc": "0x83fc",
+          "bytes": "36a101",
+          "operation": "entry",
+          "operands": "a1, 0xd0 ; Capstone"
+        },
+        {
+          "pc": "0x83ff",
+          "bytes": "0c1a",
+          "operation": "movi.n",
+          "operands": "a10, 1"
+        },
+        {
+          "pc": "0x8401",
+          "bytes": "d1a7d3",
+          "operation": "l32r",
+          "operands": "a13, 0xffffd2a0 (0x6803ae00) ; inferred DRAM map 0x5ffec000"
+        },
+        {
+          "pc": "0x8404",
+          "bytes": "c180d3",
+          "operation": "l32r",
+          "operands": "a12, 0xffffd204 (0x6803b200) ; inferred DRAM map 0x5ffec000"
+        },
+        {
+          "pc": "0x8407",
+          "bytes": "317ed3",
+          "operation": "l32r",
+          "operands": "a3, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000"
+        },
+        {
+          "pc": "0x840a",
+          "bytes": "82a066",
+          "operation": "movi",
+          "operands": "a8, 102"
+        },
+        {
+          "pc": "0x840d",
+          "bytes": "f131d4",
+          "operation": "l32r",
+          "operands": "a15, 0xffffd4d4 (0x7fffffff) ; inferred DRAM map 0x5ffec000"
+        },
+        {
+          "pc": "0x8410",
+          "bytes": "922319",
+          "operation": "l32i",
+          "operands": "a9, a3, 100"
+        },
+        {
+          "pc": "0x8413",
+          "bytes": "b1fcd3",
+          "operation": "l32r",
+          "operands": "a11, 0xffffd404 (0x40000000) ; inferred DRAM map 0x5ffec000"
+        },
+        {
+          "pc": "0x8416",
+          "bytes": "0c0e",
+          "operation": "movi.n",
+          "operands": "a14, 0"
+        },
+        {
+          "pc": "0x8418",
+          "bytes": "f09910",
+          "operation": "and",
+          "operands": "a9, a9, a15"
+        },
+        {
+          "pc": "0x841b",
+          "bytes": "b09920",
+          "operation": "or",
+          "operands": "a9, a9, a11"
+        },
+        {
+          "pc": "0x841e",
+          "bytes": "90b0f4",
+          "operation": "extui",
+          "operands": "a11, a9, 0, 16"
+        },
+        {
+          "pc": "0x8421",
+          "bytes": "9901",
+          "operation": "s32i.n",
+          "operands": "a9, a1, 0"
+        },
+        {
+          "pc": "0x8423",
+          "bytes": "e24102",
+          "operation": "s8i",
+          "operands": "a14, a1, 2"
+        },
+        {
+          "pc": "0x8426",
+          "bytes": "2801",
+          "operation": "l32i.n",
+          "operands": "a2, a1, 0"
+        },
+        {
+          "pc": "0x8428",
+          "bytes": "226319",
+          "operation": "s32i",
+          "operands": "a2, a3, 100"
+        },
+        {
+          "pc": "0x842b",
+          "bytes": "87bb0a",
+          "operation": "bgeu",
+          "operands": "a11, a8, 0x8439"
+        },
+        {
+          "pc": "0x842e",
+          "bytes": "8196d4",
+          "operation": "l32r",
+          "operands": "a8, 0xffffd688 (0x5ffecd50) ; inferred DRAM map 0x5ffec000"
+        },
+        {
+          "pc": "0x8431",
+          "bytes": "808ba0",
+          "operation": "addx4",
+          "operands": "a8, a11, a8"
+        },
+        {
+          "pc": "0x8434",
+          "bytes": "8808",
+          "operation": "l32i.n",
+          "operands": "a8, a8, 0"
+        },
+        {
+          "pc": "0x8436",
+          "bytes": "a00800",
+          "operation": "jx",
+          "operands": "a8"
+        },
+        {
+          "pc": "0x8757",
+          "bytes": "b22c2b",
+          "operation": "l32i",
+          "operands": "a11, a12, 172"
+        },
+        {
+          "pc": "0x875a",
+          "bytes": "622c2c",
+          "operation": "l32i",
+          "operands": "a6, a12, 176"
+        },
+        {
+          "pc": "0x875d",
+          "bytes": "522c65",
+          "operation": "l32i",
+          "operands": "a5, a12, 0x194"
+        },
+        {
+          "pc": "0x8760",
+          "bytes": "b0a004",
+          "operation": "extui",
+          "operands": "a10, a11, 0, 1"
+        },
+        {
+          "pc": "0x8763",
+          "bytes": "422c66",
+          "operation": "l32i",
+          "operands": "a4, a12, 0x198"
+        },
+        {
+          "pc": "0x8766",
+          "bytes": "b0b841",
+          "operation": "srli",
+          "operands": "a11, a11, 8"
+        },
+        {
+          "pc": "0x8769",
+          "bytes": "65b9fa",
+          "operation": "call8",
+          "operands": ". -0x5468 ; Capstone ; target=0x3300"
+        }
+      ]
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/077cc.txt",
+      "sha256": "3278c10a13d38d29e286e2fd60573e2560360f367f944efe6add9d0c2d3df099",
+      "instructions": [
+        {
+          "pc": "0x7864",
+          "bytes": "27661d",
+          "operation": "bbci",
+          "operands": "a6, 2, 0x7885"
+        },
+        {
+          "pc": "0x7867",
+          "bytes": "f142d7",
+          "operation": "l32r",
+          "operands": "a15, 0xffffd570 (0xf002) ; inferred DRAM map 0x5ffec000"
+        },
+        {
+          "pc": "0x786a",
+          "bytes": "0c48",
+          "operation": "movi.n",
+          "operands": "a8, 4"
+        },
+        {
+          "pc": "0x786c",
+          "bytes": "8982",
+          "operation": "s32i.n",
+          "operands": "a8, a2, 32"
+        },
+        {
+          "pc": "0x786e",
+          "bytes": "f2624b",
+          "operation": "s32i",
+          "operands": "a15, a2, 0x12c"
+        },
+        {
+          "pc": "0x7871",
+          "bytes": "a5b800",
+          "operation": "call8",
+          "operands": ". +0xb8c ; Capstone ; target=0x83fc"
+        },
+        {
+          "pc": "0x7b59",
+          "bytes": "876411",
+          "operation": "bbci",
+          "operands": "a4, 8, 0x7b6e"
+        },
+        {
+          "pc": "0x7b5c",
+          "bytes": "62620a",
+          "operation": "s32i",
+          "operands": "a6, a2, 40"
+        },
+        {
+          "pc": "0x7b5f",
+          "bytes": "81bad6",
+          "operation": "l32r",
+          "operands": "a8, 0xffffd648 (0xf072) ; inferred DRAM map 0x5ffec000"
+        },
+        {
+          "pc": "0x7b62",
+          "bytes": "82624b",
+          "operation": "s32i",
+          "operands": "a8, a2, 0x12c"
+        },
+        {
+          "pc": "0x7b65",
+          "bytes": "e51b00",
+          "operation": "call8",
+          "operands": ". +0x1c0 ; Capstone ; target=0x7d24"
+        }
+      ]
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02edc.txt",
+      "sha256": "631658eb5184ae11c33c43f8f732f658d73ff5985c1af8b5124ebf22cc251579",
+      "instructions": [
+        {
+          "pc": "0x2edc",
+          "bytes": "366100",
+          "operation": "entry",
+          "operands": "a1, 0x30 ; Capstone"
+        },
+        {
+          "pc": "0x2edf",
+          "bytes": "21e6e8",
+          "operation": "l32r",
+          "operands": "a2, 0xffffd278 (0x6803ea00) ; inferred DRAM map 0x5ffec000"
+        },
+        {
+          "pc": "0x2ee2",
+          "bytes": "2222d4",
+          "operation": "l32i",
+          "operands": "a2, a2, 0x350"
+        },
+        {
+          "pc": "0x2ee5",
+          "bytes": "0c13",
+          "operation": "movi.n",
+          "operands": "a3, 1"
+        },
+        {
+          "pc": "0x2ee7",
+          "bytes": "076205",
+          "operation": "bbci",
+          "operands": "a2, 0, 0x2ef0"
+        },
+        {
+          "pc": "0x2eea",
+          "bytes": "25da01",
+          "operation": "call8",
+          "operands": ". +0x1da4 ; Capstone ; target=0x4c8c"
+        },
+        {
+          "pc": "0x2eed",
+          "bytes": "a51200",
+          "operation": "call8",
+          "operands": ". +0x12c ; Capstone ; target=0x3018"
+        },
+        {
+          "pc": "0x2ef0",
+          "bytes": "208104",
+          "operation": "extui",
+          "operands": "a8, a2, 1, 1"
+        },
+        {
+          "pc": "0x2ef3",
+          "bytes": "169810",
+          "operation": "beqz",
+          "operands": "a8, 0x3000"
+        },
+        {
+          "pc": "0x2ef6",
+          "bytes": "91e1e8",
+          "operation": "l32r",
+          "operands": "a9, 0xffffd27c (0x5ffed99c) ; inferred DRAM map 0x5ffec000"
+        },
+        {
+          "pc": "0x2ef9",
+          "bytes": "920900",
+          "operation": "l8ui",
+          "operands": "a9, a9, 0"
+        },
+        {
+          "pc": "0x2efc",
+          "bytes": "160910",
+          "operation": "beqz",
+          "operands": "a9, 0x3000"
+        },
+        {
+          "pc": "0x2eff",
+          "bytes": "259702",
+          "operation": "call8",
+          "operands": ". +0x2974 ; Capstone ; target=0x5870"
+        },
+        {
+          "pc": "0x2f02",
+          "bytes": "0c02",
+          "operation": "movi.n",
+          "operands": "a2, 0"
+        },
+        {
+          "pc": "0x2f04",
+          "bytes": "2911",
+          "operation": "s32i.n",
+          "operands": "a2, a1, 4"
+        },
+        {
+          "pc": "0x2f06",
+          "bytes": "2901",
+          "operation": "s32i.n",
+          "operands": "a2, a1, 0"
+        },
+        {
+          "pc": "0x2f08",
+          "bytes": "324100",
+          "operation": "s8i",
+          "operands": "a3, a1, 0"
+        },
+        {
+          "pc": "0x2f0b",
+          "bytes": "d20104",
+          "operation": "l8ui",
+          "operands": "a13, a1, 4"
+        },
+        {
+          "pc": "0x2f0e",
+          "bytes": "c20100",
+          "operation": "l8ui",
+          "operands": "a12, a1, 0"
+        },
+        {
+          "pc": "0x2f11",
+          "bytes": "bd0d",
+          "operation": "mov.n",
+          "operands": "a11, a13"
+        },
+        {
+          "pc": "0x2f13",
+          "bytes": "ad0c",
+          "operation": "mov.n",
+          "operands": "a10, a12"
+        },
+        {
+          "pc": "0x2f15",
+          "bytes": "e5a203",
+          "operation": "call8",
+          "operands": ". +0x3a30 ; Capstone ; target=0x6944"
+        }
+      ]
+    }
+  ],
+  "table_routes": [
+    {
+      "table": "0x5ffecc50",
+      "index": 11,
+      "selector": "0x1b",
+      "target": "0x5fff7ef0"
+    },
+    {
+      "table": "0x5ffecd50",
+      "index": 75,
+      "selector": "0x4b",
+      "target": "0x5fff8757"
+    }
+  ],
+  "findings": [
+    "3300 stores lowbyte(arg0) at5ffed99c and arg1 at5ffed9a0, substituting10000 whenarg1=0. It performs no save operation.",
+    "7d24 reads selector from6803b2a4; subtracts16, requiresindex<21, then uses initialtablecc50. Selector1b ->7ef0 ->7f02 ->3300.",
+    "83fc forms low16 command from6803b664 after its status-bit adjustments; requirescommand<102 and uses initialtablecd50. Selector4b ->8757 ->8769 ->3300.",
+    "Both arms readV=DWORD[6803b2ac], passV&1 asarg0 andV>>8 asarg1. Thus local dataflow isd99c=V&1;d9a0=(V>>8) or10000 whenzero.",
+    "Registered77cc contains calls7b65->7d24 and7871->83fc behind its existing event-bit conditions. This establishes linked static setter paths, not observed command delivery or a public host interface.",
+    "Unlike db25 save-cycle producer, this setter does not itself saveCC. It supplies one condition for2edc, which also tests6803ed50bit1. Entry into2edc and changed saved-mask provenance remain unresolved."
+  ],
+  "limits": [
+    "Tables and literal placement are initial firmware evidence; runtime mutation/order not proved.",
+    "Outer77cc event delivery and actual register values not observed.",
+    "No inference thatd99c controls the registered e452 restore path; they are separate flags.",
+    "No hardware access or changes."
+  ]
+}

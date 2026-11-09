@@ -1,0 +1,49 @@
+
+/tmp/tmp5qtl75qp/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00032060 <.data+0x32060>:
+00032060: 366100   entry        a1, 0x30 ; Capstone
+   32063:	1c2a      	movi.n	a10, 18
+00032065: a56f03   call8        . +0x36fc ; Capstone ; target=0x35760
+   32068:	167a06        	beqz	a10, 0x320d3
+   3206b:	21bb84        	l32r	a2, 0x13358 (0x100b200)
+   3206e:	318a88        	l32r	a3, 0x14298 (0xb384)
+   32071:	a06200        	rsil	a10, 2
+   32074:	0ccb      	movi.n	a11, 12
+   32076:	c02000        	memw
+   32079:	b26214        	s32i	a11, a2, 80
+   3207c:	c02000        	memw
+   3207f:	c02000        	memw
+   32082:	922215        	l32i	a9, a2, 84
+   32085:	c02000        	memw
+   32088:	822216        	l32i	a8, a2, 88
+   3208b:	a0e613        	wsr.ps	a10
+0003208e: 0019da   ufloat.s     f1, a9, 0 ; Capstone
+00032091: 0008da   ufloat.s     f0, a8, 0 ; Capstone
+00032094: 134100   ssi          f1, a1, 0 ; Capstone
+00032097: 13437e   ssi          f1, a3, 0x1f8 ; Capstone
+0003209a: 03437f   ssi          f0, a3, 0x1fc ; Capstone
+   3209d:	9cc8      	beqz.n	a8, 0x320bd
+0003209f: 40a0fa   rfr          a10, f0 ; Capstone
+000320a2: a5cf06   call8        . +0x6cfc ; Capstone ; target=0x38d9c
+   320a5:	c18e84        	l32r	a12, 0x132e0 (0x42c80000)
+000320a8: 530100   lsi          f5, a1, 0 ; Capstone
+000320ab: 506afa   wfr          f6, a10 ; Capstone
+000320ae: 60352a   mul.s        f3, f5, f6 ; Capstone
+000320b1: 504cfa   wfr          f4, a12 ; Capstone
+000320b4: 40232a   mul.s        f2, f3, f4 ; Capstone
+000320b7: 234380   ssi          f2, a3, 0x200 ; Capstone
+   320ba:	460100        	j	0x320c3
+000320bd: 3070fa   const.s      f7, 0 ; Capstone
+000320c0: 734380   ssi          f7, a3, 0x200 ; Capstone
+   320c3:	0cde      	movi.n	a14, 13
+   320c5:	c02000        	memw
+   320c8:	e26214        	s32i	a14, a2, 80
+   320cb:	0ced      	movi.n	a13, 14
+   320cd:	c02000        	memw
+   320d0:	d26214        	s32i	a13, a2, 80
+000320d3: 1df0     retw.n        ; Capstone
+   320d5:	000000        	ill

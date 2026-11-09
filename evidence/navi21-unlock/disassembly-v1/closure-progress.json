@@ -1,0 +1,45 @@
+{
+  "root_closure": {
+    "function_windows": 1236,
+    "indirect_sites": 26,
+    "gaps": [],
+    "stores_by_opcode": {
+      "s32i.n": 715,
+      "s32i": 1026,
+      "s8i": 969,
+      "s16i": 173,
+      "ssi": 1169,
+      "ssip": 15,
+      "ssx": 2
+    },
+    "resolved_addresses": 2009,
+    "candidate_CC_matches": []
+  },
+  "all_entry_locator": {
+    "function_windows": 1438,
+    "indirect_sites": 40,
+    "gaps": [
+      "0x14660",
+      "0x3c1b8"
+    ],
+    "stores_by_opcode": {
+      "s32i": 1233,
+      "s16i": 179,
+      "s32i.n": 863,
+      "s8i": 1074,
+      "ssi": 1199,
+      "ssip": 16,
+      "ssx": 2
+    },
+    "resolved_addresses": 2334,
+    "candidate_CC_matches": []
+  },
+  "limitations": [
+    "Initial and registered callback data do not prove runtime immutability.",
+    "Only aligned ENTRY candidates covered; non-windowed exception/boot code requires separate audit.",
+    "No RAM-value or callee-effect propagation.",
+    "Two apparent data ENTRY candidates retain decoder gaps.",
+    "Computed addresses, DMA/RLC/GOP and firmware-load acceptance remain open."
+  ],
+  "rlc_srm_packed_matches": "rlc-srm-packed-registers.json; 9 CC +9 USER records, writer semantics unresolved"
+}

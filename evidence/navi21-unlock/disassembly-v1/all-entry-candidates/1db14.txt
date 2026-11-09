@@ -1,0 +1,18 @@
+
+/tmp/tmpsei5kreb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001db14 <.data+0x1db14>:
+0001db14: 364100   entry        a1, 0x20 ; Capstone
+   1db17:	71b4d5        	l32r	a7, 0x131e8 (0xb680)
+   1db1a:	206004        	extui	a6, a2, 0, 1
+   1db1d:	07620b        	bbci	a2, 0, 0x1db2c
+   1db20:	405014        	extui	a5, a4, 0, 2
+   1db23:	308054        	extui	a8, a3, 0, 6
+   1db26:	82477d        	s8i	a8, a7, 125
+   1db29:	52477e        	s8i	a5, a7, 126
+   1db2c:	62477b        	s8i	a6, a7, 123
+0001db2f: 1df0     retw.n        ; Capstone
+   1db31:	000000        	ill

@@ -1,0 +1,40 @@
+
+/tmp/tmpsj7lfhvy/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005820 <.data+0x5820>:
+00005820: 368100   entry        a1, 0x40 ; Capstone
+    5823:	9116df        	l32r	a9, 0xffffd47c (0x5ffedae4) ; inferred DRAM map 0x5ffec000
+    5826:	3df0      	nop.n
+    5828:	82093e        	l8ui	a8, a9, 62
+    582b:	bc58      	beqz.n	a8, 0x5864
+    582d:	261237        	beqi	a2, 1, 0x5868
+    5830:	a2190c        	l16ui	a10, a9, 24
+    5833:	0c03      	movi.n	a3, 0
+    5835:	203a83        	moveqz	a3, a10, a2
+    5838:	30a3a0        	addx4	a10, a3, a3
+    583b:	a0a0f4        	extui	a10, a10, 0, 16
+0000583e: e59fff   call8        . -0x600 ; Capstone ; target=0x523c
+    5841:	325104        	s16i	a3, a1, 8
+    5844:	b911      	s32i.n	a11, a1, 4
+    5846:	a0c0f5        	extui	a12, a10, 16, 16
+    5849:	c25106        	s16i	a12, a1, 12
+0000584c: 030101   lsi          f0, a1, 4 ; Capstone
+    584f:	a0b0f4        	extui	a11, a10, 0, 16
+    5852:	b25105        	s16i	a11, a1, 10
+00005855: 034104   ssi          f0, a1, 0x10 ; Capstone
+    5858:	8ba1      	addi.n	a10, a1, 8
+    585a:	c82a      	l32i.n	a12, a10, 8
+    585c:	b81a      	l32i.n	a11, a10, 4
+    585e:	a22a00        	l32i	a10, a10, 0
+00005861: a50600   call8        . +0x6c ; Capstone ; target=0x58cc
+00005864: 1df0     retw.n        ; Capstone
+00005866: 000032   orbc         b0, b0, b0 ; Capstone
+    5869:	1912      	s32i.n	a1, a2, 4
+    586b:	46f2ff        	j	0x5838
+	...
+
+; Alternate branch-target decode
+    5868:	321912        	l16ui	a3, a9, 36

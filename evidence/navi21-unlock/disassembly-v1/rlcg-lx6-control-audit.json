@@ -1,0 +1,214 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "main_RLCG_words": 6144,
+  "literal_ed80_hits": [
+    {
+      "word_pc": "0x2a58",
+      "word": "0xcc83ed80"
+    },
+    {
+      "word_pc": "0x2a8b",
+      "word": "0xcc83ed80"
+    },
+    {
+      "word_pc": "0x35e3",
+      "word": "0xc40bed80"
+    },
+    {
+      "word_pc": "0x35ec",
+      "word": "0xc43fed80"
+    }
+  ],
+  "windows": {
+    "0x2a53": [
+      {
+        "pc": "0x2a53",
+        "word": "c0380012"
+      },
+      {
+        "pc": "0x2a54",
+        "word": "8c0027a1"
+      },
+      {
+        "pc": "0x2a55",
+        "word": "c0340001"
+      },
+      {
+        "pc": "0x2a56",
+        "word": "8c0032c0"
+      },
+      {
+        "pc": "0x2a57",
+        "word": "c0080011"
+      },
+      {
+        "pc": "0x2a58",
+        "word": "cc83ed80"
+      },
+      {
+        "pc": "0x2a59",
+        "word": "8c0031e5"
+      },
+      {
+        "pc": "0x2a5a",
+        "word": "d803ec07"
+      }
+    ],
+    "0x2a86": [
+      {
+        "pc": "0x2a86",
+        "word": "c0340001"
+      },
+      {
+        "pc": "0x2a87",
+        "word": "8c0032c0"
+      },
+      {
+        "pc": "0x2a88",
+        "word": "c00e0000"
+      },
+      {
+        "pc": "0x2a89",
+        "word": "8c002981"
+      },
+      {
+        "pc": "0x2a8a",
+        "word": "c0080011"
+      },
+      {
+        "pc": "0x2a8b",
+        "word": "cc83ed80"
+      },
+      {
+        "pc": "0x2a8c",
+        "word": "8c0031e5"
+      },
+      {
+        "pc": "0x2a8d",
+        "word": "90000000"
+      }
+    ],
+    "0x35e3": [
+      {
+        "pc": "0x35e3",
+        "word": "c40bed80"
+      },
+      {
+        "pc": "0x35e4",
+        "word": "24880001"
+      },
+      {
+        "pc": "0x35e5",
+        "word": "98800006"
+      },
+      {
+        "pc": "0x35e6",
+        "word": "c40bedcc"
+      },
+      {
+        "pc": "0x35e7",
+        "word": "1488001f"
+      },
+      {
+        "pc": "0x35e8",
+        "word": "948ffffe"
+      },
+      {
+        "pc": "0x35e9",
+        "word": "cf83ed9a"
+      },
+      {
+        "pc": "0x35ea",
+        "word": "cfc3ed99"
+      },
+      {
+        "pc": "0x35eb",
+        "word": "90000000"
+      },
+      {
+        "pc": "0x35ec",
+        "word": "c43fed80"
+      },
+      {
+        "pc": "0x35ed",
+        "word": "27fc0001"
+      },
+      {
+        "pc": "0x35ee",
+        "word": "9bc00009"
+      },
+      {
+        "pc": "0x35ef",
+        "word": "c03c0020"
+      },
+      {
+        "pc": "0x35f0",
+        "word": "0bfc0001"
+      },
+      {
+        "pc": "0x35f1",
+        "word": "9bcfffff"
+      },
+      {
+        "pc": "0x35f2",
+        "word": "c43bed99"
+      },
+      {
+        "pc": "0x35f3",
+        "word": "17bc001f"
+      },
+      {
+        "pc": "0x35f4",
+        "word": "97cffffb"
+      },
+      {
+        "pc": "0x35f5",
+        "word": "17b80010"
+      },
+      {
+        "pc": "0x35f6",
+        "word": "27bc00ff"
+      },
+      {
+        "pc": "0x35f7",
+        "word": "90000000"
+      },
+      {
+        "pc": "0x35f8",
+        "word": "c008000d"
+      },
+      {
+        "pc": "0x35f9",
+        "word": "cc830300"
+      }
+    ]
+  },
+  "entry_low16_candidate_matches": {
+    "0x630": [],
+    "0x2edc": [],
+    "0x6f70": [],
+    "0x70d4": [],
+    "0x5fff": []
+  },
+  "other_generation_comparison": {
+    "member": "database/ip/gc_11_0_0.reg",
+    "sha256": "2e7dd03278d455dd769b40fa497e5a811b39ef7fecda3fa32713312159f22094",
+    "exact_control_record": [
+      "regRLC_LX6_CNTL 0 0x4d80 4 0 1",
+      "\tBRESET 0 0",
+      "\tRUNSTALL 1 1",
+      "\tPDEBUG_ENABLE 2 2",
+      "\tSTAT_VECTOR_SEL 3 3"
+    ],
+    "gc10_3_member_sha256": "3c85b71d45186a2f0a8336239d8c31117b057d2eff927c4544b89b1bd047a2a9",
+    "gc10_3_control_name_present": false
+  },
+  "findings": [
+    "Under existing partial RLCG immediate/store interpretation,2a58 and2a8b writeconstant11hex toDWORDed80, immediately before31e5 whole-state save. They do not directly provide an arbitrary LX6 instruction address.",
+    "The only other literal low16ed80 matches in6144 main words are reads35e3/35ec in the known command-send/wait helper, each followed by bit0 examination. Computed-address references remain possible.",
+    "No low16 immediate-shaped candidates for630,2edc,6f70,70d4 or5fff occur in the main word array. This narrowly excludes these literal fields, not computed execution targets or reset-vector entry.",
+    "GC11 names offset4d80/base-index1 RLC_LX6_CNTL withBRESET/RUNSTALL/PDEBUG_ENABLE/STAT_VECTOR_SEL bits0..3. GC10.3 retained database omits that definition. GC11 names are comparison evidence only;11hex includesbit4 not described by that record and must not be assigned a GC10.3 meaning from it."
+  ],
+  "next": "Determine actual LX6 reset/vector entry from pinned vector layout or matching-generation definitions; do not treat fixeded80 values as evidence of callable2edc/70d4.",
+  "limits": "Exact words and candidate fields only; partial RLCG ISA, actual register identity/semantics and hardware behavior remain unconfirmed. No hardware access."
+}

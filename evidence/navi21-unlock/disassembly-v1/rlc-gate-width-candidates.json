@@ -1,0 +1,215 @@
+{
+  "scope": "Locator for unresolved non-a1 integer stores with immediateoffset4/5/6 in existing scan; not all possible shifted-base aliases or widths.",
+  "candidates": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02a0c.txt",
+      "pc": "0x2a86",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02ab8.txt",
+      "pc": "0x2b19",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2baa",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2be0",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2c29",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2c84",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2c9c",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2cb4",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2cc8",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/035d8.txt",
+      "pc": "0x3674",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a9",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/038ec.txt",
+      "pc": "0x392c",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": 0,
+      "base": "a9",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3acf",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3bac",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/054c8.txt",
+      "pc": "0x54ea",
+      "operation": "s16i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05528.txt",
+      "pc": "0x5592",
+      "operation": "s16i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a13",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa21f",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa23b",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa297",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa2c1",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "4"
+    }
+  ],
+  "count": 19
+}

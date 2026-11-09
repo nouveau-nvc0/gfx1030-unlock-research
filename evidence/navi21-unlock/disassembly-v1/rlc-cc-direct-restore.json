@@ -1,0 +1,251 @@
+{
+  "scope": "Offline byte and address arithmetic checks; manually traced loop, no target execution.",
+  "ports": [
+    {
+      "register": "CC_GC_SHADER_ARRAY_CONFIG",
+      "store_pc": "0x71fe",
+      "load_pc": "0x7293",
+      "store_bytes": "3269ef",
+      "load_bytes": "3229ef",
+      "aperture": "0x600089bc",
+      "slots": [
+        {
+          "outer": 0,
+          "inner": 0,
+          "index": "0x0",
+          "ram": "0x5ffedfc4"
+        },
+        {
+          "outer": 0,
+          "inner": 1,
+          "index": "0x100",
+          "ram": "0x5ffedfc8"
+        },
+        {
+          "outer": 1,
+          "inner": 0,
+          "index": "0x400",
+          "ram": "0x5ffedfcc"
+        },
+        {
+          "outer": 1,
+          "inner": 1,
+          "index": "0x500",
+          "ram": "0x5ffedfd0"
+        },
+        {
+          "outer": 2,
+          "inner": 0,
+          "index": "0x800",
+          "ram": "0x5ffedfd4"
+        },
+        {
+          "outer": 2,
+          "inner": 1,
+          "index": "0x900",
+          "ram": "0x5ffedfd8"
+        },
+        {
+          "outer": 3,
+          "inner": 0,
+          "index": "0xc00",
+          "ram": "0x5ffedfdc"
+        },
+        {
+          "outer": 3,
+          "inner": 1,
+          "index": "0xd00",
+          "ram": "0x5ffedfe0"
+        }
+      ]
+    },
+    {
+      "register": "CC_RB_BACKEND_DISABLE",
+      "store_pc": "0x7216",
+      "load_pc": "0x72ab",
+      "store_bytes": "326abd",
+      "load_bytes": "322abd",
+      "aperture": "0x600098f4",
+      "slots": [
+        {
+          "outer": 0,
+          "inner": 0,
+          "index": "0x0",
+          "ram": "0x5ffedfe4"
+        },
+        {
+          "outer": 0,
+          "inner": 1,
+          "index": "0x100",
+          "ram": "0x5ffedfe8"
+        },
+        {
+          "outer": 1,
+          "inner": 0,
+          "index": "0x400",
+          "ram": "0x5ffedfec"
+        },
+        {
+          "outer": 1,
+          "inner": 1,
+          "index": "0x500",
+          "ram": "0x5ffedff0"
+        },
+        {
+          "outer": 2,
+          "inner": 0,
+          "index": "0x800",
+          "ram": "0x5ffedff4"
+        },
+        {
+          "outer": 2,
+          "inner": 1,
+          "index": "0x900",
+          "ram": "0x5ffedff8"
+        },
+        {
+          "outer": 3,
+          "inner": 0,
+          "index": "0xc00",
+          "ram": "0x5ffedffc"
+        },
+        {
+          "outer": 3,
+          "inner": 1,
+          "index": "0xd00",
+          "ram": "0x5ffee000"
+        }
+      ]
+    },
+    {
+      "register": "GC_USER_SHADER_ARRAY_CONFIG",
+      "store_pc": "0x722e",
+      "load_pc": "0x72c3",
+      "store_bytes": "3269f0",
+      "load_bytes": "3229f0",
+      "aperture": "0x600089c0",
+      "slots": [
+        {
+          "outer": 0,
+          "inner": 0,
+          "index": "0x0",
+          "ram": "0x5ffee004"
+        },
+        {
+          "outer": 0,
+          "inner": 1,
+          "index": "0x100",
+          "ram": "0x5ffee008"
+        },
+        {
+          "outer": 1,
+          "inner": 0,
+          "index": "0x400",
+          "ram": "0x5ffee00c"
+        },
+        {
+          "outer": 1,
+          "inner": 1,
+          "index": "0x500",
+          "ram": "0x5ffee010"
+        },
+        {
+          "outer": 2,
+          "inner": 0,
+          "index": "0x800",
+          "ram": "0x5ffee014"
+        },
+        {
+          "outer": 2,
+          "inner": 1,
+          "index": "0x900",
+          "ram": "0x5ffee018"
+        },
+        {
+          "outer": 3,
+          "inner": 0,
+          "index": "0xc00",
+          "ram": "0x5ffee01c"
+        },
+        {
+          "outer": 3,
+          "inner": 1,
+          "index": "0xd00",
+          "ram": "0x5ffee020"
+        }
+      ]
+    },
+    {
+      "register": "GC_USER_RB_BACKEND_DISABLE",
+      "store_pc": "0x7246",
+      "load_pc": "0x72db",
+      "store_bytes": "326b5f",
+      "load_bytes": "322b5f",
+      "aperture": "0x60009b7c",
+      "slots": [
+        {
+          "outer": 0,
+          "inner": 0,
+          "index": "0x0",
+          "ram": "0x5ffee024"
+        },
+        {
+          "outer": 0,
+          "inner": 1,
+          "index": "0x100",
+          "ram": "0x5ffee028"
+        },
+        {
+          "outer": 1,
+          "inner": 0,
+          "index": "0x400",
+          "ram": "0x5ffee02c"
+        },
+        {
+          "outer": 1,
+          "inner": 1,
+          "index": "0x500",
+          "ram": "0x5ffee030"
+        },
+        {
+          "outer": 2,
+          "inner": 0,
+          "index": "0x800",
+          "ram": "0x5ffee034"
+        },
+        {
+          "outer": 2,
+          "inner": 1,
+          "index": "0x900",
+          "ram": "0x5ffee038"
+        },
+        {
+          "outer": 3,
+          "inner": 0,
+          "index": "0xc00",
+          "ram": "0x5ffee03c"
+        },
+        {
+          "outer": 3,
+          "inner": 1,
+          "index": "0xd00",
+          "ram": "0x5ffee040"
+        }
+      ]
+    }
+  ],
+  "registered_restore_chain": [
+    "76f8:772e registers 5fff77cc via9830, index1",
+    "77cc:7941 or795a ->32a4",
+    "32a4:32aa ->35d8",
+    "35d8 requires byte[5ffee452]!=0",
+    "35d8:36ca ->6944 with words1,1",
+    "6944 common tail6a95 ->71ac with operation byte1"
+  ],
+  "unresolved": [
+    "Hardware event and state prerequisites",
+    "Producer of gate byte5ffee452",
+    "Other computed writers of saved arrays",
+    "Actual CC write acceptance"
+  ]
+}

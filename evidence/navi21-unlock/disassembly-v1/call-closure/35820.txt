@@ -1,0 +1,48 @@
+
+/tmp/tmpbtec5j6c/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00035820 <.data+0x35820>:
+00035820: 364100   entry        a1, 0x20 ; Capstone
+   35823:	41d479        	l32r	a4, 0x13f74 (0xa610)
+   35826:	ad02      	mov.n	a10, a2
+   35828:	42247f        	l32i	a4, a4, 0x1fc
+0003582b: 65f5ff   call8        . -0xa8 ; Capstone ; target=0x35780
+   3582e:	3d0a      	mov.n	a3, a10
+   35830:	2c2a      	movi.n	a10, 34
+00035832: e5f2ff   call8        . -0xd0 ; Capstone ; target=0x35760
+   35835:	16ca04        	beqz	a10, 0x35885
+   35838:	0c02      	movi.n	a2, 0
+   3583a:	0c09      	movi.n	a9, 0
+   3583c:	0c0a      	movi.n	a10, 0
+   3583e:	82a008        	movi	a8, 8
+00035841: 76a81c   loopgtz      a8, . +0x20 ; Capstone
+   35844:	000940        	ssr	a9
+   35847:	40b091        	srl	a11, a4
+   3584a:	076b11        	bbci	a11, 0, 0x3585f
+   3584d:	261918        	beqi	a9, 1, 0x35869
+   35850:	264915        	beqi	a9, 4, 0x35869
+   35853:	26590d        	beqi	a9, 5, 0x35864
+   35856:	667903        	bnei	a9, 7, 0x3585d
+   35859:	0c02      	movi.n	a2, 0
+   3585b:	0c1a      	movi.n	a10, 1
+   3585d:	ccda      	bnez.n	a10, 0x3586e
+   3585f:	1b99      	addi.n	a9, a9, 1
+   35861:	460200        	j	0x3586e
+   35864:	0c22      	movi.n	a2, 2
+   35866:	c6fcff        	j	0x3585d
+   35869:	0c12      	movi.n	a2, 1
+   3586b:	06fbff        	j	0x3585b
+0003586e: 65eeff   call8        . -0x118 ; Capstone ; target=0x35754
+   35871:	271a10        	beq	a10, a2, 0x35885
+   35874:	0caa      	movi.n	a10, 10
+00035876: a5d0cc   call8        . -0x332f4 ; Capstone ; target=0x2580
+   35879:	bd03      	mov.n	a11, a3
+   3587b:	ad02      	mov.n	a10, a2
+0003587d: e5c7ff   call8        . -0x380 ; Capstone ; target=0x354fc
+   35880:	0caa      	movi.n	a10, 10
+00035882: 25bfcc   call8        . -0x3340c ; Capstone ; target=0x2474
+00035885: 1df0     retw.n        ; Capstone
+	...

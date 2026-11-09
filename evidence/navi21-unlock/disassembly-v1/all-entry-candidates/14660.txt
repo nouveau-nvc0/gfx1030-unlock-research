@@ -1,0 +1,145 @@
+
+/tmp/tmpltn4c5d9/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00014660 <.data+0x14660>:
+00014660: 368100   entry        a1, 0x40 ; Capstone
+   14663:	002e81        	src	a2, a14, a0
+00014666: 000046   ee.ldf.64.xp f0, f4, a0, a0 ; Capstone
+   14669:	810000        	l32r	a8, 0xfffd466c
+   1466c:	528100        	excw
+   1466f:	005e81        	src	a5, a14, a0
+00014672: 00004a   madd.s       f0, f0, f0 ; Capstone
+00014675: 840000   ee.ld.qacc_l.l.128.ip a8, 0 ; Capstone
+00014678: 608400   any4         b6, b4 ; Capstone
+   1467b:	007684        	extui	a7, a0, 6, 9
+   1467e:	00008c        	excw
+00014681: 840000   ee.ld.qacc_l.l.128.ip a8, 0 ; Capstone
+   14684:	a28400        	excw
+   14687:	005684        	extui	a5, a0, 6, 9
+   1468a:	00006c        	excw
+0001468d: 840000   ee.ld.qacc_l.l.128.ip a8, 0 ; Capstone
+   14690:	828400        	excw
+   14693:	009884        	extui	a9, a0, 8, 9
+   14696:	0000ae        	excw
+00014699: 840000   ee.ld.qacc_l.l.128.ip a8, 0 ; Capstone
+   1469c:	6a81      	add.n	a8, a1, a6
+0001469e: 00006b   ole.s        b0, f0, f0 ; Capstone
+   146a1:	810000        	l32r	a8, 0xfffd46a4
+   146a4:	778100        	bany	a1, a7, 0x146a8
+   146a7:	008381        	src	a8, a3, a0
+   146aa:	00008f        	excw
+   146ad:	810000        	l32r	a8, 0xfffd46b0
+   146b0:	9b81      	addi.n	a8, a1, 9
+000146b2: 0000a7   ee.stf.64.xp f0, f10, a0, a0 ; Capstone
+   146b5:	810000        	l32r	a8, 0xfffd46b8
+   146b8:	a78300        	bany	a3, a10, 0x146bc
+000146bb: 00dc18   lsxp         f13, a12, a0 ; Capstone
+   146be:	0100ef        	l32r	a0, 0x102c0 (0x0)
+   146c1:	810000        	l32r	a8, 0xfffd46c4
+   146c4:	fb81      	addi.n	a8, a1, 15
+000146c6: 000007   ee.stf.64.xp f0, f0, a0, a0 ; Capstone
+   146c9:	820000        	l8ui	a8, a0, 0
+000146cc: 138200   lsip         f1, a2, 0 ; Capstone
+   146cf:	001f82        	mull	a1, a15, a0
+000146d2: 00002b   oeq.s        b0, f0, f0 ; Capstone
+   146d5:	820000        	l8ui	a8, a0, 0
+   146d8:	d78100        	bany	a1, a13, 0x146dc
+   146db:	00df81        	src	a13, a15, a0
+000146de: 0000e7   ee.stf.64.xp f0, f14, a0, a0 ; Capstone
+   146e1:	810000        	l32r	a8, 0xfffd46e4
+000146e4: 638200   lsip         f6, a2, 0 ; Capstone
+   146e7:	006f82        	mull	a6, a15, a0
+000146ea: 00007b   ule.s        b0, f0, f0 ; Capstone
+   146ed:	820000        	l8ui	a8, a0, 0
+   146f0:	878200        	bany	a2, a8, 0x146f4
+   146f3:	009b82        	mull	a9, a11, a0
+   146f6:	000093        	movnez	a0, a0, a0
+   146f9:	820000        	l8ui	a8, a0, 0
+   146fc:	ab82      	addi.n	a8, a2, 10
+000146fe: 0000b7   ee.stf.64.xp f0, f11, a0, a0 ; Capstone
+   14701:	820000        	l8ui	a8, a0, 0
+00014704: c38200   lsip         f12, a2, 0 ; Capstone
+   14707:	00c02e        	excw
+   1470a:	0000cd        	excw
+   1470d:	7d00      	mov.n	a7, a0
+   1470f:	00e719        	excw
+   14712:	000020        	or	a0, a0, a0
+   14715:	bc00      	beqz.n	a0, 0x14749
+   14717:	0040bc        	excw
+   1471a:	000080        	add	a0, a0, a0
+   1471d:	bc00      	beqz.n	a0, 0x14751
+   1471f:	0060bc        	excw
+   14722:	0000c0        	sub	a0, a0, a0
+   14725:	bc00      	beqz.n	a0, 0x14759
+   14727:	00a0bc        	excw
+   1472a:	0000f4        	extui	a0, a0, 0, 16
+   1472d:	870000        	bnone	a0, a8, 0x14731
+00014730: 40ba00   all8         b4, b10 ; Capstone
+00014733: 0060ba   ceil.s       a6, f0, 0 ; Capstone
+   14736:	000080        	add	a0, a0, a0
+   14739:	ba00      	add.n	a0, a0, a11
+0001473b: 00a0ba   ceil.s       a10, f0, 0 ; Capstone
+   1473e:	0000c0        	sub	a0, a0, a0
+   14741:	ba00      	add.n	a0, a0, a11
+00014743: 00e0ba   ceil.s       a14, f0, 0 ; Capstone
+   14746:	000088        	excw
+   14749:	c50000        	call0	0x14758
+0001474c: 60bb00   all8         b6, b11 ; Capstone
+0001474f: 0080bb   movgez.s     f8, f0, a0 ; Capstone
+   14752:	0000a0        	addx4	a0, a0, a0
+   14755:	bb00      	addi.n	a0, a0, 11
+00014757: 00c0bb   movgez.s     f12, f0, a0 ; Capstone
+   1475a:	0000e0        	subx4	a0, a0, a0
+   1475d:	bb00      	addi.n	a0, a0, 11
+   1475f:	0000bc        	excw
+   14762:	00004e        	excw
+   14765:	800000        	ret
+   14768:	5a80      	add.n	a8, a0, a5
+0001476a: 000066   ee.ldf.64.xp f0, f6, a0, a0 ; Capstone
+   1476d:	800000        	ret
+00014770: b38100   lsip         f11, a1, 0 ; Capstone
+   14773:	00bf81        	src	a11, a15, a0
+00014776: 0000cb   movf.s       f0, f0, b0 ; Capstone
+   14779:	810000        	l32r	a8, 0xfffd477c
+0001477c: 00bb00   all8         b0, b11 ; Capstone
+0001477f: 0020bb   movgez.s     f2, f0, a0 ; Capstone
+   14782:	000040        	ssr	a0
+   14785:	bb00      	addi.n	a0, a0, 11
+   14787:	005019        	excw
+   1478a:	01001c        	l32r	a0, 0xfffdb78c
+   1478d:	fc00      	bnez.n	a0, 0x147c1
+   1478f:	0044d9        	excw
+   14792:	020040        	l8ui	a0, a0, 64
+   14795:	7b00      	addi.n	a0, a0, 7
+00014797: 00d409   l32e         a0, a4, -0xc ; Capstone
+   1479a:	0000c4        	extui	a0, a0, 0, 13
+   1479d:	7a00      	add.n	a0, a0, a7
+   1479f:	008872        	excw
+   147a2:	000004        	extui	a0, a0, 0, 1
+   147a5:	fe          	.byte 0xfe
+   147a6:	210324        	l32r	a2, 0xfffdd7b4
+   147a9:	ee          	.byte 0xee
+   147aa:	000000        	ill
+   147ad:	a20a01        	l8ui	a10, a10, 1
+   147b0:	ff          	.byte 0xff
+   147b1:	c3ffc3        	excw
+   147b4:	ff          	.byte 0xff
+000147b5: c3cfff   ssip         f12, a15, 0x3fc ; Capstone
+   147b8:	ff          	.byte 0xff
+   147b9:	c3ffff        	excw
+   147bc:	000620        	or	a0, a6, a0
+   147bf:	03f41d        	excw
+   147c2:	0000ec        	excw
+000147c5: 760300   bf           b3, . +4 ; Capstone
+   147c8:	ff          	.byte 0xff
+   147c9:	ff          	.byte 0xff
+   147ca:	cf          	.byte 0xcf
+   147cb:	ff          	.byte 0xff
+000147cc: a41900   ee.ld.qacc_l.l.128.ip a10, 0x190 ; Capstone
+   147cf:	006819        	excw
+   147d2:	000020        	or	a0, a0, a0
+000147d5: 140100   ee.ld.qacc_l.l.128.ip a1, 0x10 ; Capstone
+	...

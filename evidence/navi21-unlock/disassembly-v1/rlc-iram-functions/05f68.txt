@@ -1,0 +1,61 @@
+
+/tmp/tmpf5gon_sw/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005f68 <.data+0x5f68>:
+00005f68: 364100   entry        a1, 0x20 ; Capstone
+    5f6b:	161409        	beqz	a4, 0x6000
+    5f6e:	a06f00        	rsil	a10, 15
+    5f71:	417cdc        	l32r	a4, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    5f74:	707024        	extui	a7, a7, 0, 3
+    5f77:	9146dd        	l32r	a9, 0xffffd490 (0xffcfffff) ; inferred DRAM map 0x5ffec000
+    5f7a:	50b014        	extui	a11, a5, 0, 2
+    5f7d:	608014        	extui	a8, a6, 0, 2
+    5f80:	c08801        	slli	a8, a8, 20
+    5f83:	a06b01        	slli	a6, a11, 22
+    5f86:	906610        	and	a6, a6, a9
+    5f89:	806620        	or	a6, a6, a8
+    5f8c:	8142dd        	l32r	a8, 0xffffd494 (0xfff8ffff) ; inferred DRAM map 0x5ffec000
+    5f8f:	5142dd        	l32r	a5, 0xffffd498 (0x6000c600) ; inferred DRAM map 0x5ffec000
+    5f92:	007711        	slli	a7, a7, 16
+    5f95:	806610        	and	a6, a6, a8
+    5f98:	706620        	or	a6, a6, a7
+    5f9b:	626481        	s32i	a6, a4, 0x204
+    5f9e:	0c07      	movi.n	a7, 0
+    5fa0:	726480        	s32i	a7, a4, 0x200
+    5fa3:	8225ac        	l32i	a8, a5, 0x2b0
+    5fa6:	726481        	s32i	a7, a4, 0x204
+    5fa9:	a0e613        	wsr.ps	a10
+    5fac:	102000        	rsync
+    5faf:	808f05        	extui	a8, a8, 31, 1
+    5fb2:	0c19      	movi.n	a9, 1
+    5fb4:	202993        	movnez	a2, a9, a2
+    5fb7:	871245        	beq	a2, a8, 0x6000
+    5fba:	316ddc        	l32r	a3, 0xffffd170 (0x6803ba00) ; inferred DRAM map 0x5ffec000
+    5fbd:	a22368        	l32i	a10, a3, 0x1a0
+    5fc0:	176a0c        	bbci	a10, 1, 0x5fd0
+    5fc3:	0c1b      	movi.n	a11, 1
+    5fc5:	b0aa20        	or	a10, a10, a11
+    5fc8:	a26368        	s32i	a10, a3, 0x1a0
+    5fcb:	0c3a      	movi.n	a10, 3
+00005fcd: e57eff   call8        . -0x810 ; Capstone ; target=0x57bc
+    5fd0:	90ea03        	rsr.ccount	a9
+    5fd3:	c0ea03        	rsr.ccount	a12
+    5fd6:	90ccc0        	sub	a12, a12, a9
+    5fd9:	f6fc08        	bgeui	a12, 0x100, 0x5fe5
+    5fdc:	d0ea03        	rsr.ccount	a13
+    5fdf:	90ddc0        	sub	a13, a13, a9
+    5fe2:	b6fdf6        	bltui	a13, 0x100, 0x5fdc
+    5fe5:	f06f00        	rsil	a15, 15
+    5fe8:	626481        	s32i	a6, a4, 0x204
+    5feb:	726480        	s32i	a7, a4, 0x200
+    5fee:	e225ac        	l32i	a14, a5, 0x2b0
+    5ff1:	726481        	s32i	a7, a4, 0x204
+    5ff4:	f0e613        	wsr.ps	a15
+    5ff7:	102000        	rsync
+    5ffa:	e0ef05        	extui	a14, a14, 31, 1
+    5ffd:	e792bc        	bne	a2, a14, 0x5fbd
+00006000: 1df0     retw.n        ; Capstone
+	...

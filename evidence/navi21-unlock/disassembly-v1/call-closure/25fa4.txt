@@ -1,0 +1,10 @@
+
+/tmp/tmpy8vc7516/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00025fa4 <.data+0x25fa4>:
+00025fa4: 364100   entry        a1, 0x20 ; Capstone
+   25fa7:	216ab6        	l32r	a2, 0x13950 (0xc958)
+00025faa: 1df0     retw.n        ; Capstone

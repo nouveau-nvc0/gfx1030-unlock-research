@@ -1,0 +1,32 @@
+
+/tmp/tmpube8i8yo/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001e48 <.data+0x1e48>:
+00001e48: 364100   entry        a1, 0x20 ; Capstone
+    1e4b:	6195fb        	l32r	a6, 0xca0 (0x74e0)
+    1e4e:	306200        	rsil	a3, 2
+    1e51:	82261d        	l32i	a8, a6, 116
+    1e54:	420689        	l8ui	a4, a6, 137
+    1e57:	07682b        	bbci	a8, 0, 0x1e86
+    1e5a:	8192fb        	l32r	a8, 0xca4 (0x7514)
+    1e5d:	ad02      	mov.n	a10, a2
+    1e5f:	405490        	addx2	a5, a4, a4
+    1e62:	8055a0        	addx4	a5, a5, a8
+    1e65:	22557e        	s16i	a2, a5, 252
+00001e68: 250200   call8        . +0x24 ; Capstone ; target=0x1e8c
+    1e6b:	a2557f        	s16i	a10, a5, 254
+    1e6e:	ad02      	mov.n	a10, a2
+00001e70: e52400   call8        . +0x250 ; Capstone ; target=0x20c0
+    1e73:	a26540        	s32i	a10, a5, 0x100
+00001e76: a55b00   call8        . +0x5bc ; Capstone ; target=0x2430
+    1e79:	1b94      	addi.n	a9, a4, 1
+    1e7b:	a26541        	s32i	a10, a5, 0x104
+    1e7e:	0caa      	movi.n	a10, 10
+00001e80: a099e2   remu         a9, a9, a10 ; Capstone
+    1e83:	924689        	s8i	a9, a6, 137
+    1e86:	30e613        	wsr.ps	a3
+00001e89: 1df0     retw.n        ; Capstone
+	...

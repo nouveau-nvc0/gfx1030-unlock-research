@@ -1,0 +1,42 @@
+Concrete SYS procedure for RLC base setup — offline candidate
+
+The local SOS container is not one undifferentiated code image. Header1.3
+and retained driver parsing put SYS in file[100,21870), SOS in
+[21870,35bd0). A literal3ed78 at file1d1b0 belongs to SYS. Thumb decoding
+from1d158 gives36 contiguous instructions ending in return at1d1a6.
+Addresses in the listing are FILE OFFSETS, not runtime PCs.
+
+Local dataflow:
+- Read enable byte from absolute literal e5c978+18. Zero skips setup.
+- Read64-bit value from absolute literal e1fbe8.
+- Add400000 to the low half and propagate carry to the high half.
+- SVC7c arguments: r0=3ed78,r1=newhigh,r2=4.
+- On zero result, SVC7c: r0=3ed74,r1=newlow,r2=4.
+- On zero result, call filea808 with1, then SVC7c:
+  r0=3ed70,r1=helperresult,r2=4.
+These addresses match RLC HYP_BOOTLOAD_ADDR_HI/LO/SIZE exactly. Helpera808
+has14 contiguous instructions: it uses16-byte entries, extracts size>>14,
+multiplies4, then optionally multiplies16 whenbit12 is set. This matches
+already observed TOC size construction, providing an independent structural
+check of the interpretation. The table pointer is not yet mapped to a
+specific runtime object.
+
+This is stronger than the earlier driver-only boundary: there is a concrete
+base-setup candidate in the shipped SYS component. Do not yet call SVC7c a
+proved register writer; resolve its implementation. Also resolve SYS runtime
+placement, the source of value at e1fbe8, the enable byte and invocation.
+Immediate-call scans did not identify a caller, but that is not a complete
+entry analysis.
+
+Conditional consequence: if this operation writes the named registers and
+this path runs, the known ID27 snapshot at bootloadbase+545000 would be
+value_at_e1fbe8+945000, NOT value_at_e1fbe8+545000. The global value is not
+yet identified as the driver's allocation base. No actual address, buffer
+content, changed mask or acceptance by CC follows from this expression.
+Next follow this specific global value and SVC7c, not broad unrelated tables.
+
+Reproduce: PYTHONPATH=/tmp/navi21-disasm/python python3
+scripts/navi21-psp-rlc-base-locator.py
+Receipt: psp-rlc-base-locator.json contains binary hash, decoded bytes,
+36+14 instructions, literal values, local interpretation and limits.
+No hardware/driver/service changes.

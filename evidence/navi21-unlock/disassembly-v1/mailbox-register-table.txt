@@ -1,0 +1,12 @@
+
+/tmp/tmpnecnvluj/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000388a0 <.data+0x388a0>:
+000388a0: 364100   entry        a1, 0x20 ; Capstone
+   388a3:	a1b96f        	l32r	a10, 0x14788 (0x11950)
+000388a6: 2537ff   call8        . -0xc8c ; Capstone ; target=0x37c18
+000388a9: 1df0     retw.n        ; Capstone
+	...

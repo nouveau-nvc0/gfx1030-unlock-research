@@ -1,0 +1,20 @@
+
+/tmp/tmp4eprpka4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002c254 <.data+0x2c254>:
+0002c254: 364100   entry        a1, 0x20 ; Capstone
+   2c257:	31819c        	l32r	a3, 0x1345c (0xbbcccccd)
+   2c25a:	817f9c        	l32r	a8, 0x13458 (0xc324)
+   2c25d:	8a82      	add.n	a8, a2, a8
+   2c25f:	820880        	l8ui	a8, a8, 128
+   2c262:	21479b        	l32r	a2, 0x12f80 (0x3fc66666)
+0002c265: 5023fa   wfr          f2, a3 ; Capstone
+0002c268: 0018da   ufloat.s     f1, a8, 0 ; Capstone
+0002c26b: 5002fa   wfr          f0, a2 ; Capstone
+0002c26e: 20014a   madd.s       f0, f1, f2 ; Capstone
+0002c271: 4020fa   rfr          a2, f0 ; Capstone
+0002c274: 1df0     retw.n        ; Capstone
+	...

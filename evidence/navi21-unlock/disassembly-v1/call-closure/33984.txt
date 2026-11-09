@@ -1,0 +1,39 @@
+
+/tmp/tmpe073ikqn/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00033984 <.data+0x33984>:
+00033984: 364100   entry        a1, 0x20 ; Capstone
+   33987:	91c27d        	l32r	a9, 0x13090 (0xaaa8)
+   3398a:	ad02      	mov.n	a10, a2
+   3398c:	2082b0        	addx8	a8, a2, a2
+   3398f:	9088a0        	addx4	a8, a8, a9
+   33992:	c2287f        	l32i	a12, a8, 0x1fc
+   33995:	e19b7d        	l32r	a14, 0x13004 (0xfffff)
+   33998:	d1b07d        	l32r	a13, 0x13058 (0x11ffe00)
+   3399b:	c2cc20        	addi	a12, a12, 32
+   3399e:	e0cc10        	and	a12, a12, a14
+   339a1:	dacc      	add.n	a12, a12, a13
+   339a3:	c02000        	memw
+   339a6:	d18b81        	l32r	a13, 0x13fd4 (0xfffcffff)
+   339a9:	e22c80        	l32i	a14, a12, 0x200
+   339ac:	7c8f      	movi.n	a15, -8
+   339ae:	30b024        	extui	a11, a3, 0, 3
+   339b1:	f0ee10        	and	a14, a14, a15
+   339b4:	e0bb20        	or	a11, a11, a14
+   339b7:	d0bb10        	and	a11, a11, a13
+   339ba:	40d014        	extui	a13, a4, 0, 2
+   339bd:	00dd11        	slli	a13, a13, 16
+   339c0:	d0bb20        	or	a11, a11, a13
+   339c3:	c02000        	memw
+   339c6:	92d802        	addmi	a9, a8, 0x200
+   339c9:	b26c80        	s32i	a11, a12, 0x200
+   339cc:	82d802        	addmi	a8, a8, 0x200
+   339cf:	92c980        	addi	a9, a9, -128
+   339d2:	324967        	s8i	a3, a9, 103
+   339d5:	82c880        	addi	a8, a8, -128
+   339d8:	424868        	s8i	a4, a8, 104
+000339db: e5f8f8   call8        . -0x7070 ; Capstone ; target=0x2c968
+000339de: 1df0     retw.n        ; Capstone

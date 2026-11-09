@@ -1,0 +1,51 @@
+
+/tmp/tmpniefu5fc/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00002200 <.data+0x2200>:
+00002200: 364100   entry        a1, 0x20 ; Capstone
+    2203:	5102ec        	l32r	a5, 0xffffd20c (0x5ffee264) ; inferred DRAM map 0x5ffec000
+    2206:	0c16      	movi.n	a6, 1
+    2208:	624505        	s8i	a6, a5, 5
+    220b:	0c8b      	movi.n	a11, 8
+    220d:	820503        	l8ui	a8, a5, 3
+    2210:	420504        	l8ui	a4, a5, 4
+    2213:	320505        	l8ui	a3, a5, 5
+    2216:	808693        	movnez	a8, a6, a8
+    2219:	804420        	or	a4, a4, a8
+    221c:	404693        	movnez	a4, a6, a4
+    221f:	403320        	or	a3, a3, a4
+    2222:	41f8eb        	l32r	a4, 0xffffd204 (0x6803b200) ; inferred DRAM map 0x5ffec000
+    2225:	303693        	movnez	a3, a6, a3
+    2228:	324506        	s8i	a3, a5, 6
+    222b:	0c06      	movi.n	a6, 0
+    222d:	ac73      	beqz.n	a3, 0x2258
+    222f:	a2248c        	l32i	a10, a4, 0x230
+    2232:	b0aa20        	or	a10, a10, a11
+    2235:	a2648c        	s32i	a10, a4, 0x230
+    2238:	30ea03        	rsr.ccount	a3
+    223b:	90ea03        	rsr.ccount	a9
+    223e:	3099c0        	sub	a9, a9, a3
+    2241:	f65908        	bgeui	a9, 5, 0x224d
+    2244:	c0ea03        	rsr.ccount	a12
+    2247:	30ccc0        	sub	a12, a12, a3
+    224a:	b65cf6        	bltui	a12, 5, 0x2244
+    224d:	0cad      	movi.n	a13, 10
+    224f:	d264a4        	s32i	a13, a4, 0x290
+    2252:	624502        	s8i	a6, a5, 2
+00002255: 1df0     retw.n        ; Capstone
+    2257:	00e224        	extui	a14, a0, 2, 3
+    225a:	8c7c      	beqz.n	a12, 0x2265
+    225c:	7f          	.byte 0x7f
+    225d:	f0ee10        	and	a14, a14, a15
+    2260:	e2648c        	s32i	a14, a4, 0x230
+    2263:	6264a4        	s32i	a6, a4, 0x290
+    2266:	624502        	s8i	a6, a5, 2
+00002269: 1df0     retw.n        ; Capstone
+	...
+
+; Alternate branch-target decode
+    2258:	e2248c        	l32i	a14, a4, 0x230
+    225b:	7c7f      	movi.n	a15, -9

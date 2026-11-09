@@ -1,0 +1,43 @@
+
+/tmp/tmpwohnbvkx/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002fde0 <.data+0x2fde0>:
+0002fde0: 366100   entry        a1, 0x30 ; Capstone
+   2fde3:	51a690        	l32r	a5, 0x1407c (0xb670)
+   2fde6:	41a690        	l32r	a4, 0x14080 (0xb4b4)
+   2fde9:	0c03      	movi.n	a3, 0
+   2fdeb:	71868c        	l32r	a7, 0x13004 (0xfffff)
+   2fdee:	61a590        	l32r	a6, 0x14084 (0x15ffe00)
+   2fdf1:	37523e        	bbc	a2, a3, 0x2fe33
+   2fdf4:	a2247f        	l32i	a10, a4, 0x1fc
+   2fdf7:	70aa10        	and	a10, a10, a7
+   2fdfa:	6aaa      	add.n	a10, a10, a6
+   2fdfc:	c02000        	memw
+   2fdff:	a22a80        	l32i	a10, a10, 0x200
+   2fe02:	a901      	s32i.n	a10, a1, 0
+   2fe04:	822487        	l32i	a8, a4, 0x21c
+   2fe07:	a0a014        	extui	a10, a10, 0, 2
+   2fe0a:	a911      	s32i.n	a10, a1, 4
+0002fe0c: e00800   callx8       a8 ; Capstone
+   2fe0f:	661a20        	bnei	a10, 1, 0x2fe33
+   2fe12:	d17090        	l32r	a13, 0x13fd4 (0xfffcffff)
+   2fe15:	c801      	l32i.n	a12, a1, 0
+   2fe17:	b811      	l32i.n	a11, a1, 4
+   2fe19:	d0cc10        	and	a12, a12, a13
+   2fe1c:	d2247f        	l32i	a13, a4, 0x1fc
+   2fe1f:	00eb11        	slli	a14, a11, 16
+   2fe22:	e0cc20        	or	a12, a12, a14
+   2fe25:	70dd10        	and	a13, a13, a7
+   2fe28:	6add      	add.n	a13, a13, a6
+   2fe2a:	c02000        	memw
+   2fe2d:	c26d80        	s32i	a12, a13, 0x200
+   2fe30:	b24580        	s8i	a11, a5, 128
+   2fe33:	1b55      	addi.n	a5, a5, 1
+   2fe35:	4b44      	addi.n	a4, a4, 4
+   2fe37:	1b33      	addi.n	a3, a3, 1
+   2fe39:	6683b4        	bnei	a3, 8, 0x2fdf1
+0002fe3c: 1df0     retw.n        ; Capstone
+	...

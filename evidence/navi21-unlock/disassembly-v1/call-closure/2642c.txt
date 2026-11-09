@@ -1,0 +1,41 @@
+
+/tmp/tmpk0fnwjk4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002642c <.data+0x2642c>:
+0002642c: 366100   entry        a1, 0x30 ; Capstone
+   2642f:	315cb5        	l32r	a3, 0x139a0 (0xc580)
+   26432:	66221e        	bnei	a2, 2, 0x26454
+   26435:	a15bb5        	l32r	a10, 0x139a4 (0xa370)
+   26438:	b2c374        	addi	a11, a3, 116
+0002643b: a50600   call8        . +0x6c ; Capstone ; target=0x264a4
+0002643e: 3000fa   const.s      f0, 0 ; Capstone
+   26441:	0c58      	movi.n	a8, 5
+   26443:	92d302        	addmi	a9, a3, 0x200
+   26446:	92c9fc        	addi	a9, a9, -4
+00026449: 76a805   loopgtz      a8, . +9 ; Capstone
+0002644c: 03c901   ssip         f0, a9, 4 ; Capstone
+0002644f: 034904   ssi          f0, a9, 0x10 ; Capstone
+00026452: 1df0     retw.n        ; Capstone
+   26454:	661228        	bnei	a2, 1, 0x26480
+   26457:	a154b5        	l32r	a10, 0x139a8 (0x9e6c)
+   2645a:	0c5b      	movi.n	a11, 5
+   2645c:	92a1fc        	movi	a9, 0x1fc
+   2645f:	9a93      	add.n	a9, a3, a9
+00026461: 76ab19   loopgtz      a11, . +0x1d ; Capstone
+   26464:	b2da05        	addmi	a11, a10, 0x500
+   26467:	c22b10        	l32i	a12, a11, 64
+   2646a:	4baa      	addi.n	a10, a10, 4
+   2646c:	b8bb      	l32i.n	a11, a11, 44
+   2646e:	c911      	s32i.n	a12, a1, 4
+00026470: 030101   lsi          f0, a1, 4 ; Capstone
+   26473:	b901      	s32i.n	a11, a1, 0
+00026475: 130100   lsi          f1, a1, 0 ; Capstone
+00026478: 13c901   ssip         f1, a9, 4 ; Capstone
+0002647b: 034904   ssi          f0, a9, 0x10 ; Capstone
+0002647e: 1df0     retw.n        ; Capstone
+   26480:	663202        	bnei	a2, 3, 0x26486
+00026483: 25e4ff   call8        . -0x1bc ; Capstone ; target=0x262c4
+00026486: 1df0     retw.n        ; Capstone

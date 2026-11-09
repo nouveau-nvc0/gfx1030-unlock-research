@@ -1,0 +1,2088 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "helper_audit_sha256": "9930281affa35a4ad922533bdd7763f1b905c3110dd4fee8eb713def90fd723c",
+  "calls": [
+    {
+      "call": "0x2b51",
+      "index_setup": "0x2b4e",
+      "index": "0x21",
+      "setup_word": "c0080021",
+      "intervening": [
+        {
+          "pc": "0x2b4f",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2b50",
+          "word": "28cc0400",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2b55",
+      "index_setup": "0x2b52",
+      "index": "0x23",
+      "setup_word": "c0080023",
+      "intervening": [
+        {
+          "pc": "0x2b53",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2b54",
+          "word": "28cc0400",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2b59",
+      "index_setup": "0x2b56",
+      "index": "0x25",
+      "setup_word": "c0080025",
+      "intervening": [
+        {
+          "pc": "0x2b57",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2b58",
+          "word": "24ccf7ff",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2b5d",
+      "index_setup": "0x2b5a",
+      "index": "0x27",
+      "setup_word": "c0080027",
+      "intervening": [
+        {
+          "pc": "0x2b5b",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2b5c",
+          "word": "24ccf7ff",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2b62",
+      "index_setup": "0x2b5e",
+      "index": "0x31",
+      "setup_word": "c0080031",
+      "intervening": [
+        {
+          "pc": "0x2b5f",
+          "word": "c00c001e",
+          "interpretation": "immediate/load destination r3"
+        },
+        {
+          "pc": "0x2b60",
+          "word": "10cc000a",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2b61",
+          "word": "28cc000a",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2b65",
+      "index_setup": "0x2b63",
+      "index": "0x32",
+      "setup_word": "c0080032",
+      "intervening": [
+        {
+          "pc": "0x2b64",
+          "word": "c00c03e8",
+          "interpretation": "immediate/load destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2b6c",
+      "index_setup": "0x2b66",
+      "index": "0x2c",
+      "setup_word": "c008002c",
+      "intervening": [
+        {
+          "pc": "0x2b67",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2b68",
+          "word": "24cc03ff",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2b69",
+          "word": "c01001ff",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2b6a",
+          "word": "1110000a",
+          "interpretation": "ALU destination r4"
+        },
+        {
+          "pc": "0x2b6b",
+          "word": "7cd0c00a",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2b78",
+      "index_setup": "0x2b75",
+      "index": "0x2",
+      "setup_word": "c0080002",
+      "intervening": [
+        {
+          "pc": "0x2b76",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2b77",
+          "word": "28cc1000",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2b7c",
+      "index_setup": "0x2b79",
+      "index": "0x3",
+      "setup_word": "c0080003",
+      "intervening": [
+        {
+          "pc": "0x2b7a",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2b7b",
+          "word": "28cc1000",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2b8f",
+      "index_setup": "0x2b8b",
+      "index": "0xe",
+      "setup_word": "c008000e",
+      "intervening": [
+        {
+          "pc": "0x2b8c",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2b8d",
+          "word": "24ccffef",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2b8e",
+          "word": "24ccfdff",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2b94",
+      "index_setup": "0x2b90",
+      "index": "0x12",
+      "setup_word": "c0080012",
+      "intervening": [
+        {
+          "pc": "0x2b91",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2b92",
+          "word": "24ccffef",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2b93",
+          "word": "24ccfdff",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2b9b",
+      "index_setup": "0x2b98",
+      "index": "0xf",
+      "setup_word": "c008000f",
+      "intervening": [
+        {
+          "pc": "0x2b99",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2b9a",
+          "word": "28cc0008",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2b9f",
+      "index_setup": "0x2b9c",
+      "index": "0x13",
+      "setup_word": "c0080013",
+      "intervening": [
+        {
+          "pc": "0x2b9d",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2b9e",
+          "word": "28cc0008",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2ba3",
+      "index_setup": "0x2ba0",
+      "index": "0xf",
+      "setup_word": "c008000f",
+      "intervening": [
+        {
+          "pc": "0x2ba1",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2ba2",
+          "word": "28cc0004",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2ba7",
+      "index_setup": "0x2ba4",
+      "index": "0x13",
+      "setup_word": "c0080013",
+      "intervening": [
+        {
+          "pc": "0x2ba5",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2ba6",
+          "word": "28cc0004",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2bc4",
+      "index_setup": "0x2bc1",
+      "index": "0x21",
+      "setup_word": "c0080021",
+      "intervening": [
+        {
+          "pc": "0x2bc2",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2bc3",
+          "word": "28cc0400",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2bc8",
+      "index_setup": "0x2bc5",
+      "index": "0x23",
+      "setup_word": "c0080023",
+      "intervening": [
+        {
+          "pc": "0x2bc6",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2bc7",
+          "word": "28cc0400",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2bcd",
+      "index_setup": "0x2bc9",
+      "index": "0x25",
+      "setup_word": "c0080025",
+      "intervening": [
+        {
+          "pc": "0x2bca",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2bcb",
+          "word": "24ccf7ff",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2bcc",
+          "word": "24ccfbff",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2bd2",
+      "index_setup": "0x2bce",
+      "index": "0x27",
+      "setup_word": "c0080027",
+      "intervening": [
+        {
+          "pc": "0x2bcf",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2bd0",
+          "word": "24ccf7ff",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2bd1",
+          "word": "24ccfbff",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2bd7",
+      "index_setup": "0x2bd3",
+      "index": "0x31",
+      "setup_word": "c0080031",
+      "intervening": [
+        {
+          "pc": "0x2bd4",
+          "word": "c00c001e",
+          "interpretation": "immediate/load destination r3"
+        },
+        {
+          "pc": "0x2bd5",
+          "word": "10cc000a",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2bd6",
+          "word": "28cc000a",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2bda",
+      "index_setup": "0x2bd8",
+      "index": "0x32",
+      "setup_word": "c0080032",
+      "intervening": [
+        {
+          "pc": "0x2bd9",
+          "word": "c00c03e8",
+          "interpretation": "immediate/load destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2bdd",
+      "index_setup": "0x2bdb",
+      "index": "0x34",
+      "setup_word": "c0080034",
+      "intervening": [
+        {
+          "pc": "0x2bdc",
+          "word": "c00c0001",
+          "interpretation": "immediate/load destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2be0",
+      "index_setup": "0x2bde",
+      "index": "0x35",
+      "setup_word": "c0080035",
+      "intervening": [
+        {
+          "pc": "0x2bdf",
+          "word": "c00c05dc",
+          "interpretation": "immediate/load destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2be7",
+      "index_setup": "0x2be1",
+      "index": "0x2c",
+      "setup_word": "c008002c",
+      "intervening": [
+        {
+          "pc": "0x2be2",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2be3",
+          "word": "24cc03ff",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2be4",
+          "word": "c01001ff",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2be5",
+          "word": "1110000a",
+          "interpretation": "ALU destination r4"
+        },
+        {
+          "pc": "0x2be6",
+          "word": "7cd0c00a",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2bf3",
+      "index_setup": "0x2bf0",
+      "index": "0x2",
+      "setup_word": "c0080002",
+      "intervening": [
+        {
+          "pc": "0x2bf1",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2bf2",
+          "word": "28cc1000",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2bf7",
+      "index_setup": "0x2bf4",
+      "index": "0x3",
+      "setup_word": "c0080003",
+      "intervening": [
+        {
+          "pc": "0x2bf5",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2bf6",
+          "word": "28cc1000",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2c0c",
+      "index_setup": "0x2c08",
+      "index": "0xe",
+      "setup_word": "c008000e",
+      "intervening": [
+        {
+          "pc": "0x2c09",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2c0a",
+          "word": "24ccffef",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2c0b",
+          "word": "24ccfdff",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2c11",
+      "index_setup": "0x2c0d",
+      "index": "0x12",
+      "setup_word": "c0080012",
+      "intervening": [
+        {
+          "pc": "0x2c0e",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2c0f",
+          "word": "24ccffef",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2c10",
+          "word": "24ccfdff",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2c1f",
+      "index_setup": "0x2c13",
+      "index": "0x2b",
+      "setup_word": "c008002b",
+      "intervening": [
+        {
+          "pc": "0x2c14",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2c15",
+          "word": "c015fff0",
+          "interpretation": "immediate/load destination r5"
+        },
+        {
+          "pc": "0x2c16",
+          "word": "7cd4c009",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2c17",
+          "word": "c015ff0f",
+          "interpretation": "immediate/load destination r5"
+        },
+        {
+          "pc": "0x2c18",
+          "word": "7cd4c009",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2c19",
+          "word": "c015e1ff",
+          "interpretation": "immediate/load destination r5"
+        },
+        {
+          "pc": "0x2c1a",
+          "word": "7cd4c009",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2c1b",
+          "word": "28cc00bf",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2c1c",
+          "word": "c0140008",
+          "interpretation": "immediate/load destination r5"
+        },
+        {
+          "pc": "0x2c1d",
+          "word": "11540009",
+          "interpretation": "ALU destination r5"
+        },
+        {
+          "pc": "0x2c1e",
+          "word": "7cd4c00a",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2c23",
+      "index_setup": "0x2c20",
+      "index": "0xf",
+      "setup_word": "c008000f",
+      "intervening": [
+        {
+          "pc": "0x2c21",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2c22",
+          "word": "28cc0008",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2c27",
+      "index_setup": "0x2c24",
+      "index": "0x13",
+      "setup_word": "c0080013",
+      "intervening": [
+        {
+          "pc": "0x2c25",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2c26",
+          "word": "28cc0008",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2c2b",
+      "index_setup": "0x2c28",
+      "index": "0xf",
+      "setup_word": "c008000f",
+      "intervening": [
+        {
+          "pc": "0x2c29",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2c2a",
+          "word": "28cc0004",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2c2f",
+      "index_setup": "0x2c2c",
+      "index": "0x13",
+      "setup_word": "c0080013",
+      "intervening": [
+        {
+          "pc": "0x2c2d",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2c2e",
+          "word": "28cc0004",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2ca8",
+      "index_setup": "0x2ca6",
+      "index": "0x29",
+      "setup_word": "c0080029",
+      "intervening": [
+        {
+          "pc": "0x2ca7",
+          "word": "c00c0000",
+          "interpretation": "immediate/load destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2cae",
+      "index_setup": "0x2cad",
+      "index": "0x28",
+      "setup_word": "c0080028",
+      "intervening": []
+    },
+    {
+      "call": "0x2cb1",
+      "index_setup": "0x2cb0",
+      "index": "0x29",
+      "setup_word": "c0080029",
+      "intervening": []
+    },
+    {
+      "call": "0x2cda",
+      "index_setup": "0x2cd6",
+      "index": "0x31",
+      "setup_word": "c0080031",
+      "intervening": [
+        {
+          "pc": "0x2cd7",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2cd8",
+          "word": "c011fc00",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2cd9",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2cdd",
+      "index_setup": "0x2cdb",
+      "index": "0x32",
+      "setup_word": "c0080032",
+      "intervening": [
+        {
+          "pc": "0x2cdc",
+          "word": "c00c0003",
+          "interpretation": "immediate/load destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2ce4",
+      "index_setup": "0x2ce2",
+      "index": "0x36",
+      "setup_word": "c0080036",
+      "intervening": [
+        {
+          "pc": "0x2ce3",
+          "word": "c00c1f40",
+          "interpretation": "immediate/load destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2ce9",
+      "index_setup": "0x2ce5",
+      "index": "0xe",
+      "setup_word": "c008000e",
+      "intervening": [
+        {
+          "pc": "0x2ce6",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2ce7",
+          "word": "24ccfffe",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2ce8",
+          "word": "24ccffdf",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2cee",
+      "index_setup": "0x2cea",
+      "index": "0x12",
+      "setup_word": "c0080012",
+      "intervening": [
+        {
+          "pc": "0x2ceb",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2cec",
+          "word": "24ccfffe",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2ced",
+          "word": "24ccffdf",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2cf5",
+      "index_setup": "0x2cef",
+      "index": "0x21",
+      "setup_word": "c0080021",
+      "intervening": [
+        {
+          "pc": "0x2cf0",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2cf1",
+          "word": "28cc0400",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2cf2",
+          "word": "c011fc00",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2cf3",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2cf4",
+          "word": "28cc0004",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2cfc",
+      "index_setup": "0x2cf6",
+      "index": "0x23",
+      "setup_word": "c0080023",
+      "intervening": [
+        {
+          "pc": "0x2cf7",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2cf8",
+          "word": "28cc0400",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2cf9",
+          "word": "c011fc00",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2cfa",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2cfb",
+          "word": "28cc0004",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d03",
+      "index_setup": "0x2cfd",
+      "index": "0x25",
+      "setup_word": "c0080025",
+      "intervening": [
+        {
+          "pc": "0x2cfe",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2cff",
+          "word": "28cc0400",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2d00",
+          "word": "c011fc00",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2d01",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2d02",
+          "word": "28cc0004",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d0a",
+      "index_setup": "0x2d04",
+      "index": "0x27",
+      "setup_word": "c0080027",
+      "intervening": [
+        {
+          "pc": "0x2d05",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d06",
+          "word": "28cc0400",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2d07",
+          "word": "c011fc00",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2d08",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2d09",
+          "word": "28cc0004",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d10",
+      "index_setup": "0x2d0d",
+      "index": "0x2",
+      "setup_word": "c0080002",
+      "intervening": [
+        {
+          "pc": "0x2d0e",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d0f",
+          "word": "28cc1000",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d14",
+      "index_setup": "0x2d11",
+      "index": "0x3",
+      "setup_word": "c0080003",
+      "intervening": [
+        {
+          "pc": "0x2d12",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d13",
+          "word": "28cc1000",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d1f",
+      "index_setup": "0x2d1c",
+      "index": "0xf",
+      "setup_word": "c008000f",
+      "intervening": [
+        {
+          "pc": "0x2d1d",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d1e",
+          "word": "28cc0008",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d23",
+      "index_setup": "0x2d20",
+      "index": "0x13",
+      "setup_word": "c0080013",
+      "intervening": [
+        {
+          "pc": "0x2d21",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d22",
+          "word": "28cc0008",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d27",
+      "index_setup": "0x2d24",
+      "index": "0xf",
+      "setup_word": "c008000f",
+      "intervening": [
+        {
+          "pc": "0x2d25",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d26",
+          "word": "28cc0004",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d2b",
+      "index_setup": "0x2d28",
+      "index": "0x13",
+      "setup_word": "c0080013",
+      "intervening": [
+        {
+          "pc": "0x2d29",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d2a",
+          "word": "28cc0004",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d32",
+      "index_setup": "0x2d30",
+      "index": "0x29",
+      "setup_word": "c0080029",
+      "intervening": [
+        {
+          "pc": "0x2d31",
+          "word": "7cccc00b",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d43",
+      "index_setup": "0x2d3e",
+      "index": "0x27",
+      "setup_word": "c0080027",
+      "intervening": [
+        {
+          "pc": "0x2d3f",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d40",
+          "word": "c011fc00",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2d41",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2d42",
+          "word": "28cc0064",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d48",
+      "index_setup": "0x2d44",
+      "index": "0x12",
+      "setup_word": "c0080012",
+      "intervening": [
+        {
+          "pc": "0x2d45",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d46",
+          "word": "c011ffdf",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2d47",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d4d",
+      "index_setup": "0x2d49",
+      "index": "0x25",
+      "setup_word": "c0080025",
+      "intervening": [
+        {
+          "pc": "0x2d4a",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d4b",
+          "word": "c011fc00",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2d4c",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d51",
+      "index_setup": "0x2d4e",
+      "index": "0x12",
+      "setup_word": "c0080012",
+      "intervening": [
+        {
+          "pc": "0x2d4f",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d50",
+          "word": "28cc0001",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d59",
+      "index_setup": "0x2d54",
+      "index": "0x25",
+      "setup_word": "c0080025",
+      "intervening": [
+        {
+          "pc": "0x2d55",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d56",
+          "word": "c011fc00",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2d57",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2d58",
+          "word": "28cc0064",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d5e",
+      "index_setup": "0x2d5a",
+      "index": "0x12",
+      "setup_word": "c0080012",
+      "intervening": [
+        {
+          "pc": "0x2d5b",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d5c",
+          "word": "c011fffe",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2d5d",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d63",
+      "index_setup": "0x2d5f",
+      "index": "0x27",
+      "setup_word": "c0080027",
+      "intervening": [
+        {
+          "pc": "0x2d60",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d61",
+          "word": "c011fc00",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2d62",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d67",
+      "index_setup": "0x2d64",
+      "index": "0x12",
+      "setup_word": "c0080012",
+      "intervening": [
+        {
+          "pc": "0x2d65",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d66",
+          "word": "28cc0020",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d76",
+      "index_setup": "0x2d72",
+      "index": "0x25",
+      "setup_word": "c0080025",
+      "intervening": [
+        {
+          "pc": "0x2d73",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d74",
+          "word": "c011fc00",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2d75",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d7b",
+      "index_setup": "0x2d77",
+      "index": "0x27",
+      "setup_word": "c0080027",
+      "intervening": [
+        {
+          "pc": "0x2d78",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d79",
+          "word": "c011fc00",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2d7a",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d7e",
+      "index_setup": "0x2d7c",
+      "index": "0x12",
+      "setup_word": "c0080012",
+      "intervening": [
+        {
+          "pc": "0x2d7d",
+          "word": "c00c0000",
+          "interpretation": "immediate/load destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d83",
+      "index_setup": "0x2d7f",
+      "index": "0x21",
+      "setup_word": "c0080021",
+      "intervening": [
+        {
+          "pc": "0x2d80",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d81",
+          "word": "c011fc00",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2d82",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2d88",
+      "index_setup": "0x2d84",
+      "index": "0x23",
+      "setup_word": "c0080023",
+      "intervening": [
+        {
+          "pc": "0x2d85",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2d86",
+          "word": "c011fc00",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2d87",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2dc2",
+      "index_setup": "0x2dbf",
+      "index": "0xf",
+      "setup_word": "c008000f",
+      "intervening": [
+        {
+          "pc": "0x2dc0",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2dc1",
+          "word": "24ccfffb",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2dc6",
+      "index_setup": "0x2dc3",
+      "index": "0x13",
+      "setup_word": "c0080013",
+      "intervening": [
+        {
+          "pc": "0x2dc4",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2dc5",
+          "word": "24ccfffb",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2dd3",
+      "index_setup": "0x2dcb",
+      "index": "0x21",
+      "setup_word": "c0080021",
+      "intervening": [
+        {
+          "pc": "0x2dcc",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2dcd",
+          "word": "c011fc00",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2dce",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2dcf",
+          "word": "c011fbff",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2dd0",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2dd1",
+          "word": "c011f7ff",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2dd2",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2ddc",
+      "index_setup": "0x2dd4",
+      "index": "0x23",
+      "setup_word": "c0080023",
+      "intervening": [
+        {
+          "pc": "0x2dd5",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2dd6",
+          "word": "c011fc00",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2dd7",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2dd8",
+          "word": "c011fbff",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2dd9",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2dda",
+          "word": "c011f7ff",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2ddb",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2de5",
+      "index_setup": "0x2ddd",
+      "index": "0x25",
+      "setup_word": "c0080025",
+      "intervening": [
+        {
+          "pc": "0x2dde",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2ddf",
+          "word": "c011fc00",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2de0",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2de1",
+          "word": "c011fbff",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2de2",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2de3",
+          "word": "c011f7ff",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2de4",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2dee",
+      "index_setup": "0x2de6",
+      "index": "0x27",
+      "setup_word": "c0080027",
+      "intervening": [
+        {
+          "pc": "0x2de7",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2de8",
+          "word": "c011fc00",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2de9",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2dea",
+          "word": "c011fbff",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2deb",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2dec",
+          "word": "c011f7ff",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2ded",
+          "word": "7cd0c009",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2df7",
+      "index_setup": "0x2df4",
+      "index": "0x9",
+      "setup_word": "c0080009",
+      "intervening": [
+        {
+          "pc": "0x2df5",
+          "word": "c40fecab",
+          "interpretation": "immediate/load destination r3"
+        },
+        {
+          "pc": "0x2df6",
+          "word": "24ccffff",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2e14",
+      "index_setup": "0x2e0e",
+      "index": "0x60",
+      "setup_word": "c0080060",
+      "intervening": [
+        {
+          "pc": "0x2e0f",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2e10",
+          "word": "24ccfffe",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2e11",
+          "word": "c413ecac",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2e12",
+          "word": "25100001",
+          "interpretation": "ALU destination r4"
+        },
+        {
+          "pc": "0x2e13",
+          "word": "7cd0c00a",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2e19",
+      "index_setup": "0x2e15",
+      "index": "0x61",
+      "setup_word": "c0080061",
+      "intervening": [
+        {
+          "pc": "0x2e16",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2e17",
+          "word": "24ccfffe",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2e18",
+          "word": "7cd0c00a",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2e24",
+      "index_setup": "0x2e1e",
+      "index": "0x60",
+      "setup_word": "c0080060",
+      "intervening": [
+        {
+          "pc": "0x2e1f",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2e20",
+          "word": "24ccffe1",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2e21",
+          "word": "c411ecab",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2e22",
+          "word": "11100001",
+          "interpretation": "ALU destination r4"
+        },
+        {
+          "pc": "0x2e23",
+          "word": "7cd0c00a",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2e29",
+      "index_setup": "0x2e25",
+      "index": "0x61",
+      "setup_word": "c0080061",
+      "intervening": [
+        {
+          "pc": "0x2e26",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2e27",
+          "word": "24ccffe1",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2e28",
+          "word": "7cd0c00a",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2e37",
+      "index_setup": "0x2e32",
+      "index": "0x60",
+      "setup_word": "c0080060",
+      "intervening": [
+        {
+          "pc": "0x2e33",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2e34",
+          "word": "24ccfffe",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2e35",
+          "word": "c0100001",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2e36",
+          "word": "7cd0c00a",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2e3c",
+      "index_setup": "0x2e38",
+      "index": "0x61",
+      "setup_word": "c0080061",
+      "intervening": [
+        {
+          "pc": "0x2e39",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2e3a",
+          "word": "24ccfffe",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2e3b",
+          "word": "7cd0c00a",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2e43",
+      "index_setup": "0x2e3d",
+      "index": "0x60",
+      "setup_word": "c0080060",
+      "intervening": [
+        {
+          "pc": "0x2e3e",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2e3f",
+          "word": "24ccffe1",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2e40",
+          "word": "c0100002",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2e41",
+          "word": "11100001",
+          "interpretation": "ALU destination r4"
+        },
+        {
+          "pc": "0x2e42",
+          "word": "7cd0c00a",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2e48",
+      "index_setup": "0x2e44",
+      "index": "0x61",
+      "setup_word": "c0080061",
+      "intervening": [
+        {
+          "pc": "0x2e45",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2e46",
+          "word": "24ccffe1",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2e47",
+          "word": "7cd0c00a",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2e4c",
+      "index_setup": "0x2e4a",
+      "index": "0x38",
+      "setup_word": "c0080038",
+      "intervening": [
+        {
+          "pc": "0x2e4b",
+          "word": "c00c0001",
+          "interpretation": "immediate/load destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2e5a",
+      "index_setup": "0x2e57",
+      "index": "0x38",
+      "setup_word": "c0080038",
+      "intervening": [
+        {
+          "pc": "0x2e58",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2e59",
+          "word": "24ccfffe",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2e6d",
+      "index_setup": "0x2e6b",
+      "index": "0x38",
+      "setup_word": "c0080038",
+      "intervening": [
+        {
+          "pc": "0x2e6c",
+          "word": "c00c0001",
+          "interpretation": "immediate/load destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2e78",
+      "index_setup": "0x2e75",
+      "index": "0x38",
+      "setup_word": "c0080038",
+      "intervening": [
+        {
+          "pc": "0x2e76",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2e77",
+          "word": "24ccfffe",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2f76",
+      "index_setup": "0x2f72",
+      "index": "0x29",
+      "setup_word": "c0080029",
+      "intervening": [
+        {
+          "pc": "0x2f73",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2f74",
+          "word": "7cc14001",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2f75",
+          "word": "7cccc00b",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2f87",
+      "index_setup": "0x2f85",
+      "index": "0x29",
+      "setup_word": "c0080029",
+      "intervening": [
+        {
+          "pc": "0x2f86",
+          "word": "7d40c001",
+          "interpretation": "ALU destination r5"
+        }
+      ]
+    },
+    {
+      "call": "0x2f8c",
+      "index_setup": "0x2f89",
+      "index": "0x29",
+      "setup_word": "c0080029",
+      "intervening": [
+        {
+          "pc": "0x2f8a",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2f8b",
+          "word": "24ccfffe",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2fa6",
+      "index_setup": "0x2fa0",
+      "index": "0x29",
+      "setup_word": "c0080029",
+      "intervening": [
+        {
+          "pc": "0x2fa1",
+          "word": "8c002e7a",
+          "interpretation": "known read helper preserves r2"
+        },
+        {
+          "pc": "0x2fa2",
+          "word": "c4130120",
+          "interpretation": "immediate/load destination r4"
+        },
+        {
+          "pc": "0x2fa3",
+          "word": "c4170121",
+          "interpretation": "immediate/load destination r5"
+        },
+        {
+          "pc": "0x2fa4",
+          "word": "7d150009",
+          "interpretation": "ALU destination r4"
+        },
+        {
+          "pc": "0x2fa5",
+          "word": "7cd0c00a",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    },
+    {
+      "call": "0x2ff2",
+      "index_setup": "0x2feb",
+      "index": "0x28",
+      "setup_word": "c0080028",
+      "intervening": [
+        {
+          "pc": "0x2fec",
+          "word": "1198000a",
+          "interpretation": "ALU destination r6"
+        },
+        {
+          "pc": "0x2fed",
+          "word": "c00c0000",
+          "interpretation": "immediate/load destination r3"
+        },
+        {
+          "pc": "0x2fee",
+          "word": "7cd8c00a",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2fef",
+          "word": "11100015",
+          "interpretation": "ALU destination r4"
+        },
+        {
+          "pc": "0x2ff0",
+          "word": "7cd0c00a",
+          "interpretation": "ALU destination r3"
+        },
+        {
+          "pc": "0x2ff1",
+          "word": "28cc0001",
+          "interpretation": "ALU destination r3"
+        }
+      ]
+    }
+  ],
+  "unique_intervening_words": {
+    "8c002e7a": "known read helper preserves r2",
+    "28cc0400": "ALU destination r3",
+    "24ccf7ff": "ALU destination r3",
+    "c00c001e": "immediate/load destination r3",
+    "10cc000a": "ALU destination r3",
+    "28cc000a": "ALU destination r3",
+    "c00c03e8": "immediate/load destination r3",
+    "24cc03ff": "ALU destination r3",
+    "c01001ff": "immediate/load destination r4",
+    "1110000a": "ALU destination r4",
+    "7cd0c00a": "ALU destination r3",
+    "28cc1000": "ALU destination r3",
+    "24ccffef": "ALU destination r3",
+    "24ccfdff": "ALU destination r3",
+    "28cc0008": "ALU destination r3",
+    "28cc0004": "ALU destination r3",
+    "24ccfbff": "ALU destination r3",
+    "c00c0001": "immediate/load destination r3",
+    "c00c05dc": "immediate/load destination r3",
+    "c015fff0": "immediate/load destination r5",
+    "7cd4c009": "ALU destination r3",
+    "c015ff0f": "immediate/load destination r5",
+    "c015e1ff": "immediate/load destination r5",
+    "28cc00bf": "ALU destination r3",
+    "c0140008": "immediate/load destination r5",
+    "11540009": "ALU destination r5",
+    "7cd4c00a": "ALU destination r3",
+    "c00c0000": "immediate/load destination r3",
+    "c011fc00": "immediate/load destination r4",
+    "7cd0c009": "ALU destination r3",
+    "c00c0003": "immediate/load destination r3",
+    "c00c1f40": "immediate/load destination r3",
+    "24ccfffe": "ALU destination r3",
+    "24ccffdf": "ALU destination r3",
+    "7cccc00b": "ALU destination r3",
+    "28cc0064": "ALU destination r3",
+    "c011ffdf": "immediate/load destination r4",
+    "28cc0001": "ALU destination r3",
+    "c011fffe": "immediate/load destination r4",
+    "28cc0020": "ALU destination r3",
+    "24ccfffb": "ALU destination r3",
+    "c011fbff": "immediate/load destination r4",
+    "c011f7ff": "immediate/load destination r4",
+    "c40fecab": "immediate/load destination r3",
+    "24ccffff": "ALU destination r3",
+    "c413ecac": "immediate/load destination r4",
+    "25100001": "ALU destination r4",
+    "24ccffe1": "ALU destination r3",
+    "c411ecab": "immediate/load destination r4",
+    "11100001": "ALU destination r4",
+    "c0100001": "immediate/load destination r4",
+    "c0100002": "immediate/load destination r4",
+    "7cc14001": "ALU destination r3",
+    "7d40c001": "ALU destination r5",
+    "c4130120": "immediate/load destination r4",
+    "c4170121": "immediate/load destination r5",
+    "7d150009": "ALU destination r4",
+    "1198000a": "ALU destination r6",
+    "7cd8c00a": "ALU destination r3",
+    "11100015": "ALU destination r4"
+  },
+  "indices": [
+    "0x2",
+    "0x3",
+    "0x9",
+    "0xe",
+    "0xf",
+    "0x12",
+    "0x13",
+    "0x21",
+    "0x23",
+    "0x25",
+    "0x27",
+    "0x28",
+    "0x29",
+    "0x2b",
+    "0x2c",
+    "0x31",
+    "0x32",
+    "0x34",
+    "0x35",
+    "0x36",
+    "0x38",
+    "0x60",
+    "0x61"
+  ],
+  "findings": [
+    "Every literal2e85 call has a preceding immediate r2 assignment within19words. Intervening words are classified ALU/immediate/load operations targeting other registers or the checked2e7a read helper. No intervening conditional/unconditional branch occurs.",
+    "Under this partial ISA and fallthrough-from-setup assumption, all89 write sites use one of23 fixed indices. Dynamic data values do not become the index along these local sequences.",
+    "This replaces the previous local caller-dataflow gap, but not the unknown physical index map. Fixed small indices alone do not establish that CC or saved RAM cannot be selected."
+  ],
+  "limits": [
+    "No full RLCG CFG: incoming transfers to the middle of a sequence, other code entries and computed calls remain unbounded.",
+    "Partial ISA destination-field interpretation is retained, not an independent processor specification.",
+    "Values written and all later hardware effects are not bounded by this index audit. No hardware access."
+  ]
+}

@@ -1,0 +1,32 @@
+
+/tmp/tmpfnke_h7m/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00025654 <.data+0x25654>:
+00025654: 364100   entry        a1, 0x20 ; Capstone
+   25657:	818db8        	l32r	a8, 0x1388c (0xf0003)
+   2565a:	9133b7        	l32r	a9, 0x13328 (0x123ae00)
+   2565d:	c02000        	memw
+   25660:	a18cb8        	l32r	a10, 0x13890 (0x1fff)
+   25663:	1c3b      	movi.n	a11, 19
+   25665:	c802      	l32i.n	a12, a2, 0
+   25667:	0c1d      	movi.n	a13, 1
+   25669:	8269de        	s32i	a8, a9, 0x378
+0002566c: 65f5ff   call8        . -0xa8 ; Capstone ; target=0x255c4
+0002566f: e5f2ff   call8        . -0xd0 ; Capstone ; target=0x2559c
+   25672:	c812      	l32i.n	a12, a2, 4
+   25674:	a187b8        	l32r	a10, 0x13890 (0x1fff)
+   25677:	1c4b      	movi.n	a11, 20
+   25679:	0c1d      	movi.n	a13, 1
+0002567b: a5f4ff   call8        . -0xb4 ; Capstone ; target=0x255c4
+0002567e: e5f1ff   call8        . -0xe0 ; Capstone ; target=0x2559c
+   25681:	a183b8        	l32r	a10, 0x13890 (0x1fff)
+   25684:	1c2b      	movi.n	a11, 18
+   25686:	c192b8        	l32r	a12, 0x138d0 (0x80090)
+   25689:	0c1d      	movi.n	a13, 1
+0002568b: a5f3ff   call8        . -0xc4 ; Capstone ; target=0x255c4
+0002568e: e5f0ff   call8        . -0xf0 ; Capstone ; target=0x2559c
+00025691: 1df0     retw.n        ; Capstone
+	...

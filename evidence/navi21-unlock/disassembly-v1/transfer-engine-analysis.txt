@@ -1,0 +1,20 @@
+Offline static analysis, 2026-11-09. No device execution.
+
+Common transfer descriptor (input to2aea8): u32 source+0,destination+4,length+8; bytes12/13 copied to transfer-control bits0/14; bytes14/15 request source/destination cache maintenance; byte16 channel (must<8); byte17 nonzero causes early return. Source,destination,length must be DWORD aligned, channel must not be busy. For length8 calls205dc; length<=3fff otherwise calls20490; larger calls20310. These are not plain CPU memcpy operations.
+
+All three workers build an engine program at fixed per-channel RAM15b00+56*channel using templates12df0/12dc0/12d80. Source copied to program+2, destination to+8. Workers perform DHWBI on program and selected buffers, wait for bit0 clear at03270d00, write control0xa00000|(channel<<24)|(channel<<8) at03270d08, program pointer at03270d0c, zero at03270d04. Completion1204 polls low4 bits at03270100+8*channel; zero success-like,15 error path, other values keep polling. Hardware block name/complete instruction-set semantics not established.
+
+Table import37750 maps external context with207ac, then source=mapped address,destination=fixed local buffer,length=caller-specified constant. Export37230 reverses source/destination. 207ac chooses adjacent64MiB windows; computes translated local address(window<<26)|(external_low&03ffffff). Window selection20810 is2*1170()+3. Mapping206e0 bounds window<=53 and writes registers0323fff0+16*window onward, plus0324035c+4*window and03240434+4*window. It combines external high/low into64MiB page number and sets configuration. Path20750 for alternate mapping mode is an error-report routine in this firmware, not another viable mapper. Need identify1170/runtime contexts and mapping permissions before claiming external-address alias to GC.
+
+Additional IMPORTANT engine consumer2af90 passes fixed descriptorfca0 to2aea8. Static descriptor: source0,destination0123ed68,length0x8c; flags01 00 01 00,channel0,active byte17=0. 209d4 sets descriptor source atfca0 from its argument and resets length to140; call20a25 supplies literal fce8. Thus this consumer intends copying a firmware-RAM block to address0123ed68, inside the translated GC/RLC register-region coordinates, outside ordinary low SMU RAM. The exact destination register at host3ed68 is not named in inspected GC header (near RLC_HYP control definitions); do not name it or infer all GC registers accept engine writes.
+
+This establishes a concrete candidate distinct from CPU S32I: the internal copy engine is used by firmware for an address in the GC/RLC region. Redirecting a descriptor to CC would require controlled descriptor modification or an independently accessible engine-submission path; neither authorized nor executed. Its bus permissions can differ from CPU/host writes, but CC acceptance is unproven. Generic SMU write could potentially supply descriptor mutation if accessible; no claim it can bypass its own permission condition.
+
+Call-site locator on whole linear listing finds2aea8 called by2af90,37230,37750; this is not exhaustive CFG proof, since initial linear decode has alignment gaps. Targeted worker listings retained under transfer-workers. Follow-up targeted2af90/209d4/209e8 confirms descriptor use and source setup at20a22/20a25. Listing209e8 stops after relevant setup (not full function); no claim of complete caller CFG.
+
+2026-11-09 program decoding: PL330 instruction/control layout independently
+matched. Descriptorbytes12/13 are source/destination increment flags;fca0 has
+1/0. Its140-byte transfer sends35 DWORDs tofixed0123ed68 after index-liked0
+write0123ed64; it does NOT cover adjacentMMIO addresses. Runtime source block
+has producer2b0fc. PossibleLX6 scratch interface remains a mapping candidate.
+See smu-transfer-program-followup.txt andsmu-transfer-program-audit.json.

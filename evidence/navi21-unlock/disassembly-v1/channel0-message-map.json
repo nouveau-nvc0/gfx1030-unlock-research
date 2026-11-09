@@ -1,0 +1,663 @@
+{
+  "basis": "Dispatcher0x1fcc, channel0 pointer at0x72dc=0x6acc, uint16 bound at0x7330=0x5e, stride8. Public names from smu_v11_0_7_ppsmc.h; channel/runtime mapping not exercised.",
+  "rows": [
+    {
+      "id": "0x0",
+      "public_name": null,
+      "handler": "0x0",
+      "metadata": "0x0",
+      "record": "0x6acc"
+    },
+    {
+      "id": "0x1",
+      "public_name": "TestMessage",
+      "handler": "0x37850",
+      "metadata": "0x1006",
+      "record": "0x6ad4"
+    },
+    {
+      "id": "0x2",
+      "public_name": "GetSmuVersion",
+      "handler": "0x3781c",
+      "metadata": "0x1006",
+      "record": "0x6adc"
+    },
+    {
+      "id": "0x3",
+      "public_name": "GetDriverIfVersion",
+      "handler": "0x37668",
+      "metadata": "0x1006",
+      "record": "0x6ae4"
+    },
+    {
+      "id": "0x4",
+      "public_name": "SetAllowedFeaturesMaskLow",
+      "handler": "0x359e8",
+      "metadata": "0x1006",
+      "record": "0x6aec"
+    },
+    {
+      "id": "0x5",
+      "public_name": "SetAllowedFeaturesMaskHigh",
+      "handler": "0x359d0",
+      "metadata": "0x1006",
+      "record": "0x6af4"
+    },
+    {
+      "id": "0x6",
+      "public_name": "EnableAllSmuFeatures",
+      "handler": "0x359ac",
+      "metadata": "0x1006",
+      "record": "0x6afc"
+    },
+    {
+      "id": "0x7",
+      "public_name": "DisableAllSmuFeatures",
+      "handler": "0x35938",
+      "metadata": "0x1006",
+      "record": "0x6b04"
+    },
+    {
+      "id": "0x8",
+      "public_name": "EnableSmuFeaturesLow",
+      "handler": "0x35c3c",
+      "metadata": "0x1006",
+      "record": "0x6b0c"
+    },
+    {
+      "id": "0x9",
+      "public_name": "EnableSmuFeaturesHigh",
+      "handler": "0x35a68",
+      "metadata": "0x1006",
+      "record": "0x6b14"
+    },
+    {
+      "id": "0xa",
+      "public_name": "DisableSmuFeaturesLow",
+      "handler": "0x35a34",
+      "metadata": "0x1006",
+      "record": "0x6b1c"
+    },
+    {
+      "id": "0xb",
+      "public_name": "DisableSmuFeaturesHigh",
+      "handler": "0x35a00",
+      "metadata": "0x1006",
+      "record": "0x6b24"
+    },
+    {
+      "id": "0xc",
+      "public_name": "GetRunningSmuFeaturesLow",
+      "handler": "0x358e4",
+      "metadata": "0x1006",
+      "record": "0x6b2c"
+    },
+    {
+      "id": "0xd",
+      "public_name": "GetRunningSmuFeaturesHigh",
+      "handler": "0x358cc",
+      "metadata": "0x1006",
+      "record": "0x6b34"
+    },
+    {
+      "id": "0xe",
+      "public_name": "SetDriverDramAddrHigh",
+      "handler": "0x37630",
+      "metadata": "0x1006",
+      "record": "0x6b3c"
+    },
+    {
+      "id": "0xf",
+      "public_name": "SetDriverDramAddrLow",
+      "handler": "0x375f8",
+      "metadata": "0x1006",
+      "record": "0x6b44"
+    },
+    {
+      "id": "0x10",
+      "public_name": "SetToolsDramAddrHigh",
+      "handler": "0x375a4",
+      "metadata": "0x1806",
+      "record": "0x6b4c"
+    },
+    {
+      "id": "0x11",
+      "public_name": "SetToolsDramAddrLow",
+      "handler": "0x37588",
+      "metadata": "0x1806",
+      "record": "0x6b54"
+    },
+    {
+      "id": "0x12",
+      "public_name": "TransferTableSmu2Dram",
+      "handler": "0x3744c",
+      "metadata": "0x1006",
+      "record": "0x6b5c"
+    },
+    {
+      "id": "0x13",
+      "public_name": "TransferTableDram2Smu",
+      "handler": "0x37110",
+      "metadata": "0x1806",
+      "record": "0x6b64"
+    },
+    {
+      "id": "0x14",
+      "public_name": "UseDefaultPPTable",
+      "handler": "0x370f0",
+      "metadata": "0x1806",
+      "record": "0x6b6c"
+    },
+    {
+      "id": "0x15",
+      "public_name": "EnterBaco",
+      "handler": "0x30e34",
+      "metadata": "0x1806",
+      "record": "0x6b74"
+    },
+    {
+      "id": "0x16",
+      "public_name": "ExitBaco",
+      "handler": "0x30e0c",
+      "metadata": "0x1806",
+      "record": "0x6b7c"
+    },
+    {
+      "id": "0x17",
+      "public_name": "ArmD3",
+      "handler": "0x30dc8",
+      "metadata": "0x1806",
+      "record": "0x6b84"
+    },
+    {
+      "id": "0x18",
+      "public_name": "BacoAudioD3PME",
+      "handler": "0x30e94",
+      "metadata": "0x1806",
+      "record": "0x6b8c"
+    },
+    {
+      "id": "0x19",
+      "public_name": "SetSoftMinByFreq",
+      "handler": "0x2cf90",
+      "metadata": "0x1006",
+      "record": "0x6b94"
+    },
+    {
+      "id": "0x1a",
+      "public_name": "SetSoftMaxByFreq",
+      "handler": "0x2cec0",
+      "metadata": "0x1006",
+      "record": "0x6b9c"
+    },
+    {
+      "id": "0x1b",
+      "public_name": "SetHardMinByFreq",
+      "handler": "0x2ce10",
+      "metadata": "0x1006",
+      "record": "0x6ba4"
+    },
+    {
+      "id": "0x1c",
+      "public_name": "SetHardMaxByFreq",
+      "handler": "0x2cd50",
+      "metadata": "0x1806",
+      "record": "0x6bac"
+    },
+    {
+      "id": "0x1d",
+      "public_name": "GetMinDpmFreq",
+      "handler": "0x2cc28",
+      "metadata": "0x1006",
+      "record": "0x6bb4"
+    },
+    {
+      "id": "0x1e",
+      "public_name": "GetMaxDpmFreq",
+      "handler": "0x2ccb8",
+      "metadata": "0x1006",
+      "record": "0x6bbc"
+    },
+    {
+      "id": "0x1f",
+      "public_name": "GetDpmFreqByIndex",
+      "handler": "0x2cba8",
+      "metadata": "0x1006",
+      "record": "0x6bc4"
+    },
+    {
+      "id": "0x20",
+      "public_name": "OverridePcieParameters",
+      "handler": "0x2dc90",
+      "metadata": "0x1806",
+      "record": "0x6bcc"
+    },
+    {
+      "id": "0x21",
+      "public_name": "DramLogSetDramAddrHigh",
+      "handler": "0x2f07c",
+      "metadata": "0x1806",
+      "record": "0x6bd4"
+    },
+    {
+      "id": "0x22",
+      "public_name": "SetWorkloadMask",
+      "handler": "0x35888",
+      "metadata": "0x1006",
+      "record": "0x6bdc"
+    },
+    {
+      "id": "0x23",
+      "public_name": "SetUclkFastSwitch",
+      "handler": "0x27dd4",
+      "metadata": "0x1806",
+      "record": "0x6be4"
+    },
+    {
+      "id": "0x24",
+      "public_name": "GetVoltageByDpm",
+      "handler": "0x2cb34",
+      "metadata": "0x1806",
+      "record": "0x6bec"
+    },
+    {
+      "id": "0x25",
+      "public_name": "SetVideoFps",
+      "handler": "0x2b7e8",
+      "metadata": "0x1806",
+      "record": "0x6bf4"
+    },
+    {
+      "id": "0x26",
+      "public_name": "GetDcModeMaxDpmFreq",
+      "handler": "0x2cc70",
+      "metadata": "0x1006",
+      "record": "0x6bfc"
+    },
+    {
+      "id": "0x27",
+      "public_name": "DramLogSetDramAddrLow",
+      "handler": "0x2f060",
+      "metadata": "0x1806",
+      "record": "0x6c04"
+    },
+    {
+      "id": "0x28",
+      "public_name": "AllowGfxOff",
+      "handler": "0x22cd4",
+      "metadata": "0x1803",
+      "record": "0x6c0c"
+    },
+    {
+      "id": "0x29",
+      "public_name": "DisallowGfxOff",
+      "handler": "0x22bd8",
+      "metadata": "0x1802",
+      "record": "0x6c14"
+    },
+    {
+      "id": "0x2a",
+      "public_name": "PowerUpVcn",
+      "handler": "0x29ef8",
+      "metadata": "0x1806",
+      "record": "0x6c1c"
+    },
+    {
+      "id": "0x2b",
+      "public_name": "PowerDownVcn",
+      "handler": "0x29ffc",
+      "metadata": "0x1806",
+      "record": "0x6c24"
+    },
+    {
+      "id": "0x2c",
+      "public_name": "PowerUpJpeg",
+      "handler": "0x29d30",
+      "metadata": "0x1806",
+      "record": "0x6c2c"
+    },
+    {
+      "id": "0x2d",
+      "public_name": "PowerDownJpeg",
+      "handler": "0x29e04",
+      "metadata": "0x1806",
+      "record": "0x6c34"
+    },
+    {
+      "id": "0x2e",
+      "public_name": "PrepareMp1ForUnload",
+      "handler": "0x33660",
+      "metadata": "0x1006",
+      "record": "0x6c3c"
+    },
+    {
+      "id": "0x2f",
+      "public_name": "DramLogSetDramSize",
+      "handler": "0x2f048",
+      "metadata": "0x1806",
+      "record": "0x6c44"
+    },
+    {
+      "id": "0x30",
+      "public_name": "Mode1Reset",
+      "handler": "0x16d4",
+      "metadata": "0x11000",
+      "record": "0x6c4c"
+    },
+    {
+      "id": "0x31",
+      "public_name": "SetSystemVirtualDramAddrHigh",
+      "handler": "0x2f02c",
+      "metadata": "0x1806",
+      "record": "0x6c54"
+    },
+    {
+      "id": "0x32",
+      "public_name": "SetPptLimit",
+      "handler": "0x24d98",
+      "metadata": "0x1806",
+      "record": "0x6c5c"
+    },
+    {
+      "id": "0x33",
+      "public_name": "GetPptLimit",
+      "handler": "0x24d50",
+      "metadata": "0x1806",
+      "record": "0x6c64"
+    },
+    {
+      "id": "0x34",
+      "public_name": "ReenableAcDcInterrupt",
+      "handler": "0x23e18",
+      "metadata": "0x1806",
+      "record": "0x6c6c"
+    },
+    {
+      "id": "0x35",
+      "public_name": "NotifyPowerSource",
+      "handler": "0x23dd0",
+      "metadata": "0x1806",
+      "record": "0x6c74"
+    },
+    {
+      "id": "0x36",
+      "public_name": "RunDcBtc",
+      "handler": "0x27a50",
+      "metadata": "0x1806",
+      "record": "0x6c7c"
+    },
+    {
+      "id": "0x37",
+      "public_name": null,
+      "handler": "0x0",
+      "metadata": "0x0",
+      "record": "0x6c84"
+    },
+    {
+      "id": "0x38",
+      "public_name": "SetSystemVirtualDramAddrLow",
+      "handler": "0x2f010",
+      "metadata": "0x1806",
+      "record": "0x6c8c"
+    },
+    {
+      "id": "0x39",
+      "public_name": "SetMemoryChannelEnable",
+      "handler": "0x378dc",
+      "metadata": "0x1806",
+      "record": "0x6c94"
+    },
+    {
+      "id": "0x3a",
+      "public_name": "SetDramBitWidth",
+      "handler": "0x378b0",
+      "metadata": "0x1806",
+      "record": "0x6c9c"
+    },
+    {
+      "id": "0x3b",
+      "public_name": "SetGeminiMode",
+      "handler": "0x37898",
+      "metadata": "0x1806",
+      "record": "0x6ca4"
+    },
+    {
+      "id": "0x3c",
+      "public_name": "SetGeminiApertureHigh",
+      "handler": "0x37880",
+      "metadata": "0x1806",
+      "record": "0x6cac"
+    },
+    {
+      "id": "0x3d",
+      "public_name": "SetGeminiApertureLow",
+      "handler": "0x37868",
+      "metadata": "0x1806",
+      "record": "0x6cb4"
+    },
+    {
+      "id": "0x3e",
+      "public_name": "SetTemperatureInputSelect",
+      "handler": "0x22f58",
+      "metadata": "0x1806",
+      "record": "0x6cbc"
+    },
+    {
+      "id": "0x3f",
+      "public_name": "SetFwDstatesMask",
+      "handler": "0x1da08",
+      "metadata": "0x1006",
+      "record": "0x6cc4"
+    },
+    {
+      "id": "0x40",
+      "public_name": "SetThrottlerMask",
+      "handler": "0x358a8",
+      "metadata": "0x1006",
+      "record": "0x6ccc"
+    },
+    {
+      "id": "0x41",
+      "public_name": "SetExternalClientDfCstateAllow",
+      "handler": "0x2f2d0",
+      "metadata": "0x1006",
+      "record": "0x6cd4"
+    },
+    {
+      "id": "0x42",
+      "public_name": "EnableOutOfBandMonTesting",
+      "handler": "0x37698",
+      "metadata": "0x1006",
+      "record": "0x6cdc"
+    },
+    {
+      "id": "0x43",
+      "public_name": "SetMGpuFanBoostLimitRpm",
+      "handler": "0x22f38",
+      "metadata": "0x1006",
+      "record": "0x6ce4"
+    },
+    {
+      "id": "0x44",
+      "public_name": "SetNumBadHbmPagesRetired",
+      "handler": "0x1a5d4",
+      "metadata": "0x1006",
+      "record": "0x6cec"
+    },
+    {
+      "id": "0x45",
+      "public_name": "SetGpoFeaturePMask",
+      "handler": "0x202ec",
+      "metadata": "0x1006",
+      "record": "0x6cf4"
+    },
+    {
+      "id": "0x46",
+      "public_name": "SetSMBUSInterrupt",
+      "handler": "0x376cc",
+      "metadata": "0x1006",
+      "record": "0x6cfc"
+    },
+    {
+      "id": "0x47",
+      "public_name": null,
+      "handler": "0x2f2a8",
+      "metadata": "0x1806",
+      "record": "0x6d04"
+    },
+    {
+      "id": "0x48",
+      "public_name": null,
+      "handler": "0x2f214",
+      "metadata": "0x1806",
+      "record": "0x6d0c"
+    },
+    {
+      "id": "0x49",
+      "public_name": null,
+      "handler": "0x2f280",
+      "metadata": "0x1806",
+      "record": "0x6d14"
+    },
+    {
+      "id": "0x4a",
+      "public_name": null,
+      "handler": "0x0",
+      "metadata": "0x0",
+      "record": "0x6d1c"
+    },
+    {
+      "id": "0x4b",
+      "public_name": null,
+      "handler": "0x0",
+      "metadata": "0x0",
+      "record": "0x6d24"
+    },
+    {
+      "id": "0x4c",
+      "public_name": null,
+      "handler": "0x0",
+      "metadata": "0x0",
+      "record": "0x6d2c"
+    },
+    {
+      "id": "0x4d",
+      "public_name": null,
+      "handler": "0x0",
+      "metadata": "0x0",
+      "record": "0x6d34"
+    },
+    {
+      "id": "0x4e",
+      "public_name": null,
+      "handler": "0x0",
+      "metadata": "0x0",
+      "record": "0x6d3c"
+    },
+    {
+      "id": "0x4f",
+      "public_name": null,
+      "handler": "0x0",
+      "metadata": "0x0",
+      "record": "0x6d44"
+    },
+    {
+      "id": "0x50",
+      "public_name": null,
+      "handler": "0x2efe8",
+      "metadata": "0x1000",
+      "record": "0x6d4c"
+    },
+    {
+      "id": "0x51",
+      "public_name": null,
+      "handler": "0x2ef44",
+      "metadata": "0x1006",
+      "record": "0x6d54"
+    },
+    {
+      "id": "0x52",
+      "public_name": null,
+      "handler": "0x2ef28",
+      "metadata": "0x1006",
+      "record": "0x6d5c"
+    },
+    {
+      "id": "0x53",
+      "public_name": null,
+      "handler": "0x2ef10",
+      "metadata": "0x1006",
+      "record": "0x6d64"
+    },
+    {
+      "id": "0x54",
+      "public_name": null,
+      "handler": "0x2eef4",
+      "metadata": "0x1006",
+      "record": "0x6d6c"
+    },
+    {
+      "id": "0x55",
+      "public_name": null,
+      "handler": "0x2eed8",
+      "metadata": "0x1006",
+      "record": "0x6d74"
+    },
+    {
+      "id": "0x56",
+      "public_name": "DisallowGpo",
+      "handler": "0x2029c",
+      "metadata": "0x1006",
+      "record": "0x6d7c"
+    },
+    {
+      "id": "0x57",
+      "public_name": "Enable2ndUSB20Port",
+      "handler": "0x20a6c",
+      "metadata": "0x1006",
+      "record": "0x6d84"
+    },
+    {
+      "id": "0x58",
+      "public_name": null,
+      "handler": "0x33284",
+      "metadata": "0x1806",
+      "record": "0x6d8c"
+    },
+    {
+      "id": "0x59",
+      "public_name": null,
+      "handler": "0x24bf4",
+      "metadata": "0x1006",
+      "record": "0x6d94"
+    },
+    {
+      "id": "0x5a",
+      "public_name": null,
+      "handler": "0x1a588",
+      "metadata": "0x1806",
+      "record": "0x6d9c"
+    },
+    {
+      "id": "0x5b",
+      "public_name": null,
+      "handler": "0x32e2c",
+      "metadata": "0x1806",
+      "record": "0x6da4"
+    },
+    {
+      "id": "0x5c",
+      "public_name": null,
+      "handler": "0x2ee8c",
+      "metadata": "0x1006",
+      "record": "0x6dac"
+    },
+    {
+      "id": "0x5d",
+      "public_name": "DriverMode2Reset",
+      "handler": "0x34b10",
+      "metadata": "0x1806",
+      "record": "0x6db4"
+    }
+  ]
+}

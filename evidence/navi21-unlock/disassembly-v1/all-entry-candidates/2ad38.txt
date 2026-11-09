@@ -1,0 +1,24 @@
+
+/tmp/tmpd42pqii4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002ad38 <.data+0x2ad38>:
+0002ad38: 364100   entry        a1, 0x20 ; Capstone
+   2ad3b:	ad04      	mov.n	a10, a4
+   2ad3d:	0c18      	movi.n	a8, 1
+   2ad3f:	303893        	movnez	a3, a8, a3
+   2ad42:	324200        	s8i	a3, a2, 0
+0002ad45: a52afb   call8        . -0x4d54 ; Capstone ; target=0x25ff0
+0002ad48: 0025ca   float.s      f2, a5, 0 ; Capstone
+   2ad4b:	91e7a0        	l32r	a9, 0x130e8 (0x3a83126f)
+   2ad4e:	b170a2        	l32r	a11, 0x13710 (0x3c23d70a)
+0002ad51: 504afa   wfr          f4, a10 ; Capstone
+0002ad54: 5039fa   wfr          f3, a9 ; Capstone
+0002ad57: 505bfa   wfr          f5, a11 ; Capstone
+0002ad5a: 50142a   mul.s        f1, f4, f5 ; Capstone
+0002ad5d: 30022a   mul.s        f0, f2, f3 ; Capstone
+0002ad60: 134202   ssi          f1, a2, 8 ; Capstone
+0002ad63: 034201   ssi          f0, a2, 4 ; Capstone
+0002ad66: 1df0     retw.n        ; Capstone

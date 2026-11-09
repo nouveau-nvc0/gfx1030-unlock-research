@@ -1,0 +1,20 @@
+
+/tmp/tmpjnm_5d33/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002c528 <.data+0x2c528>:
+0002c528: 364100   entry        a1, 0x20 ; Capstone
+   2c52b:	ad02      	mov.n	a10, a2
+0002c52d: e5c304   call8        . +0x4c40 ; Capstone ; target=0x3116c
+   2c530:	9c1a      	beqz.n	a10, 0x2c545
+   2c532:	922a13        	l32i	a9, a10, 76
+   2c535:	0c18      	movi.n	a8, 1
+   2c537:	8ca9      	beqz.n	a9, 0x2c545
+   2c539:	a2d901        	addmi	a10, a9, 0x100
+   2c53c:	824a5a        	s8i	a8, a10, 90
+   2c53f:	324a58        	s8i	a3, a10, 88
+   2c542:	4259a4        	s16i	a4, a9, 0x148
+0002c545: 1df0     retw.n        ; Capstone
+	...

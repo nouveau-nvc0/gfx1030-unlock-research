@@ -1,0 +1,1694 @@
+[
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/call-closure/35a9c.txt",
+    "source": "0x35bc8",
+    "target": "0x35bf7",
+    "added": [
+      "   35bf7:\t1c0a      \tmovi.n\ta10, 16"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/call-closure/1b728.txt",
+    "source": "0x1b751",
+    "target": "0x1b758",
+    "added": [
+      "   1b758:\ta110de        \tl32r\ta10, 0x12f98 (0xc2c4)",
+      "   1b75b:\tf10ede        \tl32r\ta15, 0x12f94 (0x11768)"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/call-closure/26b88.txt",
+    "source": "0x26ba9",
+    "target": "0x26bb2",
+    "added": [
+      "00026bb2: 0009da   ufloat.s     f0, a9, 0 ; Capstone",
+      "00026bb5: 10002a   mul.s        f0, f0, f1 ; Capstone",
+      "00026bb8: 40a0fa   rfr          a10, f0 ; Capstone",
+      "   26bbb:\t21afb1        \tl32r\ta2, 0x13278 (0xe1c0)",
+      "00026bbe: e51d12   call8        . +0x121e0 ; Capstone ; target=0x38d9c",
+      "00026bc1: 508afa   wfr          f8, a10 ; Capstone",
+      "   26bc4:\t91abb3        \tl32r\ta9, 0x13a70 (0xa184)"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/call-closure/36cfc.txt",
+    "source": "0x36d23",
+    "target": "0x36d53",
+    "added": [
+      "   36d53:\t30c034        \textui\ta12, a3, 0, 4",
+      "   36d56:\ta0e034        \textui\ta14, a10, 0, 4",
+      "   36d59:\tc0ee11        \tslli\ta14, a14, 4",
+      "   36d5c:\te0cc20        \tor\ta12, a12, a14",
+      "   36d5f:\t0c19      \tmovi.n\ta9, 1"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/call-closure/25eb8.txt",
+    "source": "0x25ede",
+    "target": "0x25f13",
+    "added": [
+      "   25f13:\t620a7c        \tl8ui\ta6, a10, 124",
+      "   25f16:\tcc56      \tbnez.n\ta6, 0x25f1f",
+      "   25f18:\tc24a7d        \ts8i\ta12, a10, 125",
+      "   25f1b:\t0c22      \tmovi.n\ta2, 2",
+      "00025f1d: 1df0     retw.n        ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/call-closure/32c44.txt",
+    "source": "0x32cc4",
+    "target": "0x32ce2",
+    "added": [
+      "00032ce2: a5d7ff   call8        . -0x284 ; Capstone ; target=0x32a5c"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1b728.txt",
+    "source": "0x1b751",
+    "target": "0x1b758",
+    "added": [
+      "   1b758:\ta110de        \tl32r\ta10, 0x12f98 (0xc2c4)",
+      "   1b75b:\tf10ede        \tl32r\ta15, 0x12f94 (0x11768)"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/25eb8.txt",
+    "source": "0x25ede",
+    "target": "0x25f13",
+    "added": [
+      "   25f13:\t620a7c        \tl8ui\ta6, a10, 124",
+      "   25f16:\tcc56      \tbnez.n\ta6, 0x25f1f",
+      "   25f18:\tc24a7d        \ts8i\ta12, a10, 125",
+      "   25f1b:\t0c22      \tmovi.n\ta2, 2",
+      "00025f1d: 1df0     retw.n        ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/26b88.txt",
+    "source": "0x26ba9",
+    "target": "0x26bb2",
+    "added": [
+      "00026bb2: 0009da   ufloat.s     f0, a9, 0 ; Capstone",
+      "00026bb5: 10002a   mul.s        f0, f0, f1 ; Capstone",
+      "00026bb8: 40a0fa   rfr          a10, f0 ; Capstone",
+      "   26bbb:\t21afb1        \tl32r\ta2, 0x13278 (0xe1c0)",
+      "00026bbe: e51d12   call8        . +0x121e0 ; Capstone ; target=0x38d9c",
+      "00026bc1: 508afa   wfr          f8, a10 ; Capstone",
+      "   26bc4:\t91abb3        \tl32r\ta9, 0x13a70 (0xa184)"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2991c.txt",
+    "source": "0x29930",
+    "target": "0x29936",
+    "added": [
+      "   29936:\t56d405        \tbnez\ta4, 0x29997",
+      "   29939:\te1d7a5        \tl32r\ta14, 0x13098 (0x447a0000)",
+      "0002993c: 504efa   wfr          f4, a14 ; Capstone",
+      "0002993f: 10342a   mul.s        f3, f4, f1 ; Capstone",
+      "00029942: 00242a   mul.s        f2, f4, f0 ; Capstone",
+      "00029945: 00c3aa   floor.s      a12, f3, 0 ; Capstone",
+      "00029948: 00e2aa   floor.s      a14, f2, 0 ; Capstone",
+      "   2994b:\t0c0a      \tmovi.n\ta10, 0",
+      "   2994d:\t0c49      \tmovi.n\ta9, 4",
+      "   2994f:\tc0c0f4        \textui\ta12, a12, 0, 16",
+      "   29952:\te0e0f4        \textui\ta14, a14, 0, 16",
+      "00029955: 76a92f   loopgtz      a9, . +0x33 ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/319b4.txt",
+    "source": "0x319c5",
+    "target": "0x31a15",
+    "added": [
+      "   31a15:\t9d02      \tmov.n\ta9, a2"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/323b4.txt",
+    "source": "0x32486",
+    "target": "0x32497",
+    "added": [
+      "00032497: 65e5ff   call8        . -0x1a8 ; Capstone ; target=0x322ec",
+      "   3249a:\tf18c87        \tl32r\ta15, 0x142cc (0x11864)"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/32c44.txt",
+    "source": "0x32cc4",
+    "target": "0x32ce2",
+    "added": [
+      "00032ce2: a5d7ff   call8        . -0x284 ; Capstone ; target=0x32a5c"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/35a9c.txt",
+    "source": "0x35bc8",
+    "target": "0x35bf7",
+    "added": [
+      "   35bf7:\t1c0a      \tmovi.n\ta10, 16"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/36cfc.txt",
+    "source": "0x36d23",
+    "target": "0x36d53",
+    "added": [
+      "   36d53:\t30c034        \textui\ta12, a3, 0, 4",
+      "   36d56:\ta0e034        \textui\ta14, a10, 0, 4",
+      "   36d59:\tc0ee11        \tslli\ta14, a14, 4",
+      "   36d5c:\te0cc20        \tor\ta12, a12, a14",
+      "   36d5f:\t0c19      \tmovi.n\ta9, 1"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/00ac4.txt",
+    "source": "0xb36",
+    "target": "0xbe4",
+    "added": [
+      "     be4:\t56d2fa        \tbnez\ta2, 0xb95",
+      "     be7:\t46ebff        \tj\t0xb98"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/00c88.txt",
+    "source": "0xc9d",
+    "target": "0xd38",
+    "added": [
+      "     d38:\t0c12      \tmovi.n\ta2, 1"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/00d3c.txt",
+    "source": "0xd51",
+    "target": "0xdb8",
+    "added": [
+      "     db8:\t0c12      \tmovi.n\ta2, 1"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/00dbc.txt",
+    "source": "0xdc5",
+    "target": "0xdcd",
+    "added": [
+      "     dcd:\t2050f5        \textui\ta5, a2, 16, 16",
+      "     dd0:\t206874        \textui\ta6, a2, 8, 8"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/012bc.txt",
+    "source": "0x12ca",
+    "target": "0x1330",
+    "added": [
+      "    1330:\t2c9a      \tmovi.n\ta10, 41"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/012bc.txt",
+    "source": "0x12da",
+    "target": "0x1318",
+    "added": [
+      "    1318:\t302a10        \tand\ta2, a10, a3",
+      "    131b:\t86f7ff        \tj\t0x12fd"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/012bc.txt",
+    "source": "0x12ef",
+    "target": "0x1308",
+    "added": [
+      "    1308:\t92a0c8        \tmovi\ta9, 200",
+      "    130b:\t973211        \tbltu\ta2, a9, 0x1320",
+      "    130e:\tb1afef        \tl32r\ta11, 0xffffd1cc (0x4dcc00) ; inferred DRAM map 0x5ffec000"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/013f8.txt",
+    "source": "0x142e",
+    "target": "0x14d8",
+    "added": [
+      "    14d8:\t56dbfa        \tbnez\ta11, 0x1489",
+      "    14db:\t46ebff        \tj\t0x148c"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/013f8.txt",
+    "source": "0x1439",
+    "target": "0x14cc",
+    "added": [
+      "    14cc:\t1b9d      \taddi.n\ta9, a13, 1"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01580.txt",
+    "source": "0x158c",
+    "target": "0x15c8",
+    "added": [
+      "    15c8:\t402a10        \tand\ta2, a10, a4",
+      "    15cb:\t06f8ff        \tj\t0x15af"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01580.txt",
+    "source": "0x15bb",
+    "target": "0x15d0",
+    "added": [
+      "    15d0:\tb2a064        \tmovi\ta11, 100",
+      "    15d3:\tb73209        \tbltu\ta2, a11, 0x15e0",
+      "    15d6:\ta02320        \tor\ta2, a3, a10",
+      "    15d9:\tb1fdee        \tl32r\ta11, 0xffffd1d0 (0x3a0800) ; inferred DRAM map 0x5ffec000"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01bec.txt",
+    "source": "0x1bf5",
+    "target": "0x1bfd",
+    "added": [
+      "    1bfd:\td06f00        \trsil\ta13, 15",
+      "    1c00:\t0c19      \tmovi.n\ta9, 1"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+    "source": "0x1d29",
+    "target": "0x1f54",
+    "added": [
+      "    1f54:\t168bf6        \tbeqz\ta11, 0x1ec0",
+      "    1f57:\t0caa      \tmovi.n\ta10, 10"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+    "source": "0x1e4d",
+    "target": "0x1e7a",
+    "added": [
+      "    1e7a:\ta801      \tl32i.n\ta10, a1, 0",
+      "    1e7c:\td22a22        \tl32i\ta13, a10, 136",
+      "    1e7f:\te22a23        \tl32i\ta14, a10, 140",
+      "    1e82:\t3df0      \tnop.n"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01f80.txt",
+    "source": "0x1fb6",
+    "target": "0x1fe0",
+    "added": [
+      "    1fe0:\tc22a8c        \tl32i\ta12, a10, 0x230",
+      "    1fe3:\t0c0b      \tmovi.n\ta11, 0",
+      "    1fe5:\t7c7d      \tmovi.n\ta13, -9",
+      "    1fe7:\td0cc10        \tand\ta12, a12, a13"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01ff4.txt",
+    "source": "0x202d",
+    "target": "0x2058",
+    "added": [
+      "    2058:\td22a8c        \tl32i\ta13, a10, 0x230"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02200.txt",
+    "source": "0x222d",
+    "target": "0x2258",
+    "added": [
+      "    2258:\te2248c        \tl32i\ta14, a4, 0x230",
+      "    225b:\t7c7f      \tmovi.n\ta15, -9"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/022d8.txt",
+    "source": "0x236e",
+    "target": "0x25a8",
+    "added": [
+      "    25a8:\t709d10        \tand\ta9, a13, a7",
+      "    25ab:\te0ba64        \textui\ta11, a14, 10, 7",
+      "    25ae:\t60bb11        \tslli\ta11, a11, 10",
+      "    25b1:\tb09920        \tor\ta9, a9, a11",
+      "    25b4:\t06b3ff        \tj\t0x2484"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/022d8.txt",
+    "source": "0x23c7",
+    "target": "0x253c",
+    "added": [
+      "    253c:\t921308        \tl16ui\ta9, a3, 16",
+      "    253f:\te08a64        \textui\ta8, a14, 10, 7"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/022d8.txt",
+    "source": "0x23d7",
+    "target": "0x25b8",
+    "added": [
+      "    25b8:\t709d10        \tand\ta9, a13, a7",
+      "    25bb:\te0aa64        \textui\ta10, a14, 10, 7",
+      "    25be:\t60aa11        \tslli\ta10, a10, 10",
+      "    25c1:\ta09920        \tor\ta9, a9, a10",
+      "    25c4:\t06f1ff        \tj\t0x258c"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/022d8.txt",
+    "source": "0x24cd",
+    "target": "0x25c8",
+    "added": [
+      "    25c8:\td11deb        \tl32r\ta13, 0xffffd23c (0x5ffec020) ; inferred DRAM map 0x5ffec000",
+      "    25cb:\tc831      \tl32i.n\ta12, a1, 12",
+      "    25cd:\tdacc      \tadd.n\ta12, a12, a13"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/022d8.txt",
+    "source": "0x250a",
+    "target": "0x25e8",
+    "added": [
+      "    25e8:\t9d0a      \tmov.n\ta9, a10"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/027cc.txt",
+    "source": "0x28bf",
+    "target": "0x28dd",
+    "added": [
+      "    28dd:\td21208        \tl16ui\ta13, a2, 16",
+      "    28e0:\t8156ea        \tl32r\ta8, 0xffffd238 (0x5ffec038) ; inferred DRAM map 0x5ffec000",
+      "    28e3:\te0dd11        \tslli\ta13, a13, 2"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/027cc.txt",
+    "source": "0x28cd",
+    "target": "0x2970",
+    "added": [
+      "    2970:\t912dea        \tl32r\ta9, 0xffffd224 (0xfffe03ff) ; inferred DRAM map 0x5ffec000",
+      "    2973:\tf0aa64        \textui\ta10, a15, 10, 7"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03260.txt",
+    "source": "0x3269",
+    "target": "0x3270",
+    "added": [
+      "    3270:\t8c52      \tbeqz.n\ta2, 0x3279",
+      "00003272: e5a900   call8        . +0xaa0 ; Capstone ; target=0x3d10",
+      "00003275: 1df0     retw.n        ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/032a4.txt",
+    "source": "0x32ad",
+    "target": "0x32b9",
+    "added": [
+      "000032b9: 651e00   call8        . +0x1e8 ; Capstone ; target=0x34a0",
+      "    32bc:\t0c0a      \tmovi.n\ta10, 0"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03328.txt",
+    "source": "0x33f2",
+    "target": "0x33f8",
+    "added": [
+      "    33f8:\te15ee7        \tl32r\ta14, 0xffffd170 (0x6803ba00) ; inferred DRAM map 0x5ffec000",
+      "    33fb:\t0c1c      \tmovi.n\ta12, 1"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03724.txt",
+    "source": "0x373b",
+    "target": "0x37d4",
+    "added": [
+      "000037d4: 1df0     retw.n        ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/037d8.txt",
+    "source": "0x37e0",
+    "target": "0x3810",
+    "added": [
+      "    3810:\tf223ec        \tl32i\ta15, a3, 0x3b0",
+      "    3813:\t7cee      \tmovi.n\ta14, -2"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0387c.txt",
+    "source": "0x389f",
+    "target": "0x38dd",
+    "added": [
+      "000038dd: 25bcff   call8        . -0x43c ; Capstone ; target=0x34a0"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/038ec.txt",
+    "source": "0x39b6",
+    "target": "0x39cd",
+    "added": [
+      "    39cd:\t0c1a      \tmovi.n\ta10, 1",
+      "    39cf:\t0c0b      \tmovi.n\ta11, 0",
+      "000039d1: e50f01   call8        . +0x1100 ; Capstone ; target=0x4ad0",
+      "    39d4:\t561afe        \tbnez\ta10, 0x39b9"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+    "source": "0x3a2c",
+    "target": "0x3a34",
+    "added": [
+      "    3a34:\t9c44      \tbeqz.n\ta4, 0x3a4c"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03cbc.txt",
+    "source": "0x3cc5",
+    "target": "0x3cca",
+    "added": [
+      "    3cca:\t0c1a      \tmovi.n\ta10, 1"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03d10.txt",
+    "source": "0x3d5e",
+    "target": "0x3dac",
+    "added": [
+      "    3dac:\tcd07      \tmov.n\ta12, a7"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03d10.txt",
+    "source": "0x3d7c",
+    "target": "0x3d8c",
+    "added": [
+      "    3d8c:\ta20603        \tl8ui\ta10, a6, 3",
+      "    3d8f:\tdc6a      \tbnez.n\ta10, 0x3da9",
+      "    3d91:\t4262e8        \ts32i\ta4, a2, 0x3a0",
+      "    3d94:\tb222e9        \tl32i\ta11, a2, 0x3a4",
+      "    3d97:\t30bb10        \tand\ta11, a11, a3"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04004.txt",
+    "source": "0x402e",
+    "target": "0x415c",
+    "added": [
+      "    415c:\tb6bb02        \tbltui\ta11, 16, 0x4162"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04004.txt",
+    "source": "0x4031",
+    "target": "0x4166",
+    "added": [
+      "    4166:\t1c0e      \tmovi.n\ta14, 16"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04004.txt",
+    "source": "0x4039",
+    "target": "0x41aa",
+    "added": [
+      "    41aa:\t0c8e      \tmovi.n\ta14, 8"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04004.txt",
+    "source": "0x4124",
+    "target": "0x41e4",
+    "added": [
+      "    41e4:\t0c8e      \tmovi.n\ta14, 8"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04004.txt",
+    "source": "0x413a",
+    "target": "0x424a",
+    "added": [
+      "    424a:\t2c8e      \tmovi.n\ta14, 40"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04004.txt",
+    "source": "0x4207",
+    "target": "0x42e4",
+    "added": [
+      "    42e4:\tb73e02        \tbltu\ta14, a11, 0x42ea",
+      "    42e7:\t46c8ff        \tj\t0x420c"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04004.txt",
+    "source": "0x42ff",
+    "target": "0x4350",
+    "added": [
+      "    4350:\tb7beb0        \tbgeu\ta14, a11, 0x4304",
+      "    4353:\tc6eaff        \tj\t0x4302"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/045b4.txt",
+    "source": "0x45d4",
+    "target": "0x4610",
+    "added": [
+      "    4610:\t306f00        \trsil\ta3, 15",
+      "    4613:\t926580        \ts32i\ta9, a5, 0x200",
+      "    4616:\t222688        \tl32i\ta2, a6, 0x220",
+      "    4619:\t30e613        \twsr.ps\ta3",
+      "    461c:\t102000        \trsync",
+      "    461f:\ta06f00        \trsil\ta10, 15",
+      "    4622:\t2c0d      \tmovi.n\ta13, 32"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/047c0.txt",
+    "source": "0x47de",
+    "target": "0x4840",
+    "added": [
+      "    4840:\td1ebe2        \tl32r\ta13, 0xffffd3ec (0xc00f) ; inferred DRAM map 0x5ffec000"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/047c0.txt",
+    "source": "0x4810",
+    "target": "0x4858",
+    "added": [
+      "    4858:\t608414        \textui\ta8, a6, 4, 2",
+      "    485b:\t4766d6        \tbbci\ta6, 4, 0x4835",
+      "    485e:\t605614        \textui\ta5, a6, 6, 2",
+      "    4861:\t6766d0        \tbbci\ta6, 6, 0x4835",
+      "    4864:\t2638c9        \tbeqi\ta8, 3, 0x4831",
+      "    4867:\t2635c6        \tbeqi\ta5, 3, 0x4831",
+      "    486a:\t306f00        \trsil\ta3, 15",
+      "    486d:\t726280        \ts32i\ta7, a2, 0x200",
+      "    4870:\t622483        \tl32i\ta6, a4, 0x20c",
+      "    4873:\t30e613        \twsr.ps\ta3",
+      "    4876:\t102000        \trsync",
+      "    4879:\t60f414        \textui\ta15, a6, 4, 2",
+      "    487c:\t263fb1        \tbeqi\ta15, 3, 0x4831",
+      "    487f:\t608614        \textui\ta8, a6, 6, 2",
+      "    4882:\t6638e4        \tbnei\ta8, 3, 0x486a",
+      "    4885:\t06eaff        \tj\t0x4831"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04894.txt",
+    "source": "0x48a6",
+    "target": "0x48e0",
+    "added": [
+      "    48e0:\t82aeff        \tmovi\ta8, 0xfffffeff"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04ad0.txt",
+    "source": "0x4b74",
+    "target": "0x4bc8",
+    "added": [
+      "    4bc8:\t406f00        \trsil\ta4, 15",
+      "    4bcb:\t226680        \ts32i\ta2, a6, 0x200",
+      "    4bce:\tf2278c        \tl32i\ta15, a7, 0x230",
+      "    4bd1:\t40e613        \twsr.ps\ta4",
+      "    4bd4:\t102000        \trsync",
+      "    4bd7:\te06f00        \trsil\ta14, 15",
+      "    4bda:\t310be2        \tl32r\ta3, 0xffffd408 (0xbfffffff) ; inferred DRAM map 0x5ffec000",
+      "    4bdd:\t226680        \ts32i\ta2, a6, 0x200",
+      "    4be0:\t2d08      \tmov.n\ta2, a8"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04c8c.txt",
+    "source": "0x4cda",
+    "target": "0x4f20",
+    "added": [
+      "    4f20:\t001940        \tssl\ta9"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04fa8.txt",
+    "source": "0x4fbc",
+    "target": "0x4fe4",
+    "added": [
+      "    4fe4:\tb06f00        \trsil\ta11, 15",
+      "    4fe7:\tc26a80        \ts32i\ta12, a10, 0x200",
+      "    4fea:\td863      \tl32i.n\ta13, a3, 24"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05458.txt",
+    "source": "0x5461",
+    "target": "0x5469",
+    "added": [
+      "    5469:\t2030f4        \textui\ta3, a2, 0, 16",
+      "    546c:\t30a3a0        \taddx4\ta10, a3, a3",
+      "    546f:\ta0a0f4        \textui\ta10, a10, 0, 16",
+      "00005472: a5dcff   call8        . -0x234 ; Capstone ; target=0x523c"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05528.txt",
+    "source": "0x5575",
+    "target": "0x55d4",
+    "added": [
+      "000055d4: 20314b   olt.s        b3, f1, f2 ; Capstone",
+      "000055d7: 7603a2   bf           b3, . -0x5a ; Capstone",
+      "    55da:\t2d04      \tmov.n\ta2, a4",
+      "000055dc: 234109   ssi          f2, a1, 0x24 ; Capstone",
+      "    55df:\t86e6ff        \tj\t0x557d",
+      "    55e2:\tad02      \tmov.n\ta10, a2",
+      "000055e4: e59efe   call8        . -0x1610 ; Capstone ; target=0x3fd4"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05638.txt",
+    "source": "0x56af",
+    "target": "0x56ca",
+    "added": [
+      "    56ca:\t8bc1      \taddi.n\ta12, a1, 8",
+      "    56cc:\ta80c      \tl32i.n\ta10, a12, 0"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/057bc.txt",
+    "source": "0x57c7",
+    "target": "0x5808",
+    "added": [
+      "    5808:\t32191b        \tl16ui\ta3, a9, 54"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/057bc.txt",
+    "source": "0x57ca",
+    "target": "0x5810",
+    "added": [
+      "    5810:\t321918        \tl16ui\ta3, a9, 48"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/057bc.txt",
+    "source": "0x57cd",
+    "target": "0x5818",
+    "added": [
+      "    5818:\t321915        \tl16ui\ta3, a9, 42"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05820.txt",
+    "source": "0x582d",
+    "target": "0x5868",
+    "added": [
+      "    5868:\t321912        \tl16ui\ta3, a9, 36"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/058cc.txt",
+    "source": "0x58f1",
+    "target": "0x5930",
+    "added": [
+      "    5930:\tad02      \tmov.n\ta10, a2"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05944.txt",
+    "source": "0x5988",
+    "target": "0x59bc",
+    "added": [
+      "000059bc: 20304b   olt.s        b3, f0, f2 ; Capstone",
+      "000059bf: 7603ce   bf           b3, . -0x2e ; Capstone",
+      "000059c2: 0002fa   mov.s        f0, f2 ; Capstone",
+      "    59c5:\t2d05      \tmov.n\ta2, a5",
+      "    59c7:\t86f1ff        \tj\t0x5991"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05d98.txt",
+    "source": "0x5daa",
+    "target": "0x5df4",
+    "added": [
+      "    5df4:\t8266f1        \ts32i\ta8, a6, 0x3c4",
+      "00005df7: 1df0     retw.n        ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05d98.txt",
+    "source": "0x5dba",
+    "target": "0x5dc8",
+    "added": [
+      "    5dc8:\t6622f6        \tbnei\ta2, 2, 0x5dc2",
+      "    5dcb:\t50a720        \tor\ta10, a7, a5",
+      "    5dce:\t560aff        \tbnez\ta10, 0x5dc2"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05d98.txt",
+    "source": "0x5ddb",
+    "target": "0x5e18",
+    "added": [
+      "    5e18:\t5266f1        \ts32i\ta5, a6, 0x3c4",
+      "    5e1b:\t3266f1        \ts32i\ta3, a6, 0x3c4",
+      "00005e1e: 1df0     retw.n        ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05d98.txt",
+    "source": "0x5de1",
+    "target": "0x5e28",
+    "added": [
+      "    5e28:\t1c34      \tmovi.n\ta4, 19"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05d98.txt",
+    "source": "0x5de4",
+    "target": "0x5e30",
+    "added": [
+      "    5e30:\t3266f1        \ts32i\ta3, a6, 0x3c4",
+      "00005e33: 1df0     retw.n        ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06348.txt",
+    "source": "0x6452",
+    "target": "0x6459",
+    "added": [
+      "    6459:\ta9b5      \ts32i.n\ta10, a5, 44",
+      "    645b:\tb2c130        \taddi\ta11, a1, 48",
+      "    645e:\t0c1c      \tmovi.n\ta12, 1"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/065d8.txt",
+    "source": "0x68e8",
+    "target": "0x6940",
+    "added": [
+      "    6940:\t06ffff        \tj\t0x6940"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/065d8.txt",
+    "source": "0x6914",
+    "target": "0x6935",
+    "added": [
+      "    6935:\ta26c56        \ts32i\ta10, a12, 0x158",
+      "    6938:\t1b66      \taddi.n\ta6, a6, 1"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/065d8.txt",
+    "source": "0x6917",
+    "target": "0x692c",
+    "added": [
+      "    692c:\ta26c55        \ts32i\ta10, a12, 0x154",
+      "    692f:\t460100        \tj\t0x6938",
+      "    6932:\t000000        \till"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06944.txt",
+    "source": "0x69ca",
+    "target": "0x6ac0",
+    "added": [
+      "    6ac0:\t920702        \tl8ui\ta9, a7, 2",
+      "    6ac3:\t0b99      \taddi.n\ta9, a9, -1",
+      "    6ac5:\t5649f0        \tbnez\ta9, 0x69cd"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06944.txt",
+    "source": "0x6a3a",
+    "target": "0x6ce9",
+    "added": [
+      "    6ce9:\t322d52        \tl32i\ta3, a13, 0x148"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06944.txt",
+    "source": "0x6cbd",
+    "target": "0x6e00",
+    "added": [
+      "    6e00:\tb20703        \tl8ui\ta11, a7, 3",
+      "    6e03:\t569beb        \tbnez\ta11, 0x6cc0"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06e10.txt",
+    "source": "0x6e73",
+    "target": "0x6f20",
+    "added": [
+      "    6f20:\t306f00        \trsil\ta3, 15",
+      "    6f23:\t626480        \ts32i\ta6, a4, 0x200",
+      "    6f26:\t8229aa        \tl32i\ta8, a9, 0x2a8",
+      "    6f29:\t8265e5        \ts32i\ta8, a5, 0x394",
+      "    6f2c:\t30e613        \twsr.ps\ta3",
+      "    6f2f:\t102000        \trsync",
+      "00006f32: 1df0     retw.n        ; Capstone",
+      "    6f34:\td06f00        \trsil\ta13, 15",
+      "    6f37:\t626480        \ts32i\ta6, a4, 0x200",
+      "    6f3a:\te22736        \tl32i\ta14, a7, 216",
+      "    6f3d:\te26519        \ts32i\ta14, a5, 100",
+      "    6f40:\td0e613        \twsr.ps\ta13",
+      "    6f43:\t102000        \trsync",
+      "    6f46:\tb06f00        \trsil\ta11, 15",
+      "    6f49:\t626480        \ts32i\ta6, a4, 0x200",
+      "    6f4c:\tc22735        \tl32i\ta12, a7, 212",
+      "    6f4f:\tc2651a        \ts32i\ta12, a5, 104",
+      "    6f52:\tb0e613        \twsr.ps\ta11",
+      "    6f55:\t102000        \trsync",
+      "    6f58:\t906f00        \trsil\ta9, 15",
+      "    6f5b:\t626480        \ts32i\ta6, a4, 0x200",
+      "    6f5e:\ta22287        \tl32i\ta10, a2, 0x21c",
+      "    6f61:\ta2651b        \ts32i\ta10, a5, 108",
+      "    6f64:\t90e613        \twsr.ps\ta9",
+      "    6f67:\t102000        \trsync",
+      "    6f6a:\t86adff        \tj\t0x6e24"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/074c4.txt",
+    "source": "0x7517",
+    "target": "0x7625",
+    "added": [
+      "    7625:\ta06f00        \trsil\ta10, 15",
+      "    7628:\t926681        \ts32i\ta9, a6, 0x204",
+      "    762b:\tb26680        \ts32i\ta11, a6, 0x200",
+      "    762e:\td22889        \tl32i\ta13, a8, 0x224",
+      "    7631:\td932      \ts32i.n\ta13, a2, 12",
+      "    7633:\tb26681        \ts32i\ta11, a6, 0x204",
+      "    7636:\ta0e613        \twsr.ps\ta10",
+      "    7639:\t102000        \trsync",
+      "    763c:\tf06f00        \trsil\ta15, 15",
+      "    763f:\t926681        \ts32i\ta9, a6, 0x204",
+      "    7642:\tb26680        \ts32i\ta11, a6, 0x200",
+      "    7645:\t32288a        \tl32i\ta3, a8, 0x228",
+      "    7648:\t326243        \ts32i\ta3, a2, 0x10c",
+      "    764b:\tb26681        \ts32i\ta11, a6, 0x204",
+      "    764e:\tf0e613        \twsr.ps\ta15",
+      "    7651:\t102000        \trsync",
+      "    7654:\td06f00        \trsil\ta13, 15",
+      "    7657:\t926681        \ts32i\ta9, a6, 0x204",
+      "    765a:\tb26680        \ts32i\ta11, a6, 0x200",
+      "    765d:\te228ab        \tl32i\ta14, a8, 0x2ac",
+      "    7660:\te26283        \ts32i\ta14, a2, 0x20c",
+      "    7663:\tb26681        \ts32i\ta11, a6, 0x204",
+      "    7666:\td0e613        \twsr.ps\ta13",
+      "    7669:\t102000        \trsync",
+      "    766c:\t46bcff        \tj\t0x7561"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/074c4.txt",
+    "source": "0x756a",
+    "target": "0x75d8",
+    "added": [
+      "000075d8: 1df0     retw.n        ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/074c4.txt",
+    "source": "0x758b",
+    "target": "0x75dc",
+    "added": [
+      "    75dc:\ta06f00        \trsil\ta10, 15",
+      "    75df:\t426681        \ts32i\ta4, a6, 0x204",
+      "    75e2:\tb26680        \ts32i\ta11, a6, 0x200",
+      "    75e5:\tc22889        \tl32i\ta12, a8, 0x224",
+      "    75e8:\tc942      \ts32i.n\ta12, a2, 16",
+      "    75ea:\tb26681        \ts32i\ta11, a6, 0x204",
+      "    75ed:\ta0e613        \twsr.ps\ta10",
+      "    75f0:\t102000        \trsync",
+      "    75f3:\t506f00        \trsil\ta5, 15",
+      "    75f6:\t426681        \ts32i\ta4, a6, 0x204",
+      "    75f9:\tb26680        \ts32i\ta11, a6, 0x200",
+      "    75fc:\t92288a        \tl32i\ta9, a8, 0x228",
+      "    75ff:\t926244        \ts32i\ta9, a2, 0x110",
+      "    7602:\tb26681        \ts32i\ta11, a6, 0x204",
+      "    7605:\t50e613        \twsr.ps\ta5",
+      "    7608:\t102000        \trsync",
+      "    760b:\tf06f00        \trsil\ta15, 15",
+      "    760e:\t426681        \ts32i\ta4, a6, 0x204",
+      "    7611:\tb26680        \ts32i\ta11, a6, 0x200",
+      "    7614:\t3228ab        \tl32i\ta3, a8, 0x2ac",
+      "    7617:\t326284        \ts32i\ta3, a2, 0x210",
+      "    761a:\tb26681        \ts32i\ta11, a6, 0x204",
+      "    761d:\tf0e613        \twsr.ps\ta15",
+      "    7620:\t102000        \trsync",
+      "00007623: 1df0     retw.n        ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07670.txt",
+    "source": "0x7686",
+    "target": "0x7695",
+    "added": [
+      "    7695:\te2010c        \tl8ui\ta14, a1, 12",
+      "    7698:\t220100        \tl8ui\ta2, a1, 0",
+      "    769b:\t819bd7        \tl32r\ta8, 0xffffd508 (0xe000001f) ; inferred DRAM map 0x5ffec000"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/077cc.txt",
+    "source": "0x7811",
+    "target": "0x7bcc",
+    "added": [
+      "    7bcc:\te22212        \tl32i\ta14, a2, 72",
+      "    7bcf:\te26214        \ts32i\ta14, a2, 80",
+      "    7bd2:\tc610ff        \tj\t0x7819",
+      "    7bd5:\tf22216        \tl32i\ta15, a2, 88",
+      "    7bd8:\tf26218        \ts32i\ta15, a2, 96",
+      "    7bdb:\t861dff        \tj\t0x7855"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/077cc.txt",
+    "source": "0x78ac",
+    "target": "0x7be0",
+    "added": [
+      "    7be0:\t82221e        \tl32i\ta8, a2, 120",
+      "    7be3:\t826220        \ts32i\ta8, a2, 128",
+      "    7be6:\tc632ff        \tj\t0x78b5",
+      "    7be9:\t0c0a      \tmovi.n\ta10, 0",
+      "    7beb:\t0c1b      \tmovi.n\ta11, 1",
+      "00007bed: a56dfb   call8        . -0x4924 ; Capstone ; target=0x32c8"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/077cc.txt",
+    "source": "0x7b32",
+    "target": "0x7bfd",
+    "added": [
+      "    7bfd:\t0c2a      \tmovi.n\ta10, 2",
+      "    7bff:\t0c1b      \tmovi.n\ta11, 1",
+      "00007c01: 656cfb   call8        . -0x4938 ; Capstone ; target=0x32c8"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07cd8.txt",
+    "source": "0x7d03",
+    "target": "0x7d15",
+    "added": [
+      "    7d15:\t0c3a      \tmovi.n\ta10, 3",
+      "    7d17:\t0c0b      \tmovi.n\ta11, 0",
+      "    7d19:\t0c0c      \tmovi.n\ta12, 0",
+      "    7d1b:\t0c0d      \tmovi.n\ta13, 0",
+      "00007d1d: 25b101   call8        . +0x1b14 ; Capstone ; target=0x9830",
+      "00007d20: 1df0     retw.n        ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/081b8.txt",
+    "source": "0x81d5",
+    "target": "0x8278",
+    "added": [
+      "    8278:\tc222ee        \tl32i\ta12, a2, 0x3b8",
+      "    827b:\td2a100        \tmovi\ta13, 0x100",
+      "    827e:\t3df0      \tnop.n",
+      "    8280:\td0cc20        \tor\ta12, a12, a13",
+      "    8283:\tf0cc10        \tand\ta12, a12, a15",
+      "    8286:\tc262ee        \ts32i\ta12, a2, 0x3b8"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/081b8.txt",
+    "source": "0x81de",
+    "target": "0x829c",
+    "added": [
+      "    829c:\t8222ee        \tl32i\ta8, a2, 0x3b8",
+      "    829f:\t92a080        \tmovi\ta9, 128",
+      "    82a2:\t3df0      \tnop.n",
+      "    82a4:\t908820        \tor\ta8, a8, a9",
+      "    82a7:\tf08810        \tand\ta8, a8, a15",
+      "    82aa:\t8262ee        \ts32i\ta8, a2, 0x3b8"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/081b8.txt",
+    "source": "0x822a",
+    "target": "0x8231",
+    "added": [
+      "    8231:\tb222ee        \tl32i\ta11, a2, 0x3b8",
+      "    8234:\t0c0a      \tmovi.n\ta10, 0",
+      "    8236:\t2c0c      \tmovi.n\ta12, 32",
+      "    8238:\tc0bb20        \tor\ta11, a11, a12"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/08e18.txt",
+    "source": "0x9343",
+    "target": "0x942c",
+    "added": [
+      "0000942c: 730302   lsi          f7, a3, 8 ; Capstone",
+      "0000942f: 70301a   sub.s        f3, f0, f7 ; Capstone",
+      "    9432:\t3df0      \tnop.n",
+      "00009434: 30c26b   ole.s        b12, f2, f3 ; Capstone",
+      "00009437: 761c02   bt           b12, . +6 ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/08e18.txt",
+    "source": "0x934b",
+    "target": "0x944c",
+    "added": [
+      "    944c:\ta933      \ts32i.n\ta10, a3, 12"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/08e18.txt",
+    "source": "0x935d",
+    "target": "0x9370",
+    "added": [
+      "    9370:\ta933      \ts32i.n\ta10, a3, 12"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0953c.txt",
+    "source": "0x9665",
+    "target": "0x9694",
+    "added": [
+      "    9694:\t969800        \tbltz\ta8, 0x96a1"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/096e4.txt",
+    "source": "0x96f5",
+    "target": "0x974c",
+    "added": [
+      "    974c:\t3064a5        \textui\ta6, a3, 20, 11",
+      "    974f:\t52a380        \tmovi\ta5, 0x380",
+      "    9752:\t6065c0        \tsub\ta6, a5, a6",
+      "    9755:\t1b66      \taddi.n\ta6, a6, 1"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0978c.txt",
+    "source": "0x979f",
+    "target": "0x97b4",
+    "added": [
+      "    97b4:\t41eacf        \tl32r\ta4, 0xffffd75c (0x7ff00000) ; inferred DRAM map 0x5ffec000"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/097f8.txt",
+    "source": "0x97fb",
+    "target": "0x9804",
+    "added": [
+      "    9804:\t306300        \trsil\ta3, 3",
+      "    9807:\t4148cf        \tl32r\ta4, 0xffffd528 (0x5ffed7dc) ; inferred DRAM map 0x5ffec000"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+    "source": "0xa20d",
+    "target": "0xa274",
+    "added": [
+      "    a274:\t1694ff        \tbeqz\ta4, 0xa271"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+    "source": "0xa23f",
+    "target": "0xa24c",
+    "added": [
+      "    a24c:\t6803      \tl32i.n\ta6, a3, 0",
+      "    a24e:\t4b33      \taddi.n\ta3, a3, 4"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a3c4.txt",
+    "source": "0xa3c7",
+    "target": "0xa3d0",
+    "added": [
+      "    a3d0:\t661204        \tbnei\ta2, 1, 0xa3d8",
+      "    a3d3:\t20f103        \texcw",
+      "0000a3d6: 1df0     retw.n        ; Capstone",
+      "    a3d8:\t662204        \tbnei\ta2, 2, 0xa3e0",
+      "    a3db:\t20f203        \texcw",
+      "0000a3de: 1df0     retw.n        ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/012bc.txt",
+    "source": "0x130b",
+    "target": "0x1320",
+    "added": [
+      "    1320:\tb2a064        \tmovi\ta11, 100",
+      "    1323:\tb73219        \tbltu\ta2, a11, 0x1340",
+      "    1326:\ta02420        \tor\ta2, a4, a10",
+      "    1329:\tb1a9ef        \tl32r\ta11, 0xffffd1d0 (0x3a0800) ; inferred DRAM map 0x5ffec000"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01580.txt",
+    "source": "0x15d3",
+    "target": "0x15e0",
+    "added": [
+      "    15e0:\t402310        \tand\ta2, a3, a4",
+      "    15e3:\t0c0b      \tmovi.n\ta11, 0"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01bec.txt",
+    "source": "0x1c25",
+    "target": "0x1c74",
+    "added": [
+      "    1c74:\t924b00        \ts8i\ta9, a11, 0"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+    "source": "0x1ed9",
+    "target": "0x1f64",
+    "added": [
+      "    1f64:\td245f0        \ts8i\ta13, a5, 240",
+      "    1f67:\t0c09      \tmovi.n\ta9, 0"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+    "source": "0x1f20",
+    "target": "0x1f70",
+    "added": [
+      "    1f70:\tb22a8c        \tl32i\ta11, a10, 0x230",
+      "    1f73:\t7c7c      \tmovi.n\ta12, -9",
+      "    1f75:\tc0bb10        \tand\ta11, a11, a12"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/027cc.txt",
+    "source": "0x28fd",
+    "target": "0x2984",
+    "added": [
+      "    2984:\td136ea        \tl32r\ta13, 0xffffd25c (0x5ffec030) ; inferred DRAM map 0x5ffec000",
+      "    2987:\tb8c1      \tl32i.n\ta11, a1, 48",
+      "    2989:\tdabb      \tadd.n\ta11, a11, a13"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03260.txt",
+    "source": "0x3270",
+    "target": "0x3279",
+    "added": [
+      "00003279: 65d0fe   call8        . -0x12f8 ; Capstone ; target=0x1f80",
+      "    327c:\t920303        \tl8ui\ta9, a3, 3",
+      "    327f:\t5699fe        \tbnez\ta9, 0x326c"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03d10.txt",
+    "source": "0x3da6",
+    "target": "0x3dd4",
+    "added": [
+      "    3dd4:\t424114        \ts8i\ta4, a1, 20",
+      "    3dd7:\t4981      \ts32i.n\ta4, a1, 32"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0953c.txt",
+    "source": "0x96b8",
+    "target": "0x96d8",
+    "added": [
+      "    96d8:\t703f05        \textui\ta3, a7, 31, 1",
+      "    96db:\t103301        \tslli\ta3, a3, 31",
+      "    96de:\t0c02      \tmovi.n\ta2, 0"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/012bc.txt",
+    "source": "0x1323",
+    "target": "0x1340",
+    "added": [
+      "    1340:\t302410        \tand\ta2, a4, a3",
+      "    1343:\t0c0b      \tmovi.n\ta11, 0"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07d24.txt",
+    "source": "0x7d42",
+    "target": "0x7da8",
+    "added": [
+      "    7da8:\t3c39      \tmovi.n\ta9, 51"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07d24.txt",
+    "source": "0x7d42",
+    "target": "0x7df4",
+    "added": [
+      "    7df4:\t3c2c      \tmovi.n\ta12, 50"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07d24.txt",
+    "source": "0x7d42",
+    "target": "0x7e40",
+    "added": [
+      "    7e40:\t3c1c      \tmovi.n\ta12, 49"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07d24.txt",
+    "source": "0x7d42",
+    "target": "0x7f6a",
+    "added": [
+      "    7f6a:\t422b2b        \tl32i\ta4, a11, 172",
+      "    7f6d:\t322b2c        \tl32i\ta3, a11, 176"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07d24.txt",
+    "source": "0x7d42",
+    "target": "0x7fbd",
+    "added": [
+      "    7fbd:\t2c7c      \tmovi.n\ta12, 39"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07d24.txt",
+    "source": "0x7d42",
+    "target": "0x80b7",
+    "added": [
+      "    80b7:\t2c39      \tmovi.n\ta9, 35"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/082c0.txt",
+    "source": "0x82f1",
+    "target": "0x832a",
+    "added": [
+      "    832a:\ta22222        \tl32i\ta10, a2, 136",
+      "0000832d: e5fefd   call8        . -0x2010 ; Capstone ; target=0x631c",
+      "    8330:\tf18bd4        \tl32r\ta15, 0xffffd55c (0x80000000) ; inferred DRAM map 0x5ffec000"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/082c0.txt",
+    "source": "0x82f1",
+    "target": "0x8342",
+    "added": [
+      "    8342:\ta22222        \tl32i\ta10, a2, 136",
+      "00008345: a5fcfd   call8        . -0x2034 ; Capstone ; target=0x6310",
+      "    8348:\tf185d4        \tl32r\ta15, 0xffffd55c (0x80000000) ; inferred DRAM map 0x5ffec000",
+      "    834b:\t812fd4        \tl32r\ta8, 0xffffd408 (0xbfffffff) ; inferred DRAM map 0x5ffec000",
+      "    834e:\tf0f320        \tor\ta15, a3, a15",
+      "    8351:\t80ff10        \tand\ta15, a15, a8",
+      "    8354:\tf26221        \ts32i\ta15, a2, 132",
+      "00008357: 1df0     retw.n        ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/082c0.txt",
+    "source": "0x82f1",
+    "target": "0x835a",
+    "added": [
+      "    835a:\ta22222        \tl32i\ta10, a2, 136",
+      "0000835d: 65fafd   call8        . -0x2058 ; Capstone ; target=0x6304",
+      "    8360:\tf17fd4        \tl32r\ta15, 0xffffd55c (0x80000000) ; inferred DRAM map 0x5ffec000",
+      "    8363:\t8129d4        \tl32r\ta8, 0xffffd408 (0xbfffffff) ; inferred DRAM map 0x5ffec000",
+      "    8366:\tf0f320        \tor\ta15, a3, a15",
+      "    8369:\t80ff10        \tand\ta15, a15, a8",
+      "    836c:\tf26221        \ts32i\ta15, a2, 132",
+      "0000836f: 1df0     retw.n        ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/082c0.txt",
+    "source": "0x82f1",
+    "target": "0x8372",
+    "added": [
+      "    8372:\ta22222        \tl32i\ta10, a2, 136",
+      "00008375: 25f8fd   call8        . -0x207c ; Capstone ; target=0x62f8",
+      "    8378:\t9179d4        \tl32r\ta9, 0xffffd55c (0x80000000) ; inferred DRAM map 0x5ffec000"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/082c0.txt",
+    "source": "0x82f1",
+    "target": "0x838a",
+    "added": [
+      "    838a:\ta22222        \tl32i\ta10, a2, 136",
+      "0000838d: 25f2fd   call8        . -0x20dc ; Capstone ; target=0x62b0",
+      "    8390:\ta173d4        \tl32r\ta10, 0xffffd55c (0x80000000) ; inferred DRAM map 0x5ffec000",
+      "    8393:\tb11dd4        \tl32r\ta11, 0xffffd408 (0xbfffffff) ; inferred DRAM map 0x5ffec000"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/082c0.txt",
+    "source": "0x82f1",
+    "target": "0x83ca",
+    "added": [
+      "    83ca:\ta22222        \tl32i\ta10, a2, 136",
+      "000083cd: 25d7f9   call8        . -0x628c ; Capstone ; target=0x2140",
+      "    83d0:\td163d4        \tl32r\ta13, 0xffffd55c (0x80000000) ; inferred DRAM map 0x5ffec000",
+      "    83d3:\te10dd4        \tl32r\ta14, 0xffffd408 (0xbfffffff) ; inferred DRAM map 0x5ffec000"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/082c0.txt",
+    "source": "0x82f1",
+    "target": "0x83e2",
+    "added": [
+      "    83e2:\ta22222        \tl32i\ta10, a2, 136",
+      "000083e5: 25c8f9   call8        . -0x637c ; Capstone ; target=0x2068",
+      "    83e8:\te15dd4        \tl32r\ta14, 0xffffd55c (0x80000000) ; inferred DRAM map 0x5ffec000"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/083fc.txt",
+    "source": "0x8436",
+    "target": "0x8493",
+    "added": [
+      "    8493:\te2231a        \tl32i\ta14, a3, 104",
+      "    8496:\tcbb1      \taddi.n\ta11, a1, 12",
+      "    8498:\te0cf05        \textui\ta12, a14, 31, 1",
+      "    849b:\te0da84        \textui\ta13, a14, 10, 9",
+      "    849e:\td25107        \ts16i\ta13, a1, 14",
+      "    84a1:\tc25108        \ts16i\ta12, a1, 16",
+      "    84a4:\te0e094        \textui\ta14, a14, 0, 10",
+      "    84a7:\te25106        \ts16i\ta14, a1, 12",
+      "    84aa:\ta21b01        \tl16ui\ta10, a11, 2"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/083fc.txt",
+    "source": "0x8436",
+    "target": "0x84e4",
+    "added": [
+      "    84e4:\td2231a        \tl32i\ta13, a3, 104",
+      "    84e7:\tb2c11c        \taddi\ta11, a1, 28",
+      "    84ea:\td0ca84        \textui\ta12, a13, 10, 9"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/083fc.txt",
+    "source": "0x8436",
+    "target": "0x855f",
+    "added": [
+      "    855f:\t92231a        \tl32i\ta9, a3, 104",
+      "    8562:\te2c9fd        \taddi\ta14, a9, -3"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/083fc.txt",
+    "source": "0x8436",
+    "target": "0x8579",
+    "added": [
+      "00008579: 652ffd   call8        . -0x2d08 ; Capstone ; target=0x5870",
+      "    857c:\t06f2ff        \tj\t0x8548",
+      "    857f:\t81f7d3        \tl32r\ta8, 0xffffd55c (0x80000000) ; inferred DRAM map 0x5ffec000",
+      "    8582:\t91a1d3        \tl32r\ta9, 0xffffd408 (0xbfffffff) ; inferred DRAM map 0x5ffec000",
+      "    8585:\ta2631c        \ts32i\ta10, a3, 112",
+      "    8588:\t808220        \tor\ta8, a2, a8",
+      "    858b:\t908810        \tand\ta8, a8, a9"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/083fc.txt",
+    "source": "0x8436",
+    "target": "0x85cc",
+    "added": [
+      "    85cc:\t3c39      \tmovi.n\ta9, 51"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/083fc.txt",
+    "source": "0x8436",
+    "target": "0x872f",
+    "added": [
+      "    872f:\t918bd3        \tl32r\ta9, 0xffffd55c (0x80000000) ; inferred DRAM map 0x5ffec000",
+      "    8732:\tb135d3        \tl32r\ta11, 0xffffd408 (0xbfffffff) ; inferred DRAM map 0x5ffec000",
+      "    8735:\ta2631c        \ts32i\ta10, a3, 112",
+      "    8738:\t909220        \tor\ta9, a2, a9",
+      "    873b:\tb09910        \tand\ta9, a9, a11"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/083fc.txt",
+    "source": "0x8436",
+    "target": "0x895e",
+    "added": [
+      "    895e:\t2c4b      \tmovi.n\ta11, 36"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/083fc.txt",
+    "source": "0x8436",
+    "target": "0x8afc",
+    "added": [
+      "    8afc:\t92231a        \tl32i\ta9, a3, 104",
+      "    8aff:\t261922        \tbeqi\ta9, 1, 0x8b25"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/083fc.txt",
+    "source": "0x8aff",
+    "target": "0x8b25",
+    "added": [
+      "00008b25: e54cf9   call8        . -0x6b30 ; Capstone ; target=0x1ff4",
+      "    8b28:\t0687fe        \tj\t0x8548",
+      "00008b2b: 000c2a   mul.s        f0, f12, f0 ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0953c.txt",
+    "source": "0x9545",
+    "target": "0x94f6",
+    "added": [
+      "    94f6:\tcc34      \tbnez.n\ta4, 0x94fd",
+      "    94f8:\tf08511        \tslli\ta8, a5, 1",
+      "    94fb:\tbc18      \tbeqz.n\ta8, 0x9530",
+      "    94fd:\t67c50b        \tbnall\ta5, a6, 0x950c",
+      "    9500:\t408511        \tslli\ta8, a5, 12",
+      "    9503:\t408820        \tor\ta8, a8, a4",
+      "    9506:\t8c28      \tbeqz.n\ta8, 0x950c",
+      "    9508:\t3d05      \tmov.n\ta3, a5",
+      "    950a:\t2d04      \tmov.n\ta2, a4",
+      "    950c:\t408311        \tslli\ta8, a3, 12",
+      "    950f:\t208820        \tor\ta8, a8, a2",
+      "    9512:\tdca8      \tbnez.n\ta8, 0x9530",
+      "    9514:\t707f05        \textui\ta7, a7, 31, 1",
+      "    9517:\tf03311        \tslli\ta3, a3, 1",
+      "    951a:\t004140        \tssai\t1",
+      "    951d:\t303781        \tsrc\ta3, a7, a3",
+      "    9520:\t865700        \tj\t0x9682",
+      "00009523: 000056   ee.ldf.64.xp f0, f5, a0, a0 ; Capstone",
+      "    9526:\tf2fdf0        \texcw",
+      "    9529:\t831156        \texcw",
+      "    952c:\t98fd      \tl32i.n\ta9, a13, 60",
+      "    952e:\t3d05      \tmov.n\ta3, a5",
+      "    9530:\t417fcf        \tl32r\ta4, 0xffffd32c (0x80000) ; inferred DRAM map 0x5ffec000",
+      "    9533:\t403320        \tor\ta3, a3, a4",
+      "    9536:\t065200        \tj\t0x9682",
+      "    9539:\t000000        \till"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0953c.txt",
+    "source": "0x9548",
+    "target": "0x9525",
+    "added": [
+      "    9525:\t56f2fd        \tbnez\ta2, 0x9508",
+      "    9528:\tf08311        \tslli\ta8, a3, 1",
+      "    952b:\t5698fd        \tbnez\ta8, 0x9508"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0953c.txt",
+    "source": "0x9551",
+    "target": "0x9458",
+    "added": [
+      "    9458:\tf03311        \tslli\ta3, a3, 1",
+      "    945b:\t303141        \tsrli\ta3, a3, 1",
+      "    945e:\t20a320        \tor\ta10, a3, a2",
+      "    9461:\t164a08        \tbeqz\ta10, 0x94e9",
+      "    9464:\t9c53      \tbeqz.n\ta3, 0x947d",
+      "    9466:\ta0f340        \tnsau\ta10, a3",
+      "    9469:\ta2caf5        \taddi\ta10, a10, -11",
+      "    946c:\t001a40        \tssl\ta10",
+      "    946f:\t203381        \tsrc\ta3, a3, a2",
+      "    9472:\t0022a1        \tsll\ta2, a2",
+      "    9475:\t0c18      \tmovi.n\ta8, 1",
+      "    9477:\ta088c0        \tsub\ta8, a8, a10",
+      "    947a:\t863500        \tj\t0x9554",
+      "    947d:\ta0f240        \tnsau\ta10, a2",
+      "    9480:\ta2caf5        \taddi\ta10, a10, -11",
+      "    9483:\t6c18      \tmovi.n\ta8, -31",
+      "    9485:\ta088c0        \tsub\ta8, a8, a10",
+      "    9488:\t001a40        \tssl\ta10",
+      "    948b:\t969a00        \tbltz\ta10, 0x9498",
+      "    948e:\t0032a1        \tsll\ta3, a2",
+      "    9491:\t0c02      \tmovi.n\ta2, 0",
+      "    9493:\t462f00        \tj\t0x9554",
+      "    9496:\t000020        \tor\ta0, a0, a0",
+      "00009499: 309100   all4         b3, b1 ; Capstone",
+      "    949c:\t22a186        \tmovi\ta2, 0x186",
+      "    949f:\t2c00      \tmovi.n\ta0, 32",
+      "    94a1:\tf05511        \tslli\ta5, a5, 1",
+      "    94a4:\t505141        \tsrli\ta5, a5, 1",
+      "    94a7:\t40a520        \tor\ta10, a5, a4",
+      "    94aa:\tbcba      \tbeqz.n\ta10, 0x94e9",
+      "    94ac:\t9c55      \tbeqz.n\ta5, 0x94c5",
+      "    94ae:\ta0f540        \tnsau\ta10, a5",
+      "    94b1:\ta2caf5        \taddi\ta10, a10, -11",
+      "    94b4:\t001a40        \tssl\ta10",
+      "    94b7:\t405581        \tsrc\ta5, a5, a4",
+      "    94ba:\t0044a1        \tsll\ta4, a4",
+      "    94bd:\t0c19      \tmovi.n\ta9, 1",
+      "    94bf:\ta099c0        \tsub\ta9, a9, a10",
+      "    94c2:\t462400        \tj\t0x9557",
+      "    94c5:\ta0f440        \tnsau\ta10, a4",
+      "    94c8:\ta2caf5        \taddi\ta10, a10, -11",
+      "    94cb:\t6c19      \tmovi.n\ta9, -31",
+      "    94cd:\ta099c0        \tsub\ta9, a9, a10",
+      "    94d0:\t001a40        \tssl\ta10",
+      "    94d3:\t969a00        \tbltz\ta10, 0x94e0",
+      "    94d6:\t0054a1        \tsll\ta5, a4",
+      "    94d9:\t0c04      \tmovi.n\ta4, 0",
+      "    94db:\t061e00        \tj\t0x9557",
+      "    94de:\t000040        \tssr\ta0",
+      "000094e1: 509100   all4         b5, b1 ; Capstone",
+      "    94e4:\t44a146        \texcw",
+      "    94e7:\t1b00      \taddi.n\ta0, a0, 1",
+      "    94e9:\t703f05        \textui\ta3, a7, 31, 1",
+      "    94ec:\t103301        \tslli\ta3, a3, 31",
+      "    94ef:\t0c02      \tmovi.n\ta2, 0",
+      "    94f1:\t466300        \tj\t0x9682",
+      "    94f4:\t0000cc        \texcw",
+      "000094f7: 34f085   ee.vldbc.16.ip q1, a3, 0x70 ; Capstone",
+      "    94fa:\t11bc18        \tl32r\ta1, 0xfffcf7ec"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+    "source": "0xa201",
+    "target": "0xa1d0",
+    "added": [
+      "    a1d0:\tb674e9        \tbltui\ta4, 7, 0xa1bd",
+      "    a1d3:\t620300        \tl8ui\ta6, a3, 0",
+      "    a1d6:\t1b33      \taddi.n\ta3, a3, 1",
+      "    a1d8:\t0b44      \taddi.n\ta4, a4, -1",
+      "    a1da:\t624500        \ts8i\ta6, a5, 0",
+      "    a1dd:\t1b55      \taddi.n\ta5, a5, 1",
+      "    a1df:\t176524        \tbbci\ta5, 1, 0xa207",
+      "    a1e2:\tb664d7        \tbltui\ta4, 6, 0xa1bd",
+      "    a1e5:\t620300        \tl8ui\ta6, a3, 0",
+      "    a1e8:\t720301        \tl8ui\ta7, a3, 1",
+      "    a1eb:\t2b33      \taddi.n\ta3, a3, 2",
+      "    a1ed:\t42c4fe        \taddi\ta4, a4, -2",
+      "    a1f0:\t624500        \ts8i\ta6, a5, 0",
+      "    a1f3:\t724501        \ts8i\ta7, a5, 1",
+      "    a1f6:\t2b55      \taddi.n\ta5, a5, 2",
+      "    a1f8:\tc60200        \tj\t0xa207",
+      "    a1fb:\t003621        \tsrai\ta3, a0, 6",
+      "0000a1fe: 005d02   andb         b5, b13, b0 ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0953c.txt",
+    "source": "0x948b",
+    "target": "0x9498",
+    "added": [
+      "    9498:\t203091        \tsrl\ta3, a2",
+      "    949b:\t0022a1        \tsll\ta2, a2",
+      "    949e:\t862c00        \tj\t0x9554"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0953c.txt",
+    "source": "0x94d3",
+    "target": "0x94e0",
+    "added": [
+      "    94e0:\t405091        \tsrl\ta5, a4",
+      "    94e3:\t0044a1        \tsll\ta4, a4",
+      "    94e6:\t461b00        \tj\t0x9557"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+    "source": "0xa1d0",
+    "target": "0xa1bd",
+    "added": [
+      "    a1bd:\t8cd4      \tbeqz.n\ta4, 0xa1ce",
+      "    a1bf:\t4a73      \tadd.n\ta7, a3, a4",
+      "    a1c1:\t620300        \tl8ui\ta6, a3, 0",
+      "    a1c4:\t1b33      \taddi.n\ta3, a3, 1",
+      "    a1c6:\t624500        \ts8i\ta6, a5, 0",
+      "    a1c9:\t1b55      \taddi.n\ta5, a5, 1",
+      "    a1cb:\t7733f2        \tbltu\ta3, a7, 0xa1c1",
+      "0000a1ce: 1df0     retw.n        ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09fd8.txt",
+    "source": "0xa016",
+    "target": "0xa094",
+    "added": [
+      "0000a094: 108040   rotw         1 ; Capstone",
+      "0000a097: 204803   rsr          a2, windowbase ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09fd8.txt",
+    "source": "0xa022",
+    "target": "0xa0b1",
+    "added": [
+      "    a0b1:\tf02211        \tslli\ta2, a2, 1",
+      "    a0b4:\t22c201        \taddi\ta2, a2, 1",
+      "0000a0b7: 304803   rsr          a3, windowbase ; Capstone",
+      "    a0ba:\t77e20a        \tbbsi\ta2, 7, 0xa0c8",
+      "    a0bd:\t0b33      \taddi.n\ta3, a3, -1",
+      "    a0bf:\tf02211        \tslli\ta2, a2, 1",
+      "    a0c2:\t7762f7        \tbbci\ta2, 7, 0xa0bd",
+      "    a0c5:\t303024        \textui\ta3, a3, 0, 3",
+      "    a0c8:\t001340        \tssl\ta3",
+      "    a0cb:\t803201        \tslli\ta3, a2, 24",
+      "    a0ce:\t302281        \tsrc\ta2, a2, a3",
+      "    a0d1:\t202074        \textui\ta2, a2, 0, 8",
+      "0000a0d4: 204913   wsr          a2, windowstart ; Capstone",
+      "    a0d7:\t300303        \trsr.sar\ta3",
+      "    a0da:\t2c02      \tmovi.n\ta2, 32"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-vector-prefix.txt",
+    "source": "0x57",
+    "target": "0x40",
+    "added": [
+      "      40:\t406350        \twitlb\ta4, a3",
+      "      43:\t002000        \tisync",
+      "      46:\t3df0      \tnop.n"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-vector-roots/00410.txt",
+    "source": "0x45f",
+    "target": "0x440",
+    "added": [
+      "00000440: 00c509   l32e         a0, a5, -0x10 ; Capstone",
+      "00000443: 10d509   l32e         a1, a5, -0xc ; Capstone",
+      "00000446: 20e509   l32e         a2, a5, -8 ; Capstone",
+      "00000449: 30f509   l32e         a3, a5, -4 ; Capstone",
+      "0000044c: 003500   rfwu          ; Capstone",
+      "     44f:\t0040d1        \tmul16s\ta4, a0, a0",
+      "00000452: 038033   lsip         f0, a0, 0xcc ; Capstone",
+      "     455:\t113022        \tl32r\ta1, 0xfffc8d18",
+      "00000458: 3020e6   ee.ldf.64.xp f2, f14, a3, a0 ; Capstone",
+      "     45b:\t131020        \texcw",
+      "     45e:\t00f774        \textui\ta15, a0, 7, 8",
+      "     461:\tddf0      \texcw",
+      "00000463: 8040e7   ee.stf.64.xp f4, f14, a8, a0 ; Capstone",
+      "     466:\t7857      \tl32i.n\ta7, a7, 20"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-vector-roots/00410.txt",
+    "source": "0x465",
+    "target": "0x4c0",
+    "added": [
+      "000004c0: 00c909   l32e         a0, a9, -0x10 ; Capstone"
+    ]
+  },
+  {
+    "listing": "evidence/navi21-unlock/disassembly-v1/rlc-vector-roots/00410.txt",
+    "source": "0x46b",
+    "target": "0x540",
+    "added": [
+      "00000540: 00cd09   l32e         a0, a13, -0x10 ; Capstone"
+    ]
+  }
+]

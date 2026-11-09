@@ -1,0 +1,93 @@
+
+/tmp/tmpwpernzgg/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00029178 <.data+0x29178>:
+00029178: 366100   entry        a1, 0x30 ; Capstone
+   2917b:	6823      	l32i.n	a6, a3, 8
+   2917d:	52035e        	l8ui	a5, a3, 94
+00029180: 230204   lsi          f2, a2, 0x10 ; Capstone
+   29183:	8832      	l32i.n	a8, a2, 12
+   29185:	918fa7        	l32r	a9, 0x12fc4 (0x38d1b717)
+00029188: 530207   lsi          f5, a2, 0x1c ; Capstone
+0002918b: 0045ea   utrunc.s     a4, f5, 0 ; Capstone
+0002918e: 5039fa   wfr          f3, a9 ; Capstone
+00029191: 130800   lsi          f1, a8, 0 ; Capstone
+00029194: 20112a   mul.s        f1, f1, f2 ; Capstone
+   29197:	6065a0        	addx4	a6, a5, a6
+0002919a: 030600   lsi          f0, a6, 0 ; Capstone
+0002919d: 1040fa   abs.s        f4, f0 ; Capstone
+000291a0: 40036b   ole.s        b0, f3, f4 ; Capstone
+   291a3:	404074        	extui	a4, a4, 0, 8
+000291a6: 761002   bt           b0, . +6 ; Capstone
+   291a9:	462100        	j	0x29232
+000291ac: 134100   ssi          f1, a1, 0 ; Capstone
+   291af:	bc45      	beqz.n	a5, 0x291e7
+000291b1: 40a0fa   rfr          a10, f0 ; Capstone
+000291b4: 630200   lsi          f6, a2, 0 ; Capstone
+000291b7: 634101   ssi          f6, a1, 4 ; Capstone
+000291ba: 25be0f   call8        . +0xfbe4 ; Capstone ; target=0x38d9c
+000291bd: 030101   lsi          f0, a1, 4 ; Capstone
+   291c0:	b2d6ff        	addmi	a11, a6, 0xffffff00
+000291c3: 530b3f   lsi          f5, a11, 0xfc ; Capstone
+000291c6: 50302a   mul.s        f3, f0, f5 ; Capstone
+000291c9: 504afa   wfr          f4, a10 ; Capstone
+000291cc: 230202   lsi          f2, a2, 8 ; Capstone
+000291cf: 40235a   msub.s       f2, f3, f4 ; Capstone
+000291d2: 130100   lsi          f1, a1, 0 ; Capstone
+000291d5: 3072fa   const.s      f7, 2 ; Capstone
+000291d8: 6022fa   neg.s        f2, f2 ; Capstone
+000291db: 70124b   olt.s        b1, f2, f7 ; Capstone
+000291de: 1027db   movt.s       f2, f7, b1 ; Capstone
+000291e1: 234201   ssi          f2, a2, 4 ; Capstone
+   291e4:	060200        	j	0x291f0
+000291e7: 030200   lsi          f0, a2, 0 ; Capstone
+000291ea: 3021fa   const.s      f2, 1 ; Capstone
+000291ed: 234201   ssi          f2, a2, 4 ; Capstone
+000291f0: 10204b   olt.s        b2, f0, f1 ; Capstone
+000291f3: 760213   bf           b2, . +0x17 ; Capstone
+   291f6:	920218        	l8ui	a9, a2, 24
+   291f9:	c2021b        	l8ui	a12, a2, 27
+   291fc:	c2421a        	s8i	a12, a2, 26
+   291ff:	161904        	beqz	a9, 0x29244
+   29202:	0b99      	addi.n	a9, a9, -1
+   29204:	924218        	s8i	a9, a2, 24
+   29207:	460500        	j	0x29220
+0002920a: 20314b   olt.s        b3, f1, f2 ; Capstone
+   2920d:	d20219        	l8ui	a13, a2, 25
+   29210:	d24218        	s8i	a13, a2, 24
+00029213: 760313   bf           b3, . +0x17 ; Capstone
+   29216:	92021a        	l8ui	a9, a2, 26
+   29219:	bca9      	beqz.n	a9, 0x29257
+   2921b:	0b99      	addi.n	a9, a9, -1
+   2921d:	92421a        	s8i	a9, a2, 26
+00029220: 0064da   ufloat.s     f6, a4, 0 ; Capstone
+00029223: 634207   ssi          f6, a2, 0x1c ; Capstone
+   29226:	2d04      	mov.n	a2, a4
+00029228: 1df0     retw.n        ; Capstone
+   2922a:	92021b        	l8ui	a9, a2, 27
+   2922d:	4d05      	mov.n	a4, a5
+   2922f:	86faff        	j	0x2921d
+   29232:	0c0c      	movi.n	a12, 0
+   29234:	1cab      	movi.n	a11, 26
+   29236:	d123a7        	l32r	a13, 0x12ec4 (0x300fe00)
+   29239:	1c0a      	movi.n	a10, 16
+   2923b:	c02000        	memw
+   2923e:	d22d8a        	l32i	a13, a13, 0x228
+00029241: a53cd9   call8        . -0x26c34 ; Capstone ; target=0x260c
+   29244:	420302        	l8ui	a4, a3, 2
+   29247:	920219        	l8ui	a9, a2, 25
+   2924a:	1b85      	addi.n	a8, a5, 1
+   2924c:	0b44      	addi.n	a4, a4, -1
+0002924e: 804443   min          a4, a4, a8 ; Capstone
+   29251:	404074        	extui	a4, a4, 0, 8
+   29254:	06ebff        	j	0x29204
+   29257:	92021b        	l8ui	a9, a2, 27
+   2925a:	0c08      	movi.n	a8, 0
+   2925c:	0b45      	addi.n	a4, a5, -1
+0002925e: 804453   max          a4, a4, a8 ; Capstone
+   29261:	404074        	extui	a4, a4, 0, 8
+   29264:	46edff        	j	0x2921d
+	...

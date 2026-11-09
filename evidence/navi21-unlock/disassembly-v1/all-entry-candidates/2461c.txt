@@ -1,0 +1,15 @@
+
+/tmp/tmpfu42knul/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002461c <.data+0x2461c>:
+0002461c: 364100   entry        a1, 0x20 ; Capstone
+   2461f:	3166bc        	l32r	a3, 0x137b8 (0x120ca00)
+   24622:	1c34      	movi.n	a4, 19
+   24624:	c02000        	memw
+   24627:	4903      	s32i.n	a4, a3, 0
+   24629:	c02000        	memw
+   2462c:	2913      	s32i.n	a2, a3, 4
+0002462e: 1df0     retw.n        ; Capstone

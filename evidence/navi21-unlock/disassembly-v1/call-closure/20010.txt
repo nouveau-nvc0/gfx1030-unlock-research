@@ -1,0 +1,13 @@
+
+/tmp/tmpjexi6eh2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00020010 <.data+0x20010>:
+00020010: 364100   entry        a1, 0x20 ; Capstone
+   20013:	21eecc        	l32r	a2, 0x133cc (0x1217600)
+   20016:	c02000        	memw
+   20019:	222233        	l32i	a2, a2, 204
+0002001c: 1df0     retw.n        ; Capstone
+	...

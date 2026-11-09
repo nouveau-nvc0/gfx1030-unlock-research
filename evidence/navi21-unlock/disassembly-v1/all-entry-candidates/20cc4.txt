@@ -1,0 +1,12 @@
+
+/tmp/tmpwj58ryvi/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00020cc4 <.data+0x20cc4>:
+00020cc4: 364100   entry        a1, 0x20 ; Capstone
+   20cc7:	21f8c9        	l32r	a2, 0x134a8 (0xc750)
+   20cca:	22227f        	l32i	a2, a2, 0x1fc
+00020ccd: 1df0     retw.n        ; Capstone
+	...

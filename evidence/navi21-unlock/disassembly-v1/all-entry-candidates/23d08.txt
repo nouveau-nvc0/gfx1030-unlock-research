@@ -1,0 +1,33 @@
+
+/tmp/tmp1jn_cu3z/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00023d08 <.data+0x23d08>:
+00023d08: 364100   entry        a1, 0x20 ; Capstone
+   23d0b:	406200        	rsil	a4, 2
+   23d0e:	0c02      	movi.n	a2, 0
+   23d10:	3132bd        	l32r	a3, 0x131d8 (0x155c4)
+   23d13:	52a180        	movi	a5, 0x180
+   23d16:	20b2a0        	addx4	a11, a2, a2
+   23d19:	30bba0        	addx4	a11, a11, a3
+   23d1c:	922b7f        	l32i	a9, a11, 0x1fc
+   23d1f:	9ca9      	beqz.n	a9, 0x23d3d
+   23d21:	0bc9      	addi.n	a12, a9, -1
+   23d23:	c26b7f        	s32i	a12, a11, 0x1fc
+   23d26:	dc3c      	bnez.n	a12, 0x23d3d
+   23d28:	0c0d      	movi.n	a13, 0
+   23d2a:	a22b7c        	l32i	a10, a11, 0x1f0
+   23d2d:	c22b7e        	l32i	a12, a11, 0x1f8
+   23d30:	5aeb      	add.n	a14, a11, a5
+   23d32:	0c0f      	movi.n	a15, 0
+   23d34:	b20e80        	l8ui	a11, a14, 128
+   23d37:	e20e74        	l8ui	a14, a14, 116
+00023d3a: e53fde   call8        . -0x21c00 ; Capstone ; target=0x2138
+   23d3d:	1b22      	addi.n	a2, a2, 1
+   23d3f:	202074        	extui	a2, a2, 0, 8
+   23d42:	6672d0        	bnei	a2, 7, 0x23d16
+   23d45:	40e613        	wsr.ps	a4
+00023d48: 1df0     retw.n        ; Capstone
+	...

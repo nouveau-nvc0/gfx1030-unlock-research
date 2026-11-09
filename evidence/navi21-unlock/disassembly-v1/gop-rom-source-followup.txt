@@ -1,0 +1,36 @@
+GOP reference-ROM provenance and XT scratch callers — offline
+
+The scratch-caller checker now supports --variant baseline|candidate and hashes
+its selected extracted image. XL:35 sites/14 functions; XT:24 sites/14 functions.
+Both resolve only indices{0,2,3,5,6,7,8,10} with no unresolved internal branch
+edges, under the documented function-entry and x64 ABI assumptions. XT wrapper
+2ccc requests data4 through317c, addsDWORD+18 and forwards to4fd4. Initial
+FirmwareInfo+18 is4c in both ROMs. Neither direct-caller set selectsCC.
+Receipts:gop-scratch-callers.json,gop-scratch-callers-candidate.json.
+These are separate analyses, not an assumption of identical caller bytes.
+
+XL ROM source:
+1914 opens PCI I/O into context+20. At1964 it reads globalcdd0; if nonzero,
+1984 stores it in context+88. Otherwise1970..197b loads PCI_IO.RomImage(+98)
+and stores that pointer in context+88. At1a2f..1a3a the same pointer is copied
+to context+70, which3168 uses as the ATOM ROM base. No ROM byte copy occurs in
+this particular initialization sequence: the interpreter retains a pointer.
+The independent saved gop-PciIo.h layout confirms RomSize+90/RomImage+98.
+The protocol's ROM buffer may originate from a PCI option ROM or a platform
+location; this analysis does not establish the installed buffer's source/hash.
+
+XL5e1c independently chooses globalcdd0 or PCI_IO.RomImage at5e73..5e7f,
+then builds a VFCT buffer (signature54434656 at5eb4), using ROM byte2<<9 as
+copy length. This is an additional consumer of the selected image pointer.
+It is not evidence of a write to FirmwareInfo+18. XT corresponding global
+is ce10; reads at1978 and665b. Producer of the optional global remains open.
+
+Do not infer that every store to a structure offset88 changes this ROM pointer:
+22fc uses another context shape (88 is a byte count,90 is an allocated buffer).
+Structure identity must be traced before treating similarly displaced stores
+as ROM mutation. ROM data writes and external ownership remain unfinished.
+
+A literal locator found the scratch wrapper address only as a DWORD in .pdata
+(XL d018, XT d058); no direct address materialization was observed in the
+linear instruction search. This does not exclude computed pointers/alternate
+entries. Receipt:gop-wrapper-reference-locator.json.

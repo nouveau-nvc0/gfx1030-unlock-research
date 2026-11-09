@@ -1,0 +1,71 @@
+{
+  "scope": "Source-header register mapping and literal-pointer locator, no runtime execution. Documented field union is not proof of reserved-bit readback behavior.",
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "source_hashes": {
+    "gc_10_3_0_offset.h": "abd09080e4b06fd2d3e14145e5ceafa580a1987da59f076d2598e8753957b614",
+    "gc_10_3_0_sh_mask.h": "96352168616063a2715ee676e8290b99e9fd0596ad442434ab08687450ecbda5",
+    "sienna_cichlid_ip_offset.h": "27ce382f43a5df3fffdfb5abdaafc85dc8beb940f68e6b10f52f5731068f3bbd"
+  },
+  "lanes": [
+    {
+      "register": "CP_MQD_BASE_ADDR",
+      "index": "0x3209",
+      "aperture": "0x6000c824",
+      "ram_offsets": [
+        "0xc",
+        "0x10"
+      ],
+      "fields": {
+        "CP_MQD_BASE_ADDR__BASE_ADDR_MASK": "0xfffffffc"
+      },
+      "documented_bit_union": "0xfffffffc",
+      "documented_gate_byte_mask": "0xff",
+      "documented_saved_wgp_mask": "0xffff0000"
+    },
+    {
+      "register": "CP_MQD_BASE_ADDR_HI",
+      "index": "0x320a",
+      "aperture": "0x6000c828",
+      "ram_offsets": [
+        "0x10c",
+        "0x110"
+      ],
+      "fields": {
+        "CP_MQD_BASE_ADDR_HI__BASE_ADDR_HI_MASK": "0xffff"
+      },
+      "documented_bit_union": "0xffff",
+      "documented_gate_byte_mask": "0x0",
+      "documented_saved_wgp_mask": "0x0"
+    },
+    {
+      "register": "CP_MQD_CONTROL",
+      "index": "0x322b",
+      "aperture": "0x6000c8ac",
+      "ram_offsets": [
+        "0x20c",
+        "0x210"
+      ],
+      "fields": {
+        "CP_MQD_CONTROL__VMID_MASK": "0xf",
+        "CP_MQD_CONTROL__PRIV_STATE_MASK": "0x100",
+        "CP_MQD_CONTROL__PROCESSING_MQD_MASK": "0x1000",
+        "CP_MQD_CONTROL__PROCESSING_MQD_EN_MASK": "0x2000",
+        "CP_MQD_CONTROL__EXE_DISABLE_MASK": "0x800000",
+        "CP_MQD_CONTROL__CACHE_POLICY_MASK": "0x3000000",
+        "CP_MQD_CONTROL__MQD_VOLATILE_MASK": "0x4000000"
+      },
+      "documented_bit_union": "0x780310f",
+      "documented_gate_byte_mask": "0x80",
+      "documented_saved_wgp_mask": "0x7800000"
+    }
+  ],
+  "literal_pointer_file_offsets": {
+    "0x5fff6944": [],
+    "0x5fff74c4": []
+  },
+  "limits": [
+    "No arbitrary control of source values established.",
+    "Absence of full-address literal does not exclude computed calls or entry from another engine.",
+    "Known direct callers still select31, outside overlap range."
+  ]
+}

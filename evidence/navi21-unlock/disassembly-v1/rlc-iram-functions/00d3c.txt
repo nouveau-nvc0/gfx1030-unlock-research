@@ -1,0 +1,55 @@
+
+/tmp/tmp04vol850/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000d3c <.data+0xd3c>:
+00000d3c: 368100   entry        a1, 0x40 ; Capstone
+     d3f:	3108f1        	l32r	a3, 0xffffd160 (0x5ffee25c) ; inferred DRAM map 0x5ffec000
+     d42:	205074        	extui	a5, a2, 0, 8
+     d45:	225108        	s16i	a2, a1, 16
+     d48:	320300        	l8ui	a3, a3, 0
+     d4b:	62a080        	movi	a6, 128
+     d4e:	2108f1        	l32r	a2, 0xffffd170 (0x6803ba00) ; inferred DRAM map 0x5ffec000
+     d51:	163306        	beqz	a3, 0xdb8
+     d54:	a20111        	l8ui	a10, a1, 17
+     d57:	c117f1        	l32r	a12, 0xffffd1b4 (0xfff8) ; inferred DRAM map 0x5ffec000
+     d5a:	8112f1        	l32r	a8, 0xffffd1a4 (0x5ffed978) ; inferred DRAM map 0x5ffec000
+     d5d:	b22250        	l32i	a11, a2, 0x140
+     d60:	b901      	s32i.n	a11, a1, 0
+     d62:	524814        	s8i	a5, a8, 20
+     d65:	b0b0f4        	extui	a11, a11, 0, 16
+     d68:	c0bb10        	and	a11, a11, a12
+     d6b:	b0ba20        	or	a11, a10, a11
+     d6e:	b25100        	s16i	a11, a1, 0
+     d71:	9801      	l32i.n	a9, a1, 0
+     d73:	926250        	s32i	a9, a2, 0x140
+     d76:	422257        	l32i	a4, a2, 0x15c
+     d79:	a24815        	s8i	a10, a8, 21
+     d7c:	c2af7f        	movi	a12, -129
+     d7f:	c0c410        	and	a12, a4, a12
+     d82:	606420        	or	a6, a4, a6
+     d85:	626257        	s32i	a6, a2, 0x15c
+     d88:	b22258        	l32i	a11, a2, 0x160
+     d8b:	a76bf9        	bbci	a11, 10, 0xd88
+     d8e:	c26257        	s32i	a12, a2, 0x15c
+     d91:	d03511        	slli	a3, a5, 3
+     d94:	d22258        	l32i	a13, a2, 0x160
+     d97:	a7edf9        	bbsi	a13, 10, 0xd94
+     d9a:	f22250        	l32i	a15, a2, 0x140
+     d9d:	4106f1        	l32r	a4, 0xffffd1b8 (0xfff7) ; inferred DRAM map 0x5ffec000
+     da0:	f901      	s32i.n	a15, a1, 0
+     da2:	f0f0f4        	extui	a15, a15, 0, 16
+     da5:	40ff10        	and	a15, a15, a4
+     da8:	30ff20        	or	a15, a15, a3
+     dab:	f25100        	s16i	a15, a1, 0
+     dae:	e801      	l32i.n	a14, a1, 0
+     db0:	e26250        	s32i	a14, a2, 0x140
+     db3:	0c02      	movi.n	a2, 0
+00000db5: 1df0     retw.n        ; Capstone
+00000db7: 000c12   andbc        b0, b12, b0 ; Capstone
+00000dba: 1df0     retw.n        ; Capstone
+
+; Alternate branch-target decode
+     db8:	0c12      	movi.n	a2, 1

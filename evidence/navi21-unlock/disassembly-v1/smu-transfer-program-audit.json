@@ -1,0 +1,244 @@
+{
+  "firmware_sha256": "0eb99764288f764fd853d6973693ffa52419cc7ba62074aee85df4a3e8d0286d",
+  "reference_sha256": "d35c4357e79c07884d8de29bca4f5769514a9f9605dfe530a20fc638291ff747",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/20490.txt",
+      "sha256": "b1a164acf662b6f8fe138ac06f8034e32edbe32b6b8dbb998f33ac34ec1e447b",
+      "byte_checked_records": 125
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/209d4.txt",
+      "sha256": "1dee5baac8c5efa3b8e81ef57bb9af152539908dc4b57dfacccd3e7ec92a64d7",
+      "byte_checked_records": 7
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/209e8.txt",
+      "sha256": "7dc283574f04823bce9780714bbb538fa3f2da092ae5a3dbc10dbdbbf7451b9b",
+      "byte_checked_records": 48
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2aea8.txt",
+      "sha256": "a48e89a2659f96b7199bdb0c8ce72ca295e22c54d95fd5556fe9a7335397f206",
+      "byte_checked_records": 70
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2af90.txt",
+      "sha256": "2187dfbb1b3827744d6ff13e61d69f1802da3dcf58e8d830447a1d22175cd15c",
+      "byte_checked_records": 34
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2b0fc.txt",
+      "sha256": "9224fdb2dd1fe465eb66b219411b98f6df2e90db1d4bdde7c7bdb4fda9916e59",
+      "byte_checked_records": 65
+    }
+  ],
+  "template_address": "0x12dc0",
+  "descriptor_address": "0xfca0",
+  "source_assignment": "20a22/20a25 ->209d4",
+  "program_hex": "bc00e8fc0000bc0268ed2301bc01f5103d04200104083802bc010510010420020408380200181818",
+  "ccr_burst": "0x43d10f5",
+  "ccr_tail": "0x4011005",
+  "executed_instruction_offsets": [
+    0,
+    6,
+    12,
+    18,
+    20,
+    21,
+    22,
+    20,
+    21,
+    22,
+    24,
+    30,
+    32,
+    33,
+    34,
+    32,
+    33,
+    34,
+    32,
+    33,
+    34,
+    36
+  ],
+  "word_transfers": [
+    {
+      "source": "0xfce8",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfcec",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfcf0",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfcf4",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfcf8",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfcfc",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd00",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd04",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd08",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd0c",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd10",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd14",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd18",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd1c",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd20",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd24",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd28",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd2c",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd30",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd34",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd38",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd3c",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd40",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd44",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd48",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd4c",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd50",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd54",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd58",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd5c",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd60",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd64",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd68",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd6c",
+      "destination": "0x123ed68",
+      "bytes": 4
+    },
+    {
+      "source": "0xfd70",
+      "destination": "0x123ed68",
+      "bytes": 4
+    }
+  ],
+  "scope": "Conditional reconstruction of observed software inputs and PL330 instruction semantics, not hardware execution or identification of destination RAM behind the port."
+}

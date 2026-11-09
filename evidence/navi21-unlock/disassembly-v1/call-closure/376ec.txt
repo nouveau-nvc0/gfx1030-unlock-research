@@ -1,0 +1,45 @@
+
+/tmp/tmp9xskpefl/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000376ec <.data+0x376ec>:
+000376ec: 364100   entry        a1, 0x20 ; Capstone
+   376ef:	0c06      	movi.n	a6, 0
+   376f1:	312c73        	l32r	a3, 0x143a4 (0x71e0)
+   376f4:	0c17      	movi.n	a7, 1
+   376f6:	0ce4      	movi.n	a4, 14
+   376f8:	52c324        	addi	a5, a3, 36
+   376fb:	82235c        	l32i	a8, a3, 0x170
+   376fe:	a213bc        	l16ui	a10, a3, 0x178
+   37701:	163804        	beqz	a8, 0x37748
+   37704:	160a04        	beqz	a10, 0x37748
+   37707:	0c02      	movi.n	a2, 0
+   37709:	000240        	ssr	a2
+   3770c:	a090b1        	sra	a9, a10
+   3770f:	07692b        	bbci	a9, 0, 0x3773e
+   37712:	82235c        	l32i	a8, a3, 0x170
+   37715:	ad02      	mov.n	a10, a2
+   37717:	b2235d        	l32i	a11, a3, 0x174
+0003771a: e00800   callx8       a8 ; Capstone
+   3771d:	661a1a        	bnei	a10, 1, 0x3773b
+   37720:	9213bc        	l16ui	a9, a3, 0x178
+   37723:	001240        	ssl	a2
+   37726:	7cfb      	movi.n	a11, -1
+   37728:	00a7a1        	sll	a10, a7
+   3772b:	b0aa30        	xor	a10, a10, a11
+   3772e:	0c1b      	movi.n	a11, 1
+   37730:	a09910        	and	a9, a9, a10
+   37733:	9253bc        	s16i	a9, a3, 0x178
+   37736:	ad02      	mov.n	a10, a2
+00037738: 2596ca   call8        . -0x3569c ; Capstone ; target=0x209c
+   3773b:	a213bc        	l16ui	a10, a3, 0x178
+   3773e:	1b22      	addi.n	a2, a2, 1
+   37740:	4792c5        	bne	a2, a4, 0x37709
+   37743:	cc1a      	bnez.n	a10, 0x37748
+   37745:	62635c        	s32i	a6, a3, 0x170
+   37748:	cb33      	addi.n	a3, a3, 12
+   3774a:	5793ad        	bne	a3, a5, 0x376fb
+0003774d: 1df0     retw.n        ; Capstone
+	...

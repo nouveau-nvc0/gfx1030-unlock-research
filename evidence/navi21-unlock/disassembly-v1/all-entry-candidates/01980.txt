@@ -1,0 +1,20 @@
+
+/tmp/tmp1fdu0rge/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001980 <.data+0x1980>:
+00001980: 364100   entry        a1, 0x20 ; Capstone
+    1983:	c1b4fc        	l32r	a12, 0xc54 (0x0)
+    1986:	b1b4fc        	l32r	a11, 0xc58 (0x3b000)
+    1989:	ad0c      	mov.n	a10, a12
+    198b:	c0bbc0        	sub	a11, a11, a12
+    198e:	0c4c      	movi.n	a12, 4
+00001990: c0bbd2   quos         a11, a11, a12 ; Capstone
+00001993: 25f3ff   call8        . -0xcc ; Capstone ; target=0x18c4
+    1996:	a1b1fc        	l32r	a10, 0xc5c (0x3b000)
+    1999:	b2a400        	movi	a11, 0x400
+0000199c: 65f2ff   call8        . -0xd8 ; Capstone ; target=0x18c4
+0000199f: 1df0     retw.n        ; Capstone
+    19a1:	000000        	ill

@@ -1,0 +1,97 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "cfg_sha256": "490871808e02a8383979fc5d473fcb0fd2849cfd9e0735ef029e4c48366d3873",
+  "scanner_sha256": "493bdd057c5b3be3ad4ca843acdbf02674b37bfccb756f05adbeb77291a17a87",
+  "header_sha256": "abd09080e4b06fd2d3e14145e5ceafa580a1987da59f076d2598e8753957b614",
+  "listings": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/037d8.txt",
+      "sha256": "3c7579c67f502bd4de39723187983b87e521cdc879934403cdad83708ffc9249",
+      "records": 38,
+      "reachable": 36
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03724.txt",
+      "sha256": "1dee473487f03c658f0e1ab1487928fc2626eccb7ff153c0fd4f63b40bd0c8ea",
+      "records": 62,
+      "reachable": 61
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0383c.txt",
+      "sha256": "8f07a7769ed683720a649ea73d24e3b1be05fd6c197fb013c3b9a79458689db9",
+      "records": 25,
+      "reachable": 25
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01194.txt",
+      "sha256": "0d08014e90796e3fee79ee7c0de17eef8dcd9e5872311b58e9ce0693a30afba9",
+      "records": 43,
+      "reachable": 43
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/059e4.txt",
+      "sha256": "098bedff791ec09f84019109021ee04861d90e769fbf85cc54e496e5f5e79c6d",
+      "records": 32,
+      "reachable": 32
+    }
+  ],
+  "ram_stores": [
+    {
+      "pc": "0x37ce",
+      "operation": "s8i",
+      "address": "0x5ffee454",
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "8"
+    },
+    {
+      "pc": "0x3875",
+      "operation": "s8i",
+      "address": "0x5ffee453",
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "7"
+    },
+    {
+      "pc": "0x11dd",
+      "operation": "s8i",
+      "address": "0x5ffee25e",
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "2"
+    },
+    {
+      "pc": "0x1207",
+      "operation": "s8i",
+      "address": "0x5ffee25e",
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "2"
+    }
+  ],
+  "ports": {
+    "mmRLC_SERDES_MASK": "0x3b178",
+    "mmRLC_SERDES_CTRL": "0x3b17c",
+    "mmRLC_SERDES_DATA": "0x3b180",
+    "mmRLC_SERDES_BUSY": "0x3b184"
+  },
+  "383c_serial_command": {
+    "mask": "0xf0003",
+    "control": "0xcfffb",
+    "data": "383c argument",
+    "BPM_BROADCAST": 1,
+    "BPM_REG_WRITE": 1,
+    "BPM_LONG_CMD": 0,
+    "BPM_ADDR": "0x1fff",
+    "REG_ADDR": 12
+  },
+  "scope": "Complete local direct-store/call inventory of this five-function group at normal entries. Hardware downstream effects, interrupts, computed entry variants and actual completion are not covered. No direct e452 or savedCC write; hardware serial command is not proven unrelated to hardware CC acceptance."
+}

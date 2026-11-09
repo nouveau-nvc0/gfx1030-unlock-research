@@ -1,0 +1,166 @@
+{
+  "scope": "Offline reference image analysis; installed SPI dump unavailable, no firmware/NVRAM/CSM changes",
+  "repo": {
+    "url": "https://github.com/Koshak1013/HuananzhiX99_BIOS_mods",
+    "default_branch": "master",
+    "commit": "b27e6e0909c1288639f5adfc5b8708d9f342acc6",
+    "commit_date": "2026-06-18T20:10:34Z"
+  },
+  "reference_images": [
+    {
+      "variant": "original",
+      "file": "/workspace/gfx1030-unlock-research/inputs/research/bios-reference/images/original.bin",
+      "source_name": "HNX99TF_200525_original_E5C88C6F.bin",
+      "bytes": 16777216,
+      "sha256": "7e9d25443d5955e990f5f24cd1e7288d82e6655eb9c0f9f8c1ec5851de6a1c5d",
+      "extract_exit": 0
+    },
+    {
+      "variant": "mod",
+      "file": "/workspace/gfx1030-unlock-research/inputs/research/bios-reference/images/mod.bin",
+      "source_name": "HNX99TF_200525_kot_v011_5B7C6A7F.bin",
+      "bytes": 16777216,
+      "sha256": "2e0af8a55411abc978805727c5d88048bfd72fdf950e039e34917494a006462e",
+      "extract_exit": 0
+    },
+    {
+      "variant": "nobeep",
+      "file": "/workspace/gfx1030-unlock-research/inputs/research/bios-reference/images/nobeep.bin",
+      "source_name": "HNX99TF_200525_kot_v011_nobeep_4B0F504A.bin",
+      "bytes": 16777216,
+      "sha256": "902294b405e18e7dc61d8c774aab99a584036837453a23139f15fa41feed9e4e",
+      "extract_exit": 0
+    }
+  ],
+  "setup": {
+    "guid": "ec87d643-eba4-4bb5-a1e5-3f3e36b20da9",
+    "size": 114,
+    "csm_support_offset": "0x65",
+    "video_offset": "0x6c",
+    "video_values": {
+      "0": "Do not launch",
+      "1": "UEFI",
+      "2": "Legacy"
+    },
+    "form_visibility": "Video enclosed in SuppressIf CSM Support == 0",
+    "video_policy_scope": "PCI display class, not a per-slot selector"
+  },
+  "bds": {
+    "guid": "8f4b8f82-9b91-4028-86e6-f4db7d4c1dff",
+    "load_setup_rva": "0x2973..0x2995",
+    "copy_video_rva": "0x29d8..0x29e5",
+    "no_csm_fallback_rva": "0x2a4c..0x2a53",
+    "fallback_effect": "boot filter 0, video policy 1 (UEFI), irrespective of configured Video",
+    "csm_callback_rva": "0xaba4..0xac0f",
+    "callback_effect": "restore configured video policy after LegacyBios protocol appears",
+    "policy_rva": "0xa788..0xa7f9",
+    "policy_class": "0x03 display; 0 denies both kinds, 1 UEFI only, 2 legacy only"
+  },
+  "emulation": {
+    "files": [
+      "policy-emulation-mod.json",
+      "policy-emulation-nobeep.json"
+    ],
+    "cases": 24,
+    "passed": true,
+    "limits": "Mocked UEFI services and isolated original machine-code paths; not a board boot or proof of prevented physical GPU POST"
+  },
+  "nobeep_preservation": {
+    "executable_module_differences_mod_to_nobeep": 1,
+    "module": "Bds",
+    "byte_differences": 4,
+    "patches": [
+      {
+        "rva": "0x3d69",
+        "before": "0c03",
+        "after": "24fc"
+      },
+      {
+        "rva": "0x3da4",
+        "before": "0c03",
+        "after": "24fc"
+      }
+    ],
+    "interpretation": "two port-I/O speaker-enable OR AL,3 instructions replaced by AND AL,0xfc; preserve these bytes and module provenance"
+  },
+  "native_candidate": {
+    "settings": [
+      "CSM Enabled",
+      "Video Legacy"
+    ],
+    "expected": "UEFI video OpROM disallowed; legacy video permitted; evaluate primary-VGA-only path",
+    "status": "candidate for a later controlled test; not applied, primary display behavior not yet verified"
+  },
+  "per_slot_status": "No per-slot graphics OpROM question identified in extracted Setup and IntelSetup form packages; not proof that every runtime board hook lacks such policy",
+  "legacy_vga_selector": {
+    "module": "CsmDxe",
+    "callback_rva": "0xa3dc..0xa722",
+    "platform_handle_wrapper": "0x5e08",
+    "active_video": "IntelSetup[0x4f]",
+    "observed_output": "one selected VGA handle and count=1 at RVA0xa68d..0xa69c",
+    "pending": "Trace complete legacy ROM dispatch and verify actual firmware enumeration/GPU0 console on the board before claiming secondary GPUs were not POSTed",
+    "emulated_cases": 6,
+    "emulated_result": "Offboard policy selects one VGA, the first enumerated discrete card; this does not guarantee its physical identity on the board",
+    "module_sha256": "3a5ff822ee5bffea5b56349e661031b94fbaad8d8cf6967c621c559879d47aa3"
+  },
+  "vfct_legacy_headers": [
+    {
+      "host_bus": "04",
+      "file": "evidence/navi21-unlock/vfct-04-00-0.bin",
+      "bytes": 45056,
+      "pcir_offset": "0x370",
+      "vendor": "0x1002",
+      "device": "0x73bf",
+      "code_type": 0,
+      "pcir_image_bytes": 45056,
+      "image_indicator": "0x0",
+      "scope": "POST/VFCT ATOM image, not independent physical flash dump"
+    },
+    {
+      "host_bus": "07",
+      "file": "evidence/navi21-unlock/vfct-07-00-0.bin",
+      "bytes": 45056,
+      "pcir_offset": "0x374",
+      "vendor": "0x1002",
+      "device": "0x73bf",
+      "code_type": 0,
+      "pcir_image_bytes": 45056,
+      "image_indicator": "0x0",
+      "scope": "POST/VFCT ATOM image, not independent physical flash dump"
+    },
+    {
+      "host_bus": "0a",
+      "file": "evidence/navi21-unlock/vfct-0a-00-0.bin",
+      "bytes": 45056,
+      "pcir_offset": "0x378",
+      "vendor": "0x1002",
+      "device": "0x73bf",
+      "code_type": 0,
+      "pcir_image_bytes": 45056,
+      "image_indicator": "0x0",
+      "scope": "POST/VFCT ATOM image, not independent physical flash dump"
+    }
+  ],
+  "tools": {
+    "uefiextract": "A76",
+    "ifrextractor": "1.6.1",
+    "python_distributions": [
+      {
+        "name": "unicorn",
+        "version": "2.1.4",
+        "archive_sha256": "9d6e6dea140560de4ebd8446661f7ef84a357d428c14a3ef09dacd306ec8c239"
+      },
+      {
+        "name": "pefile",
+        "version": "2024.8.26",
+        "archive_sha256": "76f8b485dcd3b1bb8166f1128d395fa3d87af26360c2358fb75b80019b957c6f"
+      },
+      {
+        "name": "capstone",
+        "version": "5.0.9",
+        "archive_sha256": "273fd8d747d2e35c88f91450be51a603ecfaafb00d96d9f315dcb8689c86193e"
+      }
+    ]
+  },
+  "all_offline_emulation_cases": 30
+}

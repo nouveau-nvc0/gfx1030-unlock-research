@@ -1,0 +1,24 @@
+
+/tmp/tmp4fq1xh15/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000367c4 <.data+0x367c4>:
+000367c4: 364100   entry        a1, 0x20 ; Capstone
+   367c7:	61c473        	l32r	a6, 0x136d8 (0xa2ac)
+   367ca:	420692        	l8ui	a4, a6, 146
+   367cd:	661420        	bnei	a4, 1, 0x367f1
+   367d0:	921634        	l16ui	a9, a6, 104
+   367d3:	821635        	l16ui	a8, a6, 106
+000367d6: 0049da   ufloat.s     f4, a9, 0 ; Capstone
+000367d9: 0038da   ufloat.s     f3, a8, 0 ; Capstone
+000367dc: 40231a   sub.s        f2, f3, f4 ; Capstone
+000367df: 0013da   ufloat.s     f1, a3, 0 ; Capstone
+   367e2:	51b873        	l32r	a5, 0x136c4 (0xbee8)
+000367e5: 20010a   add.s        f0, f1, f2 ; Capstone
+   367e8:	22457e        	s8i	a2, a5, 126
+000367eb: 134523   ssi          f1, a5, 0x8c ; Capstone
+000367ee: 034522   ssi          f0, a5, 0x88 ; Capstone
+000367f1: 1df0     retw.n        ; Capstone
+	...

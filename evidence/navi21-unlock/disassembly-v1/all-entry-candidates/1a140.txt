@@ -1,0 +1,41 @@
+
+/tmp/tmpvhqxb_sa/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001a140 <.data+0x1a140>:
+0001a140: 366100   entry        a1, 0x30 ; Capstone
+   1a143:	a2a400        	movi	a10, 0x400
+0001a146: a543e8   call8        . -0x17bc4 ; Capstone ; target=0x2580
+   1a149:	3cea      	movi.n	a10, 62
+0001a14b: e5fdff   call8        . -0x20 ; Capstone ; target=0x1a128
+   1a14e:	a901      	s32i.n	a10, a1, 0
+   1a150:	3cda      	movi.n	a10, 61
+0001a152: 65fdff   call8        . -0x28 ; Capstone ; target=0x1a128
+   1a155:	8138e3        	l32r	a8, 0x12e38 (0x112c0)
+   1a158:	820880        	l8ui	a8, a8, 128
+   1a15b:	a911      	s32i.n	a10, a1, 4
+   1a15d:	661806        	bnei	a8, 1, 0x1a167
+   1a160:	ad01      	mov.n	a10, a1
+   1a162:	4bb1      	addi.n	a11, a1, 4
+0001a164: a5f6ff   call8        . -0x94 ; Capstone ; target=0x1a0d0
+   1a167:	9801      	l32i.n	a9, a1, 0
+   1a169:	261907        	beqi	a9, 1, 0x1a174
+   1a16c:	26391f        	beqi	a9, 3, 0x1a18f
+   1a16f:	0c2a      	movi.n	a10, 2
+   1a171:	060100        	j	0x1a179
+   1a174:	a811      	l32i.n	a10, a1, 4
+0001a176: e5f4ff   call8        . -0xb0 ; Capstone ; target=0x1a0c4
+   1a179:	262a02        	beqi	a10, 2, 0x1a17f
+   1a17c:	661a04        	bnei	a10, 1, 0x1a184
+   1a17f:	3ccb      	movi.n	a11, 60
+0001a181: 65efff   call8        . -0x108 ; Capstone ; target=0x1a078
+0001a184: 65eeff   call8        . -0x118 ; Capstone ; target=0x1a06c
+   1a187:	a2a400        	movi	a10, 0x400
+0001a18a: a52ee8   call8        . -0x17d14 ; Capstone ; target=0x2474
+0001a18d: 1df0     retw.n        ; Capstone
+   1a18f:	a811      	l32i.n	a10, a1, 4
+0001a191: e5efff   call8        . -0x100 ; Capstone ; target=0x1a090
+   1a194:	46f8ff        	j	0x1a179
+	...

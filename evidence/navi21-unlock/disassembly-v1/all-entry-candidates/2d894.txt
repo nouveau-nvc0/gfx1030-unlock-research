@@ -1,0 +1,20 @@
+
+/tmp/tmps3vrasxt/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002d894 <.data+0x2d894>:
+0002d894: 364100   entry        a1, 0x20 ; Capstone
+0002d897: 250200   call8        . +0x24 ; Capstone ; target=0x2d8b8
+   2d89a:	20a064        	extui	a10, a2, 0, 7
+   2d89d:	916495        	l32r	a9, 0x12e30 (0x1259e00)
+   2d8a0:	b2af80        	movi	a11, -128
+   2d8a3:	c02000        	memw
+   2d8a6:	82298b        	l32i	a8, a9, 0x22c
+   2d8a9:	b08810        	and	a8, a8, a11
+   2d8ac:	a08820        	or	a8, a8, a10
+   2d8af:	c02000        	memw
+   2d8b2:	82698b        	s32i	a8, a9, 0x22c
+0002d8b5: 1df0     retw.n        ; Capstone
+	...

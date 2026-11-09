@@ -1,0 +1,9 @@
+{
+  "status": "Static aligned words in in-file high16 index range only. Mutable/out-of-file runtime words and computed pointers not covered. Empty results do not exclude arbitrary indexed dispatch.",
+  "targets": {
+    "0x1208924": [],
+    "0x12089bc": [],
+    "0x1208918": [],
+    "0x12089b0": []
+  }
+}

@@ -1,0 +1,22 @@
+Offline analysis, 2026-11-09. No target hardware accessed.
+
+Distinct generic windowed-access command triplet on channels7/8:
+message1f handler34e10 stores unrestricted32-bit parameter to RAM7558;
+message20 handler34de8 loads7558, calls1920(address), returns DWORD;
+message21 handler34dc0 reads parameter value, loads7558 into address argument, calls18d8(address,value).
+All metadata06140000: scheduled priority/argument6, required flags14 (includes permission04), not direct IRQ execution. Read/write wrappers use lock4; setter does not. No local address allowlist or alignment check seen. Shared state7558 distinct from direct-store address7564.
+
+18d8 raises interrupt level to2, stores address and zero in RAM7f50/7f54, cleans8-byte region using2e10. It reads mapping register03220038, replaces low16 bits with(address>>20)&fff, preserves upper16, writes mapping. Actual store at1919 uses CPU address02c00000+(address&fffff), value from caller.1920 mirrors this and reads at1961. Register mapping remains selected after return; no restoration in these helpers.
+
+This is a separate address aperture from normal SMU local load/store. Its32-bit input names a window-mapped target space; do not automatically substitute host BAR offset or0120xxxx internal GC address until alias is established. Public register name of03220038 not yet identified. Standard runtime callers use these helpers extensively, e.g1d914 addresses0005421c+n*00100000;30e74 uses0000e118/0000e11c/10134304. These caller constants are locators pending exact public address-space mapping.
+
+CC relevance: concrete address/value writer with a different routing mechanism. Could address an alternate alias of CC if this mapped space exposes it; neither that alias nor write acceptance is demonstrated. It shares debug permission04 with direct writer; not a proven bypass. Candidate hardware experiments would first need a known-register read mapping control, not guessed writes.
+
+Listings: message-handlers/34e10,34de8,34dc0; transfer-workers/018d8,01920. All six entries decoded from established entry boundaries.
+
+Indexed-command follow-up (separate candidate): fourth function table entry12d2c ->1d480 is a no-op ENTRY/RETW. Thus message41 with function index3 still stores chosen pointer and writes byte1 through it after call, without worker setup. Data high16 index remains unchecked in handler. Static in-file search finds neither exact internal CC addresses nor CC-minus12 among selectable DWORDs; this rules out only those simple constant-pointer choices. Command43 writes byte0 at selected pointer+1;42 conditionally changes DWORD at selected pointer+12 using mask atpointer+1dc+8*low8, but only if byte atpointer+1e0+8*low8==1, then calls1d6f8. These are constrained/collateral writes, not a demonstrated general DWORD CC setter. See indexed-pointer-cc-locator.json and transfer-workers/28b50,1f1a4,1d480.
+
+2026-11-09 positive mapping follow-up:30f50's four16-entry tables exactly
+match UMC byte coordinates, including instance/channel strides and independent
+counter/selector/status field semantics. This establishes UMC correspondence,
+not universal GC/CC/LX6 mapping. See smu-window-umc-followup.txt and auditJSON.

@@ -1,0 +1,33 @@
+
+/tmp/tmpqn9hp2xt/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00028804 <.data+0x28804>:
+00028804: 364100   entry        a1, 0x20 ; Capstone
+   28807:	0c03      	movi.n	a3, 0
+   28809:	7185aa        	l32r	a7, 0x13220 (0x541f0)
+   2880c:	0c14      	movi.n	a4, 1
+   2880e:	5193a9        	l32r	a5, 0x12e5c (0x69a0)
+   28811:	206024        	extui	a6, a2, 0, 3
+   28814:	e06611        	slli	a6, a6, 2
+   28817:	92251a        	l32i	a9, a5, 104
+   2881a:	001340        	ssl	a3
+   2881d:	00a4a1        	sll	a10, a4
+   28820:	a78918        	bany	a9, a10, 0x2883c
+   28823:	c02301        	slli	a2, a3, 20
+   28826:	7a22      	add.n	a2, a2, a7
+   28828:	ad02      	mov.n	a10, a2
+0002882a: 650fd9   call8        . -0x26f08 ; Capstone ; target=0x1920
+   2882d:	bd0a      	mov.n	a11, a10
+   2882f:	6c3c      	movi.n	a12, -29
+   28831:	ad02      	mov.n	a10, a2
+   28833:	c0bb10        	and	a11, a11, a12
+   28836:	b0b620        	or	a11, a6, a11
+00028839: e509d9   call8        . -0x26f60 ; Capstone ; target=0x18d8
+   2883c:	1b33      	addi.n	a3, a3, 1
+   2883e:	303074        	extui	a3, a3, 0, 8
+   28841:	6683d2        	bnei	a3, 8, 0x28817
+00028844: 1df0     retw.n        ; Capstone
+	...

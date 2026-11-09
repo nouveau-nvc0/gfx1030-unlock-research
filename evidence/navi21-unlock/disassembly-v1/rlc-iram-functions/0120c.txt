@@ -1,0 +1,67 @@
+
+/tmp/tmp9_6te_rt/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000120c <.data+0x120c>:
+0000120c: 366100   entry        a1, 0x30 ; Capstone
+    120f:	81d4ef        	l32r	a8, 0xffffd160 (0x5ffee25c) ; inferred DRAM map 0x5ffec000
+    1212:	3df0      	nop.n
+    1214:	820800        	l8ui	a8, a8, 0
+    1217:	16c809        	beqz	a8, 0x12b7
+    121a:	21e2ef        	l32r	a2, 0xffffd1a4 (0x5ffed978) ; inferred DRAM map 0x5ffec000
+    121d:	b21210        	l16ui	a11, a2, 32
+    1220:	a2120e        	l16ui	a10, a2, 28
+    1223:	d2120f        	l16ui	a13, a2, 30
+    1226:	e2021b        	l8ui	a14, a2, 27
+    1229:	f2021a        	l8ui	a15, a2, 26
+    122c:	f24100        	s8i	a15, a1, 0
+    122f:	e24101        	s8i	a14, a1, 1
+    1232:	d25102        	s16i	a13, a1, 4
+    1235:	a25101        	s16i	a10, a1, 2
+    1238:	b25103        	s16i	a11, a1, 6
+    123b:	a0a0f4        	extui	a10, a10, 0, 16
+    123e:	b0b0f4        	extui	a11, a11, 0, 16
+    1241:	00bb11        	slli	a11, a11, 16
+    1244:	d21100        	l16ui	a13, a1, 0
+    1247:	c21102        	l16ui	a12, a1, 4
+    124a:	00aa11        	slli	a10, a10, 16
+    124d:	d0aa20        	or	a10, a10, a13
+    1250:	c0bb20        	or	a11, a11, a12
+00001253: a5b6ff   call8        . -0x494 ; Capstone ; target=0xdbc
+    1256:	8bb1      	addi.n	a11, a1, 8
+    1258:	c20214        	l8ui	a12, a2, 20
+    125b:	d20215        	l8ui	a13, a2, 21
+    125e:	d24109        	s8i	a13, a1, 9
+    1261:	c24108        	s8i	a12, a1, 8
+    1264:	a20b01        	l8ui	a10, a11, 1
+    1267:	b20b00        	l8ui	a11, a11, 0
+    126a:	80aa11        	slli	a10, a10, 8
+    126d:	b0aa20        	or	a10, a10, a11
+00001270: 80aa23   sext         a10, a10, 0xf ; Capstone
+00001273: a5acff   call8        . -0x534 ; Capstone ; target=0xd3c
+    1276:	cbc1      	addi.n	a12, a1, 12
+    1278:	d20219        	l8ui	a13, a2, 25
+    127b:	e20218        	l8ui	a14, a2, 24
+    127e:	f20217        	l8ui	a15, a2, 23
+    1281:	820216        	l8ui	a8, a2, 22
+    1284:	82410c        	s8i	a8, a1, 12
+    1287:	f2410d        	s8i	a15, a1, 13
+    128a:	e2410e        	s8i	a14, a1, 14
+    128d:	d2410f        	s8i	a13, a1, 15
+    1290:	b20c00        	l8ui	a11, a12, 0
+    1293:	a20c03        	l8ui	a10, a12, 3
+    1296:	d20c02        	l8ui	a13, a12, 2
+    1299:	c20c01        	l8ui	a12, a12, 1
+    129c:	80aa11        	slli	a10, a10, 8
+    129f:	d0aa20        	or	a10, a10, a13
+    12a2:	80aa11        	slli	a10, a10, 8
+    12a5:	c0aa20        	or	a10, a10, a12
+    12a8:	80aa11        	slli	a10, a10, 8
+    12ab:	b0aa20        	or	a10, a10, a11
+000012ae: a59dff   call8        . -0x624 ; Capstone ; target=0xc88
+    12b1:	a20222        	l8ui	a10, a2, 34
+000012b4: 6593ff   call8        . -0x6c8 ; Capstone ; target=0xbec
+000012b7: 1df0     retw.n        ; Capstone
+    12b9:	000000        	ill

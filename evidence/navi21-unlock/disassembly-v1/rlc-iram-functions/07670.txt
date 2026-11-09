@@ -1,0 +1,63 @@
+
+/tmp/tmpvqow2uv1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00007670 <.data+0x7670>:
+00007670: 368100   entry        a1, 0x40 ; Capstone
+    7673:	a1e3d6        	l32r	a10, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    7676:	2901      	s32i.n	a2, a1, 0
+    7678:	5931      	s32i.n	a5, a1, 12
+    767a:	91e2d6        	l32r	a9, 0xffffd204 (0x6803b200) ; inferred DRAM map 0x5ffec000
+    767d:	70b074        	extui	a11, a7, 0, 8
+    7680:	cc8b      	bnez.n	a11, 0x768c
+    7682:	c889      	l32i.n	a12, a9, 32
+    7684:	3df0      	nop.n
+    7686:	176c0b        	bbci	a12, 1, 0x7695
+    7689:	165bff        	beqz	a11, 0x7682
+    768c:	d22af5        	l32i	a13, a10, 0x3d4
+    768f:	276def        	bbci	a13, 2, 0x7682
+00007692: 1df0     retw.n        ; Capstone
+    7694:	00e201        	slli	a14, a2, 32
+    7697:	0c22      	movi.n	a2, 2
+    7699:	010081        	l32r	a0, 0xfffe7a9c
+    769c:	9bd7      	addi.n	a13, a7, 9
+    769e:	bc2e      	beqz.n	a14, 0x76d4
+    76a0:	f889      	l32i.n	a15, a9, 32
+    76a2:	076ffa        	bbci	a15, 0, 0x76a0
+    76a5:	202004        	extui	a2, a2, 0, 1
+    76a8:	0c3a      	movi.n	a10, 3
+    76aa:	605024        	extui	a5, a6, 0, 3
+    76ad:	e05511        	slli	a5, a5, 2
+    76b0:	a05520        	or	a5, a5, a10
+    76b3:	805510        	and	a5, a5, a8
+    76b6:	5979      	s32i.n	a5, a9, 28
+    76b8:	8195d7        	l32r	a8, 0xffffd50c (0xe001ffff) ; inferred DRAM map 0x5ffec000
+    76bb:	4051b4        	extui	a5, a4, 1, 12
+    76be:	b05511        	slli	a5, a5, 5
+    76c1:	502220        	or	a2, a2, a5
+    76c4:	802210        	and	a2, a2, a8
+    76c7:	3051b4        	extui	a5, a3, 1, 12
+    76ca:	f05501        	slli	a5, a5, 17
+    76cd:	502220        	or	a2, a2, a5
+    76d0:	2979      	s32i.n	a2, a9, 28
+000076d2: 1df0     retw.n        ; Capstone
+    76d4:	b18ed7        	l32r	a11, 0xffffd50c (0xe001ffff) ; inferred DRAM map 0x5ffec000
+    76d7:	820100        	l8ui	a8, a1, 0
+    76da:	40a1b4        	extui	a10, a4, 1, 12
+    76dd:	b0aa11        	slli	a10, a10, 5
+    76e0:	808004        	extui	a8, a8, 0, 1
+    76e3:	a08820        	or	a8, a8, a10
+    76e6:	b08810        	and	a8, a8, a11
+    76e9:	30a1b4        	extui	a10, a3, 1, 12
+    76ec:	f0aa01        	slli	a10, a10, 17
+    76ef:	a08820        	or	a8, a8, a10
+    76f2:	8979      	s32i.n	a8, a9, 28
+000076f4: 1df0     retw.n        ; Capstone
+	...
+
+; Alternate branch-target decode
+    7695:	e2010c        	l8ui	a14, a1, 12
+    7698:	220100        	l8ui	a2, a1, 0
+    769b:	819bd7        	l32r	a8, 0xffffd508 (0xe000001f) ; inferred DRAM map 0x5ffec000

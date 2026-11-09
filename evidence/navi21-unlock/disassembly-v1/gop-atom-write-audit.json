@@ -1,0 +1,2711 @@
+{
+  "scope": "All parsed stock command rows, including unreachable branches; initial zero base established in XL GOP. REG0/1 indirect values remain separate.",
+  "reports": [
+    {
+      "variant": "baseline",
+      "rom_sha256": "6ffb1d8b93b75f9ef3e411b7fafeeca41764edea05aecf010f11ed9423158f40",
+      "tables": 7,
+      "writes": [
+        {
+          "table": 0,
+          "offset": "0x13",
+          "operation": "move",
+          "index": "0x0",
+          "byte_offset_if_base_zero": "0x0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 21
+            },
+            {
+              "kind": "IMM",
+              "value": 90209,
+              "alignment": 0,
+              "byte_offset": 23
+            }
+          ],
+          "index_port": true,
+          "data_port": false
+        },
+        {
+          "table": 0,
+          "offset": "0x53",
+          "operation": "move",
+          "index": "0x6",
+          "byte_offset_if_base_zero": "0x18",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 6,
+              "alignment": 0,
+              "byte_offset": 85
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 87
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 0,
+          "offset": "0x58",
+          "operation": "or",
+          "index": "0xe1f",
+          "byte_offset_if_base_zero": "0x387c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 3615,
+              "alignment": 4,
+              "byte_offset": 90
+            },
+            {
+              "kind": "IMM",
+              "value": 3,
+              "alignment": 4,
+              "byte_offset": 92
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 0,
+          "offset": "0x5d",
+          "operation": "or",
+          "index": "0x53",
+          "byte_offset_if_base_zero": "0x14c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 83,
+              "alignment": 5,
+              "byte_offset": 95
+            },
+            {
+              "kind": "IMM",
+              "value": 2,
+              "alignment": 4,
+              "byte_offset": 97
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 6,
+          "offset": "0x2e",
+          "operation": "move",
+          "index": "0xc",
+          "byte_offset_if_base_zero": "0x30",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 12,
+              "alignment": 0,
+              "byte_offset": 48
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 50
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 13,
+          "offset": "0x18",
+          "operation": "or",
+          "index": "0x4c",
+          "byte_offset_if_base_zero": "0x130",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 76,
+              "alignment": 6,
+              "byte_offset": 26
+            },
+            {
+              "kind": "IMM",
+              "value": 2,
+              "alignment": 4,
+              "byte_offset": 28
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 22,
+          "offset": "0x9",
+          "operation": "move",
+          "index": "0x0",
+          "byte_offset_if_base_zero": "0x0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 11
+            },
+            {
+              "kind": "IMM",
+              "value": 108652,
+              "alignment": 0,
+              "byte_offset": 13
+            }
+          ],
+          "index_port": true,
+          "data_port": false
+        },
+        {
+          "table": 22,
+          "offset": "0x1a",
+          "operation": "move",
+          "index": "0x0",
+          "byte_offset_if_base_zero": "0x0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 28
+            },
+            {
+              "kind": "IMM",
+              "value": 108653,
+              "alignment": 0,
+              "byte_offset": 30
+            }
+          ],
+          "index_port": true,
+          "data_port": false
+        },
+        {
+          "table": 53,
+          "offset": "0x59",
+          "operation": "move",
+          "index": "0x0",
+          "byte_offset_if_base_zero": "0x0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 91
+            },
+            {
+              "kind": "IMM",
+              "value": 92389,
+              "alignment": 0,
+              "byte_offset": 93
+            }
+          ],
+          "index_port": true,
+          "data_port": false
+        },
+        {
+          "table": 53,
+          "offset": "0x61",
+          "operation": "move",
+          "index": "0x1",
+          "byte_offset_if_base_zero": "0x4",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 1,
+              "alignment": 0,
+              "byte_offset": 99
+            },
+            {
+              "kind": "PS",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 101
+            }
+          ],
+          "index_port": false,
+          "data_port": true
+        },
+        {
+          "table": 53,
+          "offset": "0x82",
+          "operation": "move",
+          "index": "0xc063",
+          "byte_offset_if_base_zero": "0x3018c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 49251,
+              "alignment": 0,
+              "byte_offset": 132
+            },
+            {
+              "kind": "IMM",
+              "value": 1073741824,
+              "alignment": 0,
+              "byte_offset": 134
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 53,
+          "offset": "0x90",
+          "operation": "clear",
+          "index": "0xc063",
+          "byte_offset_if_base_zero": "0x3018c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 49251,
+              "alignment": 0,
+              "byte_offset": 146
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 53,
+          "offset": "0x94",
+          "operation": "move",
+          "index": "0xc064",
+          "byte_offset_if_base_zero": "0x30190",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 49252,
+              "alignment": 0,
+              "byte_offset": 150
+            },
+            {
+              "kind": "PS",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 152
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 53,
+          "offset": "0xa0",
+          "operation": "move",
+          "index": "0xc065",
+          "byte_offset_if_base_zero": "0x30194",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 49253,
+              "alignment": 0,
+              "byte_offset": 162
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 164
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 53,
+          "offset": "0xa5",
+          "operation": "move",
+          "index": "0xc066",
+          "byte_offset_if_base_zero": "0x30198",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 49254,
+              "alignment": 0,
+              "byte_offset": 167
+            },
+            {
+              "kind": "PS",
+              "value": 1,
+              "alignment": 0,
+              "byte_offset": 169
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 53,
+          "offset": "0xae",
+          "operation": "move",
+          "index": "0xc067",
+          "byte_offset_if_base_zero": "0x3019c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 49255,
+              "alignment": 0,
+              "byte_offset": 176
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 178
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 53,
+          "offset": "0xb3",
+          "operation": "move",
+          "index": "0xc0e8",
+          "byte_offset_if_base_zero": "0x303a0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 49384,
+              "alignment": 0,
+              "byte_offset": 181
+            },
+            {
+              "kind": "PS",
+              "value": 3,
+              "alignment": 0,
+              "byte_offset": 183
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0xc2",
+          "operation": "move",
+          "index": "0x3696",
+          "byte_offset_if_base_zero": "0xda58",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13974,
+              "alignment": 0,
+              "byte_offset": 196
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 198
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x112",
+          "operation": "move",
+          "index": "0x0",
+          "byte_offset_if_base_zero": "0x0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 276
+            },
+            {
+              "kind": "IMM",
+              "value": 90209,
+              "alignment": 0,
+              "byte_offset": 278
+            }
+          ],
+          "index_port": true,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x11a",
+          "operation": "move",
+          "index": "0x1",
+          "byte_offset_if_base_zero": "0x4",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 1,
+              "alignment": 0,
+              "byte_offset": 284
+            },
+            {
+              "kind": "IMM",
+              "value": 134217728,
+              "alignment": 0,
+              "byte_offset": 286
+            }
+          ],
+          "index_port": false,
+          "data_port": true
+        },
+        {
+          "table": 66,
+          "offset": "0x122",
+          "operation": "move",
+          "index": "0x0",
+          "byte_offset_if_base_zero": "0x0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 292
+            },
+            {
+              "kind": "IMM",
+              "value": 90209,
+              "alignment": 0,
+              "byte_offset": 294
+            }
+          ],
+          "index_port": true,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x13d",
+          "operation": "move",
+          "index": "0x36b8",
+          "byte_offset_if_base_zero": "0xdae0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14008,
+              "alignment": 0,
+              "byte_offset": 319
+            },
+            {
+              "kind": "IMM",
+              "value": 268566528,
+              "alignment": 0,
+              "byte_offset": 321
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x18f",
+          "operation": "move",
+          "index": "0x36b8",
+          "byte_offset_if_base_zero": "0xdae0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14008,
+              "alignment": 0,
+              "byte_offset": 401
+            },
+            {
+              "kind": "IMM",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 403
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x197",
+          "operation": "or",
+          "index": "0x36b6",
+          "byte_offset_if_base_zero": "0xdad8",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14006,
+              "alignment": 0,
+              "byte_offset": 409
+            },
+            {
+              "kind": "IMM",
+              "value": 131072,
+              "alignment": 0,
+              "byte_offset": 411
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x19f",
+          "operation": "and",
+          "index": "0x36b6",
+          "byte_offset_if_base_zero": "0xdad8",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14006,
+              "alignment": 0,
+              "byte_offset": 417
+            },
+            {
+              "kind": "IMM",
+              "value": 4294901759,
+              "alignment": 0,
+              "byte_offset": 419
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x1a7",
+          "operation": "or",
+          "index": "0x3801",
+          "byte_offset_if_base_zero": "0xe004",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14337,
+              "alignment": 0,
+              "byte_offset": 425
+            },
+            {
+              "kind": "IMM",
+              "value": 256,
+              "alignment": 0,
+              "byte_offset": 427
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x1b1",
+          "operation": "move",
+          "index": "0x3697",
+          "byte_offset_if_base_zero": "0xda5c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13975,
+              "alignment": 0,
+              "byte_offset": 435
+            },
+            {
+              "kind": "IMM",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 437
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x1b9",
+          "operation": "move",
+          "index": "0x3696",
+          "byte_offset_if_base_zero": "0xda58",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13974,
+              "alignment": 0,
+              "byte_offset": 443
+            },
+            {
+              "kind": "IMM",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 445
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x1c1",
+          "operation": "move",
+          "index": "0x36a3",
+          "byte_offset_if_base_zero": "0xda8c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13987,
+              "alignment": 0,
+              "byte_offset": 451
+            },
+            {
+              "kind": "IMM",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 453
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x1c9",
+          "operation": "and",
+          "index": "0x3801",
+          "byte_offset_if_base_zero": "0xe004",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14337,
+              "alignment": 0,
+              "byte_offset": 459
+            },
+            {
+              "kind": "IMM",
+              "value": 4294967039,
+              "alignment": 0,
+              "byte_offset": 461
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x2b8",
+          "operation": "move",
+          "index": "0x367b",
+          "byte_offset_if_base_zero": "0xd9ec",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13947,
+              "alignment": 0,
+              "byte_offset": 698
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 700
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x2c5",
+          "operation": "move",
+          "index": "0x367c",
+          "byte_offset_if_base_zero": "0xd9f0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13948,
+              "alignment": 0,
+              "byte_offset": 711
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 713
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x2ca",
+          "operation": "move",
+          "index": "0x3668",
+          "byte_offset_if_base_zero": "0xd9a0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13928,
+              "alignment": 0,
+              "byte_offset": 716
+            },
+            {
+              "kind": "IMM",
+              "value": 50331648,
+              "alignment": 0,
+              "byte_offset": 718
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x2d2",
+          "operation": "move",
+          "index": "0x3670",
+          "byte_offset_if_base_zero": "0xd9c0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13936,
+              "alignment": 0,
+              "byte_offset": 724
+            },
+            {
+              "kind": "IMM",
+              "value": 2197946367,
+              "alignment": 0,
+              "byte_offset": 726
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x2e9",
+          "operation": "move",
+          "index": "0x367d",
+          "byte_offset_if_base_zero": "0xd9f4",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13949,
+              "alignment": 0,
+              "byte_offset": 747
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 749
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x2f6",
+          "operation": "move",
+          "index": "0x367e",
+          "byte_offset_if_base_zero": "0xd9f8",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13950,
+              "alignment": 0,
+              "byte_offset": 760
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 762
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x2fb",
+          "operation": "move",
+          "index": "0x3669",
+          "byte_offset_if_base_zero": "0xd9a4",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13929,
+              "alignment": 0,
+              "byte_offset": 765
+            },
+            {
+              "kind": "IMM",
+              "value": 67108864,
+              "alignment": 0,
+              "byte_offset": 767
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x303",
+          "operation": "move",
+          "index": "0x3671",
+          "byte_offset_if_base_zero": "0xd9c4",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13937,
+              "alignment": 0,
+              "byte_offset": 773
+            },
+            {
+              "kind": "IMM",
+              "value": 2214658047,
+              "alignment": 0,
+              "byte_offset": 775
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x31a",
+          "operation": "move",
+          "index": "0x367f",
+          "byte_offset_if_base_zero": "0xd9fc",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13951,
+              "alignment": 0,
+              "byte_offset": 796
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 798
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x327",
+          "operation": "move",
+          "index": "0x3680",
+          "byte_offset_if_base_zero": "0xda00",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13952,
+              "alignment": 0,
+              "byte_offset": 809
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 811
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x32c",
+          "operation": "move",
+          "index": "0x366a",
+          "byte_offset_if_base_zero": "0xd9a8",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13930,
+              "alignment": 0,
+              "byte_offset": 814
+            },
+            {
+              "kind": "IMM",
+              "value": 83886080,
+              "alignment": 0,
+              "byte_offset": 816
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x334",
+          "operation": "move",
+          "index": "0x3672",
+          "byte_offset_if_base_zero": "0xd9c8",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13938,
+              "alignment": 0,
+              "byte_offset": 822
+            },
+            {
+              "kind": "IMM",
+              "value": 2231435263,
+              "alignment": 0,
+              "byte_offset": 824
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x34b",
+          "operation": "move",
+          "index": "0x3681",
+          "byte_offset_if_base_zero": "0xda04",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13953,
+              "alignment": 0,
+              "byte_offset": 845
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 847
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x358",
+          "operation": "move",
+          "index": "0x3682",
+          "byte_offset_if_base_zero": "0xda08",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13954,
+              "alignment": 0,
+              "byte_offset": 858
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 860
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x35d",
+          "operation": "move",
+          "index": "0x366b",
+          "byte_offset_if_base_zero": "0xd9ac",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13931,
+              "alignment": 0,
+              "byte_offset": 863
+            },
+            {
+              "kind": "IMM",
+              "value": 100663296,
+              "alignment": 0,
+              "byte_offset": 865
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x365",
+          "operation": "move",
+          "index": "0x3673",
+          "byte_offset_if_base_zero": "0xd9cc",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13939,
+              "alignment": 0,
+              "byte_offset": 871
+            },
+            {
+              "kind": "IMM",
+              "value": 2248212479,
+              "alignment": 0,
+              "byte_offset": 873
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3a8",
+          "operation": "move",
+          "index": "0x3694",
+          "byte_offset_if_base_zero": "0xda50",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13972,
+              "alignment": 0,
+              "byte_offset": 938
+            },
+            {
+              "kind": "IMM",
+              "value": 2147483648,
+              "alignment": 0,
+              "byte_offset": 940
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3b0",
+          "operation": "move",
+          "index": "0x3695",
+          "byte_offset_if_base_zero": "0xda54",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13973,
+              "alignment": 0,
+              "byte_offset": 946
+            },
+            {
+              "kind": "IMM",
+              "value": 8192,
+              "alignment": 0,
+              "byte_offset": 948
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3b8",
+          "operation": "move",
+          "index": "0x3656",
+          "byte_offset_if_base_zero": "0xd958",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13910,
+              "alignment": 0,
+              "byte_offset": 954
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 956
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3bd",
+          "operation": "move",
+          "index": "0x3657",
+          "byte_offset_if_base_zero": "0xd95c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13911,
+              "alignment": 0,
+              "byte_offset": 959
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 961
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3c2",
+          "operation": "move",
+          "index": "0x3661",
+          "byte_offset_if_base_zero": "0xd984",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13921,
+              "alignment": 0,
+              "byte_offset": 964
+            },
+            {
+              "kind": "IMM",
+              "value": 2147549183,
+              "alignment": 0,
+              "byte_offset": 966
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3ca",
+          "operation": "move",
+          "index": "0x3697",
+          "byte_offset_if_base_zero": "0xda5c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13975,
+              "alignment": 0,
+              "byte_offset": 972
+            },
+            {
+              "kind": "IMM",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 974
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3d2",
+          "operation": "move",
+          "index": "0x3696",
+          "byte_offset_if_base_zero": "0xda58",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13974,
+              "alignment": 0,
+              "byte_offset": 980
+            },
+            {
+              "kind": "IMM",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 982
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3df",
+          "operation": "move",
+          "index": "0x36b1",
+          "byte_offset_if_base_zero": "0xdac4",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14001,
+              "alignment": 0,
+              "byte_offset": 993
+            },
+            {
+              "kind": "IMM",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 995
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3e7",
+          "operation": "mask",
+          "index": "0x36b6",
+          "byte_offset_if_base_zero": "0xdad8",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14006,
+              "alignment": 0,
+              "byte_offset": 1001
+            },
+            {
+              "kind": "IMM",
+              "value": 590022,
+              "alignment": 0,
+              "byte_offset": 1007
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3f3",
+          "operation": "and",
+          "index": "0x36b6",
+          "byte_offset_if_base_zero": "0xdad8",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14006,
+              "alignment": 0,
+              "byte_offset": 1013
+            },
+            {
+              "kind": "IMM",
+              "value": 4294836223,
+              "alignment": 0,
+              "byte_offset": 1015
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        }
+      ],
+      "base_mutations": [],
+      "table_calls": [
+        {
+          "table": 0,
+          "offset": 55,
+          "callee": 13
+        },
+        {
+          "table": 53,
+          "offset": 38,
+          "callee": 22
+        },
+        {
+          "table": 66,
+          "offset": 516,
+          "callee": 53
+        },
+        {
+          "table": 66,
+          "offset": 550,
+          "callee": 53
+        },
+        {
+          "table": 66,
+          "offset": 665,
+          "callee": 53
+        },
+        {
+          "table": 66,
+          "offset": 667,
+          "callee": 22
+        }
+      ],
+      "indexed_pairs": [
+        {
+          "table": 53,
+          "data_pc": "0x61",
+          "sole_predecessor": "0x59",
+          "selector": "0x168e5",
+          "selector_after_gop_shift": "0x5a394"
+        },
+        {
+          "table": 66,
+          "data_pc": "0x11a",
+          "sole_predecessor": "0x112",
+          "selector": "0x16061",
+          "selector_after_gop_shift": "0x58184"
+        }
+      ],
+      "direct_cc_matches": [],
+      "gop_dispatch": {
+        "1": {
+          "handler": "0x9370",
+          "destination_type": 0,
+          "header_bytes": 2
+        },
+        "13": {
+          "handler": "0x9574",
+          "destination_type": 0,
+          "header_bytes": 2
+        },
+        "84": {
+          "handler": "0x9ac8",
+          "destination_type": 0,
+          "header_bytes": 2
+        },
+        "7": {
+          "handler": "0x9508",
+          "destination_type": 0,
+          "header_bytes": 2
+        },
+        "92": {
+          "handler": "0x9434",
+          "destination_type": 0,
+          "header_bytes": 2
+        }
+      }
+    },
+    {
+      "variant": "candidate",
+      "rom_sha256": "ec4674da8cd311a3871b8ca565c5545caabcd359c54796c5f9752d71e9b65331",
+      "tables": 7,
+      "writes": [
+        {
+          "table": 0,
+          "offset": "0x13",
+          "operation": "move",
+          "index": "0x0",
+          "byte_offset_if_base_zero": "0x0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 21
+            },
+            {
+              "kind": "IMM",
+              "value": 90209,
+              "alignment": 0,
+              "byte_offset": 23
+            }
+          ],
+          "index_port": true,
+          "data_port": false
+        },
+        {
+          "table": 0,
+          "offset": "0x53",
+          "operation": "move",
+          "index": "0x6",
+          "byte_offset_if_base_zero": "0x18",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 6,
+              "alignment": 0,
+              "byte_offset": 85
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 87
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 0,
+          "offset": "0x58",
+          "operation": "or",
+          "index": "0xe1f",
+          "byte_offset_if_base_zero": "0x387c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 3615,
+              "alignment": 4,
+              "byte_offset": 90
+            },
+            {
+              "kind": "IMM",
+              "value": 3,
+              "alignment": 4,
+              "byte_offset": 92
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 0,
+          "offset": "0x5d",
+          "operation": "or",
+          "index": "0x53",
+          "byte_offset_if_base_zero": "0x14c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 83,
+              "alignment": 5,
+              "byte_offset": 95
+            },
+            {
+              "kind": "IMM",
+              "value": 2,
+              "alignment": 4,
+              "byte_offset": 97
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 6,
+          "offset": "0x2e",
+          "operation": "move",
+          "index": "0xc",
+          "byte_offset_if_base_zero": "0x30",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 12,
+              "alignment": 0,
+              "byte_offset": 48
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 50
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 13,
+          "offset": "0x18",
+          "operation": "or",
+          "index": "0x4c",
+          "byte_offset_if_base_zero": "0x130",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 76,
+              "alignment": 6,
+              "byte_offset": 26
+            },
+            {
+              "kind": "IMM",
+              "value": 2,
+              "alignment": 4,
+              "byte_offset": 28
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 22,
+          "offset": "0x9",
+          "operation": "move",
+          "index": "0x0",
+          "byte_offset_if_base_zero": "0x0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 11
+            },
+            {
+              "kind": "IMM",
+              "value": 108652,
+              "alignment": 0,
+              "byte_offset": 13
+            }
+          ],
+          "index_port": true,
+          "data_port": false
+        },
+        {
+          "table": 22,
+          "offset": "0x1a",
+          "operation": "move",
+          "index": "0x0",
+          "byte_offset_if_base_zero": "0x0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 28
+            },
+            {
+              "kind": "IMM",
+              "value": 108653,
+              "alignment": 0,
+              "byte_offset": 30
+            }
+          ],
+          "index_port": true,
+          "data_port": false
+        },
+        {
+          "table": 53,
+          "offset": "0x59",
+          "operation": "move",
+          "index": "0x0",
+          "byte_offset_if_base_zero": "0x0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 91
+            },
+            {
+              "kind": "IMM",
+              "value": 92389,
+              "alignment": 0,
+              "byte_offset": 93
+            }
+          ],
+          "index_port": true,
+          "data_port": false
+        },
+        {
+          "table": 53,
+          "offset": "0x61",
+          "operation": "move",
+          "index": "0x1",
+          "byte_offset_if_base_zero": "0x4",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 1,
+              "alignment": 0,
+              "byte_offset": 99
+            },
+            {
+              "kind": "PS",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 101
+            }
+          ],
+          "index_port": false,
+          "data_port": true
+        },
+        {
+          "table": 53,
+          "offset": "0x82",
+          "operation": "move",
+          "index": "0xc063",
+          "byte_offset_if_base_zero": "0x3018c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 49251,
+              "alignment": 0,
+              "byte_offset": 132
+            },
+            {
+              "kind": "IMM",
+              "value": 1073741824,
+              "alignment": 0,
+              "byte_offset": 134
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 53,
+          "offset": "0x90",
+          "operation": "clear",
+          "index": "0xc063",
+          "byte_offset_if_base_zero": "0x3018c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 49251,
+              "alignment": 0,
+              "byte_offset": 146
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 53,
+          "offset": "0x94",
+          "operation": "move",
+          "index": "0xc064",
+          "byte_offset_if_base_zero": "0x30190",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 49252,
+              "alignment": 0,
+              "byte_offset": 150
+            },
+            {
+              "kind": "PS",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 152
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 53,
+          "offset": "0xa0",
+          "operation": "move",
+          "index": "0xc065",
+          "byte_offset_if_base_zero": "0x30194",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 49253,
+              "alignment": 0,
+              "byte_offset": 162
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 164
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 53,
+          "offset": "0xa5",
+          "operation": "move",
+          "index": "0xc066",
+          "byte_offset_if_base_zero": "0x30198",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 49254,
+              "alignment": 0,
+              "byte_offset": 167
+            },
+            {
+              "kind": "PS",
+              "value": 1,
+              "alignment": 0,
+              "byte_offset": 169
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 53,
+          "offset": "0xae",
+          "operation": "move",
+          "index": "0xc067",
+          "byte_offset_if_base_zero": "0x3019c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 49255,
+              "alignment": 0,
+              "byte_offset": 176
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 178
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 53,
+          "offset": "0xb3",
+          "operation": "move",
+          "index": "0xc0e8",
+          "byte_offset_if_base_zero": "0x303a0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 49384,
+              "alignment": 0,
+              "byte_offset": 181
+            },
+            {
+              "kind": "PS",
+              "value": 3,
+              "alignment": 0,
+              "byte_offset": 183
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0xc2",
+          "operation": "move",
+          "index": "0x3696",
+          "byte_offset_if_base_zero": "0xda58",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13974,
+              "alignment": 0,
+              "byte_offset": 196
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 198
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x112",
+          "operation": "move",
+          "index": "0x0",
+          "byte_offset_if_base_zero": "0x0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 276
+            },
+            {
+              "kind": "IMM",
+              "value": 90209,
+              "alignment": 0,
+              "byte_offset": 278
+            }
+          ],
+          "index_port": true,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x11a",
+          "operation": "move",
+          "index": "0x1",
+          "byte_offset_if_base_zero": "0x4",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 1,
+              "alignment": 0,
+              "byte_offset": 284
+            },
+            {
+              "kind": "IMM",
+              "value": 134217728,
+              "alignment": 0,
+              "byte_offset": 286
+            }
+          ],
+          "index_port": false,
+          "data_port": true
+        },
+        {
+          "table": 66,
+          "offset": "0x122",
+          "operation": "move",
+          "index": "0x0",
+          "byte_offset_if_base_zero": "0x0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 292
+            },
+            {
+              "kind": "IMM",
+              "value": 90209,
+              "alignment": 0,
+              "byte_offset": 294
+            }
+          ],
+          "index_port": true,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x13d",
+          "operation": "move",
+          "index": "0x36b8",
+          "byte_offset_if_base_zero": "0xdae0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14008,
+              "alignment": 0,
+              "byte_offset": 319
+            },
+            {
+              "kind": "IMM",
+              "value": 268566528,
+              "alignment": 0,
+              "byte_offset": 321
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x18f",
+          "operation": "move",
+          "index": "0x36b8",
+          "byte_offset_if_base_zero": "0xdae0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14008,
+              "alignment": 0,
+              "byte_offset": 401
+            },
+            {
+              "kind": "IMM",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 403
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x197",
+          "operation": "or",
+          "index": "0x36b6",
+          "byte_offset_if_base_zero": "0xdad8",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14006,
+              "alignment": 0,
+              "byte_offset": 409
+            },
+            {
+              "kind": "IMM",
+              "value": 131072,
+              "alignment": 0,
+              "byte_offset": 411
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x19f",
+          "operation": "and",
+          "index": "0x36b6",
+          "byte_offset_if_base_zero": "0xdad8",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14006,
+              "alignment": 0,
+              "byte_offset": 417
+            },
+            {
+              "kind": "IMM",
+              "value": 4294901759,
+              "alignment": 0,
+              "byte_offset": 419
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x1a7",
+          "operation": "or",
+          "index": "0x3801",
+          "byte_offset_if_base_zero": "0xe004",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14337,
+              "alignment": 0,
+              "byte_offset": 425
+            },
+            {
+              "kind": "IMM",
+              "value": 256,
+              "alignment": 0,
+              "byte_offset": 427
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x1b1",
+          "operation": "move",
+          "index": "0x3697",
+          "byte_offset_if_base_zero": "0xda5c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13975,
+              "alignment": 0,
+              "byte_offset": 435
+            },
+            {
+              "kind": "IMM",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 437
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x1b9",
+          "operation": "move",
+          "index": "0x3696",
+          "byte_offset_if_base_zero": "0xda58",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13974,
+              "alignment": 0,
+              "byte_offset": 443
+            },
+            {
+              "kind": "IMM",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 445
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x1c1",
+          "operation": "move",
+          "index": "0x36a3",
+          "byte_offset_if_base_zero": "0xda8c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13987,
+              "alignment": 0,
+              "byte_offset": 451
+            },
+            {
+              "kind": "IMM",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 453
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x1c9",
+          "operation": "and",
+          "index": "0x3801",
+          "byte_offset_if_base_zero": "0xe004",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14337,
+              "alignment": 0,
+              "byte_offset": 459
+            },
+            {
+              "kind": "IMM",
+              "value": 4294967039,
+              "alignment": 0,
+              "byte_offset": 461
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x2b8",
+          "operation": "move",
+          "index": "0x367b",
+          "byte_offset_if_base_zero": "0xd9ec",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13947,
+              "alignment": 0,
+              "byte_offset": 698
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 700
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x2c5",
+          "operation": "move",
+          "index": "0x367c",
+          "byte_offset_if_base_zero": "0xd9f0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13948,
+              "alignment": 0,
+              "byte_offset": 711
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 713
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x2ca",
+          "operation": "move",
+          "index": "0x3668",
+          "byte_offset_if_base_zero": "0xd9a0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13928,
+              "alignment": 0,
+              "byte_offset": 716
+            },
+            {
+              "kind": "IMM",
+              "value": 50331648,
+              "alignment": 0,
+              "byte_offset": 718
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x2d2",
+          "operation": "move",
+          "index": "0x3670",
+          "byte_offset_if_base_zero": "0xd9c0",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13936,
+              "alignment": 0,
+              "byte_offset": 724
+            },
+            {
+              "kind": "IMM",
+              "value": 2197946367,
+              "alignment": 0,
+              "byte_offset": 726
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x2e9",
+          "operation": "move",
+          "index": "0x367d",
+          "byte_offset_if_base_zero": "0xd9f4",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13949,
+              "alignment": 0,
+              "byte_offset": 747
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 749
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x2f6",
+          "operation": "move",
+          "index": "0x367e",
+          "byte_offset_if_base_zero": "0xd9f8",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13950,
+              "alignment": 0,
+              "byte_offset": 760
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 762
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x2fb",
+          "operation": "move",
+          "index": "0x3669",
+          "byte_offset_if_base_zero": "0xd9a4",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13929,
+              "alignment": 0,
+              "byte_offset": 765
+            },
+            {
+              "kind": "IMM",
+              "value": 67108864,
+              "alignment": 0,
+              "byte_offset": 767
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x303",
+          "operation": "move",
+          "index": "0x3671",
+          "byte_offset_if_base_zero": "0xd9c4",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13937,
+              "alignment": 0,
+              "byte_offset": 773
+            },
+            {
+              "kind": "IMM",
+              "value": 2214658047,
+              "alignment": 0,
+              "byte_offset": 775
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x31a",
+          "operation": "move",
+          "index": "0x367f",
+          "byte_offset_if_base_zero": "0xd9fc",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13951,
+              "alignment": 0,
+              "byte_offset": 796
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 798
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x327",
+          "operation": "move",
+          "index": "0x3680",
+          "byte_offset_if_base_zero": "0xda00",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13952,
+              "alignment": 0,
+              "byte_offset": 809
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 811
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x32c",
+          "operation": "move",
+          "index": "0x366a",
+          "byte_offset_if_base_zero": "0xd9a8",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13930,
+              "alignment": 0,
+              "byte_offset": 814
+            },
+            {
+              "kind": "IMM",
+              "value": 83886080,
+              "alignment": 0,
+              "byte_offset": 816
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x334",
+          "operation": "move",
+          "index": "0x3672",
+          "byte_offset_if_base_zero": "0xd9c8",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13938,
+              "alignment": 0,
+              "byte_offset": 822
+            },
+            {
+              "kind": "IMM",
+              "value": 2231435263,
+              "alignment": 0,
+              "byte_offset": 824
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x34b",
+          "operation": "move",
+          "index": "0x3681",
+          "byte_offset_if_base_zero": "0xda04",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13953,
+              "alignment": 0,
+              "byte_offset": 845
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 847
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x358",
+          "operation": "move",
+          "index": "0x3682",
+          "byte_offset_if_base_zero": "0xda08",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13954,
+              "alignment": 0,
+              "byte_offset": 858
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 860
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x35d",
+          "operation": "move",
+          "index": "0x366b",
+          "byte_offset_if_base_zero": "0xd9ac",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13931,
+              "alignment": 0,
+              "byte_offset": 863
+            },
+            {
+              "kind": "IMM",
+              "value": 100663296,
+              "alignment": 0,
+              "byte_offset": 865
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x365",
+          "operation": "move",
+          "index": "0x3673",
+          "byte_offset_if_base_zero": "0xd9cc",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13939,
+              "alignment": 0,
+              "byte_offset": 871
+            },
+            {
+              "kind": "IMM",
+              "value": 2248212479,
+              "alignment": 0,
+              "byte_offset": 873
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3a8",
+          "operation": "move",
+          "index": "0x3694",
+          "byte_offset_if_base_zero": "0xda50",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13972,
+              "alignment": 0,
+              "byte_offset": 938
+            },
+            {
+              "kind": "IMM",
+              "value": 2147483648,
+              "alignment": 0,
+              "byte_offset": 940
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3b0",
+          "operation": "move",
+          "index": "0x3695",
+          "byte_offset_if_base_zero": "0xda54",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13973,
+              "alignment": 0,
+              "byte_offset": 946
+            },
+            {
+              "kind": "IMM",
+              "value": 8192,
+              "alignment": 0,
+              "byte_offset": 948
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3b8",
+          "operation": "move",
+          "index": "0x3656",
+          "byte_offset_if_base_zero": "0xd958",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13910,
+              "alignment": 0,
+              "byte_offset": 954
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 956
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3bd",
+          "operation": "move",
+          "index": "0x3657",
+          "byte_offset_if_base_zero": "0xd95c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13911,
+              "alignment": 0,
+              "byte_offset": 959
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 961
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3c2",
+          "operation": "move",
+          "index": "0x3661",
+          "byte_offset_if_base_zero": "0xd984",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13921,
+              "alignment": 0,
+              "byte_offset": 964
+            },
+            {
+              "kind": "IMM",
+              "value": 2147549183,
+              "alignment": 0,
+              "byte_offset": 966
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3ca",
+          "operation": "move",
+          "index": "0x3697",
+          "byte_offset_if_base_zero": "0xda5c",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13975,
+              "alignment": 0,
+              "byte_offset": 972
+            },
+            {
+              "kind": "IMM",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 974
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3d2",
+          "operation": "move",
+          "index": "0x3696",
+          "byte_offset_if_base_zero": "0xda58",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 13974,
+              "alignment": 0,
+              "byte_offset": 980
+            },
+            {
+              "kind": "IMM",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 982
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3df",
+          "operation": "move",
+          "index": "0x36b1",
+          "byte_offset_if_base_zero": "0xdac4",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14001,
+              "alignment": 0,
+              "byte_offset": 993
+            },
+            {
+              "kind": "IMM",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 995
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3e7",
+          "operation": "mask",
+          "index": "0x36b6",
+          "byte_offset_if_base_zero": "0xdad8",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14006,
+              "alignment": 0,
+              "byte_offset": 1001
+            },
+            {
+              "kind": "IMM",
+              "value": 590022,
+              "alignment": 0,
+              "byte_offset": 1007
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        },
+        {
+          "table": 66,
+          "offset": "0x3f3",
+          "operation": "and",
+          "index": "0x36b6",
+          "byte_offset_if_base_zero": "0xdad8",
+          "operands": [
+            {
+              "kind": "REG",
+              "value": 14006,
+              "alignment": 0,
+              "byte_offset": 1013
+            },
+            {
+              "kind": "IMM",
+              "value": 4294836223,
+              "alignment": 0,
+              "byte_offset": 1015
+            }
+          ],
+          "index_port": false,
+          "data_port": false
+        }
+      ],
+      "base_mutations": [],
+      "table_calls": [
+        {
+          "table": 0,
+          "offset": 55,
+          "callee": 13
+        },
+        {
+          "table": 53,
+          "offset": 38,
+          "callee": 22
+        },
+        {
+          "table": 66,
+          "offset": 516,
+          "callee": 53
+        },
+        {
+          "table": 66,
+          "offset": 550,
+          "callee": 53
+        },
+        {
+          "table": 66,
+          "offset": 665,
+          "callee": 53
+        },
+        {
+          "table": 66,
+          "offset": 667,
+          "callee": 22
+        }
+      ],
+      "indexed_pairs": [
+        {
+          "table": 53,
+          "data_pc": "0x61",
+          "sole_predecessor": "0x59",
+          "selector": "0x168e5",
+          "selector_after_gop_shift": "0x5a394"
+        },
+        {
+          "table": 66,
+          "data_pc": "0x11a",
+          "sole_predecessor": "0x112",
+          "selector": "0x16061",
+          "selector_after_gop_shift": "0x58184"
+        }
+      ],
+      "direct_cc_matches": [],
+      "gop_dispatch": {}
+    }
+  ]
+}

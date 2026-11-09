@@ -1,0 +1,64 @@
+{
+  "firmware_sha256": "67706b9e1545bf68850bf9cea97660af5972574ecb0ca30041174efbb59fac37",
+  "candidate_values": [
+    "0x2249",
+    "0x226f",
+    "0x263d",
+    "0x8924",
+    "0x89bc",
+    "0x98f4",
+    "0x1208924",
+    "0x12089bc",
+    "0x12098f4",
+    "0x5ffedfc4",
+    "0x5ffedfe4",
+    "0x5ffee452",
+    "0x60008924",
+    "0x600089bc",
+    "0x600098f4",
+    "0x68008924",
+    "0x680089bc",
+    "0x680098f4"
+  ],
+  "all_byte_dword_matches": {
+    "0x2249": [],
+    "0x226f": [],
+    "0x263d": [],
+    "0x8924": [],
+    "0x89bc": [],
+    "0x98f4": [],
+    "0x1208924": [],
+    "0x12089bc": [],
+    "0x12098f4": [],
+    "0x5ffedfc4": [],
+    "0x5ffedfe4": [],
+    "0x5ffee452": [],
+    "0x60008924": [],
+    "0x600089bc": [],
+    "0x600098f4": [],
+    "0x68008924": [],
+    "0x680089bc": [],
+    "0x680098f4": []
+  },
+  "decoded_immediate_matches": [],
+  "scan_intervals": [
+    [
+      "0x1000",
+      "0x21870"
+    ],
+    [
+      "0x21970",
+      "0x35bd0"
+    ]
+  ],
+  "scope": "All-byte DWORD lookup over container and ARM/Thumb MOV/MOVW/MVN candidate starts in two component intervals. Not a full instruction/dataflow or code-coverage proof.",
+  "does_not_exclude": [
+    "PC-relative base plus offset",
+    "MOVW/MOVT construction",
+    "computed register tables",
+    "access through a supplied argument or copied whole block",
+    "a different firmware component"
+  ],
+  "next_action": "Direct constants do not supply a changed-CC producer here. Follow computed transfer destinations/contents or known saved-state writers; do not expand another generic literal inventory.",
+  "hardware_changes": false
+}

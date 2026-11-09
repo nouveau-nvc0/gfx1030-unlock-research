@@ -1,0 +1,216 @@
+
+/tmp/tmppqic467f/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00009d28 <.data+0x9d28>:
+    9d28:	2953      	s32i.n	a2, a3, 20
+    9d2a:	30d113        	wsr.excsave1	a3
+    9d2d:	622335        	l32i	a6, a3, 212
+    9d30:	522334        	l32i	a5, a3, 208
+00009d33: 604913   wsr          a6, windowstart ; Capstone
+00009d36: 504813   wsr          a5, windowbase ; Capstone
+    9d39:	102000        	rsync
+    9d3c:	30d103        	rsr.excsave1	a3
+    9d3f:	2853      	l32i.n	a2, a3, 20
+    9d41:	0813      	l32i.n	a0, a3, 4
+    9d43:	1c14      	movi.n	a4, 17
+    9d45:	40e613        	wsr.ps	a4
+    9d48:	102000        	rsync
+    9d4b:	522337        	l32i	a5, a3, 220
+    9d4e:	500313        	wsr.sar	a5
+    9d51:	52233c        	l32i	a5, a3, 240
+    9d54:	50b213        	wsr.epc2	a5
+    9d57:	52233f        	l32i	a5, a3, 252
+    9d5a:	50c213        	wsr.eps2	a5
+    9d5d:	522342        	l32i	a5, a3, 0x108
+    9d60:	50d213        	wsr.excsave2	a5
+    9d63:	52233d        	l32i	a5, a3, 244
+    9d66:	50b313        	wsr.epc3	a5
+    9d69:	522340        	l32i	a5, a3, 0x100
+    9d6c:	50c313        	wsr.eps3	a5
+    9d6f:	522343        	l32i	a5, a3, 0x10c
+    9d72:	50d313        	wsr.excsave3	a5
+    9d75:	52233e        	l32i	a5, a3, 248
+00009d78: 50b413   wsr.epc4 a5 ; verified QEMU encoding
+    9d7b:	522341        	l32i	a5, a3, 0x104
+00009d7e: 50c413   wsr.eps4 a5 ; verified QEMU encoding
+    9d81:	522344        	l32i	a5, a3, 0x110
+00009d84: 50d413   wsr.excsave4 a5 ; verified QEMU encoding
+    9d87:	50ed03        	rsr.icountlevel	a5
+    9d8a:	56b500        	bnez	a5, 0x9d99
+    9d8d:	52234b        	l32i	a5, a3, 0x12c
+    9d90:	50ec13        	wsr.icount	a5
+    9d93:	52234c        	l32i	a5, a3, 0x130
+    9d96:	50ed13        	wsr.icountlevel	a5
+    9d99:	606003        	rsr.ibreakenable	a6
+    9d9c:	dc05      	bnez.n	a5, 0x9db0
+    9d9e:	522352        	l32i	a5, a3, 0x148
+    9da1:	508013        	wsr.ibreaka0	a5
+    9da4:	522353        	l32i	a5, a3, 0x14c
+00009da7: 508113   wsr          a5, ibreaka1 ; Capstone
+    9daa:	522354        	l32i	a5, a3, 0x150
+    9dad:	506013        	wsr.ibreakenable	a5
+    9db0:	60a003        	rsr.dbreakc0	a6
+    9db3:	e7f60e        	bbsi	a6, 30, 0x9dc5
+    9db6:	f7f60b        	bbsi	a6, 31, 0x9dc5
+    9db9:	522350        	l32i	a5, a3, 0x140
+    9dbc:	509013        	wsr.dbreaka0	a5
+    9dbf:	52234e        	l32i	a5, a3, 0x138
+    9dc2:	50a013        	wsr.dbreakc0	a5
+00009dc5: 60a103   rsr          a6, dbreakc1 ; Capstone
+    9dc8:	e7f60e        	bbsi	a6, 30, 0x9dda
+    9dcb:	f7f60b        	bbsi	a6, 31, 0x9dda
+    9dce:	522351        	l32i	a5, a3, 0x144
+00009dd1: 509113   wsr          a5, dbreaka1 ; Capstone
+    9dd4:	52234f        	l32i	a5, a3, 0x13c
+00009dd7: 50a113   wsr          a5, dbreakc1 ; Capstone
+    9dda:	42c394        	addi	a4, a3, -108
+    9ddd:	42d402        	addmi	a4, a4, 0x200
+    9de0:	5804      	l32i.n	a5, a4, 0
+00009de2: 500413   wsr          a5, br ; Capstone
+    9de5:	7cf6      	movi.n	a6, -1
+00009de7: 60e013   wsr          a6, cpenable ; Capstone
+    9dea:	102000        	rsync
+    9ded:	5814      	l32i.n	a5, a4, 4
+00009def: 50e8f3   wur.fcr      a5 ; Capstone
+    9df2:	5824      	l32i.n	a5, a4, 8
+00009df4: 50e9f3   wur.fsr      a5 ; Capstone
+00009df7: 030403   lsi          f0, a4, 0xc ; Capstone
+00009dfa: 130404   lsi          f1, a4, 0x10 ; Capstone
+00009dfd: 230405   lsi          f2, a4, 0x14 ; Capstone
+00009e00: 330406   lsi          f3, a4, 0x18 ; Capstone
+00009e03: 430407   lsi          f4, a4, 0x1c ; Capstone
+00009e06: 530408   lsi          f5, a4, 0x20 ; Capstone
+00009e09: 630409   lsi          f6, a4, 0x24 ; Capstone
+00009e0c: 73040a   lsi          f7, a4, 0x28 ; Capstone
+00009e0f: 83040b   lsi          f8, a4, 0x2c ; Capstone
+00009e12: 93040c   lsi          f9, a4, 0x30 ; Capstone
+00009e15: a3040d   lsi          f10, a4, 0x34 ; Capstone
+00009e18: b3040e   lsi          f11, a4, 0x38 ; Capstone
+00009e1b: c3040f   lsi          f12, a4, 0x3c ; Capstone
+00009e1e: d30410   lsi          f13, a4, 0x40 ; Capstone
+00009e21: e30411   lsi          f14, a4, 0x44 ; Capstone
+00009e24: f30412   lsi          f15, a4, 0x48 ; Capstone
+    9e27:	52233b        	l32i	a5, a3, 236
+00009e2a: 50e013   wsr          a5, cpenable ; Capstone
+    9e2d:	42c354        	addi	a4, a3, 84
+    9e30:	42d401        	addmi	a4, a4, 0x100
+    9e33:	5155ce        	l32r	a5, 0xffffd788 (0x20000000) ; inferred DRAM map 0x5ffec000
+    9e36:	0c06      	movi.n	a6, 0
+    9e38:	7804      	l32i.n	a7, a4, 0
+    9e3a:	70e650        	wdtlb	a7, a6
+    9e3d:	302000        	dsync
+    9e40:	7814      	l32i.n	a7, a4, 4
+    9e42:	860200        	j	0x9e50
+	...
+    9e4d:	000000        	ill
+    9e50:	706650        	witlb	a7, a6
+    9e53:	002000        	isync
+    9e56:	3df0      	nop.n
+    9e58:	3df0      	nop.n
+    9e5a:	8b44      	addi.n	a4, a4, 8
+    9e5c:	5a66      	add.n	a6, a6, a5
+    9e5e:	5666fd        	bnez	a6, 0x9e38
+    9e61:	422333        	l32i	a4, a3, 204
+    9e64:	161406        	beqz	a4, 0x9ec9
+    9e67:	1843      	l32i.n	a1, a3, 16
+    9e69:	42c1f0        	addi	a4, a1, -16
+    9e6c:	522323        	l32i	a5, a3, 140
+    9e6f:	622324        	l32i	a6, a3, 144
+    9e72:	5904      	s32i.n	a5, a4, 0
+    9e74:	6914      	s32i.n	a6, a4, 4
+    9e76:	522325        	l32i	a5, a3, 148
+    9e79:	622326        	l32i	a6, a3, 152
+    9e7c:	5924      	s32i.n	a5, a4, 8
+    9e7e:	6934      	s32i.n	a6, a4, 12
+    9e80:	522327        	l32i	a5, a3, 156
+    9e83:	622328        	l32i	a6, a3, 160
+    9e86:	5901      	s32i.n	a5, a1, 0
+    9e88:	6911      	s32i.n	a6, a1, 4
+    9e8a:	522329        	l32i	a5, a3, 164
+    9e8d:	62232a        	l32i	a6, a3, 168
+    9e90:	5921      	s32i.n	a5, a1, 8
+    9e92:	6931      	s32i.n	a6, a1, 12
+    9e94:	4833      	l32i.n	a4, a3, 12
+    9e96:	404e15        	extui	a4, a4, 30, 2
+    9e99:	a6242c        	blti	a4, 2, 0x9ec9
+    9e9c:	522101        	l32i	a5, a1, 4
+    9e9f:	c04411        	slli	a4, a4, 4
+    9ea2:	4045c0        	sub	a4, a5, a4
+    9ea5:	52c5f0        	addi	a5, a5, -16
+    9ea8:	62c3ac        	addi	a6, a3, -84
+    9eab:	62d601        	addmi	a6, a6, 0x100
+    9eae:	7806      	l32i.n	a7, a6, 0
+    9eb0:	8816      	l32i.n	a8, a6, 4
+    9eb2:	7904      	s32i.n	a7, a4, 0
+    9eb4:	8914      	s32i.n	a8, a4, 4
+    9eb6:	7826      	l32i.n	a7, a6, 8
+    9eb8:	8836      	l32i.n	a8, a6, 12
+    9eba:	726402        	s32i	a7, a4, 8
+    9ebd:	826403        	s32i	a8, a4, 12
+    9ec0:	42c410        	addi	a4, a4, 16
+    9ec3:	62c610        	addi	a6, a6, 16
+    9ec6:	5724e4        	blt	a4, a5, 0x9eae
+    9ec9:	522346        	l32i	a5, a3, 0x118
+    9ecc:	62234a        	l32i	a6, a3, 0x128
+    9ecf:	50f013        	wsr.ccompare0	a5
+    9ed2:	576610        	bbci	a6, 5, 0x9ee6
+    9ed5:	52c5ff        	addi	a5, a5, -1
+    9ed8:	50ea13        	wsr.ccount	a5
+    9edb:	202000        	esync
+    9ede:	3df0      	nop.n
+    9ee0:	60e203        	rsr.interrupt	a6
+    9ee3:	5766f1        	bbci	a6, 5, 0x9ed8
+    9ee6:	522347        	l32i	a5, a3, 0x11c
+    9ee9:	62234a        	l32i	a6, a3, 0x128
+00009eec: 50f113   wsr.ccompare1 a5 ; verified QEMU encoding
+    9eef:	67660f        	bbci	a6, 6, 0x9f02
+    9ef2:	0b55      	addi.n	a5, a5, -1
+    9ef4:	50ea13        	wsr.ccount	a5
+    9ef7:	202000        	esync
+    9efa:	3df0      	nop.n
+    9efc:	60e203        	rsr.interrupt	a6
+    9eff:	6766f1        	bbci	a6, 6, 0x9ef4
+    9f02:	522348        	l32i	a5, a3, 0x120
+    9f05:	62234a        	l32i	a6, a3, 0x128
+00009f08: 50f213   wsr.ccompare2 a5 ; verified QEMU encoding
+    9f0b:	77660f        	bbci	a6, 7, 0x9f1e
+    9f0e:	0b55      	addi.n	a5, a5, -1
+    9f10:	50ea13        	wsr.ccount	a5
+    9f13:	202000        	esync
+    9f16:	3df0      	nop.n
+    9f18:	60e203        	rsr.interrupt	a6
+    9f1b:	7766f1        	bbci	a6, 7, 0x9f10
+    9f1e:	522345        	l32i	a5, a3, 0x114
+    9f21:	50ea13        	wsr.ccount	a5
+    9f24:	52234a        	l32i	a5, a3, 0x128
+    9f27:	57e505        	bbsi	a5, 5, 0x9f30
+    9f2a:	60f003        	rsr.ccompare0	a6
+    9f2d:	60f013        	wsr.ccompare0	a6
+    9f30:	67e505        	bbsi	a5, 6, 0x9f39
+00009f33: 60f103   rsr.ccompare1 a6 ; verified QEMU encoding
+00009f36: 60f113   wsr.ccompare1 a6 ; verified QEMU encoding
+    9f39:	77e505        	bbsi	a5, 7, 0x9f42
+00009f3c: 60f203   rsr.ccompare2 a6 ; verified QEMU encoding
+00009f3f: 60f213   wsr.ccompare2 a6 ; verified QEMU encoding
+    9f42:	522345        	l32i	a5, a3, 0x114
+    9f45:	50ea13        	wsr.ccount	a5
+    9f48:	606f00        	rsil	a6, 15
+    9f4b:	522349        	l32i	a5, a3, 0x124
+    9f4e:	50e413        	wsr.intenable	a5
+    9f51:	0c84      	movi.n	a4, 8
+    9f53:	52234a        	l32i	a5, a3, 0x128
+    9f56:	405510        	and	a5, a5, a4
+    9f59:	50e213        	wsr.intset	a5
+    9f5c:	102000        	rsync
+    9f5f:	522338        	l32i	a5, a3, 224
+    9f62:	50b113        	wsr.epc1	a5
+    9f65:	522339        	l32i	a5, a3, 228
+    9f68:	50d113        	wsr.excsave1	a5
+    9f6b:	52233a        	l32i	a5, a3, 232
+    9f6e:	50c013        	wsr.depc	a5
+    9f71:	0c04      	movi.n	a4, 0
+    9f73:	4903      	s32i.n	a4, a3, 0
+    9f75:	0df0      	ret.n

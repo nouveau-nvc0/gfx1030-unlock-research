@@ -1,0 +1,48 @@
+
+/tmp/tmp7yycm185/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001a324 <.data+0x1a324>:
+0001a324: 364100   entry        a1, 0x20 ; Capstone
+   1a327:	31d2e2        	l32r	a3, 0x12e70 (0xb1ac)
+   1a32a:	82038a        	l8ui	a8, a3, 138
+   1a32d:	21d1e2        	l32r	a2, 0x12e74 (0x14a50)
+   1a330:	92038b        	l8ui	a9, a3, 139
+   1a333:	8c08      	beqz.n	a8, 0x1a337
+   1a335:	cc39      	bnez.n	a9, 0x1a33c
+   1a337:	0c09      	movi.n	a9, 0
+   1a339:	460000        	j	0x1a33e
+   1a33c:	0c19      	movi.n	a9, 1
+   1a33e:	926225        	s32i	a9, a2, 148
+   1a341:	07e90a        	bbsi	a9, 0, 0x1a34f
+   1a344:	0c0a      	movi.n	a10, 0
+   1a346:	a25244        	s16i	a10, a2, 136
+   1a349:	a25245        	s16i	a10, a2, 138
+   1a34c:	460f00        	j	0x1a38d
+0001a34f: 13031d   lsi          f1, a3, 0x74 ; Capstone
+0001a352: 030320   lsi          f0, a3, 0x80 ; Capstone
+0001a355: 00a0ea   utrunc.s     a10, f0, 0 ; Capstone
+0001a358: 00c1ea   utrunc.s     a12, f1, 0 ; Capstone
+   1a35b:	b2221f        	l32i	a11, a2, 124
+   1a35e:	a0a0f4        	extui	a10, a10, 0, 16
+   1a361:	cabb      	add.n	a11, a11, a12
+   1a363:	b2621f        	s32i	a11, a2, 124
+0001a366: 65edff   call8        . -0x128 ; Capstone ; target=0x1a23c
+   1a369:	a25237        	s16i	a10, a2, 110
+   1a36c:	f1c3e2        	l32r	a15, 0x12e78 (0xaed0)
+   1a36f:	820389        	l8ui	a8, a3, 137
+   1a372:	82428e        	s8i	a8, a2, 142
+0001a375: 230f7e   lsi          f2, a15, 0x1f8 ; Capstone
+0001a378: 330f7f   lsi          f3, a15, 0x1fc ; Capstone
+0001a37b: 430f80   lsi          f4, a15, 0x200 ; Capstone
+0001a37e: 00a4ea   utrunc.s     a10, f4, 0 ; Capstone
+0001a381: 00e3ea   utrunc.s     a14, f3, 0 ; Capstone
+0001a384: 00d2ea   utrunc.s     a13, f2, 0 ; Capstone
+   1a387:	e25245        	s16i	a14, a2, 138
+   1a38a:	d25244        	s16i	a13, a2, 136
+   1a38d:	a25246        	s16i	a10, a2, 140
+0001a390: 25e8ff   call8        . -0x17c ; Capstone ; target=0x1a214
+0001a393: 1df0     retw.n        ; Capstone
+   1a395:	000000        	ill

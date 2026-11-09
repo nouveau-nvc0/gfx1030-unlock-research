@@ -1,0 +1,45 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "listing_sha256": "39b257b17c2a02ca6e9be7df36353afd8eed79af78bce1009668706dbc037338",
+  "byte_checked_records": 183,
+  "scanner_sha256": "d9505d41a71e70b63c24ea5c5af0acf390e3aee9bf94cfad4c83fbba6fc260ae",
+  "prior_scan_sha256": "9cc4d7459fbed824ebcecf2ef6f8826a5b8a5c7db698ea01dac6332a536eabe1",
+  "analysis_rule_checks": [
+    {
+      "operation": "movt",
+      "alternatives_agree": false,
+      "unrelated_base_preserved": true,
+      "destination_result": "unknown"
+    },
+    {
+      "operation": "movt",
+      "alternatives_agree": true,
+      "unrelated_base_preserved": true,
+      "destination_result": "known"
+    },
+    {
+      "operation": "movf",
+      "alternatives_agree": false,
+      "unrelated_base_preserved": true,
+      "destination_result": "unknown"
+    },
+    {
+      "operation": "movf",
+      "alternatives_agree": true,
+      "unrelated_base_preserved": true,
+      "destination_result": "known"
+    }
+  ],
+  "resolved_byte_stores": {
+    "0x28c7": "0x5ffee272",
+    "0x28d6": "0x5ffee3c5",
+    "0x2903": "0x5ffee272",
+    "0x2927": "0x5ffee272",
+    "0x292c": "0x5ffee272",
+    "0x2947": "0x5ffee3c4",
+    "0x299b": "0x5ffee3c5"
+  },
+  "finding": "MOVT at2887 changesa13 only; preservea2=5ffee264 anda3=5ffee2e8 across it. Seven stores previously reported unknown resolve to e272/e3c4/e3c5, all outside savedCC and gate.",
+  "correction": "Branch28dd was already appended to the original listing. This work fixes constant propagation, not a missing decoded branch. Original aggregate scan is retained as historical evidence; new result is separate.",
+  "limits": "171 locally reached instructions and initial literal mapping do not prove global entry/runtime behavior or all possible writers. Conditional destination remains unknown unless alternatives agree. No hardware access."
+}

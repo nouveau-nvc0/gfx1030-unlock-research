@@ -1,0 +1,15 @@
+
+/tmp/tmptdh5vrmg/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001170 <.data+0x1170>:
+00001170: 364100   entry        a1, 0x20 ; Capstone
+    1173:	306200        	rsil	a3, 2
+    1176:	2178fe        	l32r	a2, 0xb58 (0x7b14)
+    1179:	22227f        	l32i	a2, a2, 0x1fc
+    117c:	2852      	l32i.n	a2, a2, 20
+    117e:	30e613        	wsr.ps	a3
+00001181: 1df0     retw.n        ; Capstone
+	...

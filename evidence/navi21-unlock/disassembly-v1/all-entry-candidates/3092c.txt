@@ -1,0 +1,17 @@
+
+/tmp/tmp3bivzivm/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0003092c <.data+0x3092c>:
+0003092c: 366100   entry        a1, 0x30 ; Capstone
+   3092f:	0c7a      	movi.n	a10, 7
+   30931:	bd01      	mov.n	a11, a1
+   30933:	008311        	slli	a8, a3, 16
+   30936:	0c09      	movi.n	a9, 0
+   30938:	9911      	s32i.n	a9, a1, 4
+   3093a:	808220        	or	a8, a2, a8
+   3093d:	8901      	s32i.n	a8, a1, 0
+0003093f: e5ce03   call8        . +0x3cf0 ; Capstone ; target=0x3462c
+00030942: 1df0     retw.n        ; Capstone

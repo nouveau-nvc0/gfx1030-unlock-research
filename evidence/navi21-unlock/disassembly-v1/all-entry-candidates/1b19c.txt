@@ -1,0 +1,21 @@
+
+/tmp/tmpr2sf558x/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001b19c <.data+0x1b19c>:
+0001b19c: 364100   entry        a1, 0x20 ; Capstone
+   1b19f:	a2a088        	movi	a10, 136
+0001b1a2: e53de7   call8        . -0x18c20 ; Capstone ; target=0x2580
+0001b1a5: a5feff   call8        . -0x14 ; Capstone ; target=0x1b190
+   1b1a8:	8c8a      	beqz.n	a10, 0x1b1b4
+   1b1aa:	ad03      	mov.n	a10, a3
+0001b1ac: 250be6   call8        . -0x19f4c ; Capstone ; target=0x1260
+   1b1af:	0c12      	movi.n	a2, 1
+   1b1b1:	460000        	j	0x1b1b6
+   1b1b4:	0c02      	movi.n	a2, 0
+   1b1b6:	a2a088        	movi	a10, 136
+0001b1b9: a52be7   call8        . -0x18d44 ; Capstone ; target=0x2474
+0001b1bc: 1df0     retw.n        ; Capstone
+	...

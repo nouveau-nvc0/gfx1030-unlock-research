@@ -1,0 +1,52 @@
+
+/tmp/tmppur7_ga4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001f3c8 <.data+0x1f3c8>:
+0001f3c8: 364100   entry        a1, 0x20 ; Capstone
+   1f3cb:	0c8a      	movi.n	a10, 8
+0001f3cd: 251be3   call8        . -0x1ce4c ; Capstone ; target=0x2580
+   1f3d0:	1c7a      	movi.n	a10, 23
+   1f3d2:	b132cf        	l32r	a11, 0x1309c (0x3c03126f)
+   1f3d5:	c1c2cf        	l32r	a12, 0x132e0 (0x42c80000)
+0001f3d8: a5cd15   call8        . +0x15cdc ; Capstone ; target=0x350b4
+   1f3db:	1c7a      	movi.n	a10, 23
+   1f3dd:	0c0b      	movi.n	a11, 0
+0001f3df: 653a0a   call8        . +0xa3a8 ; Capstone ; target=0x29784
+   1f3e2:	919dcf        	l32r	a9, 0x13258 (0x31ffe00)
+   1f3e5:	b2a100        	movi	a11, 0x100
+   1f3e8:	c02000        	memw
+   1f3eb:	a229d9        	l32i	a10, a9, 0x364
+   1f3ee:	b0aa20        	or	a10, a10, a11
+   1f3f1:	c02000        	memw
+   1f3f4:	a269d9        	s32i	a10, a9, 0x364
+   1f3f7:	82a200        	movi	a8, 0x200
+   1f3fa:	c02000        	memw
+   1f3fd:	f229d9        	l32i	a15, a9, 0x364
+   1f400:	80ff20        	or	a15, a15, a8
+   1f403:	c02000        	memw
+   1f406:	f269d9        	s32i	a15, a9, 0x364
+   1f409:	e2a400        	movi	a14, 0x400
+   1f40c:	c02000        	memw
+   1f40f:	d229d9        	l32i	a13, a9, 0x364
+   1f412:	e0dd20        	or	a13, a13, a14
+   1f415:	c02000        	memw
+   1f418:	d269d9        	s32i	a13, a9, 0x364
+   1f41b:	c1b2cf        	l32r	a12, 0x132e4 (0x4000)
+   1f41e:	c02000        	memw
+   1f421:	b229d9        	l32i	a11, a9, 0x364
+   1f424:	c0bb20        	or	a11, a11, a12
+   1f427:	c02000        	memw
+   1f42a:	b269d9        	s32i	a11, a9, 0x364
+   1f42d:	0c1a      	movi.n	a10, 1
+   1f42f:	c02000        	memw
+   1f432:	8229d9        	l32i	a8, a9, 0x364
+   1f435:	a08820        	or	a8, a8, a10
+   1f438:	c02000        	memw
+   1f43b:	0c8a      	movi.n	a10, 8
+   1f43d:	8269d9        	s32i	a8, a9, 0x364
+0001f440: 2503e3   call8        . -0x1cfcc ; Capstone ; target=0x2474
+0001f443: 1df0     retw.n        ; Capstone
+   1f445:	000000        	ill

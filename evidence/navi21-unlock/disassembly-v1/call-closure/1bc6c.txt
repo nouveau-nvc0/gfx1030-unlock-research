@@ -1,0 +1,50 @@
+
+/tmp/tmpzshalftd/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001bc6c <.data+0x1bc6c>:
+0001bc6c: 364100   entry        a1, 0x20 ; Capstone
+   1bc6f:	0c0a      	movi.n	a10, 0
+   1bc71:	31dedc        	l32r	a3, 0x12fec (0x11018)
+   1bc74:	0c28      	movi.n	a8, 2
+   1bc76:	0c69      	movi.n	a9, 6
+   1bc78:	926316        	s32i	a9, a3, 88
+   1bc7b:	cbb3      	addi.n	a11, a3, 12
+   1bc7d:	0c09      	movi.n	a9, 0
+0001bc7f: 76a80f   loopgtz      a8, . +0x13 ; Capstone
+   1bc82:	bac9      	add.n	a12, a9, a11
+   1bc84:	c20c80        	l8ui	a12, a12, 128
+   1bc87:	1b99      	addi.n	a9, a9, 1
+   1bc89:	909074        	extui	a9, a9, 0, 8
+   1bc8c:	a0ac20        	or	a10, a12, a10
+   1bc8f:	a0a074        	extui	a10, a10, 0, 8
+   1bc92:	21d7dc        	l32r	a2, 0x12ff0 (0x10eb0)
+   1bc95:	a0da90        	addx2	a13, a10, a10
+   1bc98:	0cda      	movi.n	a10, 13
+   1bc9a:	e2c2d8        	addi	a14, a2, -40
+   1bc9d:	e0dda0        	addx4	a13, a13, a14
+0001bca0: 030d7f   lsi          f0, a13, 0x1fc ; Capstone
+0001bca3: 03427f   ssi          f0, a2, 0x1fc ; Capstone
+0001bca6: a56119   call8        . +0x1961c ; Capstone ; target=0x352c0
+0001bca9: 13027f   lsi          f1, a2, 0x1fc ; Capstone
+0001bcac: 502afa   wfr          f2, a10 ; Capstone
+0001bcaf: 10024b   olt.s        b0, f2, f1 ; Capstone
+0001bcb2: 760007   bf           b0, . +0xb ; Capstone
+0001bcb5: 40b1fa   rfr          a11, f1 ; Capstone
+   1bcb8:	0cda      	movi.n	a10, 13
+0001bcba: 655a19   call8        . +0x195a8 ; Capstone ; target=0x35260
+   1bcbd:	b1c9dc        	l32r	a11, 0x12fe4 (0x110a4)
+   1bcc0:	c203a7        	l8ui	a12, a3, 167
+   1bcc3:	a2d202        	addmi	a10, a2, 0x200
+   1bcc6:	32a180        	movi	a3, 0x180
+   1bcc9:	a2ca80        	addi	a10, a10, -128
+   1bccc:	a20a78        	l8ui	a10, a10, 120
+0001bccf: a5ecff   call8        . -0x134 ; Capstone ; target=0x1bb98
+   1bcd2:	3aa2      	add.n	a10, a2, a3
+   1bcd4:	a20a78        	l8ui	a10, a10, 120
+0001bcd7: 65440c   call8        . +0xc448 ; Capstone ; target=0x2811c
+   1bcda:	0c02      	movi.n	a2, 0
+0001bcdc: 1df0     retw.n        ; Capstone
+	...

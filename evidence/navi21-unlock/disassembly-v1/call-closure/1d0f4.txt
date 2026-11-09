@@ -1,0 +1,43 @@
+
+/tmp/tmpsfzr20c_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001d0f4 <.data+0x1d0f4>:
+0001d0f4: 364100   entry        a1, 0x20 ; Capstone
+   1d0f7:	9112d8        	l32r	a9, 0x13140 (0x10a40)
+   1d0fa:	82097f        	l8ui	a8, a9, 127
+   1d0fd:	92097e        	l8ui	a9, a9, 126
+   1d100:	169804        	beqz	a8, 0x1d14d
+   1d103:	dc49      	bnez.n	a9, 0x1d11b
+   1d105:	b110d8        	l32r	a11, 0x13148 (0x10bc0)
+   1d108:	a10fd8        	l32r	a10, 0x13144 (0x10d1c)
+0001d10b: a53d0e   call8        . +0xe3dc ; Capstone ; target=0x2b4e4
+   1d10e:	0c0b      	movi.n	a11, 0
+   1d110:	0c0c      	movi.n	a12, 0
+   1d112:	dd0a      	mov.n	a13, a10
+   1d114:	0c3a      	movi.n	a10, 3
+0001d116: 25ef18   call8        . +0x18ef4 ; Capstone ; target=0x36008
+0001d119: 1df0     retw.n        ; Capstone
+   1d11b:	66191c        	bnei	a9, 1, 0x1d13b
+   1d11e:	a10bd8        	l32r	a10, 0x1314c (0x10fc0)
+   1d121:	b1ead7        	l32r	a11, 0x130cc (0x10b1c)
+0001d124: 25050c   call8        . +0xc054 ; Capstone ; target=0x29178
+   1d127:	d10ad8        	l32r	a13, 0x13150 (0x108d0)
+   1d12a:	0c0b      	movi.n	a11, 0
+   1d12c:	0c0c      	movi.n	a12, 0
+   1d12e:	d0daa0        	addx4	a13, a10, a13
+   1d131:	d22d7f        	l32i	a13, a13, 0x1fc
+   1d134:	0c3a      	movi.n	a10, 3
+0001d136: 25ed18   call8        . +0x18ed4 ; Capstone ; target=0x36008
+0001d139: 1df0     retw.n        ; Capstone
+   1d13b:	0c0c      	movi.n	a12, 0
+   1d13d:	2ccb      	movi.n	a11, 44
+   1d13f:	d161d7        	l32r	a13, 0x12ec4 (0x300fe00)
+   1d142:	1c0a      	movi.n	a10, 16
+   1d144:	c02000        	memw
+   1d147:	d22d8a        	l32i	a13, a13, 0x228
+0001d14a: 254ce5   call8        . -0x1ab3c ; Capstone ; target=0x260c
+0001d14d: 1df0     retw.n        ; Capstone
+	...

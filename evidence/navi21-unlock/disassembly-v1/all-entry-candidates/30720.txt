@@ -1,0 +1,66 @@
+
+/tmp/tmp3y_ufrjp/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00030720 <.data+0x30720>:
+00030720: 364100   entry        a1, 0x20 ; Capstone
+   30723:	514b8a        	l32r	a5, 0x13050 (0xaaf0)
+   30726:	0c1d      	movi.n	a13, 1
+   30728:	2042f0        	subx8	a4, a2, a2
+   3072b:	5044a0        	addx4	a4, a4, a5
+   3072e:	e2047d        	l8ui	a14, a4, 125
+   30731:	a1988b        	l32r	a10, 0x13594 (0xaf44)
+   30734:	1ca6      	movi.n	a6, 26
+   30736:	60eed1        	mul16s	a14, a14, a6
+   30739:	c2241c        	l32i	a12, a4, 112
+   3073c:	eaea      	add.n	a14, a10, a14
+   3073e:	e21e7e        	l16ui	a14, a14, 252
+   30741:	91308a        	l32r	a9, 0x13004 (0xfffff)
+   30744:	81458a        	l32r	a8, 0x13058 (0x11ffe00)
+   30747:	eacc      	add.n	a12, a12, a14
+   30749:	90cc10        	and	a12, a12, a9
+   3074c:	8acc      	add.n	a12, a12, a8
+   3074e:	c02000        	memw
+   30751:	b22c80        	l32i	a11, a12, 0x200
+   30754:	d0bb20        	or	a11, a11, a13
+   30757:	c02000        	memw
+   3075a:	b26c80        	s32i	a11, a12, 0x200
+   3075d:	52047d        	l8ui	a5, a4, 125
+   30760:	6055d1        	mul16s	a5, a5, a6
+   30763:	62241c        	l32i	a6, a4, 112
+   30766:	5a5a      	add.n	a5, a10, a5
+   30768:	32157e        	l16ui	a3, a5, 252
+   3076b:	3a36      	add.n	a3, a6, a3
+   3076d:	903310        	and	a3, a3, a9
+   30770:	8a23      	add.n	a2, a3, a8
+   30772:	c02000        	memw
+   30775:	b22280        	l32i	a11, a2, 0x200
+   30778:	07ebf6        	bbsi	a11, 0, 0x30772
+   3077b:	c2157d        	l16ui	a12, a5, 250
+   3077e:	cac6      	add.n	a12, a6, a12
+   30780:	90cc10        	and	a12, a12, a9
+   30783:	8acc      	add.n	a12, a12, a8
+   30785:	c02000        	memw
+   30788:	b22c80        	l32i	a11, a12, 0x200
+   3078b:	d2a100        	movi	a13, 0x100
+   3078e:	d0bb20        	or	a11, a11, a13
+   30791:	c02000        	memw
+   30794:	b26c80        	s32i	a11, a12, 0x200
+   30797:	32047d        	l8ui	a3, a4, 125
+   3079a:	1ca7      	movi.n	a7, 26
+   3079c:	7033d1        	mul16s	a3, a3, a7
+   3079f:	22241c        	l32i	a2, a4, 112
+   307a2:	3a3a      	add.n	a3, a10, a3
+   307a4:	32137c        	l16ui	a3, a3, 248
+   307a7:	3a22      	add.n	a2, a2, a3
+   307a9:	902210        	and	a2, a2, a9
+   307ac:	8a22      	add.n	a2, a2, a8
+   307ae:	c02000        	memw
+   307b1:	d22280        	l32i	a13, a2, 0x200
+   307b4:	c76df6        	bbci	a13, 12, 0x307ae
+   307b7:	0c0e      	movi.n	a14, 0
+   307b9:	e2447c        	s8i	a14, a4, 124
+000307bc: 1df0     retw.n        ; Capstone
+	...

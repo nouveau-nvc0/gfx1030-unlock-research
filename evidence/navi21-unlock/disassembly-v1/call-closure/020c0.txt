@@ -1,0 +1,20 @@
+
+/tmp/tmp61ht_8me/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000020c0 <.data+0x20c0>:
+000020c0: 364100   entry        a1, 0x20 ; Capstone
+    20c3:	306200        	rsil	a3, 2
+    20c6:	ad02      	mov.n	a10, a2
+000020c8: 25d4ff   call8        . -0x2bc ; Capstone ; target=0x1e0c
+    20cb:	81c3fa        	l32r	a8, 0xbd8 (0x69a0)
+    20ce:	202074        	extui	a2, a2, 0, 8
+    20d1:	202290        	addx2	a2, a2, a2
+    20d4:	8022a0        	addx4	a2, a2, a8
+    20d7:	222221        	l32i	a2, a2, 132
+    20da:	c02000        	memw
+    20dd:	2802      	l32i.n	a2, a2, 0
+    20df:	30e613        	wsr.ps	a3
+000020e2: 1df0     retw.n        ; Capstone

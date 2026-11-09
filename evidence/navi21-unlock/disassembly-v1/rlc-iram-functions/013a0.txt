@@ -1,0 +1,39 @@
+
+/tmp/tmptxrqinqo/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000013a0 <.data+0x13a0>:
+000013a0: 366100   entry        a1, 0x30 ; Capstone
+    13a3:	a180ef        	l32r	a10, 0xffffd1a4 (0x5ffed978) ; inferred DRAM map 0x5ffec000
+    13a6:	0c09      	movi.n	a9, 0
+    13a8:	9901      	s32i.n	a9, a1, 0
+    13aa:	820a10        	l8ui	a8, a10, 16
+000013ad: 830a02   lsi          f8, a10, 8 ; Capstone
+000013b0: 630a00   lsi          f6, a10, 0 ; Capstone
+    13b3:	ac38      	beqz.n	a8, 0x13da
+000013b5: 0072ca   float.s      f7, a2, 0 ; Capstone
+000013b8: 70582a   mul.s        f5, f8, f7 ; Capstone
+000013bb: 70362a   mul.s        f3, f6, f7 ; Capstone
+000013be: 230a01   lsi          f2, a10, 4 ; Capstone
+000013c1: 430a03   lsi          f4, a10, 0xc ; Capstone
+000013c4: 50140a   add.s        f1, f4, f5 ; Capstone
+000013c7: 30020a   add.s        f0, f2, f3 ; Capstone
+000013ca: 00c1ea   utrunc.s     a12, f1, 0 ; Capstone
+000013cd: 00b0ea   utrunc.s     a11, f0, 0 ; Capstone
+    13d0:	c25101        	s16i	a12, a1, 2
+    13d3:	b25100        	s16i	a11, a1, 0
+    13d6:	2801      	l32i.n	a2, a1, 0
+000013d8: 1df0     retw.n        ; Capstone
+    13da:	ad02      	mov.n	a10, a2
+000013dc: e57000   call8        . +0x710 ; Capstone ; target=0x1aec
+    13df:	e17def        	l32r	a14, 0xffffd1d4 (0x440e38e4) ; inferred DRAM map 0x5ffec000
+000013e2: 50aafa   wfr          f10, a10 ; Capstone
+000013e5: 50befa   wfr          f11, a14 ; Capstone
+000013e8: b09a2a   mul.s        f9, f10, f11 ; Capstone
+000013eb: 00d9ea   utrunc.s     a13, f9, 0 ; Capstone
+    13ee:	d25101        	s16i	a13, a1, 2
+    13f1:	d25100        	s16i	a13, a1, 0
+    13f4:	2801      	l32i.n	a2, a1, 0
+000013f6: 1df0     retw.n        ; Capstone

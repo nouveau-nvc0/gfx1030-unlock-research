@@ -1,0 +1,65 @@
+
+/tmp/tmpw3k6lybk/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00009ad0 <.data+0x9ad0>:
+    9ad0:	0933      	s32i.n	a0, a3, 12
+    9ad2:	1943      	s32i.n	a1, a3, 16
+    9ad4:	2953      	s32i.n	a2, a3, 20
+    9ad6:	4973      	s32i.n	a4, a3, 28
+    9ad8:	5983      	s32i.n	a5, a3, 32
+    9ada:	6993      	s32i.n	a6, a3, 36
+    9adc:	79a3      	s32i.n	a7, a3, 40
+    9ade:	860300        	j	0x9af0
+	...
+    9aed:	000000        	ill
+    9af0:	406f00        	rsil	a4, 15
+    9af3:	60e203        	rsr.interrupt	a6
+    9af6:	62634a        	s32i	a6, a3, 0x128
+    9af9:	426336        	s32i	a4, a3, 216
+    9afc:	50ea03        	rsr.ccount	a5
+    9aff:	526345        	s32i	a5, a3, 0x114
+    9b02:	0c35      	movi.n	a5, 3
+    9b04:	89b3      	s32i.n	a8, a3, 44
+    9b06:	99c3      	s32i.n	a9, a3, 48
+    9b08:	a9d3      	s32i.n	a10, a3, 52
+    9b0a:	b9e3      	s32i.n	a11, a3, 56
+    9b0c:	c2630f        	s32i	a12, a3, 60
+    9b0f:	d26310        	s32i	a13, a3, 64
+    9b12:	e26311        	s32i	a14, a3, 68
+    9b15:	f26312        	s32i	a15, a3, 72
+    9b18:	b2c320        	addi	a11, a3, 32
+    9b1b:	d2c5ff        	addi	a13, a5, -1
+00009b1e: 208040   rotw         2 ; Capstone
+    9b21:	56f5fd        	bnez	a5, 0x9b04
+00009b24: 208040   rotw         2 ; Capstone
+    9b27:	12a000        	movi	a1, 0
+    9b2a:	450400        	call0	0x9b70 ; target=0x9b70
+00009b2d: e08040   rotw         -2 ; Capstone
+    9b30:	0c35      	movi.n	a5, 3
+    9b32:	32cb80        	addi	a3, a11, -128
+    9b35:	32d301        	addmi	a3, a3, 0x100
+00009b38: e08040   rotw         -2 ; Capstone
+    9b3b:	32cbe0        	addi	a3, a11, -32
+    9b3e:	0b5d      	addi.n	a5, a13, -1
+    9b40:	88b3      	l32i.n	a8, a3, 44
+    9b42:	98c3      	l32i.n	a9, a3, 48
+    9b44:	a8d3      	l32i.n	a10, a3, 52
+    9b46:	b8e3      	l32i.n	a11, a3, 56
+    9b48:	c8f3      	l32i.n	a12, a3, 60
+    9b4a:	d22310        	l32i	a13, a3, 64
+    9b4d:	e22311        	l32i	a14, a3, 68
+    9b50:	f22312        	l32i	a15, a3, 72
+    9b53:	5615fe        	bnez	a5, 0x9b38
+    9b56:	0833      	l32i.n	a0, a3, 12
+    9b58:	1843      	l32i.n	a1, a3, 16
+    9b5a:	4873      	l32i.n	a4, a3, 28
+    9b5c:	5883      	l32i.n	a5, a3, 32
+    9b5e:	6893      	l32i.n	a6, a3, 36
+    9b60:	722336        	l32i	a7, a3, 216
+    9b63:	70e613        	wsr.ps	a7
+    9b66:	102000        	rsync
+    9b69:	78a3      	l32i.n	a7, a3, 40
+    9b6b:	0df0      	ret.n

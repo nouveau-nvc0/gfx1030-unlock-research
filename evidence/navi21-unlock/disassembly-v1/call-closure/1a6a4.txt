@@ -1,0 +1,22 @@
+
+/tmp/tmp7tbd0lha/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001a6a4 <.data+0x1a6a4>:
+0001a6a4: 364100   entry        a1, 0x20 ; Capstone
+   1a6a7:	20b4a0        	addx4	a11, a4, a2
+   1a6aa:	c0a311        	slli	a10, a3, 4
+   1a6ad:	2ae3      	add.n	a14, a3, a2
+   1a6af:	e20e98        	l8ui	a14, a14, 152
+   1a6b2:	aaa2      	add.n	a10, a2, a10
+   1a6b4:	b2db02        	addmi	a11, a11, 0x200
+   1a6b7:	b2cb90        	addi	a11, a11, -112
+   1a6ba:	d2da01        	addmi	a13, a10, 0x100
+   1a6bd:	a2cd40        	addi	a10, a13, 64
+   1a6c0:	c2cda0        	addi	a12, a13, -96
+   1a6c3:	d2cdf0        	addi	a13, a13, -16
+0001a6c6: 659801   call8        . +0x1988 ; Capstone ; target=0x1c04c
+0001a6c9: 1df0     retw.n        ; Capstone
+	...

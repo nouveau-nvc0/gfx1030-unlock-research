@@ -1,0 +1,50 @@
+
+/tmp/tmp7faa6sy0/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00026004 <.data+0x26004>:
+00026004: 364100   entry        a1, 0x20 ; Capstone
+   26007:	6195b3        	l32r	a6, 0x12e5c (0x69a0)
+   2600a:	3153b6        	l32r	a3, 0x13958 (0xfe0c)
+   2600d:	0c15      	movi.n	a5, 1
+   2600f:	91a5b3        	l32r	a9, 0x12ea4 (0x147e0)
+   26012:	0c08      	movi.n	a8, 0
+   26014:	2d08      	mov.n	a2, a8
+   26016:	82491f        	s8i	a8, a9, 31
+   26019:	82491d        	s8i	a8, a9, 29
+   2601c:	d2261a        	l32i	a13, a6, 104
+   2601f:	001240        	ssl	a2
+   26022:	00e5a1        	sll	a14, a5
+   26025:	e78d36        	bany	a13, a14, 0x2605f
+   26028:	a14db6        	l32r	a10, 0x1395c (0x54a40)
+   2602b:	b14bb6        	l32r	a11, 0x13958 (0xfe0c)
+   2602e:	c07201        	slli	a7, a2, 20
+   26031:	a0a720        	or	a10, a7, a10
+00026034: 258adb   call8        . -0x2475c ; Capstone ; target=0x18d8
+   26037:	819bb3        	l32r	a8, 0x12ea4 (0x147e0)
+   2603a:	4149b6        	l32r	a4, 0x13960 (0x54a44)
+   2603d:	52481c        	s8i	a5, a8, 28
+   26040:	404720        	or	a4, a7, a4
+   26043:	ad04      	mov.n	a10, a4
+00026045: a58ddb   call8        . -0x24724 ; Capstone ; target=0x1920
+   26048:	379af7        	bne	a10, a3, 0x26043
+   2604b:	4196b3        	l32r	a4, 0x12ea4 (0x147e0)
+   2604e:	a145b6        	l32r	a10, 0x13964 (0x54a48)
+   26051:	0c0b      	movi.n	a11, 0
+   26053:	b2441c        	s8i	a11, a4, 28
+   26056:	a0a720        	or	a10, a7, a10
+00026059: 658cdb   call8        . -0x24738 ; Capstone ; target=0x1920
+   2605c:	47ea0f        	bbsi	a10, 4, 0x2606f
+   2605f:	1b22      	addi.n	a2, a2, 1
+   26061:	202074        	extui	a2, a2, 0, 8
+   26064:	6682b4        	bnei	a2, 8, 0x2601c
+   26067:	218fb3        	l32r	a2, 0x12ea4 (0x147e0)
+   2606a:	22021f        	l8ui	a2, a2, 31
+0002606d: 1df0     retw.n        ; Capstone
+   2606f:	818db3        	l32r	a8, 0x12ea4 (0x147e0)
+   26072:	0c12      	movi.n	a2, 1
+   26074:	22481f        	s8i	a2, a8, 31
+00026077: 1df0     retw.n        ; Capstone
+   26079:	000000        	ill

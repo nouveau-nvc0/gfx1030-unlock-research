@@ -1,0 +1,35 @@
+Offline RLC fixed-store and indexed-interface follow-up
+
+Scope: manual instruction inspection of the existing pinned IRAM listings.
+Addresses retain the inferred IRAM/DRAM/aperture mapping; no hardware execution.
+
+04664 and 046c4 are fixed-port reads into RAM, not parameterized MMIO writers.
+They select zero at 70000000, initialize/poll ports 60037254 / 600372a4,
+then copy paired reads from 60037258 / 600372a8 into the adjacent ranges
+5ffee464..5ffee4ec and 5ffee4ec..5ffee574 (exclusive ends). Each is 136 bytes.
+The source header identifies these ports as RLC_SPM_ACCUM_DATARAM_ADDR/DATA
+and RLC_SPM_ACCUM_SWA_DATARAM_ADDR/DATA (segment 1 offsets 3c95/96/3ca9/aa).
+
+01b0c writes its argument to fixed 60058a00 and polls fixed 60058a60.
+01bec selects 59 at 70000000 and writes/polls fixed 60010030; its final
+store at 1c74 is s8i into RAM 5ffee260, confirmed by alternate-target decode.
+Neither routine supplies a caller-selected MMIO destination.
+
+05138 and 0542c cache 64 results from 05348 for indices 0,2,...,126 in
+RAM 5ffed9e4..5ffedae4 (exclusive end). 05210 restores those same indices
+through 053b8 using cached words and then calls 05138.
+
+053b8 does accept an index and value, but its fixed interface is RTAVFS:
+  a2 -> 6003ac00 (GRTAVFS_RTAVFS_REG_ADDR)
+  a3 -> 6003ac04 (GRTAVFS_RTAVFS_WR_DATA)
+  1  -> 6003ac10 (GRTAVFS_RTAVFS_REG_CTRL)
+  poll bit0 of 6003ac14 (GRTAVFS_RTAVFS_REG_STATUS), clear CTRL, poll clear.
+05348 uses CTRL=2, polls bit1, reads 6003ac0c, clears CTRL, polls clear.
+The source gc_10_3_0_offset.h names segment-1 offsets 4b00/01/03/04/05
+and independently gives block base 3ac00. Both helpers select zero at 70000000.
+The helper itself has no explicit index range check; that does not establish
+that its RTAVFS index namespace reaches GC CC registers. No CC route proven.
+
+These findings explain selected unresolved scanner destinations: constants
+lost across special-register synchronization and calls are not evidence of
+caller-selected addresses. They do not close all unresolved RLC stores.

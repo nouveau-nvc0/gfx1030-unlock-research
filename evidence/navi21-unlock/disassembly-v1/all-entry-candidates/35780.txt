@@ -1,0 +1,30 @@
+
+/tmp/tmpic0mz4kb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00035780 <.data+0x35780>:
+00035780: 364100   entry        a1, 0x20 ; Capstone
+   35783:	20a074        	extui	a10, a2, 0, 8
+   35786:	9cfa      	beqz.n	a10, 0x357a9
+   35788:	267a21        	beqi	a10, 7, 0x357ad
+   3578b:	268a22        	beqi	a10, 8, 0x357b1
+   3578e:	0c98      	movi.n	a8, 9
+   35790:	871a11        	beq	a10, a8, 0x357a5
+   35793:	0c0c      	movi.n	a12, 0
+   35795:	3c9b      	movi.n	a11, 57
+   35797:	d1cb75        	l32r	a13, 0x12ec4 (0x300fe00)
+   3579a:	1c0a      	movi.n	a10, 16
+   3579c:	c02000        	memw
+   3579f:	d22d8a        	l32i	a13, a13, 0x228
+000357a2: a5e6cc   call8        . -0x33194 ; Capstone ; target=0x260c
+   357a5:	0c52      	movi.n	a2, 5
+000357a7: 1df0     retw.n        ; Capstone
+   357a9:	0c22      	movi.n	a2, 2
+000357ab: 1df0     retw.n        ; Capstone
+   357ad:	0c32      	movi.n	a2, 3
+000357af: 1df0     retw.n        ; Capstone
+   357b1:	0c42      	movi.n	a2, 4
+000357b3: 1df0     retw.n        ; Capstone
+   357b5:	000000        	ill

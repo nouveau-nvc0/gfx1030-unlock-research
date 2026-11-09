@@ -1,0 +1,39 @@
+
+/tmp/tmpwu31iflp/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001b74 <.data+0x1b74>:
+00001b74: 364100   entry        a1, 0x20 ; Capstone
+    1b77:	906f00        	rsil	a9, 15
+    1b7a:	617aed        	l32r	a6, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    1b7d:	719ded        	l32r	a7, 0xffffd1f4 (0x60058600) ; inferred DRAM map 0x5ffec000
+    1b80:	0c08      	movi.n	a8, 0
+    1b82:	826680        	s32i	a8, a6, 0x200
+    1b85:	2267ff        	s32i	a2, a7, 0x3fc
+    1b88:	90e613        	wsr.ps	a9
+    1b8b:	102000        	rsync
+    1b8e:	406f00        	rsil	a4, 15
+    1b91:	826680        	s32i	a8, a6, 0x200
+    1b94:	3227ff        	l32i	a3, a7, 0x3fc
+    1b97:	40e613        	wsr.ps	a4
+    1b9a:	102000        	rsync
+    1b9d:	37122a        	beq	a2, a3, 0x1bcb
+    1ba0:	50ea03        	rsr.ccount	a5
+    1ba3:	b0ea03        	rsr.ccount	a11
+    1ba6:	50bbc0        	sub	a11, a11, a5
+    1ba9:	1cda      	movi.n	a10, 29
+    1bab:	b73a0a        	bltu	a10, a11, 0x1bb9
+    1bae:	d0ea03        	rsr.ccount	a13
+    1bb1:	50ddc0        	sub	a13, a13, a5
+    1bb4:	1cdc      	movi.n	a12, 29
+    1bb6:	d7bcf4        	bgeu	a12, a13, 0x1bae
+    1bb9:	f06f00        	rsil	a15, 15
+    1bbc:	826680        	s32i	a8, a6, 0x200
+    1bbf:	e227ff        	l32i	a14, a7, 0x3fc
+    1bc2:	f0e613        	wsr.ps	a15
+    1bc5:	102000        	rsync
+    1bc8:	e792d4        	bne	a2, a14, 0x1ba0
+00001bcb: 1df0     retw.n        ; Capstone
+    1bcd:	000000        	ill

@@ -1,0 +1,365 @@
+{
+  "status": "Static initial contents; workers mutate state, callback ranges require tracing. Function1d488 dispatches through context+22c; state stride36.",
+  "contexts": [
+    {
+      "base": "0x101fc",
+      "callback_pointer": "0x115a0",
+      "states": [
+        {
+          "slot": 0,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 1,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 2,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 3,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 4,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 5,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 6,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 7,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 8,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 9,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 10,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 11,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        }
+      ]
+    },
+    {
+      "base": "0x1042c",
+      "callback_pointer": "0x115a0",
+      "states": [
+        {
+          "slot": 0,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 1,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 2
+        },
+        {
+          "slot": 2,
+          "status": 0,
+          "current_index": 0,
+          "begin": 5,
+          "end": 7
+        },
+        {
+          "slot": 3,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 4,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 5,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 6,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 7,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 8,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 9,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 10,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 11,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        }
+      ]
+    },
+    {
+      "base": "0x1065c",
+      "callback_pointer": "0x115a0",
+      "states": [
+        {
+          "slot": 0,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 1,
+          "status": 0,
+          "current_index": 0,
+          "begin": 11,
+          "end": 11
+        },
+        {
+          "slot": 2,
+          "status": 0,
+          "current_index": 0,
+          "begin": 13,
+          "end": 14
+        },
+        {
+          "slot": 3,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 4,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 5,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 6,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 7,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 8,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 9,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 10,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 11,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        }
+      ]
+    },
+    {
+      "base": "0x1088c",
+      "callback_pointer": "0x115e0",
+      "states": [
+        {
+          "slot": 0,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 1,
+          "status": 0,
+          "current_index": 0,
+          "begin": 1,
+          "end": 1
+        },
+        {
+          "slot": 2,
+          "status": 0,
+          "current_index": 0,
+          "begin": 3,
+          "end": 6
+        },
+        {
+          "slot": 3,
+          "status": 0,
+          "current_index": 0,
+          "begin": 13,
+          "end": 16
+        },
+        {
+          "slot": 4,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 5,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 6,
+          "status": 0,
+          "current_index": 0,
+          "begin": 18,
+          "end": 25
+        },
+        {
+          "slot": 7,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 8,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 9,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 10,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        },
+        {
+          "slot": 11,
+          "status": 0,
+          "current_index": 0,
+          "begin": 0,
+          "end": 0
+        }
+      ]
+    }
+  ]
+}

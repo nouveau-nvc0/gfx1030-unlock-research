@@ -1,0 +1,91 @@
+
+/tmp/tmpab4y0z9z/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000246a0 <.data+0x246a0>:
+000246a0: 364100   entry        a1, 0x20 ; Capstone
+   246a3:	213dbc        	l32r	a2, 0x13798 (0xa424)
+   246a6:	820200        	l8ui	a8, a2, 0
+   246a9:	661834        	bnei	a8, 1, 0x246e1
+   246ac:	1cda      	movi.n	a10, 29
+000246ae: 250b11   call8        . +0x110b4 ; Capstone ; target=0x35760
+   246b1:	31f4bb        	l32r	a3, 0x13684 (0x15730)
+   246b4:	16ea04        	beqz	a10, 0x24706
+   246b7:	1cba      	movi.n	a10, 27
+000246b9: 650a11   call8        . +0x110a8 ; Capstone ; target=0x35760
+   246bc:	166a04        	beqz	a10, 0x24706
+   246bf:	a202fa        	l8ui	a10, a2, 250
+000246c2: 65fcff   call8        . -0x38 ; Capstone ; target=0x24688
+   246c5:	9202fb        	l8ui	a9, a2, 251
+   246c8:	a7190b        	beq	a9, a10, 0x246d7
+   246cb:	a202f6        	l8ui	a10, a2, 246
+000246ce: a5fbff   call8        . -0x44 ; Capstone ; target=0x24688
+   246d1:	b202f7        	l8ui	a11, a2, 247
+   246d4:	a79b0b        	bne	a11, a10, 0x246e3
+   246d7:	c2037d        	l8ui	a12, a3, 125
+   246da:	cc5c      	bnez.n	a12, 0x246e3
+000246dc: e5f7ff   call8        . -0x80 ; Capstone ; target=0x2465c
+000246df: 1df0     retw.n        ; Capstone
+000246e1: 1df0     retw.n        ; Capstone
+   246e3:	a202fa        	l8ui	a10, a2, 250
+000246e6: 25faff   call8        . -0x5c ; Capstone ; target=0x24688
+   246e9:	d202fb        	l8ui	a13, a2, 251
+   246ec:	a71df1        	beq	a13, a10, 0x246e1
+   246ef:	a202f6        	l8ui	a10, a2, 246
+000246f2: 65f9ff   call8        . -0x68 ; Capstone ; target=0x24688
+   246f5:	e202f7        	l8ui	a14, a2, 247
+   246f8:	a71ee5        	beq	a14, a10, 0x246e1
+   246fb:	f2037d        	l8ui	a15, a3, 125
+   246fe:	661fdf        	bnei	a15, 1, 0x246e1
+00024701: e5f2ff   call8        . -0xd0 ; Capstone ; target=0x24630
+00024704: 1df0     retw.n        ; Capstone
+   24706:	1cda      	movi.n	a10, 29
+00024708: 650511   call8        . +0x11058 ; Capstone ; target=0x35760
+   2470b:	9cba      	beqz.n	a10, 0x2472a
+   2470d:	1cba      	movi.n	a10, 27
+0002470f: 250511   call8        . +0x11054 ; Capstone ; target=0x35760
+   24712:	dc4a      	bnez.n	a10, 0x2472a
+   24714:	a202f6        	l8ui	a10, a2, 246
+00024717: 25f7ff   call8        . -0x8c ; Capstone ; target=0x24688
+   2471a:	8202f7        	l8ui	a8, a2, 247
+   2471d:	a7982f        	bne	a8, a10, 0x24750
+   24720:	92037d        	l8ui	a9, a3, 125
+   24723:	ec99      	bnez.n	a9, 0x24750
+00024725: 65f3ff   call8        . -0xc8 ; Capstone ; target=0x2465c
+00024728: 1df0     retw.n        ; Capstone
+   2472a:	1cda      	movi.n	a10, 29
+0002472c: 250311   call8        . +0x11034 ; Capstone ; target=0x35760
+   2472f:	56eafa        	bnez	a10, 0x246e1
+   24732:	1cba      	movi.n	a10, 27
+00024734: a50211   call8        . +0x1102c ; Capstone ; target=0x35760
+   24737:	166afa        	beqz	a10, 0x246e1
+   2473a:	a202fa        	l8ui	a10, a2, 250
+0002473d: a5f4ff   call8        . -0xb4 ; Capstone ; target=0x24688
+   24740:	b202fb        	l8ui	a11, a2, 251
+   24743:	a79b25        	bne	a11, a10, 0x2476c
+   24746:	c2037d        	l8ui	a12, a3, 125
+   24749:	dcfc      	bnez.n	a12, 0x2476c
+0002474b: 25f1ff   call8        . -0xec ; Capstone ; target=0x2465c
+0002474e: 1df0     retw.n        ; Capstone
+   24750:	a202f6        	l8ui	a10, a2, 246
+00024753: 65f3ff   call8        . -0xc8 ; Capstone ; target=0x24688
+   24756:	d202f7        	l8ui	a13, a2, 247
+   24759:	a0ddc0        	sub	a13, a13, a10
+   2475c:	161df8        	beqz	a13, 0x246e1
+   2475f:	e2037d        	l8ui	a14, a3, 125
+   24762:	0bee      	addi.n	a14, a14, -1
+   24764:	569ef7        	bnez	a14, 0x246e1
+00024767: a5ecff   call8        . -0x134 ; Capstone ; target=0x24630
+0002476a: 1df0     retw.n        ; Capstone
+   2476c:	a202fa        	l8ui	a10, a2, 250
+0002476f: a5f1ff   call8        . -0xe4 ; Capstone ; target=0x24688
+   24772:	f202fb        	l8ui	a15, a2, 251
+   24775:	a0ffc0        	sub	a15, a15, a10
+   24778:	165ff6        	beqz	a15, 0x246e1
+   2477b:	82037d        	l8ui	a8, a3, 125
+   2477e:	0b88      	addi.n	a8, a8, -1
+   24780:	56d8f5        	bnez	a8, 0x246e1
+00024783: e5eaff   call8        . -0x150 ; Capstone ; target=0x24630
+00024786: 1df0     retw.n        ; Capstone

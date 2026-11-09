@@ -1,0 +1,18 @@
+
+/tmp/tmp9ktu9kib/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00021208 <.data+0x21208>:
+00021208: 364100   entry        a1, 0x20 ; Capstone
+   2120b:	42a007        	movi	a4, 7
+   2120e:	32a008        	movi	a3, 8
+00021211: 76a30b   loopgtz      a3, . +0xf ; Capstone
+   21214:	77620a        	bbci	a2, 7, 0x21222
+   21217:	f02211        	slli	a2, a2, 1
+   2121a:	402230        	xor	a2, a2, a4
+   2121d:	202074        	extui	a2, a2, 0, 8
+00021220: 1df0     retw.n        ; Capstone
+   21222:	f02211        	slli	a2, a2, 1
+   21225:	06fdff        	j	0x2121d

@@ -1,0 +1,42 @@
+
+/tmp/tmpvuz5md82/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000264ec <.data+0x264ec>:
+000264ec: 364100   entry        a1, 0x20 ; Capstone
+   264ef:	512fb5        	l32r	a5, 0x139ac (0xc1bc)
+   264f2:	30b004        	extui	a11, a3, 0, 1
+   264f5:	304104        	extui	a4, a3, 1, 1
+   264f8:	424201        	s8i	a4, a2, 1
+   264fb:	b24200        	s8i	a11, a2, 0
+   264fe:	f06b11        	slli	a6, a11, 1
+   26501:	604420        	or	a4, a4, a6
+   26504:	50bba0        	addx4	a11, a11, a5
+   26507:	424202        	s8i	a4, a2, 2
+   2650a:	52c530        	addi	a5, a5, 48
+   2650d:	404074        	extui	a4, a4, 0, 8
+   26510:	d22b7f        	l32i	a13, a11, 0x1fc
+   26513:	5044a0        	addx4	a4, a4, a5
+   26516:	d922      	s32i.n	a13, a2, 8
+   26518:	c22b83        	l32i	a12, a11, 0x20c
+   2651b:	c932      	s32i.n	a12, a2, 12
+   2651d:	b22b87        	l32i	a11, a11, 0x21c
+   26520:	b912      	s32i.n	a11, a2, 4
+   26522:	a2247f        	l32i	a10, a4, 0x1fc
+   26525:	a942      	s32i.n	a10, a2, 16
+   26527:	922483        	l32i	a9, a4, 0x20c
+   2652a:	9952      	s32i.n	a9, a2, 20
+   2652c:	822487        	l32i	a8, a4, 0x21c
+   2652f:	8962      	s32i.n	a8, a2, 24
+   26531:	72248b        	l32i	a7, a4, 0x22c
+   26534:	7972      	s32i.n	a7, a2, 28
+   26536:	62248f        	l32i	a6, a4, 0x23c
+   26539:	6982      	s32i.n	a6, a2, 32
+   2653b:	522497        	l32i	a5, a4, 0x25c
+   2653e:	59a2      	s32i.n	a5, a2, 40
+   26540:	422493        	l32i	a4, a4, 0x24c
+   26543:	4992      	s32i.n	a4, a2, 36
+00026545: 1df0     retw.n        ; Capstone
+	...

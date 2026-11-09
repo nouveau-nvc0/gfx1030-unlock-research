@@ -1,0 +1,12 @@
+
+/tmp/tmpgb4hnok4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001ec20 <.data+0x1ec20>:
+0001ec20: 364100   entry        a1, 0x20 ; Capstone
+   1ec23:	0c0a      	movi.n	a10, 0
+0001ec25: a53918   call8        . +0x1839c ; Capstone ; target=0x36fc0
+0001ec28: 1df0     retw.n        ; Capstone
+	...

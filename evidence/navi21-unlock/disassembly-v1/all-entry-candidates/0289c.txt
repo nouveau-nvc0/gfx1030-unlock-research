@@ -1,0 +1,43 @@
+
+/tmp/tmpqga64cz2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000289c <.data+0x289c>:
+0000289c: 364100   entry        a1, 0x20 ; Capstone
+    289f:	206200        	rsil	a2, 2
+000028a2: a5f8ff   call8        . -0x74 ; Capstone ; target=0x282c
+000028a5: e54d36   call8        . +0x364e0 ; Capstone ; target=0x38d84
+    28a8:	0c04      	movi.n	a4, 0
+    28aa:	31aff8        	l32r	a3, 0xb68 (0x300fe00)
+    28ad:	c02000        	memw
+    28b0:	a122f9        	l32r	a10, 0xd38 (0x4)
+    28b3:	426389        	s32i	a4, a3, 0x224
+    28b6:	820a03        	l8ui	a8, a10, 3
+    28b9:	920a00        	l8ui	a9, a10, 0
+    28bc:	b20a02        	l8ui	a11, a10, 2
+    28bf:	808811        	slli	a8, a8, 8
+    28c2:	a20a01        	l8ui	a10, a10, 1
+    28c5:	b08820        	or	a8, a8, a11
+    28c8:	808811        	slli	a8, a8, 8
+    28cb:	a08820        	or	a8, a8, a10
+    28ce:	808811        	slli	a8, a8, 8
+    28d1:	908820        	or	a8, a8, a9
+    28d4:	c02000        	memw
+    28d7:	826398        	s32i	a8, a3, 0x260
+000028da: 654336   call8        . +0x36438 ; Capstone ; target=0x38d10
+000028dd: a5f2ff   call8        . -0xd4 ; Capstone ; target=0x2808
+    28e0:	1c2a      	movi.n	a10, 18
+    28e2:	0c3d      	movi.n	a13, 3
+    28e4:	f06300        	rsil	a15, 3
+    28e7:	b0e403        	rsr.intenable	a11
+    28ea:	d0cb20        	or	a12, a11, a13
+    28ed:	c0e413        	wsr.intenable	a12
+    28f0:	f0e613        	wsr.ps	a15
+    28f3:	102000        	rsync
+000028f6: 654036   call8        . +0x36408 ; Capstone ; target=0x38cfc
+000028f9: 253536   call8        . +0x36354 ; Capstone ; target=0x38c4c
+000028fc: a5e5ff   call8        . -0x1a4 ; Capstone ; target=0x2758
+000028ff: 652b36   call8        . +0x362b8 ; Capstone ; target=0x38bb4
+    2902:	        	excw

@@ -1,0 +1,16 @@
+Gate-focused follow-up after completeness detour
+
+Rechecked13 listings materializing5ffee44c. Fifteen reached stores have
+unknown scanner addresses and base registers other thana1. Fourteen are
+local stack aliases created immediately by ADDI froma1:2fb0/2fb3,
+3672/3674,392a/392c,3a91/3a94,3acf/3ad1,3b70/3b73,3bac/3bae.
+Their stack offsets are recorded inJSON. These are packed local arguments,
+not additional state+6 setters under ordinary separate-stack assumptions.
+Remaining32de is already known indexed setter32c8; knownindices0/1/2 do
+not touchgatee452. This does not exclude other-base/computed/engine writers.
+
+Known plain state writes in these listings coveroffsets0,1,2,3,5,7,8;
+none is byte6. Startupzeroing and snapshotcustomslot overlaps remain the
+identified gate-relevant routes; a reachable producer of nonzero gate and
+modified savedCC masks is still missing. Priority returns to that dependency,
+while unresolved exception/vector semantics stay recorded as coverage work.

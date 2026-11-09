@@ -1,0 +1,12 @@
+
+/tmp/tmpure729ij/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002229c <.data+0x2229c>:
+0002229c: 364100   entry        a1, 0x20 ; Capstone
+   2229f:	2157c4        	l32r	a2, 0x133fc (0xfe90)
+   222a2:	22027d        	l8ui	a2, a2, 125
+000222a5: 1df0     retw.n        ; Capstone
+	...

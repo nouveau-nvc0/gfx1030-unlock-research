@@ -1,0 +1,15 @@
+
+/tmp/tmpzxz29846/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00003300 <.data+0x3300>:
+00003300: 364100   entry        a1, 0x20 ; Capstone
+    3303:	51f8e7        	l32r	a5, 0xffffd2e4 (0x2710) ; inferred DRAM map 0x5ffec000
+    3306:	41dde7        	l32r	a4, 0xffffd27c (0x5ffed99c) ; inferred DRAM map 0x5ffec000
+    3309:	303583        	moveqz	a3, a5, a3
+    330c:	224400        	s8i	a2, a4, 0
+    330f:	3914      	s32i.n	a3, a4, 4
+00003311: 1df0     retw.n        ; Capstone
+	...

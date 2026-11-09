@@ -1,0 +1,18 @@
+
+/tmp/tmps0retqat/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000252a8 <.data+0x252a8>:
+000252a8: 364100   entry        a1, 0x20 ; Capstone
+000252ab: e5b20e   call8        . +0xeb30 ; Capstone ; target=0x33dd8
+   252ae:	0c1a      	movi.n	a10, 1
+000252b0: 253102   call8        . +0x2314 ; Capstone ; target=0x275c4
+   252b3:	0c0a      	movi.n	a10, 0
+000252b5: e53002   call8        . +0x2310 ; Capstone ; target=0x275c4
+000252b8: e5ae0e   call8        . +0xeaf0 ; Capstone ; target=0x33da8
+   252bb:	ad02      	mov.n	a10, a2
+   252bd:	0c1b      	movi.n	a11, 1
+000252bf: e5dddc   call8        . -0x23220 ; Capstone ; target=0x209c
+000252c2: 1df0     retw.n        ; Capstone

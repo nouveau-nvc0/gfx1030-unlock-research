@@ -1,0 +1,42 @@
+
+/tmp/tmpprvftn6x/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000015e8 <.data+0x15e8>:
+000015e8: 366100   entry        a1, 0x30 ; Capstone
+    15eb:	51e1ee        	l32r	a5, 0xffffd170 (0x6803ba00) ; inferred DRAM map 0x5ffec000
+    15ee:	f02000        	nop
+    15f1:	822550        	l32i	a8, a5, 0x140
+    15f4:	91f0ee        	l32r	a9, 0xffffd1b4 (0xfff8) ; inferred DRAM map 0x5ffec000
+    15f7:	8901      	s32i.n	a8, a1, 0
+    15f9:	8080f4        	extui	a8, a8, 0, 16
+    15fc:	908810        	and	a8, a8, a9
+    15ff:	808320        	or	a8, a3, a8
+    1602:	825100        	s16i	a8, a1, 0
+    1605:	6801      	l32i.n	a6, a1, 0
+    1607:	626550        	s32i	a6, a5, 0x140
+    160a:	322557        	l32i	a3, a5, 0x15c
+    160d:	a2af7f        	movi	a10, -129
+    1610:	42a080        	movi	a4, 128
+    1613:	404320        	or	a4, a3, a4
+    1616:	426557        	s32i	a4, a5, 0x15c
+    1619:	922558        	l32i	a9, a5, 0x160
+    161c:	a769f9        	bbci	a9, 10, 0x1619
+    161f:	d0e211        	slli	a14, a2, 3
+    1622:	a0a310        	and	a10, a3, a10
+    1625:	a26557        	s32i	a10, a5, 0x15c
+    1628:	b22558        	l32i	a11, a5, 0x160
+    162b:	a7ebf9        	bbsi	a11, 10, 0x1628
+    162e:	d22550        	l32i	a13, a5, 0x140
+    1631:	f1e1ee        	l32r	a15, 0xffffd1b8 (0xfff7) ; inferred DRAM map 0x5ffec000
+    1634:	d901      	s32i.n	a13, a1, 0
+    1636:	d0d0f4        	extui	a13, a13, 0, 16
+    1639:	f0dd10        	and	a13, a13, a15
+    163c:	e0dd20        	or	a13, a13, a14
+    163f:	d25100        	s16i	a13, a1, 0
+    1642:	c801      	l32i.n	a12, a1, 0
+    1644:	c26550        	s32i	a12, a5, 0x140
+00001647: 1df0     retw.n        ; Capstone
+    1649:	000000        	ill

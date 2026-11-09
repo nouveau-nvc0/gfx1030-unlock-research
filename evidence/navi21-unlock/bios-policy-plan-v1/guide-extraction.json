@@ -1,0 +1,295 @@
+{
+  "source": "https://www.huananzhi.com/uploads/file/20260212/1770866950476146.pptx",
+  "bytes": 6917907,
+  "sha256": "22700637774b04a3245d34565e71a2e3142eea73243a3f58a8190c368555ccde",
+  "scope": "Official family-level BIOS guide; not proof of installed modified BIOS contents",
+  "slides": [
+    {
+      "slide": "ppt/slides/slide50.xml",
+      "text": "\u7cfb\u7edf\u542f\u52a8\u5f15\u5bfc\u6b21\u5e8f#1\u8bbe\u7f6e"
+    },
+    {
+      "slide": "ppt/slides/slide15.xml",
+      "text": "\u7f51\u5361\u542f\u52a8\u65b9\u5f0f\n&\n\u65e0\u76d8\uff08\nUEFI/\n\u4f20\u7edf\nLegacy\n\uff09"
+    },
+    {
+      "slide": "ppt/slides/slide14.xml",
+      "text": "Boot\n\u542f\u52a8\u65b9\u5f0f\uff08\nUEFI/\n\u4f20\u7edf\nLegacy\n\uff09"
+    },
+    {
+      "slide": "ppt/slides/slide13.xml",
+      "text": "CSM\n\u517c\u5bb9\u6027\u8bbe\u7f6e"
+    },
+    {
+      "slide": "ppt/slides/slide12.xml",
+      "text": "\u7f51\u7edc\u5524\u9192\u8bbe\u7f6e\u5f00\u5173"
+    },
+    {
+      "slide": "ppt/slides/slide16.xml",
+      "text": "\u663e\n\u5361\u542f\u52a8\u65b9\u5f0f\uff08\nUEFI/\n\u4f20\u7edf\nLegacy\n\uff09"
+    },
+    {
+      "slide": "ppt/slides/slide17.xml",
+      "text": "NVME M.2\n\u786c\u76d8\u9009\u9879"
+    },
+    {
+      "slide": "ppt/slides/slide54.xml",
+      "text": "X99-CH8&X10X99-16D\u96c6\u663e\u5207\u6362\u8bbe\u7f6e\u9009\u9879"
+    },
+    {
+      "slide": "ppt/slides/slide21.xml",
+      "text": "CPU\n\u7ba1\u7406\u9009\u9879"
+    },
+    {
+      "slide": "ppt/slides/slide20.xml",
+      "text": "USB-XHCI\n\u8bbe\u7f6e\u5f00\u5173"
+    },
+    {
+      "slide": "ppt/slides/slide19.xml",
+      "text": "USB\n\u7ba1\u7406\u9009\u9879"
+    },
+    {
+      "slide": "ppt/slides/slide18.xml",
+      "text": "NVM\nE \nM.2\n\u786c\u76d8\u4fe1\u606f"
+    },
+    {
+      "slide": "ppt/slides/slide11.xml",
+      "text": "\u7f51\u7edc\u5524\u9192\u8bbe\u7f6e\u5165\u53e3"
+    },
+    {
+      "slide": "ppt/slides/slide10.xml",
+      "text": "SR-IOV\n\u8bbe\u7f6e\u5f00\u5173"
+    },
+    {
+      "slide": "ppt/slides/slide53.xml",
+      "text": "\u53cc\u8defX99\u4e3b\u677f\u6765\u7535\u542f\u52a8\u8bbe\u7f6e\u5165\u53e3"
+    },
+    {
+      "slide": "ppt/slides/slide2.xml",
+      "text": "BIOS\n\u9996\u754c\u9762\uff08\u53ef\u8bbe\u7f6e\nBIOS\n\u65f6\u95f4\u65e5\u671f\uff09"
+    },
+    {
+      "slide": "ppt/slides/slide1.xml",
+      "text": "\u534e\u5357\u91d1\u724cX99\u7cfb\u5217\u4e3b\u677f\nBIOS\u529f\u80fd\u8bbe\u7f6e\u624b\u518c"
+    },
+    {
+      "slide": "ppt/slides/slide52.xml",
+      "text": "\u591a\u786c\u76d8\u4fe1\u606f\u663e\u793a\u5217\u8868"
+    },
+    {
+      "slide": "ppt/slides/slide51.xml",
+      "text": "\u591a\u786c\u76d8\u4fe1\u606f\u67e5\u770b\u9009\u9879"
+    },
+    {
+      "slide": "ppt/slides/slide3.xml",
+      "text": "\u6765\u7535\u542f\u52a8\u8bbe\u7f6e\u5165\u53e3"
+    },
+    {
+      "slide": "ppt/slides/slide4.xml",
+      "text": "\u6765\u7535\u542f\u52a8\u8bbe\u7f6e\u9009\u9879\nPower On"
+    },
+    {
+      "slide": "ppt/slides/slide5.xml",
+      "text": "CPU \nF\nan\n\u98ce\u6247\u8c03\u8282\u5165\u53e3"
+    },
+    {
+      "slide": "ppt/slides/slide9.xml",
+      "text": "Above 4G\u8bbe\u7f6e"
+    },
+    {
+      "slide": "ppt/slides/slide8.xml",
+      "text": "PCI\n\u8d44\u6e90\u8bbe\u7f6e\u5165\u53e3\uff08\nAbove 4G/SR-IOV\n\uff09"
+    },
+    {
+      "slide": "ppt/slides/slide7.xml",
+      "text": "\u98ce\u6247\u6863\u4f4d\u8c03\u8282"
+    },
+    {
+      "slide": "ppt/slides/slide6.xml",
+      "text": "\u98ce\u6247\u6a21\u5f0f\u8c03\u8282"
+    },
+    {
+      "slide": "ppt/slides/slide23.xml",
+      "text": "CPU\n\u865a\u62df\u5316\nVT\n\u8bbe\u7f6e\u5f00\u5173"
+    },
+    {
+      "slide": "ppt/slides/slide22.xml",
+      "text": "CPU\n\u8d85\u7ebf\u7a0b\u8bbe\u7f6e\u5f00\u5173"
+    },
+    {
+      "slide": "ppt/slides/slide25.xml",
+      "text": "CPU\n\u6838\u5fc3\u7ebf\u7a0b\u8bbe\u7f6e\u5165\u53e3"
+    },
+    {
+      "slide": "ppt/slides/slide43.xml",
+      "text": "USB\u62d3\u5c55\u6570\u91cfXHCI\u9700\u8bbe\u7f6e\nDisabled\uff08\n\u6ce8\uff1a\u6b64\u65f6USB3.0\u63a5\u53e3\u4f1a\u964d\u901f\u5230USB2.0\u901f\u5ea6\n\uff09"
+    },
+    {
+      "slide": "ppt/slides/slide42.xml",
+      "text": "USB\n\u7ba1\u7406\u62d3\u5c55\u5165\u53e3"
+    },
+    {
+      "slide": "ppt/slides/slide41.xml",
+      "text": "SATA\n\u786c\u76d8\u70ed\u62d4\u63d2\u5f00\u5173"
+    },
+    {
+      "slide": "ppt/slides/slide40.xml",
+      "text": "\u786c\u76d8\u6a21\u5f0f\u9009\u9879\uff08\u9ed8\u8ba4\nAHCI\n\uff09"
+    },
+    {
+      "slide": "ppt/slides/slide24.xml",
+      "text": "CPU\n\u529f\u80fd\u8bbe\u7f6e\u5165\u53e3"
+    },
+    {
+      "slide": "ppt/slides/slide44.xml",
+      "text": "\u5b9a\u65f6\u5f00\u673a\u8bbe\u7f6e\u5165\u53e3"
+    },
+    {
+      "slide": "ppt/slides/slide45.xml",
+      "text": "\u5b9a\u65f6\u5f00\u673a\u65f6\u5206\u79d2\u8bbe\u7f6e"
+    },
+    {
+      "slide": "ppt/slides/slide46.xml",
+      "text": "\u7ba1\u7406\u5458\u5bc6\u7801\u8bbe\u7f6e\uff08\u81ea\u884c\u6dfb\u52a0\u9700\u7262\u8bb0\u5bc6\u7801\uff09"
+    },
+    {
+      "slide": "ppt/slides/slide49.xml",
+      "text": "B\noot\n\u542f\u52a8\u9879\u6b21\u5e8f\u8bbe\u7f6e"
+    },
+    {
+      "slide": "ppt/slides/slide55.xml",
+      "text": "BIOS\n\u6062\u590d\u8bbe\u7f6e\u9009\u9879"
+    },
+    {
+      "slide": "ppt/slides/slide48.xml",
+      "text": "\u5b89\u5168\u542f\u52a8\u8bbe\u7f6e\u5f00\u5173"
+    },
+    {
+      "slide": "ppt/slides/slide47.xml",
+      "text": "\u7528\u6237\u5bc6\u7801\u8bbe\u7f6e\uff08\u81ea\u884c\u6dfb\u52a0\u9700\u7262\u8bb0\u5bc6\u7801\uff09"
+    },
+    {
+      "slide": "ppt/slides/slide38.xml",
+      "text": "PCH\n\u7ba1\u7406\u9009\u9879\uff08\nSATA&USB\n\uff09"
+    },
+    {
+      "slide": "ppt/slides/slide39.xml",
+      "text": "SATA\n\u7ba1\u7406\u9009\u9879"
+    },
+    {
+      "slide": "ppt/slides/slide36.xml",
+      "text": "PCIE\u62c6\u5206X4X4X4X4"
+    },
+    {
+      "slide": "ppt/slides/slide37.xml",
+      "text": "VT-d\n\uff08\u9ed8\u8ba4\u5f00\u542f\uff09"
+    },
+    {
+      "slide": "ppt/slides/slide28.xml",
+      "text": "\u7535\u6e90\u6027\u80fd\u6a21\u5f0f\u8bbe\u7f6e"
+    },
+    {
+      "slide": "ppt/slides/slide27.xml",
+      "text": "\u9ad8\u7ea7\u7535\u6e90\u7ba1\u7406\u9009\u9879"
+    },
+    {
+      "slide": "ppt/slides/slide26.xml",
+      "text": "CPU\u6838\u5fc3\u6570\u8bbe\u7f6e\uff08\u59828\u300116\u6838\u5fc3\uff09"
+    },
+    {
+      "slide": "ppt/slides/slide30.xml",
+      "text": "NUMU\n\u8bbe\u7f6e\u5f00\u5173"
+    },
+    {
+      "slide": "ppt/slides/slide29.xml",
+      "text": "NUMA\n\u529f\u80fd\u8bbe\u7f6e\u5165\u53e3"
+    },
+    {
+      "slide": "ppt/slides/slide32.xml",
+      "text": "\u5185\u5b58\u5f3a\u5236\u6a21\u5f0f\uff08Disabled\u5bf932G\u517c\u5bb9\u6027\u5f3a\uff09"
+    },
+    {
+      "slide": "ppt/slides/slide31.xml",
+      "text": "\u5185\u5b58\u7ba1\u7406\u8bbe\u7f6e\u9009\u9879"
+    },
+    {
+      "slide": "ppt/slides/slide35.xml",
+      "text": "PCIE\n\u62c6\u5206\u9009\u9879"
+    },
+    {
+      "slide": "ppt/slides/slide33.xml",
+      "text": "\u5185\u5b58\u9891\u7387\u8bbe\u7f6e\u9009\u9879"
+    },
+    {
+      "slide": "ppt/slides/slide34.xml",
+      "text": "PCIE\n\u8d44\u6e90\u8bbe\u7f6e\u5165\u53e3"
+    }
+  ],
+  "media": [
+    "ppt/media/image10.png",
+    "ppt/media/image33.jpeg",
+    "ppt/media/image31.jpeg",
+    "ppt/media/image28.jpeg",
+    "ppt/media/image29.jpeg",
+    "ppt/media/image8.png",
+    "ppt/media/image30.jpeg",
+    "ppt/media/image32.jpeg",
+    "ppt/media/image27.jpeg",
+    "ppt/media/image35.jpeg",
+    "ppt/media/image41.jpeg",
+    "ppt/media/image40.jpeg",
+    "ppt/media/image39.jpeg",
+    "ppt/media/image38.jpeg",
+    "ppt/media/image37.jpeg",
+    "ppt/media/image36.jpeg",
+    "ppt/media/image34.jpeg",
+    "ppt/media/image42.jpeg",
+    "ppt/media/image25.jpeg",
+    "ppt/media/image16.jpeg",
+    "ppt/media/image15.jpeg",
+    "ppt/media/image14.jpeg",
+    "ppt/media/image13.jpeg",
+    "ppt/media/image12.jpeg",
+    "ppt/media/image11.jpeg",
+    "ppt/media/image17.jpeg",
+    "ppt/media/image18.jpeg",
+    "ppt/media/image19.jpeg",
+    "ppt/media/image24.jpeg",
+    "ppt/media/image23.jpeg",
+    "ppt/media/image22.jpeg",
+    "ppt/media/image21.jpeg",
+    "ppt/media/image20.jpeg",
+    "ppt/media/image26.jpeg",
+    "ppt/media/image9.png",
+    "ppt/media/image44.jpeg",
+    "ppt/media/image63.jpeg",
+    "ppt/media/image4.png",
+    "ppt/media/image5.png",
+    "ppt/media/image62.jpeg",
+    "ppt/media/image61.jpeg",
+    "ppt/media/image60.jpeg",
+    "ppt/media/image64.jpeg",
+    "ppt/media/image1.jpeg",
+    "ppt/media/image2.jpeg",
+    "ppt/media/image3.png",
+    "ppt/media/image59.jpeg",
+    "ppt/media/image58.jpeg",
+    "ppt/media/image57.jpeg",
+    "ppt/media/image48.jpeg",
+    "ppt/media/image47.jpeg",
+    "ppt/media/image46.jpeg",
+    "ppt/media/image45.jpeg",
+    "ppt/media/image6.png",
+    "ppt/media/image7.png",
+    "ppt/media/image43.jpeg",
+    "ppt/media/image49.jpeg",
+    "ppt/media/image51.jpeg",
+    "ppt/media/image56.jpeg",
+    "ppt/media/image55.jpeg",
+    "ppt/media/image54.jpeg",
+    "ppt/media/image53.jpeg",
+    "ppt/media/image52.jpeg",
+    "ppt/media/image50.jpeg",
+    "ppt/media/image9.svg"
+  ]
+}

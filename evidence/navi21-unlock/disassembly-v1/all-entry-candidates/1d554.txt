@@ -1,0 +1,31 @@
+
+/tmp/tmp8sopht5f/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001d554 <.data+0x1d554>:
+0001d554: 364100   entry        a1, 0x20 ; Capstone
+   1d557:	bd02      	mov.n	a11, a2
+   1d559:	30d0f4        	extui	a13, a3, 0, 16
+   1d55c:	40e0f4        	extui	a14, a4, 0, 16
+   1d55f:	52a000        	movi	a5, 0
+   1d562:	82a020        	movi	a8, 32
+0001d565: 76a816   loopgtz      a8, . +0x1a ; Capstone
+   1d568:	c21bae        	l16ui	a12, a11, 0x15c
+   1d56b:	921baf        	l16ui	a9, a11, 0x15e
+   1d56e:	c79d02        	bne	a13, a12, 0x1d574
+   1d571:	e7190a        	beq	a9, a14, 0x1d57f
+   1d574:	cc3c      	bnez.n	a12, 0x1d57b
+   1d576:	a21baf        	l16ui	a10, a11, 0x15e
+   1d579:	8cea      	beqz.n	a10, 0x1d58b
+   1d57b:	1b55      	addi.n	a5, a5, 1
+   1d57d:	4bbb      	addi.n	a11, a11, 4
+   1d57f:	66c504        	bnei	a5, 32, 0x1d587
+   1d582:	ad02      	mov.n	a10, a2
+0001d584: 25fbff   call8        . -0x4c ; Capstone ; target=0x1d538
+   1d587:	2d05      	mov.n	a2, a5
+0001d589: 1df0     retw.n        ; Capstone
+   1d58b:	325bae        	s16i	a3, a11, 0x15c
+   1d58e:	425baf        	s16i	a4, a11, 0x15e
+   1d591:	86faff        	j	0x1d57f

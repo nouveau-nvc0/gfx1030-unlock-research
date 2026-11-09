@@ -1,0 +1,16 @@
+
+/tmp/tmp4loi7tfr/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00038a94 <.data+0x38a94>:
+00038a94: 364100   entry        a1, 0x20 ; Capstone
+   38a97:	205074        	extui	a5, a2, 0, 8
+   38a9a:	406200        	rsil	a4, 2
+   38a9d:	61e268        	l32r	a6, 0x12e28 (0x9c00)
+   38aa0:	6055a0        	addx4	a5, a5, a6
+   38aa3:	3905      	s32i.n	a3, a5, 0
+   38aa5:	40e613        	wsr.ps	a4
+00038aa8: 1df0     retw.n        ; Capstone
+	...

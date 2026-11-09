@@ -1,0 +1,29 @@
+
+/tmp/tmpi0arm023/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00020864 <.data+0x20864>:
+00020864: 364100   entry        a1, 0x20 ; Capstone
+   20867:	cc32      	bnez.n	a2, 0x2086e
+   20869:	0c8a      	movi.n	a10, 8
+0002086b: 65d1e1   call8        . -0x1e2e8 ; Capstone ; target=0x2580
+0002086e: e51e12   call8        . +0x121f0 ; Capstone ; target=0x32a5c
+   20871:	8c3a      	beqz.n	a10, 0x20878
+   20873:	0c0a      	movi.n	a10, 0
+00020875: 256f0a   call8        . +0xa6f4 ; Capstone ; target=0x2af68
+   20878:	91e5ca        	l32r	a9, 0x1340c (0xfc58)
+   2087b:	a1f6ca        	l32r	a10, 0x13454 (0xfef4)
+   2087e:	0c08      	movi.n	a8, 0
+   20880:	82497c        	s8i	a8, a9, 124
+   20883:	824981        	s8i	a8, a9, 129
+   20886:	824980        	s8i	a8, a9, 128
+   20889:	824982        	s8i	a8, a9, 130
+0002088c: 25bce1   call8        . -0x1e43c ; Capstone ; target=0x2450
+   2088f:	cc32      	bnez.n	a2, 0x20896
+   20891:	0c8a      	movi.n	a10, 8
+00020893: 25bee1   call8        . -0x1e41c ; Capstone ; target=0x2474
+   20896:	0c12      	movi.n	a2, 1
+00020898: 1df0     retw.n        ; Capstone
+	...

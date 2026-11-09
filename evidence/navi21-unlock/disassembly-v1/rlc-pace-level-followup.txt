@@ -1,0 +1,49 @@
+PACE selected-level writer22d8 — offline,2026-11-09
+
+Local direct-write audit complete for the decoded22d8 CFG, not for its callees
+or all downstream state effects. Fresh scanner reaches295 instructions, with
+no unknown operations or unresolved local edges.37store sites consist of
+8fixed-offset stack stores and29stores to six fixed addresses:
+  RAM5ffee272,5ffee3c4,5ffee3c5,5ffee3c9;
+  hardware6803ba44,6803b274.
+The stack offsets are0/4/8/12/24/32 within the50hex frame. No direct destination
+is formed from an imported coefficient or selected-level value. Neither saved
+CC nor gatee452 is among these direct stores. Four callsites target2b44,
+which remains outside this local write conclusion.
+
+Register identification:
+Public GC10.3 addresses3ba44 and3b274 name RLC_RLCS_GENERAL_2 andRLC_SPARE_INT_2.
+The level read at22ff uses6803b484, matching RLC_SPP_PVT_LEVEL_MAX. Header
+LEVEL_MASK is0xf. Firmware loads the fullDWORD and uses comparisons/low8;
+it does not explicitly mask tofour bits here. Header semantics alone do not
+establish runtime reserved-bit behavior.
+
+Provenance of selected bytee3c4:
+245e storeszero along its known paths.248d and2595 receive a low8 version of
+the hardware level or a modified level from preceding branches. In particular,
+24d8/24da and2565/2567 decrement and retain8bits;2515/2517 also does so in a
+related calculation. Arithmetic allows0->255. This is not proof that an
+out-of-range execution is reachable under the surrounding table/hardware
+invariants. Conversely the earlier29c4/29ec0..15 result cannot simply be
+applied to these different sources. A loop may also fail toterminate; no
+bounded runtime claim is made from the8bit arithmetic.
+
+29b0 uses bytee3c4 only to READ at5ffee344+4*index. For all byte values this
+covers DWORD starts[e344,e740], end-exclusive e744.22d8 similarly has computed
+reads but fixed direct stores. Thus the missing index bound does not by itself
+supply a computed CC/gate write. Initial1d10 resets thisbyte tozero; allpossible
+writers/read consumers are not claimed closed here.
+
+Reproduction:
+python3 scripts/navi21-smu-cfg-scan.py evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/022d8.txt evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/029b0.txt --output evidence/navi21-unlock/disassembly-v1/rlc-pace-level-cfg.json
+python3 scripts/navi21-rlc-pace-level-audit.py
+Receipt rlc-pace-level-audit.json:321 listing-record bytes checked,295reached
+22d8 instructions,37direct stores,6fixed destinations; exact input/tool hashes.
+No device access or operational changes performed.
+
+Disposition for the larger investigation: the ordinary PACE coefficient path
+now has concrete producers, conditional delivery, a matching receiver layout,
+and bounded/local direct-write findings. No CC-mask or nonzero gate producer
+has emerged. Keep the interface5/6-to32 gap explicit and prioritize a concrete
+mainRLCG/alternate scratch mapping or another producer, rather than continuing
+generic coefficient arithmetic without a new CC dependency.

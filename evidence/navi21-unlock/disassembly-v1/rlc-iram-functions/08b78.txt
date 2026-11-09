@@ -1,0 +1,233 @@
+
+/tmp/tmpjjj4ix8v/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00008b78 <.data+0x8b78>:
+00008b78: 366101   entry        a1, 0xb0 ; Capstone
+    8b7b:	81c4d2        	l32r	a8, 0xffffd68c (0x5ffee5f8) ; inferred DRAM map 0x5ffec000
+    8b7e:	f02000        	nop
+    8b81:	820800        	l8ui	a8, a8, 0
+    8b84:	cc18      	bnez.n	a8, 0x8b89
+00008b86: 65fbff   call8        . -0x48 ; Capstone ; target=0x8b3c
+00008b89: a5bbfb   call8        . -0x4444 ; Capstone ; target=0x4744
+    8b8c:	880a      	l32i.n	a8, a10, 0
+    8b8e:	381a      	l32i.n	a3, a10, 4
+    8b90:	688a      	l32i.n	a6, a10, 32
+    8b92:	222a15        	l32i	a2, a10, 84
+    8b95:	d22a18        	l32i	a13, a10, 96
+    8b98:	c8ea      	l32i.n	a12, a10, 56
+    8b9a:	922a20        	l32i	a9, a10, 128
+    8b9d:	e22a1b        	l32i	a14, a10, 108
+    8ba0:	78aa      	l32i.n	a7, a10, 40
+    8ba2:	b83a      	l32i.n	a11, a10, 12
+    8ba4:	f22a10        	l32i	a15, a10, 64
+00008ba7: 0097da   ufloat.s     f9, a7, 0 ; Capstone
+00008baa: 001bda   ufloat.s     f1, a11, 0 ; Capstone
+00008bad: 007fda   ufloat.s     f7, a15, 0 ; Capstone
+00008bb0: 006eda   ufloat.s     f6, a14, 0 ; Capstone
+00008bb3: 0039da   ufloat.s     f3, a9, 0 ; Capstone
+00008bb6: 000cda   ufloat.s     f0, a12, 0 ; Capstone
+00008bb9: 005dda   ufloat.s     f5, a13, 0 ; Capstone
+00008bbc: 00e2da   ufloat.s     f14, a2, 0 ; Capstone
+00008bbf: 00a6da   ufloat.s     f10, a6, 0 ; Capstone
+00008bc2: 00c3da   ufloat.s     f12, a3, 0 ; Capstone
+    8bc5:	68ca      	l32i.n	a6, a10, 48
+    8bc7:	322a1a        	l32i	a3, a10, 104
+    8bca:	222a1e        	l32i	a2, a10, 120
+    8bcd:	d86a      	l32i.n	a13, a10, 24
+    8bcf:	c22a1f        	l32i	a12, a10, 124
+    8bd2:	98ba      	l32i.n	a9, a10, 44
+    8bd4:	e22a17        	l32i	a14, a10, 92
+    8bd7:	f82a      	l32i.n	a15, a10, 8
+    8bd9:	b22a12        	l32i	a11, a10, 72
+    8bdc:	71aed2        	l32r	a7, 0xffffd694 (0x37a7c5ac) ; inferred DRAM map 0x5ffec000
+00008bdf: 534122   ssi          f5, a1, 0x88 ; Capstone
+00008be2: 734120   ssi          f7, a1, 0x80 ; Capstone
+00008be5: 634121   ssi          f6, a1, 0x84 ; Capstone
+00008be8: 0078da   ufloat.s     f7, a8, 0 ; Capstone
+    8beb:	885a      	l32i.n	a8, a10, 20
+00008bed: 5027fa   wfr          f2, a7 ; Capstone
+00008bf0: 008bda   ufloat.s     f8, a11, 0 ; Capstone
+00008bf3: 006fda   ufloat.s     f6, a15, 0 ; Capstone
+00008bf6: 00beda   ufloat.s     f11, a14, 0 ; Capstone
+00008bf9: 0059da   ufloat.s     f5, a9, 0 ; Capstone
+00008bfc: 00dcda   ufloat.s     f13, a12, 0 ; Capstone
+00008bff: 00fdda   ufloat.s     f15, a13, 0 ; Capstone
+    8c02:	10c120        	or	a12, a1, a1
+    8c05:	d2c170        	addi	a13, a1, 112
+    8c08:	91a1d2        	l32r	a9, 0xffffd68c (0x5ffee5f8) ; inferred DRAM map 0x5ffec000
+    8c0b:	e22a1c        	l32i	a14, a10, 112
+    8c0e:	f22a11        	l32i	a15, a10, 68
+    8c11:	b1a1d2        	l32r	a11, 0xffffd698 (0x5ffecee8) ; inferred DRAM map 0x5ffec000
+00008c14: 20772a   mul.s        f7, f7, f2 ; Capstone
+00008c17: 20882a   mul.s        f8, f8, f2 ; Capstone
+00008c1a: 20552a   mul.s        f5, f5, f2 ; Capstone
+00008c1d: 0048da   ufloat.s     f4, a8, 0 ; Capstone
+    8c20:	818cd1        	l32r	a8, 0xffffd250 (0x3c23d70a) ; inferred DRAM map 0x5ffec000
+00008c23: 73410f   ssi          f7, a1, 0x3c ; Capstone
+00008c26: 20442a   mul.s        f4, f4, f2 ; Capstone
+00008c29: 534110   ssi          f5, a1, 0x40 ; Capstone
+00008c2c: 834119   ssi          f8, a1, 0x64 ; Capstone
+00008c2f: 53411a   ssi          f5, a1, 0x68 ; Capstone
+00008c32: 208d2a   mul.s        f8, f13, f2 ; Capstone
+00008c35: 3053fa   const.s      f5, 3 ; Capstone
+00008c38: 20df2a   mul.s        f13, f15, f2 ; Capstone
+00008c3b: 434100   ssi          f4, a1, 0 ; Capstone
+00008c3e: 434109   ssi          f4, a1, 0x24 ; Capstone
+00008c41: 20f62a   mul.s        f15, f6, f2 ; Capstone
+00008c44: 43411b   ssi          f4, a1, 0x6c ; Capstone
+00008c47: 206a2a   mul.s        f6, f10, f2 ; Capstone
+00008c4a: 20a02a   mul.s        f10, f0, f2 ; Capstone
+00008c4d: 834118   ssi          f8, a1, 0x60 ; Capstone
+00008c50: 0002da   ufloat.s     f0, a2, 0 ; Capstone
+00008c53: 208b2a   mul.s        f8, f11, f2 ; Capstone
+00008c56: d34117   ssi          f13, a1, 0x5c ; Capstone
+00008c59: 20bc2a   mul.s        f11, f12, f2 ; Capstone
+00008c5c: 20de2a   mul.s        f13, f14, f2 ; Capstone
+00008c5f: f34115   ssi          f15, a1, 0x54 ; Capstone
+00008c62: 634101   ssi          f6, a1, 4 ; Capstone
+00008c65: 634104   ssi          f6, a1, 0x10 ; Capstone
+00008c68: 634112   ssi          f6, a1, 0x48 ; Capstone
+00008c6b: 20002a   mul.s        f0, f0, f2 ; Capstone
+00008c6e: f30122   lsi          f15, a1, 0x88 ; Capstone
+00008c71: e30121   lsi          f14, a1, 0x84 ; Capstone
+00008c74: a3410c   ssi          f10, a1, 0x30 ; Capstone
+00008c77: 20ce2a   mul.s        f12, f14, f2 ; Capstone
+00008c7a: 834116   ssi          f8, a1, 0x58 ; Capstone
+00008c7d: 20892a   mul.s        f8, f9, f2 ; Capstone
+00008c80: b34113   ssi          f11, a1, 0x4c ; Capstone
+00008c83: d34114   ssi          f13, a1, 0x50 ; Capstone
+00008c86: 20bf2a   mul.s        f11, f15, f2 ; Capstone
+00008c89: d30120   lsi          f13, a1, 0x80 ; Capstone
+00008c8c: 20912a   mul.s        f9, f1, f2 ; Capstone
+00008c8f: 034105   ssi          f0, a1, 0x14 ; Capstone
+00008c92: c3410a   ssi          f12, a1, 0x28 ; Capstone
+00008c95: 030b00   lsi          f0, a11, 0 ; Capstone
+00008c98: 0013da   ufloat.s     f1, a3, 0 ; Capstone
+00008c9b: 20dd2a   mul.s        f13, f13, f2 ; Capstone
+00008c9e: 20f12a   mul.s        f15, f1, f2 ; Capstone
+00008ca1: 834111   ssi          f8, a1, 0x44 ; Capstone
+00008ca4: b3410b   ssi          f11, a1, 0x2c ; Capstone
+00008ca7: 20832a   mul.s        f8, f3, f2 ; Capstone
+00008caa: 93410d   ssi          f9, a1, 0x34 ; Capstone
+00008cad: 0036da   ufloat.s     f3, a6, 0 ; Capstone
+00008cb0: d34108   ssi          f13, a1, 0x20 ; Capstone
+00008cb3: 20e32a   mul.s        f14, f3, f2 ; Capstone
+00008cb6: 003fda   ufloat.s     f3, a15, 0 ; Capstone
+00008cb9: f34106   ssi          f15, a1, 0x18 ; Capstone
+00008cbc: 20132a   mul.s        f1, f3, f2 ; Capstone
+00008cbf: 003eda   ufloat.s     f3, a14, 0 ; Capstone
+00008cc2: 83410e   ssi          f8, a1, 0x38 ; Capstone
+00008cc5: 20232a   mul.s        f2, f3, f2 ; Capstone
+00008cc8: e34107   ssi          f14, a1, 0x1c ; Capstone
+00008ccb: 134103   ssi          f1, a1, 0xc ; Capstone
+00008cce: 3030fa   const.s      f3, 0 ; Capstone
+00008cd1: 234102   ssi          f2, a1, 8 ; Capstone
+00008cd4: 930b01   lsi          f9, a11, 4 ; Capstone
+00008cd7: 830c00   lsi          f8, a12, 0 ; Capstone
+00008cda: 90181a   sub.s        f1, f8, f9 ; Capstone
+00008cdd: b30b02   lsi          f11, a11, 8 ; Capstone
+00008ce0: 10036b   ole.s        b0, f3, f1 ; Capstone
+00008ce3: d30b03   lsi          f13, a11, 0xc ; Capstone
+    8ce6:	4bcc      	addi.n	a12, a12, 4
+00008ce8: 760008   bf           b0, . +0xc ; Capstone
+00008ceb: 10ab2a   mul.s        f10, f11, f1 ; Capstone
+00008cee: a0000a   add.s        f0, f0, f10 ; Capstone
+    8cf1:	460100        	j	0x8cfa
+00008cf4: 10cd2a   mul.s        f12, f13, f1 ; Capstone
+00008cf7: c0001a   sub.s        f0, f0, f12 ; Capstone
+    8cfa:	cbbb      	addi.n	a11, a11, 12
+    8cfc:	d79cd4        	bne	a12, a13, 0x8cd4
+00008cff: 50f8fa   wfr          f15, a8 ; Capstone
+    8d02:	d167d2        	l32r	a13, 0xffffd6a0 (0x447a0000) ; inferred DRAM map 0x5ffec000
+    8d05:	922912        	l32i	a9, a9, 72
+    8d08:	c153d1        	l32r	a12, 0xffffd254 (0x42c80000) ; inferred DRAM map 0x5ffec000
+    8d0b:	b2a3e8        	movi	a11, 0x3e8
+00008d0e: 3011fa   const.s      f1, 1 ; Capstone
+00008d11: 00211a   sub.s        f2, f1, f0 ; Capstone
+    8d14:	b0b482        	mull	a11, a4, a11
+00008d17: 50dcfa   wfr          f13, a12 ; Capstone
+    8d1a:	90a641        	srli	a10, a9, 6
+00008d1d: 00eada   ufloat.s     f14, a10, 0 ; Capstone
+00008d20: 508dfa   wfr          f8, a13 ; Capstone
+00008d23: f04e2a   mul.s        f4, f14, f15 ; Capstone
+00008d26: 50bbc2   quou         a11, a11, a5 ; Capstone
+    8d29:	d15fd2        	l32r	a13, 0xffffd6a8 (0x3f8020c5) ; inferred DRAM map 0x5ffec000
+    8d2c:	a15cd2        	l32r	a10, 0xffffd69c (0x3f80a3d7) ; inferred DRAM map 0x5ffec000
+00008d2f: 50144b   olt.s        b1, f4, f5 ; Capstone
+00008d32: 0002fa   mov.s        f0, f2 ; Capstone
+00008d35: 50bafa   wfr          f11, a10 ; Capstone
+00008d38: 760105   bf           b1, . +9 ; Capstone
+00008d3b: 40051a   sub.s        f0, f5, f4 ; Capstone
+00008d3e: 00020a   add.s        f0, f2, f0 ; Capstone
+00008d41: 00214b   olt.s        b2, f1, f0 ; Capstone
+00008d44: 505dfa   wfr          f5, a13 ; Capstone
+00008d47: 760205   bf           b2, . +9 ; Capstone
+00008d4a: 0001fa   mov.s        f0, f1 ; Capstone
+    8d4d:	460100        	j	0x8d56
+00008d50: 30304b   olt.s        b3, f0, f3 ; Capstone
+00008d53: 3003db   movt.s       f0, f3, b3 ; Capstone
+00008d56: d0c02a   mul.s        f12, f0, f13 ; Capstone
+00008d59: 00abda   ufloat.s     f10, a11, 0 ; Capstone
+    8d5c:	b14cd2        	l32r	a11, 0xffffd68c (0x5ffee5f8) ; inferred DRAM map 0x5ffec000
+00008d5f: b09a2a   mul.s        f9, f10, f11 ; Capstone
+00008d62: 00ec9a   trunc.s      a14, f12, 0 ; Capstone
+    8d65:	f22b11        	l32i	a15, a11, 68
+    8d68:	4b8b      	addi.n	a8, a11, 4
+00008d6a: 90681a   sub.s        f6, f8, f9 ; Capstone
+    8d6d:	8aff      	add.n	a15, a15, a8
+    8d6f:	814dd2        	l32r	a8, 0xffffd6a4 (0x3d4ccccd) ; inferred DRAM map 0x5ffec000
+    8d72:	9aae      	add.n	a10, a14, a9
+    8d74:	a26b12        	s32i	a10, a11, 72
+    8d77:	c20f00        	l8ui	a12, a15, 0
+00008d7a: 5078fa   wfr          f7, a8 ; Capstone
+00008d7d: 70462a   mul.s        f4, f6, f7 ; Capstone
+    8d80:	c0aac0        	sub	a10, a10, a12
+    8d83:	c14ad2        	l32r	a12, 0xffffd6ac (0x3f8147ae) ; inferred DRAM map 0x5ffec000
+    8d86:	a26b12        	s32i	a10, a11, 72
+    8d89:	e24f00        	s8i	a14, a15, 0
+    8d8c:	a22b11        	l32i	a10, a11, 68
+00008d8f: 50540a   add.s        f5, f4, f5 ; Capstone
+00008d92: 03411e   ssi          f0, a1, 0x78 ; Capstone
+00008d95: 503cfa   wfr          f3, a12 ; Capstone
+    8d98:	1baa      	addi.n	a10, a10, 1
+00008d9a: 30454b   olt.s        b4, f5, f3 ; Capstone
+    8d9d:	a0a054        	extui	a10, a10, 0, 6
+    8da0:	a26b11        	s32i	a10, a11, 68
+00008da3: 760409   bf           b4, . +0xd ; Capstone
+    8da6:	2d05      	mov.n	a2, a5
+00008da8: 23411d   ssi          f2, a1, 0x74 ; Capstone
+    8dab:	32211d        	l32i	a3, a1, 116
+00008dae: 1df0     retw.n        ; Capstone
+    8db0:	c140d2        	l32r	a12, 0xffffd6b0 (0x5ffed044) ; inferred DRAM map 0x5ffec000
+00008db3: 23411f   ssi          f2, a1, 0x7c ; Capstone
+00008db6: 40b5fa   rfr          a11, f5 ; Capstone
+00008db9: e30c00   lsi          f14, a12, 0 ; Capstone
+00008dbc: 40aefa   rfr          a10, f14 ; Capstone
+00008dbf: 253a01   call8        . +0x13a4 ; Capstone ; target=0xa160
+    8dc2:	d13cd2        	l32r	a13, 0xffffd6b4 (0x3dcccccd) ; inferred DRAM map 0x5ffec000
+    8dc5:	e13ad2        	l32r	a14, 0xffffd6b0 (0x5ffed044) ; inferred DRAM map 0x5ffec000
+00008dc8: 13011e   lsi          f1, a1, 0x78 ; Capstone
+00008dcb: 50aafa   wfr          f10, a10 ; Capstone
+00008dce: 10912a   mul.s        f9, f1, f1 ; Capstone
+00008dd1: 830e00   lsi          f8, a14, 0 ; Capstone
+00008dd4: a0681a   sub.s        f6, f8, f10 ; Capstone
+00008dd7: 507dfa   wfr          f7, a13 ; Capstone
+00008dda: 90581a   sub.s        f5, f8, f9 ; Capstone
+00008ddd: 70462a   mul.s        f4, f6, f7 ; Capstone
+00008de0: 50242a   mul.s        f2, f4, f5 ; Capstone
+00008de3: 0035da   ufloat.s     f3, a5, 0 ; Capstone
+00008de6: 10032a   mul.s        f0, f3, f1 ; Capstone
+00008de9: 20f10a   add.s        f15, f1, f2 ; Capstone
+00008dec: 40a0fa   rfr          a10, f0 ; Capstone
+00008def: 40bffa   rfr          a11, f15 ; Capstone
+00008df2: e53601   call8        . +0x1370 ; Capstone ; target=0xa160
+00008df5: b3011f   lsi          f11, a1, 0x7c ; Capstone
+00008df8: 50cafa   wfr          f12, a10 ; Capstone
+00008dfb: 002c9a   trunc.s      a2, f12, 0 ; Capstone
+00008dfe: b3411d   ssi          f11, a1, 0x74 ; Capstone
+    8e01:	32211d        	l32i	a3, a1, 116
+00008e04: 1df0     retw.n        ; Capstone
+	...

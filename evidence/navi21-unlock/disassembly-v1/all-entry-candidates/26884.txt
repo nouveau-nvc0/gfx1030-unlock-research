@@ -1,0 +1,28 @@
+
+/tmp/tmphwyl_vk9/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00026884 <.data+0x26884>:
+00026884: 364100   entry        a1, 0x20 ; Capstone
+   26887:	91bdb3        	l32r	a9, 0x1377c (0xa4a4)
+   2688a:	0c15      	movi.n	a5, 1
+   2688c:	a2097e        	l8ui	a10, a9, 126
+   2688f:	82097c        	l8ui	a8, a9, 124
+   26892:	92097d        	l8ui	a9, a9, 125
+   26895:	001a40        	ssl	a10
+   26898:	0045a1        	sll	a4, a5
+   2689b:	001940        	ssl	a9
+   2689e:	0035a1        	sll	a3, a5
+   268a1:	001840        	ssl	a8
+   268a4:	0025a1        	sll	a2, a5
+   268a7:	302220        	or	a2, a2, a3
+   268aa:	402220        	or	a2, a2, a4
+   268ad:	3156b4        	l32r	a3, 0x13a08 (0x157c0)
+   268b0:	7cf4      	movi.n	a4, -1
+   268b2:	402230        	xor	a2, a2, a4
+   268b5:	524380        	s8i	a5, a3, 128
+   268b8:	226321        	s32i	a2, a3, 132
+000268bb: 1df0     retw.n        ; Capstone
+   268bd:	000000        	ill

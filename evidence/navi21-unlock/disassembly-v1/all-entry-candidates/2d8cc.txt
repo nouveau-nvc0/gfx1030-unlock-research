@@ -1,0 +1,22 @@
+
+/tmp/tmpgss8ldc_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002d8cc <.data+0x2d8cc>:
+0002d8cc: 364100   entry        a1, 0x20 ; Capstone
+0002d8cf: a5feff   call8        . -0x14 ; Capstone ; target=0x2d8b8
+   2d8d2:	b12096        	l32r	a11, 0x13154 (0x7f800000)
+   2d8d5:	90a201        	slli	a10, a2, 23
+   2d8d8:	915695        	l32r	a9, 0x12e30 (0x1259e00)
+   2d8db:	b0aa10        	and	a10, a10, a11
+   2d8de:	b17f99        	l32r	a11, 0x13edc (0x807fffff)
+   2d8e1:	c02000        	memw
+   2d8e4:	82298a        	l32i	a8, a9, 0x228
+   2d8e7:	b08810        	and	a8, a8, a11
+   2d8ea:	a08820        	or	a8, a8, a10
+   2d8ed:	c02000        	memw
+   2d8f0:	82698a        	s32i	a8, a9, 0x228
+0002d8f3: 1df0     retw.n        ; Capstone
+   2d8f5:	000000        	ill

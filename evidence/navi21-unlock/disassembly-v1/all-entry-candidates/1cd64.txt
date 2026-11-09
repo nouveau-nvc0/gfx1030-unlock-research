@@ -1,0 +1,31 @@
+
+/tmp/tmpu14gce0j/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001cd64 <.data+0x1cd64>:
+0001cd64: 366100   entry        a1, 0x30 ; Capstone
+   1cd67:	ad03      	mov.n	a10, a3
+0001cd69: 250600   call8        . +0x64 ; Capstone ; target=0x1cdcc
+   1cd6c:	91d1d8        	l32r	a9, 0x130b0 (0xa96c)
+0001cd6f: 502afa   wfr          f2, a10 ; Capstone
+   1cd72:	2082f0        	subx8	a8, a2, a2
+   1cd75:	9088a0        	addx4	a8, a8, a9
+0001cd78: 13087f   lsi          f1, a8, 0x1fc ; Capstone
+0001cd7b: 20012a   mul.s        f0, f1, f2 ; Capstone
+   1cd7e:	ad04      	mov.n	a10, a4
+0001cd80: 034100   ssi          f0, a1, 0 ; Capstone
+0001cd83: 25580d   call8        . +0xd584 ; Capstone ; target=0x2a304
+   1cd86:	b1dcd8        	l32r	a11, 0x130f8 (0x3e800000)
+0001cd89: 004ada   ufloat.s     f4, a10, 0 ; Capstone
+0001cd8c: 505bfa   wfr          f5, a11 ; Capstone
+0001cd8f: 50342a   mul.s        f3, f4, f5 ; Capstone
+0001cd92: 40a3fa   rfr          a10, f3 ; Capstone
+0001cd95: 65001c   call8        . +0x1c008 ; Capstone ; target=0x38d9c
+0001cd98: 508afa   wfr          f8, a10 ; Capstone
+0001cd9b: 730100   lsi          f7, a1, 0 ; Capstone
+0001cd9e: 80672a   mul.s        f6, f7, f8 ; Capstone
+0001cda1: 4026fa   rfr          a2, f6 ; Capstone
+0001cda4: 1df0     retw.n        ; Capstone
+	...

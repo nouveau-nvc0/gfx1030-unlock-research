@@ -1,0 +1,15 @@
+
+/tmp/tmph1600sbg/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00037794 <.data+0x37794>:
+00037794: 364100   entry        a1, 0x20 ; Capstone
+   37797:	42020b        	l8ui	a4, a2, 11
+   3779a:	3902      	s32i.n	a3, a2, 0
+   3779c:	0c15      	movi.n	a5, 1
+   3779e:	504420        	or	a4, a4, a5
+   377a1:	42420b        	s8i	a4, a2, 11
+000377a4: 1df0     retw.n        ; Capstone
+	...

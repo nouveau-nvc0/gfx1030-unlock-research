@@ -1,0 +1,24 @@
+RLC alternate save and direct-call root coverage
+
+Separate root9ad0..9b6b now decoded:57 listing instructions bytechecked,
+56 reached by localCFG. It saves architectural registers into context and
+uses ROTW to walk register windows, then sets a1=0 before CALL0 9b70 at9b2a.
+Thus the shared save routine records context+cc=0 on this path, which causes
+restore9e61/9e64 to skip its stack-copy block, provided this saved field is
+preserved. The alternate entry does not provide an additional stack-copy
+invocation under that condition. Its window-register semantics remain manual.
+
+No direct call to9ad0 in the current listings, and no full little-endian
+5fff9ad0 literal anywhere in pinned decompressed firmware. Computed/vector
+entry is not ruled out. Absence of a literal is not proof of unreachability.
+
+Combined seven existing localCFG receipts inventory668 unique direct CALL
+sites. Every target has a separate listing root after the recent expansions.
+Five raw linear-decode calls with missing roots are absent from reached call
+inventory; do not treat these raw records as additional established targets.
+This only closes missing-root bookkeeping for the existing direct-call set.
+Indirect calls, non-ENTRY/reset/vector roots, decoder semantics and whole RAM
+address provenance remain incomplete. No full-firmware completion claim.
+
+Reproducer:scripts/navi21-rlc-direct-root-audit.py;
+receipts:rlc-direct-root-audit.json,rlc-alternate-save-cfg.json.

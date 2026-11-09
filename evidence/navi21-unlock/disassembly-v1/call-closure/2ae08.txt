@@ -1,0 +1,26 @@
+
+/tmp/tmpo3z4gaap/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002ae08 <.data+0x2ae08>:
+0002ae08: 364100   entry        a1, 0x20 ; Capstone
+   2ae0b:	ec52      	bnez.n	a2, 0x2ae34
+   2ae0d:	0c8a      	movi.n	a10, 8
+0002ae0f: 2577d7   call8        . -0x2888c ; Capstone ; target=0x2580
+0002ae12: a5c407   call8        . +0x7c4c ; Capstone ; target=0x32a5c
+   2ae15:	9c6a      	beqz.n	a10, 0x2ae2f
+   2ae17:	9156a3        	l32r	a9, 0x13b70 (0xc82c)
+   2ae1a:	92097d        	l8ui	a9, a9, 125
+   2ae1d:	661907        	bnei	a9, 1, 0x2ae28
+   2ae20:	0c0a      	movi.n	a10, 0
+0002ae22: a52100   call8        . +0x21c ; Capstone ; target=0x2b03c
+   2ae25:	860100        	j	0x2ae2f
+   2ae28:	cc39      	bnez.n	a9, 0x2ae2f
+   2ae2a:	1c9a      	movi.n	a10, 25
+0002ae2c: a51f0a   call8        . +0xa1fc ; Capstone ; target=0x35028
+   2ae2f:	0c8a      	movi.n	a10, 8
+0002ae31: 2564d7   call8        . -0x289bc ; Capstone ; target=0x2474
+   2ae34:	0c12      	movi.n	a2, 1
+0002ae36: 1df0     retw.n        ; Capstone

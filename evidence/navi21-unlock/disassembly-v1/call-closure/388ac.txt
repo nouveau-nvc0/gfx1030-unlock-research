@@ -1,0 +1,15 @@
+
+/tmp/tmpvfzx4y20/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000388ac <.data+0x388ac>:
+000388ac: 364100   entry        a1, 0x20 ; Capstone
+   388af:	0c02      	movi.n	a2, 0
+   388b1:	20a074        	extui	a10, a2, 0, 8
+000388b4: e538ff   call8        . -0xc70 ; Capstone ; target=0x37c44
+   388b7:	1b22      	addi.n	a2, a2, 1
+   388b9:	6682f4        	bnei	a2, 8, 0x388b1
+000388bc: 1df0     retw.n        ; Capstone
+	...

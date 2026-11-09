@@ -1,0 +1,43 @@
+
+/tmp/tmpx86p1xly/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002bb78 <.data+0x2bb78>:
+0002bb78: 364100   entry        a1, 0x20 ; Capstone
+   2bb7b:	0c0a      	movi.n	a10, 0
+0002bb7d: a5da0c   call8        . +0xcdac ; Capstone ; target=0x38928
+   2bb80:	d1afa0        	l32r	a13, 0x13e3c (0x44800000)
+   2bb83:	f1369e        	l32r	a15, 0x1345c (0xbbcccccd)
+   2bb86:	e1fe9c        	l32r	a14, 0x12f80 (0x3fc66666)
+0002bb89: 0052da   ufloat.s     f5, a2, 0 ; Capstone
+0002bb8c: 506ffa   wfr          f6, a15 ; Capstone
+0002bb8f: 503efa   wfr          f3, a14 ; Capstone
+0002bb92: 60354a   madd.s       f3, f5, f6 ; Capstone
+   2bb95:	c1aaa0        	l32r	a12, 0x13e40 (0x3f0e38e4)
+0002bb98: 504dfa   wfr          f4, a13 ; Capstone
+0002bb9b: 40132a   mul.s        f1, f3, f4 ; Capstone
+   2bb9e:	0c19      	movi.n	a9, 1
+0002bba0: 502cfa   wfr          f2, a12 ; Capstone
+0002bba3: 20012a   mul.s        f0, f1, f2 ; Capstone
+   2bba6:	1c9a      	movi.n	a10, 25
+   2bba8:	51a7a0        	l32r	a5, 0x13e44 (0xfbe4)
+   2bbab:	20b084        	extui	a11, a2, 0, 9
+0002bbae: 0080ea   utrunc.s     a8, f0, 0 ; Capstone
+   2bbb1:	b2651d        	s32i	a11, a5, 116
+   2bbb4:	a2651c        	s32i	a10, a5, 112
+   2bbb7:	924590        	s8i	a9, a5, 144
+   2bbba:	82c8d8        	addi	a8, a8, -40
+   2bbbd:	808094        	extui	a8, a8, 0, 10
+   2bbc0:	82651e        	s32i	a8, a5, 120
+0002bbc3: 25e9ff   call8        . -0x16c ; Capstone ; target=0x2ba54
+   2bbc6:	222523        	l32i	a2, a5, 140
+   2bbc9:	522522        	l32i	a5, a5, 136
+0002bbcc: 25cf0c   call8        . +0xccf4 ; Capstone ; target=0x388c0
+   2bbcf:	508095        	extui	a8, a5, 16, 10
+   2bbd2:	509094        	extui	a9, a5, 0, 10
+   2bbd5:	925300        	s16i	a9, a3, 0
+   2bbd8:	825400        	s16i	a8, a4, 0
+0002bbdb: 1df0     retw.n        ; Capstone
+   2bbdd:	000000        	ill

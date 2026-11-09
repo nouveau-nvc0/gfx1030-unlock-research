@@ -1,0 +1,2 @@
+# Optional targeted decoder; base offline audit suite needs only Python stdlib.
+capstone==6.0.0a5

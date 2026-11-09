@@ -1,0 +1,34 @@
+
+/tmp/tmp2fk38n__/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00031508 <.data+0x31508>:
+00031508: 366100   entry        a1, 0x30 ; Capstone
+   3150b:	82a803        	movi	a8, 0xfffff803
+   3150e:	51b68a        	l32r	a5, 0x13fe8 (0xfffe4000)
+   31511:	0c16      	movi.n	a6, 1
+   31513:	6901      	s32i.n	a6, a1, 0
+   31515:	224102        	s8i	a2, a1, 2
+   31518:	4801      	l32i.n	a4, a1, 0
+   3151a:	5a53      	add.n	a5, a3, a5
+   3151c:	804410        	and	a4, a4, a8
+   3151f:	508274        	extui	a8, a5, 2, 8
+   31522:	e08811        	slli	a8, a8, 2
+   31525:	804420        	or	a4, a4, a8
+   31528:	81bc87        	l32r	a8, 0x13418 (0xffffc7ff)
+   3152b:	505a24        	extui	a5, a5, 10, 3
+   3152e:	505511        	slli	a5, a5, 11
+   31531:	804410        	and	a4, a4, a8
+   31534:	504420        	or	a4, a4, a5
+   31537:	513a88        	l32r	a5, 0x13620 (0x141ce00)
+   3153a:	c02000        	memw
+   3153d:	426595        	s32i	a4, a5, 0x254
+   31540:	c02000        	memw
+   31543:	604420        	or	a4, a4, a6
+   31546:	2225a2        	l32i	a2, a5, 0x288
+   31549:	c02000        	memw
+   3154c:	426595        	s32i	a4, a5, 0x254
+0003154f: 1df0     retw.n        ; Capstone
+   31551:	000000        	ill

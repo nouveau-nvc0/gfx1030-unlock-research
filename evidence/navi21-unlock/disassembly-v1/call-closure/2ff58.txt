@@ -1,0 +1,24 @@
+
+/tmp/tmpopt192o1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002ff58 <.data+0x2ff58>:
+0002ff58: 364100   entry        a1, 0x20 ; Capstone
+   2ff5b:	a14f90        	l32r	a10, 0x14098 (0x965d)
+   2ff5e:	0c1b      	movi.n	a11, 1
+0002ff60: 65c208   call8        . +0x8c28 ; Capstone ; target=0x38b88
+   2ff63:	661a17        	bnei	a10, 1, 0x2ff7e
+   2ff66:	81418c        	l32r	a8, 0x1306c (0x1203200)
+   2ff69:	92a080        	movi	a9, 128
+   2ff6c:	c02000        	memw
+   2ff6f:	8228a0        	l32i	a8, a8, 0x280
+   2ff72:	0c12      	movi.n	a2, 1
+   2ff74:	908810        	and	a8, a8, a9
+   2ff77:	808741        	srli	a8, a8, 7
+   2ff7a:	8c08      	beqz.n	a8, 0x2ff7e
+0002ff7c: 1df0     retw.n        ; Capstone
+   2ff7e:	0c02      	movi.n	a2, 0
+0002ff80: 1df0     retw.n        ; Capstone
+	...

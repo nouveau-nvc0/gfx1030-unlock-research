@@ -1,0 +1,59 @@
+
+/tmp/tmp9g_uipjn/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002ef60 <.data+0x2ef60>:
+0002ef60: 364100   entry        a1, 0x20 ; Capstone
+   2ef63:	0caa      	movi.n	a10, 10
+0002ef65: a561d3   call8        . -0x2c9e4 ; Capstone ; target=0x2580
+   2ef68:	0c7a      	movi.n	a10, 7
+   2ef6a:	0c0b      	movi.n	a11, 0
+   2ef6c:	0c1c      	movi.n	a12, 1
+0002ef6e: 654808   call8        . +0x8488 ; Capstone ; target=0x373f4
+   2ef71:	0caa      	movi.n	a10, 10
+0002ef73: 2550d3   call8        . -0x2cafc ; Capstone ; target=0x2474
+   2ef76:	210d94        	l32r	a2, 0x13fac (0x3ffff)
+   2ef79:	310794        	l32r	a3, 0x13f98 (0x3030200)
+   2ef7c:	f13f90        	l32r	a15, 0x13078 (0x7fffffff)
+   2ef7f:	c02000        	memw
+   2ef82:	e813      	l32i.n	a14, a3, 4
+   2ef84:	f0ee10        	and	a14, a14, a15
+   2ef87:	c02000        	memw
+   2ef8a:	e913      	s32i.n	a14, a3, 4
+   2ef8c:	0c2c      	movi.n	a12, 2
+   2ef8e:	c02000        	memw
+   2ef91:	d823      	l32i.n	a13, a3, 8
+   2ef93:	a10594        	l32r	a10, 0x13fa8 (0xb9dc)
+   2ef96:	d0d0b4        	extui	a13, a13, 0, 12
+   2ef99:	001d40        	ssl	a13
+   2ef9c:	00cca1        	sll	a12, a12
+   2ef9f:	c02000        	memw
+   2efa2:	b813      	l32i.n	a11, a3, 4
+   2efa4:	e0cc11        	slli	a12, a12, 2
+   2efa7:	20bb10        	and	a11, a11, a2
+0002efaa: 652808   call8        . +0x8288 ; Capstone ; target=0x37230
+   2efad:	a1db90        	l32r	a10, 0x1331c (0x3030600)
+   2efb0:	c02000        	memw
+   2efb3:	a83a      	l32i.n	a10, a10, 12
+   2efb5:	20aa10        	and	a10, a10, a2
+   2efb8:	c02000        	memw
+   2efbb:	8813      	l32i.n	a8, a3, 4
+   2efbd:	910a90        	l32r	a9, 0x12fe8 (0x80000000)
+   2efc0:	202810        	and	a2, a8, a2
+   2efc3:	202ac0        	sub	a2, a10, a2
+   2efc6:	c02000        	memw
+   2efc9:	8813      	l32i.n	a8, a3, 4
+   2efcb:	908820        	or	a8, a8, a9
+   2efce:	c02000        	memw
+   2efd1:	0caa      	movi.n	a10, 10
+   2efd3:	8913      	s32i.n	a8, a3, 4
+0002efd5: a55ad3   call8        . -0x2ca54 ; Capstone ; target=0x2580
+   2efd8:	0c7a      	movi.n	a10, 7
+   2efda:	0c1b      	movi.n	a11, 1
+   2efdc:	0c1c      	movi.n	a12, 1
+0002efde: 654108   call8        . +0x8418 ; Capstone ; target=0x373f4
+   2efe1:	0caa      	movi.n	a10, 10
+0002efe3: 2549d3   call8        . -0x2cb6c ; Capstone ; target=0x2474
+0002efe6: 1df0     retw.n        ; Capstone

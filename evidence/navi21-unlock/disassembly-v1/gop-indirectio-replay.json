@@ -1,0 +1,69 @@
+{
+  "scope": "XL x64 original dispatcher instructions in Unicorn, synthetic RAM, no hardware I/O; both stock table payloads tested.",
+  "image_sha256": "a9966b48d5bdfc35387eb38572b4babbf4537da8d2b2ae4796076af9ed44f54a",
+  "stock_cases": [
+    {
+      "rom_payload": "baseline",
+      "selection": 0,
+      "steps": 14,
+      "writer_reached": false,
+      "return_value": 0
+    },
+    {
+      "rom_payload": "baseline",
+      "selection": 1,
+      "steps": 14,
+      "writer_reached": false,
+      "return_value": 0
+    },
+    {
+      "rom_payload": "baseline",
+      "selection": 128,
+      "steps": 14,
+      "writer_reached": false,
+      "return_value": 0
+    },
+    {
+      "rom_payload": "baseline",
+      "selection": 255,
+      "steps": 14,
+      "writer_reached": false,
+      "return_value": 0
+    },
+    {
+      "rom_payload": "candidate",
+      "selection": 0,
+      "steps": 14,
+      "writer_reached": false,
+      "return_value": 0
+    },
+    {
+      "rom_payload": "candidate",
+      "selection": 1,
+      "steps": 14,
+      "writer_reached": false,
+      "return_value": 0
+    },
+    {
+      "rom_payload": "candidate",
+      "selection": 128,
+      "steps": 14,
+      "writer_reached": false,
+      "return_value": 0
+    },
+    {
+      "rom_payload": "candidate",
+      "selection": 255,
+      "steps": 14,
+      "writer_reached": false,
+      "return_value": 0
+    }
+  ],
+  "synthetic_control": {
+    "selection": 128,
+    "steps": 29,
+    "writer_reached": true,
+    "return_value": null
+  },
+  "passed": true
+}

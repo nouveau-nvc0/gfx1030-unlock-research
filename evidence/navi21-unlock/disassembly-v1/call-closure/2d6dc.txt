@@ -1,0 +1,22 @@
+
+/tmp/tmpqs7_hyi4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002d6dc <.data+0x2d6dc>:
+0002d6dc: 364100   entry        a1, 0x20 ; Capstone
+0002d6df: 251800   call8        . +0x184 ; Capstone ; target=0x2d860
+   2d6e2:	b1b896        	l32r	a11, 0x131c4 (0x100000)
+   2d6e5:	c0a201        	slli	a10, a2, 20
+   2d6e8:	91d295        	l32r	a9, 0x12e30 (0x1259e00)
+   2d6eb:	b0aa10        	and	a10, a10, a11
+   2d6ee:	b17899        	l32r	a11, 0x13cd0 (0xffefffff)
+   2d6f1:	c02000        	memw
+   2d6f4:	822987        	l32i	a8, a9, 0x21c
+   2d6f7:	b08810        	and	a8, a8, a11
+   2d6fa:	a08820        	or	a8, a8, a10
+   2d6fd:	c02000        	memw
+   2d700:	826987        	s32i	a8, a9, 0x21c
+0002d703: 1df0     retw.n        ; Capstone
+   2d705:	000000        	ill

@@ -1,0 +1,13 @@
+
+/tmp/tmpm_zs_0ie/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000a480 <.data+0xa480>:
+0000a480: 368100   entry        a1, 0x40 ; Capstone
+    a483:	81cdcc        	l32r	a8, 0xffffd7b8 (0x5fff06e8) ; inferred DRAM map 0x5ffec000
+    a486:	3df0      	nop.n
+0000a488: e00800   callx8       a8 ; Capstone
+0000a48b: 1df0     retw.n        ; Capstone
+	...

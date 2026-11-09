@@ -1,0 +1,15 @@
+
+/tmp/tmparxtizxk/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00009fb3 <.data+0x9fb3>:
+    9fb3:	20e613        	wsr.ps	a2
+    9fb6:	0c02      	movi.n	a2, 0
+    9fb8:	48a5      	l32i.n	a4, a5, 40
+    9fba:	102000        	rsync
+    9fbd:	30b113        	wsr.epc1	a3
+    9fc0:	3895      	l32i.n	a3, a5, 36
+    9fc2:	58b5      	l32i.n	a5, a5, 44
+    9fc4:	003000        	rfe

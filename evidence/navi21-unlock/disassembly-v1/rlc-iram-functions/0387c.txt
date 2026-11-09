@@ -1,0 +1,52 @@
+
+/tmp/tmp69k20xhg/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000387c <.data+0x387c>:
+0000387c: 366100   entry        a1, 0x30 ; Capstone
+    387f:	c184e6        	l32r	a12, 0xffffd290 (0x5ffee44c) ; inferred DRAM map 0x5ffec000
+    3882:	820c03        	l8ui	a8, a12, 3
+    3885:	161800        	beqz	a8, 0x388a
+00003888: 1df0     retw.n        ; Capstone
+    388a:	0c03      	movi.n	a3, 0
+    388c:	0c14      	movi.n	a4, 1
+    388e:	424c03        	s8i	a4, a12, 3
+    3891:	324c02        	s8i	a3, a12, 2
+    3894:	ad04      	mov.n	a10, a4
+    3896:	30b320        	or	a11, a3, a3
+00003899: e5a8ff   call8        . -0x570 ; Capstone ; target=0x3328
+    389c:	a09074        	extui	a9, a10, 0, 8
+    389f:	fca9      	bnez.n	a9, 0x38dd
+    38a1:	2157e6        	l32r	a2, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    38a4:	2c4c      	movi.n	a12, 36
+    38a6:	3262e8        	s32i	a3, a2, 0x3a0
+    38a9:	a222e9        	l32i	a10, a2, 0x3a4
+    38ac:	c78af9        	bany	a10, a12, 0x38a9
+    38af:	0c1a      	movi.n	a10, 1
+000038b1: e5c6ff   call8        . -0x390 ; Capstone ; target=0x3520
+    38b4:	d222ec        	l32i	a13, a2, 0x3b0
+    38b7:	40dd20        	or	a13, a13, a4
+    38ba:	d262ec        	s32i	a13, a2, 0x3b0
+    38bd:	c222ed        	l32i	a12, a2, 0x3b4
+    38c0:	b178e6        	l32r	a11, 0xffffd2a0 (0x6803ae00) ; inferred DRAM map 0x5ffec000
+    38c3:	40cc20        	or	a12, a12, a4
+    38c6:	c262ed        	s32i	a12, a2, 0x3b4
+    38c9:	b22bc3        	l32i	a11, a11, 0x30c
+    38cc:	577bb8        	bbci	a11, 21, 0x3888
+    38cf:	a16be6        	l32r	a10, 0xffffd27c (0x5ffed99c) ; inferred DRAM map 0x5ffec000
+    38d2:	b18de6        	l32r	a11, 0xffffd308 (0x5fff3cbc) ; inferred DRAM map 0x5ffec000
+    38d5:	a83a      	l32i.n	a10, a10, 12
+000038d7: 651902   call8        . +0x2198 ; Capstone ; target=0x5a6c
+000038da: 1df0     retw.n        ; Capstone
+    38dc:	0025bc        	excw
+    38df:	ff          	.byte 0xff
+    38e0:	0c0a      	movi.n	a10, 0
+    38e2:	b2a000        	movi	a11, 0
+000038e5: 25a4ff   call8        . -0x5bc ; Capstone ; target=0x3328
+000038e8: 1df0     retw.n        ; Capstone
+	...
+
+; Alternate branch-target decode
+000038dd: 25bcff   call8        . -0x43c ; Capstone ; target=0x34a0

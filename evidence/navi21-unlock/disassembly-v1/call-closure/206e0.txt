@@ -1,0 +1,47 @@
+
+/tmp/tmp_tgxg76q/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000206e0 <.data+0x206e0>:
+000206e0: 364100   entry        a1, 0x20 ; Capstone
+   206e3:	3c58      	movi.n	a8, 53
+   206e5:	273855        	bltu	a8, a2, 0x2073e
+   206e8:	b154cb        	l32r	a11, 0x13438 (0x323fe00)
+   206eb:	c0a211        	slli	a10, a2, 4
+   206ee:	104a40        	ssai	26
+   206f1:	409381        	src	a9, a3, a4
+   206f4:	baaa      	add.n	a10, a10, a11
+   206f6:	c02000        	memw
+   206f9:	926a7c        	s32i	a9, a10, 0x1f0
+   206fc:	8150cb        	l32r	a8, 0x1343c (0x3240200)
+   206ff:	7cf9      	movi.n	a9, -1
+   20701:	8082a0        	addx4	a8, a2, a8
+   20704:	c02000        	memw
+   20707:	926857        	s32i	a9, a8, 0x15c
+   2070a:	f14dcb        	l32r	a15, 0x13440 (0xc0800003)
+   2070d:	c02000        	memw
+   20710:	f2688d        	s32i	a15, a8, 0x234
+   20713:	1c2e      	movi.n	a14, 18
+   20715:	50d004        	extui	a13, a5, 0, 1
+   20718:	e0dd20        	or	a13, a13, a14
+   2071b:	c02000        	memw
+   2071e:	d26a7d        	s32i	a13, a10, 0x1f4
+   20721:	c148cb        	l32r	a12, 0x13444 (0xf80000)
+   20724:	609024        	extui	a9, a6, 0, 3
+   20727:	c0c920        	or	a12, a9, a12
+   2072a:	c02000        	memw
+   2072d:	c26a7e        	s32i	a12, a10, 0x1f8
+   20730:	b146cb        	l32r	a11, 0x13448 (0x3e00000)
+   20733:	b09920        	or	a9, a9, a11
+   20736:	c02000        	memw
+   20739:	926a7f        	s32i	a9, a10, 0x1fc
+0002073c: 1df0     retw.n        ; Capstone
+   2073e:	cd02      	mov.n	a12, a2
+   20740:	0c4b      	movi.n	a11, 4
+   20742:	d1e0c9        	l32r	a13, 0x12ec4 (0x300fe00)
+   20745:	0c5a      	movi.n	a10, 5
+   20747:	c02000        	memw
+   2074a:	d22d8a        	l32i	a13, a13, 0x228
+0002074d: e5ebe1   call8        . -0x1e140 ; Capstone ; target=0x260c

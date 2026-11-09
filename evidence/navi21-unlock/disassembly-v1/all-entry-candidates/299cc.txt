@@ -1,0 +1,27 @@
+
+/tmp/tmpy92xilm7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000299cc <.data+0x299cc>:
+000299cc: 364100   entry        a1, 0x20 ; Capstone
+   299cf:	0c3a      	movi.n	a10, 3
+000299d1: e5d80b   call8        . +0xbd90 ; Capstone ; target=0x35760
+   299d4:	cc7a      	bnez.n	a10, 0x299df
+   299d6:	0cca      	movi.n	a10, 12
+000299d8: 25820b   call8        . +0xb824 ; Capstone ; target=0x351fc
+   299db:	2d0a      	mov.n	a2, a10
+000299dd: 1df0     retw.n        ; Capstone
+   299df:	a12ba8        	l32r	a10, 0x13a8c (0xe16c)
+   299e2:	b11ea5        	l32r	a11, 0x12e5c (0x69a0)
+   299e5:	820a7d        	l8ui	a8, a10, 125
+   299e8:	b20b33        	l8ui	a11, a11, 51
+   299eb:	922a4c        	l32i	a9, a10, 0x130
+   299ee:	8c68      	beqz.n	a8, 0x299f8
+   299f0:	222a4d        	l32i	a2, a10, 0x134
+   299f3:	b02983        	moveqz	a2, a9, a11
+000299f6: 1df0     retw.n        ; Capstone
+   299f8:	222a4b        	l32i	a2, a10, 0x12c
+000299fb: 1df0     retw.n        ; Capstone
+   299fd:	000000        	ill

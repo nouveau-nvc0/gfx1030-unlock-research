@@ -1,0 +1,42 @@
+
+/tmp/tmpvhs9r4pm/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00028be8 <.data+0x28be8>:
+00028be8: 366100   entry        a1, 0x30 ; Capstone
+   28beb:	1c1a      	movi.n	a10, 17
+00028bed: 5004fa   wfr          f0, a4 ; Capstone
+00028bf0: 034100   ssi          f0, a1, 0 ; Capstone
+00028bf3: e5b60c   call8        . +0xcb70 ; Capstone ; target=0x35760
+   28bf6:	9c7a      	beqz.n	a10, 0x28c11
+00028bf8: 25feff   call8        . -0x1c ; Capstone ; target=0x28bdc
+   28bfb:	9c2a      	beqz.n	a10, 0x28c11
+   28bfd:	dc02      	bnez.n	a2, 0x28c11
+   28bff:	418aa9        	l32r	a4, 0x13228 (0x11e78)
+   28c02:	4b54      	addi.n	a5, a4, 4
+   28c04:	a20480        	l8ui	a10, a4, 128
+   28c07:	0c1b      	movi.n	a11, 1
+00028c09: a5b700   call8        . +0xb7c ; Capstone ; target=0x29784
+   28c0c:	1b44      	addi.n	a4, a4, 1
+   28c0e:	5794f2        	bne	a4, a5, 0x28c04
+   28c11:	0c3a      	movi.n	a10, 3
+   28c13:	0c18      	movi.n	a8, 1
+   28c15:	0c0b      	movi.n	a11, 0
+   28c17:	20b883        	moveqz	a11, a8, a2
+00028c1a: a546ff   call8        . -0xb94 ; Capstone ; target=0x28084
+   28c1d:	0c1a      	movi.n	a10, 1
+   28c1f:	0c1b      	movi.n	a11, 1
+   28c21:	0c1c      	movi.n	a12, 1
+00028c23: 257d0e   call8        . +0xe7d4 ; Capstone ; target=0x373f4
+   28c26:	27b312        	bgeu	a3, a2, 0x28c3c
+   28c29:	0c3a      	movi.n	a10, 3
+00028c2b: 255d0c   call8        . +0xc5d4 ; Capstone ; target=0x351fc
+   28c2e:	0c0c      	movi.n	a12, 0
+00028c30: 130100   lsi          f1, a1, 0 ; Capstone
+00028c33: 40b1fa   rfr          a11, f1 ; Capstone
+00028c36: 65ce00   call8        . +0xce8 ; Capstone ; target=0x2991c
+00028c39: 25c700   call8        . +0xc74 ; Capstone ; target=0x298ac
+00028c3c: 1df0     retw.n        ; Capstone
+	...

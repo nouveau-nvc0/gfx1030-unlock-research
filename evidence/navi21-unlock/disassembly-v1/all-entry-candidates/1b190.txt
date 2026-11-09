@@ -1,0 +1,12 @@
+
+/tmp/tmpi0242lch/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001b190 <.data+0x1b190>:
+0001b190: 364100   entry        a1, 0x20 ; Capstone
+   1b193:	2161df        	l32r	a2, 0x12f18 (0x10ff0)
+   1b196:	22027e        	l8ui	a2, a2, 126
+0001b199: 1df0     retw.n        ; Capstone
+	...

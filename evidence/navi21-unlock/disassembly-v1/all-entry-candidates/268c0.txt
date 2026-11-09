@@ -1,0 +1,29 @@
+
+/tmp/tmp9fd28j6v/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000268c0 <.data+0x268c0>:
+000268c0: 364100   entry        a1, 0x20 ; Capstone
+000268c3: e532ff   call8        . -0xcd0 ; Capstone ; target=0x25bf0
+   268c6:	acaa      	beqz.n	a10, 0x268f4
+   268c8:	d158b1        	l32r	a13, 0x12e28 (0x9c00)
+   268cb:	0c09      	movi.n	a9, 0
+   268cd:	c1c9b1        	l32r	a12, 0x12ff4 (0x768c)
+   268d0:	bd0d      	mov.n	a11, a13
+000268d2: 769a0b   loopnez      a10, . +0xf ; Capstone
+   268d5:	820bec        	l8ui	a8, a11, 236
+   268d8:	1bbb      	addi.n	a11, a11, 1
+   268da:	ca88      	add.n	a8, a8, a12
+   268dc:	924878        	s8i	a9, a8, 120
+   268df:	1b99      	addi.n	a9, a9, 1
+   268e1:	a20dec        	l8ui	a10, a13, 236
+   268e4:	b14ab4        	l32r	a11, 0x13a0c (0x7680)
+   268e7:	ca9a      	add.n	a9, a10, a12
+   268e9:	a24b80        	s8i	a10, a11, 128
+   268ec:	0c1a      	movi.n	a10, 1
+   268ee:	a24980        	s8i	a10, a9, 128
+000268f1: a54012   call8        . +0x1240c ; Capstone ; target=0x38cfc
+000268f4: 1df0     retw.n        ; Capstone
+	...

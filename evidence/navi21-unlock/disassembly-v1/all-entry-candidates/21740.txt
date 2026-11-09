@@ -1,0 +1,26 @@
+
+/tmp/tmp8fg40gys/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00021740 <.data+0x21740>:
+00021740: 364100   entry        a1, 0x20 ; Capstone
+   21743:	317ec7        	l32r	a3, 0x1353c (0x49742400)
+   21746:	0c15      	movi.n	a5, 1
+   21748:	41fbc6        	l32r	a4, 0x13334 (0x125a200)
+0002174b: 5003fa   wfr          f0, a3 ; Capstone
+   2174e:	8cf2      	beqz.n	a2, 0x21761
+   21750:	c02000        	memw
+   21753:	526449        	s32i	a5, a4, 0x124
+00021756: 0080ba   ceil.s       a8, f0, 0 ; Capstone
+   21759:	c02000        	memw
+   2175c:	82644a        	s32i	a8, a4, 0x128
+0002175f: 1df0     retw.n        ; Capstone
+   21761:	c02000        	memw
+   21764:	526443        	s32i	a5, a4, 0x10c
+00021767: 0090ba   ceil.s       a9, f0, 0 ; Capstone
+   2176a:	c02000        	memw
+   2176d:	926444        	s32i	a9, a4, 0x110
+00021770: 1df0     retw.n        ; Capstone
+	...

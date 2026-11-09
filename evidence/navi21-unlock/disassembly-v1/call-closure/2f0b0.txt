@@ -1,0 +1,16 @@
+
+/tmp/tmpl24760b7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002f0b0 <.data+0x2f0b0>:
+0002f0b0: 364100   entry        a1, 0x20 ; Capstone
+   2f0b3:	41c293        	l32r	a4, 0x13fbc (0xb6f0)
+   2f0b6:	0c03      	movi.n	a3, 0
+   2f0b8:	0c18      	movi.n	a8, 1
+   2f0ba:	824480        	s8i	a8, a4, 128
+   2f0bd:	326421        	s32i	a3, a4, 132
+   2f0c0:	225441        	s16i	a2, a4, 130
+0002f0c3: 1df0     retw.n        ; Capstone
+   2f0c5:	000000        	ill

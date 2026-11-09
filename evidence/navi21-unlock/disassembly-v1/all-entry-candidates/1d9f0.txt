@@ -1,0 +1,16 @@
+
+/tmp/tmp_5of7sz2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001d9f0 <.data+0x1d9f0>:
+0001d9f0: 364100   entry        a1, 0x20 ; Capstone
+0001d9f3: 3000fa   const.s      f0, 0 ; Capstone
+0001d9f6: 40a0fa   rfr          a10, f0 ; Capstone
+   1d9f9:	0c2c      	movi.n	a12, 2
+   1d9fb:	bd0a      	mov.n	a11, a10
+0001d9fd: e5f10b   call8        . +0xbf20 ; Capstone ; target=0x2991c
+0001da00: a5ea0b   call8        . +0xbeac ; Capstone ; target=0x298ac
+0001da03: 1df0     retw.n        ; Capstone
+   1da05:	000000        	ill

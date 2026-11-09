@@ -1,0 +1,50 @@
+
+/tmp/tmpmp5fk7g7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0003158c <.data+0x3158c>:
+0003158c: 364100   entry        a1, 0x20 ; Capstone
+   3158f:	41098b        	l32r	a4, 0x141b4 (0xb1a0)
+   31592:	306200        	rsil	a3, 2
+   31595:	a224c9        	l32i	a10, a4, 0x324
+   31598:	16ea05        	beqz	a10, 0x315fa
+0003159b: 000ada   ufloat.s     f0, a10, 0 ; Capstone
+   3159e:	21068b        	l32r	a2, 0x141b8 (0xb2b8)
+000315a1: 40a0fa   rfr          a10, f0 ; Capstone
+000315a4: 657f07   call8        . +0x77f8 ; Capstone ; target=0x38d9c
+   315a7:	9d02      	mov.n	a9, a2
+000315a9: 3000fa   const.s      f0, 0 ; Capstone
+   315ac:	82a00f        	movi	a8, 15
+000315af: 501afa   wfr          f1, a10 ; Capstone
+   315b2:	a2a008        	movi	a10, 8
+000315b5: 76a80d   loopgtz      a8, . +0x11 ; Capstone
+000315b8: 330947   lsi          f3, a9, 0x11c ; Capstone
+000315bb: 10232a   mul.s        f2, f3, f1 ; Capstone
+   315be:	4b99      	addi.n	a9, a9, 4
+000315c0: 034946   ssi          f0, a9, 0x118 ; Capstone
+000315c3: 234955   ssi          f2, a9, 0x154 ; Capstone
+   315c6:	9d02      	mov.n	a9, a2
+   315c8:	0c2b      	movi.n	a11, 2
+000315ca: 76aa0d   loopgtz      a10, . +0x11 ; Capstone
+000315cd: 53096d   lsi          f5, a9, 0x1b4 ; Capstone
+000315d0: 10452a   mul.s        f4, f5, f1 ; Capstone
+   315d3:	4b99      	addi.n	a9, a9, 4
+000315d5: 03496c   ssi          f0, a9, 0x1b0 ; Capstone
+000315d8: 434974   ssi          f4, a9, 0x1d0 ; Capstone
+   315db:	9d02      	mov.n	a9, a2
+000315dd: 76ab0d   loopgtz      a11, . +0x11 ; Capstone
+000315e0: 73097f   lsi          f7, a9, 0x1fc ; Capstone
+000315e3: 10672a   mul.s        f6, f7, f1 ; Capstone
+   315e6:	4b99      	addi.n	a9, a9, 4
+000315e8: 03497e   ssi          f0, a9, 0x1f8 ; Capstone
+000315eb: 634980   ssi          f6, a9, 0x200 ; Capstone
+000315ee: 8304c8   lsi          f8, a4, 0x320 ; Capstone
+000315f1: 9304c7   lsi          f9, a4, 0x31c ; Capstone
+000315f4: 93443d   ssi          f9, a4, 0xf4 ; Capstone
+000315f7: 834436   ssi          f8, a4, 0xd8 ; Capstone
+   315fa:	0c0c      	movi.n	a12, 0
+   315fc:	c264c9        	s32i	a12, a4, 0x324
+   315ff:	30e613        	wsr.ps	a3
+00031602: 1df0     retw.n        ; Capstone

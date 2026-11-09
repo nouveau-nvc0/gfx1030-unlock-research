@@ -1,0 +1,35 @@
+RLC interrupt dispatch expansion (offline)
+
+Separate roots9874 and9950 expose193 byte-checked instructions which the old
+9830 function-root scan did not traverse. The old236-window totals are not
+replaced. New CFG reaches79/114 instructions and inventories CALLX12 at98e5
+and CALLX4 at99fa. There are no ordinary unresolved edges within these slices,
+but special-register instructions, NSAU, ROTW and RFI are not fully modeled;
+this is not an execution proof or complete store-address proof.
+
+Both dispatchers load target from5ffed720+8*NSAU(selected interrupt bit).
+For bit b in0..7 this is5ffed818-8*b, exactly the registration9830 slot.
+All eight initial cells target5fffa360 (BREAK1,15 default handler), with
+argument equal to bit number. Seven known direct registrations set bits1/2/
+5/6/7 to77cc/7c3c/7c78/7c98/7cb8;7c3c registers7cd8 forbit3, and7cd8
+restores its default. No known registration selects6944 or74c4.
+
+Second dispatcher masks pending interrupts with84, restricting its table
+lookups tobit2 (slotd808) andbit7 (slotd7e0). First dispatcher uses hardware
+INTERRUPT and INTENABLE, then RAM maskd7d8; do not extend the eight-slot
+conclusion to all32 bit positions without establishing hardware/configuration
+constraints. Slots forbits8..31 overlap unrelated initial data/literals.
+
+Registered7c78/7c98/7cb8 update timer compare registers througha3c4/a3a0;
+their shown bodies do not register custom snapshot slots. Existing77cc route
+to CC restore remains the concrete path already identified.
+
+Known deferred-helper calls were also rechecked: only five direct calls to
+5a6c, none to the other seven setters in the existing scan. Fixed-address
+stores intoe57c..e59b are the eight setter and eight clearing helpers. This
+does not exclude computed stores or callers outside scanned reachable code.
+
+Next unresolved work includes non-ENTRY/vector coverage beyond these slices,
+interrupt-mask provenance and computed/engine updates to RAM callback tables.
+Reproducer:scripts/navi21-rlc-interrupt-dispatch-audit.py;
+receipts:rlc-interrupt-dispatch-audit.json andrlc-interrupt-entry-cfg.json.

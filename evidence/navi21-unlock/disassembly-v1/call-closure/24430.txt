@@ -1,0 +1,58 @@
+
+/tmp/tmpa6zqyi9k/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00024430 <.data+0x24430>:
+00024430: 364100   entry        a1, 0x20 ; Capstone
+   24433:	0c8a      	movi.n	a10, 8
+00024435: a514de   call8        . -0x21eb4 ; Capstone ; target=0x2580
+   24438:	1cba      	movi.n	a10, 27
+0002443a: 653211   call8        . +0x11328 ; Capstone ; target=0x35760
+   2443d:	bcfa      	beqz.n	a10, 0x24480
+   2443f:	21d6bc        	l32r	a2, 0x13798 (0xa424)
+   24442:	a202fa        	l8ui	a10, a2, 250
+00024445: 252400   call8        . +0x244 ; Capstone ; target=0x24688
+   24448:	31d2bc        	l32r	a3, 0x13790 (0x15734)
+   2444b:	a09074        	extui	a9, a10, 0, 8
+   2444e:	8202fb        	l8ui	a8, a2, 251
+   24451:	a2037f        	l8ui	a10, a3, 127
+   24454:	97182f        	beq	a8, a9, 0x24487
+   24457:	661a25        	bnei	a10, 1, 0x24480
+   2445a:	a20200        	l8ui	a10, a2, 0
+0002445d: 3001fa   const.s      f0, 1 ; Capstone
+   24460:	661a43        	bnei	a10, 1, 0x244a7
+00024463: 40d0fa   rfr          a13, f0 ; Capstone
+   24466:	0c0a      	movi.n	a10, 0
+   24468:	1c9b      	movi.n	a11, 25
+   2446a:	0c2c      	movi.n	a12, 2
+0002446c: 257900   call8        . +0x794 ; Capstone ; target=0x24c00
+   2446f:	060f00        	j	0x244af
+00024472: 40b0fa   rfr          a11, f0 ; Capstone
+   24475:	1c9a      	movi.n	a10, 25
+00024477: 250400   call8        . +0x44 ; Capstone ; target=0x244b8
+   2447a:	a2a0ff        	movi	a10, 255
+0002447d: 25b412   call8        . +0x12b44 ; Capstone ; target=0x36fc0
+   24480:	0c8a      	movi.n	a10, 8
+00024482: 25ffdd   call8        . -0x2200c ; Capstone ; target=0x2474
+00024485: 1df0     retw.n        ; Capstone
+   24487:	565aff        	bnez	a10, 0x24480
+0002448a: 3000fa   const.s      f0, 0 ; Capstone
+   2448d:	b20200        	l8ui	a11, a2, 0
+   24490:	0c1c      	movi.n	a12, 1
+   24492:	c2437f        	s8i	a12, a3, 127
+   24495:	661bd9        	bnei	a11, 1, 0x24472
+00024498: 40d0fa   rfr          a13, f0 ; Capstone
+   2449b:	0c0a      	movi.n	a10, 0
+   2449d:	1c9b      	movi.n	a11, 25
+   2449f:	0c2c      	movi.n	a12, 2
+000244a1: e57500   call8        . +0x760 ; Capstone ; target=0x24c00
+   244a4:	86f4ff        	j	0x2447a
+000244a7: 40b0fa   rfr          a11, f0 ; Capstone
+   244aa:	1c9a      	movi.n	a10, 25
+000244ac: a50000   call8        . +0xc ; Capstone ; target=0x244b8
+   244af:	0c0d      	movi.n	a13, 0
+   244b1:	d2437f        	s8i	a13, a3, 127
+   244b4:	06f2ff        	j	0x24480
+	...

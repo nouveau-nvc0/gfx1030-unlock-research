@@ -1,0 +1,29 @@
+
+/tmp/tmp72hmyvob/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000375f8 <.data+0x375f8>:
+000375f8: 364100   entry        a1, 0x20 ; Capstone
+   375fb:	208875        	extui	a8, a2, 24, 8
+   375fe:	9c68      	beqz.n	a8, 0x37618
+   37600:	20a075        	extui	a10, a2, 16, 8
+   37603:	1ce9      	movi.n	a9, 30
+   37605:	a7390f        	bltu	a9, a10, 0x37618
+   37608:	ad02      	mov.n	a10, a2
+0003760a: 65abca   call8        . -0x35548 ; Capstone ; target=0x20c0
+   3760d:	bd0a      	mov.n	a11, a10
+   3760f:	a1e173        	l32r	a10, 0x14594 (0x9e00)
+00037612: 651900   call8        . +0x198 ; Capstone ; target=0x377a8
+   37615:	060300        	j	0x37625
+   37618:	ad02      	mov.n	a10, a2
+0003761a: 65aaca   call8        . -0x35558 ; Capstone ; target=0x20c0
+   3761d:	bd0a      	mov.n	a11, a10
+   3761f:	a1cc6f        	l32r	a10, 0x13550 (0x9df0)
+00037622: 651800   call8        . +0x188 ; Capstone ; target=0x377a8
+   37625:	ad02      	mov.n	a10, a2
+   37627:	0c1b      	movi.n	a11, 1
+00037629: 25a7ca   call8        . -0x3558c ; Capstone ; target=0x209c
+0003762c: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,65 @@
+
+/tmp/tmpe8um9r0y/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001a60c <.data+0x1a60c>:
+0001a60c: 364100   entry        a1, 0x20 ; Capstone
+   1a60f:	b12ee2        	l32r	a11, 0x12ec8 (0x7684)
+   1a612:	ad02      	mov.n	a10, a2
+   1a614:	712ce2        	l32r	a7, 0x12ec4 (0x300fe00)
+   1a617:	22a07f        	movi	a2, 127
+   1a61a:	4b8b      	addi.n	a8, a11, 4
+   1a61c:	620b7c        	l8ui	a6, a11, 124
+   1a61f:	baba      	add.n	a11, a10, a11
+   1a621:	520b80        	l8ui	a5, a11, 128
+   1a624:	8a66      	add.n	a6, a6, a8
+   1a626:	620680        	l8ui	a6, a6, 128
+   1a629:	b2db01        	addmi	a11, a11, 0x100
+   1a62c:	820b04        	l8ui	a8, a11, 4
+   1a62f:	606064        	extui	a6, a6, 0, 7
+   1a632:	c06611        	slli	a6, a6, 4
+   1a635:	ccd8      	bnez.n	a8, 0x1a646
+   1a637:	0c0c      	movi.n	a12, 0
+   1a639:	1c5b      	movi.n	a11, 21
+   1a63b:	1c0a      	movi.n	a10, 16
+   1a63d:	c02000        	memw
+   1a640:	d2278a        	l32i	a13, a7, 0x228
+0001a643: a5fce7   call8        . -0x18034 ; Capstone ; target=0x260c
+   1a646:	d121e2        	l32r	a13, 0x12ecc (0x7590)
+   1a649:	0c0c      	movi.n	a12, 0
+   1a64b:	324b00        	s8i	a3, a11, 0
+   1a64e:	d0daa0        	addx4	a13, a10, a13
+   1a651:	426d7f        	s32i	a4, a13, 0x1fc
+   1a654:	c24b04        	s8i	a12, a11, 4
+0001a657: a56801   call8        . +0x168c ; Capstone ; target=0x1bce0
+   1a65a:	bc0a      	beqz.n	a10, 0x1a68e
+   1a65c:	ccf5      	bnez.n	a5, 0x1a66f
+   1a65e:	ad06      	mov.n	a10, a6
+   1a660:	c0c411        	slli	a12, a4, 4
+   1a663:	30b034        	extui	a11, a3, 0, 4
+   1a666:	c0bb20        	or	a11, a11, a12
+0001a669: 6544e7   call8        . -0x18bb8 ; Capstone ; target=0x1ab0
+   1a66c:	860600        	j	0x1a68a
+   1a66f:	27151f        	beq	a5, a2, 0x1a692
+   1a672:	c0e411        	slli	a14, a4, 4
+   1a675:	30d034        	extui	a13, a3, 0, 4
+   1a678:	f116e2        	l32r	a15, 0x12ed0 (0x1030000)
+   1a67b:	e0dd20        	or	a13, a13, a14
+   1a67e:	abe5      	addi.n	a14, a5, 10
+   1a680:	c0ee01        	slli	a14, a14, 20
+   1a683:	faee      	add.n	a14, a14, a15
+   1a685:	c02000        	memw
+   1a688:	d90e      	s32i.n	a13, a14, 0
+   1a68a:	0c22      	movi.n	a2, 2
+0001a68c: 1df0     retw.n        ; Capstone
+   1a68e:	0c32      	movi.n	a2, 3
+0001a690: 1df0     retw.n        ; Capstone
+   1a692:	0c0c      	movi.n	a12, 0
+   1a694:	1c2b      	movi.n	a11, 18
+   1a696:	1c0a      	movi.n	a10, 16
+   1a698:	c02000        	memw
+   1a69b:	d2278a        	l32i	a13, a7, 0x228
+0001a69e: e5f6e7   call8        . -0x18090 ; Capstone ; target=0x260c
+   1a6a1:	000000        	ill

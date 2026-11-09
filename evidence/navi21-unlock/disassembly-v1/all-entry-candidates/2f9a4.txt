@@ -1,0 +1,63 @@
+
+/tmp/tmp8mp_4uyz/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002f9a4 <.data+0x2f9a4>:
+0002f9a4: 366100   entry        a1, 0x30 ; Capstone
+   2f9a7:	c2a430        	movi	a12, 0x430
+   2f9aa:	d2a420        	movi	a13, 0x420
+   2f9ad:	d901      	s32i.n	a13, a1, 0
+   2f9af:	c911      	s32i.n	a12, a1, 4
+   2f9b1:	a19691        	l32r	a10, 0x1400c (0x1a7fe00)
+   2f9b4:	7cdb      	movi.n	a11, -3
+   2f9b6:	c02000        	memw
+   2f9b9:	922ac3        	l32i	a9, a10, 0x30c
+   2f9bc:	b09910        	and	a9, a9, a11
+   2f9bf:	c02000        	memw
+   2f9c2:	81c28f        	l32r	a8, 0x138cc (0x461c4000)
+   2f9c5:	926ac3        	s32i	a9, a10, 0x30c
+0002f9c8: 5008fa   wfr          f0, a8 ; Capstone
+0002f9cb: 00a0ba   ceil.s       a10, f0, 0 ; Capstone
+0002f9ce: 65d8d1   call8        . -0x2e278 ; Capstone ; target=0x1754
+   2f9d1:	ad01      	mov.n	a10, a1
+   2f9d3:	0c09      	movi.n	a9, 0
+   2f9d5:	0c0b      	movi.n	a11, 0
+   2f9d7:	f19291        	l32r	a15, 0x14020 (0x18ffe00)
+   2f9da:	e18a8d        	l32r	a14, 0x13004 (0xfffff)
+   2f9dd:	d1a68e        	l32r	a13, 0x13478 (0xfc3c)
+   2f9e0:	0c12      	movi.n	a2, 1
+   2f9e2:	0c28      	movi.n	a8, 2
+   2f9e4:	d20d7e        	l8ui	a13, a13, 126
+0002f9e7: 76a82b   loopgtz      a8, . +0x2f ; Capstone
+   2f9ea:	c80a      	l32i.n	a12, a10, 0
+   2f9ec:	e0cc10        	and	a12, a12, a14
+   2f9ef:	facc      	add.n	a12, a12, a15
+   2f9f1:	c02000        	memw
+   2f9f4:	c22c80        	l32i	a12, a12, 0x200
+   2f9f7:	661d02        	bnei	a13, 1, 0x2f9fd
+   2f9fa:	261918        	beqi	a9, 1, 0x2fa16
+   2f9fd:	4baa      	addi.n	a10, a10, 4
+   2f9ff:	076c08        	bbci	a12, 0, 0x2fa0b
+   2fa02:	17ec05        	bbsi	a12, 1, 0x2fa0b
+   2fa05:	c08534        	extui	a8, a12, 5, 4
+   2fa08:	267808        	beqi	a8, 7, 0x2fa14
+   2fa0b:	001940        	ssl	a9
+   2fa0e:	00c2a1        	sll	a12, a2
+   2fa11:	c0bb20        	or	a11, a11, a12
+   2fa14:	1b99      	addi.n	a9, a9, 1
+   2fa16:	e18191        	l32r	a14, 0x1401c (0x1a80200)
+   2fa19:	7cc8      	movi.n	a8, -4
+   2fa1b:	c02000        	memw
+   2fa1e:	f22ec9        	l32i	a15, a14, 0x324
+   2fa21:	80ff10        	and	a15, a15, a8
+   2fa24:	c02000        	memw
+   2fa27:	f26ec9        	s32i	a15, a14, 0x324
+   2fa2a:	c02000        	memw
+   2fa2d:	d22ec9        	l32i	a13, a14, 0x324
+   2fa30:	b0dd20        	or	a13, a13, a11
+   2fa33:	c02000        	memw
+   2fa36:	d26ec9        	s32i	a13, a14, 0x324
+0002fa39: 1df0     retw.n        ; Capstone
+	...

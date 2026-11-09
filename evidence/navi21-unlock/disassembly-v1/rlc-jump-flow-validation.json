@@ -1,0 +1,55 @@
+{
+  "scope": "Synthetic scanner fixture, no target execution",
+  "resolved": {
+    "listing": "/tmp/tmp174v7_e3/fixture.txt",
+    "reachable_in_window": 8,
+    "calls": [],
+    "hardware_loop_backedges": [],
+    "decoded_in_window": 10,
+    "unresolved_or_external_edges": [
+      [
+        "0x9",
+        "0x24"
+      ]
+    ],
+    "unknown_operations": [],
+    "stores": [
+      {
+        "pc": "0x12",
+        "operation": "s32i",
+        "address": "0x1004",
+        "address_candidates": [],
+        "source": "a3",
+        "source_constant": 7,
+        "base": "a2",
+        "offset": "4"
+      },
+      {
+        "pc": "0x18",
+        "operation": "s32i",
+        "address": "0x1008",
+        "address_candidates": [],
+        "source": "a3",
+        "source_constant": 7,
+        "base": "a2",
+        "offset": "8"
+      }
+    ]
+  },
+  "unresolved": {
+    "listing": "/tmp/tmp174v7_e3/fixture.txt",
+    "reachable_in_window": 4,
+    "calls": [],
+    "hardware_loop_backedges": [],
+    "decoded_in_window": 10,
+    "unresolved_or_external_edges": [
+      [
+        "0x9",
+        "indirect jump a8"
+      ]
+    ],
+    "unknown_operations": [],
+    "stores": []
+  },
+  "pass": true
+}

@@ -1,0 +1,12 @@
+
+/tmp/tmph17fyppb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000029a4 <.data+0x29a4>:
+000029a4: 364100   entry        a1, 0x20 ; Capstone
+    29a7:	2119ea        	l32r	a2, 0xffffd20c (0x5ffee264) ; inferred DRAM map 0x5ffec000
+    29aa:	222238        	l32i	a2, a2, 224
+000029ad: 1df0     retw.n        ; Capstone
+	...

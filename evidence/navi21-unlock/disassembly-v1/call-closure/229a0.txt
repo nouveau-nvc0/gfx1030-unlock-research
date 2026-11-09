@@ -1,0 +1,16 @@
+
+/tmp/tmpymbrm3y1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000229a0 <.data+0x229a0>:
+000229a0: 364100   entry        a1, 0x20 ; Capstone
+   229a3:	412ec3        	l32r	a4, 0x1365c (0xee1c)
+   229a6:	42247f        	l32i	a4, a4, 0x1fc
+   229a9:	0c13      	movi.n	a3, 1
+   229ab:	0c02      	movi.n	a2, 0
+   229ad:	42c4c1        	addi	a4, a4, -63
+   229b0:	402383        	moveqz	a2, a3, a4
+000229b3: 1df0     retw.n        ; Capstone
+   229b5:	000000        	ill

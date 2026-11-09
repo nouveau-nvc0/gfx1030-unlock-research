@@ -1,0 +1,18 @@
+
+/tmp/tmpgzz19ug8/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00002430 <.data+0x2430>:
+00002430: 364100   entry        a1, 0x20 ; Capstone
+    2433:	41d6f9        	l32r	a4, 0xb8c (0x31ffe00)
+    2436:	206200        	rsil	a2, 2
+    2439:	c02000        	memw
+    243c:	5224fc        	l32i	a5, a4, 0x3f0
+    243f:	c02000        	memw
+    2442:	4224fd        	l32i	a4, a4, 0x3f4
+    2445:	20e613        	wsr.ps	a2
+    2448:	004440        	ssai	4
+    244b:	502481        	src	a2, a4, a5
+0000244e: 1df0     retw.n        ; Capstone

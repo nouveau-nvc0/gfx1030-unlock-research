@@ -1,0 +1,19 @@
+
+/tmp/tmppiucw8m6/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00021700 <.data+0x21700>:
+00021700: 364100   entry        a1, 0x20 ; Capstone
+   21703:	710cc7        	l32r	a7, 0x13334 (0x125a200)
+   21706:	c02000        	memw
+   21709:	6cf3      	movi.n	a3, -17
+   2170b:	52274c        	l32i	a5, a7, 0x130
+   2170e:	7ce4      	movi.n	a4, -2
+   21710:	204393        	movnez	a4, a3, a2
+   21713:	408510        	and	a8, a5, a4
+   21716:	c02000        	memw
+   21719:	82674c        	s32i	a8, a7, 0x130
+0002171c: 1df0     retw.n        ; Capstone
+	...

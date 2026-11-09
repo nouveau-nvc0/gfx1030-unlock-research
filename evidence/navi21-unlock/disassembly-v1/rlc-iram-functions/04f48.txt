@@ -1,0 +1,17 @@
+
+/tmp/tmpyg_mj_6g/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00004f48 <.data+0x4f48>:
+00004f48: 364100   entry        a1, 0x20 ; Capstone
+    4f4b:	2131e1        	l32r	a2, 0xffffd410 (0x5ffed9b0) ; inferred DRAM map 0x5ffec000
+    4f4e:	8802      	l32i.n	a8, a2, 0
+    4f50:	8c58      	beqz.n	a8, 0x4f59
+    4f52:	2822      	l32i.n	a2, a2, 8
+00004f54: 1df0     retw.n        ; Capstone
+    4f56:	000000        	ill
+00004f59: 25d3ff   call8        . -0x2cc ; Capstone ; target=0x4c8c
+    4f5c:	2822      	l32i.n	a2, a2, 8
+00004f5e: 1df0     retw.n        ; Capstone

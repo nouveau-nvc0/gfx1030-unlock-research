@@ -1,0 +1,18 @@
+
+/tmp/tmpd229gios/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00030d8c <.data+0x30d8c>:
+00030d8c: 364100   entry        a1, 0x20 ; Capstone
+   30d8f:	21f28c        	l32r	a2, 0x14158 (0xb61c)
+   30d92:	32a002        	movi	a3, 2
+00030d95: 76a307   loopgtz      a3, . +0xb ; Capstone
+   30d98:	820280        	l8ui	a8, a2, 128
+   30d9b:	1b22      	addi.n	a2, a2, 1
+   30d9d:	663803        	bnei	a8, 3, 0x30da4
+   30da0:	0c12      	movi.n	a2, 1
+00030da2: 1df0     retw.n        ; Capstone
+   30da4:	0c02      	movi.n	a2, 0
+00030da6: 1df0     retw.n        ; Capstone

@@ -1,0 +1,31 @@
+
+/tmp/tmpsxkdgqfu/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001a7d0 <.data+0x1a7d0>:
+0001a7d0: 364100   entry        a1, 0x20 ; Capstone
+0001a7d3: e5410b   call8        . +0xb420 ; Capstone ; target=0x25bf0
+   1a7d6:	b62a2c        	bltui	a10, 2, 0x1a806
+   1a7d9:	c1c2e1        	l32r	a12, 0x12ee4 (0x1112c)
+   1a7dc:	0c02      	movi.n	a2, 0
+   1a7de:	0b8a      	addi.n	a8, a10, -1
+   1a7e0:	0c1a      	movi.n	a10, 1
+0001a7e2: 76981e   loopnez      a8, . +0x22 ; Capstone
+   1a7e5:	bd0a      	mov.n	a11, a10
+   1a7e7:	c0da11        	slli	a13, a10, 4
+   1a7ea:	c09211        	slli	a9, a2, 4
+   1a7ed:	9a9c      	add.n	a9, a12, a9
+   1a7ef:	dadc      	add.n	a13, a12, a13
+   1a7f1:	d20d7d        	l8ui	a13, a13, 125
+   1a7f4:	92097d        	l8ui	a9, a9, 125
+   1a7f7:	1baa      	addi.n	a10, a10, 1
+   1a7f9:	a0a074        	extui	a10, a10, 0, 8
+   1a7fc:	d73901        	bltu	a9, a13, 0x1a801
+   1a7ff:	bd02      	mov.n	a11, a2
+   1a801:	b02074        	extui	a2, a11, 0, 8
+0001a804: 1df0     retw.n        ; Capstone
+   1a806:	0c02      	movi.n	a2, 0
+0001a808: 1df0     retw.n        ; Capstone
+	...

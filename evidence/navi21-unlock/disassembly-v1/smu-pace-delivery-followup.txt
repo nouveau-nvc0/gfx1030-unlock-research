@@ -1,0 +1,45 @@
+PACE update delivery and command boundary — offline,2026-11-09
+
+Conditional callback-to-transfer chain is now explicit:
+36fc0's registered slot0 second phase ->2b1b4.
+2b1b4 calls2b0fc at2b1c9. If bytec8a9==1 and(bytecdf2!=0 or returned value!=0),
+2b1df calls2b0ac. That routine calls2b00c at2b0bb. If bytefcd8==1,2b00c calls
+2af90 at2b01d, then2af68(0) at2b022. Under2af90's own conditions it performs
+the previously reconstructed35word fixed-port transfer. Reaching the caller
+does not alone establish those conditions or hardware completion.
+
+Command construction and submission:
+2af68 sets RAMfc54 command to5 when argument==1, otherwise6; RAMfc58 argument0.
+It then calls2ba54. Given the sender's own state/branch conditions,2ba54 writes:
+  command at0123b2a4, parameter1 at0123b2ac, response at0123b01c.
+GC10.3 header independently names these RLC_SMU_COMMAND,RLC_SMU_ARGUMENT_1,
+SMU_RLC_RESPONSE (public byte3b2a4,3b2ac,3b01c). Thus the post-transfer call
+requestscommand6. Later in2b0ac,call2b0e8->2afec, conditional onfcd8==1,
+calls2af68(1), requestingcommand5. Avoid assigning enable/disable semantics
+without receiver evidence. Both command requests are conditional, and2ba54
+has further state/error paths; this is not a guaranteed runtime sequence.
+
+Important interface separation:
+The known RLC35word consumer1d10 is reached through83fc command32, whose
+command/parameter words are6803b664/6803b668. This is a different interface
+from the SMU sender's0123b2a4/0123b2ac even under known regional translation.
+RLC7d24 reads6803b2a4, subtracts16 and accepts only21 unsigned values16..36.
+Inputs5/6 go to its default response, not1d10. A numeric5/6->32 translation
+has not been located. The separate mainRLCG engine remains one possible
+intermediary, not an established translation. Do not draw a direct proved
+edge between2ba54's command5/6 and83fc's command32.
+
+What this resolves for the CC investigation:
+PACE input/update/transfer now has concrete software edges and bounded data
+layout, rather than only a matching data-port address. This path supplies a
+known coefficient/state block; its immediate copied destinations excludeCC
+saved arrays andgatee452. Remaining relevant obligations are the command
+interface bridge, later state effects, and alternate scratch/index producers.
+Neither callback discovery nor table import establishes a nonzero gate or
+changed CC-mask producer. No new hardware acceptance result exists.
+
+Reproduction: python3 scripts/navi21-smu-pace-delivery-audit.py
+Receipt smu-pace-delivery-audit.json verifies1334listing records,7direct edges,
+3header-based register coordinates and the unsigned7d24 range distinction.
+The range check validates arithmetic only, not the complete receiver engine.
+No hardware/service/boot/firmware changes were made.

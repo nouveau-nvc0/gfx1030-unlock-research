@@ -1,0 +1,51 @@
+
+/tmp/tmp9o46t5l8/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00033888 <.data+0x33888>:
+00033888: 364100   entry        a1, 0x20 ; Capstone
+   3388b:	a21200        	l16ui	a10, a2, 0
+   3388e:	81c982        	l32r	a8, 0x143b4 (0x9000784)
+   33891:	a04094        	extui	a4, a10, 0, 10
+   33894:	404411        	slli	a4, a4, 12
+   33897:	8a44      	add.n	a4, a4, a8
+00033899: e56b00   call8        . +0x6c0 ; Capstone ; target=0x33f58
+   3389c:	8cca      	beqz.n	a10, 0x338ac
+   3389e:	921201        	l16ui	a9, a2, 2
+   338a1:	324206        	s8i	a3, a2, 6
+   338a4:	820204        	l8ui	a8, a2, 4
+   338a7:	8c19      	beqz.n	a9, 0x338ac
+   338a9:	261801        	beqi	a8, 1, 0x338ae
+000338ac: 1df0     retw.n        ; Capstone
+   338ae:	d1b77e        	l32r	a13, 0x1338c (0xf7000000)
+   338b1:	c1b77e        	l32r	a12, 0x13390 (0xfffe00)
+   338b4:	b1d47d        	l32r	a11, 0x13004 (0xfffff)
+   338b7:	dad4      	add.n	a13, a4, a13
+   338b9:	d0d4b5        	extui	a13, a13, 20, 12
+   338bc:	b0b410        	and	a11, a4, a11
+   338bf:	c0dd01        	slli	a13, a13, 20
+   338c2:	dabb      	add.n	a11, a11, a13
+   338c4:	cabb      	add.n	a11, a11, a12
+   338c6:	c02000        	memw
+   338c9:	7c1d      	movi.n	a13, -15
+   338cb:	a22b80        	l32i	a10, a11, 0x200
+   338ce:	30e024        	extui	a14, a3, 0, 3
+   338d1:	f0ee11        	slli	a14, a14, 1
+   338d4:	d0aa10        	and	a10, a10, a13
+   338d7:	d1187e        	l32r	a13, 0x13138 (0xff0000ff)
+   338da:	80c911        	slli	a12, a9, 8
+   338dd:	e0aa20        	or	a10, a10, a14
+   338e0:	d0aa10        	and	a10, a10, a13
+   338e3:	c0aa20        	or	a10, a10, a12
+   338e6:	0c1c      	movi.n	a12, 1
+   338e8:	c0aa20        	or	a10, a10, a12
+   338eb:	c02000        	memw
+   338ee:	a26b80        	s32i	a10, a11, 0x200
+   338f1:	7cec      	movi.n	a12, -2
+   338f3:	c0aa10        	and	a10, a10, a12
+   338f6:	c02000        	memw
+   338f9:	a26b80        	s32i	a10, a11, 0x200
+000338fc: 1df0     retw.n        ; Capstone
+	...

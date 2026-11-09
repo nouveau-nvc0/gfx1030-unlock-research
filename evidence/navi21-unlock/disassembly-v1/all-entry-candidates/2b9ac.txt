@@ -1,0 +1,14 @@
+
+/tmp/tmpy532lpgw/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002b9ac <.data+0x2b9ac>:
+0002b9ac: 364100   entry        a1, 0x20 ; Capstone
+0002b9af: 5003fa   wfr          f0, a3 ; Capstone
+0002b9b2: 230200   lsi          f2, a2, 0 ; Capstone
+0002b9b5: 130201   lsi          f1, a2, 4 ; Capstone
+0002b9b8: 00124a   madd.s       f1, f2, f0 ; Capstone
+0002b9bb: 4021fa   rfr          a2, f1 ; Capstone
+0002b9be: 1df0     retw.n        ; Capstone

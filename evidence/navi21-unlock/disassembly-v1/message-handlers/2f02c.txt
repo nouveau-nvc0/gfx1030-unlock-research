@@ -1,0 +1,18 @@
+
+/tmp/tmpdq5_tkhz/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002f02c <.data+0x2f02c>:
+0002f02c: 364100   entry        a1, 0x20 ; Capstone
+   2f02f:	ad02      	mov.n	a10, a2
+0002f031: e508d3   call8        . -0x2cf70 ; Capstone ; target=0x20c0
+   2f034:	bd0a      	mov.n	a11, a10
+   2f036:	a1de93        	l32r	a10, 0x13fb0 (0xb9c8)
+0002f039: a57508   call8        . +0x875c ; Capstone ; target=0x37794
+   2f03c:	ad02      	mov.n	a10, a2
+   2f03e:	0c1b      	movi.n	a11, 1
+0002f040: a505d3   call8        . -0x2cfa4 ; Capstone ; target=0x209c
+0002f043: 1df0     retw.n        ; Capstone
+   2f045:	000000        	ill

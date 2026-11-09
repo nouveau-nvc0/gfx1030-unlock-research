@@ -1,0 +1,19 @@
+Gate candidate: local-copy bounds
+
+Nine loops from the width locator have fixed counts.2a7e/2b11 use source
+start=e41c-64,end=e41c,step8:8 iterations intoSP+8..47 inclusive.
+2ba2 uses basee3c8+20 tobase+84,step8:8 iterations,same stack range.
+2bd8 and2c21 copy136bytes (a4=136 at2b4a),17 iterations. Helpers474c/4744
+returne4ec/e464 respectively. Destinations[SP+4,SP+8c) and[SP+c,SP+94).
+
+Four loops2c7a/2c92/2caa/2cc0 each advance basee278 to e2e8-48=e2b8:
+64bytes,8 iterations each. a11 starts4 and increases2 periteration;
+subsequent destination=SP+4*a11. Result contiguous[SP+10,SP+110).
+All listed loops remain within allocated170hex frame. The counts/endpoints
+are constants, not fetched lengths. This removes unbounded local-copy
+length as a producer of gate/CC changes on these ordinary paths.
+
+Absolute stack placement/integrity remains a separate assumption; do not
+turn this local range result into a proof covering every stack access.
+General shifted-base stores, engine transfers and74c4 customslot invocation
+remain open. Evidence:rlc-local-copy-bounds.json; five source listings bytechecked.

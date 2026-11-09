@@ -1,0 +1,20 @@
+
+/tmp/tmp3jz_mkpb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00028b9c <.data+0x28b9c>:
+00028b9c: 364100   entry        a1, 0x20 ; Capstone
+   28b9f:	2187a9        	l32r	a2, 0x131bc (0x10140)
+   28ba2:	0c0c      	movi.n	a12, 0
+   28ba4:	c2427f        	s8i	a12, a2, 127
+   28ba7:	21e0a8        	l32r	a2, 0x12f28 (0xff8c)
+   28baa:	0c8b      	movi.n	a11, 8
+   28bac:	ad02      	mov.n	a10, a2
+00028bae: 25faff   call8        . -0x5c ; Capstone ; target=0x28b50
+   28bb1:	ad02      	mov.n	a10, a2
+   28bb3:	0c8b      	movi.n	a11, 8
+   28bb5:	0c0c      	movi.n	a12, 0
+00028bb7: a5fcff   call8        . -0x34 ; Capstone ; target=0x28b80
+00028bba: 1df0     retw.n        ; Capstone

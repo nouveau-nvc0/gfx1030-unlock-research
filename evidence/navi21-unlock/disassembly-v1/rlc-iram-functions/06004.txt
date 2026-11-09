@@ -1,0 +1,66 @@
+
+/tmp/tmpd0td59xs/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00006004 <.data+0x6004>:
+00006004: 364100   entry        a1, 0x20 ; Capstone
+    6007:	406f00        	rsil	a4, 15
+    600a:	9156dc        	l32r	a9, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    600d:	0c0b      	movi.n	a11, 0
+    600f:	a123dd        	l32r	a10, 0xffffd49c (0x60030200) ; inferred DRAM map 0x5ffec000
+    6012:	b26981        	s32i	a11, a9, 0x204
+    6015:	b26980        	s32i	a11, a9, 0x200
+    6018:	29da      	s32i.n	a2, a10, 52
+    601a:	b26981        	s32i	a11, a9, 0x204
+    601d:	40e613        	wsr.ps	a4
+    6020:	102000        	rsync
+    6023:	306f00        	rsil	a3, 15
+    6026:	8189dc        	l32r	a8, 0xffffd24c (0x100000) ; inferred DRAM map 0x5ffec000
+    6029:	826981        	s32i	a8, a9, 0x204
+    602c:	b26980        	s32i	a11, a9, 0x200
+    602f:	29da      	s32i.n	a2, a10, 52
+    6031:	b26981        	s32i	a11, a9, 0x204
+    6034:	30e613        	wsr.ps	a3
+    6037:	102000        	rsync
+    603a:	26326a        	beqi	a2, 3, 0x60a8
+    603d:	4171dc        	l32r	a4, 0xffffd204 (0x6803b200) ; inferred DRAM map 0x5ffec000
+    6040:	222424        	l32i	a2, a4, 144
+    6043:	161206        	beqz	a2, 0x60a8
+    6046:	e22423        	l32i	a14, a4, 140
+    6049:	c22422        	l32i	a12, a4, 136
+    604c:	506f00        	rsil	a5, 15
+    604f:	b26981        	s32i	a11, a9, 0x204
+    6052:	7cf3      	movi.n	a3, -1
+    6054:	b26980        	s32i	a11, a9, 0x200
+    6057:	39ea      	s32i.n	a3, a10, 56
+    6059:	b26981        	s32i	a11, a9, 0x204
+    605c:	50e613        	wsr.ps	a5
+    605f:	102000        	rsync
+    6062:	f06f00        	rsil	a15, 15
+    6065:	826981        	s32i	a8, a9, 0x204
+    6068:	b26980        	s32i	a11, a9, 0x200
+    606b:	39ea      	s32i.n	a3, a10, 56
+    606d:	b26981        	s32i	a11, a9, 0x204
+    6070:	f0e613        	wsr.ps	a15
+    6073:	102000        	rsync
+    6076:	d06f00        	rsil	a13, 15
+    6079:	61dfdc        	l32r	a6, 0xffffd3f8 (0x6000be00) ; inferred DRAM map 0x5ffec000
+    607c:	b26980        	s32i	a11, a9, 0x200
+    607f:	e266f1        	s32i	a14, a6, 0x3c4
+    6082:	d0e613        	wsr.ps	a13
+    6085:	102000        	rsync
+    6088:	706f00        	rsil	a7, 15
+    608b:	b26980        	s32i	a11, a9, 0x200
+    608e:	c266f0        	s32i	a12, a6, 0x3c0
+    6091:	70e613        	wsr.ps	a7
+    6094:	102000        	rsync
+    6097:	506f00        	rsil	a5, 15
+    609a:	b26980        	s32i	a11, a9, 0x200
+    609d:	2266f2        	s32i	a2, a6, 0x3c8
+    60a0:	50e613        	wsr.ps	a5
+    60a3:	102000        	rsync
+000060a6: 1df0     retw.n        ; Capstone
+000060a8: 1df0     retw.n        ; Capstone
+	...

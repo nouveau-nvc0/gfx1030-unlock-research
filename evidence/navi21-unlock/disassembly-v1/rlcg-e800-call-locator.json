@@ -1,0 +1,2980 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "calls": {
+    "0x2e7a": [
+      {
+        "pc": "0x2b4f",
+        "immediately_preceding_index_constant": 33,
+        "preceding_words": [
+          "c40b00f3",
+          "248c0003",
+          "98c002ac",
+          "c0080020",
+          "cc83ec07",
+          "d80300f4",
+          "d80300f5",
+          "d80300f6",
+          "d80300f7",
+          "d80300f8",
+          "d80300f9",
+          "c0080021"
+        ]
+      },
+      {
+        "pc": "0x2b53",
+        "immediately_preceding_index_constant": 35,
+        "preceding_words": [
+          "cc83ec07",
+          "d80300f4",
+          "d80300f5",
+          "d80300f6",
+          "d80300f7",
+          "d80300f8",
+          "d80300f9",
+          "c0080021",
+          "8c002e7a",
+          "28cc0400",
+          "8c002e85",
+          "c0080023"
+        ]
+      },
+      {
+        "pc": "0x2b57",
+        "immediately_preceding_index_constant": 37,
+        "preceding_words": [
+          "d80300f7",
+          "d80300f8",
+          "d80300f9",
+          "c0080021",
+          "8c002e7a",
+          "28cc0400",
+          "8c002e85",
+          "c0080023",
+          "8c002e7a",
+          "28cc0400",
+          "8c002e85",
+          "c0080025"
+        ]
+      },
+      {
+        "pc": "0x2b5b",
+        "immediately_preceding_index_constant": 39,
+        "preceding_words": [
+          "8c002e7a",
+          "28cc0400",
+          "8c002e85",
+          "c0080023",
+          "8c002e7a",
+          "28cc0400",
+          "8c002e85",
+          "c0080025",
+          "8c002e7a",
+          "24ccf7ff",
+          "8c002e85",
+          "c0080027"
+        ]
+      },
+      {
+        "pc": "0x2b67",
+        "immediately_preceding_index_constant": 44,
+        "preceding_words": [
+          "8c002e7a",
+          "24ccf7ff",
+          "8c002e85",
+          "c0080031",
+          "c00c001e",
+          "10cc000a",
+          "28cc000a",
+          "8c002e85",
+          "c0080032",
+          "c00c03e8",
+          "8c002e85",
+          "c008002c"
+        ]
+      },
+      {
+        "pc": "0x2b76",
+        "immediately_preceding_index_constant": 2,
+        "preceding_words": [
+          "1110000a",
+          "7cd0c00a",
+          "8c002e85",
+          "c00800aa",
+          "cc81e809",
+          "da03eee5",
+          "d803eecc",
+          "c409eee1",
+          "c00dfbff",
+          "7c8c8009",
+          "cc81eee1",
+          "c0080002"
+        ]
+      },
+      {
+        "pc": "0x2b7a",
+        "immediately_preceding_index_constant": 3,
+        "preceding_words": [
+          "cc81e809",
+          "da03eee5",
+          "d803eecc",
+          "c409eee1",
+          "c00dfbff",
+          "7c8c8009",
+          "cc81eee1",
+          "c0080002",
+          "8c002e7a",
+          "28cc1000",
+          "8c002e85",
+          "c0080003"
+        ]
+      },
+      {
+        "pc": "0x2b8c",
+        "immediately_preceding_index_constant": 14,
+        "preceding_words": [
+          "1514001f",
+          "25540001",
+          "150c0011",
+          "24cc001f",
+          "99400003",
+          "7c8cc001",
+          "80002b88",
+          "7c8cc002",
+          "8c002e9f",
+          "c0088000",
+          "cc83eecc",
+          "c008000e"
+        ]
+      },
+      {
+        "pc": "0x2b91",
+        "immediately_preceding_index_constant": 18,
+        "preceding_words": [
+          "7c8cc001",
+          "80002b88",
+          "7c8cc002",
+          "8c002e9f",
+          "c0088000",
+          "cc83eecc",
+          "c008000e",
+          "8c002e7a",
+          "24ccffef",
+          "24ccfdff",
+          "8c002e85",
+          "c0080012"
+        ]
+      },
+      {
+        "pc": "0x2b99",
+        "immediately_preceding_index_constant": 15,
+        "preceding_words": [
+          "24ccffef",
+          "24ccfdff",
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "24ccffef",
+          "24ccfdff",
+          "8c002e85",
+          "c0080010",
+          "8c002f06",
+          "8c002ef3",
+          "c008000f"
+        ]
+      },
+      {
+        "pc": "0x2b9d",
+        "immediately_preceding_index_constant": 19,
+        "preceding_words": [
+          "8c002e7a",
+          "24ccffef",
+          "24ccfdff",
+          "8c002e85",
+          "c0080010",
+          "8c002f06",
+          "8c002ef3",
+          "c008000f",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c0080013"
+        ]
+      },
+      {
+        "pc": "0x2ba1",
+        "immediately_preceding_index_constant": 15,
+        "preceding_words": [
+          "c0080010",
+          "8c002f06",
+          "8c002ef3",
+          "c008000f",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c008000f"
+        ]
+      },
+      {
+        "pc": "0x2ba5",
+        "immediately_preceding_index_constant": 19,
+        "preceding_words": [
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c008000f",
+          "8c002e7a",
+          "28cc0004",
+          "8c002e85",
+          "c0080013"
+        ]
+      },
+      {
+        "pc": "0x2bc2",
+        "immediately_preceding_index_constant": 33,
+        "preceding_words": [
+          "c0080021",
+          "cc83ec07",
+          "d80300f4",
+          "d80300f5",
+          "d80300f6",
+          "d80300f7",
+          "d80300f8",
+          "d80300f9",
+          "c0080038",
+          "8c002fcf",
+          "8c002e32",
+          "c0080021"
+        ]
+      },
+      {
+        "pc": "0x2bc6",
+        "immediately_preceding_index_constant": 35,
+        "preceding_words": [
+          "d80300f6",
+          "d80300f7",
+          "d80300f8",
+          "d80300f9",
+          "c0080038",
+          "8c002fcf",
+          "8c002e32",
+          "c0080021",
+          "8c002e7a",
+          "28cc0400",
+          "8c002e85",
+          "c0080023"
+        ]
+      },
+      {
+        "pc": "0x2bca",
+        "immediately_preceding_index_constant": 37,
+        "preceding_words": [
+          "c0080038",
+          "8c002fcf",
+          "8c002e32",
+          "c0080021",
+          "8c002e7a",
+          "28cc0400",
+          "8c002e85",
+          "c0080023",
+          "8c002e7a",
+          "28cc0400",
+          "8c002e85",
+          "c0080025"
+        ]
+      },
+      {
+        "pc": "0x2bcf",
+        "immediately_preceding_index_constant": 39,
+        "preceding_words": [
+          "28cc0400",
+          "8c002e85",
+          "c0080023",
+          "8c002e7a",
+          "28cc0400",
+          "8c002e85",
+          "c0080025",
+          "8c002e7a",
+          "24ccf7ff",
+          "24ccfbff",
+          "8c002e85",
+          "c0080027"
+        ]
+      },
+      {
+        "pc": "0x2be2",
+        "immediately_preceding_index_constant": 44,
+        "preceding_words": [
+          "28cc000a",
+          "8c002e85",
+          "c0080032",
+          "c00c03e8",
+          "8c002e85",
+          "c0080034",
+          "c00c0001",
+          "8c002e85",
+          "c0080035",
+          "c00c05dc",
+          "8c002e85",
+          "c008002c"
+        ]
+      },
+      {
+        "pc": "0x2bf1",
+        "immediately_preceding_index_constant": 2,
+        "preceding_words": [
+          "1110000a",
+          "7cd0c00a",
+          "8c002e85",
+          "c00800aa",
+          "cc81e809",
+          "d803eee5",
+          "d803eecc",
+          "c409eee1",
+          "c00dfbff",
+          "7c8c8009",
+          "cc81eee1",
+          "c0080002"
+        ]
+      },
+      {
+        "pc": "0x2bf5",
+        "immediately_preceding_index_constant": 3,
+        "preceding_words": [
+          "cc81e809",
+          "d803eee5",
+          "d803eecc",
+          "c409eee1",
+          "c00dfbff",
+          "7c8c8009",
+          "cc81eee1",
+          "c0080002",
+          "8c002e7a",
+          "28cc1000",
+          "8c002e85",
+          "c0080003"
+        ]
+      },
+      {
+        "pc": "0x2c09",
+        "immediately_preceding_index_constant": 14,
+        "preceding_words": [
+          "150c0011",
+          "24cc001f",
+          "99400003",
+          "7c8cc001",
+          "80002c03",
+          "7c8cc002",
+          "c00800fd",
+          "c00c00fd",
+          "8c002e9f",
+          "c0088000",
+          "cc83eecc",
+          "c008000e"
+        ]
+      },
+      {
+        "pc": "0x2c0e",
+        "immediately_preceding_index_constant": 18,
+        "preceding_words": [
+          "7c8cc002",
+          "c00800fd",
+          "c00c00fd",
+          "8c002e9f",
+          "c0088000",
+          "cc83eecc",
+          "c008000e",
+          "8c002e7a",
+          "24ccffef",
+          "24ccfdff",
+          "8c002e85",
+          "c0080012"
+        ]
+      },
+      {
+        "pc": "0x2c14",
+        "immediately_preceding_index_constant": 43,
+        "preceding_words": [
+          "c008000e",
+          "8c002e7a",
+          "24ccffef",
+          "24ccfdff",
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "24ccffef",
+          "24ccfdff",
+          "8c002e85",
+          "8c002ef3",
+          "c008002b"
+        ]
+      },
+      {
+        "pc": "0x2c21",
+        "immediately_preceding_index_constant": 15,
+        "preceding_words": [
+          "c015fff0",
+          "7cd4c009",
+          "c015ff0f",
+          "7cd4c009",
+          "c015e1ff",
+          "7cd4c009",
+          "28cc00bf",
+          "c0140008",
+          "11540009",
+          "7cd4c00a",
+          "8c002e85",
+          "c008000f"
+        ]
+      },
+      {
+        "pc": "0x2c25",
+        "immediately_preceding_index_constant": 19,
+        "preceding_words": [
+          "c015e1ff",
+          "7cd4c009",
+          "28cc00bf",
+          "c0140008",
+          "11540009",
+          "7cd4c00a",
+          "8c002e85",
+          "c008000f",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c0080013"
+        ]
+      },
+      {
+        "pc": "0x2c29",
+        "immediately_preceding_index_constant": 15,
+        "preceding_words": [
+          "11540009",
+          "7cd4c00a",
+          "8c002e85",
+          "c008000f",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c008000f"
+        ]
+      },
+      {
+        "pc": "0x2c2d",
+        "immediately_preceding_index_constant": 19,
+        "preceding_words": [
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c008000f",
+          "8c002e7a",
+          "28cc0004",
+          "8c002e85",
+          "c0080013"
+        ]
+      },
+      {
+        "pc": "0x2cd7",
+        "immediately_preceding_index_constant": 49,
+        "preceding_words": [
+          "8c002fcf",
+          "8c002e32",
+          "c411e809",
+          "2510fffe",
+          "cd01e809",
+          "c409e80d",
+          "2488f7ff",
+          "cc81e80d",
+          "da01eee5",
+          "c0088000",
+          "cc81eecc",
+          "c0080031"
+        ]
+      },
+      {
+        "pc": "0x2ce6",
+        "immediately_preceding_index_constant": 14,
+        "preceding_words": [
+          "8c002e85",
+          "c0080032",
+          "c00c0003",
+          "8c002e85",
+          "c409eee1",
+          "c00dfbff",
+          "7c8c8009",
+          "cc81eee1",
+          "c0080036",
+          "c00c1f40",
+          "8c002e85",
+          "c008000e"
+        ]
+      },
+      {
+        "pc": "0x2ceb",
+        "immediately_preceding_index_constant": 18,
+        "preceding_words": [
+          "c00dfbff",
+          "7c8c8009",
+          "cc81eee1",
+          "c0080036",
+          "c00c1f40",
+          "8c002e85",
+          "c008000e",
+          "8c002e7a",
+          "24ccfffe",
+          "24ccffdf",
+          "8c002e85",
+          "c0080012"
+        ]
+      },
+      {
+        "pc": "0x2cf0",
+        "immediately_preceding_index_constant": 33,
+        "preceding_words": [
+          "8c002e85",
+          "c008000e",
+          "8c002e7a",
+          "24ccfffe",
+          "24ccffdf",
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "24ccfffe",
+          "24ccffdf",
+          "8c002e85",
+          "c0080021"
+        ]
+      },
+      {
+        "pc": "0x2cf7",
+        "immediately_preceding_index_constant": 35,
+        "preceding_words": [
+          "8c002e7a",
+          "24ccfffe",
+          "24ccffdf",
+          "8c002e85",
+          "c0080021",
+          "8c002e7a",
+          "28cc0400",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0004",
+          "8c002e85",
+          "c0080023"
+        ]
+      },
+      {
+        "pc": "0x2cfe",
+        "immediately_preceding_index_constant": 37,
+        "preceding_words": [
+          "c011fc00",
+          "7cd0c009",
+          "28cc0004",
+          "8c002e85",
+          "c0080023",
+          "8c002e7a",
+          "28cc0400",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0004",
+          "8c002e85",
+          "c0080025"
+        ]
+      },
+      {
+        "pc": "0x2d05",
+        "immediately_preceding_index_constant": 39,
+        "preceding_words": [
+          "c011fc00",
+          "7cd0c009",
+          "28cc0004",
+          "8c002e85",
+          "c0080025",
+          "8c002e7a",
+          "28cc0400",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0004",
+          "8c002e85",
+          "c0080027"
+        ]
+      },
+      {
+        "pc": "0x2d0e",
+        "immediately_preceding_index_constant": 2,
+        "preceding_words": [
+          "28cc0004",
+          "8c002e85",
+          "c0080027",
+          "8c002e7a",
+          "28cc0400",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0004",
+          "8c002e85",
+          "c0080064",
+          "8c002f06",
+          "c0080002"
+        ]
+      },
+      {
+        "pc": "0x2d12",
+        "immediately_preceding_index_constant": 3,
+        "preceding_words": [
+          "28cc0400",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0004",
+          "8c002e85",
+          "c0080064",
+          "8c002f06",
+          "c0080002",
+          "8c002e7a",
+          "28cc1000",
+          "8c002e85",
+          "c0080003"
+        ]
+      },
+      {
+        "pc": "0x2d1d",
+        "immediately_preceding_index_constant": 15,
+        "preceding_words": [
+          "c0080003",
+          "8c002e7a",
+          "28cc1000",
+          "8c002e85",
+          "c40becac",
+          "98800002",
+          "c008013c",
+          "0888013c",
+          "7c80c001",
+          "8c002e9f",
+          "8c002ef3",
+          "c008000f"
+        ]
+      },
+      {
+        "pc": "0x2d21",
+        "immediately_preceding_index_constant": 19,
+        "preceding_words": [
+          "c40becac",
+          "98800002",
+          "c008013c",
+          "0888013c",
+          "7c80c001",
+          "8c002e9f",
+          "8c002ef3",
+          "c008000f",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c0080013"
+        ]
+      },
+      {
+        "pc": "0x2d25",
+        "immediately_preceding_index_constant": 15,
+        "preceding_words": [
+          "7c80c001",
+          "8c002e9f",
+          "8c002ef3",
+          "c008000f",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c008000f"
+        ]
+      },
+      {
+        "pc": "0x2d29",
+        "immediately_preceding_index_constant": 19,
+        "preceding_words": [
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c008000f",
+          "8c002e7a",
+          "28cc0004",
+          "8c002e85",
+          "c0080013"
+        ]
+      },
+      {
+        "pc": "0x2d3f",
+        "immediately_preceding_index_constant": 39,
+        "preceding_words": [
+          "7c88800b",
+          "8c002f2b",
+          "d801eed0",
+          "c0080000",
+          "8c002f06",
+          "c40b0123",
+          "04880001",
+          "0888013c",
+          "7c80c001",
+          "8c002e9f",
+          "8c002ef3",
+          "c0080027"
+        ]
+      },
+      {
+        "pc": "0x2d45",
+        "immediately_preceding_index_constant": 18,
+        "preceding_words": [
+          "04880001",
+          "0888013c",
+          "7c80c001",
+          "8c002e9f",
+          "8c002ef3",
+          "c0080027",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0064",
+          "8c002e85",
+          "c0080012"
+        ]
+      },
+      {
+        "pc": "0x2d4a",
+        "immediately_preceding_index_constant": 37,
+        "preceding_words": [
+          "c0080027",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0064",
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "c011ffdf",
+          "7cd0c009",
+          "8c002e85",
+          "c0080025"
+        ]
+      },
+      {
+        "pc": "0x2d4f",
+        "immediately_preceding_index_constant": 18,
+        "preceding_words": [
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "c011ffdf",
+          "7cd0c009",
+          "8c002e85",
+          "c0080025",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "8c002e85",
+          "c0080012"
+        ]
+      },
+      {
+        "pc": "0x2d55",
+        "immediately_preceding_index_constant": 37,
+        "preceding_words": [
+          "c0080025",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "28cc0001",
+          "8c002e85",
+          "8c002e6b",
+          "7d018001",
+          "c0080025"
+        ]
+      },
+      {
+        "pc": "0x2d5b",
+        "immediately_preceding_index_constant": 18,
+        "preceding_words": [
+          "8c002e7a",
+          "28cc0001",
+          "8c002e85",
+          "8c002e6b",
+          "7d018001",
+          "c0080025",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0064",
+          "8c002e85",
+          "c0080012"
+        ]
+      },
+      {
+        "pc": "0x2d60",
+        "immediately_preceding_index_constant": 39,
+        "preceding_words": [
+          "c0080025",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0064",
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "c011fffe",
+          "7cd0c009",
+          "8c002e85",
+          "c0080027"
+        ]
+      },
+      {
+        "pc": "0x2d65",
+        "immediately_preceding_index_constant": 18,
+        "preceding_words": [
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "c011fffe",
+          "7cd0c009",
+          "8c002e85",
+          "c0080027",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "8c002e85",
+          "c0080012"
+        ]
+      },
+      {
+        "pc": "0x2d73",
+        "immediately_preceding_index_constant": 37,
+        "preceding_words": [
+          "8c002e85",
+          "8c002e6b",
+          "7d01c001",
+          "7dd9800e",
+          "958fffcb",
+          "c40b0123",
+          "08880001",
+          "0888013c",
+          "7c80c001",
+          "8c002e9f",
+          "8c002ef3",
+          "c0080025"
+        ]
+      },
+      {
+        "pc": "0x2d78",
+        "immediately_preceding_index_constant": 39,
+        "preceding_words": [
+          "c40b0123",
+          "08880001",
+          "0888013c",
+          "7c80c001",
+          "8c002e9f",
+          "8c002ef3",
+          "c0080025",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "8c002e85",
+          "c0080027"
+        ]
+      },
+      {
+        "pc": "0x2d80",
+        "immediately_preceding_index_constant": 33,
+        "preceding_words": [
+          "c011fc00",
+          "7cd0c009",
+          "8c002e85",
+          "c0080027",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "8c002e85",
+          "c0080012",
+          "c00c0000",
+          "8c002e85",
+          "c0080021"
+        ]
+      },
+      {
+        "pc": "0x2d85",
+        "immediately_preceding_index_constant": 35,
+        "preceding_words": [
+          "c011fc00",
+          "7cd0c009",
+          "8c002e85",
+          "c0080012",
+          "c00c0000",
+          "8c002e85",
+          "c0080021",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "8c002e85",
+          "c0080023"
+        ]
+      },
+      {
+        "pc": "0x2dc0",
+        "immediately_preceding_index_constant": 15,
+        "preceding_words": [
+          "c4130125",
+          "11100010",
+          "7d0d000a",
+          "cd030125",
+          "c4130126",
+          "11100010",
+          "7d09000a",
+          "cd030126",
+          "10880010",
+          "7c8c800a",
+          "cc83ec76",
+          "c008000f"
+        ]
+      },
+      {
+        "pc": "0x2dc4",
+        "immediately_preceding_index_constant": 19,
+        "preceding_words": [
+          "c4130126",
+          "11100010",
+          "7d09000a",
+          "cd030126",
+          "10880010",
+          "7c8c800a",
+          "cc83ec76",
+          "c008000f",
+          "8c002e7a",
+          "24ccfffb",
+          "8c002e85",
+          "c0080013"
+        ]
+      },
+      {
+        "pc": "0x2dcc",
+        "immediately_preceding_index_constant": 33,
+        "preceding_words": [
+          "8c002e7a",
+          "24ccfffb",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "24ccfffb",
+          "8c002e85",
+          "c0080000",
+          "7c80c001",
+          "8c002e9f",
+          "8c002ef3",
+          "c0080021"
+        ]
+      },
+      {
+        "pc": "0x2dd5",
+        "immediately_preceding_index_constant": 35,
+        "preceding_words": [
+          "8c002e9f",
+          "8c002ef3",
+          "c0080021",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "c011fbff",
+          "7cd0c009",
+          "c011f7ff",
+          "7cd0c009",
+          "8c002e85",
+          "c0080023"
+        ]
+      },
+      {
+        "pc": "0x2dde",
+        "immediately_preceding_index_constant": 37,
+        "preceding_words": [
+          "7cd0c009",
+          "8c002e85",
+          "c0080023",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "c011fbff",
+          "7cd0c009",
+          "c011f7ff",
+          "7cd0c009",
+          "8c002e85",
+          "c0080025"
+        ]
+      },
+      {
+        "pc": "0x2de7",
+        "immediately_preceding_index_constant": 39,
+        "preceding_words": [
+          "7cd0c009",
+          "8c002e85",
+          "c0080025",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "c011fbff",
+          "7cd0c009",
+          "c011f7ff",
+          "7cd0c009",
+          "8c002e85",
+          "c0080027"
+        ]
+      },
+      {
+        "pc": "0x2e0f",
+        "immediately_preceding_index_constant": 96,
+        "preceding_words": [
+          "10880010",
+          "c40f00f3",
+          "7c8c800a",
+          "cc81ec76",
+          "d803ec07",
+          "80002230",
+          "c40b00f3",
+          "248c0002",
+          "94cfffe6",
+          "c008002e",
+          "cc83ec07",
+          "c0080060"
+        ]
+      },
+      {
+        "pc": "0x2e16",
+        "immediately_preceding_index_constant": 97,
+        "preceding_words": [
+          "248c0002",
+          "94cfffe6",
+          "c008002e",
+          "cc83ec07",
+          "c0080060",
+          "8c002e7a",
+          "24ccfffe",
+          "c413ecac",
+          "25100001",
+          "7cd0c00a",
+          "8c002e85",
+          "c0080061"
+        ]
+      },
+      {
+        "pc": "0x2e1f",
+        "immediately_preceding_index_constant": 96,
+        "preceding_words": [
+          "7cd0c00a",
+          "8c002e85",
+          "c0080061",
+          "8c002e7a",
+          "24ccfffe",
+          "7cd0c00a",
+          "8c002e85",
+          "c415e809",
+          "29500080",
+          "251000bf",
+          "cd01e809",
+          "c0080060"
+        ]
+      },
+      {
+        "pc": "0x2e26",
+        "immediately_preceding_index_constant": 97,
+        "preceding_words": [
+          "c415e809",
+          "29500080",
+          "251000bf",
+          "cd01e809",
+          "c0080060",
+          "8c002e7a",
+          "24ccffe1",
+          "c411ecab",
+          "11100001",
+          "7cd0c00a",
+          "8c002e85",
+          "c0080061"
+        ]
+      },
+      {
+        "pc": "0x2e33",
+        "immediately_preceding_index_constant": 96,
+        "preceding_words": [
+          "24ccffe1",
+          "7cd0c00a",
+          "8c002e85",
+          "c40b00f4",
+          "248803ff",
+          "c00c0014",
+          "8c002ee5",
+          "8c002f18",
+          "cd41e809",
+          "d803ec07",
+          "80002230",
+          "c0080060"
+        ]
+      },
+      {
+        "pc": "0x2e39",
+        "immediately_preceding_index_constant": 97,
+        "preceding_words": [
+          "8c002ee5",
+          "8c002f18",
+          "cd41e809",
+          "d803ec07",
+          "80002230",
+          "c0080060",
+          "8c002e7a",
+          "24ccfffe",
+          "c0100001",
+          "7cd0c00a",
+          "8c002e85",
+          "c0080061"
+        ]
+      },
+      {
+        "pc": "0x2e3e",
+        "immediately_preceding_index_constant": 96,
+        "preceding_words": [
+          "c0080060",
+          "8c002e7a",
+          "24ccfffe",
+          "c0100001",
+          "7cd0c00a",
+          "8c002e85",
+          "c0080061",
+          "8c002e7a",
+          "24ccfffe",
+          "7cd0c00a",
+          "8c002e85",
+          "c0080060"
+        ]
+      },
+      {
+        "pc": "0x2e45",
+        "immediately_preceding_index_constant": 97,
+        "preceding_words": [
+          "8c002e7a",
+          "24ccfffe",
+          "7cd0c00a",
+          "8c002e85",
+          "c0080060",
+          "8c002e7a",
+          "24ccffe1",
+          "c0100002",
+          "11100001",
+          "7cd0c00a",
+          "8c002e85",
+          "c0080061"
+        ]
+      },
+      {
+        "pc": "0x2e51",
+        "immediately_preceding_index_constant": 56,
+        "preceding_words": [
+          "8c002e7a",
+          "24ccffe1",
+          "7cd0c00a",
+          "8c002e85",
+          "90000000",
+          "c0080038",
+          "c00c0001",
+          "8c002e85",
+          "c425eed7",
+          "2a642000",
+          "ce41eed7",
+          "c0080038"
+        ]
+      },
+      {
+        "pc": "0x2e55",
+        "immediately_preceding_index_constant": 55,
+        "preceding_words": [
+          "90000000",
+          "c0080038",
+          "c00c0001",
+          "8c002e85",
+          "c425eed7",
+          "2a642000",
+          "ce41eed7",
+          "c0080038",
+          "8c002e7a",
+          "24cc0002",
+          "94cffffd",
+          "c0080037"
+        ]
+      },
+      {
+        "pc": "0x2e58",
+        "immediately_preceding_index_constant": 56,
+        "preceding_words": [
+          "8c002e85",
+          "c425eed7",
+          "2a642000",
+          "ce41eed7",
+          "c0080038",
+          "8c002e7a",
+          "24cc0002",
+          "94cffffd",
+          "c0080037",
+          "8c002e7a",
+          "7cc10001",
+          "c0080038"
+        ]
+      },
+      {
+        "pc": "0x2e5c",
+        "immediately_preceding_index_constant": 56,
+        "preceding_words": [
+          "c0080038",
+          "8c002e7a",
+          "24cc0002",
+          "94cffffd",
+          "c0080037",
+          "8c002e7a",
+          "7cc10001",
+          "c0080038",
+          "8c002e7a",
+          "24ccfffe",
+          "8c002e85",
+          "c0080038"
+        ]
+      },
+      {
+        "pc": "0x2e6f",
+        "immediately_preceding_index_constant": 56,
+        "preceding_words": [
+          "c425eed7",
+          "c021dfff",
+          "7e624009",
+          "ce41eed7",
+          "c425eed8",
+          "26644000",
+          "9a4ffffe",
+          "90000000",
+          "c0080038",
+          "c00c0001",
+          "8c002e85",
+          "c0080038"
+        ]
+      },
+      {
+        "pc": "0x2e73",
+        "immediately_preceding_index_constant": 55,
+        "preceding_words": [
+          "c425eed8",
+          "26644000",
+          "9a4ffffe",
+          "90000000",
+          "c0080038",
+          "c00c0001",
+          "8c002e85",
+          "c0080038",
+          "8c002e7a",
+          "24cc0002",
+          "94cffffd",
+          "c0080037"
+        ]
+      },
+      {
+        "pc": "0x2e76",
+        "immediately_preceding_index_constant": 56,
+        "preceding_words": [
+          "90000000",
+          "c0080038",
+          "c00c0001",
+          "8c002e85",
+          "c0080038",
+          "8c002e7a",
+          "24cc0002",
+          "94cffffd",
+          "c0080037",
+          "8c002e7a",
+          "7cc10001",
+          "c0080038"
+        ]
+      },
+      {
+        "pc": "0x2f73",
+        "immediately_preceding_index_constant": 41,
+        "preceding_words": [
+          "7d210009",
+          "c0240001",
+          "7d0cc00e",
+          "98c00002",
+          "c0240003",
+          "c65700f5",
+          "cd4300f9",
+          "90000000",
+          "c41300f3",
+          "25140002",
+          "99400018",
+          "c0080029"
+        ]
+      },
+      {
+        "pc": "0x2f8a",
+        "immediately_preceding_index_constant": 41,
+        "preceding_words": [
+          "95800002",
+          "8c002fab",
+          "c41300f9",
+          "250801ff",
+          "8c002f06",
+          "99800002",
+          "8c002fab",
+          "c0080029",
+          "7d40c001",
+          "8c002e85",
+          "80002fa8",
+          "c0080029"
+        ]
+      },
+      {
+        "pc": "0x2fa1",
+        "immediately_preceding_index_constant": 41,
+        "preceding_words": [
+          "8c002fab",
+          "c41300f9",
+          "250803ff",
+          "c00c0014",
+          "8c002ee5",
+          "8c002f18",
+          "99800002",
+          "8c002fab",
+          "c42700f9",
+          "266403ff",
+          "8c002fd9",
+          "c0080029"
+        ]
+      }
+    ],
+    "0x2e85": [
+      {
+        "pc": "0x2b51",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "98c002ac",
+          "c0080020",
+          "cc83ec07",
+          "d80300f4",
+          "d80300f5",
+          "d80300f6",
+          "d80300f7",
+          "d80300f8",
+          "d80300f9",
+          "c0080021",
+          "8c002e7a",
+          "28cc0400"
+        ]
+      },
+      {
+        "pc": "0x2b55",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "d80300f5",
+          "d80300f6",
+          "d80300f7",
+          "d80300f8",
+          "d80300f9",
+          "c0080021",
+          "8c002e7a",
+          "28cc0400",
+          "8c002e85",
+          "c0080023",
+          "8c002e7a",
+          "28cc0400"
+        ]
+      },
+      {
+        "pc": "0x2b59",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "d80300f9",
+          "c0080021",
+          "8c002e7a",
+          "28cc0400",
+          "8c002e85",
+          "c0080023",
+          "8c002e7a",
+          "28cc0400",
+          "8c002e85",
+          "c0080025",
+          "8c002e7a",
+          "24ccf7ff"
+        ]
+      },
+      {
+        "pc": "0x2b5d",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e85",
+          "c0080023",
+          "8c002e7a",
+          "28cc0400",
+          "8c002e85",
+          "c0080025",
+          "8c002e7a",
+          "24ccf7ff",
+          "8c002e85",
+          "c0080027",
+          "8c002e7a",
+          "24ccf7ff"
+        ]
+      },
+      {
+        "pc": "0x2b62",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c0080025",
+          "8c002e7a",
+          "24ccf7ff",
+          "8c002e85",
+          "c0080027",
+          "8c002e7a",
+          "24ccf7ff",
+          "8c002e85",
+          "c0080031",
+          "c00c001e",
+          "10cc000a",
+          "28cc000a"
+        ]
+      },
+      {
+        "pc": "0x2b65",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e85",
+          "c0080027",
+          "8c002e7a",
+          "24ccf7ff",
+          "8c002e85",
+          "c0080031",
+          "c00c001e",
+          "10cc000a",
+          "28cc000a",
+          "8c002e85",
+          "c0080032",
+          "c00c03e8"
+        ]
+      },
+      {
+        "pc": "0x2b6c",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "10cc000a",
+          "28cc000a",
+          "8c002e85",
+          "c0080032",
+          "c00c03e8",
+          "8c002e85",
+          "c008002c",
+          "8c002e7a",
+          "24cc03ff",
+          "c01001ff",
+          "1110000a",
+          "7cd0c00a"
+        ]
+      },
+      {
+        "pc": "0x2b78",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e85",
+          "c00800aa",
+          "cc81e809",
+          "da03eee5",
+          "d803eecc",
+          "c409eee1",
+          "c00dfbff",
+          "7c8c8009",
+          "cc81eee1",
+          "c0080002",
+          "8c002e7a",
+          "28cc1000"
+        ]
+      },
+      {
+        "pc": "0x2b7c",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "d803eecc",
+          "c409eee1",
+          "c00dfbff",
+          "7c8c8009",
+          "cc81eee1",
+          "c0080002",
+          "8c002e7a",
+          "28cc1000",
+          "8c002e85",
+          "c0080003",
+          "8c002e7a",
+          "28cc1000"
+        ]
+      },
+      {
+        "pc": "0x2b8f",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "24cc001f",
+          "99400003",
+          "7c8cc001",
+          "80002b88",
+          "7c8cc002",
+          "8c002e9f",
+          "c0088000",
+          "cc83eecc",
+          "c008000e",
+          "8c002e7a",
+          "24ccffef",
+          "24ccfdff"
+        ]
+      },
+      {
+        "pc": "0x2b94",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e9f",
+          "c0088000",
+          "cc83eecc",
+          "c008000e",
+          "8c002e7a",
+          "24ccffef",
+          "24ccfdff",
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "24ccffef",
+          "24ccfdff"
+        ]
+      },
+      {
+        "pc": "0x2b9b",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "24ccffef",
+          "24ccfdff",
+          "8c002e85",
+          "c0080010",
+          "8c002f06",
+          "8c002ef3",
+          "c008000f",
+          "8c002e7a",
+          "28cc0008"
+        ]
+      },
+      {
+        "pc": "0x2b9f",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "24ccfdff",
+          "8c002e85",
+          "c0080010",
+          "8c002f06",
+          "8c002ef3",
+          "c008000f",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0008"
+        ]
+      },
+      {
+        "pc": "0x2ba3",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002ef3",
+          "c008000f",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c008000f",
+          "8c002e7a",
+          "28cc0004"
+        ]
+      },
+      {
+        "pc": "0x2ba7",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c008000f",
+          "8c002e7a",
+          "28cc0004",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0004"
+        ]
+      },
+      {
+        "pc": "0x2bc4",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "d80300f4",
+          "d80300f5",
+          "d80300f6",
+          "d80300f7",
+          "d80300f8",
+          "d80300f9",
+          "c0080038",
+          "8c002fcf",
+          "8c002e32",
+          "c0080021",
+          "8c002e7a",
+          "28cc0400"
+        ]
+      },
+      {
+        "pc": "0x2bc8",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "d80300f8",
+          "d80300f9",
+          "c0080038",
+          "8c002fcf",
+          "8c002e32",
+          "c0080021",
+          "8c002e7a",
+          "28cc0400",
+          "8c002e85",
+          "c0080023",
+          "8c002e7a",
+          "28cc0400"
+        ]
+      },
+      {
+        "pc": "0x2bcd",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c0080021",
+          "8c002e7a",
+          "28cc0400",
+          "8c002e85",
+          "c0080023",
+          "8c002e7a",
+          "28cc0400",
+          "8c002e85",
+          "c0080025",
+          "8c002e7a",
+          "24ccf7ff",
+          "24ccfbff"
+        ]
+      },
+      {
+        "pc": "0x2bd2",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e7a",
+          "28cc0400",
+          "8c002e85",
+          "c0080025",
+          "8c002e7a",
+          "24ccf7ff",
+          "24ccfbff",
+          "8c002e85",
+          "c0080027",
+          "8c002e7a",
+          "24ccf7ff",
+          "24ccfbff"
+        ]
+      },
+      {
+        "pc": "0x2bd7",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "24ccf7ff",
+          "24ccfbff",
+          "8c002e85",
+          "c0080027",
+          "8c002e7a",
+          "24ccf7ff",
+          "24ccfbff",
+          "8c002e85",
+          "c0080031",
+          "c00c001e",
+          "10cc000a",
+          "28cc000a"
+        ]
+      },
+      {
+        "pc": "0x2bda",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c0080027",
+          "8c002e7a",
+          "24ccf7ff",
+          "24ccfbff",
+          "8c002e85",
+          "c0080031",
+          "c00c001e",
+          "10cc000a",
+          "28cc000a",
+          "8c002e85",
+          "c0080032",
+          "c00c03e8"
+        ]
+      },
+      {
+        "pc": "0x2bdd",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "24ccfbff",
+          "8c002e85",
+          "c0080031",
+          "c00c001e",
+          "10cc000a",
+          "28cc000a",
+          "8c002e85",
+          "c0080032",
+          "c00c03e8",
+          "8c002e85",
+          "c0080034",
+          "c00c0001"
+        ]
+      },
+      {
+        "pc": "0x2be0",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c00c001e",
+          "10cc000a",
+          "28cc000a",
+          "8c002e85",
+          "c0080032",
+          "c00c03e8",
+          "8c002e85",
+          "c0080034",
+          "c00c0001",
+          "8c002e85",
+          "c0080035",
+          "c00c05dc"
+        ]
+      },
+      {
+        "pc": "0x2be7",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c0080034",
+          "c00c0001",
+          "8c002e85",
+          "c0080035",
+          "c00c05dc",
+          "8c002e85",
+          "c008002c",
+          "8c002e7a",
+          "24cc03ff",
+          "c01001ff",
+          "1110000a",
+          "7cd0c00a"
+        ]
+      },
+      {
+        "pc": "0x2bf3",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e85",
+          "c00800aa",
+          "cc81e809",
+          "d803eee5",
+          "d803eecc",
+          "c409eee1",
+          "c00dfbff",
+          "7c8c8009",
+          "cc81eee1",
+          "c0080002",
+          "8c002e7a",
+          "28cc1000"
+        ]
+      },
+      {
+        "pc": "0x2bf7",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "d803eecc",
+          "c409eee1",
+          "c00dfbff",
+          "7c8c8009",
+          "cc81eee1",
+          "c0080002",
+          "8c002e7a",
+          "28cc1000",
+          "8c002e85",
+          "c0080003",
+          "8c002e7a",
+          "28cc1000"
+        ]
+      },
+      {
+        "pc": "0x2c0c",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "7c8cc001",
+          "80002c03",
+          "7c8cc002",
+          "c00800fd",
+          "c00c00fd",
+          "8c002e9f",
+          "c0088000",
+          "cc83eecc",
+          "c008000e",
+          "8c002e7a",
+          "24ccffef",
+          "24ccfdff"
+        ]
+      },
+      {
+        "pc": "0x2c11",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e9f",
+          "c0088000",
+          "cc83eecc",
+          "c008000e",
+          "8c002e7a",
+          "24ccffef",
+          "24ccfdff",
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "24ccffef",
+          "24ccfdff"
+        ]
+      },
+      {
+        "pc": "0x2c1f",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c008002b",
+          "8c002e7a",
+          "c015fff0",
+          "7cd4c009",
+          "c015ff0f",
+          "7cd4c009",
+          "c015e1ff",
+          "7cd4c009",
+          "28cc00bf",
+          "c0140008",
+          "11540009",
+          "7cd4c00a"
+        ]
+      },
+      {
+        "pc": "0x2c23",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c015ff0f",
+          "7cd4c009",
+          "c015e1ff",
+          "7cd4c009",
+          "28cc00bf",
+          "c0140008",
+          "11540009",
+          "7cd4c00a",
+          "8c002e85",
+          "c008000f",
+          "8c002e7a",
+          "28cc0008"
+        ]
+      },
+      {
+        "pc": "0x2c27",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "28cc00bf",
+          "c0140008",
+          "11540009",
+          "7cd4c00a",
+          "8c002e85",
+          "c008000f",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0008"
+        ]
+      },
+      {
+        "pc": "0x2c2b",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e85",
+          "c008000f",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c008000f",
+          "8c002e7a",
+          "28cc0004"
+        ]
+      },
+      {
+        "pc": "0x2c2f",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c008000f",
+          "8c002e7a",
+          "28cc0004",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0004"
+        ]
+      },
+      {
+        "pc": "0x2ca8",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c40becab",
+          "2488000f",
+          "8c002f3a",
+          "d803ec07",
+          "80002230",
+          "c40b00f3",
+          "248c0003",
+          "94c0014e",
+          "c0080027",
+          "cc83ec07",
+          "c0080029",
+          "c00c0000"
+        ]
+      },
+      {
+        "pc": "0x2cae",
+        "immediately_preceding_index_constant": 40,
+        "preceding_words": [
+          "248c0003",
+          "94c0014e",
+          "c0080027",
+          "cc83ec07",
+          "c0080029",
+          "c00c0000",
+          "8c002e85",
+          "c40fecac",
+          "c01003ff",
+          "1110000a",
+          "7cd0c009",
+          "c0080028"
+        ]
+      },
+      {
+        "pc": "0x2cb1",
+        "immediately_preceding_index_constant": 41,
+        "preceding_words": [
+          "cc83ec07",
+          "c0080029",
+          "c00c0000",
+          "8c002e85",
+          "c40fecac",
+          "c01003ff",
+          "1110000a",
+          "7cd0c009",
+          "c0080028",
+          "8c002e85",
+          "c40fecab",
+          "c0080029"
+        ]
+      },
+      {
+        "pc": "0x2cda",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "2510fffe",
+          "cd01e809",
+          "c409e80d",
+          "2488f7ff",
+          "cc81e80d",
+          "da01eee5",
+          "c0088000",
+          "cc81eecc",
+          "c0080031",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009"
+        ]
+      },
+      {
+        "pc": "0x2cdd",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "2488f7ff",
+          "cc81e80d",
+          "da01eee5",
+          "c0088000",
+          "cc81eecc",
+          "c0080031",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "8c002e85",
+          "c0080032",
+          "c00c0003"
+        ]
+      },
+      {
+        "pc": "0x2ce4",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c011fc00",
+          "7cd0c009",
+          "8c002e85",
+          "c0080032",
+          "c00c0003",
+          "8c002e85",
+          "c409eee1",
+          "c00dfbff",
+          "7c8c8009",
+          "cc81eee1",
+          "c0080036",
+          "c00c1f40"
+        ]
+      },
+      {
+        "pc": "0x2ce9",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e85",
+          "c409eee1",
+          "c00dfbff",
+          "7c8c8009",
+          "cc81eee1",
+          "c0080036",
+          "c00c1f40",
+          "8c002e85",
+          "c008000e",
+          "8c002e7a",
+          "24ccfffe",
+          "24ccffdf"
+        ]
+      },
+      {
+        "pc": "0x2cee",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c0080036",
+          "c00c1f40",
+          "8c002e85",
+          "c008000e",
+          "8c002e7a",
+          "24ccfffe",
+          "24ccffdf",
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "24ccfffe",
+          "24ccffdf"
+        ]
+      },
+      {
+        "pc": "0x2cf5",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "24ccfffe",
+          "24ccffdf",
+          "8c002e85",
+          "c0080021",
+          "8c002e7a",
+          "28cc0400",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0004"
+        ]
+      },
+      {
+        "pc": "0x2cfc",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e7a",
+          "28cc0400",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0004",
+          "8c002e85",
+          "c0080023",
+          "8c002e7a",
+          "28cc0400",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0004"
+        ]
+      },
+      {
+        "pc": "0x2d03",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e7a",
+          "28cc0400",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0004",
+          "8c002e85",
+          "c0080025",
+          "8c002e7a",
+          "28cc0400",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0004"
+        ]
+      },
+      {
+        "pc": "0x2d0a",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e7a",
+          "28cc0400",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0004",
+          "8c002e85",
+          "c0080027",
+          "8c002e7a",
+          "28cc0400",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0004"
+        ]
+      },
+      {
+        "pc": "0x2d10",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c0080027",
+          "8c002e7a",
+          "28cc0400",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0004",
+          "8c002e85",
+          "c0080064",
+          "8c002f06",
+          "c0080002",
+          "8c002e7a",
+          "28cc1000"
+        ]
+      },
+      {
+        "pc": "0x2d14",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "7cd0c009",
+          "28cc0004",
+          "8c002e85",
+          "c0080064",
+          "8c002f06",
+          "c0080002",
+          "8c002e7a",
+          "28cc1000",
+          "8c002e85",
+          "c0080003",
+          "8c002e7a",
+          "28cc1000"
+        ]
+      },
+      {
+        "pc": "0x2d1f",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "28cc1000",
+          "8c002e85",
+          "c40becac",
+          "98800002",
+          "c008013c",
+          "0888013c",
+          "7c80c001",
+          "8c002e9f",
+          "8c002ef3",
+          "c008000f",
+          "8c002e7a",
+          "28cc0008"
+        ]
+      },
+      {
+        "pc": "0x2d23",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c008013c",
+          "0888013c",
+          "7c80c001",
+          "8c002e9f",
+          "8c002ef3",
+          "c008000f",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0008"
+        ]
+      },
+      {
+        "pc": "0x2d27",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002ef3",
+          "c008000f",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c008000f",
+          "8c002e7a",
+          "28cc0004"
+        ]
+      },
+      {
+        "pc": "0x2d2b",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0008",
+          "8c002e85",
+          "c008000f",
+          "8c002e7a",
+          "28cc0004",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0004"
+        ]
+      },
+      {
+        "pc": "0x2d32",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "28cc0004",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "28cc0004",
+          "8c002e85",
+          "c00800ba",
+          "cc81e809",
+          "c0081f40",
+          "8c002ef7",
+          "c0080029",
+          "7cccc00b"
+        ]
+      },
+      {
+        "pc": "0x2d43",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002f06",
+          "c40b0123",
+          "04880001",
+          "0888013c",
+          "7c80c001",
+          "8c002e9f",
+          "8c002ef3",
+          "c0080027",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0064"
+        ]
+      },
+      {
+        "pc": "0x2d48",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e9f",
+          "8c002ef3",
+          "c0080027",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0064",
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "c011ffdf",
+          "7cd0c009"
+        ]
+      },
+      {
+        "pc": "0x2d4d",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "7cd0c009",
+          "28cc0064",
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "c011ffdf",
+          "7cd0c009",
+          "8c002e85",
+          "c0080025",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009"
+        ]
+      },
+      {
+        "pc": "0x2d51",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e7a",
+          "c011ffdf",
+          "7cd0c009",
+          "8c002e85",
+          "c0080025",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "28cc0001"
+        ]
+      },
+      {
+        "pc": "0x2d59",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "28cc0001",
+          "8c002e85",
+          "8c002e6b",
+          "7d018001",
+          "c0080025",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0064"
+        ]
+      },
+      {
+        "pc": "0x2d5e",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e6b",
+          "7d018001",
+          "c0080025",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "28cc0064",
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "c011fffe",
+          "7cd0c009"
+        ]
+      },
+      {
+        "pc": "0x2d63",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "7cd0c009",
+          "28cc0064",
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "c011fffe",
+          "7cd0c009",
+          "8c002e85",
+          "c0080027",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009"
+        ]
+      },
+      {
+        "pc": "0x2d67",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e7a",
+          "c011fffe",
+          "7cd0c009",
+          "8c002e85",
+          "c0080027",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "8c002e85",
+          "c0080012",
+          "8c002e7a",
+          "28cc0020"
+        ]
+      },
+      {
+        "pc": "0x2d76",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "7dd9800e",
+          "958fffcb",
+          "c40b0123",
+          "08880001",
+          "0888013c",
+          "7c80c001",
+          "8c002e9f",
+          "8c002ef3",
+          "c0080025",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009"
+        ]
+      },
+      {
+        "pc": "0x2d7b",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "7c80c001",
+          "8c002e9f",
+          "8c002ef3",
+          "c0080025",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "8c002e85",
+          "c0080027",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009"
+        ]
+      },
+      {
+        "pc": "0x2d7e",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c0080025",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "8c002e85",
+          "c0080027",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "8c002e85",
+          "c0080012",
+          "c00c0000"
+        ]
+      },
+      {
+        "pc": "0x2d83",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c0080027",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "8c002e85",
+          "c0080012",
+          "c00c0000",
+          "8c002e85",
+          "c0080021",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009"
+        ]
+      },
+      {
+        "pc": "0x2d88",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c0080012",
+          "c00c0000",
+          "8c002e85",
+          "c0080021",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "8c002e85",
+          "c0080023",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009"
+        ]
+      },
+      {
+        "pc": "0x2dc2",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "7d0d000a",
+          "cd030125",
+          "c4130126",
+          "11100010",
+          "7d09000a",
+          "cd030126",
+          "10880010",
+          "7c8c800a",
+          "cc83ec76",
+          "c008000f",
+          "8c002e7a",
+          "24ccfffb"
+        ]
+      },
+      {
+        "pc": "0x2dc6",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "7d09000a",
+          "cd030126",
+          "10880010",
+          "7c8c800a",
+          "cc83ec76",
+          "c008000f",
+          "8c002e7a",
+          "24ccfffb",
+          "8c002e85",
+          "c0080013",
+          "8c002e7a",
+          "24ccfffb"
+        ]
+      },
+      {
+        "pc": "0x2dd3",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c0080000",
+          "7c80c001",
+          "8c002e9f",
+          "8c002ef3",
+          "c0080021",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "c011fbff",
+          "7cd0c009",
+          "c011f7ff",
+          "7cd0c009"
+        ]
+      },
+      {
+        "pc": "0x2ddc",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "7cd0c009",
+          "c011f7ff",
+          "7cd0c009",
+          "8c002e85",
+          "c0080023",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "c011fbff",
+          "7cd0c009",
+          "c011f7ff",
+          "7cd0c009"
+        ]
+      },
+      {
+        "pc": "0x2de5",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "7cd0c009",
+          "c011f7ff",
+          "7cd0c009",
+          "8c002e85",
+          "c0080025",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "c011fbff",
+          "7cd0c009",
+          "c011f7ff",
+          "7cd0c009"
+        ]
+      },
+      {
+        "pc": "0x2dee",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "7cd0c009",
+          "c011f7ff",
+          "7cd0c009",
+          "8c002e85",
+          "c0080027",
+          "8c002e7a",
+          "c011fc00",
+          "7cd0c009",
+          "c011fbff",
+          "7cd0c009",
+          "c011f7ff",
+          "7cd0c009"
+        ]
+      },
+      {
+        "pc": "0x2df7",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "7cd0c009",
+          "c011f7ff",
+          "7cd0c009",
+          "8c002e85",
+          "d803ec07",
+          "80002230",
+          "c0080002",
+          "cc83ec07",
+          "80002230",
+          "c0080009",
+          "c40fecab",
+          "24ccffff"
+        ]
+      },
+      {
+        "pc": "0x2e14",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "80002230",
+          "c40b00f3",
+          "248c0002",
+          "94cfffe6",
+          "c008002e",
+          "cc83ec07",
+          "c0080060",
+          "8c002e7a",
+          "24ccfffe",
+          "c413ecac",
+          "25100001",
+          "7cd0c00a"
+        ]
+      },
+      {
+        "pc": "0x2e19",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "cc83ec07",
+          "c0080060",
+          "8c002e7a",
+          "24ccfffe",
+          "c413ecac",
+          "25100001",
+          "7cd0c00a",
+          "8c002e85",
+          "c0080061",
+          "8c002e7a",
+          "24ccfffe",
+          "7cd0c00a"
+        ]
+      },
+      {
+        "pc": "0x2e24",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "7cd0c00a",
+          "8c002e85",
+          "c415e809",
+          "29500080",
+          "251000bf",
+          "cd01e809",
+          "c0080060",
+          "8c002e7a",
+          "24ccffe1",
+          "c411ecab",
+          "11100001",
+          "7cd0c00a"
+        ]
+      },
+      {
+        "pc": "0x2e29",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "cd01e809",
+          "c0080060",
+          "8c002e7a",
+          "24ccffe1",
+          "c411ecab",
+          "11100001",
+          "7cd0c00a",
+          "8c002e85",
+          "c0080061",
+          "8c002e7a",
+          "24ccffe1",
+          "7cd0c00a"
+        ]
+      },
+      {
+        "pc": "0x2e37",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "248803ff",
+          "c00c0014",
+          "8c002ee5",
+          "8c002f18",
+          "cd41e809",
+          "d803ec07",
+          "80002230",
+          "c0080060",
+          "8c002e7a",
+          "24ccfffe",
+          "c0100001",
+          "7cd0c00a"
+        ]
+      },
+      {
+        "pc": "0x2e3c",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "d803ec07",
+          "80002230",
+          "c0080060",
+          "8c002e7a",
+          "24ccfffe",
+          "c0100001",
+          "7cd0c00a",
+          "8c002e85",
+          "c0080061",
+          "8c002e7a",
+          "24ccfffe",
+          "7cd0c00a"
+        ]
+      },
+      {
+        "pc": "0x2e43",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e85",
+          "c0080061",
+          "8c002e7a",
+          "24ccfffe",
+          "7cd0c00a",
+          "8c002e85",
+          "c0080060",
+          "8c002e7a",
+          "24ccffe1",
+          "c0100002",
+          "11100001",
+          "7cd0c00a"
+        ]
+      },
+      {
+        "pc": "0x2e48",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002e85",
+          "c0080060",
+          "8c002e7a",
+          "24ccffe1",
+          "c0100002",
+          "11100001",
+          "7cd0c00a",
+          "8c002e85",
+          "c0080061",
+          "8c002e7a",
+          "24ccffe1",
+          "7cd0c00a"
+        ]
+      },
+      {
+        "pc": "0x2e4c",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c0100002",
+          "11100001",
+          "7cd0c00a",
+          "8c002e85",
+          "c0080061",
+          "8c002e7a",
+          "24ccffe1",
+          "7cd0c00a",
+          "8c002e85",
+          "90000000",
+          "c0080038",
+          "c00c0001"
+        ]
+      },
+      {
+        "pc": "0x2e5a",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "2a642000",
+          "ce41eed7",
+          "c0080038",
+          "8c002e7a",
+          "24cc0002",
+          "94cffffd",
+          "c0080037",
+          "8c002e7a",
+          "7cc10001",
+          "c0080038",
+          "8c002e7a",
+          "24ccfffe"
+        ]
+      },
+      {
+        "pc": "0x2e6d",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "964ffffe",
+          "c415eecb",
+          "c425eed7",
+          "c021dfff",
+          "7e624009",
+          "ce41eed7",
+          "c425eed8",
+          "26644000",
+          "9a4ffffe",
+          "90000000",
+          "c0080038",
+          "c00c0001"
+        ]
+      },
+      {
+        "pc": "0x2e78",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c00c0001",
+          "8c002e85",
+          "c0080038",
+          "8c002e7a",
+          "24cc0002",
+          "94cffffd",
+          "c0080037",
+          "8c002e7a",
+          "7cc10001",
+          "c0080038",
+          "8c002e7a",
+          "24ccfffe"
+        ]
+      },
+      {
+        "pc": "0x2f76",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "98c00002",
+          "c0240003",
+          "c65700f5",
+          "cd4300f9",
+          "90000000",
+          "c41300f3",
+          "25140002",
+          "99400018",
+          "c0080029",
+          "8c002e7a",
+          "7cc14001",
+          "7cccc00b"
+        ]
+      },
+      {
+        "pc": "0x2f87",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "7cc9800c",
+          "99800008",
+          "7cc9800e",
+          "95800002",
+          "8c002fab",
+          "c41300f9",
+          "250801ff",
+          "8c002f06",
+          "99800002",
+          "8c002fab",
+          "c0080029",
+          "7d40c001"
+        ]
+      },
+      {
+        "pc": "0x2f8c",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "c41300f9",
+          "250801ff",
+          "8c002f06",
+          "99800002",
+          "8c002fab",
+          "c0080029",
+          "7d40c001",
+          "8c002e85",
+          "80002fa8",
+          "c0080029",
+          "8c002e7a",
+          "24ccfffe"
+        ]
+      },
+      {
+        "pc": "0x2fa6",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "8c002f18",
+          "99800002",
+          "8c002fab",
+          "c42700f9",
+          "266403ff",
+          "8c002fd9",
+          "c0080029",
+          "8c002e7a",
+          "c4130120",
+          "c4170121",
+          "7d150009",
+          "7cd0c00a"
+        ]
+      },
+      {
+        "pc": "0x2ff2",
+        "immediately_preceding_index_constant": null,
+        "preceding_words": [
+          "3e4c0064",
+          "98c00004",
+          "c0100000",
+          "c0180000",
+          "d8030121",
+          "c0080028",
+          "1198000a",
+          "c00c0000",
+          "7cd8c00a",
+          "11100015",
+          "7cd0c00a",
+          "28cc0001"
+        ]
+      }
+    ]
+  },
+  "scope": "Locator only. Immediate pre-call constants are exact words; other arguments require dataflow. No physical target mapping or CC relationship established. Other-generation numeric register coincidences do not identify this interface."
+}

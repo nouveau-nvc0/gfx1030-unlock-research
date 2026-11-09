@@ -1,0 +1,59 @@
+
+/tmp/tmpef_h0ss8/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002089c <.data+0x2089c>:
+0002089c: 364100   entry        a1, 0x20 ; Capstone
+0002089f: 65cb05   call8        . +0x5cb8 ; Capstone ; target=0x26554
+   208a2:	91edca        	l32r	a9, 0x13458 (0xc324)
+   208a5:	661460        	bnei	a4, 1, 0x20909
+   208a8:	661a71        	bnei	a10, 1, 0x2091d
+   208ab:	56e306        	bnez	a3, 0x2091d
+000208ae: 00b2da   ufloat.s     f11, a2, 0 ; Capstone
+   208b1:	c1ebca        	l32r	a12, 0x13460 (0xc194)
+   208b4:	e1b3c9        	l32r	a14, 0x12f80 (0x3fc66666)
+   208b7:	f1e9ca        	l32r	a15, 0x1345c (0xbbcccccd)
+   208ba:	9a93      	add.n	a9, a3, a9
+   208bc:	d20980        	l8ui	a13, a9, 128
+000208bf: 50affa   wfr          f10, a15 ; Capstone
+000208c2: 503efa   wfr          f3, a14 ; Capstone
+   208c5:	c0c3a0        	addx4	a12, a3, a12
+000208c8: 630c7f   lsi          f6, a12, 0x1fc ; Capstone
+000208cb: 0083fa   mov.s        f8, f3 ; Capstone
+000208ce: a08b4a   madd.s       f8, f11, f10 ; Capstone
+000208d1: 009dda   ufloat.s     f9, a13, 0 ; Capstone
+000208d4: 0073fa   mov.s        f7, f3 ; Capstone
+000208d7: a0794a   madd.s       f7, f9, f10 ; Capstone
+000208da: 80560a   add.s        f5, f6, f8 ; Capstone
+000208dd: 70054b   olt.s        b0, f5, f7 ; Capstone
+000208e0: 0057db   movt.s       f5, f7, b0 ; Capstone
+000208e3: 60451a   sub.s        f4, f5, f6 ; Capstone
+   208e6:	a1a8c9        	l32r	a10, 0x12f88 (0x37a7c5ac)
+   208e9:	b1a6c9        	l32r	a11, 0x12f84 (0x43200000)
+000208ec: 40131a   sub.s        f1, f3, f4 ; Capstone
+000208ef: 502bfa   wfr          f2, a11 ; Capstone
+000208f2: 500afa   wfr          f0, a10 ; Capstone
+000208f5: 20014a   madd.s       f0, f1, f2 ; Capstone
+000208f8: 00a0ea   utrunc.s     a10, f0, 0 ; Capstone
+   208fb:	920984        	l8ui	a9, a9, 132
+   208fe:	a0a074        	extui	a10, a10, 0, 8
+00020901: a09973   maxu         a9, a9, a10 ; Capstone
+   20904:	902074        	extui	a2, a9, 0, 8
+00020907: 1df0     retw.n        ; Capstone
+   20909:	9a93      	add.n	a9, a3, a9
+   2090b:	a20984        	l8ui	a10, a9, 132
+   2090e:	920980        	l8ui	a9, a9, 128
+00020911: 20aa73   maxu         a10, a10, a2 ; Capstone
+   20914:	a0a074        	extui	a10, a10, 0, 8
+00020917: a09963   minu         a9, a9, a10 ; Capstone
+   2091a:	86f9ff        	j	0x20904
+   2091d:	9a93      	add.n	a9, a3, a9
+   2091f:	a20984        	l8ui	a10, a9, 132
+   20922:	920988        	l8ui	a9, a9, 136
+00020925: 20aa73   maxu         a10, a10, a2 ; Capstone
+   20928:	a0a074        	extui	a10, a10, 0, 8
+0002092b: a09963   minu         a9, a9, a10 ; Capstone
+   2092e:	86f4ff        	j	0x20904
+   20931:	000000        	ill

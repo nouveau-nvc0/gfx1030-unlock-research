@@ -1,0 +1,14 @@
+
+/tmp/tmpod04leqt/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00027bb8 <.data+0x27bb8>:
+00027bb8: 364100   entry        a1, 0x20 ; Capstone
+   27bbb:	3103b0        	l32r	a3, 0x13bc8 (0x39800000)
+00027bbe: 0012ca   float.s      f1, a2, 0 ; Capstone
+00027bc1: 5023fa   wfr          f2, a3 ; Capstone
+00027bc4: 20012a   mul.s        f0, f1, f2 ; Capstone
+00027bc7: 4020fa   rfr          a2, f0 ; Capstone
+00027bca: 1df0     retw.n        ; Capstone

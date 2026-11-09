@@ -1,0 +1,84 @@
+
+/tmp/tmpmt1gxsv4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00021f68 <.data+0x21f68>:
+00021f68: 364100   entry        a1, 0x20 ; Capstone
+   21f6b:	0c04      	movi.n	a4, 0
+   21f6d:	918bc5        	l32r	a9, 0x1359c (0x123a018)
+   21f70:	f18cc5        	l32r	a15, 0x135a0 (0x123a01c)
+   21f73:	c18cc5        	l32r	a12, 0x135a4 (0x123a058)
+   21f76:	e18cc5        	l32r	a14, 0x135a8 (0x123a07c)
+   21f79:	818cc5        	l32r	a8, 0x135ac (0x123a08c)
+   21f7c:	b18dc5        	l32r	a11, 0x135b0 (0x123a090)
+   21f7f:	0c32      	movi.n	a2, 3
+   21f81:	318cc5        	l32r	a3, 0x135b4 (0xfffffff)
+   21f84:	518ec5        	l32r	a5, 0x135bc (0xa194)
+   21f87:	618ec5        	l32r	a6, 0x135c0 (0x47c35000)
+   21f8a:	718bc5        	l32r	a7, 0x135b8 (0xb56c)
+   21f8d:	52157f        	l16ui	a5, a5, 254
+00021f90: 5006fa   wfr          f0, a6 ; Capstone
+00021f93: 00d0ba   ceil.s       a13, f0, 0 ; Capstone
+   21f96:	4ba7      	addi.n	a10, a7, 4
+   21f98:	706720        	or	a6, a7, a7
+00021f9b: 0005da   ufloat.s     f0, a5, 0 ; Capstone
+   21f9e:	30dd10        	and	a13, a13, a3
+00021fa1: 76a25f   loopgtz      a2, . +0x63 ; Capstone
+   21fa4:	5d0c      	mov.n	a5, a12
+   21fa6:	779605        	bne	a6, a7, 0x21faf
+   21fa9:	3186c5        	l32r	a3, 0x135c4 (0x123a084)
+   21fac:	c60100        	j	0x21fb7
+   21faf:	a026c0        	sub	a2, a6, a10
+   21fb2:	3d09      	mov.n	a3, a9
+   21fb4:	203883        	moveqz	a3, a8, a2
+   21fb7:	c02000        	memw
+   21fba:	0c22      	movi.n	a2, 2
+   21fbc:	2903      	s32i.n	a2, a3, 0
+   21fbe:	0b24      	addi.n	a2, a4, -1
+   21fc0:	205b83        	moveqz	a5, a11, a2
+   21fc3:	c60f00        	j	0x22006
+   21fc6:	a026c0        	sub	a2, a6, a10
+   21fc9:	3d09      	mov.n	a3, a9
+   21fcb:	203883        	moveqz	a3, a8, a2
+   21fce:	c02000        	memw
+   21fd1:	0c02      	movi.n	a2, 0
+   21fd3:	2903      	s32i.n	a2, a3, 0
+   21fd5:	861100        	j	0x2201f
+   21fd8:	a026c0        	sub	a2, a6, a10
+   21fdb:	5d0f      	mov.n	a5, a15
+   21fdd:	205e83        	moveqz	a5, a14, a2
+   21fe0:	c02000        	memw
+   21fe3:	d905      	s32i.n	a13, a5, 0
+   21fe5:	779605        	bne	a6, a7, 0x21fee
+   21fe8:	3177c5        	l32r	a3, 0x135c4 (0x123a084)
+   21feb:	c60100        	j	0x21ff6
+   21fee:	a026c0        	sub	a2, a6, a10
+   21ff1:	3d09      	mov.n	a3, a9
+   21ff3:	203883        	moveqz	a3, a8, a2
+   21ff6:	c02000        	memw
+   21ff9:	1b44      	addi.n	a4, a4, 1
+00021ffb: 034600   ssi          f0, a6, 0 ; Capstone
+   21ffe:	0c12      	movi.n	a2, 1
+   22000:	2903      	s32i.n	a2, a3, 0
+   22002:	4b66      	addi.n	a6, a6, 4
+00022004: 1df0     retw.n        ; Capstone
+   22006:	2171c5        	l32r	a2, 0x135cc (0x123a088)
+   22009:	3d05      	mov.n	a3, a5
+   2200b:	403283        	moveqz	a3, a2, a4
+   2200e:	c02000        	memw
+   22011:	3803      	l32i.n	a3, a3, 0
+   22013:	4763ef        	bbci	a3, 4, 0x22006
+   22016:	7796ac        	bne	a6, a7, 0x21fc6
+   22019:	316ac5        	l32r	a3, 0x135c4 (0x123a084)
+   2201c:	86ebff        	j	0x21fce
+   2201f:	216bc5        	l32r	a2, 0x135cc (0x123a088)
+   22022:	3d05      	mov.n	a3, a5
+   22024:	403283        	moveqz	a3, a2, a4
+   22027:	c02000        	memw
+   2202a:	3803      	l32i.n	a3, a3, 0
+   2202c:	47e3ef        	bbsi	a3, 4, 0x2201f
+   2202f:	7796a5        	bne	a6, a7, 0x21fd8
+   22032:	5165c5        	l32r	a5, 0x135c8 (0x123a074)
+   22035:	c6e9ff        	j	0x21fe0

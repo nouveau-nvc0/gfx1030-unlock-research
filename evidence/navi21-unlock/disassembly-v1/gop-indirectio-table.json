@@ -1,0 +1,79 @@
+{
+  "scope": "Ten standard-format records atbc50; not a proof of runtime index bounds",
+  "stride": 9,
+  "table": "0xbc50",
+  "records": [
+    {
+      "opcode": 0,
+      "target": "0x9f04",
+      "length": 1
+    },
+    {
+      "opcode": 1,
+      "target": "0x9f04",
+      "length": 2
+    },
+    {
+      "opcode": 2,
+      "target": "0x7ee0",
+      "length": 3
+    },
+    {
+      "opcode": 3,
+      "target": "0x7f18",
+      "length": 3
+    },
+    {
+      "opcode": 4,
+      "target": "0x8ee4",
+      "length": 3
+    },
+    {
+      "opcode": 5,
+      "target": "0x8ec0",
+      "length": 3
+    },
+    {
+      "opcode": 6,
+      "target": "0x8db8",
+      "length": 4
+    },
+    {
+      "opcode": 7,
+      "target": "0x8e10",
+      "length": 4
+    },
+    {
+      "opcode": 8,
+      "target": "0x8e68",
+      "length": 4
+    },
+    {
+      "opcode": 9,
+      "target": "0x9f04",
+      "length": 3
+    }
+  ],
+  "write_mode_tables": {
+    "0xba10": [
+      "0x7d04",
+      "0x7ccc",
+      "0x7ccc",
+      "0x7ccc",
+      "0x7c94",
+      "0x7c94",
+      "0x7c94",
+      "0x7c94"
+    ],
+    "0xba90": [
+      "0x7ea0",
+      "0x7e64",
+      "0x7e64",
+      "0x7e64",
+      "0x7e28",
+      "0x7e28",
+      "0x7e28",
+      "0x7e28"
+    ]
+  }
+}

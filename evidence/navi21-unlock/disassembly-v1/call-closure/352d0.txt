@@ -1,0 +1,36 @@
+
+/tmp/tmpextam2ut/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000352d0 <.data+0x352d0>:
+000352d0: 366100   entry        a1, 0x30 ; Capstone
+   352d3:	a2c23c        	addi	a10, a2, 60
+000352d6: 030212   lsi          f0, a2, 0x48 ; Capstone
+000352d9: 5013fa   wfr          f1, a3 ; Capstone
+000352dc: 134100   ssi          f1, a1, 0 ; Capstone
+   352df:	320200        	l8ui	a3, a2, 0
+000352e2: 10004b   olt.s        b0, f0, f1 ; Capstone
+000352e5: 0001db   movt.s       f0, f1, b0 ; Capstone
+000352e8: 40b0fa   rfr          a11, f0 ; Capstone
+000352eb: 254ff4   call8        . -0xbb0c ; Capstone ; target=0x297dc
+000352ee: 500afa   wfr          f0, a10 ; Capstone
+   352f1:	9c23      	beqz.n	a3, 0x35307
+   352f3:	261310        	beqi	a3, 1, 0x35307
+000352f6: 53021a   lsi          f5, a2, 0x68 ; Capstone
+000352f9: 00450a   add.s        f4, f5, f0 ; Capstone
+000352fc: 33021b   lsi          f3, a2, 0x6c ; Capstone
+000352ff: 40230a   add.s        f2, f3, f4 ; Capstone
+00035302: 4022fa   rfr          a2, f2 ; Capstone
+00035305: 1df0     retw.n        ; Capstone
+00035307: 40d0fa   rfr          a13, f0 ; Capstone
+   3530a:	b2c234        	addi	a11, a2, 52
+   3530d:	c20203        	l8ui	a12, a2, 3
+00035310: 630100   lsi          f6, a1, 0 ; Capstone
+00035313: 40a6fa   rfr          a10, f6 ; Capstone
+   35316:	e20200        	l8ui	a14, a2, 0
+00035319: a55cf0   call8        . -0xfa34 ; Capstone ; target=0x258e4
+0003531c: 500afa   wfr          f0, a10 ; Capstone
+   3531f:	c6f4ff        	j	0x352f6
+	...

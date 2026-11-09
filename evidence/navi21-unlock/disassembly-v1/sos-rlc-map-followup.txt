@@ -1,0 +1,29 @@
+RLC register addresses through the SOS mapping helper
+
+27238 checks the address plus8. For3ed70/3ed74/3ed78 and3b000, neither
+upper interval comparison nor unsigned wrap produces the nonzero return.
+Later global-state branches either return0 directly or reachend<=3000000,
+which also returns0. Thus state values cannot select return10 for these
+four addresses, conditional on completion of the global reads themselves.
+This is a local code result, not a live address-space observation.
+
+For7b/7c,24b30 receives slot0,attributes0,finalflag0. It writes
+halfword[8898]=target_high_bits=0 andhalfword[889a]=1. 25dc4 then:
+- writesDWORD03220050=0;
+- sees activehalfword1 and retains high-address halfword0;
+- readsDWORD03220000, preserves upper16 and clears lower16.
+24b30 returns01000000+(target&fffff). The size4 store in27422 therefore
+uses0103ed70/74/78 or0103b000, followed byDSB.
+
+This supplies the concrete setup instructions behind the previously inferred
+7c register writes. Exact physical meaning of the window is not established
+by those instructions alone. No register readback or actual completion was
+observed. Preserve the distinction between no local range refusal, memory
+store execution, register identity and acceptance by the GPU.
+
+Next connect this concrete window with matching primary register definitions
+or continuef2 delivery. The saved-mask producer remains the central missing
+functional step; these results do not create a changed CC payload.
+Reproducer scripts/navi21-sos-rlc-map-audit.py with existing Capstone path;
+receipt sos-rlc-map-audit.json covers91instructions, literal pools and four
+specific addresses. No hardware/driver/firmware/service changes.

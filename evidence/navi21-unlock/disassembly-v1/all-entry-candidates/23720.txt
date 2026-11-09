@@ -1,0 +1,63 @@
+
+/tmp/tmpz45jhucq/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00023720 <.data+0x23720>:
+00023720: 364100   entry        a1, 0x20 ; Capstone
+   23723:	820308        	l8ui	a8, a3, 8
+00023726: 5002fa   wfr          f0, a2 ; Capstone
+00023729: 3021fa   const.s      f2, 1 ; Capstone
+   2372c:	9c68      	beqz.n	a8, 0x23746
+   2372e:	6843      	l32i.n	a6, a3, 16
+00023730: 3010fa   const.s      f1, 0 ; Capstone
+   23733:	0c02      	movi.n	a2, 0
+   23735:	6042a0        	addx4	a4, a2, a6
+00023738: 134400   ssi          f1, a4, 0 ; Capstone
+   2373b:	820308        	l8ui	a8, a3, 8
+   2373e:	1b22      	addi.n	a2, a2, 1
+   23740:	202074        	extui	a2, a2, 0, 8
+   23743:	8732ee        	bltu	a2, a8, 0x23735
+   23746:	6833      	l32i.n	a6, a3, 12
+00023748: 130600   lsi          f1, a6, 0 ; Capstone
+0002374b: 00014b   olt.s        b0, f1, f0 ; Capstone
+0002374e: 760007   bf           b0, . +0xb ; Capstone
+   23751:	8843      	l32i.n	a8, a3, 16
+00023753: 234800   ssi          f2, a8, 0 ; Capstone
+   23756:	820308        	l8ui	a8, a3, 8
+   23759:	0b78      	addi.n	a7, a8, -1
+   2375b:	a6173c        	blti	a7, 1, 0x2379b
+   2375e:	0c02      	movi.n	a2, 0
+   23760:	6052a0        	addx4	a5, a2, a6
+00023763: 330500   lsi          f3, a5, 0 ; Capstone
+00023766: 30106b   ole.s        b1, f0, f3 ; Capstone
+00023769: 130501   lsi          f1, a5, 4 ; Capstone
+0002376c: 760123   bf           b1, . +0x27 ; Capstone
+0002376f: 00214b   olt.s        b2, f1, f0 ; Capstone
+00023772: 76021d   bf           b2, . +0x21 ; Capstone
+00023775: 10701a   sub.s        f7, f0, f1 ; Capstone
+00023778: 630301   lsi          f6, a3, 4 ; Capstone
+0002377b: 70562a   mul.s        f5, f6, f7 ; Capstone
+   2377e:	9843      	l32i.n	a9, a3, 16
+00023780: 50421a   sub.s        f4, f2, f5 ; Capstone
+   23783:	9092a0        	addx4	a9, a2, a9
+00023786: 534900   ssi          f5, a9, 0 ; Capstone
+00023789: 434901   ssi          f4, a9, 4 ; Capstone
+   2378c:	820308        	l8ui	a8, a3, 8
+   2378f:	6833      	l32i.n	a6, a3, 12
+   23791:	0b78      	addi.n	a7, a8, -1
+   23793:	1b22      	addi.n	a2, a2, 1
+   23795:	202074        	extui	a2, a2, 0, 8
+   23798:	7722c4        	blt	a2, a7, 0x23760
+   2379b:	6048a0        	addx4	a4, a8, a6
+   2379e:	42d4ff        	addmi	a4, a4, 0xffffff00
+000237a1: 83043f   lsi          f8, a4, 0xfc ; Capstone
+000237a4: 80306b   ole.s        b3, f0, f8 ; Capstone
+000237a7: 76030a   bf           b3, . +0xe ; Capstone
+   237aa:	9843      	l32i.n	a9, a3, 16
+   237ac:	9098a0        	addx4	a9, a8, a9
+   237af:	92d9ff        	addmi	a9, a9, 0xffffff00
+000237b2: 23493f   ssi          f2, a9, 0xfc ; Capstone
+000237b5: 1df0     retw.n        ; Capstone
+	...

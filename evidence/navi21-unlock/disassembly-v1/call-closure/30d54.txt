@@ -1,0 +1,29 @@
+
+/tmp/tmpwocdbo37/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00030d54 <.data+0x30d54>:
+00030d54: 366100   entry        a1, 0x30 ; Capstone
+   30d57:	c12e89        	l32r	a12, 0x13210 (0xffdfffff)
+   30d5a:	a1fe8c        	l32r	a10, 0x14154 (0x200000)
+   30d5d:	911f8a        	l32r	a9, 0x135dc (0xa3c0)
+   30d60:	0c0d      	movi.n	a13, 0
+   30d62:	d911      	s32i.n	a13, a1, 4
+   30d64:	822983        	l32i	a8, a9, 0x20c
+   30d67:	b2297f        	l32i	a11, a9, 0x1fc
+   30d6a:	d901      	s32i.n	a13, a1, 0
+   30d6c:	a08820        	or	a8, a8, a10
+   30d6f:	c0bb10        	and	a11, a11, a12
+   30d72:	b2697f        	s32i	a11, a9, 0x1fc
+   30d75:	ad01      	mov.n	a10, a1
+   30d77:	826983        	s32i	a8, a9, 0x20c
+00030d7a: 25d204   call8        . +0x4d24 ; Capstone ; target=0x35a9c
+   30d7d:	1c5a      	movi.n	a10, 21
+00030d7f: 259e04   call8        . +0x49e4 ; Capstone ; target=0x35760
+   30d82:	0c1e      	movi.n	a14, 1
+   30d84:	0c02      	movi.n	a2, 0
+   30d86:	a02e83        	moveqz	a2, a14, a10
+00030d89: 1df0     retw.n        ; Capstone
+	...

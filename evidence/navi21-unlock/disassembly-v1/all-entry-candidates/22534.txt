@@ -1,0 +1,12 @@
+
+/tmp/tmph_4uxy14/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00022534 <.data+0x22534>:
+00022534: 364100   entry        a1, 0x20 ; Capstone
+   22537:	2133c4        	l32r	a2, 0x13604 (0xe1f4)
+   2253a:	22027e        	l8ui	a2, a2, 126
+0002253d: 1df0     retw.n        ; Capstone
+	...

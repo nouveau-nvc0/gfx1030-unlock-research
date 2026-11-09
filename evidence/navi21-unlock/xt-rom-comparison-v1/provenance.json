@@ -1,0 +1,342 @@
+{
+  "utc": "2026-11-09T12:59:22.796646+00:00",
+  "scope": "Offline file comparison only",
+  "references": [
+    {
+      "collection_id": 230822,
+      "path": "/workspace/gfx1030-unlock-research/inputs/research/xt-rom-comparison-v1/ASRock.RX6800XT.16384.201111_1.rom",
+      "download_url": "https://www.techpowerup.com/vgabios/230822/ASRock.RX6800XT.16384.201111_1.rom?download=1",
+      "bytes": 1048576,
+      "sha256": "ec4674da8cd311a3871b8ca565c5545caabcd359c54796c5f9752d71e9b65331",
+      "md5": "eb1a2335af17acfb6fae15b668436bf9",
+      "sha1": "ea68adba4a33acbaf27d56e126390e4ae9a8b37b",
+      "collection_hashes_match": true
+    },
+    {
+      "collection_id": 233900,
+      "path": "/workspace/gfx1030-unlock-research/inputs/research/xt-rom-comparison-v1/ASRock.RX6800.16384.210505.rom",
+      "download_url": "https://www.techpowerup.com/vgabios/233900/ASRock.RX6800.16384.210505.rom?download=1",
+      "bytes": 1048576,
+      "sha256": "6ffb1d8b93b75f9ef3e411b7fafeeca41764edea05aecf010f11ed9423158f40",
+      "md5": "6f53902fd1d0371bc8808b7b3ad464b7",
+      "sha1": "7f5860c15d993dc1a856487fd3bc5780a4e133d3",
+      "collection_hashes_match": true
+    }
+  ],
+  "atom_header": {
+    "url": "https://raw.githubusercontent.com/torvalds/linux/master/drivers/gpu/drm/amd/amdgpu/atom.h",
+    "sha256": "f67723a000d98959c73c14a269afd22033a7425ec712129a14c4ab27fb5103fa",
+    "note": "Mutable upstream URL; exact downloaded bytes preserved locally."
+  },
+  "local_post_vs_full_reference": {
+    "post_sha256": "e258121695fd5ae029132cdcc328e5c34065876a5612e3a2260487ac196a5b5e",
+    "stock_sha256": "6ffb1d8b93b75f9ef3e411b7fafeeca41764edea05aecf010f11ed9423158f40",
+    "compared_bytes": 45056,
+    "differences": [
+      {
+        "offset": 33,
+        "offset_hex": "0x21",
+        "stock": 205,
+        "post": 74
+      },
+      {
+        "offset": 2176,
+        "offset_hex": "0x880",
+        "stock": 0,
+        "post": 1
+      },
+      {
+        "offset": 2196,
+        "offset_hex": "0x894",
+        "stock": 0,
+        "post": 2
+      },
+      {
+        "offset": 2200,
+        "offset_hex": "0x898",
+        "stock": 0,
+        "post": 128
+      }
+    ],
+    "physical_flash_contents_established": false
+  },
+  "checks": {
+    "data_tables_compared": 23,
+    "command_tables_compared": 7,
+    "identical_command_tables": 6,
+    "instructions_per_rom": 314,
+    "all_branch_targets_at_instruction_boundaries": true,
+    "changed_instructions_in_command66": [
+      {
+        "baseline": {
+          "offset": 54,
+          "op": "compare",
+          "operands": [
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 56
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 57
+            }
+          ],
+          "attr": 2,
+          "hex": "3e024140"
+        },
+        "candidate": {
+          "offset": 54,
+          "op": "compare",
+          "operands": [
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 56
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 57
+            }
+          ],
+          "attr": 2,
+          "hex": "3e024041"
+        }
+      },
+      {
+        "baseline": {
+          "offset": 61,
+          "op": "sub",
+          "operands": [
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 63
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 64
+            }
+          ],
+          "attr": 2,
+          "hex": "33024041"
+        },
+        "candidate": {
+          "offset": 61,
+          "op": "sub",
+          "operands": [
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 63
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 64
+            }
+          ],
+          "attr": 2,
+          "hex": "33024140"
+        }
+      },
+      {
+        "baseline": {
+          "offset": 65,
+          "op": "move",
+          "operands": [
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 67
+            },
+            {
+              "kind": "FB",
+              "value": 6,
+              "alignment": 0,
+              "byte_offset": 68
+            }
+          ],
+          "attr": 3,
+          "hex": "03034106"
+        },
+        "candidate": {
+          "offset": 65,
+          "op": "move",
+          "operands": [
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 67
+            },
+            {
+              "kind": "FB",
+              "value": 6,
+              "alignment": 0,
+              "byte_offset": 68
+            }
+          ],
+          "attr": 3,
+          "hex": "03034006"
+        }
+      },
+      {
+        "baseline": {
+          "offset": 69,
+          "op": "sub",
+          "operands": [
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 71
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 72
+            }
+          ],
+          "attr": 2,
+          "hex": "33024140"
+        },
+        "candidate": {
+          "offset": 69,
+          "op": "sub",
+          "operands": [
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 71
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 72
+            }
+          ],
+          "attr": 2,
+          "hex": "33024041"
+        }
+      },
+      {
+        "baseline": {
+          "offset": 76,
+          "op": "sub",
+          "operands": [
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 78
+            },
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 79
+            }
+          ],
+          "attr": 2,
+          "hex": "33024140"
+        },
+        "candidate": {
+          "offset": 76,
+          "op": "sub",
+          "operands": [
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 78
+            },
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 79
+            }
+          ],
+          "attr": 2,
+          "hex": "33024041"
+        }
+      },
+      {
+        "baseline": {
+          "offset": 80,
+          "op": "compare",
+          "operands": [
+            {
+              "kind": "WS",
+              "value": 65,
+              "alignment": 0,
+              "byte_offset": 82
+            },
+            {
+              "kind": "IMM",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 83
+            }
+          ],
+          "attr": 5,
+          "hex": "3e054100000000"
+        },
+        "candidate": {
+          "offset": 80,
+          "op": "compare",
+          "operands": [
+            {
+              "kind": "WS",
+              "value": 64,
+              "alignment": 0,
+              "byte_offset": 82
+            },
+            {
+              "kind": "IMM",
+              "value": 0,
+              "alignment": 0,
+              "byte_offset": 83
+            }
+          ],
+          "attr": 5,
+          "hex": "3e054000000000"
+        }
+      }
+    ],
+    "psp_entries": 31,
+    "identical_psp_payloads": 29,
+    "changed_psp_types": [
+      4,
+      5
+    ],
+    "rom_code_executed": false,
+    "hardware_access": false,
+    "firmware_or_nvram_writes": false,
+    "boot_or_vm_changes": false,
+    "service_actions": false
+  },
+  "limitations": [
+    "Collection hash agreement is not cryptographic vendor authentication.",
+    "No current-card physical SPI dump was read.",
+    "EFI images differ; their instructions were not disassembled.",
+    "No proof that GFX_INFO v2.6 descriptor bytes control hardware harvesting.",
+    "No identified early writable CC-mask window."
+  ]
+}

@@ -1,0 +1,19 @@
+
+/tmp/tmpan36r685/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005c54 <.data+0x5c54>:
+00005c54: 364100   entry        a1, 0x20 ; Capstone
+    5c57:	816add        	l32r	a8, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    5c5a:	7cd9      	movi.n	a9, -3
+    5c5c:	310ade        	l32r	a3, 0xffffd484 (0x5ffee57c) ; inferred DRAM map 0x5ffec000
+    5c5f:	422835        	l32i	a4, a8, 212
+    5c62:	0c02      	movi.n	a2, 0
+    5c64:	224326        	s8i	a2, a3, 38
+    5c67:	904410        	and	a4, a4, a9
+    5c6a:	426835        	s32i	a4, a8, 212
+    5c6d:	2953      	s32i.n	a2, a3, 20
+00005c6f: 1df0     retw.n        ; Capstone
+    5c71:	000000        	ill

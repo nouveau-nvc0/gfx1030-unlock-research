@@ -1,0 +1,35 @@
+LX6 zero-start bulk path and the remaining payload dependency
+
+Checked all three immediate calls to index helper35d7:311d,31b0,31fb.
+Each supplies DW3high16 as the index value. Under the existing partial
+instruction interpretation, helper35d7 shifts the destination register
+address left2; it does not scale the supplied index. Both concrete DRAM
+entries10/27 specify start0,index0,length16384. Only TOC entries1/2 have
+nonzero starts, and they address different ports. Thus these paths do not
+resolve nonzero LX6 index units.
+
+Dependency correction: exact random-access index units are NOT a necessary
+prerequisite for the existing whole-block DMA path. That path initializes
+zero and transfers the full block through fixed data portfb56. This is a
+firmware setup interpretation, not proof that SMU-issued individual port
+transactions would reproduce it. The full-block path still lacks a proven
+changed payload source, usable invocation and hardware CC acceptance.
+Do not make arbitrary-index discovery the sole next-step bottleneck.
+
+Host buffer qualification: the retained gfx_v10_0.c reference allocates the
+CPU-mapped rlc_autoload buffer only in a separate selected loading mode
+(lines4982..4986); its allocation is GTT(lines5694..5712). The PSP-autoload
+branch of rlc_resume(lines5573..5587) waits for completion instead of using
+that setup. Therefore the visible host allocation cannot be assumed to own
+the active firmware snapshot at bootloadbase+545000. This mode distinction
+must precede any claim that the snapshot already has a known CPU pointer.
+No active load mode, live base or payload contents were read here.
+
+Next concrete dependency: identify the actual snapshot buffer's ownership
+and writers in the PSP/RLC loading chain, or establish a direct SMU port
+route. Neither route is yet a changed-mask producer. Local source references
+are offline evidence, not observations of the running device.
+
+Reproducer: scripts/navi21-rlcg-lx6-index-audit.py
+Receipt: rlcg-lx6-index-audit.json. Exact words/descriptors checked; partial
+ISA semantics retain their earlier limitations. No hardware changes.

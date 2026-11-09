@@ -1,0 +1,449 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "header_sha256": "abd09080e4b06fd2d3e14145e5ceafa580a1987da59f076d2598e8753957b614",
+  "root_callers": [
+    "0x30c3"
+  ],
+  "transfers": [
+    {
+      "call": "0x361c",
+      "register": "mmRLC_SPM_GLOBALS_SAMPLE_SKEW",
+      "dword": "0xdc8c",
+      "public_byte": "0x37230",
+      "values": [
+        50
+      ],
+      "byte_count": 4
+    },
+    {
+      "call": "0x3620",
+      "register": "mmRLC_SPM_GLOBALS_MUXSEL_SKEW",
+      "dword": "0xdc8d",
+      "public_byte": "0x37234",
+      "values": [
+        56
+      ],
+      "byte_count": 4
+    },
+    {
+      "call": "0x3624",
+      "register": "mmRLC_SPM_DESER_START_SKEW",
+      "dword": "0xdc8b",
+      "public_byte": "0x3722c",
+      "values": [
+        75
+      ],
+      "byte_count": 4
+    },
+    {
+      "call": "0x3632",
+      "register": "mmRLC_SPM_SE_SAMPLE_SKEW",
+      "dword": "0xdc8e",
+      "public_byte": "0x37238",
+      "values": [
+        13,
+        21,
+        16,
+        23
+      ],
+      "byte_count": 4
+    },
+    {
+      "call": "0x3636",
+      "register": "mmRLC_SPM_SE_MUXSEL_SKEW",
+      "dword": "0xdc8f",
+      "public_byte": "0x3723c",
+      "values": [
+        35,
+        43,
+        37,
+        45
+      ],
+      "byte_count": 4
+    }
+  ],
+  "raw_words": [
+    {
+      "pc": "0x35f8",
+      "word": "c008000d"
+    },
+    {
+      "pc": "0x35f9",
+      "word": "cc830300"
+    },
+    {
+      "pc": "0x35fa",
+      "word": "c00c0001"
+    },
+    {
+      "pc": "0x35fb",
+      "word": "c0080015"
+    },
+    {
+      "pc": "0x35fc",
+      "word": "cc8f0300"
+    },
+    {
+      "pc": "0x35fd",
+      "word": "c00c0002"
+    },
+    {
+      "pc": "0x35fe",
+      "word": "c0080010"
+    },
+    {
+      "pc": "0x35ff",
+      "word": "cc8f0300"
+    },
+    {
+      "pc": "0x3600",
+      "word": "c00c0003"
+    },
+    {
+      "pc": "0x3601",
+      "word": "c0080017"
+    },
+    {
+      "pc": "0x3602",
+      "word": "cc8f0300"
+    },
+    {
+      "pc": "0x3603",
+      "word": "c0080023"
+    },
+    {
+      "pc": "0x3604",
+      "word": "cc830304"
+    },
+    {
+      "pc": "0x3605",
+      "word": "c00c0001"
+    },
+    {
+      "pc": "0x3606",
+      "word": "c008002b"
+    },
+    {
+      "pc": "0x3607",
+      "word": "cc8f0304"
+    },
+    {
+      "pc": "0x3608",
+      "word": "c00c0002"
+    },
+    {
+      "pc": "0x3609",
+      "word": "c0080025"
+    },
+    {
+      "pc": "0x360a",
+      "word": "cc8f0304"
+    },
+    {
+      "pc": "0x360b",
+      "word": "c00c0003"
+    },
+    {
+      "pc": "0x360c",
+      "word": "c008002d"
+    },
+    {
+      "pc": "0x360d",
+      "word": "cc8f0304"
+    },
+    {
+      "pc": "0x360e",
+      "word": "c0080032"
+    },
+    {
+      "pc": "0x360f",
+      "word": "cc830308"
+    },
+    {
+      "pc": "0x3610",
+      "word": "c0080038"
+    },
+    {
+      "pc": "0x3611",
+      "word": "cc830309"
+    },
+    {
+      "pc": "0x3612",
+      "word": "c008004b"
+    },
+    {
+      "pc": "0x3613",
+      "word": "cc83030a"
+    },
+    {
+      "pc": "0x3614",
+      "word": "c0300000"
+    },
+    {
+      "pc": "0x3615",
+      "word": "c0280000"
+    },
+    {
+      "pc": "0x3616",
+      "word": "c03a4000"
+    },
+    {
+      "pc": "0x3617",
+      "word": "c036bc00"
+    },
+    {
+      "pc": "0x3618",
+      "word": "2b740004"
+    },
+    {
+      "pc": "0x3619",
+      "word": "c42f0308"
+    },
+    {
+      "pc": "0x361a",
+      "word": "c024dc8c"
+    },
+    {
+      "pc": "0x361b",
+      "word": "12640002"
+    },
+    {
+      "pc": "0x361c",
+      "word": "8c0030ae"
+    },
+    {
+      "pc": "0x361d",
+      "word": "c42f0309"
+    },
+    {
+      "pc": "0x361e",
+      "word": "c024dc8d"
+    },
+    {
+      "pc": "0x361f",
+      "word": "12640002"
+    },
+    {
+      "pc": "0x3620",
+      "word": "8c0030ae"
+    },
+    {
+      "pc": "0x3621",
+      "word": "c42f030a"
+    },
+    {
+      "pc": "0x3622",
+      "word": "c024dc8b"
+    },
+    {
+      "pc": "0x3623",
+      "word": "12640002"
+    },
+    {
+      "pc": "0x3624",
+      "word": "8c0030ae"
+    },
+    {
+      "pc": "0x3625",
+      "word": "c0200000"
+    },
+    {
+      "pc": "0x3626",
+      "word": "06080001"
+    },
+    {
+      "pc": "0x3627",
+      "word": "cc8300eb"
+    },
+    {
+      "pc": "0x3628",
+      "word": "122c0010"
+    },
+    {
+      "pc": "0x3629",
+      "word": "8c0035ce"
+    },
+    {
+      "pc": "0x362a",
+      "word": "c0300000"
+    },
+    {
+      "pc": "0x362b",
+      "word": "c0280000"
+    },
+    {
+      "pc": "0x362c",
+      "word": "c03a4000"
+    },
+    {
+      "pc": "0x362d",
+      "word": "c036bc00"
+    },
+    {
+      "pc": "0x362e",
+      "word": "2b740004"
+    },
+    {
+      "pc": "0x362f",
+      "word": "c62f0300"
+    },
+    {
+      "pc": "0x3630",
+      "word": "c024dc8e"
+    },
+    {
+      "pc": "0x3631",
+      "word": "12640002"
+    },
+    {
+      "pc": "0x3632",
+      "word": "8c0030ae"
+    },
+    {
+      "pc": "0x3633",
+      "word": "c62f0304"
+    },
+    {
+      "pc": "0x3634",
+      "word": "c024dc8f"
+    },
+    {
+      "pc": "0x3635",
+      "word": "12640002"
+    },
+    {
+      "pc": "0x3636",
+      "word": "8c0030ae"
+    },
+    {
+      "pc": "0x3637",
+      "word": "06200001"
+    },
+    {
+      "pc": "0x3638",
+      "word": "3e080004"
+    },
+    {
+      "pc": "0x3639",
+      "word": "948fffed"
+    },
+    {
+      "pc": "0x363a",
+      "word": "d80300eb"
+    },
+    {
+      "pc": "0x363b",
+      "word": "c02ee000"
+    },
+    {
+      "pc": "0x363c",
+      "word": "8c0035ce"
+    },
+    {
+      "pc": "0x363d",
+      "word": "90000000"
+    }
+  ],
+  "direct_30ae_callers": [
+    "0x3135",
+    "0x31c9",
+    "0x321b",
+    "0x35c6",
+    "0x35d5",
+    "0x361c",
+    "0x3620",
+    "0x3624",
+    "0x3632",
+    "0x3636"
+  ],
+  "engine_operand_literal_sites": {
+    "0xc063": [
+      {
+        "pc": "0x30b3",
+        "word": "cf81c063"
+      },
+      {
+        "pc": "0x3145",
+        "word": "cc01c063"
+      },
+      {
+        "pc": "0x35e0",
+        "word": "cf81c063"
+      }
+    ],
+    "0xc064": [
+      {
+        "pc": "0x30b0",
+        "word": "cec1c064"
+      },
+      {
+        "pc": "0x314e",
+        "word": "ccc1c064"
+      },
+      {
+        "pc": "0x35dd",
+        "word": "cec1c064"
+      }
+    ],
+    "0xc065": [
+      {
+        "pc": "0x30af",
+        "word": "cf01c065"
+      },
+      {
+        "pc": "0x314f",
+        "word": "cd01c065"
+      },
+      {
+        "pc": "0x35dc",
+        "word": "cc01c065"
+      }
+    ],
+    "0xc066": [
+      {
+        "pc": "0x30b2",
+        "word": "ce41c066"
+      },
+      {
+        "pc": "0x3143",
+        "word": "ccc1c066"
+      },
+      {
+        "pc": "0x35df",
+        "word": "ce41c066"
+      }
+    ],
+    "0xc067": [
+      {
+        "pc": "0x30b1",
+        "word": "ce81c067"
+      },
+      {
+        "pc": "0x3144",
+        "word": "d801c067"
+      },
+      {
+        "pc": "0x35de",
+        "word": "cc01c067"
+      }
+    ],
+    "0xc0e8": [
+      {
+        "pc": "0x30b4",
+        "word": "cf41c0e8"
+      },
+      {
+        "pc": "0x3152",
+        "word": "cd41c0e8"
+      },
+      {
+        "pc": "0x35e1",
+        "word": "ce81c0e8"
+      }
+    ]
+  },
+  "command": "0xbc000004",
+  "control": "0x40000000",
+  "inferred_store_count": 11,
+  "scope": "Small-subset initialization model and public coordinates verify constants. ISA execution, SE selection, actual scheduling and acceptance remain unobserved. Literal call/operand coverage does not cover computed addresses/calls or alternate entries."
+}

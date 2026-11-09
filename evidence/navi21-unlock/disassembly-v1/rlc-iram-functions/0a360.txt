@@ -1,0 +1,10 @@
+
+/tmp/tmpabs44n1x/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000a360 <.data+0xa360>:
+0000a360: 362100   entry        a1, 0x10 ; Capstone
+    a363:	f04100        	break	1, 15
+0000a366: 1df0     retw.n        ; Capstone

@@ -1,0 +1,18 @@
+
+/tmp/tmpvs5w5wkc/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000261f4 <.data+0x261f4>:
+000261f4: 364100   entry        a1, 0x20 ; Capstone
+   261f7:	5802      	l32i.n	a5, a2, 0
+   261f9:	8c45      	beqz.n	a5, 0x26201
+   261fb:	5933      	s32i.n	a5, a3, 12
+   261fd:	3902      	s32i.n	a3, a2, 0
+000261ff: 1df0     retw.n        ; Capstone
+   26201:	3902      	s32i.n	a3, a2, 0
+   26203:	0c04      	movi.n	a4, 0
+   26205:	4933      	s32i.n	a4, a3, 12
+00026207: 1df0     retw.n        ; Capstone
+   26209:	000000        	ill

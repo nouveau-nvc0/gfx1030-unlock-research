@@ -1,0 +1,17 @@
+
+/tmp/tmph19haki0/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00034e60 <.data+0x34e60>:
+00034e60: 364100   entry        a1, 0x20 ; Capstone
+   34e63:	81457a        	l32r	a8, 0x13778 (0x157c4)
+   34e66:	82087d        	l8ui	a8, a8, 125
+   34e69:	27680a        	bbci	a8, 2, 0x34e77
+   34e6c:	a1827d        	l32r	a10, 0x14474 (0xa4a8)
+   34e6f:	0c1b      	movi.n	a11, 1
+   34e71:	a20a7d        	l8ui	a10, a10, 125
+00034e74: 25fbff   call8        . -0x4c ; Capstone ; target=0x34e28
+00034e77: 1df0     retw.n        ; Capstone
+   34e79:	000000        	ill

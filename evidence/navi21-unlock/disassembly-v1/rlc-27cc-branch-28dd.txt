@@ -1,0 +1,13 @@
+
+/tmp/tmp5hlfzd5q/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000028dd <.data+0x28dd>:
+    28dd:	d21208        	l16ui	a13, a2, 16
+    28e0:	8156ea        	l32r	a8, 0xffffd238 (0x5ffec038) ; inferred DRAM map 0x5ffec000
+    28e3:	e0dd11        	slli	a13, a13, 2
+    28e6:	d9c1      	s32i.n	a13, a1, 48
+    28e8:	8add      	add.n	a13, a13, a8
+    28ea:	d80d      	l32i.n	a13, a13, 0

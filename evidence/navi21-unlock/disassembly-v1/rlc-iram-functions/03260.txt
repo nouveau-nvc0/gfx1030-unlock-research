@@ -1,0 +1,41 @@
+
+/tmp/tmp97p6rbi5/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00003260 <.data+0x3260>:
+00003260: 366100   entry        a1, 0x30 ; Capstone
+    3263:	310be8        	l32r	a3, 0xffffd290 (0x5ffee44c) ; inferred DRAM map 0x5ffec000
+    3266:	820301        	l8ui	a8, a3, 1
+    3269:	163800        	beqz	a8, 0x3270
+0000326c: 1df0     retw.n        ; Capstone
+    326e:	00008c        	excw
+00003271: 52e5a9   s32c1i       a5, a5, 0x2a4 ; Capstone
+    3274:	001df0        	subx8	a1, a13, a0
+    3277:	000065        	extui	a0, a0, 16, 7
+    327a:	d0fe92        	excw
+0000327d: 030356   lsi          f0, a3, 0x158 ; Capstone
+    3280:	99fe      	s32i.n	a9, a14, 60
+    3282:	a20306        	l8ui	a10, a3, 6
+    3285:	563afe        	bnez	a10, 0x326c
+    3288:	a106e8        	l32r	a10, 0xffffd2a0 (0x6803ae00) ; inferred DRAM map 0x5ffec000
+    328b:	a22ac9        	l32i	a10, a10, 0x324
+    328e:	076ada        	bbci	a10, 0, 0x326c
+    3291:	b112e8        	l32r	a11, 0xffffd2dc (0x7ffff) ; inferred DRAM map 0x5ffec000
+    3294:	a0a841        	srli	a10, a10, 8
+    3297:	b0aa10        	and	a10, a10, a11
+    329a:	b111e8        	l32r	a11, 0xffffd2e0 (0x5fff387c) ; inferred DRAM map 0x5ffec000
+0000329d: e57c02   call8        . +0x27d0 ; Capstone ; target=0x5a6c
+000032a0: 1df0     retw.n        ; Capstone
+	...
+
+; Alternate branch-target decode
+    3270:	8c52      	beqz.n	a2, 0x3279
+00003272: e5a900   call8        . +0xaa0 ; Capstone ; target=0x3d10
+00003275: 1df0     retw.n        ; Capstone
+
+; Alternate branch-target decode
+00003279: 65d0fe   call8        . -0x12f8 ; Capstone ; target=0x1f80
+    327c:	920303        	l8ui	a9, a3, 3
+    327f:	5699fe        	bnez	a9, 0x326c

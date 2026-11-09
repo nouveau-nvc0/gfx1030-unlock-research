@@ -1,0 +1,26 @@
+
+/tmp/tmpfr_5c77t/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001f8fc <.data+0x1f8fc>:
+0001f8fc: 366100   entry        a1, 0x30 ; Capstone
+   1f8ff:	82abff        	movi	a8, 0xfffffbff
+   1f902:	0c1a      	movi.n	a10, 1
+   1f904:	404a93        	movnez	a4, a10, a4
+   1f907:	505a93        	movnez	a5, a10, a5
+   1f90a:	202a93        	movnez	a2, a10, a2
+   1f90d:	809211        	slli	a9, a2, 8
+   1f910:	9901      	s32i.n	a9, a1, 0
+   1f912:	324100        	s8i	a3, a1, 0
+   1f915:	6801      	l32i.n	a6, a1, 0
+   1f917:	607511        	slli	a7, a5, 10
+   1f91a:	806610        	and	a6, a6, a8
+   1f91d:	706620        	or	a6, a6, a7
+   1f920:	82adff        	movi	a8, 0xfffffdff
+   1f923:	707411        	slli	a7, a4, 9
+   1f926:	806610        	and	a6, a6, a8
+   1f929:	702620        	or	a2, a6, a7
+0001f92c: 1df0     retw.n        ; Capstone
+	...

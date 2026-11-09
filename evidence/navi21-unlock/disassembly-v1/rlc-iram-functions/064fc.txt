@@ -1,0 +1,10 @@
+
+/tmp/tmponi4yfp4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000064fc <.data+0x64fc>:
+000064fc: 364100   entry        a1, 0x20 ; Capstone
+000064ff: 1df0     retw.n        ; Capstone
+    6501:	000000        	ill

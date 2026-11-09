@@ -1,0 +1,33 @@
+
+/tmp/tmpruojg1kv/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000097f8 <.data+0x97f8>:
+000097f8: 364100   entry        a1, 0x20 ; Capstone
+    97fb:	b68205        	bltui	a2, 8, 0x9804
+    97fe:	7cf2      	movi.n	a2, -1
+00009800: 1df0     retw.n        ; Capstone
+    9802:	000030        	xor	a0, a0, a0
+00009805: 630041   lsi          f6, a0, 0x104 ; Capstone
+    9808:	48cf      	l32i.n	a4, a15, 48
+    980a:	6146cf        	l32r	a6, 0xffffd524 (0x5ffed7d8) ; inferred DRAM map 0x5ffec000
+    980d:	001240        	ssl	a2
+    9810:	0c18      	movi.n	a8, 1
+    9812:	5806      	l32i.n	a5, a6, 0
+    9814:	0088a1        	sll	a8, a8
+    9817:	4804      	l32i.n	a4, a4, 0
+    9819:	805520        	or	a5, a5, a8
+    981c:	5906      	s32i.n	a5, a6, 0
+    981e:	504410        	and	a4, a4, a5
+    9821:	40e413        	wsr.intenable	a4
+    9824:	30e613        	wsr.ps	a3
+    9827:	102000        	rsync
+    982a:	0c02      	movi.n	a2, 0
+0000982c: 1df0     retw.n        ; Capstone
+	...
+
+; Alternate branch-target decode
+    9804:	306300        	rsil	a3, 3
+    9807:	4148cf        	l32r	a4, 0xffffd528 (0x5ffed7dc) ; inferred DRAM map 0x5ffec000

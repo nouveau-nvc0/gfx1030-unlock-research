@@ -1,0 +1,74 @@
+
+/tmp/tmpdq292fud/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00037ac8 <.data+0x37ac8>:
+00037ac8: 366100   entry        a1, 0x30 ; Capstone
+   37acb:	0c05      	movi.n	a5, 0
+   37acd:	0c06      	movi.n	a6, 0
+   37acf:	0c18      	movi.n	a8, 1
+   37ad1:	0c07      	movi.n	a7, 0
+   37ad3:	a2a004        	movi	a10, 4
+   37ad6:	42a007        	movi	a4, 7
+00037ad9: 76a40a   loopgtz      a4, . +0xe ; Capstone
+   37adc:	001540        	ssl	a5
+   37adf:	1b55      	addi.n	a5, a5, 1
+   37ae1:	0098a1        	sll	a9, a8
+   37ae4:	906620        	or	a6, a6, a9
+   37ae7:	52a007        	movi	a5, 7
+   37aea:	91fc70        	l32r	a9, 0x13edc (0x807fffff)
+00037aed: 76aa0a   loopgtz      a10, . +0xe ; Capstone
+   37af0:	001540        	ssl	a5
+   37af3:	1b55      	addi.n	a5, a5, 1
+   37af5:	00b8a1        	sll	a11, a8
+   37af8:	b07720        	or	a7, a7, a11
+   37afb:	a1b172        	l32r	a10, 0x145c0 (0xff800000)
+   37afe:	b15e6d        	l32r	a11, 0x13078 (0x7fffffff)
+   37b01:	604210        	and	a4, a2, a6
+   37b04:	707210        	and	a7, a2, a7
+   37b07:	208b41        	srli	a8, a2, 11
+   37b0a:	108801        	slli	a8, a8, 31
+   37b0d:	706741        	srli	a6, a7, 7
+   37b10:	3076c0        	sub	a7, a6, a3
+   37b13:	b02210        	and	a2, a2, a11
+   37b16:	202820        	or	a2, a8, a2
+   37b19:	32c77f        	addi	a3, a7, 127
+   37b1c:	303074        	extui	a3, a3, 0, 8
+   37b1f:	902210        	and	a2, a2, a9
+   37b22:	903301        	slli	a3, a3, 23
+   37b25:	302220        	or	a2, a2, a3
+   37b28:	31a572        	l32r	a3, 0x145bc (0x7fffff)
+   37b2b:	004411        	slli	a4, a4, 16
+   37b2e:	a02210        	and	a2, a2, a10
+   37b31:	304410        	and	a4, a4, a3
+   37b34:	402220        	or	a2, a2, a4
+   37b37:	2901      	s32i.n	a2, a1, 0
+   37b39:	fc96      	bnez.n	a6, 0x37b76
+   37b3b:	378204        	bany	a2, a3, 0x37b43
+   37b3e:	902210        	and	a2, a2, a9
+   37b41:	2901      	s32i.n	a2, a1, 0
+   37b43:	ecf6      	bnez.n	a6, 0x37b76
+   37b45:	270333        	bnone	a3, a2, 0x37b7c
+   37b48:	90c210        	and	a12, a2, a9
+   37b4b:	b0dd10        	and	a13, a13, a11
+   37b4e:	52c780        	addi	a5, a7, -128
+   37b51:	505074        	extui	a5, a5, 0, 8
+   37b54:	d0d820        	or	a13, a8, a13
+   37b57:	90dd10        	and	a13, a13, a9
+   37b5a:	905501        	slli	a5, a5, 23
+   37b5d:	c0c520        	or	a12, a5, a12
+   37b60:	c901      	s32i.n	a12, a1, 0
+00037b62: 030100   lsi          f0, a1, 0 ; Capstone
+   37b65:	d05520        	or	a5, a5, a13
+   37b68:	a05510        	and	a5, a5, a10
+   37b6b:	5911      	s32i.n	a5, a1, 4
+00037b6d: 130101   lsi          f1, a1, 4 ; Capstone
+00037b70: 10001a   sub.s        f0, f0, f1 ; Capstone
+   37b73:	060200        	j	0x37b7f
+00037b76: 030100   lsi          f0, a1, 0 ; Capstone
+   37b79:	860000        	j	0x37b7f
+00037b7c: 030100   lsi          f0, a1, 0 ; Capstone
+00037b7f: 4020fa   rfr          a2, f0 ; Capstone
+00037b82: 1df0     retw.n        ; Capstone

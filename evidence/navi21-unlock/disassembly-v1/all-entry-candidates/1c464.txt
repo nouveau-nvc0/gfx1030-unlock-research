@@ -1,0 +1,156 @@
+
+/tmp/tmpnmbqj7c_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001c464 <.data+0x1c464>:
+0001c464: 364100   entry        a1, 0x20 ; Capstone
+   1c467:	b1f7da        	l32r	a11, 0x13044 (0xaeb8)
+   1c46a:	81f7da        	l32r	a8, 0x13048 (0xac10)
+   1c46d:	2072b0        	addx8	a7, a2, a2
+   1c470:	422b7f        	l32i	a4, a11, 0x1fc
+   1c473:	8077a0        	addx4	a7, a7, a8
+   1c476:	62077c        	l8ui	a6, a7, 124
+   1c479:	378454        	bany	a4, a3, 0x1c4d1
+   1c47c:	2103db        	l32r	a2, 0x13088 (0x10000)
+   1c47f:	0c18      	movi.n	a8, 1
+   1c481:	b6f320        	bltui	a3, 0x100, 0x1c4a5
+   1c484:	92a100        	movi	a9, 0x100
+   1c487:	37b94e        	bgeu	a9, a3, 0x1c4d9
+   1c48a:	91cada        	l32r	a9, 0x12fb4 (0x1000)
+   1c48d:	97b302        	bgeu	a3, a9, 0x1c493
+   1c490:	464e00        	j	0x1c5cd
+   1c493:	37b942        	bgeu	a9, a3, 0x1c4d9
+   1c496:	91edda        	l32r	a9, 0x1304c (0x40000)
+   1c499:	97b302        	bgeu	a3, a9, 0x1c49f
+   1c49c:	c65800        	j	0x1c603
+   1c49f:	373921        	bltu	a9, a3, 0x1c4c4
+   1c4a2:	c60c00        	j	0x1c4d9
+   1c4a5:	f6b302        	bgeui	a3, 16, 0x1c4ab
+   1c4a8:	062100        	j	0x1c530
+   1c4ab:	1c0a      	movi.n	a10, 16
+   1c4ad:	373a02        	bltu	a10, a3, 0x1c4b3
+   1c4b0:	064500        	j	0x1c5c8
+   1c4b3:	b6d307        	bltui	a3, 64, 0x1c4be
+   1c4b6:	4c0c      	movi.n	a12, 64
+   1c4b8:	373c08        	bltu	a12, a3, 0x1c4c4
+   1c4bb:	464200        	j	0x1c5c8
+   1c4be:	d2c3e0        	addi	a13, a3, -32
+   1c4c1:	163d10        	beqz	a13, 0x1c5c8
+   1c4c4:	0c02      	movi.n	a2, 0
+   1c4c6:	8c72      	beqz.n	a2, 0x1c4d1
+   1c4c8:	e22b7f        	l32i	a14, a11, 0x1fc
+   1c4cb:	30ee20        	or	a14, a14, a3
+   1c4ce:	e26b7f        	s32i	a14, a11, 0x1fc
+0001c4d1: 1df0     retw.n        ; Capstone
+   1c4d3:	f2a200        	movi	a15, 0x200
+   1c4d6:	f793ea        	bne	a3, a15, 0x1c4c4
+   1c4d9:	91ddda        	l32r	a9, 0x13050 (0xaaf0)
+   1c4dc:	6056f0        	subx8	a5, a6, a6
+   1c4df:	9055a0        	addx4	a5, a5, a9
+   1c4e2:	d2057d        	l8ui	a13, a5, 125
+   1c4e5:	c1dbda        	l32r	a12, 0x13054 (0xaf48)
+   1c4e8:	1cae      	movi.n	a14, 26
+   1c4ea:	e0ddd1        	mul16s	a13, a13, a14
+   1c4ed:	52251c        	l32i	a5, a5, 112
+   1c4f0:	dacc      	add.n	a12, a12, a13
+   1c4f2:	c21c7e        	l16ui	a12, a12, 252
+   1c4f5:	a1c3da        	l32r	a10, 0x13004 (0xfffff)
+   1c4f8:	91d8da        	l32r	a9, 0x13058 (0x11ffe00)
+   1c4fb:	ca55      	add.n	a5, a5, a12
+   1c4fd:	a05510        	and	a5, a5, a10
+   1c500:	9a55      	add.n	a5, a5, a9
+   1c502:	c02000        	memw
+   1c505:	c2077d        	l8ui	a12, a7, 125
+   1c508:	a22580        	l32i	a10, a5, 0x200
+   1c50b:	7c04      	movi.n	a4, -16
+   1c50d:	001c40        	ssl	a12
+   1c510:	20aa20        	or	a10, a10, a2
+   1c513:	404a10        	and	a4, a10, a4
+   1c516:	0098a1        	sll	a9, a8
+   1c519:	a0a034        	extui	a10, a10, 0, 4
+   1c51c:	a09920        	or	a9, a9, a10
+   1c51f:	909034        	extui	a9, a9, 0, 4
+   1c522:	904420        	or	a4, a4, a9
+   1c525:	c02000        	memw
+   1c528:	426580        	s32i	a4, a5, 0x200
+   1c52b:	0c12      	movi.n	a2, 1
+   1c52d:	46e5ff        	j	0x1c4c6
+   1c530:	b64351        	bltui	a3, 4, 0x1c585
+   1c533:	b65302        	bltui	a3, 5, 0x1c539
+   1c536:	c62a00        	j	0x1c5e5
+   1c539:	51cada        	l32r	a5, 0x13064 (0x1268e00)
+   1c53c:	c1c9da        	l32r	a12, 0x13060 (0x80000001)
+   1c53f:	c02000        	memw
+   1c542:	c915      	s32i.n	a12, a5, 4
+   1c544:	c02000        	memw
+   1c547:	a8f5      	l32i.n	a10, a5, 60
+   1c549:	20aa10        	and	a10, a10, a2
+   1c54c:	a0a0f5        	extui	a10, a10, 16, 16
+   1c54f:	261a0c        	beqi	a10, 1, 0x1c55f
+   1c552:	c02000        	memw
+   1c555:	d8f5      	l32i.n	a13, a5, 60
+   1c557:	20dd20        	or	a13, a13, a2
+   1c55a:	c02000        	memw
+   1c55d:	d9f5      	s32i.n	a13, a5, 60
+   1c55f:	c02000        	memw
+   1c562:	e22510        	l32i	a14, a5, 64
+   1c565:	20ee10        	and	a14, a14, a2
+   1c568:	e0e0f5        	extui	a14, a14, 16, 16
+   1c56b:	261e0e        	beqi	a14, 1, 0x1c57d
+   1c56e:	c02000        	memw
+   1c571:	f22510        	l32i	a15, a5, 64
+   1c574:	20ff20        	or	a15, a15, a2
+   1c577:	c02000        	memw
+   1c57a:	f26510        	s32i	a15, a5, 64
+   1c57d:	c02000        	memw
+   1c580:	8915      	s32i.n	a8, a5, 4
+   1c582:	46e9ff        	j	0x1c52b
+   1c585:	0b43      	addi.n	a4, a3, -1
+   1c587:	5694f3        	bnez	a4, 0x1c4c4
+   1c58a:	d1b9da        	l32r	a13, 0x13070 (0x187fe00)
+   1c58d:	61b7da        	l32r	a6, 0x1306c (0x1203200)
+   1c590:	a1b6da        	l32r	a10, 0x13068 (0x163a200)
+   1c593:	c02000        	memw
+   1c596:	c22de3        	l32i	a12, a13, 0x38c
+   1c599:	e1bcda        	l32r	a14, 0x1308c (0x4060)
+   1c59c:	6cff      	movi.n	a15, -17
+   1c59e:	f0cc10        	and	a12, a12, a15
+   1c5a1:	e0cc20        	or	a12, a12, a14
+   1c5a4:	c02000        	memw
+   1c5a7:	c26de3        	s32i	a12, a13, 0x38c
+   1c5aa:	c02000        	memw
+   1c5ad:	988a      	l32i.n	a9, a10, 32
+   1c5af:	809920        	or	a9, a9, a8
+   1c5b2:	c02000        	memw
+   1c5b5:	998a      	s32i.n	a9, a10, 32
+   1c5b7:	7c97      	movi.n	a7, -7
+   1c5b9:	c02000        	memw
+   1c5bc:	522678        	l32i	a5, a6, 0x1e0
+   1c5bf:	705510        	and	a5, a5, a7
+   1c5c2:	c02000        	memw
+   1c5c5:	526678        	s32i	a5, a6, 0x1e0
+   1c5c8:	2d08      	mov.n	a2, a8
+   1c5ca:	06beff        	j	0x1c4c6
+   1c5cd:	92a400        	movi	a9, 0x400
+   1c5d0:	97b302        	bgeu	a3, a9, 0x1c5d6
+   1c5d3:	06bfff        	j	0x1c4d3
+   1c5d6:	373902        	bltu	a9, a3, 0x1c5dc
+   1c5d9:	06bfff        	j	0x1c4d9
+   1c5dc:	42d3f8        	addmi	a4, a3, 0xfffff800
+   1c5df:	5614ee        	bnez	a4, 0x1c4c4
+   1c5e2:	c6bcff        	j	0x1c4d9
+   1c5e5:	92c3f8        	addi	a9, a3, -8
+   1c5e8:	5689ed        	bnez	a9, 0x1c4c4
+   1c5eb:	c1a4da        	l32r	a12, 0x1307c (0x170fe00)
+   1c5ee:	d17eda        	l32r	a13, 0x12fe8 (0x80000000)
+   1c5f1:	c02000        	memw
+   1c5f4:	a22c80        	l32i	a10, a12, 0x200
+   1c5f7:	d0aa20        	or	a10, a10, a13
+   1c5fa:	c02000        	memw
+   1c5fd:	a26c80        	s32i	a10, a12, 0x200
+   1c600:	06f1ff        	j	0x1c5c8
+   1c603:	e2d3e0        	addmi	a14, a3, 0xffffe000
+   1c606:	56aeeb        	bnez	a14, 0x1c4c4
+   1c609:	06b3ff        	j	0x1c4d9

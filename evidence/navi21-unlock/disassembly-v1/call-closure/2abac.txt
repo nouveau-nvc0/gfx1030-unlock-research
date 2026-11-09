@@ -1,0 +1,28 @@
+
+/tmp/tmpl06i6rbr/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002abac <.data+0x2abac>:
+0002abac: 364100   entry        a1, 0x20 ; Capstone
+   2abaf:	0c0a      	movi.n	a10, 0
+0002abb1: 65d70d   call8        . +0xdd78 ; Capstone ; target=0x38928
+   2abb4:	1c58      	movi.n	a8, 21
+   2abb6:	b2afbf        	movi	a11, -65
+   2abb9:	209004        	extui	a9, a2, 0, 1
+   2abbc:	30a004        	extui	a10, a3, 0, 1
+   2abbf:	2104a2        	l32r	a2, 0x133d0 (0xfa64)
+   2abc2:	a0aa11        	slli	a10, a10, 6
+   2abc5:	b09911        	slli	a9, a9, 5
+   2abc8:	b09910        	and	a9, a9, a11
+   2abcb:	a09920        	or	a9, a9, a10
+   2abce:	82627c        	s32i	a8, a2, 0x1f0
+   2abd1:	a2af7f        	movi	a10, -129
+   2abd4:	a09910        	and	a9, a9, a10
+   2abd7:	92627d        	s32i	a9, a2, 0x1f4
+0002abda: a5e700   call8        . +0xe7c ; Capstone ; target=0x2ba54
+   2abdd:	222283        	l32i	a2, a2, 0x20c
+0002abe0: e5cd0d   call8        . +0xdce0 ; Capstone ; target=0x388c0
+0002abe3: 1df0     retw.n        ; Capstone
+   2abe5:	000000        	ill

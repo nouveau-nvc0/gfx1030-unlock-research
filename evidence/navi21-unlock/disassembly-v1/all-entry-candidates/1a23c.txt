@@ -1,0 +1,43 @@
+
+/tmp/tmphhplg0fz/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001a23c <.data+0x1a23c>:
+0001a23c: 364100   entry        a1, 0x20 ; Capstone
+   1a23f:	5106e3        	l32r	a5, 0x12e58 (0x1149c)
+   1a242:	9cc2      	beqz.n	a2, 0x1a262
+   1a244:	422580        	l32i	a4, a5, 0x200
+   1a247:	72257f        	l32i	a7, a5, 0x1fc
+   1a24a:	62257e        	l32i	a6, a5, 0x1f8
+   1a24d:	1b34      	addi.n	a3, a4, 1
+   1a24f:	326580        	s32i	a3, a5, 0x200
+   1a252:	6044a0        	addx4	a4, a4, a6
+   1a255:	2904      	s32i.n	a2, a4, 0
+   1a257:	77330a        	bltu	a3, a7, 0x1a265
+   1a25a:	0c08      	movi.n	a8, 0
+   1a25c:	826580        	s32i	a8, a5, 0x200
+   1a25f:	860000        	j	0x1a265
+   1a262:	72257f        	l32i	a7, a5, 0x1fc
+   1a265:	9c77      	beqz.n	a7, 0x1a280
+   1a267:	22257e        	l32i	a2, a5, 0x1f8
+   1a26a:	0c06      	movi.n	a6, 0
+   1a26c:	0c05      	movi.n	a5, 0
+0001a26e: 76970b   loopnez      a7, . +0xf ; Capstone
+   1a271:	4802      	l32i.n	a4, a2, 0
+   1a273:	4b22      	addi.n	a2, a2, 4
+   1a275:	8c24      	beqz.n	a4, 0x1a27b
+   1a277:	4a66      	add.n	a6, a6, a4
+   1a279:	1b55      	addi.n	a5, a5, 1
+   1a27b:	3df0      	nop.n
+   1a27d:	c60000        	j	0x1a284
+   1a280:	0c05      	movi.n	a5, 0
+   1a282:	0c06      	movi.n	a6, 0
+   1a284:	8c65      	beqz.n	a5, 0x1a28e
+0001a286: 5026c2   quou         a2, a6, a5 ; Capstone
+   1a289:	2020f4        	extui	a2, a2, 0, 16
+0001a28c: 1df0     retw.n        ; Capstone
+   1a28e:	0c02      	movi.n	a2, 0
+0001a290: 1df0     retw.n        ; Capstone
+	...

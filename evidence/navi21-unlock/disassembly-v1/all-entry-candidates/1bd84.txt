@@ -1,0 +1,57 @@
+
+/tmp/tmpr_1oifbq/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001bd84 <.data+0x1bd84>:
+0001bd84: 364100   entry        a1, 0x20 ; Capstone
+   1bd87:	2185dc        	l32r	a2, 0x12f9c (0x10fec)
+   1bd8a:	0c0a      	movi.n	a10, 0
+   1bd8c:	0c09      	movi.n	a9, 0
+   1bd8e:	82027d        	l8ui	a8, a2, 125
+   1bd91:	d19ddc        	l32r	a13, 0x13008 (0x11078)
+   1bd94:	c2027e        	l8ui	a12, a2, 126
+   1bd97:	cc88      	bnez.n	a8, 0x1bda3
+   1bd99:	b20281        	l8ui	a11, a2, 129
+   1bd9c:	cc6c      	bnez.n	a12, 0x1bda6
+   1bd9e:	cc4b      	bnez.n	a11, 0x1bda6
+   1bda0:	861800        	j	0x1be06
+   1bda3:	b20281        	l8ui	a11, a2, 129
+   1bda6:	0c03      	movi.n	a3, 0
+   1bda8:	0c2e      	movi.n	a14, 2
+0001bdaa: 76ae12   loopgtz      a14, . +0x16 ; Capstone
+   1bdad:	001a40        	ssl	a10
+   1bdb0:	dafa      	add.n	a15, a10, a13
+   1bdb2:	f20f7e        	l8ui	a15, a15, 126
+   1bdb5:	1baa      	addi.n	a10, a10, 1
+   1bdb7:	a0a074        	extui	a10, a10, 0, 8
+   1bdba:	00ffa1        	sll	a15, a15
+   1bdbd:	f09920        	or	a9, a9, a15
+   1bdc0:	90a054        	extui	a10, a9, 0, 6
+   1bdc3:	92225d        	l32i	a9, a2, 0x174
+   1bdc6:	d2af03        	movi	a13, -253
+   1bdc9:	e0aa11        	slli	a10, a10, 2
+   1bdcc:	d09910        	and	a9, a9, a13
+   1bdcf:	a09920        	or	a9, a9, a10
+   1bdd2:	cc7c      	bnez.n	a12, 0x1bddd
+   1bdd4:	a18edc        	l32r	a10, 0x1300c (0xfeffffff)
+   1bdd7:	a0a910        	and	a10, a9, a10
+   1bdda:	c60200        	j	0x1bde9
+   1bddd:	a188dc        	l32r	a10, 0x13000 (0x1000000)
+   1bde0:	32427e        	s8i	a3, a2, 126
+   1bde3:	32427f        	s8i	a3, a2, 127
+   1bde6:	a0a920        	or	a10, a9, a10
+   1bde9:	cc7b      	bnez.n	a11, 0x1bdf4
+   1bdeb:	b189dc        	l32r	a11, 0x13010 (0xfdffffff)
+   1bdee:	b0aa10        	and	a10, a10, a11
+   1bdf1:	c60200        	j	0x1be00
+   1bdf4:	c188dc        	l32r	a12, 0x13014 (0x2000000)
+   1bdf7:	324281        	s8i	a3, a2, 129
+   1bdfa:	324282        	s8i	a3, a2, 130
+   1bdfd:	c0aa20        	or	a10, a10, a12
+0001be00: e5f0ff   call8        . -0xf0 ; Capstone ; target=0x1bd10
+   1be03:	32427d        	s8i	a3, a2, 125
+   1be06:	0c02      	movi.n	a2, 0
+0001be08: 1df0     retw.n        ; Capstone
+	...

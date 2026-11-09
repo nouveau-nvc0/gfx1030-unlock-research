@@ -1,0 +1,25 @@
+
+/tmp/tmpmdn4nbcr/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005a6c <.data+0x5a6c>:
+00005a6c: 364100   entry        a1, 0x20 ; Capstone
+    5a6f:	4185de        	l32r	a4, 0xffffd484 (0x5ffee57c) ; inferred DRAM map 0x5ffec000
+    5a72:	820422        	l8ui	a8, a4, 34
+    5a75:	8c18      	beqz.n	a8, 0x5a7a
+00005a77: 251500   call8        . +0x154 ; Capstone ; target=0x5bc8
+    5a7a:	0c2c      	movi.n	a12, 2
+    5a7c:	3914      	s32i.n	a3, a4, 4
+    5a7e:	b1e0dd        	l32r	a11, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    5a81:	0c8d      	movi.n	a13, 8
+00005a83: d0d273   maxu         a13, a2, a13 ; Capstone
+    5a86:	d26b38        	s32i	a13, a11, 224
+    5a89:	a22b3b        	l32i	a10, a11, 236
+    5a8c:	0c19      	movi.n	a9, 1
+    5a8e:	924422        	s8i	a9, a4, 34
+    5a91:	c0aa20        	or	a10, a10, a12
+    5a94:	a26b3b        	s32i	a10, a11, 236
+00005a97: 1df0     retw.n        ; Capstone
+    5a99:	000000        	ill

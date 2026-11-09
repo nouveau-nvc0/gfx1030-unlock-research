@@ -1,0 +1,29 @@
+
+/tmp/tmpvww7p5p7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000388ec <.data+0x388ec>:
+000388ec: 364100   entry        a1, 0x20 ; Capstone
+   388ef:	7cfc      	movi.n	a12, -1
+   388f1:	915a6b        	l32r	a9, 0x1365c (0xee1c)
+   388f4:	001240        	ssl	a2
+   388f7:	0083a1        	sll	a8, a3
+   388fa:	0c12      	movi.n	a2, 1
+   388fc:	a2297f        	l32i	a10, a9, 0x1fc
+   388ff:	00b2a1        	sll	a11, a2
+   38902:	c0bb30        	xor	a11, a11, a12
+   38905:	b0aa10        	and	a10, a10, a11
+   38908:	a08820        	or	a8, a8, a10
+   3890b:	82697f        	s32i	a8, a9, 0x1fc
+0003890e: 2509ea   call8        . -0x15f6c ; Capstone ; target=0x229a0
+   38911:	91b86a        	l32r	a9, 0x133f4 (0x3010600)
+   38914:	8c6a      	beqz.n	a10, 0x3891e
+   38916:	c02000        	memw
+   38919:	2269fe        	s32i	a2, a9, 0x3f8
+0003891c: 1df0     retw.n        ; Capstone
+   3891e:	0c2d      	movi.n	a13, 2
+   38920:	c02000        	memw
+   38923:	d269fe        	s32i	a13, a9, 0x3f8
+00038926: 1df0     retw.n        ; Capstone

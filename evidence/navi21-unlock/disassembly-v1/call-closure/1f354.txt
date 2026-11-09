@@ -1,0 +1,12 @@
+
+/tmp/tmpaf76ine1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001f354 <.data+0x1f354>:
+0001f354: 364100   entry        a1, 0x20 ; Capstone
+   1f357:	ad02      	mov.n	a10, a2
+   1f359:	0c0b      	movi.n	a11, 0
+0001f35b: e512fe   call8        . -0x1ed0 ; Capstone ; target=0x1d488
+0001f35e: 1df0     retw.n        ; Capstone

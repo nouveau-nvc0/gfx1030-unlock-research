@@ -1,0 +1,485 @@
+{
+  "warning": "Candidate pointer/metadata pairs. Not yet identified as SMU message table; do not assign message IDs by index.",
+  "rows": [
+    {
+      "offset": "0x6a04",
+      "pointer": "0x0",
+      "metadata": "0x0"
+    },
+    {
+      "offset": "0x6a0c",
+      "pointer": "0x0",
+      "metadata": "0x0"
+    },
+    {
+      "offset": "0x6a14",
+      "pointer": "0x0",
+      "metadata": "0x0"
+    },
+    {
+      "offset": "0x6a1c",
+      "pointer": "0x0",
+      "metadata": "0x0"
+    },
+    {
+      "offset": "0x6a24",
+      "pointer": "0x3010a48",
+      "metadata": "0x3010a68"
+    },
+    {
+      "offset": "0x6a2c",
+      "pointer": "0x3010a08",
+      "metadata": "0x3010a58"
+    },
+    {
+      "offset": "0x6a34",
+      "pointer": "0x3010a78",
+      "metadata": "0x3010a18"
+    },
+    {
+      "offset": "0x6a3c",
+      "pointer": "0x3010a54",
+      "metadata": "0x3010a74"
+    },
+    {
+      "offset": "0x6a44",
+      "pointer": "0x3010a14",
+      "metadata": "0x3010a50"
+    },
+    {
+      "offset": "0x6a4c",
+      "pointer": "0x3010a70",
+      "metadata": "0x3010a10"
+    },
+    {
+      "offset": "0x6a54",
+      "pointer": "0x3010a40",
+      "metadata": "0x3010a60"
+    },
+    {
+      "offset": "0x6a5c",
+      "pointer": "0x3010a00",
+      "metadata": "0x3010a44"
+    },
+    {
+      "offset": "0x6a64",
+      "pointer": "0x3010a64",
+      "metadata": "0x3010a04"
+    },
+    {
+      "offset": "0x6a6c",
+      "pointer": "0x3010a4c",
+      "metadata": "0x3010a6c"
+    },
+    {
+      "offset": "0x6a74",
+      "pointer": "0x3010a0c",
+      "metadata": "0x3010a88"
+    },
+    {
+      "offset": "0x6a7c",
+      "pointer": "0x3010a80",
+      "metadata": "0x3010a20"
+    },
+    {
+      "offset": "0x6a84",
+      "pointer": "0x3010a8c",
+      "metadata": "0x3010a84"
+    },
+    {
+      "offset": "0x6a8c",
+      "pointer": "0x3010a24",
+      "metadata": "0x3010700"
+    },
+    {
+      "offset": "0x6a94",
+      "pointer": "0x3010704",
+      "metadata": "0x3010718"
+    },
+    {
+      "offset": "0x6a9c",
+      "pointer": "0x3010a5c",
+      "metadata": "0x3010a7c"
+    },
+    {
+      "offset": "0x6aa4",
+      "pointer": "0x3010a1c",
+      "metadata": "0x30109c4"
+    },
+    {
+      "offset": "0x6aac",
+      "pointer": "0x30109c8",
+      "metadata": "0x3010a38"
+    },
+    {
+      "offset": "0x6ab4",
+      "pointer": "0x30109cc",
+      "metadata": "0x30109d0"
+    },
+    {
+      "offset": "0x6abc",
+      "pointer": "0x3010a28",
+      "metadata": "0x30109d4"
+    },
+    {
+      "offset": "0x6ac4",
+      "pointer": "0x30109d8",
+      "metadata": "0x3010a2c"
+    },
+    {
+      "offset": "0x6acc",
+      "pointer": "0x0",
+      "metadata": "0x0"
+    },
+    {
+      "offset": "0x6ad4",
+      "pointer": "0x37850",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6adc",
+      "pointer": "0x3781c",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6ae4",
+      "pointer": "0x37668",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6aec",
+      "pointer": "0x359e8",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6af4",
+      "pointer": "0x359d0",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6afc",
+      "pointer": "0x359ac",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6b04",
+      "pointer": "0x35938",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6b0c",
+      "pointer": "0x35c3c",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6b14",
+      "pointer": "0x35a68",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6b1c",
+      "pointer": "0x35a34",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6b24",
+      "pointer": "0x35a00",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6b2c",
+      "pointer": "0x358e4",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6b34",
+      "pointer": "0x358cc",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6b3c",
+      "pointer": "0x37630",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6b44",
+      "pointer": "0x375f8",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6b4c",
+      "pointer": "0x375a4",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6b54",
+      "pointer": "0x37588",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6b5c",
+      "pointer": "0x3744c",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6b64",
+      "pointer": "0x37110",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6b6c",
+      "pointer": "0x370f0",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6b74",
+      "pointer": "0x30e34",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6b7c",
+      "pointer": "0x30e0c",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6b84",
+      "pointer": "0x30dc8",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6b8c",
+      "pointer": "0x30e94",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6b94",
+      "pointer": "0x2cf90",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6b9c",
+      "pointer": "0x2cec0",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6ba4",
+      "pointer": "0x2ce10",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6bac",
+      "pointer": "0x2cd50",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6bb4",
+      "pointer": "0x2cc28",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6bbc",
+      "pointer": "0x2ccb8",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6bc4",
+      "pointer": "0x2cba8",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6bcc",
+      "pointer": "0x2dc90",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6bd4",
+      "pointer": "0x2f07c",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6bdc",
+      "pointer": "0x35888",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6be4",
+      "pointer": "0x27dd4",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6bec",
+      "pointer": "0x2cb34",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6bf4",
+      "pointer": "0x2b7e8",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6bfc",
+      "pointer": "0x2cc70",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6c04",
+      "pointer": "0x2f060",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6c0c",
+      "pointer": "0x22cd4",
+      "metadata": "0x1803"
+    },
+    {
+      "offset": "0x6c14",
+      "pointer": "0x22bd8",
+      "metadata": "0x1802"
+    },
+    {
+      "offset": "0x6c1c",
+      "pointer": "0x29ef8",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6c24",
+      "pointer": "0x29ffc",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6c2c",
+      "pointer": "0x29d30",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6c34",
+      "pointer": "0x29e04",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6c3c",
+      "pointer": "0x33660",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6c44",
+      "pointer": "0x2f048",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6c4c",
+      "pointer": "0x16d4",
+      "metadata": "0x11000"
+    },
+    {
+      "offset": "0x6c54",
+      "pointer": "0x2f02c",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6c5c",
+      "pointer": "0x24d98",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6c64",
+      "pointer": "0x24d50",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6c6c",
+      "pointer": "0x23e18",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6c74",
+      "pointer": "0x23dd0",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6c7c",
+      "pointer": "0x27a50",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6c84",
+      "pointer": "0x0",
+      "metadata": "0x0"
+    },
+    {
+      "offset": "0x6c8c",
+      "pointer": "0x2f010",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6c94",
+      "pointer": "0x378dc",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6c9c",
+      "pointer": "0x378b0",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6ca4",
+      "pointer": "0x37898",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6cac",
+      "pointer": "0x37880",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6cb4",
+      "pointer": "0x37868",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6cbc",
+      "pointer": "0x22f58",
+      "metadata": "0x1806"
+    },
+    {
+      "offset": "0x6cc4",
+      "pointer": "0x1da08",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6ccc",
+      "pointer": "0x358a8",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6cd4",
+      "pointer": "0x2f2d0",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6cdc",
+      "pointer": "0x37698",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6ce4",
+      "pointer": "0x22f38",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6cec",
+      "pointer": "0x1a5d4",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6cf4",
+      "pointer": "0x202ec",
+      "metadata": "0x1006"
+    },
+    {
+      "offset": "0x6cfc",
+      "pointer": "0x376cc",
+      "metadata": "0x1006"
+    }
+  ]
+}

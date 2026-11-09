@@ -1,0 +1,29 @@
+
+/tmp/tmpj4uby_2y/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002dd78 <.data+0x2dd78>:
+0002dd78: 364100   entry        a1, 0x20 ; Capstone
+   2dd7b:	ad02      	mov.n	a10, a2
+0002dd7d: 2534d4   call8        . -0x2bcbc ; Capstone ; target=0x20c0
+   2dd80:	3d0a      	mov.n	a3, a10
+   2dd82:	f62a20        	bgeui	a10, 2, 0x2dda6
+   2dd85:	0caa      	movi.n	a10, 10
+0002dd87: a57fd4   call8        . -0x2b804 ; Capstone ; target=0x2580
+   2dd8a:	915a98        	l32r	a9, 0x13ef4 (0x153b0)
+   2dd8d:	0caa      	movi.n	a10, 10
+   2dd8f:	0c18      	movi.n	a8, 1
+   2dd91:	32497d        	s8i	a3, a9, 125
+   2dd94:	82497e        	s8i	a8, a9, 126
+0002dd97: e56dd4   call8        . -0x2b920 ; Capstone ; target=0x2474
+0002dd9a: 65f6ff   call8        . -0x98 ; Capstone ; target=0x2dd00
+   2dd9d:	ad02      	mov.n	a10, a2
+   2dd9f:	0c1b      	movi.n	a11, 1
+0002dda1: a52fd4   call8        . -0x2bd04 ; Capstone ; target=0x209c
+0002dda4: 1df0     retw.n        ; Capstone
+   2dda6:	ad02      	mov.n	a10, a2
+   2dda8:	b2a0ff        	movi	a11, 255
+0002ddab: 252fd4   call8        . -0x2bd0c ; Capstone ; target=0x209c
+0002ddae: 1df0     retw.n        ; Capstone

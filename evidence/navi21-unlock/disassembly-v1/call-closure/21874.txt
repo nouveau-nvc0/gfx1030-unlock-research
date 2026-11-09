@@ -1,0 +1,30 @@
+
+/tmp/tmpf7ukx4n4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00021874 <.data+0x21874>:
+00021874: 366100   entry        a1, 0x30 ; Capstone
+   21877:	ad02      	mov.n	a10, a2
+00021879: a52700   call8        . +0x27c ; Capstone ; target=0x21af4
+   2187c:	d131c7        	l32r	a13, 0x13540 (0x5a110)
+   2187f:	80c211        	slli	a12, a2, 8
+   21882:	e1e0c5        	l32r	a14, 0x13004 (0xfffff)
+   21885:	dacc      	add.n	a12, a12, a13
+   21887:	d1f4c5        	l32r	a13, 0x13058 (0x11ffe00)
+   2188a:	0c09      	movi.n	a9, 0
+   2188c:	e0cc10        	and	a12, a12, a14
+   2188f:	dacc      	add.n	a12, a12, a13
+00021891: 769a14   loopnez      a10, . +0x18 ; Capstone
+   21894:	c02000        	memw
+   21897:	9ad3      	add.n	a13, a3, a9
+   21899:	e22c80        	l32i	a14, a12, 0x200
+   2189c:	e901      	s32i.n	a14, a1, 0
+   2189e:	1b99      	addi.n	a9, a9, 1
+   218a0:	909074        	extui	a9, a9, 0, 8
+   218a3:	b20100        	l8ui	a11, a1, 0
+   218a6:	b24d00        	s8i	a11, a13, 0
+   218a9:	2d0a      	mov.n	a2, a10
+000218ab: 1df0     retw.n        ; Capstone
+   218ad:	000000        	ill

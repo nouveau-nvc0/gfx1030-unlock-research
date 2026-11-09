@@ -1,0 +1,19 @@
+
+/tmp/tmpxshog2mb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001c228 <.data+0x1c228>:
+0001c228: 364100   entry        a1, 0x20 ; Capstone
+   1c22b:	203074        	extui	a3, a2, 0, 8
+   1c22e:	ad03      	mov.n	a10, a3
+0001c230: a5fdff   call8        . -0x24 ; Capstone ; target=0x1c20c
+   1c233:	0c18      	movi.n	a8, 1
+   1c235:	209ac0        	sub	a9, a10, a2
+   1c238:	b2a0ff        	movi	a11, 255
+   1c23b:	ad03      	mov.n	a10, a3
+   1c23d:	90b883        	moveqz	a11, a8, a9
+0001c240: e5f4ff   call8        . -0xb0 ; Capstone ; target=0x1c190
+0001c243: 1df0     retw.n        ; Capstone
+   1c245:	000000        	ill

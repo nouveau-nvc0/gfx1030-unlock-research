@@ -1,0 +1,24 @@
+
+/tmp/tmpw1jpi_jo/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001794 <.data+0x1794>:
+00001794: 364100   entry        a1, 0x20 ; Capstone
+    1797:	306200        	rsil	a3, 2
+    179a:	a124fd        	l32r	a10, 0xc2c (0x7660)
+    179d:	209541        	srli	a9, a2, 5
+    17a0:	20b044        	extui	a11, a2, 0, 5
+    17a3:	001b40        	ssl	a11
+    17a6:	a099a0        	addx4	a9, a9, a10
+    17a9:	82297f        	l32i	a8, a9, 0x1fc
+    17ac:	0c1a      	movi.n	a10, 1
+    17ae:	00aaa1        	sll	a10, a10
+    17b1:	a08820        	or	a8, a8, a10
+    17b4:	82697f        	s32i	a8, a9, 0x1fc
+000017b7: e52800   call8        . +0x290 ; Capstone ; target=0x1a44
+    17ba:	30e613        	wsr.ps	a3
+000017bd: 1df0     retw.n        ; Capstone
+    17bf:	003641        	srli	a3, a0, 6
+    17c2:	        	excw

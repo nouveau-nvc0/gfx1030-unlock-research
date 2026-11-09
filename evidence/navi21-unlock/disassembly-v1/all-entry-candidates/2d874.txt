@@ -1,0 +1,18 @@
+
+/tmp/tmpg_78w0qz/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002d874 <.data+0x2d874>:
+0002d874: 364100   entry        a1, 0x20 ; Capstone
+0002d877: a5feff   call8        . -0x14 ; Capstone ; target=0x2d860
+   2d87a:	916d95        	l32r	a9, 0x12e30 (0x1259e00)
+   2d87d:	a2af00        	movi	a10, 0xffffff00
+   2d880:	c02000        	memw
+   2d883:	822989        	l32i	a8, a9, 0x224
+   2d886:	a08810        	and	a8, a8, a10
+   2d889:	208820        	or	a8, a8, a2
+   2d88c:	c02000        	memw
+   2d88f:	826989        	s32i	a8, a9, 0x224
+0002d892: 1df0     retw.n        ; Capstone

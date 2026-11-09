@@ -1,0 +1,22 @@
+{
+  "scope": "SMU candidate-window locator rerun after RSYNC/JX register-effect correction; not a global absence proof",
+  "before": {
+    "windows": 1438,
+    "reachable": 48477,
+    "stores": 4566,
+    "constant": 2334
+  },
+  "after": {
+    "windows": 1438,
+    "reachable": 48477,
+    "stores": 4566,
+    "constant": 2334
+  },
+  "aliases": [
+    "0x8924",
+    "0x89bc",
+    "0x1208924",
+    "0x12089bc"
+  ],
+  "hits": []
+}

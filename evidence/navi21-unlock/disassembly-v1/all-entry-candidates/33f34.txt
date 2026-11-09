@@ -1,0 +1,20 @@
+
+/tmp/tmpxm8479p_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00033f34 <.data+0x33f34>:
+00033f34: 364100   entry        a1, 0x20 ; Capstone
+00033f37: a5fdcd   call8        . -0x32024 ; Capstone ; target=0x1f10
+   33f3a:	661a18        	bnei	a10, 1, 0x33f56
+   33f3d:	b1c67c        	l32r	a11, 0x13258 (0x31ffe00)
+   33f40:	a2a140        	movi	a10, 0x140
+   33f43:	c02000        	memw
+   33f46:	a26bd4        	s32i	a10, a11, 0x350
+   33f49:	91c47b        	l32r	a9, 0x12e5c (0x69a0)
+   33f4c:	922922        	l32i	a9, a9, 136
+   33f4f:	0c18      	movi.n	a8, 1
+   33f51:	c02000        	memw
+   33f54:	8909      	s32i.n	a8, a9, 0
+00033f56: 1df0     retw.n        ; Capstone

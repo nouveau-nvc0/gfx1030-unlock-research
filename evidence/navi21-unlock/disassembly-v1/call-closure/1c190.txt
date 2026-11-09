@@ -1,0 +1,54 @@
+
+/tmp/tmppkcqi4ix/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001c190 <.data+0x1c190>:
+0001c190: 364100   entry        a1, 0x20 ; Capstone
+   1c193:	a2a100        	movi	a10, 0x100
+0001c196: a53ee6   call8        . -0x19c14 ; Capstone ; target=0x2580
+   1c199:	614bdb        	l32r	a6, 0x12ec8 (0x7684)
+   1c19c:	ad02      	mov.n	a10, a2
+   1c19e:	52067c        	l8ui	a5, a6, 124
+   1c1a1:	6a42      	add.n	a4, a2, a6
+   1c1a3:	4b66      	addi.n	a6, a6, 4
+   1c1a5:	6a55      	add.n	a5, a5, a6
+   1c1a7:	62a07f        	movi	a6, 127
+   1c1aa:	520580        	l8ui	a5, a5, 128
+   1c1ad:	3244ec        	s8i	a3, a4, 236
+   1c1b0:	420480        	l8ui	a4, a4, 128
+   1c1b3:	505064        	extui	a5, a5, 0, 7
+   1c1b6:	c05511        	slli	a5, a5, 4
+0001c1b9: 65b2ff   call8        . -0x4d8 ; Capstone ; target=0x1bce0
+   1c1bc:	acda      	beqz.n	a10, 0x1c1ed
+   1c1be:	0c5b      	movi.n	a11, 5
+   1c1c0:	ccc4      	bnez.n	a4, 0x1c1d0
+   1c1c2:	ad05      	mov.n	a10, a5
+   1c1c4:	c08311        	slli	a8, a3, 4
+   1c1c7:	b0b820        	or	a11, a8, a11
+0001c1ca: 658ee5   call8        . -0x1a718 ; Capstone ; target=0x1ab0
+   1c1cd:	c60500        	j	0x1c1e8
+   1c1d0:	671423        	beq	a4, a6, 0x1c1f7
+   1c1d3:	c13fdb        	l32r	a12, 0x12ed0 (0x1030000)
+   1c1d6:	aba4      	addi.n	a10, a4, 10
+   1c1d8:	c09311        	slli	a9, a3, 4
+   1c1db:	b09920        	or	a9, a9, a11
+   1c1de:	c0aa01        	slli	a10, a10, 20
+   1c1e1:	caaa      	add.n	a10, a10, a12
+   1c1e3:	c02000        	memw
+   1c1e6:	990a      	s32i.n	a9, a10, 0
+   1c1e8:	0c22      	movi.n	a2, 2
+   1c1ea:	460000        	j	0x1c1ef
+   1c1ed:	0c32      	movi.n	a2, 3
+   1c1ef:	a2a100        	movi	a10, 0x100
+0001c1f2: 2528e6   call8        . -0x19d7c ; Capstone ; target=0x2474
+0001c1f5: 1df0     retw.n        ; Capstone
+   1c1f7:	0c0c      	movi.n	a12, 0
+   1c1f9:	1c2b      	movi.n	a11, 18
+   1c1fb:	d132db        	l32r	a13, 0x12ec4 (0x300fe00)
+   1c1fe:	1c0a      	movi.n	a10, 16
+   1c200:	c02000        	memw
+   1c203:	d22d8a        	l32i	a13, a13, 0x228
+0001c206: 6540e6   call8        . -0x19bf8 ; Capstone ; target=0x260c
+   1c209:	000000        	ill

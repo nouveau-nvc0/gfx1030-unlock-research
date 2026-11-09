@@ -1,0 +1,36 @@
+RLC indexed snapshot overlap — conditional address route, not runtime proof
+
+74c4 uses base5ffedc80 and eight-byte slot stride. First argument byte1 selects
+custom-slot mode; whenzero slot31 is used, otherwise byte2 is the slot0..255.
+At7514 and7564 it calculates base+8*slot. Six snapshot DWORD locations are
++c,+10,+10c,+110,+20c,+210. Modebyte0=0 reads hardware into these RAM slots;
+nonzero uses the RAM slots to restore the specific hardware registers. Each
+triplet is conditional on status bit7 for its corresponding hardware source.
+There is no slot<32 test inside this helper.
+
+6944 is the sole direct caller found, at6de5. It builds the argument at6db5
+from operationa4 and bytes53/54 of its stack frame. Those bytes are respectively
+bits8..15 and16..23 of its second input word (saved at6950). Seven previously
+recovered caller word pairs all have those two byteszero, so every known
+invocation selects31. Its six RAM destinations do not overlap saved CC arrays
+or gatee452. This closes the previously open slot bound for these seven known
+argument constructions, not for all hypothetical indirect calls/mutations.
+
+Address representability beyond those callers matters:
+- Customslot39 places+20c/+210 at5ffedfc4/5ffedfc8, inside saved CC_WGP.
+- Slots184/216/248 place respectively+210/+110/+10 at5ffee450, a DWORD
+  overlapping gatebyte5ffee452 (byte2 of that DWORD).
+The model enumerates all256 possible slot bytes and reports every overlap.
+These writes copy hardware register values; neither arbitrary-value control
+nor desired gatebit/value follows from address overlap. Source-register/status
+conditions and actual delivery of custom-slot arguments remain to be proved.
+This is a concrete computed-address candidate for RAM influence, not evidence
+that stock firmware enables the gate or that hardware accepts changed CC masks.
+
+Receipt:rlc-saved-array-overlap.json. Reproducer:
+scripts/navi21-rlc-saved-array-overlap.py checks the pinned IRAM bytes for both
+listings and calculates overlap intervals, including full DWORD write widths.
+Caller word provenance remains manual as documented in
+rlc-srm-operation-followup.txt; no whole-function emulation is claimed.
+Next:identify indirect entrances/argument sources for6944/74c4 and classify
+source registers of the overlapping snapshot lanes. No hardware changes.

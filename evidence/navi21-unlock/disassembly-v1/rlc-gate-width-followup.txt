@@ -1,0 +1,18 @@
+Gate-width candidate triage
+
+Existing scan contains19 unresolved non-a1 integer stores with immediate
+4/5/6. None has immediate5 or6. This is a locator, not proof against shifted
+base aliases, indexed stores, floating-point stores or engine transfers.
+
+Two new halfword sites54ea and5592 have basesSP+8 andSP+16 respectively,
+so they write localSP+12 andSP+20. Neither is a new fixed state flag writer.
+Copies2a86/2b19 similarly start from localSP+8; dispatcher2b44 constructs
+stack destinations with repeated+8 increments. Those loop bounds must be
+checked before claiming their writes remain within the frame. Foura1fc
+sites belong to the previously reviewed memcpy helper; two known direct
+calls stop beforee44c and do not reachgatee452 (shared-body-audit).
+
+Priority remaining from this set:bound the local-copy loops in2a0c/2ab8/
+2b44, including the source of their lengths. A stack-derived base alone
+cannot rule out overlap after repeated increments. Full producer search
+still includes shifted state pointers and transfers outside these routines.

@@ -1,0 +1,2285 @@
+{
+  "scanner_sha256": "d9505d41a71e70b63c24ea5c5af0acf390e3aee9bf94cfad4c83fbba6fc260ae",
+  "historical_scan_sha256": "9cc4d7459fbed824ebcecf2ef6f8826a5b8a5c7db698ea01dac6332a536eabe1",
+  "current_scan_sha256": "11fb599c85902ca4e567c83a78d014389953f3856f237f0d362fa80c12c22e52",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/00630.txt",
+      "sha256": "c56273e6c2da18a02e7a9ea333610bb0b631cdbb659ee4e86f389e43e8446dfe"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/006e8.txt",
+      "sha256": "7854ae504f03d3951dd648b518e5f957b68da10ae5e435210fbef6762abd74b4"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/00728.txt",
+      "sha256": "6d149b18502c8824b9263f2f94ad6353aa92e90473f64328dd04c1a9cef86d79"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/00744.txt",
+      "sha256": "c1ffee4f520f203b54f9e0c874ca60b8620cee6fe0edb4f921f4132bd2c6499e"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0087c.txt",
+      "sha256": "9c87ffa69ee5e7630c65fd16b6d188b93d30f2a46c5ed38a333a8da6030a44d9"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/009e8.txt",
+      "sha256": "eb2e87ce2b3383230e61943126e0c65d81792c4c82c8cc3b403ba508b2faaf57"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/00ac4.txt",
+      "sha256": "d586a0d37b046f4cdf738b190c0b14448eb3661c17f8741fbb0e25bd5c9b74d8"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/00bec.txt",
+      "sha256": "bf3b23fa069114e04f11f5ac697c712ca74331ff3ab0172b25dd276f33ab356f"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/00c88.txt",
+      "sha256": "b19ff436abfa6d5726df909801e69e44269d0849de0cd273c28b646c9b48033b"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/00d3c.txt",
+      "sha256": "161deb1c30dd5ed65cfb4155fa567a9ee74686a3b529ec0f83f589e79cb58f7a"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/00dbc.txt",
+      "sha256": "900e857ae42ce93182ed5e19342d36fdd1a32ca40d23fccf9142e4809c1fad58"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/00e40.txt",
+      "sha256": "62386774e3bac01efc18c52e46965f237594554d29be12a24c416018d548d071"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/00f6c.txt",
+      "sha256": "19186f27a579a52b7f59d024a202ef32dba98ea71dbbd07e9daf1d67a8a0953d"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01138.txt",
+      "sha256": "b65d4644fca5c22fccd51a2d5bbf3bd4ab9b7d9242818193f5ebe8c4c5e2d92b"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01194.txt",
+      "sha256": "0d08014e90796e3fee79ee7c0de17eef8dcd9e5872311b58e9ce0693a30afba9"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0120c.txt",
+      "sha256": "c78dcad9d6a44346611224a615a62f86bccfcb7bfe4dbec366f671cef38d7313"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/012bc.txt",
+      "sha256": "e0c651f3bca1e4c022b9bfadc09cb082c0524c14f8a805d7feb8115da7f23933"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01348.txt",
+      "sha256": "186f4d4c574167e17a925aab4bf3dfea12e47e885050665e441ffeb7c29885fb"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01364.txt",
+      "sha256": "0b6f3fd9c83251a81743e23c5a23eb01f32e8c73547627c0540ca8d11b8b4eb3"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/013a0.txt",
+      "sha256": "13d5871d096177b1988a2ae822dd792357abd6df4e86ebfad9cc80bbaceae6dc"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/013f8.txt",
+      "sha256": "4d7f48826f09ea53b520dc1e51a796e90093160859ec9ae7260e83ad5503627c"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/014e0.txt",
+      "sha256": "4e04166b53100251f33e00be0395c3e7bfb5fe777ff892a387b25893bdfbbbf3"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01548.txt",
+      "sha256": "5250a61d00d5fa3f4b32c2d1866d359ceab1e5fca47daeee4e11ba6734bdccf0"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01580.txt",
+      "sha256": "f91b81ba1b1fa7425f0ca8618085ad09174b15b44f7fc5c3b5d49448cc8ada47"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/015e8.txt",
+      "sha256": "344cd7dd4feca52c2764f400a8af0c5ba3097ce190992bbcfee04a44cede24bb"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0164c.txt",
+      "sha256": "3c886ad58e791a03a3c4f5807fa11675415efd7e724658ac131ffe4701a2acc2"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01680.txt",
+      "sha256": "b8ce47d432b5dc52e6fd2664c29235c1c0955eead86cf1fd4ee12997baf59836"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/016b0.txt",
+      "sha256": "b6c4a9f73edf232489f3ce7979adcc2dceb1339b69573dffe7c428e0d9f35b91"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/016dc.txt",
+      "sha256": "3ae3e0e90558e16b789a42f0b6954da36b36ea55171dcf29dc60336ad01be296"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01734.txt",
+      "sha256": "6e35db61cd1c0e5e92b051072d36631743b782eb9bbb0c4ca859f394b49906be"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/017fc.txt",
+      "sha256": "e8da1f83c334b4c5533eb3090be866cbe555e97b0966abbfd6482f2727392366"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/019a0.txt",
+      "sha256": "53aa54467f1f77d0602fede9f994bb4d2d3c5368a58c04cdccad15e380b21be3"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/019e4.txt",
+      "sha256": "e26e545f2cf6c82251c96cb873688e6b12b230910a61235b2317f8df39f67ddb"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01a58.txt",
+      "sha256": "3c037ea53c3d593683424309ff67518891d31c88d7c45c4caadc97595f7451d9"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01acc.txt",
+      "sha256": "e0fa51c1018175ba1bfc47fa9539151ea1c9b3c7e59142471dbb929e04e624f1"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01aec.txt",
+      "sha256": "82eb4465692fde05c49c931a6f3d1a37c132d28b5c67deaa1c75ed9b70b77ed3"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01b0c.txt",
+      "sha256": "2ba12ffe9500a1875e17cf440f0b973887503dd838f1028ad89e82b698a05829"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01b74.txt",
+      "sha256": "97e6d066c43f164ac859779be660f49f06e2285d074d23974f01535070239e77"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01bd0.txt",
+      "sha256": "75dfa312f7a32e483668746d45cae51abe0c0066b20a50012cfa0bef2b55a70a"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01bec.txt",
+      "sha256": "a2db06d57db0e854ca5134d9f46de7625156a87c040778a9dc285d5343ca5d05"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01c7c.txt",
+      "sha256": "83a154db0c27b6aad3b5f930e23caac0e9c1438efd28f590b0cbb9cba8f35c50"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01ca8.txt",
+      "sha256": "723a9e1c6e03570c7954fe81d0a12c809bf8037aa3ca3043a68b59de325872a8"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+      "sha256": "f31bcf379136937e42694717f8a664afdb55971590916f669b1aeec1cbd812e3"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01f80.txt",
+      "sha256": "e1fccab954601e14150ae56b96790a2c357951a98de2f78816d33004243b8109"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01ff4.txt",
+      "sha256": "588537945372f3210030a9e77853a48bf3c065e7a711321ced6882bd6bb49732"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02068.txt",
+      "sha256": "1a75b0e2b744595c12480618f75378d26a91a2ddcfde5b0733a002bad82e8082"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02140.txt",
+      "sha256": "d199200f59e6104687caaa282b3258b7d88a001877c2eebc5d178834f0721797"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02200.txt",
+      "sha256": "a0f1d5620edbdb7e948f2117bd32044bd25b7fa0f52d298df37acc843659ffb1"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0226c.txt",
+      "sha256": "453cfdafe19e822a55df04464e50222c8ae3cc1bab96875ccbf8d7829606dbcc"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/022d8.txt",
+      "sha256": "a8c6de63cea48cb926fb7bfe0cb2979ab3bfabb366efea574ad24e8a5b0cbb2a"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02614.txt",
+      "sha256": "4803a9d6c774c9b0292fbab3089c8e998429debc4bc46cf0f7597e0ce432fcb8"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/026a4.txt",
+      "sha256": "2b80ea48e3025d6afe2b363a5cb608a6d01b9811ba5b9db8e43dd4b3ecca794e"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/027cc.txt",
+      "sha256": "39b257b17c2a02ca6e9be7df36353afd8eed79af78bce1009668706dbc037338"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/029a4.txt",
+      "sha256": "2499497d490565a3af51f4d186cc0bfb1f48d2980cdc2a486f959e5518eb5dba"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/029b0.txt",
+      "sha256": "3b752a6376787d2ea99083913f277b27e23508a15a3b8976b65f231304c352ca"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/029c4.txt",
+      "sha256": "004b90de153e099f16910b7750fc576aed06af1f5bfdccc9a85167e073a7e644"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/029ec.txt",
+      "sha256": "33bd262af9bcf162bc9478839addb334254b0d02dddcb69430f9b9aedb1bd481"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02a0c.txt",
+      "sha256": "72e2de85cd3fb803b168baee5875e0a2af639a0f772ecb9c2d9259cd95833def"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02ab8.txt",
+      "sha256": "55dee59ff9c26cbd15a16bca58a1c093a036d914bc070a47130429715765a905"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "sha256": "1f8848a36947be4a75242fcefad7fbbf3d760d4992d80ce78a2acda89aac2a0a"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02cd4.txt",
+      "sha256": "878c86f86c8e93f71a8aab61232e3a5be53315afb778b1b04051048e8c0c542b"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02cf8.txt",
+      "sha256": "bb2701f3398c7141577bb806d96b8974df4730e801516266060980b1bd084260"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02d58.txt",
+      "sha256": "f75ac8906669554c179d89ba29042a5528b359c87c143f6658f794750dfd73c6"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02db8.txt",
+      "sha256": "1016d7579c42e157b77a941e761a00227405be0eeb2c8bbc6cadb27c463854c9"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02edc.txt",
+      "sha256": "631658eb5184ae11c33c43f8f732f658d73ff5985c1af8b5124ebf22cc251579"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03018.txt",
+      "sha256": "102e55c462190ad4466187a928fc448cdac0abad14d2cbcc4bb66d989795db6f"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03260.txt",
+      "sha256": "83dc4bec5ff84bb1114d86e557c3a79317703551545f85288d89b3cb82dfc856"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/032a4.txt",
+      "sha256": "a54ea21ef668a55a2cd76feaf52fafc41da5c73bc9291b05e492810f78d4ea34"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/032c8.txt",
+      "sha256": "997940193583fe83086d61f0553af1e32db417cfc73f9aacb22466d13c8112ca"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03300.txt",
+      "sha256": "fb5d1b61f5f1290c7a672ba3c4ea3debcd03ba0756658fceb9ac9f4078fb8fe3"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03314.txt",
+      "sha256": "12549915d7c263241ba7790bf4622c551d41828b31b5c3d88dc93bbf2902e786"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03328.txt",
+      "sha256": "3b9426a4ef6f5f1bb3fb1cf0e27a8705f2dba3b5a3da16c13d1e0f26b8358ad3"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/034a0.txt",
+      "sha256": "4f0b03003069ea04f2ddaa17d4676b62736e9e27909d53e548b0c72a8f5dac6a"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/034ec.txt",
+      "sha256": "82544848acaf8fa5bd8d81005f9ee64b4cea14f1063b60134abd212d79e195f6"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03520.txt",
+      "sha256": "eb1a9cb1fd26a874cef9f6152ad8b618ddd551c2d6a3685f95081a91be14c768"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03580.txt",
+      "sha256": "c2747424b9c0452e1d5bb8e34ba951f70c312f864093f1470585fcbb0f2fd6eb"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/035b0.txt",
+      "sha256": "73c4eb7d897460d849cca122b0cec9805304bf0a4c9aff1f353570222f0fc7da"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/035d8.txt",
+      "sha256": "4331ffccb2b0547fa6af53a3ffc83ffb86efd5682174f889220244125df1574c"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03724.txt",
+      "sha256": "1dee473487f03c658f0e1ab1487928fc2626eccb7ff153c0fd4f63b40bd0c8ea"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/037d8.txt",
+      "sha256": "3c7579c67f502bd4de39723187983b87e521cdc879934403cdad83708ffc9249"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0383c.txt",
+      "sha256": "8f07a7769ed683720a649ea73d24e3b1be05fd6c197fb013c3b9a79458689db9"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0387c.txt",
+      "sha256": "7c3c2d7e05b0e969d52e196c15622c4fea84a68044c696670fe750c81f2453db"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/038ec.txt",
+      "sha256": "25f6e5d0a2419211be98b3c70881e77420106438dd16f364d7894dedfb40621c"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "sha256": "a1e684d1286313c6cf283e412c6cfd7cadd971a035611bbeafd448611e029daf"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03cbc.txt",
+      "sha256": "7418608444935db3a8474bdb8ccbad5ca39edaca604d3d590ebdb3d8f87e2c1c"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03d10.txt",
+      "sha256": "e87f12c8c2447738f60a3c5198ad97a075db90acf2bfe6e55d1ba1a5002a2bec"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03e08.txt",
+      "sha256": "33b8748ac19f9d4513b2af62d6121bb5cfda3d10a23c2aa7be9c2f935ec664b0"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03f04.txt",
+      "sha256": "22f64153a32c5fea594e688aead2521b184f956cb32ae06fc08cdbef428e37a7"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03f90.txt",
+      "sha256": "791f1e293d4efe79d102782caef76eb97e98cccfed0953833109a5ab4c22d4d8"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03f9c.txt",
+      "sha256": "8b3d618a3f7c6aaa6b1a2a2fcdfad0643531fbd28f3c34e435adfe6530f0ee57"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03fd4.txt",
+      "sha256": "9f5865c3ddb9d44431256bab257fe8d34f608180847a40349ee63602bd69e39a"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04004.txt",
+      "sha256": "ef46fbcd7aa6309f58c20b95e4386fba4e840db48a340785eb346fb85f6d8988"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04358.txt",
+      "sha256": "ba976cebeeb116d9e8c06d8116583c743678e9fa18319eb85a2ad82e06577744"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04374.txt",
+      "sha256": "aa919513dad1aee75e19f8b4214d0809e840807059fa5989cd9ff9788432b059"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/045b4.txt",
+      "sha256": "0a06e7900df7a3ac13b0ab4c6f30d7da5d60898f160e20608fd1bbda9a0f430d"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04664.txt",
+      "sha256": "258c92280dffda1920495e69f022a102ad28f82b493baadebbacc49f5f41fe58"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/046c4.txt",
+      "sha256": "d7cd806ad90b17dcf7e87c3f1289d3462c3f4c6a932c836f49111bd19c64aac5"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04724.txt",
+      "sha256": "9eccd48922a5988e59af83cf744048bc8ef230650d0454311a37c3ca4dc45a96"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04734.txt",
+      "sha256": "4b665d3800cf5b686786ac31b8761f673743228cfa3853b7c965138547702783"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04744.txt",
+      "sha256": "e98eda1a319b7713831f37f3cff2787d41e5212937094657070c4a7b6054e383"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0474c.txt",
+      "sha256": "09751de395a2eec5ac72bd27705e743c6ab2dcd668050941f8de020585dfc97f"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04754.txt",
+      "sha256": "f4cb45d38d9bfd941bb432e0c95698a1bfd39e0a9ab79f2d533a287bec35914b"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04774.txt",
+      "sha256": "7b5297053852f593e7c2b923a5751b0beeeb99f4a712ec12fbfc5f35b8fcc874"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/047c0.txt",
+      "sha256": "18c6f687c87e624f05e4b1b2f1110ce57eea5385f32112d0b8da9540a66080fc"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04894.txt",
+      "sha256": "b49c6d28b100c915d6c7f7e74080f224327bad9d05774b121ebb72193662a91b"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04974.txt",
+      "sha256": "5d7af1600d344bd4bfc53199837ca18a599aef1d5db9f387d92e95653fc933aa"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04a24.txt",
+      "sha256": "f0e417a25fda14e5786273fa58d1ee7c2af1accd89eff0bd1309e42a80756452"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04ad0.txt",
+      "sha256": "ca3be6b5ff75cbd21df7e4a98f364eba7e8485f51f20bf5502dcd6168f870650"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04bf0.txt",
+      "sha256": "4596808370c3fce017019678785897c56d4400e1ae850a557e2f3f8d51317bd5"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04c8c.txt",
+      "sha256": "a85ac053849c87b62ac8460761c69e6a55dc90d613c24740acd4687d572156d6"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04f30.txt",
+      "sha256": "cf42226689fc3e3d28afaf9d31bf0b93bf9d210bf83c807507538a5b71a22546"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04f48.txt",
+      "sha256": "0a30337e99d50a6874805d889b62be8a149fe73dca4bc758e841fe27ef72d8fd"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04f60.txt",
+      "sha256": "309042c64d8121570aaeb3d56e415d945895ff228d6b4380e78bf0db7f5ce737"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04f78.txt",
+      "sha256": "1f26c9f001ee9f3aa94340cd896444d7900ba207e5397c8ba98b203641c4cd0c"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04f90.txt",
+      "sha256": "9172eed9d66f4828d543d176dc0d269fcc4cf6c076d568793566b80de7323a45"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04fa8.txt",
+      "sha256": "a04d951e7095aa276a698ae0e87a2d6c02fb0f4af8c10dafe690b1a1a69399f0"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05010.txt",
+      "sha256": "713dbc6657c52144a208fd3b803b869fb97be8f714b88c2dc18fbae14ff3cc43"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05040.txt",
+      "sha256": "5412718a0f94d606eb1397d56608304c8cc1ece1610497de3cbe34026df48cc6"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/050ec.txt",
+      "sha256": "0134eb07ece017b527b0b6759a8bcee6eb07d7f6fea99a2827780d8af18d0f30"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05138.txt",
+      "sha256": "026ba414925d59dbf800de8c534beb232b9f9f18723a2cdbbfce77425696367e"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/051cc.txt",
+      "sha256": "ab1faaefe953960b949efbcb1e5faf6fce6992986a53b9542ecade28d74d71bd"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05210.txt",
+      "sha256": "8a354dbe7e9e65420edebd7f78c6603277789822a44f4c4d0a745387048f23bb"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0523c.txt",
+      "sha256": "7a2f51f13ba08b57ae2070254a997e43847d77913907c34f5d81f2be733108a2"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05328.txt",
+      "sha256": "1b1d2418732d556018cd3e47a23b846d3cbd143c920bf3f1e20d5db77c1348c4"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05348.txt",
+      "sha256": "d8a17082025976e8bb6a7bfe89b41ad032f07c6e8dd82b119c9fac4a133207b9"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/053b8.txt",
+      "sha256": "327aebea6bfd432bb049f7655df6e8ffee73f2463d0807177459028b2f3a2514"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0542c.txt",
+      "sha256": "56e0ba05f197ff0252a419ad3a2f5b5f93f9b925a2f0ff30c5bf73da6d849da5"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05458.txt",
+      "sha256": "9186820322d1e6ece96a1cc022052da6c699e1d2356c8ff964a8cc562c5849e7"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/054c8.txt",
+      "sha256": "1d1f6ead372e85711f30481f76f9584efe292ac059b79dbb1a2ace7ee432e8b1"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05528.txt",
+      "sha256": "f706acc553fbba3cdbdeb471cc5f598c08a6235718524ae9eb70f0246cb8ca0c"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05610.txt",
+      "sha256": "960ef75e4ec8c9aaa952afe906d7fed221fedb671855269a85b0548ac88b5715"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05638.txt",
+      "sha256": "61772325eee8e5eba93b85a5ca1c2561d1a4ee90a4208379f9cb2803e6831db4"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05708.txt",
+      "sha256": "47184c60d7b72c149395e74fa94d5b7ab142793b67cf3018f4d3e4fa13301ce0"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05748.txt",
+      "sha256": "875941cc3338a73d10288251fa94697bf68492c635bbd42f0b6a4d9b7d308bba"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05764.txt",
+      "sha256": "4929b290e7131f40acff8db692e377806d8a563a6201b07d841ec8362148aa64"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/057bc.txt",
+      "sha256": "4d25cba88d468838df1625108644731a9998016db7c3dc10b6a3d313f5da3ad8"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05820.txt",
+      "sha256": "c81c21b0cf716f6d3b5a22f1114e566c7d188c81eb29af6ad397ae2e2cf95e4a"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05870.txt",
+      "sha256": "3906ba10768f912608417e1f58d16bf0e369ca8d783838eacf3f28fee7fbf529"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05894.txt",
+      "sha256": "36d734d1908bfda7fab455cbef582cb1f3046bef72667a0aa6dc577913ade5c8"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/058cc.txt",
+      "sha256": "1243684b1b439acbd6c0ed975a2e664de0d0cff1bc5f83d547b6c793ad6a2308"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05944.txt",
+      "sha256": "79f710a83661ace35861f9a8e1ecbc48a604de50d3ec71b153e275ff2d4adeea"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/059e4.txt",
+      "sha256": "098bedff791ec09f84019109021ee04861d90e769fbf85cc54e496e5f5e79c6d"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05a40.txt",
+      "sha256": "7fece66751a11ca7331c3c718511ad0a324380263f16b076576bbace007de265"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05a6c.txt",
+      "sha256": "f54abd7eeca6b88140807177cd25576afdbc353568375fa3d7a8945478483924"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05a9c.txt",
+      "sha256": "3620a448b0b96e5258af5bcc3f27b219fb382c7c4406aa10b53f552e3c390160"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05acc.txt",
+      "sha256": "21087ab1f7397e0ae4db181c9710775294053a3b22fd0c68d6fcf33128e5fbfb"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05af8.txt",
+      "sha256": "7c6790fe106cf0b87513f3ffd2c6efb98c4eaf8bdf679b2a5e7c095d38a09f0c"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05b20.txt",
+      "sha256": "a14c6b92708302b62ea1d19b7d17ba2a7caeb0323647b4089966aea783b13593"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05b4c.txt",
+      "sha256": "6cf47d67e58b50d1f7350160cbbecf5cc20e34184f7120a1e13bf26a43f1e9ad"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05b78.txt",
+      "sha256": "c07719a2c56eb94b9c7e47489ab97b763b768fa53f1fc9fc79308fc3c82eace6"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05ba4.txt",
+      "sha256": "26f1def340c39dcb6241290ee25cd8c4cde7a074d2f968455cd8248ad66cdec9"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05bc8.txt",
+      "sha256": "e344f4bfb190cd2e902df0fe09c2771a8facaa3823e7fc82975aed19829e30a1"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05bec.txt",
+      "sha256": "b1e4e8a8c780e97f331026dec5d832b3875aa7460b71e27bdf88be3c07d2b4d6"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05c10.txt",
+      "sha256": "1b9c4cf44d57785016791cda6bf0e8f413cce97945839ee082da94a06fac68a9"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05c34.txt",
+      "sha256": "00cddc1c24cce41672bac38246b438d8c797345bb203cf52ce31ebe1bd4207b3"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05c54.txt",
+      "sha256": "f4d9eac37f2c20ce7675b4be6f0c540b854812437a82c0a581cd5a88d73f8f4a"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05c74.txt",
+      "sha256": "b7016985ed4709c346ae8af18ba43057665af1b8360208412fc3224deb60b808"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05c94.txt",
+      "sha256": "e946f8f5b2dba8cc5828b03166b147f5192384ff8d9f1b6c876e10d3caecfb6d"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05cb4.txt",
+      "sha256": "902d56d282358c4950e581b51f390be3cf056ae85e4ad63fa9fffce912886e1d"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05d14.txt",
+      "sha256": "c9bd579cf52f5064044383289ab9265ac2048c2d16ee93be3179f94d371e80c3"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05d98.txt",
+      "sha256": "23c4d95c69b770f292e1d76ea23ebdb507aa9093af28cdbe397752711abc045e"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05e3c.txt",
+      "sha256": "4f11a733059cfc08cc048017bd29512e77ed08c0db525f9fc0d19a7f07ff64e9"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05f10.txt",
+      "sha256": "974dac4179afcdaf9febb28efff274741604fc7955c7f07884546346c0f84d00"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05f68.txt",
+      "sha256": "ed5e8ff8f3597adab9a6a73d237fe3038847317fb389463608a63cd6f654baa5"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06004.txt",
+      "sha256": "dad1f398d8da159c610151d2d4e26641aa33b8e9256453ec23dc425d55e0d0f3"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/060ac.txt",
+      "sha256": "a6a9be246691db36e4dbeaaaa2b2fa610dae731323b5cc4b89c875b4f5d9f631"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0614c.txt",
+      "sha256": "ea43d17e063a00a9cf98291cabd4749dcd02014eaecf7a8997a0acb90060a66b"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06214.txt",
+      "sha256": "f0484c8a8ffcbd6269866400689ca5d86f109406eaad80ac0d5ce569860cf166"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/062b0.txt",
+      "sha256": "91a1f1e86c619a6ef2a4af1cdd0595d177ed62a1ef936b23f8d7b0bd68246c9f"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/062f8.txt",
+      "sha256": "ae2e002ea93c6bbb5495abe334ec19573254b53b7974881b441d1162bbea4d98"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06304.txt",
+      "sha256": "9e3e48c33e55c5badb9e3fb0d09e9fd1d3ee3742e551059381e6dae8e02126a7"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06310.txt",
+      "sha256": "74761ca1a1a0bdb7af340ffefef11fc3f7702aa347d9211ef11dd1f8da1962f7"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0631c.txt",
+      "sha256": "d132abd7482b8f78ba297a57860f3ce1e3d9d81dca82a8e18b63fe76f688a1fa"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06328.txt",
+      "sha256": "308908f26679441ffc9f62fb69e2c4135b92b3ba98e50016fa78423d6b41d2c4"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06334.txt",
+      "sha256": "4f465eb1be66143be3b1606ed69a56f6d1b0c2d1177a1d865eceb2bd734782f2"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06348.txt",
+      "sha256": "9a5434c1db84deb72b398063feee736eaccd9103bc7e83361a36c6e25631cd28"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06478.txt",
+      "sha256": "fa645ef54696e8aa7864a6137c3153c98b94689df28d38c637b6635ac379ea91"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/064fc.txt",
+      "sha256": "f7730b768519d6643066f329358b335b4a850e7f6832df3c8d81887032f7c5e7"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06504.txt",
+      "sha256": "dc09b5f8d72d701f9c3250fd32aa89743ea31adae5a40ec46ca8943b25cec407"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/065d8.txt",
+      "sha256": "c18d03eeb2874d2c705b79f9dfec3586d33377663cee99a5412740f540f42131"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06944.txt",
+      "sha256": "0a3a0fb69d32d65c9c27a40bad072dabd879ad206e631377478907f44fba9286"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06e10.txt",
+      "sha256": "0ee9ba452deabf353d0c2a0abc896841d5724c76fbf311cd27c69302c185eaba"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06f70.txt",
+      "sha256": "643c3efe82ed2d58038fdbe3e95347f25ac8b6c23da391c65be5c89a67128798"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/070d4.txt",
+      "sha256": "9e26bf37a13e55a699c6dd7673017b58a7dd72d5dc04219c98e6993c9dd6163d"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/071ac.txt",
+      "sha256": "1cc6f03e326a1f886c2c81df7b023c8e48e5d10c282502c567847dc32c681380"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/072f4.txt",
+      "sha256": "c61ad2667322c04b40b3bf44775a14f003c5bd6c0be2adce2e364a983b708672"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07390.txt",
+      "sha256": "cc6cb399f76db403f1f30740b8b72622cbcb4f5f09593ae0b4147d6b10ca6e7b"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/074c4.txt",
+      "sha256": "a24910f38e8336069d539dd6bfce2d2f4cd19b7142ee5d95062fd8cc504a42e9"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07670.txt",
+      "sha256": "c1b91ad147e280dbfd0e150ddf66cc26da90ca3fa0cbbb0d336b3677c5bfe469"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/076f8.txt",
+      "sha256": "9dc0165704f48d83e8c9716185b1519c3c812f3331b50565bdd62b8a0a28aaf1"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/077cc.txt",
+      "sha256": "3278c10a13d38d29e286e2fd60573e2560360f367f944efe6add9d0c2d3df099"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07c3c.txt",
+      "sha256": "63d84ba1ab6004acf214229083acbb192c4cda62edf4098fbae23a55f6aa19ab"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07c78.txt",
+      "sha256": "be9676fdc61e3b6a4e904d95b4ec758920506dca58ec64175e41d08504969278"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07c98.txt",
+      "sha256": "7e0807d9f12624165ae92a9e0cb5f07307d6edd9a951546190866198bee474b4"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07cb8.txt",
+      "sha256": "4ed5e688bc6b8e4f02329a26af1d90f4eba65226a30ab965a908834a7f1adb32"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07cd8.txt",
+      "sha256": "a637dd0aa20fc9dfa99c6babc5372a7a196e21cc9fdcfe691f326885b9dec499"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07d24.txt",
+      "sha256": "64fd5a806fce8774e8890113ffddad35e806a733764e4a02b2f4f4ad47c4a278"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/08184.txt",
+      "sha256": "badd15596211c320eaacc1319baca0751a88543e1eb228db6ba0eeee97c4ccd1"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0818c.txt",
+      "sha256": "364aa3dffc12645af3b0be4a24b2b24916872ce39daa7c54aecc0ed8c3d6c693"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/081b8.txt",
+      "sha256": "ef37786d8dd1847fa85de49448c45a2bfef2863a7b3b94171e237517398160d1"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/082c0.txt",
+      "sha256": "fc32ce66cf1d3b9e19c88f8e8216b6831a320e36a9821af3262dc5caf7b20899"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/083fc.txt",
+      "sha256": "bb9d185ae7779438ca1b135be32b1285ecad7d7a58973b36953aa2ea53c45816"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/08b3c.txt",
+      "sha256": "424820d167a95a7f0fcc247456703363ddf7832a54c55287ba28aaf45649da06"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/08b78.txt",
+      "sha256": "5511ec9dd2c8ace7a428be3bc40aabcef5bb444627c501b335c5ed04943fa4ba"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/08e08.txt",
+      "sha256": "c735ca027ed47d979d55a27778099e6747e10caf8489289820b67ae87aad1276"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/08e18.txt",
+      "sha256": "819fdf93a565860d8e96e37a119b2ad8390249afb14f775e732d6fca77cb3725"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0953c.txt",
+      "sha256": "d775d0ba02ab707e9383b9364dec97ac1b24d8ac55d3d71be8a9c22e8accf17f"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/096e4.txt",
+      "sha256": "9476b94dccb3d289617dab29e1ecfbfece8b916a1753656b23009bb2138b62ea"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0978c.txt",
+      "sha256": "3fdd06f21d07fe108c53456a00a744cf61f53ed1a0ced7605c51111170d754f7"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/097f0.txt",
+      "sha256": "cd986d09fa9bf409d29b8136e3a0ef6d9d7e2ad2419b4c61e61e0de48c87e744"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/097f8.txt",
+      "sha256": "e2c503e1e637ebf452b241c28567800f3aa90bcc875c0bc82f40d7a849562e97"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09830.txt",
+      "sha256": "ac403c6b60f94de4758d03b5e9eed2e590749fa1e04d5a72493aea7d2b8ee007"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09a84.txt",
+      "sha256": "150830ee34e312018f13fee5cb3027cd21efc98d41900bfe08d654601d8a85cc"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09d10.txt",
+      "sha256": "731deb38c485cd4f99a7ec7af74094eb5c6af09e4e3573a07e1e5ee808fce0dd"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09fc8.txt",
+      "sha256": "a40f481eeb5ad2307e8e246e4f77467eaab026c1e951978567f22ba5a307fa8c"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a0ec.txt",
+      "sha256": "61c74d5e0b4b66f47e403397b0a22cb5b735de0d6dc105be5d72744fec14c0ee"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a110.txt",
+      "sha256": "a928b9fcf11594edffe1011a259faf2c40d6a5e85bfacf7fb75cbf1064ce3552"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a130.txt",
+      "sha256": "0253ed9102a8bd8468d5974288a2f3e3132a79edd983fd416bdb26c97b9d295e"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a138.txt",
+      "sha256": "303c8e76b3921e8262472bff0c4a3b2921d13e32da2dd1473620fbde5d38e6e4"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a140.txt",
+      "sha256": "fea90dbc03c523123292f1e5e92186c129ca04985a5883369250ef8d064632f1"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a148.txt",
+      "sha256": "cb8667dbeb7dfd16b815b31e9a630934eae6091d48df1c930f00d443df8a8b9c"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a160.txt",
+      "sha256": "c9dd15d070f0b5a62fd1ed6cd254818ecd9d51a9605aa702ebcc9303b6235ae6"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "sha256": "6596c9f102ab54574d273a66e2de239ba7892aa6ad8e63a9f73a538df241f089"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a2fc.txt",
+      "sha256": "9153c74145ce5d73c169339139e9d089cad47d4b94d76971bb6b73d203c02711"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a304.txt",
+      "sha256": "31e2eb13de6bf152b04f998e0c96a09425f2f93f2622190b451e8b3da9482957"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a320.txt",
+      "sha256": "7a5863be8c6436bddf0c5be0321a1d74e16afc863969c9462248455d31c992ff"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a340.txt",
+      "sha256": "28a268832909ae3efc0bae640434c0d4787585ce1aca10b5681d798f83ad9930"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a360.txt",
+      "sha256": "45556c213ea43bded62bcf83a53e11287c7d219e615fc2045fe3a4db4e36e559"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a368.txt",
+      "sha256": "53c36580f3522b84ffe767fd2e9543e025970bd51b10c62e389f3fb94c9c24af"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a398.txt",
+      "sha256": "d23e88d187cbe3055209f9a913bd5d3c39201bedfd8bfab6b563fa39a19dc12a"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a3a0.txt",
+      "sha256": "38910372bef33722791651eca81d3ea12436ae753a30169fd08fcdcb2e9f3f35"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a3c4.txt",
+      "sha256": "cd05b29fe73bdf4ae84044749ca8f14ba9846218587d1fb5b3948ffff5c4d313"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a3e4.txt",
+      "sha256": "cbab3887d28657dc5706008b09be6b75392851592c03be5f623dba9e12a575a2"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a400.txt",
+      "sha256": "80921b15f5d14f5875ddfc7a8a8263e012ecacb58bb0a0e5d257c4331a488e4c"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a468.txt",
+      "sha256": "ee0602e8af92c18ab4939b685df426f914b7f329adef1164b5dc9974becf2a11"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a480.txt",
+      "sha256": "4b6c53bb842058c941fbbab916e228da44e44df506d940bec71f7e6a03af6753"
+    }
+  ],
+  "procedures": 236,
+  "reached_stores": 2399,
+  "newly_resolved_stores": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/027cc.txt",
+      "pc": "0x28c7",
+      "old_address": null,
+      "address": "0x5ffee272"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/027cc.txt",
+      "pc": "0x28d6",
+      "old_address": null,
+      "address": "0x5ffee3c5"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/027cc.txt",
+      "pc": "0x2903",
+      "old_address": null,
+      "address": "0x5ffee272"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/027cc.txt",
+      "pc": "0x2927",
+      "old_address": null,
+      "address": "0x5ffee272"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/027cc.txt",
+      "pc": "0x292c",
+      "old_address": null,
+      "address": "0x5ffee272"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/027cc.txt",
+      "pc": "0x2947",
+      "old_address": null,
+      "address": "0x5ffee3c4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/027cc.txt",
+      "pc": "0x299b",
+      "old_address": null,
+      "address": "0x5ffee3c5"
+    }
+  ],
+  "unknown_non_stack_base_stores": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+      "pc": "0x1e29",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a10",
+      "offset": "0x104"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+      "pc": "0x1e2c",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a10",
+      "offset": "0x108"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+      "pc": "0x1e44",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a10",
+      "offset": "140"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+      "pc": "0x1e47",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a13",
+      "source_constant": null,
+      "base": "a10",
+      "offset": "204"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+      "pc": "0x1e8d",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a13",
+      "source_constant": null,
+      "base": "a10",
+      "offset": "140"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+      "pc": "0x1e93",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a10",
+      "offset": "204"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02a0c.txt",
+      "pc": "0x2a40",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a10",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "8"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02a0c.txt",
+      "pc": "0x2a42",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a10",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "12"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02a0c.txt",
+      "pc": "0x2a61",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a10",
+      "source_constant": null,
+      "base": "a15",
+      "offset": "8"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02a0c.txt",
+      "pc": "0x2a84",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02a0c.txt",
+      "pc": "0x2a86",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02ab8.txt",
+      "pc": "0x2ace",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a10",
+      "offset": "8"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02ab8.txt",
+      "pc": "0x2ad0",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a10",
+      "offset": "12"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02ab8.txt",
+      "pc": "0x2aef",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a14",
+      "offset": "8"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02ab8.txt",
+      "pc": "0x2b17",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02ab8.txt",
+      "pc": "0x2b19",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2ba8",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2baa",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2bdc",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2be0",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2c25",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2c29",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2c82",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2c84",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2c9a",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2c9c",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2cb2",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2cb4",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2cc6",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2cc8",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02edc.txt",
+      "pc": "0x2fb0",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "2"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02edc.txt",
+      "pc": "0x2fb3",
+      "operation": "s16i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/032c8.txt",
+      "pc": "0x32de",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a8",
+      "offset": "9"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/035d8.txt",
+      "pc": "0x3672",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a9",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/035d8.txt",
+      "pc": "0x3674",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a9",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/038ec.txt",
+      "pc": "0x392a",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": 0,
+      "base": "a9",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/038ec.txt",
+      "pc": "0x392c",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": 0,
+      "base": "a9",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3a91",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a15",
+      "offset": "2"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3a94",
+      "operation": "s16i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a15",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3acf",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3ad1",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3b70",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a8",
+      "offset": "2"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3b73",
+      "operation": "s16i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a8",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3bac",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3bae",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04004.txt",
+      "pc": "0x40a0",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a9",
+      "offset": "0x200"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04374.txt",
+      "pc": "0x43a6",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a13",
+      "source_constant": null,
+      "base": "a14",
+      "offset": "0x200"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04374.txt",
+      "pc": "0x43c7",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a15",
+      "offset": "0x200"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04374.txt",
+      "pc": "0x43e8",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a6",
+      "offset": "0x200"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04664.txt",
+      "pc": "0x469f",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04664.txt",
+      "pc": "0x46b2",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a9",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/046c4.txt",
+      "pc": "0x46ff",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/046c4.txt",
+      "pc": "0x4712",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a9",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05138.txt",
+      "pc": "0x5170",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a10",
+      "source_constant": null,
+      "base": "a11",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0542c.txt",
+      "pc": "0x544a",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a10",
+      "source_constant": null,
+      "base": "a9",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/054c8.txt",
+      "pc": "0x54e7",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/054c8.txt",
+      "pc": "0x54ea",
+      "operation": "s16i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05528.txt",
+      "pc": "0x5590",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a13",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05528.txt",
+      "pc": "0x5592",
+      "operation": "s16i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a13",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/065d8.txt",
+      "pc": "0x68fa",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a13",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "168"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/071ac.txt",
+      "pc": "0x7296",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0x344"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/071ac.txt",
+      "pc": "0x72ae",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0x364"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/071ac.txt",
+      "pc": "0x72c6",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0x384"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/071ac.txt",
+      "pc": "0x72de",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0x3a4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/074c4.txt",
+      "pc": "0x75e8",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a12",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "16"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/074c4.txt",
+      "pc": "0x75ff",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "0x110"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/074c4.txt",
+      "pc": "0x7617",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "0x210"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/074c4.txt",
+      "pc": "0x7631",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a13",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "12"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/074c4.txt",
+      "pc": "0x7648",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "0x10c"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/074c4.txt",
+      "pc": "0x7660",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "0x20c"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/08b3c.txt",
+      "pc": "0x8b58",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": 50,
+      "base": "a4",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/08b3c.txt",
+      "pc": "0x8b5b",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": 50,
+      "base": "a4",
+      "offset": "1"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/08b78.txt",
+      "pc": "0x8d89",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a15",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09830.txt",
+      "pc": "0x9851",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a7",
+      "offset": "60"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09830.txt",
+      "pc": "0x9853",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": 1610589024,
+      "base": "a7",
+      "offset": "56"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09830.txt",
+      "pc": "0x9858",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a7",
+      "offset": "56"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09830.txt",
+      "pc": "0x985a",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": null,
+      "base": "a7",
+      "offset": "60"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09830.txt",
+      "pc": "0x9868",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09a84.txt",
+      "pc": "0x9a87",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a0",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "12"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09a84.txt",
+      "pc": "0x9a8a",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a1",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "16"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09a84.txt",
+      "pc": "0x9a8d",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "20"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09a84.txt",
+      "pc": "0x9a90",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "28"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09a84.txt",
+      "pc": "0x9aa6",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "0x128"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09a84.txt",
+      "pc": "0x9aa9",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "216"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09a84.txt",
+      "pc": "0x9ab8",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a5",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "0x114"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa1c6",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa1da",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa1f0",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa1f3",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "1"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa21b",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa21f",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa223",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "8"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa228",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "12"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa239",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa23b",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa250",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa261",
+      "operation": "s16i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa26e",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa290",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa297",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa29e",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "8"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa2a6",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "12"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa2ba",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa2c1",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "4"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa2cf",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa2e7",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa2ea",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "1"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa2f7",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0"
+    }
+  ],
+  "unknown_operations": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/076f8.txt",
+      "operations": [
+        "waiti"
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07cd8.txt",
+      "operations": [
+        "waiti"
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0953c.txt",
+      "operations": [
+        "mul16u",
+        "nsau"
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0978c.txt",
+      "operations": [
+        "nsau"
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/097f8.txt",
+      "operations": [
+        "wsr.intenable"
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09d10.txt",
+      "operations": [
+        "wsr.intenable"
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a160.txt",
+      "operations": [
+        "div0.s",
+        "mkdadj.s"
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "operations": [
+        "ssa8l"
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a304.txt",
+      "operations": [
+        "extw",
+        "simcall"
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a320.txt",
+      "operations": [
+        "wsr.intclear"
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a340.txt",
+      "operations": [
+        "wsr.intset"
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a3a0.txt",
+      "operations": [
+        "wsr.ccompare0",
+        "wsr.ccompare1",
+        "wsr.ccompare2"
+      ]
+    }
+  ],
+  "reached_stop_instructions": [],
+  "missing_fallthrough": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/097f0.txt",
+      "pc": "0x97f5"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a400.txt",
+      "pc": "0xa465"
+    }
+  ],
+  "findings": [
+    "All2399 previously listed stores remain in the refreshed local analysis. Only seven addresses change, matching the prior027ccMOVT result. No new CC/gate writer is established.",
+    "108 non-a1 stores remain address-unknown to the simple constant scanner. This count includes separately bounded loops, caller-dependent output pointers and known CC save/copy routines; it is NOT108 new candidate producers.",
+    "Reached excw/ill stops are now explicitly reported; none occurs in these236 local entry analyses. Two missing fallthroughs occur after calls:97f5->a304 and a465->97f0. Possible return/resumption and adjacent code are not silently treated as covered.",
+    "Unknown operations remain in12 listings and call/indirect boundaries retain earlier limits. No whole-firmware absence claim follows from this inventory."
+  ],
+  "next": "Use the remaining computed-store list with existing bounded-loop/caller receipts; avoid treating already resolved candidates as new. Prioritize indirect writers and entry coverage that can actually affect saved masks or gate.",
+  "scope": "Reanalysis of the same236 listings and initial indirect-edge table; not new firmware discovery or complete runtime coverage. No hardware access."
+}

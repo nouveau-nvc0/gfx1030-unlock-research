@@ -1,0 +1,10 @@
+{
+  "firmware_sha256": "0eb99764288f764fd853d6973693ffa52419cc7ba62074aee85df4a3e8d0286d",
+  "code_file_offset": "0x200",
+  "start": "0x2b868",
+  "stop": "0x2b878",
+  "mapping_status": "analysis coordinates, global runtime base not attested",
+  "capstone": "6.0.0",
+  "objdump_sha256": "cbf7d56334ab03d467030fd3b7e30ffc992f4e5dcaf8f56e7e97d116cd61adcb",
+  "limitation": "targeted linear decode, not execution or complete CFG validation"
+}

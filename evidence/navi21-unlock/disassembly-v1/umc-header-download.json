@@ -1,0 +1,10 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/torvalds/linux/master/drivers/gpu/drm/amd/include/asic_reg/umc/umc_8_7_0_offset.h",
+    "sha256": "f2c4f3a4b23fe2678b0bc8a2433e2b257d519db2e2ddfa8f154d8d72796defcf"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/torvalds/linux/master/drivers/gpu/drm/amd/include/asic_reg/umc/umc_8_7_0_sh_mask.h",
+    "sha256": "2ff9d87e8d6a6a8f23b18b9fce503c65b4bb49ecde40cb1194fb4aa1594641e1"
+  }
+]

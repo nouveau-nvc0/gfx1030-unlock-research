@@ -1,0 +1,16 @@
+
+/tmp/tmp7ry_fs87/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001f930 <.data+0x1f930>:
+0001f930: 364100   entry        a1, 0x20 ; Capstone
+   1f933:	ad02      	mov.n	a10, a2
+0001f935: 258d01   call8        . +0x18d4 ; Capstone ; target=0x21208
+0001f938: e58c01   call8        . +0x18d0 ; Capstone ; target=0x21208
+   1f93b:	a0a330        	xor	a10, a3, a10
+   1f93e:	a0a074        	extui	a10, a10, 0, 8
+0001f941: 658c01   call8        . +0x18c8 ; Capstone ; target=0x21208
+   1f944:	2d0a      	mov.n	a2, a10
+0001f946: 1df0     retw.n        ; Capstone

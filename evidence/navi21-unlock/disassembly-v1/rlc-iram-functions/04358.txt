@@ -1,0 +1,17 @@
+
+/tmp/tmpk23oorah/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00004358 <.data+0x4358>:
+00004358: 364100   entry        a1, 0x20 ; Capstone
+    435b:	61aae3        	l32r	a6, 0xffffd204 (0x6803b200) ; inferred DRAM map 0x5ffec000
+    435e:	0c17      	movi.n	a7, 1
+    4360:	72666a        	s32i	a7, a6, 0x1a8
+    4363:	322669        	l32i	a3, a6, 0x1a4
+    4366:	222668        	l32i	a2, a6, 0x1a0
+    4369:	422669        	l32i	a4, a6, 0x1a4
+    436c:	4793f0        	bne	a3, a4, 0x4360
+0000436f: 1df0     retw.n        ; Capstone
+    4371:	000000        	ill

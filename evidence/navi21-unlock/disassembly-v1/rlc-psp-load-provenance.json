@@ -1,0 +1,35 @@
+{
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/torvalds/linux/v6.12/drivers/gpu/drm/amd/amdgpu/amdgpu_rlc.c",
+      "sha256": "b8e36f4d904cf8bcc22647b93752acf9fbaedad4780c40f7e2b62235f5fc8491"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/torvalds/linux/v6.12/drivers/gpu/drm/amd/amdgpu/amdgpu_ucode.c",
+      "sha256": "e2a2794aca1f4455c058493abd044b83140c913f4b664a5766133fc7decbbf10"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/torvalds/linux/v6.12/drivers/gpu/drm/amd/amdgpu/amdgpu_psp.c",
+      "sha256": "1e73faa87fc8fe3456a054973bc87265fc3c7827904189563f6825b42362ee25"
+    }
+  ],
+  "version_scope": "Linux v6.12 reference path; not assertion of currently running load_type",
+  "stages": [
+    {
+      "file": "amdgpu_rlc.c",
+      "lines": "398-418",
+      "behavior": "header offsets/sizes select IRAM/DRAM blobs; PSP mode registers separate ucode IDs"
+    },
+    {
+      "file": "amdgpu_ucode.c",
+      "lines": "898-904",
+      "behavior": "ucode staging selects matching blob and length"
+    },
+    {
+      "file": "amdgpu_psp.c",
+      "lines": "2477-2481,2668-2675",
+      "behavior": "IDs map to RLC_IRAM/RLC_DRAM_BOOT; LOAD_IP_FW carries source MC address,size,type"
+    }
+  ],
+  "unresolved": "PSP internal destination mapping, authentication/loading constraints, possible image transformations and runtime writes to RLC state remain unproved."
+}

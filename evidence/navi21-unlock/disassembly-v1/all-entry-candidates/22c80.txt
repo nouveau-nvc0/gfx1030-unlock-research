@@ -1,0 +1,19 @@
+
+/tmp/tmpblbzgy82/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00022c80 <.data+0x22c80>:
+00022c80: 364100   entry        a1, 0x20 ; Capstone
+   22c83:	0c2a      	movi.n	a10, 2
+00022c85: 25d4ff   call8        . -0x2bc ; Capstone ; target=0x229c8
+00022c88: 65d1ff   call8        . -0x2e8 ; Capstone ; target=0x229a0
+   22c8b:	8cca      	beqz.n	a10, 0x22c9b
+   22c8d:	917bc2        	l32r	a9, 0x1367c (0xef38)
+   22c90:	82297f        	l32i	a8, a9, 0x1fc
+   22c93:	1b88      	addi.n	a8, a8, 1
+   22c95:	82697f        	s32i	a8, a9, 0x1fc
+00022c98: a5eefd   call8        . -0x2114 ; Capstone ; target=0x20b84
+00022c9b: 1df0     retw.n        ; Capstone
+   22c9d:	000000        	ill

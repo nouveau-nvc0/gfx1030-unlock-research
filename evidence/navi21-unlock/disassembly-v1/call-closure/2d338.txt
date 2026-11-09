@@ -1,0 +1,16 @@
+
+/tmp/tmp1s5celbo/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002d338 <.data+0x2d338>:
+0002d338: 364100   entry        a1, 0x20 ; Capstone
+   2d33b:	2cc3      	movi.n	a3, 44
+   2d33d:	303282        	mull	a3, a2, a3
+   2d340:	21ba96        	l32r	a2, 0x12e28 (0x9c00)
+   2d343:	3a22      	add.n	a2, a2, a3
+   2d345:	22d272        	addmi	a2, a2, 0x7200
+   2d348:	22c28c        	addi	a2, a2, -116
+0002d34b: 1df0     retw.n        ; Capstone
+   2d34d:	000000        	ill

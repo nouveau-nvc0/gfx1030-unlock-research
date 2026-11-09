@@ -1,0 +1,46 @@
+
+/tmp/tmprb0jtwjz/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000271e0 <.data+0x271e0>:
+000271e0: 366100   entry        a1, 0x30 ; Capstone
+000271e3: 3010fa   const.s      f1, 0 ; Capstone
+000271e6: 5002fa   wfr          f0, a2 ; Capstone
+000271e9: 10004b   olt.s        b0, f0, f1 ; Capstone
+000271ec: 3041fa   const.s      f4, 1 ; Capstone
+000271ef: 034101   ssi          f0, a1, 4 ; Capstone
+000271f2: 76000a   bf           b0, . +0xe ; Capstone
+   271f5:	0c14      	movi.n	a4, 1
+000271f7: 6020fa   neg.s        f2, f0 ; Capstone
+000271fa: 234101   ssi          f2, a1, 4 ; Capstone
+   271fd:	460000        	j	0x27202
+   27200:	0c04      	movi.n	a4, 0
+00027202: 530101   lsi          f5, a1, 4 ; Capstone
+00027205: 50340a   add.s        f3, f4, f5 ; Capstone
+   27208:	3c23      	movi.n	a3, 50
+   2720a:	0c22      	movi.n	a2, 2
+0002720c: 534102   ssi          f5, a1, 8 ; Capstone
+0002720f: 334100   ssi          f3, a1, 0 ; Capstone
+00027212: 0072da   ufloat.s     f7, a2, 0 ; Capstone
+00027215: 40a7fa   rfr          a10, f7 ; Capstone
+00027218: 25b811   call8        . +0x11b84 ; Capstone ; target=0x38d9c
+0002721b: 830102   lsi          f8, a1, 8 ; Capstone
+0002721e: b30101   lsi          f11, a1, 4 ; Capstone
+00027221: 809b2a   mul.s        f9, f11, f8 ; Capstone
+00027224: 50aafa   wfr          f10, a10 ; Capstone
+00027227: a0892a   mul.s        f8, f9, f10 ; Capstone
+0002722a: 030100   lsi          f0, a1, 0 ; Capstone
+0002722d: 00080a   add.s        f0, f8, f0 ; Capstone
+   27230:	1b22      	addi.n	a2, a2, 1
+00027232: 834102   ssi          f8, a1, 8 ; Capstone
+00027235: 034100   ssi          f0, a1, 0 ; Capstone
+   27238:	3792d6        	bne	a2, a3, 0x27212
+   2723b:	8c74      	beqz.n	a4, 0x27246
+0002723d: 40a0fa   rfr          a10, f0 ; Capstone
+00027240: a5b511   call8        . +0x11b5c ; Capstone ; target=0x38d9c
+00027243: 500afa   wfr          f0, a10 ; Capstone
+00027246: 4020fa   rfr          a2, f0 ; Capstone
+00027249: 1df0     retw.n        ; Capstone
+	...

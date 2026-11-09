@@ -1,0 +1,15 @@
+
+/tmp/tmp_pjgdikk/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002de10 <.data+0x2de10>:
+0002de10: 364100   entry        a1, 0x20 ; Capstone
+   2de13:	ad02      	mov.n	a10, a2
+   2de15:	b13b98        	l32r	a11, 0x13f04 (0x3a0010)
+0002de18: 65fbd3   call8        . -0x2c048 ; Capstone ; target=0x1dd0
+   2de1b:	ad02      	mov.n	a10, a2
+   2de1d:	0c1b      	movi.n	a11, 1
+0002de1f: e527d4   call8        . -0x2bd80 ; Capstone ; target=0x209c
+0002de22: 1df0     retw.n        ; Capstone

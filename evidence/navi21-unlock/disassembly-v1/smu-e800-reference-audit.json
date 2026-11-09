@@ -1,0 +1,60 @@
+{
+  "firmware_sha256": "0eb99764288f764fd853d6973693ffa52419cc7ba62074aee85df4a3e8d0286d",
+  "literal_search": {
+    "0xe800": [
+      "0x13a88"
+    ],
+    "0xe801": [],
+    "0xe803": [],
+    "0xe804": [],
+    "0xe805": [],
+    "0xeb00": [],
+    "0xeb01": [],
+    "0xeb03": [],
+    "0xeb04": [],
+    "0xeb05": [],
+    "0x3a000": [],
+    "0x3a004": [],
+    "0x3a00c": [],
+    "0x3a010": [],
+    "0x3a014": [],
+    "0x3ac00": [],
+    "0x3ac04": [],
+    "0x3ac0c": [],
+    "0x3ac10": [],
+    "0x3ac14": [],
+    "0x123a000": [],
+    "0x123a004": [],
+    "0x123a00c": [],
+    "0x123a010": [],
+    "0x123a014": [],
+    "0x123ac00": [],
+    "0x123ac04": [],
+    "0x123ac0c": [],
+    "0x123ac10": [],
+    "0x123ac14": []
+  },
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/25394.txt",
+      "sha256": "7938b32f293fb3fa958cb2437f35f198833df6b81818b913697cee7327c60727",
+      "byte_checked_records": 7
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/274b0.txt",
+      "sha256": "81ab2e5b28fd2b1caa0f696f4986aa226b2a3de580458a1bc07d2cbaf8f4dd7b",
+      "byte_checked_records": 86
+    }
+  ],
+  "findings": [
+    "Only full literal e800 occurs, at file13a88/code13888, among these30 candidate port coordinates. No e800/eb00 port correspondence follows from this.",
+    "25394 uses e800 as a table base: returns DWORD[e800+20*arg0+1fc]+8*arg1. No indexed-port handshake occurs in this short routine.",
+    "274b0 loads the same base and stores numeric data at offsets308/30c/310/314 among other fields. These direct address uses are not the RLCG e800/e801/e803/e804/e805 protocol.",
+    "The two retained literal consumers do not provide the missing physical map. This distinguishes a concrete same-number data use from a port identity claim."
+  ],
+  "limits": [
+    "Literal search does not exclude computed coordinates or additional instruction streams.",
+    "No claim that all consumers or later data effects are covered.",
+    "SMU and RLCG address numbers are not interchangeable without a proven address relation. No hardware access."
+  ]
+}

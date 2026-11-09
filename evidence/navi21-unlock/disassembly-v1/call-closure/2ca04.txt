@@ -1,0 +1,18 @@
+
+/tmp/tmp61_35s9y/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002ca04 <.data+0x2ca04>:
+0002ca04: 364100   entry        a1, 0x20 ; Capstone
+   2ca07:	91d89b        	l32r	a9, 0x13968 (0xa95c)
+   2ca0a:	2082f0        	subx8	a8, a2, a2
+   2ca0d:	9028a0        	addx4	a2, a8, a9
+   2ca10:	a2227f        	l32i	a10, a2, 0x1fc
+0002ca13: a53bf0   call8        . -0xfc44 ; Capstone ; target=0x1cdcc
+0002ca16: 502afa   wfr          f2, a10 ; Capstone
+0002ca19: 130283   lsi          f1, a2, 0x20c ; Capstone
+0002ca1c: 20012a   mul.s        f0, f1, f2 ; Capstone
+0002ca1f: 034282   ssi          f0, a2, 0x208 ; Capstone
+0002ca22: 1df0     retw.n        ; Capstone

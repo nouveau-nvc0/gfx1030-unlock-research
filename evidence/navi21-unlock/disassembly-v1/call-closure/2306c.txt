@@ -1,0 +1,17 @@
+
+/tmp/tmpo_i_e71z/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002306c <.data+0x2306c>:
+0002306c: 364100   entry        a1, 0x20 ; Capstone
+   2306f:	8832      	l32i.n	a8, a2, 12
+00023071: 230801   lsi          f2, a8, 4 ; Capstone
+00023074: 130800   lsi          f1, a8, 0 ; Capstone
+00023077: 20011a   sub.s        f0, f1, f2 ; Capstone
+0002307a: 40a0fa   rfr          a10, f0 ; Capstone
+0002307d: e5d115   call8        . +0x15d20 ; Capstone ; target=0x38d9c
+00023080: 503afa   wfr          f3, a10 ; Capstone
+00023083: 334201   ssi          f3, a2, 4 ; Capstone
+00023086: 1df0     retw.n        ; Capstone

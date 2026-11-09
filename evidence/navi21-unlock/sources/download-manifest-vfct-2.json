@@ -1,0 +1,30 @@
+[
+  {
+    "file": "smu11_driver_if_sienna_cichlid.h",
+    "url": "https://raw.githubusercontent.com/gregkh/linux/v7.3.1/drivers/gpu/drm/amd/pm/inc/smu11_driver_if_sienna_cichlid.h",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "smu_v11_0_7_pptable.h",
+    "url": "https://raw.githubusercontent.com/gregkh/linux/v7.3.1/drivers/gpu/drm/amd/pm/powerplay/inc/smu_v11_0_7_pptable.h",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "vfct-patch-v4-oct27.html",
+    "url": "https://lists.openwall.net/linux-kernel/2026/10/27/2266",
+    "bytes": 7134,
+    "sha256": "cd3966c4b990096aaa51862c9ff8fef653b8a8a0bc566fdad46adf6d41292340"
+  },
+  {
+    "file": "vfct-patch-v3-nov1.html",
+    "url": "https://lists.openwall.net/linux-kernel/2026/11/01/308",
+    "bytes": 17112,
+    "sha256": "4bddd7ae482690d8f766821ffac2697b480b6e313fedd3a0759f99d319b5be7b"
+  },
+  {
+    "file": "vfct-soft-filter-commit.json",
+    "url": "https://api.github.com/repos/torvalds/linux/commits/11c141672045ffc0187aa604f2c0f597bc334fb2",
+    "bytes": 7285,
+    "sha256": "17e8402a82388076870eed7317c06d3fdbbe591cd5507486247cfd825eafb847"
+  }
+]

@@ -1,0 +1,20 @@
+
+/tmp/tmpft8bhsac/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005870 <.data+0x5870>:
+00005870: 364100   entry        a1, 0x20 ; Capstone
+00005873: e599ff   call8        . -0x660 ; Capstone ; target=0x5210
+    5876:	b102df        	l32r	a11, 0xffffd480 (0x5ffedb14) ; inferred DRAM map 0x5ffec000
+    5879:	3df0      	nop.n
+    587b:	a21b01        	l16ui	a10, a11, 2
+    587e:	c21b00        	l16ui	a12, a11, 0
+    5881:	b29b02        	l16si	a11, a11, 4
+    5884:	00aa11        	slli	a10, a10, 16
+    5887:	c0aa20        	or	a10, a10, a12
+0000588a: e5bcff   call8        . -0x430 ; Capstone ; target=0x5458
+0000588d: e597fb   call8        . -0x4680 ; Capstone ; target=0x120c
+00005890: 1df0     retw.n        ; Capstone
+	...

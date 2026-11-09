@@ -1,0 +1,62 @@
+
+/tmp/tmp3a69b_8y/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002da9c <.data+0x2da9c>:
+0002da9c: 364100   entry        a1, 0x20 ; Capstone
+   2da9f:	a1d397        	l32r	a10, 0x139ec (0x153b4)
+   2daa2:	313997        	l32r	a3, 0x13788 (0x1840200)
+   2daa5:	92a200        	movi	a9, 0x200
+   2daa8:	a0a2b0        	addx8	a10, a2, a10
+   2daab:	a20a7e        	l8ui	a10, a10, 126
+   2daae:	c02000        	memw
+   2dab1:	822322        	l32i	a8, a3, 136
+   2dab4:	410f99        	l32r	a4, 0x13ef0 (0x153a8)
+   2dab7:	22a070        	movi	a2, 112
+   2daba:	908810        	and	a8, a8, a9
+   2dabd:	808941        	srli	a8, a8, 9
+   2dac0:	166807        	beqz	a8, 0x2db3a
+   2dac3:	c02000        	memw
+   2dac6:	b22322        	l32i	a11, a3, 136
+   2dac9:	52a100        	movi	a5, 0x100
+   2dacc:	a0f024        	extui	a15, a10, 0, 3
+   2dacf:	20bb10        	and	a11, a11, a2
+   2dad2:	b0b474        	extui	a11, a11, 4, 8
+   2dad5:	b2447f        	s8i	a11, a4, 127
+   2dad8:	b71a5e        	beq	a10, a11, 0x2db3a
+   2dadb:	7c88      	movi.n	a8, -8
+   2dadd:	c02000        	memw
+   2dae0:	e22322        	l32i	a14, a3, 136
+   2dae3:	80ee10        	and	a14, a14, a8
+   2dae6:	f0ee20        	or	a14, a14, a15
+   2dae9:	c02000        	memw
+   2daec:	e26322        	s32i	a14, a3, 136
+   2daef:	c02000        	memw
+   2daf2:	d22322        	l32i	a13, a3, 136
+   2daf5:	50dd20        	or	a13, a13, a5
+   2daf8:	c02000        	memw
+   2dafb:	d26322        	s32i	a13, a3, 136
+   2dafe:	c02000        	memw
+   2db01:	c22322        	l32i	a12, a3, 136
+   2db04:	50cc10        	and	a12, a12, a5
+   2db07:	c0c841        	srli	a12, a12, 8
+   2db0a:	661c1d        	bnei	a12, 1, 0x2db2b
+   2db0d:	0caa      	movi.n	a10, 10
+0002db0f: 6596d4   call8        . -0x2b698 ; Capstone ; target=0x2474
+   2db12:	0c1a      	movi.n	a10, 1
+0002db14: 25ff05   call8        . +0x5ff4 ; Capstone ; target=0x33b08
+   2db17:	0caa      	movi.n	a10, 10
+0002db19: 65a6d4   call8        . -0x2b598 ; Capstone ; target=0x2580
+   2db1c:	c02000        	memw
+   2db1f:	922322        	l32i	a9, a3, 136
+   2db22:	509910        	and	a9, a9, a5
+   2db25:	909841        	srli	a9, a9, 8
+   2db28:	2619e1        	beqi	a9, 1, 0x2db0d
+   2db2b:	c02000        	memw
+   2db2e:	a22322        	l32i	a10, a3, 136
+   2db31:	20aa10        	and	a10, a10, a2
+   2db34:	a0a441        	srli	a10, a10, 4
+   2db37:	a2447f        	s8i	a10, a4, 127
+0002db3a: 1df0     retw.n        ; Capstone

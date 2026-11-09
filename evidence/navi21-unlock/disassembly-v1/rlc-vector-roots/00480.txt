@@ -1,0 +1,17 @@
+
+/tmp/tmpmsz0ycic/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000480 <.data+0x480>:
+00000480: 00c949   s32e         a0, a9, -0x10 ; Capstone
+00000483: 00d109   l32e         a0, a1, -0xc ; Capstone
+00000486: 10d949   s32e         a1, a9, -0xc ; Capstone
+00000489: 20e949   s32e         a2, a9, -8 ; Capstone
+0000048c: 30f949   s32e         a3, a9, -4 ; Capstone
+0000048f: 408049   s32e         a4, a0, -0x20 ; Capstone
+00000492: 509049   s32e         a5, a0, -0x1c ; Capstone
+00000495: 60a049   s32e         a6, a0, -0x18 ; Capstone
+00000498: 70b049   s32e         a7, a0, -0x14 ; Capstone
+0000049b: 003400   rfwo          ; Capstone

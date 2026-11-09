@@ -1,0 +1,29 @@
+DriverHealth callback classification — offline
+
+The two XL register-indirect calls4e19/4e21 (XT4e31/4e39) are progress
+notifications from EFI_DRIVER_HEALTH_PROTOCOL.Repair, not unclassified
+internal hardware-access dispatch.
+
+XL926 builds a protocol instance at device context+48;92a/931 installs
+GetHealthStatus=4c58 at instance+0.934/942 installs Repair=4dc0 at instance+8.
+93b selects GUIDb970=2a534210-9280-41d8-ae79-cada01a2b127;955 invokes
+BootServices.InstallMultipleProtocolInterfaces with that instance.
+XT99a..9c9 builds the same layout, GetHealthStatus4c70,Repair4dd8,GUIDb9b0.
+The saved official EDK2 DriverHealth.h matches GUID and two-method layout.
+Repair has four arguments:This,ControllerHandle,ChildHandle,RepairNotify.
+Thus savedR9->RBX atXL4dca/XT4de2 is exactly RepairNotify.
+
+The body requires a controller handle, live driver state, null ChildHandle,
+a matching controller and status field1; if the optional callback is supplied,
+it sends Value50/Limit100 then Value100/Limit100, and returns success.
+No direct MMIO or register-helper call occurs in this Repair body. The supplied
+callback implementation is external and not present in the GOP image, so its
+arbitrary effects are not proved absent. Classification removes a supposed
+unknown internal CC selector, not all possible external UEFI behavior.
+
+Reproducer:scripts/navi21-gop-health-registration.py.
+Receipt:gop-health-registration.json; official header/source hash retained as
+gop-DriverHealth.h and gop-DriverHealth.source.json.
+Specification:https://uefi.org/specs/UEFI/2.10/11_Protocols_UEFI_Driver_Model.html
+Remaining GOP work includes ARM64 and computed/context mutation coverage;
+this does not close SMU/RLC or the global objective.

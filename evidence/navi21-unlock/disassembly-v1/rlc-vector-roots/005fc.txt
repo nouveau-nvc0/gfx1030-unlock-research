@@ -1,0 +1,16 @@
+
+/tmp/tmpw504ku9q/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000005fc <.data+0x5fc>:
+     5fc:	12c1a0        	addi	a1, a1, -96
+     5ff:	2941      	s32i.n	a2, a1, 16
+     601:	3951      	s32i.n	a3, a1, 20
+     603:	31c2f2        	l32r	a3, 0xffffd10c (0x5ffed860) ; inferred DRAM map 0x5ffec000
+     606:	20e803        	rsr.exccause	a2
+     609:	3032a0        	addx4	a3, a2, a3
+     60c:	3803      	l32i.n	a3, a3, 0
+     60e:	4961      	s32i.n	a4, a1, 24
+     610:	a00300        	jx	a3

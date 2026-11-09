@@ -1,0 +1,34 @@
+RLC computed snapshot route: source-value constraints
+
+74c4's snapshot lanes are MQD registers, resolved against hash-recorded
+GC10.3 headers using absolute DWORD index=GCsegment0base1260+relative index:
+6000c824 ->CP_MQD_BASE_ADDR (relative1fa9), RAM offsets+c/+10;
+6000c828 ->CP_MQD_BASE_ADDR_HI (relative1faa), RAM+10c/+110;
+6000c8ac ->CP_MQD_CONTROL (relative1fcb), RAM+20c/+210.
+Instance selection is constructed from the hardware status words by74c4,
+not directly from the custom RAM slot. The helper copies raw DWORD values.
+
+For overlap with gatee452, which is byte2 of the DWORD ate450:
+slot184, offset210:sourceCP_MQD_CONTROL. Documented byte2 mask80 corresponds
+to EXE_DISABLE(bit23). A set bit could make this software gate nonzero if the
+snapshot executes with this customslot and the hardware source status permits.
+slot216, offset110:sourceCP_MQD_BASE_ADDR_HI. Its documented maskffff supplies
+no bits to byte2; no documented nonzero-gate producer from this lane.
+slot248, offset10:sourceCP_MQD_BASE_ADDR. Documented address bits cover byte2,
+but their actual value and ability to choose them on the selected instance
+are not established. These are conditions, not demonstrated invocation paths.
+
+CC_WGP's INACTIVE_WGPS mask isffff0000. Consequently overlapping MQD lanes
+would have different possible bit content: BASE_ADDR can supply all16 bits;
+BASE_ADDR_HI supplies none under documented fields; CONTROL supplies only
+07800000 from its documented fields. Unknown/reserved-bit readback behavior
+is not assumed from the masks alone. Address overlap is not arbitrary mask
+control, and eventual acceptance by CC hardware remains separately unproved.
+
+Full little-endian virtual-address literal search over the pinned decompressed
+firmware found no5fff6944/5fff74c4 pointer. This adds no initial pointer-table
+caller to the seven known direct argument constructions, all slot31. Computed
+addresses, alternate entries and other-engine calls remain open.
+Receipt:rlc-snapshot-sources.json; reproducer:navi21-rlc-snapshot-sources.py.
+This follow-up narrows the candidate; it does not establish an unlock or justify
+hardware tests. All work is offline.

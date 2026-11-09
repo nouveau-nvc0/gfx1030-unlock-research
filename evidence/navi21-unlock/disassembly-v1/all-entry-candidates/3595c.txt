@@ -1,0 +1,39 @@
+
+/tmp/tmpl43kiux8/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0003595c <.data+0x3595c>:
+0003595c: 366100   entry        a1, 0x30 ; Capstone
+   3595f:	cd01      	mov.n	a12, a1
+   35961:	a13175        	l32r	a10, 0x12e28 (0x9c00)
+   35964:	0c28      	movi.n	a8, 2
+   35966:	b11d77        	l32r	a11, 0x135dc (0xa3c0)
+   35969:	f09211        	slli	a9, a2, 1
+   3596c:	0c03      	movi.n	a3, 0
+   3596e:	3911      	s32i.n	a3, a1, 4
+   35970:	3901      	s32i.n	a3, a1, 0
+   35972:	b099a0        	addx4	a9, a9, a11
+00035975: 76a82a   loopgtz      a8, . +0x2e ; Capstone
+   35978:	390c      	s32i.n	a3, a12, 0
+   3597a:	e22acf        	l32i	a14, a10, 0x33c
+   3597d:	82d904        	addmi	a8, a9, 0x400
+   35980:	f2db04        	addmi	a15, a11, 0x400
+   35983:	4b99      	addi.n	a9, a9, 4
+   35985:	d87f      	l32i.n	a13, a15, 28
+   35987:	4baa      	addi.n	a10, a10, 4
+   35989:	f85f      	l32i.n	a15, a15, 20
+   3598b:	4bcc      	addi.n	a12, a12, 4
+   3598d:	8898      	l32i.n	a8, a8, 36
+   3598f:	d0ff10        	and	a15, a15, a13
+   35992:	d22b7f        	l32i	a13, a11, 0x1fc
+   35995:	80ee10        	and	a14, a14, a8
+   35998:	f0ee10        	and	a14, a14, a15
+   3599b:	e0dd20        	or	a13, a13, a14
+   3599e:	d26b7f        	s32i	a13, a11, 0x1fc
+   359a1:	4bbb      	addi.n	a11, a11, 4
+   359a3:	ad01      	mov.n	a10, a1
+000359a5: 650f00   call8        . +0xf8 ; Capstone ; target=0x35a9c
+000359a8: 1df0     retw.n        ; Capstone
+	...

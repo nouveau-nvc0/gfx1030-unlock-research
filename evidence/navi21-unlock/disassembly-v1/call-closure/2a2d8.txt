@@ -1,0 +1,23 @@
+
+/tmp/tmpw4snhfu7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002a2d8 <.data+0x2a2d8>:
+0002a2d8: 364100   entry        a1, 0x20 ; Capstone
+   2a2db:	316da5        	l32r	a3, 0x13890 (0x1fff)
+   2a2de:	4126a4        	l32r	a4, 0x13378 (0xfff)
+   2a2e1:	273308        	bltu	a3, a2, 0x2a2ed
+   2a2e4:	27b411        	bgeu	a4, a2, 0x2a2f9
+   2a2e7:	f02211        	slli	a2, a2, 1
+   2a2ea:	22d2e0        	addmi	a2, a2, 0xffffe000
+   2a2ed:	202841        	srli	a2, a2, 8
+   2a2f0:	22c240        	addi	a2, a2, 64
+   2a2f3:	202074        	extui	a2, a2, 0, 8
+   2a2f6:	860000        	j	0x2a2fc
+   2a2f9:	202674        	extui	a2, a2, 6, 8
+   2a2fc:	0c83      	movi.n	a3, 8
+0002a2fe: 302273   maxu         a2, a2, a3 ; Capstone
+0002a301: 1df0     retw.n        ; Capstone
+	...

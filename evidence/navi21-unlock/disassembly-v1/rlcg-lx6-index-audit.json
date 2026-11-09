@@ -1,0 +1,106 @@
+{
+  "rlc_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "toc_receipt_sha256": "07f497dcf1eced46ddf8f08f8e72bd49033214941eac8c73b1969c5826fbaf09",
+  "index_helper": "0x35d7",
+  "all_immediate_helper_calls": [
+    "0x311d",
+    "0x31b0",
+    "0x31fb"
+  ],
+  "raw_helper_words": [
+    "0x12640002",
+    "0xc03a4000",
+    "0xc02abc00",
+    "0x2aa80004",
+    "0x8c0030a6",
+    "0xcc01c065",
+    "0xcec1c064",
+    "0xcc01c067",
+    "0xce41c066",
+    "0xcf81c063",
+    "0xce81c0e8",
+    "0x90000000"
+  ],
+  "lx6_dram_descriptors": [
+    {
+      "id": 10,
+      "file_offset": "0x35d60",
+      "raw_words": [
+        "14008720",
+        "04002001",
+        "0000fb55",
+        "0000fb56"
+      ],
+      "offset_bytes": 138368,
+      "size_bytes_base_units": 16384,
+      "fields": {
+        "load_at_boot": 1,
+        "load_at_vddgfx": 0,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 4096
+      },
+      "address_register": "0xfb55",
+      "index": 0,
+      "data_register": "0xfb56",
+      "start_word": 0
+    },
+    {
+      "id": 27,
+      "file_offset": "0x35e70",
+      "raw_words": [
+        "36151400",
+        "04000412",
+        "0000fb55",
+        "0000fb56"
+      ],
+      "offset_bytes": 5525504,
+      "size_bytes_base_units": 16384,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 2,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 1,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 0,
+        "size": 4096
+      },
+      "address_register": "0xfb55",
+      "index": 0,
+      "data_register": "0xfb56",
+      "start_word": 0
+    }
+  ],
+  "other_nonzero_descriptor_starts": [
+    {
+      "id": 1,
+      "port": "0xfb5f",
+      "start": 8192
+    },
+    {
+      "id": 2,
+      "port": "0xfb75",
+      "start": 512
+    }
+  ],
+  "interpretation": "Under the existing partial RLCG decoding, each caller supplies DW3 high16 unchanged as the immediate index value. Helper shifts the register address left2, not the supplied index. Both LX6 DRAM descriptors supply zero. Bulk load/save then uses fixed data port and byte count16384.",
+  "what_this_does_not_determine": [
+    "Nonzero LX6 index unit, width, or wrap behavior",
+    "SMU alias and transaction availability",
+    "Whether independent accesses reproduce the DMA port behavior",
+    "Changed payload producer or callable restore",
+    "Hardware acceptance of changed CC"
+  ],
+  "dependency_correction": "Nonzero index units are a requirement for addressed single-location access, not for the already observed zero-start whole-block DMA setup. The whole-block alternative still needs a proven changed payload source and invocation; it is not an established SMU write route.",
+  "scope": "Exact firmware words and descriptors checked offline. Partial instruction meanings and actual device behavior remain distinct from byte verification."
+}

@@ -1,0 +1,10 @@
+
+/tmp/tmp9_vor8pb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002d944 <.data+0x2d944>:
+0002d944: 364100   entry        a1, 0x20 ; Capstone
+0002d947: a53b00   call8        . +0x3bc ; Capstone ; target=0x2dd00
+0002d94a: 1df0     retw.n        ; Capstone

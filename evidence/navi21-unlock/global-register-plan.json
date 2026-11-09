@@ -1,0 +1,11 @@
+{
+  "mode": "amdgpu_regs2 O_RDONLY, no ioctl, no bank switch, 4-byte pread only",
+  "registers": {
+    "CC_GC_SA_UNIT_DISABLE": "0x8924",
+    "GC_USER_SA_UNIT_DISABLE": "0x8928",
+    "GB_ADDR_CONFIG": "0x98f8",
+    "GRBM_GFX_INDEX": "0x30800",
+    "CGTS_TCC_DISABLE": "0x3c018",
+    "CGTS_USER_TCC_DISABLE": "0x3c01c"
+  }
+}

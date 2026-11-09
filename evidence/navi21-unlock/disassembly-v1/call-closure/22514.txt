@@ -1,0 +1,19 @@
+
+/tmp/tmpdypz186t/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00022514 <.data+0x22514>:
+00022514: 364100   entry        a1, 0x20 ; Capstone
+   22517:	8192c2        	l32r	a8, 0x12f60 (0x100ae00)
+   2251a:	0c02      	movi.n	a2, 0
+   2251c:	c02000        	memw
+   2251f:	226881        	s32i	a2, a8, 0x204
+   22522:	c02000        	memw
+   22525:	226882        	s32i	a2, a8, 0x208
+   22528:	318cc3        	l32r	a3, 0x13358 (0x100b200)
+   2252b:	c02000        	memw
+   2252e:	226338        	s32i	a2, a3, 224
+00022531: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,995 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "scope": "Initial firmware DRAM tables under inferred virtual map; runtime mutation not excluded.",
+  "tables": [
+    {
+      "listing": "02b44.txt",
+      "jump": "0x2b6c",
+      "unsigned_guard": "0x2b61",
+      "table": "0x5ffec040",
+      "count": 51,
+      "input_bias": 10,
+      "entries": [
+        {
+          "input": 10,
+          "target": "0x2b72"
+        },
+        {
+          "input": 11,
+          "target": "0x2b72"
+        },
+        {
+          "input": 12,
+          "target": "0x2c64"
+        },
+        {
+          "input": 13,
+          "target": "0x2b72"
+        },
+        {
+          "input": 14,
+          "target": "0x2b72"
+        },
+        {
+          "input": 15,
+          "target": "0x2b72"
+        },
+        {
+          "input": 16,
+          "target": "0x2b72"
+        },
+        {
+          "input": 17,
+          "target": "0x2b72"
+        },
+        {
+          "input": 18,
+          "target": "0x2b72"
+        },
+        {
+          "input": 19,
+          "target": "0x2b72"
+        },
+        {
+          "input": 20,
+          "target": "0x2c51"
+        },
+        {
+          "input": 21,
+          "target": "0x2b72"
+        },
+        {
+          "input": 22,
+          "target": "0x2c48"
+        },
+        {
+          "input": 23,
+          "target": "0x2c3f"
+        },
+        {
+          "input": 24,
+          "target": "0x2c35"
+        },
+        {
+          "input": 25,
+          "target": "0x2b72"
+        },
+        {
+          "input": 26,
+          "target": "0x2b72"
+        },
+        {
+          "input": 27,
+          "target": "0x2b72"
+        },
+        {
+          "input": 28,
+          "target": "0x2b72"
+        },
+        {
+          "input": 29,
+          "target": "0x2b72"
+        },
+        {
+          "input": 30,
+          "target": "0x2b72"
+        },
+        {
+          "input": 31,
+          "target": "0x2b72"
+        },
+        {
+          "input": 32,
+          "target": "0x2b72"
+        },
+        {
+          "input": 33,
+          "target": "0x2c0d"
+        },
+        {
+          "input": 34,
+          "target": "0x2bec"
+        },
+        {
+          "input": 35,
+          "target": "0x2b72"
+        },
+        {
+          "input": 36,
+          "target": "0x2b72"
+        },
+        {
+          "input": 37,
+          "target": "0x2b72"
+        },
+        {
+          "input": 38,
+          "target": "0x2b72"
+        },
+        {
+          "input": 39,
+          "target": "0x2b72"
+        },
+        {
+          "input": 40,
+          "target": "0x2b72"
+        },
+        {
+          "input": 41,
+          "target": "0x2b72"
+        },
+        {
+          "input": 42,
+          "target": "0x2b72"
+        },
+        {
+          "input": 43,
+          "target": "0x2bcf"
+        },
+        {
+          "input": 44,
+          "target": "0x2bb6"
+        },
+        {
+          "input": 45,
+          "target": "0x2b72"
+        },
+        {
+          "input": 46,
+          "target": "0x2b72"
+        },
+        {
+          "input": 47,
+          "target": "0x2b72"
+        },
+        {
+          "input": 48,
+          "target": "0x2b72"
+        },
+        {
+          "input": 49,
+          "target": "0x2b72"
+        },
+        {
+          "input": 50,
+          "target": "0x2b72"
+        },
+        {
+          "input": 51,
+          "target": "0x2b72"
+        },
+        {
+          "input": 52,
+          "target": "0x2b72"
+        },
+        {
+          "input": 53,
+          "target": "0x2b72"
+        },
+        {
+          "input": 54,
+          "target": "0x2b72"
+        },
+        {
+          "input": 55,
+          "target": "0x2b72"
+        },
+        {
+          "input": 56,
+          "target": "0x2b72"
+        },
+        {
+          "input": 57,
+          "target": "0x2b72"
+        },
+        {
+          "input": 58,
+          "target": "0x2b72"
+        },
+        {
+          "input": 59,
+          "target": "0x2b72"
+        },
+        {
+          "input": 60,
+          "target": "0x2b90"
+        }
+      ],
+      "unique_targets": 11
+    },
+    {
+      "listing": "07d24.txt",
+      "jump": "0x7d42",
+      "unsigned_guard": "0x7d3a",
+      "table": "0x5ffecc50",
+      "count": 21,
+      "input_bias": 16,
+      "entries": [
+        {
+          "input": 16,
+          "target": "0x7d4c"
+        },
+        {
+          "input": 17,
+          "target": "0x814d"
+        },
+        {
+          "input": 18,
+          "target": "0x8111"
+        },
+        {
+          "input": 19,
+          "target": "0x80b7"
+        },
+        {
+          "input": 20,
+          "target": "0x809b"
+        },
+        {
+          "input": 21,
+          "target": "0x8047"
+        },
+        {
+          "input": 22,
+          "target": "0x8011"
+        },
+        {
+          "input": 23,
+          "target": "0x7fbd"
+        },
+        {
+          "input": 24,
+          "target": "0x7fa7"
+        },
+        {
+          "input": 25,
+          "target": "0x7d45"
+        },
+        {
+          "input": 26,
+          "target": "0x7f6a"
+        },
+        {
+          "input": 27,
+          "target": "0x7ef0"
+        },
+        {
+          "input": 28,
+          "target": "0x7d45"
+        },
+        {
+          "input": 29,
+          "target": "0x7ed0"
+        },
+        {
+          "input": 30,
+          "target": "0x7ed5"
+        },
+        {
+          "input": 31,
+          "target": "0x7ed0"
+        },
+        {
+          "input": 32,
+          "target": "0x7e8b"
+        },
+        {
+          "input": 33,
+          "target": "0x7e40"
+        },
+        {
+          "input": 34,
+          "target": "0x7df4"
+        },
+        {
+          "input": 35,
+          "target": "0x7da8"
+        },
+        {
+          "input": 36,
+          "target": "0x7d7f"
+        }
+      ],
+      "unique_targets": 19
+    },
+    {
+      "listing": "082c0.txt",
+      "jump": "0x82f1",
+      "unsigned_guard": "0x82e6",
+      "table": "0x5ffeccb0",
+      "count": 39,
+      "input_bias": 0,
+      "entries": [
+        {
+          "input": 0,
+          "target": "0x82f4"
+        },
+        {
+          "input": 1,
+          "target": "0x830d"
+        },
+        {
+          "input": 2,
+          "target": "0x82f4"
+        },
+        {
+          "input": 3,
+          "target": "0x82f4"
+        },
+        {
+          "input": 4,
+          "target": "0x82f4"
+        },
+        {
+          "input": 5,
+          "target": "0x82f4"
+        },
+        {
+          "input": 6,
+          "target": "0x82f4"
+        },
+        {
+          "input": 7,
+          "target": "0x82f4"
+        },
+        {
+          "input": 8,
+          "target": "0x82f4"
+        },
+        {
+          "input": 9,
+          "target": "0x82f4"
+        },
+        {
+          "input": 10,
+          "target": "0x82f4"
+        },
+        {
+          "input": 11,
+          "target": "0x82f4"
+        },
+        {
+          "input": 12,
+          "target": "0x82f4"
+        },
+        {
+          "input": 13,
+          "target": "0x82f4"
+        },
+        {
+          "input": 14,
+          "target": "0x82f4"
+        },
+        {
+          "input": 15,
+          "target": "0x82f4"
+        },
+        {
+          "input": 16,
+          "target": "0x83e2"
+        },
+        {
+          "input": 17,
+          "target": "0x83ca"
+        },
+        {
+          "input": 18,
+          "target": "0x83b5"
+        },
+        {
+          "input": 19,
+          "target": "0x83a1"
+        },
+        {
+          "input": 20,
+          "target": "0x82f4"
+        },
+        {
+          "input": 21,
+          "target": "0x82f4"
+        },
+        {
+          "input": 22,
+          "target": "0x82f4"
+        },
+        {
+          "input": 23,
+          "target": "0x82f4"
+        },
+        {
+          "input": 24,
+          "target": "0x82f4"
+        },
+        {
+          "input": 25,
+          "target": "0x82f4"
+        },
+        {
+          "input": 26,
+          "target": "0x82f4"
+        },
+        {
+          "input": 27,
+          "target": "0x82f4"
+        },
+        {
+          "input": 28,
+          "target": "0x82f4"
+        },
+        {
+          "input": 29,
+          "target": "0x82f4"
+        },
+        {
+          "input": 30,
+          "target": "0x82f4"
+        },
+        {
+          "input": 31,
+          "target": "0x82f4"
+        },
+        {
+          "input": 32,
+          "target": "0x838a"
+        },
+        {
+          "input": 33,
+          "target": "0x8372"
+        },
+        {
+          "input": 34,
+          "target": "0x835a"
+        },
+        {
+          "input": 35,
+          "target": "0x8342"
+        },
+        {
+          "input": 36,
+          "target": "0x832a"
+        },
+        {
+          "input": 37,
+          "target": "0x831f"
+        },
+        {
+          "input": 38,
+          "target": "0x8316"
+        }
+      ],
+      "unique_targets": 13
+    },
+    {
+      "listing": "083fc.txt",
+      "jump": "0x8436",
+      "unsigned_guard": "0x842b",
+      "table": "0x5ffecd50",
+      "count": 102,
+      "input_bias": 0,
+      "entries": [
+        {
+          "input": 0,
+          "target": "0x8439"
+        },
+        {
+          "input": 1,
+          "target": "0x8457"
+        },
+        {
+          "input": 2,
+          "target": "0x8439"
+        },
+        {
+          "input": 3,
+          "target": "0x8439"
+        },
+        {
+          "input": 4,
+          "target": "0x8439"
+        },
+        {
+          "input": 5,
+          "target": "0x8439"
+        },
+        {
+          "input": 6,
+          "target": "0x8439"
+        },
+        {
+          "input": 7,
+          "target": "0x8439"
+        },
+        {
+          "input": 8,
+          "target": "0x8439"
+        },
+        {
+          "input": 9,
+          "target": "0x8439"
+        },
+        {
+          "input": 10,
+          "target": "0x8439"
+        },
+        {
+          "input": 11,
+          "target": "0x8439"
+        },
+        {
+          "input": 12,
+          "target": "0x8439"
+        },
+        {
+          "input": 13,
+          "target": "0x8439"
+        },
+        {
+          "input": 14,
+          "target": "0x8439"
+        },
+        {
+          "input": 15,
+          "target": "0x8439"
+        },
+        {
+          "input": 16,
+          "target": "0x8b0b"
+        },
+        {
+          "input": 17,
+          "target": "0x8afc"
+        },
+        {
+          "input": 18,
+          "target": "0x8439"
+        },
+        {
+          "input": 19,
+          "target": "0x8439"
+        },
+        {
+          "input": 20,
+          "target": "0x8439"
+        },
+        {
+          "input": 21,
+          "target": "0x8439"
+        },
+        {
+          "input": 22,
+          "target": "0x8439"
+        },
+        {
+          "input": 23,
+          "target": "0x8439"
+        },
+        {
+          "input": 24,
+          "target": "0x8439"
+        },
+        {
+          "input": 25,
+          "target": "0x8439"
+        },
+        {
+          "input": 26,
+          "target": "0x8439"
+        },
+        {
+          "input": 27,
+          "target": "0x8439"
+        },
+        {
+          "input": 28,
+          "target": "0x8439"
+        },
+        {
+          "input": 29,
+          "target": "0x8439"
+        },
+        {
+          "input": 30,
+          "target": "0x8439"
+        },
+        {
+          "input": 31,
+          "target": "0x8439"
+        },
+        {
+          "input": 32,
+          "target": "0x8537"
+        },
+        {
+          "input": 33,
+          "target": "0x8439"
+        },
+        {
+          "input": 34,
+          "target": "0x8439"
+        },
+        {
+          "input": 35,
+          "target": "0x8439"
+        },
+        {
+          "input": 36,
+          "target": "0x8439"
+        },
+        {
+          "input": 37,
+          "target": "0x8439"
+        },
+        {
+          "input": 38,
+          "target": "0x8439"
+        },
+        {
+          "input": 39,
+          "target": "0x8439"
+        },
+        {
+          "input": 40,
+          "target": "0x8439"
+        },
+        {
+          "input": 41,
+          "target": "0x8439"
+        },
+        {
+          "input": 42,
+          "target": "0x8439"
+        },
+        {
+          "input": 43,
+          "target": "0x8439"
+        },
+        {
+          "input": 44,
+          "target": "0x8439"
+        },
+        {
+          "input": 45,
+          "target": "0x8439"
+        },
+        {
+          "input": 46,
+          "target": "0x8439"
+        },
+        {
+          "input": 47,
+          "target": "0x8439"
+        },
+        {
+          "input": 48,
+          "target": "0x8439"
+        },
+        {
+          "input": 49,
+          "target": "0x8ad4"
+        },
+        {
+          "input": 50,
+          "target": "0x8439"
+        },
+        {
+          "input": 51,
+          "target": "0x8439"
+        },
+        {
+          "input": 52,
+          "target": "0x8439"
+        },
+        {
+          "input": 53,
+          "target": "0x8439"
+        },
+        {
+          "input": 54,
+          "target": "0x8439"
+        },
+        {
+          "input": 55,
+          "target": "0x8439"
+        },
+        {
+          "input": 56,
+          "target": "0x8439"
+        },
+        {
+          "input": 57,
+          "target": "0x8439"
+        },
+        {
+          "input": 58,
+          "target": "0x8439"
+        },
+        {
+          "input": 59,
+          "target": "0x8439"
+        },
+        {
+          "input": 60,
+          "target": "0x8439"
+        },
+        {
+          "input": 61,
+          "target": "0x8439"
+        },
+        {
+          "input": 62,
+          "target": "0x8439"
+        },
+        {
+          "input": 63,
+          "target": "0x8439"
+        },
+        {
+          "input": 64,
+          "target": "0x8a86"
+        },
+        {
+          "input": 65,
+          "target": "0x8a3e"
+        },
+        {
+          "input": 66,
+          "target": "0x89f1"
+        },
+        {
+          "input": 67,
+          "target": "0x8988"
+        },
+        {
+          "input": 68,
+          "target": "0x895e"
+        },
+        {
+          "input": 69,
+          "target": "0x88fa"
+        },
+        {
+          "input": 70,
+          "target": "0x88b5"
+        },
+        {
+          "input": 71,
+          "target": "0x8852"
+        },
+        {
+          "input": 72,
+          "target": "0x882e"
+        },
+        {
+          "input": 73,
+          "target": "0x8439"
+        },
+        {
+          "input": 74,
+          "target": "0x87e2"
+        },
+        {
+          "input": 75,
+          "target": "0x8757"
+        },
+        {
+          "input": 76,
+          "target": "0x8439"
+        },
+        {
+          "input": 77,
+          "target": "0x8743"
+        },
+        {
+          "input": 78,
+          "target": "0x8439"
+        },
+        {
+          "input": 79,
+          "target": "0x872f"
+        },
+        {
+          "input": 80,
+          "target": "0x86da"
+        },
+        {
+          "input": 81,
+          "target": "0x8680"
+        },
+        {
+          "input": 82,
+          "target": "0x8626"
+        },
+        {
+          "input": 83,
+          "target": "0x85cc"
+        },
+        {
+          "input": 84,
+          "target": "0x85a7"
+        },
+        {
+          "input": 85,
+          "target": "0x8593"
+        },
+        {
+          "input": 86,
+          "target": "0x857f"
+        },
+        {
+          "input": 87,
+          "target": "0x8439"
+        },
+        {
+          "input": 88,
+          "target": "0x8439"
+        },
+        {
+          "input": 89,
+          "target": "0x8439"
+        },
+        {
+          "input": 90,
+          "target": "0x8439"
+        },
+        {
+          "input": 91,
+          "target": "0x8439"
+        },
+        {
+          "input": 92,
+          "target": "0x8439"
+        },
+        {
+          "input": 93,
+          "target": "0x8439"
+        },
+        {
+          "input": 94,
+          "target": "0x8439"
+        },
+        {
+          "input": 95,
+          "target": "0x8439"
+        },
+        {
+          "input": 96,
+          "target": "0x8579"
+        },
+        {
+          "input": 97,
+          "target": "0x855f"
+        },
+        {
+          "input": 98,
+          "target": "0x8525"
+        },
+        {
+          "input": 99,
+          "target": "0x84e4"
+        },
+        {
+          "input": 100,
+          "target": "0x8493"
+        },
+        {
+          "input": 101,
+          "target": "0x8471"
+        }
+      ],
+      "unique_targets": 32
+    }
+  ],
+  "edges": {
+    "02b44.txt": {
+      "0x2b6c": [
+        "0x2b72",
+        "0x2b90",
+        "0x2bb6",
+        "0x2bcf",
+        "0x2bec",
+        "0x2c0d",
+        "0x2c35",
+        "0x2c3f",
+        "0x2c48",
+        "0x2c51",
+        "0x2c64"
+      ]
+    },
+    "07d24.txt": {
+      "0x7d42": [
+        "0x7d45",
+        "0x7d4c",
+        "0x7d7f",
+        "0x7da8",
+        "0x7df4",
+        "0x7e40",
+        "0x7e8b",
+        "0x7ed0",
+        "0x7ed5",
+        "0x7ef0",
+        "0x7f6a",
+        "0x7fa7",
+        "0x7fbd",
+        "0x8011",
+        "0x8047",
+        "0x809b",
+        "0x80b7",
+        "0x8111",
+        "0x814d"
+      ]
+    },
+    "082c0.txt": {
+      "0x82f1": [
+        "0x82f4",
+        "0x830d",
+        "0x8316",
+        "0x831f",
+        "0x832a",
+        "0x8342",
+        "0x835a",
+        "0x8372",
+        "0x838a",
+        "0x83a1",
+        "0x83b5",
+        "0x83ca",
+        "0x83e2"
+      ]
+    },
+    "083fc.txt": {
+      "0x8436": [
+        "0x8439",
+        "0x8457",
+        "0x8471",
+        "0x8493",
+        "0x84e4",
+        "0x8525",
+        "0x8537",
+        "0x855f",
+        "0x8579",
+        "0x857f",
+        "0x8593",
+        "0x85a7",
+        "0x85cc",
+        "0x8626",
+        "0x8680",
+        "0x86da",
+        "0x872f",
+        "0x8743",
+        "0x8757",
+        "0x87e2",
+        "0x882e",
+        "0x8852",
+        "0x88b5",
+        "0x88fa",
+        "0x895e",
+        "0x8988",
+        "0x89f1",
+        "0x8a3e",
+        "0x8a86",
+        "0x8ad4",
+        "0x8afc",
+        "0x8b0b"
+      ]
+    }
+  }
+}

@@ -1,0 +1,214 @@
+
+/tmp/tmp9jgzcqny/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000074c4 <.data+0x74c4>:
+000074c4: 368100   entry        a1, 0x40 ; Capstone
+    74c7:	c10cd8        	l32r	a12, 0xffffd4f8 (0x5ffedc80) ; inferred DRAM map 0x5ffec000
+    74ca:	0c0b      	movi.n	a11, 0
+    74cc:	81f3d7        	l32r	a8, 0xffffd498 (0x6000c600) ; inferred DRAM map 0x5ffec000
+    74cf:	71f1d7        	l32r	a7, 0xffffd494 (0xfff8ffff) ; inferred DRAM map 0x5ffec000
+    74d2:	6124d7        	l32r	a6, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    74d5:	51eed7        	l32r	a5, 0xffffd490 (0xffcfffff) ; inferred DRAM map 0x5ffec000
+    74d8:	2941      	s32i.n	a2, a1, 16
+    74da:	20d874        	extui	a13, a2, 8, 8
+    74dd:	9149d7        	l32r	a9, 0xffffd204 (0x6803b200) ; inferred DRAM map 0x5ffec000
+    74e0:	20a075        	extui	a10, a2, 16, 8
+    74e3:	1cf4      	movi.n	a4, 31
+    74e5:	922921        	l32i	a9, a9, 132
+    74e8:	d04a93        	movnez	a4, a10, a13
+    74eb:	9901      	s32i.n	a9, a1, 0
+    74ed:	903074        	extui	a3, a9, 0, 8
+    74f0:	77636d        	bbci	a3, 7, 0x7561
+    74f3:	90e314        	extui	a14, a9, 3, 2
+    74f6:	90d514        	extui	a13, a9, 5, 2
+    74f9:	90a024        	extui	a10, a9, 0, 3
+    74fc:	00aa11        	slli	a10, a10, 16
+    74ff:	a0dd01        	slli	a13, a13, 22
+    7502:	c0ee01        	slli	a14, a14, 20
+    7505:	50dd10        	and	a13, a13, a5
+    7508:	e0dd20        	or	a13, a13, a14
+    750b:	709d10        	and	a9, a13, a7
+    750e:	a09920        	or	a9, a9, a10
+    7511:	20a074        	extui	a10, a2, 0, 8
+    7514:	c024b0        	addx8	a2, a4, a12
+    7517:	16aa10        	beqz	a10, 0x7625
+    751a:	e06f00        	rsil	a14, 15
+    751d:	926681        	s32i	a9, a6, 0x204
+    7520:	b26680        	s32i	a11, a6, 0x200
+    7523:	f832      	l32i.n	a15, a2, 12
+    7525:	f26889        	s32i	a15, a8, 0x224
+    7528:	b26681        	s32i	a11, a6, 0x204
+    752b:	e0e613        	wsr.ps	a14
+    752e:	102000        	rsync
+    7531:	a06f00        	rsil	a10, 15
+    7534:	926681        	s32i	a9, a6, 0x204
+    7537:	b26680        	s32i	a11, a6, 0x200
+    753a:	d22243        	l32i	a13, a2, 0x10c
+    753d:	d2688a        	s32i	a13, a8, 0x228
+    7540:	b26681        	s32i	a11, a6, 0x204
+    7543:	a0e613        	wsr.ps	a10
+    7546:	102000        	rsync
+    7549:	f06f00        	rsil	a15, 15
+    754c:	926681        	s32i	a9, a6, 0x204
+    754f:	b26680        	s32i	a11, a6, 0x200
+    7552:	322283        	l32i	a3, a2, 0x20c
+    7555:	3268ab        	s32i	a3, a8, 0x2ac
+    7558:	b26681        	s32i	a11, a6, 0x204
+    755b:	f0e613        	wsr.ps	a15
+    755e:	102000        	rsync
+    7561:	920101        	l8ui	a9, a1, 1
+    7564:	c024b0        	addx8	a2, a4, a12
+    7567:	320110        	l8ui	a3, a1, 16
+    756a:	77696a        	bbci	a9, 7, 0x75d8
+    756d:	904514        	extui	a4, a9, 5, 2
+    7570:	90a314        	extui	a10, a9, 3, 2
+    7573:	c0aa01        	slli	a10, a10, 20
+    7576:	a04401        	slli	a4, a4, 22
+    7579:	504410        	and	a4, a4, a5
+    757c:	a04420        	or	a4, a4, a10
+    757f:	704410        	and	a4, a4, a7
+    7582:	90a024        	extui	a10, a9, 0, 3
+    7585:	00aa11        	slli	a10, a10, 16
+    7588:	a04420        	or	a4, a4, a10
+    758b:	16d304        	beqz	a3, 0x75dc
+    758e:	d06f00        	rsil	a13, 15
+    7591:	426681        	s32i	a4, a6, 0x204
+    7594:	b26680        	s32i	a11, a6, 0x200
+    7597:	e842      	l32i.n	a14, a2, 16
+    7599:	e26889        	s32i	a14, a8, 0x224
+    759c:	b26681        	s32i	a11, a6, 0x204
+    759f:	d0e613        	wsr.ps	a13
+    75a2:	102000        	rsync
+    75a5:	a06f00        	rsil	a10, 15
+    75a8:	426681        	s32i	a4, a6, 0x204
+    75ab:	b26680        	s32i	a11, a6, 0x200
+    75ae:	c22244        	l32i	a12, a2, 0x110
+    75b1:	c2688a        	s32i	a12, a8, 0x228
+    75b4:	b26681        	s32i	a11, a6, 0x204
+    75b7:	a0e613        	wsr.ps	a10
+    75ba:	102000        	rsync
+    75bd:	506f00        	rsil	a5, 15
+    75c0:	426681        	s32i	a4, a6, 0x204
+    75c3:	b26680        	s32i	a11, a6, 0x200
+    75c6:	922284        	l32i	a9, a2, 0x210
+    75c9:	9268ab        	s32i	a9, a8, 0x2ac
+    75cc:	b26681        	s32i	a11, a6, 0x204
+    75cf:	50e613        	wsr.ps	a5
+    75d2:	102000        	rsync
+000075d5: 1df0     retw.n        ; Capstone
+    75d7:	001df0        	subx8	a1, a13, a0
+    75da:	0000a0        	addx4	a0, a0, a0
+    75dd:	6f          	.byte 0x6f
+000075de: 004266   ee.ldf.64.xp f4, f6, a0, a2 ; Capstone
+    75e1:	81b266        	l32r	a8, 0xfffe10ac
+    75e4:	80c228        	excw
+    75e7:	89c9      	s32i.n	a8, a9, 48
+    75e9:	42b266        	excw
+    75ec:	81a0e6        	l32r	a8, 0x106c (0x97655a2c)
+    75ef:	131020        	excw
+    75f2:	00506f        	excw
+000075f5: 004266   ee.ldf.64.xp f4, f6, a0, a2 ; Capstone
+    75f8:	81b266        	l32r	a8, 0xfffe10c0
+    75fb:	809228        	excw
+    75fe:	8a92      	add.n	a9, a2, a8
+    7600:	6244b2        	s8i	a6, a4, 178
+    7603:	668150        	bnei	a1, 8, 0x7657
+    7606:	e61310        	bgei	a3, 1, 0x761a
+    7609:	2000f0        	subx8	a0, a0, a2
+    760c:	6f          	.byte 0x6f
+0000760d: 004266   ee.ldf.64.xp f4, f6, a0, a2 ; Capstone
+    7610:	81b266        	l32r	a8, 0xfffe10d8
+    7613:	803228        	excw
+    7616:	ab32      	addi.n	a3, a2, 10
+    7618:	6284b2        	excw
+    761b:	6681f0        	bnei	a1, 8, 0x760f
+    761e:	e61310        	bgei	a3, 1, 0x7632
+    7621:	20001d        	excw
+    7624:	f0a06f        	excw
+00007627: 009266   ee.ldf.64.xp f9, f6, a0, a2 ; Capstone
+    762a:	81b266        	l32r	a8, 0xfffe10f4
+    762d:	80d228        	excw
+    7630:	89d9      	s32i.n	a8, a9, 52
+    7632:	32b266        	excw
+    7635:	81a0e6        	l32r	a8, 0x10b8 (0x375823c2)
+    7638:	131020        	excw
+    763b:	00f06f        	excw
+0000763e: 009266   ee.ldf.64.xp f9, f6, a0, a2 ; Capstone
+    7641:	81b266        	l32r	a8, 0xfffe110c
+    7644:	803228        	excw
+    7647:	8a32      	add.n	a3, a2, a8
+    7649:	6243b2        	s8i	a6, a3, 178
+    764c:	6681f0        	bnei	a1, 8, 0x7640
+    764f:	e61310        	bgei	a3, 1, 0x7663
+    7652:	2000d0        	subx2	a0, a0, a2
+    7655:	6f          	.byte 0x6f
+00007656: 009266   ee.ldf.64.xp f9, f6, a0, a2 ; Capstone
+    7659:	81b266        	l32r	a8, 0xfffe1124
+    765c:	80e228        	excw
+    765f:	abe2      	addi.n	a14, a2, 10
+    7661:	6283b2        	excw
+    7664:	6681d0        	bnei	a1, 8, 0x7638
+    7667:	e61310        	bgei	a3, 1, 0x767b
+0000766a: 200046   ee.ldf.64.xp f0, f4, a2, a0 ; Capstone
+    766d:	bcff      	beqz.n	a15, 0x76b0
+	...
+
+; Alternate branch-target decode
+    7625:	a06f00        	rsil	a10, 15
+    7628:	926681        	s32i	a9, a6, 0x204
+    762b:	b26680        	s32i	a11, a6, 0x200
+    762e:	d22889        	l32i	a13, a8, 0x224
+    7631:	d932      	s32i.n	a13, a2, 12
+    7633:	b26681        	s32i	a11, a6, 0x204
+    7636:	a0e613        	wsr.ps	a10
+    7639:	102000        	rsync
+    763c:	f06f00        	rsil	a15, 15
+    763f:	926681        	s32i	a9, a6, 0x204
+    7642:	b26680        	s32i	a11, a6, 0x200
+    7645:	32288a        	l32i	a3, a8, 0x228
+    7648:	326243        	s32i	a3, a2, 0x10c
+    764b:	b26681        	s32i	a11, a6, 0x204
+    764e:	f0e613        	wsr.ps	a15
+    7651:	102000        	rsync
+    7654:	d06f00        	rsil	a13, 15
+    7657:	926681        	s32i	a9, a6, 0x204
+    765a:	b26680        	s32i	a11, a6, 0x200
+    765d:	e228ab        	l32i	a14, a8, 0x2ac
+    7660:	e26283        	s32i	a14, a2, 0x20c
+    7663:	b26681        	s32i	a11, a6, 0x204
+    7666:	d0e613        	wsr.ps	a13
+    7669:	102000        	rsync
+    766c:	46bcff        	j	0x7561
+
+; Alternate branch-target decode
+000075d8: 1df0     retw.n        ; Capstone
+
+; Alternate branch-target decode
+    75dc:	a06f00        	rsil	a10, 15
+    75df:	426681        	s32i	a4, a6, 0x204
+    75e2:	b26680        	s32i	a11, a6, 0x200
+    75e5:	c22889        	l32i	a12, a8, 0x224
+    75e8:	c942      	s32i.n	a12, a2, 16
+    75ea:	b26681        	s32i	a11, a6, 0x204
+    75ed:	a0e613        	wsr.ps	a10
+    75f0:	102000        	rsync
+    75f3:	506f00        	rsil	a5, 15
+    75f6:	426681        	s32i	a4, a6, 0x204
+    75f9:	b26680        	s32i	a11, a6, 0x200
+    75fc:	92288a        	l32i	a9, a8, 0x228
+    75ff:	926244        	s32i	a9, a2, 0x110
+    7602:	b26681        	s32i	a11, a6, 0x204
+    7605:	50e613        	wsr.ps	a5
+    7608:	102000        	rsync
+    760b:	f06f00        	rsil	a15, 15
+    760e:	426681        	s32i	a4, a6, 0x204
+    7611:	b26680        	s32i	a11, a6, 0x200
+    7614:	3228ab        	l32i	a3, a8, 0x2ac
+    7617:	326284        	s32i	a3, a2, 0x210
+    761a:	b26681        	s32i	a11, a6, 0x204
+    761d:	f0e613        	wsr.ps	a15
+    7620:	102000        	rsync
+00007623: 1df0     retw.n        ; Capstone

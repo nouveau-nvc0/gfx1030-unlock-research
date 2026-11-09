@@ -1,0 +1,72 @@
+
+/tmp/tmppnui3vyj/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000096e4 <.data+0x96e4>:
+000096e4: 362100   entry        a1, 0x10 ; Capstone
+    96e7:	411ed0        	l32r	a4, 0xffffd760 (0x38000000) ; inferred DRAM map 0x5ffec000
+    96ea:	3df0      	nop.n
+    96ec:	f02000        	nop
+    96ef:	4053c0        	sub	a5, a3, a4
+    96f2:	506330        	xor	a6, a3, a5
+    96f5:	963605        	bltz	a6, 0x974c
+    96f8:	5064a5        	extui	a6, a5, 20, 11
+    96fb:	16d604        	beqz	a6, 0x974c
+    96fe:	42a0ff        	movi	a4, 255
+    9701:	47a627        	bge	a6, a4, 0x972c
+    9704:	104d40        	ssai	29
+    9707:	205581        	src	a5, a5, a2
+    970a:	0042a1        	sll	a4, a2
+    970d:	306f05        	extui	a6, a3, 31, 1
+    9710:	106601        	slli	a6, a6, 31
+    9713:	502620        	or	a2, a6, a5
+    9716:	d66400        	bgez	a4, 0x9720
+    9719:	1b22      	addi.n	a2, a2, 1
+    971b:	f04411        	slli	a4, a4, 1
+    971e:	8c24      	beqz.n	a4, 0x9724
+    9720:	3df0      	nop.n
+00009722: 1df0     retw.n        ; Capstone
+    9724:	202141        	srli	a2, a2, 1
+    9727:	f02211        	slli	a2, a2, 1
+0000972a: 1df0     retw.n        ; Capstone
+    972c:	410cd0        	l32r	a4, 0xffffd75c (0x7ff00000) ; inferred DRAM map 0x5ffec000
+    972f:	47c30a        	bnall	a3, a4, 0x973d
+    9732:	405311        	slli	a5, a3, 12
+    9735:	205520        	or	a5, a5, a2
+    9738:	8c15      	beqz.n	a5, 0x973d
+    973a:	404141        	srli	a4, a4, 1
+    973d:	c04411        	slli	a4, a4, 4
+    9740:	306f05        	extui	a6, a3, 31, 1
+    9743:	004140        	ssai	1
+    9746:	402681        	src	a2, a6, a4
+00009749: 1df0     retw.n        ; Capstone
+    974b:	003064        	extui	a3, a0, 0, 7
+0000974e: a552a3   call8        . -0x5cad4 ; Capstone ; target=0x-53388
+    9751:	806065        	extui	a6, a8, 16, 7
+00009754: c01b66   ee.ldf.64.xp f1, f6, a12, a11 ; Capstone
+    9757:	f6c629        	bgeui	a6, 32, 0x9784
+    975a:	305511        	slli	a5, a5, 13
+    975d:	305520        	or	a5, a5, a3
+    9760:	505511        	slli	a5, a5, 11
+    9763:	505b41        	srli	a5, a5, 11
+    9766:	104d40        	ssai	29
+    9769:	205581        	src	a5, a5, a2
+    976c:	0042a1        	sll	a4, a2
+    976f:	000640        	ssr	a6
+    9772:	0074a1        	sll	a7, a4
+    9775:	404581        	src	a4, a5, a4
+    9778:	505091        	srl	a5, a5
+    977b:	16e7f8        	beqz	a7, 0x970d
+    977e:	604420        	or	a4, a4, a6
+    9781:	06e2ff        	j	0x970d
+    9784:	302f05        	extui	a2, a3, 31, 1
+    9787:	102201        	slli	a2, a2, 31
+0000978a: 1df0     retw.n        ; Capstone
+
+; Alternate branch-target decode
+    974c:	3064a5        	extui	a6, a3, 20, 11
+    974f:	52a380        	movi	a5, 0x380
+    9752:	6065c0        	sub	a6, a5, a6
+    9755:	1b66      	addi.n	a6, a6, 1

@@ -1,0 +1,32 @@
+
+/tmp/tmp5lthxwmp/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001a44 <.data+0x1a44>:
+00001a44: 364100   entry        a1, 0x20 ; Capstone
+    1a47:	2188fc        	l32r	a2, 0xc68 (0x766c)
+    1a4a:	b22280        	l32i	a11, a2, 0x200
+    1a4d:	a2227c        	l32i	a10, a2, 0x1f0
+    1a50:	3148fc        	l32r	a3, 0xb70 (0x3200200)
+    1a53:	b0aa10        	and	a10, a10, a11
+    1a56:	c02000        	memw
+    1a59:	a26340        	s32i	a10, a3, 0x100
+    1a5c:	922281        	l32i	a9, a2, 0x204
+    1a5f:	82227d        	l32i	a8, a2, 0x1f4
+    1a62:	908810        	and	a8, a8, a9
+    1a65:	c02000        	memw
+    1a68:	826341        	s32i	a8, a3, 0x104
+    1a6b:	522282        	l32i	a5, a2, 0x208
+    1a6e:	42227e        	l32i	a4, a2, 0x1f8
+    1a71:	504410        	and	a4, a4, a5
+    1a74:	c02000        	memw
+    1a77:	426342        	s32i	a4, a3, 0x108
+    1a7a:	422283        	l32i	a4, a2, 0x20c
+    1a7d:	22227f        	l32i	a2, a2, 0x1fc
+    1a80:	402210        	and	a2, a2, a4
+    1a83:	c02000        	memw
+    1a86:	226343        	s32i	a2, a3, 0x10c
+00001a89: 1df0     retw.n        ; Capstone
+	...

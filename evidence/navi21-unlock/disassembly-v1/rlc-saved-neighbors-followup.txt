@@ -1,0 +1,43 @@
+Immediate neighbors of savedCC arrays — offline,2026-11-09
+
+Targeted question
+Could the adjacent snapshot helpers supply changed savedCC or the restore
+gate through their ordinary direct writes? Fresh local CFG analysis of6e10,
+72f4 and7390 answers no for their normal entries, including write widths.
+This is a local exclusion, not a firmware-wide producer conclusion.
+
+Results
+6e10:118reachable instructions,eight fixed DRAM stores,one frame-local store.
+72f4:56reachable instructions,two fixed DRAM stores.
+7390:105reachable instructions,eight fixed DRAM stores.
+All three have no calls,no unresolved local edges,and no unknown operations
+in the current scanner. All non-stack store addresses are resolved constants.
+Hardware stores are also checked for disjointness from the target RAM ranges.
+
+Neighbor DRAM writes cover specific words below5ffedfc4, includingdc80/dc84/
+dc88 and scattered wordsdf8c..dfc0. The last write at7385 is DWORDdfc0:
+its end-exclusive address isdfc4, exactly the start of savedCC_WGP.
+SavedCC_WGP=[dfc4,dfe4);savedCC_RB=[dfe4,e004). No byte of either interval
+or gatee452 is touched by these18fixedDRAM stores. No loop-derived address
+or callee effect needs to be assumed away within these three local CFGs.
+The one stackstore uses the newly allocated6e10 frame, assuming normal entry.
+
+Producer picture after this check
+71ac's save branch copies actualCC into the saved arrays.74c4 can overlap
+these arrays for other slotarguments, but all seven established6944 caller
+constructions selectdefault31 and do not supply that overlap. The whole-DRAM
+transfer is a preservation path with runtimecontents unobserved. These three
+adjacenthelpers add no changedmask/gateproducer on their ordinary entries.
+InitialDRAMzeros are already documented; they are not proof that zeros remain
+in the buffers at a callable restore point. A lifecycle claim must establish
+whether71ac/save or fullDRAMrestore has run before that point. Do not equate
+initial file bytes with current saved masks.
+
+Reproduction
+First run scripts/navi21-smu-cfg-scan.py with listings06e10,072f4,07390 and
+--output evidence/navi21-unlock/disassembly-v1/rlc-saved-neighbors-cfg.json;
+then python3 scripts/navi21-rlc-saved-neighbors-audit.py.
+Receipt pins firmware,scanner,CFG and listings;307listingrecords bytechecked,
+279reachableinstructions and18neighborstores assessed. Alternate entries,
+other address producers,and hardware behavior remain outside this proof.
+No hardware,firmware,boot,driver or service state was changed.

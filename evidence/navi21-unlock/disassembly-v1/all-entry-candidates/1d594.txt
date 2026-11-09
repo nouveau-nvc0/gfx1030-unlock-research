@@ -1,0 +1,55 @@
+
+/tmp/tmp5_o467to/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001d594 <.data+0x1d594>:
+0001d594: 364100   entry        a1, 0x20 ; Capstone
+   1d597:	0c2a      	movi.n	a10, 2
+0001d599: 65fee4   call8        . -0x1b018 ; Capstone ; target=0x2580
+   1d59c:	0c0b      	movi.n	a11, 0
+   1d59e:	21fed6        	l32r	a2, 0x13198 (0x15678)
+   1d5a1:	0c0c      	movi.n	a12, 0
+   1d5a3:	0c1d      	movi.n	a13, 1
+   1d5a5:	a2227f        	l32i	a10, a2, 0x1fc
+0001d5a8: e55b08   call8        . +0x85c0 ; Capstone ; target=0x25b68
+   1d5ab:	a2227f        	l32i	a10, a2, 0x1fc
+   1d5ae:	0c0b      	movi.n	a11, 0
+   1d5b0:	0c1c      	movi.n	a12, 1
+0001d5b2: e55c0b   call8        . +0xb5d0 ; Capstone ; target=0x28b80
+   1d5b5:	a2227f        	l32i	a10, a2, 0x1fc
+   1d5b8:	0c2b      	movi.n	a11, 2
+   1d5ba:	0c0c      	movi.n	a12, 0
+   1d5bc:	0c3d      	movi.n	a13, 3
+0001d5be: a55a08   call8        . +0x85ac ; Capstone ; target=0x25b68
+   1d5c1:	a2227f        	l32i	a10, a2, 0x1fc
+   1d5c4:	0c2b      	movi.n	a11, 2
+   1d5c6:	0c1c      	movi.n	a12, 1
+0001d5c8: 655b0b   call8        . +0xb5b8 ; Capstone ; target=0x28b80
+   1d5cb:	a2227f        	l32i	a10, a2, 0x1fc
+   1d5ce:	0c1b      	movi.n	a11, 1
+   1d5d0:	0c1c      	movi.n	a12, 1
+   1d5d2:	0c2d      	movi.n	a13, 2
+0001d5d4: 255908   call8        . +0x8594 ; Capstone ; target=0x25b68
+   1d5d7:	a2227f        	l32i	a10, a2, 0x1fc
+   1d5da:	0c1b      	movi.n	a11, 1
+   1d5dc:	0c1c      	movi.n	a12, 1
+0001d5de: 255a0b   call8        . +0xb5a4 ; Capstone ; target=0x28b80
+   1d5e1:	a2227f        	l32i	a10, a2, 0x1fc
+   1d5e4:	0c3b      	movi.n	a11, 3
+   1d5e6:	0c3c      	movi.n	a12, 3
+   1d5e8:	0c2d      	movi.n	a13, 2
+0001d5ea: e55708   call8        . +0x8580 ; Capstone ; target=0x25b68
+   1d5ed:	a2227f        	l32i	a10, a2, 0x1fc
+   1d5f0:	0c3b      	movi.n	a11, 3
+   1d5f2:	0c1c      	movi.n	a12, 1
+0001d5f4: a5580b   call8        . +0xb58c ; Capstone ; target=0x28b80
+   1d5f7:	a2227f        	l32i	a10, a2, 0x1fc
+   1d5fa:	0c08      	movi.n	a8, 0
+   1d5fc:	824a01        	s8i	a8, a10, 1
+0001d5ff: 65d501   call8        . +0x1d58 ; Capstone ; target=0x1f354
+   1d602:	0c2a      	movi.n	a10, 2
+0001d604: e5e6e4   call8        . -0x1b190 ; Capstone ; target=0x2474
+0001d607: 1df0     retw.n        ; Capstone
+   1d609:	000000        	ill

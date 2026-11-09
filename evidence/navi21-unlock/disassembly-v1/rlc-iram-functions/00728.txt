@@ -1,0 +1,17 @@
+
+/tmp/tmps26wpmg5/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000728 <.data+0x728>:
+00000728: 364100   entry        a1, 0x20 ; Capstone
+     72b:	818bf2        	l32r	a8, 0xffffd158 (0x0) ; inferred DRAM map 0x5ffec000
+     72e:	92a000        	movi	a9, 0
+     731:	97180b        	beq	a8, a9, 0x740
+     734:	a188f2        	l32r	a10, 0xffffd154 (0x5ffed0e8) ; inferred DRAM map 0x5ffec000
+     737:	b189f2        	l32r	a11, 0xffffd15c (0x5ffee244) ; inferred DRAM map 0x5ffec000
+     73a:	8187f2        	l32r	a8, 0xffffd158 (0x0) ; inferred DRAM map 0x5ffec000
+0000073d: e00800   callx8       a8 ; Capstone
+00000740: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,16 @@
+
+/tmp/tmpsqf_se5c/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00035010 <.data+0x35010>:
+00035010: 364100   entry        a1, 0x20 ; Capstone
+   35013:	0c8a      	movi.n	a10, 8
+00035015: a556cd   call8        . -0x32a94 ; Capstone ; target=0x2580
+00035018: 65f1ff   call8        . -0xe8 ; Capstone ; target=0x34f30
+0003501b: 65ebff   call8        . -0x148 ; Capstone ; target=0x34ed0
+   3501e:	0c8a      	movi.n	a10, 8
+00035020: 2545cd   call8        . -0x32bac ; Capstone ; target=0x2474
+00035023: 1df0     retw.n        ; Capstone
+   35025:	000000        	ill

@@ -1,0 +1,55 @@
+SMU window address correspondence — offline, 2026-11-09
+
+Result: a positive correspondence now exists for the18d8/1920 window helpers.
+All64 initial table DWORDs used by30f50 match public UMC byte coordinates:
+  11f10:16 GeccErrCntSel addresses, first50ca0
+  11f50:16 GeccErrCnt addresses, first50ca4
+  11f90:16 MCUMC_STATUST0 addresses, first50f08
+  11fd0:16 MCUMC_ADDRT0 addresses, first50f10
+Each is4*(UMCbase14000 + relative register +40000*instance +400*channel).
+Instances0..7/channels0..1 give byte strides100000/1000. Register relative
+DWORD offsets328/329/3c2/3c4 come from retained AMD UMC8.7 headers. Driver
+Linuxv6.12 umc_v8_7.c defines instance stride40000; umc_v8_7.h specifies
+8instances/2channels and Sienna channel stride400. Header IP_BASE lists only
+seven explicit UMC instances, so instance7 is supported by driver count/stride
+and firmware tables, not an invented eighth header entry.
+
+Independent operation correspondence in30f50:
+- 30f53..30f6c materializes table starts11f10/11f50/11f90/11fd0; loop has
+  16iterations and increments each pointer4. The tables are loaded at runtime;
+  their unchanged contents are an assumption, not an established invariant.
+- 30f74..30f7c clears bit0 of GeccErrCntSel;30fc4..30fce sets it. Public
+  GeccErrCntCsSel is bits0..3. Selecting0/1 matches the driver's lower/higher
+  chip sequence, although firmware preserves other low selector bits.
+- 30f87/30fd6 extracts counter low16, matching GeccErrCnt field; both selected
+  counters are cleared with zero through18d8 at30fba/30fe7.
+- 30fef/30ff8 reads low/high words of MCUMC_STATUST0. High-word mask6000
+  at31026/3102e selects full-register bits45/46, named UECC/CECC in the header.
+- 31040/31047 reads both words of MCUMC_ADDRT0;31058/3105f clears both words
+  of status. This supports the register-family identity beyond numbers alone.
+
+Address conclusion is bounded: these UMC window arguments use the same byte
+coordinates passed to driver RREG32_PCIE/WREG32_PCIE. This is positive evidence
+for that region, not proof that all32-bit window addresses share one unrestricted
+map. It does not identify03220038 by name or prove GC/CC or LX6 RAM aliases.
+For CC, host byte coordinates8924/89bc remain conditional window-coordinate
+candidates; internal direct-SMU GC01208924/012089bc and RLC60008924/600089bc
+are separate coordinates. Do not equate or test them from arithmetic alone.
+Next mapping work should inspect a window caller/table with an independently
+identified GC register, or a concrete bridge descriptor to LX6 RAM.
+
+Condition lifecycle check performed in parallel:
+The retained local scan has one fixed69cc store (38d45, bit19 source013101c0)
+and no fixed03210064 store. 21540 also reads the same condition, but does not
+produce it. These are locator results, not proof of immutable RAM or absence
+of computed/external producers. No new nonzero RLC gate producer was found.
+
+Reproducer: python3 scripts/navi21-smu-window-umc-audit.py
+Receipt: smu-window-umc-audit.json;64 exact table matches,354 listing records
+bytechecked across six roots. Records include hashes of every input. Byte
+checks establish transcription consistency, not independent execution.
+Linux references and URL/SHA256 receipts saved in../sources/umc_v8_7.{c,h}.v6.12.
+Primary references:
+https://raw.githubusercontent.com/torvalds/linux/v6.12/drivers/gpu/drm/amd/amdgpu/umc_v8_7.c
+https://raw.githubusercontent.com/torvalds/linux/v6.12/drivers/gpu/drm/amd/amdgpu/umc_v8_7.h
+No hardware access, firmware changes, operational changes performed.

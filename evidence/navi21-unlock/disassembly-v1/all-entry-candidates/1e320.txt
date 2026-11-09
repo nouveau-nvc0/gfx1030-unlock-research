@@ -1,0 +1,51 @@
+
+/tmp/tmpu0fv93nn/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001e320 <.data+0x1e320>:
+0001e320: 364100   entry        a1, 0x20 ; Capstone
+   1e323:	91a0d3        	l32r	a9, 0x131a4 (0xfe94)
+   1e326:	92197e        	l16ui	a9, a9, 252
+   1e329:	976961        	bbci	a9, 9, 0x1e38e
+   1e32c:	27e95e        	bbsi	a9, 2, 0x1e38e
+   1e32f:	51bed3        	l32r	a5, 0x13228 (0x11e78)
+   1e332:	0c02      	movi.n	a2, 0
+   1e334:	8b45      	addi.n	a4, a5, 8
+   1e336:	0c1b      	movi.n	a11, 1
+   1e338:	5aa2      	add.n	a10, a2, a5
+   1e33a:	a20a80        	l8ui	a10, a10, 128
+0001e33d: 65faff   call8        . -0x58 ; Capstone ; target=0x1e2e4
+   1e340:	0c1b      	movi.n	a11, 1
+   1e342:	4aa2      	add.n	a10, a2, a4
+   1e344:	a20a80        	l8ui	a10, a10, 128
+0001e347: e5f9ff   call8        . -0x60 ; Capstone ; target=0x1e2e4
+   1e34a:	1b22      	addi.n	a2, a2, 1
+   1e34c:	202074        	extui	a2, a2, 0, 8
+   1e34f:	6642e3        	bnei	a2, 4, 0x1e336
+   1e352:	1c1a      	movi.n	a10, 17
+0001e354: a54017   call8        . +0x1740c ; Capstone ; target=0x35760
+   1e357:	ac3a      	beqz.n	a10, 0x1e37e
+   1e359:	0c02      	movi.n	a2, 0
+   1e35b:	4a32      	add.n	a3, a2, a4
+   1e35d:	320380        	l8ui	a3, a3, 128
+   1e360:	ad03      	mov.n	a10, a3
+0001e362: 65f4ff   call8        . -0xb8 ; Capstone ; target=0x1e2a8
+   1e365:	0c1b      	movi.n	a11, 1
+   1e367:	5aa2      	add.n	a10, a2, a5
+   1e369:	a20a80        	l8ui	a10, a10, 128
+0001e36c: 65410b   call8        . +0xb418 ; Capstone ; target=0x29784
+   1e36f:	ad03      	mov.n	a10, a3
+   1e371:	0c1b      	movi.n	a11, 1
+0001e373: 25410b   call8        . +0xb414 ; Capstone ; target=0x29784
+   1e376:	1b22      	addi.n	a2, a2, 1
+   1e378:	202074        	extui	a2, a2, 0, 8
+   1e37b:	6642dc        	bnei	a2, 4, 0x1e35b
+   1e37e:	91b2d3        	l32r	a9, 0x13248 (0x10170)
+   1e381:	82291e        	l32i	a8, a9, 120
+   1e384:	0c1a      	movi.n	a10, 1
+   1e386:	a24982        	s8i	a10, a9, 130
+   1e389:	1b88      	addi.n	a8, a8, 1
+   1e38b:	82691e        	s32i	a8, a9, 120
+0001e38e: 1df0     retw.n        ; Capstone

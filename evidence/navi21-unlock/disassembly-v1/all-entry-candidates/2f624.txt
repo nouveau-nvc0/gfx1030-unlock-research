@@ -1,0 +1,17 @@
+
+/tmp/tmpddb21iip/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002f624 <.data+0x2f624>:
+0002f624: 364100   entry        a1, 0x20 ; Capstone
+   2f627:	a17492        	l32r	a10, 0x13ff8 (0x30da8)
+   2f62a:	0c7b      	movi.n	a11, 7
+   2f62c:	0c3c      	movi.n	a12, 3
+   2f62e:	0c0d      	movi.n	a13, 0
+   2f630:	0c1e      	movi.n	a14, 1
+   2f632:	0c0f      	movi.n	a15, 0
+0002f634: 25b0d2   call8        . -0x2d4fc ; Capstone ; target=0x2138
+0002f637: 1df0     retw.n        ; Capstone
+   2f639:	000000        	ill

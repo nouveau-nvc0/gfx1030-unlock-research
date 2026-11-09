@@ -1,0 +1,59 @@
+
+/tmp/tmpt1flsnaf/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000334d8 <.data+0x334d8>:
+000334d8: 36c100   entry        a1, 0x60 ; Capstone
+   334db:	91967f        	l32r	a9, 0x13334 (0x125a200)
+   334de:	c02000        	memw
+   334e1:	822950        	l32i	a8, a9, 0x140
+   334e4:	7cea      	movi.n	a10, -2
+   334e6:	a08810        	and	a8, a8, a10
+   334e9:	c02000        	memw
+   334ec:	ad01      	mov.n	a10, a1
+   334ee:	0c1b      	movi.n	a11, 1
+   334f0:	826950        	s32i	a8, a9, 0x140
+000334f3: 65eeff   call8        . -0x118 ; Capstone ; target=0x333d8
+   334f6:	a2c120        	addi	a10, a1, 32
+   334f9:	0c1b      	movi.n	a11, 1
+000334fb: a5e9ff   call8        . -0x164 ; Capstone ; target=0x33394
+   334fe:	31d67e        	l32r	a3, 0x13058 (0x11ffe00)
+   33501:	51a483        	l32r	a5, 0x14394 (0x112c8)
+   33504:	21c07e        	l32r	a2, 0x13004 (0xfffff)
+   33507:	b2a00c        	movi	a11, 12
+   3350a:	509520        	or	a9, a5, a5
+0003350d: 76ab12   loopgtz      a11, . +0x16 ; Capstone
+   33510:	c2297e        	l32i	a12, a9, 0x1f8
+   33513:	20cc10        	and	a12, a12, a2
+   33516:	3acc      	add.n	a12, a12, a3
+   33518:	c02000        	memw
+   3351b:	c22c80        	l32i	a12, a12, 0x200
+   3351e:	c2697f        	s32i	a12, a9, 0x1fc
+   33521:	8b99      	addi.n	a9, a9, 8
+   33523:	419d83        	l32r	a4, 0x14398 (0x11c88)
+   33526:	0c1b      	movi.n	a11, 1
+   33528:	ad04      	mov.n	a10, a4
+0003352a: 650601   call8        . +0x1068 ; Capstone ; target=0x34590
+   3352d:	ad04      	mov.n	a10, a4
+   3352f:	0c1b      	movi.n	a11, 1
+00033531: 25f900   call8        . +0xf94 ; Capstone ; target=0x344c4
+   33534:	ad01      	mov.n	a10, a1
+   33536:	0c0b      	movi.n	a11, 0
+00033538: e5e9ff   call8        . -0x160 ; Capstone ; target=0x333d8
+   3353b:	a2c120        	addi	a10, a1, 32
+   3353e:	0c0b      	movi.n	a11, 0
+00033540: 25e5ff   call8        . -0x1ac ; Capstone ; target=0x33394
+   33543:	509520        	or	a9, a5, a5
+   33546:	d2a00c        	movi	a13, 12
+00033549: 76ad12   loopgtz      a13, . +0x16 ; Capstone
+   3354c:	f2297e        	l32i	a15, a9, 0x1f8
+   3354f:	e2297f        	l32i	a14, a9, 0x1fc
+   33552:	20ff10        	and	a15, a15, a2
+   33555:	3aff      	add.n	a15, a15, a3
+   33557:	c02000        	memw
+   3355a:	e26f80        	s32i	a14, a15, 0x200
+   3355d:	8b99      	addi.n	a9, a9, 8
+0003355f: 1df0     retw.n        ; Capstone
+   33561:	000000        	ill

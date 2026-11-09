@@ -1,0 +1,149 @@
+
+/tmp/tmpoj3mgdv8/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000017fc <.data+0x17fc>:
+000017fc: 364100   entry        a1, 0x20 ; Capstone
+    17ff:	706f00        	rsil	a7, 15
+    1802:	3159ee        	l32r	a3, 0xffffd168 (0x60039e00) ; inferred DRAM map 0x5ffec000
+    1805:	4157ee        	l32r	a4, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    1808:	0c28      	movi.n	a8, 2
+    180a:	0c05      	movi.n	a5, 0
+    180c:	526480        	s32i	a5, a4, 0x200
+    180f:	826380        	s32i	a8, a3, 0x200
+    1812:	70e613        	wsr.ps	a7
+    1815:	102000        	rsync
+    1818:	206f00        	rsil	a2, 15
+    181b:	526480        	s32i	a5, a4, 0x200
+    181e:	0c8b      	movi.n	a11, 8
+    1820:	b26384        	s32i	a11, a3, 0x210
+    1823:	20e613        	wsr.ps	a2
+    1826:	102000        	rsync
+    1829:	72a001        	movi	a7, 1
+    182c:	a06f00        	rsil	a10, 15
+    182f:	526480        	s32i	a5, a4, 0x200
+    1832:	922385        	l32i	a9, a3, 0x214
+    1835:	a0e613        	wsr.ps	a10
+    1838:	102000        	rsync
+    183b:	1769ed        	bbci	a9, 1, 0x182c
+    183e:	c06f00        	rsil	a12, 15
+    1841:	526480        	s32i	a5, a4, 0x200
+    1844:	a2a004        	movi	a10, 4
+    1847:	a26384        	s32i	a10, a3, 0x210
+    184a:	c0e613        	wsr.ps	a12
+    184d:	102000        	rsync
+    1850:	e06f00        	rsil	a14, 15
+    1853:	526480        	s32i	a5, a4, 0x200
+    1856:	d22385        	l32i	a13, a3, 0x214
+    1859:	e0e613        	wsr.ps	a14
+    185c:	102000        	rsync
+    185f:	17eded        	bbsi	a13, 1, 0x1850
+    1862:	c06f00        	rsil	a12, 15
+    1865:	526480        	s32i	a5, a4, 0x200
+    1868:	622383        	l32i	a6, a3, 0x20c
+    186b:	c0e613        	wsr.ps	a12
+    186e:	102000        	rsync
+    1871:	906f00        	rsil	a9, 15
+    1874:	526480        	s32i	a5, a4, 0x200
+    1877:	826380        	s32i	a8, a3, 0x200
+    187a:	90e613        	wsr.ps	a9
+    187d:	102000        	rsync
+    1880:	206f00        	rsil	a2, 15
+    1883:	9157ee        	l32r	a9, 0xffffd1e0 (0x1000) ; inferred DRAM map 0x5ffec000
+    1886:	526480        	s32i	a5, a4, 0x200
+    1889:	906620        	or	a6, a6, a9
+    188c:	626381        	s32i	a6, a3, 0x204
+    188f:	20e613        	wsr.ps	a2
+    1892:	102000        	rsync
+    1895:	f06f00        	rsil	a15, 15
+    1898:	526480        	s32i	a5, a4, 0x200
+    189b:	826384        	s32i	a8, a3, 0x210
+    189e:	f0e613        	wsr.ps	a15
+    18a1:	102000        	rsync
+    18a4:	e06f00        	rsil	a14, 15
+    18a7:	526480        	s32i	a5, a4, 0x200
+    18aa:	d22385        	l32i	a13, a3, 0x214
+    18ad:	e0e613        	wsr.ps	a14
+    18b0:	102000        	rsync
+    18b3:	076ded        	bbci	a13, 0, 0x18a4
+    18b6:	f06f00        	rsil	a15, 15
+    18b9:	526480        	s32i	a5, a4, 0x200
+    18bc:	726384        	s32i	a7, a3, 0x210
+    18bf:	f0e613        	wsr.ps	a15
+    18c2:	102000        	rsync
+    18c5:	606f00        	rsil	a6, 15
+    18c8:	526480        	s32i	a5, a4, 0x200
+    18cb:	222385        	l32i	a2, a3, 0x214
+    18ce:	60e613        	wsr.ps	a6
+    18d1:	102000        	rsync
+    18d4:	07e2ed        	bbsi	a2, 0, 0x18c5
+    18d7:	e06f00        	rsil	a14, 15
+    18da:	526480        	s32i	a5, a4, 0x200
+    18dd:	c2a003        	movi	a12, 3
+    18e0:	c26380        	s32i	a12, a3, 0x200
+    18e3:	e0e613        	wsr.ps	a14
+    18e6:	102000        	rsync
+    18e9:	d06f00        	rsil	a13, 15
+    18ec:	526480        	s32i	a5, a4, 0x200
+    18ef:	b26384        	s32i	a11, a3, 0x210
+    18f2:	d0e613        	wsr.ps	a13
+    18f5:	102000        	rsync
+    18f8:	206f00        	rsil	a2, 15
+    18fb:	526480        	s32i	a5, a4, 0x200
+    18fe:	f22385        	l32i	a15, a3, 0x214
+    1901:	20e613        	wsr.ps	a2
+    1904:	102000        	rsync
+    1907:	176fed        	bbci	a15, 1, 0x18f8
+    190a:	b06f00        	rsil	a11, 15
+    190d:	526480        	s32i	a5, a4, 0x200
+    1910:	a26384        	s32i	a10, a3, 0x210
+    1913:	b0e613        	wsr.ps	a11
+    1916:	102000        	rsync
+    1919:	e06f00        	rsil	a14, 15
+    191c:	526480        	s32i	a5, a4, 0x200
+    191f:	d22385        	l32i	a13, a3, 0x214
+    1922:	e0e613        	wsr.ps	a14
+    1925:	102000        	rsync
+    1928:	17eded        	bbsi	a13, 1, 0x1919
+    192b:	b06f00        	rsil	a11, 15
+    192e:	526480        	s32i	a5, a4, 0x200
+    1931:	622383        	l32i	a6, a3, 0x20c
+    1934:	b0e613        	wsr.ps	a11
+    1937:	102000        	rsync
+    193a:	a06f00        	rsil	a10, 15
+    193d:	526480        	s32i	a5, a4, 0x200
+    1940:	c26380        	s32i	a12, a3, 0x200
+    1943:	a0e613        	wsr.ps	a10
+    1946:	102000        	rsync
+    1949:	206f00        	rsil	a2, 15
+    194c:	526480        	s32i	a5, a4, 0x200
+    194f:	906620        	or	a6, a6, a9
+    1952:	626381        	s32i	a6, a3, 0x204
+    1955:	20e613        	wsr.ps	a2
+    1958:	102000        	rsync
+    195b:	f06f00        	rsil	a15, 15
+    195e:	526480        	s32i	a5, a4, 0x200
+    1961:	826384        	s32i	a8, a3, 0x210
+    1964:	f0e613        	wsr.ps	a15
+    1967:	102000        	rsync
+    196a:	d06f00        	rsil	a13, 15
+    196d:	526480        	s32i	a5, a4, 0x200
+    1970:	c22385        	l32i	a12, a3, 0x214
+    1973:	d0e613        	wsr.ps	a13
+    1976:	102000        	rsync
+    1979:	076ced        	bbci	a12, 0, 0x196a
+    197c:	e06f00        	rsil	a14, 15
+    197f:	526480        	s32i	a5, a4, 0x200
+    1982:	726384        	s32i	a7, a3, 0x210
+    1985:	e0e613        	wsr.ps	a14
+    1988:	102000        	rsync
+    198b:	206f00        	rsil	a2, 15
+    198e:	526480        	s32i	a5, a4, 0x200
+    1991:	f22385        	l32i	a15, a3, 0x214
+    1994:	20e613        	wsr.ps	a2
+    1997:	102000        	rsync
+    199a:	07efed        	bbsi	a15, 0, 0x198b
+0000199d: 1df0     retw.n        ; Capstone
+	...

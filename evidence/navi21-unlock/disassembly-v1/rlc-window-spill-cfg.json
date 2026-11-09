@@ -1,0 +1,261 @@
+{
+  "scope": "Local targeted-listing locator; no memory-value propagation or global completeness claim. Optional JX edges describe initial tables, not runtime immutability.",
+  "indirect_edges": null,
+  "reports": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09fd8.txt",
+      "reachable_in_window": 102,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 121,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "nsau",
+        "rotw",
+        "wsr"
+      ],
+      "stores": [
+        {
+          "pc": "0xa028",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a4",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "0"
+        },
+        {
+          "pc": "0xa02a",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a5",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "4"
+        },
+        {
+          "pc": "0xa02c",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "8"
+        },
+        {
+          "pc": "0xa02e",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "12"
+        },
+        {
+          "pc": "0xa03c",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a4",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "0"
+        },
+        {
+          "pc": "0xa03e",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a5",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "4"
+        },
+        {
+          "pc": "0xa040",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "8"
+        },
+        {
+          "pc": "0xa042",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "12"
+        },
+        {
+          "pc": "0xa04c",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a8",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "0"
+        },
+        {
+          "pc": "0xa04e",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a9",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "4"
+        },
+        {
+          "pc": "0xa050",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a10",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "8"
+        },
+        {
+          "pc": "0xa052",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a11",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "12"
+        },
+        {
+          "pc": "0xa063",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a0",
+          "source_constant": null,
+          "base": "a13",
+          "offset": "0"
+        },
+        {
+          "pc": "0xa065",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a1",
+          "source_constant": null,
+          "base": "a13",
+          "offset": "4"
+        },
+        {
+          "pc": "0xa067",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a2",
+          "source_constant": null,
+          "base": "a13",
+          "offset": "8"
+        },
+        {
+          "pc": "0xa069",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a3",
+          "source_constant": null,
+          "base": "a13",
+          "offset": "12"
+        },
+        {
+          "pc": "0xa076",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a4",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "0"
+        },
+        {
+          "pc": "0xa078",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a5",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "4"
+        },
+        {
+          "pc": "0xa07a",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "8"
+        },
+        {
+          "pc": "0xa07c",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "12"
+        },
+        {
+          "pc": "0xa07e",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a8",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "16"
+        },
+        {
+          "pc": "0xa080",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a9",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "20"
+        },
+        {
+          "pc": "0xa082",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a10",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "24"
+        },
+        {
+          "pc": "0xa084",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a11",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "28"
+        }
+      ]
+    }
+  ]
+}

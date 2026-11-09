@@ -1,0 +1,19 @@
+
+/tmp/tmp343bvj55/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00004754 <.data+0x4754>:
+00004754: 364100   entry        a1, 0x20 ; Capstone
+    4757:	5121e3        	l32r	a5, 0xffffd3dc (0x3fffffff) ; inferred DRAM map 0x5ffec000
+    475a:	41aae2        	l32r	a4, 0xffffd204 (0x6803b200) ; inferred DRAM map 0x5ffec000
+    475d:	505210        	and	a5, a2, a5
+    4760:	526460        	s32i	a5, a4, 0x180
+    4763:	322460        	l32i	a3, a4, 0x180
+    4766:	f7f307        	bbsi	a3, 31, 0x4771
+    4769:	822460        	l32i	a8, a4, 0x180
+    476c:	3df0      	nop.n
+    476e:	f778f7        	bbci	a8, 31, 0x4769
+00004771: 1df0     retw.n        ; Capstone
+	...

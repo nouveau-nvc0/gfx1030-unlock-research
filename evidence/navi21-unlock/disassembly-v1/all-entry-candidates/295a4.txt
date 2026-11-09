@@ -1,0 +1,29 @@
+
+/tmp/tmprk3i7avm/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000295a4 <.data+0x295a4>:
+000295a4: 364100   entry        a1, 0x20 ; Capstone
+   295a7:	408074        	extui	a8, a4, 0, 8
+   295aa:	606200        	rsil	a6, 2
+   295ad:	0c07      	movi.n	a7, 0
+   295af:	910aa7        	l32r	a9, 0x131d8 (0x155c4)
+   295b2:	8088a0        	addx4	a8, a8, a8
+   295b5:	c2a3e8        	movi	a12, 0x3e8
+   295b8:	b2d504        	addmi	a11, a5, 0x400
+   295bb:	b2cbe7        	addi	a11, a11, -25
+000295be: c0bbc2   quou         a11, a11, a12 ; Capstone
+   295c1:	9088a0        	addx4	a8, a8, a9
+   295c4:	0c19      	movi.n	a9, 1
+   295c6:	b2687f        	s32i	a11, a8, 0x1fc
+   295c9:	22687c        	s32i	a2, a8, 0x1f0
+   295cc:	a2d802        	addmi	a10, a8, 0x200
+   295cf:	324a00        	s8i	a3, a10, 0
+   295d2:	72687e        	s32i	a7, a8, 0x1f8
+   295d5:	92687d        	s32i	a9, a8, 0x1f4
+   295d8:	60e613        	wsr.ps	a6
+   295db:	0c12      	movi.n	a2, 1
+000295dd: 1df0     retw.n        ; Capstone
+	...

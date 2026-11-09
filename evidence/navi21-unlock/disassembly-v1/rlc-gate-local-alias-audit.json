@@ -1,0 +1,96 @@
+{
+  "scope": "Existing reached stores in13 listings that materialize statebasee44c. Manual stack-relative definitions inspected; not global alias analysis.",
+  "stores": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02edc.txt",
+      "pc": "0x2fb0",
+      "classification": "local stack alias",
+      "stack_offset": 10
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02edc.txt",
+      "pc": "0x2fb3",
+      "classification": "local stack alias",
+      "stack_offset": 8
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/032c8.txt",
+      "pc": "0x32de",
+      "classification": "indexed state setter",
+      "stack_offset": null
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/035d8.txt",
+      "pc": "0x3672",
+      "classification": "local stack alias",
+      "stack_offset": 4
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/035d8.txt",
+      "pc": "0x3674",
+      "classification": "local stack alias",
+      "stack_offset": 8
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/038ec.txt",
+      "pc": "0x392a",
+      "classification": "local stack alias",
+      "stack_offset": 4
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/038ec.txt",
+      "pc": "0x392c",
+      "classification": "local stack alias",
+      "stack_offset": 8
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3a91",
+      "classification": "local stack alias",
+      "stack_offset": 10
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3a94",
+      "classification": "local stack alias",
+      "stack_offset": 8
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3acf",
+      "classification": "local stack alias",
+      "stack_offset": 20
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3ad1",
+      "classification": "local stack alias",
+      "stack_offset": 16
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3b70",
+      "classification": "local stack alias",
+      "stack_offset": 34
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3b73",
+      "classification": "local stack alias",
+      "stack_offset": 32
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3bac",
+      "classification": "local stack alias",
+      "stack_offset": 40
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3bae",
+      "classification": "local stack alias",
+      "stack_offset": 36
+    }
+  ],
+  "conclusion": "14 locally stack-derived writes and known indexed setter; no additional gate producer in this candidate set."
+}

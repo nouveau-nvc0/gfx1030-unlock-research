@@ -1,0 +1,20 @@
+
+/tmp/tmp80hlw3he/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00007cb8 <.data+0x7cb8>:
+00007cb8: 364100   entry        a1, 0x20 ; Capstone
+    7cbb:	2121d6        	l32r	a2, 0xffffd540 (0xc800) ; inferred DRAM map 0x5ffec000
+    7cbe:	0c2a      	movi.n	a10, 2
+00007cc0: 257002   call8        . +0x2704 ; Capstone ; target=0xa3c4
+    7cc3:	3d0a      	mov.n	a3, a10
+    7cc5:	0c2a      	movi.n	a10, 2
+    7cc7:	2ab3      	add.n	a11, a3, a2
+00007cc9: 656d02   call8        . +0x26d8 ; Capstone ; target=0xa3a0
+    7ccc:	80ea03        	rsr.ccount	a8
+    7ccf:	3088c0        	sub	a8, a8, a3
+    7cd2:	8732e8        	bltu	a2, a8, 0x7cbe
+00007cd5: 1df0     retw.n        ; Capstone
+	...

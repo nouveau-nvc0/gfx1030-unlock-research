@@ -1,0 +1,11 @@
+
+/tmp/tmpwy6as4mj/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002fe80 <.data+0x2fe80>:
+0002fe80: 364100   entry        a1, 0x20 ; Capstone
+   2fe83:	0c12      	movi.n	a2, 1
+0002fe85: 1df0     retw.n        ; Capstone
+	...

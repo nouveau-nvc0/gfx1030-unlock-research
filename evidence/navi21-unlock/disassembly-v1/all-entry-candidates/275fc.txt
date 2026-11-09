@@ -1,0 +1,39 @@
+
+/tmp/tmpbsp6v2g1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000275fc <.data+0x275fc>:
+000275fc: 366100   entry        a1, 0x30 ; Capstone
+000275ff: 2510fe   call8        . -0x1efc ; Capstone ; target=0x25700
+   27602:	ad01      	mov.n	a10, a1
+   27604:	0c08      	movi.n	a8, 0
+   27606:	2156b1        	l32r	a2, 0x13b60 (0x1000001)
+   27609:	2901      	s32i.n	a2, a1, 0
+   2760b:	8911      	s32i.n	a8, a1, 4
+   2760d:	217cae        	l32r	a2, 0x13000 (0x1000000)
+00027610: 2508fe   call8        . -0x1f7c ; Capstone ; target=0x25694
+   27613:	ad01      	mov.n	a10, a1
+00027615: e503fe   call8        . -0x1fc0 ; Capstone ; target=0x25654
+   27618:	ad01      	mov.n	a10, a1
+   2761a:	b150b1        	l32r	a11, 0x13b5c (0x2400)
+   2761d:	c12dae        	l32r	a12, 0x12ed4 (0xffff03ff)
+   27620:	e2a300        	movi	a14, 0x300
+   27623:	817cae        	l32r	a8, 0x13014 (0x2000000)
+   27626:	9801      	l32i.n	a9, a1, 0
+   27628:	d811      	l32i.n	a13, a1, 4
+   2762a:	f2af7f        	movi	a15, -129
+   2762d:	f09910        	and	a9, a9, a15
+   27630:	80dd20        	or	a13, a13, a8
+   27633:	e09920        	or	a9, a9, a14
+   27636:	c09910        	and	a9, a9, a12
+   27639:	20dd20        	or	a13, a13, a2
+   2763c:	d911      	s32i.n	a13, a1, 4
+   2763e:	b09920        	or	a9, a9, a11
+   27641:	9901      	s32i.n	a9, a1, 0
+00027643: 2505fe   call8        . -0x1fac ; Capstone ; target=0x25694
+   27646:	ad01      	mov.n	a10, a1
+00027648: a500fe   call8        . -0x1ff4 ; Capstone ; target=0x25654
+0002764b: 1df0     retw.n        ; Capstone
+   2764d:	000000        	ill

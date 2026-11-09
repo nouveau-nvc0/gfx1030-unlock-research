@@ -1,0 +1,107 @@
+
+/tmp/tmpjlm2xh36/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00025454 <.data+0x25454>:
+00025454: 364100   entry        a1, 0x20 ; Capstone
+   25457:	3c9c      	movi.n	a12, 57
+   25459:	52a09f        	movi	a5, 159
+   2545c:	3113b9        	l32r	a3, 0x138a8 (0x125a600)
+   2545f:	4111b9        	l32r	a4, 0x138a4 (0xfffff09f)
+   25462:	c02000        	memw
+   25465:	c263b9        	s32i	a12, a3, 0x2e4
+   25468:	b2a0b7        	movi	a11, 183
+   2546b:	c02000        	memw
+   2546e:	b263bb        	s32i	a11, a3, 0x2ec
+   25471:	a2a0bc        	movi	a10, 188
+   25474:	c02000        	memw
+   25477:	a263bd        	s32i	a10, a3, 0x2f4
+   2547a:	c02000        	memw
+   2547d:	9223b8        	l32i	a9, a3, 0x2e0
+   25480:	509920        	or	a9, a9, a5
+   25483:	409910        	and	a9, a9, a4
+   25486:	c02000        	memw
+   25489:	9263b8        	s32i	a9, a3, 0x2e0
+   2548c:	c02000        	memw
+   2548f:	8223ba        	l32i	a8, a3, 0x2e8
+   25492:	508820        	or	a8, a8, a5
+   25495:	408810        	and	a8, a8, a4
+   25498:	c02000        	memw
+   2549b:	8263ba        	s32i	a8, a3, 0x2e8
+   2549e:	c02000        	memw
+   254a1:	2223bc        	l32i	a2, a3, 0x2f0
+   254a4:	502220        	or	a2, a2, a5
+   254a7:	402210        	and	a2, a2, a4
+   254aa:	c02000        	memw
+   254ad:	2263bc        	s32i	a2, a3, 0x2f0
+   254b0:	c02000        	memw
+   254b3:	d223b8        	l32i	a13, a3, 0x2e0
+   254b6:	c02000        	memw
+   254b9:	4223ba        	l32i	a4, a3, 0x2e8
+   254bc:	c02000        	memw
+   254bf:	5223bc        	l32i	a5, a3, 0x2f0
+   254c2:	b76dea        	bbci	a13, 11, 0x254b0
+   254c5:	b764e7        	bbci	a4, 11, 0x254b0
+   254c8:	b765e4        	bbci	a5, 11, 0x254b0
+   254cb:	51f8b8        	l32r	a5, 0x138ac (0x5a92c)
+   254ce:	31f8b8        	l32r	a3, 0x138b0 (0x5a928)
+   254d1:	81f0b6        	l32r	a8, 0x13094 (0x1200000)
+   254d4:	71e1b6        	l32r	a7, 0x13058 (0x11ffe00)
+   254d7:	91f7b8        	l32r	a9, 0x138b4 (0xe7ac)
+   254da:	61cab6        	l32r	a6, 0x13004 (0xfffff)
+   254dd:	0c6e      	movi.n	a14, 6
+   254df:	4d09      	mov.n	a4, a9
+000254e1: 76ae20   loopgtz      a14, . +0x24 ; Capstone
+   254e4:	602310        	and	a2, a3, a6
+   254e7:	7a22      	add.n	a2, a2, a7
+   254e9:	c02000        	memw
+   254ec:	222280        	l32i	a2, a2, 0x200
+   254ef:	226463        	s32i	a2, a4, 0x18c
+   254f2:	60f510        	and	a15, a5, a6
+   254f5:	8aff      	add.n	a15, a15, a8
+   254f7:	c02000        	memw
+   254fa:	8b33      	addi.n	a3, a3, 8
+   254fc:	f80f      	l32i.n	a15, a15, 0
+   254fe:	8b55      	addi.n	a5, a5, 8
+   25500:	f26464        	s32i	a15, a4, 0x190
+   25503:	8b44      	addi.n	a4, a4, 8
+   25505:	904920        	or	a4, a9, a9
+   25508:	51ecb8        	l32r	a5, 0x138b8 (0x5a95c)
+   2550b:	31ecb8        	l32r	a3, 0x138bc (0x5a958)
+   2550e:	a2a008        	movi	a10, 8
+00025511: 76aa20   loopgtz      a10, . +0x24 ; Capstone
+   25514:	60c310        	and	a12, a3, a6
+   25517:	7acc      	add.n	a12, a12, a7
+   25519:	c02000        	memw
+   2551c:	c22c80        	l32i	a12, a12, 0x200
+   2551f:	c2646f        	s32i	a12, a4, 0x1bc
+   25522:	60b510        	and	a11, a5, a6
+   25525:	8abb      	add.n	a11, a11, a8
+   25527:	c02000        	memw
+   2552a:	8b33      	addi.n	a3, a3, 8
+   2552c:	b80b      	l32i.n	a11, a11, 0
+   2552e:	8b55      	addi.n	a5, a5, 8
+   25530:	b26470        	s32i	a11, a4, 0x1c0
+   25533:	8b44      	addi.n	a4, a4, 8
+   25535:	904920        	or	a4, a9, a9
+   25538:	51e2b8        	l32r	a5, 0x138c0 (0x5a99c)
+   2553b:	31e2b8        	l32r	a3, 0x138c4 (0x5a998)
+   2553e:	d2a009        	movi	a13, 9
+00025541: 76ad20   loopgtz      a13, . +0x24 ; Capstone
+   25544:	60f310        	and	a15, a3, a6
+   25547:	7aff      	add.n	a15, a15, a7
+   25549:	c02000        	memw
+   2554c:	f22f80        	l32i	a15, a15, 0x200
+   2554f:	f2647f        	s32i	a15, a4, 0x1fc
+   25552:	60e510        	and	a14, a5, a6
+   25555:	8aee      	add.n	a14, a14, a8
+   25557:	c02000        	memw
+   2555a:	8b33      	addi.n	a3, a3, 8
+   2555c:	e80e      	l32i.n	a14, a14, 0
+   2555e:	8b55      	addi.n	a5, a5, 8
+   25560:	e26480        	s32i	a14, a4, 0x200
+   25563:	8b44      	addi.n	a4, a4, 8
+00025565: 1df0     retw.n        ; Capstone
+	...

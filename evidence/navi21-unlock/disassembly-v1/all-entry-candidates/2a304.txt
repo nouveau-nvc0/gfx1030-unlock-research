@@ -1,0 +1,26 @@
+
+/tmp/tmpruwt4ld7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002a304 <.data+0x2a304>:
+0002a304: 364100   entry        a1, 0x20 ; Capstone
+   2a307:	4c03      	movi.n	a3, 64
+   2a309:	273307        	bltu	a3, a2, 0x2a314
+   2a30c:	e02211        	slli	a2, a2, 2
+   2a30f:	202241        	srli	a2, a2, 2
+0002a312: 1df0     retw.n        ; Capstone
+   2a314:	32a060        	movi	a3, 96
+   2a317:	27330a        	bltu	a3, a2, 0x2a325
+   2a31a:	e02211        	slli	a2, a2, 2
+   2a31d:	202141        	srli	a2, a2, 1
+   2a320:	22c2c0        	addi	a2, a2, -64
+0002a323: 1df0     retw.n        ; Capstone
+   2a325:	32a07e        	movi	a3, 126
+   2a328:	273307        	bltu	a3, a2, 0x2a333
+   2a32b:	82af00        	movi	a8, 0xffffff00
+   2a32e:	8022a0        	addx4	a2, a2, a8
+0002a331: 1df0     retw.n        ; Capstone
+   2a333:	22a200        	movi	a2, 0x200
+0002a336: 1df0     retw.n        ; Capstone

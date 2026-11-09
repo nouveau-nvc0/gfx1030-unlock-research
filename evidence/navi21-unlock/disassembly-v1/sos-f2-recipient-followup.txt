@@ -1,0 +1,27 @@
+SVCf2 recipient selection and registration
+
+234c4 does not directly call the SYS dispatcher. It reads a recipient ID
+from byte[8428+selector]; selector1 is used by the RLC packet builders.
+Zero ID returns2f. Recipient record is [6054]+92*ID. Byte+34 selects one
+of four available slots; no slot returns31. Additional caller-state and
+packet/stack address conditions can return2e/32 and have not been shown
+satisfied at runtime.
+
+After local conditions, code prepares a saved frame: packet pointer at+8,
+mode at+c, and recipient entry from record+4 at savedPC+3c. It also updates
+slot and caller bookkeeping and calls2457c. Thus the missing delivery edge
+is dynamic recipient registration plus frame handling, not a hidden direct
+BL to the SYS routine.
+
+Concrete registration: SVC74 entry2615c routes26780->253f8. Arguments are
+selector and lowbyte recipientID. Helper2310c must return0 and selector<16;
+STRB25412 then writes table[selector]. Two raw ThumbSVC74 locations found:
+33c94 registersr5 usingbyte[sp+68];350e8 usesr5 withrecipient0 afterf2,
+clearing that selected entry. Their full initialization paths remain open.
+Next trace33c94 withr5=1 and the entry in its resulting recipient record.
+Do not claim table[1] namesSYS until that connection is established.
+
+Reproducer scripts/navi21-sos-f2-recipient-audit.py with existing Capstone
+path;receipt sos-f2-recipient-audit.json records198instructions. Matching
+packet fields remain structural evidence, now with a concrete registration
+dependency. No hardware changes, no changedCCproducer or acceptance proof.

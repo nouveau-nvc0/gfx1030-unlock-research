@@ -1,0 +1,21 @@
+
+/tmp/tmpow81e0pd/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000540 <.data+0x540>:
+00000540: 00cd09   l32e         a0, a13, -0x10 ; Capstone
+00000543: 10dd09   l32e         a1, a13, -0xc ; Capstone
+00000546: 20ed09   l32e         a2, a13, -8 ; Capstone
+00000549: b0d109   l32e         a11, a1, -0xc ; Capstone
+0000054c: 30fd09   l32e         a3, a13, -4 ; Capstone
+0000054f: 404b09   l32e         a4, a11, -0x30 ; Capstone
+00000552: 505b09   l32e         a5, a11, -0x2c ; Capstone
+00000555: 606b09   l32e         a6, a11, -0x28 ; Capstone
+00000558: 707b09   l32e         a7, a11, -0x24 ; Capstone
+0000055b: 808b09   l32e         a8, a11, -0x20 ; Capstone
+0000055e: 909b09   l32e         a9, a11, -0x1c ; Capstone
+00000561: a0ab09   l32e         a10, a11, -0x18 ; Capstone
+00000564: b0bb09   l32e         a11, a11, -0x14 ; Capstone
+00000567: 003500   rfwu          ; Capstone

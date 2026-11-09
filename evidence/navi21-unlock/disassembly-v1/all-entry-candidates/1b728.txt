@@ -1,0 +1,54 @@
+
+/tmp/tmprbehlt0p/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001b728 <.data+0x1b728>:
+0001b728: 364100   entry        a1, 0x20 ; Capstone
+   1b72b:	9118de        	l32r	a9, 0x12f8c (0xc284)
+   1b72e:	820980        	l8ui	a8, a9, 128
+   1b731:	16f805        	beqz	a8, 0x1b794
+   1b734:	42c95c        	addi	a4, a9, 92
+   1b737:	0c02      	movi.n	a2, 0
+   1b739:	5115de        	l32r	a5, 0x12f90 (0xc168)
+   1b73c:	0c17      	movi.n	a7, 1
+   1b73e:	0cf3      	movi.n	a3, 15
+   1b740:	62c5a8        	addi	a6, a5, -88
+   1b743:	275345        	bbc	a3, a2, 0x1b78c
+   1b746:	4ad2      	add.n	a13, a2, a4
+   1b748:	b20d80        	l8ui	a11, a13, 128
+   1b74b:	50c2a0        	addx4	a12, a2, a5
+0001b74e: 030c7f   lsi          f0, a12, 0x1fc ; Capstone
+   1b751:	8c3b      	beqz.n	a11, 0x1b758
+   1b753:	460b00        	j	0x1b784
+   1b756:	0000a1        	sll	a0, a0
+   1b759:	10def1        	excw
+   1b75c:	0e          	.byte 0xe
+   1b75d:	de          	.byte 0xde
+   1b75e:	bd06      	mov.n	a11, a6
+   1b760:	0cee      	movi.n	a14, 14
+0001b762: 030f00   lsi          f0, a15, 0 ; Capstone
+0001b765: 76ae15   loopgtz      a14, . +0x19 ; Capstone
+   1b768:	820a80        	l8ui	a8, a10, 128
+   1b76b:	1baa      	addi.n	a10, a10, 1
+   1b76d:	27980b        	bne	a8, a2, 0x1b77c
+0001b770: 230b7f   lsi          f2, a11, 0x1fc ; Capstone
+0001b773: 00024b   olt.s        b0, f2, f0 ; Capstone
+0001b776: 0020db   movt.s       f2, f0, b0 ; Capstone
+0001b779: 0002fa   mov.s        f0, f2 ; Capstone
+   1b77c:	4bbb      	addi.n	a11, a11, 4
+0001b77e: 034c7f   ssi          f0, a12, 0x1fc ; Capstone
+   1b781:	724d80        	s8i	a7, a13, 128
+0001b784: 40a0fa   rfr          a10, f0 ; Capstone
+   1b787:	bd02      	mov.n	a11, a2
+0001b789: e5f3ff   call8        . -0xc0 ; Capstone ; target=0x1b6c8
+   1b78c:	1b22      	addi.n	a2, a2, 1
+   1b78e:	202074        	extui	a2, a2, 0, 8
+   1b791:	6642ae        	bnei	a2, 4, 0x1b743
+0001b794: 1df0     retw.n        ; Capstone
+	...
+
+; Alternate branch-target decode
+   1b758:	a110de        	l32r	a10, 0x12f98 (0xc2c4)
+   1b75b:	f10ede        	l32r	a15, 0x12f94 (0x11768)

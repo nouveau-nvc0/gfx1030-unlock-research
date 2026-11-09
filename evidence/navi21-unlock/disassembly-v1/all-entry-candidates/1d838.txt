@@ -1,0 +1,26 @@
+
+/tmp/tmptom5j612/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001d838 <.data+0x1d838>:
+0001d838: 366100   entry        a1, 0x30 ; Capstone
+   1d83b:	815ad6        	l32r	a8, 0x131a4 (0xfe94)
+   1d83e:	3187d5        	l32r	a3, 0x12e5c (0x69a0)
+   1d841:	82187e        	l16ui	a8, a8, 252
+   1d844:	920360        	l8ui	a9, a3, 96
+   1d847:	d7681b        	bbci	a8, 13, 0x1d866
+   1d84a:	9c89      	beqz.n	a9, 0x1d866
+   1d84c:	2c3a      	movi.n	a10, 35
+   1d84e:	bd01      	mov.n	a11, a1
+   1d850:	0c02      	movi.n	a2, 0
+   1d852:	2901      	s32i.n	a2, a1, 0
+   1d854:	2911      	s32i.n	a2, a1, 4
+0001d856: 65dd16   call8        . +0x16dd8 ; Capstone ; target=0x3462c
+   1d859:	224360        	s8i	a2, a3, 96
+   1d85c:	c02000        	memw
+   1d85f:	2953      	s32i.n	a2, a3, 20
+   1d861:	0c2a      	movi.n	a10, 2
+0001d863: 253e1a   call8        . +0x1a3e4 ; Capstone ; target=0x37c44
+0001d866: 1df0     retw.n        ; Capstone

@@ -1,0 +1,24 @@
+
+/tmp/tmpe786ib8v/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00034c80 <.data+0x34c80>:
+00034c80: 364100   entry        a1, 0x20 ; Capstone
+   34c83:	ad02      	mov.n	a10, a2
+00034c85: a543cd   call8        . -0x32bc4 ; Capstone ; target=0x20c0
+   34c88:	bd0a      	mov.n	a11, a10
+   34c8a:	a0a074        	extui	a10, a10, 0, 8
+   34c8d:	b0b0f5        	extui	a11, a11, 16, 16
+00034c90: e5f4ff   call8        . -0xb0 ; Capstone ; target=0x34be0
+   34c93:	661a08        	bnei	a10, 1, 0x34c9f
+   34c96:	ad02      	mov.n	a10, a2
+   34c98:	0c1b      	movi.n	a11, 1
+00034c9a: 2540cd   call8        . -0x32bfc ; Capstone ; target=0x209c
+00034c9d: 1df0     retw.n        ; Capstone
+   34c9f:	ad02      	mov.n	a10, a2
+   34ca1:	b2a0ff        	movi	a11, 255
+00034ca4: 653fcd   call8        . -0x32c08 ; Capstone ; target=0x209c
+00034ca7: 1df0     retw.n        ; Capstone
+   34ca9:	000000        	ill

@@ -1,0 +1,345 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+      "sha256": "f31bcf379136937e42694717f8a664afdb55971590916f669b1aeec1cbd812e3",
+      "byte_checked_records": 237
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/083fc.txt",
+      "sha256": "bb9d185ae7779438ca1b135be32b1285ecad7d7a58973b36953aa2ea53c45816",
+      "byte_checked_records": 678
+    }
+  ],
+  "copies": [
+    {
+      "load_pc": "0x1d4f",
+      "store_pc": "0x1d52",
+      "scratch_address": "0x78000340",
+      "destination": "0x5ffee2b8",
+      "word_index": 0,
+      "candidate_smu_source": "0xfce8",
+      "candidate_port_index": "0xd0"
+    },
+    {
+      "load_pc": "0x1d55",
+      "store_pc": "0x1d58",
+      "scratch_address": "0x78000344",
+      "destination": "0x5ffee2bc",
+      "word_index": 1,
+      "candidate_smu_source": "0xfcec",
+      "candidate_port_index": "0xd1"
+    },
+    {
+      "load_pc": "0x1d5b",
+      "store_pc": "0x1d5e",
+      "scratch_address": "0x78000348",
+      "destination": "0x5ffee2c0",
+      "word_index": 2,
+      "candidate_smu_source": "0xfcf0",
+      "candidate_port_index": "0xd2"
+    },
+    {
+      "load_pc": "0x1d61",
+      "store_pc": "0x1d64",
+      "scratch_address": "0x7800034c",
+      "destination": "0x5ffee2c4",
+      "word_index": 3,
+      "candidate_smu_source": "0xfcf4",
+      "candidate_port_index": "0xd3"
+    },
+    {
+      "load_pc": "0x1d67",
+      "store_pc": "0x1d6a",
+      "scratch_address": "0x78000350",
+      "destination": "0x5ffee2c8",
+      "word_index": 4,
+      "candidate_smu_source": "0xfcf8",
+      "candidate_port_index": "0xd4"
+    },
+    {
+      "load_pc": "0x1d6d",
+      "store_pc": "0x1d70",
+      "scratch_address": "0x78000354",
+      "destination": "0x5ffee2cc",
+      "word_index": 5,
+      "candidate_smu_source": "0xfcfc",
+      "candidate_port_index": "0xd5"
+    },
+    {
+      "load_pc": "0x1d73",
+      "store_pc": "0x1d76",
+      "scratch_address": "0x78000358",
+      "destination": "0x5ffee2d0",
+      "word_index": 6,
+      "candidate_smu_source": "0xfd00",
+      "candidate_port_index": "0xd6"
+    },
+    {
+      "load_pc": "0x1d79",
+      "store_pc": "0x1d7c",
+      "scratch_address": "0x7800035c",
+      "destination": "0x5ffee2d4",
+      "word_index": 7,
+      "candidate_smu_source": "0xfd04",
+      "candidate_port_index": "0xd7"
+    },
+    {
+      "load_pc": "0x1d7f",
+      "store_pc": "0x1d82",
+      "scratch_address": "0x78000360",
+      "destination": "0x5ffee2d8",
+      "word_index": 8,
+      "candidate_smu_source": "0xfd08",
+      "candidate_port_index": "0xd8"
+    },
+    {
+      "load_pc": "0x1d85",
+      "store_pc": "0x1d88",
+      "scratch_address": "0x78000364",
+      "destination": "0x5ffee2dc",
+      "word_index": 9,
+      "candidate_smu_source": "0xfd0c",
+      "candidate_port_index": "0xd9"
+    },
+    {
+      "load_pc": "0x1d8a",
+      "store_pc": "0x1d8d",
+      "scratch_address": "0x78000368",
+      "destination": "0x5ffee2e0",
+      "word_index": 10,
+      "candidate_smu_source": "0xfd10",
+      "candidate_port_index": "0xda"
+    },
+    {
+      "load_pc": "0x1d8f",
+      "store_pc": "0x1d92",
+      "scratch_address": "0x7800036c",
+      "destination": "0x5ffee2e4",
+      "word_index": 11,
+      "candidate_smu_source": "0xfd14",
+      "candidate_port_index": "0xdb"
+    },
+    {
+      "load_pc": "0x1d94",
+      "store_pc": "0x1d97",
+      "scratch_address": "0x78000370",
+      "destination": "0x5ffee2e8",
+      "word_index": 12,
+      "candidate_smu_source": "0xfd18",
+      "candidate_port_index": "0xdc"
+    },
+    {
+      "load_pc": "0x1d99",
+      "store_pc": "0x1d9c",
+      "scratch_address": "0x78000374",
+      "destination": "0x5ffee2ec",
+      "word_index": 13,
+      "candidate_smu_source": "0xfd1c",
+      "candidate_port_index": "0xdd"
+    },
+    {
+      "load_pc": "0x1d9e",
+      "store_pc": "0x1da1",
+      "scratch_address": "0x78000378",
+      "destination": "0x5ffee2f0",
+      "word_index": 14,
+      "candidate_smu_source": "0xfd20",
+      "candidate_port_index": "0xde"
+    },
+    {
+      "load_pc": "0x1da3",
+      "store_pc": "0x1da6",
+      "scratch_address": "0x7800037c",
+      "destination": "0x5ffee2f4",
+      "word_index": 15,
+      "candidate_smu_source": "0xfd24",
+      "candidate_port_index": "0xdf"
+    },
+    {
+      "load_pc": "0x1da8",
+      "store_pc": "0x1dab",
+      "scratch_address": "0x78000380",
+      "destination": "0x5ffee2f8",
+      "word_index": 16,
+      "candidate_smu_source": "0xfd28",
+      "candidate_port_index": "0xe0"
+    },
+    {
+      "load_pc": "0x1dad",
+      "store_pc": "0x1db0",
+      "scratch_address": "0x78000384",
+      "destination": "0x5ffee2fc",
+      "word_index": 17,
+      "candidate_smu_source": "0xfd2c",
+      "candidate_port_index": "0xe1"
+    },
+    {
+      "load_pc": "0x1db2",
+      "store_pc": "0x1dbb",
+      "scratch_address": "0x78000388",
+      "destination": "0x5ffee300",
+      "word_index": 18,
+      "candidate_smu_source": "0xfd30",
+      "candidate_port_index": "0xe2"
+    },
+    {
+      "load_pc": "0x1dbd",
+      "store_pc": "0x1dc0",
+      "scratch_address": "0x7800038c",
+      "destination": "0x5ffee278",
+      "word_index": 19,
+      "candidate_smu_source": "0xfd34",
+      "candidate_port_index": "0xe3"
+    },
+    {
+      "load_pc": "0x1dc2",
+      "store_pc": "0x1dc5",
+      "scratch_address": "0x78000390",
+      "destination": "0x5ffee27c",
+      "word_index": 20,
+      "candidate_smu_source": "0xfd38",
+      "candidate_port_index": "0xe4"
+    },
+    {
+      "load_pc": "0x1dc7",
+      "store_pc": "0x1dca",
+      "scratch_address": "0x78000394",
+      "destination": "0x5ffee280",
+      "word_index": 21,
+      "candidate_smu_source": "0xfd3c",
+      "candidate_port_index": "0xe5"
+    },
+    {
+      "load_pc": "0x1dcc",
+      "store_pc": "0x1dcf",
+      "scratch_address": "0x78000398",
+      "destination": "0x5ffee284",
+      "word_index": 22,
+      "candidate_smu_source": "0xfd40",
+      "candidate_port_index": "0xe6"
+    },
+    {
+      "load_pc": "0x1dd1",
+      "store_pc": "0x1dd4",
+      "scratch_address": "0x7800039c",
+      "destination": "0x5ffee288",
+      "word_index": 23,
+      "candidate_smu_source": "0xfd44",
+      "candidate_port_index": "0xe7"
+    },
+    {
+      "load_pc": "0x1dd6",
+      "store_pc": "0x1dd9",
+      "scratch_address": "0x780003a0",
+      "destination": "0x5ffee28c",
+      "word_index": 24,
+      "candidate_smu_source": "0xfd48",
+      "candidate_port_index": "0xe8"
+    },
+    {
+      "load_pc": "0x1ddb",
+      "store_pc": "0x1dde",
+      "scratch_address": "0x780003a4",
+      "destination": "0x5ffee290",
+      "word_index": 25,
+      "candidate_smu_source": "0xfd4c",
+      "candidate_port_index": "0xe9"
+    },
+    {
+      "load_pc": "0x1de0",
+      "store_pc": "0x1de3",
+      "scratch_address": "0x780003a8",
+      "destination": "0x5ffee294",
+      "word_index": 26,
+      "candidate_smu_source": "0xfd50",
+      "candidate_port_index": "0xea"
+    },
+    {
+      "load_pc": "0x1de5",
+      "store_pc": "0x1de8",
+      "scratch_address": "0x780003ac",
+      "destination": "0x5ffee298",
+      "word_index": 27,
+      "candidate_smu_source": "0xfd54",
+      "candidate_port_index": "0xeb"
+    },
+    {
+      "load_pc": "0x1dea",
+      "store_pc": "0x1ded",
+      "scratch_address": "0x780003b0",
+      "destination": "0x5ffee29c",
+      "word_index": 28,
+      "candidate_smu_source": "0xfd58",
+      "candidate_port_index": "0xec"
+    },
+    {
+      "load_pc": "0x1def",
+      "store_pc": "0x1df2",
+      "scratch_address": "0x780003b4",
+      "destination": "0x5ffee2a0",
+      "word_index": 29,
+      "candidate_smu_source": "0xfd5c",
+      "candidate_port_index": "0xed"
+    },
+    {
+      "load_pc": "0x1df4",
+      "store_pc": "0x1df7",
+      "scratch_address": "0x780003b8",
+      "destination": "0x5ffee2a4",
+      "word_index": 30,
+      "candidate_smu_source": "0xfd60",
+      "candidate_port_index": "0xee"
+    },
+    {
+      "load_pc": "0x1dfa",
+      "store_pc": "0x1dfd",
+      "scratch_address": "0x780003bc",
+      "destination": "0x5ffee2a8",
+      "word_index": 31,
+      "candidate_smu_source": "0xfd64",
+      "candidate_port_index": "0xef"
+    },
+    {
+      "load_pc": "0x1e00",
+      "store_pc": "0x1e03",
+      "scratch_address": "0x780003c0",
+      "destination": "0x5ffee2ac",
+      "word_index": 32,
+      "candidate_smu_source": "0xfd68",
+      "candidate_port_index": "0xf0"
+    },
+    {
+      "load_pc": "0x1e06",
+      "store_pc": "0x1e09",
+      "scratch_address": "0x780003c4",
+      "destination": "0x5ffee2b0",
+      "word_index": 33,
+      "candidate_smu_source": "0xfd6c",
+      "candidate_port_index": "0xf1"
+    },
+    {
+      "load_pc": "0x1e0c",
+      "store_pc": "0x1e0f",
+      "scratch_address": "0x780003c8",
+      "destination": "0x5ffee2b4",
+      "word_index": 34,
+      "candidate_smu_source": "0xfd70",
+      "candidate_port_index": "0xf2"
+    }
+  ],
+  "command_table": {
+    "base": "0x5ffecd50",
+    "index": 32,
+    "target": "0x5fff8537",
+    "call_pc": "0x8545",
+    "callee": "0x1d10"
+  },
+  "copy_destination_interval": [
+    "0x5ffee278",
+    "0x5ffee304"
+  ],
+  "direct_copy_overlaps_saved_cc_or_gate": false,
+  "scope": "Exact software copy and initial command-table entry. Matching d0/35-word SMU block strongly supports an interface correspondence; physical port alias and automatic index movement remain unobserved. Later dataflow is not closed."
+}

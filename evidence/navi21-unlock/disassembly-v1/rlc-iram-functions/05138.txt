@@ -1,0 +1,59 @@
+
+/tmp/tmpa71ooxr4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005138 <.data+0x5138>:
+00005138: 366100   entry        a1, 0x30 ; Capstone
+    513b:	906f00        	rsil	a9, 15
+    513e:	4109e0        	l32r	a4, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    5141:	51bce0        	l32r	a5, 0xffffd434 (0x6003aa00) ; inferred DRAM map 0x5ffec000
+    5144:	0c07      	movi.n	a7, 0
+    5146:	726480        	s32i	a7, a4, 0x200
+    5149:	726591        	s32i	a7, a5, 0x244
+    514c:	90e613        	wsr.ps	a9
+    514f:	102000        	rsync
+    5152:	91c0e0        	l32r	a9, 0xffffd454 (0x5ffed9d4) ; inferred DRAM map 0x5ffec000
+    5155:	0c16      	movi.n	a6, 1
+    5157:	82090c        	l8ui	a8, a9, 12
+    515a:	0c02      	movi.n	a2, 0
+    515c:	31bfe0        	l32r	a3, 0xffffd458 (0x5ffed9e4) ; inferred DRAM map 0x5ffec000
+    515f:	261819        	beqi	a8, 1, 0x517c
+    5162:	ad02      	mov.n	a10, a2
+00005164: 251e00   call8        . +0x1e4 ; Capstone ; target=0x5348
+    5167:	20b141        	srli	a11, a2, 1
+    516a:	22c202        	addi	a2, a2, 2
+    516d:	30bba0        	addx4	a11, a11, a3
+    5170:	a26b00        	s32i	a10, a11, 0
+    5173:	b6e2eb        	bltui	a2, 128, 0x5162
+    5176:	c1b7e0        	l32r	a12, 0xffffd454 (0x5ffed9d4) ; inferred DRAM map 0x5ffec000
+    5179:	624c0c        	s8i	a6, a12, 12
+    517c:	a2a082        	movi	a10, 130
+    517f:	0c2b      	movi.n	a11, 2
+00005181: 652300   call8        . +0x238 ; Capstone ; target=0x53b8
+    5184:	a2a080        	movi	a10, 128
+    5187:	b1b5e0        	l32r	a11, 0xffffd45c (0x96f225a5) ; inferred DRAM map 0x5ffec000
+0000518a: e52200   call8        . +0x230 ; Capstone ; target=0x53b8
+    518d:	a2a081        	movi	a10, 129
+    5190:	b1b4e0        	l32r	a11, 0xffffd460 (0x440a125) ; inferred DRAM map 0x5ffec000
+00005193: 652200   call8        . +0x228 ; Capstone ; target=0x53b8
+    5196:	a2a0a0        	movi	a10, 160
+    5199:	7cfb      	movi.n	a11, -1
+0000519b: e52100   call8        . +0x220 ; Capstone ; target=0x53b8
+    519e:	a2a08a        	movi	a10, 138
+    51a1:	0c1b      	movi.n	a11, 1
+000051a3: 652100   call8        . +0x218 ; Capstone ; target=0x53b8
+    51a6:	a2a0a3        	movi	a10, 163
+000051a9: e51900   call8        . +0x1a0 ; Capstone ; target=0x5348
+    51ac:	a0d0f4        	extui	a13, a10, 0, 16
+    51af:	662df3        	bnei	a13, 2, 0x51a6
+    51b2:	f06f00        	rsil	a15, 15
+    51b5:	726480        	s32i	a7, a4, 0x200
+    51b8:	81abe0        	l32r	a8, 0xffffd464 (0x4000) ; inferred DRAM map 0x5ffec000
+    51bb:	826590        	s32i	a8, a5, 0x240
+    51be:	f0e613        	wsr.ps	a15
+    51c1:	102000        	rsync
+    51c4:	e1a9e0        	l32r	a14, 0xffffd468 (0x5ffee574) ; inferred DRAM map 0x5ffec000
+    51c7:	624e00        	s8i	a6, a14, 0
+000051ca: 1df0     retw.n        ; Capstone

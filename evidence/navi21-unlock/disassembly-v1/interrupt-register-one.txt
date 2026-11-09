@@ -1,0 +1,46 @@
+
+/tmp/tmpf6hrwob9/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00037bb0 <.data+0x37bb0>:
+00037bb0: 364100   entry        a1, 0x20 ; Capstone
+   37bb3:	505074        	extui	a5, a5, 0, 8
+   37bb6:	307074        	extui	a7, a3, 0, 8
+   37bb9:	404074        	extui	a4, a4, 0, 8
+   37bbc:	306200        	rsil	a3, 2
+   37bbf:	818272        	l32r	a8, 0x145c8 (0x7694)
+   37bc2:	ad02      	mov.n	a10, a2
+   37bc4:	bd02      	mov.n	a11, a2
+   37bc6:	8082a0        	addx4	a8, a2, a8
+   37bc9:	62687f        	s32i	a6, a8, 0x1fc
+00037bcc: 65cee5   call8        . -0x1a318 ; Capstone ; target=0x1d8b4
+   37bcf:	661707        	bnei	a7, 1, 0x37bda
+   37bd2:	ad02      	mov.n	a10, a2
+00037bd4: e5bbc9   call8        . -0x36440 ; Capstone ; target=0x1794
+   37bd7:	060100        	j	0x37bdf
+   37bda:	ad02      	mov.n	a10, a2
+00037bdc: 65b4c9   call8        . -0x364b8 ; Capstone ; target=0x1724
+   37bdf:	bd04      	mov.n	a11, a4
+   37be1:	ad02      	mov.n	a10, a2
+00037be3: 65c8e5   call8        . -0x1a378 ; Capstone ; target=0x1d868
+   37be6:	7cfc      	movi.n	a12, -1
+   37be8:	20b044        	extui	a11, a2, 0, 5
+   37beb:	0c19      	movi.n	a9, 1
+   37bed:	001b40        	ssl	a11
+   37bf0:	b17772        	l32r	a11, 0x145cc (0x7b04)
+   37bf3:	20a541        	srli	a10, a2, 5
+   37bf6:	e0aa11        	slli	a10, a10, 2
+   37bf9:	baaa      	add.n	a10, a10, a11
+   37bfb:	b22a7f        	l32i	a11, a10, 0x1fc
+   37bfe:	0099a1        	sll	a9, a9
+   37c01:	c0c930        	xor	a12, a9, a12
+   37c04:	b09920        	or	a9, a9, a11
+   37c07:	c0bb10        	and	a11, a11, a12
+   37c0a:	0bc5      	addi.n	a12, a5, -1
+   37c0c:	c09b93        	movnez	a9, a11, a12
+   37c0f:	926a7f        	s32i	a9, a10, 0x1fc
+   37c12:	30e613        	wsr.ps	a3
+00037c15: 1df0     retw.n        ; Capstone
+	...

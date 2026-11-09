@@ -1,0 +1,29 @@
+
+/tmp/tmpdh_s7449/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005708 <.data+0x5708>:
+00005708: 368100   entry        a1, 0x40 ; Capstone
+    570b:	40f0f4        	extui	a15, a4, 0, 16
+    570e:	3070f4        	extui	a7, a3, 0, 16
+    5711:	2080f4        	extui	a8, a2, 0, 16
+    5714:	50a0f5        	extui	a10, a5, 16, 16
+    5717:	40b0f5        	extui	a11, a4, 16, 16
+    571a:	30c0f5        	extui	a12, a3, 16, 16
+    571d:	9157df        	l32r	a9, 0xffffd47c (0x5ffedae4) ; inferred DRAM map 0x5ffec000
+    5720:	20d0f5        	extui	a13, a2, 16, 16
+    5723:	50e0f4        	extui	a14, a5, 0, 16
+    5726:	e2591b        	s16i	a14, a9, 54
+    5729:	62591d        	s16i	a6, a9, 58
+    572c:	d25916        	s16i	a13, a9, 44
+    572f:	c25918        	s16i	a12, a9, 48
+    5732:	b2591a        	s16i	a11, a9, 52
+    5735:	a2591c        	s16i	a10, a9, 56
+    5738:	825915        	s16i	a8, a9, 42
+    573b:	0c18      	movi.n	a8, 1
+    573d:	82493d        	s8i	a8, a9, 61
+    5740:	725917        	s16i	a7, a9, 46
+    5743:	f25919        	s16i	a15, a9, 50
+00005746: 1df0     retw.n        ; Capstone

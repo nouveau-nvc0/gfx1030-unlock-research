@@ -1,0 +1,21 @@
+
+/tmp/tmpopz9dkr8/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000a3a0 <.data+0xa3a0>:
+0000a3a0: 362100   entry        a1, 0x10 ; Capstone
+    a3a3:	cc62      	bnez.n	a2, 0xa3ad
+    a3a5:	30f013        	wsr.ccompare0	a3
+    a3a8:	102000        	rsync
+0000a3ab: 1df0     retw.n        ; Capstone
+    a3ad:	661207        	bnei	a2, 1, 0xa3b8
+0000a3b0: 30f113 wsr.ccompare1 a3 ; verified pinned QEMU encoding
+    a3b3:	102000        	rsync
+0000a3b6: 1df0     retw.n        ; Capstone
+    a3b8:	662205        	bnei	a2, 2, 0xa3c1
+0000a3bb: 30f213 wsr.ccompare2 a3 ; verified pinned QEMU encoding
+    a3be:	102000        	rsync
+0000a3c1: 1df0     retw.n        ; Capstone
+	...

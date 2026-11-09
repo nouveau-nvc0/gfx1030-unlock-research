@@ -1,0 +1,103 @@
+{
+  "warning": "Raw bytes at assumed identity mapping; table may be runtime-initialized, so not validated table contents",
+  "rows": [
+    {
+      "analysis_address": "0x114c0",
+      "word0": "0x33894",
+      "word1": "0x0",
+      "gc_names": [
+        "GL2_PIPE_STEER_0"
+      ]
+    },
+    {
+      "analysis_address": "0x114c8",
+      "word0": "0x33898",
+      "word1": "0x0",
+      "gc_names": [
+        "GL2_PIPE_STEER_1"
+      ]
+    },
+    {
+      "analysis_address": "0x114d0",
+      "word0": "0x33640",
+      "word1": "0x0",
+      "gc_names": [
+        "CH_PIPE_STEER"
+      ]
+    },
+    {
+      "analysis_address": "0x114d8",
+      "word0": "0x33440",
+      "word1": "0x0",
+      "gc_names": [
+        "GL1_PIPE_STEER"
+      ]
+    },
+    {
+      "analysis_address": "0x114e0",
+      "word0": "0x98f8",
+      "word1": "0x0",
+      "gc_names": [
+        "GB_ADDR_CONFIG"
+      ]
+    },
+    {
+      "analysis_address": "0x114e8",
+      "word0": "0x8928",
+      "word1": "0x0",
+      "gc_names": [
+        "GC_USER_SA_UNIT_DISABLE"
+      ]
+    },
+    {
+      "analysis_address": "0x114f0",
+      "word0": "0x3c01c",
+      "word1": "0x0",
+      "gc_names": [
+        "CGTS_USER_TCC_DISABLE"
+      ]
+    },
+    {
+      "analysis_address": "0x114f8",
+      "word0": "0x8904",
+      "word1": "0x0",
+      "gc_names": [
+        "GC_USER_PRIM_CONFIG"
+      ]
+    },
+    {
+      "analysis_address": "0x11500",
+      "word0": "0xa568",
+      "word1": "0x0",
+      "gc_names": [
+        "GCUTCL2_HARVEST_BYPASS_GROUPS"
+      ]
+    },
+    {
+      "analysis_address": "0x11508",
+      "word0": "0x8a14",
+      "word1": "0x0",
+      "gc_names": [
+        "PA_CL_ENHANCE"
+      ]
+    },
+    {
+      "analysis_address": "0x11510",
+      "word0": "0x3a040",
+      "word1": "0x0",
+      "gc_names": []
+    },
+    {
+      "analysis_address": "0x11518",
+      "word0": "0x3a044",
+      "word1": "0x0",
+      "gc_names": []
+    }
+  ],
+  "adjacent_banked_register": {
+    "offset": "0x9b7c",
+    "names": [
+      "GC_USER_RB_BACKEND_DISABLE"
+    ]
+  }
+}

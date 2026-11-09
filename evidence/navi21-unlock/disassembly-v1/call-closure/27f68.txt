@@ -1,0 +1,18 @@
+
+/tmp/tmpm54z43ak/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00027f68 <.data+0x27f68>:
+00027f68: 366100   entry        a1, 0x30 ; Capstone
+   27f6b:	41f0ab        	l32r	a4, 0x12f2c (0x141d600)
+   27f6e:	c02000        	memw
+   27f71:	82244b        	l32i	a8, a4, 0x12c
+   27f74:	8901      	s32i.n	a8, a1, 0
+   27f76:	224100        	s8i	a2, a1, 0
+   27f79:	3801      	l32i.n	a3, a1, 0
+   27f7b:	c02000        	memw
+   27f7e:	32644b        	s32i	a3, a4, 0x12c
+00027f81: 1df0     retw.n        ; Capstone
+	...

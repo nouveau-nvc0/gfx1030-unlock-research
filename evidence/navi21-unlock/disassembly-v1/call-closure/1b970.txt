@@ -1,0 +1,23 @@
+
+/tmp/tmpn1839iq3/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001b970 <.data+0x1b970>:
+0001b970: 364100   entry        a1, 0x20 ; Capstone
+   1b973:	a2a08f        	movi	a10, 143
+0001b976: a5c0e6   call8        . -0x193f4 ; Capstone ; target=0x2580
+   1b979:	318add        	l32r	a3, 0x12fa4 (0x10e74)
+   1b97c:	0c98      	movi.n	a8, 9
+   1b97e:	82637f        	s32i	a8, a3, 0x1fc
+0001b981: 652f0d   call8        . +0xd2f8 ; Capstone ; target=0x28c78
+   1b984:	20a074        	extui	a10, a2, 0, 8
+   1b987:	0c1b      	movi.n	a11, 1
+   1b989:	0ca9      	movi.n	a9, 10
+   1b98b:	92637f        	s32i	a9, a3, 0x1fc
+0001b98e: 258000   call8        . +0x804 ; Capstone ; target=0x1c190
+   1b991:	a2a08f        	movi	a10, 143
+0001b994: e5ade6   call8        . -0x19520 ; Capstone ; target=0x2474
+0001b997: 1df0     retw.n        ; Capstone
+   1b999:	000000        	ill

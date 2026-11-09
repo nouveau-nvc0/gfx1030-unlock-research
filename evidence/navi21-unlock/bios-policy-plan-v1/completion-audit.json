@@ -1,0 +1,15 @@
+{
+  "utc": "2026-11-09T11:57:40.384402+00:00",
+  "checks": {
+    "host_cmdline_unchanged": true,
+    "all_gpu_bindings_still_amdgpu": true,
+    "lpc_driver_remains_bound": true
+  },
+  "host_actions": "one failed read-only flashrom attempt; programmer initialization failed before chip access",
+  "firmware_read_completed": false,
+  "firmware_write_erase_nvram_clear_reboot": false,
+  "vm_definition_or_lab_application": false,
+  "lab_goal_status": "paused",
+  "offline_policy_cases": 24,
+  "offline_vga_cases": 6
+}

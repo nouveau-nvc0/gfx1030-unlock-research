@@ -1,0 +1,18 @@
+
+/tmp/tmpa0_sbjnr/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00037800 <.data+0x37800>:
+00037800: 364100   entry        a1, 0x20 ; Capstone
+   37803:	b16673        	l32r	a11, 0x1459c (0x71dc)
+   37806:	ad02      	mov.n	a10, a2
+   37808:	b0b290        	addx2	a11, a2, a11
+   3780b:	b21b9c        	l16ui	a11, a11, 0x138
+0003780e: 255cca   call8        . -0x35a3c ; Capstone ; target=0x1dd0
+   37811:	ad02      	mov.n	a10, a2
+   37813:	0c1b      	movi.n	a11, 1
+00037815: 6588ca   call8        . -0x35778 ; Capstone ; target=0x209c
+00037818: 1df0     retw.n        ; Capstone
+	...

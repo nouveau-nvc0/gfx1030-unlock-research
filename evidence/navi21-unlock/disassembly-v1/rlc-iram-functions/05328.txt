@@ -1,0 +1,19 @@
+
+/tmp/tmprdl7abed/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005328 <.data+0x5328>:
+00005328: 366100   entry        a1, 0x30 ; Capstone
+    532b:	408074        	extui	a8, a4, 0, 8
+    532e:	2901      	s32i.n	a2, a1, 0
+    5330:	3911      	s32i.n	a3, a1, 4
+    5332:	9148e0        	l32r	a9, 0xffffd454 (0x5ffed9d4) ; inferred DRAM map 0x5ffec000
+00005335: 030101   lsi          f0, a1, 4 ; Capstone
+00005338: 130100   lsi          f1, a1, 0 ; Capstone
+    533b:	824908        	s8i	a8, a9, 8
+0000533e: 134900   ssi          f1, a9, 0 ; Capstone
+00005341: 034901   ssi          f0, a9, 4 ; Capstone
+00005344: 1df0     retw.n        ; Capstone
+	...

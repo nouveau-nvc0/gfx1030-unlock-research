@@ -1,0 +1,75 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "byte_checked_restore_instructions": 208,
+  "enable_calls": [
+    {
+      "pc": "0x7791",
+      "operation": "call8",
+      "target": "0x97f8",
+      "integer_constants": {
+        "a10": "0x2",
+        "a13": "0xa002",
+        "a2": "0x6803b600",
+        "a4": "0xffffffff"
+      }
+    },
+    {
+      "pc": "0x7796",
+      "operation": "call8",
+      "target": "0x97f8",
+      "integer_constants": {
+        "a10": "0x1",
+        "a2": "0x6803b600",
+        "a4": "0xffffffff"
+      }
+    },
+    {
+      "pc": "0x7c65",
+      "operation": "call8",
+      "target": "0x97f8",
+      "integer_constants": {
+        "a10": "0x3",
+        "a2": "0x6803b600",
+        "a3": "0x1"
+      }
+    }
+  ],
+  "known_fixed_mask_stores": [
+    {
+      "pc": "0x7725",
+      "operation": "s32i.n",
+      "address": "0x5ffed7dc",
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 4294967295,
+      "base": "a10",
+      "offset": "0"
+    },
+    {
+      "pc": "0x7727",
+      "operation": "s32i.n",
+      "address": "0x5ffed7d8",
+      "address_candidates": [],
+      "source": "a12",
+      "source_constant": 0,
+      "base": "a11",
+      "offset": "0"
+    },
+    {
+      "pc": "0x981c",
+      "operation": "s32i.n",
+      "address": "0x5ffed7d8",
+      "address_candidates": [],
+      "source": "a5",
+      "source_constant": null,
+      "base": "a6",
+      "offset": "0"
+    }
+  ],
+  "initial_context_magic": "0x0",
+  "initial_saved_intenable": "0x0",
+  "save_site": "9c42 RSR.INTENABLE;9c45 store context+124",
+  "restore_site": "9f4b load context+124;9f4e WSR.INTENABLE",
+  "context": "5ffee044 passed by7710/7ce9; field5ffee168",
+  "scope": "Initial values and identified code only; saved-context mutation and register semantics not globally closed"
+}

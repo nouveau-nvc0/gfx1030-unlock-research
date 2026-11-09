@@ -1,0 +1,50 @@
+{
+  "scope": "Synthetic dataflow fixture; decoder FPU update variant unproven, both addresses retained",
+  "source": "https://raw.githubusercontent.com/qemu/qemu/master/target/xtensa/translate.c",
+  "stores": [
+    {
+      "pc": "0x9",
+      "operation": "ssi",
+      "address": "0x1208924",
+      "address_candidates": [],
+      "source": "f0",
+      "source_constant": null,
+      "base": "a8",
+      "offset": "0x24"
+    },
+    {
+      "pc": "0xc",
+      "operation": "ssip",
+      "address": null,
+      "address_candidates": [
+        "0x1208900",
+        "0x1208904"
+      ],
+      "source": "f0",
+      "source_constant": null,
+      "base": "a8",
+      "offset": "4"
+    },
+    {
+      "pc": "0xf",
+      "operation": "ssi",
+      "address": null,
+      "address_candidates": [],
+      "source": "f0",
+      "source_constant": null,
+      "base": "a8",
+      "offset": "0x24"
+    },
+    {
+      "pc": "0x18",
+      "operation": "ssx",
+      "address": "0x12089bc",
+      "address_candidates": [],
+      "source": "f0",
+      "source_constant": null,
+      "base": "a8",
+      "offset": "a9"
+    }
+  ],
+  "result": "pass"
+}

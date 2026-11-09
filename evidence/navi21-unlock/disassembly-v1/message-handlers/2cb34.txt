@@ -1,0 +1,51 @@
+
+/tmp/tmph3_kwjv7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002cb34 <.data+0x2cb34>:
+0002cb34: 366100   entry        a1, 0x30 ; Capstone
+   2cb37:	ad02      	mov.n	a10, a2
+0002cb39: 6558d5   call8        . -0x2aa78 ; Capstone ; target=0x20c0
+   2cb3c:	3d0a      	mov.n	a3, a10
+   2cb3e:	0c8a      	movi.n	a10, 8
+0002cb40: e5a3d5   call8        . -0x2a5c0 ; Capstone ; target=0x2580
+   2cb43:	30a075        	extui	a10, a3, 16, 8
+0002cb46: 656204   call8        . +0x4628 ; Capstone ; target=0x3116c
+   2cb49:	4d0a      	mov.n	a4, a10
+   2cb4b:	ccda      	bnez.n	a10, 0x2cb5c
+   2cb4d:	0c8a      	movi.n	a10, 8
+0002cb4f: 6592d5   call8        . -0x2a6d8 ; Capstone ; target=0x2474
+   2cb52:	ad02      	mov.n	a10, a2
+   2cb54:	b2a0ff        	movi	a11, 255
+0002cb57: 6554d5   call8        . -0x2aab8 ; Capstone ; target=0x209c
+0002cb5a: 1df0     retw.n        ; Capstone
+   2cb5c:	0c1a      	movi.n	a10, 1
+0002cb5e: 65160a   call8        . +0xa168 ; Capstone ; target=0x36cc4
+   2cb61:	816199        	l32r	a8, 0x130e8 (0x3a83126f)
+   2cb64:	3090f4        	extui	a9, a3, 0, 16
+0002cb67: 0019da   ufloat.s     f1, a9, 0 ; Capstone
+0002cb6a: 5028fa   wfr          f2, a8 ; Capstone
+0002cb6d: 20012a   mul.s        f0, f1, f2 ; Capstone
+   2cb70:	ad04      	mov.n	a10, a4
+0002cb72: 40b0fa   rfr          a11, f0 ; Capstone
+0002cb75: a57508   call8        . +0x875c ; Capstone ; target=0x352d0
+0002cb78: 503afa   wfr          f3, a10 ; Capstone
+0002cb7b: 334100   ssi          f3, a1, 0 ; Capstone
+   2cb7e:	0c0a      	movi.n	a10, 0
+0002cb80: 25140a   call8        . +0xa144 ; Capstone ; target=0x36cc4
+   2cb83:	0c8a      	movi.n	a10, 8
+0002cb85: e58ed5   call8        . -0x2a710 ; Capstone ; target=0x2474
+   2cb88:	a10d9c        	l32r	a10, 0x13bbc (0x457a0000)
+0002cb8b: 530100   lsi          f5, a1, 0 ; Capstone
+0002cb8e: 506afa   wfr          f6, a10 ; Capstone
+0002cb91: 60452a   mul.s        f4, f5, f6 ; Capstone
+   2cb94:	ad02      	mov.n	a10, a2
+0002cb96: 00b4ea   utrunc.s     a11, f4, 0 ; Capstone
+0002cb99: 6523d5   call8        . -0x2adc8 ; Capstone ; target=0x1dd0
+   2cb9c:	ad02      	mov.n	a10, a2
+   2cb9e:	0c1b      	movi.n	a11, 1
+0002cba0: a54fd5   call8        . -0x2ab04 ; Capstone ; target=0x209c
+0002cba3: 1df0     retw.n        ; Capstone
+   2cba5:	000000        	ill

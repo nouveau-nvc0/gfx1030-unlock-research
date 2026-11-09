@@ -1,0 +1,63 @@
+
+/tmp/tmpj6wg4_yz/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000389fc <.data+0x389fc>:
+000389fc: 364100   entry        a1, 0x20 ; Capstone
+   389ff:	7cfa      	movi.n	a10, -1
+   38a01:	91646f        	l32r	a9, 0x14794 (0x7b40)
+   38a04:	82a100        	movi	a8, 0x100
+00038a07: 76a804   loopgtz      a8, . +8 ; Capstone
+   38a0a:	a24980        	s8i	a10, a9, 128
+   38a0d:	1b99      	addi.n	a9, a9, 1
+   38a0f:	91636e        	l32r	a9, 0x1439c (0x7278)
+   38a12:	32a0ff        	movi	a3, 255
+   38a15:	1c4a      	movi.n	a10, 20
+   38a17:	5d09      	mov.n	a5, a9
+00038a19: 76aa05   loopgtz      a10, . +9 ; Capstone
+   38a1c:	325586        	s16i	a3, a5, 0x10c
+   38a1f:	52c518        	addi	a5, a5, 24
+   38a22:	5d09      	mov.n	a5, a9
+   38a24:	0c06      	movi.n	a6, 0
+   38a26:	410d69        	l32r	a4, 0x12e5c (0x69a0)
+   38a29:	215b6f        	l32r	a2, 0x14798 (0x9d4)
+   38a2c:	1c47      	movi.n	a7, 20
+   38a2e:	a2157e        	l16ui	a10, a5, 252
+   38a31:	b205fe        	l8ui	a11, a5, 254
+00038a34: e5bcc9   call8        . -0x36430 ; Capstone ; target=0x2604
+   38a37:	b1596f        	l32r	a11, 0x1479c (0x7ac4)
+   38a3a:	52c518        	addi	a5, a5, 24
+   38a3d:	c2cb7c        	addi	a12, a11, 124
+   38a40:	cada      	add.n	a13, a10, a12
+   38a42:	a20d80        	l8ui	a10, a13, 128
+   38a45:	e1566f        	l32r	a14, 0x147a0 (0x7288)
+   38a48:	2af4      	add.n	a15, a4, a2
+   38a4a:	379a07        	bne	a10, a3, 0x38a55
+   38a4d:	624d80        	s8i	a6, a13, 128
+   38a50:	0c1a      	movi.n	a10, 1
+   38a52:	c60a00        	j	0x38a81
+   38a55:	a0da90        	addx2	a13, a10, a10
+   38a58:	e0edb0        	addx8	a14, a13, a14
+   38a5b:	e29e7e        	l16si	a14, a14, 252
+   38a5e:	f0ddb0        	addx8	a13, a13, a15
+   38a61:	c29d08        	l16si	a12, a13, 16
+   38a64:	371e14        	beq	a14, a3, 0x38a7c
+   38a67:	0c2a      	movi.n	a10, 2
+   38a69:	c0dc90        	addx2	a13, a12, a12
+   38a6c:	40ddb0        	addx8	a13, a13, a4
+   38a6f:	2add      	add.n	a13, a13, a2
+   38a71:	c29d08        	l16si	a12, a13, 16
+   38a74:	1baa      	addi.n	a10, a10, 1
+   38a76:	379cef        	bne	a12, a3, 0x38a69
+   38a79:	460000        	j	0x38a7e
+   38a7c:	0c2a      	movi.n	a10, 2
+   38a7e:	625d08        	s16i	a6, a13, 16
+   38a81:	e22b7f        	l32i	a14, a11, 0x1fc
+   38a84:	1b66      	addi.n	a6, a6, 1
+00038a86: a0ee73   maxu         a14, a14, a10 ; Capstone
+   38a89:	e26b7f        	s32i	a14, a11, 0x1fc
+   38a8c:	77969e        	bne	a6, a7, 0x38a2e
+00038a8f: 1df0     retw.n        ; Capstone
+   38a91:	000000        	ill

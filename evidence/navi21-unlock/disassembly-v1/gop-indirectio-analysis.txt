@@ -1,0 +1,38 @@
+GOP indirect-I/O dispatcher and stock input, offline
+
+Baseline x64 function8f08 uses a9-byte record table atbc50: pointer+length.
+The first10 records decode as:
+0/1 ->9f04,length1/2;2 ->7ee0,length3;3 ->7f18,length3;
+4 ->8ee4,length3;5 ->8ec0,length3;6/7/8 ->8db8/8e10/8e68,length4;
+9 ->9f04,length3. Machine-readable:gop-indirectio-table.json.
+No index bound is proven merely from the apparent10-record table layout.
+
+Function8f08 reads stream pointer at context+32. It scans for START opcode1
+whose following byte equals selection context+28; zero terminates. Once
+selected, it dispatches records through8f86 until END opcode9. WRITE opcode3
+calls7f18, whose WORD operand at stream+1 becomes register index and whose
+context+28 value is sent to6468. Read opcode2 uses7ee0/6320.
+Caller8fb8 uses selection128+port for writes; the read path at91a9..91af
+uses the unadjusted port. Address/data transformations still
+depend on the selected indirect-I/O program.
+
+Root pointer provenance is explicit in8824:
+884c gets ATOM header atROM+48;8856 gets master data offset at header+20;
+885c forms master-data entries pointer(+4).8865 reads WORD at entry+2e,
+i.e. data-table index23.8869 forms ROM+table_offset+4 and886e stores it
+at oldRSP-36. Interpreter context starts currentRSP+20 (8a03); after push
+and allocation currentRSP=oldRSP-88, so this is context+32 exactly.
+
+Both pinned reference ROMs have data23 bytes0800010100000000: a4-byte header
+and4 zero payload bytes. Therefore initial8f08 returns0 before selecting or
+executing an indirect-I/O program. It does not perform the WRITE3 operation
+with these unchanged table bytes. This does not close the ordinary ATOM REG
+write path, which calls6468 without8f08, or runtime-changed table contents.
+
+Verification: scripts/navi21-gop-indirectio-check.py executes original XL x64
+dispatcher bytes in Unicorn against each ROM's payload, selections0,1,128,255.
+All8 cases return0 with normal stack restoration and no write-handler visit.
+A synthetic in-memory START128/WRITE226f/END stream reaches the7f18 hook;
+execution stops before entering that handler. Positive control checks the
+dispatcher test's reachability, not firmware load or hardware write acceptance.
+Receipt:gop-indirectio-replay.json. No GPU access or persistent changes.

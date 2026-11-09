@@ -1,0 +1,24 @@
+
+/tmp/tmpjsket9x2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001b168 <.data+0x1b168>:
+0001b168: 364100   entry        a1, 0x20 ; Capstone
+   1b16b:	213cdf        	l32r	a2, 0x12e5c (0x69a0)
+   1b16e:	c02000        	memw
+   1b171:	8832      	l32i.n	a8, a2, 12
+   1b173:	dc58      	bnez.n	a8, 0x1b18c
+   1b175:	a167df        	l32r	a10, 0x12f14 (0x1b0cc)
+   1b178:	0c6b      	movi.n	a11, 6
+   1b17a:	0c0c      	movi.n	a12, 0
+   1b17c:	0c0d      	movi.n	a13, 0
+   1b17e:	0c1e      	movi.n	a14, 1
+   1b180:	0c0f      	movi.n	a15, 0
+0001b182: 65fbe6   call8        . -0x19048 ; Capstone ; target=0x2138
+   1b185:	0c19      	movi.n	a9, 1
+   1b187:	c02000        	memw
+   1b18a:	9932      	s32i.n	a9, a2, 12
+0001b18c: 1df0     retw.n        ; Capstone
+	...

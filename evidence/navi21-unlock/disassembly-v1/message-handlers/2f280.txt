@@ -1,0 +1,22 @@
+
+/tmp/tmpizb_2xvf/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002f280 <.data+0x2f280>:
+0002f280: 364100   entry        a1, 0x20 ; Capstone
+   2f283:	a2a089        	movi	a10, 137
+0002f286: a52fd3   call8        . -0x2cd04 ; Capstone ; target=0x2580
+   2f289:	b1288f        	l32r	a11, 0x12f2c (0x141d600)
+   2f28c:	c02000        	memw
+   2f28f:	ad02      	mov.n	a10, a2
+   2f291:	b22b73        	l32i	a11, a11, 0x1cc
+0002f294: a5b3d2   call8        . -0x2d4c4 ; Capstone ; target=0x1dd0
+   2f297:	ad02      	mov.n	a10, a2
+   2f299:	0c1b      	movi.n	a11, 1
+0002f29b: 25e0d2   call8        . -0x2d1fc ; Capstone ; target=0x209c
+   2f29e:	a2a089        	movi	a10, 137
+0002f2a1: 251dd3   call8        . -0x2ce2c ; Capstone ; target=0x2474
+0002f2a4: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,33 @@
+
+/tmp/tmp46l42u04/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00021828 <.data+0x21828>:
+00021828: 364100   entry        a1, 0x20 ; Capstone
+   2182b:	6148c7        	l32r	a6, 0x1354c (0xf9b4)
+   2182e:	0c19      	movi.n	a9, 1
+   21830:	6a62      	add.n	a6, a2, a6
+   21832:	620680        	l8ui	a6, a6, 128
+   21835:	1c33      	movi.n	a3, 19
+   21837:	1c45      	movi.n	a5, 20
+   21839:	1b66      	addi.n	a6, a6, 1
+0002183b: 5066f2   rems         a6, a6, a5 ; Capstone
+   2183e:	673324        	bltu	a3, a6, 0x21866
+   21841:	6085c0        	sub	a8, a5, a6
+00021844: 908853   max          a8, a8, a9 ; Capstone
+   21847:	512ec7        	l32r	a5, 0x13500 (0xf0f4)
+   2184a:	6096f0        	subx8	a9, a6, a6
+   2184d:	c09911        	slli	a9, a9, 4
+   21850:	9a55      	add.n	a5, a5, a9
+00021852: 76a810   loopgtz      a8, . +0x14 ; Capstone
+   21855:	a20580        	l8ui	a10, a5, 128
+   21858:	b20584        	l8ui	a11, a5, 132
+   2185b:	662a02        	bnei	a10, 2, 0x21861
+   2185e:	271b04        	beq	a11, a2, 0x21866
+   21861:	1b66      	addi.n	a6, a6, 1
+   21863:	52c570        	addi	a5, a5, 112
+   21866:	602074        	extui	a2, a6, 0, 8
+00021869: 1df0     retw.n        ; Capstone
+	...

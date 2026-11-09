@@ -1,0 +1,10 @@
+
+/tmp/tmpx5cwrzcy/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000057c <.data+0x57c>:
+     57c:	20d261        	xsr.excsave2	a2
+     57f:	a00200        	jx	a2
+	...

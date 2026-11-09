@@ -1,0 +1,10 @@
+
+/tmp/tmpkbvdkjjn/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000303e8 <.data+0x303e8>:
+000303e8: 364100   entry        a1, 0x20 ; Capstone
+000303eb: 1df0     retw.n        ; Capstone
+   303ed:	000000        	ill

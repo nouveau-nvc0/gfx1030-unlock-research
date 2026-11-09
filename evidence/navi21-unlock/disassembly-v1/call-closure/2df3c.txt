@@ -1,0 +1,12 @@
+
+/tmp/tmpvjbi86mb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002df3c <.data+0x2df3c>:
+0002df3c: 364100   entry        a1, 0x20 ; Capstone
+   2df3f:	21c895        	l32r	a2, 0x13660 (0xfd78)
+   2df42:	22227f        	l32i	a2, a2, 0x1fc
+0002df45: 1df0     retw.n        ; Capstone
+	...

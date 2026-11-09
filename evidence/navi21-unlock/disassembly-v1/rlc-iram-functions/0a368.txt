@@ -1,0 +1,26 @@
+
+/tmp/tmpwwkx0x69/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000a368 <.data+0xa368>:
+0000a368: 364100   entry        a1, 0x20 ; Capstone
+0000a36b: 1df0     retw.n        ; Capstone
+    a36d:	000000        	ill
+    a370:	2841      	l32i.n	a2, a1, 16
+    a372:	3851      	l32i.n	a3, a1, 20
+    a374:	12c160        	addi	a1, a1, 96
+    a377:	104100        	break	1, 1
+    a37a:	003000        	rfe
+    a37d:	000000        	ill
+    a380:	2815      	l32i.n	a2, a5, 4
+    a382:	3805      	l32i.n	a3, a5, 0
+    a384:	20e613        	wsr.ps	a2
+    a387:	2845      	l32i.n	a2, a5, 16
+    a389:	4865      	l32i.n	a4, a5, 24
+    a38b:	102000        	rsync
+    a38e:	30b113        	wsr.epc1	a3
+    a391:	3855      	l32i.n	a3, a5, 20
+    a393:	5875      	l32i.n	a5, a5, 28
+    a395:	003000        	rfe

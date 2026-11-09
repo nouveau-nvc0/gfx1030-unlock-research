@@ -1,0 +1,25 @@
+
+/tmp/tmpl_wtcv13/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001f5cc <.data+0x1f5cc>:
+0001f5cc: 364100   entry        a1, 0x20 ; Capstone
+   1f5cf:	0c8a      	movi.n	a10, 8
+0001f5d1: e5fae2   call8        . -0x1d050 ; Capstone ; target=0x2580
+   1f5d4:	2148cf        	l32r	a2, 0x132f4 (0xfe8c)
+   1f5d7:	0c28      	movi.n	a8, 2
+   1f5d9:	82427d        	s8i	a8, a2, 125
+0001f5dc: e56301   call8        . +0x1640 ; Capstone ; target=0x20c1c
+   1f5df:	9146cf        	l32r	a9, 0x132f8 (0xb024)
+0001f5e2: 503afa   wfr          f3, a10 ; Capstone
+0001f5e5: 43097f   lsi          f4, a9, 0x1fc ; Capstone
+0001f5e8: 40231a   sub.s        f2, f3, f4 ; Capstone
+0001f5eb: 130224   lsi          f1, a2, 0x90 ; Capstone
+0001f5ee: 20010a   add.s        f0, f1, f2 ; Capstone
+   1f5f1:	0c8a      	movi.n	a10, 8
+0001f5f3: 034224   ssi          f0, a2, 0x90 ; Capstone
+0001f5f6: e5e7e2   call8        . -0x1d180 ; Capstone ; target=0x2474
+0001f5f9: 1df0     retw.n        ; Capstone
+	...

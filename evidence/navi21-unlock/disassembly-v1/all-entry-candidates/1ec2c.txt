@@ -1,0 +1,13 @@
+
+/tmp/tmp8x4issl2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001ec2c <.data+0x1ec2c>:
+0001ec2c: 364100   entry        a1, 0x20 ; Capstone
+   1ec2f:	21a1d1        	l32r	a2, 0x132b4 (0xc190)
+0001ec32: 030281   lsi          f0, a2, 0x204 ; Capstone
+0001ec35: 03427d   ssi          f0, a2, 0x1f4 ; Capstone
+0001ec38: 1df0     retw.n        ; Capstone
+	...

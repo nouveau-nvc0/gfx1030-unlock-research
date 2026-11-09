@@ -1,0 +1,933 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "raw_words": [
+    {
+      "pc": "0x2e7a",
+      "word": "cc81e800"
+    },
+    {
+      "pc": "0x2e7b",
+      "word": "da01e804"
+    },
+    {
+      "pc": "0x2e7c",
+      "word": "c425e805"
+    },
+    {
+      "pc": "0x2e7d",
+      "word": "26640002"
+    },
+    {
+      "pc": "0x2e7e",
+      "word": "964ffffe"
+    },
+    {
+      "pc": "0x2e7f",
+      "word": "d901e804"
+    },
+    {
+      "pc": "0x2e80",
+      "word": "c425e805"
+    },
+    {
+      "pc": "0x2e81",
+      "word": "26640002"
+    },
+    {
+      "pc": "0x2e82",
+      "word": "9a4ffffe"
+    },
+    {
+      "pc": "0x2e83",
+      "word": "c40de803"
+    },
+    {
+      "pc": "0x2e84",
+      "word": "90000000"
+    },
+    {
+      "pc": "0x2e85",
+      "word": "cc81e800"
+    },
+    {
+      "pc": "0x2e86",
+      "word": "ccc1e801"
+    },
+    {
+      "pc": "0x2e87",
+      "word": "d881e804"
+    },
+    {
+      "pc": "0x2e88",
+      "word": "c425e805"
+    },
+    {
+      "pc": "0x2e89",
+      "word": "26640001"
+    },
+    {
+      "pc": "0x2e8a",
+      "word": "964ffffe"
+    },
+    {
+      "pc": "0x2e8b",
+      "word": "d841e804"
+    },
+    {
+      "pc": "0x2e8c",
+      "word": "c425e805"
+    },
+    {
+      "pc": "0x2e8d",
+      "word": "26640001"
+    },
+    {
+      "pc": "0x2e8e",
+      "word": "9a4ffffe"
+    },
+    {
+      "pc": "0x2e8f",
+      "word": "90000000"
+    }
+  ],
+  "calls": {
+    "0x2e7a": [
+      {
+        "pc": "0x2b4f",
+        "preceding_word": "c0080021",
+        "immediate_index": 33
+      },
+      {
+        "pc": "0x2b53",
+        "preceding_word": "c0080023",
+        "immediate_index": 35
+      },
+      {
+        "pc": "0x2b57",
+        "preceding_word": "c0080025",
+        "immediate_index": 37
+      },
+      {
+        "pc": "0x2b5b",
+        "preceding_word": "c0080027",
+        "immediate_index": 39
+      },
+      {
+        "pc": "0x2b67",
+        "preceding_word": "c008002c",
+        "immediate_index": 44
+      },
+      {
+        "pc": "0x2b76",
+        "preceding_word": "c0080002",
+        "immediate_index": 2
+      },
+      {
+        "pc": "0x2b7a",
+        "preceding_word": "c0080003",
+        "immediate_index": 3
+      },
+      {
+        "pc": "0x2b8c",
+        "preceding_word": "c008000e",
+        "immediate_index": 14
+      },
+      {
+        "pc": "0x2b91",
+        "preceding_word": "c0080012",
+        "immediate_index": 18
+      },
+      {
+        "pc": "0x2b99",
+        "preceding_word": "c008000f",
+        "immediate_index": 15
+      },
+      {
+        "pc": "0x2b9d",
+        "preceding_word": "c0080013",
+        "immediate_index": 19
+      },
+      {
+        "pc": "0x2ba1",
+        "preceding_word": "c008000f",
+        "immediate_index": 15
+      },
+      {
+        "pc": "0x2ba5",
+        "preceding_word": "c0080013",
+        "immediate_index": 19
+      },
+      {
+        "pc": "0x2bc2",
+        "preceding_word": "c0080021",
+        "immediate_index": 33
+      },
+      {
+        "pc": "0x2bc6",
+        "preceding_word": "c0080023",
+        "immediate_index": 35
+      },
+      {
+        "pc": "0x2bca",
+        "preceding_word": "c0080025",
+        "immediate_index": 37
+      },
+      {
+        "pc": "0x2bcf",
+        "preceding_word": "c0080027",
+        "immediate_index": 39
+      },
+      {
+        "pc": "0x2be2",
+        "preceding_word": "c008002c",
+        "immediate_index": 44
+      },
+      {
+        "pc": "0x2bf1",
+        "preceding_word": "c0080002",
+        "immediate_index": 2
+      },
+      {
+        "pc": "0x2bf5",
+        "preceding_word": "c0080003",
+        "immediate_index": 3
+      },
+      {
+        "pc": "0x2c09",
+        "preceding_word": "c008000e",
+        "immediate_index": 14
+      },
+      {
+        "pc": "0x2c0e",
+        "preceding_word": "c0080012",
+        "immediate_index": 18
+      },
+      {
+        "pc": "0x2c14",
+        "preceding_word": "c008002b",
+        "immediate_index": 43
+      },
+      {
+        "pc": "0x2c21",
+        "preceding_word": "c008000f",
+        "immediate_index": 15
+      },
+      {
+        "pc": "0x2c25",
+        "preceding_word": "c0080013",
+        "immediate_index": 19
+      },
+      {
+        "pc": "0x2c29",
+        "preceding_word": "c008000f",
+        "immediate_index": 15
+      },
+      {
+        "pc": "0x2c2d",
+        "preceding_word": "c0080013",
+        "immediate_index": 19
+      },
+      {
+        "pc": "0x2cd7",
+        "preceding_word": "c0080031",
+        "immediate_index": 49
+      },
+      {
+        "pc": "0x2ce6",
+        "preceding_word": "c008000e",
+        "immediate_index": 14
+      },
+      {
+        "pc": "0x2ceb",
+        "preceding_word": "c0080012",
+        "immediate_index": 18
+      },
+      {
+        "pc": "0x2cf0",
+        "preceding_word": "c0080021",
+        "immediate_index": 33
+      },
+      {
+        "pc": "0x2cf7",
+        "preceding_word": "c0080023",
+        "immediate_index": 35
+      },
+      {
+        "pc": "0x2cfe",
+        "preceding_word": "c0080025",
+        "immediate_index": 37
+      },
+      {
+        "pc": "0x2d05",
+        "preceding_word": "c0080027",
+        "immediate_index": 39
+      },
+      {
+        "pc": "0x2d0e",
+        "preceding_word": "c0080002",
+        "immediate_index": 2
+      },
+      {
+        "pc": "0x2d12",
+        "preceding_word": "c0080003",
+        "immediate_index": 3
+      },
+      {
+        "pc": "0x2d1d",
+        "preceding_word": "c008000f",
+        "immediate_index": 15
+      },
+      {
+        "pc": "0x2d21",
+        "preceding_word": "c0080013",
+        "immediate_index": 19
+      },
+      {
+        "pc": "0x2d25",
+        "preceding_word": "c008000f",
+        "immediate_index": 15
+      },
+      {
+        "pc": "0x2d29",
+        "preceding_word": "c0080013",
+        "immediate_index": 19
+      },
+      {
+        "pc": "0x2d3f",
+        "preceding_word": "c0080027",
+        "immediate_index": 39
+      },
+      {
+        "pc": "0x2d45",
+        "preceding_word": "c0080012",
+        "immediate_index": 18
+      },
+      {
+        "pc": "0x2d4a",
+        "preceding_word": "c0080025",
+        "immediate_index": 37
+      },
+      {
+        "pc": "0x2d4f",
+        "preceding_word": "c0080012",
+        "immediate_index": 18
+      },
+      {
+        "pc": "0x2d55",
+        "preceding_word": "c0080025",
+        "immediate_index": 37
+      },
+      {
+        "pc": "0x2d5b",
+        "preceding_word": "c0080012",
+        "immediate_index": 18
+      },
+      {
+        "pc": "0x2d60",
+        "preceding_word": "c0080027",
+        "immediate_index": 39
+      },
+      {
+        "pc": "0x2d65",
+        "preceding_word": "c0080012",
+        "immediate_index": 18
+      },
+      {
+        "pc": "0x2d73",
+        "preceding_word": "c0080025",
+        "immediate_index": 37
+      },
+      {
+        "pc": "0x2d78",
+        "preceding_word": "c0080027",
+        "immediate_index": 39
+      },
+      {
+        "pc": "0x2d80",
+        "preceding_word": "c0080021",
+        "immediate_index": 33
+      },
+      {
+        "pc": "0x2d85",
+        "preceding_word": "c0080023",
+        "immediate_index": 35
+      },
+      {
+        "pc": "0x2dc0",
+        "preceding_word": "c008000f",
+        "immediate_index": 15
+      },
+      {
+        "pc": "0x2dc4",
+        "preceding_word": "c0080013",
+        "immediate_index": 19
+      },
+      {
+        "pc": "0x2dcc",
+        "preceding_word": "c0080021",
+        "immediate_index": 33
+      },
+      {
+        "pc": "0x2dd5",
+        "preceding_word": "c0080023",
+        "immediate_index": 35
+      },
+      {
+        "pc": "0x2dde",
+        "preceding_word": "c0080025",
+        "immediate_index": 37
+      },
+      {
+        "pc": "0x2de7",
+        "preceding_word": "c0080027",
+        "immediate_index": 39
+      },
+      {
+        "pc": "0x2e0f",
+        "preceding_word": "c0080060",
+        "immediate_index": 96
+      },
+      {
+        "pc": "0x2e16",
+        "preceding_word": "c0080061",
+        "immediate_index": 97
+      },
+      {
+        "pc": "0x2e1f",
+        "preceding_word": "c0080060",
+        "immediate_index": 96
+      },
+      {
+        "pc": "0x2e26",
+        "preceding_word": "c0080061",
+        "immediate_index": 97
+      },
+      {
+        "pc": "0x2e33",
+        "preceding_word": "c0080060",
+        "immediate_index": 96
+      },
+      {
+        "pc": "0x2e39",
+        "preceding_word": "c0080061",
+        "immediate_index": 97
+      },
+      {
+        "pc": "0x2e3e",
+        "preceding_word": "c0080060",
+        "immediate_index": 96
+      },
+      {
+        "pc": "0x2e45",
+        "preceding_word": "c0080061",
+        "immediate_index": 97
+      },
+      {
+        "pc": "0x2e51",
+        "preceding_word": "c0080038",
+        "immediate_index": 56
+      },
+      {
+        "pc": "0x2e55",
+        "preceding_word": "c0080037",
+        "immediate_index": 55
+      },
+      {
+        "pc": "0x2e58",
+        "preceding_word": "c0080038",
+        "immediate_index": 56
+      },
+      {
+        "pc": "0x2e5c",
+        "preceding_word": "c0080038",
+        "immediate_index": 56
+      },
+      {
+        "pc": "0x2e6f",
+        "preceding_word": "c0080038",
+        "immediate_index": 56
+      },
+      {
+        "pc": "0x2e73",
+        "preceding_word": "c0080037",
+        "immediate_index": 55
+      },
+      {
+        "pc": "0x2e76",
+        "preceding_word": "c0080038",
+        "immediate_index": 56
+      },
+      {
+        "pc": "0x2f73",
+        "preceding_word": "c0080029",
+        "immediate_index": 41
+      },
+      {
+        "pc": "0x2f8a",
+        "preceding_word": "c0080029",
+        "immediate_index": 41
+      },
+      {
+        "pc": "0x2fa1",
+        "preceding_word": "c0080029",
+        "immediate_index": 41
+      }
+    ],
+    "0x2e85": [
+      {
+        "pc": "0x2b51",
+        "preceding_word": "28cc0400",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2b55",
+        "preceding_word": "28cc0400",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2b59",
+        "preceding_word": "24ccf7ff",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2b5d",
+        "preceding_word": "24ccf7ff",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2b62",
+        "preceding_word": "28cc000a",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2b65",
+        "preceding_word": "c00c03e8",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2b6c",
+        "preceding_word": "7cd0c00a",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2b78",
+        "preceding_word": "28cc1000",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2b7c",
+        "preceding_word": "28cc1000",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2b8f",
+        "preceding_word": "24ccfdff",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2b94",
+        "preceding_word": "24ccfdff",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2b9b",
+        "preceding_word": "28cc0008",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2b9f",
+        "preceding_word": "28cc0008",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2ba3",
+        "preceding_word": "28cc0004",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2ba7",
+        "preceding_word": "28cc0004",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2bc4",
+        "preceding_word": "28cc0400",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2bc8",
+        "preceding_word": "28cc0400",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2bcd",
+        "preceding_word": "24ccfbff",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2bd2",
+        "preceding_word": "24ccfbff",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2bd7",
+        "preceding_word": "28cc000a",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2bda",
+        "preceding_word": "c00c03e8",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2bdd",
+        "preceding_word": "c00c0001",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2be0",
+        "preceding_word": "c00c05dc",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2be7",
+        "preceding_word": "7cd0c00a",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2bf3",
+        "preceding_word": "28cc1000",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2bf7",
+        "preceding_word": "28cc1000",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2c0c",
+        "preceding_word": "24ccfdff",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2c11",
+        "preceding_word": "24ccfdff",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2c1f",
+        "preceding_word": "7cd4c00a",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2c23",
+        "preceding_word": "28cc0008",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2c27",
+        "preceding_word": "28cc0008",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2c2b",
+        "preceding_word": "28cc0004",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2c2f",
+        "preceding_word": "28cc0004",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2ca8",
+        "preceding_word": "c00c0000",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2cae",
+        "preceding_word": "c0080028",
+        "immediate_index": 40
+      },
+      {
+        "pc": "0x2cb1",
+        "preceding_word": "c0080029",
+        "immediate_index": 41
+      },
+      {
+        "pc": "0x2cda",
+        "preceding_word": "7cd0c009",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2cdd",
+        "preceding_word": "c00c0003",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2ce4",
+        "preceding_word": "c00c1f40",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2ce9",
+        "preceding_word": "24ccffdf",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2cee",
+        "preceding_word": "24ccffdf",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2cf5",
+        "preceding_word": "28cc0004",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2cfc",
+        "preceding_word": "28cc0004",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d03",
+        "preceding_word": "28cc0004",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d0a",
+        "preceding_word": "28cc0004",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d10",
+        "preceding_word": "28cc1000",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d14",
+        "preceding_word": "28cc1000",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d1f",
+        "preceding_word": "28cc0008",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d23",
+        "preceding_word": "28cc0008",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d27",
+        "preceding_word": "28cc0004",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d2b",
+        "preceding_word": "28cc0004",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d32",
+        "preceding_word": "7cccc00b",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d43",
+        "preceding_word": "28cc0064",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d48",
+        "preceding_word": "7cd0c009",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d4d",
+        "preceding_word": "7cd0c009",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d51",
+        "preceding_word": "28cc0001",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d59",
+        "preceding_word": "28cc0064",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d5e",
+        "preceding_word": "7cd0c009",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d63",
+        "preceding_word": "7cd0c009",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d67",
+        "preceding_word": "28cc0020",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d76",
+        "preceding_word": "7cd0c009",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d7b",
+        "preceding_word": "7cd0c009",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d7e",
+        "preceding_word": "c00c0000",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d83",
+        "preceding_word": "7cd0c009",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2d88",
+        "preceding_word": "7cd0c009",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2dc2",
+        "preceding_word": "24ccfffb",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2dc6",
+        "preceding_word": "24ccfffb",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2dd3",
+        "preceding_word": "7cd0c009",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2ddc",
+        "preceding_word": "7cd0c009",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2de5",
+        "preceding_word": "7cd0c009",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2dee",
+        "preceding_word": "7cd0c009",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2df7",
+        "preceding_word": "24ccffff",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2e14",
+        "preceding_word": "7cd0c00a",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2e19",
+        "preceding_word": "7cd0c00a",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2e24",
+        "preceding_word": "7cd0c00a",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2e29",
+        "preceding_word": "7cd0c00a",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2e37",
+        "preceding_word": "7cd0c00a",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2e3c",
+        "preceding_word": "7cd0c00a",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2e43",
+        "preceding_word": "7cd0c00a",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2e48",
+        "preceding_word": "7cd0c00a",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2e4c",
+        "preceding_word": "c00c0001",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2e5a",
+        "preceding_word": "24ccfffe",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2e6d",
+        "preceding_word": "c00c0001",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2e78",
+        "preceding_word": "24ccfffe",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2f76",
+        "preceding_word": "7cccc00b",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2f87",
+        "preceding_word": "7d40c001",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2f8c",
+        "preceding_word": "24ccfffe",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2fa6",
+        "preceding_word": "7cd0c00a",
+        "immediate_index": null
+      },
+      {
+        "pc": "0x2ff2",
+        "preceding_word": "28cc0001",
+        "immediate_index": null
+      }
+    ]
+  },
+  "findings": [
+    "Both helpers first store r2 to operand e800 in encoded address mode1; no local mask, scaling or index range check precedes that store.",
+    "Read-shaped helper obtains r3 from e803 after two status polls using mask2. Write-shaped helper stores r3 to e801 and uses status mask1. Both use control operand e804 and status operand e805.",
+    "This is an indexed transaction interface under the retained partial ISA interpretation, not an immediate store to address r2. Index-to-register or index-to-RAM correspondence remains unidentified.",
+    "The76 read calls have immediately preceding fixed index assignments. The89 write calls still require caller dataflow; nearby constants alone are not a proven bound.",
+    "No CC or saved-mask address relationship is established by this helper structure. Do not identify its physical block from another generation or from multiplication of e800 alone."
+  ],
+  "next": "For this family, obtain matching-generation index-map evidence before treating a numerical index as CC or RAM. Retain write caller provenance as open; no model-independent no-CC conclusion.",
+  "scope": "22 raw words and literal call inventory; partial ISA, no physical mapping or runtime behavior established. No hardware access."
+}

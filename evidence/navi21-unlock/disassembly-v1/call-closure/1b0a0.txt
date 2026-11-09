@@ -1,0 +1,24 @@
+
+/tmp/tmpsu7swwcl/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001b0a0 <.data+0x1b0a0>:
+0001b0a0: 366100   entry        a1, 0x30 ; Capstone
+   1b0a3:	ad01      	mov.n	a10, a1
+0001b0a5: e582ff   call8        . -0x7d0 ; Capstone ; target=0x1a8d4
+   1b0a8:	9d01      	mov.n	a9, a1
+   1b0aa:	82a004        	movi	a8, 4
+0001b0ad: 76a816   loopgtz      a8, . +0x1a ; Capstone
+   1b0b0:	c809      	l32i.n	a12, a9, 0
+   1b0b2:	4b99      	addi.n	a9, a9, 4
+   1b0b4:	c0a8f4        	extui	a10, a12, 8, 16
+   1b0b7:	c0b254        	extui	a11, a12, 2, 6
+   1b0ba:	b24201        	s8i	a11, a2, 1
+   1b0bd:	a912      	s32i.n	a10, a2, 4
+   1b0bf:	c0c014        	extui	a12, a12, 0, 2
+   1b0c2:	c24200        	s8i	a12, a2, 0
+   1b0c5:	8b22      	addi.n	a2, a2, 8
+0001b0c7: 1df0     retw.n        ; Capstone
+   1b0c9:	000000        	ill

@@ -1,0 +1,84 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "copy_body_IRAM_offsets": [
+    "0xa1bd",
+    "0xa2fc"
+  ],
+  "raw_scan_positions": 65534,
+  "external_range_hits": [
+    {
+      "pc": "0x135d",
+      "target": "0xa1fc",
+      "kind": "CALL",
+      "raw": "e5e908",
+      "classification": "known direct CALL8 to primary copy entry"
+    },
+    {
+      "pc": "0x2ce1",
+      "target": "0xa1fc",
+      "kind": "CALL",
+      "raw": "a55107",
+      "classification": "known direct CALL8 to primary copy entry"
+    },
+    {
+      "pc": "0x4397",
+      "target": "0xa218",
+      "kind": "CALL",
+      "raw": "15e805",
+      "classification": "inside an existing decoded instruction",
+      "containing_pc": "0x4396",
+      "containing_instruction": "l32i.n\ta13, a5, 4"
+    },
+    {
+      "pc": "0x6f88",
+      "target": "0xa2ef",
+      "kind": "J",
+      "raw": "c6d80c",
+      "classification": "inside an existing decoded instruction",
+      "containing_pc": "0x6f87",
+      "containing_instruction": "l32r\ta11, 0xffffd2a0 (0x6803ae00) ; inferred DRAM map 0x5ffec000"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01348.txt",
+      "sha256": "186f4d4c574167e17a925aab4bf3dfea12e47e885050665e441ffeb7c29885fb",
+      "byte_checked_records": 11
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02cd4.txt",
+      "sha256": "878c86f86c8e93f71a8aab61232e3a5be53315afb778b1b04051048e8c0c542b",
+      "byte_checked_records": 13
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04374.txt",
+      "sha256": "aa919513dad1aee75e19f8b4214d0809e840807059fa5989cd9ff9788432b059",
+      "byte_checked_records": 205
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06f70.txt",
+      "sha256": "643c3efe82ed2d58038fdbe3e95347f25ac8b6c23da391c65be5c89a67128798",
+      "byte_checked_records": 122
+    }
+  ],
+  "known_copy_ranges": [
+    {
+      "call": "0x135d",
+      "start": "0x5ffed978",
+      "end_exclusive": "0x5ffed98c"
+    },
+    {
+      "call": "0x2ce1",
+      "start": "0x5ffee438",
+      "end_exclusive": "0x5ffee44c"
+    }
+  ],
+  "finding": "Scanning the entire shared-body target interval yields no additional ordinary direct entry on the known instruction streams. Two true direct copies retain prior20-byte bounds; two other encodings start inside unrelated instructions.",
+  "limits": [
+    "This is not a proof that overlapping instruction streams cannot ever execute; it classifies matches against existing streams.",
+    "Conditional branches, computed CALLX/JX targets, other engines and other loaded code variants are not excluded.",
+    "Absence of full absolute pointers does not exclude computed/relative targets.",
+    "No new CC/gate producer found; no hardware access."
+  ],
+  "full_container_absolute_pointers": []
+}

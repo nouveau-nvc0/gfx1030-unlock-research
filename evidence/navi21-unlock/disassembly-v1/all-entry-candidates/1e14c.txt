@@ -1,0 +1,14 @@
+
+/tmp/tmpusuig2dj/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001e14c <.data+0x1e14c>:
+0001e14c: 364100   entry        a1, 0x20 ; Capstone
+   1e14f:	0c3a      	movi.n	a10, 3
+0001e151: e56017   call8        . +0x17610 ; Capstone ; target=0x35760
+   1e154:	8c1a      	beqz.n	a10, 0x1e159
+0001e156: e5fdff   call8        . -0x20 ; Capstone ; target=0x1e134
+0001e159: 1df0     retw.n        ; Capstone
+	...

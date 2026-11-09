@@ -1,0 +1,478 @@
+
+/tmp/tmpnb73y1qz/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000290c <.data+0x290c>:
+0000290c: 36e10c   entry        a1, 0x670 ; Capstone
+    290f:	f9e7      	s32i.n	a15, a7, 56
+    2911:	9a08      	add.n	a0, a8, a9
+    2913:	f10cf9        	l32r	a15, 0xd44 (0x141d600)
+    2916:	c02000        	memw
+    2919:	426f90        	s32i	a4, a15, 0x240
+    291c:	a10bf9        	l32r	a10, 0xd48 (0x3010e00)
+    291f:	0c19      	movi.n	a9, 1
+    2921:	c02000        	memw
+    2924:	926a41        	s32i	a9, a10, 0x104
+    2927:	c02000        	memw
+    292a:	822389        	l32i	a8, a3, 0x224
+    292d:	908820        	or	a8, a8, a9
+    2930:	c02000        	memw
+    2933:	826389        	s32i	a8, a3, 0x224
+    2936:	20e613        	wsr.ps	a2
+00002939: 651c36   call8        . +0x361c8 ; Capstone ; target=0x38b00
+    293c:	0c0a      	movi.n	a10, 0
+0000293e: 25dfff   call8        . -0x20c ; Capstone ; target=0x2730
+    2941:	0c02      	movi.n	a2, 0
+00002943: 1df0     retw.n        ; Capstone
+    2945:	000000        	ill
+    2948:	0c00      	movi.n	a0, 0
+    294a:	1100f9        	l32r	a1, 0xd4c (0x69a0)
+    294d:	3100f9        	l32r	a3, 0xd50 (0x40020)
+    2950:	30e613        	wsr.ps	a3
+    2953:	102000        	rsync
+    2956:	61fff8        	l32r	a6, 0xd54 (0x147e0)
+    2959:	71fff8        	l32r	a7, 0xd58 (0x15cc0)
+    295c:	77b606        	bgeu	a6, a7, 0x2966
+    295f:	0906      	s32i.n	a0, a6, 0
+    2961:	4b66      	addi.n	a6, a6, 4
+    2963:	7736f8        	bltu	a6, a7, 0x295f
+00002966: 55f3ff   call4        . -0xc8 ; Capstone ; target=0x289c
+    2969:	f04100        	break	1, 15
+    296c:	46feff        	j	0x2969
+0000296f: 0040d6   ee.ldf.64.xp f4, f13, a0, a0 ; Capstone
+    2972:	1331fa        	excw
+    2975:	f848      	l32i.n	a15, a8, 16
+00002977: 034a33   ssi          f0, a10, 0xcc ; Capstone
+    297a:	40e803        	rsr.exccause	a4
+    297d:	4903      	s32i.n	a4, a3, 0
+    297f:	40ee03        	rsr.excvaddr	a4
+    2982:	4923      	s32i.n	a4, a3, 8
+    2984:	4863      	l32i.n	a4, a3, 24
+    2986:	4804      	l32i.n	a4, a4, 0
+    2988:	4943      	s32i.n	a4, a3, 16
+    298a:	31f4f8        	l32r	a3, 0xd5c (0x7b98)
+    298d:	4803      	l32i.n	a4, a3, 0
+    298f:	4b44      	addi.n	a4, a4, 4
+    2991:	4903      	s32i.n	a4, a3, 0
+    2993:	268402        	beqi	a4, 8, 0x2999
+    2996:	06ffff        	j	0x2996
+    2999:	40d603        	excw
+    299c:	32d1ff        	addmi	a3, a1, 0xffffff00
+    299f:	32c318        	addi	a3, a3, 24
+    29a2:	0903      	s32i.n	a0, a3, 0
+    29a4:	1913      	s32i.n	a1, a3, 4
+    29a6:	2923      	s32i.n	a2, a3, 8
+    29a8:	4943      	s32i.n	a4, a3, 16
+    29aa:	5953      	s32i.n	a5, a3, 20
+    29ac:	6963      	s32i.n	a6, a3, 24
+    29ae:	7973      	s32i.n	a7, a3, 28
+    29b0:	8983      	s32i.n	a8, a3, 32
+    29b2:	9993      	s32i.n	a9, a3, 36
+    29b4:	a9a3      	s32i.n	a10, a3, 40
+    29b6:	b9b3      	s32i.n	a11, a3, 44
+    29b8:	c9c3      	s32i.n	a12, a3, 48
+    29ba:	d9d3      	s32i.n	a13, a3, 52
+    29bc:	e9e3      	s32i.n	a14, a3, 56
+    29be:	f9f3      	s32i.n	a15, a3, 60
+    29c0:	20d103        	rsr.excsave1	a2
+    29c3:	2933      	s32i.n	a2, a3, 12
+    29c5:	20f403        	excw
+    29c8:	226310        	s32i	a2, a3, 64
+    29cb:	20f503        	excw
+    29ce:	226311        	s32i	a2, a3, 68
+    29d1:	200303        	rsr.sar	a2
+    29d4:	226313        	s32i	a2, a3, 76
+    29d7:	20e603        	rsr.ps	a2
+    29da:	226314        	s32i	a2, a3, 80
+    29dd:	20b103        	rsr.epc1	a2
+    29e0:	226315        	s32i	a2, a3, 84
+000029e3: 200003   rsr          a2, lbeg ; Capstone
+    29e6:	226316        	s32i	a2, a3, 88
+000029e9: 200103   rsr          a2, lend ; Capstone
+    29ec:	226317        	s32i	a2, a3, 92
+000029ef: 200203   rsr          a2, lcount ; Capstone
+    29f2:	226318        	s32i	a2, a3, 96
+    29f5:	0c02      	movi.n	a2, 0
+000029f7: 200213   wsr          a2, lcount ; Capstone
+000029fa: 034319   ssi          f0, a3, 0x64 ; Capstone
+000029fd: 13431a   ssi          f1, a3, 0x68 ; Capstone
+00002a00: 23431b   ssi          f2, a3, 0x6c ; Capstone
+00002a03: 33431c   ssi          f3, a3, 0x70 ; Capstone
+00002a06: 43431d   ssi          f4, a3, 0x74 ; Capstone
+00002a09: 53431e   ssi          f5, a3, 0x78 ; Capstone
+00002a0c: 63431f   ssi          f6, a3, 0x7c ; Capstone
+00002a0f: 734320   ssi          f7, a3, 0x80 ; Capstone
+00002a12: 834321   ssi          f8, a3, 0x84 ; Capstone
+00002a15: 934322   ssi          f9, a3, 0x88 ; Capstone
+00002a18: a34323   ssi          f10, a3, 0x8c ; Capstone
+00002a1b: b34324   ssi          f11, a3, 0x90 ; Capstone
+00002a1e: c34325   ssi          f12, a3, 0x94 ; Capstone
+00002a21: d34326   ssi          f13, a3, 0x98 ; Capstone
+00002a24: e34327   ssi          f14, a3, 0x9c ; Capstone
+00002a27: f34328   ssi          f15, a3, 0xa0 ; Capstone
+00002a2a: 802ee3   rur          a2, fcr ; Capstone
+    2a2d:	226329        	s32i	a2, a3, 164
+00002a30: 902ee3   rur          a2, fsr ; Capstone
+    2a33:	22632a        	s32i	a2, a3, 168
+00002a36: 200403   rsr          a2, br ; Capstone
+    2a39:	22632b        	s32i	a2, a3, 172
+00002a3c: 200c03   rsr          a2, scompare1 ; Capstone
+    2a3f:	22632c        	s32i	a2, a3, 176
+00002a42: 702ee3   rur          a2, threadptr ; Capstone
+    2a45:	22632d        	s32i	a2, a3, 180
+    2a48:	002000        	isync
+    2a4b:	21c5f8        	l32r	a2, 0xd60 (0x7d10)
+    2a4e:	2802      	l32i.n	a2, a2, 0
+    2a50:	3902      	s32i.n	a3, a2, 0
+    2a52:	21c4f8        	l32r	a2, 0xd64 (0x4700)
+    2a55:	3902      	s32i.n	a3, a2, 0
+    2a57:	21c4f8        	l32r	a2, 0xd68 (0x4704)
+    2a5a:	3902      	s32i.n	a3, a2, 0
+    2a5c:	21c1f8        	l32r	a2, 0xd60 (0x7d10)
+    2a5f:	3812      	l32i.n	a3, a2, 4
+    2a61:	1b33      	addi.n	a3, a3, 1
+    2a63:	3912      	s32i.n	a3, a2, 4
+    2a65:	22c1f0        	addi	a2, a1, -16
+    2a68:	11c1f8        	l32r	a1, 0xd6c (0x4b10)
+    2a6b:	0802      	l32i.n	a0, a2, 0
+    2a6d:	0901      	s32i.n	a0, a1, 0
+    2a6f:	0812      	l32i.n	a0, a2, 4
+    2a71:	0911      	s32i.n	a0, a1, 4
+    2a73:	0822      	l32i.n	a0, a2, 8
+    2a75:	0921      	s32i.n	a0, a1, 8
+    2a77:	0832      	l32i.n	a0, a2, 12
+    2a79:	0931      	s32i.n	a0, a1, 12
+    2a7b:	12c110        	addi	a1, a1, 16
+    2a7e:	31bcf8        	l32r	a3, 0xd70 (0x40022)
+    2a81:	30e613        	wsr.ps	a3
+    2a84:	102000        	rsync
+    2a87:	60e803        	rsr.exccause	a6
+    2a8a:	70ee03        	rsr.excvaddr	a7
+    2a8d:	80b103        	rsr.epc1	a8
+    2a90:	41b9f8        	l32r	a4, 0xd74 (0xec4)
+00002a93: d00400   callx4       a4 ; Capstone
+    2a96:	0c13      	movi.n	a3, 1
+    2a98:	30e313        	wsr.intclear	a3
+    2a9b:	26b60a        	beqi	a6, 16, 0x2aa9
+    2a9e:	1c84      	movi.n	a4, 24
+    2aa0:	471605        	beq	a6, a4, 0x2aa9
+    2aa3:	41b5f8        	l32r	a4, 0xd78 (0xf58)
+00002aa6: d00400   callx4       a4 ; Capstone
+    2aa9:	31acf8        	l32r	a3, 0xd5c (0x7b98)
+    2aac:	4803      	l32i.n	a4, a3, 0
+    2aae:	42c4fc        	addi	a4, a4, -4
+    2ab1:	4903      	s32i.n	a4, a3, 0
+    2ab3:	21abf8        	l32r	a2, 0xd60 (0x7d10)
+    2ab6:	3812      	l32i.n	a3, a2, 4
+    2ab8:	0b33      	addi.n	a3, a3, -1
+    2aba:	3912      	s32i.n	a3, a2, 4
+    2abc:	3802      	l32i.n	a3, a2, 0
+    2abe:	3803      	l32i.n	a3, a3, 0
+    2ac0:	21aaf8        	l32r	a2, 0xd68 (0x4704)
+    2ac3:	3902      	s32i.n	a3, a2, 0
+    2ac5:	21a7f8        	l32r	a2, 0xd64 (0x4700)
+    2ac8:	3802      	l32i.n	a3, a2, 0
+    2aca:	422314        	l32i	a4, a3, 80
+    2acd:	40e613        	wsr.ps	a4
+    2ad0:	102000        	rsync
+    2ad3:	21a6f8        	l32r	a2, 0xd6c (0x4b10)
+    2ad6:	0802      	l32i.n	a0, a2, 0
+    2ad8:	026336        	s32i	a0, a3, 216
+    2adb:	0812      	l32i.n	a0, a2, 4
+    2add:	026337        	s32i	a0, a3, 220
+    2ae0:	0822      	l32i.n	a0, a2, 8
+    2ae2:	026338        	s32i	a0, a3, 224
+    2ae5:	0832      	l32i.n	a0, a2, 12
+    2ae7:	026339        	s32i	a0, a3, 228
+    2aea:	4843      	l32i.n	a4, a3, 16
+    2aec:	5853      	l32i.n	a5, a3, 20
+    2aee:	6863      	l32i.n	a6, a3, 24
+    2af0:	7873      	l32i.n	a7, a3, 28
+    2af2:	8883      	l32i.n	a8, a3, 32
+    2af4:	9893      	l32i.n	a9, a3, 36
+    2af6:	a8a3      	l32i.n	a10, a3, 40
+    2af8:	b8b3      	l32i.n	a11, a3, 44
+    2afa:	c8c3      	l32i.n	a12, a3, 48
+    2afc:	d8d3      	l32i.n	a13, a3, 52
+    2afe:	e8e3      	l32i.n	a14, a3, 56
+    2b00:	f8f3      	l32i.n	a15, a3, 60
+    2b02:	2198f8        	l32r	a2, 0xd64 (0x4700)
+    2b05:	1198f8        	l32r	a1, 0xd68 (0x4704)
+    2b08:	0802      	l32i.n	a0, a2, 0
+    2b0a:	1801      	l32i.n	a1, a1, 0
+    2b0c:	17100e        	beq	a0, a1, 0x2b1e
+    2b0f:	1902      	s32i.n	a1, a2, 0
+    2b11:	1813      	l32i.n	a1, a3, 4
+    2b13:	c51b00        	call0	0x2cd0
+    2b16:	3193f8        	l32r	a3, 0xd64 (0x4700)
+    2b19:	3803      	l32i.n	a3, a3, 0
+    2b1b:	c6f2ff        	j	0x2aea
+    2b1e:	222314        	l32i	a2, a3, 80
+    2b21:	20e613        	wsr.ps	a2
+    2b24:	102000        	rsync
+    2b27:	222310        	l32i	a2, a3, 64
+    2b2a:	20f413        	excw
+    2b2d:	222311        	l32i	a2, a3, 68
+00002b30: 20f513   wsr.misc1    a2 ; verified QEMU encoding
+    2b33:	022315        	l32i	a0, a3, 84
+    2b36:	00b113        	wsr.epc1	a0
+    2b39:	022313        	l32i	a0, a3, 76
+    2b3c:	000313        	wsr.sar	a0
+    2b3f:	022316        	l32i	a0, a3, 88
+00002b42: 000013   wsr          a0, lbeg ; Capstone
+    2b45:	022317        	l32i	a0, a3, 92
+00002b48: 000113   wsr          a0, lend ; Capstone
+    2b4b:	022318        	l32i	a0, a3, 96
+00002b4e: 000213   wsr          a0, lcount ; Capstone
+00002b51: 030319   lsi          f0, a3, 0x64 ; Capstone
+00002b54: 13031a   lsi          f1, a3, 0x68 ; Capstone
+00002b57: 23031b   lsi          f2, a3, 0x6c ; Capstone
+00002b5a: 33031c   lsi          f3, a3, 0x70 ; Capstone
+00002b5d: 43031d   lsi          f4, a3, 0x74 ; Capstone
+00002b60: 53031e   lsi          f5, a3, 0x78 ; Capstone
+00002b63: 63031f   lsi          f6, a3, 0x7c ; Capstone
+00002b66: 730320   lsi          f7, a3, 0x80 ; Capstone
+00002b69: 830321   lsi          f8, a3, 0x84 ; Capstone
+00002b6c: 930322   lsi          f9, a3, 0x88 ; Capstone
+00002b6f: a30323   lsi          f10, a3, 0x8c ; Capstone
+00002b72: b30324   lsi          f11, a3, 0x90 ; Capstone
+00002b75: c30325   lsi          f12, a3, 0x94 ; Capstone
+00002b78: d30326   lsi          f13, a3, 0x98 ; Capstone
+00002b7b: e30327   lsi          f14, a3, 0x9c ; Capstone
+00002b7e: f30328   lsi          f15, a3, 0xa0 ; Capstone
+    2b81:	022329        	l32i	a0, a3, 164
+00002b84: 00e8f3   wur.fcr      a0 ; Capstone
+    2b87:	02232a        	l32i	a0, a3, 168
+00002b8a: 00e9f3   wur.fsr      a0 ; Capstone
+    2b8d:	02232b        	l32i	a0, a3, 172
+00002b90: 000413   wsr          a0, br ; Capstone
+    2b93:	02232c        	l32i	a0, a3, 176
+00002b96: 000c13   wsr          a0, scompare1 ; Capstone
+    2b99:	02232d        	l32i	a0, a3, 180
+00002b9c: 00e7f3   wur          a0, threadptr ; Capstone
+    2b9f:	002000        	isync
+    2ba2:	0803      	l32i.n	a0, a3, 0
+    2ba4:	1813      	l32i.n	a1, a3, 4
+    2ba6:	2823      	l32i.n	a2, a3, 8
+    2ba8:	3833      	l32i.n	a3, a3, 12
+    2baa:	003000        	rfe
+    2bad:	000000        	ill
+    2bb0:	30f413        	excw
+    2bb3:	30e603        	rsr.ps	a3
+    2bb6:	32c310        	addi	a3, a3, 16
+    2bb9:	30e613        	wsr.ps	a3
+    2bbc:	102000        	rsync
+    2bbf:	32d1ff        	addmi	a3, a1, 0xffffff00
+    2bc2:	32c318        	addi	a3, a3, 24
+    2bc5:	026315        	s32i	a0, a3, 84
+    2bc8:	00f503        	excw
+    2bcb:	0903      	s32i.n	a0, a3, 0
+    2bcd:	1913      	s32i.n	a1, a3, 4
+    2bcf:	2923      	s32i.n	a2, a3, 8
+    2bd1:	4943      	s32i.n	a4, a3, 16
+    2bd3:	5953      	s32i.n	a5, a3, 20
+    2bd5:	6963      	s32i.n	a6, a3, 24
+    2bd7:	7973      	s32i.n	a7, a3, 28
+    2bd9:	8983      	s32i.n	a8, a3, 32
+    2bdb:	9993      	s32i.n	a9, a3, 36
+    2bdd:	a9a3      	s32i.n	a10, a3, 40
+    2bdf:	b9b3      	s32i.n	a11, a3, 44
+    2be1:	c9c3      	s32i.n	a12, a3, 48
+    2be3:	d9d3      	s32i.n	a13, a3, 52
+    2be5:	e9e3      	s32i.n	a14, a3, 56
+    2be7:	f9f3      	s32i.n	a15, a3, 60
+    2be9:	20f403        	excw
+    2bec:	2933      	s32i.n	a2, a3, 12
+    2bee:	200303        	rsr.sar	a2
+    2bf1:	226313        	s32i	a2, a3, 76
+00002bf4: 200003   rsr          a2, lbeg ; Capstone
+    2bf7:	226316        	s32i	a2, a3, 88
+00002bfa: 200103   rsr          a2, lend ; Capstone
+    2bfd:	226317        	s32i	a2, a3, 92
+00002c00: 200203   rsr          a2, lcount ; Capstone
+    2c03:	226318        	s32i	a2, a3, 96
+    2c06:	20e603        	rsr.ps	a2
+    2c09:	226314        	s32i	a2, a3, 80
+    2c0c:	0c02      	movi.n	a2, 0
+00002c0e: 200213   wsr          a2, lcount ; Capstone
+00002c11: 034319   ssi          f0, a3, 0x64 ; Capstone
+00002c14: 13431a   ssi          f1, a3, 0x68 ; Capstone
+00002c17: 23431b   ssi          f2, a3, 0x6c ; Capstone
+00002c1a: 33431c   ssi          f3, a3, 0x70 ; Capstone
+00002c1d: 43431d   ssi          f4, a3, 0x74 ; Capstone
+00002c20: 53431e   ssi          f5, a3, 0x78 ; Capstone
+00002c23: 63431f   ssi          f6, a3, 0x7c ; Capstone
+00002c26: 734320   ssi          f7, a3, 0x80 ; Capstone
+00002c29: 834321   ssi          f8, a3, 0x84 ; Capstone
+00002c2c: 934322   ssi          f9, a3, 0x88 ; Capstone
+00002c2f: a34323   ssi          f10, a3, 0x8c ; Capstone
+00002c32: b34324   ssi          f11, a3, 0x90 ; Capstone
+00002c35: c34325   ssi          f12, a3, 0x94 ; Capstone
+00002c38: d34326   ssi          f13, a3, 0x98 ; Capstone
+00002c3b: e34327   ssi          f14, a3, 0x9c ; Capstone
+00002c3e: f34328   ssi          f15, a3, 0xa0 ; Capstone
+00002c41: 802ee3   rur          a2, fcr ; Capstone
+    2c44:	226329        	s32i	a2, a3, 164
+00002c47: 902ee3   rur          a2, fsr ; Capstone
+    2c4a:	22632a        	s32i	a2, a3, 168
+00002c4d: 200403   rsr          a2, br ; Capstone
+    2c50:	22632b        	s32i	a2, a3, 172
+00002c53: 200c03   rsr          a2, scompare1 ; Capstone
+    2c56:	22632c        	s32i	a2, a3, 176
+00002c59: 702ee3   rur          a2, threadptr ; Capstone
+    2c5c:	22632d        	s32i	a2, a3, 180
+    2c5f:	002000        	isync
+    2c62:	313ef8        	l32r	a3, 0xd5c (0x7b98)
+    2c65:	4803      	l32i.n	a4, a3, 0
+    2c67:	4a33      	add.n	a3, a3, a4
+    2c69:	40e803        	rsr.exccause	a4
+    2c6c:	4903      	s32i.n	a4, a3, 0
+    2c6e:	40ee03        	rsr.excvaddr	a4
+    2c71:	4923      	s32i.n	a4, a3, 8
+    2c73:	4863      	l32i.n	a4, a3, 24
+    2c75:	4804      	l32i.n	a4, a4, 0
+    2c77:	4943      	s32i.n	a4, a3, 16
+    2c79:	3138f8        	l32r	a3, 0xd5c (0x7b98)
+    2c7c:	4803      	l32i.n	a4, a3, 0
+    2c7e:	4b44      	addi.n	a4, a4, 4
+    2c80:	4903      	s32i.n	a4, a3, 0
+    2c82:	268402        	beqi	a4, 8, 0x2c88
+    2c85:	06ffff        	j	0x2c85
+    2c88:	32d1ff        	addmi	a3, a1, 0xffffff00
+    2c8b:	32c318        	addi	a3, a3, 24
+    2c8e:	2134f8        	l32r	a2, 0xd60 (0x7d10)
+    2c91:	2802      	l32i.n	a2, a2, 0
+    2c93:	3902      	s32i.n	a3, a2, 0
+    2c95:	2133f8        	l32r	a2, 0xd64 (0x4700)
+    2c98:	3902      	s32i.n	a3, a2, 0
+    2c9a:	2133f8        	l32r	a2, 0xd68 (0x4704)
+    2c9d:	3902      	s32i.n	a3, a2, 0
+    2c9f:	2130f8        	l32r	a2, 0xd60 (0x7d10)
+    2ca2:	3812      	l32i.n	a3, a2, 4
+    2ca4:	1b33      	addi.n	a3, a3, 1
+    2ca6:	3912      	s32i.n	a3, a2, 4
+    2ca8:	22c1f0        	addi	a2, a1, -16
+    2cab:	1130f8        	l32r	a1, 0xd6c (0x4b10)
+    2cae:	0802      	l32i.n	a0, a2, 0
+    2cb0:	0901      	s32i.n	a0, a1, 0
+    2cb2:	0812      	l32i.n	a0, a2, 4
+    2cb4:	0911      	s32i.n	a0, a1, 4
+    2cb6:	0822      	l32i.n	a0, a2, 8
+    2cb8:	0921      	s32i.n	a0, a1, 8
+    2cba:	0832      	l32i.n	a0, a2, 12
+    2cbc:	0931      	s32i.n	a0, a1, 12
+    2cbe:	12c110        	addi	a1, a1, 16
+    2cc1:	312bf8        	l32r	a3, 0xd70 (0x40022)
+    2cc4:	30e613        	wsr.ps	a3
+    2cc7:	102000        	rsync
+    2cca:	4675ff        	j	0x2aa3
+    2ccd:	000000        	ill
+00002cd0: 204803   rsr          a2, windowbase ; Capstone
+    2cd3:	1b22      	addi.n	a2, a2, 1
+    2cd5:	000240        	ssr	a2
+00002cd8: 304903   rsr          a3, windowstart ; Capstone
+    2cdb:	302091        	srl	a2, a3
+    2cde:	0033a1        	sll	a3, a3
+    2ce1:	d6630c        	bgez	a3, 0x2dab
+    2ce4:	3030f5        	extui	a3, a3, 16, 16
+    2ce7:	302220        	or	a2, a2, a3
+00002cea: 204913   wsr          a2, windowstart ; Capstone
+    2ced:	203060        	neg	a3, a2
+    2cf0:	202310        	and	a2, a3, a2
+    2cf3:	1cf3      	movi.n	a3, 31
+    2cf5:	20f240        	nsau	a2, a2
+    2cf8:	2033c0        	sub	a3, a3, a2
+    2cfb:	1b23      	addi.n	a2, a3, 1
+    2cfd:	000240        	ssr	a2
+00002d00: 204903   rsr          a2, windowstart ; Capstone
+    2d03:	202091        	srl	a2, a2
+00002d06: 204913   wsr          a2, windowstart ; Capstone
+00002d09: 204803   rsr          a2, windowbase ; Capstone
+    2d0c:	3a32      	add.n	a3, a2, a3
+00002d0e: 304813   wsr          a3, windowbase ; Capstone
+    2d11:	102000        	rsync
+00002d14: 204903   rsr          a2, windowstart ; Capstone
+    2d17:	168207        	beqz	a2, 0x2d93
+    2d1a:	07e208        	bbsi	a2, 0, 0x2d26
+    2d1d:	17e219        	bbsi	a2, 1, 0x2d3a
+    2d20:	27e23a        	bbsi	a2, 2, 0x2d5e
+    2d23:	062200        	j	0x2daf
+    2d26:	32c9f0        	addi	a3, a9, -16
+    2d29:	4903      	s32i.n	a4, a3, 0
+    2d2b:	5913      	s32i.n	a5, a3, 4
+    2d2d:	6923      	s32i.n	a6, a3, 8
+    2d2f:	7933      	s32i.n	a7, a3, 12
+    2d31:	206141        	srli	a6, a2, 1
+00002d34: 108040   rotw         1 ; Capstone
+    2d37:	06f7ff        	j	0x2d17
+    2d3a:	32cdf0        	addi	a3, a13, -16
+    2d3d:	4903      	s32i.n	a4, a3, 0
+    2d3f:	5913      	s32i.n	a5, a3, 4
+    2d41:	6923      	s32i.n	a6, a3, 8
+    2d43:	7933      	s32i.n	a7, a3, 12
+    2d45:	32c5f4        	addi	a3, a5, -12
+    2d48:	3803      	l32i.n	a3, a3, 0
+    2d4a:	32c3e0        	addi	a3, a3, -32
+    2d4d:	8903      	s32i.n	a8, a3, 0
+    2d4f:	9913      	s32i.n	a9, a3, 4
+    2d51:	a923      	s32i.n	a10, a3, 8
+    2d53:	b933      	s32i.n	a11, a3, 12
+    2d55:	20a241        	srli	a10, a2, 2
+00002d58: 208040   rotw         2 ; Capstone
+    2d5b:	06eeff        	j	0x2d17
+00002d5e: 108040   rotw         1 ; Capstone
+    2d61:	d2cdf0        	addi	a13, a13, -16
+    2d64:	090d      	s32i.n	a0, a13, 0
+    2d66:	191d      	s32i.n	a1, a13, 4
+    2d68:	292d      	s32i.n	a2, a13, 8
+    2d6a:	393d      	s32i.n	a3, a13, 12
+    2d6c:	32c1f4        	addi	a3, a1, -12
+    2d6f:	3803      	l32i.n	a3, a3, 0
+    2d71:	d2cd10        	addi	a13, a13, 16
+    2d74:	32c3d0        	addi	a3, a3, -48
+    2d77:	4903      	s32i.n	a4, a3, 0
+    2d79:	5913      	s32i.n	a5, a3, 4
+    2d7b:	6923      	s32i.n	a6, a3, 8
+    2d7d:	7933      	s32i.n	a7, a3, 12
+    2d7f:	8943      	s32i.n	a8, a3, 16
+    2d81:	9953      	s32i.n	a9, a3, 20
+    2d83:	a963      	s32i.n	a10, a3, 24
+    2d85:	b973      	s32i.n	a11, a3, 28
+00002d87: f08040   rotw         -1 ; Capstone
+    2d8a:	20e341        	srli	a14, a2, 3
+00002d8d: 308040   rotw         3 ; Capstone
+    2d90:	c6e0ff        	j	0x2d17
+00002d93: 108040   rotw         1 ; Capstone
+00002d96: 204803   rsr          a2, windowbase ; Capstone
+    2d99:	001240        	ssl	a2
+    2d9c:	0c12      	movi.n	a2, 1
+    2d9e:	0022a1        	sll	a2, a2
+00002da1: 204913   wsr          a2, windowstart ; Capstone
+    2da4:	102000        	rsync
+    2da7:	0c02      	movi.n	a2, 0
+    2da9:	0df0      	ret.n
+    2dab:	0c12      	movi.n	a2, 1
+    2dad:	0df0      	ret.n
+    2daf:	f02211        	slli	a2, a2, 1
+    2db2:	1b22      	addi.n	a2, a2, 1
+00002db4: 304803   rsr          a3, windowbase ; Capstone
+    2db7:	f7e20a        	bbsi	a2, 15, 0x2dc5
+    2dba:	0b33      	addi.n	a3, a3, -1
+    2dbc:	f02211        	slli	a2, a2, 1
+    2dbf:	f762f7        	bbci	a2, 15, 0x2dba
+    2dc2:	303034        	extui	a3, a3, 0, 4
+    2dc5:	001340        	ssl	a3
+    2dc8:	003211        	slli	a3, a2, 16
+    2dcb:	302281        	src	a2, a2, a3
+    2dce:	2020f4        	extui	a2, a2, 0, 16
+00002dd1: 204913   wsr          a2, windowstart ; Capstone
+    2dd4:	300303        	rsr.sar	a3
+    2dd7:	2c02      	movi.n	a2, 32
+    2dd9:	3032c0        	sub	a3, a2, a3
+00002ddc: 304813   wsr          a3, windowbase ; Capstone
+    2ddf:	102000        	rsync
+    2de2:	0c22      	movi.n	a2, 2
+    2de4:	0df0      	ret.n
+	...

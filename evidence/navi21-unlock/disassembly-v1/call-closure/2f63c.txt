@@ -1,0 +1,22 @@
+
+/tmp/tmp2famvjlm/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002f63c <.data+0x2f63c>:
+0002f63c: 366100   entry        a1, 0x30 ; Capstone
+   2f63f:	417292        	l32r	a4, 0x14008 (0x1afbe00)
+   2f642:	0c0a      	movi.n	a10, 0
+   2f644:	a901      	s32i.n	a10, a1, 0
+   2f646:	224100        	s8i	a2, a1, 0
+   2f649:	9801      	l32i.n	a9, a1, 0
+   2f64b:	c02000        	memw
+   2f64e:	926484        	s32i	a9, a4, 0x210
+   2f651:	208841        	srli	a8, a2, 8
+   2f654:	824100        	s8i	a8, a1, 0
+   2f657:	3801      	l32i.n	a3, a1, 0
+   2f659:	c02000        	memw
+   2f65c:	326484        	s32i	a3, a4, 0x210
+0002f65f: 1df0     retw.n        ; Capstone
+   2f661:	000000        	ill

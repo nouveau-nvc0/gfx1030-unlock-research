@@ -1,0 +1,32 @@
+{
+  "post_sha256": "e258121695fd5ae029132cdcc328e5c34065876a5612e3a2260487ac196a5b5e",
+  "stock_sha256": "6ffb1d8b93b75f9ef3e411b7fafeeca41764edea05aecf010f11ed9423158f40",
+  "compared_bytes": 45056,
+  "differences": [
+    {
+      "offset": 33,
+      "offset_hex": "0x21",
+      "stock": 205,
+      "post": 74
+    },
+    {
+      "offset": 2176,
+      "offset_hex": "0x880",
+      "stock": 0,
+      "post": 1
+    },
+    {
+      "offset": 2196,
+      "offset_hex": "0x894",
+      "stock": 0,
+      "post": 2
+    },
+    {
+      "offset": 2200,
+      "offset_hex": "0x898",
+      "stock": 0,
+      "post": 128
+    }
+  ],
+  "physical_flash_contents_established": false
+}

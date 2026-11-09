@@ -1,0 +1,37 @@
+SMU to concrete LX6 DRAM port candidate — offline,2026-11-09
+
+The earlier smu-rlc-ram-port locator covered named GPM_IRAM,SRM_DRAM,
+SRM_ARAM and GPM_SCRATCH ports. It did not include the subsequently recovered
+TOC pairfb55/fb56. This matters: that pair, not the generic SRM_DRAM name,
+is the concrete candidate associated with the4000-byte LX6 boot/snapshot
+span that includes savedCC and gatee452 under the inferred memory map.
+
+Extended check
+TOC IDs10/27 both select addressfb55/datafb56,size4000,start0. Arithmetic
+publicbyte candidates are3ed54/3ed58. Searched the complete pinnedSMU image
+at every byte offset for bothDWORDs and bytecoordinates with bases0,
+01200000,60000000,68000000:ten encodings,totalzero literal matches.
+The retained1438-root SMU resolved-store receipt likewise has no fixed
+store to these candidates. No new decoder or hardware operation was used.
+Negative literal/fixed-address results do not exclude computed access.
+
+Connection to the actual missing chain
+The generic SMU store mechanism previously found is a possible writer,
+while the TOC supplies a candidate destination interface. They are still
+separate pieces. The transfer observation inside RLCG does not establish
+that SMU can reach the same ports through01200000+byteoffset, nor that the
+ports accept its transactions or use the assumed index units.
+Do not silently combine a known GC regional alias with a different port pair
+and call the resulting path complete. Also retain generic-handler delivery
+and condition gaps, then saved-state lifetime/invocation and CC acceptance.
+
+This updates the endpoint evidence for the computed-SMU candidate; it does
+not produce changed masks or a nonzero gate. Future offline source work
+should target these exact ports/aliases and their loading implementation,
+not more unrelated ordinary state-helper exclusions. If mapping evidence
+cannot be obtained offline, record that limit instead of presenting another
+literal scan as proof of either reachability or impossibility.
+
+Reproducer scripts/navi21-smu-lx6-port-audit.py,receipt smu-lx6-port-audit.json:
+pinnedSMU hash,TOC/store-receipt hashes,ten all-byte literal searches,
+1438-root fixed-store inventory. No hardware or system settings changed.

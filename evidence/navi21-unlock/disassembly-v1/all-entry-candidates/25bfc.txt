@@ -1,0 +1,36 @@
+
+/tmp/tmpz_t42wzd/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00025bfc <.data+0x25bfc>:
+00025bfc: 364100   entry        a1, 0x20 ; Capstone
+   25bff:	0c07      	movi.n	a7, 0
+   25c01:	1c05      	movi.n	a5, 16
+   25c03:	0c84      	movi.n	a4, 8
+   25c05:	f61201        	bgeui	a2, 0x10000, 0x25c0a
+   25c08:	5d07      	mov.n	a5, a7
+   25c0a:	000540        	ssr	a5
+   25c0d:	202091        	srl	a2, a2
+   25c10:	f6f201        	bgeui	a2, 0x100, 0x25c15
+   25c13:	4d07      	mov.n	a4, a7
+   25c15:	000440        	ssr	a4
+   25c18:	206091        	srl	a6, a2
+   25c1b:	0c42      	movi.n	a2, 4
+   25c1d:	f6b601        	bgeui	a6, 16, 0x25c22
+   25c20:	2d07      	mov.n	a2, a7
+   25c22:	000240        	ssr	a2
+   25c25:	409520        	or	a9, a5, a4
+   25c28:	608091        	srl	a8, a6
+   25c2b:	0c26      	movi.n	a6, 2
+   25c2d:	902220        	or	a2, a2, a9
+   25c30:	f64801        	bgeui	a8, 4, 0x25c35
+   25c33:	6d07      	mov.n	a6, a7
+   25c35:	000640        	ssr	a6
+   25c38:	803091        	srl	a3, a8
+   25c3b:	303141        	srli	a3, a3, 1
+   25c3e:	303620        	or	a3, a6, a3
+   25c41:	302220        	or	a2, a2, a3
+00025c44: 1df0     retw.n        ; Capstone
+	...

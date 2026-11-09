@@ -1,0 +1,21 @@
+
+/tmp/tmpeaq2t50t/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00031688 <.data+0x31688>:
+00031688: 364100   entry        a1, 0x20 ; Capstone
+   3168b:	415e86        	l32r	a4, 0x13004 (0xfffff)
+   3168e:	2cc3      	movi.n	a3, 44
+   31690:	2033d1        	mul16s	a3, a3, a2
+   31693:	21cc8a        	l32r	a2, 0x141c4 (0xc280)
+   31696:	3a22      	add.n	a2, a2, a3
+   31698:	22227f        	l32i	a2, a2, 0x1fc
+   3169b:	317e86        	l32r	a3, 0x13094 (0x1200000)
+   3169e:	402210        	and	a2, a2, a4
+   316a1:	3a22      	add.n	a2, a2, a3
+   316a3:	c02000        	memw
+   316a6:	2802      	l32i.n	a2, a2, 0
+000316a8: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,54 @@
+RLC IRAM/SRM offline analysis, 2026-11-09
+
+Important correction: the RLC container segments begin with $PS1 wrappers.
+The main RLCG microcode body and IRAM body are distinct. IRAM body at fileb360
+is coherent Xtensa, not the unidentified words at the outer segment start.
+Boot0 jumps24;24 disables interrupts, configures instruction/data TLB entries,
+initializes window state, and calls648. Function648 performs startup/BSS work
+and calls76f8 through CALL4. Targeted listings preserve non-ENTRY boot code.
+
+Inferred virtual placement: IRAM5fff0000..60000000, DRAM5ffec000..5fff0000.
+Evidence: entry literal5fff0054 matches its internal loop target54; startup
+negative L32R coordinates map to DRAM words containing coherent stack pointer,
+PS40020, initialization ranges, and callback pointers into IRAM. This is a
+consistent static map, not an observation of the running MMU. Decoder annotates
+those DRAM literals explicitly as inferred.236 aligned ENTRY candidate windows
+decoded,92 missing internal branch target starts repaired; remaining gaps,
+non-ENTRY routines and indirect flow prevent complete CFG claims.
+
+SRM chain:
+65d8 writes96 to6003edd4 and reads consecutive words at6003edd8 into
+5ffedb24+4 onward. These offsets match public RLC_GPM_SCRATCH_ADDR/DATA
+(GC segment1 basea000 + offsets5b75/5b76, times4), suggesting the GPM list
+payload is the backing scratch image. Both address interpretation and initial
+image persistence must be confirmed before using this as a live-state claim.
+6944 writes3 to6803b200, matching RLC_SRM_CNTL enable/auto-increment bits.
+It dispatches offset/count fields read from that RAM structure to7670.
+7670 polls6803b220 bits1/0, matching GPM command FIFO_FULL/EMPTY, and writes
+commands at6803b21c, matching RLC_SRM_GPM_COMMAND. The construction matches
+public masks: OP=low bit of first argument; SIZE=(count>>1)&fff shifted5;
+START_OFFSET=(offset>>1)&fff shifted17. Optional index-control path additionally
+writes an index-selection command. This is actual command-producing code.
+
+GPM image words128/129 contain2f8/5a:45 SRM candidate pairs, including all8
+CC_WGP records. Words130/131 contain352/3e8:500 pairs including all8 USER_WGP.
+Words134/135 contain758/582:705 pairs including CC_SA and USER_SA.
+Corresponding calls in6944 are6c9d,69f9,6cba. The matching arithmetic is saved
+in rlc-srm-command-ranges.json. This links packed CC table entries to submitted
+SRM ranges under the inferred scratch-image mapping, beyond literal matching.
+
+Remaining requirements: determine OP direction from callers; decode packed
+record flags/second DWORD; establish how PSP places/validates SRM ARAM/DRAM;
+trace whether restore treats CC records differently or ignores their writes.
+No accepted CC write, changeable latch, or host-writeable SRM path proved.
+Public RLC_SRM_FWL_FIRST_VIOL_ADDR exposes address/op fields but does not by
+itself identify the policy or any CC-specific condition.
+
+Primary local sources: sources/gc_10_3_0_{offset,sh_mask}.h,
+sources/gfx_v10_0.c:gfx_v10_0_rlc_enable_srm,
+cc-access-v1/amdgpu_rlc.c:amdgpu_gfx_rlc_init_microcode_v2_1.
+Driver loads the SRM list as distinct AMDGPU_UCODE_ID_RLC_RESTORE_LIST_SRM_MEM
+on its PSP path. Historical AMD-authored change describes CGPG/GFXOFF use:
+https://git.zx2c4.com/wireguard-linux/commit/drivers/gpu/drm/amd/amdgpu/psp_v10_0.c?id=621a6318adea69b08a3652c64bc7cc0cb4dacfb4
+
+All work here is offline; no GPU messages, resets, firmware loads or writes.

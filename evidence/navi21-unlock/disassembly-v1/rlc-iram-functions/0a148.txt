@@ -1,0 +1,16 @@
+
+/tmp/tmpzoan64mb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000a148 <.data+0xa148>:
+0000a148: 362100   entry        a1, 0x10 ; Capstone
+    a14b:	001440        	ssl	a4
+    a14e:	e6c407        	bgei	a4, 32, 0xa159
+    a151:	203381        	src	a3, a3, a2
+    a154:	0022a1        	sll	a2, a2
+0000a157: 1df0     retw.n        ; Capstone
+    a159:	0032a1        	sll	a3, a2
+    a15c:	0c02      	movi.n	a2, 0
+0000a15e: 1df0     retw.n        ; Capstone

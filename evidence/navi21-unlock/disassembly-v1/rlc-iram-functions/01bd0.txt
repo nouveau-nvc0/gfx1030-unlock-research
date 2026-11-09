@@ -1,0 +1,17 @@
+
+/tmp/tmpj15mjkf6/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001bd0 <.data+0x1bd0>:
+00001bd0: 364100   entry        a1, 0x20 ; Capstone
+    1bd3:	306f00        	rsil	a3, 15
+    1bd6:	5163ed        	l32r	a5, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    1bd9:	2186ed        	l32r	a2, 0xffffd1f4 (0x60058600) ; inferred DRAM map 0x5ffec000
+    1bdc:	0c04      	movi.n	a4, 0
+    1bde:	426580        	s32i	a4, a5, 0x200
+    1be1:	2222fe        	l32i	a2, a2, 0x3f8
+    1be4:	30e613        	wsr.ps	a3
+    1be7:	102000        	rsync
+00001bea: 1df0     retw.n        ; Capstone

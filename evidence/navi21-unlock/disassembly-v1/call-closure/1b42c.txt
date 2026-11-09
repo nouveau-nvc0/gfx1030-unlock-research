@@ -1,0 +1,34 @@
+
+/tmp/tmppzymlau0/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001b42c <.data+0x1b42c>:
+0001b42c: 364100   entry        a1, 0x20 ; Capstone
+   1b42f:	7cf5      	movi.n	a5, -1
+   1b431:	0c34      	movi.n	a4, 3
+   1b433:	0c43      	movi.n	a3, 4
+   1b435:	820201        	l8ui	a8, a2, 1
+   1b438:	b842      	l32i.n	a11, a2, 16
+   1b43a:	a832      	l32i.n	a10, a2, 12
+   1b43c:	26182e        	beqi	a8, 1, 0x1b46e
+   1b43f:	b74a0f        	ball	a10, a11, 0x1b452
+   1b442:	324201        	s8i	a3, a2, 1
+   1b445:	509a30        	xor	a9, a10, a5
+   1b448:	90bb10        	and	a11, a11, a9
+   1b44b:	ad02      	mov.n	a10, a2
+0001b44d: a5f9ff   call8        . -0x64 ; Capstone ; target=0x1b3e8
+   1b450:	a832      	l32i.n	a10, a2, 12
+   1b452:	c852      	l32i.n	a12, a2, 20
+   1b454:	c0ba10        	and	a11, a10, a12
+   1b457:	c70a09        	bnone	a10, a12, 0x1b464
+   1b45a:	424201        	s8i	a4, a2, 1
+   1b45d:	ad02      	mov.n	a10, a2
+0001b45f: 65f3ff   call8        . -0xc8 ; Capstone ; target=0x1b394
+   1b462:	a832      	l32i.n	a10, a2, 12
+   1b464:	d842      	l32i.n	a13, a2, 16
+   1b466:	d7cacb        	bnall	a10, a13, 0x1b435
+   1b469:	e852      	l32i.n	a14, a2, 20
+   1b46b:	a78ec6        	bany	a14, a10, 0x1b435
+0001b46e: 1df0     retw.n        ; Capstone

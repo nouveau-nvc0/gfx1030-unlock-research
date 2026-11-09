@@ -1,0 +1,61 @@
+
+/tmp/tmpu1mbabdb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001a6cc <.data+0x1a6cc>:
+0001a6cc: 364100   entry        a1, 0x20 ; Capstone
+   1a6cf:	2aa3      	add.n	a10, a3, a2
+   1a6d1:	920a98        	l8ui	a9, a10, 152
+   1a6d4:	40b624        	extui	a11, a4, 6, 3
+   1a6d7:	b64911        	bltui	a9, 4, 0x1a6ec
+   1a6da:	0c0c      	movi.n	a12, 0
+   1a6dc:	2c5b      	movi.n	a11, 37
+   1a6de:	d1f9e1        	l32r	a13, 0x12ec4 (0x300fe00)
+   1a6e1:	1c0a      	movi.n	a10, 16
+   1a6e3:	c02000        	memw
+   1a6e6:	d22d8a        	l32i	a13, a13, 0x228
+0001a6e9: 25f2e7   call8        . -0x180dc ; Capstone ; target=0x260c
+   1a6ec:	9083a0        	addx4	a8, a3, a9
+   1a6ef:	2088a0        	addx4	a8, a8, a2
+   1a6f2:	426828        	s32i	a4, a8, 160
+   1a6f5:	f20a98        	l8ui	a15, a10, 152
+   1a6f8:	409024        	extui	a9, a4, 0, 3
+   1a6fb:	f0f3a0        	addx4	a15, a3, a15
+   1a6fe:	20ffa0        	addx4	a15, a15, a2
+   1a701:	926f50        	s32i	a9, a15, 0x140
+   1a704:	e20a98        	l8ui	a14, a10, 152
+   1a707:	1bee      	addi.n	a14, a14, 1
+   1a709:	e24a98        	s8i	a14, a10, 152
+   1a70c:	661b06        	bnei	a11, 1, 0x1a716
+   1a70f:	2aa9      	add.n	a10, a9, a2
+   1a711:	c20a94        	l8ui	a12, a10, 148
+   1a714:	8c0c      	beqz.n	a12, 0x1a718
+0001a716: 1df0     retw.n        ; Capstone
+   1a718:	608b11        	slli	a8, a11, 10
+   1a71b:	2c0e      	movi.n	a14, 32
+   1a71d:	a0cb11        	slli	a12, a11, 6
+   1a720:	0c1d      	movi.n	a13, 1
+   1a722:	d24a94        	s8i	a13, a10, 148
+   1a725:	c0c920        	or	a12, a9, a12
+   1a728:	d1ebe1        	l32r	a13, 0x12ed4 (0xffff03ff)
+   1a72b:	e0cc20        	or	a12, a12, a14
+   1a72e:	f2029c        	l8ui	a15, a2, 156
+   1a731:	d0cc10        	and	a12, a12, a13
+   1a734:	c08820        	or	a8, a8, a12
+   1a737:	c1e8e1        	l32r	a12, 0x12ed8 (0xffc0ffff)
+   1a73a:	00eb11        	slli	a14, a11, 16
+   1a73d:	20ffa0        	addx4	a15, a15, a2
+   1a740:	c08810        	and	a8, a8, a12
+   1a743:	80ee20        	or	a14, a14, a8
+   1a746:	e26f38        	s32i	a14, a15, 224
+   1a749:	f2029c        	l8ui	a15, a2, 156
+   1a74c:	e0e024        	extui	a14, a14, 0, 3
+   1a74f:	20ffa0        	addx4	a15, a15, a2
+   1a752:	e26f60        	s32i	a14, a15, 0x180
+   1a755:	d2029c        	l8ui	a13, a2, 156
+   1a758:	1bdd      	addi.n	a13, a13, 1
+   1a75a:	d2429c        	s8i	a13, a2, 156
+0001a75d: 1df0     retw.n        ; Capstone
+	...

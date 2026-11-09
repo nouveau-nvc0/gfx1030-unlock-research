@@ -1,0 +1,488 @@
+{
+  "firmware_sha256": "0eb99764288f764fd853d6973693ffa52419cc7ba62074aee85df4a3e8d0286d",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1d7a8.txt",
+      "sha256": "a184ff554e43110b959f3297c4085752185e90261ae75e001f37d9eaeded819d",
+      "byte_checked_records": 25
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1d698.txt",
+      "sha256": "8db9da28b8ab19ddbeb796ee113d61d75aca5f92f31fcec9a774911ea0ebd398",
+      "byte_checked_records": 38
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1d60c.txt",
+      "sha256": "621fdf60febb33799dd4081a9625d2f1053873e0062f76c9f7f57570d3ed3167",
+      "byte_checked_records": 56
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1d594.txt",
+      "sha256": "3d35866eb3004e543f6b3c48a2ee111c321c52437ef14ec9462349a8537cbe99",
+      "byte_checked_records": 48
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1d480.txt",
+      "sha256": "914f79bc13e05609400d197fecb84b552b1159b73ccb362332edfba83d1bce41",
+      "byte_checked_records": 3
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/25b68.txt",
+      "sha256": "cb91b40ba8aeb09dc73f9f2ef000559b9679dc3cbd1abbd520f02748dc7d3014",
+      "byte_checked_records": 25
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/28b80.txt",
+      "sha256": "85540fa3508c9a20d10affaa92bf253f8e5680285a5e6e812ae6f27a9a96a8ac",
+      "byte_checked_records": 5
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1d554.txt",
+      "sha256": "92da6c0a7116057cb8a108212363f1ab065d47a8597156762054ccd0a1a52faa",
+      "byte_checked_records": 24
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1f354.txt",
+      "sha256": "82eaaa3174370755ae75d571bfda7f523d9f6959c4eeb9f084cf1dd527d872e1",
+      "byte_checked_records": 5
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1d488.txt",
+      "sha256": "85e7097053dc91143098a65d0b2731e33f63171cd0dd402ae3398b8911a76588",
+      "byte_checked_records": 65
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1d7fc.txt",
+      "sha256": "eab51fc8604375b89c9d8ef3c51c90c7579347cf49e9513e6172e1e055bba8c7",
+      "byte_checked_records": 3
+    }
+  ],
+  "scan_sha256": "ba239b21c05c8e5a8712ef682a7aab0ab379062dd1b2a86de7e8507d8284469e",
+  "initial_structures": [
+    {
+      "base": "0x101fc",
+      "next_base": "0x1042c",
+      "initial_callback_table": "0x115a0",
+      "initial_step0_state_cursor_start_end": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_callback0": "0x1d7fc"
+    },
+    {
+      "base": "0x1042c",
+      "next_base": "0x1065c",
+      "initial_callback_table": "0x115a0",
+      "initial_step0_state_cursor_start_end": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_callback0": "0x1d7fc"
+    },
+    {
+      "base": "0x1065c",
+      "next_base": "0x1088c",
+      "initial_callback_table": "0x115a0",
+      "initial_step0_state_cursor_start_end": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_callback0": "0x1d7fc"
+    },
+    {
+      "base": "0x1088c",
+      "next_base": "0x10abc",
+      "initial_callback_table": "0x115e0",
+      "initial_step0_state_cursor_start_end": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "initial_callback0": "0x1d7fc"
+    }
+  ],
+  "initial_workers": [
+    "0x1d698",
+    "0x1d60c",
+    "0x1d594",
+    "0x1d480"
+  ],
+  "setup_calls": [
+    {
+      "worker": "1d594",
+      "call": "0x1d5a8",
+      "helper": "0x25b68",
+      "relative_writes": [
+        {
+          "offset": "0x1dc",
+          "width": 4
+        },
+        {
+          "offset": "0x18",
+          "width": 4
+        },
+        {
+          "offset": "0x40",
+          "width": 2
+        }
+      ]
+    },
+    {
+      "worker": "1d594",
+      "call": "0x1d5b2",
+      "helper": "0x28b80",
+      "relative_writes": [
+        {
+          "offset": "0x1e0",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "worker": "1d594",
+      "call": "0x1d5be",
+      "helper": "0x25b68",
+      "relative_writes": [
+        {
+          "offset": "0x1ec",
+          "width": 4
+        },
+        {
+          "offset": "0x18",
+          "width": 4
+        },
+        {
+          "offset": "0x88",
+          "width": 2
+        }
+      ]
+    },
+    {
+      "worker": "1d594",
+      "call": "0x1d5c8",
+      "helper": "0x28b80",
+      "relative_writes": [
+        {
+          "offset": "0x1f0",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "worker": "1d594",
+      "call": "0x1d5d4",
+      "helper": "0x25b68",
+      "relative_writes": [
+        {
+          "offset": "0x1e4",
+          "width": 4
+        },
+        {
+          "offset": "0x3c",
+          "width": 4
+        },
+        {
+          "offset": "0x64",
+          "width": 2
+        }
+      ]
+    },
+    {
+      "worker": "1d594",
+      "call": "0x1d5de",
+      "helper": "0x28b80",
+      "relative_writes": [
+        {
+          "offset": "0x1e8",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "worker": "1d594",
+      "call": "0x1d5ea",
+      "helper": "0x25b68",
+      "relative_writes": [
+        {
+          "offset": "0x1f4",
+          "width": 4
+        },
+        {
+          "offset": "0x84",
+          "width": 4
+        },
+        {
+          "offset": "0x64",
+          "width": 2
+        }
+      ]
+    },
+    {
+      "worker": "1d594",
+      "call": "0x1d5f4",
+      "helper": "0x28b80",
+      "relative_writes": [
+        {
+          "offset": "0x1f8",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "worker": "1d60c",
+      "call": "0x1d620",
+      "helper": "0x25b68",
+      "relative_writes": [
+        {
+          "offset": "0x1dc",
+          "width": 4
+        },
+        {
+          "offset": "0x18",
+          "width": 4
+        },
+        {
+          "offset": "0x40",
+          "width": 2
+        }
+      ]
+    },
+    {
+      "worker": "1d60c",
+      "call": "0x1d62a",
+      "helper": "0x28b80",
+      "relative_writes": [
+        {
+          "offset": "0x1e0",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "worker": "1d60c",
+      "call": "0x1d636",
+      "helper": "0x25b68",
+      "relative_writes": [
+        {
+          "offset": "0x1f4",
+          "width": 4
+        },
+        {
+          "offset": "0x18",
+          "width": 4
+        },
+        {
+          "offset": "0xac",
+          "width": 2
+        }
+      ]
+    },
+    {
+      "worker": "1d60c",
+      "call": "0x1d640",
+      "helper": "0x28b80",
+      "relative_writes": [
+        {
+          "offset": "0x1f8",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "worker": "1d60c",
+      "call": "0x1d64c",
+      "helper": "0x25b68",
+      "relative_writes": [
+        {
+          "offset": "0x1ec",
+          "width": 4
+        },
+        {
+          "offset": "0x3c",
+          "width": 4
+        },
+        {
+          "offset": "0x88",
+          "width": 2
+        }
+      ]
+    },
+    {
+      "worker": "1d60c",
+      "call": "0x1d656",
+      "helper": "0x28b80",
+      "relative_writes": [
+        {
+          "offset": "0x1f0",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "worker": "1d60c",
+      "call": "0x1d662",
+      "helper": "0x25b68",
+      "relative_writes": [
+        {
+          "offset": "0x1e4",
+          "width": 4
+        },
+        {
+          "offset": "0x3c",
+          "width": 4
+        },
+        {
+          "offset": "0x64",
+          "width": 2
+        }
+      ]
+    },
+    {
+      "worker": "1d60c",
+      "call": "0x1d66c",
+      "helper": "0x28b80",
+      "relative_writes": [
+        {
+          "offset": "0x1e8",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "worker": "1d60c",
+      "call": "0x1d678",
+      "helper": "0x25b68",
+      "relative_writes": [
+        {
+          "offset": "0x1fc",
+          "width": 4
+        },
+        {
+          "offset": "0xa8",
+          "width": 4
+        },
+        {
+          "offset": "0xd0",
+          "width": 2
+        }
+      ]
+    },
+    {
+      "worker": "1d60c",
+      "call": "0x1d682",
+      "helper": "0x28b80",
+      "relative_writes": [
+        {
+          "offset": "0x200",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "worker": "1d698",
+      "call": "0x1d6ac",
+      "helper": "0x25b68",
+      "relative_writes": [
+        {
+          "offset": "0x1dc",
+          "width": 4
+        },
+        {
+          "offset": "0x18",
+          "width": 4
+        },
+        {
+          "offset": "0x40",
+          "width": 2
+        }
+      ]
+    },
+    {
+      "worker": "1d698",
+      "call": "0x1d6b6",
+      "helper": "0x28b80",
+      "relative_writes": [
+        {
+          "offset": "0x1e0",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "worker": "1d698",
+      "call": "0x1d6c2",
+      "helper": "0x25b68",
+      "relative_writes": [
+        {
+          "offset": "0x1e4",
+          "width": 4
+        },
+        {
+          "offset": "0x3c",
+          "width": 4
+        },
+        {
+          "offset": "0x64",
+          "width": 2
+        }
+      ]
+    },
+    {
+      "worker": "1d698",
+      "call": "0x1d6cc",
+      "helper": "0x28b80",
+      "relative_writes": [
+        {
+          "offset": "0x1e8",
+          "width": 1
+        }
+      ]
+    },
+    {
+      "worker": "1d698",
+      "call": "0x1d6d8",
+      "helper": "0x25b68",
+      "relative_writes": [
+        {
+          "offset": "0x1ec",
+          "width": 4
+        },
+        {
+          "offset": "0x60",
+          "width": 4
+        },
+        {
+          "offset": "0x88",
+          "width": 2
+        }
+      ]
+    },
+    {
+      "worker": "1d698",
+      "call": "0x1d6e2",
+      "helper": "0x28b80",
+      "relative_writes": [
+        {
+          "offset": "0x1f0",
+          "width": 1
+        }
+      ]
+    }
+  ],
+  "findings": [
+    "Three initial workers configure the selected structure through25b68/28b80, clear its byte1, then call1f354->1d488. Fourth worker1d480 immediately returns.",
+    "24 setup calls have constant field indices; computed writes stay within the230hex-byte selected structure and do not reach its callback-table pointer+22c. 1d554 pair writes range+15c..+1db under its32-entry loop. These are local bounds, not whole-callee closure.",
+    "1d488 loads pointer[P+22c], then callback from that table indexed by state bytesP+1f/P+20, bounded locally by byteP+21. Therefore command41 has a second data-dependent callback layer before the final pointer reload/store.",
+    "All four initial structures have zero step0 state/cursor/start/end and callback0=1d7fc, an immediate-return function. This describes image initialization only, not actual command-time contents.",
+    "Final store1d7e2 still rereads global15874 after callbacks. Stability across runtime callbacks, helper1d538/error path, synchronization and other writers remains unproved."
+  ],
+  "next": "Trace initialization/runtime writers of P+22c and state bytes+1f/+20/+21, and reachable second-level callbacks before claiming final pointer preservation or a CC connection.",
+  "scope": "Offline normal-worker setup and initial image layout. Selector ranges outside0..3, runtime mutations, address aliases and hardware acceptance remain open. No hardware access."
+}

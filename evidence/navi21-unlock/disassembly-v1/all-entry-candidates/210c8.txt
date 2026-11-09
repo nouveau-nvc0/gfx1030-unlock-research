@@ -1,0 +1,29 @@
+
+/tmp/tmp31unkayp/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000210c8 <.data+0x210c8>:
+000210c8: 366100   entry        a1, 0x30 ; Capstone
+   210cb:	0c0a      	movi.n	a10, 0
+000210cd: 5003fa   wfr          f0, a3 ; Capstone
+000210d0: 034100   ssi          f0, a1, 0 ; Capstone
+000210d3: a50910   call8        . +0x1009c ; Capstone ; target=0x3116c
+000210d6: 3000fa   const.s      f0, 0 ; Capstone
+   210d9:	ac1a      	beqz.n	a10, 0x210fe
+   210db:	922a13        	l32i	a9, a10, 76
+000210de: 430100   lsi          f4, a1, 0 ; Capstone
+   210e1:	9c99      	beqz.n	a9, 0x210fe
+000210e3: 33094c   lsi          f3, a9, 0x130 ; Capstone
+000210e6: 230949   lsi          f2, a9, 0x124 ; Capstone
+000210e9: 40234a   madd.s       f2, f3, f4 ; Capstone
+000210ec: 030947   lsi          f0, a9, 0x11c ; Capstone
+000210ef: 130948   lsi          f1, a9, 0x120 ; Capstone
+000210f2: 20114b   olt.s        b1, f1, f2 ; Capstone
+000210f5: 1012db   movt.s       f1, f2, b1 ; Capstone
+000210f8: 10004b   olt.s        b0, f0, f1 ; Capstone
+000210fb: 0001cb   movf.s       f0, f1, b0 ; Capstone
+000210fe: 4020fa   rfr          a2, f0 ; Capstone
+00021101: 1df0     retw.n        ; Capstone
+	...

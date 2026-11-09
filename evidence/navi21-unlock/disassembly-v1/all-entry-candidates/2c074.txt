@@ -1,0 +1,51 @@
+
+/tmp/tmpx2xylj6d/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002c074 <.data+0x2c074>:
+0002c074: 366100   entry        a1, 0x30 ; Capstone
+   2c077:	81089c        	l32r	a8, 0x13098 (0x447a0000)
+   2c07a:	a11b9c        	l32r	a10, 0x130e8 (0x3a83126f)
+   2c07d:	91e69e        	l32r	a9, 0x13c18 (0x358637bd)
+0002c080: 0024da   ufloat.s     f2, a4, 0 ; Capstone
+0002c083: 503afa   wfr          f3, a10 ; Capstone
+0002c086: 5019fa   wfr          f1, a9 ; Capstone
+0002c089: 30124a   madd.s       f1, f2, f3 ; Capstone
+0002c08c: 43020b   lsi          f4, a2, 0x2c ; Capstone
+0002c08f: 23020a   lsi          f2, a2, 0x28 ; Capstone
+0002c092: 0002fa   mov.s        f0, f2 ; Capstone
+0002c095: 10124b   olt.s        b1, f2, f1 ; Capstone
+0002c098: 1001db   movt.s       f0, f1, b1 ; Capstone
+0002c09b: 00044b   olt.s        b0, f4, f0 ; Capstone
+   2c09e:	ed06      	mov.n	a14, a6
+0002c0a0: 5008fa   wfr          f0, a8 ; Capstone
+0002c0a3: 760005   bf           b0, . +9 ; Capstone
+0002c0a6: 00042a   mul.s        f0, f4, f0 ; Capstone
+   2c0a9:	860300        	j	0x2c0bb
+0002c0ac: 10224b   olt.s        b2, f2, f1 ; Capstone
+0002c0af: 760205   bf           b2, . +9 ; Capstone
+0002c0b2: 00012a   mul.s        f0, f1, f0 ; Capstone
+   2c0b5:	860000        	j	0x2c0bb
+0002c0b8: 00022a   mul.s        f0, f2, f0 ; Capstone
+0002c0bb: 00b0aa   floor.s      a11, f0, 0 ; Capstone
+0002c0be: 004bca   float.s      f4, a11, 0 ; Capstone
+0002c0c1: 30342a   mul.s        f3, f4, f3 ; Capstone
+   2c0c4:	ad02      	mov.n	a10, a2
+   2c0c6:	dd05      	mov.n	a13, a5
+   2c0c8:	bd03      	mov.n	a11, a3
+0002c0ca: 334100   ssi          f3, a1, 0 ; Capstone
+0002c0cd: 40c3fa   rfr          a12, f3 ; Capstone
+0002c0d0: a51dff   call8        . -0xe24 ; Capstone ; target=0x2b2ac
+   2c0d3:	c20201        	l8ui	a12, a2, 1
+   2c0d6:	ccfc      	bnez.n	a12, 0x2c0e9
+   2c0d8:	ccda      	bnez.n	a10, 0x2c0e9
+   2c0da:	dd05      	mov.n	a13, a5
+   2c0dc:	bd03      	mov.n	a11, a3
+   2c0de:	ad02      	mov.n	a10, a2
+0002c0e0: 530100   lsi          f5, a1, 0 ; Capstone
+0002c0e3: 40c5fa   rfr          a12, f5 ; Capstone
+0002c0e6: e5590a   call8        . +0xa5a0 ; Capstone ; target=0x36684
+0002c0e9: 1df0     retw.n        ; Capstone
+	...

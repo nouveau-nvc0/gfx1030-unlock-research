@@ -1,0 +1,32 @@
+
+/tmp/tmpjrhvz32g/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001ef60 <.data+0x1ef60>:
+0001ef60: 364100   entry        a1, 0x20 ; Capstone
+   1ef63:	0c3a      	movi.n	a10, 3
+0001ef65: a561e3   call8        . -0x1c9e4 ; Capstone ; target=0x2580
+   1ef68:	81f1cf        	l32r	a8, 0x12f2c (0x141d600)
+   1ef6b:	c02000        	memw
+   1ef6e:	a137d0        	l32r	a10, 0x1304c (0x40000)
+   1ef71:	222840        	l32i	a2, a8, 0x100
+   1ef74:	91b2d0        	l32r	a9, 0x1323c (0xfff7ffff)
+   1ef77:	a02220        	or	a2, a2, a10
+   1ef7a:	902210        	and	a2, a2, a9
+   1ef7d:	c02000        	memw
+   1ef80:	226840        	s32i	a2, a8, 0x100
+   1ef83:	21e9cf        	l32r	a2, 0x12f28 (0xff8c)
+   1ef86:	0c2b      	movi.n	a11, 2
+   1ef88:	0c1c      	movi.n	a12, 1
+   1ef8a:	ad02      	mov.n	a10, a2
+0001ef8c: 25bc09   call8        . +0x9bc4 ; Capstone ; target=0x28b50
+   1ef8f:	ad02      	mov.n	a10, a2
+   1ef91:	0c0b      	movi.n	a11, 0
+   1ef93:	0c1c      	movi.n	a12, 1
+0001ef95: a5bb09   call8        . +0x9bbc ; Capstone ; target=0x28b50
+   1ef98:	0c3a      	movi.n	a10, 3
+0001ef9a: a54de3   call8        . -0x1cb24 ; Capstone ; target=0x2474
+0001ef9d: 1df0     retw.n        ; Capstone
+	...

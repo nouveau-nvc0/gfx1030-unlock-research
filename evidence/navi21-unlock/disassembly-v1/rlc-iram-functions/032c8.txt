@@ -1,0 +1,27 @@
+
+/tmp/tmpp4optmwg/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000032c8 <.data+0x32c8>:
+000032c8: 364100   entry        a1, 0x20 ; Capstone
+    32cb:	165300        	beqz	a3, 0x32d4
+    32ce:	a2a000        	movi	a10, 0
+000032d1: 25fdff   call8        . -0x2c ; Capstone ; target=0x32a4
+    32d4:	91efe7        	l32r	a9, 0xffffd290 (0x5ffee44c) ; inferred DRAM map 0x5ffec000
+    32d7:	0c1b      	movi.n	a11, 1
+    32d9:	303b93        	movnez	a3, a11, a3
+    32dc:	9a82      	add.n	a8, a2, a9
+    32de:	324809        	s8i	a3, a8, 9
+    32e1:	a20909        	l8ui	a10, a9, 9
+    32e4:	82090a        	l8ui	a8, a9, 10
+    32e7:	22090b        	l8ui	a2, a9, 11
+    32ea:	a0ab93        	movnez	a10, a11, a10
+    32ed:	a08820        	or	a8, a8, a10
+    32f0:	808b93        	movnez	a8, a11, a8
+    32f3:	802220        	or	a2, a2, a8
+    32f6:	202b93        	movnez	a2, a11, a2
+    32f9:	224901        	s8i	a2, a9, 1
+000032fc: 1df0     retw.n        ; Capstone
+	...

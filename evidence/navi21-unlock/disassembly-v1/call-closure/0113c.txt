@@ -1,0 +1,27 @@
+
+/tmp/tmp86j5ocsa/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000113c <.data+0x113c>:
+0000113c: 364100   entry        a1, 0x20 ; Capstone
+    113f:	20c464        	extui	a12, a2, 4, 7
+    1142:	b19dfe        	l32r	a11, 0xbb8 (0x7688)
+    1145:	0c0a      	movi.n	a10, 0
+    1147:	0c48      	movi.n	a8, 4
+00001149: 76a809   loopgtz      a8, . +0xd ; Capstone
+    114c:	920b80        	l8ui	a9, a11, 128
+    114f:	1bbb      	addi.n	a11, a11, 1
+    1151:	c71901        	beq	a9, a12, 0x1156
+    1154:	1baa      	addi.n	a10, a10, 1
+    1156:	664a11        	bnei	a10, 4, 0x116b
+    1159:	0c0c      	movi.n	a12, 0
+    115b:	1c4b      	movi.n	a11, 20
+    115d:	d182fe        	l32r	a13, 0xb68 (0x300fe00)
+    1160:	1c0a      	movi.n	a10, 16
+    1162:	c02000        	memw
+    1165:	d22d8a        	l32i	a13, a13, 0x228
+00001168: 254a01   call8        . +0x14a4 ; Capstone ; target=0x260c
+    116b:	a02074        	extui	a2, a10, 0, 8
+0000116e: 1df0     retw.n        ; Capstone

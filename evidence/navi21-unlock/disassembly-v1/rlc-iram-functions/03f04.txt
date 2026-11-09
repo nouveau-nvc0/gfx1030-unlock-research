@@ -1,0 +1,55 @@
+
+/tmp/tmpb_l9xlja/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00003f04 <.data+0x3f04>:
+00003f04: 364100   entry        a1, 0x20 ; Capstone
+    3f07:	91dee4        	l32r	a9, 0xffffd280 (0xcc04) ; inferred DRAM map 0x5ffec000
+    3f0a:	82a000        	movi	a8, 0
+    3f0d:	b1dde4        	l32r	a11, 0xffffd284 (0x5ffffe00) ; inferred DRAM map 0x5ffec000
+    3f10:	5195e4        	l32r	a5, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    3f13:	a1dee4        	l32r	a10, 0xffffd28c (0xfffff) ; inferred DRAM map 0x5ffec000
+    3f16:	41dce4        	l32r	a4, 0xffffd288 (0x60030e00) ; inferred DRAM map 0x5ffec000
+    3f19:	72a000        	movi	a7, 0
+    3f1c:	606f00        	rsil	a6, 15
+    3f1f:	a03910        	and	a3, a9, a10
+    3f22:	90c4b5        	extui	a12, a9, 20, 12
+    3f25:	c26580        	s32i	a12, a5, 0x200
+    3f28:	b03380        	add	a3, a3, a11
+    3f2b:	322380        	l32i	a3, a3, 0x200
+    3f2e:	60e613        	wsr.ps	a6
+    3f31:	102000        	rsync
+    3f34:	206f00        	rsil	a2, 15
+    3f37:	806034        	extui	a6, a8, 0, 4
+    3f3a:	303241        	srli	a3, a3, 2
+    3f3d:	32c3f0        	addi	a3, a3, -16
+    3f40:	806601        	slli	a6, a6, 24
+    3f43:	626581        	s32i	a6, a5, 0x204
+    3f46:	726580        	s32i	a7, a5, 0x200
+    3f49:	326485        	s32i	a3, a4, 0x214
+    3f4c:	726581        	s32i	a7, a5, 0x204
+    3f4f:	20e613        	wsr.ps	a2
+    3f52:	102000        	rsync
+    3f55:	32a000        	movi	a3, 0
+    3f58:	e06f00        	rsil	a14, 15
+    3f5b:	626581        	s32i	a6, a5, 0x204
+    3f5e:	726580        	s32i	a7, a5, 0x200
+    3f61:	726486        	s32i	a7, a4, 0x218
+    3f64:	726581        	s32i	a7, a5, 0x204
+    3f67:	e0e613        	wsr.ps	a14
+    3f6a:	102000        	rsync
+    3f6d:	d06f00        	rsil	a13, 15
+    3f70:	626581        	s32i	a6, a5, 0x204
+    3f73:	726580        	s32i	a7, a5, 0x200
+    3f76:	726486        	s32i	a7, a4, 0x218
+    3f79:	726581        	s32i	a7, a5, 0x204
+    3f7c:	d0e613        	wsr.ps	a13
+    3f7f:	102000        	rsync
+    3f82:	2b33      	addi.n	a3, a3, 2
+    3f84:	66b3d0        	bnei	a3, 16, 0x3f58
+    3f87:	8b99      	addi.n	a9, a9, 8
+    3f89:	1b88      	addi.n	a8, a8, 1
+    3f8b:	66b88d        	bnei	a8, 16, 0x3f1c
+00003f8e: 1df0     retw.n        ; Capstone

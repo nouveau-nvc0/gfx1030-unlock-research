@@ -1,0 +1,46 @@
+
+/tmp/tmpjhux8_b2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000226c <.data+0x226c>:
+0000226c: 364100   entry        a1, 0x20 ; Capstone
+    226f:	51e7eb        	l32r	a5, 0xffffd20c (0x5ffee264) ; inferred DRAM map 0x5ffec000
+    2272:	0c16      	movi.n	a6, 1
+    2274:	0c07      	movi.n	a7, 0
+    2276:	724505        	s8i	a7, a5, 5
+    2279:	0c8b      	movi.n	a11, 8
+    227b:	820503        	l8ui	a8, a5, 3
+    227e:	420504        	l8ui	a4, a5, 4
+    2281:	320505        	l8ui	a3, a5, 5
+    2284:	808693        	movnez	a8, a6, a8
+    2287:	804420        	or	a4, a4, a8
+    228a:	404693        	movnez	a4, a6, a4
+    228d:	403320        	or	a3, a3, a4
+    2290:	41ddeb        	l32r	a4, 0xffffd204 (0x6803b200) ; inferred DRAM map 0x5ffec000
+    2293:	303693        	movnez	a3, a6, a3
+    2296:	324506        	s8i	a3, a5, 6
+    2299:	ac83      	beqz.n	a3, 0x22c5
+    229b:	a2248c        	l32i	a10, a4, 0x230
+    229e:	b0aa20        	or	a10, a10, a11
+    22a1:	a2648c        	s32i	a10, a4, 0x230
+    22a4:	30ea03        	rsr.ccount	a3
+    22a7:	90ea03        	rsr.ccount	a9
+    22aa:	3099c0        	sub	a9, a9, a3
+    22ad:	f65908        	bgeui	a9, 5, 0x22b9
+    22b0:	c0ea03        	rsr.ccount	a12
+    22b3:	30ccc0        	sub	a12, a12, a3
+    22b6:	b65cf6        	bltui	a12, 5, 0x22b0
+    22b9:	0c1d      	movi.n	a13, 1
+    22bb:	0cae      	movi.n	a14, 10
+    22bd:	e264a4        	s32i	a14, a4, 0x290
+    22c0:	d24502        	s8i	a13, a5, 2
+000022c3: 1df0     retw.n        ; Capstone
+    22c5:	22248c        	l32i	a2, a4, 0x230
+    22c8:	7c73      	movi.n	a3, -9
+    22ca:	302210        	and	a2, a2, a3
+    22cd:	22648c        	s32i	a2, a4, 0x230
+    22d0:	7264a4        	s32i	a7, a4, 0x290
+    22d3:	624502        	s8i	a6, a5, 2
+000022d6: 1df0     retw.n        ; Capstone

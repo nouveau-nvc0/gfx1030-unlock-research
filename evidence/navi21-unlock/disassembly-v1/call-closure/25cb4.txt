@@ -1,0 +1,194 @@
+
+/tmp/tmpfghvyeya/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00025cb4 <.data+0x25cb4>:
+00025cb4: 366100   entry        a1, 0x30 ; Capstone
+   25cb7:	811fb7        	l32r	a8, 0x13934 (0x9c90)
+   25cba:	82087e        	l8ui	a8, a8, 126
+   25cbd:	56281f        	bnez	a8, 0x25eb3
+   25cc0:	f11eb7        	l32r	a15, 0x13938 (0x156e8)
+   25cc3:	7cfb      	movi.n	a11, -1
+   25cc5:	0c0e      	movi.n	a14, 0
+   25cc7:	0c17      	movi.n	a7, 1
+   25cc9:	0c0a      	movi.n	a10, 0
+   25ccb:	4188b4        	l32r	a4, 0x12eec (0x157fc)
+   25cce:	a911      	s32i.n	a10, a1, 4
+   25cd0:	a183b4        	l32r	a10, 0x12edc (0x107c)
+   25cd3:	72447e        	s8i	a7, a4, 126
+   25cd6:	c811      	l32i.n	a12, a1, 4
+   25cd8:	0c09      	movi.n	a9, 0
+   25cda:	8172b4        	l32r	a8, 0x12ea4 (0x147e0)
+   25cdd:	c0cc90        	addx2	a12, a12, a12
+   25ce0:	e0dc11        	slli	a13, a12, 2
+   25ce3:	80cca0        	addx4	a12, a12, a8
+   25ce6:	82a006        	movi	a8, 6
+00025ce9: 76a80b   loopgtz      a8, . +0xf ; Capstone
+   25cec:	9a8c      	add.n	a8, a12, a9
+   25cee:	1b99      	addi.n	a9, a9, 1
+   25cf0:	aa88      	add.n	a8, a8, a10
+   25cf2:	b24880        	s8i	a11, a8, 128
+   25cf5:	909074        	extui	a9, a9, 0, 8
+   25cf8:	9811      	l32i.n	a9, a1, 4
+   25cfa:	fa8d      	add.n	a8, a13, a15
+   25cfc:	e2687f        	s32i	a14, a8, 0x1fc
+   25cff:	1bc9      	addi.n	a12, a9, 1
+   25d01:	c09074        	extui	a9, a12, 0, 8
+   25d04:	9911      	s32i.n	a9, a1, 4
+   25d06:	6649cc        	bnei	a9, 4, 0x25cd6
+   25d09:	1c89      	movi.n	a9, 24
+   25d0b:	0c0a      	movi.n	a10, 0
+   25d0d:	a911      	s32i.n	a10, a1, 4
+00025d0f: 76a917   loopgtz      a9, . +0x1b ; Capstone
+   25d12:	c811      	l32i.n	a12, a1, 4
+   25d14:	1bdc      	addi.n	a13, a12, 1
+   25d16:	40fca0        	addx4	a15, a12, a4
+   25d19:	b24f80        	s8i	a11, a15, 128
+   25d1c:	b24f82        	s8i	a11, a15, 130
+   25d1f:	b24f81        	s8i	a11, a15, 129
+   25d22:	b24f83        	s8i	a11, a15, 131
+   25d25:	d0c074        	extui	a12, a13, 0, 8
+   25d28:	c911      	s32i.n	a12, a1, 4
+   25d2a:	a102b7        	l32r	a10, 0x13934 (0x9c90)
+   25d2d:	a20a7f        	l8ui	a10, a10, 127
+   25d30:	e2447d        	s8i	a14, a4, 125
+   25d33:	161a17        	beqz	a10, 0x25ea8
+   25d36:	0c05      	movi.n	a5, 0
+   25d38:	0c0f      	movi.n	a15, 0
+   25d3a:	f901      	s32i.n	a15, a1, 0
+   25d3c:	5911      	s32i.n	a5, a1, 4
+   25d3e:	52a0ff        	movi	a5, 255
+   25d41:	61feb6        	l32r	a6, 0x1393c (0x9c94)
+   25d44:	3811      	l32i.n	a3, a1, 4
+   25d46:	8801      	l32i.n	a8, a1, 0
+   25d48:	6033a0        	addx4	a3, a3, a6
+   25d4b:	22037f        	l8ui	a2, a3, 127
+   25d4e:	62037d        	l8ui	a6, a3, 125
+   25d51:	32037e        	l8ui	a3, a3, 126
+00025d54: 809273   maxu         a9, a2, a8 ; Capstone
+   25d57:	909074        	extui	a9, a9, 0, 8
+00025d5a: 909373   maxu         a9, a3, a9 ; Capstone
+   25d5d:	908074        	extui	a8, a9, 0, 8
+   25d60:	8901      	s32i.n	a8, a1, 0
+   25d62:	16160c        	beqz	a6, 0x25e27
+   25d65:	ad06      	mov.n	a10, a6
+00025d67: 65e9ff   call8        . -0x168 ; Capstone ; target=0x25bfc
+   25d6a:	82047d        	l8ui	a8, a4, 125
+   25d6d:	7cfb      	movi.n	a11, -1
+   25d6f:	0c0c      	movi.n	a12, 0
+00025d71: 76982b   loopnez      a8, . +0x2f ; Capstone
+   25d74:	40eca0        	addx4	a14, a12, a4
+   25d77:	f20e80        	l8ui	a15, a14, 128
+   25d7a:	d20e82        	l8ui	a13, a14, 130
+   25d7d:	f7920b        	bne	a2, a15, 0x25d8c
+   25d80:	d79308        	bne	a3, a13, 0x25d8c
+   25d83:	920e81        	l8ui	a9, a14, 129
+   25d86:	5099c0        	sub	a9, a9, a5
+   25d89:	16c90a        	beqz	a9, 0x25e39
+   25d8c:	d7920b        	bne	a2, a13, 0x25d9b
+   25d8f:	f79308        	bne	a3, a15, 0x25d9b
+   25d92:	d20e83        	l8ui	a13, a14, 131
+   25d95:	50ddc0        	sub	a13, a13, a5
+   25d98:	167d0d        	beqz	a13, 0x25e73
+   25d9b:	1bcc      	addi.n	a12, a12, 1
+   25d9d:	c0c074        	extui	a12, a12, 0, 8
+   25da0:	a09074        	extui	a9, a10, 0, 8
+   25da3:	0c0c      	movi.n	a12, 0
+   25da5:	566c06        	bnez	a12, 0x25e0f
+   25da8:	c1e6b6        	l32r	a12, 0x13940 (0x15860)
+   25dab:	d20c19        	l8ui	a13, a12, 25
+   25dae:	40dda0        	addx4	a13, a13, a4
+   25db1:	224d80        	s8i	a2, a13, 128
+   25db4:	820c19        	l8ui	a8, a12, 25
+   25db7:	4088a0        	addx4	a8, a8, a4
+   25dba:	324882        	s8i	a3, a8, 130
+   25dbd:	f20c19        	l8ui	a15, a12, 25
+   25dc0:	40ffa0        	addx4	a15, a15, a4
+   25dc3:	a24f81        	s8i	a10, a15, 129
+   25dc6:	d2047d        	l8ui	a13, a4, 125
+   25dc9:	40eda0        	addx4	a14, a13, a4
+   25dcc:	f20e80        	l8ui	a15, a14, 128
+   25dcf:	8135b4        	l32r	a8, 0x12ea4 (0x147e0)
+   25dd2:	e20e81        	l8ui	a14, a14, 129
+   25dd5:	f0ff90        	addx2	a15, a15, a15
+   25dd8:	80ffa0        	addx4	a15, a15, a8
+   25ddb:	faee      	add.n	a14, a14, a15
+   25ddd:	e2de10        	addmi	a14, a14, 0x1000
+   25de0:	e2ce1c        	addi	a14, a14, 28
+   25de3:	d24ee0        	s8i	a13, a14, 224
+   25de6:	c20c19        	l8ui	a12, a12, 25
+   25de9:	40cca0        	addx4	a12, a12, a4
+   25dec:	f20c80        	l8ui	a15, a12, 128
+   25def:	c20c82        	l8ui	a12, a12, 130
+   25df2:	f0ff90        	addx2	a15, a15, a15
+   25df5:	40ffa0        	addx4	a15, a15, a4
+   25df8:	e22f3a        	l32i	a14, a15, 232
+   25dfb:	001c40        	ssl	a12
+   25dfe:	0087a1        	sll	a8, a7
+   25e01:	80ee20        	or	a14, a14, a8
+   25e04:	e26f3a        	s32i	a14, a15, 232
+   25e07:	d2047d        	l8ui	a13, a4, 125
+   25e0a:	1bdd      	addi.n	a13, a13, 1
+   25e0c:	d2447d        	s8i	a13, a4, 125
+   25e0f:	001940        	ssl	a9
+   25e12:	0087a1        	sll	a8, a7
+   25e15:	b08830        	xor	a8, a8, a11
+   25e18:	806610        	and	a6, a6, a8
+   25e1b:	606074        	extui	a6, a6, 0, 8
+   25e1e:	5636f4        	bnez	a6, 0x25d65
+   25e21:	a1c4b6        	l32r	a10, 0x13934 (0x9c90)
+   25e24:	a20a7f        	l8ui	a10, a10, 127
+   25e27:	c811      	l32i.n	a12, a1, 4
+   25e29:	1bdc      	addi.n	a13, a12, 1
+   25e2b:	d0c074        	extui	a12, a13, 0, 8
+   25e2e:	c911      	s32i.n	a12, a1, 4
+   25e30:	a7bc02        	bgeu	a12, a10, 0x25e36
+   25e33:	86c2ff        	j	0x25d41
+   25e36:	861c00        	j	0x25eac
+   25e39:	a24e81        	s8i	a10, a14, 129
+   25e3c:	811ab4        	l32r	a8, 0x12ea4 (0x147e0)
+   25e3f:	a09074        	extui	a9, a10, 0, 8
+   25e42:	f0df90        	addx2	a13, a15, a15
+   25e45:	80dda0        	addx4	a13, a13, a8
+   25e48:	dad9      	add.n	a13, a9, a13
+   25e4a:	d2dd10        	addmi	a13, a13, 0x1000
+   25e4d:	d2cd1c        	addi	a13, a13, 28
+   25e50:	c24de0        	s8i	a12, a13, 224
+   25e53:	c20e80        	l8ui	a12, a14, 128
+   25e56:	820e82        	l8ui	a8, a14, 130
+   25e59:	c0ec90        	addx2	a14, a12, a12
+   25e5c:	40eea0        	addx4	a14, a14, a4
+   25e5f:	c22e3a        	l32i	a12, a14, 232
+   25e62:	001840        	ssl	a8
+   25e65:	00d7a1        	sll	a13, a7
+   25e68:	d0cc20        	or	a12, a12, a13
+   25e6b:	c26e3a        	s32i	a12, a14, 232
+   25e6e:	0c1c      	movi.n	a12, 1
+   25e70:	46ccff        	j	0x25da5
+   25e73:	a24e83        	s8i	a10, a14, 131
+   25e76:	d20e82        	l8ui	a13, a14, 130
+   25e79:	f10ab4        	l32r	a15, 0x12ea4 (0x147e0)
+   25e7c:	a09074        	extui	a9, a10, 0, 8
+   25e7f:	d0dd90        	addx2	a13, a13, a13
+   25e82:	f0dda0        	addx4	a13, a13, a15
+   25e85:	dad9      	add.n	a13, a9, a13
+   25e87:	d2dd10        	addmi	a13, a13, 0x1000
+   25e8a:	d2cd1c        	addi	a13, a13, 28
+   25e8d:	c24de0        	s8i	a12, a13, 224
+   25e90:	820e82        	l8ui	a8, a14, 130
+   25e93:	f20e80        	l8ui	a15, a14, 128
+   25e96:	80e890        	addx2	a14, a8, a8
+   25e99:	001f40        	ssl	a15
+   25e9c:	00d7a1        	sll	a13, a7
+   25e9f:	40eea0        	addx4	a14, a14, a4
+   25ea2:	c22e3a        	l32i	a12, a14, 232
+   25ea5:	c6efff        	j	0x25e68
+   25ea8:	0c0e      	movi.n	a14, 0
+   25eaa:	e901      	s32i.n	a14, a1, 0
+   25eac:	f801      	l32i.n	a15, a1, 0
+   25eae:	1bff      	addi.n	a15, a15, 1
+   25eb0:	f2447c        	s8i	a15, a4, 124
+00025eb3: 1df0     retw.n        ; Capstone
+   25eb5:	000000        	ill

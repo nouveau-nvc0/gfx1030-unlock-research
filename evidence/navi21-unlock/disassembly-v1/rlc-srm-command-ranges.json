@@ -1,0 +1,199 @@
+{
+  "scope": "Inferred GPM scratch image placement; static bytes plus IRAM instruction chain, not observed running memory",
+  "initializer": "0x65d8 reads GPM scratch words starting96 into5ffedb24+4",
+  "dispatcher": "0x6944",
+  "submitter": "0x7670 writes6803b21c",
+  "groups": [
+    {
+      "gpm_word": 128,
+      "ram_offsets": [
+        132,
+        136
+      ],
+      "srm_start_dword": "0x2f8",
+      "srm_length_dwords": "0x5a",
+      "command_start_field": "0x17c",
+      "command_size_field": "0x2d",
+      "callsite": "0x6c9d",
+      "members": [
+        {
+          "file_offset": "0x7958",
+          "body_offset": "0xd08",
+          "packed_word": "0x8000226f",
+          "second_word": "0x0",
+          "low16": "0x226f",
+          "candidate_register": "CC_GC_SHADER_ARRAY_CONFIG"
+        },
+        {
+          "file_offset": "0x7960",
+          "body_offset": "0xd10",
+          "packed_word": "0x8400226f",
+          "second_word": "0x0",
+          "low16": "0x226f",
+          "candidate_register": "CC_GC_SHADER_ARRAY_CONFIG"
+        },
+        {
+          "file_offset": "0x7968",
+          "body_offset": "0xd18",
+          "packed_word": "0x9000226f",
+          "second_word": "0x0",
+          "low16": "0x226f",
+          "candidate_register": "CC_GC_SHADER_ARRAY_CONFIG"
+        },
+        {
+          "file_offset": "0x7970",
+          "body_offset": "0xd20",
+          "packed_word": "0x9400226f",
+          "second_word": "0x0",
+          "low16": "0x226f",
+          "candidate_register": "CC_GC_SHADER_ARRAY_CONFIG"
+        },
+        {
+          "file_offset": "0x7978",
+          "body_offset": "0xd28",
+          "packed_word": "0xa000226f",
+          "second_word": "0x0",
+          "low16": "0x226f",
+          "candidate_register": "CC_GC_SHADER_ARRAY_CONFIG"
+        },
+        {
+          "file_offset": "0x7980",
+          "body_offset": "0xd30",
+          "packed_word": "0xa400226f",
+          "second_word": "0x0",
+          "low16": "0x226f",
+          "candidate_register": "CC_GC_SHADER_ARRAY_CONFIG"
+        },
+        {
+          "file_offset": "0x7988",
+          "body_offset": "0xd38",
+          "packed_word": "0xb000226f",
+          "second_word": "0x0",
+          "low16": "0x226f",
+          "candidate_register": "CC_GC_SHADER_ARRAY_CONFIG"
+        },
+        {
+          "file_offset": "0x7990",
+          "body_offset": "0xd40",
+          "packed_word": "0xb400226f",
+          "second_word": "0x0",
+          "low16": "0x226f",
+          "candidate_register": "CC_GC_SHADER_ARRAY_CONFIG"
+        }
+      ]
+    },
+    {
+      "gpm_word": 130,
+      "ram_offsets": [
+        140,
+        144
+      ],
+      "srm_start_dword": "0x352",
+      "srm_length_dwords": "0x3e8",
+      "command_start_field": "0x1a9",
+      "command_size_field": "0x1f4",
+      "callsite": "0x69f9",
+      "members": [
+        {
+          "file_offset": "0x88f8",
+          "body_offset": "0x1ca8",
+          "packed_word": "0x80002270",
+          "second_word": "0x0",
+          "low16": "0x2270",
+          "candidate_register": "GC_USER_SHADER_ARRAY_CONFIG"
+        },
+        {
+          "file_offset": "0x8900",
+          "body_offset": "0x1cb0",
+          "packed_word": "0x84002270",
+          "second_word": "0x0",
+          "low16": "0x2270",
+          "candidate_register": "GC_USER_SHADER_ARRAY_CONFIG"
+        },
+        {
+          "file_offset": "0x8908",
+          "body_offset": "0x1cb8",
+          "packed_word": "0x90002270",
+          "second_word": "0x0",
+          "low16": "0x2270",
+          "candidate_register": "GC_USER_SHADER_ARRAY_CONFIG"
+        },
+        {
+          "file_offset": "0x8910",
+          "body_offset": "0x1cc0",
+          "packed_word": "0x94002270",
+          "second_word": "0x0",
+          "low16": "0x2270",
+          "candidate_register": "GC_USER_SHADER_ARRAY_CONFIG"
+        },
+        {
+          "file_offset": "0x8918",
+          "body_offset": "0x1cc8",
+          "packed_word": "0xa0002270",
+          "second_word": "0x0",
+          "low16": "0x2270",
+          "candidate_register": "GC_USER_SHADER_ARRAY_CONFIG"
+        },
+        {
+          "file_offset": "0x8920",
+          "body_offset": "0x1cd0",
+          "packed_word": "0xa4002270",
+          "second_word": "0x0",
+          "low16": "0x2270",
+          "candidate_register": "GC_USER_SHADER_ARRAY_CONFIG"
+        },
+        {
+          "file_offset": "0x8928",
+          "body_offset": "0x1cd8",
+          "packed_word": "0xb0002270",
+          "second_word": "0x0",
+          "low16": "0x2270",
+          "candidate_register": "GC_USER_SHADER_ARRAY_CONFIG"
+        },
+        {
+          "file_offset": "0x8930",
+          "body_offset": "0x1ce0",
+          "packed_word": "0xb4002270",
+          "second_word": "0x0",
+          "low16": "0x2270",
+          "candidate_register": "GC_USER_SHADER_ARRAY_CONFIG"
+        }
+      ]
+    },
+    {
+      "gpm_word": 134,
+      "ram_offsets": [
+        156,
+        160
+      ],
+      "srm_start_dword": "0x758",
+      "srm_length_dwords": "0x582",
+      "command_start_field": "0x3ac",
+      "command_size_field": "0x2c1",
+      "callsite": "0x6cba",
+      "members": [
+        {
+          "file_offset": "0x9268",
+          "body_offset": "0x2618",
+          "packed_word": "0xc0002249",
+          "second_word": "0x1",
+          "low16": "0x2249",
+          "candidate_register": "CC_GC_SA_UNIT_DISABLE"
+        },
+        {
+          "file_offset": "0x9270",
+          "body_offset": "0x2620",
+          "packed_word": "0xc000224a",
+          "second_word": "0x1",
+          "low16": "0x224a",
+          "candidate_register": "GC_USER_SA_UNIT_DISABLE"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "OP bit0 follows caller; save/restore direction not named yet.",
+    "Packed address high bits and second-word semantics unresolved.",
+    "No live acceptance or CC writability demonstrated."
+  ]
+}

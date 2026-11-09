@@ -1,0 +1,50 @@
+{
+  "scope": "Local targeted-listing locator; no memory-value propagation or global completeness claim. Optional JX edges describe initial tables, not runtime immutability.",
+  "indirect_edges": null,
+  "reports": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-vector-prefix.txt",
+      "reachable_in_window": 49,
+      "calls": [
+        {
+          "pc": "0x86",
+          "operation": "callx0",
+          "target": null,
+          "integer_constants": {
+            "a2": "0x0"
+          }
+        },
+        {
+          "pc": "0xa9",
+          "operation": "call0",
+          "target": "0x648",
+          "integer_constants": {
+            "a5": "0x5ffed960"
+          }
+        }
+      ],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 59,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "wdtlb",
+        "witlb",
+        "wsr",
+        "wsr.excsave2",
+        "wsr.intenable"
+      ],
+      "stores": [
+        {
+          "pc": "0xa6",
+          "operation": "s32i",
+          "address": "0x5ffed960",
+          "address_candidates": [],
+          "source": "a4",
+          "source_constant": null,
+          "base": "a5",
+          "offset": "0"
+        }
+      ]
+    }
+  ]
+}

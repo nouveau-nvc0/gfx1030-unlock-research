@@ -1,0 +1,18 @@
+
+/tmp/tmpv7oo5537/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00036824 <.data+0x36824>:
+00036824: 364100   entry        a1, 0x20 ; Capstone
+   36827:	41ba73        	l32r	a4, 0x13710 (0x3c23d70a)
+   3682a:	313e77        	l32r	a3, 0x14524 (0xbce8)
+0003682d: 0032da   ufloat.s     f3, a2, 0 ; Capstone
+00036830: 5024fa   wfr          f2, a4 ; Capstone
+00036833: 430380   lsi          f4, a3, 0x200 ; Capstone
+00036836: 40132a   mul.s        f1, f3, f4 ; Capstone
+00036839: 20012a   mul.s        f0, f1, f2 ; Capstone
+0003683c: 03437f   ssi          f0, a3, 0x1fc ; Capstone
+0003683f: 1df0     retw.n        ; Capstone
+   36841:	000000        	ill

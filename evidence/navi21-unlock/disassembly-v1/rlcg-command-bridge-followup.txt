@@ -1,0 +1,75 @@
+RLCG command bridge candidate — offline, 2026-11-09
+
+New concrete result
+The previously unidentified main RLCG body contains a coherent candidate for
+SMU5/6 -> LX6 command32. This is substantially stronger than matching scratch
+layouts alone, but depends on a partial inferred RLCG instruction reading.
+No complete ISA specification or observed execution is available here.
+
+Coordinates and independent checks
+Pinned decompressed RLC SHA256 remains19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0.
+Main body is file[200,6200). Local gfx_v10_0.c line60 defines RLCG loading
+start2000; lines5557 onward write successive firmwareDWORDs to its data port.
+Word PC=2000+(file_offset-200)/4. This coordinate is supported by the driver,
+not guessed solely from branches. Names in GC10.3 header independently give
+RLC_SMU_COMMAND DWORDeca9/publicbyte3b2a4 and responseec07/publicbyte3b01c.
+The instruction interpretations below remain inferred from repeated patterns.
+
+Candidate dispatch
+2495 c40beca9 : read command into inferred r2.
+2496 2488001f : r2 AND1f.
+2497 94800024 : zero-command branch to24bb (currentPC+24).
+2498 0490249a : r4=r2+249a.
+2499 c03c0001 : r15=1.
+249a 85000000 : indirect jump through r4.
+31 following words are8000xxxx direct branches. Indexing starts at249a:
+command1 selects249b, command5 selects249f->2a03,
+command6 selects24a0->2a0a. Treating249b as a zero-based table would give the
+wrong answer. The register fields are consistent with the nearby second
+command dispatcher24c3..24c6, though that is not an independent ISA manual.
+
+Candidate handlers
+2a03 (SMU5): c03c0020 at2a04 sets r15=32, c0380001 at2a05 sets r14=1;
+8c0035e3 at2a06 calls sender; 8c0035ec at2a07 calls wait routine.
+2a0a (SMU6): c03c0020 at2a0c sets r15=32, c0380000 at2a0d sets r14=0;
+8c0035e3 at2a0e calls sender, then2f49/2f6f and wait35ec.
+Both end with a responseec07 pattern and branch2230.
+State operations d803/d843 are retained as raw words, not fully interpreted.
+
+35e3 sender candidate
+Reads DWORDed80, tests lowbit, and conditionally returns at35eb.
+Otherwise reads DWORDedcc and appears to wait for bit31; condition polarity
+and runtime progress have not been independently established.
+35e9 cf83ed9a writes inferred r14 to DWORDed9a/publicbyte3b668.
+35ea cfc3ed99 writes inferred r15 to DWORDed99/publicbyte3b664.
+35ec polls the latter word and extracts the response field after bit31.
+Seven8c0035e3 sites all have paired immediate words for r15/r14 immediately
+before them: (16,0),(16,1),(17,0),(17,1),(32,1),(32,0),(16,0).
+This repeated calling pattern supports the field interpretation; it does not
+prove all opcodes, timing, or conditions. Header lacks names for these LX6
+registers, but Xtensa code supplies an independent coordinate correspondence.
+
+Xtensa counterpart and timing consequence
+83fc uses base6803b600, command+64, parameter+68 (hex), exactly matching the
+candidate sender's DWORDed99/ed9a after multiplying by4. Initial commandtable
+entry32 is5fff8537. That branch normalizes parameter1 to a boolean, then calls
+1d10 at8545. 1d10 reads35scratchwords only on its nonzero-argument path;
+zero takes1f54. Thus the candidate bridge assigns the import to later SMU5,
+not the immediate post-transfer SMU6. It agrees with SMU2af68 mapping1->5,
+other->6 and the conditional6-then5 sequence already recorded.
+
+Limits and next work
+The old statement 'no numeric translation located' is superseded by this
+specific candidate, not by a claim of fully proved runtime delivery.
+Still open: independent ISA confirmation, sender state/bit conditions,
+actual scratch alias/autoincrement, and later CC-related state producers.
+This ordinary35word import still excludes the savedCC arrays and gatee452.
+The main body is now approachable through concrete MMIO operand patterns;
+next inspect CC/GPM scratch operands and their callers rather than generic
+PACE arithmetic. No accepted CC write or added CU is established.
+
+Reproducer scripts/navi21-rlcg-command-bridge-audit.py records77 raw words,
+31table entries,7paired callsites,678byte-checked Xtensa listing records,
+firmware/driver/header/listing hashes and candidate fields. Its assertions
+check bytes and arithmetic, not the truth of the inferred ISA semantics.
+No hardware, service, boot or firmware state was changed.

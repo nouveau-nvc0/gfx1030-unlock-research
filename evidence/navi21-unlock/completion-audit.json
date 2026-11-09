@@ -1,0 +1,137 @@
+{
+  "utc": "2026-11-09T10:15:49.650422+00:00",
+  "scope": "Investigation and requested reports; an unlock is not claimed",
+  "requirements": [
+    {
+      "requirement": "Attachment read and latest constraints",
+      "assessment": "covered within requested read-only/approval boundary",
+      "finding": "User attachment read in full; per-bank selector access separately authorized; latest VFCT follow-up kept read-only",
+      "evidence": [
+        "../../navi21-unlock-report.md",
+        "../../next-experiments.md"
+      ]
+    },
+    {
+      "requirement": "Precedents and multilingual search",
+      "assessment": "covered within requested read-only/approval boundary",
+      "finding": "BC-250 source/patch/issues examined; actual UMR upstream used; Navi21/22/23/Pro and Chinese first-party cross-flash results classified with limits",
+      "evidence": [
+        "../../navi21-unlock-report.md",
+        "sources/bc250.patch",
+        "sources/bc250-issues.json",
+        "sources/pc-online-original.html"
+      ]
+    },
+    {
+      "requirement": "Actual inventory for all three GPUs",
+      "assessment": "covered within requested read-only/approval boundary",
+      "finding": "PCI/subsystem/revisions, kernel/runtime/Mesa/firmware, links, cached topology and clock/power state measured",
+      "evidence": [
+        "../../gpu-inventory.md",
+        "initial/inventory.json",
+        "rocminfo.txt",
+        "hipconfig.txt",
+        "amdgpu-module-parameters.json"
+      ]
+    },
+    {
+      "requirement": "Per-card and per-SE/SH mask evidence",
+      "assessment": "covered within requested read-only/approval boundary",
+      "finding": "24 bank requests through kernel-locked reads plus independent UMR; global outer-SA masks and cached CU/RB maps; disabled-bank interpretation explicitly limited",
+      "evidence": [
+        "banked-held-v2.json",
+        "umr-banked-exact.json",
+        "cached-cu-maps.json"
+      ]
+    },
+    {
+      "requirement": "Actual SE execution and numerical baseline",
+      "assessment": "covered within requested read-only/approval boundary",
+      "finding": "Raw physical IDs agree with independent maps; 20,447,232 integer values; six stock rocBLAS controls / 384 sampled values",
+      "evidence": [
+        "wave-map.json",
+        "gemm-baseline.json",
+        "validation.json"
+      ]
+    },
+    {
+      "requirement": "Current kernel initialization and gates",
+      "assessment": "covered within requested read-only/approval boundary",
+      "finding": "Five files verified against signed source RPM; CC/USER OR hierarchy, initialization order, RLC/SMU/PSP boundary, RB/cache implications and API topology analyzed",
+      "evidence": [
+        "kernel-source-audit.json",
+        "../../navi21-unlock-report.md"
+      ]
+    },
+    {
+      "requirement": "Four hypotheses and discriminating next steps",
+      "assessment": "covered within requested read-only/approval boundary",
+      "finding": "All A/B/C/D hypotheses assessed with supporting/limiting evidence; no irreversible-fuse or working-disabled-block claim",
+      "evidence": [
+        "../../navi21-unlock-report.md",
+        "../../next-experiments.md"
+      ]
+    },
+    {
+      "requirement": "Software-only result and prepared PoC/rollback",
+      "assessment": "covered within requested read-only/approval boundary",
+      "finding": "No unlock demonstrated; current limit precisely localized to CC SA gate. Unapplied single-bit readback plan with explicit unproven reversibility and follow-on validation gates",
+      "evidence": [
+        "sa-readback-poc.json",
+        "../../next-experiments.md"
+      ]
+    },
+    {
+      "requirement": "LLM benefit",
+      "assessment": "covered within requested read-only/approval boundary",
+      "finding": "64/72/80-CU arithmetic/Amdahl bounds, GEMM/GEMV/prefill/decode, cache/LDS/occupancy, unchanged memory bandwidth and one-board limits explained",
+      "evidence": [
+        "../../navi21-unlock-report.md",
+        "gemm-baseline.json"
+      ]
+    },
+    {
+      "requirement": "VFCT October-November follow-up",
+      "assessment": "covered within requested read-only/approval boundary",
+      "finding": "All VFCT records/BDFs, journal messages, image/PPT hashes, installed and pinned upstream source matched; initial-bus and exact-first proposed fixes distinguished from merge state",
+      "evidence": [
+        "../../vfct-audit.md",
+        "vfct-selection-audit.json",
+        "sources/vfct-patch-v4-oct27.html",
+        "sources/vfct-patch-v3-nov1.html",
+        "sources/vfct-review-nov2.html",
+        "sources/amdgpu_bios-7.4-rc2.c"
+      ]
+    },
+    {
+      "requirement": "Physical-ROM and clock interpretation",
+      "assessment": "covered within requested read-only/approval boundary",
+      "finding": "Driver-loaded image separated from BDF-specific POST copies and unmeasured flash; native/live PPT 227/203/211 vs all227, identical frequency arrays and profiling constants explained",
+      "evidence": [
+        "../../vfct-audit.md",
+        "power-table-profiles.json",
+        "clock-profiles.json"
+      ]
+    },
+    {
+      "requirement": "Deliverables and final state",
+      "assessment": "covered within requested read-only/approval boundary",
+      "finding": "All named root reports and evidence/scripts exist; current 60-CU maps/BIOS unchanged, gpu-workload stopped, diagnostic hold released, no research container remains",
+      "evidence": [
+        "../../navi21-unlock-report.md",
+        "../../gpu-inventory.md",
+        "../../next-experiments.md",
+        "README.md",
+        "final/inventory.json",
+        "validation.json"
+      ]
+    }
+  ],
+  "unresolved_hardware_questions": [
+    "physical flash image not independently read",
+    "CC SA-shadow writeability and rollback unknown",
+    "disabled-engine silicon health and firmware protection unknown",
+    "corrected VFCT driver has not been booted"
+  ],
+  "why_no_further_live_test": "Latest user instruction forbids changes; next direct causal tests require a register write or replacement kernel/driver. Prepared plans were not applied."
+}

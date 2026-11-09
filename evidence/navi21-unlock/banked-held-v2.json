@@ -1,0 +1,921 @@
+{
+  "utc": "2026-11-09T09:47:55.149318+00:00",
+  "mode": "kernel-locked banked reads",
+  "gpus": [
+    {
+      "card": 0,
+      "bdf": "0000:07:00.0",
+      "global": {
+        "CC_GC_SA_UNIT_DISABLE": {
+          "byte_offset": "0x8924",
+          "value": "0xc01"
+        },
+        "GC_USER_SA_UNIT_DISABLE": {
+          "byte_offset": "0x8928",
+          "value": "0x0"
+        },
+        "GB_ADDR_CONFIG": {
+          "byte_offset": "0x98f8",
+          "value": "0x444"
+        },
+        "GRBM_GFX_INDEX": {
+          "byte_offset": "0x30800",
+          "value": "0x0"
+        },
+        "CGTS_TCC_DISABLE": {
+          "byte_offset": "0x3c018",
+          "value": "0x1"
+        },
+        "CGTS_USER_TCC_DISABLE": {
+          "byte_offset": "0x3c01c",
+          "value": "0x0"
+        }
+      },
+      "banks": [
+        {
+          "se": 0,
+          "sh": 0,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 0,
+          "sh": 1,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 1,
+          "sh": 0,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 1,
+          "sh": 1,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 2,
+          "sh": 0,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 2,
+          "sh": 1,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 3,
+          "sh": 0,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 3,
+          "sh": 1,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        }
+      ],
+      "grbm_after": "0x0"
+    },
+    {
+      "card": 1,
+      "bdf": "0000:04:00.0",
+      "global": {
+        "CC_GC_SA_UNIT_DISABLE": {
+          "byte_offset": "0x8924",
+          "value": "0x301"
+        },
+        "GC_USER_SA_UNIT_DISABLE": {
+          "byte_offset": "0x8928",
+          "value": "0x0"
+        },
+        "GB_ADDR_CONFIG": {
+          "byte_offset": "0x98f8",
+          "value": "0x444"
+        },
+        "GRBM_GFX_INDEX": {
+          "byte_offset": "0x30800",
+          "value": "0x0"
+        },
+        "CGTS_TCC_DISABLE": {
+          "byte_offset": "0x3c018",
+          "value": "0x1"
+        },
+        "CGTS_USER_TCC_DISABLE": {
+          "byte_offset": "0x3c01c",
+          "value": "0x0"
+        }
+      },
+      "banks": [
+        {
+          "se": 0,
+          "sh": 0,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 0,
+          "sh": 1,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 1,
+          "sh": 0,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 1,
+          "sh": 1,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 2,
+          "sh": 0,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 2,
+          "sh": 1,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 3,
+          "sh": 0,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 3,
+          "sh": 1,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        }
+      ],
+      "grbm_after": "0x0"
+    },
+    {
+      "card": 2,
+      "bdf": "0000:0a:00.0",
+      "global": {
+        "CC_GC_SA_UNIT_DISABLE": {
+          "byte_offset": "0x8924",
+          "value": "0x301"
+        },
+        "GC_USER_SA_UNIT_DISABLE": {
+          "byte_offset": "0x8928",
+          "value": "0x0"
+        },
+        "GB_ADDR_CONFIG": {
+          "byte_offset": "0x98f8",
+          "value": "0x444"
+        },
+        "GRBM_GFX_INDEX": {
+          "byte_offset": "0x30800",
+          "value": "0x0"
+        },
+        "CGTS_TCC_DISABLE": {
+          "byte_offset": "0x3c018",
+          "value": "0x1"
+        },
+        "CGTS_USER_TCC_DISABLE": {
+          "byte_offset": "0x3c01c",
+          "value": "0x0"
+        }
+      },
+      "banks": [
+        {
+          "se": 0,
+          "sh": 0,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 0,
+          "sh": 1,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 1,
+          "sh": 0,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 1,
+          "sh": 1,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 2,
+          "sh": 0,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 2,
+          "sh": 1,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 3,
+          "sh": 0,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        },
+        {
+          "se": 3,
+          "sh": 1,
+          "registers": {
+            "GRBM_GFX_INDEX": {
+              "byte_offset": "0x30800",
+              "value": "0x0"
+            },
+            "CC_GC_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89bc",
+              "value": "0xffe00001"
+            },
+            "GC_USER_SHADER_ARRAY_CONFIG": {
+              "byte_offset": "0x89c0",
+              "value": "0x0"
+            },
+            "SPI_PG_ENABLE_STATIC_WGP_MASK": {
+              "byte_offset": "0x935c",
+              "value": "0xffff"
+            },
+            "RLC_PG_ALWAYS_ON_WGP_MASK": {
+              "byte_offset": "0x3b14c",
+              "value": "0x3"
+            },
+            "CC_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x98f4",
+              "value": "0x1"
+            },
+            "GC_USER_RB_BACKEND_DISABLE": {
+              "byte_offset": "0x9b7c",
+              "value": "0x0"
+            }
+          }
+        }
+      ],
+      "grbm_after": "0x0"
+    }
+  ]
+}

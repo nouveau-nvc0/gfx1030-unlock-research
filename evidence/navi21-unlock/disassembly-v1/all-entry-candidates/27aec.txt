@@ -1,0 +1,22 @@
+
+/tmp/tmp8vltfs1o/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00027aec <.data+0x27aec>:
+00027aec: 364100   entry        a1, 0x20 ; Capstone
+   27aef:	0c8a      	movi.n	a10, 8
+00027af1: e5a8da   call8        . -0x25570 ; Capstone ; target=0x2580
+   27af4:	a1baae        	l32r	a10, 0x135dc (0xa3c0)
+   27af7:	b132b0        	l32r	a11, 0x13bc0 (0xc628)
+00027afa: 25ff0e   call8        . +0xeff4 ; Capstone ; target=0x36aec
+   27afd:	a115af        	l32r	a10, 0x13754 (0xaecc)
+   27b00:	a22a7f        	l32i	a10, a10, 0x1fc
+00027b03: 25c60a   call8        . +0xac64 ; Capstone ; target=0x32764
+   27b06:	ad02      	mov.n	a10, a2
+   27b08:	0c1b      	movi.n	a11, 1
+00027b0a: 2559da   call8        . -0x25a6c ; Capstone ; target=0x209c
+   27b0d:	0c8a      	movi.n	a10, 8
+00027b0f: 6596da   call8        . -0x25698 ; Capstone ; target=0x2474
+00027b12: 1df0     retw.n        ; Capstone

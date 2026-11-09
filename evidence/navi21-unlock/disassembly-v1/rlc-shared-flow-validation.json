@@ -1,0 +1,40 @@
+{
+  "scope": "Synthetic scanner tests; no target execution",
+  "shared_entry": {
+    "listing": "/tmp/tmpe2q1ppob/shared.txt",
+    "reachable_in_window": 4,
+    "calls": [],
+    "hardware_loop_backedges": [],
+    "decoded_in_window": 4,
+    "unresolved_or_external_edges": [],
+    "unknown_operations": [],
+    "stores": [
+      {
+        "pc": "0x4",
+        "operation": "s32i",
+        "address": "0x1234",
+        "address_candidates": [],
+        "source": "a3",
+        "source_constant": null,
+        "base": "a2",
+        "offset": "0"
+      }
+    ]
+  },
+  "debug": {
+    "listing": "/tmp/tmpe2q1ppob/shared.txt",
+    "reachable_in_window": 2,
+    "calls": [],
+    "hardware_loop_backedges": [],
+    "decoded_in_window": 3,
+    "unresolved_or_external_edges": [
+      [
+        "0x13",
+        "debug exception; handler/resumption unresolved"
+      ]
+    ],
+    "unknown_operations": [],
+    "stores": []
+  },
+  "passed": true
+}

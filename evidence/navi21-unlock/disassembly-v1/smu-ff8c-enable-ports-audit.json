@@ -1,0 +1,121 @@
+{
+  "firmware_sha256": "0eb99764288f764fd853d6973693ffa52419cc7ba62074aee85df4a3e8d0286d",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1db34.txt",
+      "sha256": "d825d1d88335de44d015e57becf62af74aa3343454e1acfbc950c01cf0e92603",
+      "records": 138
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1ddec.txt",
+      "sha256": "ea8e801254eee1ec1f9907682dbc3a19b97626ca318b6735bb2616faf93be770",
+      "records": 13
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1de0c.txt",
+      "sha256": "e4ffe139d11403ba7422fbadd16dd7148dc3555b9f4e2068c6de37b20657c14d",
+      "records": 75
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1ded8.txt",
+      "sha256": "b7c94bab957d0c6ded7ab1a1ceef090eed61ebeadc5d6cbf420dcd8965c5cacd",
+      "records": 41
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1ed48.txt",
+      "sha256": "0f127066dc4bb04ec3bee96d3caa2c192ec2450cd4a13cefbfa0ae9a84f5515b",
+      "records": 164
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1f4ec.txt",
+      "sha256": "3cd5b3f56e68e8e2ab81d98d3e02293aac636ee93f364c541396a0c3342ea84a",
+      "records": 86
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/28b80.txt",
+      "sha256": "85540fa3508c9a20d10affaa92bf253f8e5680285a5e6e812ae6f27a9a96a8ac",
+      "records": 5
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2f3e0.txt",
+      "sha256": "1ae4152e1a57479c51e22280e4a021fa8dcdfa9151a07a3895dee1ccd1258866",
+      "records": 27
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/31508.txt",
+      "sha256": "f477a7df5ed177822d0b30f2459c239ac83bd5a527cccd308e39875141229b20",
+      "records": 27
+    }
+  ],
+  "scan_sha256": "ba239b21c05c8e5a8712ef682a7aab0ab379062dd1b2a86de7e8507d8284469e",
+  "group_enable_calls": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1db34.txt",
+      "pc": "0x1db92",
+      "group": 9,
+      "enable": 1
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1db34.txt",
+      "pc": "0x1dbe8",
+      "group": 9,
+      "enable": 1
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1db34.txt",
+      "pc": "0x1dc48",
+      "group": 9,
+      "enable": 0
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1ddec.txt",
+      "pc": "0x1ddfd",
+      "group": 1,
+      "enable": 1
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1ded8.txt",
+      "pc": "0x1df3f",
+      "group": 1,
+      "enable": 0
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1ed48.txt",
+      "pc": "0x1ee4e",
+      "group": 1,
+      "enable": 1
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1f4ec.txt",
+      "pc": "0x1f517",
+      "group": 1,
+      "enable": 1
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1f4ec.txt",
+      "pc": "0x1f5c4",
+      "group": 9,
+      "enable": 1
+    }
+  ],
+  "indexed_transaction": {
+    "caller": "0x1de0c",
+    "read_helper": "0x31508",
+    "write_helper": "0x2f3e0",
+    "selector": 35,
+    "argument": "0x1ce18",
+    "relative_field": "0xe18",
+    "packed_control": "0x231a19",
+    "control_address": "0x0141d054",
+    "data_address": "0x0141d088"
+  },
+  "findings": [
+    "Concrete group9 enable calls1db92/1dbe8/1f5c4; disable1dc48. Group1 enables1ddfd/1ee4e/1f517; disable1df3f. These are static call-site producers, not observed execution.",
+    "28b80 stores the enable byte atff8c+1e0+8*group:101b4(group9),10174(group1). Neither address is the global pointer15874.",
+    "State8 helper1de0c invokes31508/2f3e0 with35 and1ce18. The second parameter is reduced by1c000 and packed into bitfields; final control231a19 goes to0141d054 and data uses0141d088. It is not a direct store at1ce18.",
+    "The branch with nonzero argument writes(read_value|3)&ffffffef; zero branch writes read_value&ffffffec through that interface. Additional direct writes0141cb0c/0141d700 and call373f4 remain separate.",
+    "No CC or LX6 saved-array address relation has been established for these ports. A small field update cannot be described as changing CC without that relation."
+  ],
+  "next": "Resolve physical meaning of0141d054/0141d088 and the concrete state2 operations only if they supply a CC dependency; retain entry/state/poll conditions.",
+  "scope": "Offline local producers and exact address/control arithmetic. Full call effects, runtime enable state, indexed-register identity and hardware acceptance remain open."
+}

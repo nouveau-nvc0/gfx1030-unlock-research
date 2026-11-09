@@ -1,0 +1,59 @@
+
+/tmp/tmpttk6olvb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000365f4 <.data+0x365f4>:
+000365f4: 366100   entry        a1, 0x30 ; Capstone
+   365f7:	bd02      	mov.n	a11, a2
+   365f9:	a1c677        	l32r	a10, 0x14514 (0xa010)
+   365fc:	312075        	l32r	a3, 0x13a7c (0xa180)
+   365ff:	d1ca74        	l32r	a13, 0x13928 (0xe284)
+   36602:	0c1e      	movi.n	a14, 1
+   36604:	c21362        	l16ui	a12, a3, 196
+00036607: a5beff   call8        . -0x414 ; Capstone ; target=0x361f0
+   3660a:	0c02      	movi.n	a2, 0
+   3660c:	b2139a        	l16ui	a11, a3, 0x134
+   3660f:	a1b672        	l32r	a10, 0x130e8 (0x3a83126f)
+   36612:	0c16      	movi.n	a6, 1
+00036614: 001bda   ufloat.s     f1, a11, 0 ; Capstone
+00036617: 502afa   wfr          f2, a10 ; Capstone
+0003661a: 20012a   mul.s        f0, f1, f2 ; Capstone
+   3661d:	811874        	l32r	a8, 0x13680 (0xe05c)
+   36620:	716a72        	l32r	a7, 0x12fc8 (0xa1f0)
+   36623:	516772        	l32r	a5, 0x12fc0 (0xe1bc)
+00036626: 03487f   ssi          f0, a8, 0x1fc ; Capstone
+   36629:	7a42      	add.n	a4, a2, a7
+   3662b:	920480        	l8ui	a9, a4, 128
+   3662e:	312273        	l32r	a3, 0x132b8 (0xe008)
+   36631:	001940        	ssl	a9
+   36634:	0086a1        	sll	a8, a6
+00036637: 0038ca   float.s      f3, a8, 0 ; Capstone
+   3663a:	3032a0        	addx4	a3, a2, a3
+0003663d: 40a3fa   rfr          a10, f3 ; Capstone
+00036640: a57502   call8        . +0x275c ; Capstone ; target=0x38d9c
+   36643:	c22384        	l32i	a12, a3, 0x210
+   36646:	dd01      	mov.n	a13, a1
+00036648: 53037f   lsi          f5, a3, 0x1fc ; Capstone
+0003664b: 506afa   wfr          f6, a10 ; Capstone
+0003664e: 60452a   mul.s        f4, f5, f6 ; Capstone
+   36651:	4be1      	addi.n	a14, a1, 4
+   36653:	0c0f      	movi.n	a15, 0
+   36655:	0cda      	movi.n	a10, 13
+00036657: 434389   ssi          f4, a3, 0x224 ; Capstone
+0003665a: 40b4fa   rfr          a11, f4 ; Capstone
+0003665d: e5a1ef   call8        . -0x105e0 ; Capstone ; target=0x2607c
+   36660:	820100        	l8ui	a8, a1, 0
+   36663:	5a92      	add.n	a9, a2, a5
+   36665:	a2d401        	addmi	a10, a4, 0x100
+00036668: 730101   lsi          f7, a1, 4 ; Capstone
+0003666b: 734389   ssi          f7, a3, 0x224 ; Capstone
+   3666e:	a2ca80        	addi	a10, a10, -128
+   36671:	1b22      	addi.n	a2, a2, 1
+   36673:	202074        	extui	a2, a2, 0, 8
+   36676:	a20a8c        	l8ui	a10, a10, 140
+   36679:	a24958        	s8i	a10, a9, 88
+   3667c:	824980        	s8i	a8, a9, 128
+   3667f:	6642a6        	bnei	a2, 4, 0x36629
+00036682: 1df0     retw.n        ; Capstone

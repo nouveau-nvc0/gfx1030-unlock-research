@@ -1,0 +1,38 @@
+[
+  {
+    "host_bus": "04",
+    "file": "evidence/navi21-unlock/vfct-04-00-0.bin",
+    "bytes": 45056,
+    "pcir_offset": "0x370",
+    "vendor": "0x1002",
+    "device": "0x73bf",
+    "code_type": 0,
+    "pcir_image_bytes": 45056,
+    "image_indicator": "0x0",
+    "scope": "POST/VFCT ATOM image, not independent physical flash dump"
+  },
+  {
+    "host_bus": "07",
+    "file": "evidence/navi21-unlock/vfct-07-00-0.bin",
+    "bytes": 45056,
+    "pcir_offset": "0x374",
+    "vendor": "0x1002",
+    "device": "0x73bf",
+    "code_type": 0,
+    "pcir_image_bytes": 45056,
+    "image_indicator": "0x0",
+    "scope": "POST/VFCT ATOM image, not independent physical flash dump"
+  },
+  {
+    "host_bus": "0a",
+    "file": "evidence/navi21-unlock/vfct-0a-00-0.bin",
+    "bytes": 45056,
+    "pcir_offset": "0x378",
+    "vendor": "0x1002",
+    "device": "0x73bf",
+    "code_type": 0,
+    "pcir_image_bytes": 45056,
+    "image_indicator": "0x0",
+    "scope": "POST/VFCT ATOM image, not independent physical flash dump"
+  }
+]

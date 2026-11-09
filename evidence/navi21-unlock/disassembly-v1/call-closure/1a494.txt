@@ -1,0 +1,21 @@
+
+/tmp/tmp88nbla32/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001a494 <.data+0x1a494>:
+0001a494: 364100   entry        a1, 0x20 ; Capstone
+   1a497:	4180e2        	l32r	a4, 0x12e98 (0x14b64)
+   1a49a:	0c03      	movi.n	a3, 0
+   1a49c:	5165e2        	l32r	a5, 0x12e30 (0x1259e00)
+   1a49f:	3ce2      	movi.n	a2, 62
+0001a4a1: 76a211   loopgtz      a2, . +0x15 ; Capstone
+   1a4a4:	c02000        	memw
+   1a4a7:	326540        	s32i	a3, a5, 0x100
+   1a4aa:	c02000        	memw
+   1a4ad:	822541        	l32i	a8, a5, 0x104
+   1a4b0:	1b33      	addi.n	a3, a3, 1
+   1a4b2:	8904      	s32i.n	a8, a4, 0
+   1a4b4:	4b44      	addi.n	a4, a4, 4
+0001a4b6: 1df0     retw.n        ; Capstone

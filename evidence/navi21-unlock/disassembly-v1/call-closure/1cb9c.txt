@@ -1,0 +1,37 @@
+
+/tmp/tmp3d9g_erc/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001cb9c <.data+0x1cb9c>:
+0001cb9c: 364100   entry        a1, 0x20 ; Capstone
+   1cb9f:	ccb2      	bnez.n	a2, 0x1cbae
+   1cba1:	ad03      	mov.n	a10, a3
+   1cba3:	bd04      	mov.n	a11, a4
+   1cba5:	0c0c      	movi.n	a12, 0
+   1cba7:	dd05      	mov.n	a13, a5
+0001cba9: e54519   call8        . +0x19460 ; Capstone ; target=0x36008
+0001cbac: 1df0     retw.n        ; Capstone
+   1cbae:	66120c        	bnei	a2, 1, 0x1cbbe
+   1cbb1:	ad03      	mov.n	a10, a3
+   1cbb3:	bd04      	mov.n	a11, a4
+   1cbb5:	0c0c      	movi.n	a12, 0
+   1cbb7:	dd05      	mov.n	a13, a5
+0001cbb9: 650408   call8        . +0x8048 ; Capstone ; target=0x24c00
+0001cbbc: 1df0     retw.n        ; Capstone
+   1cbbe:	66220c        	bnei	a2, 2, 0x1cbce
+   1cbc1:	ad03      	mov.n	a10, a3
+   1cbc3:	bd04      	mov.n	a11, a4
+   1cbc5:	0c0c      	movi.n	a12, 0
+   1cbc7:	dd05      	mov.n	a13, a5
+0001cbc9: 258219   call8        . +0x19824 ; Capstone ; target=0x363ec
+0001cbcc: 1df0     retw.n        ; Capstone
+   1cbce:	66320a        	bnei	a2, 3, 0x1cbdc
+   1cbd1:	dd05      	mov.n	a13, a5
+   1cbd3:	bd04      	mov.n	a11, a4
+   1cbd5:	ad03      	mov.n	a10, a3
+   1cbd7:	0c0c      	movi.n	a12, 0
+0001cbd9: e58b19   call8        . +0x198c0 ; Capstone ; target=0x36498
+0001cbdc: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,18 @@
+
+/tmp/tmpkdbvovml/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00027d9c <.data+0x27d9c>:
+00027d9c: 364100   entry        a1, 0x20 ; Capstone
+   27d9f:	ad02      	mov.n	a10, a2
+00027da1: e531da   call8        . -0x25ce0 ; Capstone ; target=0x20c0
+   27da4:	bd0a      	mov.n	a11, a10
+   27da6:	a18caf        	l32r	a10, 0x13bd8 (0xe7c8)
+00027da9: e59f0f   call8        . +0xfa00 ; Capstone ; target=0x377a8
+   27dac:	ad02      	mov.n	a10, a2
+   27dae:	0c1b      	movi.n	a11, 1
+00027db0: a52eda   call8        . -0x25d14 ; Capstone ; target=0x209c
+00027db3: 1df0     retw.n        ; Capstone
+   27db5:	000000        	ill

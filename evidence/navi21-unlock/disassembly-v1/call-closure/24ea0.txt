@@ -1,0 +1,20 @@
+
+/tmp/tmpa3vci530/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00024ea0 <.data+0x24ea0>:
+00024ea0: 364100   entry        a1, 0x20 ; Capstone
+   24ea3:	21eeb7        	l32r	a2, 0x12e5c (0x69a0)
+   24ea6:	22026f        	l8ui	a2, a2, 111
+00024ea9: 3001fa   const.s      f0, 1 ; Capstone
+   24eac:	315dba        	l32r	a3, 0x13820 (0xbdec)
+   24eaf:	8cd2      	beqz.n	a2, 0x24ec0
+   24eb1:	815cba        	l32r	a8, 0x13824 (0x3e99999a)
+   24eb4:	9180b8        	l32r	a9, 0x130b4 (0x3dcccccd)
+00024eb7: 034381   ssi          f0, a3, 0x204 ; Capstone
+   24eba:	92637d        	s32i	a9, a3, 0x1f4
+   24ebd:	826380        	s32i	a8, a3, 0x200
+00024ec0: 1df0     retw.n        ; Capstone
+	...

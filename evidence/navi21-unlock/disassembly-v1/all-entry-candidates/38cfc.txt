@@ -1,0 +1,14 @@
+
+/tmp/tmpikbzm602/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00038cfc <.data+0x38cfc>:
+00038cfc: 364100   entry        a1, 0x20 ; Capstone
+   38cff:	416f68        	l32r	a4, 0x12ebc (0x7150)
+   38d02:	32247f        	l32i	a3, a4, 0x1fc
+   38d05:	203320        	or	a3, a3, a2
+   38d08:	32647f        	s32i	a3, a4, 0x1fc
+00038d0b: 1df0     retw.n        ; Capstone
+   38d0d:	000000        	ill

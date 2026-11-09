@@ -1,0 +1,98 @@
+
+/tmp/tmpj4r2j3b3/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000013f8 <.data+0x13f8>:
+000013f8: 366100   entry        a1, 0x30 ; Capstone
+    13fb:	8159ef        	l32r	a8, 0xffffd160 (0x5ffee25c) ; inferred DRAM map 0x5ffec000
+    13fe:	820800        	l8ui	a8, a8, 0
+    1401:	16480c        	beqz	a8, 0x14c9
+    1404:	ad02      	mov.n	a10, a2
+00001406: a5f9ff   call8        . -0x64 ; Capstone ; target=0x13a0
+    1409:	0c43      	movi.n	a3, 4
+    140b:	0c09      	movi.n	a9, 0
+    140d:	a0c0f5        	extui	a12, a10, 16, 16
+    1410:	a0b0f4        	extui	a11, a10, 0, 16
+    1413:	0c1d      	movi.n	a13, 1
+    1415:	0c0a      	movi.n	a10, 0
+    1417:	b0ad83        	moveqz	a10, a13, a11
+    141a:	c09d83        	moveqz	a9, a13, a12
+    141d:	a09930        	xor	a9, a9, a10
+    1420:	a154ef        	l32r	a10, 0xffffd170 (0x6803ba00) ; inferred DRAM map 0x5ffec000
+    1423:	7cb2      	movi.n	a2, -5
+    1425:	e15eef        	l32r	a14, 0xffffd1a0 (0xfc00) ; inferred DRAM map 0x5ffec000
+    1428:	d22a56        	l32i	a13, a10, 0x158
+    142b:	f22a61        	l32i	a15, a10, 0x184
+    142e:	16690a        	beqz	a9, 0x14d8
+    1431:	8cfb      	beqz.n	a11, 0x1444
+    1433:	d71b0d        	beq	a11, a13, 0x1444
+    1436:	b73d02        	bltu	a13, a11, 0x143c
+    1439:	c62300        	j	0x14cc
+    143c:	0b9d      	addi.n	a9, a13, -1
+    143e:	9090f4        	extui	a9, a9, 0, 16
+    1441:	062300        	j	0x14d1
+    1444:	f0d094        	extui	a13, a15, 0, 10
+    1447:	c7bd07        	bgeu	a13, a12, 0x1452
+    144a:	0b9d      	addi.n	a9, a13, -1
+    144c:	060100        	j	0x1454
+    144f:	000000        	ill
+    1452:	1b9d      	addi.n	a9, a13, 1
+    1454:	f22a61        	l32i	a15, a10, 0x184
+    1457:	f26101        	s32i	a15, a1, 4
+    145a:	f0f0f4        	extui	a15, a15, 0, 16
+    145d:	e0ff10        	and	a15, a15, a14
+    1460:	f0f920        	or	a15, a9, a15
+    1463:	f25102        	s16i	a15, a1, 4
+    1466:	d22101        	l32i	a13, a1, 4
+    1469:	d26a61        	s32i	a13, a10, 0x184
+    146c:	922a57        	l32i	a9, a10, 0x15c
+    146f:	20f910        	and	a15, a9, a2
+    1472:	308920        	or	a8, a9, a3
+    1475:	826a57        	s32i	a8, a10, 0x15c
+    1478:	d22a58        	l32i	a13, a10, 0x160
+    147b:	276df9        	bbci	a13, 2, 0x1478
+    147e:	f26a57        	s32i	a15, a10, 0x15c
+    1481:	822a58        	l32i	a8, a10, 0x160
+    1484:	27e8f9        	bbsi	a8, 2, 0x1481
+    1487:	8c1b      	beqz.n	a11, 0x148c
+    1489:	b26a56        	s32i	a11, a10, 0x158
+    148c:	9c4c      	beqz.n	a12, 0x14a4
+    148e:	b22a61        	l32i	a11, a10, 0x184
+    1491:	b911      	s32i.n	a11, a1, 4
+    1493:	b0b0f4        	extui	a11, a11, 0, 16
+    1496:	e0bb10        	and	a11, a11, a14
+    1499:	c0bb20        	or	a11, a11, a12
+    149c:	b25102        	s16i	a11, a1, 4
+    149f:	9811      	l32i.n	a9, a1, 4
+    14a1:	926a61        	s32i	a9, a10, 0x184
+    14a4:	922a57        	l32i	a9, a10, 0x15c
+    14a7:	20e910        	and	a14, a9, a2
+    14aa:	30c920        	or	a12, a9, a3
+    14ad:	c26a57        	s32i	a12, a10, 0x15c
+    14b0:	d22a58        	l32i	a13, a10, 0x160
+    14b3:	276df9        	bbci	a13, 2, 0x14b0
+    14b6:	e26a57        	s32i	a14, a10, 0x15c
+    14b9:	f22a58        	l32i	a15, a10, 0x160
+    14bc:	3df0      	nop.n
+    14be:	27eff7        	bbsi	a15, 2, 0x14b9
+    14c1:	822a58        	l32i	a8, a10, 0x160
+    14c4:	3df0      	nop.n
+    14c6:	3768f7        	bbci	a8, 3, 0x14c1
+000014c9: 1df0     retw.n        ; Capstone
+    14cb:	001b9d        	excw
+    14ce:	9090f4        	extui	a9, a9, 0, 16
+    14d1:	926a56        	s32i	a9, a10, 0x158
+    14d4:	06e5ff        	j	0x146c
+000014d7: 0056db   movt.s       f5, f6, b0 ; Capstone
+    14da:	fa46      	add.n	a4, a6, a15
+    14dc:	ebff      	addi.n	a15, a15, 14
+	...
+
+; Alternate branch-target decode
+    14d8:	56dbfa        	bnez	a11, 0x1489
+    14db:	46ebff        	j	0x148c
+
+; Alternate branch-target decode
+    14cc:	1b9d      	addi.n	a9, a13, 1

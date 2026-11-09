@@ -1,0 +1,627 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "segment_file_interval": [
+    "0x200",
+    "0x6200"
+  ],
+  "driver_loading_word_base": "0x2000",
+  "driver_sha256": "3b2013dcb603845c3785fe02fc9aeee848b391f10d462e9384a1e4f370a4fb1b",
+  "word_windows": [
+    {
+      "pc_inferred": "0x2495",
+      "file_offset": "0x1454",
+      "word": "c40beca9"
+    },
+    {
+      "pc_inferred": "0x2496",
+      "file_offset": "0x1458",
+      "word": "2488001f"
+    },
+    {
+      "pc_inferred": "0x2497",
+      "file_offset": "0x145c",
+      "word": "94800024"
+    },
+    {
+      "pc_inferred": "0x2498",
+      "file_offset": "0x1460",
+      "word": "0490249a"
+    },
+    {
+      "pc_inferred": "0x2499",
+      "file_offset": "0x1464",
+      "word": "c03c0001"
+    },
+    {
+      "pc_inferred": "0x249a",
+      "file_offset": "0x1468",
+      "word": "85000000"
+    },
+    {
+      "pc_inferred": "0x249b",
+      "file_offset": "0x146c",
+      "word": "80002a63"
+    },
+    {
+      "pc_inferred": "0x249c",
+      "file_offset": "0x1470",
+      "word": "80002a7a"
+    },
+    {
+      "pc_inferred": "0x249d",
+      "file_offset": "0x1474",
+      "word": "80002a8e"
+    },
+    {
+      "pc_inferred": "0x249e",
+      "file_offset": "0x1478",
+      "word": "80002aac"
+    },
+    {
+      "pc_inferred": "0x249f",
+      "file_offset": "0x147c",
+      "word": "80002a03"
+    },
+    {
+      "pc_inferred": "0x24a0",
+      "file_offset": "0x1480",
+      "word": "80002a0a"
+    },
+    {
+      "pc_inferred": "0x24a1",
+      "file_offset": "0x1484",
+      "word": "80002a14"
+    },
+    {
+      "pc_inferred": "0x24a2",
+      "file_offset": "0x1488",
+      "word": "800024ba"
+    },
+    {
+      "pc_inferred": "0x24a3",
+      "file_offset": "0x148c",
+      "word": "800024ba"
+    },
+    {
+      "pc_inferred": "0x24a4",
+      "file_offset": "0x1490",
+      "word": "800024ba"
+    },
+    {
+      "pc_inferred": "0x24a5",
+      "file_offset": "0x1494",
+      "word": "800024ba"
+    },
+    {
+      "pc_inferred": "0x24a6",
+      "file_offset": "0x1498",
+      "word": "800024ba"
+    },
+    {
+      "pc_inferred": "0x24a7",
+      "file_offset": "0x149c",
+      "word": "800024ba"
+    },
+    {
+      "pc_inferred": "0x24a8",
+      "file_offset": "0x14a0",
+      "word": "800024ba"
+    },
+    {
+      "pc_inferred": "0x24a9",
+      "file_offset": "0x14a4",
+      "word": "800024ba"
+    },
+    {
+      "pc_inferred": "0x24aa",
+      "file_offset": "0x14a8",
+      "word": "80002b43"
+    },
+    {
+      "pc_inferred": "0x24ab",
+      "file_offset": "0x14ac",
+      "word": "80002bb3"
+    },
+    {
+      "pc_inferred": "0x24ac",
+      "file_offset": "0x14b0",
+      "word": "80002c3d"
+    },
+    {
+      "pc_inferred": "0x24ad",
+      "file_offset": "0x14b4",
+      "word": "80002c51"
+    },
+    {
+      "pc_inferred": "0x24ae",
+      "file_offset": "0x14b8",
+      "word": "80002c67"
+    },
+    {
+      "pc_inferred": "0x24af",
+      "file_offset": "0x14bc",
+      "word": "80002c82"
+    },
+    {
+      "pc_inferred": "0x24b0",
+      "file_offset": "0x14c0",
+      "word": "80002c97"
+    },
+    {
+      "pc_inferred": "0x24b1",
+      "file_offset": "0x14c4",
+      "word": "80002ca1"
+    },
+    {
+      "pc_inferred": "0x24b2",
+      "file_offset": "0x14c8",
+      "word": "80002cb7"
+    },
+    {
+      "pc_inferred": "0x24b3",
+      "file_offset": "0x14cc",
+      "word": "80002cc6"
+    },
+    {
+      "pc_inferred": "0x24b4",
+      "file_offset": "0x14d0",
+      "word": "80003008"
+    },
+    {
+      "pc_inferred": "0x24b5",
+      "file_offset": "0x14d4",
+      "word": "80003019"
+    },
+    {
+      "pc_inferred": "0x24b6",
+      "file_offset": "0x14d8",
+      "word": "80003028"
+    },
+    {
+      "pc_inferred": "0x24b7",
+      "file_offset": "0x14dc",
+      "word": "80002dfa"
+    },
+    {
+      "pc_inferred": "0x24b8",
+      "file_offset": "0x14e0",
+      "word": "80002e09"
+    },
+    {
+      "pc_inferred": "0x24b9",
+      "file_offset": "0x14e4",
+      "word": "80002df4"
+    },
+    {
+      "pc_inferred": "0x24ba",
+      "file_offset": "0x14e8",
+      "word": "d843ec07"
+    },
+    {
+      "pc_inferred": "0x24bb",
+      "file_offset": "0x14ec",
+      "word": "80002230"
+    },
+    {
+      "pc_inferred": "0x2a03",
+      "file_offset": "0x2a0c",
+      "word": "d84300fa"
+    },
+    {
+      "pc_inferred": "0x2a04",
+      "file_offset": "0x2a10",
+      "word": "c03c0020"
+    },
+    {
+      "pc_inferred": "0x2a05",
+      "file_offset": "0x2a14",
+      "word": "c0380001"
+    },
+    {
+      "pc_inferred": "0x2a06",
+      "file_offset": "0x2a18",
+      "word": "8c0035e3"
+    },
+    {
+      "pc_inferred": "0x2a07",
+      "file_offset": "0x2a1c",
+      "word": "8c0035ec"
+    },
+    {
+      "pc_inferred": "0x2a08",
+      "file_offset": "0x2a20",
+      "word": "d803ec07"
+    },
+    {
+      "pc_inferred": "0x2a09",
+      "file_offset": "0x2a24",
+      "word": "80002230"
+    },
+    {
+      "pc_inferred": "0x2a0a",
+      "file_offset": "0x2a28",
+      "word": "d8030039"
+    },
+    {
+      "pc_inferred": "0x2a0b",
+      "file_offset": "0x2a2c",
+      "word": "d80300fa"
+    },
+    {
+      "pc_inferred": "0x2a0c",
+      "file_offset": "0x2a30",
+      "word": "c03c0020"
+    },
+    {
+      "pc_inferred": "0x2a0d",
+      "file_offset": "0x2a34",
+      "word": "c0380000"
+    },
+    {
+      "pc_inferred": "0x2a0e",
+      "file_offset": "0x2a38",
+      "word": "8c0035e3"
+    },
+    {
+      "pc_inferred": "0x2a0f",
+      "file_offset": "0x2a3c",
+      "word": "8c002f49"
+    },
+    {
+      "pc_inferred": "0x2a10",
+      "file_offset": "0x2a40",
+      "word": "8c002f6f"
+    },
+    {
+      "pc_inferred": "0x2a11",
+      "file_offset": "0x2a44",
+      "word": "8c0035ec"
+    },
+    {
+      "pc_inferred": "0x2a12",
+      "file_offset": "0x2a48",
+      "word": "d803ec07"
+    },
+    {
+      "pc_inferred": "0x2a13",
+      "file_offset": "0x2a4c",
+      "word": "80002230"
+    },
+    {
+      "pc_inferred": "0x35e3",
+      "file_offset": "0x598c",
+      "word": "c40bed80"
+    },
+    {
+      "pc_inferred": "0x35e4",
+      "file_offset": "0x5990",
+      "word": "24880001"
+    },
+    {
+      "pc_inferred": "0x35e5",
+      "file_offset": "0x5994",
+      "word": "98800006"
+    },
+    {
+      "pc_inferred": "0x35e6",
+      "file_offset": "0x5998",
+      "word": "c40bedcc"
+    },
+    {
+      "pc_inferred": "0x35e7",
+      "file_offset": "0x599c",
+      "word": "1488001f"
+    },
+    {
+      "pc_inferred": "0x35e8",
+      "file_offset": "0x59a0",
+      "word": "948ffffe"
+    },
+    {
+      "pc_inferred": "0x35e9",
+      "file_offset": "0x59a4",
+      "word": "cf83ed9a"
+    },
+    {
+      "pc_inferred": "0x35ea",
+      "file_offset": "0x59a8",
+      "word": "cfc3ed99"
+    },
+    {
+      "pc_inferred": "0x35eb",
+      "file_offset": "0x59ac",
+      "word": "90000000"
+    },
+    {
+      "pc_inferred": "0x35ec",
+      "file_offset": "0x59b0",
+      "word": "c43fed80"
+    },
+    {
+      "pc_inferred": "0x35ed",
+      "file_offset": "0x59b4",
+      "word": "27fc0001"
+    },
+    {
+      "pc_inferred": "0x35ee",
+      "file_offset": "0x59b8",
+      "word": "9bc00009"
+    },
+    {
+      "pc_inferred": "0x35ef",
+      "file_offset": "0x59bc",
+      "word": "c03c0020"
+    },
+    {
+      "pc_inferred": "0x35f0",
+      "file_offset": "0x59c0",
+      "word": "0bfc0001"
+    },
+    {
+      "pc_inferred": "0x35f1",
+      "file_offset": "0x59c4",
+      "word": "9bcfffff"
+    },
+    {
+      "pc_inferred": "0x35f2",
+      "file_offset": "0x59c8",
+      "word": "c43bed99"
+    },
+    {
+      "pc_inferred": "0x35f3",
+      "file_offset": "0x59cc",
+      "word": "17bc001f"
+    },
+    {
+      "pc_inferred": "0x35f4",
+      "file_offset": "0x59d0",
+      "word": "97cffffb"
+    },
+    {
+      "pc_inferred": "0x35f5",
+      "file_offset": "0x59d4",
+      "word": "17b80010"
+    },
+    {
+      "pc_inferred": "0x35f6",
+      "file_offset": "0x59d8",
+      "word": "27bc00ff"
+    },
+    {
+      "pc_inferred": "0x35f7",
+      "file_offset": "0x59dc",
+      "word": "90000000"
+    }
+  ],
+  "header_sha256": "abd09080e4b06fd2d3e14145e5ceafa580a1987da59f076d2598e8753957b614",
+  "header_dword_coordinates": {
+    "mmRLC_SMU_COMMAND": "0xeca9",
+    "mmSMU_RLC_RESPONSE": "0xec07"
+  },
+  "dispatch_hypothesis": [
+    {
+      "command_low5": 1,
+      "pc": "0x249b",
+      "target": "0x2a63"
+    },
+    {
+      "command_low5": 2,
+      "pc": "0x249c",
+      "target": "0x2a7a"
+    },
+    {
+      "command_low5": 3,
+      "pc": "0x249d",
+      "target": "0x2a8e"
+    },
+    {
+      "command_low5": 4,
+      "pc": "0x249e",
+      "target": "0x2aac"
+    },
+    {
+      "command_low5": 5,
+      "pc": "0x249f",
+      "target": "0x2a03"
+    },
+    {
+      "command_low5": 6,
+      "pc": "0x24a0",
+      "target": "0x2a0a"
+    },
+    {
+      "command_low5": 7,
+      "pc": "0x24a1",
+      "target": "0x2a14"
+    },
+    {
+      "command_low5": 8,
+      "pc": "0x24a2",
+      "target": "0x24ba"
+    },
+    {
+      "command_low5": 9,
+      "pc": "0x24a3",
+      "target": "0x24ba"
+    },
+    {
+      "command_low5": 10,
+      "pc": "0x24a4",
+      "target": "0x24ba"
+    },
+    {
+      "command_low5": 11,
+      "pc": "0x24a5",
+      "target": "0x24ba"
+    },
+    {
+      "command_low5": 12,
+      "pc": "0x24a6",
+      "target": "0x24ba"
+    },
+    {
+      "command_low5": 13,
+      "pc": "0x24a7",
+      "target": "0x24ba"
+    },
+    {
+      "command_low5": 14,
+      "pc": "0x24a8",
+      "target": "0x24ba"
+    },
+    {
+      "command_low5": 15,
+      "pc": "0x24a9",
+      "target": "0x24ba"
+    },
+    {
+      "command_low5": 16,
+      "pc": "0x24aa",
+      "target": "0x2b43"
+    },
+    {
+      "command_low5": 17,
+      "pc": "0x24ab",
+      "target": "0x2bb3"
+    },
+    {
+      "command_low5": 18,
+      "pc": "0x24ac",
+      "target": "0x2c3d"
+    },
+    {
+      "command_low5": 19,
+      "pc": "0x24ad",
+      "target": "0x2c51"
+    },
+    {
+      "command_low5": 20,
+      "pc": "0x24ae",
+      "target": "0x2c67"
+    },
+    {
+      "command_low5": 21,
+      "pc": "0x24af",
+      "target": "0x2c82"
+    },
+    {
+      "command_low5": 22,
+      "pc": "0x24b0",
+      "target": "0x2c97"
+    },
+    {
+      "command_low5": 23,
+      "pc": "0x24b1",
+      "target": "0x2ca1"
+    },
+    {
+      "command_low5": 24,
+      "pc": "0x24b2",
+      "target": "0x2cb7"
+    },
+    {
+      "command_low5": 25,
+      "pc": "0x24b3",
+      "target": "0x2cc6"
+    },
+    {
+      "command_low5": 26,
+      "pc": "0x24b4",
+      "target": "0x3008"
+    },
+    {
+      "command_low5": 27,
+      "pc": "0x24b5",
+      "target": "0x3019"
+    },
+    {
+      "command_low5": 28,
+      "pc": "0x24b6",
+      "target": "0x3028"
+    },
+    {
+      "command_low5": 29,
+      "pc": "0x24b7",
+      "target": "0x2dfa"
+    },
+    {
+      "command_low5": 30,
+      "pc": "0x24b8",
+      "target": "0x2e09"
+    },
+    {
+      "command_low5": 31,
+      "pc": "0x24b9",
+      "target": "0x2df4"
+    }
+  ],
+  "paired_calls": [
+    {
+      "pc": "0x26e0",
+      "command": 16,
+      "argument": 0
+    },
+    {
+      "pc": "0x27b7",
+      "command": 16,
+      "argument": 1
+    },
+    {
+      "pc": "0x27ee",
+      "command": 17,
+      "argument": 0
+    },
+    {
+      "pc": "0x2814",
+      "command": 17,
+      "argument": 1
+    },
+    {
+      "pc": "0x2a06",
+      "command": 32,
+      "argument": 1
+    },
+    {
+      "pc": "0x2a0e",
+      "command": 32,
+      "argument": 0
+    },
+    {
+      "pc": "0x2a1b",
+      "command": 16,
+      "argument": 0
+    }
+  ],
+  "sender_write_word_fields": {
+    "35e9": {
+      "source": 14,
+      "dword": "0xed9a",
+      "public_byte": "0x3b668"
+    },
+    "35ea": {
+      "source": 15,
+      "dword": "0xed99",
+      "public_byte": "0x3b664"
+    }
+  },
+  "xtensa_listing": {
+    "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/083fc.txt",
+    "sha256": "bb9d185ae7779438ca1b135be32b1285ecad7d7a58973b36953aa2ea53c45816",
+    "checked_records": 678,
+    "table32": "0x5fff8537",
+    "call": "8545 -> 1d10"
+  },
+  "candidate_bridge": {
+    "SMU5": {
+      "RLC_command": 32,
+      "argument": 1,
+      "entry": "0x2a03"
+    },
+    "SMU6": {
+      "RLC_command": 32,
+      "argument": 0,
+      "entry": "0x2a0a"
+    }
+  },
+  "scope": "Exact words and coordinate arithmetic verified. RLCG operand/opcode meanings are consistent inference, not a vendor ISA specification or runtime observation. Sender conditions, callback scheduling, physical scratch alias and all CC producers remain unproved."
+}

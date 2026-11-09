@@ -1,0 +1,56 @@
+
+/tmp/tmpcltgpwis/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001f80 <.data+0x1f80>:
+00001f80: 364100   entry        a1, 0x20 ; Capstone
+    1f83:	21a2ec        	l32r	a2, 0xffffd20c (0x5ffee264) ; inferred DRAM map 0x5ffec000
+    1f86:	820200        	l8ui	a8, a2, 0
+    1f89:	160805        	beqz	a8, 0x1fdd
+    1f8c:	0c0a      	movi.n	a10, 0
+00001f8e: 656202   call8        . +0x2628 ; Capstone ; target=0x45b4
+    1f91:	0c1b      	movi.n	a11, 1
+    1f93:	b24204        	s8i	a11, a2, 4
+    1f96:	0c8f      	movi.n	a15, 8
+    1f98:	c20203        	l8ui	a12, a2, 3
+    1f9b:	a20204        	l8ui	a10, a2, 4
+    1f9e:	920205        	l8ui	a9, a2, 5
+    1fa1:	c0cb93        	movnez	a12, a11, a12
+    1fa4:	c0aa20        	or	a10, a10, a12
+    1fa7:	a0ab93        	movnez	a10, a11, a10
+    1faa:	a09920        	or	a9, a9, a10
+    1fad:	a195ec        	l32r	a10, 0xffffd204 (0x6803b200) ; inferred DRAM map 0x5ffec000
+    1fb0:	909b93        	movnez	a9, a11, a9
+    1fb3:	924206        	s8i	a9, a2, 6
+    1fb6:	ac69      	beqz.n	a9, 0x1fe0
+    1fb8:	e22a8c        	l32i	a14, a10, 0x230
+    1fbb:	f0ee20        	or	a14, a14, a15
+    1fbe:	e26a8c        	s32i	a14, a10, 0x230
+    1fc1:	90ea03        	rsr.ccount	a9
+    1fc4:	d0ea03        	rsr.ccount	a13
+    1fc7:	90ddc0        	sub	a13, a13, a9
+    1fca:	f65d08        	bgeui	a13, 5, 0x1fd6
+    1fcd:	80ea03        	rsr.ccount	a8
+    1fd0:	9088c0        	sub	a8, a8, a9
+    1fd3:	b658f6        	bltui	a8, 5, 0x1fcd
+    1fd6:	0ca9      	movi.n	a9, 10
+    1fd8:	926aa4        	s32i	a9, a10, 0x290
+00001fdb: 1df0     retw.n        ; Capstone
+00001fdd: 1df0     retw.n        ; Capstone
+00001fdf: 00c22a   mul.s        f12, f2, f0 ; Capstone
+    1fe2:	8c0c      	beqz.n	a12, 0x1fe6
+    1fe4:	0b7c      	addi.n	a7, a12, -1
+    1fe6:	7dd0      	excw
+    1fe8:	cc10      	bnez.n	a0, 0x1fed
+    1fea:	c26a8c        	s32i	a12, a10, 0x230
+    1fed:	b26aa4        	s32i	a11, a10, 0x290
+00001ff0: 1df0     retw.n        ; Capstone
+	...
+
+; Alternate branch-target decode
+    1fe0:	c22a8c        	l32i	a12, a10, 0x230
+    1fe3:	0c0b      	movi.n	a11, 0
+    1fe5:	7c7d      	movi.n	a13, -9
+    1fe7:	d0cc10        	and	a12, a12, a13

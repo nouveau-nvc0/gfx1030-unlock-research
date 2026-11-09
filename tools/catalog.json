@@ -1,0 +1,1429 @@
+[
+  {
+    "path": "scripts/navi21-analyze-vfct.py",
+    "category": "historical-offline-tool",
+    "description": "Offline VFCT selection replay against a saved inventory; no device access.",
+    "imports": [
+      "argparse",
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "45eeed5f2eba1cf84d69fc6697da52a9b880e8aba8e993c7be94efda1b8604b7"
+  },
+  {
+    "path": "scripts/navi21-bank-writability.py",
+    "category": "archived-hardware-logic-execution-disabled",
+    "description": "Authorized transient WGP-disable readback control on an idle Navi21 GPU.\n\n--execute tests WGP0's INACTIVE bit in one known-active SA, or CC low bit0,\ntakes a bank-isolation snapshot and restores the original. --run-probe adds\na bounded ordinary correctness/HW_ID dispatch with the USER disable only.\nNo enabling of nonphysical WGP, power policy, firmware or OTP writes.",
+    "imports": [
+      "argparse",
+      "datetime",
+      "fcntl",
+      "json",
+      "os",
+      "pathlib",
+      "signal",
+      "struct",
+      "subprocess",
+      "time"
+    ],
+    "sha256": "80a3292ac3b86c153693205bb4195ff3301f7e5f715bfca032099591916ce3ef"
+  },
+  {
+    "path": "scripts/navi21-bios-policy-probe.py",
+    "category": "historical-offline-tool",
+    "description": "Emulate known X99-TF BDS ROM-policy routines offline; no hardware access.\n\nAccept only the extracted 2020-05-25 reference BDS executables. Firmware code\nruns in Unicorn memory with mocked UEFI variable/protocol services. This tests\nthe isolated policy path, not a complete firmware boot or a physical GPU.\nDependencies: pefile, unicorn (isolated tools directory, not host packages).",
+    "imports": [
+      "argparse",
+      "hashlib",
+      "json",
+      "pathlib",
+      "pefile",
+      "struct",
+      "unicorn",
+      "uuid"
+    ],
+    "sha256": "953dff04e404210e9edf1a045c6ff8a6e2f5cb7e4cf93b45cb7953460199c7c4"
+  },
+  {
+    "path": "scripts/navi21-bios-vga-probe.py",
+    "category": "historical-offline-tool",
+    "description": "Offline Unicorn experiment on the known X99-TF legacy VGA selector.\n\nMock three discrete VGA controllers and vary enumeration order. This executes\nselection code only, with no physical GPU access or ROM initialization.",
+    "imports": [
+      "argparse",
+      "hashlib",
+      "itertools",
+      "json",
+      "pathlib",
+      "pefile",
+      "struct",
+      "unicorn"
+    ],
+    "sha256": "843aab1e9ea3c28fd5c57cb67269ca0d1547600a29ff18a48d03bd4d8eadfd7d"
+  },
+  {
+    "path": "scripts/navi21-compare-roms.py",
+    "category": "historical-offline-tool",
+    "description": "Compare saved Navi21 ATOM ROMs offline. Never accesses hardware or executes ROM code.",
+    "imports": [
+      "argparse",
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "a42c71c90e804cc0741ee88bbb6574b0319d89f61fc1046bcc3660f46a5ecf40"
+  },
+  {
+    "path": "scripts/navi21-gemm-baseline.hip",
+    "category": "hardware-experiment-do-not-run",
+    "description": "",
+    "imports": [],
+    "sha256": "7a2425cdd4421fd73dc4fec5feab689585f4639f1f9bef904f51799327afb402"
+  },
+  {
+    "path": "scripts/navi21-gop-atom-write-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Offline byte-checked stock ATOM destination inventory; not a full emulator.",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "43eabfda0d72944f23a7d8a3ebf5151bf5ed929bf6793b01e6630d87d96abb1f"
+  },
+  {
+    "path": "scripts/navi21-gop-bar-transfer-check.py",
+    "category": "historical-offline-tool",
+    "description": "Replay GOP BAR transfer helpers, stopping at synthetic PCI callbacks.",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "pefile",
+      "struct",
+      "sys",
+      "unicorn"
+    ],
+    "sha256": "f293d7d13d8b75f58208a9fabc0af5f8c113b4317d83457347a661910ef29624"
+  },
+  {
+    "path": "scripts/navi21-gop-health-registration.py",
+    "category": "historical-offline-tool",
+    "description": "Byte-checked identification of GOP DriverHealth repair notification callbacks.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "pathlib",
+      "pefile",
+      "sys",
+      "uuid"
+    ],
+    "sha256": "556930af4616600acfdd0c859f28b534a4a6535bcb43e8abd43f9a2414900252"
+  },
+  {
+    "path": "scripts/navi21-gop-indirect-tail-check.py",
+    "category": "historical-offline-tool",
+    "description": "Audit fixed-displacement BAR writes and replay ATOM destination tail jumps.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "pathlib",
+      "pefile",
+      "struct",
+      "sys",
+      "unicorn"
+    ],
+    "sha256": "4db57f67e1fd31f730c24ffc109d1e2b04acd66d78563c779bb6baef190ba855"
+  },
+  {
+    "path": "scripts/navi21-gop-indirectio-check.py",
+    "category": "historical-offline-tool",
+    "description": "Bounded offline replay of GOP indirect-I/O dispatcher, synthetic RAM only.",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "pefile",
+      "struct",
+      "sys",
+      "unicorn"
+    ],
+    "sha256": "4c12bc228af1a850c7edbae829b8cfc9d25c933dea95fa489cd7f68d60bd097f"
+  },
+  {
+    "path": "scripts/navi21-gop-inventory.py",
+    "category": "historical-offline-tool",
+    "description": "Offline extraction and PE inventory of the two pinned reference-ROM GOPs.",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "pefile",
+      "struct",
+      "sys",
+      "uefi_firmware"
+    ],
+    "sha256": "4bc224ad10a7aa4e23d9e0936ea8c4bd04f201dde5af5b670c2dc6b35f4ae312"
+  },
+  {
+    "path": "scripts/navi21-gop-scratch-callers.py",
+    "category": "historical-offline-tool",
+    "description": "Conservative per-function x64 constant flow for direct scratch-write callers.",
+    "imports": [
+      "argparse",
+      "capstone",
+      "collections",
+      "hashlib",
+      "json",
+      "pathlib",
+      "pefile",
+      "sys"
+    ],
+    "sha256": "be5de9cfbc984570afdb2a98199f736990f534baa0d8884fc46afb3943ec0b84"
+  },
+  {
+    "path": "scripts/navi21-gop-vram-base-check.py",
+    "category": "historical-offline-tool",
+    "description": "Original-instruction replay of GOP's runtime VRAM-table base update.",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "pefile",
+      "struct",
+      "sys",
+      "unicorn"
+    ],
+    "sha256": "36950ab2c422aae209d62a98fdca2deef12c181615ff7d5f6dc495f5a6e506cc"
+  },
+  {
+    "path": "scripts/navi21-gop-wrapper-check.py",
+    "category": "historical-offline-tool",
+    "description": "Replay original XL GOP address wrappers with reference ROMs in synthetic RAM.",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "pefile",
+      "struct",
+      "sys",
+      "unicorn"
+    ],
+    "sha256": "182e8f0493cbb149db1e3a890ea9a1ba9b67ed325f8961b01eac8d1249f3905b"
+  },
+  {
+    "path": "scripts/navi21-gop-write-leaves.py",
+    "category": "historical-offline-tool",
+    "description": "Inventory direct references to the x64 GOP PCI Mem.Write wrapper.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "pathlib",
+      "pefile",
+      "sys"
+    ],
+    "sha256": "706e18ce2993fecd801097329d36dbf8be6b5e41de719cf9bb4ceb41d74374da"
+  },
+  {
+    "path": "scripts/navi21-lx6-port-definition-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Compare exact TOC port candidates with the pinned local register database.",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "tarfile"
+    ],
+    "sha256": "64da91f4614027016cef698de2f96b9c1110facc226e53a59aeb934cbdaf2d8c"
+  },
+  {
+    "path": "scripts/navi21-psp-base-producer-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Record the conditional producer of the SYS RLC base value.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "5a9f0342acccfd1a5d04024872245fdf65c2e439e211769b56d140b892cea5c6"
+  },
+  {
+    "path": "scripts/navi21-psp-buffer-ownership-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Record offline driver evidence separating staging, allocation and RLC base.",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib"
+    ],
+    "sha256": "a8a9b2f334bd6ae09e8c6a4e34eea2c899c612156a40dd6f97b80daa14435f7b"
+  },
+  {
+    "path": "scripts/navi21-psp-cc-reference-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Bounded direct-reference locator for CC destinations in SYS/SOS firmware.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "12fe42a1c6abb15ffe70c3adae6e561379e560456cc1fa4d1d0f11ff35e39f0c"
+  },
+  {
+    "path": "scripts/navi21-psp-rlc-base-locator.py",
+    "category": "historical-offline-tool",
+    "description": "Locate the concrete RLC base setup candidate in the offline SYS image.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "e6f3413d63a3c09e27d3e77b08d12c5dfb0d417503cbd741dac6ecde8c1faaca"
+  },
+  {
+    "path": "scripts/navi21-psp-rlc-dispatch-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Resolve two local SYS selector paths into previously decoded RLC callers.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib"
+    ],
+    "sha256": "5f341cbb823bc8b9395a4a94f1b8b5c338be395dc3630bb26685a9e19917d8dd"
+  },
+  {
+    "path": "scripts/navi21-psp-rlc-start-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Check local SYS call contexts around RLC base programming and start.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "e70d8f1d21a283896c721de9751832c95a07dccfe44d908418b29f70d70431a2"
+  },
+  {
+    "path": "scripts/navi21-read-registers.py",
+    "category": "hardware-reader-do-not-run-automatically",
+    "description": "Allowlisted gfx1030 register reads. Default: no bank selection and no writes.\n\n--banked requires separate user authorization: the kernel transiently writes\nGRBM_GFX_INDEX while holding grbm_idx_mutex, then restores broadcast selection.\nNo harvesting, dispatch, RLC, SMU, clock, power, PCI, or firmware writes exist here.",
+    "imports": [
+      "argparse",
+      "datetime",
+      "fcntl",
+      "json",
+      "os",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "ff094616cba22454963861db1efc84bb38f21e7211e9a49d04f7dbe08cc56255"
+  },
+  {
+    "path": "scripts/navi21-readonly-inventory.py",
+    "category": "hardware-reader-do-not-run-automatically",
+    "description": "Collect cached AMDGPU topology and allowlisted read-only diagnostics.\n\nNever opens MMIO, PCI ROM, amdgpu_regs*, SMU, PSP, or sysfs controls for writing.\nThe public collector records GPU topology and version data only.\nRun as root for debugfs; all output goes below --output.",
+    "imports": [
+      "argparse",
+      "datetime",
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "subprocess"
+    ],
+    "sha256": "c5879b17660e48e11675093f5542a09652d0c0d0f1e69df52eb3822791f818b1"
+  },
+  {
+    "path": "scripts/navi21-rlc-4004-destination-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Enumerate the LX6 4004 selector offline; no firmware execution.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "bdd6b40dbf6049b3c772d6f91f2cd487f58e74ecb82fba1a8db6124ccb003b85"
+  },
+  {
+    "path": "scripts/navi21-rlc-alternative-cycle-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Offline provenance of the alternative restore flag db25.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "85a0dcc8706958c79f3d11eea2468679d5c9a50a86eaec47b36a57fbfe21b5b8"
+  },
+  {
+    "path": "scripts/navi21-rlc-callback-unused-entry-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Offline direct-reference coverage for seven other callback setters.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "3dd04debb3ff6211e3ec84f2e1f065c72f59a266d3a3f6dc3eb944a5d75b6741"
+  },
+  {
+    "path": "scripts/navi21-rlc-cc-incoming-edges-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Inventory decoded immediate incoming edges to three CC-related procedures.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re"
+    ],
+    "sha256": "45b4d827a34de090f031dad625e18bece21a6f48d9f541c950cbdecc3bbee9eb"
+  },
+  {
+    "path": "scripts/navi21-rlc-computed-store-bounds-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Bound selected unresolved LX6 stores from byte-checked existing listings.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "403c46e84bfa8a0bcc704be9cd50473799554f500445b652f36f8cfb0cd69f76"
+  },
+  {
+    "path": "scripts/navi21-rlc-copy-entry-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Raw range-wide reference check for the LX6 shared copy body.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "27a10d3739b0eb396a4280628087b22bbe11eeaeffa25547329151c1a37465f1"
+  },
+  {
+    "path": "scripts/navi21-rlc-d99c-consumer-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Offline distinction between d99c callback scheduling and e452 restore gate.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "2d6bca46e4870bd7e3855b18f7a21bf97287876e694fb196a7e0522f4fd290a5"
+  },
+  {
+    "path": "scripts/navi21-rlc-d99c-producer-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Offline registered-handler paths to the alternative restore flag d99c.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "198a78842f82f618871c35d8a8ce2d4446d19be3ecda92a8314d3afbbc9c5712"
+  },
+  {
+    "path": "scripts/navi21-rlc-derived-store-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Byte-checked destination bounds for the six computed stores in01d10.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "16e147c9fd83d2fbe6af3d91e12f8f79612d93da399073f8aa18d7f440e5591a"
+  },
+  {
+    "path": "scripts/navi21-rlc-direct-root-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Check listed RLC direct-call targets against separately available roots.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re"
+    ],
+    "sha256": "b793c655688a6565f2856862ed3065659457625d23d7256136d2da8e5053db6d"
+  },
+  {
+    "path": "scripts/navi21-rlc-gate-index-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Audit known direct callers of RLC's indexed state-byte setter.",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib"
+    ],
+    "sha256": "68463927ce887d4da55236874f213c42e248beb5eed88bcf7240378a24af43c2"
+  },
+  {
+    "path": "scripts/navi21-rlc-interrupt-dispatch-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Offline byte-checked expansion of RLC interrupt dispatcher entries.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct",
+      "subprocess"
+    ],
+    "sha256": "619737c1472a42e4345cae79339857de8d89a9aab7c92479ab158ca0a13c9077"
+  },
+  {
+    "path": "scripts/navi21-rlc-jump-tables.py",
+    "category": "historical-offline-tool",
+    "description": "Extract four bounded RLC switch tables from pinned firmware; offline only.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "a300c8faf704803f1535d3a5f37894953c5a4eeaa2c84080e2c157827e427cde"
+  },
+  {
+    "path": "scripts/navi21-rlc-movt-store-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Reproduce resolved LX6 stores after conservative MOVT/MOVF handling.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "subprocess",
+      "tempfile"
+    ],
+    "sha256": "3e2dd5efd0394c3d3c4779464ba5f35b9625269bd22941a1368f044264d4f428"
+  },
+  {
+    "path": "scripts/navi21-rlc-pace-bounds-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Bounded offline checks for two PACE selectors and the state ring.",
+    "imports": [
+      "hashlib",
+      "itertools",
+      "json",
+      "lzma",
+      "pathlib",
+      "re"
+    ],
+    "sha256": "bb51758e000f6411663061bb78654d5e0820f9d74ce140b8d512e27badae8e44"
+  },
+  {
+    "path": "scripts/navi21-rlc-pace-level-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Audit the local PACE level writer; consumes a fresh local CFG receipt.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re"
+    ],
+    "sha256": "c2cbc5c7d00e0eab97628da99d3481436491ea795f7bd42699aaa1b91edb882d"
+  },
+  {
+    "path": "scripts/navi21-rlc-restore-entry-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Raw immediate-entry search and byte evidence for restore caller conditions.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "26bfef5d3eceb538cc7f87c460d7c049c753c7ef8e87e307479c5aaec740f989"
+  },
+  {
+    "path": "scripts/navi21-rlc-saved-array-overlap.py",
+    "category": "historical-offline-tool",
+    "description": "Address model for RLC74c4's indexed hardware snapshots; offline only.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re"
+    ],
+    "sha256": "9e1eecfa1542c16192535ee404c8b37ff27e7bb004e338cbadfcc57f6dcaa07a"
+  },
+  {
+    "path": "scripts/navi21-rlc-saved-lifecycle-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Local order of CC save/restore calls; no global execution or timing claim.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re"
+    ],
+    "sha256": "cea463cafbd7dad587a7b61edc1b9930cd9bed8a8e02b641bb51dfda20120d48"
+  },
+  {
+    "path": "scripts/navi21-rlc-saved-neighbors-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Check neighboring snapshot writers against exact saved-CC intervals.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re"
+    ],
+    "sha256": "186d42b5ac5afecf99b1acda5811f21141d8e7a3b2abe8c3eac11171bc80b398"
+  },
+  {
+    "path": "scripts/navi21-rlc-scratch-consumer-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Offline audit of the RLC 35-word scratch consumer, not a hardware test.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "ad1bd09c1127ced650e5b5a81aee99fb64203ce7b87d12bb5ce568fce8e8f0f4"
+  },
+  {
+    "path": "scripts/navi21-rlc-snapshot-entry-range-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Raw range-wide reference check for the LX6 MQD snapshot body.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "7da8eff3588edbf8736fa19d3d5f9c2a7b4ae75739bfcc369b66eac385ab7f15"
+  },
+  {
+    "path": "scripts/navi21-rlc-snapshot-sources.py",
+    "category": "historical-offline-tool",
+    "description": "Resolve indexed RLC snapshot sources against saved GC register headers.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re"
+    ],
+    "sha256": "f6ad44f4dc3b6bb7005613084e91cf53ecfa387c8ca118d78db82c1accd25633"
+  },
+  {
+    "path": "scripts/navi21-rlc-srm-locate.py",
+    "category": "historical-offline-tool",
+    "description": "Offline signed-section boundary and packed-register locator; no GPU access.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "b6a9b83016134e2aa548d2c00256c857e105a42e1ada92d8de76c6bded1f6044"
+  },
+  {
+    "path": "scripts/navi21-rlc-startup-state-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Pinned RLC startup data audit, no execution or hardware access.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "8b67b216072d3003189f55c0cf6651edda0824a94c1f9c5ea20332d7c0dbea08"
+  },
+  {
+    "path": "scripts/navi21-rlc-store-coverage-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Refresh the scoped LX6 store inventory and expose local coverage limits.",
+    "imports": [
+      "collections",
+      "hashlib",
+      "json",
+      "pathlib",
+      "subprocess"
+    ],
+    "sha256": "cdfd715d6e063035a3bd071b4055370f994e127ef965b1cd1ea4dde4a5b2f659"
+  },
+  {
+    "path": "scripts/navi21-rlc-store-disposition-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Link every current unresolved-address store to a bounded scope or open item.",
+    "imports": [
+      "collections",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re"
+    ],
+    "sha256": "cb78836a8bae4b41e5fab1f4a912a21456c79d084eb2f1c8f0c149b18ebe9b81"
+  },
+  {
+    "path": "scripts/navi21-rlc-transition-controls-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Bound the local restore-transition callee group and identify SERDES fields.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re"
+    ],
+    "sha256": "599cf71347c39967c3ac5f2241a350985ca842889b7d6f128c6be9ee09505a39"
+  },
+  {
+    "path": "scripts/navi21-rlc-window-store-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Offline destination bounds for remaining LX6 window/table stores.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "958c3293a6a1c1f8ff61c0a8b7324cf45007dae66e30ac14b9b439cb8dfb26ec"
+  },
+  {
+    "path": "scripts/navi21-rlcg-cc-operand-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Pinned RLCG operand inventory and explicitly conditional field interpretation.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "ad425a4030f1972ab35ff059db94b2114a436b598d3d08f1963145c03c5b9a11"
+  },
+  {
+    "path": "scripts/navi21-rlcg-command-bridge-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Offline RLCG word/operand consistency receipt, not a complete ISA decoder.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "f47ce89fb2fb0b3e2ec4e676ff4c85acab4e2f001accf6854f2b1a68f07527cc"
+  },
+  {
+    "path": "scripts/navi21-rlcg-dram-save-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Audit the concrete RLCG descriptor save path, retaining inferred ISA limits.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "0899d3fc69c297cf0b8e0ef4376ba4e64a4b45cee768090b0cce3157745301c1"
+  },
+  {
+    "path": "scripts/navi21-rlcg-e800-helper-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Pin the indexed RLCG helper structure without assigning a physical block.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "afe3e7412e229864c43463c73e1c46e8a07923608091592dd0db895e851cd61b"
+  },
+  {
+    "path": "scripts/navi21-rlcg-e800-map-comparison.py",
+    "category": "historical-offline-tool",
+    "description": "Compare the unidentified indexed port with same-generation RTAVFS metadata.",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib",
+      "re",
+      "tarfile"
+    ],
+    "sha256": "c09c7f1426ddbb25d14660abe19b58cef068704f8fd42a0157e6010cbb0f7aff"
+  },
+  {
+    "path": "scripts/navi21-rlcg-e800-write-indices-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Trace the local constant index setup for every literal e800 write call.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "554e48aa646c1c43ff1bae6baf399ba87ee43b4f5a77d65020c6da9e815a492e"
+  },
+  {
+    "path": "scripts/navi21-rlcg-gpm-transfer-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Offline GPM transfer comparison; retains unproved ISA/address correspondences.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "25f2058a011f9e8f38d2436a49ee9c4dac80ef6892c84a1453c22cfd646acf8b"
+  },
+  {
+    "path": "scripts/navi21-rlcg-lx6-control-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Bounded RLCG LX6-control inspection; retain generation/ISA limits.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct",
+      "tarfile"
+    ],
+    "sha256": "03c63be7aa1c68d8c3092b1dafbb624702c8f81e9dd98281306e314cab0d4cee"
+  },
+  {
+    "path": "scripts/navi21-rlcg-lx6-index-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Check whether the known LX6 bulk path requires a nonzero port index.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "baacb7219509a454b55ab16aa4fa9b782ecd9464c2549a42be4b9c1519f2920f"
+  },
+  {
+    "path": "scripts/navi21-rlcg-spm-transfer-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Offline SPM transfer constants and bounded direct-call inventory.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "31d0c05ee919316c6c5621af7f22a5e816a16ac39f574632c436f5c6a10e61c2"
+  },
+  {
+    "path": "scripts/navi21-rlcg-toc-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Extract local SOS TOC and compare its fields with RLCG descriptor operands.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "c01c372bc3191124307b71ab391335c59d96410ef7a1f42d48420b8dd5309612"
+  },
+  {
+    "path": "scripts/navi21-rlcg-toc-effects-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Bounded table-effect and memory-base selection audit, no runtime assertions.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "342740cd47e181d7d391ee6288dfe3a2eadea02234b489ad388c1ceacd68aeee"
+  },
+  {
+    "path": "scripts/navi21-sa-writability.py",
+    "category": "archived-hardware-logic-execution-disabled",
+    "description": "Authorized Navi21 CC/USER SA-mask readback experiments.\n\nDefault prints the plan without opening a device. --execute requires an idle\nGPU and restores the saved register in finally. Modes cover a CC SA bit, CC\nlow bit0, the full CC SA field, or a redundant USER disable bit. Active-SA\nexecution is blocked after the v1 trial caused a queue hang and automatic GPU\nreset. The public copy preserves readback/rollback logic for study, with execution disabled.\nNo firmware, OTP, clocks, SPI or RLC policy writes. Hardware can defeat rollback.",
+    "imports": [
+      "argparse",
+      "datetime",
+      "fcntl",
+      "json",
+      "os",
+      "pathlib",
+      "signal",
+      "struct",
+      "subprocess",
+      "time"
+    ],
+    "sha256": "211e57f5ae101a54857c50e98a48b50844bc4005da8b9308a6d63e18582591ec"
+  },
+  {
+    "path": "scripts/navi21-smu-cfg-scan.py",
+    "category": "historical-offline-tool",
+    "description": "Conservative local constant propagation over targeted SMU listings.\n\nThis is a locator, not a firmware verifier: memory loads, call returns, unknown\noperations and disagreeing predecessor values become unknown. No hardware I/O.",
+    "imports": [
+      "argparse",
+      "collections",
+      "json",
+      "pathlib",
+      "re"
+    ],
+    "sha256": "d9505d41a71e70b63c24ea5c5af0acf390e3aee9bf94cfad4c83fbba6fc260ae"
+  },
+  {
+    "path": "scripts/navi21-smu-command41-initial-ranges-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Decode all nine initial state records, not only step0, for command41 data.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "35ed0f85b726fe05d401e715cd4ce20a1c0f7467504ec971fbeaaa0fcc1b1555"
+  },
+  {
+    "path": "scripts/navi21-smu-command41-pointer-candidates-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Enumerate image-backed initial pointer selections for command41 byte store.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "1f66439e5487a6addf0a4b1d6c3dc550c9ca78149cee17dcde40922d130f54a0"
+  },
+  {
+    "path": "scripts/navi21-smu-command41-state-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Record state-selection bounds and precise limits of the pointer-write locator.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re"
+    ],
+    "sha256": "0c424d644841dd40b19e815124eee991e83b35e194fd10a56c17eaf956bd0fb3"
+  },
+  {
+    "path": "scripts/navi21-smu-command41-workers-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Trace command41's initial workers and identify its second callback layer.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "60e0d6438b59a748aab72ecd022c3b30bba8987ef024100a4f17be3ae244355d"
+  },
+  {
+    "path": "scripts/navi21-smu-disassemble.py",
+    "category": "historical-offline-tool",
+    "description": "Offline targeted Xtensa listing; never accesses a GPU.\n\nGNU lx106 handles density instructions; Capstone supplies windowed instructions.\nNeither decoder establishes that arbitrary input bytes are executable code.",
+    "imports": [
+      "argparse",
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "subprocess",
+      "tempfile"
+    ],
+    "sha256": "63cc30f3949cf1e3fb6176710e62f1fdb65ce2be91fa6d78ebe2299a2f259c7e"
+  },
+  {
+    "path": "scripts/navi21-smu-e800-reference-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Check SMU literals for a concrete counterpart of the RLCG indexed ports.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "db55220559e7eaa4c870bfda75058f6cadb4fad2712aecfbdcb150a6ad2cc966"
+  },
+  {
+    "path": "scripts/navi21-smu-event-table.py",
+    "category": "historical-offline-tool",
+    "description": "Extract the offline SMU event descriptors; never accesses hardware.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "8e0fca096b9b06fb9a32075ac9bc5d4601584e895cbcc2aba3a624ce7ef73e32"
+  },
+  {
+    "path": "scripts/navi21-smu-expand-calls.py",
+    "category": "historical-offline-tool",
+    "description": "Offline closure runner; uses pinned local decoder environment in /tmp/navi21-disasm.\nNo hardware access. Requires existing inventory and callback evidence.",
+    "imports": [
+      "argparse",
+      "collections",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "subprocess",
+      "time"
+    ],
+    "sha256": "18681154b77dcd7c4c19c12ea37e9ae72b02c477d848577e2f8509aa594c8017"
+  },
+  {
+    "path": "scripts/navi21-smu-ff8c-enable-ports-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Pin ff8c enable call sites and state8's concrete indexed-port transaction.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "6d1837780ff8d63187a4ad589734e54b5f3783452a64314b85e6d6da84319d71"
+  },
+  {
+    "path": "scripts/navi21-smu-ff8c-transition-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Tie the scheduled callback to concrete ff8c transition definitions.",
+    "imports": [
+      "collections",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "8c63b1d3565bd8cd67f4fee165ef86dec92cb6ec536b4ca17c472d88dcbc1b7a"
+  },
+  {
+    "path": "scripts/navi21-smu-irq-mask-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Reproduce offline SMU IRQ-mask evidence; no device access.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "6ac59e64106de6cd3462c6a6a24787084860fcfd50e3b090b7d66fc9642471d2"
+  },
+  {
+    "path": "scripts/navi21-smu-lx6-port-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Extend the earlier SMU port locator with concrete TOC-derived LX6 candidates.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "15ecabdc4bd8f09fcfe2cfc94e35c30d3bd0c4d77e3fdc96d9358374746fe443"
+  },
+  {
+    "path": "scripts/navi21-smu-pace-delivery-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Offline evidence for conditional PACE update delivery and command boundary.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re"
+    ],
+    "sha256": "61b7571627ad3d7aac0c31cd10a21ad5d33cdb54c1d6686a040bde300db5203a"
+  },
+  {
+    "path": "scripts/navi21-smu-pace-source-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Offline provenance of the final sixteen words in the SMU/RLC block.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "a2385f07b8f932c65b332992beebc51b42bcd6cd3f971d0d126dea9507f9056a"
+  },
+  {
+    "path": "scripts/navi21-smu-registered-roots.py",
+    "category": "historical-offline-tool",
+    "description": "Extract offline callback registrations from local CFG argument constants.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "26d26bf5389627e01564db2fac0a0dce64a6be5369bac21458d3f0bf75780e6b"
+  },
+  {
+    "path": "scripts/navi21-smu-repair-branch-targets.py",
+    "category": "historical-offline-tool",
+    "description": "Offline decode of missing internal branch targets; preserve alternate starts.",
+    "imports": [
+      "argparse",
+      "json",
+      "os",
+      "pathlib",
+      "re",
+      "subprocess",
+      "tempfile"
+    ],
+    "sha256": "7f37deb413ef32dba03e83ab94e573440a674fb9f51b37069ec8ce3db97f72b7"
+  },
+  {
+    "path": "scripts/navi21-smu-state2-list-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Trace the producer of the state2 callback list and its eight source entries.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "b41aa986d0533b8dd02726ba75f6e5b70cb9140c7a9b4c47b19cb4648fcb48d5"
+  },
+  {
+    "path": "scripts/navi21-smu-transfer-program-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Offline reconstruction of the observed 140-byte SMU transfer program.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "bae8a357c8dc5cf9abd7210adecce70cf1c617d83ae51a68c804db70686c470e"
+  },
+  {
+    "path": "scripts/navi21-smu-window-umc-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Offline correspondence of SMU window tables to UMC register coordinates.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct"
+    ],
+    "sha256": "fcf4cc7c98a359c3f49404fee18b9ea6d77dfa87c443a827ee0870f79d2ed7c2"
+  },
+  {
+    "path": "scripts/navi21-sos-f2-recipient-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Trace dynamic recipient selection for the internal RLC packet.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "c3ea0f92a41a1b3d973eebbde90577cfa03b62757087b717d4d8ab8318f12b58"
+  },
+  {
+    "path": "scripts/navi21-sos-image-order-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Check the local initialization order selecting image fielda023c.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "b55e1b66bcc6d4bb084cc265116d0d899eedbb457d2b3699bf0243a1e71e9be6"
+  },
+  {
+    "path": "scripts/navi21-sos-image-origin-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Record the concrete producer of kernel image pointer601c.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "b6da399cdd9c9f3fd9aafb51c4fcb7f5d4c38fdc1e37b0a0cfe0bbb6da1a586b"
+  },
+  {
+    "path": "scripts/navi21-sos-image-pointer-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Record image-source pointer initialization and independent command-window base.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "c1bc873fb3a78c24ebc6a23dc19e320d425030eb1293c110840c729cb7815c35"
+  },
+  {
+    "path": "scripts/navi21-sos-initial-recipient-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Record the special fixed-selector loader path and its concrete caller.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "88d8b2d27967373343dfd60165f70f90f9337b485b0c53df69df157b4d174aa8"
+  },
+  {
+    "path": "scripts/navi21-sos-recipient-property-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Identify ordinary recipient registration's dependency on existing SYS routing.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib"
+    ],
+    "sha256": "35cf2ba5fc377b907e5081f362c8b4965856b4476e601b94547e9901617c619a"
+  },
+  {
+    "path": "scripts/navi21-sos-rlc-map-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Resolve the local mapping setup used for RLC base-register accesses.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "616d9f7aabbc2286978d0513aa1cafd4c9cc0068ae9cbc254374f6eeb1ef614e"
+  },
+  {
+    "path": "scripts/navi21-sos-rlc-packet-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Trace SOS construction of the two RLC-related internal SYS packets.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "5aa94fa80aea69ee364e5c382b300ff8f3e9a7a134a5d3c12fd38f544549a2c3"
+  },
+  {
+    "path": "scripts/navi21-sos-svc-route-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Check the SOS SVC dispatch and concrete load/store helper instructions.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "1ec60fe19c741035009ba00e2f398a25b50cc50c8fdd054dea6c8f0954abe586"
+  },
+  {
+    "path": "scripts/navi21-sys-recipient-entry-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Connect recipient entry installation with a concrete SYS entry candidate.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "7a315f836a21db370b66fdf70b6abe6c7135a306229cf77334e8349918e22d7e"
+  },
+  {
+    "path": "scripts/navi21-sys-record-endpoint-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Match the SYS record-address endpoint to the local register database.",
+    "imports": [
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "re",
+      "struct",
+      "tarfile"
+    ],
+    "sha256": "112209b0d77387285c13154fa7c70b86579ef5b222d984d25a49bd022124de47"
+  },
+  {
+    "path": "scripts/navi21-sys-rlc-record-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Offline SYS record-copy path; positions are firmware file offsets.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "2187e18d925fa2dff3dd8db8e119e7a826270ed7336eeb67dffb87f887162bd8"
+  },
+  {
+    "path": "scripts/navi21-sys-rlc-record-origin-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Offline checks of record preparation and its address-base producer.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "6a7440be327372a160d6b408a8dfa31b0c5bf83a57065f8aca4fd534f0b96b0d"
+  },
+  {
+    "path": "scripts/navi21-sys-rlc-record-overlap-audit.py",
+    "category": "historical-offline-tool",
+    "description": "Conditional address proof for the SYS record versus RLC DRAM snapshot.",
+    "imports": [
+      "capstone",
+      "hashlib",
+      "json",
+      "lzma",
+      "pathlib",
+      "struct"
+    ],
+    "sha256": "c5c8dc9d683c53d1e79c99cb2cd0ade415c7789e034f70cebfb905e6ab2c1dee"
+  },
+  {
+    "path": "scripts/navi21-sys-staging-lifetime-audit.py",
+    "category": "portable-offline-audit",
+    "description": "Check matched-version source ordering and reuse of the SYS staging buffer.",
+    "imports": [
+      "hashlib",
+      "json",
+      "pathlib"
+    ],
+    "sha256": "183809bd2739d2410b14587fa1403f4a3a528eb5743fedcaecfc130a73bab985"
+  },
+  {
+    "path": "scripts/navi21-wave-map.hip",
+    "category": "hardware-experiment-do-not-run",
+    "description": "",
+    "imports": [],
+    "sha256": "4e4a8dee56d5caac265c33c3868a627e9d6fa138f86a93d379fcac03ee6071cd"
+  }
+]

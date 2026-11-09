@@ -1,0 +1,29 @@
+
+/tmp/tmpsp8ziv6y/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00027b7c <.data+0x27b7c>:
+00027b7c: 364100   entry        a1, 0x20 ; Capstone
+   27b7f:	0c8a      	movi.n	a10, 8
+00027b81: e59fda   call8        . -0x25600 ; Capstone ; target=0x2580
+   27b84:	a110b0        	l32r	a10, 0x13bc4 (0xc358)
+   27b87:	91f3ae        	l32r	a9, 0x13754 (0xaecc)
+   27b8a:	810ead        	l32r	a8, 0x12fc4 (0x38d1b717)
+00027b8d: 330a7f   lsi          f3, a10, 0x1fc ; Capstone
+00027b90: 23097f   lsi          f2, a9, 0x1fc ; Capstone
+00027b93: 30121a   sub.s        f1, f2, f3 ; Capstone
+00027b96: 5008fa   wfr          f0, a8 ; Capstone
+00027b99: 1011fa   abs.s        f1, f1 ; Capstone
+00027b9c: 10006b   ole.s        b0, f0, f1 ; Capstone
+00027b9f: 76000d   bf           b0, . +0x11 ; Capstone
+00027ba2: 40a2fa   rfr          a10, f2 ; Capstone
+00027ba5: e5bb0a   call8        . +0xabc0 ; Capstone ; target=0x32764
+00027ba8: a5f6ff   call8        . -0x94 ; Capstone ; target=0x27b14
+   27bab:	0c8a      	movi.n	a10, 8
+00027bad: 659c09   call8        . +0x99c8 ; Capstone ; target=0x31574
+   27bb0:	0c8a      	movi.n	a10, 8
+00027bb2: 258cda   call8        . -0x2573c ; Capstone ; target=0x2474
+00027bb5: 1df0     retw.n        ; Capstone
+	...

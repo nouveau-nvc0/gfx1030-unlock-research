@@ -1,0 +1,18 @@
+
+/tmp/tmpevoicw12/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001d538 <.data+0x1d538>:
+0001d538: 364100   entry        a1, 0x20 ; Capstone
+   1d53b:	0c1e      	movi.n	a14, 1
+   1d53d:	e24202        	s8i	a14, a2, 2
+   1d540:	d161d6        	l32r	a13, 0x12ec4 (0x300fe00)
+   1d543:	1c0a      	movi.n	a10, 16
+   1d545:	2c1b      	movi.n	a11, 33
+   1d547:	0c0c      	movi.n	a12, 0
+   1d549:	c02000        	memw
+   1d54c:	d22d8a        	l32i	a13, a13, 0x228
+0001d54f: e50be5   call8        . -0x1af40 ; Capstone ; target=0x260c
+	...

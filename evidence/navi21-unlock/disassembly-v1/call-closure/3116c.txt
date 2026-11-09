@@ -1,0 +1,27 @@
+
+/tmp/tmpgi4cq_mz/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0003116c <.data+0x3116c>:
+0003116c: 364100   entry        a1, 0x20 ; Capstone
+   3116f:	0cc8      	movi.n	a8, 12
+   31171:	273824        	bltu	a8, a2, 0x31199
+   31174:	814a8b        	l32r	a8, 0x13e9c (0x120d4)
+   31177:	202290        	addx2	a2, a2, a2
+   3117a:	8022a0        	addx4	a2, a2, a8
+   3117d:	92027f        	l8ui	a9, a2, 127
+   31180:	9c59      	beqz.n	a9, 0x31199
+   31182:	a2027c        	l8ui	a10, a2, 124
+00031185: 65c8ea   call8        . -0x15378 ; Capstone ; target=0x1be0c
+   31188:	8cda      	beqz.n	a10, 0x31199
+   3118a:	92027d        	l8ui	a9, a2, 125
+   3118d:	82a0a4        	movi	a8, 164
+   31190:	284a      	l32i.n	a2, a10, 16
+   31192:	9088d1        	mul16s	a8, a8, a9
+   31195:	8a22      	add.n	a2, a2, a8
+00031197: 1df0     retw.n        ; Capstone
+   31199:	0c02      	movi.n	a2, 0
+0003119b: 1df0     retw.n        ; Capstone
+   3119d:	000000        	ill

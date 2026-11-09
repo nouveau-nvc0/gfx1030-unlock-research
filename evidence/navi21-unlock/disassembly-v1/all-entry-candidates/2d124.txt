@@ -1,0 +1,14 @@
+
+/tmp/tmphse4klah/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002d124 <.data+0x2d124>:
+0002d124: 364100   entry        a1, 0x20 ; Capstone
+0002d127: 5002fa   wfr          f0, a2 ; Capstone
+   2d12a:	21309b        	l32r	a2, 0x13dec (0x47800000)
+0002d12d: 5022fa   wfr          f2, a2 ; Capstone
+0002d130: 00122a   mul.s        f1, f2, f0 ; Capstone
+0002d133: 00219a   trunc.s      a2, f1, 0 ; Capstone
+0002d136: 1df0     retw.n        ; Capstone

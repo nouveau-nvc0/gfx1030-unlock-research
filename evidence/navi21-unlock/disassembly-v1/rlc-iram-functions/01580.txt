@@ -1,0 +1,60 @@
+
+/tmp/tmp9ws6unph/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001580 <.data+0x1580>:
+00001580: 364100   entry        a1, 0x20 ; Capstone
+    1583:	2c9a      	movi.n	a10, 41
+00001585: 254d00   call8        . +0x4d4 ; Capstone ; target=0x1a58
+    1588:	3d0a      	mov.n	a3, a10
+    158a:	7ce4      	movi.n	a4, -2
+    158c:	bc82      	beqz.n	a2, 0x15c8
+    158e:	21f8ee        	l32r	a2, 0xffffd170 (0x6803ba00) ; inferred DRAM map 0x5ffec000
+    1591:	222254        	l32i	a2, a2, 0x150
+    1594:	2c8a      	movi.n	a10, 40
+    1596:	2020f4        	extui	a2, a2, 0, 16
+00001599: e54b00   call8        . +0x4c0 ; Capstone ; target=0x1a58
+    159c:	0c1a      	movi.n	a10, 1
+    159e:	82a12c        	movi	a8, 0x12c
+    15a1:	873213        	bltu	a2, a8, 0x15b8
+    15a4:	b109ef        	l32r	a11, 0xffffd1c8 (0x68b000) ; inferred DRAM map 0x5ffec000
+    15a7:	a02320        	or	a2, a3, a10
+    15aa:	2c8a      	movi.n	a10, 40
+000015ac: 654300   call8        . +0x438 ; Capstone ; target=0x19e4
+    15af:	bd02      	mov.n	a11, a2
+    15b1:	2c9a      	movi.n	a10, 41
+000015b3: 254300   call8        . +0x434 ; Capstone ; target=0x19e4
+000015b6: 1df0     retw.n        ; Capstone
+    15b8:	92a0c8        	movi	a9, 200
+    15bb:	973211        	bltu	a2, a9, 0x15d0
+    15be:	b103ef        	l32r	a11, 0xffffd1cc (0x4dcc00) ; inferred DRAM map 0x5ffec000
+    15c1:	a02320        	or	a2, a3, a10
+    15c4:	86f8ff        	j	0x15aa
+000015c7: 00402a   mul.s        f4, f0, f0 ; Capstone
+    15ca:	1006f8        	excw
+    15cd:	ff          	.byte 0xff
+000015ce: 0000b2   mulsh        a0, a0, a0 ; Capstone
+000015d1: a064b7   ee.stf.64.xp f6, f11, a10, a4 ; Capstone
+    15d4:	3209a0        	l8ui	a3, a9, 160
+    15d7:	2320b1        	excw
+    15da:	fdee      	excw
+    15dc:	86f2ff        	j	0x15aa
+000015df: 004023   sext         a4, a0, 7 ; Capstone
+    15e2:	100c0b        	excw
+    15e5:	46f0ff        	j	0x15aa
+
+; Alternate branch-target decode
+    15c8:	402a10        	and	a2, a10, a4
+    15cb:	06f8ff        	j	0x15af
+
+; Alternate branch-target decode
+    15d0:	b2a064        	movi	a11, 100
+    15d3:	b73209        	bltu	a2, a11, 0x15e0
+    15d6:	a02320        	or	a2, a3, a10
+    15d9:	b1fdee        	l32r	a11, 0xffffd1d0 (0x3a0800) ; inferred DRAM map 0x5ffec000
+
+; Alternate branch-target decode
+    15e0:	402310        	and	a2, a3, a4
+    15e3:	0c0b      	movi.n	a11, 0

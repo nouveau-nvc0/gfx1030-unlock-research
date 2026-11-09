@@ -1,0 +1,55 @@
+
+/tmp/tmp1o1n6omu/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00033900 <.data+0x33900>:
+00033900: 364100   entry        a1, 0x20 ; Capstone
+   33903:	71e37d        	l32r	a7, 0x13090 (0xaaa8)
+   33906:	0c18      	movi.n	a8, 1
+   33908:	2062b0        	addx8	a6, a2, a2
+   3390b:	7066a0        	addx4	a6, a6, a7
+   3390e:	72267f        	l32i	a7, a6, 0x1fc
+   33911:	51bc7d        	l32r	a5, 0x13004 (0xfffff)
+   33914:	21d17d        	l32r	a2, 0x13058 (0x11ffe00)
+   33917:	72c718        	addi	a7, a7, 24
+   3391a:	507710        	and	a7, a7, a5
+   3391d:	2a77      	add.n	a7, a7, a2
+   3391f:	cc93      	bnez.n	a3, 0x3392c
+   33921:	0c08      	movi.n	a8, 0
+   33923:	c02000        	memw
+   33926:	826780        	s32i	a8, a7, 0x200
+   33929:	460100        	j	0x33932
+   3392c:	c02000        	memw
+   3392f:	826780        	s32i	a8, a7, 0x200
+   33932:	a2267f        	l32i	a10, a6, 0x1fc
+   33935:	a2ca14        	addi	a10, a10, 20
+   33938:	50aa10        	and	a10, a10, a5
+   3393b:	2aaa      	add.n	a10, a10, a2
+   3393d:	c02000        	memw
+   33940:	b22a80        	l32i	a11, a10, 0x200
+   33943:	7c8c      	movi.n	a12, -8
+   33945:	309024        	extui	a9, a3, 0, 3
+   33948:	c0bb10        	and	a11, a11, a12
+   3394b:	b09920        	or	a9, a9, a11
+   3394e:	c02000        	memw
+   33951:	926a80        	s32i	a9, a10, 0x200
+   33954:	dc43      	bnez.n	a3, 0x3396c
+   33956:	b2267f        	l32i	a11, a6, 0x1fc
+   33959:	b2cb24        	addi	a11, a11, 36
+   3395c:	50bb10        	and	a11, a11, a5
+   3395f:	2a2b      	add.n	a2, a11, a2
+   33961:	c02000        	memw
+   33964:	c22280        	l32i	a12, a2, 0x200
+   33967:	076cf6        	bbci	a12, 0, 0x33961
+0003396a: 1df0     retw.n        ; Capstone
+   3396c:	d2267f        	l32i	a13, a6, 0x1fc
+   3396f:	d2cd24        	addi	a13, a13, 36
+   33972:	50dd10        	and	a13, a13, a5
+   33975:	2a2d      	add.n	a2, a13, a2
+   33977:	c02000        	memw
+   3397a:	e22280        	l32i	a14, a2, 0x200
+   3397d:	07eef6        	bbsi	a14, 0, 0x33977
+00033980: 1df0     retw.n        ; Capstone
+	...

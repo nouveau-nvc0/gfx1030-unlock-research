@@ -1,0 +1,25 @@
+
+/tmp/tmpcasvqekv/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00029b80 <.data+0x29b80>:
+00029b80: 366100   entry        a1, 0x30 ; Capstone
+   29b83:	81b6a4        	l32r	a8, 0x12e5c (0x69a0)
+   29b86:	82086c        	l8ui	a8, a8, 108
+00029b89: 5003fa   wfr          f0, a3 ; Capstone
+00029b8c: 034100   ssi          f0, a1, 0 ; Capstone
+   29b8f:	661803        	bnei	a8, 1, 0x29b96
+   29b92:	0c12      	movi.n	a2, 1
+00029b94: 1df0     retw.n        ; Capstone
+   29b96:	bd02      	mov.n	a11, a2
+   29b98:	a1a7a5        	l32r	a10, 0x13234 (0xe170)
+00029b9b: 25c4ff   call8        . -0x3bc ; Capstone ; target=0x297dc
+00029b9e: 230100   lsi          f2, a1, 0 ; Capstone
+00029ba1: 501afa   wfr          f1, a10 ; Capstone
+00029ba4: 20016b   ole.s        b0, f1, f2 ; Capstone
+   29ba7:	0c19      	movi.n	a9, 1
+   29ba9:	0c02      	movi.n	a2, 0
+00029bab: 0029d3   movt         a2, a9, b0 ; Capstone
+00029bae: 1df0     retw.n        ; Capstone

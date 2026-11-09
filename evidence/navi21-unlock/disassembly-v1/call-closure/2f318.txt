@@ -1,0 +1,22 @@
+
+/tmp/tmpoz_aihjz/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002f318 <.data+0x2f318>:
+0002f318: 364100   entry        a1, 0x20 ; Capstone
+   2f31b:	213193        	l32r	a2, 0x13fe0 (0x10e6c)
+   2f31e:	820280        	l8ui	a8, a2, 128
+   2f321:	9c98      	beqz.n	a8, 0x2f33e
+   2f323:	0c9a      	movi.n	a10, 9
+0002f325: a54306   call8        . +0x643c ; Capstone ; target=0x35760
+   2f328:	9c2a      	beqz.n	a10, 0x2f33e
+   2f32a:	a1748f        	l32r	a10, 0x130fc (0x12d30)
+0002f32d: e5aef8   call8        . -0x7510 ; Capstone ; target=0x27e1c
+   2f330:	1c0a      	movi.n	a10, 16
+0002f332: a57a04   call8        . +0x47ac ; Capstone ; target=0x33adc
+   2f335:	b22222        	l32i	a11, a2, 136
+   2f338:	c21241        	l16ui	a12, a2, 130
+0002f33b: 6548ed   call8        . -0x12b78 ; Capstone ; target=0x1c7c0
+0002f33e: 1df0     retw.n        ; Capstone

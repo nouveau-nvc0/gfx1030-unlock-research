@@ -1,0 +1,14 @@
+Cross-engine candidate: RLC RAM index/data ports
+
+GC10.3 segment1 basea000 plus header offsets yields GPM_IRAM3ed7c/3ed80,
+SRM_DRAM3edc4/3edc8,SRM_ARAM3edcc/3edd0,GPM_SCRATCH3edd4/3edd8.
+Existing SMU all-entry RSYNC scan has no fixed-address stores matching these
+offsets or candidate01200000/60000000 aliases. This is only a locator result;
+no general absence of accesses or cross-engine write capability follows.
+
+Names do not establish that SRM_DRAM or GPM_SCRATCH is the LX6 RAM containing
+5ffedfc4 and5ffee452. That mapping must be demonstrated before treating these
+ports as mask/gate producers. Remaining relevant paths are computed generic
+SMU stores/window access, engine descriptors, and firmware initialization
+through interfaces whose destination memory is independently identified.
+All checks offline; no register access performed.

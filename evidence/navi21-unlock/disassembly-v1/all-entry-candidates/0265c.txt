@@ -1,0 +1,82 @@
+
+/tmp/tmpk4ae6qt2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000265c <.data+0x265c>:
+0000265c: 364100   entry        a1, 0x20 ; Capstone
+    265f:	4912      	s32i.n	a4, a2, 4
+    2661:	6972      	s32i.n	a6, a2, 28
+    2663:	0c0b      	movi.n	a11, 0
+    2665:	3952      	s32i.n	a3, a2, 20
+    2667:	b982      	s32i.n	a11, a2, 32
+    2669:	a149f9        	l32r	a10, 0xb90 (0xdeadbeef)
+    266c:	c02000        	memw
+    266f:	0c78      	movi.n	a8, 7
+    2671:	0c89      	movi.n	a9, 8
+    2673:	a904      	s32i.n	a10, a4, 0
+    2675:	724228        	s8i	a7, a2, 40
+    2678:	924229        	s8i	a9, a2, 41
+    267b:	82422b        	s8i	a8, a2, 43
+    267e:	16f508        	beqz	a5, 0x2711
+    2681:	c197f9        	l32r	a12, 0xce0 (0x50030)
+    2684:	e2d5ff        	addmi	a14, a5, 0xffffff00
+    2687:	d2af24        	movi	a13, -220
+    268a:	dad5      	add.n	a13, a5, a13
+    268c:	d902      	s32i.n	a13, a2, 0
+    268e:	626e1e        	s32i	a6, a14, 120
+    2691:	591d      	s32i.n	a5, a13, 4
+    2693:	b90d      	s32i.n	a11, a13, 0
+    2695:	b92d      	s32i.n	a11, a13, 8
+    2697:	b93d      	s32i.n	a11, a13, 12
+    2699:	b94d      	s32i.n	a11, a13, 16
+    269b:	b95d      	s32i.n	a11, a13, 20
+    269d:	b96d      	s32i.n	a11, a13, 24
+    269f:	b97d      	s32i.n	a11, a13, 28
+    26a1:	b98d      	s32i.n	a11, a13, 32
+    26a3:	b99d      	s32i.n	a11, a13, 36
+    26a5:	b9ad      	s32i.n	a11, a13, 40
+    26a7:	b9bd      	s32i.n	a11, a13, 44
+    26a9:	b9cd      	s32i.n	a11, a13, 48
+    26ab:	b9dd      	s32i.n	a11, a13, 52
+    26ad:	b9ed      	s32i.n	a11, a13, 56
+    26af:	b9fd      	s32i.n	a11, a13, 60
+    26b1:	b26d16        	s32i	a11, a13, 88
+    26b4:	b26d17        	s32i	a11, a13, 92
+    26b7:	b26d18        	s32i	a11, a13, 96
+    26ba:	b26d13        	s32i	a11, a13, 76
+    26bd:	b26d10        	s32i	a11, a13, 64
+    26c0:	b26d11        	s32i	a11, a13, 68
+    26c3:	b26d19        	s32i	a11, a13, 100
+    26c6:	b26d1a        	s32i	a11, a13, 104
+    26c9:	b26d1b        	s32i	a11, a13, 108
+    26cc:	b26d1c        	s32i	a11, a13, 112
+    26cf:	b26d1d        	s32i	a11, a13, 116
+    26d2:	b26d1e        	s32i	a11, a13, 120
+    26d5:	b26d1f        	s32i	a11, a13, 124
+    26d8:	b26d20        	s32i	a11, a13, 128
+    26db:	b26d21        	s32i	a11, a13, 132
+    26de:	b26d22        	s32i	a11, a13, 136
+    26e1:	b26d23        	s32i	a11, a13, 140
+    26e4:	b26d24        	s32i	a11, a13, 144
+    26e7:	b26d25        	s32i	a11, a13, 148
+    26ea:	b26d26        	s32i	a11, a13, 152
+    26ed:	b26d27        	s32i	a11, a13, 156
+    26f0:	b26d28        	s32i	a11, a13, 160
+    26f3:	b26d2e        	s32i	a11, a13, 184
+    26f6:	b26d2f        	s32i	a11, a13, 188
+    26f9:	b26d30        	s32i	a11, a13, 192
+    26fc:	b26d31        	s32i	a11, a13, 196
+    26ff:	b26d32        	s32i	a11, a13, 200
+    2702:	b26d33        	s32i	a11, a13, 204
+    2705:	b26d34        	s32i	a11, a13, 208
+    2708:	b26d35        	s32i	a11, a13, 212
+    270b:	b26d36        	s32i	a11, a13, 216
+    270e:	c26d14        	s32i	a12, a13, 80
+    2711:	e122f9        	l32r	a14, 0xb9c (0x7b1c)
+    2714:	e0e3a0        	addx4	a14, a3, a14
+    2717:	226e7f        	s32i	a2, a14, 0x1fc
+    271a:	0c02      	movi.n	a2, 0
+0000271c: 1df0     retw.n        ; Capstone
+	...

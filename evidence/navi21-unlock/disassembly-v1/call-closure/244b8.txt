@@ -1,0 +1,59 @@
+
+/tmp/tmp69exd4k3/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000244b8 <.data+0x244b8>:
+000244b8: 366100   entry        a1, 0x30 ; Capstone
+   244bb:	dd03      	mov.n	a13, a3
+   244bd:	0c0a      	movi.n	a10, 0
+   244bf:	bd02      	mov.n	a11, a2
+   244c1:	0c2c      	movi.n	a12, 2
+000244c3: 5003fa   wfr          f0, a3 ; Capstone
+000244c6: 034100   ssi          f0, a1, 0 ; Capstone
+000244c9: 657300   call8        . +0x738 ; Capstone ; target=0x24c00
+   244cc:	0c5a      	movi.n	a10, 5
+   244ce:	bd02      	mov.n	a11, a2
+   244d0:	0c2c      	movi.n	a12, 2
+000244d2: 130100   lsi          f1, a1, 0 ; Capstone
+000244d5: 40d1fa   rfr          a13, f1 ; Capstone
+000244d8: 657200   call8        . +0x728 ; Capstone ; target=0x24c00
+   244db:	0c4a      	movi.n	a10, 4
+   244dd:	bd02      	mov.n	a11, a2
+   244df:	0c2c      	movi.n	a12, 2
+000244e1: 230100   lsi          f2, a1, 0 ; Capstone
+000244e4: 40d2fa   rfr          a13, f2 ; Capstone
+000244e7: a57100   call8        . +0x71c ; Capstone ; target=0x24c00
+   244ea:	0c7a      	movi.n	a10, 7
+   244ec:	bd02      	mov.n	a11, a2
+   244ee:	0c2c      	movi.n	a12, 2
+000244f0: 330100   lsi          f3, a1, 0 ; Capstone
+000244f3: 40d3fa   rfr          a13, f3 ; Capstone
+000244f6: a57000   call8        . +0x70c ; Capstone ; target=0x24c00
+   244f9:	0c6a      	movi.n	a10, 6
+   244fb:	bd02      	mov.n	a11, a2
+   244fd:	0c2c      	movi.n	a12, 2
+000244ff: 430100   lsi          f4, a1, 0 ; Capstone
+00024502: 40d4fa   rfr          a13, f4 ; Capstone
+00024505: a56f00   call8        . +0x6fc ; Capstone ; target=0x24c00
+   24508:	0c1a      	movi.n	a10, 1
+   2450a:	bd02      	mov.n	a11, a2
+   2450c:	0c2c      	movi.n	a12, 2
+0002450e: 530100   lsi          f5, a1, 0 ; Capstone
+00024511: 40d5fa   rfr          a13, f5 ; Capstone
+00024514: a56e00   call8        . +0x6ec ; Capstone ; target=0x24c00
+   24517:	0c3a      	movi.n	a10, 3
+   24519:	bd02      	mov.n	a11, a2
+   2451b:	0c2c      	movi.n	a12, 2
+0002451d: 630100   lsi          f6, a1, 0 ; Capstone
+00024520: 40d6fa   rfr          a13, f6 ; Capstone
+00024523: e56d00   call8        . +0x6e0 ; Capstone ; target=0x24c00
+   24526:	bd02      	mov.n	a11, a2
+   24528:	0c2a      	movi.n	a10, 2
+   2452a:	0c2c      	movi.n	a12, 2
+0002452c: 730100   lsi          f7, a1, 0 ; Capstone
+0002452f: 40d7fa   rfr          a13, f7 ; Capstone
+00024532: e56c00   call8        . +0x6d0 ; Capstone ; target=0x24c00
+00024535: 1df0     retw.n        ; Capstone
+	...

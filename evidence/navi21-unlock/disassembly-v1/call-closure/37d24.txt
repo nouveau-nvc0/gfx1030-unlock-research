@@ -1,0 +1,46 @@
+
+/tmp/tmpi6kp12v1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00037d24 <.data+0x37d24>:
+00037d24: 366100   entry        a1, 0x30 ; Capstone
+   37d27:	3901      	s32i.n	a3, a1, 0
+   37d29:	202074        	extui	a2, a2, 0, 8
+   37d2c:	306200        	rsil	a3, 2
+   37d2f:	ad02      	mov.n	a10, a2
+00037d31: 25f1ff   call8        . -0xec ; Capstone ; target=0x37c44
+   37d34:	2072b0        	addx8	a7, a2, a2
+   37d37:	e0a211        	slli	a10, a2, 2
+   37d3a:	0c16      	movi.n	a6, 1
+   37d3c:	212572        	l32r	a2, 0x145d0 (0x3200380)
+   37d3f:	a2ca60        	addi	a10, a10, 96
+   37d42:	e07711        	slli	a7, a7, 2
+   37d45:	2a27      	add.n	a2, a7, a2
+   37d47:	9c25      	beqz.n	a5, 0x37d5d
+   37d49:	ed05      	mov.n	a14, a5
+   37d4b:	bd06      	mov.n	a11, a6
+   37d4d:	0c0c      	movi.n	a12, 0
+   37d4f:	0c0d      	movi.n	a13, 0
+00037d51: e5e5ff   call8        . -0x1a0 ; Capstone ; target=0x37bb0
+   37d54:	c02000        	memw
+   37d57:	62428c        	s8i	a6, a2, 140
+   37d5a:	860000        	j	0x37d60
+00037d5d: 659cc9   call8        . -0x36638 ; Capstone ; target=0x1724
+   37d60:	c11e72        	l32r	a12, 0x145d8 (0x3200410)
+   37d63:	cac7      	add.n	a12, a7, a12
+   37d65:	c02000        	memw
+   37d68:	b801      	l32i.n	a11, a1, 0
+   37d6a:	b90c      	s32i.n	a11, a12, 0
+   37d6c:	c02000        	memw
+   37d6f:	624282        	s8i	a6, a2, 130
+   37d72:	c02000        	memw
+   37d75:	424285        	s8i	a4, a2, 133
+   37d78:	c02000        	memw
+   37d7b:	624281        	s8i	a6, a2, 129
+   37d7e:	c02000        	memw
+   37d81:	624280        	s8i	a6, a2, 128
+   37d84:	30e613        	wsr.ps	a3
+00037d87: 1df0     retw.n        ; Capstone
+   37d89:	000000        	ill

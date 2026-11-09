@@ -1,0 +1,55 @@
+
+/tmp/tmp1g0ni39j/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000058cc <.data+0x58cc>:
+000058cc: 366100   entry        a1, 0x30 ; Capstone
+    58cf:	51ebde        	l32r	a5, 0xffffd47c (0x5ffedae4) ; inferred DRAM map 0x5ffec000
+    58d2:	0c0a      	movi.n	a10, 0
+    58d4:	2901      	s32i.n	a2, a1, 0
+    58d6:	821500        	l16ui	a8, a5, 0
+    58d9:	426102        	s32i	a4, a1, 8
+    58dc:	326101        	s32i	a3, a1, 4
+    58df:	8088a0        	addx4	a8, a8, a8
+    58e2:	8030f4        	extui	a3, a8, 0, 16
+000058e5: 659dfb   call8        . -0x4628 ; Capstone ; target=0x12bc
+    58e8:	221100        	l16ui	a2, a1, 0
+    58eb:	20a2a0        	addx4	a10, a2, a2
+    58ee:	a0a0f4        	extui	a10, a10, 0, 16
+    58f1:	373a3b        	bltu	a10, a3, 0x5930
+    58f4:	a7b310        	bgeu	a3, a10, 0x5908
+    58f7:	a801      	l32i.n	a10, a1, 0
+    58f9:	b811      	l32i.n	a11, a1, 4
+    58fb:	c821      	l32i.n	a12, a1, 8
+000058fd: 650400   call8        . +0x48 ; Capstone ; target=0x5944
+    5900:	ad02      	mov.n	a10, a2
+00005902: 25a6fb   call8        . -0x459c ; Capstone ; target=0x1364
+    5905:	060200        	j	0x5911
+    5908:	a801      	l32i.n	a10, a1, 0
+    590a:	b811      	l32i.n	a11, a1, 4
+    590c:	c821      	l32i.n	a12, a1, 8
+0000590e: 650300   call8        . +0x38 ; Capstone ; target=0x5944
+    5911:	225500        	s16i	a2, a5, 0
+    5914:	0c1a      	movi.n	a10, 1
+    5916:	0c8f      	movi.n	a15, 8
+    5918:	d21102        	l16ui	a13, a1, 4
+    591b:	e21101        	l16ui	a14, a1, 2
+    591e:	e25501        	s16i	a14, a5, 2
+    5921:	d25502        	s16i	a13, a5, 4
+00005924: f00108   lsx          f0, a1, a15 ; Capstone
+00005927: 034502   ssi          f0, a5, 8 ; Capstone
+0000592a: 2599fb   call8        . -0x466c ; Capstone ; target=0x12bc
+0000592d: 1df0     retw.n        ; Capstone
+0000592f: 00ad02   andb         b10, b13, b0 ; Capstone
+00005932: 25a3fb   call8        . -0x45cc ; Capstone ; target=0x1364
+    5935:	a801      	l32i.n	a10, a1, 0
+    5937:	b22101        	l32i	a11, a1, 4
+    593a:	c22102        	l32i	a12, a1, 8
+0000593d: 650000   call8        . +8 ; Capstone ; target=0x5944
+    5940:	46f3ff        	j	0x5911
+	...
+
+; Alternate branch-target decode
+    5930:	ad02      	mov.n	a10, a2

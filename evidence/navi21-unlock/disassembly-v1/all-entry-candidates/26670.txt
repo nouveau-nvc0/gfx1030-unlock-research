@@ -1,0 +1,41 @@
+
+/tmp/tmptm57buh2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00026670 <.data+0x26670>:
+00026670: 364100   entry        a1, 0x20 ; Capstone
+   26673:	91d9b4        	l32r	a9, 0x139d8 (0x4141006)
+   26676:	31d6b4        	l32r	a3, 0x139d0 (0xa5f8)
+   26679:	0c07      	movi.n	a7, 0
+   2667b:	62a420        	movi	a6, 0x420
+   2667e:	522384        	l32i	a5, a3, 0x210
+   26681:	222380        	l32i	a2, a3, 0x200
+   26684:	422382        	l32i	a4, a3, 0x208
+   26687:	822383        	l32i	a8, a3, 0x20c
+   2668a:	72637e        	s32i	a7, a3, 0x1f8
+   2668d:	72637d        	s32i	a7, a3, 0x1f4
+   26690:	605520        	or	a5, a5, a6
+   26693:	71d2b4        	l32r	a7, 0x139dc (0xfb4b6f79)
+   26696:	526384        	s32i	a5, a3, 0x210
+   26699:	61ceb4        	l32r	a6, 0x139d4 (0xbfbdf)
+   2669c:	908820        	or	a8, a8, a9
+   2669f:	826383        	s32i	a8, a3, 0x20c
+   266a2:	604420        	or	a4, a4, a6
+   266a5:	426382        	s32i	a4, a3, 0x208
+   266a8:	622381        	l32i	a6, a3, 0x204
+   266ab:	504420        	or	a4, a4, a5
+   266ae:	52237f        	l32i	a5, a3, 0x1fc
+   266b1:	402220        	or	a2, a2, a4
+   266b4:	706620        	or	a6, a6, a7
+   266b7:	22637c        	s32i	a2, a3, 0x1f0
+   266ba:	71c9b4        	l32r	a7, 0x139e0 (0x208080)
+   266bd:	626381        	s32i	a6, a3, 0x204
+   266c0:	806620        	or	a6, a6, a8
+   266c3:	705520        	or	a5, a5, a7
+   266c6:	52637f        	s32i	a5, a3, 0x1fc
+   266c9:	605520        	or	a5, a5, a6
+   266cc:	52637b        	s32i	a5, a3, 0x1ec
+000266cf: 1df0     retw.n        ; Capstone
+   266d1:	000000        	ill

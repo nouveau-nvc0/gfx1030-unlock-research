@@ -1,0 +1,262 @@
+2026-11-09T12:45:07+03:00 research-host kernel: br-227b2a2e0fa0: port 2(veth6a2596d) entered disabled state
+2026-11-09T12:45:07+03:00 research-host kernel: veth50a324e: renamed from eth0
+2026-11-09T12:45:07+03:00 research-host kernel: br-227b2a2e0fa0: port 2(veth6a2596d) entered disabled state
+2026-11-09T12:45:07+03:00 research-host kernel: veth6a2596d (unregistering): left allmulticast mode
+2026-11-09T12:45:07+03:00 research-host kernel: veth6a2596d (unregistering): left promiscuous mode
+2026-11-09T12:45:07+03:00 research-host kernel: br-227b2a2e0fa0: port 2(veth6a2596d) entered disabled state
+2026-11-09T12:45:14+03:00 research-host kernel: br-227b2a2e0fa0: port 1(vethea2e130) entered disabled state
+2026-11-09T12:45:14+03:00 research-host kernel: veth31fe996: renamed from eth0
+2026-11-09T12:45:14+03:00 research-host kernel: br-227b2a2e0fa0: port 1(vethea2e130) entered blocking state
+2026-11-09T12:45:14+03:00 research-host kernel: br-227b2a2e0fa0: port 1(vethea2e130) entered forwarding state
+2026-11-09T12:45:14+03:00 research-host kernel: br-227b2a2e0fa0: port 1(vethea2e130) entered disabled state
+2026-11-09T12:45:14+03:00 research-host kernel: vethea2e130 (unregistering): left allmulticast mode
+2026-11-09T12:45:14+03:00 research-host kernel: vethea2e130 (unregistering): left promiscuous mode
+2026-11-09T12:45:14+03:00 research-host kernel: br-227b2a2e0fa0: port 1(vethea2e130) entered disabled state
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Multiple Correctable Error messages received, first one from 0000:04:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:45:15+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:45:15+03:00 research-host kernel: amdgpu 0000:04:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:45:15+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:45:15+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:45:15+03:00 research-host kernel: amdgpu 0000:04:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:45:15+03:00 research-host kernel: amdgpu 0000:04:00.0: AER:   TLP Header: 0x00000001 0x0009300f 0xfba08924 0x00000000
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Multiple Correctable Error messages received, first one from 0000:04:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Multiple Correctable Error messages received, first one from 0000:04:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Correctable Error message received from 0000:04:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Correctable Error message received from 0000:04:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Correctable Error message received from 0000:04:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Correctable Error message received from 0000:04:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Correctable Error message received from 0000:04:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Correctable Error message received from 0000:04:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Correctable Error message received from 0000:04:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Multiple Correctable Error messages received, first one from 0000:0a:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: amdgpu 0000:0a:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:45:15+03:00 research-host kernel: amdgpu 0000:0a:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:45:15+03:00 research-host kernel: amdgpu 0000:0a:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:45:15+03:00 research-host kernel: amdgpu 0000:0a:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:45:15+03:00 research-host kernel: amdgpu 0000:0a:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:45:15+03:00 research-host kernel: amdgpu 0000:0a:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:45:15+03:00 research-host kernel: amdgpu 0000:0a:00.0: AER:   TLP Header: 0x00000001 0x0018000f 0xfb408924 0x00000000
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Multiple Correctable Error messages received, first one from 0000:0a:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Correctable Error message received from 0000:0a:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Correctable Error message received from 0000:0a:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Correctable Error message received from 0000:0a:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Correctable Error message received from 0000:0a:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Correctable Error message received from 0000:0a:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Correctable Error message received from 0000:0a:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Correctable Error message received from 0000:0a:00.0
+2026-11-09T12:45:15+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Correctable Error message received from 0000:0a:00.0
+2026-11-09T12:49:05+03:00 research-host kernel: docker0: port 1(vethc4319cf) entered blocking state
+2026-11-09T12:49:05+03:00 research-host kernel: docker0: port 1(vethc4319cf) entered disabled state
+2026-11-09T12:49:05+03:00 research-host kernel: vethc4319cf: entered allmulticast mode
+2026-11-09T12:49:05+03:00 research-host kernel: vethc4319cf: entered promiscuous mode
+2026-11-09T12:49:05+03:00 research-host kernel: eth0: renamed from vethff1c46b
+2026-11-09T12:49:05+03:00 research-host kernel: docker0: port 1(vethc4319cf) entered blocking state
+2026-11-09T12:49:05+03:00 research-host kernel: docker0: port 1(vethc4319cf) entered forwarding state
+2026-11-09T12:49:27+03:00 research-host kernel: docker0: port 1(vethc4319cf) entered disabled state
+2026-11-09T12:49:27+03:00 research-host kernel: vethff1c46b: renamed from eth0
+2026-11-09T12:49:27+03:00 research-host kernel: docker0: port 1(vethc4319cf) entered blocking state
+2026-11-09T12:49:27+03:00 research-host kernel: docker0: port 1(vethc4319cf) entered forwarding state
+2026-11-09T12:49:27+03:00 research-host kernel: docker0: port 1(vethc4319cf) entered disabled state
+2026-11-09T12:49:27+03:00 research-host kernel: vethc4319cf (unregistering): left allmulticast mode
+2026-11-09T12:49:27+03:00 research-host kernel: vethc4319cf (unregistering): left promiscuous mode
+2026-11-09T12:49:27+03:00 research-host kernel: docker0: port 1(vethc4319cf) entered disabled state
+2026-11-09T12:50:04+03:00 research-host kernel: docker0: port 1(vethf74260d) entered blocking state
+2026-11-09T12:50:04+03:00 research-host kernel: docker0: port 1(vethf74260d) entered disabled state
+2026-11-09T12:50:04+03:00 research-host kernel: vethf74260d: entered allmulticast mode
+2026-11-09T12:50:04+03:00 research-host kernel: vethf74260d: entered promiscuous mode
+2026-11-09T12:50:04+03:00 research-host kernel: eth0: renamed from veth403f228
+2026-11-09T12:50:04+03:00 research-host kernel: docker0: port 1(vethf74260d) entered blocking state
+2026-11-09T12:50:04+03:00 research-host kernel: docker0: port 1(vethf74260d) entered forwarding state
+2026-11-09T12:50:09+03:00 research-host kernel: docker0: port 1(vethf74260d) entered disabled state
+2026-11-09T12:50:09+03:00 research-host kernel: veth403f228: renamed from eth0
+2026-11-09T12:50:09+03:00 research-host kernel: docker0: port 1(vethf74260d) entered disabled state
+2026-11-09T12:50:09+03:00 research-host kernel: vethf74260d (unregistering): left allmulticast mode
+2026-11-09T12:50:09+03:00 research-host kernel: vethf74260d (unregistering): left promiscuous mode
+2026-11-09T12:50:09+03:00 research-host kernel: docker0: port 1(vethf74260d) entered disabled state
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:02.0: AER: Correctable Error message received from 0000:07:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: AER:   TLP Header: 0x00000001 0x0010000f 0xfb73e804 0x00000000
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:02.0: AER: Correctable Error message received from 0000:07:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:02.0: AER: Correctable Error message received from 0000:07:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: AER:   TLP Header: 0x00000001 0x0010000f 0xfb73e804 0x00000000
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:02.0: AER: Correctable Error message received from 0000:07:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:02.0: AER: Correctable Error message received from 0000:07:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: AER:   TLP Header: 0x00000001 0x0010000f 0xfb73e804 0x00000000
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:02.0: AER: Correctable Error message received from 0000:07:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:02.0: AER: Multiple Correctable Error messages received, first one from 0000:07:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: AER:   TLP Header: 0x00000001 0x0010000f 0xfb73e804 0x00000000
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:02.0: AER: Multiple Correctable Error messages received, first one from 0000:07:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: AER:   TLP Header: 0x00000001 0x0010000f 0xfb73e804 0x00000000
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:02.0: AER: Multiple Correctable Error messages received, first one from 0000:07:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: AER:   TLP Header: 0x00000001 0x0010000f 0xfb73e804 0x00000000
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:02.0: AER: Multiple Correctable Error messages received, first one from 0000:07:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:07:00.0: AER:   TLP Header: 0x00000001 0x0010000f 0xfb73e804 0x00000000
+2026-11-09T12:51:21+03:00 research-host kernel: aer_ratelimit: 27 callbacks suppressed
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Multiple Correctable Error messages received, first one from 0000:04:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: AER:   TLP Header: 0x00000001 0x0009300f 0xfba3e804 0x00000000
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Correctable Error message received from 0000:04:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: AER:   TLP Header: 0x00000001 0x0009300f 0xfba3e804 0x00000000
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Correctable Error message received from 0000:04:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Multiple Correctable Error messages received, first one from 0000:04:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: AER:   TLP Header: 0x00000001 0x0009300f 0xfba3e804 0x00000000
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Multiple Correctable Error messages received, first one from 0000:04:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: AER:   TLP Header: 0x00000001 0x0009300f 0xfba3e804 0x00000000
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Multiple Correctable Error messages received, first one from 0000:04:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: AER:   TLP Header: 0x00000001 0x0009300f 0xfba3e804 0x00000000
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Correctable Error message received from 0000:04:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: AER:   TLP Header: 0x00000001 0x0009300f 0xfba3e804 0x00000000
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Correctable Error message received from 0000:04:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Multiple Correctable Error messages received, first one from 0000:04:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: AER:   TLP Header: 0x00000001 0x0009300f 0xfba3e804 0x00000000
+2026-11-09T12:51:21+03:00 research-host kernel: pcieport 0000:00:01.1: AER: Correctable Error message received from 0000:04:00.0
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:21+03:00 research-host kernel: amdgpu 0000:04:00.0: AER:   TLP Header: 0x00000001 0x0009300f 0xfba3e804 0x00000000
+2026-11-09T12:51:22+03:00 research-host kernel: aer_ratelimit: 35 callbacks suppressed
+2026-11-09T12:51:22+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Correctable Error message received from 0000:0a:00.0
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: AER:   TLP Header: 0x00000001 0x0018000f 0xfb43e804 0x00000000
+2026-11-09T12:51:22+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Correctable Error message received from 0000:0a:00.0
+2026-11-09T12:51:22+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Multiple Correctable Error messages received, first one from 0000:0a:00.0
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: AER:   TLP Header: 0x00000001 0x0018000f 0xfb43e804 0x00000000
+2026-11-09T12:51:22+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Correctable Error message received from 0000:0a:00.0
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: AER:   TLP Header: 0x00000001 0x0018000f 0xfb43e804 0x00000000
+2026-11-09T12:51:22+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Correctable Error message received from 0000:0a:00.0
+2026-11-09T12:51:22+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Multiple Correctable Error messages received, first one from 0000:0a:00.0
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: AER:   TLP Header: 0x00000001 0x0018000f 0xfb43e804 0x00000000
+2026-11-09T12:51:22+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Correctable Error message received from 0000:0a:00.0
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: AER:   TLP Header: 0x00000001 0x0018000f 0xfb43e804 0x00000000
+2026-11-09T12:51:22+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Correctable Error message received from 0000:0a:00.0
+2026-11-09T12:51:22+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Multiple Correctable Error messages received, first one from 0000:0a:00.0
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: AER:   TLP Header: 0x00000001 0x0018000f 0xfb43e804 0x00000000
+2026-11-09T12:51:22+03:00 research-host kernel: pcieport 0000:00:03.0: AER: Correctable Error message received from 0000:0a:00.0
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T12:51:22+03:00 research-host kernel: amdgpu 0000:0a:00.0: AER:   TLP Header: 0x00000001 0x0018000f 0xfb43e804 0x00000000

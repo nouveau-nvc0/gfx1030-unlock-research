@@ -1,0 +1,518 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "source_hashes": {
+    "gc_10_3_0_offset.h": "abd09080e4b06fd2d3e14145e5ceafa580a1987da59f076d2598e8753957b614",
+    "gc_10_3_0_sh_mask.h": "96352168616063a2715ee676e8290b99e9fd0596ad442434ab08687450ecbda5",
+    "gfx_v10_0.c": "3b2013dcb603845c3785fe02fc9aeee848b391f10d462e9384a1e4f370a4fb1b"
+  },
+  "coordinates": {
+    "mmRLC_GPM_SCRATCH_ADDR": "0xfb75",
+    "mmRLC_GPM_SCRATCH_DATA": "0xfb76",
+    "mmRLC_HYP_BOOTLOAD_ADDR_LO": "0xfb5d",
+    "mmRLC_HYP_BOOTLOAD_ADDR_HI": "0xfb5e",
+    "mmRLC_HYP_BOOTLOAD_SIZE": "0xfb5c"
+  },
+  "raw_words": [
+    {
+      "pc": "0x313f",
+      "word": "c0080200",
+      "file_offset": "0x46fc"
+    },
+    {
+      "pc": "0x3140",
+      "word": "cc83fb75",
+      "file_offset": "0x4700"
+    },
+    {
+      "pc": "0x3141",
+      "word": "c00cfb76",
+      "file_offset": "0x4704"
+    },
+    {
+      "pc": "0x3142",
+      "word": "10cc0002",
+      "file_offset": "0x4708"
+    },
+    {
+      "pc": "0x3143",
+      "word": "ccc1c066",
+      "file_offset": "0x470c"
+    },
+    {
+      "pc": "0x3144",
+      "word": "d801c067",
+      "file_offset": "0x4710"
+    },
+    {
+      "pc": "0x3145",
+      "word": "cc01c063",
+      "file_offset": "0x4714"
+    },
+    {
+      "pc": "0x3146",
+      "word": "c0081800",
+      "file_offset": "0x4718"
+    },
+    {
+      "pc": "0x3147",
+      "word": "10880002",
+      "file_offset": "0x471c"
+    },
+    {
+      "pc": "0x3148",
+      "word": "c40ffb5e",
+      "file_offset": "0x4720"
+    },
+    {
+      "pc": "0x3149",
+      "word": "50cc0020",
+      "file_offset": "0x4724"
+    },
+    {
+      "pc": "0x314a",
+      "word": "c413fb5d",
+      "file_offset": "0x4728"
+    },
+    {
+      "pc": "0x314b",
+      "word": "7cd0c01a",
+      "file_offset": "0x472c"
+    },
+    {
+      "pc": "0x314c",
+      "word": "7cc8c011",
+      "file_offset": "0x4730"
+    },
+    {
+      "pc": "0x314d",
+      "word": "54d00020",
+      "file_offset": "0x4734"
+    },
+    {
+      "pc": "0x314e",
+      "word": "ccc1c064",
+      "file_offset": "0x4738"
+    },
+    {
+      "pc": "0x314f",
+      "word": "cd01c065",
+      "file_offset": "0x473c"
+    },
+    {
+      "pc": "0x3150",
+      "word": "c0162800",
+      "file_offset": "0x4740"
+    },
+    {
+      "pc": "0x3151",
+      "word": "29540400",
+      "file_offset": "0x4744"
+    },
+    {
+      "pc": "0x3152",
+      "word": "cd41c0e8",
+      "file_offset": "0x4748"
+    },
+    {
+      "pc": "0x3153",
+      "word": "c433eeec",
+      "file_offset": "0x474c"
+    },
+    {
+      "pc": "0x3154",
+      "word": "2b300002",
+      "file_offset": "0x4750"
+    },
+    {
+      "pc": "0x3155",
+      "word": "cf03eeec",
+      "file_offset": "0x4754"
+    },
+    {
+      "pc": "0x3156",
+      "word": "90000000",
+      "file_offset": "0x4758"
+    },
+    {
+      "pc": "0x35bd",
+      "word": "d803ec29",
+      "file_offset": "0x58f4"
+    },
+    {
+      "pc": "0x35be",
+      "word": "c0300000",
+      "file_offset": "0x58f8"
+    },
+    {
+      "pc": "0x35bf",
+      "word": "c02c0001",
+      "file_offset": "0x58fc"
+    },
+    {
+      "pc": "0x35c0",
+      "word": "c0280000",
+      "file_offset": "0x5900"
+    },
+    {
+      "pc": "0x35c1",
+      "word": "c024ec29",
+      "file_offset": "0x5904"
+    },
+    {
+      "pc": "0x35c2",
+      "word": "12640002",
+      "file_offset": "0x5908"
+    },
+    {
+      "pc": "0x35c3",
+      "word": "c03a4000",
+      "file_offset": "0x590c"
+    },
+    {
+      "pc": "0x35c4",
+      "word": "c036bc00",
+      "file_offset": "0x5910"
+    },
+    {
+      "pc": "0x35c5",
+      "word": "2b740004",
+      "file_offset": "0x5914"
+    },
+    {
+      "pc": "0x35c6",
+      "word": "8c0030ae",
+      "file_offset": "0x5918"
+    },
+    {
+      "pc": "0x35c7",
+      "word": "90000000",
+      "file_offset": "0x591c"
+    },
+    {
+      "pc": "0x35c8",
+      "word": "c417ec29",
+      "file_offset": "0x5920"
+    },
+    {
+      "pc": "0x35c9",
+      "word": "99400004",
+      "file_offset": "0x5924"
+    },
+    {
+      "pc": "0x35ca",
+      "word": "c0240020",
+      "file_offset": "0x5928"
+    },
+    {
+      "pc": "0x35cb",
+      "word": "8c002872",
+      "file_offset": "0x592c"
+    },
+    {
+      "pc": "0x35cc",
+      "word": "800035c8",
+      "file_offset": "0x5930"
+    },
+    {
+      "pc": "0x35cd",
+      "word": "90000000",
+      "file_offset": "0x5934"
+    },
+    {
+      "pc": "0x30a6",
+      "word": "c409c08a",
+      "file_offset": "0x4498"
+    },
+    {
+      "pc": "0x30a7",
+      "word": "148c001f",
+      "file_offset": "0x449c"
+    },
+    {
+      "pc": "0x30a8",
+      "word": "98cffffe",
+      "file_offset": "0x44a0"
+    },
+    {
+      "pc": "0x30a9",
+      "word": "90000000",
+      "file_offset": "0x44a4"
+    },
+    {
+      "pc": "0x30aa",
+      "word": "c409c08a",
+      "file_offset": "0x44a8"
+    },
+    {
+      "pc": "0x30ab",
+      "word": "148c001e",
+      "file_offset": "0x44ac"
+    },
+    {
+      "pc": "0x30ac",
+      "word": "98cffffe",
+      "file_offset": "0x44b0"
+    },
+    {
+      "pc": "0x30ad",
+      "word": "90000000",
+      "file_offset": "0x44b4"
+    },
+    {
+      "pc": "0x30ae",
+      "word": "8c0030a6",
+      "file_offset": "0x44b8"
+    },
+    {
+      "pc": "0x30af",
+      "word": "cf01c065",
+      "file_offset": "0x44bc"
+    },
+    {
+      "pc": "0x30b0",
+      "word": "cec1c064",
+      "file_offset": "0x44c0"
+    },
+    {
+      "pc": "0x30b1",
+      "word": "ce81c067",
+      "file_offset": "0x44c4"
+    },
+    {
+      "pc": "0x30b2",
+      "word": "ce41c066",
+      "file_offset": "0x44c8"
+    },
+    {
+      "pc": "0x30b3",
+      "word": "cf81c063",
+      "file_offset": "0x44cc"
+    },
+    {
+      "pc": "0x30b4",
+      "word": "cf41c0e8",
+      "file_offset": "0x44d0"
+    },
+    {
+      "pc": "0x30b5",
+      "word": "90000000",
+      "file_offset": "0x44d4"
+    },
+    {
+      "pc": "0x30b6",
+      "word": "c43ffb54",
+      "file_offset": "0x44d8"
+    },
+    {
+      "pc": "0x30b7",
+      "word": "27f8000f",
+      "file_offset": "0x44dc"
+    },
+    {
+      "pc": "0x30b8",
+      "word": "9780001a",
+      "file_offset": "0x44e0"
+    },
+    {
+      "pc": "0x30b9",
+      "word": "c43bfb5c",
+      "file_offset": "0x44e4"
+    },
+    {
+      "pc": "0x30ba",
+      "word": "97800018",
+      "file_offset": "0x44e8"
+    },
+    {
+      "pc": "0x30bb",
+      "word": "27f8000c",
+      "file_offset": "0x44ec"
+    },
+    {
+      "pc": "0x30bc",
+      "word": "9b800004",
+      "file_offset": "0x44f0"
+    },
+    {
+      "pc": "0x30bd",
+      "word": "8c00313f",
+      "file_offset": "0x44f4"
+    },
+    {
+      "pc": "0x30be",
+      "word": "8c0035bd",
+      "file_offset": "0x44f8"
+    },
+    {
+      "pc": "0x30bf",
+      "word": "8c0035c8",
+      "file_offset": "0x44fc"
+    },
+    {
+      "pc": "0x30c0",
+      "word": "8c0030d3",
+      "file_offset": "0x4500"
+    },
+    {
+      "pc": "0x30c1",
+      "word": "8c0035bd",
+      "file_offset": "0x4504"
+    },
+    {
+      "pc": "0x30c2",
+      "word": "8c0035c8",
+      "file_offset": "0x4508"
+    },
+    {
+      "pc": "0x30c3",
+      "word": "8c0035f8",
+      "file_offset": "0x450c"
+    },
+    {
+      "pc": "0x30c4",
+      "word": "8c0035bd",
+      "file_offset": "0x4510"
+    },
+    {
+      "pc": "0x30c5",
+      "word": "8c0035c8",
+      "file_offset": "0x4514"
+    },
+    {
+      "pc": "0x3157",
+      "word": "c43bfb5c",
+      "file_offset": "0x475c"
+    },
+    {
+      "pc": "0x3158",
+      "word": "97800018",
+      "file_offset": "0x4760"
+    },
+    {
+      "pc": "0x3159",
+      "word": "c43ffb54",
+      "file_offset": "0x4764"
+    },
+    {
+      "pc": "0x315a",
+      "word": "27f80040",
+      "file_offset": "0x4768"
+    },
+    {
+      "pc": "0x315b",
+      "word": "9b800008",
+      "file_offset": "0x476c"
+    },
+    {
+      "pc": "0x315c",
+      "word": "27f80080",
+      "file_offset": "0x4770"
+    },
+    {
+      "pc": "0x315d",
+      "word": "97800013",
+      "file_offset": "0x4774"
+    },
+    {
+      "pc": "0x315e",
+      "word": "27f8000c",
+      "file_offset": "0x4778"
+    },
+    {
+      "pc": "0x315f",
+      "word": "9b800004",
+      "file_offset": "0x477c"
+    },
+    {
+      "pc": "0x3160",
+      "word": "8c00313f",
+      "file_offset": "0x4780"
+    },
+    {
+      "pc": "0x3161",
+      "word": "8c0035bd",
+      "file_offset": "0x4784"
+    },
+    {
+      "pc": "0x3162",
+      "word": "8c0035c8",
+      "file_offset": "0x4788"
+    },
+    {
+      "pc": "0x3163",
+      "word": "cc03eeec",
+      "file_offset": "0x478c"
+    },
+    {
+      "pc": "0x3164",
+      "word": "cc03eeed",
+      "file_offset": "0x4790"
+    },
+    {
+      "pc": "0x3165",
+      "word": "8c003173",
+      "file_offset": "0x4794"
+    },
+    {
+      "pc": "0x3166",
+      "word": "8c0035bd",
+      "file_offset": "0x4798"
+    },
+    {
+      "pc": "0x3167",
+      "word": "8c0035c8",
+      "file_offset": "0x479c"
+    },
+    {
+      "pc": "0x3168",
+      "word": "8c003269",
+      "file_offset": "0x47a0"
+    }
+  ],
+  "direct_callers": [
+    "0x30bd",
+    "0x3160"
+  ],
+  "comparison_CP_DMA_ME_fields": {
+    "transfer": {
+      "word": "0x28000400",
+      "fields": {
+        "BYTE_COUNT": 1024,
+        "SAS": 0,
+        "DAS": 1,
+        "SAIC": 0,
+        "DAIC": 1,
+        "RAW_WAIT": 0,
+        "DIS_WC": 0
+      }
+    },
+    "completion_marker": {
+      "word": "0xbc000004",
+      "fields": {
+        "BYTE_COUNT": 4,
+        "SAS": 1,
+        "DAS": 1,
+        "SAIC": 1,
+        "DAIC": 1,
+        "RAW_WAIT": 0,
+        "DIS_WC": 1
+      },
+      "control": "0x40000000",
+      "SRC_SELECT": 2
+    }
+  },
+  "candidate_register_roles": {
+    "c064/c065": "source low/high",
+    "c066/c067": "destination low/high",
+    "c063": "control",
+    "c0e8": "command"
+  },
+  "candidate_gpm_transfer": {
+    "scratch_start_word": "0x200",
+    "port_byte": "0x3edd8",
+    "size_bytes": 1024,
+    "scratch_end_word_exclusive": "0x300",
+    "source": "bootload HI/LO combined then operation lowcode11 with0x6000; exact arithmetic not independently proved"
+  },
+  "scope": "CP_DMA_ME field comparison is corroboration, not proof that undocumented c063..c067/c0e8 share every field. Mode/address meanings and runtime delivery remain unobserved. Driver has a matching bootload-address preparation path; current load path not established."
+}

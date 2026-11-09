@@ -1,0 +1,25 @@
+
+/tmp/tmp76zfksoa/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000164c <.data+0x164c>:
+0000164c: 364100   entry        a1, 0x20 ; Capstone
+    164f:	b08211        	slli	a8, a2, 5
+    1652:	21c7ee        	l32r	a2, 0xffffd170 (0x6803ba00) ; inferred DRAM map 0x5ffec000
+    1655:	808320        	or	a8, a3, a8
+    1658:	82624e        	s32i	a8, a2, 0x138
+    165b:	422257        	l32i	a4, a2, 0x15c
+    165e:	b2afbf        	movi	a11, -65
+    1661:	4c05      	movi.n	a5, 64
+    1663:	504420        	or	a4, a4, a5
+    1666:	426257        	s32i	a4, a2, 0x15c
+    1669:	922258        	l32i	a9, a2, 0x160
+    166c:	9769f9        	bbci	a9, 9, 0x1669
+    166f:	a22257        	l32i	a10, a2, 0x15c
+    1672:	b0aa10        	and	a10, a10, a11
+    1675:	a26257        	s32i	a10, a2, 0x15c
+    1678:	c22258        	l32i	a12, a2, 0x160
+    167b:	97ecf9        	bbsi	a12, 9, 0x1678
+0000167e: 1df0     retw.n        ; Capstone

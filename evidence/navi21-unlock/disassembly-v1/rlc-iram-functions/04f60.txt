@@ -1,0 +1,17 @@
+
+/tmp/tmpfhp4zi72/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00004f60 <.data+0x4f60>:
+00004f60: 364100   entry        a1, 0x20 ; Capstone
+    4f63:	212be1        	l32r	a2, 0xffffd410 (0x5ffed9b0) ; inferred DRAM map 0x5ffec000
+    4f66:	8802      	l32i.n	a8, a2, 0
+    4f68:	8c58      	beqz.n	a8, 0x4f71
+    4f6a:	2832      	l32i.n	a2, a2, 12
+00004f6c: 1df0     retw.n        ; Capstone
+    4f6e:	000000        	ill
+00004f71: a5d1ff   call8        . -0x2e4 ; Capstone ; target=0x4c8c
+    4f74:	2832      	l32i.n	a2, a2, 12
+00004f76: 1df0     retw.n        ; Capstone

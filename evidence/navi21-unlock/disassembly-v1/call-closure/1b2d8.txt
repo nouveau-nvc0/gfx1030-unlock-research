@@ -1,0 +1,54 @@
+
+/tmp/tmpd7o7ky46/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001b2d8 <.data+0x1b2d8>:
+0001b2d8: 364100   entry        a1, 0x20 ; Capstone
+   1b2db:	4111df        	l32r	a4, 0x12f20 (0x15674)
+   1b2de:	7cf7      	movi.n	a7, -1
+   1b2e0:	0c06      	movi.n	a6, 0
+   1b2e2:	a2247f        	l32i	a10, a4, 0x1fc
+   1b2e5:	310fdf        	l32r	a3, 0x12f24 (0x157d0)
+   1b2e8:	0c15      	movi.n	a5, 1
+   1b2ea:	162a06        	beqz	a10, 0x1b350
+   1b2ed:	3aba      	add.n	a11, a10, a3
+   1b2ef:	b20b7f        	l8ui	a11, a11, 127
+   1b2f2:	ad02      	mov.n	a10, a2
+   1b2f4:	20bba0        	addx4	a11, a11, a2
+   1b2f7:	b21baf        	l16ui	a11, a11, 0x15e
+0001b2fa: 25f1ff   call8        . -0xec ; Capstone ; target=0x1b20c
+   1b2fd:	a20201        	l8ui	a10, a2, 1
+   1b300:	b2247f        	l32i	a11, a4, 0x1fc
+   1b303:	8842      	l32i.n	a8, a2, 16
+   1b305:	261a47        	beqi	a10, 1, 0x1b350
+   1b308:	3abb      	add.n	a11, a11, a3
+   1b30a:	c20b7f        	l8ui	a12, a11, 127
+   1b30d:	624b7f        	s8i	a6, a11, 127
+   1b310:	001c40        	ssl	a12
+   1b313:	0095a1        	sll	a9, a5
+   1b316:	662a0e        	bnei	a10, 2, 0x1b328
+   1b319:	c832      	l32i.n	a12, a2, 12
+   1b31b:	0c4d      	movi.n	a13, 4
+   1b31d:	d24201        	s8i	a13, a2, 1
+   1b320:	c0c920        	or	a12, a9, a12
+   1b323:	c932      	s32i.n	a12, a2, 12
+   1b325:	060700        	j	0x1b345
+   1b328:	20fca0        	addx4	a15, a12, a2
+   1b32b:	f21fae        	l16ui	a15, a15, 0x15c
+   1b32e:	e852      	l32i.n	a14, a2, 20
+   1b330:	70a930        	xor	a10, a9, a7
+   1b333:	f0ffb0        	addx8	a15, a15, a15
+   1b336:	20ffa0        	addx4	a15, a15, a2
+   1b339:	f86f      	l32i.n	a15, a15, 24
+   1b33b:	a08810        	and	a8, a8, a10
+   1b33e:	8942      	s32i.n	a8, a2, 16
+   1b340:	f0ee20        	or	a14, a14, a15
+   1b343:	e952      	s32i.n	a14, a2, 20
+   1b345:	a2247f        	l32i	a10, a4, 0x1fc
+   1b348:	0baa      	addi.n	a10, a10, -1
+   1b34a:	a2647f        	s32i	a10, a4, 0x1fc
+   1b34d:	56caf9        	bnez	a10, 0x1b2ed
+0001b350: 1df0     retw.n        ; Capstone
+	...

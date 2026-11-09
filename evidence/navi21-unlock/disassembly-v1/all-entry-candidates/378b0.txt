@@ -1,0 +1,24 @@
+
+/tmp/tmpbztx5g_n/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000378b0 <.data+0x378b0>:
+000378b0: 364100   entry        a1, 0x20 ; Capstone
+   378b3:	ad02      	mov.n	a10, a2
+000378b5: a580ca   call8        . -0x357f4 ; Capstone ; target=0x20c0
+   378b8:	a080f4        	extui	a8, a10, 0, 16
+   378bb:	9c38      	beqz.n	a8, 0x378d2
+   378bd:	906200        	rsil	a9, 2
+   378c0:	b1676d        	l32r	a11, 0x12e5c (0x69a0)
+   378c3:	a25b24        	s16i	a10, a11, 72
+   378c6:	90e613        	wsr.ps	a9
+   378c9:	ad02      	mov.n	a10, a2
+   378cb:	0c1b      	movi.n	a11, 1
+000378cd: e57cca   call8        . -0x35830 ; Capstone ; target=0x209c
+000378d0: 1df0     retw.n        ; Capstone
+   378d2:	ad02      	mov.n	a10, a2
+   378d4:	b2a0ff        	movi	a11, 255
+000378d7: 657cca   call8        . -0x35838 ; Capstone ; target=0x209c
+000378da: 1df0     retw.n        ; Capstone

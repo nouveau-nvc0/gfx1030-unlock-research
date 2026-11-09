@@ -1,0 +1,49 @@
+{
+  "smc_sha256": "0eb99764288f764fd853d6973693ffa52419cc7ba62074aee85df4a3e8d0286d",
+  "decoder": "Capstone 6.0.0a5 Xtensa mode0",
+  "mapping": "Tentative code base0 at file0x200; Linux payload begins0x100 and has a further PSP header. Mapping not yet validated globally.",
+  "fragment": [
+    {
+      "file_offset": "0x1004",
+      "tentative_code_address": "0xe04",
+      "bytes": "364100",
+      "mnemonic": "entry",
+      "operands": "a1, 0x20"
+    },
+    {
+      "file_offset": "0x1007",
+      "tentative_code_address": "0xe07",
+      "bytes": "a159ff",
+      "mnemonic": "l32r",
+      "operands": "a10, . 0xb6c"
+    },
+    {
+      "file_offset": "0x100a",
+      "tentative_code_address": "0xe0a",
+      "bytes": "c02000",
+      "mnemonic": "memw",
+      "operands": ""
+    },
+    {
+      "file_offset": "0x100d",
+      "tentative_code_address": "0xe0d",
+      "bytes": "822a8e",
+      "mnemonic": "l32i",
+      "operands": "a8, a10, 0x238"
+    }
+  ],
+  "l32r_candidate_literal_file_offset": "0xd6c",
+  "literal_value": "0x7b50",
+  "stop_file_offset": "0x1010",
+  "cc_mapping": {
+    "ip": "GC10.3.0",
+    "segment0_dword_base": "0x1260",
+    "SA_relative_dword": "0xfe9",
+    "SA_host_dword": "0x2249",
+    "SA_host_byte": "0x8924",
+    "WGP_relative_dword": "0x100f",
+    "WGP_host_dword": "0x226f",
+    "WGP_host_byte": "0x89bc"
+  },
+  "limits": "Host MMIO address does not establish SMU internal bus alias. No CC instruction or write found yet."
+}

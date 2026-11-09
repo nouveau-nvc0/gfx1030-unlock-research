@@ -1,0 +1,21 @@
+
+/tmp/tmpzhttt4hd/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001ebfc <.data+0x1ebfc>:
+0001ebfc: 364100   entry        a1, 0x20 ; Capstone
+   1ebff:	31acd1        	l32r	a3, 0x132b0 (0x157e4)
+   1ec02:	b2237f        	l32i	a11, a3, 0x1fc
+   1ec05:	0c02      	movi.n	a2, 0
+   1ec07:	9c1b      	beqz.n	a11, 0x1ec1c
+   1ec09:	0c1a      	movi.n	a10, 1
+0001ec0b: e00b00   callx8       a11 ; Capstone
+   1ec0e:	1b22      	addi.n	a2, a2, 1
+   1ec10:	202074        	extui	a2, a2, 0, 8
+   1ec13:	30b2a0        	addx4	a11, a2, a3
+   1ec16:	b22b7f        	l32i	a11, a11, 0x1fc
+   1ec19:	56cbfe        	bnez	a11, 0x1ec09
+0001ec1c: 1df0     retw.n        ; Capstone
+	...

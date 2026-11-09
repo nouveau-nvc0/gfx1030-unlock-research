@@ -1,0 +1,19 @@
+
+/tmp/tmp_am7chrz/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002bdf8 <.data+0x2bdf8>:
+0002bdf8: 364100   entry        a1, 0x20 ; Capstone
+   2bdfb:	2119a0        	l32r	a2, 0x13e60 (0xcc80)
+   2bdfe:	a2127e        	l16ui	a10, a2, 252
+0002be01: 65b8ff   call8        . -0x478 ; Capstone ; target=0x2b988
+   2be04:	a22241        	l32i	a10, a2, 0x104
+0002be07: e5b5ff   call8        . -0x4a0 ; Capstone ; target=0x2b964
+   2be0a:	0c1a      	movi.n	a10, 1
+0002be0c: a5b0ff   call8        . -0x4f4 ; Capstone ; target=0x2b918
+   2be0f:	0c1a      	movi.n	a10, 1
+0002be11: 25aeff   call8        . -0x51c ; Capstone ; target=0x2b8f4
+0002be14: 1df0     retw.n        ; Capstone
+	...

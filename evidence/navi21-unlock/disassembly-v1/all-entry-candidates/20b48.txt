@@ -1,0 +1,15 @@
+
+/tmp/tmplnc27n_t/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00020b48 <.data+0x20b48>:
+00020b48: 364100   entry        a1, 0x20 ; Capstone
+00020b4b: a5bc0f   call8        . +0xfbcc ; Capstone ; target=0x30714
+   20b4e:	476a06        	bbci	a10, 4, 0x20b58
+   20b51:	0c0a      	movi.n	a10, 0
+   20b53:	0c0b      	movi.n	a11, 0
+00020b55: e5c208   call8        . +0x8c30 ; Capstone ; target=0x29784
+00020b58: 1df0     retw.n        ; Capstone
+	...

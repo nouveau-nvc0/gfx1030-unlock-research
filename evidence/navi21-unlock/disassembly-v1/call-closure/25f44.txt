@@ -1,0 +1,13 @@
+
+/tmp/tmpryba79ot/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00025f44 <.data+0x25f44>:
+00025f44: 364100   entry        a1, 0x20 ; Capstone
+   25f47:	3114b4        	l32r	a3, 0x12f98 (0xc2c4)
+   25f4a:	3a22      	add.n	a2, a2, a3
+   25f4c:	220280        	l8ui	a2, a2, 128
+00025f4f: 1df0     retw.n        ; Capstone
+   25f51:	000000        	ill

@@ -1,0 +1,198 @@
+{
+  "firmware_sha256": "0eb99764288f764fd853d6973693ffa52419cc7ba62074aee85df4a3e8d0286d",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/26748.txt",
+      "sha256": "eec6bd5e1132b035ef328dae2746c20150a60698a7c5d038d9646fbcb41cec1e",
+      "byte_checked_records": 28
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/20768.txt",
+      "sha256": "e1e510fca896125dc74ee5b8575fd611bcb0fce9b5d602685b51affe926d2591",
+      "byte_checked_records": 27
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/20820.txt",
+      "sha256": "d9135dc6ece0daec739b6fa611a6edc4aacfc24d6ffab9bd3d69d5ee1355b08b",
+      "byte_checked_records": 26
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/37110.txt",
+      "sha256": "71903208a94e38fd1a156ca3ea1fb0f0e1417c722b2b5f5cc9c39058eb1d9564",
+      "byte_checked_records": 71
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/37750.txt",
+      "sha256": "4071c8aa619594ba23faeac12f83175e51ef13509327b4696dcb7fc47d9fe483",
+      "byte_checked_records": 27
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/37098.txt",
+      "sha256": "eed4efe0c784d9efbfdc15b6e30e56b34a2cdee5c375301807713a141957cb85",
+      "byte_checked_records": 31
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/35448.txt",
+      "sha256": "c9c514698521823fafa5b97f6e9d995e98f2307eb75eba6c400cccfec91972cf",
+      "byte_checked_records": 10
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2c2b0.txt",
+      "sha256": "c18218d0f315ca1464487473f7f89c8728aa0b8ceb5cc39d953531c7f4b396c0",
+      "byte_checked_records": 117
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/36fc0.txt",
+      "sha256": "80c3c41bd77b5440f600f9cc05f0b5d8babb3be4e05ab0c8fe749c18bfca6142",
+      "byte_checked_records": 88
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2b1b4.txt",
+      "sha256": "9dcf9bb798a5532d128f64a8f327aa1ccc7df0fcacfe2c05a315d233a2b9856d",
+      "byte_checked_records": 52
+    }
+  ],
+  "public_header": {
+    "path": "evidence/navi21-unlock/sources/smu11_driver_if_sienna_cichlid.h",
+    "sha256": "c722e379588e75090e7a42c63c42b403ce305545485d02bc6853264584bb0076"
+  },
+  "prior_receipt_sha256": "0cdc29567af5d6ef35eb5a1f2f48d84ba4883e5c92efe444a831f6f2a4e72bf5",
+  "callback_table": {
+    "id": 10,
+    "record": "0x9ee0",
+    "import": "0x20820",
+    "export": "0x20768"
+  },
+  "update_record": {
+    "slot": 0,
+    "registration_call": "0x2c37c",
+    "record": "0xcd4c",
+    "callbacks": [
+      "0x2b640",
+      "0x2b46c",
+      "0x2b1b4",
+      "0x2aea0"
+    ],
+    "initial_slot_pointer": "0x0"
+  },
+  "rows": [
+    {
+      "entry": 0,
+      "main_table_u16_address": "0xa2d8",
+      "smu_float_destination": "0xfd34",
+      "external_table_byte_offset": 0,
+      "rlc_candidate_destination": "0x5ffee278"
+    },
+    {
+      "entry": 1,
+      "main_table_u16_address": "0xa2da",
+      "smu_float_destination": "0xfd38",
+      "external_table_byte_offset": 4,
+      "rlc_candidate_destination": "0x5ffee27c"
+    },
+    {
+      "entry": 2,
+      "main_table_u16_address": "0xa2dc",
+      "smu_float_destination": "0xfd3c",
+      "external_table_byte_offset": 8,
+      "rlc_candidate_destination": "0x5ffee280"
+    },
+    {
+      "entry": 3,
+      "main_table_u16_address": "0xa2de",
+      "smu_float_destination": "0xfd40",
+      "external_table_byte_offset": 12,
+      "rlc_candidate_destination": "0x5ffee284"
+    },
+    {
+      "entry": 4,
+      "main_table_u16_address": "0xa2e0",
+      "smu_float_destination": "0xfd44",
+      "external_table_byte_offset": 16,
+      "rlc_candidate_destination": "0x5ffee288"
+    },
+    {
+      "entry": 5,
+      "main_table_u16_address": "0xa2e2",
+      "smu_float_destination": "0xfd48",
+      "external_table_byte_offset": 20,
+      "rlc_candidate_destination": "0x5ffee28c"
+    },
+    {
+      "entry": 6,
+      "main_table_u16_address": "0xa2e4",
+      "smu_float_destination": "0xfd4c",
+      "external_table_byte_offset": 24,
+      "rlc_candidate_destination": "0x5ffee290"
+    },
+    {
+      "entry": 7,
+      "main_table_u16_address": "0xa2e6",
+      "smu_float_destination": "0xfd50",
+      "external_table_byte_offset": 28,
+      "rlc_candidate_destination": "0x5ffee294"
+    },
+    {
+      "entry": 8,
+      "main_table_u16_address": "0xa2e8",
+      "smu_float_destination": "0xfd54",
+      "external_table_byte_offset": 32,
+      "rlc_candidate_destination": "0x5ffee298"
+    },
+    {
+      "entry": 9,
+      "main_table_u16_address": "0xa2ea",
+      "smu_float_destination": "0xfd58",
+      "external_table_byte_offset": 36,
+      "rlc_candidate_destination": "0x5ffee29c"
+    },
+    {
+      "entry": 10,
+      "main_table_u16_address": "0xa2ec",
+      "smu_float_destination": "0xfd5c",
+      "external_table_byte_offset": 40,
+      "rlc_candidate_destination": "0x5ffee2a0"
+    },
+    {
+      "entry": 11,
+      "main_table_u16_address": "0xa2ee",
+      "smu_float_destination": "0xfd60",
+      "external_table_byte_offset": 44,
+      "rlc_candidate_destination": "0x5ffee2a4"
+    },
+    {
+      "entry": 12,
+      "main_table_u16_address": "0xa2f0",
+      "smu_float_destination": "0xfd64",
+      "external_table_byte_offset": 48,
+      "rlc_candidate_destination": "0x5ffee2a8"
+    },
+    {
+      "entry": 13,
+      "main_table_u16_address": "0xa2f2",
+      "smu_float_destination": "0xfd68",
+      "external_table_byte_offset": 52,
+      "rlc_candidate_destination": "0x5ffee2ac"
+    },
+    {
+      "entry": 14,
+      "main_table_u16_address": "0xa2f4",
+      "smu_float_destination": "0xfd6c",
+      "external_table_byte_offset": 56,
+      "rlc_candidate_destination": "0x5ffee2b0"
+    },
+    {
+      "entry": 15,
+      "main_table_u16_address": "0xa2f6",
+      "smu_float_destination": "0xfd70",
+      "external_table_byte_offset": 60,
+      "rlc_candidate_destination": "0x5ffee2b4"
+    }
+  ],
+  "main_table_conversion": "zero ->1.0; nonzero uint16 ->float(value)/256",
+  "import_size": 96,
+  "imported_float_bytes": 64,
+  "external_padding_bytes": 32,
+  "quantization_cases_checked": 65536,
+  "scope": "Fixed loop destinations and retained initial callback table; runtime transfer success, complete producer coverage, command32 sender, and later state effects remain open."
+}

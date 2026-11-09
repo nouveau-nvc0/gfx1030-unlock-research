@@ -1,0 +1,27 @@
+[
+  {
+    "file": "amdgpu.h",
+    "sha256": "40ab2e3907dcb8d121505dcdd76c1bf10b1775b7504f2a115c2fada5577cb12b",
+    "url": "https://raw.githubusercontent.com/gregkh/linux/v7.3.1/drivers/gpu/drm/amd/amdgpu/amdgpu.h"
+  },
+  {
+    "file": "amdgpu_device.c",
+    "sha256": "3d91a5755f1513378d544e56f840cdf6773706b2f7de17dace3df099ac1a1a8c",
+    "url": "https://raw.githubusercontent.com/gregkh/linux/v7.3.1/drivers/gpu/drm/amd/amdgpu/amdgpu_device.c"
+  },
+  {
+    "file": "amdgpu_reg_access.c",
+    "sha256": "60ee0b99d513c67b7774e91c8e61e2d0e74ec2be4be4bd66a85b91f1681e422a",
+    "url": "https://raw.githubusercontent.com/gregkh/linux/v7.3.1/drivers/gpu/drm/amd/amdgpu/amdgpu_reg_access.c"
+  },
+  {
+    "file": "amdgpu_reg_access.h",
+    "sha256": "e47ffc00971107c3ed9aaf06e589dcabb826daaacc14596431e8b5f744476504",
+    "url": "https://raw.githubusercontent.com/gregkh/linux/v7.3.1/drivers/gpu/drm/amd/amdgpu/amdgpu_reg_access.h"
+  },
+  {
+    "file": "amdgpu_virt.c",
+    "sha256": "7337c6a10f62bb06d4493bd964c855aade6e5c2bf6a5afff403d55f5c4a2cce1",
+    "url": "https://raw.githubusercontent.com/gregkh/linux/v7.3.1/drivers/gpu/drm/amd/amdgpu/amdgpu_virt.c"
+  }
+]

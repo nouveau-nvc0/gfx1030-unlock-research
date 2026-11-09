@@ -1,0 +1,33 @@
+
+/tmp/tmp80l049_9/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001b3e8 <.data+0x1b3e8>:
+0001b3e8: 364100   entry        a1, 0x20 ; Capstone
+   1b3eb:	bc13      	beqz.n	a3, 0x1b420
+   1b3ed:	0c14      	movi.n	a4, 1
+   1b3ef:	7cf5      	movi.n	a5, -1
+   1b3f1:	ad03      	mov.n	a10, a3
+0001b3f3: 25f9ff   call8        . -0x6c ; Capstone ; target=0x1b384
+   1b3f6:	6d0a      	mov.n	a6, a10
+0001b3f8: a5f5ff   call8        . -0xa4 ; Capstone ; target=0x1b354
+   1b3fb:	9842      	l32i.n	a9, a2, 16
+   1b3fd:	20a6a0        	addx4	a10, a6, a2
+   1b400:	a21aaf        	l16ui	a10, a10, 0x15e
+   1b403:	001640        	ssl	a6
+   1b406:	0084a1        	sll	a8, a4
+   1b409:	a0aab0        	addx8	a10, a10, a10
+   1b40c:	20aaa0        	addx4	a10, a10, a2
+   1b40f:	a86a      	l32i.n	a10, a10, 24
+   1b411:	508830        	xor	a8, a8, a5
+   1b414:	808310        	and	a8, a3, a8
+   1b417:	a03910        	and	a3, a9, a10
+   1b41a:	803320        	or	a3, a3, a8
+   1b41d:	5603fd        	bnez	a3, 0x1b3f1
+   1b420:	ad02      	mov.n	a10, a2
+0001b422: 65ebff   call8        . -0x148 ; Capstone ; target=0x1b2d8
+0001b425: 25eaff   call8        . -0x15c ; Capstone ; target=0x1b2c8
+0001b428: 1df0     retw.n        ; Capstone
+	...

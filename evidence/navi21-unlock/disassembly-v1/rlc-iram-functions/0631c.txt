@@ -1,0 +1,12 @@
+
+/tmp/tmpgxj73n59/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000631c <.data+0x631c>:
+0000631c: 364100   entry        a1, 0x20 ; Capstone
+    631f:	3166dc        	l32r	a3, 0xffffd4b8 (0x5ffee5c0) ; inferred DRAM map 0x5ffec000
+    6322:	2973      	s32i.n	a2, a3, 28
+00006324: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,30 @@
+{
+  "source": "/tmp/navi21-disasm/xtensa-de233.inc",
+  "encoding_functions": "Opcode_{r,w}sr_ccompare{1,2}_Slot_inst_encode",
+  "changes": [
+    {
+      "file": "0a3a0.txt",
+      "pc": "0xa3b0",
+      "bytes": "30f113",
+      "operation": "wsr.ccompare1 a3"
+    },
+    {
+      "file": "0a3a0.txt",
+      "pc": "0xa3bb",
+      "bytes": "30f213",
+      "operation": "wsr.ccompare2 a3"
+    },
+    {
+      "file": "0a3c4.txt",
+      "pc": "0xa3d3",
+      "bytes": "20f103",
+      "operation": "rsr.ccompare1 a2"
+    },
+    {
+      "file": "0a3c4.txt",
+      "pc": "0xa3db",
+      "bytes": "20f203",
+      "operation": "rsr.ccompare2 a2"
+    }
+  ]
+}

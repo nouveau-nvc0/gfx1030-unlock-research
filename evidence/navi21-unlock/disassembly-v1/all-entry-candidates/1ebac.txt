@@ -1,0 +1,13 @@
+
+/tmp/tmp5xj4dt27/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001ebac <.data+0x1ebac>:
+0001ebac: 364100   entry        a1, 0x20 ; Capstone
+   1ebaf:	21bfd1        	l32r	a2, 0x132ac (0xc188)
+0001ebb2: 3000fa   const.s      f0, 0 ; Capstone
+0001ebb5: 03427f   ssi          f0, a2, 0x1fc ; Capstone
+0001ebb8: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,49 @@
+
+/tmp/tmpephquhpy/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002ae38 <.data+0x2ae38>:
+0002ae38: 364100   entry        a1, 0x20 ; Capstone
+   2ae3b:	cc32      	bnez.n	a2, 0x2ae42
+   2ae3d:	0c8a      	movi.n	a10, 8
+0002ae3f: 2574d7   call8        . -0x288bc ; Capstone ; target=0x2580
+   2ae42:	0c1a      	movi.n	a10, 1
+0002ae44: a5910a   call8        . +0xa91c ; Capstone ; target=0x35760
+   2ae47:	bc7a      	beqz.n	a10, 0x2ae82
+   2ae49:	9149a3        	l32r	a9, 0x13b70 (0xc82c)
+   2ae4c:	92097d        	l8ui	a9, a9, 125
+   2ae4f:	311da0        	l32r	a3, 0x12ec4 (0x300fe00)
+   2ae52:	661915        	bnei	a9, 1, 0x2ae6b
+   2ae55:	0c1a      	movi.n	a10, 1
+0002ae57: 651e00   call8        . +0x1e8 ; Capstone ; target=0x2b03c
+   2ae5a:	9cfa      	beqz.n	a10, 0x2ae7d
+   2ae5c:	1c0a      	movi.n	a10, 16
+   2ae5e:	0cbb      	movi.n	a11, 11
+   2ae60:	0c0c      	movi.n	a12, 0
+   2ae62:	c02000        	memw
+   2ae65:	d2238a        	l32i	a13, a3, 0x228
+0002ae68: 257ad7   call8        . -0x2885c ; Capstone ; target=0x260c
+   2ae6b:	cce9      	bnez.n	a9, 0x2ae7d
+0002ae6d: e5be07   call8        . +0x7bf0 ; Capstone ; target=0x32a5c
+   2ae70:	9cba      	beqz.n	a10, 0x2ae8f
+   2ae72:	1c9a      	movi.n	a10, 25
+   2ae74:	b127a2        	l32r	a11, 0x13710 (0x3c23d70a)
+   2ae77:	c190a3        	l32r	a12, 0x13cb8 (0x41200000)
+0002ae7a: a5230a   call8        . +0xa23c ; Capstone ; target=0x350b4
+   2ae7d:	0c13      	movi.n	a3, 1
+   2ae7f:	460000        	j	0x2ae84
+   2ae82:	0c03      	movi.n	a3, 0
+   2ae84:	cc32      	bnez.n	a2, 0x2ae8b
+   2ae86:	0c8a      	movi.n	a10, 8
+0002ae88: a55ed7   call8        . -0x28a14 ; Capstone ; target=0x2474
+   2ae8b:	2d03      	mov.n	a2, a3
+0002ae8d: 1df0     retw.n        ; Capstone
+   2ae8f:	1c0a      	movi.n	a10, 16
+   2ae91:	0ceb      	movi.n	a11, 14
+   2ae93:	0c0c      	movi.n	a12, 0
+   2ae95:	c02000        	memw
+   2ae98:	d2238a        	l32i	a13, a3, 0x228
+0002ae9b: 2577d7   call8        . -0x2888c ; Capstone ; target=0x260c
+	...

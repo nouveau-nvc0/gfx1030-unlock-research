@@ -1,0 +1,318 @@
+{
+  "scope": "Local targeted-listing locator; no memory-value propagation or global completeness claim. Optional JX edges describe initial tables, not runtime immutability.",
+  "indirect_edges": null,
+  "reports": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/027cc.txt",
+      "reachable_in_window": 171,
+      "calls": [
+        {
+          "pc": "0x27e6",
+          "operation": "call8",
+          "target": "0x46c4",
+          "integer_constants": {
+            "a2": "0x5ffee264",
+            "a3": "0x5ffee2e8"
+          }
+        },
+        {
+          "pc": "0x27f2",
+          "operation": "call8",
+          "target": "0x2b44",
+          "integer_constants": {
+            "a10": "0x2b",
+            "a11": "0x0",
+            "a2": "0x5ffee264",
+            "a3": "0x5ffee2e8"
+          }
+        },
+        {
+          "pc": "0x27fa",
+          "operation": "call8",
+          "target": "0x29a4",
+          "integer_constants": {
+            "a2": "0x5ffee264",
+            "a3": "0x5ffee2e8"
+          }
+        },
+        {
+          "pc": "0x27ff",
+          "operation": "call8",
+          "target": "0x29b0",
+          "integer_constants": {
+            "a2": "0x5ffee264",
+            "a3": "0x5ffee2e8"
+          }
+        },
+        {
+          "pc": "0x2809",
+          "operation": "call8",
+          "target": "0x8e18",
+          "integer_constants": {
+            "a2": "0x5ffee264",
+            "a3": "0x5ffee2e8"
+          }
+        },
+        {
+          "pc": "0x2815",
+          "operation": "call8",
+          "target": "0x29ec",
+          "integer_constants": {
+            "a2": "0x5ffee264",
+            "a3": "0x5ffee2e8"
+          }
+        },
+        {
+          "pc": "0x281d",
+          "operation": "call8",
+          "target": "0x4734",
+          "integer_constants": {
+            "a2": "0x5ffee264",
+            "a3": "0x5ffee2e8"
+          }
+        },
+        {
+          "pc": "0x2829",
+          "operation": "call8",
+          "target": "0x2b44",
+          "integer_constants": {
+            "a10": "0x2a",
+            "a11": "0x0",
+            "a2": "0x5ffee264",
+            "a3": "0x5ffee2e8"
+          }
+        },
+        {
+          "pc": "0x2857",
+          "operation": "call8",
+          "target": "0x2a0c",
+          "integer_constants": {
+            "a2": "0x5ffee264",
+            "a3": "0x5ffee2e8"
+          }
+        },
+        {
+          "pc": "0x296a",
+          "operation": "call8",
+          "target": "0x2b44",
+          "integer_constants": {
+            "a10": "0x2c",
+            "a14": "0x6803b200",
+            "a15": "0x6803ba00",
+            "a2": "0x5ffee264",
+            "a3": "0x5ffee2e8",
+            "a7": "0x1"
+          }
+        }
+      ],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 183,
+      "unresolved_or_external_edges": [],
+      "reached_stop_instructions": [],
+      "missing_fallthrough": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x280c",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a11",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "12"
+        },
+        {
+          "pc": "0x2810",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a4",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "56"
+        },
+        {
+          "pc": "0x283e",
+          "operation": "s32i",
+          "address": "0x5ffee3dc",
+          "address_candidates": [],
+          "source": "a10",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "244"
+        },
+        {
+          "pc": "0x2846",
+          "operation": "s32i",
+          "address": "0x5ffee3dc",
+          "address_candidates": [],
+          "source": "a10",
+          "source_constant": 0,
+          "base": "a3",
+          "offset": "244"
+        },
+        {
+          "pc": "0x2854",
+          "operation": "s32i",
+          "address": "0x5ffee3dc",
+          "address_candidates": [],
+          "source": "a11",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "244"
+        },
+        {
+          "pc": "0x28c7",
+          "operation": "s8i",
+          "address": "0x5ffee272",
+          "address_candidates": [],
+          "source": "a10",
+          "source_constant": 0,
+          "base": "a2",
+          "offset": "14"
+        },
+        {
+          "pc": "0x28d6",
+          "operation": "s8i",
+          "address": "0x5ffee3c5",
+          "address_candidates": [],
+          "source": "a13",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "221"
+        },
+        {
+          "pc": "0x28e6",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a13",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "48"
+        },
+        {
+          "pc": "0x2903",
+          "operation": "s8i",
+          "address": "0x5ffee272",
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": 1,
+          "base": "a2",
+          "offset": "14"
+        },
+        {
+          "pc": "0x2927",
+          "operation": "s8i",
+          "address": "0x5ffee272",
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": 1,
+          "base": "a2",
+          "offset": "14"
+        },
+        {
+          "pc": "0x292c",
+          "operation": "s8i",
+          "address": "0x5ffee272",
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": 1,
+          "base": "a2",
+          "offset": "14"
+        },
+        {
+          "pc": "0x293e",
+          "operation": "s32i",
+          "address": "0x6803ba44",
+          "address_candidates": [],
+          "source": "a9",
+          "source_constant": null,
+          "base": "a15",
+          "offset": "68"
+        },
+        {
+          "pc": "0x2941",
+          "operation": "s32i",
+          "address": "0x6803b274",
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": 1,
+          "base": "a14",
+          "offset": "116"
+        },
+        {
+          "pc": "0x2947",
+          "operation": "s8i",
+          "address": "0x5ffee3c4",
+          "address_candidates": [],
+          "source": "a13",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "220"
+        },
+        {
+          "pc": "0x294d",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a4",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "16"
+        },
+        {
+          "pc": "0x2952",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "20"
+        },
+        {
+          "pc": "0x2954",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a5",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "28"
+        },
+        {
+          "pc": "0x2961",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a9",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "24"
+        },
+        {
+          "pc": "0x2968",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a8",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "32"
+        },
+        {
+          "pc": "0x299b",
+          "operation": "s8i",
+          "address": "0x5ffee3c5",
+          "address_candidates": [],
+          "source": "a11",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "221"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+
+/tmp/tmpfyo15638/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00027358 <.data+0x27358>:
+00027358: 366100   entry        a1, 0x30 ; Capstone
+0002735b: a50ffe   call8        . -0x1f04 ; Capstone ; target=0x25454
+   2735e:	0c0a      	movi.n	a10, 0
+00027360: 6504fe   call8        . -0x1fb8 ; Capstone ; target=0x253a8
+   27363:	0c1a      	movi.n	a10, 1
+00027365: 2504fe   call8        . -0x1fbc ; Capstone ; target=0x253a8
+   27368:	0c2a      	movi.n	a10, 2
+0002736a: e503fe   call8        . -0x1fc0 ; Capstone ; target=0x253a8
+   2736d:	0c3a      	movi.n	a10, 3
+0002736f: a503fe   call8        . -0x1fc4 ; Capstone ; target=0x253a8
+   27372:	4c36      	movi.n	a6, 67
+   27374:	e1f3b1        	l32r	a14, 0x13b40 (0xc47c)
+   27377:	41f1b1        	l32r	a4, 0x13b3c (0x1538c)
+   2737a:	c1efb1        	l32r	a12, 0x13b38 (0xe894)
+   2737d:	0c02      	movi.n	a2, 0
+   2737f:	20d541        	srli	a13, a2, 5
+   27382:	226c7e        	s32i	a2, a12, 0x1f8
+   27385:	226c80        	s32i	a2, a12, 0x200
+   27388:	226c7f        	s32i	a2, a12, 0x1fc
+   2738b:	226c81        	s32i	a2, a12, 0x204
+   2738e:	cb34      	addi.n	a3, a4, 12
+   27390:	e0dda0        	addx4	a13, a13, a14
+   27393:	d22d7f        	l32i	a13, a13, 0x1fc
+   27396:	209044        	extui	a9, a2, 0, 5
+   27399:	000940        	ssr	a9
+   2739c:	d0d091        	srl	a13, a13
+   2739f:	d0d004        	extui	a13, a13, 0, 1
+   273a2:	164d0f        	beqz	a13, 0x2749a
+   273a5:	9901      	s32i.n	a9, a1, 0
+   273a7:	f6620d        	bgeui	a2, 6, 0x273b8
+   273aa:	0c4a      	movi.n	a10, 4
+   273ac:	bd02      	mov.n	a11, a2
+000273ae: 65fefd   call8        . -0x2018 ; Capstone ; target=0x25394
+   273b1:	5d0a      	mov.n	a5, a10
+   273b3:	0c17      	movi.n	a7, 1
+   273b5:	b66210        	bltui	a2, 6, 0x273c9
+   273b8:	0cef      	movi.n	a15, 14
+   273ba:	f7b210        	bgeu	a2, a15, 0x273ce
+   273bd:	0c5a      	movi.n	a10, 5
+   273bf:	b2c2fa        	addi	a11, a2, -6
+000273c2: 25fdfd   call8        . -0x202c ; Capstone ; target=0x25394
+   273c5:	5d0a      	mov.n	a5, a10
+   273c7:	0c17      	movi.n	a7, 1
+   273c9:	0ce8      	movi.n	a8, 14
+   273cb:	873210        	bltu	a2, a8, 0x273df
+   273ce:	1c79      	movi.n	a9, 23
+   273d0:	97b210        	bgeu	a2, a9, 0x273e4
+   273d3:	0c6a      	movi.n	a10, 6
+   273d5:	b2c2f2        	addi	a11, a2, -14
+000273d8: a5fbfd   call8        . -0x2044 ; Capstone ; target=0x25394
+   273db:	5d0a      	mov.n	a5, a10
+   273dd:	0c17      	movi.n	a7, 1
+   273df:	1c7a      	movi.n	a10, 23
+   273e1:	a73210        	bltu	a2, a10, 0x273f5
+   273e4:	2c5b      	movi.n	a11, 37
+   273e6:	b7b210        	bgeu	a2, a11, 0x273fa
+   273e9:	0c0a      	movi.n	a10, 0
+   273eb:	b2c2e9        	addi	a11, a2, -23
+000273ee: 65fafd   call8        . -0x2058 ; Capstone ; target=0x25394
+   273f1:	5d0a      	mov.n	a5, a10
+   273f3:	0c07      	movi.n	a7, 0
+   273f5:	2c5c      	movi.n	a12, 37
+   273f7:	c73210        	bltu	a2, a12, 0x2740b
+   273fa:	2cfd      	movi.n	a13, 47
+   273fc:	d7b210        	bgeu	a2, a13, 0x27410
+   273ff:	0c1a      	movi.n	a10, 1
+   27401:	b2c2db        	addi	a11, a2, -37
+00027404: e5f8fd   call8        . -0x2070 ; Capstone ; target=0x25394
+   27407:	5d0a      	mov.n	a5, a10
+   27409:	0c07      	movi.n	a7, 0
+   2740b:	2cfe      	movi.n	a14, 47
+   2740d:	e73210        	bltu	a2, a14, 0x27421
+   27410:	3c9f      	movi.n	a15, 57
+   27412:	f7b210        	bgeu	a2, a15, 0x27426
+   27415:	0c2a      	movi.n	a10, 2
+   27417:	b2c2d1        	addi	a11, a2, -47
+0002741a: a5f7fd   call8        . -0x2084 ; Capstone ; target=0x25394
+   2741d:	5d0a      	mov.n	a5, a10
+   2741f:	0c07      	movi.n	a7, 0
+   27421:	3c98      	movi.n	a8, 57
+   27423:	873210        	bltu	a2, a8, 0x27437
+   27426:	4c39      	movi.n	a9, 67
+   27428:	97b20b        	bgeu	a2, a9, 0x27437
+   2742b:	0c3a      	movi.n	a10, 3
+   2742d:	b2c2c7        	addi	a11, a2, -57
+00027430: 25f6fd   call8        . -0x209c ; Capstone ; target=0x25394
+   27433:	5d0a      	mov.n	a5, a10
+   27435:	0c07      	movi.n	a7, 0
+   27437:	a805      	l32i.n	a10, a5, 0
+   27439:	b1c2b1        	l32r	a11, 0x13b44 (0x270f)
+   2743c:	a0afd4        	extui	a10, a10, 15, 14
+   2743f:	a72b2c        	blt	a11, a10, 0x2746f
+   27442:	b2a064        	movi	a11, 100
+   27445:	a7ab26        	bge	a11, a10, 0x2746f
+   27448:	f6c20d        	bgeui	a2, 32, 0x27459
+   2744b:	d801      	l32i.n	a13, a1, 0
+   2744d:	c1beb1        	l32r	a12, 0x13b48 (0xffcd8d80)
+   27450:	000d40        	ssr	a13
+   27453:	c0c091        	srl	a12, a12
+   27456:	076c15        	bbci	a12, 0, 0x2746f
+   27459:	f1bcb1        	l32r	a15, 0x13b4c (0xe890)
+   2745c:	f0f7a0        	addx4	a15, a7, a15
+   2745f:	e22f81        	l32i	a14, a15, 0x204
+   27462:	822f7f        	l32i	a8, a15, 0x1fc
+   27465:	1bee      	addi.n	a14, a14, 1
+   27467:	aa88      	add.n	a8, a8, a10
+   27469:	826f7f        	s32i	a8, a15, 0x1fc
+   2746c:	e26f81        	s32i	a14, a15, 0x204
+   2746f:	a2547e        	s16i	a10, a4, 252
+   27472:	b805      	l32i.n	a11, a5, 0
+   27474:	b0b1d4        	extui	a11, a11, 1, 14
+   27477:	b254c1        	s16i	a11, a4, 0x182
+   2747a:	a805      	l32i.n	a10, a5, 0
+   2747c:	bd07      	mov.n	a11, a7
+   2747e:	a0afd4        	extui	a10, a10, 15, 14
+00027481: 65ecfd   call8        . -0x2138 ; Capstone ; target=0x25348
+   27484:	bd07      	mov.n	a11, a7
+   27486:	c805      	l32i.n	a12, a5, 0
+00027488: 500afa   wfr          f0, a10 ; Capstone
+0002748b: 03437f   ssi          f0, a3, 0x1fc ; Capstone
+   2748e:	c0a1d4        	extui	a10, a12, 1, 14
+00027491: 65ebfd   call8        . -0x2148 ; Capstone ; target=0x25348
+00027494: 501afa   wfr          f1, a10 ; Capstone
+00027497: 1343c2   ssi          f1, a3, 0x308 ; Capstone
+   2749a:	4b33      	addi.n	a3, a3, 4
+   2749c:	2b44      	addi.n	a4, a4, 2
+   2749e:	0b66      	addi.n	a6, a6, -1
+   274a0:	e1a8b1        	l32r	a14, 0x13b40 (0xc47c)
+   274a3:	1b22      	addi.n	a2, a2, 1
+   274a5:	20d541        	srli	a13, a2, 5
+   274a8:	e0dda0        	addx4	a13, a13, a14
+   274ab:	5646ee        	bnez	a6, 0x27393
+000274ae: 1df0     retw.n        ; Capstone

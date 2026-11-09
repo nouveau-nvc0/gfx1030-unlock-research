@@ -1,0 +1,56 @@
+[
+  {
+    "name": "read",
+    "ranges": [
+      [
+        "0x6320",
+        "0x6466"
+      ],
+      [
+        "0x4e8c",
+        "0x4fd2"
+      ]
+    ],
+    "bytes": [
+      326,
+      326
+    ],
+    "identical": true
+  },
+  {
+    "name": "write",
+    "ranges": [
+      [
+        "0x6468",
+        "0x65d2"
+      ],
+      [
+        "0x4fd4",
+        "0x513e"
+      ]
+    ],
+    "bytes": [
+      362,
+      362
+    ],
+    "identical": true
+  },
+  {
+    "name": "Mem.Write wrapper",
+    "ranges": [
+      [
+        "0x62e8",
+        "0x631f"
+      ],
+      [
+        "0x4e54",
+        "0x4e8b"
+      ]
+    ],
+    "bytes": [
+      55,
+      55
+    ],
+    "identical": true
+  }
+]

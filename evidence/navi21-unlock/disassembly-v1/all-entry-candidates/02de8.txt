@@ -1,0 +1,22 @@
+
+/tmp/tmpexvpdxfv/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00002de8 <.data+0x2de8>:
+00002de8: 362100   entry        a1, 0x10 ; Capstone
+    2deb:	61e4f7        	l32r	a6, 0xd7c (0xfffbfff0)
+    2dee:	50e603        	rsr.ps	a5
+    2df1:	4d00      	mov.n	a4, a0
+    2df3:	602510        	and	a2, a5, a6
+    2df6:	1b22      	addi.n	a2, a2, 1
+    2df8:	20e613        	wsr.ps	a2
+    2dfb:	102000        	rsync
+    2dfe:	05edff        	call0	0x2cd0
+    2e01:	0d04      	mov.n	a0, a4
+    2e03:	50e613        	wsr.ps	a5
+    2e06:	102000        	rsync
+00002e09: 1df0     retw.n        ; Capstone
+    2e0b:	000000        	ill
+	...

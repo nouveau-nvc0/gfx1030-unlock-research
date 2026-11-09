@@ -1,0 +1,180 @@
+{
+  "source": "/usr/lib/firmware/amdgpu/sienna_cichlid_rlc.bin.xz",
+  "sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "size": 132960,
+  "common_header": [
+    132960,
+    244,
+    2,
+    4,
+    10,
+    3,
+    96,
+    25088,
+    256,
+    2248443287
+  ],
+  "rlc_fields": {
+    "ucode_feature_version": 1,
+    "jt_offset": 0,
+    "jt_size": 0,
+    "save_and_restore_offset": 0,
+    "clear_state_descriptor_offset": 0,
+    "avail_scratch_ram_locations": 0,
+    "reg_restore_list_size": 95,
+    "reg_list_format_start": 96,
+    "reg_list_format_separate_start": 182,
+    "starting_offsets_start": 203,
+    "reg_list_format_size_bytes": 0,
+    "reg_list_format_array_offset_bytes": 25344,
+    "reg_list_size_bytes": 0,
+    "reg_list_array_offset_bytes": 25344,
+    "reg_list_format_separate_size_bytes": 0,
+    "reg_list_format_separate_array_offset_bytes": 0,
+    "reg_list_separate_size_bytes": 0,
+    "reg_list_separate_array_offset_bytes": 0,
+    "reg_list_format_direct_reg_list_length": 0,
+    "save_restore_list_cntl_ucode_ver": 0,
+    "save_restore_list_cntl_feature_ver": 0,
+    "save_restore_list_cntl_size_bytes": 592,
+    "save_restore_list_cntl_offset_bytes": 25344,
+    "save_restore_list_gpm_ucode_ver": 0,
+    "save_restore_list_gpm_feature_ver": 0,
+    "save_restore_list_gpm_size_bytes": 1536,
+    "save_restore_list_gpm_offset_bytes": 25936,
+    "save_restore_list_srm_ucode_ver": 0,
+    "save_restore_list_srm_feature_ver": 0,
+    "save_restore_list_srm_size_bytes": 18192,
+    "save_restore_list_srm_offset_bytes": 27472,
+    "rlc_iram_ucode_size_bytes": 66048,
+    "rlc_iram_ucode_offset_bytes": 45664,
+    "rlc_dram_ucode_size_bytes": 16896,
+    "rlc_dram_ucode_offset_bytes": 111712,
+    "rlcp_ucode_version": 0,
+    "rlcp_ucode_feature_version": 0,
+    "rlcp_ucode_size_bytes": 0,
+    "rlcp_ucode_offset_bytes": 0,
+    "rlcv_ucode_version": 0,
+    "rlcv_ucode_feature_version": 0,
+    "rlcv_ucode_size_bytes": 0,
+    "rlcv_ucode_offset_bytes": 0,
+    "global_tap_delays_ucode_size_bytes": 768,
+    "global_tap_delays_ucode_offset_bytes": 128608,
+    "se0_tap_delays_ucode_size_bytes": 896,
+    "se0_tap_delays_ucode_offset_bytes": 129376,
+    "se1_tap_delays_ucode_size_bytes": 896,
+    "se1_tap_delays_ucode_offset_bytes": 130272,
+    "se2_tap_delays_ucode_size_bytes": 896,
+    "se2_tap_delays_ucode_offset_bytes": 131168,
+    "se3_tap_delays_ucode_size_bytes": 896,
+    "se3_tap_delays_ucode_offset_bytes": 132064
+  },
+  "sections": [
+    {
+      "name": "reg_list_format_size_bytes",
+      "offset": 25344,
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "reg_list_size_bytes",
+      "offset": 25344,
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "reg_list_format_separate_size_bytes",
+      "offset": 0,
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "reg_list_separate_size_bytes",
+      "offset": 0,
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "save_restore_list_cntl_size_bytes",
+      "offset": 25344,
+      "size": 592,
+      "sha256": "ada1ca733b88cb0327cb9aec36db9512d7234f402ce4f574eb0725102003db8f"
+    },
+    {
+      "name": "save_restore_list_gpm_size_bytes",
+      "offset": 25936,
+      "size": 1536,
+      "sha256": "82798609b6040995d354f1ec4b8497ed33a83612999485f7ca2a8267c16a36d8"
+    },
+    {
+      "name": "save_restore_list_srm_size_bytes",
+      "offset": 27472,
+      "size": 18192,
+      "sha256": "eb0b0d007ffd5c2627bfbd2f9a3fcbb5e92a7a88cc0925ee6b87e7ebe8f6c2c7"
+    },
+    {
+      "name": "rlc_iram_ucode_size_bytes",
+      "offset": 45664,
+      "size": 66048,
+      "sha256": "2fb78fbe5fbb61da620823375dfb3a925eb08f754b0abf4b5006932ad1fc6ff3"
+    },
+    {
+      "name": "rlc_dram_ucode_size_bytes",
+      "offset": 111712,
+      "size": 16896,
+      "sha256": "5acdab8a8b3beb5c02623adafeaaa68993d54126debbfd5ab91ae461382a67d0"
+    },
+    {
+      "name": "rlcp_ucode_size_bytes",
+      "offset": 0,
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "rlcv_ucode_size_bytes",
+      "offset": 0,
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "global_tap_delays_ucode_size_bytes",
+      "offset": 128608,
+      "size": 768,
+      "sha256": "c6d62a5b4c5492812a0a54408434e3fd3352db1beb6f458cbdba66f6ad1eff63"
+    },
+    {
+      "name": "se0_tap_delays_ucode_size_bytes",
+      "offset": 129376,
+      "size": 896,
+      "sha256": "48b5164f161fe2586e049040d1046063223ef64b67f488d105da0976ff6112fd"
+    },
+    {
+      "name": "se1_tap_delays_ucode_size_bytes",
+      "offset": 130272,
+      "size": 896,
+      "sha256": "4e4e70349d6b9da887f7efb67eb24334fc94cde7a5bae01a250a8b1d95da868c"
+    },
+    {
+      "name": "se2_tap_delays_ucode_size_bytes",
+      "offset": 131168,
+      "size": 896,
+      "sha256": "a88a61df540a08ac3189432e57d00d19ca770f6869be8a40a255e8e213f63275"
+    },
+    {
+      "name": "se3_tap_delays_ucode_size_bytes",
+      "offset": 132064,
+      "size": 896,
+      "sha256": "04a0873fc340c11de51071a0439fa14ddcdb5bcb2c3135365bb8691a84cc6d6c"
+    }
+  ],
+  "aligned_literal_hits_not_decoded_references": {
+    "SA_relative_dword": [],
+    "SA_absolute_dword": [],
+    "SA_byte": [],
+    "WGP_absolute_dword": [],
+    "WGP_byte": [],
+    "USER_SA_absolute_dword": [],
+    "USER_WGP_absolute_dword": []
+  },
+  "limitations": "On-disk firmware, not a fresh loaded-image attestation. Empty external register arrays do not exclude lists inside SRM/IRAM/code. Literal absence cannot exclude encoded instructions or indirect addressing."
+}

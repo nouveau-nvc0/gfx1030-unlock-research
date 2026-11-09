@@ -1,0 +1,20 @@
+
+/tmp/tmpoadfmzab/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001e8c <.data+0x1e8c>:
+00001e8c: 364100   entry        a1, 0x20 ; Capstone
+    1e8f:	306200        	rsil	a3, 2
+    1e92:	ad02      	mov.n	a10, a2
+00001e94: 65f7ff   call8        . -0x88 ; Capstone ; target=0x1e0c
+    1e97:	8150fb        	l32r	a8, 0xbd8 (0x69a0)
+    1e9a:	202074        	extui	a2, a2, 0, 8
+    1e9d:	202290        	addx2	a2, a2, a2
+    1ea0:	8022a0        	addx4	a2, a2, a8
+    1ea3:	222223        	l32i	a2, a2, 140
+    1ea6:	c02000        	memw
+    1ea9:	2802      	l32i.n	a2, a2, 0
+    1eab:	30e613        	wsr.ps	a3
+00001eae: 1df0     retw.n        ; Capstone

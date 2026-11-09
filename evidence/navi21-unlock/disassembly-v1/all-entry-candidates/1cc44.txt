@@ -1,0 +1,20 @@
+
+/tmp/tmpjhiz0nru/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001cc44 <.data+0x1cc44>:
+0001cc44: 366100   entry        a1, 0x30 ; Capstone
+   1cc47:	a802      	l32i.n	a10, a2, 0
+0001cc49: 5003fa   wfr          f0, a3 ; Capstone
+0001cc4c: 034100   ssi          f0, a1, 0 ; Capstone
+0001cc4f: e5141c   call8        . +0x1c150 ; Capstone ; target=0x38d9c
+0001cc52: 530201   lsi          f5, a2, 4 ; Capstone
+0001cc55: 430100   lsi          f4, a1, 0 ; Capstone
+0001cc58: 50341a   sub.s        f3, f4, f5 ; Capstone
+0001cc5b: 502afa   wfr          f2, a10 ; Capstone
+0001cc5e: 30122a   mul.s        f1, f2, f3 ; Capstone
+0001cc61: 4021fa   rfr          a2, f1 ; Capstone
+0001cc64: 1df0     retw.n        ; Capstone
+	...

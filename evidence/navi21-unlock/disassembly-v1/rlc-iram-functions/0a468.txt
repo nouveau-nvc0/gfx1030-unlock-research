@@ -1,0 +1,16 @@
+
+/tmp/tmpy57kogde/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000a468 <.data+0xa468>:
+0000a468: 364100   entry        a1, 0x20 ; Capstone
+    a46b:	31d1cc        	l32r	a3, 0xffffd7b0 (0x5ffee66c) ; inferred DRAM map 0x5ffec000
+    a46e:	21d1cc        	l32r	a2, 0xffffd7b4 (0x5ffed0e4) ; inferred DRAM map 0x5ffec000
+    a471:	0c18      	movi.n	a8, 1
+    a473:	82631b        	s32i	a8, a3, 108
+    a476:	2913      	s32i.n	a2, a3, 4
+    a478:	32633d        	s32i	a3, a3, 244
+0000a47b: 1df0     retw.n        ; Capstone
+    a47d:	000000        	ill

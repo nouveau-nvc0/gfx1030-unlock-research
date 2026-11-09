@@ -1,0 +1,66 @@
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0: Queue preemption failed for queue with doorbell_id: 80004000
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0: Failed to evict process queues
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu: Failed to quiesce KFD
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0: GPU reset begin!. Source:  4
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0: Dumping IP State
+2026-11-09T14:01:08+03:00 research-host kernel: aer_ratelimit: 2 callbacks suppressed
+2026-11-09T14:01:08+03:00 research-host kernel: pcieport 0000:00:02.0: AER: Correctable Error message received from 0000:07:00.0
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00008000/00000000
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0: AER:   TLP Header: 0x00000001 0x0010000f 0xfb73e24c 0x00000000
+2026-11-09T14:01:08+03:00 research-host kernel: pcieport 0000:00:02.0: AER: Correctable Error message received from 0000:07:00.0
+2026-11-09T14:01:08+03:00 research-host kernel: pcieport 0000:00:02.0: AER: Multiple Correctable Error messages received, first one from 0000:07:00.0
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Correctable
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00002000/00000000
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0:   [13] NonFatalErr       |             |                  
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0: PCIe Bus Error: severity=Uncorrectable (Non-Fatal)
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0:   device [1002:73bf] error status/mask=00108000/00000000
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0:   [15] CmpltAbrt         | Completer   | Transaction Layer (First)
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0:   [20] UnsupReq          | Receiver    | Transaction Layer
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0: AER:   TLP Header: 0x00000001 0x0010000f 0xfb73e34c 0x00000000
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0: Dumping IP State Completed
+2026-11-09T14:01:08+03:00 research-host kernel: pcieport 0000:00:02.0: AER: Multiple Correctable Error messages received, first one from 0000:07:00.0
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0: MODE1 reset
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0: GPU mode1 reset
+2026-11-09T14:01:08+03:00 research-host kernel: amdgpu 0000:07:00.0: GPU smu mode1 reset
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: GPU reset succeeded, trying to resume
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: [drm] PCIE GART of 512M enabled (table at 0x0000008000000000).
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: [drm] AMDGPU device coredump file has been created
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: [drm] Check your /sys/class/drm/card0/device/devcoredump/data
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: VRAM is lost due to GPU reset!
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: PSP is resuming...
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: reserve 0xa00000 from 0x83fd000000 for PSP TMR
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: SECUREDISPLAY: optional securedisplay ta ucode is not available
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: SMU is resuming...
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: use vbios provided pptable
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: SMU is resumed successfully!
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: kiq ring mec 2 pipe 1 q 0
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: [drm] DMUB hardware initialized: version=0x02020023
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring gfx_0.0.0 uses VM inv eng 0 on hub 0
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring gfx_0.1.0 uses VM inv eng 1 on hub 0
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring comp_1.0.0 uses VM inv eng 4 on hub 0
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring comp_1.1.0 uses VM inv eng 5 on hub 0
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring comp_1.2.0 uses VM inv eng 6 on hub 0
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring comp_1.3.0 uses VM inv eng 7 on hub 0
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring comp_1.0.1 uses VM inv eng 8 on hub 0
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring comp_1.1.1 uses VM inv eng 9 on hub 0
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring comp_1.2.1 uses VM inv eng 10 on hub 0
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring comp_1.3.1 uses VM inv eng 11 on hub 0
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring kiq_0.2.1.0 uses VM inv eng 12 on hub 0
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring sdma0 uses VM inv eng 13 on hub 0
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring sdma1 uses VM inv eng 14 on hub 0
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring sdma2 uses VM inv eng 15 on hub 0
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring sdma3 uses VM inv eng 16 on hub 0
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring vcn_dec_0 uses VM inv eng 0 on hub 8
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring vcn_enc_0.0 uses VM inv eng 1 on hub 8
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring vcn_enc_0.1 uses VM inv eng 4 on hub 8
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring vcn_dec_1 uses VM inv eng 5 on hub 8
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring vcn_enc_1.0 uses VM inv eng 6 on hub 8
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring vcn_enc_1.1 uses VM inv eng 7 on hub 8
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: ring jpeg_dec uses VM inv eng 8 on hub 8
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: GPU reset(1) succeeded!
+2026-11-09T14:01:09+03:00 research-host kernel: amdgpu 0000:07:00.0: [drm] device wedged, but no recovery needed

@@ -1,0 +1,47 @@
+
+/tmp/tmp31cynt6v/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00038d10 <.data+0x38d10>:
+00038d10: 364100   entry        a1, 0x20 ; Capstone
+   38d13:	a1ae6e        	l32r	a10, 0x147cc (0x19a4)
+00038d16: a558c9   call8        . -0x36a74 ; Capstone ; target=0x22a0
+   38d19:	a1ad6e        	l32r	a10, 0x147d0 (0x1968)
+00038d1c: e556c9   call8        . -0x36a90 ; Capstone ; target=0x228c
+00038d1f: e5b8ff   call8        . -0x470 ; Capstone ; target=0x388ac
+00038d22: e5b7ff   call8        . -0x480 ; Capstone ; target=0x388a0
+   38d25:	0c09      	movi.n	a9, 0
+   38d27:	a1f969        	l32r	a10, 0x1350c (0x320fe00)
+   38d2a:	214c68        	l32r	a2, 0x12e5c (0x69a0)
+   38d2d:	c02000        	memw
+   38d30:	926a98        	s32i	a9, a10, 0x260
+   38d33:	811f69        	l32r	a8, 0x131b0 (0x130fe00)
+   38d36:	916469        	l32r	a9, 0x132c8 (0x80000)
+   38d39:	c02000        	memw
+   38d3c:	8228f0        	l32i	a8, a8, 0x3c0
+   38d3f:	908810        	and	a8, a8, a9
+   38d42:	8083c5        	extui	a8, a8, 19, 13
+   38d45:	89b2      	s32i.n	a8, a2, 44
+00038d47: 6526ff   call8        . -0xd98 ; Capstone ; target=0x37fac
+00038d4a: 2504ff   call8        . -0xfbc ; Capstone ; target=0x37d8c
+   38d4d:	0c0a      	movi.n	a10, 0
+   38d4f:	b1e16c        	l32r	a11, 0x140d4 (0x47435000)
+   38d52:	0c1c      	movi.n	a12, 1
+   38d54:	d1e16c        	l32r	a13, 0x140d8 (0x379b8)
+00038d57: 500bfa   wfr          f0, a11 ; Capstone
+00038d5a: 00b0ba   ceil.s       a11, f0, 0 ; Capstone
+00038d5d: 65fcfe   call8        . -0x1038 ; Capstone ; target=0x37d24
+   38d60:	0c1c      	movi.n	a12, 1
+   38d62:	c24232        	s8i	a12, a2, 50
+00038d65: e5fafe   call8        . -0x1050 ; Capstone ; target=0x37d14
+00038d68: e5f9fe   call8        . -0x1060 ; Capstone ; target=0x37d08
+00038d6b: a5f8fe   call8        . -0x1074 ; Capstone ; target=0x37cf4
+00038d6e: 65f6fe   call8        . -0x1098 ; Capstone ; target=0x37cd4
+00038d71: a5f3fe   call8        . -0x10c4 ; Capstone ; target=0x37cac
+   38d74:	f0da11        	slli	a13, a10, 1
+00038d77: 001dda   ufloat.s     f1, a13, 0 ; Capstone
+   38d7a:	a26216        	s32i	a10, a2, 88
+00038d7d: 134217   ssi          f1, a2, 0x5c ; Capstone
+00038d80: 1df0     retw.n        ; Capstone

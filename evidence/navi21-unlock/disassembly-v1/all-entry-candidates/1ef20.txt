@@ -1,0 +1,23 @@
+
+/tmp/tmpj812f_t2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001ef20 <.data+0x1ef20>:
+0001ef20: 364100   entry        a1, 0x20 ; Capstone
+   1ef23:	0c0a      	movi.n	a10, 0
+0001ef25: 25560a   call8        . +0xa564 ; Capstone ; target=0x29488
+   1ef28:	a100d0        	l32r	a10, 0x12f28 (0xff8c)
+   1ef2b:	0c0b      	movi.n	a11, 0
+   1ef2d:	0c1c      	movi.n	a12, 1
+0001ef2f: 25c509   call8        . +0x9c54 ; Capstone ; target=0x28b80
+   1ef32:	91fecf        	l32r	a9, 0x12f2c (0x141d600)
+   1ef35:	c02000        	memw
+   1ef38:	a1e4d0        	l32r	a10, 0x132c8 (0x80000)
+   1ef3b:	822940        	l32i	a8, a9, 0x100
+   1ef3e:	a08820        	or	a8, a8, a10
+   1ef41:	c02000        	memw
+   1ef44:	826940        	s32i	a8, a9, 0x100
+0001ef47: 1df0     retw.n        ; Capstone
+   1ef49:	000000        	ill

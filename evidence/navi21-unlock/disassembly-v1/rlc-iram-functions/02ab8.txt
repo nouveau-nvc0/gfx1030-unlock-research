@@ -1,0 +1,63 @@
+
+/tmp/tmpu_ncpd84/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00002ab8 <.data+0x2ab8>:
+00002ab8: 36e102   entry        a1, 0x170 ; Capstone
+    2abb:	c1d4e9        	l32r	a12, 0xffffd20c (0x5ffee264) ; inferred DRAM map 0x5ffec000
+    2abe:	d1e9e9        	l32r	a13, 0xffffd264 (0x5ffee41c) ; inferred DRAM map 0x5ffec000
+    2ac1:	922c71        	l32i	a9, a12, 0x1c4
+    2ac4:	b2cdc0        	addi	a11, a13, -64
+    2ac7:	dc19      	bnez.n	a9, 0x2adc
+    2ac9:	ad0b      	mov.n	a10, a11
+    2acb:	c09211        	slli	a9, a2, 4
+    2ace:	292a      	s32i.n	a2, a10, 8
+    2ad0:	226a03        	s32i	a2, a10, 12
+    2ad3:	a2ca08        	addi	a10, a10, 8
+    2ad6:	d79af4        	bne	a10, a13, 0x2ace
+    2ad9:	926c71        	s32i	a9, a12, 0x1c4
+    2adc:	e22c70        	l32i	a14, a12, 0x1c0
+    2adf:	9af2      	add.n	a15, a2, a9
+    2ae1:	f26c71        	s32i	a15, a12, 0x1c4
+    2ae4:	b0eea0        	addx4	a14, a14, a11
+    2ae7:	882e      	l32i.n	a8, a14, 8
+    2ae9:	80ffc0        	sub	a15, a15, a8
+    2aec:	f26c71        	s32i	a15, a12, 0x1c4
+    2aef:	292e      	s32i.n	a2, a14, 8
+    2af1:	a22c70        	l32i	a10, a12, 0x1c0
+    2af4:	820c07        	l8ui	a8, a12, 7
+    2af7:	21dae9        	l32r	a2, 0xffffd260 (0x5ffee3c4) ; inferred DRAM map 0x5ffec000
+    2afa:	1baa      	addi.n	a10, a10, 1
+    2afc:	a0a034        	extui	a10, a10, 0, 4
+    2aff:	a26c70        	s32i	a10, a12, 0x1c0
+    2b02:	bc68      	beqz.n	a8, 0x2b3c
+    2b04:	0c2a      	movi.n	a10, 2
+    2b06:	8bc1      	addi.n	a12, a1, 8
+    2b08:	3cc8      	movi.n	a8, 60
+    2b0a:	f2221b        	l32i	a15, a2, 108
+    2b0d:	f911      	s32i.n	a15, a1, 4
+    2b0f:	8901      	s32i.n	a8, a1, 0
+    2b11:	2baa      	addi.n	a10, a10, 2
+    2b13:	983b      	l32i.n	a9, a11, 12
+    2b15:	e82b      	l32i.n	a14, a11, 8
+    2b17:	e90c      	s32i.n	a14, a12, 0
+    2b19:	991c      	s32i.n	a9, a12, 4
+    2b1b:	8bbb      	addi.n	a11, a11, 8
+    2b1d:	8bcc      	addi.n	a12, a12, 8
+    2b1f:	d79bee        	bne	a11, a13, 0x2b11
+    2b22:	126151        	s32i	a1, a1, 0x144
+    2b25:	a26152        	s32i	a10, a1, 0x148
+    2b28:	c2d101        	addmi	a12, a1, 0x100
+    2b2b:	0c1d      	movi.n	a13, 1
+    2b2d:	d26150        	s32i	a13, a1, 0x140
+    2b30:	c2cc40        	addi	a12, a12, 64
+    2b33:	a80c      	l32i.n	a10, a12, 0
+    2b35:	b81c      	l32i.n	a11, a12, 4
+    2b37:	c82c      	l32i.n	a12, a12, 8
+00002b39: e58003   call8        . +0x3810 ; Capstone ; target=0x6348
+    2b3c:	0c0e      	movi.n	a14, 0
+    2b3e:	e2621a        	s32i	a14, a2, 104
+00002b41: 1df0     retw.n        ; Capstone
+	...

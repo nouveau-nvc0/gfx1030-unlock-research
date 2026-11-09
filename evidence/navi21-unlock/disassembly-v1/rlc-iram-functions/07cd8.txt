@@ -1,0 +1,43 @@
+
+/tmp/tmpqcviltct/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00007cd8 <.data+0x7cd8>:
+00007cd8: 364100   entry        a1, 0x20 ; Capstone
+    7cdb:	a2a003        	movi	a10, 3
+00007cde: 256402   call8        . +0x2644 ; Capstone ; target=0xa320
+    7ce1:	0c0a      	movi.n	a10, 0
+    7ce3:	b10ed6        	l32r	a11, 0xffffd51c (0x5ffee044) ; inferred DRAM map 0x5ffec000
+    7ce6:	c2a000        	movi	a12, 0
+00007ce9: a5d901   call8        . +0x1d9c ; Capstone ; target=0x9a84
+    7cec:	806f00        	rsil	a8, 15
+    7cef:	c11dd5        	l32r	a12, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    7cf2:	915dd6        	l32r	a9, 0xffffd668 (0x6003b600) ; inferred DRAM map 0x5ffec000
+    7cf5:	0c0b      	movi.n	a11, 0
+    7cf7:	b26c80        	s32i	a11, a12, 0x200
+    7cfa:	a2694b        	s32i	a10, a9, 0x12c
+    7cfd:	80e613        	wsr.ps	a8
+    7d00:	102000        	rsync
+    7d03:	ccea      	bnez.n	a10, 0x7d15
+    7d05:	e13ed5        	l32r	a14, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    7d08:	0c1d      	movi.n	a13, 1
+    7d0a:	d26e00        	s32i	a13, a14, 0
+    7d0d:	007f00        	waiti	15
+    7d10:	06ffff        	j	0x7d10
+    7d13:	00000c        	excw
+    7d16:	3a0c      	add.n	a0, a12, a3
+    7d18:	0b0c      	addi.n	a0, a12, -1
+    7d1a:	0c0c      	movi.n	a12, 0
+    7d1c:	0d25      	excw
+    7d1e:	b1011d        	l32r	a11, 0xfffcf124
+00007d21: f00000   callx12      a0 ; Capstone
+
+; Alternate branch-target decode
+    7d15:	0c3a      	movi.n	a10, 3
+    7d17:	0c0b      	movi.n	a11, 0
+    7d19:	0c0c      	movi.n	a12, 0
+    7d1b:	0c0d      	movi.n	a13, 0
+00007d1d: 25b101   call8        . +0x1b14 ; Capstone ; target=0x9830
+00007d20: 1df0     retw.n        ; Capstone

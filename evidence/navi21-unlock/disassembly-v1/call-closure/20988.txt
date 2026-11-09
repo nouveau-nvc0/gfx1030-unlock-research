@@ -1,0 +1,34 @@
+
+/tmp/tmp91z9a4ux/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00020988 <.data+0x20988>:
+00020988: 366100   entry        a1, 0x30 ; Capstone
+   2098b:	8134c9        	l32r	a8, 0x12e5c (0x69a0)
+0002098e: 5012fa   wfr          f1, a2 ; Capstone
+00020991: 230817   lsi          f2, a8, 0x5c ; Capstone
+00020994: 20012a   mul.s        f0, f1, f2 ; Capstone
+   20997:	ad03      	mov.n	a10, a3
+00020999: 034100   ssi          f0, a1, 0 ; Capstone
+0002099c: e53f18   call8        . +0x18400 ; Capstone ; target=0x38d9c
+   2099f:	91b1ca        	l32r	a9, 0x13464 (0x43000000)
+000209a2: 630100   lsi          f6, a1, 0 ; Capstone
+000209a5: 5079fa   wfr          f7, a9 ; Capstone
+000209a8: 70562a   mul.s        f5, f6, f7 ; Capstone
+000209ab: 504afa   wfr          f4, a10 ; Capstone
+000209ae: 50042a   mul.s        f0, f4, f5 ; Capstone
+000209b1: 3031fa   const.s      f3, 1 ; Capstone
+000209b4: 30004b   olt.s        b0, f0, f3 ; Capstone
+000209b7: 4020fa   rfr          a2, f0 ; Capstone
+000209ba: 760011   bf           b0, . +0x15 ; Capstone
+   209bd:	0c0c      	movi.n	a12, 0
+   209bf:	1c1b      	movi.n	a11, 17
+   209c1:	d140c9        	l32r	a13, 0x12ec4 (0x300fe00)
+   209c4:	1c0a      	movi.n	a10, 16
+   209c6:	c02000        	memw
+   209c9:	d22d8a        	l32i	a13, a13, 0x228
+000209cc: e5c3e1   call8        . -0x1e3c0 ; Capstone ; target=0x260c
+000209cf: 1df0     retw.n        ; Capstone
+   209d1:	000000        	ill

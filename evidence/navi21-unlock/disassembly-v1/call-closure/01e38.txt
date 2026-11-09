@@ -1,0 +1,13 @@
+
+/tmp/tmpjpsdx_ur/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001e38 <.data+0x1e38>:
+00001e38: 364100   entry        a1, 0x20 ; Capstone
+    1e3b:	4167fb        	l32r	a4, 0xbd8 (0x69a0)
+    1e3e:	22641f        	s32i	a2, a4, 124
+    1e41:	32641e        	s32i	a3, a4, 120
+00001e44: 1df0     retw.n        ; Capstone
+	...

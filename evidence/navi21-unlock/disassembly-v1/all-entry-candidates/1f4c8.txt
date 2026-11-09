@@ -1,0 +1,21 @@
+
+/tmp/tmpy2dciigg/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001f4c8 <.data+0x1f4c8>:
+0001f4c8: 364100   entry        a1, 0x20 ; Capstone
+   1f4cb:	0c8a      	movi.n	a10, 8
+0001f4cd: 250be3   call8        . -0x1cf4c ; Capstone ; target=0x2580
+   1f4d0:	0c2a      	movi.n	a10, 2
+   1f4d2:	b1f2ce        	l32r	a11, 0x1309c (0x3c03126f)
+   1f4d5:	c182cf        	l32r	a12, 0x132e0 (0x42c80000)
+0001f4d8: a5bd15   call8        . +0x15bdc ; Capstone ; target=0x350b4
+   1f4db:	0c2a      	movi.n	a10, 2
+   1f4dd:	0c0b      	movi.n	a11, 0
+0001f4df: 652a0a   call8        . +0xa2a8 ; Capstone ; target=0x29784
+   1f4e2:	0c8a      	movi.n	a10, 8
+0001f4e4: e5f8e2   call8        . -0x1d070 ; Capstone ; target=0x2474
+0001f4e7: 1df0     retw.n        ; Capstone
+   1f4e9:	000000        	ill

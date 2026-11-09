@@ -1,0 +1,161 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04004.txt",
+      "sha256": "ef46fbcd7aa6309f58c20b95e4386fba4e840db48a340785eb346fb85f6d8988",
+      "byte_checked_records": 330
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04374.txt",
+      "sha256": "aa919513dad1aee75e19f8b4214d0809e840807059fa5989cd9ff9788432b059",
+      "byte_checked_records": 205
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/065d8.txt",
+      "sha256": "c18d03eeb2874d2c705b79f9dfec3586d33377663cee99a5412740f540f42131",
+      "byte_checked_records": 306
+    }
+  ],
+  "4374_initial_table": [
+    {
+      "cell": "0x5ffec120",
+      "initial_address_word": "0x37004",
+      "initial_value": "0x13647c",
+      "destination": "0x60037004"
+    },
+    {
+      "cell": "0x5ffec128",
+      "initial_address_word": "0x37100",
+      "initial_value": "0x100000",
+      "destination": "0x60037100"
+    },
+    {
+      "cell": "0x5ffec130",
+      "initial_address_word": "0x36800",
+      "initial_value": "0x10fc37",
+      "destination": "0x60036800"
+    },
+    {
+      "cell": "0x5ffec138",
+      "initial_address_word": "0x36804",
+      "initial_value": "0x10040",
+      "destination": "0x60036804"
+    },
+    {
+      "cell": "0x5ffec140",
+      "initial_address_word": "0x36e80",
+      "initial_value": "0x105404",
+      "destination": "0x60036e80"
+    },
+    {
+      "cell": "0x5ffec148",
+      "initial_address_word": "0x36e00",
+      "initial_value": "0x10a878",
+      "destination": "0x60036e00"
+    },
+    {
+      "cell": "0x5ffec150",
+      "initial_address_word": "0x36e04",
+      "initial_value": "0xac89",
+      "destination": "0x60036e04"
+    },
+    {
+      "cell": "0x5ffec158",
+      "initial_address_word": "0x36e08",
+      "initial_value": "0x11ec03",
+      "destination": "0x60036e08"
+    },
+    {
+      "cell": "0x5ffec160",
+      "initial_address_word": "0x36600",
+      "initial_value": "0x10f116",
+      "destination": "0x60036600"
+    },
+    {
+      "cell": "0x5ffec168",
+      "initial_address_word": "0x36610",
+      "initial_value": "0x24090",
+      "destination": "0x60036610"
+    },
+    {
+      "cell": "0x5ffec170",
+      "initial_address_word": "0x36b00",
+      "initial_value": "0x10a036",
+      "destination": "0x60036b00"
+    },
+    {
+      "cell": "0x5ffec178",
+      "initial_address_word": "0x36d00",
+      "initial_value": "0x102839",
+      "destination": "0x60036d00"
+    },
+    {
+      "cell": "0x5ffec180",
+      "initial_address_word": "0x36d04",
+      "initial_value": "0xec02",
+      "destination": "0x60036d04"
+    },
+    {
+      "cell": "0x5ffec188",
+      "initial_address_word": "0x36d08",
+      "initial_value": "0x10781b",
+      "destination": "0x60036d08"
+    },
+    {
+      "cell": "0x5ffec190",
+      "initial_address_word": "0x36d0c",
+      "initial_value": "0xb830",
+      "destination": "0x60036d0c"
+    },
+    {
+      "cell": "0x5ffec198",
+      "initial_address_word": "0x36c00",
+      "initial_value": "0x113001",
+      "destination": "0x60036c00"
+    },
+    {
+      "cell": "0x5ffec1a0",
+      "initial_address_word": "0x36700",
+      "initial_value": "0x30f02b",
+      "destination": "0x60036700"
+    },
+    {
+      "cell": "0x5ffec1a8",
+      "initial_address_word": "0x36704",
+      "initial_value": "0x30f004",
+      "destination": "0x60036704"
+    },
+    {
+      "cell": "0x5ffec1b0",
+      "initial_address_word": "0x36708",
+      "initial_value": "0x30f003",
+      "destination": "0x60036708"
+    },
+    {
+      "cell": "0x5ffec1b8",
+      "initial_address_word": "0x3670c",
+      "initial_value": "0x30f075",
+      "destination": "0x6003670c"
+    },
+    {
+      "cell": "0x5ffec1c0",
+      "initial_address_word": "0x36710",
+      "initial_value": "0x30f13d",
+      "destination": "0x60036710"
+    }
+  ],
+  "65d8_loop_range": {
+    "start": "0x5ffedbd0",
+    "end_exclusive": "0x5ffedc70",
+    "maximum_words": 40
+  },
+  "findings": [
+    "40a0 destination=(a2&fffff)+67fffe00+200, so effective base is68000000 and maximum starting offsetfffff. This cannot directly address LX6 RAM5ffe.... It does not by itself exclude hardware CC writes within the window.",
+    "43a6/43c7/43e8 destination=(table_address&fffff)+5ffffe00+200, so effective base60000000. Exact21 initial table entries do not include CC_SA8924/CC_WGP89bc/CC_RB98f4. Changed table contents and register side effects are not excluded.",
+    "68fa destination startsdbd0 and advances4 for counter0..39, checked before every store. Return can occur earlier; reaching count40 loops at6940 without another store. This write cannot reachdfc4 or gatee452.",
+    "These results separate computed hardware-register writes from ordinary RAM writes; they do not prove the hardware windows cannot indirectly affect CC."
+  ],
+  "next": "Resolve possible hardware CC destinations of4004 from its actual local address selections and three known caller lengths; do not infer exclusion solely from the hardware window.",
+  "scope": "Pinned code/literal and initial table evidence only; inferred DRAM placement retained. No hardware access."
+}

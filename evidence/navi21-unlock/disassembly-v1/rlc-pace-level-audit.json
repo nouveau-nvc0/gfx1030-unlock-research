@@ -1,0 +1,108 @@
+{
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/022d8.txt",
+      "sha256": "a8c6de63cea48cb926fb7bfe0cb2979ab3bfabb366efea574ad24e8a5b0cbb2a",
+      "byte_checked_records": 314
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/029b0.txt",
+      "sha256": "3b752a6376787d2ea99083913f277b27e23508a15a3b8976b65f231304c352ca",
+      "byte_checked_records": 7
+    }
+  ],
+  "cfg_sha256": "714d42cd8cb5dd09e88da80adf6c294c24038a4124d86e0596da374ecf26a66b",
+  "cfg_tool_sha256": "493bdd057c5b3be3ad4ca843acdbf02674b37bfccb756f05adbeb77291a17a87",
+  "headers": {
+    "gc_10_3_0_offset.h": "abd09080e4b06fd2d3e14145e5ceafa580a1987da59f076d2598e8753957b614",
+    "gc_10_3_0_sh_mask.h": "96352168616063a2715ee676e8290b99e9fd0596ad442434ab08687450ecbda5"
+  },
+  "local_reached_instructions": 295,
+  "direct_store_sites": 37,
+  "fixed_store_addresses": [
+    "0x5ffee272",
+    "0x5ffee3c4",
+    "0x5ffee3c5",
+    "0x5ffee3c9",
+    "0x6803b274",
+    "0x6803ba44"
+  ],
+  "stack_store_sites": 8,
+  "callees": [
+    {
+      "pc": "0x2467",
+      "operation": "call8",
+      "target": "0x2b44",
+      "integer_constants": {
+        "a10": "0x18",
+        "a11": "0x0",
+        "a2": "0x5ffee348",
+        "a3": "0x5ffee264",
+        "a4": "0x6803ba00",
+        "a5": "0x6803b200",
+        "a6": "0x1",
+        "a7": "0xfffe03ff"
+      }
+    },
+    {
+      "pc": "0x2496",
+      "operation": "call8",
+      "target": "0x2b44",
+      "integer_constants": {
+        "a10": "0x15",
+        "a11": "0x0",
+        "a15": "0x5ffee278",
+        "a2": "0x5ffee348",
+        "a3": "0x5ffee264",
+        "a4": "0x6803ba00",
+        "a5": "0x6803b200",
+        "a6": "0x1",
+        "a7": "0xfffe03ff"
+      }
+    },
+    {
+      "pc": "0x24a3",
+      "operation": "call8",
+      "target": "0x2b44",
+      "integer_constants": {
+        "a10": "0x14",
+        "a2": "0x5ffee348",
+        "a3": "0x5ffee264",
+        "a4": "0x6803ba00",
+        "a5": "0x6803b200",
+        "a6": "0x1",
+        "a7": "0xfffe03ff"
+      }
+    },
+    {
+      "pc": "0x25a1",
+      "operation": "call8",
+      "target": "0x2b44",
+      "integer_constants": {
+        "a10": "0x16",
+        "a2": "0x5ffee348",
+        "a3": "0x5ffee264",
+        "a4": "0x6803ba00",
+        "a5": "0x6803b200",
+        "a6": "0x1",
+        "a7": "0xfffe03ff"
+      }
+    }
+  ],
+  "named_registers": {
+    "mmRLC_RLCS_GENERAL_2": "0x3ba44",
+    "mmRLC_SPARE_INT_2": "0x3b274",
+    "mmRLC_SPP_PVT_LEVEL_MAX": "0x3b484"
+  },
+  "index_sources": {
+    "245e": "zero on known joined paths",
+    "248d": "hardware low8, or descending low8 index, or bounded-by-input adjustment",
+    "2595": "hardware low8, or descending low8 index, or bounded-by-input adjustment"
+  },
+  "29b0_byte_lookup_interval": [
+    "0x5ffee344",
+    "0x5ffee744"
+  ],
+  "eight_bit_decrement_zero": 255,
+  "scope": "Local direct writes only. Header field mask does not prove unused bits readzero; decrement arithmetic does not prove a reachable out-of-range execution. Calls and later dataflow remain separate."
+}

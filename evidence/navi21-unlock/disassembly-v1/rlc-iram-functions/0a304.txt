@@ -1,0 +1,18 @@
+
+/tmp/tmprlg6q8dq/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000a304 <.data+0xa304>:
+0000a304: 362100   entry        a1, 0x10 ; Capstone
+    a307:	d02000        	extw
+    a30a:	3d02      	mov.n	a3, a2
+    a30c:	4d03      	mov.n	a4, a3
+    a30e:	0c12      	movi.n	a2, 1
+    a310:	005100        	simcall
+    a313:	2d04      	mov.n	a2, a4
+    a315:	f04100        	break	1, 15
+    a318:	007f00        	waiti	15
+    a31b:	c6faff        	j	0xa30a
+	...

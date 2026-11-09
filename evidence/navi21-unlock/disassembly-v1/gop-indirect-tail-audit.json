@@ -1,0 +1,146 @@
+{
+  "scope": "Fixed-displacement store locator includes write width; does not resolve shifted base pointers, dynamic index overlap or implicit memory writes. Tail replay covers six valid destination indices, not arbitrary bytes.",
+  "bar_field_scan": [
+    {
+      "variant": "baseline",
+      "sha256": "a9966b48d5bdfc35387eb38572b4babbf4537da8d2b2ae4796076af9ed44f54a",
+      "explicit_memory_write_operands": 1545,
+      "overlaps": [],
+      "skip_bytes": [
+        "0xb8bf"
+      ]
+    },
+    {
+      "variant": "candidate",
+      "sha256": "9a68a83c01767545b9ba1713468731d6db1ea77946a142cbcbb4b4213e08674a",
+      "explicit_memory_write_operands": 1552,
+      "overlaps": [],
+      "skip_bytes": [
+        "0xb8ff"
+      ]
+    }
+  ],
+  "atom_tail_cases": [
+    {
+      "entry": "0x9415",
+      "index": 0,
+      "target": "0x8fb8"
+    },
+    {
+      "entry": "0x9415",
+      "index": 1,
+      "target": "0x9050"
+    },
+    {
+      "entry": "0x9415",
+      "index": 2,
+      "target": "0x9064"
+    },
+    {
+      "entry": "0x9415",
+      "index": 3,
+      "target": "0x90dc"
+    },
+    {
+      "entry": "0x9415",
+      "index": 4,
+      "target": "0x9100"
+    },
+    {
+      "entry": "0x9415",
+      "index": 5,
+      "target": "0x9100"
+    },
+    {
+      "entry": "0x94e9",
+      "index": 0,
+      "target": "0x8fb8"
+    },
+    {
+      "entry": "0x94e9",
+      "index": 1,
+      "target": "0x9050"
+    },
+    {
+      "entry": "0x94e9",
+      "index": 2,
+      "target": "0x9064"
+    },
+    {
+      "entry": "0x94e9",
+      "index": 3,
+      "target": "0x90dc"
+    },
+    {
+      "entry": "0x94e9",
+      "index": 4,
+      "target": "0x9100"
+    },
+    {
+      "entry": "0x94e9",
+      "index": 5,
+      "target": "0x9100"
+    },
+    {
+      "entry": "0x9b09",
+      "index": 0,
+      "target": "0x8fb8"
+    },
+    {
+      "entry": "0x9b09",
+      "index": 1,
+      "target": "0x9050"
+    },
+    {
+      "entry": "0x9b09",
+      "index": 2,
+      "target": "0x9064"
+    },
+    {
+      "entry": "0x9b09",
+      "index": 3,
+      "target": "0x90dc"
+    },
+    {
+      "entry": "0x9b09",
+      "index": 4,
+      "target": "0x9100"
+    },
+    {
+      "entry": "0x9b09",
+      "index": 5,
+      "target": "0x9100"
+    },
+    {
+      "entry": "0x9baf",
+      "index": 0,
+      "target": "0x8fb8"
+    },
+    {
+      "entry": "0x9baf",
+      "index": 1,
+      "target": "0x9050"
+    },
+    {
+      "entry": "0x9baf",
+      "index": 2,
+      "target": "0x9064"
+    },
+    {
+      "entry": "0x9baf",
+      "index": 3,
+      "target": "0x90dc"
+    },
+    {
+      "entry": "0x9baf",
+      "index": 4,
+      "target": "0x9100"
+    },
+    {
+      "entry": "0x9baf",
+      "index": 5,
+      "target": "0x9100"
+    }
+  ],
+  "passed": true
+}

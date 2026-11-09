@@ -1,0 +1,17 @@
+
+/tmp/tmpid8sdb8_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000367f4 <.data+0x367f4>:
+000367f4: 364100   entry        a1, 0x20 ; Capstone
+   367f7:	81ad73        	l32r	a8, 0x136ac (0xbe80)
+   367fa:	91ad73        	l32r	a9, 0x136b0 (0xb804)
+   367fd:	8208f8        	l8ui	a8, a8, 248
+00036800: 0002da   ufloat.s     f0, a2, 0 ; Capstone
+   36803:	9088a0        	addx4	a8, a8, a9
+00036806: 03487f   ssi          f0, a8, 0x1fc ; Capstone
+00036809: 656dec   call8        . -0x13928 ; Capstone ; target=0x22ee0
+0003680c: 1df0     retw.n        ; Capstone
+	...

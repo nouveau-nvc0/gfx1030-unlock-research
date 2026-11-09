@@ -1,0 +1,29 @@
+HIP version: 7.16.26385-0000000
+
+==hipconfig
+HIP_PATH           :/opt/rocm/core-10.1
+ROCM_PATH          :/opt/rocm/core-10.1
+HIP_COMPILER       :clang
+HIP_PLATFORM       :amd
+HIP_RUNTIME        :rocclr
+CPP_CONFIG         : -D__HIP_PLATFORM_HCC__= -D__HIP_PLATFORM_AMD__= -I/opt/rocm/core-10.1/include -I/opt/rocm/core-10.1/hsa/include
+
+==hip-clang
+HIP_CLANG_PATH     :/opt/rocm/core-10.1/lib/llvm/bin
+AMD clang version 24.0.0git (https://github.com/ROCm/llvm-project.git d6f6cb691863e9258034ab48c1dfce21689d5606)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /opt/rocm/core-10.1/lib/llvm/bin
+Configuration file: /opt/rocm/core-10.1/lib/llvm/bin/clang++.cfg
+hip-clang-cxxflags :
+ -O3
+hip-clang-ldflags :
+--driver-mode=g++ -O3 --hip-link
+
+== Environment Variables
+PATH =/opt/gpu-workload-venv/bin:/opt/llvm/bin:/opt/rocm/bin:/opt/llvm/bin:/opt/rocm/bin:/opt/rocm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+LD_LIBRARY_PATH=/opt/llvm/lib:/opt/llvm/lib/x86_64-unknown-linux-gnu:/opt/rocm/lib:/opt/rocm/lib64
+HIP_VISIBLE_DEVICES=0,1,2
+
+== Linux Kernel
+

@@ -1,0 +1,457 @@
+{
+  "scope": "Local targeted-listing locator; no memory-value propagation or global completeness claim. Optional JX edges describe initial tables, not runtime immutability.",
+  "indirect_edges": null,
+  "reports": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/022d8.txt",
+      "reachable_in_window": 295,
+      "calls": [
+        {
+          "pc": "0x2467",
+          "operation": "call8",
+          "target": "0x2b44",
+          "integer_constants": {
+            "a10": "0x18",
+            "a11": "0x0",
+            "a2": "0x5ffee348",
+            "a3": "0x5ffee264",
+            "a4": "0x6803ba00",
+            "a5": "0x6803b200",
+            "a6": "0x1",
+            "a7": "0xfffe03ff"
+          }
+        },
+        {
+          "pc": "0x2496",
+          "operation": "call8",
+          "target": "0x2b44",
+          "integer_constants": {
+            "a10": "0x15",
+            "a11": "0x0",
+            "a15": "0x5ffee278",
+            "a2": "0x5ffee348",
+            "a3": "0x5ffee264",
+            "a4": "0x6803ba00",
+            "a5": "0x6803b200",
+            "a6": "0x1",
+            "a7": "0xfffe03ff"
+          }
+        },
+        {
+          "pc": "0x24a3",
+          "operation": "call8",
+          "target": "0x2b44",
+          "integer_constants": {
+            "a10": "0x14",
+            "a2": "0x5ffee348",
+            "a3": "0x5ffee264",
+            "a4": "0x6803ba00",
+            "a5": "0x6803b200",
+            "a6": "0x1",
+            "a7": "0xfffe03ff"
+          }
+        },
+        {
+          "pc": "0x25a1",
+          "operation": "call8",
+          "target": "0x2b44",
+          "integer_constants": {
+            "a10": "0x16",
+            "a2": "0x5ffee348",
+            "a3": "0x5ffee264",
+            "a4": "0x6803ba00",
+            "a5": "0x6803b200",
+            "a6": "0x1",
+            "a7": "0xfffe03ff"
+          }
+        }
+      ],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 314,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x22fd",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a12",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "0"
+        },
+        {
+          "pc": "0x2302",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a14",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "4"
+        },
+        {
+          "pc": "0x231e",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a10",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "32"
+        },
+        {
+          "pc": "0x2326",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a14",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "24"
+        },
+        {
+          "pc": "0x2368",
+          "operation": "s8i",
+          "address": "0x5ffee272",
+          "address_candidates": [],
+          "source": "a11",
+          "source_constant": 0,
+          "base": "a3",
+          "offset": "14"
+        },
+        {
+          "pc": "0x2377",
+          "operation": "s8i",
+          "address": "0x5ffee3c5",
+          "address_candidates": [],
+          "source": "a10",
+          "source_constant": null,
+          "base": "a2",
+          "offset": "125"
+        },
+        {
+          "pc": "0x238e",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a10",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "8"
+        },
+        {
+          "pc": "0x23d1",
+          "operation": "s8i",
+          "address": "0x5ffee272",
+          "address_candidates": [],
+          "source": "a10",
+          "source_constant": 0,
+          "base": "a3",
+          "offset": "14"
+        },
+        {
+          "pc": "0x23e0",
+          "operation": "s8i",
+          "address": "0x5ffee3c5",
+          "address_candidates": [],
+          "source": "a12",
+          "source_constant": null,
+          "base": "a2",
+          "offset": "125"
+        },
+        {
+          "pc": "0x23ec",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a13",
+          "source_constant": 0,
+          "base": "a1",
+          "offset": "4"
+        },
+        {
+          "pc": "0x2431",
+          "operation": "s8i",
+          "address": "0x5ffee272",
+          "address_candidates": [],
+          "source": "a15",
+          "source_constant": 0,
+          "base": "a3",
+          "offset": "14"
+        },
+        {
+          "pc": "0x243e",
+          "operation": "s8i",
+          "address": "0x5ffee3c5",
+          "address_candidates": [],
+          "source": "a8",
+          "source_constant": 0,
+          "base": "a2",
+          "offset": "125"
+        },
+        {
+          "pc": "0x2444",
+          "operation": "s8i",
+          "address": "0x5ffee272",
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": 1,
+          "base": "a3",
+          "offset": "14"
+        },
+        {
+          "pc": "0x2449",
+          "operation": "s8i",
+          "address": "0x5ffee272",
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": 1,
+          "base": "a3",
+          "offset": "14"
+        },
+        {
+          "pc": "0x2455",
+          "operation": "s32i",
+          "address": "0x6803ba44",
+          "address_candidates": [],
+          "source": "a9",
+          "source_constant": null,
+          "base": "a4",
+          "offset": "68"
+        },
+        {
+          "pc": "0x2458",
+          "operation": "s32i",
+          "address": "0x6803b274",
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": 1,
+          "base": "a5",
+          "offset": "116"
+        },
+        {
+          "pc": "0x245e",
+          "operation": "s8i",
+          "address": "0x5ffee3c4",
+          "address_candidates": [],
+          "source": "a10",
+          "source_constant": null,
+          "base": "a2",
+          "offset": "124"
+        },
+        {
+          "pc": "0x246c",
+          "operation": "s8i",
+          "address": "0x5ffee3c9",
+          "address_candidates": [],
+          "source": "a14",
+          "source_constant": null,
+          "base": "a2",
+          "offset": "129"
+        },
+        {
+          "pc": "0x2475",
+          "operation": "s8i",
+          "address": "0x5ffee272",
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": 1,
+          "base": "a3",
+          "offset": "14"
+        },
+        {
+          "pc": "0x2478",
+          "operation": "s8i",
+          "address": "0x5ffee272",
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": 1,
+          "base": "a3",
+          "offset": "14"
+        },
+        {
+          "pc": "0x2484",
+          "operation": "s32i",
+          "address": "0x6803ba44",
+          "address_candidates": [],
+          "source": "a9",
+          "source_constant": null,
+          "base": "a4",
+          "offset": "68"
+        },
+        {
+          "pc": "0x2487",
+          "operation": "s32i",
+          "address": "0x6803b274",
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": 1,
+          "base": "a5",
+          "offset": "116"
+        },
+        {
+          "pc": "0x248d",
+          "operation": "s8i",
+          "address": "0x5ffee3c4",
+          "address_candidates": [],
+          "source": "a10",
+          "source_constant": null,
+          "base": "a2",
+          "offset": "124"
+        },
+        {
+          "pc": "0x24a8",
+          "operation": "s8i",
+          "address": "0x5ffee3c9",
+          "address_candidates": [],
+          "source": "a15",
+          "source_constant": null,
+          "base": "a2",
+          "offset": "129"
+        },
+        {
+          "pc": "0x24c9",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a10",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "12"
+        },
+        {
+          "pc": "0x24d5",
+          "operation": "s8i",
+          "address": "0x5ffee272",
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": 1,
+          "base": "a3",
+          "offset": "14"
+        },
+        {
+          "pc": "0x2510",
+          "operation": "s8i",
+          "address": "0x5ffee272",
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": 1,
+          "base": "a3",
+          "offset": "14"
+        },
+        {
+          "pc": "0x2550",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a9",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "12"
+        },
+        {
+          "pc": "0x2562",
+          "operation": "s8i",
+          "address": "0x5ffee272",
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": 1,
+          "base": "a3",
+          "offset": "14"
+        },
+        {
+          "pc": "0x257b",
+          "operation": "s8i",
+          "address": "0x5ffee272",
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": 1,
+          "base": "a3",
+          "offset": "14"
+        },
+        {
+          "pc": "0x2580",
+          "operation": "s8i",
+          "address": "0x5ffee272",
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": 1,
+          "base": "a3",
+          "offset": "14"
+        },
+        {
+          "pc": "0x258c",
+          "operation": "s32i",
+          "address": "0x6803ba44",
+          "address_candidates": [],
+          "source": "a9",
+          "source_constant": null,
+          "base": "a4",
+          "offset": "68"
+        },
+        {
+          "pc": "0x258f",
+          "operation": "s32i",
+          "address": "0x6803b274",
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": 1,
+          "base": "a5",
+          "offset": "116"
+        },
+        {
+          "pc": "0x2595",
+          "operation": "s8i",
+          "address": "0x5ffee3c4",
+          "address_candidates": [],
+          "source": "a12",
+          "source_constant": null,
+          "base": "a2",
+          "offset": "124"
+        },
+        {
+          "pc": "0x25e1",
+          "operation": "s8i",
+          "address": "0x5ffee3c5",
+          "address_candidates": [],
+          "source": "a12",
+          "source_constant": null,
+          "base": "a2",
+          "offset": "125"
+        },
+        {
+          "pc": "0x25ec",
+          "operation": "s8i",
+          "address": "0x5ffee3c5",
+          "address_candidates": [],
+          "source": "a14",
+          "source_constant": 0,
+          "base": "a2",
+          "offset": "125"
+        },
+        {
+          "pc": "0x260b",
+          "operation": "s8i",
+          "address": "0x5ffee3c5",
+          "address_candidates": [],
+          "source": "a8",
+          "source_constant": null,
+          "base": "a2",
+          "offset": "125"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/029b0.txt",
+      "reachable_in_window": 7,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 7,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    }
+  ]
+}

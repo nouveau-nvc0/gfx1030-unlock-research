@@ -1,0 +1,55 @@
+
+/tmp/tmpivwkexcq/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001b8ec <.data+0x1b8ec>:
+0001b8ec: 366100   entry        a1, 0x30 ; Capstone
+   1b8ef:	b1b4dd        	l32r	a11, 0x12fc0 (0xe1bc)
+0001b8f2: 5023fa   wfr          f2, a3 ; Capstone
+   1b8f5:	0c0a      	movi.n	a10, 0
+   1b8f7:	820b31        	l8ui	a8, a11, 49
+0001b8fa: 5012fa   wfr          f1, a2 ; Capstone
+   1b8fd:	92cb48        	addi	a9, a11, 72
+   1b900:	165806        	beqz	a8, 0x1b969
+   1b903:	d1b0dd        	l32r	a13, 0x12fc4 (0x38d1b717)
+   1b906:	c20bca        	l8ui	a12, a11, 202
+0001b909: 234101   ssi          f2, a1, 4 ; Capstone
+0001b90c: 500dfa   wfr          f0, a13 ; Capstone
+0001b90f: 769c15   loopnez      a12, . +0x19 ; Capstone
+0001b912: 330900   lsi          f3, a9, 0 ; Capstone
+0001b915: 30211a   sub.s        f2, f1, f3 ; Capstone
+0001b918: 1022fa   abs.s        f2, f2 ; Capstone
+0001b91b: 00024b   olt.s        b0, f2, f0 ; Capstone
+0001b91e: 134100   ssi          f1, a1, 0 ; Capstone
+   1b921:	4b99      	addi.n	a9, a9, 4
+0001b923: 761005   bt           b0, . +9 ; Capstone
+   1b926:	1baa      	addi.n	a10, a10, 1
+   1b928:	0c12      	movi.n	a2, 1
+0001b92a: 1df0     retw.n        ; Capstone
+   1b92c:	f1a7dd        	l32r	a15, 0x12fc8 (0xa1f0)
+   1b92f:	fafa      	add.n	a15, a10, a15
+   1b931:	f20f80        	l8ui	a15, a15, 128
+   1b934:	0c1e      	movi.n	a14, 1
+   1b936:	001f40        	ssl	a15
+   1b939:	00eea1        	sll	a14, a14
+0001b93c: 004eca   float.s      f4, a14, 0 ; Capstone
+0001b93f: 40a4fa   rfr          a10, f4 ; Capstone
+0001b942: a5451d   call8        . +0x1d45c ; Capstone ; target=0x38d9c
+   1b945:	91a1dd        	l32r	a9, 0x12fcc (0x117c4)
+0001b948: 630100   lsi          f6, a1, 0 ; Capstone
+0001b94b: 530101   lsi          f5, a1, 4 ; Capstone
+0001b94e: 507afa   wfr          f7, a10 ; Capstone
+0001b951: 70565a   msub.s       f5, f6, f7 ; Capstone
+0001b954: 630900   lsi          f6, a9, 0 ; Capstone
+0001b957: 6055fa   neg.s        f5, f5 ; Capstone
+0001b95a: 1055fa   abs.s        f5, f5 ; Capstone
+0001b95d: 60154b   olt.s        b1, f5, f6 ; Capstone
+   1b960:	0c18      	movi.n	a8, 1
+   1b962:	0c02      	movi.n	a2, 0
+0001b964: 1028d3   movt         a2, a8, b1 ; Capstone
+0001b967: 1df0     retw.n        ; Capstone
+   1b969:	0c12      	movi.n	a2, 1
+0001b96b: 1df0     retw.n        ; Capstone
+   1b96d:	000000        	ill

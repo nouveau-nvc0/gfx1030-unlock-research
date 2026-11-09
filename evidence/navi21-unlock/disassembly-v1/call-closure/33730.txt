@@ -1,0 +1,15 @@
+
+/tmp/tmpugf334bx/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00033730 <.data+0x33730>:
+00033730: 364100   entry        a1, 0x20 ; Capstone
+   33733:	1c5a      	movi.n	a10, 21
+00033735: 25fbff   call8        . -0x4c ; Capstone ; target=0x336e8
+   33738:	1c5a      	movi.n	a10, 21
+   3373a:	0c0b      	movi.n	a11, 0
+0003373c: a56e01   call8        . +0x16ec ; Capstone ; target=0x34e28
+0003373f: 1df0     retw.n        ; Capstone
+   33741:	000000        	ill

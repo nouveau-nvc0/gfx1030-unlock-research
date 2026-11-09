@@ -1,0 +1,27 @@
+
+/tmp/tmpnt90vx6s/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001ea94 <.data+0x1ea94>:
+0001ea94: 364100   entry        a1, 0x20 ; Capstone
+   1ea97:	0c3a      	movi.n	a10, 3
+0001ea99: 65cc16   call8        . +0x16cc8 ; Capstone ; target=0x35760
+   1ea9c:	ac3a      	beqz.n	a10, 0x1eac3
+   1ea9e:	21e5d1        	l32r	a2, 0x13234 (0xe170)
+   1eaa1:	91f9d1        	l32r	a9, 0x13288 (0xa1f4)
+   1eaa4:	82027e        	l8ui	a8, a2, 126
+   1eaa7:	92297f        	l32i	a9, a9, 0x1fc
+   1eaaa:	dc58      	bnez.n	a8, 0x1eac3
+   1eaac:	a7e913        	bbsi	a9, 10, 0x1eac3
+   1eaaf:	a1f7d1        	l32r	a10, 0x1328c (0x28848)
+   1eab2:	0c4b      	movi.n	a11, 4
+   1eab4:	0c2c      	movi.n	a12, 2
+   1eab6:	d1f6d1        	l32r	a13, 0x13290 (0xc350)
+0001eab9: a5ae0a   call8        . +0xaaec ; Capstone ; target=0x295a4
+   1eabc:	0c1a      	movi.n	a10, 1
+   1eabe:	a2427e        	s8i	a10, a2, 126
+0001eac1: 1df0     retw.n        ; Capstone
+0001eac3: 1df0     retw.n        ; Capstone
+   1eac5:	000000        	ill

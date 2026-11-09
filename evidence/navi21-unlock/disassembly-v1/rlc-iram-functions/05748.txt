@@ -1,0 +1,17 @@
+
+/tmp/tmp94va1yp_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005748 <.data+0x5748>:
+00005748: 366100   entry        a1, 0x30 ; Capstone
+    574b:	0c15      	movi.n	a5, 1
+    574d:	814bdf        	l32r	a8, 0xffffd47c (0x5ffedae4) ; inferred DRAM map 0x5ffec000
+    5750:	20a0f4        	extui	a10, a2, 0, 16
+    5753:	2090f5        	extui	a9, a2, 16, 16
+    5756:	925813        	s16i	a9, a8, 38
+    5759:	a25812        	s16i	a10, a8, 36
+    575c:	52483e        	s8i	a5, a8, 62
+    575f:	325814        	s16i	a3, a8, 40
+00005762: 1df0     retw.n        ; Capstone

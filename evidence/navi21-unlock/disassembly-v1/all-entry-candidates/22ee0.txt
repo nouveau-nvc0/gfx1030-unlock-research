@@ -1,0 +1,37 @@
+
+/tmp/tmpayme9_wy/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00022ee0 <.data+0x22ee0>:
+00022ee0: 364100   entry        a1, 0x20 ; Capstone
+   22ee3:	a1f1c1        	l32r	a10, 0x136a8 (0xbef8)
+   22ee6:	a20a80        	l8ui	a10, a10, 128
+00022ee9: e5a30b   call8        . +0xba40 ; Capstone ; target=0x2e928
+   22eec:	c1f0c1        	l32r	a12, 0x136ac (0xbe80)
+   22eef:	d1f0c1        	l32r	a13, 0x136b0 (0xb804)
+   22ef2:	c20cf8        	l8ui	a12, a12, 248
+   22ef5:	b133c0        	l32r	a11, 0x12fc4 (0x38d1b717)
+00022ef8: 230a03   lsi          f2, a10, 0xc ; Capstone
+   22efb:	d0cca0        	addx4	a12, a12, a13
+00022efe: 330c7f   lsi          f3, a12, 0x1fc ; Capstone
+00022f01: 30221a   sub.s        f2, f2, f3 ; Capstone
+00022f04: 500bfa   wfr          f0, a11 ; Capstone
+00022f07: 1012fa   abs.s        f1, f2 ; Capstone
+00022f0a: 10006b   ole.s        b0, f0, f1 ; Capstone
+   22f0d:	21e9c1        	l32r	a2, 0x136b4 (0xba20)
+00022f10: 3090fa   const.s      f9, 0 ; Capstone
+00022f13: 760019   bf           b0, . +0x1d ; Capstone
+00022f16: 40a2fa   rfr          a10, f2 ; Capstone
+00022f19: 25e815   call8        . +0x15e84 ; Capstone ; target=0x38d9c
+00022f1c: 83027e   lsi          f8, a2, 0x1f8 ; Capstone
+00022f1f: 73027f   lsi          f7, a2, 0x1fc ; Capstone
+00022f22: 80671a   sub.s        f6, f7, f8 ; Capstone
+00022f25: 505afa   wfr          f5, a10 ; Capstone
+00022f28: 60452a   mul.s        f4, f5, f6 ; Capstone
+00022f2b: 434280   ssi          f4, a2, 0x200 ; Capstone
+00022f2e: 1df0     retw.n        ; Capstone
+00022f30: 934280   ssi          f9, a2, 0x200 ; Capstone
+00022f33: 1df0     retw.n        ; Capstone
+   22f35:	000000        	ill

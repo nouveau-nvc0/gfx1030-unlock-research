@@ -1,0 +1,15 @@
+
+/tmp/tmpem_q2tci/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001a5f8 <.data+0x1a5f8>:
+0001a5f8: 364100   entry        a1, 0x20 ; Capstone
+   1a5fb:	3131e2        	l32r	a3, 0x12ec0 (0x7708)
+   1a5fe:	3a32      	add.n	a3, a2, a3
+   1a600:	220380        	l8ui	a2, a3, 128
+   1a603:	cc12      	bnez.n	a2, 0x1a608
+   1a605:	06ffff        	j	0x1a605
+0001a608: 1df0     retw.n        ; Capstone
+	...

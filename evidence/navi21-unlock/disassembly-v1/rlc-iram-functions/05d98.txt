@@ -1,0 +1,91 @@
+
+/tmp/tmp8tlxb6cw/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005d98 <.data+0x5d98>:
+00005d98: 364100   entry        a1, 0x20 ; Capstone
+    5d9b:	71bcdd        	l32r	a7, 0xffffd48c (0x5ffee5a8) ; inferred DRAM map 0x5ffec000
+    5d9e:	6118dd        	l32r	a6, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    5da1:	4827      	l32i.n	a4, a7, 8
+    5da3:	0c28      	movi.n	a8, 2
+    5da5:	522703        	l32i	a5, a7, 12
+    5da8:	ac54      	beqz.n	a4, 0x5dd1
+    5daa:	579346        	bne	a3, a5, 0x5df4
+    5dad:	322704        	l32i	a3, a7, 16
+    5db0:	0c07      	movi.n	a7, 0
+    5db2:	267343        	beqi	a3, 7, 0x5df9
+    5db5:	0c05      	movi.n	a5, 0
+    5db7:	264349        	beqi	a3, 4, 0x5e04
+    5dba:	26130a        	beqi	a3, 1, 0x5dc8
+    5dbd:	509720        	or	a9, a7, a5
+    5dc0:	8cd9      	beqz.n	a9, 0x5dd1
+    5dc2:	8266f1        	s32i	a8, a6, 0x3c4
+00005dc5: 1df0     retw.n        ; Capstone
+00005dc7: 006622   orb          b6, b6, b0 ; Capstone
+    5dca:	f650a7        	bgeui	a0, 5, 0x5d75
+00005dcd: 20560a   add.s        f5, f6, f2 ; Capstone
+    5dd0:	ff          	.byte 0xff
+    5dd1:	26723b        	beqi	a2, 7, 0x5e10
+    5dd4:	266236        	beqi	a2, 6, 0x5e0e
+    5dd7:	1c15      	movi.n	a5, 17
+    5dd9:	1c23      	movi.n	a3, 18
+    5ddb:	265239        	beqi	a2, 5, 0x5e18
+    5dde:	26423e        	beqi	a2, 4, 0x5e20
+    5de1:	263243        	beqi	a2, 3, 0x5e28
+    5de4:	262248        	beqi	a2, 2, 0x5e30
+    5de7:	26124a        	beqi	a2, 1, 0x5e35
+    5dea:	ac02      	beqz.n	a2, 0x5e0e
+    5dec:	0c1b      	movi.n	a11, 1
+    5dee:	b266f1        	s32i	a11, a6, 0x3c4
+00005df1: 1df0     retw.n        ; Capstone
+00005df3: 008266   ee.ldf.64.xp f8, f6, a0, a2 ; Capstone
+    5df6:	f11df0        	l32r	a15, 0x1e6c (0xe00efdff)
+    5df9:	52c2fc        	addi	a5, a2, -4
+    5dfc:	0c1c      	movi.n	a12, 1
+    5dfe:	507c93        	movnez	a7, a12, a5
+    5e01:	06ecff        	j	0x5db5
+    5e04:	0b92      	addi.n	a9, a2, -1
+    5e06:	0c1d      	movi.n	a13, 1
+    5e08:	905d93        	movnez	a5, a13, a9
+    5e0b:	c6eaff        	j	0x5dba
+00005e0e: 1df0     retw.n        ; Capstone
+    5e10:	1c5e      	movi.n	a14, 21
+    5e12:	e266f1        	s32i	a14, a6, 0x3c4
+00005e15: 1df0     retw.n        ; Capstone
+00005e17: 005266   ee.ldf.64.xp f5, f6, a0, a2 ; Capstone
+    5e1a:	f13266        	l32r	a15, 0xfffdf6e4
+    5e1d:	f11df0        	l32r	a15, 0x1e94 (0xaa4b336a)
+    5e20:	1c4f      	movi.n	a15, 20
+    5e22:	f266f1        	s32i	a15, a6, 0x3c4
+00005e25: 1df0     retw.n        ; Capstone
+    5e27:	001c34        	extui	a1, a0, 12, 4
+    5e2a:	4266f1        	s32i	a4, a6, 0x3c4
+00005e2d: 1df0     retw.n        ; Capstone
+00005e2f: 003266   ee.ldf.64.xp f3, f6, a0, a2 ; Capstone
+    5e32:	f11df0        	l32r	a15, 0x1ea8 (0x371a25a2)
+    5e35:	5266f1        	s32i	a5, a6, 0x3c4
+00005e38: 1df0     retw.n        ; Capstone
+	...
+
+; Alternate branch-target decode
+    5df4:	8266f1        	s32i	a8, a6, 0x3c4
+00005df7: 1df0     retw.n        ; Capstone
+
+; Alternate branch-target decode
+    5dc8:	6622f6        	bnei	a2, 2, 0x5dc2
+    5dcb:	50a720        	or	a10, a7, a5
+    5dce:	560aff        	bnez	a10, 0x5dc2
+
+; Alternate branch-target decode
+    5e18:	5266f1        	s32i	a5, a6, 0x3c4
+    5e1b:	3266f1        	s32i	a3, a6, 0x3c4
+00005e1e: 1df0     retw.n        ; Capstone
+
+; Alternate branch-target decode
+    5e28:	1c34      	movi.n	a4, 19
+
+; Alternate branch-target decode
+    5e30:	3266f1        	s32i	a3, a6, 0x3c4
+00005e33: 1df0     retw.n        ; Capstone

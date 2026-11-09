@@ -1,0 +1,19 @@
+
+/tmp/tmp_dnxe8ou/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00022f38 <.data+0x22f38>:
+00022f38: 364100   entry        a1, 0x20 ; Capstone
+   22f3b:	91dfc1        	l32r	a9, 0x136b8 (0xa238)
+   22f3e:	92197e        	l16ui	a9, a9, 252
+   22f41:	81dcc1        	l32r	a8, 0x136b4 (0xba20)
+00022f44: 0009da   ufloat.s     f0, a9, 0 ; Capstone
+00022f47: 03487f   ssi          f0, a8, 0x1fc ; Capstone
+00022f4a: 65f9ff   call8        . -0x68 ; Capstone ; target=0x22ee0
+   22f4d:	ad02      	mov.n	a10, a2
+   22f4f:	0c1b      	movi.n	a11, 1
+00022f51: a514df   call8        . -0x20eb4 ; Capstone ; target=0x209c
+00022f54: 1df0     retw.n        ; Capstone
+	...

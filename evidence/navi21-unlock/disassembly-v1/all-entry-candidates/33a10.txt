@@ -1,0 +1,82 @@
+
+/tmp/tmp9g9hhiv9/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00033a10 <.data+0x33a10>:
+00033a10: 366100   entry        a1, 0x30 ; Capstone
+   33a13:	518f7d        	l32r	a5, 0x13050 (0xaaf0)
+   33a16:	0c1a      	movi.n	a10, 1
+   33a18:	2042f0        	subx8	a4, a2, a2
+   33a1b:	5044a0        	addx4	a4, a4, a5
+   33a1e:	32047d        	l8ui	a3, a4, 125
+   33a21:	91a17d        	l32r	a9, 0x130a8 (0xafb8)
+   33a24:	1ca6      	movi.n	a6, 26
+   33a26:	6033d1        	mul16s	a3, a3, a6
+   33a29:	f2241c        	l32i	a15, a4, 112
+   33a2c:	3a39      	add.n	a3, a9, a3
+   33a2e:	320380        	l8ui	a3, a3, 128
+   33a31:	81747d        	l32r	a8, 0x13004 (0xfffff)
+   33a34:	71897d        	l32r	a7, 0x13058 (0x11ffe00)
+   33a37:	3aff      	add.n	a15, a15, a3
+   33a39:	80ff10        	and	a15, a15, a8
+   33a3c:	7aff      	add.n	a15, a15, a7
+   33a3e:	c02000        	memw
+   33a41:	b1957d        	l32r	a11, 0x13098 (0x447a0000)
+00033a44: 13041e   lsi          f1, a4, 0x78 ; Capstone
+00033a47: 502bfa   wfr          f2, a11 ; Capstone
+00033a4a: 20012a   mul.s        f0, f1, f2 ; Capstone
+   33a4d:	522f80        	l32i	a5, a15, 0x200
+00033a50: 0030ea   utrunc.s     a3, f0, 0 ; Capstone
+   33a53:	5901      	s32i.n	a5, a1, 0
+   33a55:	324103        	s8i	a3, a1, 3
+   33a58:	e801      	l32i.n	a14, a1, 0
+   33a5a:	c02000        	memw
+   33a5d:	e26f80        	s32i	a14, a15, 0x200
+   33a60:	d2047d        	l8ui	a13, a4, 125
+   33a63:	60ddd1        	mul16s	a13, a13, a6
+   33a66:	c2241c        	l32i	a12, a4, 112
+   33a69:	dad9      	add.n	a13, a9, a13
+   33a6b:	d21d43        	l16ui	a13, a13, 134
+   33a6e:	dacc      	add.n	a12, a12, a13
+   33a70:	80cc10        	and	a12, a12, a8
+   33a73:	7acc      	add.n	a12, a12, a7
+   33a75:	c02000        	memw
+   33a78:	b22c80        	l32i	a11, a12, 0x200
+   33a7b:	a0bb20        	or	a11, a11, a10
+   33a7e:	c02000        	memw
+   33a81:	b26c80        	s32i	a11, a12, 0x200
+   33a84:	52047d        	l8ui	a5, a4, 125
+   33a87:	6055d1        	mul16s	a5, a5, a6
+   33a8a:	62241c        	l32i	a6, a4, 112
+   33a8d:	5a59      	add.n	a5, a9, a5
+   33a8f:	321542        	l16ui	a3, a5, 132
+   33a92:	3a36      	add.n	a3, a6, a3
+   33a94:	803310        	and	a3, a3, a8
+   33a97:	7a23      	add.n	a2, a3, a7
+   33a99:	c02000        	memw
+   33a9c:	b22280        	l32i	a11, a2, 0x200
+   33a9f:	876bf6        	bbci	a11, 8, 0x33a99
+   33aa2:	d21544        	l16ui	a13, a5, 136
+   33aa5:	c1787d        	l32r	a12, 0x13088 (0x10000)
+   33aa8:	6add      	add.n	a13, a13, a6
+   33aaa:	80dd10        	and	a13, a13, a8
+   33aad:	7add      	add.n	a13, a13, a7
+   33aaf:	c02000        	memw
+   33ab2:	c26d80        	s32i	a12, a13, 0x200
+   33ab5:	32047d        	l8ui	a3, a4, 125
+   33ab8:	1cab      	movi.n	a11, 26
+   33aba:	b033d1        	mul16s	a3, a3, a11
+   33abd:	22241c        	l32i	a2, a4, 112
+   33ac0:	3a39      	add.n	a3, a9, a3
+   33ac2:	321344        	l16ui	a3, a3, 136
+   33ac5:	3a22      	add.n	a2, a2, a3
+   33ac7:	802210        	and	a2, a2, a8
+   33aca:	7a22      	add.n	a2, a2, a7
+   33acc:	c02000        	memw
+   33acf:	e22280        	l32i	a14, a2, 0x200
+   33ad2:	07fef6        	bbsi	a14, 16, 0x33acc
+   33ad5:	a2447c        	s8i	a10, a4, 124
+00033ad8: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,47 @@
+
+/tmp/tmpgen6dlec/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001a58 <.data+0x1a58>:
+00001a58: 364100   entry        a1, 0x20 ; Capstone
+    1a5b:	806f00        	rsil	a8, 15
+    1a5e:	51c1ed        	l32r	a5, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    1a61:	41c1ed        	l32r	a4, 0xffffd168 (0x60039e00) ; inferred DRAM map 0x5ffec000
+    1a64:	0c06      	movi.n	a6, 0
+    1a66:	626580        	s32i	a6, a5, 0x200
+    1a69:	226480        	s32i	a2, a4, 0x200
+    1a6c:	80e613        	wsr.ps	a8
+    1a6f:	102000        	rsync
+    1a72:	306f00        	rsil	a3, 15
+    1a75:	626580        	s32i	a6, a5, 0x200
+    1a78:	72a008        	movi	a7, 8
+    1a7b:	726484        	s32i	a7, a4, 0x210
+    1a7e:	30e613        	wsr.ps	a3
+    1a81:	102000        	rsync
+    1a84:	a06f00        	rsil	a10, 15
+    1a87:	626580        	s32i	a6, a5, 0x200
+    1a8a:	922485        	l32i	a9, a4, 0x214
+    1a8d:	a0e613        	wsr.ps	a10
+    1a90:	102000        	rsync
+    1a93:	1769ed        	bbci	a9, 1, 0x1a84
+    1a96:	b06f00        	rsil	a11, 15
+    1a99:	626580        	s32i	a6, a5, 0x200
+    1a9c:	c2a004        	movi	a12, 4
+    1a9f:	c26484        	s32i	a12, a4, 0x210
+    1aa2:	b0e613        	wsr.ps	a11
+    1aa5:	102000        	rsync
+    1aa8:	e06f00        	rsil	a14, 15
+    1aab:	626580        	s32i	a6, a5, 0x200
+    1aae:	d22485        	l32i	a13, a4, 0x214
+    1ab1:	e0e613        	wsr.ps	a14
+    1ab4:	102000        	rsync
+    1ab7:	17eded        	bbsi	a13, 1, 0x1aa8
+    1aba:	f06f00        	rsil	a15, 15
+    1abd:	626580        	s32i	a6, a5, 0x200
+    1ac0:	222483        	l32i	a2, a4, 0x20c
+    1ac3:	f0e613        	wsr.ps	a15
+    1ac6:	102000        	rsync
+00001ac9: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,29 @@
+
+/tmp/tmpew9ft0vd/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00034cac <.data+0x34cac>:
+00034cac: 364100   entry        a1, 0x20 ; Capstone
+   34caf:	5812      	l32i.n	a5, a2, 4
+   34cb1:	4a55      	add.n	a5, a5, a4
+   34cb3:	5913      	s32i.n	a5, a3, 4
+   34cb5:	4802      	l32i.n	a4, a2, 0
+   34cb7:	4903      	s32i.n	a4, a3, 0
+   34cb9:	b20208        	l8ui	a11, a2, 8
+   34cbc:	b24308        	s8i	a11, a3, 8
+   34cbf:	a20209        	l8ui	a10, a2, 9
+   34cc2:	a24309        	s8i	a10, a3, 9
+   34cc5:	92020a        	l8ui	a9, a2, 10
+   34cc8:	92430a        	s8i	a9, a3, 10
+   34ccb:	82020b        	l8ui	a8, a2, 11
+   34cce:	82430b        	s8i	a8, a3, 11
+   34cd1:	72020c        	l8ui	a7, a2, 12
+   34cd4:	72430c        	s8i	a7, a3, 12
+   34cd7:	6812      	l32i.n	a6, a2, 4
+   34cd9:	1b84      	addi.n	a8, a4, 1
+   34cdb:	67b501        	bgeu	a5, a6, 0x34ce0
+   34cde:	8903      	s32i.n	a8, a3, 0
+00034ce0: 1df0     retw.n        ; Capstone
+	...

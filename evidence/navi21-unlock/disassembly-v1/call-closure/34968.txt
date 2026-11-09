@@ -1,0 +1,18 @@
+
+/tmp/tmp_bymr6rq/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00034968 <.data+0x34968>:
+00034968: 364100   entry        a1, 0x20 ; Capstone
+   3496b:	811c7b        	l32r	a8, 0x135dc (0xa3c0)
+   3496e:	203541        	srli	a3, a2, 5
+   34971:	8033a0        	addx4	a3, a3, a8
+   34974:	32237f        	l32i	a3, a3, 0x1fc
+   34977:	208044        	extui	a8, a2, 0, 5
+   3497a:	000840        	ssr	a8
+   3497d:	302091        	srl	a2, a3
+   34980:	202004        	extui	a2, a2, 0, 1
+00034983: 1df0     retw.n        ; Capstone
+   34985:	000000        	ill

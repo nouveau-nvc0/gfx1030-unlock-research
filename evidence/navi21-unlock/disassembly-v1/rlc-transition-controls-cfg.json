@@ -1,0 +1,498 @@
+{
+  "scope": "Local targeted-listing locator; no memory-value propagation or global completeness claim. Optional JX edges describe initial tables, not runtime immutability.",
+  "indirect_edges": null,
+  "reports": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/037d8.txt",
+      "reachable_in_window": 36,
+      "calls": [
+        {
+          "pc": "0x37e5",
+          "operation": "call8",
+          "target": "0x1194",
+          "integer_constants": {
+            "a10": "0x1",
+            "a3": "0x6803b600",
+            "a4": "0x24"
+          }
+        },
+        {
+          "pc": "0x37f5",
+          "operation": "call8",
+          "target": "0x383c",
+          "integer_constants": {
+            "a10": "0x1",
+            "a3": "0x6803b600",
+            "a4": "0x24",
+            "a8": "0x0"
+          }
+        },
+        {
+          "pc": "0x3826",
+          "operation": "call8",
+          "target": "0x383c",
+          "integer_constants": {
+            "a10": "0x0",
+            "a14": "0xfffffffe",
+            "a3": "0x6803b600",
+            "a4": "0x24"
+          }
+        },
+        {
+          "pc": "0x3836",
+          "operation": "call8",
+          "target": "0x1194",
+          "integer_constants": {
+            "a10": "0x0",
+            "a3": "0x6803b600",
+            "a4": "0x24",
+            "a8": "0x3"
+          }
+        }
+      ],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 38,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x37ea",
+          "operation": "s32i",
+          "address": "0x6803b9a0",
+          "address_candidates": [],
+          "source": "a8",
+          "source_constant": 0,
+          "base": "a3",
+          "offset": "0x3a0"
+        },
+        {
+          "pc": "0x3800",
+          "operation": "s32i",
+          "address": "0x6803b9b0",
+          "address_candidates": [],
+          "source": "a12",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "0x3b0"
+        },
+        {
+          "pc": "0x3809",
+          "operation": "s32i",
+          "address": "0x6803b9b4",
+          "address_candidates": [],
+          "source": "a10",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "0x3b4"
+        },
+        {
+          "pc": "0x3818",
+          "operation": "s32i",
+          "address": "0x6803b9b0",
+          "address_candidates": [],
+          "source": "a15",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "0x3b0"
+        },
+        {
+          "pc": "0x3823",
+          "operation": "s32i",
+          "address": "0x6803b9b4",
+          "address_candidates": [],
+          "source": "a13",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "0x3b4"
+        },
+        {
+          "pc": "0x382b",
+          "operation": "s32i",
+          "address": "0x6803b9a0",
+          "address_candidates": [],
+          "source": "a8",
+          "source_constant": 3,
+          "base": "a3",
+          "offset": "0x3a0"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03724.txt",
+      "reachable_in_window": 61,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 62,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x3747",
+          "operation": "s32i",
+          "address": "0x70000000",
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": 0,
+          "base": "a5",
+          "offset": "0x200"
+        },
+        {
+          "pc": "0x374a",
+          "operation": "s32i",
+          "address": "0x60004a28",
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": null,
+          "base": "a11",
+          "offset": "40"
+        },
+        {
+          "pc": "0x3759",
+          "operation": "s32i",
+          "address": "0x70000000",
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": 0,
+          "base": "a5",
+          "offset": "0x200"
+        },
+        {
+          "pc": "0x375c",
+          "operation": "s32i.n",
+          "address": "0x60006228",
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": null,
+          "base": "a10",
+          "offset": "40"
+        },
+        {
+          "pc": "0x376a",
+          "operation": "s32i",
+          "address": "0x70000000",
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": 0,
+          "base": "a5",
+          "offset": "0x200"
+        },
+        {
+          "pc": "0x376d",
+          "operation": "s32i",
+          "address": "0x600700a8",
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": null,
+          "base": "a9",
+          "offset": "0x2a8"
+        },
+        {
+          "pc": "0x377c",
+          "operation": "s32i",
+          "address": "0x70000000",
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": 0,
+          "base": "a5",
+          "offset": "0x200"
+        },
+        {
+          "pc": "0x377f",
+          "operation": "s32i",
+          "address": "0x600710a8",
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": null,
+          "base": "a8",
+          "offset": "0x2a8"
+        },
+        {
+          "pc": "0x378b",
+          "operation": "s32i",
+          "address": "0x70000000",
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": 0,
+          "base": "a5",
+          "offset": "0x200"
+        },
+        {
+          "pc": "0x379c",
+          "operation": "s32i",
+          "address": "0x70000000",
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": 0,
+          "base": "a5",
+          "offset": "0x200"
+        },
+        {
+          "pc": "0x37ad",
+          "operation": "s32i",
+          "address": "0x70000000",
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": 0,
+          "base": "a5",
+          "offset": "0x200"
+        },
+        {
+          "pc": "0x37bf",
+          "operation": "s32i",
+          "address": "0x70000000",
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": 0,
+          "base": "a5",
+          "offset": "0x200"
+        },
+        {
+          "pc": "0x37ce",
+          "operation": "s8i",
+          "address": "0x5ffee454",
+          "address_candidates": [],
+          "source": "a2",
+          "source_constant": null,
+          "base": "a12",
+          "offset": "8"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0383c.txt",
+      "reachable_in_window": 25,
+      "calls": [
+        {
+          "pc": "0x3861",
+          "operation": "call8",
+          "target": "0x59e4",
+          "integer_constants": {
+            "a11": "0x1fff",
+            "a12": "0xf0003",
+            "a13": "0xc",
+            "a3": "0x5ffee44c",
+            "a9": "0x1"
+          }
+        }
+      ],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 25,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x384a",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a2",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "16"
+        },
+        {
+          "pc": "0x3856",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a13",
+          "source_constant": 12,
+          "base": "a1",
+          "offset": "12"
+        },
+        {
+          "pc": "0x3858",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a12",
+          "source_constant": 983043,
+          "base": "a1",
+          "offset": "8"
+        },
+        {
+          "pc": "0x385a",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a11",
+          "source_constant": 8191,
+          "base": "a1",
+          "offset": "4"
+        },
+        {
+          "pc": "0x385c",
+          "operation": "s8i",
+          "address": null,
+          "address_candidates": [],
+          "source": "a9",
+          "source_constant": 1,
+          "base": "a1",
+          "offset": "0"
+        },
+        {
+          "pc": "0x3875",
+          "operation": "s8i",
+          "address": "0x5ffee453",
+          "address_candidates": [],
+          "source": "a2",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "7"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01194.txt",
+      "reachable_in_window": 43,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 43,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x11b8",
+          "operation": "s32i",
+          "address": "0x70000000",
+          "address_candidates": [],
+          "source": "a9",
+          "source_constant": 0,
+          "base": "a6",
+          "offset": "0x200"
+        },
+        {
+          "pc": "0x11c9",
+          "operation": "s32i",
+          "address": "0x70000000",
+          "address_candidates": [],
+          "source": "a9",
+          "source_constant": 0,
+          "base": "a6",
+          "offset": "0x200"
+        },
+        {
+          "pc": "0x11d4",
+          "operation": "s32i",
+          "address": "0x6003a024",
+          "address_candidates": [],
+          "source": "a11",
+          "source_constant": null,
+          "base": "a4",
+          "offset": "0x224"
+        },
+        {
+          "pc": "0x11dd",
+          "operation": "s8i",
+          "address": "0x5ffee25e",
+          "address_candidates": [],
+          "source": "a2",
+          "source_constant": null,
+          "base": "a5",
+          "offset": "2"
+        },
+        {
+          "pc": "0x11e7",
+          "operation": "s32i",
+          "address": "0x70000000",
+          "address_candidates": [],
+          "source": "a9",
+          "source_constant": 0,
+          "base": "a6",
+          "offset": "0x200"
+        },
+        {
+          "pc": "0x11f6",
+          "operation": "s32i",
+          "address": "0x70000000",
+          "address_candidates": [],
+          "source": "a9",
+          "source_constant": 0,
+          "base": "a6",
+          "offset": "0x200"
+        },
+        {
+          "pc": "0x11fe",
+          "operation": "s32i",
+          "address": "0x6003a024",
+          "address_candidates": [],
+          "source": "a15",
+          "source_constant": null,
+          "base": "a4",
+          "offset": "0x224"
+        },
+        {
+          "pc": "0x1207",
+          "operation": "s8i",
+          "address": "0x5ffee25e",
+          "address_candidates": [],
+          "source": "a2",
+          "source_constant": null,
+          "base": "a5",
+          "offset": "2"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/059e4.txt",
+      "reachable_in_window": 32,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 32,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x59fb",
+          "operation": "s32i",
+          "address": "0x6803b178",
+          "address_candidates": [],
+          "source": "a4",
+          "source_constant": null,
+          "base": "a8",
+          "offset": "0x378"
+        },
+        {
+          "pc": "0x59fe",
+          "operation": "s32i",
+          "address": "0x6803b180",
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": null,
+          "base": "a8",
+          "offset": "0x380"
+        },
+        {
+          "pc": "0x5a01",
+          "operation": "s32i",
+          "address": null,
+          "address_candidates": [],
+          "source": "a10",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "0"
+        },
+        {
+          "pc": "0x5a04",
+          "operation": "s8i",
+          "address": null,
+          "address_candidates": [],
+          "source": "a5",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "2"
+        },
+        {
+          "pc": "0x5a09",
+          "operation": "s32i",
+          "address": "0x6803b17c",
+          "address_candidates": [],
+          "source": "a9",
+          "source_constant": null,
+          "base": "a8",
+          "offset": "0x37c"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+
+/tmp/tmpvfqq17uo/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000070d4 <.data+0x70d4>:
+000070d4: 366100   entry        a1, 0x30 ; Capstone
+    70d7:	5101d9        	l32r	a5, 0xffffd4dc (0x5ffedb24) ; inferred DRAM map 0x5ffec000
+    70da:	820501        	l8ui	a8, a5, 1
+    70dd:	16880c        	beqz	a8, 0x71a9
+    70e0:	92c104        	addi	a9, a1, 4
+    70e3:	32a001        	movi	a3, 1
+    70e6:	0c04      	movi.n	a4, 0
+    70e8:	425100        	s16i	a4, a1, 0
+    70eb:	424102        	s8i	a4, a1, 2
+    70ee:	324104        	s8i	a3, a1, 4
+    70f1:	424105        	s8i	a4, a1, 5
+    70f4:	424106        	s8i	a4, a1, 6
+    70f7:	424107        	s8i	a4, a1, 7
+    70fa:	424108        	s8i	a4, a1, 8
+    70fd:	424109        	s8i	a4, a1, 9
+    7100:	42410a        	s8i	a4, a1, 10
+    7103:	42410b        	s8i	a4, a1, 11
+    7106:	c20900        	l8ui	a12, a9, 0
+    7109:	d20904        	l8ui	a13, a9, 4
+    710c:	f20905        	l8ui	a15, a9, 5
+    710f:	e20901        	l8ui	a14, a9, 1
+    7112:	b20907        	l8ui	a11, a9, 7
+    7115:	a20903        	l8ui	a10, a9, 3
+    7118:	820902        	l8ui	a8, a9, 2
+    711b:	80bb11        	slli	a11, a11, 8
+    711e:	80aa11        	slli	a10, a10, 8
+    7121:	80aa20        	or	a10, a10, a8
+    7124:	80aa11        	slli	a10, a10, 8
+    7127:	e0aa20        	or	a10, a10, a14
+    712a:	920906        	l8ui	a9, a9, 6
+    712d:	80aa11        	slli	a10, a10, 8
+    7130:	c0aa20        	or	a10, a10, a12
+    7133:	90bb20        	or	a11, a11, a9
+    7136:	80bb11        	slli	a11, a11, 8
+    7139:	f0bb20        	or	a11, a11, a15
+    713c:	80bb11        	slli	a11, a11, 8
+    713f:	d0bb20        	or	a11, a11, a13
+00007142: 2580ff   call8        . -0x7fc ; Capstone ; target=0x6944
+    7145:	a2a000        	movi	a10, 0
+    7148:	0c0b      	movi.n	a11, 0
+0000714a: 6598fd   call8        . -0x2678 ; Capstone ; target=0x4ad0
+    714d:	0c6a      	movi.n	a10, 6
+0000714f: 65b6fe   call8        . -0x1498 ; Capstone ; target=0x5cb4
+    7152:	2107d8        	l32r	a2, 0xffffd170 (0x6803ba00) ; inferred DRAM map 0x5ffec000
+    7155:	a152d8        	l32r	a10, 0xffffd2a0 (0x6803ae00) ; inferred DRAM map 0x5ffec000
+    7158:	0c3b      	movi.n	a11, 3
+    715a:	b952      	s32i.n	a11, a2, 20
+    715c:	c22a98        	l32i	a12, a10, 0x260
+    715f:	3df0      	nop.n
+    7161:	c09804        	extui	a9, a12, 8, 1
+    7164:	876c01        	bbci	a12, 8, 0x7169
+    7167:	3942      	s32i.n	a3, a2, 16
+    7169:	56d9fe        	bnez	a9, 0x715a
+    716c:	a2a001        	movi	a10, 1
+0000716f: 65e9fe   call8        . -0x1168 ; Capstone ; target=0x6004
+    7172:	a2a003        	movi	a10, 3
+00007175: 65ccfe   call8        . -0x1338 ; Capstone ; target=0x5e3c
+    7178:	0c4a      	movi.n	a10, 4
+0000717a: 25ccfe   call8        . -0x133c ; Capstone ; target=0x5e3c
+    717d:	424100        	s8i	a4, a1, 0
+    7180:	a20103        	l8ui	a10, a1, 3
+    7183:	c20102        	l8ui	a12, a1, 2
+    7186:	426205        	s32i	a4, a2, 20
+    7189:	80aa11        	slli	a10, a10, 8
+    718c:	c0aa20        	or	a10, a10, a12
+    718f:	c20101        	l8ui	a12, a1, 1
+    7192:	b20100        	l8ui	a11, a1, 0
+    7195:	80aa11        	slli	a10, a10, 8
+    7198:	c0aa20        	or	a10, a10, a12
+    719b:	80aa11        	slli	a10, a10, 8
+    719e:	b0aa20        	or	a10, a10, a11
+000071a1: 255dfd   call8        . -0x2a2c ; Capstone ; target=0x4774
+    71a4:	424501        	s8i	a4, a5, 1
+000071a7: 1df0     retw.n        ; Capstone
+000071a9: 1df0     retw.n        ; Capstone
+	...

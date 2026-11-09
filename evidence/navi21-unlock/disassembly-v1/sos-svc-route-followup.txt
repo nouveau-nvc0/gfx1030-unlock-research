@@ -1,0 +1,31 @@
+SOS SVC route: concrete read/write instructions
+
+ARM SVC entry file21bb0 extracts the operation number from the preceding
+Thumb/ARM instruction and calls literal45c5. Payload-relative low-code
+mapping sends Thumb45c4 tofile25f34, whose dispatcher matches the operation
+ranges. This mapping is supported by coherent code correspondence; actual
+runtime placement was not observed.
+
+Operations7b/7c reach26090 with tableindices2a/2b. Exact table entries at
+26178/2617c contain740/754 relative to260d0 ->26810/26824.
+7b checks an output pointer through22f5c, then reaches2536e. Size4 uses
+LDR at253a2 and STR to the output pointer at253a4.
+7c reaches27422. Size4 uses STR of the passed value at27452, followed by
+DSB at27442. Therefore read/write meanings now have concrete instruction
+evidence, rather than argument-shape inference alone.
+
+Both use24b30 to map the supplied address. For slot0 it calls27238(address,8),
+then on zero result programs high address bits and calls25dc4; computed
+pointer is01000000+(address&fffff). Nonzero initial result returns0.
+Do not infer successful mapping or hardware acceptance from the store alone.
+These prerequisite helpers and dispatcher state conditions remain open.
+
+Operationf2 follows the high range to26a5c, index2 ->26a88 ->234c4 with
+savedr0/r1. This gives a concrete next procedure for routing the internal
+SYS packet; delivery to the specific SYS entry is not yet established.
+The earlier search for global2060ec found consumer references, not its
+producer. Do not claim that pointer's physical meaning is resolved.
+
+Evidence sos-svc-route-audit.json; reproducer scripts/navi21-sos-svc-route-audit.py
+with PYTHONPATH=/tmp/navi21-disasm/python. No hardware changes. Saved-CC
+payload producer, invocation with changed state and CC acceptance stay open.

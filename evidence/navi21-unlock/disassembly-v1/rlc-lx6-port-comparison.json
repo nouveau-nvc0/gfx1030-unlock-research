@@ -1,0 +1,11 @@
+{
+  "archive": "/workspace/gfx1030-unlock-research/inputs/research/umr-058a7045-source.tar.gz",
+  "member": "database/ip/gc_11_0_3.reg",
+  "member_sha256": "2fd3c9e4e50e1351df84b3590baa1e70ec3b412abe1f211330eab69306d8d3c7",
+  "line": 16498,
+  "record": [
+    "regRLC_LX6_SCRATCH_ADDR 0 0x5b59 1 0 1",
+    "\tADDR 0 7"
+  ],
+  "scope": "Other GC generation; name and field are comparative evidence only, not a Navi21 register definition."
+}

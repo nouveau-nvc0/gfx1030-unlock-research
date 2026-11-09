@@ -1,0 +1,19 @@
+
+/tmp/tmpd_flhz92/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00033f58 <.data+0x33f58>:
+00033f58: 364100   entry        a1, 0x20 ; Capstone
+   33f5b:	412681        	l32r	a4, 0x143f4 (0x11a04)
+   33f5e:	203541        	srli	a3, a2, 5
+   33f61:	4033a0        	addx4	a3, a3, a4
+   33f64:	32237f        	l32i	a3, a3, 0x1fc
+   33f67:	204044        	extui	a4, a2, 0, 5
+   33f6a:	0c12      	movi.n	a2, 1
+   33f6c:	475301        	bbc	a3, a4, 0x33f71
+00033f6f: 1df0     retw.n        ; Capstone
+   33f71:	0c02      	movi.n	a2, 0
+00033f73: 1df0     retw.n        ; Capstone
+   33f75:	000000        	ill

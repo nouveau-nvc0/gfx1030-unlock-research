@@ -1,0 +1,86 @@
+
+/tmp/tmpkpf3r6uw/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000076f8 <.data+0x76f8>:
+000076f8: 364100   entry        a1, 0x20 ; Capstone
+    76fb:	a187d7        	l32r	a10, 0xffffd518 (0xbabe) ; inferred DRAM map 0x5ffec000
+    76fe:	b187d7        	l32r	a11, 0xffffd51c (0x5ffee044) ; inferred DRAM map 0x5ffec000
+    7701:	21bfd6        	l32r	a2, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    7704:	8184d7        	l32r	a8, 0xffffd514 (0x90a00) ; inferred DRAM map 0x5ffec000
+    7707:	9182d7        	l32r	a9, 0xffffd510 (0xa000) ; inferred DRAM map 0x5ffec000
+    770a:	92624b        	s32i	a9, a2, 0x12c
+    770d:	82624c        	s32i	a8, a2, 0x130
+00007710: e55f02   call8        . +0x2600 ; Capstone ; target=0x9d10
+    7713:	0c0d      	movi.n	a13, 0
+    7715:	b183d7        	l32r	a11, 0xffffd524 (0x5ffed7d8) ; inferred DRAM map 0x5ffec000
+    7718:	a184d7        	l32r	a10, 0xffffd528 (0x5ffed7dc) ; inferred DRAM map 0x5ffec000
+    771b:	c181d7        	l32r	a12, 0xffffd520 (0xa001) ; inferred DRAM map 0x5ffec000
+    771e:	7cf4      	movi.n	a4, -1
+    7720:	c2624b        	s32i	a12, a2, 0x12c
+    7723:	0c0c      	movi.n	a12, 0
+    7725:	490a      	s32i.n	a4, a10, 0
+    7727:	c90b      	s32i.n	a12, a11, 0
+    7729:	0c1a      	movi.n	a10, 1
+    772b:	b180d7        	l32r	a11, 0xffffd52c (0x5fff77cc) ; inferred DRAM map 0x5ffec000
+0000772e: 251002   call8        . +0x2104 ; Capstone ; target=0x9830
+    7731:	0c2a      	movi.n	a10, 2
+    7733:	b17fd7        	l32r	a11, 0xffffd530 (0x5fff7c3c) ; inferred DRAM map 0x5ffec000
+    7736:	0c0c      	movi.n	a12, 0
+    7738:	0c0d      	movi.n	a13, 0
+0000773a: 650f02   call8        . +0x20f8 ; Capstone ; target=0x9830
+    773d:	0c5a      	movi.n	a10, 5
+    773f:	b17dd7        	l32r	a11, 0xffffd534 (0x5fff7c78) ; inferred DRAM map 0x5ffec000
+    7742:	0c0c      	movi.n	a12, 0
+    7744:	0c0d      	movi.n	a13, 0
+00007746: a50e02   call8        . +0x20ec ; Capstone ; target=0x9830
+    7749:	0c6a      	movi.n	a10, 6
+    774b:	b17bd7        	l32r	a11, 0xffffd538 (0x5fff7c98) ; inferred DRAM map 0x5ffec000
+    774e:	0c0c      	movi.n	a12, 0
+    7750:	0c0d      	movi.n	a13, 0
+00007752: e50d02   call8        . +0x20e0 ; Capstone ; target=0x9830
+    7755:	0c7a      	movi.n	a10, 7
+    7757:	b179d7        	l32r	a11, 0xffffd53c (0x5fff7cb8) ; inferred DRAM map 0x5ffec000
+    775a:	0c0c      	movi.n	a12, 0
+    775c:	0c0d      	movi.n	a13, 0
+0000775e: 250d02   call8        . +0x20d4 ; Capstone ; target=0x9830
+    7761:	b0ea03        	rsr.ccount	a11
+    7764:	a2a000        	movi	a10, 0
+    7767:	b2db02        	addmi	a11, a11, 0x200
+0000776a: 65c302   call8        . +0x2c38 ; Capstone ; target=0xa3a0
+    776d:	b0ea03        	rsr.ccount	a11
+    7770:	0c1a      	movi.n	a10, 1
+    7772:	b2db04        	addmi	a11, a11, 0x400
+00007775: a5c202   call8        . +0x2c2c ; Capstone ; target=0xa3a0
+    7778:	b0ea03        	rsr.ccount	a11
+    777b:	c171d7        	l32r	a12, 0xffffd540 (0xc800) ; inferred DRAM map 0x5ffec000
+    777e:	0c2a      	movi.n	a10, 2
+    7780:	cabb      	add.n	a11, a11, a12
+00007782: e5c102   call8        . +0x2c20 ; Capstone ; target=0xa3a0
+    7785:	d16fd7        	l32r	a13, 0xffffd544 (0xa002) ; inferred DRAM map 0x5ffec000
+    7788:	d2624b        	s32i	a13, a2, 0x12c
+    778b:	306f00        	rsil	a3, 15
+    778e:	a2a002        	movi	a10, 2
+00007791: 650602   call8        . +0x2068 ; Capstone ; target=0x97f8
+    7794:	0c1a      	movi.n	a10, 1
+00007796: 250602   call8        . +0x2064 ; Capstone ; target=0x97f8
+    7799:	e16fd7        	l32r	a14, 0xffffd558 (0x80090a00) ; inferred DRAM map 0x5ffec000
+    779c:	f16ed7        	l32r	a15, 0xffffd554 (0xa00f) ; inferred DRAM map 0x5ffec000
+    779f:	816cd7        	l32r	a8, 0xffffd550 (0xa004) ; inferred DRAM map 0x5ffec000
+    77a2:	916ad7        	l32r	a9, 0xffffd54c (0xfdf5f249) ; inferred DRAM map 0x5ffec000
+    77a5:	6c0a      	movi.n	a10, -32
+    77a7:	b168d7        	l32r	a11, 0xffffd548 (0xa003) ; inferred DRAM map 0x5ffec000
+    77aa:	b2624b        	s32i	a11, a2, 0x12c
+    77ad:	a922      	s32i.n	a10, a2, 8
+    77af:	926203        	s32i	a9, a2, 12
+    77b2:	426204        	s32i	a4, a2, 16
+    77b5:	82624b        	s32i	a8, a2, 0x12c
+    77b8:	f2624b        	s32i	a15, a2, 0x12c
+    77bb:	e2624c        	s32i	a14, a2, 0x130
+    77be:	30e613        	wsr.ps	a3
+    77c1:	102000        	rsync
+    77c4:	007000        	waiti	0
+    77c7:	46feff        	j	0x77c4
+	...

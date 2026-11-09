@@ -1,0 +1,31 @@
+
+/tmp/tmpuazxrrqo/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000358fc <.data+0x358fc>:
+000358fc: 366100   entry        a1, 0x30 ; Capstone
+   358ff:	bd01      	mov.n	a11, a1
+   35901:	7cfe      	movi.n	a14, -1
+   35903:	0c28      	movi.n	a8, 2
+   35905:	a13577        	l32r	a10, 0x135dc (0xa3c0)
+   35908:	f09211        	slli	a9, a2, 1
+   3590b:	0c0d      	movi.n	a13, 0
+   3590d:	d911      	s32i.n	a13, a1, 4
+   3590f:	d26100        	s32i	a13, a1, 0
+   35912:	a099a0        	addx4	a9, a9, a10
+00035915: 76a818   loopgtz      a8, . +0x1c ; Capstone
+   35918:	c22a7f        	l32i	a12, a10, 0x1fc
+   3591b:	f2d904        	addmi	a15, a9, 0x400
+   3591e:	d90b      	s32i.n	a13, a11, 0
+   35920:	4b99      	addi.n	a9, a9, 4
+   35922:	f89f      	l32i.n	a15, a15, 36
+   35924:	4bbb      	addi.n	a11, a11, 4
+   35926:	4baa      	addi.n	a10, a10, 4
+   35928:	e0ff30        	xor	a15, a15, a14
+   3592b:	f0cc10        	and	a12, a12, a15
+   3592e:	c26a7e        	s32i	a12, a10, 0x1f8
+   35931:	ad01      	mov.n	a10, a1
+00035933: a51600   call8        . +0x16c ; Capstone ; target=0x35a9c
+00035936: 1df0     retw.n        ; Capstone

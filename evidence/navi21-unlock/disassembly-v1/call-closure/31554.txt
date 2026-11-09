@@ -1,0 +1,18 @@
+
+/tmp/tmp41slv68d/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00031554 <.data+0x31554>:
+00031554: 364100   entry        a1, 0x20 ; Capstone
+00031557: 3051fa   const.s      f5, 1 ; Capstone
+0003155a: 5004fa   wfr          f0, a4 ; Capstone
+0003155d: 5012fa   wfr          f1, a2 ; Capstone
+00031560: 00212a   mul.s        f2, f1, f0 ; Capstone
+00031563: 00451a   sub.s        f4, f5, f0 ; Capstone
+00031566: 330300   lsi          f3, a3, 0 ; Capstone
+00031569: 40234a   madd.s       f2, f3, f4 ; Capstone
+0003156c: 234300   ssi          f2, a3, 0 ; Capstone
+0003156f: 1df0     retw.n        ; Capstone
+   31571:	000000        	ill

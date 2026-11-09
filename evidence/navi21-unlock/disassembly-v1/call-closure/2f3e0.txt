@@ -1,0 +1,34 @@
+
+/tmp/tmpnyjotset/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002f3e0 <.data+0x2f3e0>:
+0002f3e0: 366100   entry        a1, 0x30 ; Capstone
+   2f3e3:	82a803        	movi	a8, 0xfffff803
+   2f3e6:	610093        	l32r	a6, 0x13fe8 (0xfffe4000)
+   2f3e9:	0c17      	movi.n	a7, 1
+   2f3eb:	7901      	s32i.n	a7, a1, 0
+   2f3ed:	224102        	s8i	a2, a1, 2
+   2f3f0:	5801      	l32i.n	a5, a1, 0
+   2f3f2:	6a63      	add.n	a6, a3, a6
+   2f3f4:	805510        	and	a5, a5, a8
+   2f3f7:	608274        	extui	a8, a6, 2, 8
+   2f3fa:	e08811        	slli	a8, a8, 2
+   2f3fd:	805520        	or	a5, a5, a8
+   2f400:	810690        	l32r	a8, 0x13418 (0xffffc7ff)
+   2f403:	606a24        	extui	a6, a6, 10, 3
+   2f406:	506611        	slli	a6, a6, 11
+   2f409:	805510        	and	a5, a5, a8
+   2f40c:	605520        	or	a5, a5, a6
+   2f40f:	618490        	l32r	a6, 0x13620 (0x141ce00)
+   2f412:	c02000        	memw
+   2f415:	526695        	s32i	a5, a6, 0x254
+   2f418:	c02000        	memw
+   2f41b:	4266a2        	s32i	a4, a6, 0x288
+   2f41e:	705520        	or	a5, a5, a7
+   2f421:	c02000        	memw
+   2f424:	526695        	s32i	a5, a6, 0x254
+0002f427: 1df0     retw.n        ; Capstone
+   2f429:	000000        	ill

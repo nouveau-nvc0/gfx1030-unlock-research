@@ -1,0 +1,31 @@
+RLC shared-body and decoder audit, offline
+
+Seven additional exact branch starts were decoded for backward transitions
+from windows953c/a1fc into shared code. Entry remains the first instruction
+in each listing, not the numerically lowest appended PC. The shared code
+belongs to arithmetic and memory-copy routines; it is not an extra entry call.
+Synthetic entry retention check:rlc-shared-flow-validation.json.
+
+Four previously reachable EXCW sites are RSR/WSR.CCOMPARE1/2 at
+a3b0,a3bb,a3d3,a3db. Encodings match the pinned QEMU de233 source already
+used for other extensions; no new firmware instruction was guessed.
+Details:rlc-ccompare-decode.json. Decoder now supports these encodings.
+
+BREAK at a315/a363 was erroneously grouped with B* conditional branches.
+It now terminates local ordinary flow and records an unresolved debug
+exception/resumption path. SIMCALL at a310 remains an unknown effect.
+No assumption about the debug handler or host simulator behavior is made.
+
+Current236-window RLC scan:13587 reachable instruction sites (window-local,
+shared code can be counted more than once),2399 store sites. No reachable
+EXCW remains; only the two debug-exception edges remain unresolved in local
+ordinary CFG. Indirect CALLX destinations and other-engine code remain outside
+this statement, and initial switch tables do not prove runtime immutability.
+
+Memory-copy a1fc now includes its backward alignment paths. Two direct calls
+in the current scan have destination/length pairs:
+  135d:5ffed978,14hex bytes -> exclusive end5ffed98c
+  2ce1:5ffee438,14hex bytes -> exclusive end5ffee44c
+Neither interval overlaps CC saved arrays5ffedfc4..5ffee044 or gate5ffee452.
+This excludes these two bounded copies as gate writers, not arbitrary callers
+or other computed stores. Both copies and the overlap checks are offline.

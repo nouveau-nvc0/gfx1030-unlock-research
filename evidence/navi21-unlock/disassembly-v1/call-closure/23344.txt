@@ -1,0 +1,17 @@
+
+/tmp/tmpbbifkz6a/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00023344 <.data+0x23344>:
+00023344: 364100   entry        a1, 0x20 ; Capstone
+00023347: 5012fa   wfr          f1, a2 ; Capstone
+0002334a: 3041fa   const.s      f4, 1 ; Capstone
+0002334d: 10341a   sub.s        f3, f4, f1 ; Capstone
+00023350: 30232a   mul.s        f2, f3, f3 ; Capstone
+00023353: 5003fa   wfr          f0, a3 ; Capstone
+00023356: 20005a   msub.s       f0, f0, f2 ; Capstone
+00023359: 4020fa   rfr          a2, f0 ; Capstone
+0002335c: 1df0     retw.n        ; Capstone
+	...

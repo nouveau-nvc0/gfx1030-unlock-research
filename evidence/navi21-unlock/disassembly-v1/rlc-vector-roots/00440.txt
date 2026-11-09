@@ -1,0 +1,13 @@
+
+/tmp/tmpup9m248f/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000440 <.data+0x440>:
+00000440: 00c509   l32e         a0, a5, -0x10 ; Capstone
+00000443: 10d509   l32e         a1, a5, -0xc ; Capstone
+00000446: 20e509   l32e         a2, a5, -8 ; Capstone
+00000449: 30f509   l32e         a3, a5, -4 ; Capstone
+0000044c: 003500   rfwu          ; Capstone
+	...

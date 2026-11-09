@@ -1,0 +1,32 @@
+{
+  "0000:04:00.0": {
+    "hw_id": "11\n",
+    "base_addr": "0x00001260\n0x0000A000\n0x0001C000\n0x02402C00\n",
+    "major": "10\n",
+    "minor": "3\n",
+    "harvest": "0x0\n",
+    "num_instance": "0\n",
+    "revision": "0\n",
+    "num_base_addresses": "4\n"
+  },
+  "0000:07:00.0": {
+    "hw_id": "11\n",
+    "base_addr": "0x00001260\n0x0000A000\n0x0001C000\n0x02402C00\n",
+    "major": "10\n",
+    "minor": "3\n",
+    "harvest": "0x0\n",
+    "num_instance": "0\n",
+    "revision": "0\n",
+    "num_base_addresses": "4\n"
+  },
+  "0000:0a:00.0": {
+    "hw_id": "11\n",
+    "base_addr": "0x00001260\n0x0000A000\n0x0001C000\n0x02402C00\n",
+    "major": "10\n",
+    "minor": "3\n",
+    "harvest": "0x0\n",
+    "num_instance": "0\n",
+    "revision": "0\n",
+    "num_base_addresses": "4\n"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-09T10:12:43.163346+00:00",
+  "checks": {
+    "cached_topology_and_vbios_unchanged": true,
+    "raw_hardware_ids_match_independent_cached_maps": true,
+    "six_rocblas_controls_pass": true,
+    "vfct_misselection_proved_by_hashes_and_replay": true,
+    "source_matches_signed_distribution_rpm": true,
+    "independent_exact_umr_24_banks_pass_without_new_kernel_messages": true
+  },
+  "wave_observations": 638976,
+  "integer_values_checked": 20447232,
+  "rocblas_sampled_values_checked": 384,
+  "kernel_recovery_or_fault_lines": [],
+  "aer_report_lines": 48
+}

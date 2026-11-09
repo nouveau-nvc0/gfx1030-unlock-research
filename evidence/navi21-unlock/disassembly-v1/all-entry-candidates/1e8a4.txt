@@ -1,0 +1,15 @@
+
+/tmp/tmpvdtlnoye/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001e8a4 <.data+0x1e8a4>:
+0001e8a4: 364100   entry        a1, 0x20 ; Capstone
+   1e8a7:	0c0a      	movi.n	a10, 0
+   1e8a9:	0c1b      	movi.n	a11, 1
+   1e8ab:	0c1c      	movi.n	a12, 1
+0001e8ad: 65101a   call8        . +0x1a108 ; Capstone ; target=0x389b4
+0001e8b0: 1df0     retw.n        ; Capstone
+   1e8b2:	000000        	ill
+   1e8b5:	000000        	ill

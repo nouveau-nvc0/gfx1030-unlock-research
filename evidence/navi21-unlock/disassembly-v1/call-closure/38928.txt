@@ -1,0 +1,59 @@
+
+/tmp/tmp62_irenu/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00038928 <.data+0x38928>:
+00038928: 364100   entry        a1, 0x20 ; Capstone
+   3892b:	51986f        	l32r	a5, 0x1478c (0xfc1c)
+   3892e:	316569        	l32r	a3, 0x12ec4 (0x300fe00)
+   38931:	0c06      	movi.n	a6, 0
+   38933:	a20580        	l8ui	a10, a5, 128
+   38936:	0c24      	movi.n	a4, 2
+   38938:	0c8b      	movi.n	a11, 8
+   3893a:	564a06        	bnez	a10, 0x389a2
+   3893d:	b02220        	or	a2, a2, a11
+   38940:	c02000        	memw
+   38943:	42638c        	s32i	a4, a3, 0x230
+   38946:	c02000        	memw
+   38949:	92238c        	l32i	a9, a3, 0x230
+   3894c:	909074        	extui	a9, a9, 0, 8
+   3894f:	66192e        	bnei	a9, 1, 0x38981
+   38952:	a1f16c        	l32r	a10, 0x13d18 (0x1177c)
+00038955: 230a00   lsi          f2, a10, 0 ; Capstone
+00038958: 00a2ba   ceil.s       a10, f2, 0 ; Capstone
+0003895b: a5dfc8   call8        . -0x37204 ; Capstone ; target=0x1754
+   3895e:	1b66      	addi.n	a6, a6, 1
+   38960:	b66617        	bltui	a6, 6, 0x3897b
+   38963:	ad02      	mov.n	a10, a2
+00038965: e5b0c9   call8        . -0x364f0 ; Capstone ; target=0x2474
+   38968:	b16769        	l32r	a11, 0x12f04 (0x1176c)
+0003896b: 330b00   lsi          f3, a11, 0 ; Capstone
+0003896e: 00a3ba   ceil.s       a10, f3, 0 ; Capstone
+00038971: 25dec8   call8        . -0x3721c ; Capstone ; target=0x1754
+   38974:	ad02      	mov.n	a10, a2
+00038976: a5c0c9   call8        . -0x363f4 ; Capstone ; target=0x2580
+   38979:	0c06      	movi.n	a6, 0
+   3897b:	a20580        	l8ui	a10, a5, 128
+   3897e:	060300        	j	0x3898e
+   38981:	662907        	bnei	a9, 2, 0x3898c
+   38984:	0c1a      	movi.n	a10, 1
+   38986:	a24580        	s8i	a10, a5, 128
+   38989:	460000        	j	0x3898e
+   3898c:	cc39      	bnez.n	a9, 0x38993
+   3898e:	16eafa        	beqz	a10, 0x38940
+00038991: 1df0     retw.n        ; Capstone
+   38993:	0c0c      	movi.n	a12, 0
+   38995:	0c4b      	movi.n	a11, 4
+   38997:	1c0a      	movi.n	a10, 16
+   38999:	c02000        	memw
+   3899c:	d2238a        	l32i	a13, a3, 0x228
+0003899f: e5c6c9   call8        . -0x36390 ; Capstone ; target=0x260c
+   389a2:	0c0c      	movi.n	a12, 0
+   389a4:	0c5b      	movi.n	a11, 5
+   389a6:	1c0a      	movi.n	a10, 16
+   389a8:	c02000        	memw
+   389ab:	d2238a        	l32i	a13, a3, 0x228
+000389ae: e5c5c9   call8        . -0x363a0 ; Capstone ; target=0x260c
+   389b1:	000000        	ill

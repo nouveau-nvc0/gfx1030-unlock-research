@@ -1,0 +1,18 @@
+
+/tmp/tmpakzy78ns/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001244 <.data+0x1244>:
+00001244: 364100   entry        a1, 0x20 ; Capstone
+    1247:	306200        	rsil	a3, 2
+    124a:	820200        	l8ui	a8, a2, 0
+    124d:	cc88      	bnez.n	a8, 0x1259
+    124f:	0c19      	movi.n	a9, 1
+    1251:	924200        	s8i	a9, a2, 0
+00001254: a51d01   call8        . +0x11dc ; Capstone ; target=0x2430
+    1257:	a912      	s32i.n	a10, a2, 4
+    1259:	30e613        	wsr.ps	a3
+0000125c: 1df0     retw.n        ; Capstone
+	...

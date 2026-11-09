@@ -1,0 +1,50 @@
+
+/tmp/tmpzl9k3ltv/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000282c <.data+0x282c>:
+0000282c: 364100   entry        a1, 0x20 ; Capstone
+0000282f: 25efff   call8        . -0x10c ; Capstone ; target=0x2720
+    2832:	0c0b      	movi.n	a11, 0
+    2834:	c131f9        	l32r	a12, 0xcf8 (0x63a0)
+    2837:	0c0d      	movi.n	a13, 0
+    2839:	2130f9        	l32r	a2, 0xcfc (0x7d98)
+    283c:	0c0e      	movi.n	a14, 0
+    283e:	0c0f      	movi.n	a15, 0
+    2840:	ad02      	mov.n	a10, a2
+00002842: a5e1ff   call8        . -0x1e4 ; Capstone ; target=0x265c
+    2845:	a12ef9        	l32r	a10, 0xd00 (0x7df0)
+    2848:	0c1b      	movi.n	a11, 1
+    284a:	c12ef9        	l32r	a12, 0xd04 (0x5da0)
+    284d:	312ff9        	l32r	a3, 0xd0c (0x2730)
+    2850:	d12ef9        	l32r	a13, 0xd08 (0x639c)
+    2853:	0c0f      	movi.n	a15, 0
+    2855:	ed03      	mov.n	a14, a3
+00002857: 65e0ff   call8        . -0x1f8 ; Capstone ; target=0x265c
+    285a:	a12df9        	l32r	a10, 0xd10 (0x7e48)
+    285d:	0c2b      	movi.n	a11, 2
+    285f:	c12df9        	l32r	a12, 0xd14 (0x57a0)
+    2862:	d12df9        	l32r	a13, 0xd18 (0x5d9c)
+    2865:	ed03      	mov.n	a14, a3
+    2867:	0c0f      	movi.n	a15, 0
+00002869: 25dfff   call8        . -0x20c ; Capstone ; target=0x265c
+    286c:	ed03      	mov.n	a14, a3
+    286e:	a12bf9        	l32r	a10, 0xd1c (0x7ea0)
+    2871:	0c3b      	movi.n	a11, 3
+    2873:	c12bf9        	l32r	a12, 0xd20 (0x51a0)
+    2876:	d12bf9        	l32r	a13, 0xd24 (0x579c)
+    2879:	0c0f      	movi.n	a15, 0
+0000287b: 25deff   call8        . -0x21c ; Capstone ; target=0x265c
+    287e:	a12af9        	l32r	a10, 0xd28 (0x7ef8)
+    2881:	0c4b      	movi.n	a11, 4
+    2883:	c12af9        	l32r	a12, 0xd2c (0x4fa0)
+    2886:	d12af9        	l32r	a13, 0xd30 (0x519c)
+    2889:	e12af9        	l32r	a14, 0xd34 (0x1054)
+    288c:	0c1f      	movi.n	a15, 1
+0000288e: e5dcff   call8        . -0x230 ; Capstone ; target=0x265c
+    2891:	81b1f8        	l32r	a8, 0xb58 (0x7b14)
+    2894:	22687f        	s32i	a2, a8, 0x1fc
+00002897: 1df0     retw.n        ; Capstone
+    2899:	000000        	ill

@@ -1,0 +1,17 @@
+
+/tmp/tmpgh5crxub/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000004c0 <.data+0x4c0>:
+000004c0: 00c909   l32e         a0, a9, -0x10 ; Capstone
+000004c3: 10d909   l32e         a1, a9, -0xc ; Capstone
+000004c6: 20e909   l32e         a2, a9, -8 ; Capstone
+000004c9: 70d109   l32e         a7, a1, -0xc ; Capstone
+000004cc: 30f909   l32e         a3, a9, -4 ; Capstone
+000004cf: 408709   l32e         a4, a7, -0x20 ; Capstone
+000004d2: 509709   l32e         a5, a7, -0x1c ; Capstone
+000004d5: 60a709   l32e         a6, a7, -0x18 ; Capstone
+000004d8: 70b709   l32e         a7, a7, -0x14 ; Capstone
+000004db: 003500   rfwu          ; Capstone

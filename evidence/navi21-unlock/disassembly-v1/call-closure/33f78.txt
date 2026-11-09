@@ -1,0 +1,48 @@
+
+/tmp/tmphti4wrkz/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00033f78 <.data+0x33f78>:
+00033f78: 364100   entry        a1, 0x20 ; Capstone
+   33f7b:	0c0a      	movi.n	a10, 0
+00033f7d: e57000   call8        . +0x710 ; Capstone ; target=0x3468c
+00033f80: 65a000   call8        . +0xa08 ; Capstone ; target=0x34988
+   33f83:	1c4a      	movi.n	a10, 20
+00033f85: 259e00   call8        . +0x9e4 ; Capstone ; target=0x34968
+   33f88:	cc5a      	bnez.n	a10, 0x33f91
+   33f8a:	1c4a      	movi.n	a10, 20
+00033f8c: a59b00   call8        . +0x9bc ; Capstone ; target=0x34948
+   33f8f:	8c3a      	beqz.n	a10, 0x33f96
+   33f91:	0c0a      	movi.n	a10, 0
+00033f93: 258d00   call8        . +0x8d4 ; Capstone ; target=0x34864
+   33f96:	2cda      	movi.n	a10, 45
+00033f98: e59c00   call8        . +0x9d0 ; Capstone ; target=0x34968
+   33f9b:	cc5a      	bnez.n	a10, 0x33fa4
+   33f9d:	2cda      	movi.n	a10, 45
+00033f9f: a59a00   call8        . +0x9ac ; Capstone ; target=0x34948
+   33fa2:	8c3a      	beqz.n	a10, 0x33fa9
+   33fa4:	2cda      	movi.n	a10, 45
+00033fa6: e58700   call8        . +0x880 ; Capstone ; target=0x34824
+   33fa9:	2c9a      	movi.n	a10, 41
+00033fab: e59b00   call8        . +0x9c0 ; Capstone ; target=0x34968
+   33fae:	cc5a      	bnez.n	a10, 0x33fb7
+   33fb0:	2c9a      	movi.n	a10, 41
+00033fb2: 659900   call8        . +0x998 ; Capstone ; target=0x34948
+   33fb5:	8c3a      	beqz.n	a10, 0x33fbc
+   33fb7:	2c9a      	movi.n	a10, 41
+00033fb9: a58600   call8        . +0x86c ; Capstone ; target=0x34824
+   33fbc:	2c8a      	movi.n	a10, 40
+00033fbe: a59a00   call8        . +0x9ac ; Capstone ; target=0x34968
+   33fc1:	cc5a      	bnez.n	a10, 0x33fca
+   33fc3:	2c8a      	movi.n	a10, 40
+00033fc5: 259800   call8        . +0x984 ; Capstone ; target=0x34948
+   33fc8:	8c3a      	beqz.n	a10, 0x33fcf
+   33fca:	2c8a      	movi.n	a10, 40
+00033fcc: 658500   call8        . +0x858 ; Capstone ; target=0x34824
+00033fcf: e53100   call8        . +0x320 ; Capstone ; target=0x342ec
+   33fd2:	0c2a      	movi.n	a10, 2
+00033fd4: 250300   call8        . +0x34 ; Capstone ; target=0x34008
+00033fd7: 1df0     retw.n        ; Capstone
+   33fd9:	000000        	ill

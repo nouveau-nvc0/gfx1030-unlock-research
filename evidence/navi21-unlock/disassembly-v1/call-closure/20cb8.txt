@@ -1,0 +1,12 @@
+
+/tmp/tmpkwalaric/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00020cb8 <.data+0x20cb8>:
+00020cb8: 364100   entry        a1, 0x20 ; Capstone
+   20cbb:	21fac9        	l32r	a2, 0x134a4 (0xef94)
+   20cbe:	22027f        	l8ui	a2, a2, 127
+00020cc1: 1df0     retw.n        ; Capstone
+	...

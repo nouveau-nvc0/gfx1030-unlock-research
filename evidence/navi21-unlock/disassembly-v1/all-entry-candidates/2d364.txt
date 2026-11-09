@@ -1,0 +1,16 @@
+
+/tmp/tmp1_48xzl6/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002d364 <.data+0x2d364>:
+0002d364: 364100   entry        a1, 0x20 ; Capstone
+   2d367:	2cc3      	movi.n	a3, 44
+   2d369:	303282        	mull	a3, a2, a3
+   2d36c:	21af96        	l32r	a2, 0x12e28 (0x9c00)
+   2d36f:	3a22      	add.n	a2, a2, a3
+   2d371:	22d232        	addmi	a2, a2, 0x3200
+   2d374:	22c2f4        	addi	a2, a2, -12
+0002d377: 1df0     retw.n        ; Capstone
+   2d379:	000000        	ill

@@ -1,0 +1,31 @@
+
+/tmp/tmp15hn1ene/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00035c9c <.data+0x35c9c>:
+00035c9c: 364100   entry        a1, 0x20 ; Capstone
+   35c9f:	710075        	l32r	a7, 0x130a0 (0x74e0)
+   35ca2:	606200        	rsil	a6, 2
+   35ca5:	82271d        	l32i	a8, a7, 116
+   35ca8:	72078a        	l8ui	a7, a7, 138
+   35cab:	47682a        	bbci	a8, 4, 0x35cd9
+00035cae: 2578cc   call8        . -0x3387c ; Capstone ; target=0x2430
+   35cb1:	c1077a        	l32r	a12, 0x144d0 (0x7494)
+   35cb4:	70b790        	addx2	a11, a7, a7
+   35cb7:	0ca9      	movi.n	a9, 10
+   35cb9:	1b87      	addi.n	a8, a7, 1
+00035cbb: 9088e2   remu         a8, a8, a9 ; Capstone
+   35cbe:	c0bba0        	addx4	a11, a11, a12
+   35cc1:	325bfb        	s16i	a3, a11, 0x1f6
+   35cc4:	226b7e        	s32i	a2, a11, 0x1f8
+   35cc7:	a26b7f        	s32i	a10, a11, 0x1fc
+   35cca:	a2db02        	addmi	a10, a11, 0x200
+   35ccd:	a2ca80        	addi	a10, a10, -128
+   35cd0:	424a75        	s8i	a4, a10, 117
+   35cd3:	524a74        	s8i	a5, a10, 116
+   35cd6:	824cd6        	s8i	a8, a12, 214
+   35cd9:	60e613        	wsr.ps	a6
+00035cdc: 1df0     retw.n        ; Capstone
+	...

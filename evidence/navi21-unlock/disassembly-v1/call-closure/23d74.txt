@@ -1,0 +1,12 @@
+
+/tmp/tmpaycnjox6/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00023d74 <.data+0x23d74>:
+00023d74: 364100   entry        a1, 0x20 ; Capstone
+   23d77:	215fbd        	l32r	a2, 0x132f4 (0xfe8c)
+   23d7a:	22027e        	l8ui	a2, a2, 126
+00023d7d: 1df0     retw.n        ; Capstone
+	...

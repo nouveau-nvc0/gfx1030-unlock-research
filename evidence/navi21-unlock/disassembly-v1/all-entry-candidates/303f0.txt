@@ -1,0 +1,16 @@
+
+/tmp/tmp0317irof/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000303f0 <.data+0x303f0>:
+000303f0: 364100   entry        a1, 0x20 ; Capstone
+   303f3:	419a8a        	l32r	a4, 0x12e5c (0x69a0)
+   303f6:	420462        	l8ui	a4, a4, 98
+   303f9:	0c03      	movi.n	a3, 0
+   303fb:	0c12      	movi.n	a2, 1
+   303fd:	42c4fa        	addi	a4, a4, -6
+   30400:	402393        	movnez	a2, a3, a4
+00030403: 1df0     retw.n        ; Capstone
+   30405:	000000        	ill

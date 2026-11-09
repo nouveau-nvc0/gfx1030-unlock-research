@@ -1,0 +1,49 @@
+
+/tmp/tmpn5rf5oj6/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001b4ac <.data+0x1b4ac>:
+0001b4ac: 364100   entry        a1, 0x20 ; Capstone
+   1b4af:	d1a0de        	l32r	a13, 0x12f30 (0xb67c)
+   1b4b2:	820d7e        	l8ui	a8, a13, 126
+   1b4b5:	16c805        	beqz	a8, 0x1b515
+   1b4b8:	606200        	rsil	a6, 2
+   1b4bb:	0caa      	movi.n	a10, 10
+   1b4bd:	0c0b      	movi.n	a11, 0
+   1b4bf:	0c1c      	movi.n	a12, 1
+0001b4c1: 25f31b   call8        . +0x1bf34 ; Capstone ; target=0x373f4
+   1b4c4:	419cde        	l32r	a4, 0x12f34 (0x11e74)
+   1b4c7:	719cde        	l32r	a7, 0x12f38 (0xb54c)
+   1b4ca:	52a180        	movi	a5, 0x180
+   1b4cd:	32c4c0        	addi	a3, a4, -64
+   1b4d0:	2d07      	mov.n	a2, a7
+   1b4d2:	b19ade        	l32r	a11, 0x12f3c (0x1d0d4)
+   1b4d5:	c2226f        	l32i	a12, a2, 0x1bc
+   1b4d8:	5aa3      	add.n	a10, a3, a5
+   1b4da:	a20a7c        	l8ui	a10, a10, 124
+0001b4dd: 25f013   call8        . +0x13f04 ; Capstone ; target=0x2f3e0
+   1b4e0:	4b22      	addi.n	a2, a2, 4
+   1b4e2:	4b33      	addi.n	a3, a3, 4
+   1b4e4:	4793ea        	bne	a3, a4, 0x1b4d2
+   1b4e7:	2d07      	mov.n	a2, a7
+   1b4e9:	3195de        	l32r	a3, 0x12f40 (0xb554)
+   1b4ec:	b194de        	l32r	a11, 0x12f3c (0x1d0d4)
+   1b4ef:	c2227f        	l32i	a12, a2, 0x1fc
+   1b4f2:	5aa4      	add.n	a10, a4, a5
+   1b4f4:	a20a7c        	l8ui	a10, a10, 124
+0001b4f7: a5ee13   call8        . +0x13eec ; Capstone ; target=0x2f3e0
+   1b4fa:	4b44      	addi.n	a4, a4, 4
+   1b4fc:	4b22      	addi.n	a2, a2, 4
+   1b4fe:	3792ea        	bne	a2, a3, 0x1b4ec
+   1b501:	0caa      	movi.n	a10, 10
+   1b503:	0c1b      	movi.n	a11, 1
+   1b505:	0c1c      	movi.n	a12, 1
+   1b507:	218ade        	l32r	a2, 0x12f30 (0xb67c)
+0001b50a: a5ee1b   call8        . +0x1beec ; Capstone ; target=0x373f4
+   1b50d:	60e613        	wsr.ps	a6
+   1b510:	0c0b      	movi.n	a11, 0
+   1b512:	b2427e        	s8i	a11, a2, 126
+0001b515: 1df0     retw.n        ; Capstone
+	...

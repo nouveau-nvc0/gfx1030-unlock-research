@@ -1,0 +1,41 @@
+
+/tmp/tmpbyhy5aeo/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00030c74 <.data+0x30c74>:
+00030c74: 364100   entry        a1, 0x20 ; Capstone
+   30c77:	4c0a      	movi.n	a10, 64
+00030c79: 6590d1   call8        . -0x2e6f8 ; Capstone ; target=0x2580
+   30c7c:	0c02      	movi.n	a2, 0
+   30c7e:	ad02      	mov.n	a10, a2
+   30c80:	0c0b      	movi.n	a11, 0
+00030c82: e5a7f0   call8        . -0xf580 ; Capstone ; target=0x21700
+   30c85:	ad02      	mov.n	a10, a2
+00030c87: e50bf1   call8        . -0xef40 ; Capstone ; target=0x21d44
+   30c8a:	1b22      	addi.n	a2, a2, 1
+   30c8c:	202074        	extui	a2, a2, 0, 8
+   30c8f:	6622eb        	bnei	a2, 2, 0x30c7e
+   30c92:	0c02      	movi.n	a2, 0
+   30c94:	a11b8a        	l32r	a10, 0x13500 (0xf0f4)
+   30c97:	b2a002        	movi	a11, 2
+   30c9a:	82a014        	movi	a8, 20
+00030c9d: 76a817   loopgtz      a8, . +0x1b ; Capstone
+   30ca0:	2092f0        	subx8	a9, a2, a2
+   30ca3:	c09911        	slli	a9, a9, 4
+   30ca6:	9a9a      	add.n	a9, a10, a9
+   30ca8:	c20980        	l8ui	a12, a9, 128
+   30cab:	1b22      	addi.n	a2, a2, 1
+   30cad:	202074        	extui	a2, a2, 0, 8
+   30cb0:	663c02        	bnei	a12, 3, 0x30cb6
+   30cb3:	b24980        	s8i	a11, a9, 128
+   30cb6:	3df0      	nop.n
+   30cb8:	0c2a      	movi.n	a10, 2
+00030cba: e59001   call8        . +0x1910 ; Capstone ; target=0x325c8
+   30cbd:	91118a        	l32r	a9, 0x13504 (0xf9c0)
+   30cc0:	4c0a      	movi.n	a10, 64
+   30cc2:	0c08      	movi.n	a8, 0
+   30cc4:	82497f        	s8i	a8, a9, 127
+00030cc7: e57ad1   call8        . -0x2e850 ; Capstone ; target=0x2474
+00030cca: 1df0     retw.n        ; Capstone

@@ -1,0 +1,12 @@
+
+/tmp/tmpe_9ngn_v/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00021078 <.data+0x21078>:
+00021078: 364100   entry        a1, 0x20 ; Capstone
+   2107b:	2111c9        	l32r	a2, 0x134c0 (0x108c8)
+   2107e:	22227f        	l32i	a2, a2, 0x1fc
+00021081: 1df0     retw.n        ; Capstone
+	...

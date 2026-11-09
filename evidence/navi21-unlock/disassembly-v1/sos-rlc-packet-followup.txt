@@ -1,0 +1,27 @@
+SOS packet construction matching the SYS RLC selectors
+
+SOS file31578 constructs stackpacket[0]=1070,[4]=2,[38]=incomingr0,
+then SVCf2(r0=1,r1=packet). File308f2 similarly constructs selector1059,
+with incomingr0/r1/r2 at38/3c/40. These exact fields match the previously
+analyzed SYS dispatcher, but SVCf2 routing itself remains to be followed.
+Neither matching layout nor selector alone proves delivery to that entry.
+
+Concrete caller of31578 is345fc in procedure34564. LetB denote the pointer
+loaded from absolute literal global2060ec. It selects bits16..23 of
+DWORD[B+71c]. TBBentry5 at345a7 targets345ec. That case performsSVCa3,
+calls308b2 and retains its result inr4; then comparesDWORD[B+704] with8.
+On equality it calls31578(DWORD[B+700]). There is no explicit zero-result
+check on308b2 before that call. This field-based path is not yet identified
+with the Linux ring-command path or a documented firmware-type number.
+Do not silently label selector5 as AUTOLOAD_RLC or field8 as RLC_G.
+
+The1059 builder has a direct caller3220c supplyingbyte[r5+20],r4,0;
+its wider context remains open. Immediate calls located in both ARM/Thumb
+views are candidates, not proof that all possible entries have been found.
+
+Next specific dependencies: producer/meaning of global2060ec, routing of
+SVCf2, and relation of the outer fields to driver commands. SVC7b/7c and
+changed saved-CC payload remain separate gaps. No hardware access.
+Reproduce: PYTHONPATH=/tmp/navi21-disasm/python python3
+scripts/navi21-sos-rlc-packet-audit.py
+Receipt: sos-rlc-packet-audit.json,72instructions and exact dispatch byte.

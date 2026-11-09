@@ -1,0 +1,37 @@
+
+/tmp/tmpi703hmi5/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000e04 <.data+0xe04>:
+00000e04: 364100   entry        a1, 0x20 ; Capstone
+     e07:	a159ff        	l32r	a10, 0xb6c (0x7b50)
+     e0a:	c02000        	memw
+     e0d:	822a8e        	l32i	a8, a10, 0x238
+     e10:	fce8      	bnez.n	a8, 0xe52
+     e12:	c02000        	memw
+     e15:	922a8d        	l32i	a9, a10, 0x234
+     e18:	0c2e      	movi.n	a14, 2
+     e1a:	ac19      	beqz.n	a9, 0xe3f
+     e1c:	c02000        	memw
+     e1f:	d22a8d        	l32i	a13, a10, 0x234
+     e22:	e0dd20        	or	a13, a13, a14
+     e25:	c02000        	memw
+     e28:	c22a70        	l32i	a12, a10, 0x1c0
+     e2b:	b22a70        	l32i	a11, a10, 0x1c0
+     e2e:	d26a8d        	s32i	a13, a10, 0x234
+     e31:	b80b      	l32i.n	a11, a11, 0
+     e33:	b22b15        	l32i	a11, a11, 84
+     e36:	c80c      	l32i.n	a12, a12, 0
+     e38:	2bbb      	addi.n	a11, a11, 2
+     e3a:	b26c15        	s32i	a11, a12, 84
+00000e3d: 1df0     retw.n        ; Capstone
+     e3f:	b22a70        	l32i	a11, a10, 0x1c0
+     e42:	c22a8c        	l32i	a12, a10, 0x230
+     e45:	d22a8a        	l32i	a13, a10, 0x228
+     e48:	a85b      	l32i.n	a10, a11, 20
+     e4a:	b8db      	l32i.n	a11, a11, 52
+00000e4c: 65f5ff   call8        . -0xa8 ; Capstone ; target=0xda4
+00000e4f: 25f3ff   call8        . -0xcc ; Capstone ; target=0xd80
+00000e52: 1df0     retw.n        ; Capstone

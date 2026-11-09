@@ -1,0 +1,17 @@
+
+/tmp/tmpdnnadpal/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002de38 <.data+0x2de38>:
+0002de38: 364100   entry        a1, 0x20 ; Capstone
+   2de3b:	313398        	l32r	a3, 0x13f08 (0x14a60)
+   2de3e:	0c04      	movi.n	a4, 0
+   2de40:	22a0b0        	movi	a2, 176
+   2de43:	3df0      	nop.n
+0002de45: 76a204   loopgtz      a2, . +8 ; Capstone
+   2de48:	42637f        	s32i	a4, a3, 0x1fc
+   2de4b:	4b33      	addi.n	a3, a3, 4
+0002de4d: 1df0     retw.n        ; Capstone
+	...

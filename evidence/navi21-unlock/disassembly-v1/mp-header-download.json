@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/torvalds/linux/master/drivers/gpu/drm/amd/include/asic_reg/mp/mp_11_0_offset.h",
+    "sha256": "085538cc9ae20027564682395fd3958dab2553fdf739c101d294f42fd4b63df7",
+    "size": 36550
+  },
+  {
+    "url": "https://raw.githubusercontent.com/torvalds/linux/master/drivers/gpu/drm/amd/include/asic_reg/mp/mp_11_0_sh_mask.h",
+    "sha256": "9f6e5f556511d3b1bf3d27595fbb3a8416a88170af3aa7fbcf56627d67cd7a5c",
+    "size": 81699
+  }
+]

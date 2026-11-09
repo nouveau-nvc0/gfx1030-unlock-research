@@ -1,0 +1,38 @@
+
+/tmp/tmps3u6u4hk/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000373f4 <.data+0x373f4>:
+000373f4: 364100   entry        a1, 0x20 ; Capstone
+   373f7:	a2a200        	movi	a10, 0x200
+000373fa: 6518cb   call8        . -0x34e78 ; Capstone ; target=0x2580
+   373fd:	0c0a      	movi.n	a10, 0
+   373ff:	7cff      	movi.n	a15, -1
+   37401:	0c19      	movi.n	a9, 1
+   37403:	001240        	ssl	a2
+   37406:	00c3a1        	sll	a12, a3
+   37409:	21c96e        	l32r	a2, 0x12f30 (0xb67c)
+   3740c:	00e9a1        	sll	a14, a9
+   3740f:	f0ee30        	xor	a14, a14, a15
+   37412:	d22221        	l32i	a13, a2, 132
+   37415:	82027c        	l8ui	a8, a2, 124
+   37418:	b22222        	l32i	a11, a2, 136
+   3741b:	e0dd10        	and	a13, a13, a14
+   3741e:	d0cc20        	or	a12, a12, a13
+   37421:	c26221        	s32i	a12, a2, 132
+   37424:	c0bbc0        	sub	a11, a11, a12
+   37427:	b0a983        	moveqz	a10, a9, a11
+   3742a:	a2427d        	s8i	a10, a2, 125
+   3742d:	871a13        	beq	a10, a8, 0x37444
+   37430:	661a05        	bnei	a10, 1, 0x37439
+00037433: a505e4   call8        . -0x1bfa4 ; Capstone ; target=0x1b48c
+   37436:	060100        	j	0x3743e
+   37439:	ad04      	mov.n	a10, a4
+0003743b: 2521fd   call8        . -0x2dec ; Capstone ; target=0x3464c
+   3743e:	82027d        	l8ui	a8, a2, 125
+   37441:	82427c        	s8i	a8, a2, 124
+   37444:	a2a200        	movi	a10, 0x200
+00037447: e502cb   call8        . -0x34fd0 ; Capstone ; target=0x2474
+0003744a: 1df0     retw.n        ; Capstone

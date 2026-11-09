@@ -1,0 +1,17 @@
+
+/tmp/tmpp8rg7ta_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001120 <.data+0x1120>:
+00001120: 364100   entry        a1, 0x20 ; Capstone
+    1123:	319afe        	l32r	a3, 0xb8c (0x31ffe00)
+    1126:	406200        	rsil	a4, 2
+    1129:	c02000        	memw
+    112c:	2223fc        	l32i	a2, a3, 0x3f0
+    112f:	c02000        	memw
+    1132:	3223fd        	l32i	a3, a3, 0x3f4
+    1135:	40e613        	wsr.ps	a4
+00001138: 1df0     retw.n        ; Capstone
+	...

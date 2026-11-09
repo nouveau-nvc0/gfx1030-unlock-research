@@ -1,0 +1,24 @@
+
+/tmp/tmpe23q4gtb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00034ea0 <.data+0x34ea0>:
+00034ea0: 364100   entry        a1, 0x20 ; Capstone
+   34ea3:	81757d        	l32r	a8, 0x14478 (0x110dc)
+   34ea6:	820880        	l8ui	a8, a8, 128
+   34ea9:	000240        	ssr	a2
+   34eac:	8080b1        	sra	a8, a8
+   34eaf:	076816        	bbci	a8, 0, 0x34ec9
+   34eb2:	20a074        	extui	a10, a2, 0, 8
+00034eb5: a5fdff   call8        . -0x24 ; Capstone ; target=0x34e90
+   34eb8:	81dc77        	l32r	a8, 0x12e28 (0x9c00)
+   34ebb:	a02a90        	addx2	a2, a10, a10
+   34ebe:	8022a0        	addx4	a2, a2, a8
+   34ec1:	22d275        	addmi	a2, a2, 0x7500
+   34ec4:	22c280        	addi	a2, a2, -128
+00034ec7: 1df0     retw.n        ; Capstone
+   34ec9:	0c02      	movi.n	a2, 0
+00034ecb: 1df0     retw.n        ; Capstone
+   34ecd:	000000        	ill

@@ -1,0 +1,24 @@
+
+/tmp/tmpmz_1daot/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002c43c <.data+0x2c43c>:
+0002c43c: 366100   entry        a1, 0x30 ; Capstone
+   2c43f:	ad02      	mov.n	a10, a2
+0002c441: 5005fa   wfr          f0, a5 ; Capstone
+0002c444: 034100   ssi          f0, a1, 0 ; Capstone
+0002c447: 65d204   call8        . +0x4d28 ; Capstone ; target=0x3116c
+   2c44a:	9c7a      	beqz.n	a10, 0x2c465
+   2c44c:	922a13        	l32i	a9, a10, 76
+0002c44f: 130100   lsi          f1, a1, 0 ; Capstone
+   2c452:	0c18      	movi.n	a8, 1
+   2c454:	8cd9      	beqz.n	a9, 0x2c465
+   2c456:	a2d901        	addmi	a10, a9, 0x100
+   2c459:	824a5a        	s8i	a8, a10, 90
+   2c45c:	324a51        	s8i	a3, a10, 81
+   2c45f:	4259a6        	s16i	a4, a9, 0x14c
+0002c462: 134955   ssi          f1, a9, 0x154 ; Capstone
+0002c465: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,13 @@
+
+/tmp/tmp03_cy_z7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00002720 <.data+0x2720>:
+00002720: 364100   entry        a1, 0x20 ; Capstone
+    2723:	3169f9        	l32r	a3, 0xcc8 (0x7af8)
+    2726:	216ff9        	l32r	a2, 0xce4 (0x3010f10)
+    2729:	22637f        	s32i	a2, a3, 0x1fc
+0000272c: 1df0     retw.n        ; Capstone
+	...

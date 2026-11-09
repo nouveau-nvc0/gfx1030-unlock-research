@@ -1,0 +1,9 @@
+
+/tmp/tmpzzulh46j/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000005dc <.data+0x5dc>:
+     5dc:	004100        	break	1, 0
+     5df:	46feff        	j	0x5dc

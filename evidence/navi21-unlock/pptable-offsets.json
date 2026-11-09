@@ -1,0 +1,18 @@
+{
+  "smu_11_0_7_powerplay_table.smc_pptable": 802,
+  "smu_11_0_7_powerplay_table.power_saving_clock": 46,
+  "smu_11_0_7_power_saving_clock_table.max": 8,
+  "smu_11_0_7_power_saving_clock_table.min": 72,
+  "PPTable_t.SocketPowerLimitAc": 12,
+  "PPTable_t.SocketPowerLimitDc": 28,
+  "PPTable_t.DpmDescriptor": 160,
+  "PPTable_t.FreqTableGfx": 524,
+  "PPTable_t.FreqTableUclk": 604,
+  "PPTable_t.GfxclkFinit": 858,
+  "PPTable_t.GfxclkFidle": 860,
+  "pp_table_size": 2470,
+  "smc_table_size": 1668,
+  "gfx_levels": 16,
+  "mem_levels": 4,
+  "power_limits": 4
+}

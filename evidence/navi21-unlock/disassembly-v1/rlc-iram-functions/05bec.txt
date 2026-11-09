@@ -1,0 +1,21 @@
+
+/tmp/tmpdrmtncrb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005bec <.data+0x5bec>:
+00005bec: 364100   entry        a1, 0x20 ; Capstone
+    5bef:	3184dd        	l32r	a3, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    5bf2:	7cb4      	movi.n	a4, -5
+    5bf4:	a124de        	l32r	a10, 0xffffd484 (0x5ffee57c) ; inferred DRAM map 0x5ffec000
+    5bf7:	22233b        	l32i	a2, a3, 236
+    5bfa:	0c09      	movi.n	a9, 0
+    5bfc:	924a23        	s8i	a9, a10, 35
+    5bff:	402210        	and	a2, a2, a4
+    5c02:	22633b        	s32i	a2, a3, 236
+    5c05:	82233c        	l32i	a8, a3, 240
+    5c08:	67e8f9        	bbsi	a8, 6, 0x5c05
+    5c0b:	992a      	s32i.n	a9, a10, 8
+00005c0d: 1df0     retw.n        ; Capstone
+	...

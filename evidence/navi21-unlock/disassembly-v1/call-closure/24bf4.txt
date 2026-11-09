@@ -1,0 +1,12 @@
+
+/tmp/tmpz7vttdil/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00024bf4 <.data+0x24bf4>:
+00024bf4: 364100   entry        a1, 0x20 ; Capstone
+   24bf7:	ad02      	mov.n	a10, a2
+   24bf9:	0c1b      	movi.n	a11, 1
+00024bfb: 254add   call8        . -0x22b5c ; Capstone ; target=0x209c
+00024bfe: 1df0     retw.n        ; Capstone

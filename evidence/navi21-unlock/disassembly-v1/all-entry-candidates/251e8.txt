@@ -1,0 +1,58 @@
+
+/tmp/tmpt24gi62t/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000251e8 <.data+0x251e8>:
+000251e8: 366100   entry        a1, 0x30 ; Capstone
+   251eb:	0c8a      	movi.n	a10, 8
+000251ed: 2539dd   call8        . -0x22c6c ; Capstone ; target=0x2580
+   251f0:	619bb9        	l32r	a6, 0x1385c (0x12254)
+   251f3:	719bb9        	l32r	a7, 0x13860 (0xc038)
+   251f6:	5197b9        	l32r	a5, 0x13854 (0xc290)
+   251f9:	319ab9        	l32r	a3, 0x13864 (0x9e68)
+   251fc:	2194b9        	l32r	a2, 0x1384c (0xc0fc)
+   251ff:	42c580        	addi	a4, a5, -128
+   25202:	4b93      	addi.n	a9, a3, 4
+   25204:	9901      	s32i.n	a9, a1, 0
+   25206:	b2137e        	l16ui	a11, a3, 252
+00025209: 001bda   ufloat.s     f1, a11, 0 ; Capstone
+   2520c:	a2267f        	l32i	a10, a6, 0x1fc
+0002520f: 13427f   ssi          f1, a2, 0x1fc ; Capstone
+00025212: a5fbff   call8        . -0x44 ; Capstone ; target=0x251cc
+   25215:	c194b9        	l32r	a12, 0x13868 (0xc104)
+00025218: 33027f   lsi          f3, a2, 0x1fc ; Capstone
+0002521b: 430c7f   lsi          f4, a12, 0x1fc ; Capstone
+0002521e: 40232a   mul.s        f2, f3, f4 ; Capstone
+   25221:	dd0a      	mov.n	a13, a10
+   25223:	bd04      	mov.n	a11, a4
+   25225:	ad05      	mov.n	a10, a5
+00025227: 40c2fa   rfr          a12, f2 ; Capstone
+0002522a: 25f8ff   call8        . -0x7c ; Capstone ; target=0x251ac
+   2522d:	a21380        	l16ui	a10, a3, 0x100
+   25230:	9c6a      	beqz.n	a10, 0x2524a
+   25232:	d117b9        	l32r	a13, 0x13690 (0x11770)
+00025235: 006aca   float.s      f6, a10, 0 ; Capstone
+00025238: 730d00   lsi          f7, a13, 0 ; Capstone
+0002523b: 70562a   mul.s        f5, f6, f7 ; Capstone
+0002523e: 40a5fa   rfr          a10, f5 ; Capstone
+00025241: 25190c   call8        . +0xc194 ; Capstone ; target=0x313d4
+00025244: 508afa   wfr          f8, a10 ; Capstone
+00025247: 83477f   ssi          f8, a7, 0x1fc ; Capstone
+   2524a:	72c740        	addi	a7, a7, 64
+   2524d:	42c440        	addi	a4, a4, 64
+   25250:	52c534        	addi	a5, a5, 52
+   25253:	4b66      	addi.n	a6, a6, 4
+   25255:	e801      	l32i.n	a14, a1, 0
+   25257:	4b22      	addi.n	a2, a2, 4
+   25259:	2b33      	addi.n	a3, a3, 2
+   2525b:	e793a7        	bne	a3, a14, 0x25206
+   2525e:	0c4a      	movi.n	a10, 4
+   25260:	b183b9        	l32r	a11, 0x1386c (0x25270)
+00025263: 258313   call8        . +0x13834 ; Capstone ; target=0x38a94
+   25266:	0c8a      	movi.n	a10, 8
+00025268: a520dd   call8        . -0x22df4 ; Capstone ; target=0x2474
+   2526b:	0c12      	movi.n	a2, 1
+0002526d: 1df0     retw.n        ; Capstone
+	...

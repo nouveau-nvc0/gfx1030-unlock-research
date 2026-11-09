@@ -1,0 +1,29 @@
+
+/tmp/tmp8gjpu2w9/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0003464c <.data+0x3464c>:
+0003464c: 364100   entry        a1, 0x20 ; Capstone
+   3464f:	661202        	bnei	a2, 1, 0x34655
+00034652: e5e1e6   call8        . -0x191e0 ; Capstone ; target=0x1b470
+   34655:	91357a        	l32r	a9, 0x12f2c (0x141d600)
+   34658:	c02000        	memw
+   3465b:	a22940        	l32i	a10, a9, 0x100
+   3465e:	b1ec7a        	l32r	a11, 0x13210 (0xffdfffff)
+   34661:	2c08      	movi.n	a8, 32
+   34663:	57ea0b        	bbsi	a10, 5, 0x34672
+   34666:	808a20        	or	a8, a10, a8
+   34669:	b08810        	and	a8, a8, a11
+   3466c:	c02000        	memw
+   3466f:	826940        	s32i	a8, a9, 0x100
+   34672:	661211        	bnei	a2, 1, 0x34687
+   34675:	c02000        	memw
+   34678:	a22940        	l32i	a10, a9, 0x100
+   3467b:	076a08        	bbci	a10, 0, 0x34687
+   3467e:	c02000        	memw
+   34681:	b22940        	l32i	a11, a9, 0x100
+   34684:	07ebf6        	bbsi	a11, 0, 0x3467e
+00034687: 1df0     retw.n        ; Capstone
+   34689:	000000        	ill

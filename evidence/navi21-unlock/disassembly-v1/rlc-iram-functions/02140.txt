@@ -1,0 +1,77 @@
+
+/tmp/tmpuv9o6vfq/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00002140 <.data+0x2140>:
+00002140: 364100   entry        a1, 0x20 ; Capstone
+    2143:	0c18      	movi.n	a8, 1
+    2145:	20b604        	extui	a11, a2, 6, 1
+    2148:	204004        	extui	a4, a2, 0, 1
+    214b:	207504        	extui	a7, a2, 5, 1
+    214e:	912fec        	l32r	a9, 0xffffd20c (0x5ffee264) ; inferred DRAM map 0x5ffec000
+    2151:	20d404        	extui	a13, a2, 4, 1
+    2154:	20f204        	extui	a15, a2, 2, 1
+    2157:	52090a        	l8ui	a5, a9, 10
+    215a:	a2090d        	l8ui	a10, a9, 13
+    215d:	320907        	l8ui	a3, a9, 7
+    2160:	e20909        	l8ui	a14, a9, 9
+    2163:	c2090b        	l8ui	a12, a9, 11
+    2166:	62090c        	l8ui	a6, a9, 12
+    2169:	f0ee20        	or	a14, a14, a15
+    216c:	d0cc20        	or	a12, a12, a13
+    216f:	706620        	or	a6, a6, a7
+    2172:	403320        	or	a3, a3, a4
+    2175:	b0aa20        	or	a10, a10, a11
+    2178:	412aec        	l32r	a4, 0xffffd220 (0x5ffee350) ; inferred DRAM map 0x5ffec000
+    217b:	a0a893        	movnez	a10, a8, a10
+    217e:	207304        	extui	a7, a2, 3, 1
+    2181:	606893        	movnez	a6, a8, a6
+    2184:	c0c893        	movnez	a12, a8, a12
+    2187:	e0e893        	movnez	a14, a8, a14
+    218a:	303893        	movnez	a3, a8, a3
+    218d:	324907        	s8i	a3, a9, 7
+    2190:	e24909        	s8i	a14, a9, 9
+    2193:	c2490b        	s8i	a12, a9, 11
+    2196:	62490c        	s8i	a6, a9, 12
+    2199:	705520        	or	a5, a5, a7
+    219c:	a2490d        	s8i	a10, a9, 13
+    219f:	720908        	l8ui	a7, a9, 8
+    21a2:	20a104        	extui	a10, a2, 1, 1
+    21a5:	505893        	movnez	a5, a8, a5
+    21a8:	52490a        	s8i	a5, a9, 10
+    21ab:	220901        	l8ui	a2, a9, 1
+    21ae:	a07720        	or	a7, a7, a10
+    21b1:	707893        	movnez	a7, a8, a7
+    21b4:	724908        	s8i	a7, a9, 8
+    21b7:	0c09      	movi.n	a9, 0
+    21b9:	ac42      	beqz.n	a2, 0x21e1
+    21bb:	ac27      	beqz.n	a7, 0x21e1
+    21bd:	824478        	s8i	a8, a4, 120
+    21c0:	ac85      	beqz.n	a5, 0x21ec
+    21c2:	0c17      	movi.n	a7, 1
+    21c4:	0c15      	movi.n	a5, 1
+    21c6:	707593        	movnez	a7, a5, a7
+    21c9:	72447c        	s8i	a7, a4, 124
+    21cc:	0c05      	movi.n	a5, 0
+    21ce:	ac22      	beqz.n	a2, 0x21f4
+    21d0:	0c19      	movi.n	a9, 1
+    21d2:	0c1a      	movi.n	a10, 1
+    21d4:	0c08      	movi.n	a8, 0
+    21d6:	608a93        	movnez	a8, a10, a6
+    21d9:	808993        	movnez	a8, a9, a8
+    21dc:	824488        	s8i	a8, a4, 136
+000021df: 1df0     retw.n        ; Capstone
+    21e1:	924478        	s8i	a9, a4, 120
+    21e4:	0c07      	movi.n	a7, 0
+    21e6:	5662fd        	bnez	a2, 0x21c0
+    21e9:	c6f5ff        	j	0x21c4
+    21ec:	92447c        	s8i	a9, a4, 124
+    21ef:	0c05      	movi.n	a5, 0
+    21f1:	56b2fd        	bnez	a2, 0x21d0
+    21f4:	0c1b      	movi.n	a11, 1
+    21f6:	505b93        	movnez	a5, a11, a5
+    21f9:	524488        	s8i	a5, a4, 136
+000021fc: 1df0     retw.n        ; Capstone
+	...

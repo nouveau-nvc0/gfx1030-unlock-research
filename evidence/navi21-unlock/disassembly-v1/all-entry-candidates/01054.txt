@@ -1,0 +1,21 @@
+
+/tmp/tmp75jenift/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001054 <.data+0x1054>:
+00001054: 364100   entry        a1, 0x20 ; Capstone
+    1057:	21d2fe        	l32r	a2, 0xba0 (0x7b74)
+    105a:	31c9fe        	l32r	a3, 0xb80 (0x7d5c)
+    105d:	906200        	rsil	a9, 2
+    1060:	82227f        	l32i	a8, a2, 0x1fc
+    1063:	8c78      	beqz.n	a8, 0x106e
+00001065: 655e00   call8        . +0x5e8 ; Capstone ; target=0x164c
+    1068:	82227f        	l32i	a8, a2, 0x1fc
+0000106b: e00800   callx8       a8 ; Capstone
+    106e:	ad03      	mov.n	a10, a3
+00001070: e53d01   call8        . +0x13e0 ; Capstone ; target=0x2450
+    1073:	007000        	waiti	0
+    1076:	c6f8ff        	j	0x105d
+    1079:	000000        	ill

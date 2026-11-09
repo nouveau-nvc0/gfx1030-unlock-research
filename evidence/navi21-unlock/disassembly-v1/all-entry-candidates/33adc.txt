@@ -1,0 +1,14 @@
+
+/tmp/tmpcp8pr3zt/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00033adc <.data+0x33adc>:
+00033adc: 364100   entry        a1, 0x20 ; Capstone
+   33adf:	31837d        	l32r	a3, 0x130ec (0xac0c)
+   33ae2:	2022b0        	addx8	a2, a2, a2
+   33ae5:	3022a0        	addx4	a2, a2, a3
+   33ae8:	220280        	l8ui	a2, a2, 128
+00033aeb: 1df0     retw.n        ; Capstone
+   33aed:	000000        	ill

@@ -1,0 +1,12 @@
+
+/tmp/tmp52ytiit2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002b820 <.data+0x2b820>:
+0002b820: 364100   entry        a1, 0x20 ; Capstone
+   2b823:	317aa1        	l32r	a3, 0x13e0c (0xc2fc)
+   2b826:	224380        	s8i	a2, a3, 128
+0002b829: 1df0     retw.n        ; Capstone
+	...

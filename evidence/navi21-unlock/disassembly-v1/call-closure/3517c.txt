@@ -1,0 +1,53 @@
+
+/tmp/tmptckizf2x/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0003517c <.data+0x3517c>:
+0003517c: 366100   entry        a1, 0x30 ; Capstone
+   3517f:	81db77        	l32r	a8, 0x130ec (0xac0c)
+   35182:	2042b0        	addx8	a4, a2, a2
+   35185:	8044a0        	addx4	a4, a4, a8
+   35188:	a20480        	l8ui	a10, a4, 128
+   3518b:	c1f779        	l32r	a12, 0x13968 (0xa95c)
+   3518e:	a0baf0        	subx8	a11, a10, a10
+   35191:	c0bba0        	addx4	a11, a11, a12
+   35194:	b22b7f        	l32i	a11, a11, 0x1fc
+   35197:	cd03      	mov.n	a12, a3
+00035199: a5bce7   call8        . -0x18434 ; Capstone ; target=0x1cd64
+   3519c:	920482        	l8ui	a9, a4, 130
+0003519f: 500afa   wfr          f0, a10 ; Capstone
+000351a2: 034100   ssi          f0, a1, 0 ; Capstone
+   351a5:	97b307        	bgeu	a3, a9, 0x351b0
+   351a8:	ad02      	mov.n	a10, a2
+000351aa: 40b0fa   rfr          a11, f0 ; Capstone
+000351ad: 255af4   call8        . -0xba5c ; Capstone ; target=0x29750
+   351b0:	619577        	l32r	a6, 0x13004 (0xfffff)
+   351b3:	a22426        	l32i	a10, a4, 152
+   351b6:	51a877        	l32r	a5, 0x13058 (0x11ffe00)
+   351b9:	60aa10        	and	a10, a10, a6
+   351bc:	5aaa      	add.n	a10, a10, a5
+   351be:	c02000        	memw
+   351c1:	bd02      	mov.n	a11, a2
+   351c3:	326a80        	s32i	a3, a10, 0x200
+   351c6:	cd03      	mov.n	a12, a3
+   351c8:	0c1a      	movi.n	a10, 1
+000351ca: e54ce7   call8        . -0x18b30 ; Capstone ; target=0x1c698
+   351cd:	922426        	l32i	a9, a4, 152
+   351d0:	92c924        	addi	a9, a9, 36
+   351d3:	609910        	and	a9, a9, a6
+   351d6:	5a99      	add.n	a9, a9, a5
+   351d8:	c02000        	memw
+   351db:	a22980        	l32i	a10, a9, 0x200
+   351de:	077af6        	bbci	a10, 16, 0x351d8
+   351e1:	b20482        	l8ui	a11, a4, 130
+   351e4:	37bb0a        	bgeu	a11, a3, 0x351f2
+   351e7:	ad02      	mov.n	a10, a2
+000351e9: 230100   lsi          f2, a1, 0 ; Capstone
+000351ec: 40b2fa   rfr          a11, f2 ; Capstone
+000351ef: 2556f4   call8        . -0xba9c ; Capstone ; target=0x29750
+   351f2:	ad02      	mov.n	a10, a2
+   351f4:	324482        	s8i	a3, a4, 130
+000351f7: 2577f7   call8        . -0x888c ; Capstone ; target=0x2c968
+000351fa: 1df0     retw.n        ; Capstone

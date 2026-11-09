@@ -1,0 +1,356 @@
+{
+  "scope": "Local targeted-listing locator; no memory-value propagation or global completeness claim. Optional JX edges describe initial tables, not runtime immutability.",
+  "indirect_edges": null,
+  "reports": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-vector-roots/00400.txt",
+      "reachable_in_window": 5,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 5,
+      "unresolved_or_external_edges": [
+        [
+          "0x40c",
+          "exception return; dynamic resumption outside local CFG"
+        ]
+      ],
+      "unknown_operations": [
+        "rfwo"
+      ],
+      "stores": [
+        {
+          "pc": "0x400",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a0",
+          "source_constant": null,
+          "base": "a5",
+          "offset": "-0x10"
+        },
+        {
+          "pc": "0x403",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a1",
+          "source_constant": null,
+          "base": "a5",
+          "offset": "-0xc"
+        },
+        {
+          "pc": "0x406",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a2",
+          "source_constant": null,
+          "base": "a5",
+          "offset": "-8"
+        },
+        {
+          "pc": "0x409",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a3",
+          "source_constant": null,
+          "base": "a5",
+          "offset": "-4"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-vector-roots/00440.txt",
+      "reachable_in_window": 5,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 5,
+      "unresolved_or_external_edges": [
+        [
+          "0x44c",
+          "exception return; dynamic resumption outside local CFG"
+        ]
+      ],
+      "unknown_operations": [
+        "l32e",
+        "rfwu"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-vector-roots/00480.txt",
+      "reachable_in_window": 10,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 10,
+      "unresolved_or_external_edges": [
+        [
+          "0x49b",
+          "exception return; dynamic resumption outside local CFG"
+        ]
+      ],
+      "unknown_operations": [
+        "l32e",
+        "rfwo"
+      ],
+      "stores": [
+        {
+          "pc": "0x480",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a0",
+          "source_constant": null,
+          "base": "a9",
+          "offset": "-0x10"
+        },
+        {
+          "pc": "0x486",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a1",
+          "source_constant": null,
+          "base": "a9",
+          "offset": "-0xc"
+        },
+        {
+          "pc": "0x489",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a2",
+          "source_constant": null,
+          "base": "a9",
+          "offset": "-8"
+        },
+        {
+          "pc": "0x48c",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a3",
+          "source_constant": null,
+          "base": "a9",
+          "offset": "-4"
+        },
+        {
+          "pc": "0x48f",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a4",
+          "source_constant": null,
+          "base": "a0",
+          "offset": "-0x20"
+        },
+        {
+          "pc": "0x492",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a5",
+          "source_constant": null,
+          "base": "a0",
+          "offset": "-0x1c"
+        },
+        {
+          "pc": "0x495",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": null,
+          "base": "a0",
+          "offset": "-0x18"
+        },
+        {
+          "pc": "0x498",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": null,
+          "base": "a0",
+          "offset": "-0x14"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-vector-roots/004c0.txt",
+      "reachable_in_window": 10,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 10,
+      "unresolved_or_external_edges": [
+        [
+          "0x4db",
+          "exception return; dynamic resumption outside local CFG"
+        ]
+      ],
+      "unknown_operations": [
+        "l32e",
+        "rfwu"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-vector-roots/00500.txt",
+      "reachable_in_window": 14,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 14,
+      "unresolved_or_external_edges": [
+        [
+          "0x527",
+          "exception return; dynamic resumption outside local CFG"
+        ]
+      ],
+      "unknown_operations": [
+        "l32e",
+        "rfwo"
+      ],
+      "stores": [
+        {
+          "pc": "0x500",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a0",
+          "source_constant": null,
+          "base": "a13",
+          "offset": "-0x10"
+        },
+        {
+          "pc": "0x506",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a1",
+          "source_constant": null,
+          "base": "a13",
+          "offset": "-0xc"
+        },
+        {
+          "pc": "0x509",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a2",
+          "source_constant": null,
+          "base": "a13",
+          "offset": "-8"
+        },
+        {
+          "pc": "0x50c",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a3",
+          "source_constant": null,
+          "base": "a13",
+          "offset": "-4"
+        },
+        {
+          "pc": "0x50f",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a4",
+          "source_constant": null,
+          "base": "a0",
+          "offset": "-0x30"
+        },
+        {
+          "pc": "0x512",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a5",
+          "source_constant": null,
+          "base": "a0",
+          "offset": "-0x2c"
+        },
+        {
+          "pc": "0x515",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": null,
+          "base": "a0",
+          "offset": "-0x28"
+        },
+        {
+          "pc": "0x518",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": null,
+          "base": "a0",
+          "offset": "-0x24"
+        },
+        {
+          "pc": "0x51b",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a8",
+          "source_constant": null,
+          "base": "a0",
+          "offset": "-0x20"
+        },
+        {
+          "pc": "0x51e",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a9",
+          "source_constant": null,
+          "base": "a0",
+          "offset": "-0x1c"
+        },
+        {
+          "pc": "0x521",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a10",
+          "source_constant": null,
+          "base": "a0",
+          "offset": "-0x18"
+        },
+        {
+          "pc": "0x524",
+          "operation": "s32e",
+          "address": null,
+          "address_candidates": [],
+          "source": "a11",
+          "source_constant": null,
+          "base": "a0",
+          "offset": "-0x14"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-vector-roots/00540.txt",
+      "reachable_in_window": 14,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 14,
+      "unresolved_or_external_edges": [
+        [
+          "0x567",
+          "exception return; dynamic resumption outside local CFG"
+        ]
+      ],
+      "unknown_operations": [
+        "l32e",
+        "rfwu"
+      ],
+      "stores": []
+    }
+  ]
+}

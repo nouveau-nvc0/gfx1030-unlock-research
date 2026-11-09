@@ -1,0 +1,20 @@
+
+/tmp/tmpjpvh0ht3/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000a340 <.data+0xa340>:
+0000a340: 364100   entry        a1, 0x20 ; Capstone
+    a343:	f68211        	bgeui	a2, 8, 0xa358
+    a346:	f68212        	bgeui	a2, 8, 0xa35c
+    a349:	001240        	ssl	a2
+    a34c:	0c12      	movi.n	a2, 1
+    a34e:	0022a1        	sll	a2, a2
+    a351:	20e213        	wsr.intset	a2
+    a354:	0c02      	movi.n	a2, 0
+0000a356: 1df0     retw.n        ; Capstone
+    a358:	7cf2      	movi.n	a2, -1
+0000a35a: 1df0     retw.n        ; Capstone
+    a35c:	0c02      	movi.n	a2, 0
+0000a35e: 1df0     retw.n        ; Capstone

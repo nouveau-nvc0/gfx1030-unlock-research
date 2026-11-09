@@ -1,0 +1,51 @@
+
+/tmp/tmpx0293yyx/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00035028 <.data+0x35028>:
+00035028: 364100   entry        a1, 0x20 ; Capstone
+   3502b:	ad02      	mov.n	a10, a2
+   3502d:	81157d        	l32r	a8, 0x14484 (0xaaac)
+   35030:	0c0b      	movi.n	a11, 0
+   35032:	2042b0        	addx8	a4, a2, a2
+   35035:	8044a0        	addx4	a4, a4, a8
+   35038:	32247f        	l32i	a3, a4, 0x1fc
+0003503b: a574f4   call8        . -0xb8b4 ; Capstone ; target=0x29784
+   3503e:	0c59      	movi.n	a9, 5
+   35040:	0c16      	movi.n	a6, 1
+   35042:	7cf7      	movi.n	a7, -1
+   35044:	b2247e        	l32i	a11, a4, 0x1f8
+   35047:	d1ef77        	l32r	a13, 0x13004 (0xfffff)
+   3504a:	c11278        	l32r	a12, 0x13094 (0x1200000)
+   3504d:	4bbb      	addi.n	a11, a11, 4
+   3504f:	d0bb10        	and	a11, a11, a13
+   35052:	cabb      	add.n	a11, a11, a12
+   35054:	c02000        	memw
+   35057:	990b      	s32i.n	a9, a11, 0
+   35059:	a2d401        	addmi	a10, a4, 0x100
+   3505c:	924ae5        	s8i	a9, a10, 229
+   3505f:	ac13      	beqz.n	a3, 0x35084
+   35061:	0c04      	movi.n	a4, 0
+   35063:	001440        	ssl	a4
+   35066:	0056a1        	sll	a5, a6
+   35069:	57030c        	bnone	a3, a5, 0x35079
+   3506c:	ad02      	mov.n	a10, a2
+   3506e:	bd05      	mov.n	a11, a5
+00035070: 651de7   call8        . -0x18e28 ; Capstone ; target=0x1c248
+   35073:	70c530        	xor	a12, a5, a7
+   35076:	c03310        	and	a3, a3, a12
+   35079:	1b44      	addi.n	a4, a4, 1
+   3507b:	001440        	ssl	a4
+   3507e:	0056a1        	sll	a5, a6
+   35081:	5643fe        	bnez	a3, 0x35069
+   35084:	e1227b        	l32r	a14, 0x13d0c (0xaec0)
+   35087:	001240        	ssl	a2
+   3508a:	d22e7f        	l32i	a13, a14, 0x1fc
+   3508d:	00f6a1        	sll	a15, a6
+   35090:	70ff30        	xor	a15, a15, a7
+   35093:	f0dd10        	and	a13, a13, a15
+   35096:	d26e7f        	s32i	a13, a14, 0x1fc
+00035099: 1df0     retw.n        ; Capstone
+	...

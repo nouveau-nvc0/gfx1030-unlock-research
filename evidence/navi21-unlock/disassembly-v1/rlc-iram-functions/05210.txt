@@ -1,0 +1,24 @@
+
+/tmp/tmp2lz67mod/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005210 <.data+0x5210>:
+00005210: 364100   entry        a1, 0x20 ; Capstone
+    5213:	4190e0        	l32r	a4, 0xffffd454 (0x5ffed9d4) ; inferred DRAM map 0x5ffec000
+    5216:	82040c        	l8ui	a8, a4, 12
+    5219:	0c02      	movi.n	a2, 0
+    521b:	32c410        	addi	a3, a4, 16
+    521e:	9c08      	beqz.n	a8, 0x5232
+    5220:	ad02      	mov.n	a10, a2
+    5222:	20b141        	srli	a11, a2, 1
+    5225:	30bba0        	addx4	a11, a11, a3
+    5228:	b80b      	l32i.n	a11, a11, 0
+0000522a: e51800   call8        . +0x190 ; Capstone ; target=0x53b8
+    522d:	2b22      	addi.n	a2, a2, 2
+    522f:	b6e2ed        	bltui	a2, 128, 0x5220
+    5232:	0c1c      	movi.n	a12, 1
+    5234:	c2440c        	s8i	a12, a4, 12
+00005237: 25f0ff   call8        . -0xfc ; Capstone ; target=0x5138
+0000523a: 1df0     retw.n        ; Capstone

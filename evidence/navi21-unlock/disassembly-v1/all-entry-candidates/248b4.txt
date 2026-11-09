@@ -1,0 +1,40 @@
+
+/tmp/tmp5n8nqh4l/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000248b4 <.data+0x248b4>:
+000248b4: 364100   entry        a1, 0x20 ; Capstone
+   248b7:	cd03      	mov.n	a12, a3
+   248b9:	dd04      	mov.n	a13, a4
+   248bb:	a05211        	slli	a5, a2, 6
+   248be:	a15ab9        	l32r	a10, 0x12e28 (0x9c00)
+   248c1:	3c4b      	movi.n	a11, 52
+   248c3:	20bbd1        	mul16s	a11, a11, a2
+   248c6:	5a5a      	add.n	a5, a10, a5
+   248c8:	baaa      	add.n	a10, a10, a11
+   248ca:	52d54f        	addmi	a5, a5, 0x4f00
+   248cd:	52c560        	addi	a5, a5, 96
+   248d0:	a2da52        	addmi	a10, a10, 0x5200
+   248d3:	a2cae0        	addi	a10, a10, -32
+   248d6:	bd05      	mov.n	a11, a5
+000248d8: 258d00   call8        . +0x8d4 ; Capstone ; target=0x251ac
+   248db:	9ca4      	beqz.n	a4, 0x248f9
+   248dd:	ad05      	mov.n	a10, a5
+   248df:	0c0b      	movi.n	a11, 0
+000248e1: a5ef04   call8        . +0x4efc ; Capstone ; target=0x297dc
+   248e4:	c1babb        	l32r	a12, 0x137cc (0x12374)
+   248e7:	c0c290        	addx2	a12, a2, a12
+   248ea:	c21c7e        	l16ui	a12, a12, 252
+000248ed: 000cca   float.s      f0, a12, 0 ; Capstone
+000248f0: 501afa   wfr          f1, a10 ; Capstone
+000248f3: 10000a   add.s        f0, f0, f1 ; Capstone
+   248f6:	460100        	j	0x248ff
+   248f9:	d116ba        	l32r	a13, 0x13154 (0x7f800000)
+000248fc: 500dfa   wfr          f0, a13 ; Capstone
+   248ff:	e1b4bb        	l32r	a14, 0x137d0 (0xe93c)
+   24902:	e0e2a0        	addx4	a14, a2, a14
+00024905: 034e7f   ssi          f0, a14, 0x1fc ; Capstone
+00024908: 1df0     retw.n        ; Capstone
+	...

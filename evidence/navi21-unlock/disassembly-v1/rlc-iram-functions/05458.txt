@@ -1,0 +1,55 @@
+
+/tmp/tmpwmhp1en_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005458 <.data+0x5458>:
+00005458: 36a100   entry        a1, 0x50 ; Capstone
+    545b:	4107e0        	l32r	a4, 0xffffd478 (0x5ffee578) ; inferred DRAM map 0x5ffec000
+    545e:	820400        	l8ui	a8, a4, 0
+    5461:	8c48      	beqz.n	a8, 0x5469
+    5463:	0c12      	movi.n	a2, 1
+00005465: 1df0     retw.n        ; Capstone
+    5467:	000020        	or	a0, a0, a0
+    546a:	30f430        	xor	a15, a4, a3
+    546d:	a3a0a0        	excw
+    5470:	a0f4a5        	extui	a15, a10, 20, 11
+    5473:	dcff      	bnez.n	a15, 0x5496
+    5475:	a020f4        	extui	a2, a10, 0, 16
+    5478:	b911      	s32i.n	a11, a1, 4
+0000547a: 030101   lsi          f0, a1, 4 ; Capstone
+    547d:	a0b0f5        	extui	a11, a10, 16, 16
+    5480:	b25104        	s16i	a11, a1, 8
+00005483: 034103   ssi          f0, a1, 0xc ; Capstone
+    5486:	20a220        	or	a10, a2, a2
+00005489: a5b4fe   call8        . -0x14b4 ; Capstone ; target=0x3fd4
+    548c:	8bb1      	addi.n	a11, a1, 8
+    548e:	a80b      	l32i.n	a10, a11, 0
+    5490:	b81b      	l32i.n	a11, a11, 4
+00005492: 65ca04   call8        . +0x4ca8 ; Capstone ; target=0xa138
+    5495:	ad02      	mov.n	a10, a2
+00005497: a5f0fb   call8        . -0x40f4 ; Capstone ; target=0x13a0
+    549a:	32510a        	s16i	a3, a1, 20
+    549d:	b2c114        	addi	a11, a1, 20
+    54a0:	a0c0f5        	extui	a12, a10, 16, 16
+    54a3:	a0d0f4        	extui	a13, a10, 0, 16
+    54a6:	d2510b        	s16i	a13, a1, 22
+    54a9:	c2510c        	s16i	a12, a1, 24
+    54ac:	a21b01        	l16ui	a10, a11, 2
+    54af:	c21b00        	l16ui	a12, a11, 0
+    54b2:	b29b02        	l16si	a11, a11, 4
+    54b5:	00aa11        	slli	a10, a10, 16
+    54b8:	c0aa20        	or	a10, a10, a12
+000054bb: 253cfb   call8        . -0x4c3c ; Capstone ; target=0x87c
+    54be:	2d0a      	mov.n	a2, a10
+    54c0:	0c1e      	movi.n	a14, 1
+    54c2:	e24400        	s8i	a14, a4, 0
+000054c5: 1df0     retw.n        ; Capstone
+	...
+
+; Alternate branch-target decode
+    5469:	2030f4        	extui	a3, a2, 0, 16
+    546c:	30a3a0        	addx4	a10, a3, a3
+    546f:	a0a0f4        	extui	a10, a10, 0, 16
+00005472: a5dcff   call8        . -0x234 ; Capstone ; target=0x523c

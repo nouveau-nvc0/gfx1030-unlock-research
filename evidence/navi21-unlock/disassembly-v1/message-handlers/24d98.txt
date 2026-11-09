@@ -1,0 +1,48 @@
+
+/tmp/tmpzd3frkg0/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00024d98 <.data+0x24d98>:
+00024d98: 364100   entry        a1, 0x20 ; Capstone
+   24d9b:	ad02      	mov.n	a10, a2
+00024d9d: 2532dd   call8        . -0x22cdc ; Capstone ; target=0x20c0
+   24da0:	3d0a      	mov.n	a3, a10
+   24da2:	a04875        	extui	a4, a10, 24, 8
+   24da5:	f64453        	bgeui	a4, 4, 0x24dfc
+   24da8:	a05075        	extui	a5, a10, 16, 8
+   24dab:	f6254d        	bgeui	a5, 2, 0x24dfc
+   24dae:	0c8a      	movi.n	a10, 8
+00024db0: e57cdd   call8        . -0x22830 ; Capstone ; target=0x2580
+   24db3:	a0b411        	slli	a11, a4, 6
+   24db6:	e1b7b9        	l32r	a14, 0x13494 (0xc080)
+   24db9:	d11cb8        	l32r	a13, 0x12e2c (0xbf54)
+   24dbc:	50f490        	addx2	a15, a4, a5
+   24dbf:	3080f4        	extui	a8, a3, 0, 16
+00024dc2: 0038da   ufloat.s     f3, a8, 0 ; Capstone
+   24dc5:	d0ffa0        	addx4	a15, a15, a13
+00024dc8: 334f7f   ssi          f3, a15, 0x1fc ; Capstone
+   24dcb:	c20ecc        	l8ui	a12, a14, 204
+   24dce:	a116b8        	l32r	a10, 0x12e28 (0x9c00)
+00024dd1: 230e44   lsi          f2, a14, 0x110 ; Capstone
+   24dd4:	c0c490        	addx2	a12, a4, a12
+   24dd7:	d0cca0        	addx4	a12, a12, a13
+00024dda: 130c7f   lsi          f1, a12, 0x1fc ; Capstone
+00024ddd: 20012a   mul.s        f0, f1, f2 ; Capstone
+   24de0:	baaa      	add.n	a10, a10, a11
+   24de2:	a2da23        	addmi	a10, a10, 0x2300
+   24de5:	a2ca7c        	addi	a10, a10, 124
+00024de8: 40b0fa   rfr          a11, f0 ; Capstone
+00024deb: a5f110   call8        . +0x10f1c ; Capstone ; target=0x35d04
+   24dee:	0c8a      	movi.n	a10, 8
+00024df0: 2568dd   call8        . -0x2297c ; Capstone ; target=0x2474
+   24df3:	ad02      	mov.n	a10, a2
+   24df5:	0c1b      	movi.n	a11, 1
+00024df7: 652add   call8        . -0x22d58 ; Capstone ; target=0x209c
+00024dfa: 1df0     retw.n        ; Capstone
+   24dfc:	ad02      	mov.n	a10, a2
+   24dfe:	b2a0ff        	movi	a11, 255
+00024e01: a529dd   call8        . -0x22d64 ; Capstone ; target=0x209c
+00024e04: 1df0     retw.n        ; Capstone
+	...

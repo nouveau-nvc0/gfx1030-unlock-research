@@ -1,0 +1,24 @@
+
+/tmp/tmpzd97ptd3/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001bf3c <.data+0x1bf3c>:
+0001bf3c: 364100   entry        a1, 0x20 ; Capstone
+   1bf3f:	a2a088        	movi	a10, 136
+0001bf42: e563e6   call8        . -0x199c0 ; Capstone ; target=0x2580
+   1bf45:	0c7a      	movi.n	a10, 7
+0001bf47: 254919   call8        . +0x19494 ; Capstone ; target=0x353d8
+   1bf4a:	0caa      	movi.n	a10, 10
+0001bf4c: a54819   call8        . +0x1948c ; Capstone ; target=0x353d8
+   1bf4f:	0cda      	movi.n	a10, 13
+0001bf51: 654819   call8        . +0x19488 ; Capstone ; target=0x353d8
+0001bf54: e5d309   call8        . +0x9d40 ; Capstone ; target=0x25c94
+   1bf57:	8c3a      	beqz.n	a10, 0x1bf5e
+   1bf59:	0caa      	movi.n	a10, 10
+0001bf5b: e56616   call8        . +0x16670 ; Capstone ; target=0x325c8
+   1bf5e:	a2a088        	movi	a10, 136
+0001bf61: 2551e6   call8        . -0x19aec ; Capstone ; target=0x2474
+   1bf64:	0c12      	movi.n	a2, 1
+0001bf66: 1df0     retw.n        ; Capstone

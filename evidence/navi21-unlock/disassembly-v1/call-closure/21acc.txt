@@ -1,0 +1,23 @@
+
+/tmp/tmpb31yr_b1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00021acc <.data+0x21acc>:
+00021acc: 364100   entry        a1, 0x20 ; Capstone
+   21acf:	41a3c6        	l32r	a4, 0x1355c (0x5a170)
+   21ad2:	803211        	slli	a3, a2, 8
+   21ad5:	514bc5        	l32r	a5, 0x13004 (0xfffff)
+   21ad8:	4a33      	add.n	a3, a3, a4
+   21ada:	416ec5        	l32r	a4, 0x13094 (0x1200000)
+   21add:	503310        	and	a3, a3, a5
+   21ae0:	4a33      	add.n	a3, a3, a4
+   21ae2:	c02000        	memw
+   21ae5:	3803      	l32i.n	a3, a3, 0
+   21ae7:	0c42      	movi.n	a2, 4
+   21ae9:	276301        	bbci	a3, 2, 0x21aee
+00021aec: 1df0     retw.n        ; Capstone
+   21aee:	0c22      	movi.n	a2, 2
+00021af0: 1df0     retw.n        ; Capstone
+	...

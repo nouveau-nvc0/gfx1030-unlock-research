@@ -1,0 +1,13 @@
+
+/tmp/tmpyj4f07sf/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00004724 <.data+0x4724>:
+00004724: 364100   entry        a1, 0x20 ; Capstone
+    4727:	3118e3        	l32r	a3, 0xffffd388 (0x68037200) ; inferred DRAM map 0x5ffec000
+    472a:	0c42      	movi.n	a2, 4
+    472c:	22631a        	s32i	a2, a3, 104
+0000472f: 1df0     retw.n        ; Capstone
+    4731:	000000        	ill

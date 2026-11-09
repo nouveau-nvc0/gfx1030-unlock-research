@@ -1,0 +1,39 @@
+
+/tmp/tmpexwehcmc/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00028154 <.data+0x28154>:
+00028154: 364100   entry        a1, 0x20 ; Capstone
+   28157:	9195ab        	l32r	a9, 0x12fac (0x11040)
+   2815a:	81cfab        	l32r	a8, 0x13098 (0x447a0000)
+   2815d:	92097d        	l8ui	a9, a9, 125
+   28160:	a1a3ae        	l32r	a10, 0x13bec (0x10e00)
+00028163: 5008fa   wfr          f0, a8 ; Capstone
+   28166:	661915        	bnei	a9, 1, 0x2817f
+   28169:	b22adb        	l32i	a11, a10, 0x36c
+   2816c:	c822      	l32i.n	a12, a2, 8
+   2816e:	b0ba14        	extui	a11, a11, 10, 2
+   28171:	c0bba0        	addx4	a11, a11, a12
+00028174: 230b00   lsi          f2, a11, 0 ; Capstone
+00028177: 00122a   mul.s        f1, f2, f0 ; Capstone
+0002817a: 0021ea   utrunc.s     a2, f1, 0 ; Capstone
+0002817d: 1df0     retw.n        ; Capstone
+   2817f:	663915        	bnei	a9, 3, 0x28198
+   28182:	c22adc        	l32i	a12, a10, 0x370
+   28185:	d822      	l32i.n	a13, a2, 8
+   28187:	c0ca24        	extui	a12, a12, 10, 3
+   2818a:	d0cca0        	addx4	a12, a12, a13
+0002818d: 430c00   lsi          f4, a12, 0 ; Capstone
+00028190: 00342a   mul.s        f3, f4, f0 ; Capstone
+00028193: 0023ea   utrunc.s     a2, f3, 0 ; Capstone
+00028196: 1df0     retw.n        ; Capstone
+   28198:	0c0c      	movi.n	a12, 0
+   2819a:	2c7b      	movi.n	a11, 39
+   2819c:	d14aab        	l32r	a13, 0x12ec4 (0x300fe00)
+   2819f:	1c0a      	movi.n	a10, 16
+   281a1:	c02000        	memw
+   281a4:	d22d8a        	l32i	a13, a13, 0x228
+000281a7: 6546da   call8        . -0x25b98 ; Capstone ; target=0x260c
+	...

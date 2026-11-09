@@ -1,0 +1,43 @@
+
+/tmp/tmp27k7h0ob/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001a80c <.data+0x1a80c>:
+0001a80c: 364100   entry        a1, 0x20 ; Capstone
+   1a80f:	c07211        	slli	a7, a2, 4
+   1a812:	61b5e1        	l32r	a6, 0x12ee8 (0x11128)
+   1a815:	001340        	ssl	a3
+   1a818:	0c18      	movi.n	a8, 1
+   1a81a:	0038a1        	sll	a3, a8
+   1a81d:	7a66      	add.n	a6, a6, a7
+   1a81f:	220685        	l8ui	a2, a6, 133
+   1a822:	820681        	l8ui	a8, a6, 129
+   1a825:	520683        	l8ui	a5, a6, 131
+   1a828:	920680        	l8ui	a9, a6, 128
+   1a82b:	720682        	l8ui	a7, a6, 130
+   1a82e:	505320        	or	a5, a3, a5
+   1a831:	1b99      	addi.n	a9, a9, 1
+   1a833:	707320        	or	a7, a3, a7
+   1a836:	1b88      	addi.n	a8, a8, 1
+   1a838:	824681        	s8i	a8, a6, 129
+   1a83b:	724682        	s8i	a7, a6, 130
+   1a83e:	924680        	s8i	a9, a6, 128
+   1a841:	524683        	s8i	a5, a6, 131
+   1a844:	261415        	beqi	a4, 1, 0x1a85d
+   1a847:	920687        	l8ui	a9, a6, 135
+   1a84a:	7cfa      	movi.n	a10, -1
+   1a84c:	a0a330        	xor	a10, a3, a10
+   1a84f:	a0a210        	and	a10, a2, a10
+   1a852:	a24685        	s8i	a10, a6, 133
+   1a855:	909320        	or	a9, a3, a9
+   1a858:	924687        	s8i	a9, a6, 135
+0001a85b: 1df0     retw.n        ; Capstone
+   1a85d:	b20686        	l8ui	a11, a6, 134
+   1a860:	20c320        	or	a12, a3, a2
+   1a863:	c24685        	s8i	a12, a6, 133
+   1a866:	b0b320        	or	a11, a3, a11
+   1a869:	b24686        	s8i	a11, a6, 134
+0001a86c: 1df0     retw.n        ; Capstone
+	...

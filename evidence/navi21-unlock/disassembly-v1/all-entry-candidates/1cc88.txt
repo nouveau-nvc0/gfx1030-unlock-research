@@ -1,0 +1,53 @@
+
+/tmp/tmpemncc3mj/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001cc88 <.data+0x1cc88>:
+0001cc88: 366100   entry        a1, 0x30 ; Capstone
+   1cc8b:	0c0a      	movi.n	a10, 0
+   1cc8d:	0c48      	movi.n	a8, 4
+0001cc8f: 5002fa   wfr          f0, a2 ; Capstone
+0001cc92: 034102   ssi          f0, a1, 8 ; Capstone
+0001cc95: 76a819   loopgtz      a8, . +0x1d ; Capstone
+   1cc98:	302aa0        	addx4	a2, a10, a3
+0001cc9b: 130200   lsi          f1, a2, 0 ; Capstone
+0001cc9e: 00016b   ole.s        b0, f1, f0 ; Capstone
+0001cca1: 230201   lsi          f2, a2, 4 ; Capstone
+0001cca4: 760005   bf           b0, . +9 ; Capstone
+0001cca7: 20106b   ole.s        b1, f0, f2 ; Capstone
+0001ccaa: 761155   bt           b1, . +0x59 ; Capstone
+   1ccad:	1baa      	addi.n	a10, a10, 1
+   1ccaf:	a0a074        	extui	a10, a10, 0, 8
+   1ccb2:	0c09      	movi.n	a9, 0
+   1ccb4:	dc09      	bnez.n	a9, 0x1ccc8
+   1ccb6:	0c0c      	movi.n	a12, 0
+   1ccb8:	2ceb      	movi.n	a11, 46
+   1ccba:	d182d8        	l32r	a13, 0x12ec4 (0x300fe00)
+   1ccbd:	1c0a      	movi.n	a10, 16
+   1ccbf:	c02000        	memw
+   1ccc2:	d22d8a        	l32i	a13, a13, 0x228
+0001ccc5: 6594e5   call8        . -0x1a6b8 ; Capstone ; target=0x260c
+   1ccc8:	302aa0        	addx4	a2, a10, a3
+0001cccb: 630201   lsi          f6, a2, 4 ; Capstone
+0001ccce: 530200   lsi          f5, a2, 0 ; Capstone
+0001ccd1: 60351a   sub.s        f3, f5, f6 ; Capstone
+0001ccd4: 430206   lsi          f4, a2, 0x18 ; Capstone
+0001ccd7: 634101   ssi          f6, a1, 4 ; Capstone
+0001ccda: 40a3fa   rfr          a10, f3 ; Capstone
+0001ccdd: 434100   ssi          f4, a1, 0 ; Capstone
+0001cce0: a50b1c   call8        . +0x1c0bc ; Capstone ; target=0x38d9c
+0001cce3: 50aafa   wfr          f10, a10 ; Capstone
+0001cce6: 730100   lsi          f7, a1, 0 ; Capstone
+0001cce9: e30205   lsi          f14, a2, 0x14 ; Capstone
+0001ccec: 70be1a   sub.s        f11, f14, f7 ; Capstone
+0001ccef: d30101   lsi          f13, a1, 4 ; Capstone
+0001ccf2: c30102   lsi          f12, a1, 8 ; Capstone
+0001ccf5: d09c1a   sub.s        f9, f12, f13 ; Capstone
+0001ccf8: b08a2a   mul.s        f8, f10, f11 ; Capstone
+0001ccfb: 90784a   madd.s       f7, f8, f9 ; Capstone
+0001ccfe: 4027fa   rfr          a2, f7 ; Capstone
+0001cd01: 1df0     retw.n        ; Capstone
+   1cd03:	0c19      	movi.n	a9, 1
+   1cd05:	c6eaff        	j	0x1ccb4

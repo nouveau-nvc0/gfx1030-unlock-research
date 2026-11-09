@@ -1,0 +1,172 @@
+{
+  "scope": "Existing reachable-window scan direct CALL8 sites only; initial-table CFG and local constant assumptions retained. Not indirect-caller closure.",
+  "scan_sha256": "9cc4d7459fbed824ebcecf2ef6f8826a5b8a5c7db698ea01dac6332a536eabe1",
+  "setter_listing_sha256": "997940193583fe83086d61f0553af1e32db417cfc73f9aacb22466d13c8112ca",
+  "gate": "0x5ffee452",
+  "known_calls": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06f70.txt",
+      "pc": "0x6f7f",
+      "index": 1,
+      "value": 1,
+      "indexed_address": "0x5ffee456",
+      "aggregate_address": "0x5ffee44d"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/077cc.txt",
+      "pc": "0x7bed",
+      "index": 0,
+      "value": 1,
+      "indexed_address": "0x5ffee455",
+      "aggregate_address": "0x5ffee44d"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/077cc.txt",
+      "pc": "0x7c01",
+      "index": 2,
+      "value": 1,
+      "indexed_address": "0x5ffee457",
+      "aggregate_address": "0x5ffee44d"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/077cc.txt",
+      "pc": "0x7c12",
+      "index": 0,
+      "value": 0,
+      "indexed_address": "0x5ffee455",
+      "aggregate_address": "0x5ffee44d"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/077cc.txt",
+      "pc": "0x7c22",
+      "index": 2,
+      "value": 0,
+      "indexed_address": "0x5ffee457",
+      "aggregate_address": "0x5ffee44d"
+    }
+  ],
+  "nearby_fixed_stores": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02edc.txt",
+      "pc": "0x3010",
+      "operation": "s8i",
+      "address": "0x5ffee44c",
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": 1,
+      "base": "a15",
+      "offset": "0"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/032c8.txt",
+      "pc": "0x32f9",
+      "operation": "s8i",
+      "address": "0x5ffee44d",
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a9",
+      "offset": "1"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/034a0.txt",
+      "pc": "0x34e2",
+      "operation": "s8i",
+      "address": "0x5ffee44f",
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": 0,
+      "base": "a3",
+      "offset": "3"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/034a0.txt",
+      "pc": "0x34e5",
+      "operation": "s8i",
+      "address": "0x5ffee44e",
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": 0,
+      "base": "a3",
+      "offset": "2"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03580.txt",
+      "pc": "0x35a8",
+      "operation": "s8i",
+      "address": "0x5ffee451",
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": 0,
+      "base": "a3",
+      "offset": "5"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03724.txt",
+      "pc": "0x37ce",
+      "operation": "s8i",
+      "address": "0x5ffee454",
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "8"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0383c.txt",
+      "pc": "0x3875",
+      "operation": "s8i",
+      "address": "0x5ffee453",
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "7"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0387c.txt",
+      "pc": "0x388e",
+      "operation": "s8i",
+      "address": "0x5ffee44f",
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 1,
+      "base": "a12",
+      "offset": "3"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0387c.txt",
+      "pc": "0x3891",
+      "operation": "s8i",
+      "address": "0x5ffee44e",
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "2"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03cbc.txt",
+      "pc": "0x3d09",
+      "operation": "s8i",
+      "address": "0x5ffee451",
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": 1,
+      "base": "a2",
+      "offset": "5"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03d10.txt",
+      "pc": "0x3d32",
+      "operation": "s8i",
+      "address": "0x5ffee44e",
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 1,
+      "base": "a6",
+      "offset": "2"
+    }
+  ],
+  "remaining": "Unknown indirect entry, general computed RAM stores, copy/engine effects and state restore can still affect gate; producer not established."
+}

@@ -1,0 +1,12 @@
+
+/tmp/tmpndd8uyl1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00022508 <.data+0x22508>:
+00022508: 364100   entry        a1, 0x20 ; Capstone
+   2250b:	a13dc4        	l32r	a10, 0x13600 (0xa804)
+0002250e: 65fbff   call8        . -0x48 ; Capstone ; target=0x224c4
+00022511: 1df0     retw.n        ; Capstone
+	...

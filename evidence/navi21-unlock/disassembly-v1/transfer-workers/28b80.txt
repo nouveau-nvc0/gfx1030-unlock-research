@@ -1,0 +1,13 @@
+
+/tmp/tmpqi_e8fqp/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00028b80 <.data+0x28b80>:
+00028b80: 364100   entry        a1, 0x20 ; Capstone
+   28b83:	2053b0        	addx8	a5, a3, a2
+   28b86:	52d501        	addmi	a5, a5, 0x100
+   28b89:	4245e0        	s8i	a4, a5, 224
+00028b8c: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,29 @@
+
+/tmp/tmphj_prd3s/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00021244 <.data+0x21244>:
+00021244: 364100   entry        a1, 0x20 ; Capstone
+   21247:	ad06      	mov.n	a10, a6
+00021249: e5fbff   call8        . -0x40 ; Capstone ; target=0x21208
+   2124c:	a0a530        	xor	a10, a5, a10
+   2124f:	a0a074        	extui	a10, a10, 0, 8
+00021252: 65fbff   call8        . -0x48 ; Capstone ; target=0x21208
+   21255:	1bb6      	addi.n	a11, a6, 1
+   21257:	b0aa30        	xor	a10, a10, a11
+   2125a:	a0a074        	extui	a10, a10, 0, 8
+0002125d: a5faff   call8        . -0x54 ; Capstone ; target=0x21208
+   21260:	a0a230        	xor	a10, a2, a10
+   21263:	a0a074        	extui	a10, a10, 0, 8
+00021266: 25faff   call8        . -0x5c ; Capstone ; target=0x21208
+   21269:	a0a330        	xor	a10, a3, a10
+   2126c:	a0a074        	extui	a10, a10, 0, 8
+0002126f: a5f9ff   call8        . -0x64 ; Capstone ; target=0x21208
+   21272:	a0c4c0        	sub	a12, a4, a10
+   21275:	0c1b      	movi.n	a11, 1
+   21277:	0c02      	movi.n	a2, 0
+   21279:	c02b83        	moveqz	a2, a11, a12
+0002127c: 1df0     retw.n        ; Capstone
+	...

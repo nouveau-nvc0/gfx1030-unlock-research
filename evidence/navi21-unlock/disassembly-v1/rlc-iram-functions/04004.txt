@@ -1,0 +1,356 @@
+
+/tmp/tmpjoevhmp5/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00004004 <.data+0x4004>:
+00004004: 36c100   entry        a1, 0x60 ; Capstone
+    4007:	3911      	s32i.n	a3, a1, 4
+    4009:	4931      	s32i.n	a4, a1, 12
+    400b:	5941      	s32i.n	a5, a1, 16
+    400d:	0c0a      	movi.n	a10, 0
+    400f:	2981      	s32i.n	a2, a1, 32
+    4011:	cd02      	mov.n	a12, a2
+    4013:	0c09      	movi.n	a9, 0
+    4015:	20b054        	extui	a11, a2, 0, 6
+    4018:	8156e4        	l32r	a8, 0xffffd170 (0x6803ba00) ; inferred DRAM map 0x5ffec000
+    401b:	dd03      	mov.n	a13, a3
+    401d:	d26109        	s32i	a13, a1, 36
+    4020:	626815        	s32i	a6, a8, 84
+    4023:	f6cb02        	bgeui	a11, 32, 0x4029
+    4026:	92a001        	movi	a9, 1
+    4029:	16990e        	beqz	a9, 0x4116
+    402c:	0c09      	movi.n	a9, 0
+    402e:	16aa12        	beqz	a10, 0x415c
+    4031:	161913        	beqz	a9, 0x4166
+    4034:	0c09      	movi.n	a9, 0
+    4036:	166a16        	beqz	a10, 0x41a0
+    4039:	16d916        	beqz	a9, 0x41aa
+    403c:	0c09      	movi.n	a9, 0
+    403e:	166a19        	beqz	a10, 0x41d8
+    4041:	9c59      	beqz.n	a9, 0x405a
+    4043:	0c0d      	movi.n	a13, 0
+    4045:	0c1f      	movi.n	a15, 1
+    4047:	0c0e      	movi.n	a14, 0
+    4049:	a0ef83        	moveqz	a14, a15, a10
+    404c:	b0df83        	moveqz	a13, a15, a11
+    404f:	e70d16        	bnone	a13, a14, 0x4069
+    4052:	0c0e      	movi.n	a14, 0
+    4054:	21b9e4        	l32r	a2, 0xffffd338 (0x3ba68) ; inferred DRAM map 0x5ffec000
+    4057:	860400        	j	0x406d
+    405a:	0c0d      	movi.n	a13, 0
+    405c:	0c08      	movi.n	a8, 0
+    405e:	873a04        	bltu	a10, a8, 0x4066
+    4061:	16ca26        	beqz	a10, 0x42d1
+    4064:	0c1d      	movi.n	a13, 1
+    4066:	166d25        	beqz	a13, 0x42c0
+    4069:	0c0e      	movi.n	a14, 0
+    406b:	0c02      	movi.n	a2, 0
+    406d:	0c04      	movi.n	a4, 0
+    406f:	9841      	l32i.n	a9, a1, 16
+    4071:	0c08      	movi.n	a8, 0
+    4073:	8951      	s32i.n	a8, a1, 20
+    4075:	e09911        	slli	a9, a9, 2
+    4078:	9961      	s32i.n	a9, a1, 24
+    407a:	0c03      	movi.n	a3, 0
+    407c:	e07e11        	slli	a7, a14, 2
+    407f:	e05411        	slli	a5, a4, 2
+    4082:	c921      	s32i.n	a12, a1, 8
+    4084:	6831      	l32i.n	a6, a1, 12
+    4086:	0c0a      	movi.n	a10, 0
+    4088:	a901      	s32i.n	a10, a1, 0
+    408a:	6064a0        	addx4	a6, a4, a6
+    408d:	0c0b      	movi.n	a11, 0
+    408f:	cd07      	mov.n	a12, a7
+    4091:	917ee4        	l32r	a9, 0xffffd28c (0xfffff) ; inferred DRAM map 0x5ffec000
+    4094:	a1aae4        	l32r	a10, 0xffffd33c (0x67fffe00) ; inferred DRAM map 0x5ffec000
+    4097:	8806      	l32i.n	a8, a6, 0
+    4099:	909210        	and	a9, a2, a9
+    409c:	aa99      	add.n	a9, a9, a10
+    409e:	0cfa      	movi.n	a10, 15
+    40a0:	826980        	s32i	a8, a9, 0x200
+000040a3: 650a06   call8        . +0x60a8 ; Capstone ; target=0xa148
+    40a6:	1b44      	addi.n	a4, a4, 1
+    40a8:	4b55      	addi.n	a5, a5, 4
+    40aa:	4b66      	addi.n	a6, a6, 4
+    40ac:	4b22      	addi.n	a2, a2, 4
+    40ae:	c801      	l32i.n	a12, a1, 0
+    40b0:	a03320        	or	a3, a3, a10
+    40b3:	4b77      	addi.n	a7, a7, 4
+    40b5:	b0cc20        	or	a12, a12, a11
+    40b8:	26d708        	beqi	a7, 64, 0x40c4
+    40bb:	a22106        	l32i	a10, a1, 24
+    40be:	c26100        	s32i	a12, a1, 0
+    40c1:	a735c8        	bltu	a5, a10, 0x408d
+    40c4:	219de4        	l32r	a2, 0xffffd338 (0x3ba68) ; inferred DRAM map 0x5ffec000
+    40c7:	004640        	ssai	6
+    40ca:	e821      	l32i.n	a14, a1, 8
+    40cc:	f2ac00        	movi	a15, 0xfffffc00
+    40cf:	d811      	l32i.n	a13, a1, 4
+    40d1:	9127e4        	l32r	a9, 0xffffd170 (0x6803ba00) ; inferred DRAM map 0x5ffec000
+    40d4:	b851      	l32i.n	a11, a1, 20
+    40d6:	d08694        	extui	a8, a13, 6, 10
+    40d9:	326916        	s32i	a3, a9, 88
+    40dc:	c26917        	s32i	a12, a9, 92
+    40df:	f0fb10        	and	a15, a11, a15
+    40e2:	e0ed81        	src	a14, a13, a14
+    40e5:	80bf20        	or	a11, a15, a8
+    40e8:	b26105        	s32i	a11, a1, 20
+    40eb:	e26918        	s32i	a14, a9, 96
+    40ee:	b26919        	s32i	a11, a9, 100
+    40f1:	d0ed20        	or	a14, a13, a13
+    40f4:	82293f        	l32i	a8, a9, 252
+    40f7:	c7f8f9        	bbsi	a8, 28, 0x40f4
+    40fa:	9821      	l32i.n	a9, a1, 8
+    40fc:	8841      	l32i.n	a8, a1, 16
+    40fe:	f2c940        	addi	a15, a9, 64
+    4101:	cd0f      	mov.n	a12, a15
+    4103:	97bf03        	bgeu	a15, a9, 0x410a
+    4106:	e811      	l32i.n	a14, a1, 4
+    4108:	1bee      	addi.n	a14, a14, 1
+    410a:	e911      	s32i.n	a14, a1, 4
+    410c:	0c0e      	movi.n	a14, 0
+    410e:	87b402        	bgeu	a4, a8, 0x4114
+    4111:	46d9ff        	j	0x407a
+00004114: 1df0     retw.n        ; Capstone
+    4116:	2c0e      	movi.n	a14, 32
+    4118:	0c0d      	movi.n	a13, 0
+    411a:	0c09      	movi.n	a9, 0
+    411c:	973a04        	bltu	a10, a9, 0x4124
+    411f:	169a0c        	beqz	a10, 0x41ec
+    4122:	0c1d      	movi.n	a13, 1
+    4124:	16cd0b        	beqz	a13, 0x41e4
+    4127:	e2a02f        	movi	a14, 47
+    412a:	d2a000        	movi	a13, 0
+    412d:	164a0c        	beqz	a10, 0x41f5
+    4130:	16ad0c        	beqz	a13, 0x41fe
+    4133:	2c7e      	movi.n	a14, 39
+    4135:	0c0d      	movi.n	a13, 0
+    4137:	165a10        	beqz	a10, 0x4240
+    413a:	16cd10        	beqz	a13, 0x424a
+    413d:	82cbdc        	addi	a8, a11, -36
+    4140:	0c0d      	movi.n	a13, 0
+    4142:	0c1f      	movi.n	a15, 1
+    4144:	0c0e      	movi.n	a14, 0
+    4146:	a0ef83        	moveqz	a14, a15, a10
+    4149:	80df83        	moveqz	a13, a15, a8
+    414c:	e78d02        	bany	a13, a14, 0x4152
+    414f:	86c5ff        	j	0x4069
+    4152:	0c9e      	movi.n	a14, 9
+    4154:	217be4        	l32r	a2, 0xffffd340 (0x3ba8c) ; inferred DRAM map 0x5ffec000
+    4157:	86c4ff        	j	0x406d
+0000415a: 0000b6   ee.ldf.64.xp f0, f11, a0, a0 ; Capstone
+    415d:	bb02      	addi.n	a0, a2, 11
+    415f:	86b3ff        	j	0x4031
+    4162:	86b3ff        	j	0x4034
+    4165:	001c0e        	excw
+    4168:	0c0d      	movi.n	a13, 0
+    416a:	0c09      	movi.n	a9, 0
+    416c:	973a04        	bltu	a10, a9, 0x4174
+    416f:	165a10        	beqz	a10, 0x4278
+    4172:	0c1d      	movi.n	a13, 1
+    4174:	160d0c        	beqz	a13, 0x4238
+    4177:	e2a017        	movi	a14, 23
+    417a:	d2a000        	movi	a13, 0
+    417d:	160a10        	beqz	a10, 0x4281
+    4180:	166d10        	beqz	a13, 0x428a
+    4183:	82cbec        	addi	a8, a11, -20
+    4186:	0c0d      	movi.n	a13, 0
+    4188:	0c1f      	movi.n	a15, 1
+    418a:	0c0e      	movi.n	a14, 0
+    418c:	a0ef83        	moveqz	a14, a15, a10
+    418f:	80df83        	moveqz	a13, a15, a8
+    4192:	e78d02        	bany	a13, a14, 0x4198
+    4195:	06b4ff        	j	0x4069
+    4198:	0c5e      	movi.n	a14, 5
+    419a:	216ae4        	l32r	a2, 0xffffd344 (0x3ba7c) ; inferred DRAM map 0x5ffec000
+    419d:	06b3ff        	j	0x406d
+    41a0:	b68b02        	bltui	a11, 8, 0x41a6
+    41a3:	86a4ff        	j	0x4039
+    41a6:	86a4ff        	j	0x403c
+    41a9:	000c8e        	excw
+    41ac:	0c0d      	movi.n	a13, 0
+    41ae:	0c09      	movi.n	a9, 0
+    41b0:	973a04        	bltu	a10, a9, 0x41b8
+    41b3:	161a11        	beqz	a10, 0x42c8
+    41b6:	0c1d      	movi.n	a13, 1
+    41b8:	16cd0f        	beqz	a13, 0x42b8
+    41bb:	82cbf4        	addi	a8, a11, -12
+    41be:	0c0d      	movi.n	a13, 0
+    41c0:	0c1f      	movi.n	a15, 1
+    41c2:	0c0e      	movi.n	a14, 0
+    41c4:	a0ef83        	moveqz	a14, a15, a10
+    41c7:	80df83        	moveqz	a13, a15, a8
+    41ca:	e78d02        	bany	a13, a14, 0x41d0
+    41cd:	06a6ff        	j	0x4069
+    41d0:	0c3e      	movi.n	a14, 3
+    41d2:	215de4        	l32r	a2, 0xffffd348 (0x3ba74) ; inferred DRAM map 0x5ffec000
+    41d5:	06a5ff        	j	0x406d
+    41d8:	b64b02        	bltui	a11, 4, 0x41de
+    41db:	8698ff        	j	0x4041
+    41de:	0c19      	movi.n	a9, 1
+    41e0:	4697ff        	j	0x4041
+    41e3:	000c8e        	excw
+    41e6:	2159e4        	l32r	a2, 0xffffd34c (0x3ba88) ; inferred DRAM map 0x5ffec000
+    41e9:	06a0ff        	j	0x406d
+    41ec:	b73e02        	bltu	a14, a11, 0x41f2
+    41ef:	46ccff        	j	0x4124
+    41f2:	06cbff        	j	0x4122
+    41f5:	b7be02        	bgeu	a14, a11, 0x41fb
+    41f8:	06cdff        	j	0x4130
+    41fb:	06cdff        	j	0x4133
+    41fe:	3c0e      	movi.n	a14, 48
+    4200:	0c0d      	movi.n	a13, 0
+    4202:	0c09      	movi.n	a9, 0
+    4204:	973a04        	bltu	a10, a9, 0x420c
+    4207:	169a0d        	beqz	a10, 0x42e4
+    420a:	0c1d      	movi.n	a13, 1
+    420c:	16ad0c        	beqz	a13, 0x42da
+    420f:	e2a037        	movi	a14, 55
+    4212:	d2a000        	movi	a13, 0
+    4215:	164a0d        	beqz	a10, 0x42ed
+    4218:	16ad0d        	beqz	a13, 0x42f6
+    421b:	82cbcc        	addi	a8, a11, -52
+    421e:	0c0d      	movi.n	a13, 0
+    4220:	0c1f      	movi.n	a15, 1
+    4222:	0c0e      	movi.n	a14, 0
+    4224:	a0ef83        	moveqz	a14, a15, a10
+    4227:	80df83        	moveqz	a13, a15, a8
+    422a:	e78d02        	bany	a13, a14, 0x4230
+    422d:	068eff        	j	0x4069
+    4230:	0cde      	movi.n	a14, 13
+    4232:	2147e4        	l32r	a2, 0xffffd350 (0x3ba9c) ; inferred DRAM map 0x5ffec000
+    4235:	068dff        	j	0x406d
+    4238:	0c4e      	movi.n	a14, 4
+    423a:	2146e4        	l32r	a2, 0xffffd354 (0x3ba78) ; inferred DRAM map 0x5ffec000
+    423d:	068bff        	j	0x406d
+    4240:	b7be02        	bgeu	a14, a11, 0x4246
+    4243:	c6bcff        	j	0x413a
+    4246:	c6bcff        	j	0x413d
+    4249:	002c8e        	excw
+    424c:	0c0d      	movi.n	a13, 0
+    424e:	0c09      	movi.n	a9, 0
+    4250:	973a04        	bltu	a10, a9, 0x4258
+    4253:	16da0d        	beqz	a10, 0x4334
+    4256:	0c1d      	movi.n	a13, 1
+    4258:	168d0c        	beqz	a13, 0x4324
+    425b:	82cbd4        	addi	a8, a11, -44
+    425e:	0c0d      	movi.n	a13, 0
+    4260:	0c1f      	movi.n	a15, 1
+    4262:	0c0e      	movi.n	a14, 0
+    4264:	a0ef83        	moveqz	a14, a15, a10
+    4267:	80df83        	moveqz	a13, a15, a8
+    426a:	e78d02        	bany	a13, a14, 0x4270
+    426d:	067eff        	j	0x4069
+    4270:	0cbe      	movi.n	a14, 11
+    4272:	2139e4        	l32r	a2, 0xffffd358 (0x3ba94) ; inferred DRAM map 0x5ffec000
+    4275:	067dff        	j	0x406d
+    4278:	b73e02        	bltu	a14, a11, 0x427e
+    427b:	46bdff        	j	0x4174
+    427e:	06bcff        	j	0x4172
+    4281:	b7be02        	bgeu	a14, a11, 0x4287
+    4284:	06beff        	j	0x4180
+    4287:	06beff        	j	0x4183
+    428a:	1c8e      	movi.n	a14, 24
+    428c:	0c0d      	movi.n	a13, 0
+    428e:	0c09      	movi.n	a9, 0
+    4290:	973a04        	bltu	a10, a9, 0x4298
+    4293:	166a0a        	beqz	a10, 0x433d
+    4296:	0c1d      	movi.n	a13, 1
+    4298:	160d09        	beqz	a13, 0x432c
+    429b:	82cbe4        	addi	a8, a11, -28
+    429e:	0c0d      	movi.n	a13, 0
+    42a0:	0c1f      	movi.n	a15, 1
+    42a2:	0c0e      	movi.n	a14, 0
+    42a4:	a0ef83        	moveqz	a14, a15, a10
+    42a7:	80df83        	moveqz	a13, a15, a8
+    42aa:	e78d02        	bany	a13, a14, 0x42b0
+    42ad:	066eff        	j	0x4069
+    42b0:	0c7e      	movi.n	a14, 7
+    42b2:	212ae4        	l32r	a2, 0xffffd35c (0x3ba84) ; inferred DRAM map 0x5ffec000
+    42b5:	066dff        	j	0x406d
+    42b8:	0c2e      	movi.n	a14, 2
+    42ba:	2129e4        	l32r	a2, 0xffffd360 (0x3ba70) ; inferred DRAM map 0x5ffec000
+    42bd:	066bff        	j	0x406d
+    42c0:	0c1e      	movi.n	a14, 1
+    42c2:	2128e4        	l32r	a2, 0xffffd364 (0x3ba6c) ; inferred DRAM map 0x5ffec000
+    42c5:	0669ff        	j	0x406d
+    42c8:	b73e02        	bltu	a14, a11, 0x42ce
+    42cb:	46baff        	j	0x41b8
+    42ce:	06b9ff        	j	0x41b6
+    42d1:	f65b02        	bgeui	a11, 5, 0x42d7
+    42d4:	8663ff        	j	0x4066
+    42d7:	4662ff        	j	0x4064
+    42da:	0cce      	movi.n	a14, 12
+    42dc:	2123e4        	l32r	a2, 0xffffd368 (0x3ba98) ; inferred DRAM map 0x5ffec000
+    42df:	8662ff        	j	0x406d
+000042e2: 0000b7   ee.stf.64.xp f0, f11, a0, a0 ; Capstone
+    42e5:	3e          	.byte 0x3e
+    42e6:	0246c8        	s8i	a0, a6, 200
+    42e9:	ff          	.byte 0xff
+    42ea:	06c7ff        	j	0x420a
+    42ed:	b7be02        	bgeu	a14, a11, 0x42f3
+    42f0:	06c9ff        	j	0x4218
+    42f3:	06c9ff        	j	0x421b
+    42f6:	3c8e      	movi.n	a14, 56
+    42f8:	0c0d      	movi.n	a13, 0
+    42fa:	0c09      	movi.n	a9, 0
+    42fc:	973a04        	bltu	a10, a9, 0x4304
+    42ff:	16da04        	beqz	a10, 0x4350
+    4302:	0c1d      	movi.n	a13, 1
+    4304:	16ed03        	beqz	a13, 0x4346
+    4307:	82cbc4        	addi	a8, a11, -60
+    430a:	0c0d      	movi.n	a13, 0
+    430c:	0c1f      	movi.n	a15, 1
+    430e:	0c0e      	movi.n	a14, 0
+    4310:	a0ef83        	moveqz	a14, a15, a10
+    4313:	80df83        	moveqz	a13, a15, a8
+    4316:	e78d02        	bany	a13, a14, 0x431c
+    4319:	0653ff        	j	0x4069
+    431c:	0cfe      	movi.n	a14, 15
+    431e:	2113e4        	l32r	a2, 0xffffd36c (0x3baa4) ; inferred DRAM map 0x5ffec000
+    4321:	0652ff        	j	0x406d
+    4324:	0cae      	movi.n	a14, 10
+    4326:	2112e4        	l32r	a2, 0xffffd370 (0x3ba90) ; inferred DRAM map 0x5ffec000
+    4329:	0650ff        	j	0x406d
+    432c:	0c6e      	movi.n	a14, 6
+    432e:	2111e4        	l32r	a2, 0xffffd374 (0x3ba80) ; inferred DRAM map 0x5ffec000
+    4331:	064eff        	j	0x406d
+    4334:	b73e02        	bltu	a14, a11, 0x433a
+    4337:	46c7ff        	j	0x4258
+    433a:	06c6ff        	j	0x4256
+    433d:	b73e02        	bltu	a14, a11, 0x4343
+    4340:	06d5ff        	j	0x4298
+    4343:	c6d3ff        	j	0x4296
+    4346:	0cee      	movi.n	a14, 14
+    4348:	210ce4        	l32r	a2, 0xffffd378 (0x3baa0) ; inferred DRAM map 0x5ffec000
+    434b:	8647ff        	j	0x406d
+0000434e: 0000b7   ee.stf.64.xp f0, f11, a0, a0 ; Capstone
+    4351:	be          	.byte 0xbe
+00004352: b0c6ea   utrunc.s     a12, f6, 0xb ; Capstone
+    4355:	ff          	.byte 0xff
+	...
+
+; Alternate branch-target decode
+    415c:	b6bb02        	bltui	a11, 16, 0x4162
+
+; Alternate branch-target decode
+    4166:	1c0e      	movi.n	a14, 16
+
+; Alternate branch-target decode
+    41aa:	0c8e      	movi.n	a14, 8
+
+; Alternate branch-target decode
+    41e4:	0c8e      	movi.n	a14, 8
+
+; Alternate branch-target decode
+    424a:	2c8e      	movi.n	a14, 40
+
+; Alternate branch-target decode
+    42e4:	b73e02        	bltu	a14, a11, 0x42ea
+    42e7:	46c8ff        	j	0x420c
+
+; Alternate branch-target decode
+    4350:	b7beb0        	bgeu	a14, a11, 0x4304
+    4353:	c6eaff        	j	0x4302

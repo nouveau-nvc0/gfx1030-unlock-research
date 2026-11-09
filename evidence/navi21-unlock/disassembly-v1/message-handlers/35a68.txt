@@ -1,0 +1,28 @@
+
+/tmp/tmpkhym_ofm/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00035a68 <.data+0x35a68>:
+00035a68: 366100   entry        a1, 0x30 ; Capstone
+   35a6b:	ad02      	mov.n	a10, a2
+   35a6d:	0c08      	movi.n	a8, 0
+   35a6f:	8911      	s32i.n	a8, a1, 4
+   35a71:	8901      	s32i.n	a8, a1, 0
+00035a73: e564cc   call8        . -0x339b0 ; Capstone ; target=0x20c0
+   35a76:	b1927a        	l32r	a11, 0x144c0 (0xa3c4)
+   35a79:	922b7f        	l32i	a9, a11, 0x1fc
+   35a7c:	cd0a      	mov.n	a12, a10
+   35a7e:	ad01      	mov.n	a10, a1
+   35a80:	c09920        	or	a9, a9, a12
+   35a83:	926b7f        	s32i	a9, a11, 0x1fc
+00035a86: 650100   call8        . +0x18 ; Capstone ; target=0x35a9c
+   35a89:	ad02      	mov.n	a10, a2
+   35a8b:	b811      	l32i.n	a11, a1, 4
+00035a8d: 2534cc   call8        . -0x33cbc ; Capstone ; target=0x1dd0
+   35a90:	ad02      	mov.n	a10, a2
+   35a92:	0c1b      	movi.n	a11, 1
+00035a94: 6560cc   call8        . -0x339f8 ; Capstone ; target=0x209c
+00035a97: 1df0     retw.n        ; Capstone
+   35a99:	000000        	ill

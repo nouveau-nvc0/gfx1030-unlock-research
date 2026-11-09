@@ -1,0 +1,1195 @@
+Navi21 CC disassembly handoff — 2026-11-09
+
+PUBLIC RESEARCH HANDOFF
+Research is paused. No complete changed-CC chain or hardware acceptance has
+been established. This history records firmware-analysis findings and their
+corrections. Follow AGENTS.md and docs/STATUS.md for current scope.
+Prioritize changed saved-mask producers, the nonzero restore gate and the
+outer SA gate. ARM64 GOP parity remains lower priority.
+
+CURRENT WORKING SUMMARY — SUPERSEDES OLDER NEXT-STEP NOTES
+The chronological continuations below remain evidence history. Use this
+summary when choosing further work; do not restart already bounded loops.
+
+1. Saved-mask producer:71ac saves actual CC; no changed-mask producer found.
+   All108 scanner-unknown stores now have local dispositions, including six
+   bounded01d10 derived-array stores. Conditional pointers/indices remain
+   conditional. See rlc-store-disposition-audit.json,rlc-derived-store-audit.json.
+2. Restore invocation:registered/deferred routes requiree452. Alternative
+   2edc requiresd99c plus hardwarebit;70d4 requiresdb25. d99c has registered
+   command setters;db25 has a prior save-cycle producer. Actual alternate
+   entries remain unestablished. See rlc-d99c-producer-audit.json,
+   rlc-d99c-consumer-audit.json,rlc-alternative-cycle-audit.json.
+3. MQD custom-slot overlap:arithmetically possible, but known callers use31.
+   Exact-entry and whole-body immediate reference checks plus260 decoded
+   function/vector listings add no ordinary interior entry to6944/71ac/74c4.
+   Computed/unlisted entries remain open. See rlc-snapshot-entry-range-audit.json
+   andrlc-cc-incoming-edges-audit.json.
+4. WholeDRAM snapshot:knownRLCG path preserves the block; no changed payload
+   established. SYS28byte record route targets VCN/MMSCH, with conditional
+   non-overlap against the RLC snapshot; do not reopen it as a proved CC writer.
+   See rlcg-dram-save-audit.json,sys-rlc-record-overlap-audit.json,
+   sys-record-endpoint-audit.json.
+5. E800 indexed family:89write sites have23 local constant indices under the
+   partialISA. Same-generationRTAVFS matches structure but differs300DWORD
+   in address;SMU same-number literal is data. Park generic value arithmetic
+   until an address-map or CC dependency appears. See rlcg-e800-write-indices-
+   audit.json,rlcg-e800-map-comparison.json,smu-e800-reference-audit.json.
+6. Hardware acceptance remains a separate missing condition. Offline byte
+   checks do not establish that a CC write takes effect. Lab remains paused.
+
+NEXT CONCRETE WRITER DEPENDENCY
+RevisitSMUcommand41->1d7a8 and four initial workers1d698/1d60c/1d594/1d480.
+The1d7e2 byte1 store uses global15874 RELOADED at1d7dd AFTER CALLX8, not a
+register-cached copy of the initial selected table pointer. Thus tracing only
+initialtable12d10 does not bound the final destination. Rechecked existing
+all-entry-store-scan.json:only one located fixed15874 writer,1d7c8; this is not
+all-writer closure. Trace worker/callee writes and pointer lifetime first.
+Prior message-vector-audit.txt is an inventory, not a completed destination
+analysis. Preserve command delivery/state conditions; do not claim a CC alias.
+
+WHERE THINGS ARE
+Workspace /workspace/gfx1030-unlock-research. Main evidence directory (E below):
+  evidence/navi21-unlock/disassembly-v1/
+Chronological index: E/cc-vector-status.txt (not a completion certificate).
+Repository has extensive unrelated tracked modifications. Do not reset them.
+Many evidence files are ignored/untracked; verify physical files, not git alone.
+Large binaries/tools belong under /workspace/gfx1030-unlock-research, not /srv.
+
+KEY RESULT: CONCRETE RLC CC SAVE/RESTORE
+Pinned firmware /usr/lib/firmware/amdgpu/sienna_cichlid_rlc.bin.xz,
+decompressed SHA256:
+19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0
+IRAM file bytes [b360,1b360), virtual base5fff0000; listing PCs relative IRAM.
+DRAM bytes [1b560,1f560), inferred base5ffec000. Address-map inference is not
+proof of every physical alias or access permission.
+
+Function71ac: low argument byte0 saves hardware to RAM, nonzero restores RAM
+to hardware. Four outer/two inner iterations select (i<<10)|(j<<8) at70000004;
+70000000=0; RSIL15 / PS restore / RSYNC; index cleared afterward.
+  CC_WGP600089bc: store71fe, read7293, saved5ffedfc4+8*i+4*j.
+  CC_RB600098f4: store7216, read72ab, saved5ffedfe4.
+  USER_WGP600089c0: store722e, read72c3, saved5ffee004.
+  USER_RB60009b7c: store7246, read72db, saved5ffee024.
+Eight DWORDs per array; no bit conversion in copy. CC acceptance not proved.
+6944 calls71ac at6a95, forwarding operation byte.
+Startup76f8 registers77cc at772e through9830. 77cc->32a4->35d8->6944->71ac
+is a known restore chain, conditional on byte5ffee452 !=0.
+Deferred callback slot5ffee580 can call387c/3cbc/3a00;3a00 also restores
+through6944 with the same gate. Initial gate is zero, and startup clears it.
+No reachable nonzero producer has yet been established.
+Evidence: rlc-cc-direct-restore.{txt,json}, rlc-callback-gate-audit.json,
+rlc-srm-operation-followup.txt, rlc-startup-state-followup.txt.
+
+MOST RELEVANT COMPUTED-RAM CANDIDATE
+74c4 uses base5ffedc80 +8*slot, with six DWORD offsets
+c,+10,+10c,+110,+20c,+210. Packed argument byte0=operation; byte1 enables
+custom slot frombyte2; otherwise slot31. Snapshot operation0 copies hardware
+MQD registers to RAM, conditional on hardware status bits. Not arbitrary values.
+  offsets c/10:6000c824 CP_MQD_BASE_ADDR, documented maskfffffffc.
+  offsets10c/110:6000c828 CP_MQD_BASE_ADDR_HI, maskffff.
+  offsets20c/210:6000c8ac CP_MQD_CONTROL, documented union0780310f.
+Hardware instance selectors derive from status at6803b284, not custom slot.
+Slot39 can overlap savedCC_WGP. Gatee452 is byte2 of DWORD e450:
+  slot184 offset210: CONTROL.EXE_DISABLE(bit23) can supply gatebit7.
+  slot216 offset110: no documented nonzero gate-byte bits in BASE_ADDR_HI.
+  slot248 offset10: BASE_ADDR byte2 can supply gate bits.
+Do not assume reserved bits readzero, arbitrary mask control, or reachability.
+Only direct caller74c4 is6944:6de5. All seven known6944 call argument words
+select slot31, excluding these overlaps for those calls. No full literal
+5fff6944/5fff74c4 in the decompressed image. Computed/alternate entries open.
+Evidence/reproducers:
+  rlc-saved-array-overlap.{txt,json}; scripts/navi21-rlc-saved-array-overlap.py
+  rlc-snapshot-source-followup.txt; rlc-snapshot-sources.json
+  scripts/navi21-rlc-snapshot-sources.py
+
+GATE WRITER EXCLUSIONS ALREADY DONE
+Statebase5ffee44c, gate+6. Indexed setter32c8 writesbase+index+9 andaggregate+1;
+five known calls useindices0/1/2, not gate. No local general index guard.
+Startup648 clears[e240,ecb0), covering gate, excluding savedCC arrays.
+Initial constructor/destructor lists and optional startup hooks areempty/null.
+Two known memcpy a1fc calls:135d dst5ffed978 len14hex;2ce1 dste438 len14hex.
+Neither reaches gate or CC arrays. Other computed calls remain open.
+13 functions materializingstatebase:15 unresolved non-a1 stores narrowed to
+14 local stack aliases and indexed setter32c8. Ordinary fixed state writes
+coveroffsets0/1/2/3/5/7/8, not6.
+Width locator:19 unknown non-a1 stores atoffset4/5/6, none actually5/6.
+Halfword54ea/5592 are local stack fields. Nine local-copy loops in2a0c/2ab8/
+2b44 have seven64-byte/two136-byte copies; largest concatenated range
+[SP+10,SP+110), within170hex frame. Constant bounds, not caller lengths.
+These exclude unbounded copies on ordinary paths, not all stack corruption.
+Evidence: rlc-gate-index-followup.txt; rlc-gate-local-alias-followup.txt;
+rlc-gate-width-followup.txt; rlc-local-copy-bounds.txt and matching JSONs.
+
+OTHER RLC/SRM PATH
+Firmware SRM segment file6c50 length4510,2210 records. Packed CC_SA c0002249
+and eight CC_WGP packed8000226f... present. Record second DWORD is NOT proved
+a write value or access permission. 65d8 reads GPM scratch intoRAMdb24;
+6944 constructs transfers through7670/GPM_COMMAND6803b21c.
+CC_WGP group offset2f8 length5acall6c9d; USER group352/3e8call69f9;
+SA758/582call6cba. Direction/OP is context-dependent; don't call entire SRM
+list a ready CC mask injection route. Main RLC non-Xtensa body file200 length
+6000 remains a distinct, incompletely analyzed engine/ISA.
+Evidence: rlc-iram-srm-analysis.txt, rlc-srm-command-ranges.json,
+rlc-srm-packed-registers.json, rlc-srm-operation-followup.txt.
+
+LATEST CROSS-ENGINE FOLLOW-UP
+Headers map eight index/data ports (byteoffsets):
+GPM_IRAM3ed7c/3ed80, SRM_DRAM3edc4/3edc8, SRM_ARAM3edcc/3edd0,
+GPM_SCRATCH3edd4/3edd8. No fixed-address store hits in existing SMU all-entry
+scan using offset,01200000+offset,60000000+offset candidate aliases.
+This is a narrow locator result. Names DO NOT prove alias to LX6 stateRAM.
+Computed/window/engine transfers remain open.
+Evidence: smu-rlc-ram-port-followup.txt, smu-rlc-ram-port-locator.json.
+
+Downloaded Linux v6.12 reference amdgpu_rlc.c/amdgpu_ucode.c/amdgpu_psp.c to
+evidence/navi21-unlock/sources/*.v6.12, each with.source.json URL/SHA256.
+amdgpu_rlc.c398-418 selects header2.2 IRAM/DRAM payloads; in PSP load mode
+registers separate ucode IDs. amdgpu_ucode.c898-904 stages each payload.
+amdgpu_psp.c2477-2481 maps toRLC_IRAM/RLC_DRAM_BOOT;
+2668-2675 builds LOAD_IP_FW(sourceMCaddress,size,type), no LX6 destination
+address field set here. Internal placement/transform/acceptance is beyond
+this driver boundary. No inference that modified payloads would be accepted.
+Current runtime load_type was not measured in this offline follow-up.
+Evidence: rlc-psp-load-followup.txt, rlc-psp-load-provenance.json.
+
+SMU CANDIDATES STILL RELEVANT
+Pinned decompressed SMU SHA256:
+0eb99764288f764fd853d6973693ffa52419cc7ba62074aee85df4a3e8d0286d
+Codefileoffset200. Existing all-entry scan1438 roots/40 indirect sites;
+rootclosure1236/26 sites. Do not equate these with whole-firmware completeness.
+Generic DWORD store commands31/32 onchannels7/8 use addressRAM7564,
+store34b4b. Permission04 depends RAM69cc==0 orreg03210064==80000000;
+69cc initialized frombit19 of013101c0. Physical mailbox reachability and
+permission lifecycle unresolved. Windowcommands1f/21->18d8 map03220038,
+store1919 at02c00000+(address&fffff), same permission; CC alias unproved.
+Transfer engine2aea8 descriptor path covers GC/RLC regions, no independently
+proved CC descriptor. Indexedcommands41..43 pointer/callbacktables12d10/12d20
+remain general address-provenance candidates. Start from existing evidence,
+don't repeat zero-hit fixed-constant searches as if they closed these paths.
+
+COMPLETENESS WORK — RETAIN, DON'T PRIORITIZE WITHOUT A CC CONNECTION
+RLC old236-window store scan:13587 window-local instruction sites,2399stores,
+no reachedEXCW after fixes. Counts predate new roots; not unique coverage.
+Four jump tables decoded by navi21-rlc-jump-tables.py (213entries).
+Recent separate roots648,9874,9950,9d28,9b70,9fd8,9ad0 expand non-ENTRY code.
+Direct-root audit668 directcall sites all have separate target listings;
+scope is seven named CFG receipts, not all future vector additions.
+scripts/navi21-rlc-direct-root-audit.py records exact input hashes.
+
+Context[e044,e224) fixed fields do not overlap savedCC/gate. SavedINTENABLE
+atcontext+124=e168:save9c42/9c45,restore9f4b/9f4e (unmasked). Initialmagic0;
+9d10 requiresb1c5afed;save9cf8 setsmagic,restore9f73 clearsit.
+Restore stack-copy block9e72..9ebd uses savedSP/returnwindow; no address-control
+proof. Known9a84 saves architecturalSP beforea0ec->9fd8 windowspill.
+Alternate9ad0 sets a1=0 before9b70, hence preservedcontext+cc disables that
+restore stack-copy block. No known caller/fullpointer9ad0.
+Evidence families: rlc-context-*, rlc-window-spill-*, rlc-alternate-save-*.
+
+IRAM0->24->648 clearsINTENABLE; initialoptionalhooknull; installs9950 in
+EXCSAVE2/RAMd960. Startup648 setsSP5fff0000. Does not bound runtime stack.
+Six windowhandler roots400/440/480/4c0/500/540:58 instructions,24S32E stores,
+load-only underflow pairs. Incoming window pointers determine destinations.
+Exception exactstarts57c/59c/5bc/5dc/5fc/61c (not580/etc!).
+5fc saves96-byte frame and JX610 throughd860+4*EXCCAUSE. First64 tablecells:
+1->9f78,4->9874,5->410,other61->a370.64 is a sample, not proved cause bound.
+
+PARTLY FINISHED WIP, DO NOT LOSE:
+E/rlc-vector-roots/{00410,09f78,0a370,09fc8,09fb3}.txt created and inspected.
+E/rlc-exception-targets-cfg.json covers firstthree after3branch repairs:
+410 reaches50 instructions, no stores/calls, exits through underflow paths.
+9f78 reaches24, three stack stores, CALL12 9fc8; 9fc8 ENTRY/MOV/RETW stub.
+a370 reaches4 thenBREAK1,1.9fb3 continuation8instructions endsRFE.
+9fac computes adjusted return using80000007; the RETW continuation at9fb3
+was decoded separately but window-return relation not independently executed.
+These target findings lack a final combined byte-audit/writeup; older status
+still says targets pending. Do not silently claim this WIP complete.
+
+GOP/ROM (DEFERRED)
+Extensive x64 XL/XT analysis already in E/gop-*. No CC in stockATOMwrites.
+Generic register writer exists but destinations from stock tables/wrappers
+were traced. VRAM wrapper setsbit31; initialization mutates VRAMbase, so
+initial-file-only ranges must not be generalized to runtime. Scratch callers
+use small known indices. DriverHealth callbacks identified. ARM64 parity
+explicitly deferred. Full ROMcomparison/report underxt-rom-comparison-v1.
+No physical installed BIOS dump; supplied ROMs are references. No flash.
+
+TOOLS / REPRODUCTION
+scripts/navi21-smu-disassemble.py:
+  PYTHONPATH=/tmp/navi21-disasm/python python3 scripts/navi21-smu-disassemble.py
+  --kind rlc-iram --firmware /usr/lib/firmware/amdgpu/sienna_cichlid_rlc.bin.xz
+  --objdump /tmp/navi21-disasm/binutils/usr/bin/xtensa-lx106-elf-objdump
+  --start 0x... --stop 0x... --output <listing>
+Pinned supplemental encodings in/tmp/navi21-disasm/xtensa-de233.inc.
+Decoder recently gained CCOMPARE1/2 and EPC4/EPS4/EXCSAVE4 RSR/WSR forms.
+scripts/navi21-smu-cfg-scan.py is a LOCAL LOCATOR, no RAM/call-return propagation.
+It now preserves RSYNC/JX and S32E integer constants; exception returns
+RFE/RFI/RFWO/RFWU/RFDE terminate with explicit dynamic-resumption edges.
+ROTW and numerous special-register effects remain unmodeled.
+scripts/navi21-smu-repair-branch-targets.py --scan <basename inE>
+appends exact branch starts. Historical linear garbage may remain alongside
+correct appended instructions; judge reachability, not raw grep counts.
+Do not assume all old receipts were regenerated after tool changes.
+
+NEXT AGENT: ACTIONABLE PRIORITIES
+1. Read latest status plus concrete RLC restore/snapshot receipts. Keep a
+   compact dependency ledger: invocation, gate producer, mask producer,
+   hardware acceptance. Distinguish proved edges from candidate address math.
+2. Pursue a concrete missing producer: computed/engine access to LX6 state,
+   actual nondefault74c4 caller, or SMU generic-store/window permission and
+   address mapping. Prefer evidence that can resolve one of those edges.
+3. Treat PSP typedloading as a boundary, not a new arbitrarywrite primitive.
+   Identify actual destination mapping before connecting RAMport searches.
+4. Full disassembly still includes unresolved indirect/vector/other-engine
+   coverage. Keep these obligations visible, but avoid another long sequence
+   of peripheral negative searches presented as progress toward an unlock.
+5. No hardware experiment is authorized by this handoff. If analysis ultimately
+   finds only conditional writers, report that candidly. Goal remains active
+   and unachieved; successful CU unlock is not a prerequisite to honestly
+   documenting all analyzed paths, but completeness must be independently proved.
+
+CONTINUATION — SMU second IRQ mask
+Initial image786c..787b is fourffffffff words, including IRQ88/89 bits24/25.
+f10 restores allfour toones;1a8c clears onlyword0 bit0. f10's known caller1048
+is conditional ([7cf8]!=0 and byte[7b90]<=14); do not claim unconditional init.
+The second mask initially allows channels7/8, but current RAM/delivery remain
+unproved. Five fixed-address stores in old local scan do not close computed
+writers. Eight listings/661 records bytechecked against pinnedimage.
+See smu-irq-mask-followup.txt andsmu-irq-mask-audit.json, with compact current
+dependency ledger. Reproduce: python3 scripts/navi21-smu-irq-mask-audit.py.
+No hardware state changes. Next priorities remain mapping/condition lifecycle
+and actual RLC gate/mask producers; overall goal remains unachieved.
+
+CONTINUATION — POSITIVE SMU WINDOW ADDRESS CORRESPONDENCE
+30f50's four16-entry tables match64 public UMC byte coordinates exactly:
+11f10 GeccErrCntSel,11f50 GeccErrCnt,11f90 MCUMC_STATUST0,11fd0 MCUMC_ADDRT0.
+Confirmed by chip selector0/1,low16 counter,high-word6000 CECC/UECC semantics.
+Window18d8/1920 uses public byte coordinates in thisUMC region. This does not
+prove universalGC/CC/LX6 mapping; seek an independently identifiedGC caller or
+bridge descriptor next. Condition scan stillonlyfixed69cc initializer38d45,
+no fixed03210064 stores; computed/external producers remain open.
+Evidence smu-window-umc-followup.txt and smu-window-umc-audit.json.
+Reproducer scripts/navi21-smu-window-umc-audit.py:64table matches/354bytechecked
+records; retainedLinuxv6.12 driver/header with URL/SHA256 receipts. No hardware
+changes; RLCgate/mask producers and actualCC acceptance stillunproved.
+
+CONTINUATION — CONCRETE ENGINE/RLC PORT LEAD
+PL330 grammar/register offsets/CCR semantics match the SMU transfer engine.
+fca0 descriptor sourceinc1/destinc0 means140bytes =35DWORDs tofixed0123ed68,
+not a contiguousMMIO range. Preceding2af90 write sets0123ed64=d0. Offline
+program reconstruction gives2*64byte bursts+3*4byte,CCR043d10f5/04011005.
+Sourcefce8 has runtimeproducer2b0fc (16loopstores+3fixedfields); initialzero
+buffer must not stand forruntime values. Port targetRAM/autoindex unresolved.
+GC11.0.3 UMR names relative5b59 LX6_SCRATCH_ADDR(bits0..7), but GC10.3 lacks
+that name; this is a mappinglead, not crossgeneration proof. Prioritize actual
+LX6scratch correspondence/receivingRLCconsumer of35word block next.
+Evidence smu-transfer-program-followup.txt,smu-transfer-program-audit.json,
+rlc-lx6-port-comparison.json. Reproducer scripts/navi21-smu-transfer-program-audit.py
+checks349listing records and reconstructs35address pairs. PL330Linuxv6.12
+source/provenance under../sources. No hardware changes; fullgoal stillopen.
+
+CONTINUATION — RECEIVING RLC BLOCK FOUND
+1d10 nonzero branch copies35 consecutive words78000340..780003c8 into fixed
+state[5ffee278,5ffee304),in19+16group order.340=4*d0 and35word shape match SMU
+fce8->fixed0123ed68 afterindexd0. Strong firmware correspondence;physical
+portalias/autoindex remain unobserved. Directcopy doesnotreach CC/gatee452;
+subsequentdataflow remainsopen. SMUfd28/2c/30 align RLCe2f8/e2fc/e300;
+word17 bitfields0..9/10..16 consumed immediately. Actualsender command32 is
+unresolved: RLC83fc table32->8537->1d10 (nonzero6803b668 argument); SMU2af68
+usesdifferent5/6 commandpath, do not conflate. Nexttrace32sender/remaining16
+SMUsourcewords and laterimportedstate calculations, keepingCCproducer focus.
+Evidence rlc-scratch-consumer-followup.txt,rlc-scratch-consumer-audit.json;
+reproducer scripts/navi21-rlc-scratch-consumer-audit.py verifies35pairs and
+915listing-record bytes. No hardware changes;goal remainsunachieved.
+
+CONTINUATION — ALL35 SOURCE WORD POSITIONS ACCOUNTED FOR
+Final16SMUwordsfd34..fd70 arePACE FlopsPerByteTable coefficients:26748 reads
+16u16at a2d8 (Q8.8),zero->1.0/nonzero->value/256;callback20820 imports96bytes
+then copies first16FP32words into samearray;20768 exports with32zero padding.
+InitialTABLE_PACE10 record9ee0=20820/20768 and publicheader match format/size.
+These align RLCstatee278..e2b4. Alongside2b0fc's19fields, all35word positions
+have concreteproducers;not complete mutation/reachability coverage.20820 calls
+31574(8),36fc0(1);trace bit0update record/actualRLCcommand32 sender next,keeping
+CCgate/mask dependency focus. Importedfloats aredata,not destinationpointers.
+Evidence smu-pace-source-followup.txt,smu-pace-source-audit.json;reproducer
+scripts/navi21-smu-pace-source-audit.py checks16rows/477listingrecords and
+65536exactQ8.8 representations. No hardware changes;fullgoal remainsopen.
+Update-record followup:2c37c->35448 registers slot0 cd4c (initial15450zero).
+Recordcallbacks2b640/2b46c/2b1b4/2aea0;36fc0 phasesuse+4/+8/+12, so registered
+bit0 update reaches2b1b4->2b0fc at2b1c9. Fullcallback-to-transfer/submission
+chain stillunfinished. Auditnow477records; continue fromthisconcreteedge.
+
+CONTINUATION — PACE DELIVERY CHAIN / DISTINCT COMMAND INTERFACES
+Conditional36fc0 slot0 secondphase2b1b4->2b0ac->2b00c->2af90 nowtraced.
+Requiresc8a9==1,(cdf2!=0 or2b0fc_return!=0),thenfcd8==1 pluscallee conditions.
+Aftertransfer2af68(0) sends6;later2afec->2af68(1) sends5 through2ba54.
+Header identifiesRLC_SMU_COMMAND at3b2a4,ARG1 at3b2ac,response3b01c; SMUalias
+01200000+. Receiver83fc usesdifferentb664/b668 interface forcommand32.
+7d24 reads3b2a4 butacceptsonly16..36;5/6default,not1d10. MainRLCG intermediary
+ispossiblebutunproved. Do not conflate5/6with32 orclaimproducer-to-consumer
+invocationclosure. Next concretegap isinterfacebridge/laterstate-toCC flow;
+coefficient input/update/transfer no longerrequires generic rediscovery.
+Evidence smu-pace-delivery-followup.txt,smu-pace-delivery-audit.json;
+script scripts/navi21-smu-pace-delivery-audit.py checks1334records/7calledges/
+3registercoordinates. No hardwarechanges;goal remainsunachieved.
+
+CONTINUATION — CONCRETE DOWNSTREAM INDEX BOUNDS
+29c4 reads15importedcoefficients andreturns0..15 regardlesscomparison outcomes;
+29ec likewise for15derivedintegers. Ring2a0c/2ab8 usesindexe424 beforemask,
+thenstores(index+1)&15;initializer1cfd writes0. Knownwriter invariantbounds
+ringstores[e3e4,e424). Index27 wouldhitgateDWORDe450,but no suchproducerfound;
+imported35wordcopydoesnotreachindexe424. Do notclaimallwriters/indicesclosed.
+29b0 separatebyteindexe3c4 and22d8 writerfamily remainunclosed;not coveredby
+selectorproof. Evidence rlc-pace-bounds-followup.txt and
+rlc-pace-bounds-audit.json;script scripts/navi21-rlc-pace-bounds-audit.py checks
+421records,32768comparisonpatterns,16ringaddresses. No hardwarechanges.
+
+CONTINUATION — PACE LEVEL WRITER DISPOSITION
+Fresh22d8CFG295instructions/37stores:8stack,29tosixfixedaddressesRAMe272/e3c4/
+e3c5/e3c9 andhardware6803ba44/6803b274. No coefficient-dependentdirectwrite
+address orCC/gate target.4calls2b44 remainoutside thislocalconclusion.
+e3c4 useshardwarelevel/low8decrement;cannotinfer0..15 fromotherselectors.
+29b0 iscomputedREADonly. HeaderPVT_LEVEL_MAXmaskf doesnotprove reservedbits.
+Evidence rlc-pace-level-followup.txt,rlc-pace-level-audit.json/cfgJSON;
+script scripts/navi21-rlc-pace-level-audit.py checks321listingrecords.
+PACEordinarypath hasyielded noCCproducer;prefer mainRLCG/interface5/6->32 or
+alternate scratchmapping next overgeneric coefficient arithmetic. Fullgoal
+stillopen;no hardwarechanges.
+
+CONTINUATION — MAIN RLCG COMMAND BRIDGE CANDIDATE
+Mainfile200..6200 now has concrete5/6->32 candidate; previous 'notlocated'
+statement superseded. Driver defineswordloadingbase2000. RLCG2495 contains
+commandDWORDeca9; inferredmask/add/indirectjump indexes249a+command (NOT
+249b+command).5->2a03 sets(r15,r14)=(32,1);6->2a0a sets(32,0);bothcall35e3.
+35e9/35ea words cf83ed9a/cfc3ed99 fitwritesr14/r15 to public3b668/3b664,
+matching independentXtensa83fc command32->8537->1d10. Seven sendercallpairs
+supportfieldreading. SMU5 thereforecandidatefornonzero35wordimport;
+post-transfer6selectszero path. RLCGISApartial/inferred,conditions/runtime
+andphysicalscratchaliasstillunproved;notfullchainclosureorCCproducer.
+Evidence rlcg-command-bridge-followup.txt/audit.json; script
+scripts/navi21-rlcg-command-bridge-audit.py checks77words/31entries/7pairs/
+678Xtensarecords. Next concrete mainbodyCC/GPMscratchoperands/callers.
+Nohardwarechanges;fullgoalremainsopen.
+
+CONTINUATION — MAIN RLCG CC READ/COPY DIRECTION
+3523 loadsCC_WGP226f,r8=0,r7=0->353e;352e USER2270->samehelper/r8=0.
+PartialISAreading:353e mode0 readshardwareinstance->localwords,mode1reverse;
+2x4encodedinstances.3527..353c combineCC/USER highfield/mask1f. Calls3523
+at2072/340a. All17literal353e callerschecked:reverse targets24d7/ec4b/ec6e
+(publicpower-managementmasks),notCC. This is conditionalonISAreading and
+knowncalls;notallcomputedcallclosure. CC_SA2249 read-shaped212e/2201;
+noCC_RB263dlow16match. USERsave/restore217b..2200 isseparate.
+Newconcretenext:313f setsGPMscratch0200 andfb76*4,programstransferwords,
+usesHYP_BOOTLOAD_ADDR_LO/HI;callers30bd/3160. Tracedirection/destination.
+Evidence rlcg-cc-operand-followup.txt/audit.json and
+scripts/navi21-rlcg-cc-operand-audit.py:17calls/88words/8instances.
+NoCCproducer/orgatee452producerproved;nohardwarechanges;goalopen.
+
+CONTINUATION — GPM313f TRANSFER DIRECTION CANDIDATE
+313f setsGPMscratch200,portfb76*4->c066/67;bootloadHI/LO with6000 and
+unresolvedop11->c064/65;command28000400->c0e8. Upperimmediatec0162800
+means28000000. Completion35bd/30ae sendsconstant1 toec29,35c8 waits;
+supportsc064/65source,c066/67dest. PublicCP_DMA_MEfieldsdecode1024bytes,
+SAS0/DAS1/DAIC1;markerbc000004/control40000000 isconsistent4byteimmediate.
+Internalenginefieldidentity/ISA/runtime/portadvance remainunproved.
+Assumingadvance,candidateGPMrange[200,300) includes02ff and0208 descriptors
+readnextby30d3/3173. DriverpreparesbootloadbasefromautoloadRLC_Goffset;
+actualpathandop11signnotproved. Next tracedescriptorlayout/destinations.
+Evidence rlcg-gpm-transfer-followup.txt/audit.json; reproducer
+scripts/navi21-rlcg-gpm-transfer-audit.py checks91words/2callers/fieldmath.
+NoCC/gateproducerorhardwareacceptanceproved;nohardwarechanges;goalopen.
+
+CONTINUATION — CONCRETE SOS TOC / WHOLE DRAM SNAPSHOT PAIR
+LocalSOS SHA67706b9e... header1.3 TOCwrapper35bd0/body35cd0..360d0;
+36fourDWORDentries. Publicamdgpu_rlc.h layoutmatches30d3/3173 inputs.
+ID2 offset6000/size400/fb75-fb76/start200 corroborates313f addition,notglobal
+ISAproof. ID10 bootDRAMoffset21c80,size4000,fb55/fb56,start0;ID27 snapshot
+sameports/size,offset545000,load_vddgfx+save_vddgfx flags,memorydestination2.
+ConditionalwholeDRAMspan includesCCsaved1fc4/1fe4 andgate2452;candidate
+bufferrelative546fc4/546fe4/547452. Actualsnapshot/physicalaliasunobserved.
+InitialDRAMallthreezero,gatezero;notchangedCCrestoreproof. OldenumIDsafter10
+notreliableforSienna;bit12sizeextensionhandledbyfirmwaredespiteoldreservedname.
+Next trace3226/3269 saves/otherbufferproducers. Evidence rlcg-toc-followup.txt,
+rlcg-toc-audit.json,script scripts/navi21-rlcg-toc-audit.py:36entries/132words.
+Nohardwarechanges;fullgoalopen.
+
+CONTINUATION — ACTUAL DRAM SNAPSHOT PRODUCER / CORRECTION
+3226/3269 aretwo-wordregisterpairloopsGPM294,not snapshot-save consumers;
+previousnext-step label corrected. Actual31e5 scansfour-wordTOCGPM208,
+selectsDW1bit400 =>IDs23/24/25/26/27/35/36,buildsreverseport->buffertransfer.
+ID27 fb56*4 source,selectedbase+545000dest,len4000,command14004000;
+publicDMAfieldcomparisonSAS1/DAS0/SAIC1/DAIC0. Localsetupcopiesexistingport
+data,noindividualCC/gate transformation. Directcallers2a59/2a8c;runtime
+completionandphysicalportmappingstillunproved. Snapshotcyclepreservesstate,
+notnewchangedmask/gateproducer. Next postTOCpair effects/011e-011fbase
+producers orconcreteotherbufferwriters. Evidence rlcg-dram-save-followup.txt/
+audit.json;script scripts/navi21-rlcg-dram-save-audit.py checks157words/
+7IDs/2callers/40pairs. Nohardwarechanges;fullgoalopen.
+
+CONTINUATION — SNAPSHOT BASE / POST-TOC EFFECTS
+Three selectors3129/31bd/320f use011e/011f onlyclass3;ID27class2 usesbootload
+base underpartialISA. All6literal011e/011fhitsreads;computedwritersopen,but
+notneededforconcreteID27. Known40postTOCpairs targetCP/MEScachebases/controls,
+SDMAcontexts,RLCcontrols;39publicnames,ed80unnamed. NoCC/USERregistertargets.
+Finalec80=3 isRLC_SRM_CNTL,notnewpayload/maskproducer. Evidence
+rlcg-toc-effects-followup.txt/audit.json;scriptnavi21-rlcg-toc-effects-audit.py.
+Nextconcrete30aecalls361c/3620/3624/3632/3636 beyondcovereddescriptor/index/
+completioncalls. Nohardwarechanges;nochangedmask/gateproducer;goalopen.
+
+CONTINUATION — REMAINING DIRECT TRANSFERS: SPM SKEW
+35f8(caller30c3) initializes300..30a,thenfive30aecalls361c/3620/3624/3632/3636
+writepublicRLC_SPM_*_SKEWdc8b..dc8f:globals50/56/deser75,SEsamples13/21/16/23,
+SEmux35/43/37/45. Immediate4bytepattern40000000/bc000004. NoCC/DRAMtargets.
+All10literal30aecallsaccounted;18low16engine-registerhitsin30ae/313f/35d7.
+Thisisliteralinventory,notcomputedaccess/fullCFGclosure. Separatee800..e805
+read/writefamily2e7a/2e85 remainsunreviewed;nextdetermineaddressspace/callargs.
+Evidence rlcg-spm-transfer-followup.txt/audit.json;script
+scripts/navi21-rlcg-spm-transfer-audit.py checks70words/5sites/11values.
+NochangedCC/gateproducer;nohardwarechanges;fullgoalopen.
+
+CONTINUATION — E800 LOCATOR / DEPENDENCY FOCUS
+Recorded rlcg-e800-call-locator.json:76literal2e7a calls,all immediately
+precededbyfixedr2indices(set2,3,e,f,12,13,21,23,25,27,29,2b,2c,31,37,38,60,61);
+89literal2e85 calls,most requirelocaldataflow. Interfacephysicalmappingnot
+identified;other-generationnumericcoincidencesnotused. LocatornotCFGproof.
+Useraskedwhatremains:changed savedCC producer,nonzeroe452 producer/usable
+restore invocation,and hardwareacceptance remainthree distinct gaps. Whole
+DRAMcycleonlypreservesstate;do notrepresentperipheral inventoryasclosinggaps.
+FurtherE800workneedsconcreteCC/gatedependency;hardwareworkremainspaused.
+
+CONTINUATION — RESTORE INVOCATION PRECISION
+e452 isrequiredbyknownregistered/deferredroutes,notby71ac itself. Other
+restorecallers2edc (hardware6803ed50bit1+RAMd99c!=0) and70d4(RAMdb25!=0)
+havedifferentlocalconditions,butnoestablishedentry. Rawall65534IRAM3byte
+startsCALL0/4/8/12+Jsearchreproduces7calls6944/1call71ac;noCALL/J2edc/70d4,
+noabsolute5fff2edc/5fff70d4 pointerincontainer. Computed/conditionalentries
+remainopen;notuniversalabsenceproof. Known-gateproducerORanothercallable
+restorepath isinvocationgap;changedmaskproducerandacceptancestillseparate.
+Evidence rlc-restore-entry-followup.txt/audit.json;script
+scripts/navi21-rlc-restore-entry-audit.py checks1147listingrecords.
+No hardwarechanges;goalopen;prioritizeactualmask/gatedependencies.
+
+CONTINUATION — SAVED-CC NEIGHBOR WRITERS
+FreshCFG6e10/72f4/7390:279instructions,nocalls/unknownops/localedges;18fixed
+DRAMstoresplusoneframe-localstore. LastneighborDWORDdfc0 endsatdfc4exactly;
+noCC[dfc4,e004)orgatee452overlap. Otherwriters/alternateentriesstillopen.
+InitialDRAMzerosdonotprovelaterrestorecontents;lifecyclemustaccountfor71ac
+saveandwholeDRAMrestorebeforeusinginitialzeros. Evidence
+rlc-saved-neighbors-followup.txt/audit.json/cfg.json;script
+scripts/navi21-rlc-saved-neighbors-audit.py checks307listingrecords.
+Nochangedmask/gateproducerfound;nohardwarechanges;goalopen.
+
+CONTINUATION — SAVED-MASK LIFECYCLE AT3a00
+At3a81 gate0skipsto3b38,gate1permits3b32restore(1,1). Bothjoin3b38->3c0e
+save(0,0):76contiguousinstructions/7calls/nolocalbranch. Conditionalonentry/
+calleereturns,cyclecansaveactualCCevenwithgate0;initialzerosnotlaterstateproof.
+32a4/35d8doesnotestablishuniversalsave-first;38ecsaveentryhasnoimmediateCALL
+orfullpointerreference,soitsorderingcannotbeassumedforregisteredcallbacks.
+Evidence rlc-saved-lifecycle-followup.txt/audit.json;script
+scripts/navi21-rlc-saved-lifecycle-audit.py checks491records. No newgate/mask
+producerorhardwareacceptance;nohardwarechanges;goalopen.
+
+CONTINUATION — TRANSITION HELPERS / SERIAL CONTROL
+37d8->1194/383c->59e4 plus3724:197instructions,alllocalcalleesaccounted;
+RAMwritesonlye453/e454/e25e,notgatee452/savedCC.200listingrecordschecked.
+383c serialcommandviaRLC_SERDES_MASK/DATA/CTRL/BUSY public3b178/180/17c/184:
+maskf0003,CTRL0cfffb(BPMaddr1fff,REG_ADDR12,broadcast/write),DATArequestedstate.
+NotRAMproducer;downstreamCCacceptanceeffectunproved,donotclaimhardware
+irrelevancefromlocalRAMexclusion. Evidence rlc-transition-controls-followup.txt/
+audit.json/cfg.json;script scripts/navi21-rlc-transition-controls-audit.py.
+No hardwarechanges;goalopen.
+
+CONTINUATION — CONCRETE LX6 PORTS ADDED TO SMU LOCATOR
+EarlierRAMportscanomittedTOC-derivedfb55/fb56. Addedtenencodings(DWORDs,
+3ed54/3ed58 and01200000/60000000/68000000aliases):zeroall-byteSMUliterals,
+zerofixedstoresin1438-rootreceipt. ComputedgenericSMUstore remainscandidate,
+nowwithspecificTOCdestination,butphysicalalias/portacceptance/indexunits
+notproved. Do notconflateRLCGtransferwithSMUreachability. Exactmissingedge
+isSMU-to-this-portmapping plusdeliveryconditions,thenstate/invocation/CCacceptance.
+Evidence smu-lx6-port-followup.txt/audit.json;script
+scripts/navi21-smu-lx6-port-audit.py. Nohardwarechanges;goalopen.
+
+CONTINUATION — EXACT PORT DEFINITIONS / INDEX UNITS
+PinnedUMRgc10.3 omits5b55/5b56; namedSRMpair5b71/72 isdifferent. GC9same
+numbersareSDMAIOVstatus,notLX6evidence. GC11LX6pair5b68/69 hasADDR0..10:
+DWORDassumptioncovers8KiBvsSiennaTOC16KiB;cannotborrowindexmask/units.
+ConcreteTOCpairremainsbestSiennaevidence;SMUalias/indexingstillunproved.
+Evidence lx6-port-definition-followup.txt/audit.json;reproducer
+scripts/navi21-lx6-port-definition-audit.py. NextderiveSiennaportsemantics
+fromcode/matchingdescription,notother-generationnames. Nohardwarechanges;
+changedmaskproducer/invocation/acceptancestillopen;fullgoalnotcomplete.
+
+CONTINUATION — ZERO-START BULK ROUTE / DEPENDENCY CORRECTION
+All3immediate35d7calls311d/31b0/31fb supplyDW3high16;LX6entries10/27both
+start0/index0/16KiB. Helper scalesregisteraddress,notindexunderpartialISA.
+No nonzeroLX6indexevidence. Butnonzeroindexunitsarenotrequiredbyexisting
+whole-blockDMAsetup;donotmakethemtheonlybottleneck. Changedwholepayload
+source+invocationstillmissing. DriverCPU-mappedautoloadGTTallocationis
+load-modeconditional(gfx_v10_0.c4982,5694);PSPbranch5573waitsinstead,so
+thatpointercannotbeassumedtoownsnapshotbootloadbase+545000. Nextactual
+snapshotownership/writersorprovedSMUportmapping. Evidence
+rlcg-lx6-index-followup.txt/audit.json;scriptnavi21-rlcg-lx6-index-audit.py.
+No live mode/base/content observations orhardwarechanges;fullgoalopen.
+
+CONTINUATION — PSP ALLOCATION / SOURCE VS DESTINATION
+Retainedv6.12 MP0 11.0.7 branch:auto-loadtrue,boot_time_tmrfalse. Ordinary
+VRAMdevicepath allocatesVRAMwithNULLCPU-mapoutput;LOAD_TOCcanreturnsize.
+SETUP_TMRsendsallocationbase/size;LOAD_IP_FWsendssourceucode->mc_addr;
+responseprovidesseparateper-imagefw_addr;AUTOLOAD_RLCaddsnoaddress.
+Do notequatesource,allocationbase,returnedimageaddressandHYP_BOOTLOADbase.
+PSPhostsourcehasnoHYP_BOOTLOAD_ADDRreference;actualbase-settingedgeinside
+PSP/otherwriterstillmissing. No proofsnapshotID27=allocationbase+545000.
+Evidence psp-buffer-ownership-followup.txt/audit.json;script
+scripts/navi21-psp-buffer-ownership-audit.py checks8sourceregions. Conditional
+sourceanalysis,noactive-mode/addressobservation,nohardwarechanges.
+Nextplacement/base-settingedge;changedmaskproducer/invocation/acceptanceopen.
+
+CONTINUATION — CONCRETE SYS RLC BASE-SETUP CANDIDATE
+SOScontainerSYS[100,21870),SOS[21870,35bd0). SYSfile1d158..1d1a8Thumb:
+36instructions;enablebyte[e5c978+18],read64bit[e1fbe8],add400000withcarry,
+SVC7c(r0=3ed78,r1=high,r2=4),then3ed74/low,then3ed70/helpera808(1).
+ExactHYP_BOOTLOADHI/LO/SIZEcoordinates. Helper14instructionsmatchesTOC
+size>>14,*4,optionalbit12*16. SVCsemantics/globalownership/callableentry
+stillunproved. ConditionalID27location=value_at_e1fbe8+945000,NOT+545000;
+noequationtovolatileactualdriverbaseyet. NextSVC7cimplementationandglobal
+producer/runtimeSYSplacement. Evidence psp-rlc-base-followup.txt/
+psp-rlc-base-locator.json;scriptnavi21-psp-rlc-base-locator.py (Capstone).
+No hardwarechanges;changedmaskproducer/restoreinvocation/acceptanceopen.
+
+CONTINUATION — SYS BASE GLOBAL PRODUCER / CALL LOCATOR CORRECTION
+14cf8zeroinputbranch obtainsA/BviaSVC7b(a570/378c),T=((A<<4)+B)<<20,
+X=T-800000;14808outputpointere1fbe8,STRD14850writesG=X-(C&ffffff)<<24
++(D&ffffff)<<24 withC/Dfrom6a1b0/6a15c (parenthesizedformula inreceipt).
+56+34instructionschecked;SVCsemantics/registeridentity/runtimeopen.
+Nonzeroinputskipsproducer. Earlierno-callerclaimwithdrawn:textlocator
+wronglyexpected#prefix. NumericoperandsfindThumbBL25f8/27a4/f118->1d158,
+cba2->14cf8. Nextvalidatecallercontexts/orderingandSVCimplementation.
+Evidence psp-base-producer-followup.txt/audit.json;script
+scripts/navi21-psp-base-producer-audit.py. No hardwarechanges;goalopen.
+
+CONTINUATION — SYS BASE SETUP PRECEDES RLC ENABLE
+Validated6Thumbwindows/163instructions. f0dcselector[arg+4]==ffff calls
+1d158;success->SVC7b(3b000,stack,4),rejectalreadysetbit0,OR1->SVC7c.
+GC10.3 confirms3b000RLC_CNTL/bit0RLC_ENABLE_F32. Otherselectoruses3ed50bit80.
+17210buildsffffffff/ffff/0input andcallsf0dc(secondarg1),after169b4 and
+conditional14070(18,arg) onbyte[e5c978+13]. Outerdispatch/SVCsemanticsopen.
+e9c6->f0dc(r7,0);cba2->14cf8(sp+8) inputprovenancenext. 25f8/27a4calls
+alsoinstructionvalidated;fullentryselectionopen. Evidence
+psp-rlc-start-followup.txt/audit.json;scriptnavi21-psp-rlc-start-audit.py.
+No hardwarechanges;nochangedCCproducer;fullgoalremainsopen.
+
+CONTINUATION — INTERNAL SYS SELECTORS FOR RLC
+Checked50instructions/2TBBentries. [packet]selector1059 ->subtract1031=28,
+TBB e0f6/tablee0fa[index28]->e2a2->e9c2->f0dc(packet+38,0).
+Selector1070 ->subtract106f=1,TBB e168/tablee16c[1]->e366->e9cc->
+17210(DWORD[packet+38])->knownffffwrapper. Bothjoine8e0statusr6.
+Prior56fcvalidation/inputhandlingandoutercommandtranslationremainopen;
+1059/1070areinternalSYSselectors,NOTprovedLinuxPSPringcommandIDs.
+Evidence psp-rlc-dispatch-followup.txt/audit.json;script
+scripts/navi21-psp-rlc-dispatch-audit.py. NextoutertranslationorSVCimpl;
+changedmaskproducer/CCacceptanceunproved. No hardwarechanges;goalopen.
+
+CONTINUATION — SOS BUILDERS OF INTERNAL RLC PACKETS
+SOS31578builds1070packet[0]=1070,[4]=2,[38]=arg;308f2builds1059with
+args38/3c/40. BothSVCf2(1,packet);routinguntraced,layoutmatchnotdeliveryproof.
+34564readsBfromglobal2060ec,selectorbits16..23atB+71c;TBBselector5->345ec,
+SVCa3/call308b2,thenDWORD[B+704]==8->31578(DWORD[B+700]). Noexplicit
+308b2returntestgatescall. Do notlabel5/8asdrivercommand/fwtypeyet.
+3220c->1059builder(byte[r5+20],r4,0). NextBmeaning/SVCf2routing/driver
+translation. Evidence sos-rlc-packet-followup.txt/audit.json;script
+scripts/navi21-sos-rlc-packet-audit.py checks72instructions. No hardware
+changes;changedCCproducer/acceptanceunproved;fullgoalopen.
+
+CONTINUATION — CONCRETE SVC READ/WRITE IMPLEMENTATIONS
+SYSglobal2060ecproducerstillnotfound. SwitchedtospecificSVCdependency:
+ARMentry21bb0->literal45c5;payloadrelativecandidatefile25f34dispatch.
+7btable26178=740->26810->2536e:size4LDR253a2/STRoutput253a4.
+7ctable2617c=754->26824->27422:size4STR27452,DSB27442. Read/writemeanings
+nowinstruction-backed;24b30addressmappingand27238/25dc4successstillopen.
+f2->26a5cindex2->26a88->234c4(savedargs);nextSYSdeliverytrace.
+Evidence sos-svc-route-followup.txt/audit.json;scriptnavi21-sos-svc-route-audit.py.
+No runtime-mapobservation/hardwarechanges;changedCCproducer/acceptanceopen.
+
+CONTINUATION — RLC ADDRESSES PASS LOCAL SOS RANGE CHECK
+27238(address,8) returns0for3ed70/74/78/3b000acrossitsstatebranches,
+conditionaloncompletedglobalreads. 24b30slot0writeshalfwords8898=0/889a=1;
+25dc4writes03220050=0,clearslow16of03220000preservinghigh16. Returned
+pointer01000000+low20->size4STR/DSB. No localrange-refusalforconcrete
+RLCaddresses;actualwindowidentity/completion/CCacceptancestillunobserved.
+Evidence sos-rlc-map-followup.txt/audit.json;scriptnavi21-sos-rlc-map-audit.py
+checks91instructions/4addresses. Nextwindowdefinitionorf2delivery;changed
+CCpayloadproducerstillmissing. No hardwarechanges;fullgoalopen.
+
+CONTINUATION — F2 DYNAMIC RECIPIENT / REGISTRATION
+234c4readsID=byte[8428+selector],zero->2f;record[6054]+92*ID,4slotmap,
+no-slot->31. Otherstate/addressconditions2e/32remain. Preparessavedpacket
+pointer+8,entryPC+3cfromrecord+4,then2457c;notdirectBLtoSYS.
+SVC74table2615c->26780->253f8 validatesvia2310c/selector<16 thenSTRB
+[8428+selector]=ID. Candidate33c94 registers(r5,byte[sp+68]);350e8clears
+(r5,0). Next33c94r5=1/recipiententry/framehandling. Evidence
+sos-f2-recipient-followup.txt/audit.json;scriptnavi21-sos-f2-recipient-audit.py
+checks198instructions. No hardwarechanges;fullCCchainstillunproved.
+
+CONTINUATION — ORDINARY REGISTRATION DEPENDS ON EXISTING RECIPIENT1
+NormalDR3360e->31830readspropertyamd.dr.driverIDvia30b78,whichbuilds1009
+packetandSVCf2(1,packet)inbothpackingbranches. Returnedselectorstoredr5;
+IDbyte[sp+68]comesfromSVC64;SVC71descriptorfirstwordheader+10;laterSVC74
+registers(r5,ID). Localdataflowonly,fullCFG/imageidentitystillopen.
+Thiscannotproveinitialrecipient1:queryalreadyrequiresit. NextinitialSYS
+record/tableconstructionor8428[1]writer,separatefromordinaryloader.
+Evidence sos-recipient-property-followup.txt/audit.json;script
+scripts/navi21-sos-recipient-property-audit.py checks108instructions.
+No hardwarechanges;changedCCchainincomplete;goalopen.
+
+CONTINUATION — SPECIAL FIXED-SELECTOR1 LOADER PATH FOUND
+Concretecaller33db8storesfirststackarg1(33d98/33db2);33440push52+locals13c
+makescalleesp+170thatarg. Nonzero selectsimagepointerfromglobal2060d4,
+skipsordinarysourcepath;335a8setsr5=1/class2,skips31830propertyquery.
+ForDRkind5244,33b5a->33c5cskipsoverwriteofr5;successfulsetup->33c94SVC74
+registersselector1/allocatedID. IntermediateCFG/success/imageidentityopen.
+Priorcircularityappliesonlyordinarybranch,notthisconcreteinitialization
+candidate. Nextglobal2060d4source/SVC71entryinstallation/SYSidentity.
+Evidence sos-initial-recipient-audit.json;script
+scripts/navi21-sos-initial-recipient-audit.py. No hardwarechanges;goalopen.
+
+CONTINUATION — RECIPIENT ENTRY INSTALLATION / SYS WRAPPER MATCH
+SVC71table26150->26592 checks callerrecordkind1/descriptor,then2514c;
+2310csuccess->descriptorDWORD0copiedto[6054]+92*ID+4. Thusheader+10
+entryfieldusedbyloaderhasconcreteinstallationpath. SYSheaderfile210=e01eb0.
+Candidateaffinemapruntime-file=dfff00 alignswithARMfile1fb0(MOVr0,r2,
+BLXliteral e07705,SVC75),andThumbfile7804wrapper;selector>=1000 callsdf94
+at7854. Thisstronglymatchesknown1059/1070dispatcher,butmappingnotyet
+independentlyproved;wrapperrequiresstateDWORD+0c==1. Imagepointer2060d4
+producer/actualimageidentity/startupconditionsremainopen.
+Evidence sys-recipient-entry-audit.json;scriptnavi21-sys-recipient-entry-audit.py
+checks107instructions. No hardwarechanges/changedCCproducer;goalopen.
+
+CONTINUATION — IMAGE POINTER SOURCE / COMMAND WINDOW CONSTANT
+32f70loadsr5=206070;32f72literal03010000->32f7eSTR[r5+7c]=2060ec.
+EarlierBnowconditionalconstant03010000:commandfields0301071c/704/700.
+32fb6SVC73->table26158->2677cliteral601c->26920LDR;32fb8storesresultto
+[r5+64]=2060d4. Specialloaderreadsit334be. Nextproducerofkernel601c/
+imageidentityandpubliccommandfieldnames. Do notconflateimagepointer,
+commandwindowandRLCsnapshotbase. Evidence sos-image-pointer-audit.json;
+scriptnavi21-sos-image-pointer-audit.py. No hardwarechanges;goalopen.
+
+CONTINUATION — CONCRETE PRODUCER OF KERNEL IMAGE POINTER601c
+24cb4readsP=[6034],F=[P+23c],O=F&03ffffff;24cf0stores04000000+Oto601c.
+ParallelR=[03240000],64-bit(R<<26)+Ostored60e0/60e4;record8438and
+032404d8configuredwithc0808000. Keepwindowpointer/wideraddressdistinct.
+Bootbranch2424esets6034=a0000,soinputa023cconditionalonordering/unchangedP.
+Rawcandidate24d20wasliteralpooldecodedasSTR,excluded;actualwriter24cf0.
+Nextinputfieldproducer/meaningand24cb4ordering/SYSbytesidentity. Evidence
+sos-image-origin-audit.json;scriptnavi21-sos-image-origin-audit.py.
+No hardwareobservations/changes;changedCCchainstillopen.
+
+CONTINUATION — LOCAL IMAGE-FIELD ORDER CONFIRMED
+Initializationbranch2424ewrites6034=a0000;modelbranchesonlywrite6008,
+thenfeaturebranch6007joins242ec. 25d78zeroes[8898,8918),26ad4immediately
+returns;242f4calls24cb4. Thusonthisbranchimageinputisconcretelya023c,
+notjustunknown[P+23c]. Outerbranchselection/contentproducerstillopen.
+Nextinitializationblockpopulation/earlierloaderhandoff;do notequatefield
+todriverbufferwithouttransferproof. Evidence sos-image-order-audit.json;
+scriptnavi21-sos-image-order-audit.py. No hardwarechanges;fullgoalopen.
+
+CONTINUATION — MATCHED DRIVER STAGING LIFETIME
+Pinnedpsp_v11_0.c.v6.12tomatchamdgpu_psp.c.v6.12(unversionedfilehasdifferent
+copy-returnhandling). DriverinitloadsSYSbeforeSOS;bothcopyintofw_pri_buf,
+clearfirst1MiB,sendfw_pri_mc_addr>>20viaC2PMSG36/commandvia35. Conditional
+onsuccessfulcopies/noalready-aliveskip,SYSstagingisoverwrittenbySOS.
+ThusstagingpointercannotbeassumedpersistentSYSbacking;earlier-stage
+retention/placementandfielda023cproducerremainmissing. Thisdoesnotprove
+wherebyteswereplaced. Evidence sys-staging-lifetime-audit.json;script
+scripts/navi21-sys-staging-lifetime-audit.py;matchedsourceURL/SHAreceipt.
+No hardwarechanges;changedCCpayload/invocation/acceptanceopen;goalactive.
+
+CONTINUATION — DIRECT CC REFERENCES IN SYS/SOS
+Refocusedonchangedmaskproducerafterstartupchainwork. Fullcontainerall-byte
+DWORDscan18values(CC_SA/WGP/RBbyte/DWORDcoordinates,threecandidatealiases,
+savedWGP/RB/gateaddresses):zero. ARM/ThumbMOV/MOVW/MVNcandidate-startscan
+SYS[1000,21870),SOS[21970,35bd0):zero. ThisisnotcomputedaccessorfullCFG
+closure;MOVW/MOVT,base+offset,tables,argsandwhole-blockcopiesremainpossible.
+Evidence psp-cc-reference-audit.json;scriptnavi21-psp-cc-reference-audit.py.
+No directconstantleadtochangedCCproducer;nextcomputedtransfercontentsor
+knownstatewriters,notmoregenericliteralinventories. No hardwarechanges;
+startupmappingprogressdoesnotclosechangedmask/invocation/acceptancegaps.
+
+CONTINUATION — SYS PRE-START RECORD COPY, NOT A FOUND CC PRODUCER
+Decoded 320 instructions around14070/a5c8/1acac/7734/ARM1990.
+Operation18 (used by17210) changes no local record fields: tail-calls1acac,
+which on successful address setup copies28 bytes frome5cc24. ARM1990 is
+byte-preserving copy. 7734 selectsSVC6b then6d and returns pointer+pageoffset;
+physical mapping semantics/completion remain open.
+Define G=uint64[e1fbe8], H=uint64[e1fbf0], O=uint32[e1fbdc],
+F=uint32[e1fbd4], S=(((F>>1)&31)+1+(F&1))*1MiB.
+Destination=(H+O+S-1MiB) modulo2^64. Operation13(argffff) initializes record:
+DWORD0=1,+4/+8=0,uint64+0c=G+O,uint64+14=G+O+S.
+Operations0d/3a OR selected bits into record+4/+8 respectively; these are NOT
+identified CC masks. Operation13 also sendsG+O+S-1MiB via14190/14018 to
+1e130 with commands1/2 at1e058; operation18 does not take that extra path.
+Next inspect H/O/F producers and record consumer to establish destination
+relative to RLC snapshot. Do not claim non-overlap before address relations
+are proved. No changed CC producer/invocation/acceptance proof yet.
+Evidence sys-rlc-record-audit.json; reproducible script
+scripts/navi21-sys-rlc-record-audit.py. No hardware access or state changes.
+
+CONTINUATION — RECORD PREPARATION AND H/G BASE RELATION
+Important scope refinement:14070 operation18 only copies, but preceding
+17214->169b4 DOES change record+4/+8 when[e5c978+13]!=0:
+each becomes old & ~(arg<<1),32-bit. Then5864 clears selected DWORDs in
+SYS arraye40360 (argbit31 removed). Neither target is established CC RAM.
+10de8(P) obtains descriptor=DWORD[P]; ifHzero and local checks pass,
+10e5a stores uint64[descriptor] intoH=e1fbf0. Successful1bd58/1bc90 then
+10e7c->14808 translatesH intoG=e1fbe8 using6a1b0/6a15c. Error/teardown
+paths can clear both; do not assume persistence or observed runtime values.
+Found O producerffb8: O=align_down_1MiB(a808(24)+
+4*(DWORD[r5+230]&01ffffff)+5MiB),32-bit arithmetic, conditional on
+DWORD[r5+f4]&1e0. It next calls14cd8: F|=1, thenF|=count<<1;
+count=[e1fbac], direct setter9eb0(arg0). r5 source/count caller still open.
+Candidate file initialization has O/F/G/H zero, not runtime proof.
+Next resolve these inputs and record consumer; establish common address
+domain before comparing28-byte destination with RLC saved CC block.
+Evidence sys-rlc-record-origin-audit.json and reproducible matching script.
+No hardware access/changes; changed CC and acceptance remain unresolved.
+
+CONTINUATION — CONDITIONAL RECORD/SNAPSHOT NON-OVERLAP
+fef6 setsr5=e3fb60 (same table base as a808): O's +230/+f4 inputs are
+from this table; runtime population still open. Dispatch e54c calls10de8
+withr7 after copyingDWORD[r5] to packet+38; e554 sends packet+38 to9eb0.
+Conditional address proof: if O retains ff b8 alignment and G/H retain
+14808 relation, O+S-1MiB is a multiple of1MiB, as is G-H. Record occupies
+relative residues[0,1c); ID27 RLC DRAM snapshot atG+945000 occupies
+[45000,49000) modulo1MiB. They cannot overlap. This excludes direct
+saved-CC/gate modification by THIS28-byte copy under stated assumptions,
+not indirect influence through a consumer, other O writers, or hardware
+behavior. Address-domain interpretation/runtime completion remain explicit
+conditions. Next follow consumer of1e130/1e058 or known LX6 mask/gate
+writers; avoid treating the two SYS record fields as CC without evidence.
+Evidence sys-rlc-record-overlap-audit.json and matching reproducible script.
+No hardware access; complete changed-CC chain remains open.
+
+CONTINUATION — RECORD ADDRESS ENDPOINT IS VCN/MMSCH
+Matched local pinned UMR vcn_3_0_0.reg with Sienna Cichlid IP base:
+VCN segment0=7800 DWORDs. Offset4c ->1e130 MMSCH_VF_MAILBOX1_DATA;
+offset16 ->1e058 MMSCH_VF_MAILBOX_1; offset17 ->1e05c
+MMSCH_VF_MAILBOX_1_RESP. SYS14018 clears response and polls for80000001
+on command writes;14190 sends high/low address words with commands1/2.
+Same numeric offsets in UVD registers use segment1 and are NOT matches.
+This supplies a concrete VCN/MMSCH endpoint, not an SMU-channel endpoint.
+Command consumer code and indirect effects remain unproved. Coordinate
+match retains SVC-window/domain assumptions; no hardware observation.
+Together with prior conditional non-overlap, this path is not a demonstrated
+CC producer. Next prioritize LX6 saved-mask/gate producer gaps; follow
+MMSCH only with a concrete consumer lead, not speculative SMU aliases.
+Evidence sys-record-endpoint-audit.json; script
+scripts/navi21-sys-record-endpoint-audit.py; extracted pinned register file
+vcn_3_0_0.reg with archive/member hashes. No hardware changes; goal open.
+
+CONTINUATION — BOUNDED LX6 COMPUTED STORES NEAR GATE
+Returned to unresolved non-stack stores. Byte-checked605 listing records
+and literal cells. 4664 copies17 DWORD pairs into[e464,e4ec);46c4 copies
+17 pairs into[e4ec,e574), all addresses with5ffe prefix. Gatee452 is below
+both ranges. 5138/542c each fill64 DWORDs in[d9e4,dae4), below savedCC.
+8b3c fills64bytes[e5fc,e63c);8d89 indexes this ring viaDWORD[e63c].
+Initializer setsindex0 and8da0 writes(index+1)&63; bounded only if no
+other writer changes index (not a complete global exclusion).
+9830 callback cells stay[d7e0,d820) withindex<8. Its optional output
+store9868 is skipped by all7 known direct calls (a13=0 -> calleea5=0).
+Indirect entry remains open. These remove concrete candidate stores,
+not all possible CC/gate producers. Next inspect other computed stores
+and unresolved entry/dataflow, preserving prior full-block transfer limits.
+Evidence rlc-computed-store-bounds-audit.json; reproducible script
+scripts/navi21-rlc-computed-store-bounds-audit.py. No hardware access;
+new masks, gate enabling, and accepted CC write remain unproved.
+
+CONTINUATION — MOVT ADDRESS PROPAGATION / SEVEN LX6 STORES RESOLVED
+Correction to initial lead:28dd branch decode already existed appended to
+027cc listing. No missing-branch claim. Actual lost address information came
+from scanner treating integerMOVT as an unknown whole-register barrier.
+Added conservativeMOVT/MOVF: preserve unrelated integer registers, retain
+conditional destination only when both alternatives agree. Four parsed
+instruction fixtures check agreement/disagreement and unrelated bases.
+In027cc,2887MOVT changesa13 only; a2=e264/a3=e2e8 remain known.
+Seven byte stores now resolve:28c7/2903/2927/292c ->e272;
+28d6/299b ->e3c5;2947 ->e3c4 (all5ffe prefix). No gate/savedCC overlap.
+Reached instruction count stays171; no unresolved local branch edges or
+unknown operations remain in this procedure. This is local scope, not
+whole-firmware completeness. Historical aggregate scan retained unchanged.
+Evidence rlc-27cc-movt-scan.json and rlc-movt-store-audit.json; reproducer
+scripts/navi21-rlc-movt-store-audit.py; scanner change in
+scripts/navi21-smu-cfg-scan.py. No hardware access; full CC chain open.
+
+CONTINUATION — COMPUTED HARDWARE WINDOWS AND BOUNDED65d8 LOOP
+40a0 writes68000000+(a2&fffff);43a6/43c7/43e8 write60000000+
+(table_address&fffff). Neither directly addresses LX6 RAM5ffe....
+4374 processes21 initial address/value pairs[c120,c1c8); none targets
+CC_SA8924/CC_WGP89bc/CC_RB98f4. Table changes/register side effects remain
+open; hardware-window classification alone does NOT exclude CC writes.
+68fa copies at most40 DWORDs into[5ffedbd0,5ffedc70), checked each iteration;
+count40 reaches6940 self-loop without further store. SavedCC/gate untouched
+by this particular RAM loop. Next resolve4004 selected addresses and known
+caller lengths to determine whether its hardware writes can reach CC.
+Evidence rlc-window-store-audit.json; reproducible script
+scripts/navi21-rlc-window-store-audit.py. No hardware access; goal open.
+
+CONTINUATION — 4004 COMPUTED DESTINATION CLOSED LOCALLY
+Offline selector interpreter enumerated all64 low6 cases; other incoming
+values remain unknown and cannot affect the evaluated branch arithmetic.
+Aligned4*k selects3ba68+4*k,slotk (0..15); unaligned inputs select0,slot0.
+40a0 writes68000000+selectedoffset. Inner loop increments slot-byte counter
+by4 and exits at64, so at most16-slot words; length test can exit earlier.
+40c4 resets address3ba68 and410c resets slot0 before further chunks.
+Thus arbitrary total length does not extend beyond these banks:
+[68000000,68000040) or[6803ba68,6803baa8). All32 possible DWORD starts
+exclude reviewed CC_SA/WGP/RB. This stronger local bound avoids relying
+on small known caller lengths. It does not exclude indirect hardware effects
+or prove runtime invocation/acceptance. Other local stores retain prior scope.
+Evidence rlc-4004-destination-audit.json; reproducible byte-checked script
+scripts/navi21-rlc-4004-destination-audit.py. No hardware access; overall
+changed-mask/gate/accepted-write chain remains unresolved.
+
+CONTINUATION — REFRESHED LX6 STORE INVENTORY / EXPLICIT COVERAGE LIMITS
+Re-ran same236 listings with identical initial indirect-edge table after
+MOVT/MOVF correction. All2399 stores retained; only7 addresses change,
+exactly prior027cc result.108 non-a1 address-unknown stores remain in the
+simple scanner, including separately bounded loops and known save/copy
+routines; this is NOT108 new unexplained producers.
+Scanner now reports reached excw/ill stops and missing fallthroughs.
+No such stops in these local entry analyses. Missing fallthroughs are
+97f5->a304 and a465->97f0 after calls; return/resumption not assumed covered.
+Unknown operations remain in12 listings. No whole-firmware absence claim.
+Next combine remaining entries with existing bounds/caller evidence and
+prioritize real indirect-writer/entry gaps, not repeated bounded stores.
+Evidence rlc-store-coverage-audit.json and rlc-iram-store-scan-current.json;
+reproducer scripts/navi21-rlc-store-coverage-audit.py. Four MOVT/MOVF rule
+checks rerun and pass. Historical aggregate preserved. No hardware access;
+changed masks, enabling gate and accepted hardware writes remain open.
+
+CONTINUATION — ALTERNATIVE RESTORE FLAG db25 HAS SAVE-CYCLE PRODUCER
+Fixed byte writer70cc in6f70 sets5ffedb25=1;71a4 in70d4 clears it.
+6f70's local path calls70a2->6944(0,0), then4774, then sets the flag.
+The14 instructions from70a2 return through70cc have no conditional branch
+or save-result test. 70d4 conditionally restores via6944(1,0) and later
+clearsdb25. This identifies local flag provenance, not modified CC masks.
+Save completion still depends on6944/71ac paths and hardware waits; flag1
+alone cannot certify it. Initial saved zeros cannot simply be assumed at
+this restore, because the known flag producer first calls save.
+Raw all-byte CALL/J and full-container absolute-pointer scans find no
+ordinary incoming references to either6f70 or70d4. Their actual invocation
+remains open; computed/conditional/other-engine entries not excluded.
+Evidence rlc-alternative-cycle-audit.json; reproducible script
+scripts/navi21-rlc-alternative-cycle-audit.py. No hardware access; goal open.
+
+CONTINUATION — d99c RESTORE CONDITION HAS REGISTERED SETTER PATHS
+3300 storesarg0 byte tod99c andarg1 tod9a0 (default10000 ifarg1zero).
+7d24 selector1b ->initialtablecc50[11]=7ef0 ->7f02->3300;
+83fc selector4b ->initialtablecd50[75]=8757 ->8769->3300.
+Both passV&1,V>>8 fromV=DWORD[6803b2ac]. Registered77cc calls7d24 at7b65
+and83fc at7871 under prior event-bit conditions. Thus one alternative
+restore condition has concrete static provenance; actual delivery unobserved.
+This setter does not saveCC, unlike db25 producer.2edc still requires
+hardware6803ed50bit1 and an unestablished entry mechanism. No connection
+fromd99c to main e452 gate is claimed; changed masks/acceptance remain open.
+Evidence rlc-d99c-producer-audit.json; reproducible script
+scripts/navi21-rlc-d99c-producer-audit.py. No hardware access or changes.
+
+CONTINUATION — d99c CONTROLS CALLBACK SCHEDULING, NOT e452 ITSELF
+3cbc/38ec schedule3a00 through5a6c whenbyte[d99c]!=0, usingDWORD[d9a0].
+3a00 can reschedule itself with those same fields.5a6c stores callback at
+e580, writesmax(parameter,8) to6803b6e0, setsbytee59e andregister3b6ecbit1
+(RAM addresses carry5ffe prefix). Units and actual delivery remain open.
+387c instead usesDWORD[d9a8] to schedule3cbc;3314 separately setsbyte[d9a4]
+andparameter[d9a8]. Do not conflate controls sharing based99c.
+3a00 still tests independentbytee452 before3b32->6944restore. Thus the
+newly traced d99c producer does not supply e452 or remove the restore gate.
+No new2edc entry or changed-mask source from these consumer paths.
+Evidence rlc-d99c-consumer-audit.json; script
+scripts/navi21-rlc-d99c-consumer-audit.py checks448listing records.
+No hardware access; complete chain remains open.
+
+CONTINUATION — SHARED COPY BODY ENTRY RANGE CHECK
+Searched all IRAM byte positions for immediateCALL/J into entire shared
+copy range[a1bd,a2fc), excluding sources already within that range.
+True known-stream calls remain135d/2ce1 ->a1fc,20-byte rangesd978..d98c
+ande438..e44c (RAM5ffe prefix), neither reaching savedCC/gate.
+Raw4397->a218 starts inside4396 l32i.n;6f88->a2ef starts inside6f87 l32r.
+Not additional calls on those decoded streams. No full absolute pointer
+into this body appears in firmware container. Computed/relative/conditional
+entry and other instruction streams remain open; no general absence claim.
+Evidence rlc-copy-entry-audit.json; scriptnavi21-rlc-copy-entry-audit.py.
+No hardware access; changed-mask producer still unestablished.
+
+CONTINUATION — SEVEN OTHER CALLBACK REGISTRATION ENTRIES
+77cc has8 CALLX8 sites loading distinct slots[e57c,e59c),RAM5ffe prefix.
+5a6c/e580 remains the known387c/3cbc/3a00 registration path. For the other
+7 setter entries5a40/5a9c/5acc/5af8/5b20/5b4c/5b78, extended the prior
+local no-caller result to all-byte immediateCALL/J and full-container
+absolute-pointer checks:zero matches. This does not prove slots remainzero
+or rule out computed/interior entry, wider stores or engine transfers.
+No new invocation route to alternative CC restore from these slots.
+Evidence rlc-callback-unused-entry-audit.json; reproducible script
+scripts/navi21-rlc-callback-unused-entry-audit.py. No hardware access;
+changed-mask source and actual CC acceptance remain open.
+
+CONTINUATION — RLCG CONTROL WRITES DO NOT YET SUPPLY LX6 ENTRY ADDRESS
+All4 literal low16ed80 matches in6144 main words:2a58/2a8b stores and
+35e3/35ec reads. Both stores haveimmediate11hex immediately before and
+31e5 save call immediately after. Under partialISA this is fixed control,
+not arbitraryLX6 PC delivery. No low16 matches630/2edc/6f70/70d4/5fff;
+computed addresses/reset-vector paths remain open.
+GC11 register database names4d80+baseindex1 RLC_LX6_CNTL, bits0..3
+BRESET/RUNSTALL/PDEBUG_ENABLE/STAT_VECTOR_SEL. GC10.3 lacks the definition;
+do NOT transfer bit meanings. Written11hex includesbit4 absent from that
+comparison record. Next pinned vector-entry layout/matching-generation
+control evidence, not assumed direct invocation from control constants.
+Evidence rlcg-lx6-control-audit.json; scriptnavi21-rlcg-lx6-control-audit.py.
+No hardware access; changedCC/invocation/acceptance chain stays open.
+
+CONTINUATION — ALL108 UNKNOWN-ADDRESS STORES NOW HAVE DISPOSITIONS
+Previous user-status reply was no-progress; resumed from current files.
+Reconciliation found ring2a0c/2ab8 and2b44 stack loops ALREADY analyzed;
+these are not new findings. Added per-store evidence links/conditions for
+all108 scanner-unknown non-a1 stores so future passes do not rediscover them.
+New byte checks:054c8 stores54e7/54ea use a1+8/+12, widths4/2;
+05528 stores5590/5592 use a1+16/+20, widths4/2.128 listing records match
+pinned firmware. These four are local stack aliases under ordinary entry
+semantics, not new fixed RAM producers. Runtime stack placement unproven.
+Inventory retains conditional ring indices, caller-dependent pointers,
+custom snapshot slots and known CC saves as DISTINCT categories; do not
+summarize them as excluded or treat six unlinked01d10 stores as the only
+remaining firmware uncertainty. Next reconcile those six with existing
+import/derived-data evidence, then pursue concrete unresolved producers.
+Evidence rlc-store-disposition-audit.json; reproducer
+scripts/navi21-rlc-store-disposition-audit.py.108 unique entries, none omitted.
+No new changed-mask producer, restore entry or accepted CC write established.
+No hardware access or operational changes. Overall chain remains incomplete.
+
+CONTINUATION — SIX01d10 DERIVED STORES HAVE FIXED LOOP BOUNDS
+Previous turn made progress by completing108-entry dispositions and checking
+four stack aliases. Current six-store reconciliation adds local address bounds:
+1e29/1e2c: eight paired iterations,16DWORDs[e384,e3c4).
+1e44/1e47:15iterations, arrays[e308,e344) and[e348,e384).
+1e8d/1e93: conditional rewrites of those same two15DWORD arrays; loop reloads
+initial pointer from stack at1e7a. All addresses carry5ffe RAM prefix.
+Imported values affect comparisons/stored values, not loop pointer or endpoint.
+All237 listing records checked against pinned firmware; six sites cover184
+unique bytes. No overlap with savedCCdfc4..e003, gatee452 or ringindexe424.
+This closes direct destinations for these six stores under local entry/stack
+assumptions, not later dataflow or arbitrary entries/other engines.
+Evidence rlc-derived-store-audit.json; reproducible script
+scripts/navi21-rlc-derived-store-audit.py. Updated108-entry disposition index.
+All108 now have local dispositions; conditional pointer/index/custom-slot
+paths remain conditional, not globally excluded. Further progress requires
+an actual producer or entry relation, not repeating these bounded loops.
+No hardware access or changes; full changedCC/restore/acceptance chain open.
+
+CONTINUATION — SNAPSHOT BODY HAS NO ADDITIONAL ORDINARY IMMEDIATE ENTRY
+Previous turn bounded six01d10 stores. This turn tests a concrete remaining
+custom-slot route: all-byte immediateCALL/J targets into74c4..766e, including
+interior entries, not merely exact74c4. Four raw matches: known6de5->74c4;
+2101->7537,3cda->7608,6360->75f8 start inside existing decoded instructions
+at2100(beqz.n),3cd8(l32r),635f(l32i.n). These are not additional calls on
+those streams. Full-container absolute-pointer search into body findsnone.
+Thus this extension supplies no custom-slot invocation beyond known6944
+construction. Computed/conditional transitions, alternative streams, relative
+pointers and other-engine entries remain open. No broad absence conclusion.
+Evidence rlc-snapshot-entry-range-audit.json; reproducer
+scripts/navi21-rlc-snapshot-entry-range-audit.py. No hardware access/changes.
+Changed-mask source, actual invocation and hardware acceptance still open.
+
+CONTINUATION — DECODED CONDITIONAL ENTRIES TO CC PROCEDURES
+Previous turn extended immediateCALL/J snapshot-body references. Current
+inventory includes conditional branches from all260 retained function/vector
+listings:16080 byte-checked records,1947 unique immediate edges,none unparsed.
+Exact intervals6944..6e0f,71ac..72f3,74c4..766f each end before the next
+procedure, not the next loosely related CC procedure. Nine external edges
+all match knownCALL8 primary entries:seven->6944,6a95->71ac,6de5->74c4.
+No decoded external conditional branch or immediate interior entry found.
+CALL destinations decoded from raw bytes with alignedPC, independently of
+printed relative operand; naive relative-PC addition would be wrong by1..3.
+This closes that specific gap in retained listings, NOT complete execution
+coverage. Unlisted streams/computed targets/other-engine entries remain open.
+Evidence rlc-cc-incoming-edges-audit.json; reproducer
+scripts/navi21-rlc-cc-incoming-edges-audit.py. No hardware access or changes.
+No modified-mask producer or accepted-write condition established.
+
+CONTINUATION — E800 FAMILY IS AN INDEXED TRANSACTION, MAP STILL MISSING
+Previous turn checked decoded conditional entries. Revisited unclassified
+RLCG writer family rather than another already bounded LX6 loop.
+22words2e7a..2e8f pinned: both helpers first store r2 to operand e800 in
+encoded mode1, no local mask/scaling/range check. Read-shaped path readsr3
+frome803 after status-mask2 polling; write-shaped path storesr3 toe801 with
+status-mask1 polling. Both usee804control/e805status under partialISA model.
+Crucial distinction: r2 is an interface index, not an established directCC/RAM
+address. Its physical index map remains unidentified. All76 read calls have
+immediately preceding fixedindices;89write calls remain caller-dependent.
+A public-coordinate lookup found no retained matching-generation definition
+for this port set; absence of a name does not identify or exclude a block.
+Do not infer physical mapping solely from e800*4 or another generation.
+Evidence rlcg-e800-helper-audit.json; reproducer
+scripts/navi21-rlcg-e800-helper-audit.py. Next useful evidence for this family
+is the matching-generation index map, then relevant caller provenance.
+No changedCC producer or restore acceptance established; no hardware access.
+
+CONTINUATION — SAME-GENERATION RTAVFS COMPARISON HAS ADDRESS MISMATCH
+Previous turn pinned indexed-helper structure. GC10.3 public RTAVFS has
+relative ports0/1/3/4/5 and write/read control/status masks1/2 matching that
+structure. However GC_BASE_INST0_SEG1=a000 plus4b00 giveseb00, not e800;
+all five ports differ by300DWORD. No address relation has been established.
+PinnedUMR GC10.3 indexedRTAVFS entries2/21/61 describe oscillator counters;
+do NOT assign those meanings to e800 indices without resolving the mismatch.
+This provides a concrete same-generation comparison target, not identification
+or exclusion of the e800 family from CC. No physical map or acceptedCC write
+proved. Next evidence needed is explicit e800/eb00 relation or independent
+same-chip port definition; mere structural resemblance is insufficient.
+Evidence rlcg-e800-map-comparison.json; reproducer
+scripts/navi21-rlcg-e800-map-comparison.py. Fiveports/fourmasks verified against
+hashed local sources. No hardware access or operational changes.
+
+CONTINUATION — ALL89 E800 WRITE CALLS HAVE LOCAL CONSTANT INDEX SETUP
+Previous turn supplied same-generation RTAVFS structural comparison with
+unresolved300DWORD address mismatch. Wider local register archive lookup
+provided no matching port definition; similarly numbered unrelated entries
+do not supply a physical mapping. No e800/eb00 relation established.
+Useful caller result: all89literal2e85 sites have preceding c008 index setup
+within19words.60distinct intervening words classify as non-r2 immediate/load/
+ALU destinations or checked2e7a read helper, with no intervening branches.
+Under retained partialISA and fallthrough from setup, indices are exactly:
+02,03,09,0e,0f,12,13,21,23,25,27,28,29,2b,2c,31,32,34,35,36,38,60,61.
+These23 indices replace the earlier unexamined local write-index dataflow.
+Incoming middle entries/computed calls/fullCFG and physical index meanings
+remain open. Small constant indices do not by themselves excludeCC orRAM;
+written values and hardware effects are separate questions.
+Evidence rlcg-e800-write-indices-audit.json; reproducer
+scripts/navi21-rlcg-e800-write-indices-audit.py. No hardware access/changes;
+no changedCC producer or accepted-write condition established.
+
+CONTINUATION — SMU SAME-NUMBER LITERAL IS DATA, NOT AN ESTABLISHED PORT
+Previous turn resolved local index setup for89RLCG write sites. Searched SMU
+full literals for30 candidate DWORD/byte/internal coordinates of e800/eb00
+port sets. Onlye800 atfile13a88/code13888 matches. Two retained consumers:
+25394 returnsDWORD[e800+20*arg0+1fc]+8*arg1;274b0 stores numeric data at
+base+308/30c/310/314 and other fields. No corresponding indexed-port handshake
+in these examined uses. Do not identify cross-firmware address spaces by
+this literal coincidence. Computed coordinates/other consumers remain open.
+Evidence smu-e800-reference-audit.json; reproducer
+scripts/navi21-smu-e800-reference-audit.py. No physical index map established.
+Disposition: do not continue generic E800 value arithmetic without a concrete
+address-map or CC dependency. Existing23 local constant indices are retained;
+that family is not excluded, but currently supplies no changed-mask chain.
+No hardware access/changes; main changedCC/invocation/acceptance gaps remain.
+
+CONTINUATION — COMMAND41 HAS A SECOND CALLBACK LAYER
+Previous turn refreshed the working summary and selected concrete pointer
+lifetime analysis. Initialtables12d10/12d20 verified:four230hex-byte structures
+101fc/1042c/1065c/1088c;workers1d698/1d60c/1d594/1d480. Firstthree configure
+fields via25b68/28b80,clearP+1,then1f354->1d488;fourth immediately returns.
+24configuration calls have constant field indices; their computed writes
+stay withinP..P+230 and do not reachP+22c.1d554 pair writes+15c..+1db.
+This is local field addressing, not fullcallee/runtime closure.
+New concrete dependency:1d488 loadsDWORD[P+22c], then CALLX8 at1d4c1 from
+that table using cursor/start/end bytesP+1f/+20/+21. Initial step0 bytes allzero;
+initial table115a0(firstthree structures)/115e0(fourth), element0=1d7fc(return).
+Initial data must not be substituted for live state. Second-layer callbacks
+and state/table writers must be traced before claiming global15874 stable
+across final1d7dd reload/1d7e2 byte1 store. Error/synchronization paths remain.
+Evidence smu-command41-workers-audit.json; reproducer
+scripts/navi21-smu-command41-workers-audit.py;297records bytechecked.
+Next:producer ofP+22c and state+1f/+20/+21, then actual second-level callbacks.
+No CC address relation or accepted write established. No hardware access.
+
+CONTINUATION — COMMAND41 CALLBACK INDEX AND STATE SIGNAL
+Prior turn established second-level callback.1d488 adds two byte fields as
+fullinteger0..510, then compares against byteend BEFORE CALLX8. Executed
+lookup indices therefore0..255; later loop bound reload remainsbyte. This
+bounds the1KiB read span, not the number of valid function entries in it.
+Initialtable callback1d7ec setsP+1 via reloaded global15874, not the global
+pointer itself. That byte selects1d488 early-return/resumption handling.
+Related1d714/1d77c handlers drive the state machinery via1f1a4/28b50; no local
+assignment toP+22c or start/end fields. Transitive effects remain open.
+Retained scan finds no fixedwrites to four initialP+22c cells; same-offset
+unknown/different-base stores do not justify all-writer closure.1bf68 writes
+bytes32/33 but knowncaller passes110d4, not these four structures.
+Evidence smu-command41-state-audit.json; script
+scripts/navi21-smu-command41-state-audit.py. Next remains actual state/table
+initialization/copy provenance and second-layer functions, not another simple
+fixed-address search. No CC relation established; no hardware access/changes.
+
+CONTINUATION — NONZERO CALLBACK RANGES ALREADY EXIST IN INITIAL IMAGE
+Previous turn bounded table indices but examined only step0 initialization.
+Expanded to all nine36-byte state records in each of four initial structures:
+36records,forward/reverse ranges resolve tonine callback functions. Step0 is
+zero-range everywhere; other steps are NOT. No unknown runtime initializer is
+needed to explain these nonzero ranges. Runtime state reachability staysopen.
+Callbacks1d7fc/1d7ec previously known; additional1ef4c/1ef20/1da98/1da4c/
+1da28/1da18/1da5c. Several use separate structureff8c with28b50/28b80/1ed28;
+1ef4c schedules1efa0 via295a4;1ef20 ORs80000 into0141d700 directly.
+No local15874 assignment in these nine callback bodies; transitive/scheduled
+writes and other runtime writers not closed. No savedCC relationship proved.
+Evidence smu-command41-initial-ranges-audit.json; reproducer
+scripts/navi21-smu-command41-initial-ranges-audit.py. Next concrete endpoints
+areff8c consumers and scheduled1efa0, not generic initializer searching.
+No hardware access or operational changes; full CC chain remains incomplete.
+
+CONTINUATION — ff8c TRANSITION DEFINITIONS AND SCHEDULED TARGETS
+Previous turn decoded initial callback ranges.26798 is a concrete ff8c setup:
+18calls25b68 define nine distinct state pairs across ten group indices.
+Scheduled1efa0 requests28b50(ff8c,9,1),then(ff8c,1,1);configuredgroup9=0->8,
+group1=1->2.28b50 requires group-enable byte1 and a changed request mask before
+driving state machinery. Initial masks/enableszero; setup presence is not
+runtime execution or enabling proof.1ed28 writes2 toP+1 only.
+Initialstate8 callbacks:forward1ded8,reverse1ddec. State2 forward1ed48/1ecb4/
+1dd54,reverse1ebe0/1ead8/1dd48. These give concrete next register-operation
+paths, conditional on actual setup/enables/state transitions. No CC link yet.
+Evidence smu-ff8c-transition-audit.json; script
+scripts/navi21-smu-ff8c-transition-audit.py. No hardware access or changes.
+Next group9/1 enable producers plus state8/state2 concrete register operations,
+not generic full-table expansion. Main changedCC/acceptance chain remainsopen.
+
+CONTINUATION — GROUP ENABLE PRODUCERS AND STATE8 INDEXED ENDPOINT
+Prior turn tied1efa0 to groups9/1. Concrete local group9 enable calls now
+identified1db92/1dbe8/1f5c4,disable1dc48;group1 enables1ddfd/1ee4e/1f517,
+disable1df3f.28b80 writes101b4/10174 respectively,not global15874.
+Static producer paths do not prove invocation or current enable values.
+State8->1de0c uses31508read/2f3e0write withselector35,arg1ce18. Helpers
+subtract1c000 and pack bits:relativee18,control231a19,controlport0141d054,
+dataport0141d088. Do not call1ce18 a direct register write address.
+Nonzero arm writes(read|3)&ffffffef;zero arm read&ffffffec. Other direct
+0141cb0c/0141d700 writes and373f4 calls remain distinct effects.
+No physicalCC/saved-array relation established. Evidence
+smu-ff8c-enable-ports-audit.json; reproducible script
+scripts/navi21-smu-ff8c-enable-ports-audit.py;576records bytechecked.
+No hardware access/changes; full changedCC/invocation/acceptance chain open.
+
+CONTINUATION — STATE2 CALLBACK-LIST PRODUCER AND EIGHT ENDPOINTS
+Previous turn identified state8 ports; local public-coordinate searches did
+not establish their physical names. State2 supplies a concrete producer:
+2ff84:30199..3020f compacts8pointers from12110 into159e0/15a00/15a20,
+selected by bits ofbytes9f45/9f47/9f46.256mask cases checked for one list.
+Source callbacks2d808/2d7e0/2d7b4/2d78c/2d760/2d734/2d708/2d6dc each do
+one fixed read/modify/write after read-only polling. Destinations0125a000,
+004,01c,024,028,02c;poll0125a000/01c bit31. No localCC/global15874 store.
+Important scope:builder does not appendzero or clearunusedsuffix in thisloop.
+1ebfc/1ebbc walk untilzero withargs1/0;fullfirstlist can continue intonextlist,
+reusedlists may retainentries. Initial26DWORDszero are not runtimeproof.
+Do not equate eight source entries with a guaranteed eight-call consumer.
+Evidence smu-state2-list-audit.json; reproducible script
+scripts/navi21-smu-state2-list-audit.py. No hardware access/changes; physical
+block meanings/indirecteffects and fullCC acceptance chain remainopen.
+
+CONTINUATION — COMMAND41 DIRECT BYTE-STORE POINTER CANDIDATES
+Prior turn found concrete state2 list endpoints. Separately isolated direct
+command41 write using initial lowselector3->1d480(immediate return),assuming
+normal return/stableglobal15874. Highselector table starts12d10;42453cells
+fit initial image,23083remain outside examinedimage. Enumerated reviewedCC
+coordinate aliases and LX6saved-array/gate ranges:one numericalhit89bc at
+cell13b94,index3a1. No full LX6state pointer in that subset.
+Actual retained89bc consumers2776c/36cfc call38b88(width16)->1f77c:bitcoordinate
+splitswordindex44d/bit28 and uses0125d000-based read/cache mechanism. Not a
+proved directS8I-to-CC address. Moreover final1d7e2 writesbyte1 atpointerbase;
+little-endian byte0 does not overlap CC_WGP documentedbits16..31,even under
+hypothetical directalias. Hardwarebyte-write semantics remain unproved.
+Evidence smu-command41-pointer-candidates-audit.json; reproducer
+scripts/navi21-smu-command41-pointer-candidates-audit.py. Initial-image subset,
+not livepointer completeness; mutations/otheraliases/commanddelivery open.
+No hardware access/changes; no changedCC chain established.

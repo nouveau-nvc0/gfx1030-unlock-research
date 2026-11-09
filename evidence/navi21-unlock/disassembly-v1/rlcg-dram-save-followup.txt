@@ -1,0 +1,63 @@
+RLCG whole-DRAM snapshot producer — offline,2026-11-09
+
+Correction to the previous next-step label
+3226/3269 are not the snapshot-save loops. They consume two-word records at
+GPM294, corresponding to TOC-body offset250. The concrete SOS table there
+begins24f84047/0001d000, followed by40 register-initialization pairs before
+zero termination. The loops increment by2 and extract a register from bits
+8..23, with operation selection atbits5..7. Some operations insert buffer
+addresses. Earlier 'save consumers3226/3269' wording was provisional and is
+superseded by this examination. Their remaining effects need separate review.
+
+Actual producer31e5
+31e5 checks HYP_BOOTLOAD_SIZE before entering the descriptor loop.
+31e8 starts the four-word record index at0;31e9 readsGPM208+index;
+31ea stops on a zero firstword.31eb..31ed select DW1bit10(mask400), which
+matches save_for_vddgfx in the public TOC structure.3221 advances by4.
+The retained concrete TOC selects IDs23,24,25,26,27,35,36; ID10bootDRAM
+is not selected. This separates initial firmware loading from saved-state
+production using actual entries rather than the older enum names.
+
+The indirect-address setup31ee..31fb uses DW2index and addressregister,
+DW3startword, and helpers35ce/35d7.31fc..3201 derive the byte count from
+DW1size, including the bit12 size-extension handling.
+3202/3203 create commandbase14000000 OR bytecount.
+3204..3208 set source r11=DW3low16*4 and sourcehigh r12=0.
+3209..3219 construct destination from DW0low25*4 and selected memorybase;
+base comes from HYP_BOOTLOAD_ADDR or words011e/011f for another destination
+class.321a sets controlr14=0;321b calls30ae.3223/3224 then submit and wait
+for the separate completion marker after the loop finishes.
+The local setup transfers port values; it does not load, combine or replace
+individual payload words on the CPU side of the copy.
+
+Concrete ID27
+DW0=36151400,DW1=04000412,DW2=0000fb55,DW3=0000fb56.
+Source candidate: fixed data portfb56*4=3ed58, after index/start preparation.
+Destination candidate: selectedbase+545000, length4000bytes.
+Command14004000 compared with public CP_DMA_ME fields gives BYTE_COUNT4000,
+SAS1,DAS0,SAIC1,DAIC0. This is the reverse of the restore-side fixed-port
+write layout. No new port-advancement observation was made.
+Together with the earlier full-span matching,31e5 is a concrete candidate
+producer of the saved LX6 DRAM image, preserving existing values including
+CCsaved arrays and gate. It does not establish that those values differ from
+the running DRAM image or that the buffer has another writer.
+
+Two literal direct callers31e5 are2a59 and2a8c. Both are preceded by the
+wordpattern that places0011 ined80. Full caller conditions and the meaning
+of this ed80 state are not independently established here. Do not turn a
+static call edge into an observed completed save.
+
+Consequences for the CC investigation
+A candidate whole-DRAM save/restore cycle is now linked to a concrete table
+entry and its producer. This supports preservation of state; it supplies no
+new nonzero restore-gate or modified CC-mask producer. The next useful work
+is the post-TOC register-pair effects and source-base producers011e/011f,
+plus any concrete writes to the snapshot destination. Do not assume that
+knowing a buffer offset means its live contents or address are available.
+All conclusions about RLCG execution remain conditional on the partial ISA
+reading; field and byte checks are narrower than full execution proof.
+
+Reproducer scripts/navi21-rlcg-dram-save-audit.py checks157raw words,
+seven selected IDs,two literal callers,40post-TOC pairs,and command fields.
+Receipt rlcg-dram-save-audit.json pins firmware,TOC receipt and header hashes.
+No hardware,firmware,boot,driver or service state was changed.

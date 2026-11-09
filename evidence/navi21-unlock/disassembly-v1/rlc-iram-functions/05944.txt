@@ -1,0 +1,72 @@
+
+/tmp/tmp5rjz3f7x/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005944 <.data+0x5944>:
+00005944: 36a100   entry        a1, 0x50 ; Capstone
+    5947:	3991      	s32i.n	a3, a1, 36
+    5949:	2020f5        	extui	a2, a2, 16, 16
+    594c:	d1ccde        	l32r	a13, 0xffffd47c (0x5ffedae4) ; inferred DRAM map 0x5ffec000
+    594f:	42610a        	s32i	a4, a1, 40
+    5952:	92a028        	movi	a9, 40
+00005955: 900108   lsx          f0, a1, a9 ; Capstone
+    5958:	521d10        	l16ui	a5, a13, 32
+0000595b: 034102   ssi          f0, a1, 8 ; Capstone
+    595e:	621d0d        	l16ui	a6, a13, 26
+00005961: 130d02   lsi          f1, a13, 8 ; Capstone
+00005964: 134104   ssi          f1, a1, 0x10 ; Capstone
+    5967:	60a620        	or	a10, a6, a6
+0000596a: 2518fc   call8        . -0x3e7c ; Capstone ; target=0x1aec
+0000596d: 502afa   wfr          f2, a10 ; Capstone
+00005970: 234105   ssi          f2, a1, 0x14 ; Capstone
+    5973:	50a520        	or	a10, a5, a5
+00005976: 6517fc   call8        . -0x3e88 ; Capstone ; target=0x1aec
+00005979: 030102   lsi          f0, a1, 8 ; Capstone
+0000597c: 130105   lsi          f1, a1, 0x14 ; Capstone
+0000597f: 00014b   olt.s        b0, f1, f0 ; Capstone
+00005982: 502afa   wfr          f2, a10 ; Capstone
+    5985:	e21112        	l16ui	a14, a1, 36
+00005988: 760030   bf           b0, . +0x34 ; Capstone
+0000598b: 0001fa   mov.s        f0, f1 ; Capstone
+    598e:	602620        	or	a2, a6, a6
+00005991: 130104   lsi          f1, a1, 0x10 ; Capstone
+00005994: 10104b   olt.s        b1, f0, f1 ; Capstone
+    5997:	e25100        	s16i	a14, a1, 0
+0000599a: 034101   ssi          f0, a1, 4 ; Capstone
+0000599d: 761130   bt           b1, . +0x34 ; Capstone
+000059a0: 00214b   olt.s        b2, f1, f0 ; Capstone
+000059a3: 760223   bf           b2, . +0x27 ; Capstone
+    59a6:	20a220        	or	a10, a2, a2
+000059a9: e5a4fb   call8        . -0x45b0 ; Capstone ; target=0x13f8
+    59ac:	ad02      	mov.n	a10, a2
+000059ae: 6562fe   call8        . -0x19d8 ; Capstone ; target=0x3fd4
+    59b1:	a801      	l32i.n	a10, a1, 0
+    59b3:	b811      	l32i.n	a11, a1, 4
+000059b5: 257804   call8        . +0x4784 ; Capstone ; target=0xa138
+000059b8: 1df0     retw.n        ; Capstone
+    59ba:	000020        	or	a0, a0, a0
+000059bd: 304b76   ee.ldf.64.xp f4, f7, a3, a11 ; Capstone
+000059c0: 03ce00   ssip         f0, a14, 0 ; Capstone
+    59c3:	02fa2d        	excw
+    59c6:	0586f1        	call0	0xffff7228 ; target=0x-8dd8
+    59c9:	ff          	.byte 0xff
+    59ca:	ad02      	mov.n	a10, a2
+000059cc: a5a2fb   call8        . -0x45d4 ; Capstone ; target=0x13f8
+000059cf: 1df0     retw.n        ; Capstone
+    59d1:	ad02      	mov.n	a10, a2
+000059d3: 2560fe   call8        . -0x19fc ; Capstone ; target=0x3fd4
+    59d6:	a801      	l32i.n	a10, a1, 0
+    59d8:	b811      	l32i.n	a11, a1, 4
+000059da: e57504   call8        . +0x4760 ; Capstone ; target=0xa138
+    59dd:	ad02      	mov.n	a10, a2
+000059df: a5a1fb   call8        . -0x45e4 ; Capstone ; target=0x13f8
+000059e2: 1df0     retw.n        ; Capstone
+
+; Alternate branch-target decode
+000059bc: 20304b   olt.s        b3, f0, f2 ; Capstone
+000059bf: 7603ce   bf           b3, . -0x2e ; Capstone
+000059c2: 0002fa   mov.s        f0, f2 ; Capstone
+    59c5:	2d05      	mov.n	a2, a5
+    59c7:	86f1ff        	j	0x5991

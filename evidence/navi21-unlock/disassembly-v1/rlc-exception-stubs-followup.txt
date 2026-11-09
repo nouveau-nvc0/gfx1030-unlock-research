@@ -1,0 +1,18 @@
+RLC exception stubs and initial cause table
+
+Exact coherent starts57c/59c/5bc/5dc/5fc/61c, not aligned580/5a0/etc.
+57c swapsEXCSAVE2 intoa2 then JX at57f; startup installs9950 inEXCSAVE2.
+59c savesEXCSAVE3, invokesSIMCALL and loops;5bc RFI4;5dc/61c BREAK loops.
+Their external vector selection and debug/SIMCALL behavior remain unresolved.
+
+5fc reserves96 stackbytes, saves a2/a3/a4, loads EXCCAUSE and dispatches via
+DWORD(5ffed860+4*cause), JX610. No local bound check. First64 initial DWORDs:
+index1->5fff9f78,4->5fff9874,5->5fff0410; allother61->5fffa370.
+64 is sampled table extent, not independently proven hardware cause bound.
+Do not infer absence of other targets under runtime RAM changes or indices
+outside this range. No sampled target directly6944/74c4/71ac.
+
+Exact stubs bytechecked and separately scanned. Next targets needing their
+own root treatment are9f78,410 anda370;9874 already expanded. This removes
+linear-decode ambiguity but does not close all indirect exception paths.
+Evidence:rlc-exception-stubs-audit.json andrlc-exception-stubs-cfg.json.

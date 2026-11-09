@@ -1,0 +1,108 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "byte_checked_instructions": {
+    "0x9874": 79,
+    "0x9950": 114
+  },
+  "initial_low_eight_interrupt_slots": [
+    {
+      "interrupt_bit": 0,
+      "slot": "0x5ffed818",
+      "target": "0x5fffa360",
+      "argument": 0
+    },
+    {
+      "interrupt_bit": 1,
+      "slot": "0x5ffed810",
+      "target": "0x5fffa360",
+      "argument": 1
+    },
+    {
+      "interrupt_bit": 2,
+      "slot": "0x5ffed808",
+      "target": "0x5fffa360",
+      "argument": 2
+    },
+    {
+      "interrupt_bit": 3,
+      "slot": "0x5ffed800",
+      "target": "0x5fffa360",
+      "argument": 3
+    },
+    {
+      "interrupt_bit": 4,
+      "slot": "0x5ffed7f8",
+      "target": "0x5fffa360",
+      "argument": 4
+    },
+    {
+      "interrupt_bit": 5,
+      "slot": "0x5ffed7f0",
+      "target": "0x5fffa360",
+      "argument": 5
+    },
+    {
+      "interrupt_bit": 6,
+      "slot": "0x5ffed7e8",
+      "target": "0x5fffa360",
+      "argument": 6
+    },
+    {
+      "interrupt_bit": 7,
+      "slot": "0x5ffed7e0",
+      "target": "0x5fffa360",
+      "argument": 7
+    }
+  ],
+  "known_direct_registrations": [
+    {
+      "pc": "0x772e",
+      "index": 1,
+      "slot": "0x5ffed810",
+      "target": "0x5fff77cc"
+    },
+    {
+      "pc": "0x773a",
+      "index": 2,
+      "slot": "0x5ffed808",
+      "target": "0x5fff7c3c"
+    },
+    {
+      "pc": "0x7746",
+      "index": 5,
+      "slot": "0x5ffed7f0",
+      "target": "0x5fff7c78"
+    },
+    {
+      "pc": "0x7752",
+      "index": 6,
+      "slot": "0x5ffed7e8",
+      "target": "0x5fff7c98"
+    },
+    {
+      "pc": "0x775e",
+      "index": 7,
+      "slot": "0x5ffed7e0",
+      "target": "0x5fff7cb8"
+    },
+    {
+      "pc": "0x7c5f",
+      "index": 3,
+      "slot": "0x5ffed800",
+      "target": "0x5fff7cd8"
+    },
+    {
+      "pc": "0x7d1d",
+      "index": 3,
+      "slot": "0x5ffed800",
+      "target": "0x5fffa360"
+    }
+  ],
+  "second_dispatcher_mask": "0x84: bits2/7, slots5ffed808/5ffed7e0",
+  "scope": "Initial DRAM and known direct registrations; first dispatcher hardware interrupt range is not independently established.",
+  "limitations": [
+    "Register-window rotation and exception return are not modeled by the local CFG scanner; inspect its unknown_operations.",
+    "Runtime computed writes, external engine updates, and non-listed registration callers remain open.",
+    "No added registered target6944/74c4; this is not global indirect-call closure."
+  ]
+}

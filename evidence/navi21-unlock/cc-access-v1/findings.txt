@@ -1,0 +1,25 @@
+CC access audit, first pass, 2026-11-09. Offline only; investigation incomplete.
+regs2_op (previously RPM-matched source) calls amdgpu_mm_wreg_mmio_rlc. Newly downloaded v7.3.1 reg_access.c lines526-540 sends ordinary non-SRIOV in-aperture writes to writel. No CC-address blacklist exists in that function. Register access and virtualization .c/.h files now match the signed source RPM base byte for byte; all packaged patch archives were scanned and no patch mentions their paths. See rpm-access-audit.json.
+gfx_v10_0_init_rlcg_reg_access_ctrl explicitly configures a 10.3.0 spare interrupt and scratch registers. This establishes a software description of an indirect RLCG transport, NOT acceptance by the installed consumer firmware or CC writability.
+gfx_v10_0_is_rlcg_access_range passes NULL entries and returns false. This host routing predicate is NOT a recovered firmware whitelist.
+amdgpu_virt_rlcg_reg_rw documents address/command/error fields and handles vfgate-disabled, wrong-operation and out-of-range errors when enabled. RLCG is therefore not documented as unrestricted access. Installed firmware support and accepted address policy remain unresolved.
+CC bit0 is unnamed in gc_10_3_0_sh_mask.h; do not call it a lock bit. GPA_OVERRIDE occurs in CPC/CPG PSP debug handling, not demonstrated CC access control.
+Next: RPM-match register/virt access files; inspect SRIOV gates and firmware selection, historical/full register databases for access metadata, GRBM remapping and ATOM/SMU paths. Do not run mailbox writes or change GPU state.
+
+Second pass:
+- amdgpu_virt.h: fullaccess requires IS_VF and not RUNTIME. Indirect GC access requires IS_VF plus AMDGIM_FEATURE_GC_REG_RLC_EN. These are virtualization gates, not privileges conferred by root or PCI passthrough.
+- gfx_v10_0_set_rlc_funcs assigns the sriov-named function table to all GC10.3.0 devices by IP version, not only VFs. Its presence on RX6800 therefore cannot establish operational SR-IOV mailbox permissions.
+- gfx_v10_0_init_microcode requests the ordinary RLC image only for non-VF devices; VF paths do not load that image here. Host-loaded consumer firmware cannot be presumed to implement the virtualization service from the common header alone.
+- GRBM CAM initialization programs seven VGT/SPI remappings for Navi21. None targets CC SA or CC WGP. This code supplies no evidence for a CC shadow alias.
+- Historical Southern Islands si.c contains a CC write; historical writes alone neither prove changed readback nor apply to GC10.3.0. Source: https://cos.googlesource.com/third_party/kernel/+/4d634ca35a8b38530b134ae92bc9e3cc9c23c030/drivers/gpu/drm/radeon/si.c (primary versions block).
+Consequent ranking: ordinary CPU access restriction is strongly observed; RLC override remains conditional and weaker than interface availability suggests; early writable-before-lock remains unsupported by a named lock or producer. Firmware-internal access policy, register access metadata and pre-OS producer remain open research items.
+
+Third pass: on-disk RLC container and UMR metadata.
+RLC file /usr/lib/firmware/amdgpu/sienna_cichlid_rlc.bin.xz decompresses to132960 bytes, SHA25619d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0, header2.4/IP10.3/ucode96. Parsed against amdgpu_ucode.h; all extracted section bounds are inside the file. This is disk provenance, not a new running-firmware attestation.
+External register-format/list arrays have zero byte lengths, while CNTL/GPM/SRM sections are592/1536/18192 bytes and IRAM/DRAM66048/16896 bytes. Thus the public container does not expose a ready-made register whitelist through those arrays. reg_restore_list_size=95 is not interpreted as95 proven host-readable entries. Internal SRM/code lists remain undecoded.
+No aligned full32-bit literal matching the searched CC/USER absolute addresses occurs. This negative is only a locator result: encoded register operands and indirect addressing remain possible. It cannot establish absence of CC access.
+UMR gc_10_3_0 metadata independently lists SA bits8:15 and WGP bits16:31, with no bit0 field. Raw contexts saved in umr-cc-metadata.json. Numeric database columns are not yet interpreted as permissions.
+SMU public interface contains TABLE_AVFS_FUSE_OVERRIDE and fused voltage-curve overrides; naming alone does not connect them to shader harvesting. Do not treat a voltage-fuse override as a CC-unlock API.
+Next concrete work: inspect UMR database format definitions, decode SRM/CNTL layout only with an established format, trace ATOM card callbacks/indirect IO and remaining public SMU messages. No GPU writes performed.
+
+Final synthesis: /workspace/gfx1030-unlock-research/navi21-cc-access-report.md. UMR parser confirms fields are type/address/field-count/is64/segment, not permissions. Linux ATOM MMIO and IIO write callbacks end in cail_reg_write/WREG32. Hypothesis assessment complete; firmware internals and physical possibility remain explicitly unresolved. See completion-audit.json.

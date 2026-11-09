@@ -1,0 +1,24 @@
+
+/tmp/tmp_nk7iacu/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00037cac <.data+0x37cac>:
+00037cac: 364100   entry        a1, 0x20 ; Capstone
+   37caf:	0c04      	movi.n	a4, 0
+   37cb1:	0c02      	movi.n	a2, 0
+   37cb3:	0c03      	movi.n	a3, 0
+   37cb5:	ad04      	mov.n	a10, a4
+   37cb7:	bd03      	mov.n	a11, a3
+00037cb9: 65dbff   call8        . -0x248 ; Capstone ; target=0x37a70
+00037cbc: e5d6ff   call8        . -0x290 ; Capstone ; target=0x37a2c
+   37cbf:	aa22      	add.n	a2, a2, a10
+   37cc1:	1b33      	addi.n	a3, a3, 1
+   37cc3:	6623ee        	bnei	a3, 2, 0x37cb5
+   37cc6:	1b44      	addi.n	a4, a4, 1
+   37cc8:	6644e7        	bnei	a4, 4, 0x37cb3
+   37ccb:	7cfa      	movi.n	a10, -1
+   37ccd:	7cfb      	movi.n	a11, -1
+00037ccf: 25daff   call8        . -0x25c ; Capstone ; target=0x37a70
+00037cd2: 1df0     retw.n        ; Capstone

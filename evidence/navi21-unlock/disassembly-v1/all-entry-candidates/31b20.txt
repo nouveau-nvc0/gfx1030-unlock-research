@@ -1,0 +1,38 @@
+
+/tmp/tmp39322g5w/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00031b20 <.data+0x31b20>:
+00031b20: 364100   entry        a1, 0x20 ; Capstone
+00031b23: 65b301   call8        . +0x1b38 ; Capstone ; target=0x33658
+   31b26:	8d0a      	mov.n	a8, a10
+   31b28:	a1b889        	l32r	a10, 0x14208 (0xb01c)
+   31b2b:	92a000        	movi	a9, 0
+00031b2e: 3000fa   const.s      f0, 0 ; Capstone
+00031b31: 034a7f   ssi          f0, a10, 0x1fc ; Capstone
+   31b34:	820800        	l8ui	a8, a8, 0
+   31b37:	b1b589        	l32r	a11, 0x1420c (0xb2d4)
+   31b3a:	c2a002        	movi	a12, 2
+   31b3d:	bc58      	beqz.n	a8, 0x31b76
+   31b3f:	d1b489        	l32r	a13, 0x14210 (0x42aa0000)
+   31b42:	e1b589        	l32r	a14, 0x14218 (0x409ccccd)
+   31b45:	f1b389        	l32r	a15, 0x14214 (0x3f333333)
+00031b48: 501dfa   wfr          f1, a13 ; Capstone
+00031b4b: 503efa   wfr          f3, a14 ; Capstone
+00031b4e: 504ffa   wfr          f4, a15 ; Capstone
+00031b51: 76ac21   loopgtz      a12, . +0x25 ; Capstone
+   31b54:	b089a0        	addx4	a8, a9, a11
+00031b57: 230800   lsi          f2, a8, 0 ; Capstone
+00031b5a: 20016b   ole.s        b0, f1, f2 ; Capstone
+   31b5d:	1b99      	addi.n	a9, a9, 1
+   31b5f:	909074        	extui	a9, a9, 0, 8
+00031b62: 760008   bf           b0, . +0xc ; Capstone
+00031b65: 40000a   add.s        f0, f0, f4 ; Capstone
+00031b68: 034a7f   ssi          f0, a10, 0x1fc ; Capstone
+   31b6b:	460100        	j	0x31b74
+00031b6e: 30000a   add.s        f0, f0, f3 ; Capstone
+00031b71: 034a7f   ssi          f0, a10, 0x1fc ; Capstone
+   31b74:	3df0      	nop.n
+00031b76: 1df0     retw.n        ; Capstone

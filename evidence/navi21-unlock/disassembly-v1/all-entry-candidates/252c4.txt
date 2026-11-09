@@ -1,0 +1,25 @@
+
+/tmp/tmpz11erzld/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000252c4 <.data+0x252c4>:
+000252c4: 364100   entry        a1, 0x20 ; Capstone
+   252c7:	9118b8        	l32r	a9, 0x13328 (0x123ae00)
+   252ca:	c02000        	memw
+   252cd:	8229e1        	l32i	a8, a9, 0x384
+   252d0:	0c3a      	movi.n	a10, 3
+   252d2:	e77814        	bbci	a8, 30, 0x252ea
+   252d5:	c02000        	memw
+   252d8:	a269d9        	s32i	a10, a9, 0x364
+   252db:	c02000        	memw
+   252de:	c229dd        	l32i	a12, a9, 0x374
+   252e1:	c02000        	memw
+   252e4:	b229e1        	l32i	a11, a9, 0x384
+   252e7:	e7fbea        	bbsi	a11, 30, 0x252d5
+   252ea:	d161b9        	l32r	a13, 0x13870 (0x459c4000)
+000252ed: 500dfa   wfr          f0, a13 ; Capstone
+000252f0: 00a0ba   ceil.s       a10, f0, 0 ; Capstone
+000252f3: 2546dc   call8        . -0x23b9c ; Capstone ; target=0x1754
+000252f6: 1df0     retw.n        ; Capstone

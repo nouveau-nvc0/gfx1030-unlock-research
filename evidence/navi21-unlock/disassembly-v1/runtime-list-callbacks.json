@@ -1,0 +1,57 @@
+{
+  "builder": "0x301b9..0x3020f",
+  "source": "0x12110",
+  "destinations": [
+    "0x159e0",
+    "0x15a00",
+    "0x15a20"
+  ],
+  "selector_bytes": [
+    "0x9f45",
+    "0x9f47",
+    "0x9f46"
+  ],
+  "records": [
+    {
+      "index": 0,
+      "slot": "0x12110",
+      "target": "0x2d808"
+    },
+    {
+      "index": 1,
+      "slot": "0x12114",
+      "target": "0x2d7e0"
+    },
+    {
+      "index": 2,
+      "slot": "0x12118",
+      "target": "0x2d7b4"
+    },
+    {
+      "index": 3,
+      "slot": "0x1211c",
+      "target": "0x2d78c"
+    },
+    {
+      "index": 4,
+      "slot": "0x12120",
+      "target": "0x2d760"
+    },
+    {
+      "index": 5,
+      "slot": "0x12124",
+      "target": "0x2d734"
+    },
+    {
+      "index": 6,
+      "slot": "0x12128",
+      "target": "0x2d708"
+    },
+    {
+      "index": 7,
+      "slot": "0x1212c",
+      "target": "0x2d6dc"
+    }
+  ],
+  "limitation": "Workers terminate on null, not an explicit count8. Full-list boundary and runtime mutation still require audit."
+}

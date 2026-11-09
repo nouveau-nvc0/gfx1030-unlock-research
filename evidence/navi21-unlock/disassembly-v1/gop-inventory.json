@@ -1,0 +1,228 @@
+{
+  "scope": "Reference-ROM GOP extraction only; no firmware execution or installed-ROM identity claim.",
+  "decompressor": "uefi_firmware 1.16 EfiDecompress",
+  "images": [
+    {
+      "variant": "baseline",
+      "machine": "0x8664",
+      "rom_sha256": "6ffb1d8b93b75f9ef3e411b7fafeeca41764edea05aecf010f11ed9423158f40",
+      "rom_offset": "0xb000",
+      "compressed_sha256": "9f368e7956daefd72765a38b722fb9b738e8a42d3ccdad4c3c5f37061fc81b5d",
+      "extracted": "/tmp/navi21-gop/extracted/baseline-8664.efi",
+      "bytes": 65144,
+      "sha256": "a9966b48d5bdfc35387eb38572b4babbf4537da8d2b2ae4796076af9ed44f54a",
+      "image_base": "0x0",
+      "entry_rva": "0x354",
+      "sections": [
+        {
+          "name": ".text",
+          "rva": "0x2a0",
+          "raw": "0x2a0",
+          "bytes": 46624,
+          "virtual_bytes": 46623,
+          "executable": true,
+          "sha256": "8ee7d9735f1551d5327960498401e513822734ca927ef62745672cc76d0abf16"
+        },
+        {
+          "name": ".data",
+          "rva": "0xb8c0",
+          "raw": "0xb8c0",
+          "bytes": 5664,
+          "virtual_bytes": 5648,
+          "executable": false,
+          "sha256": "6a89f5390e4d7b0ac2a688df401fd75e514dfe2186a3c7c3da5780591615f682"
+        },
+        {
+          "name": ".pdata",
+          "rva": "0xcee0",
+          "raw": "0xcee0",
+          "bytes": 1952,
+          "virtual_bytes": 1944,
+          "executable": false,
+          "sha256": "8518e00c9223338f077ff594d9cba8468c6501342fcb38289de01d3c68bf88b4"
+        },
+        {
+          "name": ".xdata",
+          "rva": "0xd680",
+          "raw": "0xd680",
+          "bytes": 1120,
+          "virtual_bytes": 1108,
+          "executable": false,
+          "sha256": "138669bfe9714803c70998547b178f532ddab50bf46753d3ef9ab0a72ae8a973"
+        },
+        {
+          "name": ".reloc",
+          "rva": "0xdae0",
+          "raw": "0xdae0",
+          "bytes": 544,
+          "virtual_bytes": 544,
+          "executable": false,
+          "sha256": "4d67a8c85b209a5775019a1fcce43b236fa28aa8b45852a4423144654990f525"
+        }
+      ]
+    },
+    {
+      "variant": "baseline",
+      "machine": "0xaa64",
+      "rom_sha256": "6ffb1d8b93b75f9ef3e411b7fafeeca41764edea05aecf010f11ed9423158f40",
+      "rom_offset": "0x14600",
+      "compressed_sha256": "fd2006184a12270d57434264ab8aeb82e2789fcda88a0c196e4b118c9bfdfc69",
+      "extracted": "/tmp/navi21-gop/extracted/baseline-aa64.efi",
+      "bytes": 72256,
+      "sha256": "e84a703d0e97240aeaa4acec406bb9c2ad4d901a08d33e41f8f93b9eec0032fc",
+      "image_base": "0x0",
+      "entry_rva": "0xd040",
+      "sections": [
+        {
+          "name": ".text",
+          "rva": "0x240",
+          "raw": "0x240",
+          "bytes": 60704,
+          "virtual_bytes": 60704,
+          "executable": true,
+          "sha256": "1da5c74fe681e59440b3484d46c8b663b2fbf704c8101d918efc9de8cb902384"
+        },
+        {
+          "name": ".data",
+          "rva": "0xef60",
+          "raw": "0xef60",
+          "bytes": 1824,
+          "virtual_bytes": 1824,
+          "executable": false,
+          "sha256": "9c5503920495b90b35590eb37b54f4925f94095e83d3562cd42f2feeb909928e"
+        },
+        {
+          "name": ".reloc",
+          "rva": "0xf680",
+          "raw": "0xf680",
+          "bytes": 608,
+          "virtual_bytes": 608,
+          "executable": false,
+          "sha256": "2db6b0638788f6a5a0efb91c586df41f7e8127538327fc6508cee24c6b029435"
+        }
+      ]
+    },
+    {
+      "variant": "candidate",
+      "machine": "0x8664",
+      "rom_sha256": "ec4674da8cd311a3871b8ca565c5545caabcd359c54796c5f9752d71e9b65331",
+      "rom_offset": "0xac00",
+      "compressed_sha256": "b60579a2ded9081e69015c0d8aac448d3b61807eaae96d6e38af456752e1f436",
+      "extracted": "/tmp/navi21-gop/extracted/candidate-8664.efi",
+      "bytes": 65192,
+      "sha256": "9a68a83c01767545b9ba1713468731d6db1ea77946a142cbcbb4b4213e08674a",
+      "image_base": "0x0",
+      "entry_rva": "0x354",
+      "sections": [
+        {
+          "name": ".text",
+          "rva": "0x2a0",
+          "raw": "0x2a0",
+          "bytes": 46688,
+          "virtual_bytes": 46687,
+          "executable": true,
+          "sha256": "1d9bfc6fc820d1d2ae7c5f4437511df0080b521c74eda96e98cc0e2975492e81"
+        },
+        {
+          "name": ".data",
+          "rva": "0xb900",
+          "raw": "0xb900",
+          "bytes": 5664,
+          "virtual_bytes": 5648,
+          "executable": false,
+          "sha256": "fbab6f1fc96a5b620e27845c2d71788dc605c904e28235b2dbae142b8d8b667f"
+        },
+        {
+          "name": ".pdata",
+          "rva": "0xcf20",
+          "raw": "0xcf20",
+          "bytes": 1952,
+          "virtual_bytes": 1944,
+          "executable": false,
+          "sha256": "83c1f559b99f939896b20647b8bb7e394e2f696c654eff5e858c29c9ab5a5620"
+        },
+        {
+          "name": ".xdata",
+          "rva": "0xd6c0",
+          "raw": "0xd6c0",
+          "bytes": 1120,
+          "virtual_bytes": 1116,
+          "executable": false,
+          "sha256": "a97cb800aae0c0ba65ada8a2f45bd7e067548f4914d5a0c5bb310823a69eac72"
+        },
+        {
+          "name": ".reloc",
+          "rva": "0xdb20",
+          "raw": "0xdb20",
+          "bytes": 544,
+          "virtual_bytes": 544,
+          "executable": false,
+          "sha256": "5f5b0c984b00ac9f68ce53a1ce3d20a48ee98d799920d6d389895f2aac789170"
+        }
+      ]
+    },
+    {
+      "variant": "candidate",
+      "machine": "0xaa64",
+      "rom_sha256": "ec4674da8cd311a3871b8ca565c5545caabcd359c54796c5f9752d71e9b65331",
+      "rom_offset": "0x14200",
+      "compressed_sha256": "18e9ab8964e164ee7c1f6947f8ff78ad16a15e9ed1192ca589ae181de57089f9",
+      "extracted": "/tmp/navi21-gop/extracted/candidate-aa64.efi",
+      "bytes": 72128,
+      "sha256": "2430a3af762f25cccb45274a8540fe5e8e58d3cda78b694dbec2292ff1ecf6f0",
+      "image_base": "0x0",
+      "entry_rva": "0xd0e0",
+      "sections": [
+        {
+          "name": ".text",
+          "rva": "0x240",
+          "raw": "0x240",
+          "bytes": 60608,
+          "virtual_bytes": 60608,
+          "executable": true,
+          "sha256": "1d339030fd47234e640ba8dcc09e91ac1edf5ce8c1e54f5adc550bd58a392fea"
+        },
+        {
+          "name": ".data",
+          "rva": "0xef00",
+          "raw": "0xef00",
+          "bytes": 1792,
+          "virtual_bytes": 1792,
+          "executable": false,
+          "sha256": "5a329241c4415f1bbfe0eb108ed807efd6a53ba036560878ab463df5df1f1508"
+        },
+        {
+          "name": ".reloc",
+          "rva": "0xf600",
+          "raw": "0xf600",
+          "bytes": 608,
+          "virtual_bytes": 608,
+          "executable": false,
+          "sha256": "cbca03aa54ade418c786894c8284cf04aa2c0b35e1d5283ef5e958adc678b574"
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "machine": "0x8664",
+      "identical": false,
+      "section_equal": {
+        ".text": false,
+        ".data": false,
+        ".pdata": false,
+        ".xdata": false,
+        ".reloc": false
+      }
+    },
+    {
+      "machine": "0xaa64",
+      "identical": false,
+      "section_equal": {
+        ".text": false,
+        ".data": false,
+        ".reloc": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+
+/tmp/tmpotp9ufp7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005f10 <.data+0x5f10>:
+00005f10: 364100   entry        a1, 0x20 ; Capstone
+    5f13:	16e404        	beqz	a4, 0x5f65
+    5f16:	406f00        	rsil	a4, 15
+    5f19:	0c08      	movi.n	a8, 0
+    5f1b:	9192dc        	l32r	a9, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    5f1e:	e15cdd        	l32r	a14, 0xffffd490 (0xffcfffff) ; inferred DRAM map 0x5ffec000
+    5f21:	80b711        	slli	a11, a7, 8
+    5f24:	00a311        	slli	a10, a3, 16
+    5f27:	50c014        	extui	a12, a5, 0, 2
+    5f2a:	60d014        	extui	a13, a6, 0, 2
+    5f2d:	c0dd01        	slli	a13, a13, 20
+    5f30:	a0cc01        	slli	a12, a12, 22
+    5f33:	b0aa20        	or	a10, a10, a11
+    5f36:	b158dd        	l32r	a11, 0xffffd498 (0x6000c600) ; inferred DRAM map 0x5ffec000
+    5f39:	a0a220        	or	a10, a2, a10
+    5f3c:	e0cc10        	and	a12, a12, a14
+    5f3f:	d0cc20        	or	a12, a12, a13
+    5f42:	e154dd        	l32r	a14, 0xffffd494 (0xfff8ffff) ; inferred DRAM map 0x5ffec000
+    5f45:	70d024        	extui	a13, a7, 0, 3
+    5f48:	00dd11        	slli	a13, a13, 16
+    5f4b:	e0cc10        	and	a12, a12, a14
+    5f4e:	d0cc20        	or	a12, a12, a13
+    5f51:	c26981        	s32i	a12, a9, 0x204
+    5f54:	826980        	s32i	a8, a9, 0x200
+    5f57:	a26bad        	s32i	a10, a11, 0x2b4
+    5f5a:	826981        	s32i	a8, a9, 0x204
+    5f5d:	40e613        	wsr.ps	a4
+    5f60:	102000        	rsync
+00005f63: 1df0     retw.n        ; Capstone
+00005f65: 1df0     retw.n        ; Capstone
+	...

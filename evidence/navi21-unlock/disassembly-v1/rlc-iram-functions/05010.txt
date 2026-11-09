@@ -1,0 +1,25 @@
+
+/tmp/tmpo_cd2pey/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005010 <.data+0x5010>:
+00005010: 364100   entry        a1, 0x20 ; Capstone
+    5013:	31ffe0        	l32r	a3, 0xffffd410 (0x5ffed9b0) ; inferred DRAM map 0x5ffec000
+    5016:	8803      	l32i.n	a8, a3, 0
+    5018:	e09211        	slli	a9, a2, 2
+    501b:	000940        	ssr	a9
+    501e:	8cb8      	beqz.n	a8, 0x502d
+    5020:	8863      	l32i.n	a8, a3, 24
+    5022:	802091        	srl	a2, a8
+    5025:	202004        	extui	a2, a2, 0, 1
+00005028: 1df0     retw.n        ; Capstone
+    502a:	000000        	ill
+0000502d: e5c5ff   call8        . -0x3a0 ; Capstone ; target=0x4c8c
+    5030:	8863      	l32i.n	a8, a3, 24
+    5032:	e09211        	slli	a9, a2, 2
+    5035:	000940        	ssr	a9
+    5038:	802091        	srl	a2, a8
+    503b:	202004        	extui	a2, a2, 0, 1
+0000503e: 1df0     retw.n        ; Capstone

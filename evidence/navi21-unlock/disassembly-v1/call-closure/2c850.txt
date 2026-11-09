@@ -1,0 +1,14 @@
+
+/tmp/tmpv5is845a/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002c850 <.data+0x2c850>:
+0002c850: 364100   entry        a1, 0x20 ; Capstone
+   2c853:	31fd99        	l32r	a3, 0x13048 (0xac10)
+   2c856:	2022b0        	addx8	a2, a2, a2
+   2c859:	3022a0        	addx4	a2, a2, a3
+   2c85c:	22027e        	l8ui	a2, a2, 126
+0002c85f: 1df0     retw.n        ; Capstone
+   2c861:	000000        	ill

@@ -1,0 +1,51 @@
+{
+  "scope": "Linear instruction address-materialization and raw little-endian pointer locator; not a computed-pointer absence proof.",
+  "results": [
+    {
+      "variant": "baseline",
+      "target": "0x2cb8",
+      "rom_override_global": "0xcdd0",
+      "literal_occurrences": [
+        {
+          "section": ".pdata",
+          "rva": "0xd018",
+          "width": 4
+        }
+      ],
+      "address_materializations": [],
+      "override_references": [
+        {
+          "pc": "0x1964",
+          "instruction": "mov rax, qword ptr [rip + 0xb465]"
+        },
+        {
+          "pc": "0x5e73",
+          "instruction": "mov rbp, qword ptr [rip + 0x6f56]"
+        }
+      ]
+    },
+    {
+      "variant": "candidate",
+      "target": "0x2ccc",
+      "rom_override_global": "0xce10",
+      "literal_occurrences": [
+        {
+          "section": ".pdata",
+          "rva": "0xd058",
+          "width": 4
+        }
+      ],
+      "address_materializations": [],
+      "override_references": [
+        {
+          "pc": "0x1978",
+          "instruction": "mov rax, qword ptr [rip + 0xb491]"
+        },
+        {
+          "pc": "0x665b",
+          "instruction": "mov rbp, qword ptr [rip + 0x67ae]"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+
+/tmp/tmp41dsdwmd/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00022808 <.data+0x22808>:
+00022808: 364100   entry        a1, 0x20 ; Capstone
+   2280b:	41c2c2        	l32r	a4, 0x13314 (0x3010f00)
+   2280e:	5804      	l32i.n	a5, a4, 0
+   22810:	203014        	extui	a3, a2, 0, 2
+   22813:	7cc6      	movi.n	a6, -4
+   22815:	605510        	and	a5, a5, a6
+   22818:	503320        	or	a3, a3, a5
+   2281b:	3904      	s32i.n	a3, a4, 0
+0002281d: 1df0     retw.n        ; Capstone
+	...

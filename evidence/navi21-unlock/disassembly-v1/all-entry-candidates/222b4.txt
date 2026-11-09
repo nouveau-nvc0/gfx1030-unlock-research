@@ -1,0 +1,36 @@
+
+/tmp/tmp7_w88blk/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000222b4 <.data+0x222b4>:
+000222b4: 366100   entry        a1, 0x30 ; Capstone
+   222b7:	bd01      	mov.n	a11, a1
+   222b9:	a1c8c4        	l32r	a10, 0x135dc (0xa3c0)
+   222bc:	91dbc2        	l32r	a9, 0x12e28 (0x9c00)
+   222bf:	0c28      	movi.n	a8, 2
+   222c1:	0c02      	movi.n	a2, 0
+   222c3:	226101        	s32i	a2, a1, 4
+   222c6:	226100        	s32i	a2, a1, 0
+000222c9: 76a82c   loopgtz      a8, . +0x30 ; Capstone
+   222cc:	f22a83        	l32i	a15, a10, 0x20c
+   222cf:	290b      	s32i.n	a2, a11, 0
+   222d1:	8229cf        	l32i	a8, a9, 0x33c
+   222d4:	e2da04        	addmi	a14, a10, 0x400
+   222d7:	4b99      	addi.n	a9, a9, 4
+   222d9:	c87e      	l32i.n	a12, a14, 28
+   222db:	d85e      	l32i.n	a13, a14, 20
+   222dd:	4bbb      	addi.n	a11, a11, 4
+   222df:	e22e11        	l32i	a14, a14, 68
+   222e2:	80ff10        	and	a15, a15, a8
+   222e5:	c0dd10        	and	a13, a13, a12
+   222e8:	c22a7f        	l32i	a12, a10, 0x1fc
+   222eb:	f0ee10        	and	a14, a14, a15
+   222ee:	e0dd10        	and	a13, a13, a14
+   222f1:	d0cc20        	or	a12, a12, a13
+   222f4:	c26a7f        	s32i	a12, a10, 0x1fc
+   222f7:	4baa      	addi.n	a10, a10, 4
+   222f9:	ad01      	mov.n	a10, a1
+000222fb: 257a13   call8        . +0x137a4 ; Capstone ; target=0x35a9c
+000222fe: 1df0     retw.n        ; Capstone

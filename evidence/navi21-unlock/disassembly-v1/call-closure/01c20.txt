@@ -1,0 +1,25 @@
+
+/tmp/tmppa7s4c9p/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001c20 <.data+0x1c20>:
+00001c20: 364100   entry        a1, 0x20 ; Capstone
+    1c23:	51eefb        	l32r	a5, 0xbdc (0xfffff)
+    1c26:	203094        	extui	a3, a2, 0, 10
+    1c29:	7118fc        	l32r	a7, 0xc8c (0x9000220)
+    1c2c:	403311        	slli	a3, a3, 12
+    1c2f:	62d302        	addmi	a6, a3, 0x200
+    1c32:	7a33      	add.n	a3, a3, a7
+    1c34:	62c620        	addi	a6, a6, 32
+    1c37:	6064b5        	extui	a6, a6, 20, 12
+    1c3a:	503310        	and	a3, a3, a5
+    1c3d:	51ecfb        	l32r	a5, 0xbf0 (0x1000000)
+    1c40:	c06601        	slli	a6, a6, 20
+    1c43:	6a33      	add.n	a3, a3, a6
+    1c45:	5a33      	add.n	a3, a3, a5
+    1c47:	c02000        	memw
+    1c4a:	4903      	s32i.n	a4, a3, 0
+00001c4c: 1df0     retw.n        ; Capstone
+	...

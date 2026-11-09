@@ -1,0 +1,84 @@
+
+/tmp/tmps_d1njrp/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00021478 <.data+0x21478>:
+00021478: 366100   entry        a1, 0x30 ; Capstone
+   2147b:	4c0a      	movi.n	a10, 64
+0002147d: 2510e1   call8        . -0x1eefc ; Capstone ; target=0x2580
+   21480:	ad03      	mov.n	a10, a3
+   21482:	3c4c      	movi.n	a12, 52
+   21484:	3169c6        	l32r	a3, 0x12e28 (0x9c00)
+   21487:	2042f0        	subx8	a4, a2, a2
+   2148a:	c04411        	slli	a4, a4, 4
+   2148d:	3a34      	add.n	a3, a4, a3
+   2148f:	b2d355        	addmi	a11, a3, 0x5500
+   21492:	b2cb78        	addi	a11, a11, 120
+00021495: a513e0   call8        . -0x1fec4 ; Capstone ; target=0x15d0
+   21498:	0c46      	movi.n	a6, 4
+   2149a:	a119c8        	l32r	a10, 0x13500 (0xf0f4)
+   2149d:	0c07      	movi.n	a7, 0
+   2149f:	0c29      	movi.n	a9, 2
+   214a1:	aaa4      	add.n	a10, a4, a10
+   214a3:	a911      	s32i.n	a10, a1, 4
+   214a5:	924a80        	s8i	a9, a10, 128
+   214a8:	a20a87        	l8ui	a10, a10, 135
+   214ab:	0c1b      	movi.n	a11, 1
+   214ad:	b901      	s32i.n	a11, a1, 0
+   214af:	160a04        	beqz	a10, 0x214f3
+   214b2:	304a90        	addx2	a4, a10, a3
+   214b5:	5d07      	mov.n	a5, a7
+   214b7:	32d355        	addmi	a3, a3, 0x5500
+   214ba:	4921      	s32i.n	a4, a1, 8
+   214bc:	42d455        	addmi	a4, a4, 0x5500
+   214bf:	a2037d        	l8ui	a10, a3, 125
+   214c2:	b2037c        	l8ui	a11, a3, 124
+   214c5:	27ea0c        	bbsi	a10, 2, 0x214d5
+   214c8:	72437c        	s8i	a7, a3, 124
+   214cb:	0c0b      	movi.n	a11, 0
+   214cd:	1b55      	addi.n	a5, a5, 1
+   214cf:	505074        	extui	a5, a5, 0, 8
+   214d2:	c6ffff        	j	0x214d5
+   214d5:	a0c004        	extui	a12, a10, 0, 1
+   214d8:	a0d104        	extui	a13, a10, 1, 1
+   214db:	609a10        	and	a9, a10, a6
+   214de:	0c18      	movi.n	a8, 1
+   214e0:	0c0a      	movi.n	a10, 0
+   214e2:	90a883        	moveqz	a10, a8, a9
+000214e5: 6541fe   call8        . -0x1be8 ; Capstone ; target=0x1f8fc
+   214e8:	a25356        	s16i	a10, a3, 172
+   214eb:	2b33      	addi.n	a3, a3, 2
+   214ed:	4793ce        	bne	a3, a4, 0x214bf
+   214f0:	860100        	j	0x214fa
+   214f3:	5d07      	mov.n	a5, a7
+   214f5:	30ba90        	addx2	a11, a10, a3
+   214f8:	b921      	s32i.n	a11, a1, 8
+   214fa:	c821      	l32i.n	a12, a1, 8
+   214fc:	c2dc55        	addmi	a12, a12, 0x5500
+   214ff:	c20c7b        	l8ui	a12, a12, 123
+   21502:	a1fdc7        	l32r	a10, 0x134f8 (0xf9bc)
+   21505:	e811      	l32i.n	a14, a1, 4
+   21507:	276c06        	bbci	a12, 2, 0x21511
+   2150a:	7801      	l32i.n	a7, a1, 0
+   2150c:	0c2d      	movi.n	a13, 2
+   2150e:	507d83        	moveqz	a7, a13, a5
+   21511:	724e81        	s8i	a7, a14, 129
+   21514:	524e82        	s8i	a5, a14, 130
+   21517:	26b218        	beqi	a2, 16, 0x21533
+   2151a:	1c1f      	movi.n	a15, 17
+   2151c:	f71213        	beq	a2, a15, 0x21533
+   2151f:	1c28      	movi.n	a8, 18
+   21521:	87120e        	beq	a2, a8, 0x21533
+   21524:	920a7e        	l8ui	a9, a10, 126
+   21527:	1b99      	addi.n	a9, a9, 1
+   21529:	924a7e        	s8i	a9, a10, 126
+   2152c:	4c0a      	movi.n	a10, 64
+0002152e: 65f4e0   call8        . -0x1f0b8 ; Capstone ; target=0x2474
+00021531: 1df0     retw.n        ; Capstone
+   21533:	b22a25        	l32i	a11, a10, 148
+   21536:	1bbb      	addi.n	a11, a11, 1
+   21538:	b26a25        	s32i	a11, a10, 148
+   2153b:	46fbff        	j	0x2152c
+	...

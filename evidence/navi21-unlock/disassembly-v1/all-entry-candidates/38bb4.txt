@@ -1,0 +1,63 @@
+
+/tmp/tmpqztnb6d7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00038bb4 <.data+0x38bb4>:
+00038bb4: 364100   entry        a1, 0x20 ; Capstone
+   38bb7:	21df69        	l32r	a2, 0x13334 (0x125a200)
+   38bba:	b1cc69        	l32r	a11, 0x132ec (0x20000000)
+   38bbd:	c02000        	memw
+   38bc0:	a22261        	l32i	a10, a2, 0x184
+   38bc3:	b0aa20        	or	a10, a10, a11
+   38bc6:	c02000        	memw
+   38bc9:	a26261        	s32i	a10, a2, 0x184
+   38bcc:	92a0f4        	movi	a9, 244
+   38bcf:	c02000        	memw
+   38bd2:	926265        	s32i	a9, a2, 0x194
+   38bd5:	c02000        	memw
+   38bd8:	822266        	l32i	a8, a2, 0x198
+   38bdb:	e1f46e        	l32r	a14, 0x147ac (0x10aa200)
+   38bde:	0c8b      	movi.n	a11, 8
+   38be0:	808014        	extui	a8, a8, 0, 2
+   38be3:	dc08      	bnez.n	a8, 0x38bf7
+   38be5:	c1246a        	l32r	a12, 0x13478 (0xfc3c)
+   38be8:	0c1a      	movi.n	a10, 1
+   38bea:	0c4b      	movi.n	a11, 4
+   38bec:	a24c7d        	s8i	a10, a12, 125
+   38bef:	0c0c      	movi.n	a12, 0
+00038bf1: 25dcff   call8        . -0x23c ; Capstone ; target=0x389b4
+   38bf4:	860f00        	j	0x38c36
+   38bf7:	c02000        	memw
+   38bfa:	a8ce      	l32i.n	a10, a14, 48
+   38bfc:	b0aa20        	or	a10, a10, a11
+   38bff:	c02000        	memw
+   38c02:	a9ce      	s32i.n	a10, a14, 48
+   38c04:	c02000        	memw
+   38c07:	988e      	l32i.n	a9, a14, 32
+   38c09:	a1686e        	l32r	a10, 0x145ac (0xffff0000)
+   38c0c:	0c4b      	movi.n	a11, 4
+   38c0e:	9090f4        	extui	a9, a9, 0, 16
+   38c11:	b09920        	or	a9, a9, a11
+   38c14:	9090f4        	extui	a9, a9, 0, 16
+   38c17:	c02000        	memw
+   38c1a:	888e      	l32i.n	a8, a14, 32
+   38c1c:	a08810        	and	a8, a8, a10
+   38c1f:	908820        	or	a8, a8, a9
+   38c22:	c02000        	memw
+   38c25:	898e      	s32i.n	a8, a14, 32
+   38c27:	7c7f      	movi.n	a15, -9
+   38c29:	c02000        	memw
+   38c2c:	d8ce      	l32i.n	a13, a14, 48
+   38c2e:	f0dd10        	and	a13, a13, a15
+   38c31:	c02000        	memw
+   38c34:	d9ce      	s32i.n	a13, a14, 48
+   38c36:	d1a869        	l32r	a13, 0x132d8 (0xdfffffff)
+   38c39:	c02000        	memw
+   38c3c:	c22261        	l32i	a12, a2, 0x184
+   38c3f:	d0cc10        	and	a12, a12, a13
+   38c42:	c02000        	memw
+   38c45:	c26261        	s32i	a12, a2, 0x184
+00038c48: 1df0     retw.n        ; Capstone
+	...

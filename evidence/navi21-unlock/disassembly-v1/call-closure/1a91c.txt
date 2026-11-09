@@ -1,0 +1,35 @@
+
+/tmp/tmpeh1ws768/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001a91c <.data+0x1a91c>:
+0001a91c: 364100   entry        a1, 0x20 ; Capstone
+   1a91f:	1c68      	movi.n	a8, 22
+   1a921:	824200        	s8i	a8, a2, 0
+0001a924: a52c0b   call8        . +0xb2cc ; Capstone ; target=0x25bf0
+   1a927:	7cfd      	movi.n	a13, -1
+   1a929:	1c8c      	movi.n	a12, 24
+   1a92b:	bd02      	mov.n	a11, a2
+0001a92d: 769a34   loopnez      a10, . +0x38 ; Capstone
+   1a930:	a20208        	l8ui	a10, a2, 8
+   1a933:	92020f        	l8ui	a9, a2, 15
+   1a936:	e21208        	l16ui	a14, a2, 16
+   1a939:	176a02        	bbci	a10, 1, 0x1a93f
+   1a93c:	924b54        	s8i	a9, a11, 84
+   1a93f:	276a05        	bbci	a10, 2, 0x1a948
+   1a942:	a20208        	l8ui	a10, a2, 8
+   1a945:	e26b16        	s32i	a14, a11, 88
+   1a948:	a70c14        	bnone	a12, a10, 0x1a960
+   1a94b:	920b55        	l8ui	a9, a11, 85
+   1a94e:	82020b        	l8ui	a8, a2, 11
+   1a951:	f2020a        	l8ui	a15, a2, 10
+   1a954:	d08830        	xor	a8, a8, a13
+   1a957:	90ff20        	or	a15, a15, a9
+   1a95a:	80ff10        	and	a15, a15, a8
+   1a95d:	f24b55        	s8i	a15, a11, 85
+   1a960:	8bbb      	addi.n	a11, a11, 8
+   1a962:	22c210        	addi	a2, a2, 16
+0001a965: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,95 @@
+
+/tmp/tmpgizwk_e_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00003e08 <.data+0x3e08>:
+00003e08: 366100   entry        a1, 0x30 ; Capstone
+    3e0b:	d125e5        	l32r	a13, 0xffffd2a0 (0x6803ae00) ; inferred DRAM map 0x5ffec000
+    3e0e:	d22dc8        	l32i	a13, a13, 0x320
+    3e11:	d901      	s32i.n	a13, a1, 0
+    3e13:	906f00        	rsil	a9, 15
+    3e16:	3127e5        	l32r	a3, 0xffffd2b4 (0x6003be00) ; inferred DRAM map 0x5ffec000
+    3e19:	b127e5        	l32r	a11, 0xffffd2b8 (0xc3ffffff) ; inferred DRAM map 0x5ffec000
+    3e1c:	c128e5        	l32r	a12, 0xffffd2bc (0xc0000000) ; inferred DRAM map 0x5ffec000
+    3e1f:	e128e5        	l32r	a14, 0xffffd2c0 (0xffbfffff) ; inferred DRAM map 0x5ffec000
+    3e22:	f128e5        	l32r	a15, 0xffffd2c4 (0x44d40200) ; inferred DRAM map 0x5ffec000
+    3e25:	21cfe4        	l32r	a2, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    3e28:	7106e5        	l32r	a7, 0xffffd240 (0xe000) ; inferred DRAM map 0x5ffec000
+    3e2b:	d05204        	extui	a5, a13, 2, 1
+    3e2e:	0c06      	movi.n	a6, 0
+    3e30:	4d06      	mov.n	a4, a6
+    3e32:	b0a501        	slli	a10, a5, 21
+    3e35:	d0d604        	extui	a13, a13, 6, 1
+    3e38:	a0dd01        	slli	a13, a13, 22
+    3e3b:	726281        	s32i	a7, a2, 0x204
+    3e3e:	f0aa20        	or	a10, a10, a15
+    3e41:	e0aa10        	and	a10, a10, a14
+    3e44:	d0aa20        	or	a10, a10, a13
+    3e47:	626280        	s32i	a6, a2, 0x200
+    3e4a:	a911      	s32i.n	a10, a1, 4
+    3e4c:	c0aa20        	or	a10, a10, a12
+    3e4f:	b0aa10        	and	a10, a10, a11
+    3e52:	a26380        	s32i	a10, a3, 0x200
+    3e55:	626281        	s32i	a6, a2, 0x204
+    3e58:	90e613        	wsr.ps	a9
+    3e5b:	102000        	rsync
+    3e5e:	72a101        	movi	a7, 0x101
+    3e61:	82afff        	movi	a8, -1
+    3e64:	805530        	xor	a5, a5, a8
+    3e67:	505004        	extui	a5, a5, 0, 1
+    3e6a:	808511        	slli	a8, a5, 8
+    3e6d:	805520        	or	a5, a5, a8
+    3e70:	ad04      	mov.n	a10, a4
+00003e72: e51901   call8        . +0x11a0 ; Capstone ; target=0x5010
+    3e75:	dcfa      	bnez.n	a10, 0x3e98
+    3e77:	40a014        	extui	a10, a4, 0, 2
+    3e7a:	60aa11        	slli	a10, a10, 10
+    3e7d:	c06f00        	rsil	a12, 15
+    3e80:	a26281        	s32i	a10, a2, 0x204
+    3e83:	626280        	s32i	a6, a2, 0x200
+    3e86:	b22388        	l32i	a11, a3, 0x220
+    3e89:	626281        	s32i	a6, a2, 0x204
+    3e8c:	c0e613        	wsr.ps	a12
+    3e8f:	102000        	rsync
+    3e92:	70bb10        	and	a11, a11, a7
+    3e95:	b795e4        	bne	a5, a11, 0x3e7d
+    3e98:	1b44      	addi.n	a4, a4, 1
+    3e9a:	6644d2        	bnei	a4, 4, 0x3e70
+    3e9d:	a06f00        	rsil	a10, 15
+    3ea0:	c10be5        	l32r	a12, 0xffffd2cc (0xc3f3ffff) ; inferred DRAM map 0x5ffec000
+    3ea3:	d109e5        	l32r	a13, 0xffffd2c8 (0xc0020000) ; inferred DRAM map 0x5ffec000
+    3ea6:	b811      	l32i.n	a11, a1, 4
+    3ea8:	f1e6e4        	l32r	a15, 0xffffd240 (0xe000) ; inferred DRAM map 0x5ffec000
+    3eab:	f26281        	s32i	a15, a2, 0x204
+    3eae:	626280        	s32i	a6, a2, 0x200
+    3eb1:	d0bb20        	or	a11, a11, a13
+    3eb4:	c0bb10        	and	a11, a11, a12
+    3eb7:	b26380        	s32i	a11, a3, 0x200
+    3eba:	626281        	s32i	a6, a2, 0x204
+    3ebd:	a0e613        	wsr.ps	a10
+    3ec0:	102000        	rsync
+    3ec3:	906f00        	rsil	a9, 15
+    3ec6:	626280        	s32i	a6, a2, 0x200
+    3ec9:	e223ff        	l32i	a14, a3, 0x3fc
+    3ecc:	90e613        	wsr.ps	a9
+    3ecf:	102000        	rsync
+    3ed2:	8801      	l32i.n	a8, a1, 0
+    3ed4:	7cf9      	movi.n	a9, -1
+    3ed6:	808005        	extui	a8, a8, 16, 1
+    3ed9:	908830        	xor	a8, a8, a9
+    3edc:	92aeff        	movi	a9, 0xfffffeff
+    3edf:	808004        	extui	a8, a8, 0, 1
+    3ee2:	808811        	slli	a8, a8, 8
+    3ee5:	90ee10        	and	a14, a14, a9
+    3ee8:	80ee20        	or	a14, a14, a8
+    3eeb:	d06f00        	rsil	a13, 15
+    3eee:	f26281        	s32i	a15, a2, 0x204
+    3ef1:	626280        	s32i	a6, a2, 0x200
+    3ef4:	e263ff        	s32i	a14, a3, 0x3fc
+    3ef7:	626281        	s32i	a6, a2, 0x204
+    3efa:	d0e613        	wsr.ps	a13
+    3efd:	102000        	rsync
+00003f00: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,40 @@
+
+/tmp/tmp_ncvmped/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005cb4 <.data+0x5cb4>:
+00005cb4: 364100   entry        a1, 0x20 ; Capstone
+    5cb7:	d170dd        	l32r	a13, 0xffffd278 (0x6803ea00) ; inferred DRAM map 0x5ffec000
+    5cba:	0cfc      	movi.n	a12, 15
+    5cbc:	c26d92        	s32i	a12, a13, 0x248
+    5cbf:	806f00        	rsil	a8, 15
+    5cc2:	b128dd        	l32r	a11, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    5cc5:	91f0dd        	l32r	a9, 0xffffd488 (0x6003e200) ; inferred DRAM map 0x5ffec000
+    5cc8:	a2a000        	movi	a10, 0
+    5ccb:	a26b80        	s32i	a10, a11, 0x200
+    5cce:	226913        	s32i	a2, a9, 76
+    5cd1:	80e613        	wsr.ps	a8
+    5cd4:	102000        	rsync
+    5cd7:	c26d93        	s32i	a12, a13, 0x24c
+    5cda:	f06f00        	rsil	a15, 15
+    5cdd:	a26b80        	s32i	a10, a11, 0x200
+    5ce0:	226933        	s32i	a2, a9, 204
+    5ce3:	f0e613        	wsr.ps	a15
+    5ce6:	102000        	rsync
+    5ce9:	c26d94        	s32i	a12, a13, 0x250
+    5cec:	e06f00        	rsil	a14, 15
+    5cef:	a26b80        	s32i	a10, a11, 0x200
+    5cf2:	226953        	s32i	a2, a9, 0x14c
+    5cf5:	e0e613        	wsr.ps	a14
+    5cf8:	102000        	rsync
+    5cfb:	c26d95        	s32i	a12, a13, 0x254
+    5cfe:	806f00        	rsil	a8, 15
+    5d01:	a26b80        	s32i	a10, a11, 0x200
+    5d04:	226973        	s32i	a2, a9, 0x1cc
+    5d07:	80e613        	wsr.ps	a8
+    5d0a:	102000        	rsync
+00005d0d: 650000   call8        . +8 ; Capstone ; target=0x5d14
+00005d10: 1df0     retw.n        ; Capstone
+	...

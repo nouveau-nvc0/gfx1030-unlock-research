@@ -1,0 +1,15 @@
+
+/tmp/tmp_1uk_63h/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000373e0 <.data+0x373e0>:
+000373e0: 364100   entry        a1, 0x20 ; Capstone
+   373e3:	42020b        	l8ui	a4, a2, 11
+   373e6:	0c03      	movi.n	a3, 0
+   373e8:	0c12      	movi.n	a2, 1
+   373ea:	42c4fd        	addi	a4, a4, -3
+   373ed:	402393        	movnez	a2, a3, a4
+000373f0: 1df0     retw.n        ; Capstone
+	...

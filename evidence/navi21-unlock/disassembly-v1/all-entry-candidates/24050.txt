@@ -1,0 +1,16 @@
+
+/tmp/tmpue8wtop4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00024050 <.data+0x24050>:
+00024050: 364100   entry        a1, 0x20 ; Capstone
+   24053:	41b8bc        	l32r	a4, 0x13334 (0x125a200)
+   24056:	001240        	ssl	a2
+   24059:	0c13      	movi.n	a3, 1
+   2405b:	0033a1        	sll	a3, a3
+   2405e:	c02000        	memw
+   24061:	3264cf        	s32i	a3, a4, 0x33c
+00024064: 1df0     retw.n        ; Capstone
+	...

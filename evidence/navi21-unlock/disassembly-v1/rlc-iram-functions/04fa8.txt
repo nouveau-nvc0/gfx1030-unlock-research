@@ -1,0 +1,50 @@
+
+/tmp/tmp3baewofp/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00004fa8 <.data+0x4fa8>:
+00004fa8: 364100   entry        a1, 0x20 ; Capstone
+    4fab:	3119e1        	l32r	a3, 0xffffd410 (0x5ffed9b0) ; inferred DRAM map 0x5ffec000
+    4fae:	822300        	l32i	a8, a3, 0
+    4fb1:	164805        	beqz	a8, 0x5009
+    4fb4:	0c0c      	movi.n	a12, 0
+    4fb6:	a16be0        	l32r	a10, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    4fb9:	9116e1        	l32r	a9, 0xffffd414 (0x6003e600) ; inferred DRAM map 0x5ffec000
+    4fbc:	ac42      	beqz.n	a2, 0x4fe4
+    4fbe:	e06f00        	rsil	a14, 15
+    4fc1:	c26a80        	s32i	a12, a10, 0x200
+    4fc4:	f883      	l32i.n	a15, a3, 32
+    4fc6:	f26989        	s32i	a15, a9, 0x224
+    4fc9:	e0e613        	wsr.ps	a14
+    4fcc:	102000        	rsync
+    4fcf:	b06f00        	rsil	a11, 15
+    4fd2:	c26a80        	s32i	a12, a10, 0x200
+    4fd5:	d873      	l32i.n	a13, a3, 28
+    4fd7:	d26988        	s32i	a13, a9, 0x220
+    4fda:	b0e613        	wsr.ps	a11
+    4fdd:	102000        	rsync
+00004fe0: 1df0     retw.n        ; Capstone
+    4fe2:	0000b0        	addx8	a0, a0, a0
+    4fe5:	6f          	.byte 0x6f
+00004fe6: 00c26a   maddn.s      f12, f2, f0 ; Capstone
+00004fe9: 80d863   minu         a13, a8, a8 ; Capstone
+    4fec:	d26988        	s32i	a13, a9, 0x220
+    4fef:	b0e613        	wsr.ps	a11
+    4ff2:	102000        	rsync
+    4ff5:	806f00        	rsil	a8, 15
+    4ff8:	c26a80        	s32i	a12, a10, 0x200
+    4ffb:	c26989        	s32i	a12, a9, 0x224
+    4ffe:	80e613        	wsr.ps	a8
+    5001:	102000        	rsync
+00005004: 1df0     retw.n        ; Capstone
+    5006:	000000        	ill
+00005009: 25c8ff   call8        . -0x37c ; Capstone ; target=0x4c8c
+    500c:	06e9ff        	j	0x4fb4
+	...
+
+; Alternate branch-target decode
+    4fe4:	b06f00        	rsil	a11, 15
+    4fe7:	c26a80        	s32i	a12, a10, 0x200
+    4fea:	d863      	l32i.n	a13, a3, 24

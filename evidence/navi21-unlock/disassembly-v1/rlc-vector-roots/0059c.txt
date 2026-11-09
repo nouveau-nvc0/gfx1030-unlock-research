@@ -1,0 +1,11 @@
+
+/tmp/tmpe3l8cqw0/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000059c <.data+0x59c>:
+     59c:	20d313        	wsr.excsave3	a2
+     59f:	7c82      	movi.n	a2, -8
+     5a1:	005100        	simcall
+     5a4:	06ffff        	j	0x5a4

@@ -1,0 +1,30 @@
+
+/tmp/tmpo2dqu47n/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0003540c <.data+0x3540c>:
+0003540c: 364100   entry        a1, 0x20 ; Capstone
+   3540f:	0c8a      	movi.n	a10, 8
+00035411: e516cd   call8        . -0x32e90 ; Capstone ; target=0x2580
+   35414:	81207c        	l32r	a8, 0x14494 (0xa814)
+   35417:	f1207c        	l32r	a15, 0x14498 (0xa67c)
+   3541a:	e20892        	l8ui	a14, a8, 146
+0003541d: 03081a   lsi          f0, a8, 0x68 ; Capstone
+00035420: 40b0fa   rfr          a11, f0 ; Capstone
+   35423:	a11e7c        	l32r	a10, 0x1449c (0xa948)
+   35426:	f0eea0        	addx4	a14, a14, a15
+   35429:	cd0b      	mov.n	a12, a11
+   3542b:	dd0b      	mov.n	a13, a11
+   3542d:	e22e7f        	l32i	a14, a14, 0x1fc
+00035430: 251101   call8        . +0x1114 ; Capstone ; target=0x36544
+   35433:	4c0a      	movi.n	a10, 64
+00035435: a5b801   call8        . +0x1b8c ; Capstone ; target=0x36fc0
+   35438:	0c6a      	movi.n	a10, 6
+0003543a: e5f9ff   call8        . -0x60 ; Capstone ; target=0x353d8
+   3543d:	0c8a      	movi.n	a10, 8
+0003543f: 6503cd   call8        . -0x32fc8 ; Capstone ; target=0x2474
+   35442:	0c12      	movi.n	a2, 1
+00035444: 1df0     retw.n        ; Capstone
+	...

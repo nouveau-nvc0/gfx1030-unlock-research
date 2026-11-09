@@ -1,0 +1,17 @@
+
+/tmp/tmprqfh_isg/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000297dc <.data+0x297dc>:
+000297dc: 364100   entry        a1, 0x20 ; Capstone
+000297df: 130202   lsi          f1, a2, 8 ; Capstone
+000297e2: 5003fa   wfr          f0, a3 ; Capstone
+000297e5: 330200   lsi          f3, a2, 0 ; Capstone
+000297e8: 230201   lsi          f2, a2, 4 ; Capstone
+000297eb: 00234a   madd.s       f2, f3, f0 ; Capstone
+000297ee: 20104a   madd.s       f1, f0, f2 ; Capstone
+000297f1: 4021fa   rfr          a2, f1 ; Capstone
+000297f4: 1df0     retw.n        ; Capstone
+	...

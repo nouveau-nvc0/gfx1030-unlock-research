@@ -1,0 +1,34 @@
+
+/tmp/tmp8e4xh_0e/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002f1c8 <.data+0x2f1c8>:
+0002f1c8: 364100   entry        a1, 0x20 ; Capstone
+   2f1cb:	218193        	l32r	a2, 0x13fd0 (0xb6d0)
+   2f1ce:	220280        	l8ui	a2, a2, 128
+   2f1d1:	71568f        	l32r	a7, 0x12f2c (0x141d600)
+   2f1d4:	bca2      	beqz.n	a2, 0x2f212
+   2f1d6:	c02000        	memw
+   2f1d9:	0c04      	movi.n	a4, 0
+   2f1db:	517e93        	l32r	a5, 0x13fd4 (0xfffcffff)
+   2f1de:	0c18      	movi.n	a8, 1
+   2f1e0:	a17e93        	l32r	a10, 0x13fd8 (0xffff7fff)
+   2f1e3:	92a002        	movi	a9, 2
+   2f1e6:	322743        	l32i	a3, a7, 0x10c
+0002f1e9: 76a91c   loopgtz      a9, . +0x20 ; Capstone
+   2f1ec:	001440        	ssl	a4
+   2f1ef:	506310        	and	a6, a3, a5
+   2f1f2:	309015        	extui	a9, a3, 16, 2
+   2f1f5:	1b44      	addi.n	a4, a4, 1
+   2f1f7:	404074        	extui	a4, a4, 0, 8
+   2f1fa:	0038a1        	sll	a3, a8
+   2f1fd:	903320        	or	a3, a3, a9
+   2f200:	303014        	extui	a3, a3, 0, 2
+   2f203:	003311        	slli	a3, a3, 16
+   2f206:	303620        	or	a3, a6, a3
+   2f209:	a0a310        	and	a10, a3, a10
+   2f20c:	c02000        	memw
+   2f20f:	a26743        	s32i	a10, a7, 0x10c
+0002f212: 1df0     retw.n        ; Capstone

@@ -1,0 +1,37 @@
+
+/tmp/tmpd8s71icw/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001f148 <.data+0x1f148>:
+0001f148: 364100   entry        a1, 0x20 ; Capstone
+   1f14b:	613ed0        	l32r	a6, 0x13244 (0xaab0)
+   1f14e:	7cf7      	movi.n	a7, -1
+   1f150:	2042b0        	addx8	a4, a2, a2
+   1f153:	6044a0        	addx4	a4, a4, a6
+   1f156:	42247f        	l32i	a4, a4, 0x1fc
+   1f159:	0c03      	movi.n	a3, 0
+   1f15b:	0c16      	movi.n	a6, 1
+   1f15d:	9cf4      	beqz.n	a4, 0x1f180
+   1f15f:	001340        	ssl	a3
+   1f162:	0056a1        	sll	a5, a6
+   1f165:	57040c        	bnone	a4, a5, 0x1f175
+   1f168:	ad02      	mov.n	a10, a2
+   1f16a:	bd05      	mov.n	a11, a5
+0001f16c: 65e5ff   call8        . -0x1a8 ; Capstone ; target=0x1efc4
+   1f16f:	708530        	xor	a8, a5, a7
+   1f172:	804410        	and	a4, a4, a8
+   1f175:	1b33      	addi.n	a3, a3, 1
+   1f177:	001340        	ssl	a3
+   1f17a:	0056a1        	sll	a5, a6
+   1f17d:	5644fe        	bnez	a4, 0x1f165
+   1f180:	a157d0        	l32r	a10, 0x132dc (0xaec8)
+   1f183:	001240        	ssl	a2
+   1f186:	922a7f        	l32i	a9, a10, 0x1fc
+   1f189:	00b6a1        	sll	a11, a6
+   1f18c:	70bb30        	xor	a11, a11, a7
+   1f18f:	b09910        	and	a9, a9, a11
+   1f192:	926a7f        	s32i	a9, a10, 0x1fc
+0001f195: 1df0     retw.n        ; Capstone
+	...

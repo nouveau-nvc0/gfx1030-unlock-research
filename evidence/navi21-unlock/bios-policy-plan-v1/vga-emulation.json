@@ -1,0 +1,87 @@
+{
+  "module_sha256": "3a5ff822ee5bffea5b56349e661031b94fbaad8d8cf6967c621c559879d47aa3",
+  "success": true,
+  "cases": 6,
+  "scope": "Offline original VGA-selection instructions with mocked PCI/UEFI data; no ROM execution and no physical GPU access",
+  "result": "Offboard policy selects one VGA, the first enumerated discrete card; this does not guarantee its physical identity on the board",
+  "samples": [
+    {
+      "enumeration_order": [
+        "0000:04:00.0",
+        "0000:07:00.0",
+        "0000:0a:00.0"
+      ],
+      "selected": "0000:04:00.0",
+      "selected_count": 1,
+      "efi_status": "0x0",
+      "events": [
+        "GetLocation 0000:04:00.0"
+      ]
+    },
+    {
+      "enumeration_order": [
+        "0000:04:00.0",
+        "0000:0a:00.0",
+        "0000:07:00.0"
+      ],
+      "selected": "0000:04:00.0",
+      "selected_count": 1,
+      "efi_status": "0x0",
+      "events": [
+        "GetLocation 0000:04:00.0"
+      ]
+    },
+    {
+      "enumeration_order": [
+        "0000:07:00.0",
+        "0000:04:00.0",
+        "0000:0a:00.0"
+      ],
+      "selected": "0000:07:00.0",
+      "selected_count": 1,
+      "efi_status": "0x0",
+      "events": [
+        "GetLocation 0000:07:00.0"
+      ]
+    },
+    {
+      "enumeration_order": [
+        "0000:07:00.0",
+        "0000:0a:00.0",
+        "0000:04:00.0"
+      ],
+      "selected": "0000:07:00.0",
+      "selected_count": 1,
+      "efi_status": "0x0",
+      "events": [
+        "GetLocation 0000:07:00.0"
+      ]
+    },
+    {
+      "enumeration_order": [
+        "0000:0a:00.0",
+        "0000:04:00.0",
+        "0000:07:00.0"
+      ],
+      "selected": "0000:0a:00.0",
+      "selected_count": 1,
+      "efi_status": "0x0",
+      "events": [
+        "GetLocation 0000:0a:00.0"
+      ]
+    },
+    {
+      "enumeration_order": [
+        "0000:0a:00.0",
+        "0000:07:00.0",
+        "0000:04:00.0"
+      ],
+      "selected": "0000:0a:00.0",
+      "selected_count": 1,
+      "efi_status": "0x0",
+      "events": [
+        "GetLocation 0000:0a:00.0"
+      ]
+    }
+  ]
+}

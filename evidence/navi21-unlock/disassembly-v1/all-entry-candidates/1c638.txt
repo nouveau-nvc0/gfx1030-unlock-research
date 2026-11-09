@@ -1,0 +1,32 @@
+
+/tmp/tmpc41qj0iy/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001c638 <.data+0x1c638>:
+0001c638: 366100   entry        a1, 0x30 ; Capstone
+   1c63b:	ad02      	mov.n	a10, a2
+0001c63d: 5003fa   wfr          f0, a3 ; Capstone
+0001c640: 034100   ssi          f0, a1, 0 ; Capstone
+0001c643: a5bb18   call8        . +0x18bbc ; Capstone ; target=0x351fc
+0001c646: 230100   lsi          f2, a1, 0 ; Capstone
+   1c649:	b193da        	l32r	a11, 0x13098 (0x447a0000)
+0001c64c: 504afa   wfr          f4, a10 ; Capstone
+   1c64f:	2092b0        	addx8	a9, a2, a2
+   1c652:	a18fda        	l32r	a10, 0x13090 (0xaaa8)
+0001c655: 505bfa   wfr          f5, a11 ; Capstone
+   1c658:	b16bda        	l32r	a11, 0x13004 (0xfffff)
+0001c65b: 50342a   mul.s        f3, f4, f5 ; Capstone
+   1c65e:	a099a0        	addx4	a9, a9, a10
+   1c661:	92297f        	l32i	a9, a9, 0x1fc
+   1c664:	a18cda        	l32r	a10, 0x13094 (0x1200000)
+0001c667: 30122a   mul.s        f1, f2, f3 ; Capstone
+   1c66a:	cb99      	addi.n	a9, a9, 12
+   1c66c:	b09910        	and	a9, a9, a11
+   1c66f:	aa99      	add.n	a9, a9, a10
+0001c671: 0081ea   utrunc.s     a8, f1, 0 ; Capstone
+   1c674:	c02000        	memw
+   1c677:	8909      	s32i.n	a8, a9, 0
+0001c679: 1df0     retw.n        ; Capstone
+	...

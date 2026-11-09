@@ -1,0 +1,30 @@
+
+/tmp/tmpvrb0pu_o/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001e2a8 <.data+0x1e2a8>:
+0001e2a8: 364100   entry        a1, 0x20 ; Capstone
+   1e2ab:	b175d3        	l32r	a11, 0x13080 (0xac14)
+   1e2ae:	20a2b0        	addx8	a10, a2, a2
+   1e2b1:	b0aaa0        	addx4	a10, a10, a11
+   1e2b4:	820a7e        	l8ui	a8, a10, 126
+   1e2b7:	ac58      	beqz.n	a8, 0x1e2e0
+   1e2b9:	c22a24        	l32i	a12, a10, 144
+   1e2bc:	e152d3        	l32r	a14, 0x13004 (0xfffff)
+   1e2bf:	d175d3        	l32r	a13, 0x13094 (0x1200000)
+   1e2c2:	4bcc      	addi.n	a12, a12, 4
+   1e2c4:	e0cc10        	and	a12, a12, a14
+   1e2c7:	dacc      	add.n	a12, a12, a13
+   1e2c9:	c02000        	memw
+   1e2cc:	c80c      	l32i.n	a12, a12, 0
+   1e2ce:	c24a7d        	s8i	a12, a10, 125
+   1e2d1:	ad02      	mov.n	a10, a2
+0001e2d3: 25c003   call8        . +0x3c04 ; Capstone ; target=0x21ed4
+   1e2d6:	ad02      	mov.n	a10, a2
+0001e2d8: 65faff   call8        . -0x58 ; Capstone ; target=0x1e280
+   1e2db:	ad02      	mov.n	a10, a2
+0001e2dd: a5680e   call8        . +0xe68c ; Capstone ; target=0x2c968
+0001e2e0: 1df0     retw.n        ; Capstone
+	...

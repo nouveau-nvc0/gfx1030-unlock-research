@@ -1,0 +1,38 @@
+PSP loading memory: allocation, source, destination and RLC snapshot
+
+The retained Linuxv6.12 source provides a more specific allocation model
+than the alternate GTT autoload path. In psp_early_init, MP0 11.0.7 keeps
+autoload_supported=true and sets boot_time_tmr=false. Assuming an ordinary
+non-VF device with VRAM and successful initialization, psp_tmr_init allocates
+VRAM, stores its GPU address in psp->tmr_mc_addr and passes NULL for the CPU
+mapping output. The optional LOAD_TOC result supplies the allocation size.
+SETUP_TMR sends allocation address and size to PSP. A missing CPU pointer
+here does not prove anything about every possible memory access mechanism.
+
+Keep four values distinct:
+1. ucode->mc_addr: source bytes supplied by LOAD_IP_FW.
+2. psp->tmr_mc_addr: base of the driver-allocated region sent by SETUP_TMR.
+3. ucode->tmr_mc_addr_lo/hi: per-image destination returned by PSP.
+4. RLC HYP_BOOTLOAD_ADDR: base consumed by the analyzed RLCG transfers.
+The host command builder does not equate these four values. In particular,
+source bytes are not established as the live snapshot of saved CC state.
+
+After the RLC_G load, the driver sends AUTOLOAD_RLC. Its command builder
+sets only the command ID, not a new buffer address. The retained PSP source
+has no HYP_BOOTLOAD_ADDR reference. Therefore the remaining concrete edge
+is inside PSP placement/initialization or another writer of those RLC base
+registers. Neither driver allocation nor returned firmware address alone
+proves that snapshot ID27 lives at allocationbase+545000. The known RLCG
+arithmetic is relative to its bootload base, whose relation to these driver
+values remains unestablished.
+
+This closes the host-side source/destination distinction, not the changed
+mask producer. Next analyze the placement/base-setting edge rather than
+assuming a writable CPU snapshot pointer. No live mode/address/content was
+read and no hardware state changed. All statements about this load path
+are conditional on the retained source branch, not an audit of the running
+driver.
+
+Reproduce: python3 scripts/navi21-psp-buffer-ownership-audit.py
+Receipt: psp-buffer-ownership-audit.json; eight checked source regions,
+source SHA256 and explicit assumptions/remaining edges.

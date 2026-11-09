@@ -1,0 +1,53 @@
+
+/tmp/tmp2hapgbrf/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005d14 <.data+0x5d14>:
+00005d14: 364100   entry        a1, 0x20 ; Capstone
+    5d17:	306f00        	rsil	a3, 15
+    5d1a:	4112dd        	l32r	a4, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    5d1d:	2176dd        	l32r	a2, 0xffffd2f8 (0x60004a00) ; inferred DRAM map 0x5ffec000
+    5d20:	52a000        	movi	a5, 0
+    5d23:	526480        	s32i	a5, a4, 0x200
+    5d26:	28a2      	l32i.n	a2, a2, 40
+    5d28:	30e613        	wsr.ps	a3
+    5d2b:	102000        	rsync
+    5d2e:	3152dd        	l32r	a3, 0xffffd278 (0x6803ea00) ; inferred DRAM map 0x5ffec000
+    5d31:	07e208        	bbsi	a2, 0, 0x5d3d
+    5d34:	822392        	l32i	a8, a3, 0x248
+    5d37:	f02000        	nop
+    5d3a:	5668ff        	bnez	a8, 0x5d34
+    5d3d:	a06f00        	rsil	a10, 15
+    5d40:	916fdd        	l32r	a9, 0xffffd2fc (0x60006200) ; inferred DRAM map 0x5ffec000
+    5d43:	526480        	s32i	a5, a4, 0x200
+    5d46:	98a9      	l32i.n	a9, a9, 40
+    5d48:	a0e613        	wsr.ps	a10
+    5d4b:	102000        	rsync
+    5d4e:	07e907        	bbsi	a9, 0, 0x5d59
+    5d51:	a22393        	l32i	a10, a3, 0x24c
+    5d54:	3df0      	nop.n
+    5d56:	567aff        	bnez	a10, 0x5d51
+    5d59:	c06f00        	rsil	a12, 15
+    5d5c:	b169dd        	l32r	a11, 0xffffd300 (0x6006fe00) ; inferred DRAM map 0x5ffec000
+    5d5f:	526480        	s32i	a5, a4, 0x200
+    5d62:	f02000        	nop
+    5d65:	b22baa        	l32i	a11, a11, 0x2a8
+    5d68:	c0e613        	wsr.ps	a12
+    5d6b:	102000        	rsync
+    5d6e:	07eb07        	bbsi	a11, 0, 0x5d79
+    5d71:	c22394        	l32i	a12, a3, 0x250
+    5d74:	3df0      	nop.n
+    5d76:	567cff        	bnez	a12, 0x5d71
+    5d79:	e06f00        	rsil	a14, 15
+    5d7c:	d162dd        	l32r	a13, 0xffffd304 (0x60070e00) ; inferred DRAM map 0x5ffec000
+    5d7f:	526480        	s32i	a5, a4, 0x200
+    5d82:	3df0      	nop.n
+    5d84:	d22daa        	l32i	a13, a13, 0x2a8
+    5d87:	e0e613        	wsr.ps	a14
+    5d8a:	102000        	rsync
+    5d8d:	07ed05        	bbsi	a13, 0, 0x5d96
+    5d90:	e22395        	l32i	a14, a3, 0x254
+    5d93:	569eff        	bnez	a14, 0x5d90
+00005d96: 1df0     retw.n        ; Capstone

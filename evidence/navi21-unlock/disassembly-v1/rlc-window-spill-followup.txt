@@ -1,0 +1,21 @@
+RLC window spill helper expansion
+
+Known context save7ce9->9a84 stores current entry-adjustedSP atcontext+10
+at9a8a, then invokesa0ec->9fd8 to spill register windows. The pointer is
+therefore a saved architectural stack pointer for this known path, not a
+caller-supplied address argument. Runtime context/stack mutation is unresolved.
+
+Separate root9fd8 decoded; branch targets a094/a0b1 repaired from exact starts.
+CFG reaches102 instructions, no ordinary unresolved edges, no reached EXCW.
+All121 listing records including alternate decodes match pinned IRAM bytes.
+NSAU/ROTW/WSR semantics remain outside local constant propagation.
+
+Five store groups depend on windowed registers a9/a13 and stack-linked values
+loaded from[a5-12] or[a1-12]. All write 16-byte or32-byte blocks. No fixed CC
+address is materialized here, but this does not establish stack address bounds
+or exclude computed overlaps. Specific group formulas are recorded in JSON;
+register names there refer to the current window at that branch.
+
+This expands real direct CALL0 coverage; it does not establish new reachable
+CC writes. Remaining work: alternate save entry9ad0 callers, reset/vector
+stack setup, and physical register-window/stack provenance.

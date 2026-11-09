@@ -1,0 +1,159 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "cfg_sha256": "a2ddc27d08ce3d456b16f964561f5a2bb2112d289362f5c9e6150f81388050e0",
+  "scanner_sha256": "493bdd057c5b3be3ad4ca843acdbf02674b37bfccb756f05adbeb77291a17a87",
+  "reports": [
+    {
+      "root": "06e10",
+      "reached": 118,
+      "local_ram_stores": [
+        {
+          "pc": "0x6eda",
+          "address": "0x5ffedf8c",
+          "end_exclusive": "0x5ffedf90",
+          "width": 4
+        },
+        {
+          "pc": "0x6eec",
+          "address": "0x5ffedf98",
+          "end_exclusive": "0x5ffedf9c",
+          "width": 4
+        },
+        {
+          "pc": "0x6f01",
+          "address": "0x5ffedfa4",
+          "end_exclusive": "0x5ffedfa8",
+          "width": 4
+        },
+        {
+          "pc": "0x6f13",
+          "address": "0x5ffedfb0",
+          "end_exclusive": "0x5ffedfb4",
+          "width": 4
+        },
+        {
+          "pc": "0x6f29",
+          "address": "0x5ffedfb0",
+          "end_exclusive": "0x5ffedfb4",
+          "width": 4
+        },
+        {
+          "pc": "0x6f3d",
+          "address": "0x5ffedc80",
+          "end_exclusive": "0x5ffedc84",
+          "width": 4
+        },
+        {
+          "pc": "0x6f4f",
+          "address": "0x5ffedc84",
+          "end_exclusive": "0x5ffedc88",
+          "width": 4
+        },
+        {
+          "pc": "0x6f61",
+          "address": "0x5ffedc88",
+          "end_exclusive": "0x5ffedc8c",
+          "width": 4
+        }
+      ],
+      "stack_stores": [
+        {
+          "pc": "0x6e15",
+          "operation": "s32i",
+          "address": null,
+          "address_candidates": [],
+          "source": "a2",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "0"
+        }
+      ],
+      "listing_sha256": "0ee9ba452deabf353d0c2a0abc896841d5724c76fbf311cd27c69302c185eaba",
+      "byte_checked_records": 146
+    },
+    {
+      "root": "072f4",
+      "reached": 56,
+      "local_ram_stores": [
+        {
+          "pc": "0x7371",
+          "address": "0x5ffedfbc",
+          "end_exclusive": "0x5ffedfc0",
+          "width": 4
+        },
+        {
+          "pc": "0x7385",
+          "address": "0x5ffedfc0",
+          "end_exclusive": "0x5ffedfc4",
+          "width": 4
+        }
+      ],
+      "stack_stores": [],
+      "listing_sha256": "c61ad2667322c04b40b3bf44775a14f003c5bd6c0be2adce2e364a983b708672",
+      "byte_checked_records": 56
+    },
+    {
+      "root": "07390",
+      "reached": 105,
+      "local_ram_stores": [
+        {
+          "pc": "0x743c",
+          "address": "0x5ffedf90",
+          "end_exclusive": "0x5ffedf94",
+          "width": 4
+        },
+        {
+          "pc": "0x744d",
+          "address": "0x5ffedf94",
+          "end_exclusive": "0x5ffedf98",
+          "width": 4
+        },
+        {
+          "pc": "0x745f",
+          "address": "0x5ffedf9c",
+          "end_exclusive": "0x5ffedfa0",
+          "width": 4
+        },
+        {
+          "pc": "0x7471",
+          "address": "0x5ffedfa0",
+          "end_exclusive": "0x5ffedfa4",
+          "width": 4
+        },
+        {
+          "pc": "0x7483",
+          "address": "0x5ffedfa8",
+          "end_exclusive": "0x5ffedfac",
+          "width": 4
+        },
+        {
+          "pc": "0x7495",
+          "address": "0x5ffedfac",
+          "end_exclusive": "0x5ffedfb0",
+          "width": 4
+        },
+        {
+          "pc": "0x74a7",
+          "address": "0x5ffedfb4",
+          "end_exclusive": "0x5ffedfb8",
+          "width": 4
+        },
+        {
+          "pc": "0x74b9",
+          "address": "0x5ffedfb8",
+          "end_exclusive": "0x5ffedfbc",
+          "width": 4
+        }
+      ],
+      "stack_stores": [],
+      "listing_sha256": "cc6cb399f76db403f1f30740b8b72622cbcb4f5f09593ae0b4147d6b10ca6e7b",
+      "byte_checked_records": 105
+    }
+  ],
+  "CC_interval": [
+    "0x5ffedfc4",
+    "0x5ffee004"
+  ],
+  "last_neighbor_end_exclusive": "0x5ffedfc4",
+  "scope": "Three normal function entries only. Constant address propagation covers all their reachable direct stores; one frame-local store assumes the normal entry frame. No callee effects exist in these three functions. Other writers, altered pointers/state and alternate entries are not globally excluded."
+}

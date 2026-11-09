@@ -1,0 +1,14 @@
+[
+  {
+    "name": "binutils.deb",
+    "original_path": "/tmp/navi21-disasm/binutils.deb",
+    "bytes": 2732060,
+    "sha256": "6fb7be613bf3d96200710de2e08b35c76baf3128de690a7b1f7983dffe5eaab0"
+  },
+  {
+    "name": "umr-058a7045-source.tar.gz",
+    "original_path": "/workspace/gfx1030-unlock-research/inputs/research/umr-058a7045-source.tar.gz",
+    "bytes": 16204137,
+    "sha256": "7be2d26ba6a8ec5c32c3c08c19566465b499d39741ac278aae83eb7d5bec1dca"
+  }
+]

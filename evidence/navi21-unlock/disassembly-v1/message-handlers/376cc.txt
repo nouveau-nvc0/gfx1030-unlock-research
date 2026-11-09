@@ -1,0 +1,20 @@
+
+/tmp/tmp8rmrmchn/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000376cc <.data+0x376cc>:
+000376cc: 364100   entry        a1, 0x20 ; Capstone
+   376cf:	ad02      	mov.n	a10, a2
+000376d1: e59eca   call8        . -0x35610 ; Capstone ; target=0x20c0
+   376d4:	3d0a      	mov.n	a3, a10
+000376d6: 25feff   call8        . -0x1c ; Capstone ; target=0x376b8
+   376d9:	bd03      	mov.n	a11, a3
+   376db:	ad02      	mov.n	a10, a2
+000376dd: 256fca   call8        . -0x3590c ; Capstone ; target=0x1dd0
+   376e0:	ad02      	mov.n	a10, a2
+   376e2:	0c1b      	movi.n	a11, 1
+000376e4: 659bca   call8        . -0x35648 ; Capstone ; target=0x209c
+000376e7: 1df0     retw.n        ; Capstone
+   376e9:	000000        	ill

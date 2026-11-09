@@ -1,0 +1,57 @@
+
+/tmp/tmpzxcihb3l/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000016d4 <.data+0x16d4>:
+000016d4: 364100   entry        a1, 0x20 ; Capstone
+000016d7: 65c132   call8        . +0x32c18 ; Capstone ; target=0x342ec
+    16da:	b150fd        	l32r	a11, 0xc1c (0x80000001)
+    16dd:	c151fd        	l32r	a12, 0xc24 (0x1268e00)
+    16e0:	9150fd        	l32r	a9, 0xc20 (0x1202e00)
+    16e3:	c02000        	memw
+    16e6:	b91c      	s32i.n	a11, a12, 4
+    16e8:	a2aeff        	movi	a10, 0xfffffeff
+    16eb:	c02000        	memw
+    16ee:	822989        	l32i	a8, a9, 0x224
+    16f1:	a08810        	and	a8, a8, a10
+    16f4:	c02000        	memw
+    16f7:	0c0a      	movi.n	a10, 0
+    16f9:	826989        	s32i	a8, a9, 0x224
+000016fc: a59032   call8        . +0x3290c ; Capstone ; target=0x34008
+000016ff: 1df0     retw.n        ; Capstone
+    1701:	000000        	ill
+00001704: 364100   entry        a1, 0x20 ; Capstone
+    1707:	204541        	srli	a4, a2, 5
+    170a:	0c13      	movi.n	a3, 1
+    170c:	208044        	extui	a8, a2, 0, 5
+    170f:	001840        	ssl	a8
+    1712:	8145fd        	l32r	a8, 0xc28 (0x32003b0)
+    1715:	e04411        	slli	a4, a4, 2
+    1718:	0033a1        	sll	a3, a3
+    171b:	8a44      	add.n	a4, a4, a8
+    171d:	c02000        	memw
+    1720:	3904      	s32i.n	a3, a4, 0
+00001722: 1df0     retw.n        ; Capstone
+00001724: 364100   entry        a1, 0x20 ; Capstone
+    1727:	306200        	rsil	a3, 2
+    172a:	20b044        	extui	a11, a2, 0, 5
+    172d:	209541        	srli	a9, a2, 5
+    1730:	001b40        	ssl	a11
+    1733:	b13efd        	l32r	a11, 0xc2c (0x7660)
+    1736:	0c1a      	movi.n	a10, 1
+    1738:	00aaa1        	sll	a10, a10
+    173b:	b099a0        	addx4	a9, a9, a11
+    173e:	82297f        	l32i	a8, a9, 0x1fc
+    1741:	7cfb      	movi.n	a11, -1
+    1743:	b0aa30        	xor	a10, a10, a11
+    1746:	a08810        	and	a8, a8, a10
+    1749:	82697f        	s32i	a8, a9, 0x1fc
+0000174c: 652f00   call8        . +0x2f8 ; Capstone ; target=0x1a44
+    174f:	30e613        	wsr.ps	a3
+00001752: 1df0     retw.n        ; Capstone
+00001754: 364100   entry        a1, 0x20 ; Capstone
+    1757:	510dfd        	l32r	a5, 0xb8c (0x31ffe00)
+    175a:	c02000        	memw
+    175d:	6225fc        	l32i	a6, a5, 0x3f0

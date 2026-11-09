@@ -1,0 +1,38 @@
+
+/tmp/tmpzlj0b1uu/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00037098 <.data+0x37098>:
+00037098: 364100   entry        a1, 0x20 ; Capstone
+0003709b: 65f5ef   call8        . -0x100a8 ; Capstone ; target=0x26ff0
+   3709e:	913971        	l32r	a9, 0x13584 (0xa340)
+   370a1:	0c08      	movi.n	a8, 0
+   370a3:	82597f        	s16i	a8, a9, 254
+000370a6: e5edf8   call8        . -0x7120 ; Capstone ; target=0x2ff84
+000370a9: 25dbef   call8        . -0x1024c ; Capstone ; target=0x26e5c
+   370ac:	0c1a      	movi.n	a10, 1
+000370ae: 65c1ff   call8        . -0x3e8 ; Capstone ; target=0x36cc4
+000370b1: a55df0   call8        . -0xfa24 ; Capstone ; target=0x2768c
+000370b4: a5c9ef   call8        . -0x10364 ; Capstone ; target=0x26d50
+000370b7: 65c1ef   call8        . -0x103e8 ; Capstone ; target=0x26ccc
+000370ba: e5acef   call8        . -0x10530 ; Capstone ; target=0x26b88
+000370bd: 65a1ef   call8        . -0x105e8 ; Capstone ; target=0x26ad4
+000370c0: 259fef   call8        . -0x1060c ; Capstone ; target=0x26ab4
+000370c3: e594ef   call8        . -0x106b0 ; Capstone ; target=0x26a10
+000370c6: 2583ef   call8        . -0x107cc ; Capstone ; target=0x268f8
+000370c9: 657fef   call8        . -0x10808 ; Capstone ; target=0x268c0
+000370cc: 657bef   call8        . -0x10848 ; Capstone ; target=0x26884
+000370cf: a56cef   call8        . -0x10934 ; Capstone ; target=0x26798
+000370d2: 6567ef   call8        . -0x10988 ; Capstone ; target=0x26748
+000370d5: 6561ef   call8        . -0x109e8 ; Capstone ; target=0x266ec
+000370d8: a55fef   call8        . -0x10a04 ; Capstone ; target=0x266d4
+000370db: 6559ef   call8        . -0x10a68 ; Capstone ; target=0x26670
+000370de: 654aef   call8        . -0x10b58 ; Capstone ; target=0x26584
+   370e1:	0c0a      	movi.n	a10, 0
+000370e3: 25beff   call8        . -0x41c ; Capstone ; target=0x36cc4
+   370e6:	1c0a      	movi.n	a10, 16
+000370e8: 25c101   call8        . +0x1c14 ; Capstone ; target=0x38cfc
+000370eb: 1df0     retw.n        ; Capstone
+   370ed:	000000        	ill

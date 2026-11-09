@@ -1,0 +1,33 @@
+
+/tmp/tmp5q2omcoy/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000224c4 <.data+0x224c4>:
+000224c4: 366100   entry        a1, 0x30 ; Capstone
+   224c7:	7cfd      	movi.n	a13, -1
+   224c9:	0c28      	movi.n	a8, 2
+   224cb:	0c09      	movi.n	a9, 0
+   224cd:	9911      	s32i.n	a9, a1, 4
+   224cf:	926100        	s32i	a9, a1, 0
+   224d2:	914ac4        	l32r	a9, 0x135fc (0xa3d0)
+000224d5: 76a825   loopgtz      a8, . +0x29 ; Capstone
+   224d8:	f802      	l32i.n	a15, a2, 0
+   224da:	a2297b        	l32i	a10, a9, 0x1ec
+   224dd:	e2297f        	l32i	a14, a9, 0x1fc
+   224e0:	b2297d        	l32i	a11, a9, 0x1f4
+   224e3:	a0ff10        	and	a15, a15, a10
+   224e6:	f0ee20        	or	a14, a14, a15
+   224e9:	e2697f        	s32i	a14, a9, 0x1fc
+   224ec:	c802      	l32i.n	a12, a2, 0
+   224ee:	4b99      	addi.n	a9, a9, 4
+   224f0:	4b22      	addi.n	a2, a2, 4
+   224f2:	d0cc30        	xor	a12, a12, a13
+   224f5:	c0bb10        	and	a11, a11, a12
+   224f8:	b0aa10        	and	a10, a10, a11
+   224fb:	a2697a        	s32i	a10, a9, 0x1e8
+   224fe:	ad01      	mov.n	a10, a1
+00022500: a55913   call8        . +0x1359c ; Capstone ; target=0x35a9c
+00022503: 1df0     retw.n        ; Capstone
+   22505:	000000        	ill

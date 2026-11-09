@@ -1,0 +1,46 @@
+
+/tmp/tmp6gcn6k6a/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002cacc <.data+0x2cacc>:
+0002cacc: 366100   entry        a1, 0x30 ; Capstone
+   2cacf:	ad02      	mov.n	a10, a2
+0002cad1: e55ed5   call8        . -0x2aa10 ; Capstone ; target=0x20c0
+   2cad4:	4d0a      	mov.n	a4, a10
+   2cad6:	a03075        	extui	a3, a10, 16, 8
+   2cad9:	1c98      	movi.n	a8, 25
+   2cadb:	373804        	bltu	a8, a3, 0x2cae3
+0002cade: e5fcff   call8        . -0x30 ; Capstone ; target=0x2caac
+   2cae1:	cc8a      	bnez.n	a10, 0x2caed
+   2cae3:	ad02      	mov.n	a10, a2
+   2cae5:	b2a0ff        	movi	a11, 255
+0002cae8: 255bd5   call8        . -0x2aa4c ; Capstone ; target=0x209c
+0002caeb: 1df0     retw.n        ; Capstone
+   2caed:	0c8a      	movi.n	a10, 8
+0002caef: 25a9d5   call8        . -0x2a56c ; Capstone ; target=0x2580
+   2caf2:	917d99        	l32r	a9, 0x130e8 (0x3a83126f)
+   2caf5:	40a0f4        	extui	a10, a4, 0, 16
+0002caf8: 001ada   ufloat.s     f1, a10, 0 ; Capstone
+0002cafb: 5029fa   wfr          f2, a9 ; Capstone
+0002cafe: 20012a   mul.s        f0, f1, f2 ; Capstone
+   2cb01:	ad03      	mov.n	a10, a3
+0002cb03: 40b0fa   rfr          a11, f0 ; Capstone
+0002cb06: a5f8ff   call8        . -0x74 ; Capstone ; target=0x2ca90
+0002cb09: 503afa   wfr          f3, a10 ; Capstone
+0002cb0c: 334100   ssi          f3, a1, 0 ; Capstone
+   2cb0f:	0c8a      	movi.n	a10, 8
+0002cb11: 2596d5   call8        . -0x2a69c ; Capstone ; target=0x2474
+   2cb14:	b16199        	l32r	a11, 0x13098 (0x447a0000)
+0002cb17: 530100   lsi          f5, a1, 0 ; Capstone
+0002cb1a: 506bfa   wfr          f6, a11 ; Capstone
+0002cb1d: 60452a   mul.s        f4, f5, f6 ; Capstone
+   2cb20:	ad02      	mov.n	a10, a2
+0002cb22: 00b4aa   floor.s      a11, f4, 0 ; Capstone
+0002cb25: a52ad5   call8        . -0x2ad54 ; Capstone ; target=0x1dd0
+   2cb28:	ad02      	mov.n	a10, a2
+   2cb2a:	0c1b      	movi.n	a11, 1
+0002cb2c: e556d5   call8        . -0x2aa90 ; Capstone ; target=0x209c
+0002cb2f: 1df0     retw.n        ; Capstone
+   2cb31:	000000        	ill

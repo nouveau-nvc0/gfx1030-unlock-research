@@ -1,0 +1,36 @@
+VCE feature version: 0, firmware version: 0x00000000
+UVD feature version: 0, firmware version: 0x00000000
+MC feature version: 0, firmware version: 0x00000000
+ME feature version: 44, firmware version: 0x00000040
+PFP feature version: 44, firmware version: 0x0000006d
+CE feature version: 44, firmware version: 0x00000025
+RLC feature version: 1, firmware version: 0x00000060
+RLC SRLC feature version: 0, firmware version: 0x00000000
+RLC SRLG feature version: 0, firmware version: 0x00000000
+RLC SRLS feature version: 0, firmware version: 0x00000000
+RLCP feature version: 0, firmware version: 0x00000000
+RLCV feature version: 0, firmware version: 0x00000000
+MEC feature version: 44, firmware version: 0x00000086
+MEC2 feature version: 44, firmware version: 0x00000086
+IMU feature version: 0, firmware version: 0x00000000
+SOS feature version: 0, firmware version: 0x00211164
+ASD feature version: 553648409, firmware version: 0x21000119
+TA XGMI feature version: 0x00000000, firmware version: 0x20000014
+TA RAS feature version: 0x00000000, firmware version: 0x1b00013e
+TA HDCP feature version: 0x00000000, firmware version: 0x17000053
+TA DTM feature version: 0x00000000, firmware version: 0x1200001f
+TA RAP feature version: 0x00000000, firmware version: 0x07000016
+TA SECUREDISPLAY feature version: 0x00000000, firmware version: 0x00000000
+SMC feature version: 0, program: 0, firmware version: 0x003a5b00 (58.91.0)
+SDMA0 feature version: 52, firmware version: 0x00000058
+SDMA1 feature version: 52, firmware version: 0x00000058
+SDMA2 feature version: 52, firmware version: 0x00000058
+SDMA3 feature version: 52, firmware version: 0x00000058
+VCN feature version: 0, firmware version: 0x04121022
+DMCU feature version: 0, firmware version: 0x00000000
+DMCUB feature version: 0, firmware version: 0x02020023
+TOC feature version: 0, firmware version: 0x00000000
+MES_KIQ feature version: 0, firmware version: 0x00000000
+MES feature version: 0, firmware version: 0x00000000
+VPE feature version: 0, firmware version: 0x00000000
+VBIOS version: 113-EXT800240-L04

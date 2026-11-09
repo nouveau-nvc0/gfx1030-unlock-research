@@ -1,0 +1,36 @@
+
+/tmp/tmp6y582yuh/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001bb4c <.data+0x1bb4c>:
+0001bb4c: 364100   entry        a1, 0x20 ; Capstone
+   1bb4f:	2124dd        	l32r	a2, 0x12fe0 (0x11028)
+   1bb52:	9114dd        	l32r	a9, 0x12fa4 (0x10e74)
+   1bb55:	1c18      	movi.n	a8, 17
+   1bb57:	a20280        	l8ui	a10, a2, 128
+   1bb5a:	82697f        	s32i	a8, a9, 0x1fc
+0001bb5d: 25faff   call8        . -0x5c ; Capstone ; target=0x1bb00
+   1bb60:	b121dd        	l32r	a11, 0x12fe4 (0x110a4)
+   1bb63:	0c09      	movi.n	a9, 0
+   1bb65:	0c2a      	movi.n	a10, 2
+   1bb67:	c2cb80        	addi	a12, a11, -128
+   1bb6a:	b2cb98        	addi	a11, a11, -104
+0001bb6d: 76aa1a   loopgtz      a10, . +0x1e ; Capstone
+   1bb70:	d20280        	l8ui	a13, a2, 128
+   1bb73:	000940        	ssr	a9
+   1bb76:	d0d0b1        	sra	a13, a13
+   1bb79:	076d09        	bbci	a13, 0, 0x1bb86
+   1bb7c:	baf9      	add.n	a15, a9, a11
+   1bb7e:	cae9      	add.n	a14, a9, a12
+   1bb80:	e20e80        	l8ui	a14, a14, 128
+   1bb83:	e24f7e        	s8i	a14, a15, 126
+   1bb86:	1b99      	addi.n	a9, a9, 1
+   1bb88:	909074        	extui	a9, a9, 0, 8
+   1bb8b:	b22221        	l32i	a11, a2, 132
+   1bb8e:	0cda      	movi.n	a10, 13
+0001bb90: e56c19   call8        . +0x196d0 ; Capstone ; target=0x35260
+   1bb93:	0c02      	movi.n	a2, 0
+0001bb95: 1df0     retw.n        ; Capstone
+	...

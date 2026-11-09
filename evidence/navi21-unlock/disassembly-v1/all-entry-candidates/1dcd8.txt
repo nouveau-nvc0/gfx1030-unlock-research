@@ -1,0 +1,49 @@
+
+/tmp/tmp9yb4lyi1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001dcd8 <.data+0x1dcd8>:
+0001dcd8: 364100   entry        a1, 0x20 ; Capstone
+   1dcdb:	0c2a      	movi.n	a10, 2
+0001dcdd: 258ae4   call8        . -0x1b75c ; Capstone ; target=0x2580
+   1dce0:	8193d4        	l32r	a8, 0x12f2c (0x141d600)
+   1dce3:	d15ed4        	l32r	a13, 0x12e5c (0x69a0)
+   1dce6:	c02000        	memw
+   1dce9:	822876        	l32i	a8, a8, 0x1d8
+   1dcec:	a22d14        	l32i	a10, a13, 80
+   1dcef:	92a095        	movi	a9, 149
+   1dcf2:	876829        	bbci	a8, 8, 0x1dd1f
+   1dcf5:	0c3b      	movi.n	a11, 3
+   1dcf7:	0c1c      	movi.n	a12, 1
+   1dcf9:	f22d15        	l32i	a15, a13, 84
+   1dcfc:	e13ed5        	l32r	a14, 0x131f4 (0xffd0)
+   1dcff:	0c08      	movi.n	a8, 0
+   1dd01:	826d14        	s32i	a8, a13, 80
+   1dd04:	a2cebc        	addi	a10, a14, -68
+   1dd07:	922e7f        	l32i	a9, a14, 0x1fc
+   1dd0a:	1bff      	addi.n	a15, a15, 1
+   1dd0c:	f26d15        	s32i	a15, a13, 84
+   1dd0f:	1b99      	addi.n	a9, a9, 1
+   1dd11:	926e7f        	s32i	a9, a14, 0x1fc
+0001dd14: a5e30a   call8        . +0xae3c ; Capstone ; target=0x28b50
+   1dd17:	0c3a      	movi.n	a10, 3
+0001dd19: e5760b   call8        . +0xb770 ; Capstone ; target=0x29488
+   1dd1c:	460800        	j	0x1dd41
+   1dd1f:	a73919        	bltu	a9, a10, 0x1dd3c
+   1dd22:	1baa      	addi.n	a10, a10, 1
+   1dd24:	a26d14        	s32i	a10, a13, 80
+   1dd27:	0c3a      	movi.n	a10, 3
+0001dd29: e5750b   call8        . +0xb760 ; Capstone ; target=0x29488
+   1dd2c:	a133d5        	l32r	a10, 0x131f8 (0x1dcd8)
+   1dd2f:	0c7b      	movi.n	a11, 7
+   1dd31:	0c3c      	movi.n	a12, 3
+   1dd33:	d2a3e8        	movi	a13, 0x3e8
+0001dd36: e5860b   call8        . +0xb870 ; Capstone ; target=0x295a4
+   1dd39:	060100        	j	0x1dd41
+   1dd3c:	0c3a      	movi.n	a10, 3
+0001dd3e: a5740b   call8        . +0xb74c ; Capstone ; target=0x29488
+   1dd41:	0c2a      	movi.n	a10, 2
+0001dd43: 2573e4   call8        . -0x1b8cc ; Capstone ; target=0x2474
+0001dd46: 1df0     retw.n        ; Capstone

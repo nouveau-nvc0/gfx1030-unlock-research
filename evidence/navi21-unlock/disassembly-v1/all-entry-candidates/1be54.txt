@@ -1,0 +1,40 @@
+
+/tmp/tmpup0yzn1m/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001be54 <.data+0x1be54>:
+0001be54: 364100   entry        a1, 0x20 ; Capstone
+   1be57:	0c0b      	movi.n	a11, 0
+   1be59:	4171dc        	l32r	a4, 0x13020 (0x11034)
+   1be5c:	0c0a      	movi.n	a10, 0
+   1be5e:	0c28      	movi.n	a8, 2
+   1be60:	c204c4        	l8ui	a12, a4, 196
+   1be63:	8b34      	addi.n	a3, a4, 8
+0001be65: 76a80f   loopgtz      a8, . +0x13 ; Capstone
+   1be68:	3adb      	add.n	a13, a11, a3
+   1be6a:	d20dba        	l8ui	a13, a13, 186
+   1be6d:	1bbb      	addi.n	a11, a11, 1
+   1be6f:	b0b074        	extui	a11, a11, 0, 8
+   1be72:	a0ad20        	or	a10, a13, a10
+   1be75:	a0a074        	extui	a10, a10, 0, 8
+   1be78:	a244c4        	s8i	a10, a4, 196
+   1be7b:	a71c07        	beq	a12, a10, 0x1be86
+0001be7e: e5f9ff   call8        . -0x60 ; Capstone ; target=0x1be1c
+   1be81:	2d0a      	mov.n	a2, a10
+   1be83:	460000        	j	0x1be88
+   1be86:	0c02      	movi.n	a2, 0
+   1be88:	0c0b      	movi.n	a11, 0
+   1be8a:	0c1a      	movi.n	a10, 1
+   1be8c:	0c2e      	movi.n	a14, 2
+0001be8e: 76ae14   loopgtz      a14, . +0x18 ; Capstone
+   1be91:	3afb      	add.n	a15, a11, a3
+   1be93:	820fba        	l8ui	a8, a15, 186
+   1be96:	f20f7e        	l8ui	a15, a15, 126
+   1be99:	1bbb      	addi.n	a11, a11, 1
+   1be9b:	b0b074        	extui	a11, a11, 0, 8
+   1be9e:	871f02        	beq	a15, a8, 0x1bea4
+   1bea1:	a24435        	s8i	a10, a4, 53
+   1bea4:	3df0      	nop.n
+0001bea6: 1df0     retw.n        ; Capstone

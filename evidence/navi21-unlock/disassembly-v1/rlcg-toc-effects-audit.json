@@ -1,0 +1,567 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "header_sha256": "abd09080e4b06fd2d3e14145e5ceafa580a1987da59f076d2598e8753957b614",
+  "input_receipts": {
+    "evidence/navi21-unlock/disassembly-v1/rlcg-toc-audit.json": "07f497dcf1eced46ddf8f08f8e72bd49033214941eac8c73b1969c5826fbaf09",
+    "evidence/navi21-unlock/disassembly-v1/rlcg-dram-save-audit.json": "8dc5fa38e3b58dd09594a6bd21bbba5dc32811b390037acae923f8b09759eb6f"
+  },
+  "base_selectors": [
+    {
+      "pc": "0x3129",
+      "words": [
+        "c54b0209",
+        "14880003",
+        "24880003",
+        "30880003",
+        "94800003"
+      ],
+      "candidate_condition": "((DW1 >>3)&3)==3 selects011e/011f; otherwise bootloadbase"
+    },
+    {
+      "pc": "0x31bd",
+      "words": [
+        "c54b0209",
+        "14880003",
+        "24880003",
+        "30880003",
+        "94800003"
+      ],
+      "candidate_condition": "((DW1 >>3)&3)==3 selects011e/011f; otherwise bootloadbase"
+    },
+    {
+      "pc": "0x320f",
+      "words": [
+        "c54b0209",
+        "14880003",
+        "24880003",
+        "30880003",
+        "94800003"
+      ],
+      "candidate_condition": "((DW1 >>3)&3)==3 selects011e/011f; otherwise bootloadbase"
+    }
+  ],
+  "id27_base": "HYP_BOOTLOAD_ADDR_HI/LO under partial ISA reading, not011e/011f",
+  "alternate_base_literal_hits": [
+    {
+      "pc": "0x312e",
+      "word": "c433011f"
+    },
+    {
+      "pc": "0x312f",
+      "word": "c43b011e"
+    },
+    {
+      "pc": "0x31c2",
+      "word": "c433011f"
+    },
+    {
+      "pc": "0x31c3",
+      "word": "c43b011e"
+    },
+    {
+      "pc": "0x3214",
+      "word": "c43b011f"
+    },
+    {
+      "pc": "0x3215",
+      "word": "c42b011e"
+    }
+  ],
+  "post_toc_effects": [
+    {
+      "file_offset": "0x35f20",
+      "word0": "0x24f84047",
+      "word1": "0x1d000",
+      "register_field": "0xf840",
+      "operation_field": 2,
+      "names": [
+        "mmCP_PFP_IC_BASE_LO"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35f28",
+      "word0": "0x24f84157",
+      "word1": "0x1d000",
+      "register_field": "0xf841",
+      "operation_field": 2,
+      "names": [
+        "mmCP_PFP_IC_BASE_HI"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": true
+    },
+    {
+      "file_offset": "0x35f30",
+      "word0": "0x24f84207",
+      "word1": "0x10",
+      "register_field": "0xf842",
+      "operation_field": 0,
+      "names": [
+        "mmCP_PFP_IC_BASE_CNTL"
+      ],
+      "value_kind": "literal",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35f38",
+      "word0": "0x24f84306",
+      "word1": "0x1",
+      "register_field": "0xf843",
+      "operation_field": 0,
+      "names": [
+        "mmCP_PFP_IC_OP_CNTL"
+      ],
+      "value_kind": "literal",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35f40",
+      "word0": "0x26f84447",
+      "word1": "0x2e000",
+      "register_field": "0xf844",
+      "operation_field": 2,
+      "names": [
+        "mmCP_ME_IC_BASE_LO"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35f48",
+      "word0": "0x26f84557",
+      "word1": "0x2e000",
+      "register_field": "0xf845",
+      "operation_field": 2,
+      "names": [
+        "mmCP_ME_IC_BASE_HI"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": true
+    },
+    {
+      "file_offset": "0x35f50",
+      "word0": "0x26f84607",
+      "word1": "0x10",
+      "register_field": "0xf846",
+      "operation_field": 0,
+      "names": [
+        "mmCP_ME_IC_BASE_CNTL"
+      ],
+      "value_kind": "literal",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35f58",
+      "word0": "0x26f84706",
+      "word1": "0x1",
+      "register_field": "0xf847",
+      "operation_field": 0,
+      "names": [
+        "mmCP_ME_IC_OP_CNTL"
+      ],
+      "value_kind": "literal",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35f60",
+      "word0": "0x22f84847",
+      "word1": "0xc000",
+      "register_field": "0xf848",
+      "operation_field": 2,
+      "names": [
+        "mmCP_CE_IC_BASE_LO"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35f68",
+      "word0": "0x22f84957",
+      "word1": "0xc000",
+      "register_field": "0xf849",
+      "operation_field": 2,
+      "names": [
+        "mmCP_CE_IC_BASE_HI"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": true
+    },
+    {
+      "file_offset": "0x35f70",
+      "word0": "0x22f84a07",
+      "word1": "0x10",
+      "register_field": "0xf84a",
+      "operation_field": 0,
+      "names": [
+        "mmCP_CE_IC_BASE_CNTL"
+      ],
+      "value_kind": "literal",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35f78",
+      "word0": "0x22f84b06",
+      "word1": "0x1",
+      "register_field": "0xf84b",
+      "operation_field": 0,
+      "names": [
+        "mmCP_CE_IC_OP_CNTL"
+      ],
+      "value_kind": "literal",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35f80",
+      "word0": "0x28f84c47",
+      "word1": "0x3f000",
+      "register_field": "0xf84c",
+      "operation_field": 2,
+      "names": [
+        "mmCP_CPC_IC_BASE_LO"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35f88",
+      "word0": "0x28f84d57",
+      "word1": "0x3f000",
+      "register_field": "0xf84d",
+      "operation_field": 2,
+      "names": [
+        "mmCP_CPC_IC_BASE_HI"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": true
+    },
+    {
+      "file_offset": "0x35f90",
+      "word0": "0x28f84e07",
+      "word1": "0x10",
+      "register_field": "0xf84e",
+      "operation_field": 0,
+      "names": [
+        "mmCP_CPC_IC_BASE_CNTL"
+      ],
+      "value_kind": "literal",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35f98",
+      "word0": "0x28f84f06",
+      "word1": "0x1",
+      "register_field": "0xf84f",
+      "operation_field": 0,
+      "names": [
+        "mmCP_CPC_IC_OP_CNTL"
+      ],
+      "value_kind": "literal",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35fa0",
+      "word0": "0x2af85047",
+      "word1": "0x80000",
+      "register_field": "0xf850",
+      "operation_field": 2,
+      "names": [
+        "mmCP_MES_IC_BASE_LO",
+        "mmCP_MES_MIBASE_LO"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35fa8",
+      "word0": "0x2af85157",
+      "word1": "0x80000",
+      "register_field": "0xf851",
+      "operation_field": 2,
+      "names": [
+        "mmCP_MES_IC_BASE_HI",
+        "mmCP_MES_MIBASE_HI"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": true
+    },
+    {
+      "file_offset": "0x35fb0",
+      "word0": "0x2af85b27",
+      "word1": "0x1fffff",
+      "register_field": "0xf85b",
+      "operation_field": 1,
+      "names": [
+        "mmCP_MES_MIBOUND_LO"
+      ],
+      "value_kind": "literal",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35fb8",
+      "word0": "0x2af85c37",
+      "word1": "0x0",
+      "register_field": "0xf85c",
+      "operation_field": 1,
+      "names": [
+        "mmCP_MES_MIBOUND_HI"
+      ],
+      "value_kind": "literal",
+      "select_high_half": true
+    },
+    {
+      "file_offset": "0x35fc0",
+      "word0": "0x2af85206",
+      "word1": "0x0",
+      "register_field": "0xf852",
+      "operation_field": 0,
+      "names": [
+        "mmCP_MES_IC_BASE_CNTL"
+      ],
+      "value_kind": "literal",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35fc8",
+      "word0": "0x2ac82006",
+      "word1": "0x1",
+      "register_field": "0xc820",
+      "operation_field": 0,
+      "names": [
+        "mmCP_MES_IC_OP_CNTL"
+      ],
+      "value_kind": "literal",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35fd0",
+      "word0": "0x2cf85447",
+      "word1": "0x140000",
+      "register_field": "0xf854",
+      "operation_field": 2,
+      "names": [
+        "mmCP_MES_DC_BASE_LO",
+        "mmCP_MES_MDBASE_LO"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35fd8",
+      "word0": "0x2cf85557",
+      "word1": "0x140000",
+      "register_field": "0xf855",
+      "operation_field": 2,
+      "names": [
+        "mmCP_MES_DC_BASE_HI",
+        "mmCP_MES_MDBASE_HI"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": true
+    },
+    {
+      "file_offset": "0x35fe0",
+      "word0": "0x2cf85d27",
+      "word1": "0x3ffff",
+      "register_field": "0xf85d",
+      "operation_field": 1,
+      "names": [
+        "mmCP_MES_MDBOUND_LO"
+      ],
+      "value_kind": "literal",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35fe8",
+      "word0": "0x2cf85e37",
+      "word1": "0x0",
+      "register_field": "0xf85e",
+      "operation_field": 1,
+      "names": [
+        "mmCP_MES_MDBOUND_HI"
+      ],
+      "value_kind": "literal",
+      "select_high_half": true
+    },
+    {
+      "file_offset": "0x35ff0",
+      "word0": "0x2cc83607",
+      "word1": "0x0",
+      "register_field": "0xc836",
+      "operation_field": 0,
+      "names": [
+        "mmCP_MES_DC_BASE_CNTL"
+      ],
+      "value_kind": "literal",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x35ff8",
+      "word0": "0x2cc83706",
+      "word1": "0x1",
+      "register_field": "0xc837",
+      "operation_field": 0,
+      "names": [
+        "mmCP_MES_DC_OP_CNTL"
+      ],
+      "value_kind": "literal",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x36000",
+      "word0": "0x39f88247",
+      "word1": "0x152400",
+      "register_field": "0xf882",
+      "operation_field": 2,
+      "names": [
+        "mmSDMA0_VM_CTX_LO"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x36008",
+      "word0": "0x39f88357",
+      "word1": "0x152400",
+      "register_field": "0xf883",
+      "operation_field": 2,
+      "names": [
+        "mmSDMA0_VM_CTX_HI"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": true
+    },
+    {
+      "file_offset": "0x36010",
+      "word0": "0x3bf8a247",
+      "word1": "0x152d60",
+      "register_field": "0xf8a2",
+      "operation_field": 2,
+      "names": [
+        "mmSDMA1_VM_CTX_LO"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x36018",
+      "word0": "0x3bf8a357",
+      "word1": "0x152d60",
+      "register_field": "0xf8a3",
+      "operation_field": 2,
+      "names": [
+        "mmSDMA1_VM_CTX_HI"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": true
+    },
+    {
+      "file_offset": "0x36020",
+      "word0": "0x3df8c247",
+      "word1": "0x1536c0",
+      "register_field": "0xf8c2",
+      "operation_field": 2,
+      "names": [
+        "mmSDMA2_VM_CTX_LO"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x36028",
+      "word0": "0x3df8c357",
+      "word1": "0x1536c0",
+      "register_field": "0xf8c3",
+      "operation_field": 2,
+      "names": [
+        "mmSDMA2_VM_CTX_HI"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": true
+    },
+    {
+      "file_offset": "0x36030",
+      "word0": "0x3ff8e247",
+      "word1": "0x154020",
+      "register_field": "0xf8e2",
+      "operation_field": 2,
+      "names": [
+        "mmSDMA3_VM_CTX_LO"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x36038",
+      "word0": "0x3ff8e357",
+      "word1": "0x154020",
+      "register_field": "0xf8e3",
+      "operation_field": 2,
+      "names": [
+        "mmSDMA3_VM_CTX_HI"
+      ],
+      "value_kind": "base-relative low/high address",
+      "select_high_half": true
+    },
+    {
+      "file_offset": "0x36040",
+      "word0": "0xeec4507",
+      "word1": "0x3",
+      "register_field": "0xec45",
+      "operation_field": 0,
+      "names": [
+        "mmRLC_GPM_THREAD_ENABLE"
+      ],
+      "value_kind": "literal",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x36048",
+      "word0": "0x10fb4607",
+      "word1": "0x1",
+      "register_field": "0xfb46",
+      "operation_field": 0,
+      "names": [
+        "mmRLC_GPU_IOV_F32_CNTL"
+      ],
+      "value_kind": "literal",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x36050",
+      "word0": "0x12ed8007",
+      "word1": "0x4",
+      "register_field": "0xed80",
+      "operation_field": 0,
+      "names": [],
+      "value_kind": "literal",
+      "select_high_half": false
+    },
+    {
+      "file_offset": "0x36058",
+      "word0": "0x8ec8007",
+      "word1": "0x3",
+      "register_field": "0xec80",
+      "operation_field": 0,
+      "names": [
+        "mmRLC_SRM_CNTL"
+      ],
+      "value_kind": "literal",
+      "select_high_half": false
+    }
+  ],
+  "checked_anchors": {
+    "0x3247": "0x148c0008",
+    "0x3248": "0x24ccffff",
+    "0x3249": "0xc55b0295",
+    "0x324a": "0x14900005",
+    "0x324b": "0x25100007",
+    "0x3266": "0x5540002",
+    "0x327e": "0x148c0008",
+    "0x327f": "0x24ccffff",
+    "0x3280": "0xc55b0295",
+    "0x32bd": "0x5540002"
+  },
+  "scope": "Known fixed SOS table only. No CC/USER register targets among40pairs. ec80=3 controls SRM but does not supply register-list payload. Ed80 has no retained public name. No proof of all computed writers, live buffer location, table replacement, or hardware acceptance."
+}

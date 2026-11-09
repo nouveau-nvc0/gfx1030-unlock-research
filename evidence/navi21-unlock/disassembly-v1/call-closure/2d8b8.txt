@@ -1,0 +1,14 @@
+
+/tmp/tmp9l4_tlnv/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002d8b8 <.data+0x2d8b8>:
+0002d8b8: 364100   entry        a1, 0x20 ; Capstone
+   2d8bb:	315d95        	l32r	a3, 0x12e30 (0x1259e00)
+   2d8be:	c02000        	memw
+   2d8c1:	222380        	l32i	a2, a3, 0x200
+   2d8c4:	9662ff        	bltz	a2, 0x2d8be
+0002d8c7: 1df0     retw.n        ; Capstone
+   2d8c9:	000000        	ill

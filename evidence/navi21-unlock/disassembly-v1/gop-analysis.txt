@@ -1,0 +1,36 @@
+Reference-ROM GOP analysis: extraction and first locator pass
+
+Input identity is pinned by full-reference-comparison.json. These are downloaded
+XL/XT reference ROMs, not a physical read of the installed boards.
+scripts/navi21-gop-inventory.py validates full-ROM SHA256, EFI signature,
+compression type, compressed bounds, decompressed size and matching PE machine.
+Decoder:uefi_firmware1.16 EfiDecompress, installed under/tmp/navi21-gop/python.
+PE parser:existing pefile2024.8.26 from the offline BIOS-analysis tools.
+No firmware execution, flashing, NVRAM or service change.
+
+Both references contain compressed x86-64(8664) and ARM64(aa64) EFI images.
+XL ROM offsets:b000/14600;XT:ac00/14200. Decompressed sizes:
+XL x64:65144, ARM64:72256;XT x64:65192, ARM64:72128 bytes.
+All executable-section hashes differ between XL and XT; this is an actual
+payload difference, not merely option-ROM wrapping or compression differences.
+Inventory/section hashes: gop-inventory.json. Derived PE files are in/tmp and
+can be reproduced from the pinned reference ROMs by the extraction script.
+
+Linear Capstone5.0.9 pass over executable sections produced:
+XL x64:12453 items, one undecoded trailing byte atb8bf (section padding).
+XT x64:12440 items, one undecoded trailing byte (section padding).
+XL ARM64:15176 items,834 data fallback items;XT ARM64:15152,798 fallback items.
+ARM64 executable sections include apparent mixed code/data; do not equate
+these fallback counts with reachable instruction-decoding failures.
+Listings:gop-{baseline,candidate}-{8664,aa64}.txt.
+
+Exact little-endian DWORD byte searches across each entire decompressed PE
+found no2249,226f,8924,89bc,01208924,012089bc literals. This is a locator
+negative only: computed addresses, packed fields, protocol dispatch, external
+tables and calls can still supply CC-related accesses. ARM64 can construct
+constants across instructions. No absence-of-CC-access claim is made.
+Receipt:gop-linear-locator.json.
+
+Remaining work: entry/reachable function graph, PCI-I/O and memory access
+helpers, ATOM dispatch and parameter provenance, semantic XL/XT comparison.
+This pass does not close the GOP route or full disassembly objective.

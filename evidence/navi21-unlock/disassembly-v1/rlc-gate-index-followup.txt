@@ -1,0 +1,22 @@
+RLC restore-gate follow-up, after user steering away from ARM64 GOP
+
+Resume priority is the concrete CC restore path71ac and its enabling state;
+ARM64 GOP comparison is deferred per explicit user instruction.
+
+The gatebyte5ffee452 is statebase5ffee44c+6. Indexed setter32c8 was a candidate
+missed by constant-destination searches:32dc computes base+argument2,32de
+stores normalized argument3 at+9, then recomputes OR of statebytes9/10/11
+and stores the aggregate at+1. When argument3=0 it first calls32a4(0).
+The five direct callsites in current reachable scan are:
+6f7f(index1,value1),7bed(0,1),7c01(2,1),7c12(0,0),7c22(2,0).
+Thus their own indexed stores touch5ffee455/456/457, aggregate5ffee44d;
+none writes the gate+6. Callee32a4 remains part of invocation analysis and
+is not erased from this conclusion. No general index-range guard exists in
+32c8; direct-call constants do not prove bounds for hypothetical indirect entry.
+Receipt:rlc-gate-index-audit.json; reproducer:navi21-rlc-gate-index-audit.py.
+
+Adjacent fixed state writes are now recorded alongside these calls, separating
+startup+0,aggregate+1,stateflags+2/+3/+5,and controls+7/+8 from gate+6.
+Producer of+6 remains unresolved; remaining attention belongs on computed
+stores, copy/engine transfers and state restoration, not repeating GOP parity.
+No hardware action or accepted-write claim.

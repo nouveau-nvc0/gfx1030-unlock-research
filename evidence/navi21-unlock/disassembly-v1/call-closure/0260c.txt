@@ -1,0 +1,30 @@
+
+/tmp/tmp3mq68h2p/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000260c <.data+0x260c>:
+0000260c: 364100   entry        a1, 0x20 ; Capstone
+    260f:	61b2f9        	l32r	a6, 0xcd8 (0x7610)
+    2612:	a06200        	rsil	a10, 2
+    2615:	a1b1f9        	l32r	a10, 0xcdc (0x7804)
+    2618:	5c8b      	movi.n	a11, 88
+    261a:	0c19      	movi.n	a9, 1
+    261c:	22667e        	s32i	a2, a6, 0x1f8
+    261f:	32667f        	s32i	a3, a6, 0x1fc
+    2622:	82267d        	l32i	a8, a6, 0x1f4
+    2625:	426680        	s32i	a4, a6, 0x200
+    2628:	526681        	s32i	a5, a6, 0x204
+    262b:	908820        	or	a8, a8, a9
+    262e:	82667d        	s32i	a8, a6, 0x1f4
+00002631: 2529ff   call8        . -0xd6c ; Capstone ; target=0x18c4
+    2634:	e22682        	l32i	a14, a6, 0x208
+    2637:	8c9e      	beqz.n	a14, 0x2644
+    2639:	ad02      	mov.n	a10, a2
+    263b:	bd03      	mov.n	a11, a3
+    263d:	cd04      	mov.n	a12, a4
+    263f:	dd05      	mov.n	a13, a5
+00002641: e00e00   callx8       a14 ; Capstone
+    2644:	06ffff        	j	0x2644
+	...

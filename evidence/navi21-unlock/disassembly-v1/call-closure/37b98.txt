@@ -1,0 +1,16 @@
+
+/tmp/tmp6he5ebhe/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00037b98 <.data+0x37b98>:
+00037b98: 364100   entry        a1, 0x20 ; Capstone
+   37b9b:	20a0f4        	extui	a10, a2, 0, 16
+   37b9e:	30b0f4        	extui	a11, a3, 0, 16
+00037ba1: 65fe00   call8        . +0xfe8 ; Capstone ; target=0x38b88
+   37ba4:	bd04      	mov.n	a11, a4
+00037ba6: 25f2ff   call8        . -0xdc ; Capstone ; target=0x37ac8
+   37ba9:	2d0a      	mov.n	a2, a10
+00037bab: 1df0     retw.n        ; Capstone
+   37bad:	000000        	ill

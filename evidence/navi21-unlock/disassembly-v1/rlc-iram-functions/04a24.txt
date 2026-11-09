@@ -1,0 +1,71 @@
+
+/tmp/tmppukaaxne/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00004a24 <.data+0x4a24>:
+00004a24: 366100   entry        a1, 0x30 ; Capstone
+    4a27:	226100        	s32i	a2, a1, 0
+    4a2a:	20ea03        	rsr.ccount	a2
+    4a2d:	40ea03        	rsr.ccount	a4
+    4a30:	32a031        	movi	a3, 49
+    4a33:	2044c0        	sub	a4, a4, a2
+    4a36:	47330a        	bltu	a3, a4, 0x4a44
+    4a39:	a0ea03        	rsr.ccount	a10
+    4a3c:	20aac0        	sub	a10, a10, a2
+    4a3f:	3c19      	movi.n	a9, 49
+    4a41:	a7b9f4        	bgeu	a9, a10, 0x4a39
+    4a44:	b20100        	l8ui	a11, a1, 0
+    4a47:	c1eee1        	l32r	a12, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    4a4a:	9c8b      	beqz.n	a11, 0x4a66
+    4a4c:	c22cf5        	l32i	a12, a12, 0x3d4
+    4a4f:	d20101        	l8ui	a13, a1, 1
+    4a52:	0c12      	movi.n	a2, 1
+    4a54:	27ec0c        	bbsi	a12, 2, 0x4a64
+    4a57:	9c6d      	beqz.n	a13, 0x4a71
+    4a59:	0c1f      	movi.n	a15, 1
+    4a5b:	0c1e      	movi.n	a14, 1
+    4a5d:	0c02      	movi.n	a2, 0
+    4a5f:	f02e83        	moveqz	a2, a14, a15
+00004a62: 1df0     retw.n        ; Capstone
+00004a64: 1df0     retw.n        ; Capstone
+    4a66:	0c14      	movi.n	a4, 1
+    4a68:	0c13      	movi.n	a3, 1
+    4a6a:	0c02      	movi.n	a2, 0
+    4a6c:	402383        	moveqz	a2, a3, a4
+00004a6f: 1df0     retw.n        ; Capstone
+    4a71:	a06f00        	rsil	a10, 15
+    4a74:	b1bce1        	l32r	a11, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    4a77:	6120e2        	l32r	a6, 0xffffd2f8 (0x60004a00) ; inferred DRAM map 0x5ffec000
+    4a7a:	0c02      	movi.n	a2, 0
+    4a7c:	226b80        	s32i	a2, a11, 0x200
+    4a7f:	6856      	l32i.n	a6, a6, 20
+    4a81:	a0e613        	wsr.ps	a10
+    4a84:	102000        	rsync
+    4a87:	a06f00        	rsil	a10, 15
+    4a8a:	911ce2        	l32r	a9, 0xffffd2fc (0x60006200) ; inferred DRAM map 0x5ffec000
+    4a8d:	226b80        	s32i	a2, a11, 0x200
+    4a90:	9859      	l32i.n	a9, a9, 20
+    4a92:	a0e613        	wsr.ps	a10
+    4a95:	102000        	rsync
+    4a98:	c06f00        	rsil	a12, 15
+    4a9b:	8119e2        	l32r	a8, 0xffffd300 (0x6006fe00) ; inferred DRAM map 0x5ffec000
+    4a9e:	226b80        	s32i	a2, a11, 0x200
+    4aa1:	8228a5        	l32i	a8, a8, 0x294
+    4aa4:	c0e613        	wsr.ps	a12
+    4aa7:	102000        	rsync
+    4aaa:	a06f00        	rsil	a10, 15
+    4aad:	7115e2        	l32r	a7, 0xffffd304 (0x60070e00) ; inferred DRAM map 0x5ffec000
+    4ab0:	226b80        	s32i	a2, a11, 0x200
+    4ab3:	7227a5        	l32i	a7, a7, 0x294
+    4ab6:	a0e613        	wsr.ps	a10
+    4ab9:	102000        	rsync
+    4abc:	0c15      	movi.n	a5, 1
+    4abe:	906610        	and	a6, a6, a9
+    4ac1:	806610        	and	a6, a6, a8
+    4ac4:	706610        	and	a6, a6, a7
+    4ac7:	606004        	extui	a6, a6, 0, 1
+    4aca:	602583        	moveqz	a2, a5, a6
+00004acd: 1df0     retw.n        ; Capstone
+	...

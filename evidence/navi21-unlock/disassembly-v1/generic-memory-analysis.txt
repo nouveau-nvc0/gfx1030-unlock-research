@@ -1,0 +1,14 @@
+Offline static analysis, 2026-11-09. Coordinates are code offsets (file minus 0x200).
+
+Channels 7 and 8 share table 0x6ef4, bound 0x58. Message 0x30 -> 0x34ba4 (read), 0x31 -> 0x34b54 (set write address), 0x32 -> 0x34b34 (write value). All have metadata 00 04 01 00: required dispatcher permission bit 0x04, direct call.
+
+Setter 0x34b54 reads parameter via 0x20c0, rejects low address bits !=0 with response 0xff, otherwise stores address at RAM 0x7368+0x1fc=0x7564 and acknowledges 1. No address-range check in this handler.
+Writer 0x34b34 reads parameter, loads saved address from 0x7564, executes memw then s32i.n a8,a9,0 at 0x34b4b, acknowledges 1. No readback or register-specific check in this handler. Acknowledgement therefore is NOT proof a hardware target accepted the write.
+Reader 0x34ba4 accepts address as parameter, checks alignment, calls 0x34b7c: temporarily changes PS interrupt level, sets RAM flag at 0x7d84, loads word from supplied address, copies to output, reads/clears flag and restores PS. Caller returns read data if flag==1, otherwise failure. Exception-handler semantics not yet traced.
+
+CORRECTION after branch-direction audit: dispatcher clears mask 0x04 (bit2), then sets it when RAM word [0x69a0+44] == 0 OR hardware [0x03210064] == 0x80000000. A nonzero RAM word AND hardware value !=0x80000000 leaves permission absent and returns 0xfd. The previous text inverted the hardware comparison. Instruction 0x2005 BNE skips the permission-set block. Initialization at 0x38d10 derives the RAM word from bit19 of [0x013101c0], via mask0x80000 and shift19 at 0x38d33..0x38d45. Sources are not yet semantically named; do not label them debug fuse/unlock/security state without evidence.
+This demonstrates an internal generic store primitive, not host reachability, an accepted CC write, or an early writable window. Channels 7/8 physical mailbox routing still unresolved. No messages were sent.
+
+Decoder caveat: generic-memory-handlers.txt begins at valid 0x34b34 but loses alignment on padding before 0x34b54. Use separately targeted generic-address-setter.txt for that function. Other shown established entries 0x34b7c and 0x34ba4 decode coherently.
+
+Reset-domain mapping: block0x0b corresponds to public GC/SDMA0/SDMA1 segment bases all 0x0900b000. Descriptor helper accesses internal 0x0100b008. Independent matches include 0xc VCN0, 0x114 VCN1, 0x29 HDP, 0x28 OSSSYS, 0x10 DIO, 0xf DCN/DPCS, 0x22 MMHUB, 0x23 ATHUB, 0x2e DF, 0x96..0x9c UMC0..6. Thus graphics-domain identification is strongly supported; precise control register field names and relationship to CC latching remain unresolved. Do not describe block0xb as exclusively GC.

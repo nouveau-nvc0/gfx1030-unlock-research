@@ -1,0 +1,21 @@
+
+/tmp/tmprmhpnk6y/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002eeb4 <.data+0x2eeb4>:
+0002eeb4: 364100   entry        a1, 0x20 ; Capstone
+   2eeb7:	911991        	l32r	a9, 0x1331c (0x3030600)
+   2eeba:	813894        	l32r	a8, 0x13f9c (0x50ff3011)
+   2eebd:	313694        	l32r	a3, 0x13f98 (0x3030200)
+   2eec0:	c02000        	memw
+   2eec3:	8909      	s32i.n	a8, a9, 0
+   2eec5:	414e90        	l32r	a4, 0x13000 (0x1000000)
+   2eec8:	c02000        	memw
+   2eecb:	2823      	l32i.n	a2, a3, 8
+   2eecd:	402220        	or	a2, a2, a4
+   2eed0:	c02000        	memw
+   2eed3:	2923      	s32i.n	a2, a3, 8
+0002eed5: 1df0     retw.n        ; Capstone
+	...

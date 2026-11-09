@@ -1,0 +1,19 @@
+
+/tmp/tmp8jx0lc1d/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00037cd4 <.data+0x37cd4>:
+00037cd4: 364100   entry        a1, 0x20 ; Capstone
+   37cd7:	21e56c        	l32r	a2, 0x1306c (0x1203200)
+   37cda:	c02000        	memw
+   37cdd:	2222ba        	l32i	a2, a2, 0x2e8
+   37ce0:	810071        	l32r	a8, 0x140e0 (0xb628)
+   37ce3:	0c03      	movi.n	a3, 0
+   37ce5:	c7f207        	bbsi	a2, 28, 0x37cf0
+   37ce8:	324884        	s8i	a3, a8, 132
+   37ceb:	0c39      	movi.n	a9, 3
+   37ced:	924875        	s8i	a9, a8, 117
+00037cf0: 1df0     retw.n        ; Capstone
+	...

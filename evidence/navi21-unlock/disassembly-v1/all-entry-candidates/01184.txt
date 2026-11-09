@@ -1,0 +1,30 @@
+
+/tmp/tmpyjbo57pc/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001184 <.data+0x1184>:
+00001184: 364100   entry        a1, 0x20 ; Capstone
+    1187:	a174fe        	l32r	a10, 0xb58 (0x7b14)
+    118a:	206200        	rsil	a2, 2
+    118d:	822a80        	l32i	a8, a10, 0x200
+    1190:	9c08      	beqz.n	a8, 0x11a4
+    1192:	0c0c      	movi.n	a12, 0
+    1194:	0c4b      	movi.n	a11, 4
+    1196:	d174fe        	l32r	a13, 0xb68 (0x300fe00)
+    1199:	0c1a      	movi.n	a10, 1
+    119b:	c02000        	memw
+    119e:	d22d8a        	l32i	a13, a13, 0x228
+000011a1: a54601   call8        . +0x146c ; Capstone ; target=0x260c
+    11a4:	f22a7f        	l32i	a15, a10, 0x1fc
+    11a7:	0c3b      	movi.n	a11, 3
+    11a9:	0c1e      	movi.n	a14, 1
+    11ab:	e96f      	s32i.n	a14, a15, 24
+    11ad:	a22a7f        	l32i	a10, a10, 0x1fc
+000011b0: 251001   call8        . +0x1104 ; Capstone ; target=0x22b4
+    11b3:	20e613        	wsr.ps	a2
+000011b6: 00f513   wsr.misc1    a0 ; verified QEMU encoding
+    11b9:	459f01        	call0	0x2bb0
+000011bc: 1df0     retw.n        ; Capstone
+	...

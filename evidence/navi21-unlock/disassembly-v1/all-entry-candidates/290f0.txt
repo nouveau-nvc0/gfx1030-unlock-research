@@ -1,0 +1,57 @@
+
+/tmp/tmpbp_id2m3/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000290f0 <.data+0x290f0>:
+000290f0: 364100   entry        a1, 0x20 ; Capstone
+   290f3:	2166aa        	l32r	a2, 0x13a8c (0xe16c)
+   290f6:	82027d        	l8ui	a8, a2, 125
+   290f9:	fc48      	bnez.n	a8, 0x29131
+   290fb:	310baa        	l32r	a3, 0x13928 (0xe284)
+   290fe:	ad03      	mov.n	a10, a3
+00029100: 25220c   call8        . +0xc224 ; Capstone ; target=0x35324
+   29103:	9156a7        	l32r	a9, 0x12e5c (0x69a0)
+   29106:	921925        	l16ui	a9, a9, 74
+00029109: 03024c   lsi          f0, a2, 0x130 ; Capstone
+   2910c:	261925        	beqi	a9, 1, 0x29135
+   2910f:	0cca      	movi.n	a10, 12
+00029111: a50e0c   call8        . +0xc0ec ; Capstone ; target=0x351fc
+00029114: 501afa   wfr          f1, a10 ; Capstone
+00029117: 03024c   lsi          f0, a2, 0x130 ; Capstone
+0002911a: 10004b   olt.s        b0, f0, f1 ; Capstone
+   2911d:	b22221        	l32i	a11, a2, 132
+   29120:	a2027f        	l8ui	a10, a2, 127
+00029123: 76000e   bf           b0, . +0x12 ; Capstone
+   29126:	1baa      	addi.n	a10, a10, 1
+   29128:	a0a074        	extui	a10, a10, 0, 8
+   2912b:	a2427f        	s8i	a10, a2, 127
+   2912e:	b7ba03        	bgeu	a10, a11, 0x29135
+   29131:	0c02      	movi.n	a2, 0
+00029133: 1df0     retw.n        ; Capstone
+   29135:	ad03      	mov.n	a10, a3
+00029137: 40b0fa   rfr          a11, f0 ; Capstone
+   2913a:	0c0c      	movi.n	a12, 0
+   2913c:	c2427f        	s8i	a12, a2, 127
+0002913f: 25190c   call8        . +0xc194 ; Capstone ; target=0x352d0
+00029142: 502afa   wfr          f2, a10 ; Capstone
+   29145:	a1adaa        	l32r	a10, 0x13bfc (0xe544)
+00029148: 23424f   ssi          f2, a2, 0x13c ; Capstone
+0002914b: a54b01   call8        . +0x14bc ; Capstone ; target=0x2a604
+   2914e:	4d0a      	mov.n	a4, a10
+   29150:	a1dbaa        	l32r	a10, 0x13cbc (0xe554)
+00029153: 254b01   call8        . +0x14b4 ; Capstone ; target=0x2a604
+   29156:	3d0a      	mov.n	a3, a10
+   29158:	0c4a      	movi.n	a10, 4
+0002915a: 65160c   call8        . +0xc168 ; Capstone ; target=0x352c0
+0002915d: 03024f   lsi          f0, a2, 0x13c ; Capstone
+00029160: 503afa   wfr          f3, a10 ; Capstone
+00029163: 00134b   olt.s        b1, f3, f0 ; Capstone
+00029166: 760107   bf           b1, . +0xb ; Capstone
+00029169: 40b0fa   rfr          a11, f0 ; Capstone
+   2916c:	0c4a      	movi.n	a10, 4
+0002916e: 250f0c   call8        . +0xc0f4 ; Capstone ; target=0x35260
+   29171:	302420        	or	a2, a4, a3
+00029174: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,31 @@
+
+/tmp/tmpe_p606tv/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000019a0 <.data+0x19a0>:
+000019a0: 366100   entry        a1, 0x30 ; Capstone
+    19a3:	41f3ed        	l32r	a4, 0xffffd170 (0x6803ba00) ; inferred DRAM map 0x5ffec000
+    19a6:	82244c        	l32i	a8, a4, 0x130
+    19a9:	91fded        	l32r	a9, 0xffffd1a0 (0xfc00) ; inferred DRAM map 0x5ffec000
+    19ac:	8901      	s32i.n	a8, a1, 0
+    19ae:	8080f4        	extui	a8, a8, 0, 16
+    19b1:	908810        	and	a8, a8, a9
+    19b4:	808220        	or	a8, a2, a8
+    19b7:	825100        	s16i	a8, a1, 0
+    19ba:	5801      	l32i.n	a5, a1, 0
+    19bc:	52644c        	s32i	a5, a4, 0x130
+    19bf:	222457        	l32i	a2, a4, 0x15c
+    19c2:	a2afdf        	movi	a10, -33
+    19c5:	2c03      	movi.n	a3, 32
+    19c7:	303220        	or	a3, a2, a3
+    19ca:	326457        	s32i	a3, a4, 0x15c
+    19cd:	922458        	l32i	a9, a4, 0x160
+    19d0:	8769f9        	bbci	a9, 8, 0x19cd
+    19d3:	a0a210        	and	a10, a2, a10
+    19d6:	a26457        	s32i	a10, a4, 0x15c
+    19d9:	b22458        	l32i	a11, a4, 0x160
+    19dc:	87ebf9        	bbsi	a11, 8, 0x19d9
+000019df: 1df0     retw.n        ; Capstone
+    19e1:	000000        	ill

@@ -1,0 +1,125 @@
+
+/tmp/tmp1g5hhd43/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000071ac <.data+0x71ac>:
+000071ac: 366100   entry        a1, 0x30 ; Capstone
+    71af:	c1edd7        	l32r	a12, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    71b2:	d2aeff        	movi	a13, 0xfffffeff
+    71b5:	b157d8        	l32r	a11, 0xffffd314 (0x60009a00) ; inferred DRAM map 0x5ffec000
+    71b8:	a19ed8        	l32r	a10, 0xffffd430 (0x60009600) ; inferred DRAM map 0x5ffec000
+    71bb:	914cd8        	l32r	a9, 0xffffd2ec (0x60008600) ; inferred DRAM map 0x5ffec000
+    71be:	0c4e      	movi.n	a14, 4
+    71c0:	0c04      	movi.n	a4, 0
+    71c2:	0c26      	movi.n	a6, 2
+    71c4:	0c07      	movi.n	a7, 0
+    71c6:	81ccd8        	l32r	a8, 0xffffd4f8 (0x5ffedc80) ; inferred DRAM map 0x5ffec000
+    71c9:	20f074        	extui	a15, a2, 0, 8
+    71cc:	31fed7        	l32r	a3, 0xffffd1c4 (0xfffff3ff) ; inferred DRAM map 0x5ffec000
+    71cf:	0c02      	movi.n	a2, 0
+    71d1:	5d08      	mov.n	a5, a8
+    71d3:	302210        	and	a2, a2, a3
+    71d6:	703014        	extui	a3, a7, 0, 2
+    71d9:	603311        	slli	a3, a3, 10
+    71dc:	302220        	or	a2, a2, a3
+    71df:	403004        	extui	a3, a4, 0, 1
+    71e2:	803311        	slli	a3, a3, 8
+    71e5:	d02210        	and	a2, a2, a13
+    71e8:	302220        	or	a2, a2, a3
+    71eb:	165f09        	beqz	a15, 0x7284
+    71ee:	4901      	s32i.n	a4, a1, 0
+    71f0:	406f00        	rsil	a4, 15
+    71f3:	226c81        	s32i	a2, a12, 0x204
+    71f6:	0c0d      	movi.n	a13, 0
+    71f8:	d26c80        	s32i	a13, a12, 0x200
+    71fb:	3225d1        	l32i	a3, a5, 0x344
+    71fe:	3269ef        	s32i	a3, a9, 0x3bc
+    7201:	d26c81        	s32i	a13, a12, 0x204
+    7204:	40e613        	wsr.ps	a4
+    7207:	102000        	rsync
+    720a:	406f00        	rsil	a4, 15
+    720d:	226c81        	s32i	a2, a12, 0x204
+    7210:	d26c80        	s32i	a13, a12, 0x200
+    7213:	3225d9        	l32i	a3, a5, 0x364
+    7216:	326abd        	s32i	a3, a10, 0x2f4
+    7219:	d26c81        	s32i	a13, a12, 0x204
+    721c:	40e613        	wsr.ps	a4
+    721f:	102000        	rsync
+    7222:	406f00        	rsil	a4, 15
+    7225:	226c81        	s32i	a2, a12, 0x204
+    7228:	d26c80        	s32i	a13, a12, 0x200
+    722b:	3225e1        	l32i	a3, a5, 0x384
+    722e:	3269f0        	s32i	a3, a9, 0x3c0
+    7231:	d26c81        	s32i	a13, a12, 0x204
+    7234:	40e613        	wsr.ps	a4
+    7237:	102000        	rsync
+    723a:	406f00        	rsil	a4, 15
+    723d:	226c81        	s32i	a2, a12, 0x204
+    7240:	d26c80        	s32i	a13, a12, 0x200
+    7243:	3225e9        	l32i	a3, a5, 0x3a4
+    7246:	326b5f        	s32i	a3, a11, 0x17c
+    7249:	d26c81        	s32i	a13, a12, 0x204
+    724c:	40e613        	wsr.ps	a4
+    724f:	102000        	rsync
+    7252:	4801      	l32i.n	a4, a1, 0
+    7254:	d2aeff        	movi	a13, 0xfffffeff
+    7257:	4b55      	addi.n	a5, a5, 4
+    7259:	0b66      	addi.n	a6, a6, -1
+    725b:	1b44      	addi.n	a4, a4, 1
+    725d:	403004        	extui	a3, a4, 0, 1
+    7260:	803311        	slli	a3, a3, 8
+    7263:	56e6f7        	bnez	a6, 0x71e5
+    7266:	0c04      	movi.n	a4, 0
+    7268:	0c26      	movi.n	a6, 2
+    726a:	0bee      	addi.n	a14, a14, -1
+    726c:	1b77      	addi.n	a7, a7, 1
+    726e:	31d5d7        	l32r	a3, 0xffffd1c4 (0xfffff3ff) ; inferred DRAM map 0x5ffec000
+    7271:	8b88      	addi.n	a8, a8, 8
+    7273:	5d08      	mov.n	a5, a8
+    7275:	302210        	and	a2, a2, a3
+    7278:	703014        	extui	a3, a7, 0, 2
+    727b:	603311        	slli	a3, a3, 10
+    727e:	56aef5        	bnez	a14, 0x71dc
+    7281:	061b00        	j	0x72f1
+    7284:	6911      	s32i.n	a6, a1, 4
+    7286:	4901      	s32i.n	a4, a1, 0
+    7288:	406f00        	rsil	a4, 15
+    728b:	226c81        	s32i	a2, a12, 0x204
+    728e:	0c06      	movi.n	a6, 0
+    7290:	626c80        	s32i	a6, a12, 0x200
+    7293:	3229ef        	l32i	a3, a9, 0x3bc
+    7296:	3265d1        	s32i	a3, a5, 0x344
+    7299:	626c81        	s32i	a6, a12, 0x204
+    729c:	40e613        	wsr.ps	a4
+    729f:	102000        	rsync
+    72a2:	406f00        	rsil	a4, 15
+    72a5:	226c81        	s32i	a2, a12, 0x204
+    72a8:	626c80        	s32i	a6, a12, 0x200
+    72ab:	322abd        	l32i	a3, a10, 0x2f4
+    72ae:	3265d9        	s32i	a3, a5, 0x364
+    72b1:	626c81        	s32i	a6, a12, 0x204
+    72b4:	40e613        	wsr.ps	a4
+    72b7:	102000        	rsync
+    72ba:	406f00        	rsil	a4, 15
+    72bd:	226c81        	s32i	a2, a12, 0x204
+    72c0:	626c80        	s32i	a6, a12, 0x200
+    72c3:	3229f0        	l32i	a3, a9, 0x3c0
+    72c6:	3265e1        	s32i	a3, a5, 0x384
+    72c9:	626c81        	s32i	a6, a12, 0x204
+    72cc:	40e613        	wsr.ps	a4
+    72cf:	102000        	rsync
+    72d2:	406f00        	rsil	a4, 15
+    72d5:	226c81        	s32i	a2, a12, 0x204
+    72d8:	626c80        	s32i	a6, a12, 0x200
+    72db:	322b5f        	l32i	a3, a11, 0x17c
+    72de:	3265e9        	s32i	a3, a5, 0x3a4
+    72e1:	626c81        	s32i	a6, a12, 0x204
+    72e4:	40e613        	wsr.ps	a4
+    72e7:	102000        	rsync
+    72ea:	4801      	l32i.n	a4, a1, 0
+    72ec:	6811      	l32i.n	a6, a1, 4
+    72ee:	86d8ff        	j	0x7254
+000072f1: 1df0     retw.n        ; Capstone
+	...

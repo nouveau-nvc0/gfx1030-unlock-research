@@ -1,0 +1,17 @@
+
+/tmp/tmpo69mzp9_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00029340 <.data+0x29340>:
+00029340: 364100   entry        a1, 0x20 ; Capstone
+   29343:	0c9a      	movi.n	a10, 9
+00029345: a523d9   call8        . -0x26dc4 ; Capstone ; target=0x2580
+   29348:	0c0a      	movi.n	a10, 0
+0002934a: 650700   call8        . +0x78 ; Capstone ; target=0x293c0
+   2934d:	0c9a      	movi.n	a10, 9
+0002934f: 6512d9   call8        . -0x26ed8 ; Capstone ; target=0x2474
+   29352:	0c12      	movi.n	a2, 1
+00029354: 1df0     retw.n        ; Capstone
+	...

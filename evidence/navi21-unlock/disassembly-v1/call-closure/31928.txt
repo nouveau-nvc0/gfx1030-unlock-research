@@ -1,0 +1,56 @@
+
+/tmp/tmp7jwwvt7f/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00031928 <.data+0x31928>:
+00031928: 364100   entry        a1, 0x20 ; Capstone
+   3192b:	312f8a        	l32r	a3, 0x141e8 (0x9f04)
+   3192e:	412f8a        	l32r	a4, 0x141ec (0xb00c)
+00031931: 3061fa   const.s      f6, 1 ; Capstone
+   31934:	320380        	l8ui	a3, a3, 128
+00031937: 530476   lsi          f5, a4, 0x1d8 ; Capstone
+0003193a: 430475   lsi          f4, a4, 0x1d4 ; Capstone
+0003193d: 50d40a   add.s        f13, f4, f5 ; Capstone
+00031940: 130483   lsi          f1, a4, 0x20c ; Capstone
+00031943: a30481   lsi          f10, a4, 0x204 ; Capstone
+00031946: 330477   lsi          f3, a4, 0x1dc ; Capstone
+00031949: d0230a   add.s        f2, f3, f13 ; Capstone
+0003194c: 030480   lsi          f0, a4, 0x200 ; Capstone
+0003194f: f3047f   lsi          f15, a4, 0x1fc ; Capstone
+00031952: e30478   lsi          f14, a4, 0x1e0 ; Capstone
+00031955: e0c20a   add.s        f12, f2, f14 ; Capstone
+00031958: 00bf0a   add.s        f11, f15, f0 ; Capstone
+0003195b: 830482   lsi          f8, a4, 0x208 ; Capstone
+0003195e: e09d0a   add.s        f9, f13, f14 ; Capstone
+00031961: 803c0a   add.s        f3, f12, f8 ; Capstone
+00031964: b05a0a   add.s        f5, f10, f11 ; Capstone
+00031967: 730484   lsi          f7, a4, 0x210 ; Capstone
+0003196a: 90480a   add.s        f4, f8, f9 ; Capstone
+0003196d: 30270a   add.s        f2, f7, f3 ; Capstone
+00031970: 60050a   add.s        f0, f5, f6 ; Capstone
+00031973: 10630a   add.s        f6, f3, f1 ; Capstone
+00031976: 40710a   add.s        f7, f1, f4 ; Capstone
+00031979: 20510a   add.s        f5, f1, f2 ; Capstone
+0003197c: 034488   ssi          f0, a4, 0x220 ; Capstone
+0003197f: 634487   ssi          f6, a4, 0x21c ; Capstone
+00031982: 734486   ssi          f7, a4, 0x218 ; Capstone
+00031985: 534489   ssi          f5, a4, 0x224 ; Capstone
+   31988:	661304        	bnei	a3, 1, 0x31990
+0003198b: 634485   ssi          f6, a4, 0x214 ; Capstone
+0003198e: 1df0     retw.n        ; Capstone
+   31990:	cc33      	bnez.n	a3, 0x31997
+00031992: 734485   ssi          f7, a4, 0x214 ; Capstone
+00031995: 1df0     retw.n        ; Capstone
+   31997:	262314        	beqi	a3, 2, 0x319af
+0003199a: 3060fa   const.s      f6, 0 ; Capstone
+   3199d:	82c3fd        	addi	a8, a3, -3
+   319a0:	0c16      	movi.n	a6, 1
+   319a2:	0c05      	movi.n	a5, 0
+   319a4:	805683        	moveqz	a5, a6, a8
+000319a7: 50609b   movnez.s     f6, f0, a5 ; Capstone
+000319aa: 634485   ssi          f6, a4, 0x214 ; Capstone
+000319ad: 1df0     retw.n        ; Capstone
+000319af: 534485   ssi          f5, a4, 0x214 ; Capstone
+000319b2: 1df0     retw.n        ; Capstone

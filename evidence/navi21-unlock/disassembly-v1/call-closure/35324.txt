@@ -1,0 +1,47 @@
+
+/tmp/tmpe0vkyrsk/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00035324 <.data+0x35324>:
+00035324: 366100   entry        a1, 0x30 ; Capstone
+   35327:	a22213        	l32i	a10, a2, 76
+   3532a:	0c0b      	movi.n	a11, 0
+   3532c:	9cfa      	beqz.n	a10, 0x3534f
+0003532e: 25e2e7   call8        . -0x181dc ; Capstone ; target=0x1d150
+   35331:	922213        	l32i	a9, a2, 76
+   35334:	92d901        	addmi	a9, a9, 0x100
+   35337:	820959        	l8ui	a8, a9, 89
+0003533a: 500afa   wfr          f0, a10 ; Capstone
+   3533d:	a20951        	l8ui	a10, a9, 81
+   35340:	cc68      	bnez.n	a8, 0x3534a
+   35342:	cc4a      	bnez.n	a10, 0x3534a
+   35344:	b20958        	l8ui	a11, a9, 88
+   35347:	160b04        	beqz	a11, 0x3538b
+   3534a:	0c2b      	movi.n	a11, 2
+   3534c:	860000        	j	0x35352
+0003534f: 030208   lsi          f0, a2, 0x20 ; Capstone
+   35352:	c15177        	l32r	a12, 0x13098 (0x447a0000)
+00035355: 501cfa   wfr          f1, a12 ; Capstone
+00035358: 00012a   mul.s        f0, f1, f0 ; Capstone
+   3535b:	ad02      	mov.n	a10, a2
+   3535d:	dd01      	mov.n	a13, a1
+   3535f:	4be1      	addi.n	a14, a1, 4
+00035361: 00c0ea   utrunc.s     a12, f0, 0 ; Capstone
+00035364: e5d0f6   call8        . -0x92f0 ; Capstone ; target=0x2c074
+   35367:	ad02      	mov.n	a10, a2
+   35369:	b801      	l32i.n	a11, a1, 0
+   3536b:	c20104        	l8ui	a12, a1, 4
+0003536e: 65edf5   call8        . -0xa128 ; Capstone ; target=0x2b244
+00035371: 23020b   lsi          f2, a2, 0x2c ; Capstone
+00035374: 43020a   lsi          f4, a2, 0x28 ; Capstone
+00035377: 330100   lsi          f3, a1, 0 ; Capstone
+0003537a: 40134b   olt.s        b1, f3, f4 ; Capstone
+0003537d: 1034db   movt.s       f3, f4, b1 ; Capstone
+00035380: 30024b   olt.s        b0, f2, f3 ; Capstone
+00035383: 0023cb   movf.s       f2, f3, b0 ; Capstone
+00035386: 234206   ssi          f2, a2, 0x18 ; Capstone
+00035389: 1df0     retw.n        ; Capstone
+   3538b:	0c0b      	movi.n	a11, 0
+   3538d:	46f0ff        	j	0x35352

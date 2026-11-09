@@ -1,0 +1,20 @@
+Offline analysis, 2026-11-09. No device messages issued.
+
+Static routing table starts at 0x69a0+132, stride12: parameter, response, message addresses. Helpers 0x20c0,0x209c,0x1e8c use low8(channel token), multiply by12, load respective pointer and access it. Targeted listings retained.
+
+Channel0: internal message03010a08,param03010a48,response03010a68. Public mp_11_0_offset.h names MP1_SMN_C2PMSG66/82/90 have offsets0282/0292/029a. Public MP1 base dword16000 gives host bytes58a08/58a48/58a68. Driver smu_v11_0.c uses this same triple. Thus translation for this mailbox aperture is internal03010000+offset -> host00058000+offset. This is distinct from GC translation.
+Channel7: message03010a20,param03010a88,response03010a80 -> host58a20/58a88/58a80 = MP1 C2PMSG72/98/96.
+Channel8: message03010a24,param03010a8c,response03010a84 -> host58a24/58a8c/58a84 = MP1 C2PMSG73/99/97.
+These are decoded coordinates, not a tested host-access recipe. Host write accessibility, active IRQ delivery and replies remain untested.
+
+Registration chain: startup function38d10 calls388a0 at38d22; 388a0 passes table11950 to37c18. Records are eight bytes: signed interrupt number byte0, enable byte1, two configuration bytes, function pointer. 11958 holds 0x00000158/0x1fc0;11960 holds0x00000159/0x1fb4. These register interrupt88 -> wrapper1fc0 -> dispatcher1fcc(channel7), interrupt89 -> wrapper1fb4 -> dispatcher1fcc(channel8).
+37c18 iterates until byte0==ff. 37bb0 stores callback at0x7890+4*interrupt, calls1d8b4, invokes1794 when enable byte==1 (otherwise1724), calls1d868 for configuration, updates a bitmap. Exact interrupt-enable hardware semantics need inspection of1794/1724; table requests same path as other enabled channels. Therefore channel7/8 are integrated into startup dispatch, not merely orphan function pointers.
+
+Permission source: startup38d33..38d45 reads bit19 of013101c0 into RAM69cc. Dispatcher recomputes permission mask04 on every request. Allowed iff RAM69cc==0 OR [03210064]==80000000. Corrected earlier reversed comparison; initialization value zero in firmware file does not imply runtime allowance.
+All channels share saved write address RAM7564 for generic writer; concurrency serialization would be necessary in any future authorized experiment. Read handler uses its own supplied address and does not rely on saved write address.
+
+Public register source URLs and hashes: mp-header-download.json. Mailbox tables: mailbox-routing.json. No claim of accepted CC writes or unlocked firmware loading.
+
+Enable-helper follow-up: 1794 sets bit(n&31) in RAM[785c+4*(n>>5)],1724 clears it. Both call1a44. That function writes four hardware masks03200300..0320030c as RAM[785c+4*i] AND RAM[786c+4*i]. Thus registration enables requested bits but a second mask can still suppress IRQs. For88/89 these are bits24/25 of word2, written to03200308. Initialization/mutation of the second mask remains to be traced.
+
+Next completion work: resolve second IRQ mask and permission source names; audit all message handlers for indirect/register/table writes, not only channels7/8; establish CFG/constant-propagation coverage with USER positive controls; inspect reset/early-init timing and firmware-load barriers; produce consolidated vector matrix with explicit completeness limits. Current analysis does not yet satisfy all-vectors completion.

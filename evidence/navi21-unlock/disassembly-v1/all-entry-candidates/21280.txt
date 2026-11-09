@@ -1,0 +1,17 @@
+
+/tmp/tmpjnde0exy/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00021280 <.data+0x21280>:
+00021280: 364100   entry        a1, 0x20 ; Capstone
+   21283:	b2020e        	l8ui	a11, a2, 14
+   21286:	c20210        	l8ui	a12, a2, 16
+   21289:	d2020a        	l8ui	a13, a2, 10
+   2128c:	a2020c        	l8ui	a10, a2, 12
+   2128f:	e20202        	l8ui	a14, a2, 2
+00021292: 25fbff   call8        . -0x4c ; Capstone ; target=0x21244
+   21295:	2d0a      	mov.n	a2, a10
+00021297: 1df0     retw.n        ; Capstone
+   21299:	000000        	ill

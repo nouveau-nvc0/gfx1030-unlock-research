@@ -1,0 +1,55 @@
+XL reference x86-64 GOP register-write path, offline
+
+Image identity:baseline-8664 in gop-inventory.json; addresses below are PE RVAs.
+No claim of installed firmware identity or actual accepted CC writes.
+
+PCI I/O binding:
+EFI_PCI_IO_PROTOCOL GUID atb940 is4cf5b200-68b8-4ca5-9eec-b23e3f50029a.
+At1947 output pointer is context+20,194b selects this GUID,1952 calls
+BootServices.OpenProtocol(+118). This establishes context+20 as PCI I/O.
+Protocol layout/signatures are independently checked in gop-PciIo.h, source
+https://raw.githubusercontent.com/tianocore/edk2/master/MdePkg/Include/Protocol/PciIo.h
+On x64 its Mem.Read/Write slots are10/18,Io.Read/Write20/28,Pci.Read/Write30/38.
+Do not confuse the7e28..7ea0 I/O-port writers with memory-space writers.
+
+6468(context,index,value) is a general DWORD register writer:
+- Save value argument R8D; byte_offset=(uint32(index)<<2) modulo2^32 at647e.
+- Compare offset with context DWORD+90 at6484. If below, call62e8 at64a6
+  with PCI I/O pointer context+20, BAR byte context+104, offset, saved value.
+- Otherwise test byte_offset bit31 at64bd. Set -> index/data ports0/4;
+  clear -> index/data ports30/34, all offsets within the same selected BAR.
+- Index value sent is byte_offset. Code reads index port after writing it,
+  writes saved value to data port, then reads index port again.
+62e8 checks protocol pointer, forces Width=Uint32(2),Count=1, and invokes
+Mem.Write at6316. No CC-specific check is present in these helper bodies.
+The threshold is routing selection, not a rejection of larger offsets.
+Companion6320 performs the corresponding read routes.
+
+Four direct references to6468 in the current x64 linear listing:
+2ce5 tailcall:2cb8 takes16-bit caller index, adds descriptor+18 returned by
+  3168(4), passes caller value. Descriptor and caller provenance remain open.
+7f2b tailcall:7f18 loads WORD from bytecode_pointer+1 and value context+28;
+  the nested context pointer supplies the PCI-access context.
+881f tailcall:87dc adds a base from3540 to16-bit input, sets bit31, shifts
+  right2, then passes to6468. This constructs the high-bit indexed route.
+8ff4 call:8fb8 adds two16-bit fields at interpreter-context+2c/+52; when
+  mode bits from+46 and byte+4f are zero, passes value at+14 to6468. For
+  resulting index0, it first shifts that value left2. Other modes dispatch
+  through tables/helpers; those paths require separate tracing.
+
+This establishes an additional generic host-side firmware write mechanism,
+not that stock ROM commands supply CC indices. Candidate CC indices2249/226f
+can be represented by these interfaces; stock target selection, invocation,
+load acceptance of any changed image and hardware acceptance remain unproved.
+The earlier no-exact-DWORD-literal result therefore cannot close this path.
+
+Next: recover interpreter write-op dispatch and table-derived addresses;
+trace the four caller groups and compare equivalent XT helper bodies.
+
+XL/XT helper comparison completed using PE runtime-function begin/end records:
+XL6320..6466 versus XT4e8c..4fd2:326 bytes identical (read helper).
+XL6468..65d2 versus XT4fd4..513e:362 bytes identical (write helper).
+XL62e8..631f versus XT4e54..4e8b:55 bytes identical (Mem.Write wrapper).
+Thus these three access mechanisms do not differ between the reference ROMs,
+despite broader executable-section differences. Callers/data still may differ.
+Receipt:gop-helper-comparison.json. End addresses above are exclusive.

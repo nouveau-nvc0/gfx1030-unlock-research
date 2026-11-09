@@ -1,0 +1,15 @@
+
+/tmp/tmpix9vwwvn/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00022fbc <.data+0x22fbc>:
+00022fbc: 364100   entry        a1, 0x20 ; Capstone
+   22fbf:	ad02      	mov.n	a10, a2
+   22fc1:	91c0c1        	l32r	a9, 0x136c4 (0xbee8)
+   22fc4:	0c1b      	movi.n	a11, 1
+   22fc6:	0c08      	movi.n	a8, 0
+   22fc8:	82497f        	s8i	a8, a9, 127
+00022fcb: 250ddf   call8        . -0x20f2c ; Capstone ; target=0x209c
+00022fce: 1df0     retw.n        ; Capstone

@@ -1,0 +1,83 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "checked": {
+    "02a0c": {
+      "records": 67,
+      "sha256": "72e2de85cd3fb803b168baee5875e0a2af639a0f772ecb9c2d9259cd95833def"
+    },
+    "02ab8": {
+      "records": 55,
+      "sha256": "55dee59ff9c26cbd15a16bca58a1c093a036d914bc070a47130429715765a905"
+    },
+    "02b44": {
+      "records": 171,
+      "sha256": "1f8848a36947be4a75242fcefad7fbbf3d760d4992d80ce78a2acda89aac2a0a"
+    },
+    "04744": {
+      "records": 3,
+      "sha256": "e98eda1a319b7713831f37f3cff2787d41e5212937094657070c4a7b6054e383"
+    },
+    "0474c": {
+      "records": 3,
+      "sha256": "09751de395a2eec5ac72bd27705e743c6ab2dcd668050941f8de020585dfc97f"
+    }
+  },
+  "loops": [
+    {
+      "loop": "0x2a7e",
+      "iterations": 8,
+      "stack_start": "0x8",
+      "stack_end_exclusive": "0x48"
+    },
+    {
+      "loop": "0x2b11",
+      "iterations": 8,
+      "stack_start": "0x8",
+      "stack_end_exclusive": "0x48"
+    },
+    {
+      "loop": "0x2ba2",
+      "iterations": 8,
+      "stack_start": "0x8",
+      "stack_end_exclusive": "0x48"
+    },
+    {
+      "loop": "0x2bd8",
+      "iterations": 17,
+      "stack_start": "0x4",
+      "stack_end_exclusive": "0x8c"
+    },
+    {
+      "loop": "0x2c21",
+      "iterations": 17,
+      "stack_start": "0xc",
+      "stack_end_exclusive": "0x94"
+    },
+    {
+      "loop": "0x2c7a",
+      "iterations": 8,
+      "stack_start": "0x10",
+      "stack_end_exclusive": "0x50"
+    },
+    {
+      "loop": "0x2c92",
+      "iterations": 8,
+      "stack_start": "0x50",
+      "stack_end_exclusive": "0x90"
+    },
+    {
+      "loop": "0x2caa",
+      "iterations": 8,
+      "stack_start": "0x90",
+      "stack_end_exclusive": "0xd0"
+    },
+    {
+      "loop": "0x2cc0",
+      "iterations": 8,
+      "stack_start": "0xd0",
+      "stack_end_exclusive": "0x110"
+    }
+  ],
+  "frame_size": "0x170",
+  "scope": "Manual definitions and loop endpoints from byte-checked listings; arithmetic range enumeration. Assumes ordinary entry/call register-window semantics and unmodified live registers. Not a global runtime stack-bound proof."
+}

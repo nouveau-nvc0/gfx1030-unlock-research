@@ -1,0 +1,28 @@
+
+/tmp/tmpp6i4b419/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00032ed4 <.data+0x32ed4>:
+00032ed4: 364100   entry        a1, 0x20 ; Capstone
+   32ed7:	514b80        	l32r	a5, 0x13004 (0xfffff)
+   32eda:	812385        	l32r	a8, 0x14368 (0x9000004)
+   32edd:	204094        	extui	a4, a2, 0, 10
+   32ee0:	404411        	slli	a4, a4, 12
+   32ee3:	4b64      	addi.n	a6, a4, 4
+   32ee5:	6064b5        	extui	a6, a6, 20, 12
+   32ee8:	8a44      	add.n	a4, a4, a8
+   32eea:	504410        	and	a4, a4, a5
+   32eed:	512881        	l32r	a5, 0x13390 (0xfffe00)
+   32ef0:	c06601        	slli	a6, a6, 20
+   32ef3:	6a44      	add.n	a4, a4, a6
+   32ef5:	5a44      	add.n	a4, a4, a5
+   32ef7:	c02000        	memw
+   32efa:	322480        	l32i	a3, a4, 0x200
+   32efd:	0c15      	movi.n	a5, 1
+   32eff:	503320        	or	a3, a3, a5
+   32f02:	c02000        	memw
+   32f05:	326480        	s32i	a3, a4, 0x200
+00032f08: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,16 @@
+
+/tmp/tmpcx7p_ib5/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00022540 <.data+0x22540>:
+00022540: 364100   entry        a1, 0x20 ; Capstone
+   22543:	1c9a      	movi.n	a10, 25
+00022545: 655911   call8        . +0x11598 ; Capstone ; target=0x33adc
+   22548:	9130c4        	l32r	a9, 0x13608 (0xaaec)
+   2254b:	a08af0        	subx8	a8, a10, a10
+   2254e:	9088a0        	addx4	a8, a8, a9
+   22551:	224880        	s8i	a2, a8, 128
+00022554: 1df0     retw.n        ; Capstone
+	...

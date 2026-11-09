@@ -1,0 +1,27 @@
+
+/tmp/tmpjnmg2p06/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002811c <.data+0x2811c>:
+0002811c: 364100   entry        a1, 0x20 ; Capstone
+   2811f:	7183ab        	l32r	a7, 0x12f2c (0x141d600)
+   28122:	c02000        	memw
+   28125:	61b0ae        	l32r	a6, 0x13be8 (0xfcffffff)
+   28128:	7cf8      	movi.n	a8, -1
+   2812a:	422741        	l32i	a4, a7, 0x104
+   2812d:	808230        	xor	a8, a2, a8
+   28130:	802014        	extui	a2, a8, 0, 2
+   28133:	405815        	extui	a5, a4, 24, 2
+   28136:	403875        	extui	a3, a4, 24, 8
+   28139:	203310        	and	a3, a3, a2
+   2813c:	604410        	and	a4, a4, a6
+   2813f:	502393        	movnez	a2, a3, a5
+   28142:	209014        	extui	a9, a2, 0, 2
+   28145:	809901        	slli	a9, a9, 24
+   28148:	909420        	or	a9, a4, a9
+   2814b:	c02000        	memw
+   2814e:	926741        	s32i	a9, a7, 0x104
+00028151: 1df0     retw.n        ; Capstone
+	...

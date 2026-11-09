@@ -1,0 +1,18 @@
+
+/tmp/tmpnuz9glvi/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00030e94 <.data+0x30e94>:
+00030e94: 364100   entry        a1, 0x20 ; Capstone
+   30e97:	0cea      	movi.n	a10, 14
+00030e99: 656ed1   call8        . -0x2e918 ; Capstone ; target=0x2580
+00030e9c: 65fdff   call8        . -0x28 ; Capstone ; target=0x30e74
+   30e9f:	0cea      	movi.n	a10, 14
+00030ea1: 255dd1   call8        . -0x2ea2c ; Capstone ; target=0x2474
+   30ea4:	ad02      	mov.n	a10, a2
+   30ea6:	0c1b      	movi.n	a11, 1
+00030ea8: 251fd1   call8        . -0x2ee0c ; Capstone ; target=0x209c
+00030eab: 1df0     retw.n        ; Capstone
+   30ead:	000000        	ill

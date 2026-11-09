@@ -1,0 +1,22 @@
+{
+  "scope": "Local targeted-listing locator; no memory-value propagation, indirect-call resolution or global completeness claim.",
+  "reports": [
+    {
+      "listing": "/tmp/navi21-jx-fixture.txt",
+      "reachable_in_window": 3,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 4,
+      "unresolved_or_external_edges": [
+        [
+          "0x6",
+          "indirect jump a10"
+        ]
+      ],
+      "unknown_operations": [
+        "jx"
+      ],
+      "stores": []
+    }
+  ]
+}

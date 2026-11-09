@@ -1,0 +1,49 @@
+Restore-entry conditions: route-specific gate — offline,2026-11-09
+
+Important precision for the user-facing chain summary
+The byte5ffee452 is required by the known registered/deferred handler paths,
+not by71ac itself. Therefore 'a nonzeroe452 producer is universally necessary
+for changingCC' would be too strong. The correct missing invocation condition
+is either satisfying a known callable path or establishing another callable
+restore path. Changedmask provenance and hardware acceptance remain separate.
+
+Known handler paths
+35d8 loads5ffee44c+6 at35de and returns at35e1 whenzero. Its36ca call to6944
+passes operation1. Registered77cc->32a4 reaches35d8. Deferred3a00 similarly
+checks the samebyte before its restore call. These remain the concrete linked
+paths, with no established nonzero-gate producer.
+
+Other restore callers require different conditions
+2edc reaches2f15->6944(1,0) when hardware6803ed50bit1 and byte5ffed99c are
+nonzero. Optional earlier work depends on hardwarebit0. Its local condition
+is not the e452 gate. Invocation of2edc itself remains unestablished.
+70d4 reaches7142->6944(1,0) when byte5ffedb25 is nonzero. Its function entry
+also has no established invocation chain. The existing standalone-wrapper
+observation is retained, now checked independently against raw immediate
+branch encodings throughout IRAM rather than only listing references.
+Neither local function condition is a demonstrated user-controllable input.
+
+Raw entry search
+All65534possible3-byte start positions in the65536-byte IRAM were searched
+for immediate XtensaCALL0/4/8/12 and unconditionalJ encodings targeting
+2edc,70d4,6944,71ac. TheCALL decode reproduces the seven known6944 callers
+and sole71ac call6a95. No immediateCALL orJ to2edc/70d4 was found. No full
+absolute5fff2edc/5fff70d4 pointer appears anywhere in the pinned container.
+This result is independent of first-pass instruction boundary selection.
+It does not close computed targets, conditional entries, alternate code
+streams, other firmware engines, or physically loaded code variants.
+Functions with no such incoming references must not be advertised as a
+ready invocation route; absence also does not prove they can never execute.
+
+Direct connection to remaining work
+The registered route is still missing its gate producer. Other two local
+restore callers replace that question with an unresolved entry mechanism;
+they do not eliminate the invocation gap. A changed saved-mask producer is
+still absent whichever invocation route is considered. Hardware acceptance
+cannot be inferred from static stores and remains unproved offline.
+Do not return to general interface inventories without an identified edge
+to one of these states or the savedCC buffers.
+
+Reproducer scripts/navi21-rlc-restore-entry-audit.py and receipt
+rlc-restore-entry-audit.json check raw immediate-entry matches and1147listing
+records against the pinned firmware. No hardware or system settings changed.

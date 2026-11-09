@@ -1,0 +1,40 @@
+
+/tmp/tmpxijjfz0g/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001b394 <.data+0x1b394>:
+0001b394: 364100   entry        a1, 0x20 ; Capstone
+   1b397:	16a304        	beqz	a3, 0x1b3e5
+   1b39a:	0c37      	movi.n	a7, 3
+   1b39c:	0c14      	movi.n	a4, 1
+   1b39e:	7cf5      	movi.n	a5, -1
+   1b3a0:	ad03      	mov.n	a10, a3
+0001b3a2: 25feff   call8        . -0x1c ; Capstone ; target=0x1b384
+   1b3a5:	6d0a      	mov.n	a6, a10
+   1b3a7:	20baa0        	addx4	a11, a10, a2
+   1b3aa:	b21baf        	l16ui	a11, a11, 0x15e
+   1b3ad:	ad02      	mov.n	a10, a2
+0001b3af: a50d02   call8        . +0x20dc ; Capstone ; target=0x1d488
+   1b3b2:	a20201        	l8ui	a10, a2, 1
+   1b3b5:	d842      	l32i.n	a13, a2, 16
+   1b3b7:	261a2a        	beqi	a10, 1, 0x1b3e5
+   1b3ba:	001640        	ssl	a6
+   1b3bd:	00b4a1        	sll	a11, a4
+   1b3c0:	509b30        	xor	a9, a11, a5
+   1b3c3:	662a0c        	bnei	a10, 2, 0x1b3d3
+   1b3c6:	c832      	l32i.n	a12, a2, 12
+   1b3c8:	724201        	s8i	a7, a2, 1
+   1b3cb:	c0c910        	and	a12, a9, a12
+   1b3ce:	c932      	s32i.n	a12, a2, 12
+   1b3d0:	c60200        	j	0x1b3df
+   1b3d3:	e852      	l32i.n	a14, a2, 20
+   1b3d5:	d0db20        	or	a13, a11, a13
+   1b3d8:	d942      	s32i.n	a13, a2, 16
+   1b3da:	e0e910        	and	a14, a9, a14
+   1b3dd:	e952      	s32i.n	a14, a2, 20
+   1b3df:	303910        	and	a3, a9, a3
+   1b3e2:	56a3fb        	bnez	a3, 0x1b3a0
+0001b3e5: 1df0     retw.n        ; Capstone
+	...

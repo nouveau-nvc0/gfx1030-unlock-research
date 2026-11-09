@@ -1,0 +1,120 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "listing_sha256": "f31bcf379136937e42694717f8a664afdb55971590916f669b1aeec1cbd812e3",
+  "byte_checked_records": 237,
+  "stores": [
+    {
+      "pc": "0x1e29",
+      "possible_dword_starts": [
+        "0x5ffee384",
+        "0x5ffee38c",
+        "0x5ffee394",
+        "0x5ffee39c",
+        "0x5ffee3a4",
+        "0x5ffee3ac",
+        "0x5ffee3b4",
+        "0x5ffee3bc"
+      ]
+    },
+    {
+      "pc": "0x1e2c",
+      "possible_dword_starts": [
+        "0x5ffee388",
+        "0x5ffee390",
+        "0x5ffee398",
+        "0x5ffee3a0",
+        "0x5ffee3a8",
+        "0x5ffee3b0",
+        "0x5ffee3b8",
+        "0x5ffee3c0"
+      ]
+    },
+    {
+      "pc": "0x1e44",
+      "possible_dword_starts": [
+        "0x5ffee308",
+        "0x5ffee30c",
+        "0x5ffee310",
+        "0x5ffee314",
+        "0x5ffee318",
+        "0x5ffee31c",
+        "0x5ffee320",
+        "0x5ffee324",
+        "0x5ffee328",
+        "0x5ffee32c",
+        "0x5ffee330",
+        "0x5ffee334",
+        "0x5ffee338",
+        "0x5ffee33c",
+        "0x5ffee340"
+      ]
+    },
+    {
+      "pc": "0x1e47",
+      "possible_dword_starts": [
+        "0x5ffee348",
+        "0x5ffee34c",
+        "0x5ffee350",
+        "0x5ffee354",
+        "0x5ffee358",
+        "0x5ffee35c",
+        "0x5ffee360",
+        "0x5ffee364",
+        "0x5ffee368",
+        "0x5ffee36c",
+        "0x5ffee370",
+        "0x5ffee374",
+        "0x5ffee378",
+        "0x5ffee37c",
+        "0x5ffee380"
+      ]
+    },
+    {
+      "pc": "0x1e8d",
+      "possible_dword_starts": [
+        "0x5ffee308",
+        "0x5ffee30c",
+        "0x5ffee310",
+        "0x5ffee314",
+        "0x5ffee318",
+        "0x5ffee31c",
+        "0x5ffee320",
+        "0x5ffee324",
+        "0x5ffee328",
+        "0x5ffee32c",
+        "0x5ffee330",
+        "0x5ffee334",
+        "0x5ffee338",
+        "0x5ffee33c",
+        "0x5ffee340"
+      ]
+    },
+    {
+      "pc": "0x1e93",
+      "possible_dword_starts": [
+        "0x5ffee348",
+        "0x5ffee34c",
+        "0x5ffee350",
+        "0x5ffee354",
+        "0x5ffee358",
+        "0x5ffee35c",
+        "0x5ffee360",
+        "0x5ffee364",
+        "0x5ffee368",
+        "0x5ffee36c",
+        "0x5ffee370",
+        "0x5ffee374",
+        "0x5ffee378",
+        "0x5ffee37c",
+        "0x5ffee380"
+      ]
+    }
+  ],
+  "findings": [
+    "First loop writes16 derived DWORDs[e384,e3c4); pointer increments before paired stores.",
+    "Second loop writes15 DWORDs[e308,e344) and15[e348,e384); comparisons choose values only.",
+    "Third loop reloads saved initial pointer from stack and conditionally rewrites the same second-loop destinations. All15 iterations included irrespective of value comparisons.",
+    "These six stores cannot directly reach savedCC, gatee452 or ring indexe424 on the decoded local path. Imported coefficients affect values, not these destination bounds."
+  ],
+  "scope": "Local normal-entry paths, inferred DRAM map, ordinary register-window/stack behavior. Not proof about other entries, callees, other engines or later consumers."
+}

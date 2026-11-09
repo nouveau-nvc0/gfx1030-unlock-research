@@ -1,0 +1,60 @@
+
+/tmp/tmpw057r3i6/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00022558 <.data+0x22558>:
+00022558: 364100   entry        a1, 0x20 ; Capstone
+   2255b:	312cc4        	l32r	a3, 0x1360c (0x1580e00)
+   2255e:	7ce7      	movi.n	a7, -2
+   22560:	c02000        	memw
+   22563:	222385        	l32i	a2, a3, 0x214
+   22566:	702210        	and	a2, a2, a7
+   22569:	c02000        	memw
+   2256c:	226385        	s32i	a2, a3, 0x214
+   2256f:	c02000        	memw
+   22572:	822386        	l32i	a8, a3, 0x218
+   22575:	07e8f6        	bbsi	a8, 0, 0x2256f
+   22578:	318ec3        	l32r	a3, 0x133b0 (0x1580600)
+   2257b:	c02000        	memw
+   2257e:	9853      	l32i.n	a9, a3, 20
+   22580:	7c7a      	movi.n	a10, -9
+   22582:	a09910        	and	a9, a9, a10
+   22585:	c02000        	memw
+   22588:	9953      	s32i.n	a9, a3, 20
+   2258a:	c02000        	memw
+   2258d:	b863      	l32i.n	a11, a3, 24
+   2258f:	37ebf7        	bbsi	a11, 3, 0x2258a
+   22592:	f168c3        	l32r	a15, 0x13334 (0x125a200)
+   22595:	0c82      	movi.n	a2, 8
+   22597:	c02000        	memw
+   2259a:	e22f4d        	l32i	a14, a15, 0x134
+   2259d:	6c98      	movi.n	a8, -23
+   2259f:	808e10        	and	a8, a14, a8
+   225a2:	208820        	or	a8, a8, a2
+   225a5:	c02000        	memw
+   225a8:	826f4d        	s32i	a8, a15, 0x134
+   225ab:	c02000        	memw
+   225ae:	622f4e        	l32i	a6, a15, 0x138
+   225b1:	0ce8      	movi.n	a8, 14
+   225b3:	706610        	and	a6, a6, a7
+   225b6:	806620        	or	a6, a6, a8
+   225b9:	c02000        	memw
+   225bc:	626f4e        	s32i	a6, a15, 0x138
+   225bf:	c02000        	memw
+   225c2:	422f4f        	l32i	a4, a15, 0x13c
+   225c5:	52afcf        	movi	a5, -49
+   225c8:	504410        	and	a4, a4, a5
+   225cb:	c02000        	memw
+   225ce:	426f4f        	s32i	a4, a15, 0x13c
+   225d1:	6c83      	movi.n	a3, -24
+   225d3:	30ee10        	and	a14, a14, a3
+   225d6:	20ee20        	or	a14, a14, a2
+   225d9:	c02000        	memw
+   225dc:	e26f4d        	s32i	a14, a15, 0x134
+   225df:	d175c3        	l32r	a13, 0x133b4 (0x125aa00)
+   225e2:	0c0c      	movi.n	a12, 0
+   225e4:	c02000        	memw
+   225e7:	c26d79        	s32i	a12, a13, 0x1e4
+000225ea: 1df0     retw.n        ; Capstone

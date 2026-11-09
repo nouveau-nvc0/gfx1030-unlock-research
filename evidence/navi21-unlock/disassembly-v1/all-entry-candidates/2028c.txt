@@ -1,0 +1,13 @@
+
+/tmp/tmpg_4xpwc1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002028c <.data+0x2028c>:
+0002028c: 364100   entry        a1, 0x20 ; Capstone
+   2028f:	315ccc        	l32r	a3, 0x13400 (0xcd74)
+   20292:	0c12      	movi.n	a2, 1
+   20294:	22437e        	s8i	a2, a3, 126
+00020297: 1df0     retw.n        ; Capstone
+   20299:	000000        	ill

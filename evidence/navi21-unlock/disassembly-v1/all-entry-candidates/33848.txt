@@ -1,0 +1,17 @@
+
+/tmp/tmppjge77ib/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00033848 <.data+0x33848>:
+00033848: 364100   entry        a1, 0x20 ; Capstone
+   3384b:	8ce3      	beqz.n	a3, 0x3385d
+   3384d:	2033b0        	addx8	a3, a3, a2
+   33850:	a802      	l32i.n	a10, a2, 0
+   33852:	b21202        	l16ui	a11, a2, 4
+00033855: 25ecff   call8        . -0x13c ; Capstone ; target=0x33718
+   33858:	8b22      	addi.n	a2, a2, 8
+   3385a:	3792f2        	bne	a2, a3, 0x33850
+0003385d: 1df0     retw.n        ; Capstone
+	...

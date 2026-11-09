@@ -1,0 +1,13 @@
+
+/tmp/tmphr48dton/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001344 <.data+0x1344>:
+00001344: 364100   entry        a1, 0x20 ; Capstone
+    1347:	210afe        	l32r	a2, 0xb70 (0x3200200)
+    134a:	c02000        	memw
+    134d:	2222b5        	l32i	a2, a2, 0x2d4
+00001350: 1df0     retw.n        ; Capstone
+	...

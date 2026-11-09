@@ -1,0 +1,24 @@
+RLC exact window-handler roots
+
+400/440,480/4c0,500/540 decode as save/load pairs ending RFWO/RFWU.
+All58 instructions bytechecked,58 reached,24 stores (4+8+12), zero direct
+calls. Underflow entries only load; apparent CALLs near441 in broad linear
+survey were misaligned decodes. Exact-entry listings supersede those raw
+records for these paths.
+
+Save addresses are incoming window-register a5/a9/a13 minus16 for first
+four DWORDs; larger handlers additionally load the linked frame pointer via
+L32E(a1-12) and write four/eight DWORDs below it. No fixed CC selector is
+materialized. This is not an exclusion of CC overlap without actual register
+and memory provenance. S32E privilege/address translation also requires its
+architectural context; listing offsets alone do not establish physical MMIO.
+
+CFG scanner now terminates RFE/RFI/RFWO/RFWU/RFDE with an explicit unresolved
+dynamic-resumption edge. S32E preserves ordinary integer-register constants.
+A check against the original broad vector listing confirms it stops after
+five instructions/four stores at40c, without inventing later CALL edges.
+Other historical scans remain historical and were not silently regenerated.
+
+Remaining exception stubs near580..620, software return path410..46b and
+exception-cause tabled860 need exact roots and destination provenance.
+Receipts:rlc-window-vectors-cfg.json andrlc-window-vectors-audit.json.

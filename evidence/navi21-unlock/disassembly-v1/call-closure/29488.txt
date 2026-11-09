@@ -1,0 +1,17 @@
+
+/tmp/tmppu05uxbb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00029488 <.data+0x29488>:
+00029488: 364100   entry        a1, 0x20 ; Capstone
+   2948b:	205074        	extui	a5, a2, 0, 8
+   2948e:	306200        	rsil	a3, 2
+   29491:	8151a7        	l32r	a8, 0x131d8 (0x155c4)
+   29494:	0c04      	movi.n	a4, 0
+   29496:	5055a0        	addx4	a5, a5, a5
+   29499:	8055a0        	addx4	a5, a5, a8
+   2949c:	42657f        	s32i	a4, a5, 0x1fc
+   2949f:	30e613        	wsr.ps	a3
+000294a2: 1df0     retw.n        ; Capstone

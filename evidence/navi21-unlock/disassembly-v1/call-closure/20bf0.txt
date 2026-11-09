@@ -1,0 +1,23 @@
+
+/tmp/tmp2yp4unus/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00020bf0 <.data+0x20bf0>:
+00020bf0: 364100   entry        a1, 0x20 ; Capstone
+   20bf3:	0c1a      	movi.n	a10, 1
+00020bf5: 259d11   call8        . +0x119d4 ; Capstone ; target=0x325c8
+   20bf8:	a126ca        	l32r	a10, 0x13490 (0xff60)
+   20bfb:	8124ca        	l32r	a8, 0x1348c (0xfe88)
+00020bfe: 3000fa   const.s      f0, 0 ; Capstone
+   20c01:	0c09      	movi.n	a9, 0
+   20c03:	924880        	s8i	a9, a8, 128
+   20c06:	926829        	s32i	a9, a8, 164
+   20c09:	926828        	s32i	a9, a8, 160
+00020c0c: 034825   ssi          f0, a8, 0x94 ; Capstone
+00020c0f: 2584e1   call8        . -0x1e7bc ; Capstone ; target=0x2450
+   20c12:	0c0a      	movi.n	a10, 0
+00020c14: 650d00   call8        . +0xd8 ; Capstone ; target=0x20cec
+00020c17: 25fbff   call8        . -0x4c ; Capstone ; target=0x20bc8
+00020c1a: 1df0     retw.n        ; Capstone

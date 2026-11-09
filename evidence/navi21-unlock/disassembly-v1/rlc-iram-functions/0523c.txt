@@ -1,0 +1,90 @@
+
+/tmp/tmp30z3vp5e/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000523c <.data+0x523c>:
+0000523c: 366100   entry        a1, 0x30 ; Capstone
+    523f:	818ae0        	l32r	a8, 0xffffd468 (0x5ffee574) ; inferred DRAM map 0x5ffec000
+    5242:	f02000        	nop
+    5245:	820800        	l8ui	a8, a8, 0
+    5248:	cc18      	bnez.n	a8, 0x524d
+0000524a: e5eeff   call8        . -0x110 ; Capstone ; target=0x5138
+    524d:	8187e0        	l32r	a8, 0xffffd46c (0x3e5e00d2) ; inferred DRAM map 0x5ffec000
+00005250: 0012ca   float.s      f1, a2, 0 ; Capstone
+00005253: 5028fa   wfr          f2, a8 ; Capstone
+00005256: 20012a   mul.s        f0, f1, f2 ; Capstone
+    5259:	0c0b      	movi.n	a11, 0
+    525b:	b901      	s32i.n	a11, a1, 0
+    525d:	b921      	s32i.n	a11, a1, 8
+0000525f: 00f0ea   utrunc.s     a15, f0, 0 ; Capstone
+    5262:	b911      	s32i.n	a11, a1, 4
+    5264:	f25104        	s16i	a15, a1, 8
+    5267:	c06f00        	rsil	a12, 15
+    526a:	e181e0        	l32r	a14, 0xffffd470 (0x10000) ; inferred DRAM map 0x5ffec000
+    526d:	91bddf        	l32r	a9, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    5270:	d22102        	l32i	a13, a1, 8
+    5273:	a170e0        	l32r	a10, 0xffffd434 (0x6003aa00) ; inferred DRAM map 0x5ffec000
+    5276:	b26980        	s32i	a11, a9, 0x200
+    5279:	e0ed20        	or	a14, a13, a14
+    527c:	e26a86        	s32i	a14, a10, 0x218
+    527f:	c0e613        	wsr.ps	a12
+    5282:	102000        	rsync
+    5285:	e06f00        	rsil	a14, 15
+    5288:	b26980        	s32i	a11, a9, 0x200
+    528b:	c22a87        	l32i	a12, a10, 0x21c
+    528e:	e0e613        	wsr.ps	a14
+    5291:	102000        	rsync
+    5294:	a76ced        	bbci	a12, 10, 0x5285
+    5297:	f06f00        	rsil	a15, 15
+    529a:	b26980        	s32i	a11, a9, 0x200
+    529d:	e22a90        	l32i	a14, a10, 0x240
+    52a0:	f0e613        	wsr.ps	a15
+    52a3:	102000        	rsync
+    52a6:	e0e0d4        	extui	a14, a14, 0, 14
+    52a9:	e25101        	s16i	a14, a1, 2
+    52ac:	c0e094        	extui	a14, a12, 0, 10
+    52af:	f06f00        	rsil	a15, 15
+    52b2:	81fddf        	l32r	a8, 0xffffd2a8 (0xfffeffff) ; inferred DRAM map 0x5ffec000
+    52b5:	b26980        	s32i	a11, a9, 0x200
+    52b8:	808d10        	and	a8, a13, a8
+    52bb:	826a86        	s32i	a8, a10, 0x218
+    52be:	f0e613        	wsr.ps	a15
+    52c1:	102000        	rsync
+    52c4:	c06f00        	rsil	a12, 15
+    52c7:	b26980        	s32i	a11, a9, 0x200
+    52ca:	822a87        	l32i	a8, a10, 0x21c
+    52cd:	c0e613        	wsr.ps	a12
+    52d0:	102000        	rsync
+    52d3:	a7e8ed        	bbsi	a8, 10, 0x52c4
+    52d6:	a15fe0        	l32r	a10, 0xffffd454 (0x5ffed9d4) ; inferred DRAM map 0x5ffec000
+    52d9:	d20a08        	l8ui	a13, a10, 8
+000052dc: 000eca   float.s      f0, a14, 0 ; Capstone
+    52df:	ac2d      	beqz.n	a13, 0x5305
+000052e1: 630a00   lsi          f6, a10, 0 ; Capstone
+000052e4: 00562a   mul.s        f5, f6, f0 ; Capstone
+000052e7: 430a01   lsi          f4, a10, 4 ; Capstone
+000052ea: 50340a   add.s        f3, f4, f5 ; Capstone
+000052ed: 00a3ea   utrunc.s     a10, f3, 0 ; Capstone
+    52f0:	a25100        	s16i	a10, a1, 0
+    52f3:	a0a0f4        	extui	a10, a10, 0, 16
+000052f6: 657ffc   call8        . -0x3808 ; Capstone ; target=0x1aec
+    52f9:	2801      	l32i.n	a2, a1, 0
+000052fb: 507afa   wfr          f7, a10 ; Capstone
+000052fe: 734101   ssi          f7, a1, 4 ; Capstone
+    5301:	3811      	l32i.n	a3, a1, 4
+00005303: 1df0     retw.n        ; Capstone
+    5305:	b15be0        	l32r	a11, 0xffffd474 (0x3ae66666) ; inferred DRAM map 0x5ffec000
+    5308:	3df0      	nop.n
+0000530a: 509bfa   wfr          f9, a11 ; Capstone
+0000530d: 90802a   mul.s        f8, f0, f9 ; Capstone
+00005310: 834103   ssi          f8, a1, 0xc ; Capstone
+00005313: 40a8fa   rfr          a10, f8 ; Capstone
+00005316: 657bfc   call8        . -0x3848 ; Capstone ; target=0x1acc
+00005319: a30103   lsi          f10, a1, 0xc ; Capstone
+    531c:	a25100        	s16i	a10, a1, 0
+    531f:	2801      	l32i.n	a2, a1, 0
+00005321: a34101   ssi          f10, a1, 4 ; Capstone
+    5324:	3811      	l32i.n	a3, a1, 4
+00005326: 1df0     retw.n        ; Capstone

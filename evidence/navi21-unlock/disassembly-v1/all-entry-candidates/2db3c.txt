@@ -1,0 +1,17 @@
+
+/tmp/tmp_m3_94cj/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002db3c <.data+0x2db3c>:
+0002db3c: 364100   entry        a1, 0x20 ; Capstone
+   2db3f:	ad02      	mov.n	a10, a2
+   2db41:	c15095        	l32r	a12, 0x13084 (0xaaa4)
+   2db44:	20b2b0        	addx8	a11, a2, a2
+0002db47: 5003fa   wfr          f0, a3 ; Capstone
+   2db4a:	c0bba0        	addx4	a11, a11, a12
+0002db4d: 034b7f   ssi          f0, a11, 0x1fc ; Capstone
+   2db50:	b22b7d        	l32i	a11, a11, 0x1f4
+0002db53: e5bffb   call8        . -0x4400 ; Capstone ; target=0x29750
+0002db56: 1df0     retw.n        ; Capstone

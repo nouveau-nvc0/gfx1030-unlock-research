@@ -1,0 +1,27 @@
+RLC context save and restore address provenance
+
+Expanded CALL0 root9b70..9d08 using the corrected decoder:147 instructions,
+all byte-checked; CFG reaches147, with one unresolved JX at9d01. This tail
+loads context+1c, which9a84 saves from its third argument. Known7ce9 caller
+passeszero, so its tail returns instead of invoking an additional handler.
+Alternate entry9ad0 and unlisted callers are not closed by that conclusion.
+
+Known context basee044 has fixed fields through+1df, ending ate224 exclusive.
+TLB save loop9ce4 increments selector by20000000 until32-bit wrap:8 iterations,
+eight bytes each, context+154..193. FP/boolean fields+194..1df follow.
+These fields are above savedCC arrays (endinge004 for CC_WGP/RB together)
+and below gatee452. This excludes overlap for this fixed context layout only.
+
+Restore9e61 checks context+cc, then loads savedSP from+10. Eight DWORD stores
+copy context+8c..a8 to[SP-16,SP+16). Additional stack stores9eb2..9ebd derive
+the destination from the just-restored[SP+4] and the top two bits of saved
+return address(context+c), with sources context+ac onward. These are separate
+computed stores, not constrained to the fixed context buffer. Their concrete
+addresses require saved-context provenance; arbitrary address control and CC
+reachability are not established. Signed comparison/wrap behavior is not
+assumed equivalent to a bounded loop for arbitrary malformed values.
+
+Initial context iszero and magic is set only after the save sequence at9cf8;
+restore clears it at9f73. Other memory producers and hardware execution
+ordering remain open. No new confirmed CC-writing invocation from this step.
+See rlc-context-layout-audit.json and rlc-context-save-cfg.json.

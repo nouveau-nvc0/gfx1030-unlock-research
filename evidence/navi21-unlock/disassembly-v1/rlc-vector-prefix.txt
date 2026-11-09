@@ -1,0 +1,74 @@
+
+/tmp/tmpa4ynkqm7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000000 <.data>:
+       0:	060800        	j	0x24
+       3:	002f11        	slli	a2, a15, 16
+       6:	222200        	l32i	a2, a2, 0
+       9:	0000e0        	subx4	a0, a0, a0
+       c:	5400ff        	excw
+       f:	5f          	.byte 0x5f
+      10:	000000        	ill
+      13:	005099        	excw
+      16:	ff          	.byte 0xff
+      17:	5f          	.byte 0x5f
+      18:	60d9fe        	excw
+      1b:	5f          	.byte 0x5f
+	...
+      24:	0c00      	movi.n	a0, 0
+      26:	00e413        	wsr.intenable	a0
+      29:	206100        	rsil	a2, 1
+      2c:	21f6ff        	l32r	a2, 0x4 (0x2222112f)
+      2f:	51f6ff        	l32r	a5, 0x8 (0xe0000000)
+      32:	61f6ff        	l32r	a6, 0xc (0x5fff0054)
+      35:	0c03      	movi.n	a3, 0
+      37:	7d02      	mov.n	a7, a2
+      39:	506610        	and	a6, a6, a5
+      3c:	060500        	j	0x54
+0000003f: 004063   minu         a4, a0, a0 ; Capstone
+      42:	500020        	or	a0, a0, a5
+      45:	003df0        	subx8	a3, a13, a0
+      48:	f02000        	nop
+      4b:	5033c0        	sub	a3, a3, a5
+      4e:	b6b314        	bltui	a3, 16, 0x66
+      51:	707441        	srli	a7, a7, 4
+      54:	704034        	extui	a4, a7, 0, 4
+      57:	6713e5        	beq	a3, a6, 0x40
+      5a:	406350        	witlb	a4, a3
+      5d:	5033c0        	sub	a3, a3, a5
+      60:	f6b3ed        	bgeui	a3, 16, 0x51
+      63:	002000        	isync
+      66:	51e8ff        	l32r	a5, 0x8 (0xe0000000)
+      69:	0c03      	movi.n	a3, 0
+      6b:	7d02      	mov.n	a7, a2
+      6d:	704034        	extui	a4, a7, 0, 4
+      70:	40e350        	wdtlb	a4, a3
+      73:	5033c0        	sub	a3, a3, a5
+      76:	707441        	srli	a7, a7, 4
+      79:	f6b3f0        	bgeui	a3, 16, 0x6d
+      7c:	302000        	dsync
+      7f:	21e4ff        	l32r	a2, 0x10 (0x0)
+      82:	3df0      	nop.n
+      84:	8c62      	beqz.n	a2, 0x8e
+      86:	c00200        	callx0	a2
+      89:	0c00      	movi.n	a0, 0
+      8b:	56f2ff        	bnez	a2, 0x8e
+      8e:	12a001        	movi	a1, 1
+00000091: 104913   wsr          a1, windowstart ; Capstone
+00000094: 004813   wsr          a0, windowbase ; Capstone
+      97:	102000        	rsync
+      9a:	02a000        	movi	a0, 0
+      9d:	41ddff        	l32r	a4, 0x14 (0x5fff9950)
+      a0:	40d213        	wsr.excsave2	a4
+      a3:	51ddff        	l32r	a5, 0x18 (0x5ffed960)
+      a6:	426500        	s32i	a4, a5, 0
+      a9:	c55900        	call0	0x648 ; target=0x648
+	...
+
+; Alternate branch-target decode
+      40:	406350        	witlb	a4, a3
+      43:	002000        	isync
+      46:	3df0      	nop.n

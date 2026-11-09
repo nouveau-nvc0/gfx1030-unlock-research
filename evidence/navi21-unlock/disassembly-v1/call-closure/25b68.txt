@@ -1,0 +1,32 @@
+
+/tmp/tmp9humzfd2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00025b68 <.data+0x25b68>:
+00025b68: 364100   entry        a1, 0x20 ; Capstone
+   25b6b:	ad02      	mov.n	a10, a2
+   25b6d:	bd04      	mov.n	a11, a4
+   25b6f:	cd05      	mov.n	a12, a5
+00025b71: 259ef7   call8        . -0x861c ; Capstone ; target=0x1d554
+   25b74:	40c4b0        	addx8	a12, a4, a4
+   25b77:	001a40        	ssl	a10
+   25b7a:	5095b0        	addx8	a9, a5, a5
+   25b7d:	20f3b0        	addx8	a15, a3, a2
+   25b80:	e22f77        	l32i	a14, a15, 0x1dc
+   25b83:	2099a0        	addx4	a9, a9, a2
+   25b86:	0c1a      	movi.n	a10, 1
+   25b88:	20cca0        	addx4	a12, a12, a2
+   25b8b:	d86c      	l32i.n	a13, a12, 24
+   25b8d:	00baa1        	sll	a11, a10
+   25b90:	82190e        	l16ui	a8, a9, 28
+   25b93:	001440        	ssl	a4
+   25b96:	e0eb20        	or	a14, a11, a14
+   25b99:	00aaa1        	sll	a10, a10
+   25b9c:	a08820        	or	a8, a8, a10
+   25b9f:	e26f77        	s32i	a14, a15, 0x1dc
+   25ba2:	d0bb20        	or	a11, a11, a13
+   25ba5:	b96c      	s32i.n	a11, a12, 24
+   25ba7:	82590e        	s16i	a8, a9, 28
+00025baa: 1df0     retw.n        ; Capstone

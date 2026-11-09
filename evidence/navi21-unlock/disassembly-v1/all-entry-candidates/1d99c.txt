@@ -1,0 +1,24 @@
+
+/tmp/tmpeqv9iva2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001d99c <.data+0x1d99c>:
+0001d99c: 364100   entry        a1, 0x20 ; Capstone
+   1d99f:	212fd5        	l32r	a2, 0x12e5c (0x69a0)
+   1d9a2:	c02000        	memw
+   1d9a5:	8852      	l32i.n	a8, a2, 20
+   1d9a7:	dc58      	bnez.n	a8, 0x1d9c0
+   1d9a9:	a109d6        	l32r	a10, 0x131d0 (0x1d804)
+   1d9ac:	0c1b      	movi.n	a11, 1
+   1d9ae:	0c0c      	movi.n	a12, 0
+   1d9b0:	0c0d      	movi.n	a13, 0
+   1d9b2:	0c1e      	movi.n	a14, 1
+   1d9b4:	0c0f      	movi.n	a15, 0
+0001d9b6: 2578e4   call8        . -0x1b87c ; Capstone ; target=0x2138
+   1d9b9:	0c19      	movi.n	a9, 1
+   1d9bb:	c02000        	memw
+   1d9be:	9952      	s32i.n	a9, a2, 20
+0001d9c0: 1df0     retw.n        ; Capstone
+	...

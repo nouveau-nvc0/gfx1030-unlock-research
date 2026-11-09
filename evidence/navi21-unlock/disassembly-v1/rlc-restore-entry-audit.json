@@ -1,0 +1,108 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "scan_bytes": 65536,
+  "candidate_starts": 65534,
+  "hits": {
+    "0x2edc": {
+      "CALL": [],
+      "J": [],
+      "absolute_pointer_file_offsets": []
+    },
+    "0x70d4": {
+      "CALL": [],
+      "J": [],
+      "absolute_pointer_file_offsets": []
+    },
+    "0x71ac": {
+      "CALL": [
+        {
+          "pc": "0x6a95",
+          "window": 8,
+          "raw": "657100"
+        }
+      ],
+      "J": [],
+      "absolute_pointer_file_offsets": []
+    },
+    "0x6944": {
+      "CALL": [
+        {
+          "pc": "0x2f15",
+          "window": 8,
+          "raw": "e5a203"
+        },
+        {
+          "pc": "0x36ca",
+          "window": 8,
+          "raw": "a52703"
+        },
+        {
+          "pc": "0x3982",
+          "window": 8,
+          "raw": "25fc02"
+        },
+        {
+          "pc": "0x3b32",
+          "window": 8,
+          "raw": "25e102"
+        },
+        {
+          "pc": "0x3c0e",
+          "window": 8,
+          "raw": "65d302"
+        },
+        {
+          "pc": "0x70a2",
+          "window": 8,
+          "raw": "258aff"
+        },
+        {
+          "pc": "0x7142",
+          "window": 8,
+          "raw": "2580ff"
+        }
+      ],
+      "J": [],
+      "absolute_pointer_file_offsets": []
+    }
+  },
+  "listings": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02edc.txt",
+      "sha256": "631658eb5184ae11c33c43f8f732f658d73ff5985c1af8b5124ebf22cc251579",
+      "records": 114
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/070d4.txt",
+      "sha256": "9e26bf37a13e55a699c6dd7673017b58a7dd72d5dc04219c98e6993c9dd6163d",
+      "records": 75
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06944.txt",
+      "sha256": "0a3a0fb69d32d65c9c27a40bad072dabd879ad206e631377478907f44fba9286",
+      "records": 480
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/071ac.txt",
+      "sha256": "1cc6f03e326a1f886c2c81df7b023c8e48e5d10c282502c567847dc32c681380",
+      "records": 117
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/035d8.txt",
+      "sha256": "4331ffccb2b0547fa6af53a3ffc83ffb86efd5682174f889220244125df1574c",
+      "records": 114
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "sha256": "a1e684d1286313c6cf283e412c6cfd7cadd971a035611bbeafd448611e029daf",
+      "records": 247
+    }
+  ],
+  "caller_conditions": {
+    "35d8": "e452!=0; registered77cc->32a4 route known",
+    "3a00": "e452!=0; deferred callback route known",
+    "2edc": "hardware6803ed50bit1 and byte5ffed99c nonzero; function invocation not established",
+    "70d4": "byte5ffedb25 nonzero; function invocation not established"
+  },
+  "scope": "All byte positions searched for Xtensa immediate CALL/J encodings; matching known calls crosschecked against listings. Not a complete instruction decoder or CFG. Computed targets, conditional-entry edges, alternate instruction streams and other segments remain outside proof. e452 is a route-specific requirement, not a universal prerequisite for every possible CC write."
+}

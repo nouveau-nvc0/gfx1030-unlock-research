@@ -1,0 +1,56 @@
+RLCG table effects and snapshot base selection — offline,2026-11-09
+
+Main conclusion
+Known ID27 whole-LX6-DRAM save/restore uses the bootload base under the
+current RLCG interpretation. The alternative011e/011f base belongs to
+memory-destination class3; ID27 has class2. Therefore resolving011e/011f
+producers is not required for this concrete snapshot path and should not
+become a generic side investigation without another CC-related dependency.
+
+Three selectors3129,31bd,320f contain the same sequence:
+DW1 read; rightshift3; AND3; equality-with3; conditional skip over the two
+011e/011f loads. Both load and save use this test. In the6144-word main body,
+all six literal low16 matches011e/011f are the reads at these three sites.
+There is no literal write-shaped match. Computed writers are not excluded.
+Branch/arithmetic semantics remain the earlier partial ISA reading; exact
+words and the concrete ID27 field are checked separately in the receipt.
+
+Post-TOC pair effects
+3226/3269 extract destinationbits8..23 from the firstword of each pair and
+advance by2. The secondword is either a literal value or a base-relative
+address input, depending on operationbits5..7. The known SOS table has40
+pairs;39 destinations have public GC10.3 names:
+ f840..f84f CP_PFP/ME/CE/CPC instruction-cache bases/control;
+ f850/f851/f85b/f85c/f852/c820 CP_MES instruction bases/bounds/control;
+ f854/f855/f85d/f85e/c836/c837 CP_MES data bases/bounds/control;
+ f882/f883,f8a2/f8a3,f8c2/f8c3,f8e2/f8e3 SDMA0..3 VM context addresses;
+ ec45 RLC_GPM_THREAD_ENABLE, fb46 RLC_GPU_IOV_F32_CNTL,
+ ec80 RLC_SRM_CNTL. Ed80 has no retained public name.
+The source record for ed80 supplies literal4; its uses elsewhere include the
+LX6 command-sender state check. Do not assign undocumented bit meanings.
+None of these40 register fields is CC_SA/CC_WGP/CC_RB or its USER counterpart.
+They are not direct writes to the Xtensa gate or saved-mask arrays either.
+This applies to the concrete SOS pair table, not arbitrary replacement data
+or every possible register-writing routine in the firmware.
+
+SRM-related qualification
+The final pair08ec8007/00000003 supplies RLC_SRM_CNTL=3. This is relevant to
+the already identified SRM mechanism; it does not supply the register-list
+payload or a modified CC mask. Earlier Xtensa6944 also writes3 to the same
+public coordinate. The equality of this control value is not new evidence
+that the CC hardware accepts a changed value.
+
+Disposition and next concrete addresses
+The known pair table and alternative-base branch supply no new changedmask
+or nonzero-gate producer. The existing snapshot path preserves port data.
+Literal direct30ae callers now enumerated:3135,31c9,321b,35c6,35d5,
+361c,3620,3624,3632,3636. The first group is covered by descriptor transfers,
+completion and index setup. The last five transfer sites remain concrete
+unreviewed candidates; inspect their parameters/callers next rather than
+continuing unrelated alternative-base bookkeeping.
+
+Reproducer scripts/navi21-rlcg-toc-effects-audit.py checks40pairs/39names,
+three identical base selectors,six alternate-base literal reads,and local
+pair-extraction anchors. Receipt rlcg-toc-effects-audit.json records hashes.
+Tests verify bytes, coordinates and recorded fields, not full ISA or runtime.
+No hardware,firmware,boot,driver or service state was changed.

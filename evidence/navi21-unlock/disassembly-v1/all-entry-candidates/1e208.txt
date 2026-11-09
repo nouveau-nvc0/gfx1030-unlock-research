@@ -1,0 +1,55 @@
+
+/tmp/tmphwkc6yz2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001e208 <.data+0x1e208>:
+0001e208: 364100   entry        a1, 0x20 ; Capstone
+   1e20b:	610dd4        	l32r	a6, 0x13240 (0x1015c)
+   1e20e:	5106d4        	l32r	a5, 0x13228 (0x11e78)
+   1e211:	820696        	l8ui	a8, a6, 150
+   1e214:	0c02      	movi.n	a2, 0
+   1e216:	8b35      	addi.n	a3, a5, 8
+   1e218:	161806        	beqz	a8, 0x1e27d
+   1e21b:	0c0b      	movi.n	a11, 0
+   1e21d:	5aa2      	add.n	a10, a2, a5
+   1e21f:	a20a80        	l8ui	a10, a10, 128
+0001e222: 250c00   call8        . +0xc4 ; Capstone ; target=0x1e2e4
+   1e225:	0c0b      	movi.n	a11, 0
+   1e227:	3aa2      	add.n	a10, a2, a3
+   1e229:	a20a80        	l8ui	a10, a10, 128
+0001e22c: 650b00   call8        . +0xb8 ; Capstone ; target=0x1e2e4
+   1e22f:	1b22      	addi.n	a2, a2, 1
+   1e231:	202074        	extui	a2, a2, 0, 8
+   1e234:	6642e3        	bnei	a2, 4, 0x1e21b
+   1e237:	1c1a      	movi.n	a10, 17
+0001e239: 655217   call8        . +0x17528 ; Capstone ; target=0x35760
+   1e23c:	bc0a      	beqz.n	a10, 0x1e270
+   1e23e:	0c02      	movi.n	a2, 0
+   1e240:	3a42      	add.n	a4, a2, a3
+   1e242:	420480        	l8ui	a4, a4, 128
+   1e245:	ad04      	mov.n	a10, a4
+0001e247: 65fbff   call8        . -0x48 ; Capstone ; target=0x1e1fc
+   1e24a:	ad04      	mov.n	a10, a4
+   1e24c:	0c0b      	movi.n	a11, 0
+0001e24e: 65530b   call8        . +0xb538 ; Capstone ; target=0x29784
+   1e251:	820663        	l8ui	a8, a6, 99
+   1e254:	5aa2      	add.n	a10, a2, a5
+   1e256:	a20a80        	l8ui	a10, a10, 128
+   1e259:	8c68      	beqz.n	a8, 0x1e263
+   1e25b:	0c1b      	movi.n	a11, 1
+0001e25d: 65520b   call8        . +0xb528 ; Capstone ; target=0x29784
+   1e260:	060100        	j	0x1e268
+   1e263:	0c0b      	movi.n	a11, 0
+0001e265: e5510b   call8        . +0xb520 ; Capstone ; target=0x29784
+   1e268:	1b22      	addi.n	a2, a2, 1
+   1e26a:	202074        	extui	a2, a2, 0, 8
+   1e26d:	6642cf        	bnei	a2, 4, 0x1e240
+   1e270:	822624        	l32i	a8, a6, 144
+   1e273:	0c09      	movi.n	a9, 0
+   1e275:	924696        	s8i	a9, a6, 150
+   1e278:	1b88      	addi.n	a8, a8, 1
+   1e27a:	826624        	s32i	a8, a6, 144
+0001e27d: 1df0     retw.n        ; Capstone
+	...

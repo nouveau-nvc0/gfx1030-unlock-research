@@ -1,0 +1,95 @@
+
+/tmp/tmp2wprgle_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00028d4c <.data+0x28d4c>:
+00028d4c: 366100   entry        a1, 0x30 ; Capstone
+   28d4f:	2911      	s32i.n	a2, a1, 4
+   28d51:	51d0ab        	l32r	a5, 0x13c94 (0xe1a8)
+   28d54:	61d3ab        	l32r	a6, 0x13ca0 (0x11e7c)
+   28d57:	3901      	s32i.n	a3, a1, 0
+00028d59: 5004fa   wfr          f0, a4 ; Capstone
+00028d5c: 034102   ssi          f0, a1, 8 ; Capstone
+   28d5f:	41cfab        	l32r	a4, 0x13c9c (0xe280)
+   28d62:	31cdab        	l32r	a3, 0x13c98 (0xe01c)
+   28d65:	92c6fc        	addi	a9, a6, -4
+   28d68:	5a52      	add.n	a5, a2, a5
+   28d6a:	720580        	l8ui	a7, a5, 128
+   28d6d:	3022a0        	addx4	a2, a2, a3
+   28d70:	82049c        	l8ui	a8, a4, 156
+   28d73:	22227f        	l32i	a2, a2, 0x1fc
+   28d76:	320594        	l8ui	a3, a5, 148
+   28d79:	ac08      	beqz.n	a8, 0x28d9d
+   28d7b:	4d09      	mov.n	a4, a9
+   28d7d:	a20480        	l8ui	a10, a4, 128
+00028d80: a5d50a   call8        . +0xad5c ; Capstone ; target=0x33adc
+00028d83: 2535ff   call8        . -0xcac ; Capstone ; target=0x280d4
+   28d86:	1b44      	addi.n	a4, a4, 1
+   28d88:	6794f1        	bne	a4, a6, 0x28d7d
+   28d8b:	a1c6ab        	l32r	a10, 0x13ca4 (0xe274)
+   28d8e:	b1c6ab        	l32r	a11, 0x13ca8 (0xe31c)
+   28d91:	cd02      	mov.n	a12, a2
+   28d93:	dd07      	mov.n	a13, a7
+   28d95:	0cce      	movi.n	a14, 12
+00028d97: 256402   call8        . +0x2644 ; Capstone ; target=0x2b3d8
+   28d9a:	41c0ab        	l32r	a4, 0x13c9c (0xe280)
+   28d9d:	0c1a      	movi.n	a10, 1
+   28d9f:	0c0b      	movi.n	a11, 0
+   28da1:	0c1c      	movi.n	a12, 1
+00028da3: 25650e   call8        . +0xe654 ; Capstone ; target=0x373f4
+   28da6:	0c0a      	movi.n	a10, 0
+   28da8:	9811      	l32i.n	a9, a1, 4
+   28daa:	0c18      	movi.n	a8, 1
+   28dac:	0c0b      	movi.n	a11, 0
+   28dae:	90b883        	moveqz	a11, a8, a9
+00028db1: 252dff   call8        . -0xd2c ; Capstone ; target=0x28084
+   28db4:	a2045d        	l8ui	a10, a4, 93
+   28db7:	5931      	s32i.n	a5, a1, 12
+00028db9: a5a4ff   call8        . -0x5b4 ; Capstone ; target=0x28804
+   28dbc:	411ba9        	l32r	a4, 0x13228 (0x11e78)
+   28dbf:	8b54      	addi.n	a5, a4, 8
+   28dc1:	ed03      	mov.n	a14, a3
+   28dc3:	cd07      	mov.n	a12, a7
+   28dc5:	bd02      	mov.n	a11, a2
+   28dc7:	a20480        	l8ui	a10, a4, 128
+   28dca:	d20580        	l8ui	a13, a5, 128
+00028dcd: 651bff   call8        . -0xe48 ; Capstone ; target=0x27f84
+   28dd0:	1b55      	addi.n	a5, a5, 1
+   28dd2:	1b44      	addi.n	a4, a4, 1
+   28dd4:	6794e9        	bne	a4, a6, 0x28dc1
+   28dd7:	b801      	l32i.n	a11, a1, 0
+   28dd9:	a811      	l32i.n	a10, a1, 4
+   28ddb:	b7ba12        	bgeu	a10, a11, 0x28df1
+   28dde:	0c3a      	movi.n	a10, 3
+00028de0: a5410c   call8        . +0xc41c ; Capstone ; target=0x351fc
+   28de3:	0c0c      	movi.n	a12, 0
+00028de5: 130102   lsi          f1, a1, 8 ; Capstone
+00028de8: 40b1fa   rfr          a11, f1 ; Capstone
+00028deb: 25b300   call8        . +0xb34 ; Capstone ; target=0x2991c
+00028dee: e5ab00   call8        . +0xac0 ; Capstone ; target=0x298ac
+   28df1:	2831      	l32i.n	a2, a1, 12
+   28df3:	0caa      	movi.n	a10, 10
+00028df5: a5960c   call8        . +0xc96c ; Capstone ; target=0x35760
+   28df8:	8c4a      	beqz.n	a10, 0x28e00
+   28dfa:	a20298        	l8ui	a10, a2, 152
+00028dfd: a516ff   call8        . -0xe94 ; Capstone ; target=0x27f68
+   28e00:	0cba      	movi.n	a10, 11
+00028e02: e5950c   call8        . +0xc960 ; Capstone ; target=0x35760
+   28e05:	8c4a      	beqz.n	a10, 0x28e0d
+   28e07:	a2029c        	l8ui	a10, a2, 156
+00028e0a: 2514ff   call8        . -0xebc ; Capstone ; target=0x27f4c
+   28e0d:	1c1a      	movi.n	a10, 17
+00028e0f: 25950c   call8        . +0xc954 ; Capstone ; target=0x35760
+   28e12:	9c2a      	beqz.n	a10, 0x28e28
+   28e14:	c801      	l32i.n	a12, a1, 0
+   28e16:	ccec      	bnez.n	a12, 0x28e28
+   28e18:	4104a9        	l32r	a4, 0x13228 (0x11e78)
+   28e1b:	a20480        	l8ui	a10, a4, 128
+   28e1e:	0c0b      	movi.n	a11, 0
+00028e20: 259600   call8        . +0x964 ; Capstone ; target=0x29784
+   28e23:	1b44      	addi.n	a4, a4, 1
+   28e25:	6794f2        	bne	a4, a6, 0x28e1b
+00028e28: 1df0     retw.n        ; Capstone
+	...

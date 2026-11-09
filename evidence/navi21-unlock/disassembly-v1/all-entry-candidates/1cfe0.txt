@@ -1,0 +1,22 @@
+
+/tmp/tmp19ld4vr8/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001cfe0 <.data+0x1cfe0>:
+0001cfe0: 364100   entry        a1, 0x20 ; Capstone
+   1cfe3:	512dd8        	l32r	a5, 0x13098 (0x447a0000)
+0001cfe6: 5002fa   wfr          f0, a2 ; Capstone
+   1cfe9:	3152d8        	l32r	a3, 0x13134 (0x10f64)
+0001cfec: 5025fa   wfr          f2, a5 ; Capstone
+   1cfef:	5152d8        	l32r	a5, 0x13138 (0xff0000ff)
+   1cff2:	22237f        	l32i	a2, a3, 0x1fc
+0001cff5: 00122a   mul.s        f1, f2, f0 ; Capstone
+0001cff8: 0041ea   utrunc.s     a4, f1, 0 ; Capstone
+   1cffb:	502210        	and	a2, a2, a5
+   1cffe:	4040f4        	extui	a4, a4, 0, 16
+   1d001:	804411        	slli	a4, a4, 8
+   1d004:	402220        	or	a2, a2, a4
+   1d007:	22637f        	s32i	a2, a3, 0x1fc
+0001d00a: 1df0     retw.n        ; Capstone

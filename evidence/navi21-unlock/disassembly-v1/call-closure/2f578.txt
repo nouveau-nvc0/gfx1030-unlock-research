@@ -1,0 +1,17 @@
+
+/tmp/tmpt5mcgxvw/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002f578 <.data+0x2f578>:
+0002f578: 364100   entry        a1, 0x20 ; Capstone
+   2f57b:	21388e        	l32r	a2, 0x12e5c (0x69a0)
+   2f57e:	220262        	l8ui	a2, a2, 98
+   2f581:	267206        	beqi	a2, 7, 0x2f58b
+   2f584:	268203        	beqi	a2, 8, 0x2f58b
+   2f587:	0c02      	movi.n	a2, 0
+0002f589: 1df0     retw.n        ; Capstone
+   2f58b:	0c12      	movi.n	a2, 1
+0002f58d: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,16 @@
+
+/tmp/tmpfjc9j4dt/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00035fd0 <.data+0x35fd0>:
+00035fd0: 364100   entry        a1, 0x20 ; Capstone
+00035fd3: 230200   lsi          f2, a2, 0 ; Capstone
+00035fd6: 234300   ssi          f2, a3, 0 ; Capstone
+00035fd9: 130201   lsi          f1, a2, 4 ; Capstone
+00035fdc: 134301   ssi          f1, a3, 4 ; Capstone
+00035fdf: 030202   lsi          f0, a2, 8 ; Capstone
+00035fe2: 034302   ssi          f0, a3, 8 ; Capstone
+00035fe5: 1df0     retw.n        ; Capstone
+	...

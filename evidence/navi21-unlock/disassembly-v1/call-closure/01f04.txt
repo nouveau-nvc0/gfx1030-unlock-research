@@ -1,0 +1,12 @@
+
+/tmp/tmpimvb9to4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001f04 <.data+0x1f04>:
+00001f04: 364100   entry        a1, 0x20 ; Capstone
+    1f07:	0c1a      	movi.n	a10, 1
+00001f09: 250c00   call8        . +0xc4 ; Capstone ; target=0x1fcc
+00001f0c: 1df0     retw.n        ; Capstone
+	...

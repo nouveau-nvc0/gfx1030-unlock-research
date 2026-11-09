@@ -1,0 +1,8 @@
+GC internal address mapping, offline 2026-11-09
+Strong paired identification (not merely a matching constant):
+1. Function0x37a70 forms GRBM selector with SE in bits16+, SA bits8+, instance-broadcast bit30, optional SE/SA broadcast bits31/29, and writes0x01230600+0x200=0x01230800. Public GRBM_GFX_INDEX host byte address=(GCsegment1 0xa000+relative0x2200)*4=0x30800. Bit layout matches independently.
+2. Function0x333d8 loops SE0..3 and SA0..1, calls that selector, and accesses0x01208600+0x3c0=0x012089c0. Public GC_USER_SHADER_ARRAY_CONFIG=(segment0 0x1260+relative0x1010)*4=0x89c0. Mode nonzero reads each bank into buffer; modezero writes buffer back. Restores broadcast selector at exit.
+3. Caller0x334d8 calls with mode1 at0x334f3, then mode0 at0x33538 using the same stack buffer, supporting save/restore rather than arbitrary harvest override.
+These establish a strong internal GC mapping of host offsets plus0x01200000 for the two identified registers. Corresponding CC candidates are SA0x01208924 and WGP0x012089bc; neither candidate has yet been confirmed by an actual CC access instruction. Mapping does not imply equal write permissions between CC and USER.
+Generic table-driven accesses in this region mask offsets with0xfffff and add0x01200000 (or equivalent base0x011ffe00 plus instruction displacement0x200). Therefore absence of literal0x01208924 cannot establish absence of CC accesses. Need inspect the save/restore table and other computed-address helpers.
+The fuse-like bitfield reader source0x0125d000 is in the same broad1MiB numeric window but a different offset; mapping it to public FUSE/SMN metadata remains unproved. Do not conflate it with GC CC addresses.

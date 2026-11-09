@@ -1,0 +1,17 @@
+
+/tmp/tmputef0v43/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00004f90 <.data+0x4f90>:
+00004f90: 364100   entry        a1, 0x20 ; Capstone
+    4f93:	211fe1        	l32r	a2, 0xffffd410 (0x5ffed9b0) ; inferred DRAM map 0x5ffec000
+    4f96:	8802      	l32i.n	a8, a2, 0
+    4f98:	8c58      	beqz.n	a8, 0x4fa1
+    4f9a:	2852      	l32i.n	a2, a2, 20
+00004f9c: 1df0     retw.n        ; Capstone
+    4f9e:	000000        	ill
+00004fa1: a5ceff   call8        . -0x314 ; Capstone ; target=0x4c8c
+    4fa4:	2852      	l32i.n	a2, a2, 20
+00004fa6: 1df0     retw.n        ; Capstone

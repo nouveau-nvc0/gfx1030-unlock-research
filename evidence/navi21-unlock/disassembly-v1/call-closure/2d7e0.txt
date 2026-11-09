@@ -1,0 +1,21 @@
+
+/tmp/tmp329geg7_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002d7e0 <.data+0x2d7e0>:
+0002d7e0: 364100   entry        a1, 0x20 ; Capstone
+0002d7e3: 650d00   call8        . +0xd8 ; Capstone ; target=0x2d8b8
+   2d7e6:	2c0b      	movi.n	a11, 32
+   2d7e8:	b0a211        	slli	a10, a2, 5
+   2d7eb:	919195        	l32r	a9, 0x12e30 (0x1259e00)
+   2d7ee:	b0aa10        	and	a10, a10, a11
+   2d7f1:	b2afdf        	movi	a11, -33
+   2d7f4:	c02000        	memw
+   2d7f7:	822981        	l32i	a8, a9, 0x204
+   2d7fa:	b08810        	and	a8, a8, a11
+   2d7fd:	a08820        	or	a8, a8, a10
+   2d800:	c02000        	memw
+   2d803:	826981        	s32i	a8, a9, 0x204
+0002d806: 1df0     retw.n        ; Capstone

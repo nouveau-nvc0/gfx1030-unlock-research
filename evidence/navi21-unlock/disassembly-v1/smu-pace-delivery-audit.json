@@ -1,0 +1,130 @@
+{
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2b1b4.txt",
+      "sha256": "9dcf9bb798a5532d128f64a8f327aa1ccc7df0fcacfe2c05a315d233a2b9856d",
+      "byte_checked_records": 52
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2b0ac.txt",
+      "sha256": "8d0aef052f84a19f2fffd762084fa444bb58895a51132a702c325f0605fd0f58",
+      "byte_checked_records": 30
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2b00c.txt",
+      "sha256": "551649cc4678495f21f3a5db522202510941023c42811bd97827258a5563423b",
+      "byte_checked_records": 17
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2af90.txt",
+      "sha256": "2187dfbb1b3827744d6ff13e61d69f1802da3dcf58e8d830447a1d22175cd15c",
+      "byte_checked_records": 34
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2af68.txt",
+      "sha256": "57f6d2c88df7a2b1e73e3b990d59accf4f74915f14975f0808e510aa909691be",
+      "byte_checked_records": 15
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2afec.txt",
+      "sha256": "bc0d2e933d0d916988442581d86cd8c0095494a67dde1d80a531efeb2e5b7b93",
+      "byte_checked_records": 11
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2ba54.txt",
+      "sha256": "a866c46b8295330bf60d20b4d550e1ece32e3e899204ee4e6d03d62f2e3bc72d",
+      "byte_checked_records": 99
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07d24.txt",
+      "sha256": "64fd5a806fce8774e8890113ffddad35e806a733764e4a02b2f4f4ad47c4a278",
+      "byte_checked_records": 398
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/083fc.txt",
+      "sha256": "bb9d185ae7779438ca1b135be32b1285ecad7d7a58973b36953aa2ea53c45816",
+      "byte_checked_records": 678
+    }
+  ],
+  "header_sha256": "abd09080e4b06fd2d3e14145e5ceafa580a1987da59f076d2598e8753957b614",
+  "direct_call_edges": [
+    {
+      "caller_root": "2b1b4",
+      "pc": "0x2b1df",
+      "target": "0x2b0ac"
+    },
+    {
+      "caller_root": "2b0ac",
+      "pc": "0x2b0bb",
+      "target": "0x2b00c"
+    },
+    {
+      "caller_root": "2b00c",
+      "pc": "0x2b01d",
+      "target": "0x2af90"
+    },
+    {
+      "caller_root": "2b00c",
+      "pc": "0x2b022",
+      "target": "0x2af68"
+    },
+    {
+      "caller_root": "2b0ac",
+      "pc": "0x2b0e8",
+      "target": "0x2afec"
+    },
+    {
+      "caller_root": "2afec",
+      "pc": "0x2affa",
+      "target": "0x2af68"
+    },
+    {
+      "caller_root": "2af68",
+      "pc": "0x2af84",
+      "target": "0x2ba54"
+    }
+  ],
+  "registers": [
+    {
+      "name": "mmRLC_SMU_COMMAND",
+      "host_byte": "0x3b2a4",
+      "smu_internal": "0x123b2a4"
+    },
+    {
+      "name": "mmRLC_SMU_ARGUMENT_1",
+      "host_byte": "0x3b2ac",
+      "smu_internal": "0x123b2ac"
+    },
+    {
+      "name": "mmSMU_RLC_RESPONSE",
+      "host_byte": "0x3b01c",
+      "smu_internal": "0x123b01c"
+    }
+  ],
+  "commands": {
+    "after_transfer_argument0": 6,
+    "later_argument1": 5,
+    "rlc_83fc_consumer_command": 32
+  },
+  "7d24_range_check": {
+    "5": {
+      "normalized": "0xfffffff5",
+      "accepted_by_7d24_range": false
+    },
+    "6": {
+      "normalized": "0xfffffff6",
+      "accepted_by_7d24_range": false
+    },
+    "32": {
+      "normalized": "0x10",
+      "accepted_by_7d24_range": true
+    }
+  },
+  "conditions": [
+    "2b1b4:c8a9==1 and(cdf2!=0 or2b0fc_return!=0) reaches2b0ac",
+    "2b00c:fcd8==1 calls2af90 then2af68(0)",
+    "2afec:fcd8==1 calls2af68(1)",
+    "2af90 and2ba54 have additional own conditions; call does not prove transfer/command execution"
+  ],
+  "scope": "Conditional software edges and distinct command interfaces only. No executed path, main-RLCG translation, command32 origin, or CC acceptance proof."
+}

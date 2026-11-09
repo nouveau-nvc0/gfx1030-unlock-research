@@ -1,0 +1,54 @@
+
+/tmp/tmpcovhlbrh/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00020078 <.data+0x20078>:
+00020078: 364100   entry        a1, 0x20 ; Capstone
+   2007b:	319ecc        	l32r	a3, 0x132f4 (0xfe8c)
+   2007e:	0caa      	movi.n	a10, 10
+00020080: 3002fa   const.s      f0, 2 ; Capstone
+00020083: 03432b   ssi          f0, a3, 0xac ; Capstone
+00020086: a54fe2   call8        . -0x1db04 ; Capstone ; target=0x2580
+   20089:	1c8a      	movi.n	a10, 24
+0002008b: 656d15   call8        . +0x156d8 ; Capstone ; target=0x35760
+   2008e:	16fa05        	beqz	a10, 0x200f1
+   20091:	1c4a      	movi.n	a10, 20
+00020093: e56c15   call8        . +0x156d0 ; Capstone ; target=0x35760
+   20096:	167a05        	beqz	a10, 0x200f1
+   20099:	822326        	l32i	a8, a3, 152
+   2009c:	0c1a      	movi.n	a10, 1
+   2009e:	a2437d        	s8i	a10, a3, 125
+   200a1:	a08820        	or	a8, a8, a10
+   200a4:	826326        	s32i	a8, a3, 152
+000200a7: e50a00   call8        . +0xb0 ; Capstone ; target=0x20154
+000200aa: a5c100   call8        . +0xc1c ; Capstone ; target=0x20cc4
+000200ad: 501afa   wfr          f1, a10 ; Capstone
+000200b0: 13432c   ssi          f1, a3, 0xb0 ; Capstone
+000200b3: a5ce18   call8        . +0x18cec ; Capstone ; target=0x38d9c
+   200b6:	91c8cc        	l32r	a9, 0x133d8 (0xbf800000)
+000200b9: 503afa   wfr          f3, a10 ; Capstone
+000200bc: 5049fa   wfr          f4, a9 ; Capstone
+000200bf: 40230a   add.s        f2, f3, f4 ; Capstone
+000200c2: 40a2fa   rfr          a10, f2 ; Capstone
+000200c5: 65cd18   call8        . +0x18cd8 ; Capstone ; target=0x38d9c
+   200c8:	c1c5cc        	l32r	a12, 0x133dc (0xa1bc)
+   200cb:	d1c5cc        	l32r	a13, 0x133e0 (0x3f99999a)
+000200ce: 508afa   wfr          f8, a10 ; Capstone
+   200d1:	c21c7e        	l16ui	a12, a12, 252
+000200d4: 509dfa   wfr          f9, a13 ; Capstone
+000200d7: 90782a   mul.s        f7, f8, f9 ; Capstone
+000200da: 006cda   ufloat.s     f6, a12, 0 ; Capstone
+000200dd: 70562a   mul.s        f5, f6, f7 ; Capstone
+   200e0:	0c12      	movi.n	a2, 1
+   200e2:	b2a1f4        	movi	a11, 0x1f4
+000200e5: 00a5ea   utrunc.s     a10, f5, 0 ; Capstone
+   200e8:	b2632d        	s32i	a11, a3, 180
+   200eb:	a2632e        	s32i	a10, a3, 184
+   200ee:	460000        	j	0x200f3
+   200f1:	0c02      	movi.n	a2, 0
+   200f3:	0caa      	movi.n	a10, 10
+000200f5: e537e2   call8        . -0x1dc80 ; Capstone ; target=0x2474
+000200f8: 1df0     retw.n        ; Capstone
+	...

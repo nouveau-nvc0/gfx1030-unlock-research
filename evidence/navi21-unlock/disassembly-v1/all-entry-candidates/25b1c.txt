@@ -1,0 +1,22 @@
+
+/tmp/tmpd_wnfwdm/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00025b1c <.data+0x25b1c>:
+00025b1c: 366100   entry        a1, 0x30 ; Capstone
+00025b1f: 130201   lsi          f1, a2, 4 ; Capstone
+00025b22: 030200   lsi          f0, a2, 0 ; Capstone
+00025b25: 230202   lsi          f2, a2, 8 ; Capstone
+00025b28: 234102   ssi          f2, a1, 8 ; Capstone
+00025b2b: 034100   ssi          f0, a1, 0 ; Capstone
+00025b2e: 134101   ssi          f1, a1, 4 ; Capstone
+   25b31:	4821      	l32i.n	a4, a1, 8
+   25b33:	4923      	s32i.n	a4, a3, 8
+   25b35:	8811      	l32i.n	a8, a1, 4
+   25b37:	9801      	l32i.n	a9, a1, 0
+   25b39:	9903      	s32i.n	a9, a3, 0
+   25b3b:	8913      	s32i.n	a8, a3, 4
+00025b3d: 1df0     retw.n        ; Capstone
+	...

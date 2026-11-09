@@ -1,0 +1,18 @@
+
+/tmp/tmp1ajkxnfd/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00021438 <.data+0x21438>:
+00021438: 364100   entry        a1, 0x20 ; Capstone
+   2143b:	0c8a      	movi.n	a10, 8
+0002143d: 2514e1   call8        . -0x1eebc ; Capstone ; target=0x2580
+   21440:	1cba      	movi.n	a10, 27
+   21442:	0c0b      	movi.n	a11, 0
+00021444: 250703   call8        . +0x3074 ; Capstone ; target=0x244b8
+   21447:	a2a0ff        	movi	a10, 255
+0002144a: 65b715   call8        . +0x15b78 ; Capstone ; target=0x36fc0
+   2144d:	0c8a      	movi.n	a10, 8
+0002144f: 6502e1   call8        . -0x1efd8 ; Capstone ; target=0x2474
+00021452: 1df0     retw.n        ; Capstone

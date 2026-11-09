@@ -1,0 +1,13 @@
+
+/tmp/tmp9klpygob/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000a370 <.data+0xa370>:
+    a370:	2841      	l32i.n	a2, a1, 16
+    a372:	3851      	l32i.n	a3, a1, 20
+    a374:	12c160        	addi	a1, a1, 96
+    a377:	104100        	break	1, 1
+    a37a:	003000        	rfe
+    a37d:	000000        	ill

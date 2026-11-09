@@ -1,0 +1,565 @@
+{
+  "utc": "2026-11-09T09:41:31.758459+00:00",
+  "gpus": [
+    {
+      "card": "card0",
+      "bdf": "0000:07:00.0",
+      "sysfs": {
+        "vendor": {
+          "file": "card0/sysfs-vendor.txt",
+          "bytes": 7,
+          "sha256": "59eb647ef1fc0c0bd6ba711e1d041dac35fdd84c78e4bb42c04a233c3c738f1f"
+        },
+        "device": {
+          "file": "card0/sysfs-device.txt",
+          "bytes": 7,
+          "sha256": "464ca5ae24db8d3bdcb2124a7871d2bfc16fd2bf6265b0b115743e97c6f77470"
+        },
+        "subsystem_vendor": {
+          "file": "card0/sysfs-subsystem_vendor.txt",
+          "bytes": 7,
+          "sha256": "db958e6a59a69fe7d9e9a055c234158bb20536d2c9c3096ce13e6096cc4a6941"
+        },
+        "subsystem_device": {
+          "file": "card0/sysfs-subsystem_device.txt",
+          "bytes": 7,
+          "sha256": "8d0c84ac590455459b72f9abdb8554b1697e81d0705659e387a648a82333ea97"
+        },
+        "revision": {
+          "file": "card0/sysfs-revision.txt",
+          "bytes": 5,
+          "sha256": "a4503bffa3b70acb827543bb252fe111d9df5f067069aa78e0e29f27939e0bd8"
+        },
+        "vbios_version": {
+          "file": "card0/sysfs-vbios_version.txt",
+          "bytes": 18,
+          "sha256": "2ccd08931f4c1b5e2dd6e1170583eae2de674495a6fb5855f4a866bd6e05e122"
+        },
+        "mem_info_vram_total": {
+          "file": "card0/sysfs-mem_info_vram_total.txt",
+          "bytes": 12,
+          "sha256": "05bd37c2f8b183de29c8d378662b5d99ef343a70679a3cf0a3bc1327bd1aec77"
+        },
+        "mem_info_vram_used": {
+          "file": "card0/sysfs-mem_info_vram_used.txt",
+          "bytes": 12,
+          "sha256": "85dcbb43aedc989469f6cd9dc188b30421079c0d1491205216d3f30606444809"
+        },
+        "mem_info_vis_vram_total": {
+          "file": "card0/sysfs-mem_info_vis_vram_total.txt",
+          "bytes": 10,
+          "sha256": "a4e2a1c28ab6c77b49f903f37526602e32e9495ee3719519baa8dcc66900bce5"
+        },
+        "mem_info_gtt_total": {
+          "file": "card0/sysfs-mem_info_gtt_total.txt",
+          "bytes": 12,
+          "sha256": "96cb508ce112ef9bd3f8ce75d77007a21e4fbc618db481d5e005e31191f8e80a"
+        },
+        "gpu_busy_percent": {
+          "file": "card0/sysfs-gpu_busy_percent.txt",
+          "bytes": 2,
+          "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+        },
+        "mem_busy_percent": {
+          "file": "card0/sysfs-mem_busy_percent.txt",
+          "bytes": 2,
+          "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+        },
+        "current_link_speed": {
+          "file": "card0/sysfs-current_link_speed.txt",
+          "bytes": 15,
+          "sha256": "d0b7d19c724e0ba9f52f44b108b58cb694d7f1747bdfd0efda0fd770f8d800ba"
+        },
+        "current_link_width": {
+          "file": "card0/sysfs-current_link_width.txt",
+          "bytes": 3,
+          "sha256": "e6c21e8d260fe71882debdb339d2402a2ca7648529bc2303f48649bce0380017"
+        },
+        "max_link_speed": {
+          "file": "card0/sysfs-max_link_speed.txt",
+          "bytes": 15,
+          "sha256": "d0b7d19c724e0ba9f52f44b108b58cb694d7f1747bdfd0efda0fd770f8d800ba"
+        },
+        "max_link_width": {
+          "file": "card0/sysfs-max_link_width.txt",
+          "bytes": 3,
+          "sha256": "e6c21e8d260fe71882debdb339d2402a2ca7648529bc2303f48649bce0380017"
+        },
+        "pp_dpm_sclk": {
+          "file": "card0/sysfs-pp_dpm_sclk.txt",
+          "bytes": 36,
+          "sha256": "4d85409591385003eefe3a8f435912be332b95ba57722dbfbc1b6cd29d65e70e"
+        },
+        "pp_dpm_mclk": {
+          "file": "card0/sysfs-pp_dpm_mclk.txt",
+          "bytes": 45,
+          "sha256": "b5e620aa50ca552f1212964228fb174ad8882c2220ed48a6bfcbdbfae7d04afc"
+        },
+        "power_dpm_force_performance_level": {
+          "file": "card0/sysfs-power_dpm_force_performance_level.txt",
+          "bytes": 5,
+          "sha256": "6d1dbb9c582de44ad1dbc0d24eca4d831d8172bef0593680ecd24f6d0ce9def5"
+        },
+        "pp_features": {
+          "file": "card0/sysfs-pp_features.txt",
+          "bytes": 1811,
+          "sha256": "89b539f43bca0c950076a8023ea5d3da61ac8163b343da53442ba6d766075dae"
+        }
+      },
+      "debugfs": {
+        "name": {
+          "file": "card0/name.txt",
+          "bytes": 44,
+          "sha256": "14c54af318dbf39b5348e4a7ed056de2ba1c98398958479cba3aac271ba3c534"
+        },
+        "amdgpu_gca_config": {
+          "file": "card0/amdgpu_gca_config.bin",
+          "bytes": 144,
+          "sha256": "013199187825e612a6318a6082cccb7f01643a5c847e6f7e4becd7c8095442d6"
+        },
+        "amdgpu_firmware_info": {
+          "file": "card0/amdgpu_firmware_info.txt",
+          "bytes": 2041,
+          "sha256": "db5dc5279796b34dba53bcbaf54ab090152fcac934ea46c5f25aa23b2f57cb16"
+        },
+        "amdgpu_vbios": {
+          "file": "card0/amdgpu_vbios.bin",
+          "bytes": 45056,
+          "sha256": "e258121695fd5ae029132cdcc328e5c34065876a5612e3a2260487ac196a5b5e"
+        },
+        "amdgpu_pm_info": {
+          "file": "card0/amdgpu_pm_info.txt",
+          "bytes": 1754,
+          "sha256": "6db635292b3d6553ba4b98839239e59d498b640869905fd1e857fa5822e8a8f1"
+        }
+      },
+      "pcie_path": [
+        {
+          "bdf": "0000:07:00.0",
+          "current_link_speed": "16.0 GT/s PCIe",
+          "current_link_width": "16",
+          "max_link_speed": "16.0 GT/s PCIe",
+          "max_link_width": "16"
+        },
+        {
+          "bdf": "0000:06:00.0",
+          "current_link_speed": "16.0 GT/s PCIe",
+          "current_link_width": "16",
+          "max_link_speed": "16.0 GT/s PCIe",
+          "max_link_width": "16"
+        },
+        {
+          "bdf": "0000:05:00.0",
+          "current_link_speed": "8.0 GT/s PCIe",
+          "current_link_width": "16",
+          "max_link_speed": "16.0 GT/s PCIe",
+          "max_link_width": "16"
+        },
+        {
+          "bdf": "0000:00:02.0",
+          "current_link_speed": "8.0 GT/s PCIe",
+          "current_link_width": "16",
+          "max_link_speed": "8.0 GT/s PCIe",
+          "max_link_width": "16"
+        }
+      ],
+      "lspci": {
+        "argv": [
+          "lspci",
+          "-Dnnvv",
+          "-s",
+          "0000:07:00.0"
+        ],
+        "returncode": 0,
+        "stdout": "0000:07:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Navi 21 [Radeon RX 6800/6800 XT / 6900 XT] [1002:73bf] (rev c3) (prog-if 00 [VGA controller])\n\tSubsystem: Tul Corporation / PowerColor Device [148c:2407]\n\tControl: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx+\n\tStatus: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-\n\tLatency: 0, Cache Line Size: 32 bytes\n\tInterrupts: pin B disabled, MSI(X) routed to IRQ 73\n\tNUMA node: 0\n\tIOMMU group: 51\n\tRegion 0: Memory at c0000000 (64-bit, prefetchable) [size=256M]\n\tRegion 2: Memory at d0000000 (64-bit, prefetchable) [size=2M]\n\tRegion 4: I/O ports at d000 [size=256]\n\tRegion 5: Memory at fb700000 (32-bit, non-prefetchable) [size=1M]\n\tExpansion ROM at fb800000 [disabled] [size=128K]\n\tCapabilities: [48] Vendor Specific Information: Len=08 <?>\n\tCapabilities: [50] Power Management version 3\n\t\tFlags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1+,D2+,D3hot+,D3cold+)\n\t\tStatus: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-\n\tCapabilities: [64] Express (v2) Legacy Endpoint, IntMsgNum 0\n\t\tDevCap:\tMaxPayload 256 bytes, PhantFunc 0, Latency L0s <4us, L1 unlimited\n\t\t\tExtTag+ AttnBtn- AttnInd- PwrInd- RBE+ FLReset- TEE-IO-\n\t\tDevCtl:\tCorrErr+ NonFatalErr+ FatalErr+ UnsupReq+\n\t\t\tRlxdOrd- ExtTag+ PhantFunc- AuxPwr- NoSnoop+\n\t\t\tMaxPayload 256 bytes, MaxReadReq 512 bytes\n\t\tDevSta:\tCorrErr- NonFatalErr- FatalErr- UnsupReq- AuxPwr- TransPend-\n\t\tLnkCap:\tPort #0, Speed 16GT/s, Width x16, ASPM L0s L1, Exit Latency L0s <64ns, L1 <1us\n\t\t\tClockPM+ Surprise- LLActRep- BwNot- ASPMOptComp+\n\t\tLnkCtl:\tASPM Disabled; RCB 64 bytes, LnkDisable- CommClk+\n\t\t\tExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt- FltModeDis-\n\t\tLnkSta:\tSpeed 16GT/s, Width x16\n\t\t\tTrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-\n\t\tDevCap2: Completion Timeout: Range ABCD, TimeoutDis+ NROPrPrP- LTR+\n\t\t\t 10BitTagComp+ 10BitTagReq+ OBFF Not Supported, ExtFmt+ EETLPPrefix+, MaxEETLPPrefixes 1\n\t\t\t EmergencyPowerReduction Not Supported, EmergencyPowerReductionInit-\n\t\t\t FRS-\n\t\t\t AtomicOpsCap: 32bit+ 64bit+ 128bitCAS-\n\t\tDevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-\n\t\t\t AtomicOpsCtl: ReqEn+\n\t\t\t IDOReq- IDOCompl- LTR- EmergencyPowerReductionReq-\n\t\t\t 10BitTagReq- OBFF Disabled, EETLPPrefixBlk-\n\t\tLnkCap2: Supported Link Speeds: 2.5-16GT/s, Crosslink- Retimer+ 2Retimers+ DRS-\n\t\tLnkCtl2: Target Link Speed: 16GT/s, EnterCompliance- SpeedDis-\n\t\t\t Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-\n\t\t\t Compliance Preset/De-emphasis: -6dB de-emphasis, 0dB preshoot\n\t\tLnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete+ EqualizationPhase1+\n\t\t\t EqualizationPhase2+ EqualizationPhase3+ LinkEqualizationRequest-\n\t\t\t Retimer- 2Retimers- CrosslinkRes: unsupported, FltMode-\n\tCapabilities: [a0] MSI: Enable+ Count=1/1 Maskable- 64bit+\n\t\tAddress: 00000000fee00838  Data: 0000\n\tCapabilities: [100 v1] Vendor Specific Information: ID=0001 Rev=1 Len=010 <?>\n\tCapabilities: [150 v2] Advanced Error Reporting\n\t\tUESta:\tDLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP-\n\t\t\tECRC- UnsupReq- ACSViol- UncorrIntErr- BlockedTLP- AtomicOpBlocked- TLPBlockedErr-\n\t\t\tPoisonTLPBlocked- DMWrReqBlocked- IDECheck- MisIDETLP- PCRC_CHECK- TLPXlatBlocked-\n\t\tUEMsk:\tDLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP-\n\t\t\tECRC- UnsupReq- ACSViol- UncorrIntErr- BlockedTLP- AtomicOpBlocked- TLPBlockedErr-\n\t\t\tPoisonTLPBlocked- DMWrReqBlocked- IDECheck- MisIDETLP- PCRC_CHECK- TLPXlatBlocked-\n\t\tUESvrt:\tDLP+ SDES+ TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+\n\t\t\tECRC- UnsupReq- ACSViol- UncorrIntErr+ BlockedTLP- AtomicOpBlocked- TLPBlockedErr-\n\t\t\tPoisonTLPBlocked- DMWrReqBlocked- IDECheck- MisIDETLP- PCRC_CHECK- TLPXlatBlocked-\n\t\tCESta:\tRxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr- CorrIntErr- HeaderOF-\n\t\tCEMsk:\tRxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr- CorrIntErr- HeaderOF-\n\t\tAERCap:\tFirst Error Pointer: 14, ECRCGenCap+ ECRCGenEn- ECRCChkCap+ ECRCChkEn-\n\t\t\tMultHdrRecCap- MultHdrRecEn- TLPPfxPres- HdrLogCap-\n\t\tHeaderLog: 04000001 0010000f 07020000 00000000\n\tCapabilities: [200 v1] Physical Resizable BAR\n\t\tBAR 0: current size: 256MB, supported: 256MB 512MB 1GB 2GB 4GB 8GB 16GB\n\t\tBAR 2: current size: 2MB, supported: 2MB 4MB 8MB 16MB 32MB 64MB 128MB 256MB\n\tCapabilities: [240 v1] Power Budgeting <?>\n\tCapabilities: [270 v1] Secondary PCI Express\n\t\tLnkCtl3: LnkEquIntrruptEn- PerformEqu-\n\t\tLaneErrStat: 0\n\tCapabilities: [2a0 v1] Access Control Services\n\t\tACSCap:\tSrcValid- TransBlk- ReqRedir- CmpltRedir- UpstreamFwd- EgressCtrl- DirectTrans-\n\t\tACSCtl:\tSrcValid- TransBlk- ReqRedir- CmpltRedir- UpstreamFwd- EgressCtrl- DirectTrans-\n\tCapabilities: [2d0 v1] Process Address Space ID (PASID)\n\t\tPASIDCap: Exec+ Priv+, Max PASID Width: 10\n\t\tPASIDCtl: Enable- Exec- Priv-\n\tCapabilities: [320 v1] Latency Tolerance Reporting\n\t\tMax snoop latency: 0ns\n\t\tMax no snoop latency: 0ns\n\tCapabilities: [410 v1] Physical Layer 16.0 GT/s\n\t\tPhy16Sta: EquComplete+ EquPhase1+ EquPhase2+ EquPhase3+ LinkEquRequest-\n\tCapabilities: [440 v1] Lane Margining at the Receiver\n\t\tPortCap: Uses Driver-\n\t\tPortSta: MargReady+ MargSoftReady-\n\tKernel driver in use: amdgpu\n\tKernel modules: amdgpu\n\n",
+        "stderr": ""
+      },
+      "render": "/dev/dri/renderD129",
+      "dev_info": {
+        "file": "card0/dev-info.bin",
+        "bytes": 512
+      }
+    },
+    {
+      "card": "card1",
+      "bdf": "0000:04:00.0",
+      "sysfs": {
+        "vendor": {
+          "file": "card1/sysfs-vendor.txt",
+          "bytes": 7,
+          "sha256": "59eb647ef1fc0c0bd6ba711e1d041dac35fdd84c78e4bb42c04a233c3c738f1f"
+        },
+        "device": {
+          "file": "card1/sysfs-device.txt",
+          "bytes": 7,
+          "sha256": "464ca5ae24db8d3bdcb2124a7871d2bfc16fd2bf6265b0b115743e97c6f77470"
+        },
+        "subsystem_vendor": {
+          "file": "card1/sysfs-subsystem_vendor.txt",
+          "bytes": 7,
+          "sha256": "8b9c52b1cf16e8c6cfdd0c031c0893dde9d943be73c0ade7510988e7bca40842"
+        },
+        "subsystem_device": {
+          "file": "card1/sysfs-subsystem_device.txt",
+          "bytes": 7,
+          "sha256": "262dca771d18a534ed38b5a337528a50560fbe502eada6a102df6aed5a24f97b"
+        },
+        "revision": {
+          "file": "card1/sysfs-revision.txt",
+          "bytes": 5,
+          "sha256": "a4503bffa3b70acb827543bb252fe111d9df5f067069aa78e0e29f27939e0bd8"
+        },
+        "vbios_version": {
+          "file": "card1/sysfs-vbios_version.txt",
+          "bytes": 18,
+          "sha256": "2ccd08931f4c1b5e2dd6e1170583eae2de674495a6fb5855f4a866bd6e05e122"
+        },
+        "mem_info_vram_total": {
+          "file": "card1/sysfs-mem_info_vram_total.txt",
+          "bytes": 12,
+          "sha256": "05bd37c2f8b183de29c8d378662b5d99ef343a70679a3cf0a3bc1327bd1aec77"
+        },
+        "mem_info_vram_used": {
+          "file": "card1/sysfs-mem_info_vram_used.txt",
+          "bytes": 12,
+          "sha256": "c3fd61b99d2119ae5d9ef2193bf3a346440a5cf5730b2cc0f006112cad10bb26"
+        },
+        "mem_info_vis_vram_total": {
+          "file": "card1/sysfs-mem_info_vis_vram_total.txt",
+          "bytes": 10,
+          "sha256": "a4e2a1c28ab6c77b49f903f37526602e32e9495ee3719519baa8dcc66900bce5"
+        },
+        "mem_info_gtt_total": {
+          "file": "card1/sysfs-mem_info_gtt_total.txt",
+          "bytes": 12,
+          "sha256": "96cb508ce112ef9bd3f8ce75d77007a21e4fbc618db481d5e005e31191f8e80a"
+        },
+        "gpu_busy_percent": {
+          "file": "card1/sysfs-gpu_busy_percent.txt",
+          "bytes": 2,
+          "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+        },
+        "mem_busy_percent": {
+          "file": "card1/sysfs-mem_busy_percent.txt",
+          "bytes": 2,
+          "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3"
+        },
+        "current_link_speed": {
+          "file": "card1/sysfs-current_link_speed.txt",
+          "bytes": 15,
+          "sha256": "d0b7d19c724e0ba9f52f44b108b58cb694d7f1747bdfd0efda0fd770f8d800ba"
+        },
+        "current_link_width": {
+          "file": "card1/sysfs-current_link_width.txt",
+          "bytes": 3,
+          "sha256": "e6c21e8d260fe71882debdb339d2402a2ca7648529bc2303f48649bce0380017"
+        },
+        "max_link_speed": {
+          "file": "card1/sysfs-max_link_speed.txt",
+          "bytes": 15,
+          "sha256": "d0b7d19c724e0ba9f52f44b108b58cb694d7f1747bdfd0efda0fd770f8d800ba"
+        },
+        "max_link_width": {
+          "file": "card1/sysfs-max_link_width.txt",
+          "bytes": 3,
+          "sha256": "e6c21e8d260fe71882debdb339d2402a2ca7648529bc2303f48649bce0380017"
+        },
+        "pp_dpm_sclk": {
+          "file": "card1/sysfs-pp_dpm_sclk.txt",
+          "bytes": 36,
+          "sha256": "f756766620f446b3e67cbc93557295d8994bdbf309b75cd1cff42c527297736f"
+        },
+        "pp_dpm_mclk": {
+          "file": "card1/sysfs-pp_dpm_mclk.txt",
+          "bytes": 45,
+          "sha256": "b5e620aa50ca552f1212964228fb174ad8882c2220ed48a6bfcbdbfae7d04afc"
+        },
+        "power_dpm_force_performance_level": {
+          "file": "card1/sysfs-power_dpm_force_performance_level.txt",
+          "bytes": 5,
+          "sha256": "6d1dbb9c582de44ad1dbc0d24eca4d831d8172bef0593680ecd24f6d0ce9def5"
+        },
+        "pp_features": {
+          "file": "card1/sysfs-pp_features.txt",
+          "bytes": 1811,
+          "sha256": "89b539f43bca0c950076a8023ea5d3da61ac8163b343da53442ba6d766075dae"
+        }
+      },
+      "debugfs": {
+        "name": {
+          "file": "card1/name.txt",
+          "bytes": 44,
+          "sha256": "1899b5f4770526cfdf0c6a885c8dfa5934018c89a8a148d06e89345c0bf4d3ce"
+        },
+        "amdgpu_gca_config": {
+          "file": "card1/amdgpu_gca_config.bin",
+          "bytes": 144,
+          "sha256": "4e2a9234b82ad712705eabe72fe116324dabbf8c5ae5908e07d01b5e386e22a4"
+        },
+        "amdgpu_firmware_info": {
+          "file": "card1/amdgpu_firmware_info.txt",
+          "bytes": 2041,
+          "sha256": "db5dc5279796b34dba53bcbaf54ab090152fcac934ea46c5f25aa23b2f57cb16"
+        },
+        "amdgpu_vbios": {
+          "file": "card1/amdgpu_vbios.bin",
+          "bytes": 45056,
+          "sha256": "e258121695fd5ae029132cdcc328e5c34065876a5612e3a2260487ac196a5b5e"
+        },
+        "amdgpu_pm_info": {
+          "file": "card1/amdgpu_pm_info.txt",
+          "bytes": 1754,
+          "sha256": "bce05a57dd8443392f160b633dd62bb2828d986a5157e4616be6ec347fa3083e"
+        }
+      },
+      "pcie_path": [
+        {
+          "bdf": "0000:04:00.0",
+          "current_link_speed": "16.0 GT/s PCIe",
+          "current_link_width": "16",
+          "max_link_speed": "16.0 GT/s PCIe",
+          "max_link_width": "16"
+        },
+        {
+          "bdf": "0000:03:00.0",
+          "current_link_speed": "16.0 GT/s PCIe",
+          "current_link_width": "16",
+          "max_link_speed": "16.0 GT/s PCIe",
+          "max_link_width": "16"
+        },
+        {
+          "bdf": "0000:02:00.0",
+          "current_link_speed": "8.0 GT/s PCIe",
+          "current_link_width": "4",
+          "max_link_speed": "16.0 GT/s PCIe",
+          "max_link_width": "16"
+        },
+        {
+          "bdf": "0000:00:01.1",
+          "current_link_speed": "8.0 GT/s PCIe",
+          "current_link_width": "4",
+          "max_link_speed": "8.0 GT/s PCIe",
+          "max_link_width": "4"
+        }
+      ],
+      "lspci": {
+        "argv": [
+          "lspci",
+          "-Dnnvv",
+          "-s",
+          "0000:04:00.0"
+        ],
+        "returncode": 0,
+        "stdout": "0000:04:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Navi 21 [Radeon RX 6800/6800 XT / 6900 XT] [1002:73bf] (rev c3) (prog-if 00 [VGA controller])\n\tSubsystem: ASRock Incorporation Device [1849:5204]\n\tControl: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx+\n\tStatus: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-\n\tLatency: 0, Cache Line Size: 32 bytes\n\tInterrupts: pin B disabled, MSI(X) routed to IRQ 72\n\tNUMA node: 0\n\tIOMMU group: 49\n\tRegion 0: Memory at e0000000 (64-bit, prefetchable) [size=256M]\n\tRegion 2: Memory at f0000000 (64-bit, prefetchable) [size=2M]\n\tRegion 4: I/O ports at e000 [size=256]\n\tRegion 5: Memory at fba00000 (32-bit, non-prefetchable) [size=1M]\n\tExpansion ROM at fbb00000 [disabled] [size=128K]\n\tCapabilities: [48] Vendor Specific Information: Len=08 <?>\n\tCapabilities: [50] Power Management version 3\n\t\tFlags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1+,D2+,D3hot+,D3cold+)\n\t\tStatus: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-\n\tCapabilities: [64] Express (v2) Legacy Endpoint, IntMsgNum 0\n\t\tDevCap:\tMaxPayload 256 bytes, PhantFunc 0, Latency L0s <4us, L1 unlimited\n\t\t\tExtTag+ AttnBtn- AttnInd- PwrInd- RBE+ FLReset- TEE-IO-\n\t\tDevCtl:\tCorrErr+ NonFatalErr+ FatalErr+ UnsupReq+\n\t\t\tRlxdOrd- ExtTag+ PhantFunc- AuxPwr- NoSnoop+\n\t\t\tMaxPayload 256 bytes, MaxReadReq 512 bytes\n\t\tDevSta:\tCorrErr- NonFatalErr- FatalErr- UnsupReq- AuxPwr- TransPend-\n\t\tLnkCap:\tPort #0, Speed 16GT/s, Width x16, ASPM L0s L1, Exit Latency L0s <64ns, L1 <1us\n\t\t\tClockPM- Surprise- LLActRep- BwNot- ASPMOptComp+\n\t\tLnkCtl:\tASPM Disabled; RCB 64 bytes, LnkDisable- CommClk+\n\t\t\tExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt- FltModeDis-\n\t\tLnkSta:\tSpeed 16GT/s, Width x16\n\t\t\tTrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-\n\t\tDevCap2: Completion Timeout: Range ABCD, TimeoutDis+ NROPrPrP- LTR+\n\t\t\t 10BitTagComp+ 10BitTagReq+ OBFF Not Supported, ExtFmt+ EETLPPrefix+, MaxEETLPPrefixes 1\n\t\t\t EmergencyPowerReduction Not Supported, EmergencyPowerReductionInit-\n\t\t\t FRS-\n\t\t\t AtomicOpsCap: 32bit+ 64bit+ 128bitCAS-\n\t\tDevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-\n\t\t\t AtomicOpsCtl: ReqEn+\n\t\t\t IDOReq- IDOCompl- LTR- EmergencyPowerReductionReq-\n\t\t\t 10BitTagReq- OBFF Disabled, EETLPPrefixBlk-\n\t\tLnkCap2: Supported Link Speeds: 2.5-16GT/s, Crosslink- Retimer+ 2Retimers+ DRS-\n\t\tLnkCtl2: Target Link Speed: 16GT/s, EnterCompliance- SpeedDis-\n\t\t\t Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-\n\t\t\t Compliance Preset/De-emphasis: -6dB de-emphasis, 0dB preshoot\n\t\tLnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete+ EqualizationPhase1+\n\t\t\t EqualizationPhase2+ EqualizationPhase3+ LinkEqualizationRequest-\n\t\t\t Retimer- 2Retimers- CrosslinkRes: unsupported, FltMode-\n\tCapabilities: [a0] MSI: Enable+ Count=1/1 Maskable- 64bit+\n\t\tAddress: 00000000fee00818  Data: 0000\n\tCapabilities: [100 v1] Vendor Specific Information: ID=0001 Rev=1 Len=010 <?>\n\tCapabilities: [150 v2] Advanced Error Reporting\n\t\tUESta:\tDLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP-\n\t\t\tECRC- UnsupReq- ACSViol- UncorrIntErr- BlockedTLP- AtomicOpBlocked- TLPBlockedErr-\n\t\t\tPoisonTLPBlocked- DMWrReqBlocked- IDECheck- MisIDETLP- PCRC_CHECK- TLPXlatBlocked-\n\t\tUEMsk:\tDLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP-\n\t\t\tECRC- UnsupReq- ACSViol- UncorrIntErr- BlockedTLP- AtomicOpBlocked- TLPBlockedErr-\n\t\t\tPoisonTLPBlocked- DMWrReqBlocked- IDECheck- MisIDETLP- PCRC_CHECK- TLPXlatBlocked-\n\t\tUESvrt:\tDLP+ SDES+ TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+\n\t\t\tECRC- UnsupReq- ACSViol- UncorrIntErr+ BlockedTLP- AtomicOpBlocked- TLPBlockedErr-\n\t\t\tPoisonTLPBlocked- DMWrReqBlocked- IDECheck- MisIDETLP- PCRC_CHECK- TLPXlatBlocked-\n\t\tCESta:\tRxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr- CorrIntErr- HeaderOF-\n\t\tCEMsk:\tRxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr- CorrIntErr- HeaderOF-\n\t\tAERCap:\tFirst Error Pointer: 14, ECRCGenCap+ ECRCGenEn- ECRCChkCap+ ECRCChkEn-\n\t\t\tMultHdrRecCap- MultHdrRecEn- TLPPfxPres- HdrLogCap-\n\t\tHeaderLog: 04000001 0009300f 04020000 00000000\n\tCapabilities: [200 v1] Physical Resizable BAR\n\t\tBAR 0: current size: 256MB, supported: 256MB 512MB 1GB 2GB 4GB 8GB 16GB\n\t\tBAR 2: current size: 2MB, supported: 2MB 4MB 8MB 16MB 32MB 64MB 128MB 256MB\n\tCapabilities: [240 v1] Power Budgeting <?>\n\tCapabilities: [270 v1] Secondary PCI Express\n\t\tLnkCtl3: LnkEquIntrruptEn- PerformEqu-\n\t\tLaneErrStat: 0\n\tCapabilities: [2a0 v1] Access Control Services\n\t\tACSCap:\tSrcValid- TransBlk- ReqRedir- CmpltRedir- UpstreamFwd- EgressCtrl- DirectTrans-\n\t\tACSCtl:\tSrcValid- TransBlk- ReqRedir- CmpltRedir- UpstreamFwd- EgressCtrl- DirectTrans-\n\tCapabilities: [2d0 v1] Process Address Space ID (PASID)\n\t\tPASIDCap: Exec+ Priv+, Max PASID Width: 10\n\t\tPASIDCtl: Enable- Exec- Priv-\n\tCapabilities: [320 v1] Latency Tolerance Reporting\n\t\tMax snoop latency: 0ns\n\t\tMax no snoop latency: 0ns\n\tCapabilities: [410 v1] Physical Layer 16.0 GT/s\n\t\tPhy16Sta: EquComplete+ EquPhase1+ EquPhase2+ EquPhase3+ LinkEquRequest-\n\tCapabilities: [440 v1] Lane Margining at the Receiver\n\t\tPortCap: Uses Driver-\n\t\tPortSta: MargReady+ MargSoftReady-\n\tKernel driver in use: amdgpu\n\tKernel modules: amdgpu\n\n",
+        "stderr": ""
+      },
+      "render": "/dev/dri/renderD128",
+      "dev_info": {
+        "file": "card1/dev-info.bin",
+        "bytes": 512
+      }
+    },
+    {
+      "card": "card2",
+      "bdf": "0000:0a:00.0",
+      "sysfs": {
+        "vendor": {
+          "file": "card2/sysfs-vendor.txt",
+          "bytes": 7,
+          "sha256": "59eb647ef1fc0c0bd6ba711e1d041dac35fdd84c78e4bb42c04a233c3c738f1f"
+        },
+        "device": {
+          "file": "card2/sysfs-device.txt",
+          "bytes": 7,
+          "sha256": "464ca5ae24db8d3bdcb2124a7871d2bfc16fd2bf6265b0b115743e97c6f77470"
+        },
+        "subsystem_vendor": {
+          "file": "card2/sysfs-subsystem_vendor.txt",
+          "bytes": 7,
+          "sha256": "8b9c52b1cf16e8c6cfdd0c031c0893dde9d943be73c0ade7510988e7bca40842"
+        },
+        "subsystem_device": {
+          "file": "card2/sysfs-subsystem_device.txt",
+          "bytes": 7,
+          "sha256": "3e0ea170742479d83c194277ccb13a1b7f588dcd6a59cd37566a52e702397e8c"
+        },
+        "revision": {
+          "file": "card2/sysfs-revision.txt",
+          "bytes": 5,
+          "sha256": "a4503bffa3b70acb827543bb252fe111d9df5f067069aa78e0e29f27939e0bd8"
+        },
+        "vbios_version": {
+          "file": "card2/sysfs-vbios_version.txt",
+          "bytes": 18,
+          "sha256": "2ccd08931f4c1b5e2dd6e1170583eae2de674495a6fb5855f4a866bd6e05e122"
+        },
+        "mem_info_vram_total": {
+          "file": "card2/sysfs-mem_info_vram_total.txt",
+          "bytes": 12,
+          "sha256": "05bd37c2f8b183de29c8d378662b5d99ef343a70679a3cf0a3bc1327bd1aec77"
+        },
+        "mem_info_vram_used": {
+          "file": "card2/sysfs-mem_info_vram_used.txt",
+          "bytes": 12,
+          "sha256": "49dbafbbfb89b7e05224a89395ad63a6790ae573c3615f323264d0bf1949386d"
+        },
+        "mem_info_vis_vram_total": {
+          "file": "card2/sysfs-mem_info_vis_vram_total.txt",
+          "bytes": 10,
+          "sha256": "a4e2a1c28ab6c77b49f903f37526602e32e9495ee3719519baa8dcc66900bce5"
+        },
+        "mem_info_gtt_total": {
+          "file": "card2/sysfs-mem_info_gtt_total.txt",
+          "bytes": 12,
+          "sha256": "96cb508ce112ef9bd3f8ce75d77007a21e4fbc618db481d5e005e31191f8e80a"
+        },
+        "gpu_busy_percent": {
+          "file": "card2/sysfs-gpu_busy_percent.txt",
+          "bytes": 2,
+          "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+        },
+        "mem_busy_percent": {
+          "file": "card2/sysfs-mem_busy_percent.txt",
+          "bytes": 2,
+          "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+        },
+        "current_link_speed": {
+          "file": "card2/sysfs-current_link_speed.txt",
+          "bytes": 15,
+          "sha256": "d0b7d19c724e0ba9f52f44b108b58cb694d7f1747bdfd0efda0fd770f8d800ba"
+        },
+        "current_link_width": {
+          "file": "card2/sysfs-current_link_width.txt",
+          "bytes": 3,
+          "sha256": "e6c21e8d260fe71882debdb339d2402a2ca7648529bc2303f48649bce0380017"
+        },
+        "max_link_speed": {
+          "file": "card2/sysfs-max_link_speed.txt",
+          "bytes": 15,
+          "sha256": "d0b7d19c724e0ba9f52f44b108b58cb694d7f1747bdfd0efda0fd770f8d800ba"
+        },
+        "max_link_width": {
+          "file": "card2/sysfs-max_link_width.txt",
+          "bytes": 3,
+          "sha256": "e6c21e8d260fe71882debdb339d2402a2ca7648529bc2303f48649bce0380017"
+        },
+        "pp_dpm_sclk": {
+          "file": "card2/sysfs-pp_dpm_sclk.txt",
+          "bytes": 36,
+          "sha256": "3471a6faf9d594f714af3ef66ce06a66ab24c8ca358ae6e4b4d6f7acd0c0c276"
+        },
+        "pp_dpm_mclk": {
+          "file": "card2/sysfs-pp_dpm_mclk.txt",
+          "bytes": 45,
+          "sha256": "b5e620aa50ca552f1212964228fb174ad8882c2220ed48a6bfcbdbfae7d04afc"
+        },
+        "power_dpm_force_performance_level": {
+          "file": "card2/sysfs-power_dpm_force_performance_level.txt",
+          "bytes": 5,
+          "sha256": "6d1dbb9c582de44ad1dbc0d24eca4d831d8172bef0593680ecd24f6d0ce9def5"
+        },
+        "pp_features": {
+          "file": "card2/sysfs-pp_features.txt",
+          "bytes": 1811,
+          "sha256": "89b539f43bca0c950076a8023ea5d3da61ac8163b343da53442ba6d766075dae"
+        }
+      },
+      "debugfs": {
+        "name": {
+          "file": "card2/name.txt",
+          "bytes": 44,
+          "sha256": "09ab0df9b778b2e4e9c8cf55ec1542cc9be34e0074d36fd4c28c7acdc65993ed"
+        },
+        "amdgpu_gca_config": {
+          "file": "card2/amdgpu_gca_config.bin",
+          "bytes": 144,
+          "sha256": "b67a84f0093a2a36ba5b575d2fd5bd79fbf47fd85f3129e240a8f5e640438bde"
+        },
+        "amdgpu_firmware_info": {
+          "file": "card2/amdgpu_firmware_info.txt",
+          "bytes": 2041,
+          "sha256": "db5dc5279796b34dba53bcbaf54ab090152fcac934ea46c5f25aa23b2f57cb16"
+        },
+        "amdgpu_vbios": {
+          "file": "card2/amdgpu_vbios.bin",
+          "bytes": 45056,
+          "sha256": "e258121695fd5ae029132cdcc328e5c34065876a5612e3a2260487ac196a5b5e"
+        },
+        "amdgpu_pm_info": {
+          "file": "card2/amdgpu_pm_info.txt",
+          "bytes": 1753,
+          "sha256": "c926a33e4ba26c5b3fe4e8fe7eee196fce3ad3156ee86de82623fcd4fc23c914"
+        }
+      },
+      "pcie_path": [
+        {
+          "bdf": "0000:0a:00.0",
+          "current_link_speed": "16.0 GT/s PCIe",
+          "current_link_width": "16",
+          "max_link_speed": "16.0 GT/s PCIe",
+          "max_link_width": "16"
+        },
+        {
+          "bdf": "0000:09:00.0",
+          "current_link_speed": "16.0 GT/s PCIe",
+          "current_link_width": "16",
+          "max_link_speed": "16.0 GT/s PCIe",
+          "max_link_width": "16"
+        },
+        {
+          "bdf": "0000:08:00.0",
+          "current_link_speed": "8.0 GT/s PCIe",
+          "current_link_width": "8",
+          "max_link_speed": "16.0 GT/s PCIe",
+          "max_link_width": "16"
+        },
+        {
+          "bdf": "0000:00:03.0",
+          "current_link_speed": "8.0 GT/s PCIe",
+          "current_link_width": "8",
+          "max_link_speed": "8.0 GT/s PCIe",
+          "max_link_width": "16"
+        }
+      ],
+      "lspci": {
+        "argv": [
+          "lspci",
+          "-Dnnvv",
+          "-s",
+          "0000:0a:00.0"
+        ],
+        "returncode": 0,
+        "stdout": "0000:0a:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Navi 21 [Radeon RX 6800/6800 XT / 6900 XT] [1002:73bf] (rev c3) (prog-if 00 [VGA controller])\n\tSubsystem: ASRock Incorporation Device [1849:5203]\n\tControl: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR+ FastB2B- DisINTx+\n\tStatus: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-\n\tLatency: 0, Cache Line Size: 32 bytes\n\tInterrupts: pin B disabled, MSI(X) routed to IRQ 74\n\tNUMA node: 0\n\tIOMMU group: 53\n\tRegion 0: Memory at a0000000 (64-bit, prefetchable) [size=256M]\n\tRegion 2: Memory at b0000000 (64-bit, prefetchable) [size=2M]\n\tRegion 4: I/O ports at c000 [size=256]\n\tRegion 5: Memory at fb400000 (32-bit, non-prefetchable) [size=1M]\n\tExpansion ROM at fb500000 [disabled] [size=128K]\n\tCapabilities: [48] Vendor Specific Information: Len=08 <?>\n\tCapabilities: [50] Power Management version 3\n\t\tFlags: PMEClk- DSI- D1- D2- AuxCurrent=0mA PME(D0-,D1+,D2+,D3hot+,D3cold+)\n\t\tStatus: D0 NoSoftRst+ PME-Enable- DSel=0 DScale=0 PME-\n\tCapabilities: [64] Express (v2) Legacy Endpoint, IntMsgNum 0\n\t\tDevCap:\tMaxPayload 256 bytes, PhantFunc 0, Latency L0s <4us, L1 unlimited\n\t\t\tExtTag+ AttnBtn- AttnInd- PwrInd- RBE+ FLReset- TEE-IO-\n\t\tDevCtl:\tCorrErr+ NonFatalErr+ FatalErr+ UnsupReq+\n\t\t\tRlxdOrd- ExtTag+ PhantFunc- AuxPwr- NoSnoop+\n\t\t\tMaxPayload 256 bytes, MaxReadReq 512 bytes\n\t\tDevSta:\tCorrErr- NonFatalErr- FatalErr- UnsupReq- AuxPwr- TransPend-\n\t\tLnkCap:\tPort #0, Speed 16GT/s, Width x16, ASPM L0s L1, Exit Latency L0s <64ns, L1 <1us\n\t\t\tClockPM- Surprise- LLActRep- BwNot- ASPMOptComp+\n\t\tLnkCtl:\tASPM Disabled; RCB 64 bytes, LnkDisable- CommClk+\n\t\t\tExtSynch- ClockPM- AutWidDis- BWInt- AutBWInt- FltModeDis-\n\t\tLnkSta:\tSpeed 16GT/s, Width x16\n\t\t\tTrErr- Train- SlotClk+ DLActive- BWMgmt- ABWMgmt-\n\t\tDevCap2: Completion Timeout: Range ABCD, TimeoutDis+ NROPrPrP- LTR+\n\t\t\t 10BitTagComp+ 10BitTagReq+ OBFF Not Supported, ExtFmt+ EETLPPrefix+, MaxEETLPPrefixes 1\n\t\t\t EmergencyPowerReduction Not Supported, EmergencyPowerReductionInit-\n\t\t\t FRS-\n\t\t\t AtomicOpsCap: 32bit+ 64bit+ 128bitCAS-\n\t\tDevCtl2: Completion Timeout: 50us to 50ms, TimeoutDis-\n\t\t\t AtomicOpsCtl: ReqEn+\n\t\t\t IDOReq- IDOCompl- LTR- EmergencyPowerReductionReq-\n\t\t\t 10BitTagReq- OBFF Disabled, EETLPPrefixBlk-\n\t\tLnkCap2: Supported Link Speeds: 2.5-16GT/s, Crosslink- Retimer+ 2Retimers+ DRS-\n\t\tLnkCtl2: Target Link Speed: 16GT/s, EnterCompliance- SpeedDis-\n\t\t\t Transmit Margin: Normal Operating Range, EnterModifiedCompliance- ComplianceSOS-\n\t\t\t Compliance Preset/De-emphasis: -6dB de-emphasis, 0dB preshoot\n\t\tLnkSta2: Current De-emphasis Level: -3.5dB, EqualizationComplete+ EqualizationPhase1+\n\t\t\t EqualizationPhase2+ EqualizationPhase3+ LinkEqualizationRequest-\n\t\t\t Retimer- 2Retimers- CrosslinkRes: unsupported, FltMode-\n\tCapabilities: [a0] MSI: Enable+ Count=1/1 Maskable- 64bit+\n\t\tAddress: 00000000fee00858  Data: 0000\n\tCapabilities: [100 v1] Vendor Specific Information: ID=0001 Rev=1 Len=010 <?>\n\tCapabilities: [150 v2] Advanced Error Reporting\n\t\tUESta:\tDLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP-\n\t\t\tECRC- UnsupReq- ACSViol- UncorrIntErr- BlockedTLP- AtomicOpBlocked- TLPBlockedErr-\n\t\t\tPoisonTLPBlocked- DMWrReqBlocked- IDECheck- MisIDETLP- PCRC_CHECK- TLPXlatBlocked-\n\t\tUEMsk:\tDLP- SDES- TLP- FCP- CmpltTO- CmpltAbrt- UnxCmplt- RxOF- MalfTLP-\n\t\t\tECRC- UnsupReq- ACSViol- UncorrIntErr- BlockedTLP- AtomicOpBlocked- TLPBlockedErr-\n\t\t\tPoisonTLPBlocked- DMWrReqBlocked- IDECheck- MisIDETLP- PCRC_CHECK- TLPXlatBlocked-\n\t\tUESvrt:\tDLP+ SDES+ TLP- FCP+ CmpltTO- CmpltAbrt- UnxCmplt- RxOF+ MalfTLP+\n\t\t\tECRC- UnsupReq- ACSViol- UncorrIntErr+ BlockedTLP- AtomicOpBlocked- TLPBlockedErr-\n\t\t\tPoisonTLPBlocked- DMWrReqBlocked- IDECheck- MisIDETLP- PCRC_CHECK- TLPXlatBlocked-\n\t\tCESta:\tRxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr- CorrIntErr- HeaderOF-\n\t\tCEMsk:\tRxErr- BadTLP- BadDLLP- Rollover- Timeout- AdvNonFatalErr- CorrIntErr- HeaderOF-\n\t\tAERCap:\tFirst Error Pointer: 14, ECRCGenCap+ ECRCGenEn- ECRCChkCap+ ECRCChkEn-\n\t\t\tMultHdrRecCap- MultHdrRecEn- TLPPfxPres- HdrLogCap-\n\t\tHeaderLog: 04000001 0018000f 0a020000 00000000\n\tCapabilities: [200 v1] Physical Resizable BAR\n\t\tBAR 0: current size: 256MB, supported: 256MB 512MB 1GB 2GB 4GB 8GB 16GB\n\t\tBAR 2: current size: 2MB, supported: 2MB 4MB 8MB 16MB 32MB 64MB 128MB 256MB\n\tCapabilities: [240 v1] Power Budgeting <?>\n\tCapabilities: [270 v1] Secondary PCI Express\n\t\tLnkCtl3: LnkEquIntrruptEn- PerformEqu-\n\t\tLaneErrStat: 0\n\tCapabilities: [2a0 v1] Access Control Services\n\t\tACSCap:\tSrcValid- TransBlk- ReqRedir- CmpltRedir- UpstreamFwd- EgressCtrl- DirectTrans-\n\t\tACSCtl:\tSrcValid- TransBlk- ReqRedir- CmpltRedir- UpstreamFwd- EgressCtrl- DirectTrans-\n\tCapabilities: [2d0 v1] Process Address Space ID (PASID)\n\t\tPASIDCap: Exec+ Priv+, Max PASID Width: 10\n\t\tPASIDCtl: Enable- Exec- Priv-\n\tCapabilities: [320 v1] Latency Tolerance Reporting\n\t\tMax snoop latency: 0ns\n\t\tMax no snoop latency: 0ns\n\tCapabilities: [410 v1] Physical Layer 16.0 GT/s\n\t\tPhy16Sta: EquComplete+ EquPhase1+ EquPhase2+ EquPhase3+ LinkEquRequest-\n\tCapabilities: [440 v1] Lane Margining at the Receiver\n\t\tPortCap: Uses Driver-\n\t\tPortSta: MargReady+ MargSoftReady-\n\tKernel driver in use: amdgpu\n\tKernel modules: amdgpu\n\n",
+        "stderr": ""
+      },
+      "render": "/dev/dri/renderD130",
+      "dev_info": {
+        "file": "card2/dev-info.bin",
+        "bytes": 512
+      }
+    }
+  ],
+  "os": {
+    "file": "os-release.txt",
+    "bytes": 484,
+    "sha256": "c33c4054d2ebd732bb90e0deff3616c06bd59d22aa6fb405519b9ccafb58aac9"
+  },
+  "packages": {
+    "argv": [
+      "rpm",
+      "-qa"
+    ],
+    "returncode": 0,
+    "stdout": "Mesa-vulkan-device-select-26.2.5-1.1.x86_64\nkernel-firmware-amdgpu-20261031-1.1.noarch\nlibvulkan1-1.4.363-1.1.x86_64\nlibvulkan_radeon-26.2.5-1.1.x86_64\nlibdrm2-2.4.134-2.2.x86_64\nlibdrm_amdgpu1-2.4.134-2.2.x86_64\nkernel-default-7.3.1-1.1.x86_64",
+    "stderr": ""
+  },
+  "module": {
+    "argv": [
+      "modinfo",
+      "amdgpu"
+    ],
+    "returncode": 0,
+    "stdout": "filename:       /usr/lib/modules/7.3.1-1-default/kernel/drivers/gpu/drm/amd/amdgpu/amdgpu.ko.zst\nlicense:        GPL and additional rights\ndescription:    AMD GPU\nauthor:         AMD linux driver team\nfirmware:       amdgpu/cyan_skillfish_gpu_info.bin\nfirmware:       amdgpu/navi12_gpu_info.bin\nfirmware:       amdgpu/arcturus_gpu_info.bin\nfirmware:       amdgpu/raven2_gpu_info.bin\nfirmware:       amdgpu/picasso_gpu_info.bin\nfirmware:       amdgpu/raven_gpu_info.bin\nfirmware:       amdgpu/vega12_gpu_info.bin\nfirmware:       amdgpu/vega10_gpu_info.bin\nimport_ns:      DMA_BUF\nfirmware:       amdgpu/aldebaran_ip_discovery.bin\nfirmware:       amdgpu/arcturus_ip_discovery.bin\nfirmware:       amdgpu/picasso_ip_discovery.bin\nfirmware:       amdgpu/raven2_ip_discovery.bin\nfirmware:       amdgpu/raven_ip_discovery.bin\nfirmware:       amdgpu/vega20_ip_discovery.bin\nfirmware:       amdgpu/vega12_ip_discovery.bin\nfirmware:       amdgpu/vega10_ip_discovery.bin\nfirmware:       amdgpu/ip_discovery.bin\nfirmware:       amdgpu/mullins_mec.bin\nfirmware:       amdgpu/mullins_rlc.bin\nfirmware:       amdgpu/mullins_ce.bin\nfirmware:       amdgpu/mullins_me.bin\nfirmware:       amdgpu/mullins_pfp.bin\nfirmware:       amdgpu/kabini_mec.bin\nfirmware:       amdgpu/kabini_rlc.bin\nfirmware:       amdgpu/kabini_ce.bin\nfirmware:       amdgpu/kabini_me.bin\nfirmware:       amdgpu/kabini_pfp.bin\nfirmware:       amdgpu/kaveri_mec2.bin\nfirmware:       amdgpu/kaveri_mec.bin\nfirmware:       amdgpu/kaveri_rlc.bin\nfirmware:       amdgpu/kaveri_ce.bin\nfirmware:       amdgpu/kaveri_me.bin\nfirmware:       amdgpu/kaveri_pfp.bin\nfirmware:       amdgpu/hawaii_mec.bin\nfirmware:       amdgpu/hawaii_rlc.bin\nfirmware:       amdgpu/hawaii_ce.bin\nfirmware:       amdgpu/hawaii_me.bin\nfirmware:       amdgpu/hawaii_pfp.bin\nfirmware:       amdgpu/bonaire_mec.bin\nfirmware:       amdgpu/bonaire_rlc.bin\nfirmware:       amdgpu/bonaire_ce.bin\nfirmware:       amdgpu/bonaire_me.bin\nfirmware:       amdgpu/bonaire_pfp.bin\nfirmware:       amdgpu/mullins_sdma1.bin\nfirmware:       amdgpu/mullins_sdma.bin\nfirmware:       amdgpu/kabini_sdma1.bin\nfirmware:       amdgpu/kabini_sdma.bin\nfirmware:       amdgpu/kaveri_sdma1.bin\nfirmware:       amdgpu/kaveri_sdma.bin\nfirmware:       amdgpu/hawaii_sdma1.bin\nfirmware:       amdgpu/hawaii_sdma.bin\nfirmware:       amdgpu/bonaire_sdma1.bin\nfirmware:       amdgpu/bonaire_sdma.bin\nfirmware:       amdgpu/si58_mc.bin\nfirmware:       amdgpu/hainan_mc.bin\nfirmware:       amdgpu/oland_mc.bin\nfirmware:       amdgpu/verde_mc.bin\nfirmware:       amdgpu/pitcairn_mc.bin\nfirmware:       amdgpu/tahiti_mc.bin\nfirmware:       amdgpu/hainan_rlc.bin\nfirmware:       amdgpu/hainan_ce.bin\nfirmware:       amdgpu/hainan_me.bin\nfirmware:       amdgpu/hainan_pfp.bin\nfirmware:       amdgpu/oland_rlc.bin\nfirmware:       amdgpu/oland_ce.bin\nfirmware:       amdgpu/oland_me.bin\nfirmware:       amdgpu/oland_pfp.bin\nfirmware:       amdgpu/verde_rlc.bin\nfirmware:       amdgpu/verde_ce.bin\nfirmware:       amdgpu/verde_me.bin\nfirmware:       amdgpu/verde_pfp.bin\nfirmware:       amdgpu/pitcairn_rlc.bin\nfirmware:       amdgpu/pitcairn_ce.bin\nfirmware:       amdgpu/pitcairn_me.bin\nfirmware:       amdgpu/pitcairn_pfp.bin\nfirmware:       amdgpu/tahiti_rlc.bin\nfirmware:       amdgpu/tahiti_ce.bin\nfirmware:       amdgpu/tahiti_me.bin\nfirmware:       amdgpu/tahiti_pfp.bin\nfirmware:       amdgpu/topaz_mc.bin\nfirmware:       amdgpu/hawaii_mc.bin\nfirmware:       amdgpu/bonaire_mc.bin\nfirmware:       amdgpu/polaris12_k_mc.bin\nfirmware:       amdgpu/polaris10_k_mc.bin\nfirmware:       amdgpu/polaris11_k_mc.bin\nfirmware:       amdgpu/polaris12_32_mc.bin\nfirmware:       amdgpu/polaris12_mc.bin\nfirmware:       amdgpu/polaris10_mc.bin\nfirmware:       amdgpu/polaris11_mc.bin\nfirmware:       amdgpu/tonga_mc.bin\nfirmware:       amdgpu/vega12_asd.bin\nfirmware:       amdgpu/vega12_sos.bin\nfirmware:       amdgpu/vega10_cap.bin\nfirmware:       amdgpu/vega10_asd.bin\nfirmware:       amdgpu/vega10_sos.bin\nfirmware:       amdgpu/raven_ta.bin\nfirmware:       amdgpu/raven2_ta.bin\nfirmware:       amdgpu/picasso_ta.bin\nfirmware:       amdgpu/raven2_asd.bin\nfirmware:       amdgpu/picasso_asd.bin\nfirmware:       amdgpu/raven_asd.bin\nfirmware:       amdgpu/beige_goby_ta.bin\nfirmware:       amdgpu/beige_goby_sos.bin\nfirmware:       amdgpu/dimgrey_cavefish_ta.bin\nfirmware:       amdgpu/dimgrey_cavefish_sos.bin\nfirmware:       amdgpu/vangogh_toc.bin\nfirmware:       amdgpu/vangogh_asd.bin\nfirmware:       amdgpu/navy_flounder_ta.bin\nfirmware:       amdgpu/navy_flounder_sos.bin\nfirmware:       amdgpu/sienna_cichlid_cap.bin\nfirmware:       amdgpu/sienna_cichlid_ta.bin\nfirmware:       amdgpu/sienna_cichlid_sos.bin\nfirmware:       amdgpu/arcturus_ta.bin\nfirmware:       amdgpu/arcturus_asd.bin\nfirmware:       amdgpu/arcturus_sos.bin\nfirmware:       amdgpu/navi12_cap.bin\nfirmware:       amdgpu/navi12_ta.bin\nfirmware:       amdgpu/navi12_asd.bin\nfirmware:       amdgpu/navi12_sos.bin\nfirmware:       amdgpu/navi14_ta.bin\nfirmware:       amdgpu/navi14_asd.bin\nfirmware:       amdgpu/navi14_sos.bin\nfirmware:       amdgpu/navi10_ta.bin\nfirmware:       amdgpu/navi10_asd.bin\nfirmware:       amdgpu/navi10_sos.bin\nfirmware:       amdgpu/vega20_ta.bin\nfirmware:       amdgpu/vega20_asd.bin\nfirmware:       amdgpu/vega20_sos.bin\nfirmware:       amdgpu/green_sardine_ta.bin\nfirmware:       amdgpu/green_sardine_asd.bin\nfirmware:       amdgpu/renoir_ta.bin\nfirmware:       amdgpu/renoir_asd.bin\nfirmware:       amdgpu/psp_14_0_4_ta.bin\nfirmware:       amdgpu/psp_14_0_4_toc.bin\nfirmware:       amdgpu/psp_14_0_1_ta.bin\nfirmware:       amdgpu/psp_14_0_1_toc.bin\nfirmware:       amdgpu/psp_14_0_0_ta.bin\nfirmware:       amdgpu/psp_14_0_0_toc.bin\nfirmware:       amdgpu/psp_13_0_15_ta.bin\nfirmware:       amdgpu/psp_13_0_15_sos.bin\nfirmware:       amdgpu/psp_13_0_14_ta.bin\nfirmware:       amdgpu/psp_13_0_14_sos.bin\nfirmware:       amdgpu/psp_13_0_12_ta.bin\nfirmware:       amdgpu/psp_13_0_12_sos.bin\nfirmware:       amdgpu/psp_13_0_6_ta.bin\nfirmware:       amdgpu/psp_13_0_6_sos.bin\nfirmware:       amdgpu/psp_13_0_11_ta.bin\nfirmware:       amdgpu/psp_13_0_11_toc.bin\nfirmware:       amdgpu/psp_13_0_10_ta.bin\nfirmware:       amdgpu/psp_13_0_10_sos.bin\nfirmware:       amdgpu/psp_13_0_7_ta.bin\nfirmware:       amdgpu/psp_13_0_7_sos.bin\nfirmware:       amdgpu/psp_13_0_0_ta_kicker.bin\nfirmware:       amdgpu/psp_13_0_0_ta.bin\nfirmware:       amdgpu/psp_13_0_0_sos_kicker.bin\nfirmware:       amdgpu/psp_13_0_0_sos.bin\nfirmware:       amdgpu/psp_13_0_8_ta.bin\nfirmware:       amdgpu/psp_13_0_8_toc.bin\nfirmware:       amdgpu/psp_13_0_5_ta.bin\nfirmware:       amdgpu/psp_13_0_5_toc.bin\nfirmware:       amdgpu/yellow_carp_ta.bin\nfirmware:       amdgpu/yellow_carp_toc.bin\nfirmware:       amdgpu/aldebaran_cap.bin\nfirmware:       amdgpu/aldebaran_ta.bin\nfirmware:       amdgpu/aldebaran_sos.bin\nfirmware:       amdgpu/psp_13_0_4_ta.bin\nfirmware:       amdgpu/psp_13_0_4_toc.bin\nfirmware:       amdgpu/psp_14_0_5_ta.bin\nfirmware:       amdgpu/psp_14_0_5_toc.bin\nfirmware:       amdgpu/psp_14_0_3_ta_kicker.bin\nfirmware:       amdgpu/psp_14_0_3_ta.bin\nfirmware:       amdgpu/psp_14_0_3_sos_kicker.bin\nfirmware:       amdgpu/psp_14_0_3_sos.bin\nfirmware:       amdgpu/psp_14_0_2_ta.bin\nfirmware:       amdgpu/psp_14_0_2_sos.bin\nfirmware:       amdgpu/psp_15_0_9_ta.bin\nfirmware:       amdgpu/psp_15_0_9_toc.bin\nfirmware:       amdgpu/psp_15_0_5_ta.bin\nfirmware:       amdgpu/psp_15_0_5_toc.bin\nfirmware:       amdgpu/psp_15_0_0_ta.bin\nfirmware:       amdgpu/psp_15_0_0_toc.bin\nfirmware:       amdgpu/psp_15_0_8_toc_1.bin\nfirmware:       amdgpu/psp_15_0_8_toc.bin\nfirmware:       amdgpu/vegam_rlc.bin\nfirmware:       amdgpu/vegam_mec2.bin\nfirmware:       amdgpu/vegam_mec.bin\nfirmware:       amdgpu/vegam_me.bin\nfirmware:       amdgpu/vegam_pfp.bin\nfirmware:       amdgpu/vegam_ce.bin\nfirmware:       amdgpu/polaris12_rlc.bin\nfirmware:       amdgpu/polaris12_mec2_2.bin\nfirmware:       amdgpu/polaris12_mec2.bin\nfirmware:       amdgpu/polaris12_mec_2.bin\nfirmware:       amdgpu/polaris12_mec.bin\nfirmware:       amdgpu/polaris12_me_2.bin\nfirmware:       amdgpu/polaris12_me.bin\nfirmware:       amdgpu/polaris12_pfp_2.bin\nfirmware:       amdgpu/polaris12_pfp.bin\nfirmware:       amdgpu/polaris12_ce_2.bin\nfirmware:       amdgpu/polaris12_ce.bin\nfirmware:       amdgpu/polaris11_rlc.bin\nfirmware:       amdgpu/polaris11_mec2_2.bin\nfirmware:       amdgpu/polaris11_mec2.bin\nfirmware:       amdgpu/polaris11_mec_2.bin\nfirmware:       amdgpu/polaris11_mec.bin\nfirmware:       amdgpu/polaris11_me_2.bin\nfirmware:       amdgpu/polaris11_me.bin\nfirmware:       amdgpu/polaris11_pfp_2.bin\nfirmware:       amdgpu/polaris11_pfp.bin\nfirmware:       amdgpu/polaris11_ce_2.bin\nfirmware:       amdgpu/polaris11_ce.bin\nfirmware:       amdgpu/polaris10_rlc.bin\nfirmware:       amdgpu/polaris10_mec2_2.bin\nfirmware:       amdgpu/polaris10_mec2.bin\nfirmware:       amdgpu/polaris10_mec_2.bin\nfirmware:       amdgpu/polaris10_mec.bin\nfirmware:       amdgpu/polaris10_me_2.bin\nfirmware:       amdgpu/polaris10_me.bin\nfirmware:       amdgpu/polaris10_pfp_2.bin\nfirmware:       amdgpu/polaris10_pfp.bin\nfirmware:       amdgpu/polaris10_ce_2.bin\nfirmware:       amdgpu/polaris10_ce.bin\nfirmware:       amdgpu/fiji_rlc.bin\nfirmware:       amdgpu/fiji_mec2.bin\nfirmware:       amdgpu/fiji_mec.bin\nfirmware:       amdgpu/fiji_me.bin\nfirmware:       amdgpu/fiji_pfp.bin\nfirmware:       amdgpu/fiji_ce.bin\nfirmware:       amdgpu/topaz_rlc.bin\nfirmware:       amdgpu/topaz_mec.bin\nfirmware:       amdgpu/topaz_me.bin\nfirmware:       amdgpu/topaz_pfp.bin\nfirmware:       amdgpu/topaz_ce.bin\nfirmware:       amdgpu/tonga_rlc.bin\nfirmware:       amdgpu/tonga_mec2.bin\nfirmware:       amdgpu/tonga_mec.bin\nfirmware:       amdgpu/tonga_me.bin\nfirmware:       amdgpu/tonga_pfp.bin\nfirmware:       amdgpu/tonga_ce.bin\nfirmware:       amdgpu/stoney_rlc.bin\nfirmware:       amdgpu/stoney_mec.bin\nfirmware:       amdgpu/stoney_me.bin\nfirmware:       amdgpu/stoney_pfp.bin\nfirmware:       amdgpu/stoney_ce.bin\nfirmware:       amdgpu/carrizo_rlc.bin\nfirmware:       amdgpu/carrizo_mec2.bin\nfirmware:       amdgpu/carrizo_mec.bin\nfirmware:       amdgpu/carrizo_me.bin\nfirmware:       amdgpu/carrizo_pfp.bin\nfirmware:       amdgpu/carrizo_ce.bin\nfirmware:       amdgpu/aldebaran_sjt_mec2.bin\nfirmware:       amdgpu/aldebaran_sjt_mec.bin\nfirmware:       amdgpu/aldebaran_rlc.bin\nfirmware:       amdgpu/aldebaran_mec2.bin\nfirmware:       amdgpu/aldebaran_mec.bin\nfirmware:       amdgpu/green_sardine_rlc.bin\nfirmware:       amdgpu/green_sardine_mec2.bin\nfirmware:       amdgpu/green_sardine_mec.bin\nfirmware:       amdgpu/green_sardine_me.bin\nfirmware:       amdgpu/green_sardine_pfp.bin\nfirmware:       amdgpu/green_sardine_ce.bin\nfirmware:       amdgpu/renoir_rlc.bin\nfirmware:       amdgpu/renoir_mec.bin\nfirmware:       amdgpu/renoir_me.bin\nfirmware:       amdgpu/renoir_pfp.bin\nfirmware:       amdgpu/renoir_ce.bin\nfirmware:       amdgpu/arcturus_rlc.bin\nfirmware:       amdgpu/arcturus_mec.bin\nfirmware:       amdgpu/raven_kicker_rlc.bin\nfirmware:       amdgpu/raven2_rlc.bin\nfirmware:       amdgpu/raven2_mec2.bin\nfirmware:       amdgpu/raven2_mec.bin\nfirmware:       amdgpu/raven2_me.bin\nfirmware:       amdgpu/raven2_pfp.bin\nfirmware:       amdgpu/raven2_ce.bin\nfirmware:       amdgpu/picasso_rlc_am4.bin\nfirmware:       amdgpu/picasso_rlc.bin\nfirmware:       amdgpu/picasso_mec2.bin\nfirmware:       amdgpu/picasso_mec.bin\nfirmware:       amdgpu/picasso_me.bin\nfirmware:       amdgpu/picasso_pfp.bin\nfirmware:       amdgpu/picasso_ce.bin\nfirmware:       amdgpu/raven_rlc.bin\nfirmware:       amdgpu/raven_mec2.bin\nfirmware:       amdgpu/raven_mec.bin\nfirmware:       amdgpu/raven_me.bin\nfirmware:       amdgpu/raven_pfp.bin\nfirmware:       amdgpu/raven_ce.bin\nfirmware:       amdgpu/vega20_rlc.bin\nfirmware:       amdgpu/vega20_mec2.bin\nfirmware:       amdgpu/vega20_mec.bin\nfirmware:       amdgpu/vega20_me.bin\nfirmware:       amdgpu/vega20_pfp.bin\nfirmware:       amdgpu/vega20_ce.bin\nfirmware:       amdgpu/vega12_rlc.bin\nfirmware:       amdgpu/vega12_mec2.bin\nfirmware:       amdgpu/vega12_mec.bin\nfirmware:       amdgpu/vega12_me.bin\nfirmware:       amdgpu/vega12_pfp.bin\nfirmware:       amdgpu/vega12_ce.bin\nfirmware:       amdgpu/vega10_rlc.bin\nfirmware:       amdgpu/vega10_mec2.bin\nfirmware:       amdgpu/vega10_mec.bin\nfirmware:       amdgpu/vega10_me.bin\nfirmware:       amdgpu/vega10_pfp.bin\nfirmware:       amdgpu/vega10_ce.bin\nfirmware:       amdgpu/gc_9_4_4_sjt_mec.bin\nfirmware:       amdgpu/gc_9_4_3_sjt_mec.bin\nfirmware:       amdgpu/gc_9_5_0_rlc.bin\nfirmware:       amdgpu/gc_9_4_4_rlc.bin\nfirmware:       amdgpu/gc_9_4_3_rlc.bin\nfirmware:       amdgpu/gc_9_5_0_mec.bin\nfirmware:       amdgpu/gc_9_4_4_mec.bin\nfirmware:       amdgpu/gc_9_4_3_mec.bin\nfirmware:       amdgpu/gc_10_3_7_rlc.bin\nfirmware:       amdgpu/gc_10_3_7_mec2.bin\nfirmware:       amdgpu/gc_10_3_7_mec.bin\nfirmware:       amdgpu/gc_10_3_7_me.bin\nfirmware:       amdgpu/gc_10_3_7_pfp.bin\nfirmware:       amdgpu/gc_10_3_7_ce.bin\nfirmware:       amdgpu/gc_10_3_6_rlc.bin\nfirmware:       amdgpu/gc_10_3_6_mec2.bin\nfirmware:       amdgpu/gc_10_3_6_mec.bin\nfirmware:       amdgpu/gc_10_3_6_me.bin\nfirmware:       amdgpu/gc_10_3_6_pfp.bin\nfirmware:       amdgpu/gc_10_3_6_ce.bin\nfirmware:       amdgpu/cyan_skillfish2_rlc.bin\nfirmware:       amdgpu/cyan_skillfish2_mec2.bin\nfirmware:       amdgpu/cyan_skillfish2_mec.bin\nfirmware:       amdgpu/cyan_skillfish2_me.bin\nfirmware:       amdgpu/cyan_skillfish2_pfp.bin\nfirmware:       amdgpu/cyan_skillfish2_ce.bin\nfirmware:       amdgpu/yellow_carp_rlc.bin\nfirmware:       amdgpu/yellow_carp_mec2.bin\nfirmware:       amdgpu/yellow_carp_mec.bin\nfirmware:       amdgpu/yellow_carp_me.bin\nfirmware:       amdgpu/yellow_carp_pfp.bin\nfirmware:       amdgpu/yellow_carp_ce.bin\nfirmware:       amdgpu/beige_goby_rlc.bin\nfirmware:       amdgpu/beige_goby_mec2.bin\nfirmware:       amdgpu/beige_goby_mec.bin\nfirmware:       amdgpu/beige_goby_me.bin\nfirmware:       amdgpu/beige_goby_pfp.bin\nfirmware:       amdgpu/beige_goby_ce.bin\nfirmware:       amdgpu/dimgrey_cavefish_rlc.bin\nfirmware:       amdgpu/dimgrey_cavefish_mec2.bin\nfirmware:       amdgpu/dimgrey_cavefish_mec.bin\nfirmware:       amdgpu/dimgrey_cavefish_me.bin\nfirmware:       amdgpu/dimgrey_cavefish_pfp.bin\nfirmware:       amdgpu/dimgrey_cavefish_ce.bin\nfirmware:       amdgpu/vangogh_rlc.bin\nfirmware:       amdgpu/vangogh_mec2.bin\nfirmware:       amdgpu/vangogh_mec.bin\nfirmware:       amdgpu/vangogh_me.bin\nfirmware:       amdgpu/vangogh_pfp.bin\nfirmware:       amdgpu/vangogh_ce.bin\nfirmware:       amdgpu/navy_flounder_rlc.bin\nfirmware:       amdgpu/navy_flounder_mec2.bin\nfirmware:       amdgpu/navy_flounder_mec.bin\nfirmware:       amdgpu/navy_flounder_me.bin\nfirmware:       amdgpu/navy_flounder_pfp.bin\nfirmware:       amdgpu/navy_flounder_ce.bin\nfirmware:       amdgpu/sienna_cichlid_rlc.bin\nfirmware:       amdgpu/sienna_cichlid_mec2.bin\nfirmware:       amdgpu/sienna_cichlid_mec.bin\nfirmware:       amdgpu/sienna_cichlid_me.bin\nfirmware:       amdgpu/sienna_cichlid_pfp.bin\nfirmware:       amdgpu/sienna_cichlid_ce.bin\nfirmware:       amdgpu/navi12_rlc.bin\nfirmware:       amdgpu/navi12_mec2.bin\nfirmware:       amdgpu/navi12_mec.bin\nfirmware:       amdgpu/navi12_me.bin\nfirmware:       amdgpu/navi12_pfp.bin\nfirmware:       amdgpu/navi12_ce.bin\nfirmware:       amdgpu/navi14_rlc.bin\nfirmware:       amdgpu/navi14_mec2.bin\nfirmware:       amdgpu/navi14_mec.bin\nfirmware:       amdgpu/navi14_me.bin\nfirmware:       amdgpu/navi14_pfp.bin\nfirmware:       amdgpu/navi14_ce.bin\nfirmware:       amdgpu/navi14_mec2_wks.bin\nfirmware:       amdgpu/navi14_mec_wks.bin\nfirmware:       amdgpu/navi14_me_wks.bin\nfirmware:       amdgpu/navi14_pfp_wks.bin\nfirmware:       amdgpu/navi14_ce_wks.bin\nfirmware:       amdgpu/navi10_rlc.bin\nfirmware:       amdgpu/navi10_mec2.bin\nfirmware:       amdgpu/navi10_mec.bin\nfirmware:       amdgpu/navi10_me.bin\nfirmware:       amdgpu/navi10_pfp.bin\nfirmware:       amdgpu/navi10_ce.bin\nfirmware:       amdgpu/gc_11_7_1_imu.bin\nfirmware:       amdgpu/gc_11_7_0_imu.bin\nfirmware:       amdgpu/gc_11_5_6_imu.bin\nfirmware:       amdgpu/gc_11_5_4_imu.bin\nfirmware:       amdgpu/gc_11_5_3_imu.bin\nfirmware:       amdgpu/gc_11_5_2_imu.bin\nfirmware:       amdgpu/gc_11_5_1_imu.bin\nfirmware:       amdgpu/gc_11_5_0_imu.bin\nfirmware:       amdgpu/gc_11_0_4_imu.bin\nfirmware:       amdgpu/gc_11_0_3_imu.bin\nfirmware:       amdgpu/gc_11_0_2_imu.bin\nfirmware:       amdgpu/gc_11_0_1_imu.bin\nfirmware:       amdgpu/gc_11_0_0_imu_kicker.bin\nfirmware:       amdgpu/gc_11_0_0_imu.bin\nfirmware:       amdgpu/gc_11_7_1_rlc.bin\nfirmware:       amdgpu/gc_11_7_1_mec.bin\nfirmware:       amdgpu/gc_11_7_1_me.bin\nfirmware:       amdgpu/gc_11_7_1_pfp.bin\nfirmware:       amdgpu/gc_11_7_0_rlc.bin\nfirmware:       amdgpu/gc_11_7_0_mec.bin\nfirmware:       amdgpu/gc_11_7_0_me.bin\nfirmware:       amdgpu/gc_11_7_0_pfp.bin\nfirmware:       amdgpu/gc_11_5_6_rlc.bin\nfirmware:       amdgpu/gc_11_5_6_mec.bin\nfirmware:       amdgpu/gc_11_5_6_me.bin\nfirmware:       amdgpu/gc_11_5_6_pfp.bin\nfirmware:       amdgpu/gc_11_5_4_rlc.bin\nfirmware:       amdgpu/gc_11_5_4_mec.bin\nfirmware:       amdgpu/gc_11_5_4_me.bin\nfirmware:       amdgpu/gc_11_5_4_pfp.bin\nfirmware:       amdgpu/gc_11_5_3_rlc.bin\nfirmware:       amdgpu/gc_11_5_3_mec.bin\nfirmware:       amdgpu/gc_11_5_3_me.bin\nfirmware:       amdgpu/gc_11_5_3_pfp.bin\nfirmware:       amdgpu/gc_11_5_2_rlc.bin\nfirmware:       amdgpu/gc_11_5_2_mec.bin\nfirmware:       amdgpu/gc_11_5_2_me.bin\nfirmware:       amdgpu/gc_11_5_2_pfp.bin\nfirmware:       amdgpu/gc_11_5_1_rlc.bin\nfirmware:       amdgpu/gc_11_5_1_mec.bin\nfirmware:       amdgpu/gc_11_5_1_me.bin\nfirmware:       amdgpu/gc_11_5_1_pfp.bin\nfirmware:       amdgpu/gc_11_5_0_rlc.bin\nfirmware:       amdgpu/gc_11_5_0_mec.bin\nfirmware:       amdgpu/gc_11_5_0_me.bin\nfirmware:       amdgpu/gc_11_5_0_pfp.bin\nfirmware:       amdgpu/gc_11_0_4_rlc.bin\nfirmware:       amdgpu/gc_11_0_4_mec.bin\nfirmware:       amdgpu/gc_11_0_4_me.bin\nfirmware:       amdgpu/gc_11_0_4_pfp.bin\nfirmware:       amdgpu/gc_11_0_3_rlc.bin\nfirmware:       amdgpu/gc_11_0_3_mec.bin\nfirmware:       amdgpu/gc_11_0_3_me.bin\nfirmware:       amdgpu/gc_11_0_3_pfp.bin\nfirmware:       amdgpu/gc_11_0_2_rlc.bin\nfirmware:       amdgpu/gc_11_0_2_mec.bin\nfirmware:       amdgpu/gc_11_0_2_me.bin\nfirmware:       amdgpu/gc_11_0_2_pfp.bin\nfirmware:       amdgpu/gc_11_0_1_rlc.bin\nfirmware:       amdgpu/gc_11_0_1_mec.bin\nfirmware:       amdgpu/gc_11_0_1_me.bin\nfirmware:       amdgpu/gc_11_0_1_pfp.bin\nfirmware:       amdgpu/gc_11_0_0_toc.bin\nfirmware:       amdgpu/gc_11_0_0_rlc_1.bin\nfirmware:       amdgpu/gc_11_0_0_rlc_kicker.bin\nfirmware:       amdgpu/gc_11_0_0_rlc.bin\nfirmware:       amdgpu/gc_11_0_0_mec.bin\nfirmware:       amdgpu/gc_11_0_0_me.bin\nfirmware:       amdgpu/gc_11_0_0_pfp.bin\nfirmware:       amdgpu/gc_12_0_1_toc.bin\nfirmware:       amdgpu/gc_12_0_1_rlc_kicker.bin\nfirmware:       amdgpu/gc_12_0_1_rlc.bin\nfirmware:       amdgpu/gc_12_0_1_mec.bin\nfirmware:       amdgpu/gc_12_0_1_me.bin\nfirmware:       amdgpu/gc_12_0_1_pfp.bin\nfirmware:       amdgpu/gc_12_0_0_toc.bin\nfirmware:       amdgpu/gc_12_0_0_rlc.bin\nfirmware:       amdgpu/gc_12_0_0_mec.bin\nfirmware:       amdgpu/gc_12_0_0_me.bin\nfirmware:       amdgpu/gc_12_0_0_pfp.bin\nfirmware:       amdgpu/gc_12_1_0_rlc_1.bin\nfirmware:       amdgpu/gc_12_1_0_mec.bin\nfirmware:       amdgpu/gc_12_0_1_imu_kicker.bin\nfirmware:       amdgpu/gc_12_0_1_imu.bin\nfirmware:       amdgpu/gc_12_0_0_imu.bin\nfirmware:       amdgpu/gc_12_1_0_imu.bin\nfirmware:       amdgpu/topaz_sdma1.bin\nfirmware:       amdgpu/topaz_sdma.bin\nfirmware:       amdgpu/vegam_sdma1.bin\nfirmware:       amdgpu/vegam_sdma.bin\nfirmware:       amdgpu/polaris12_sdma1.bin\nfirmware:       amdgpu/polaris12_sdma.bin\nfirmware:       amdgpu/polaris11_sdma1.bin\nfirmware:       amdgpu/polaris11_sdma.bin\nfirmware:       amdgpu/polaris10_sdma1.bin\nfirmware:       amdgpu/polaris10_sdma.bin\nfirmware:       amdgpu/stoney_sdma.bin\nfirmware:       amdgpu/fiji_sdma1.bin\nfirmware:       amdgpu/fiji_sdma.bin\nfirmware:       amdgpu/carrizo_sdma1.bin\nfirmware:       amdgpu/carrizo_sdma.bin\nfirmware:       amdgpu/tonga_sdma1.bin\nfirmware:       amdgpu/tonga_sdma.bin\nfirmware:       amdgpu/aldebaran_sdma.bin\nfirmware:       amdgpu/green_sardine_sdma.bin\nfirmware:       amdgpu/renoir_sdma.bin\nfirmware:       amdgpu/arcturus_sdma.bin\nfirmware:       amdgpu/raven2_sdma.bin\nfirmware:       amdgpu/picasso_sdma.bin\nfirmware:       amdgpu/raven_sdma.bin\nfirmware:       amdgpu/vega20_sdma1.bin\nfirmware:       amdgpu/vega20_sdma.bin\nfirmware:       amdgpu/vega12_sdma1.bin\nfirmware:       amdgpu/vega12_sdma.bin\nfirmware:       amdgpu/vega10_sdma1.bin\nfirmware:       amdgpu/vega10_sdma.bin\nfirmware:       amdgpu/sdma_4_4_5.bin\nfirmware:       amdgpu/sdma_4_4_4.bin\nfirmware:       amdgpu/sdma_4_4_2.bin\nfirmware:       amdgpu/cyan_skillfish2_sdma1.bin\nfirmware:       amdgpu/cyan_skillfish2_sdma.bin\nfirmware:       amdgpu/navi12_sdma1.bin\nfirmware:       amdgpu/navi12_sdma.bin\nfirmware:       amdgpu/navi14_sdma1.bin\nfirmware:       amdgpu/navi14_sdma.bin\nfirmware:       amdgpu/navi10_sdma1.bin\nfirmware:       amdgpu/navi10_sdma.bin\nfirmware:       amdgpu/sdma_5_2_7.bin\nfirmware:       amdgpu/sdma_5_2_6.bin\nfirmware:       amdgpu/yellow_carp_sdma.bin\nfirmware:       amdgpu/vangogh_sdma.bin\nfirmware:       amdgpu/beige_goby_sdma.bin\nfirmware:       amdgpu/dimgrey_cavefish_sdma.bin\nfirmware:       amdgpu/navy_flounder_sdma.bin\nfirmware:       amdgpu/sienna_cichlid_sdma.bin\nfirmware:       amdgpu/sdma_6_4_0.bin\nfirmware:       amdgpu/sdma_6_1_4.bin\nfirmware:       amdgpu/sdma_6_1_3.bin\nfirmware:       amdgpu/sdma_6_1_2.bin\nfirmware:       amdgpu/sdma_6_1_1.bin\nfirmware:       amdgpu/sdma_6_1_0.bin\nfirmware:       amdgpu/sdma_6_0_3.bin\nfirmware:       amdgpu/sdma_6_0_2.bin\nfirmware:       amdgpu/sdma_6_0_1.bin\nfirmware:       amdgpu/sdma_6_0_0.bin\nfirmware:       amdgpu/sdma_7_0_1.bin\nfirmware:       amdgpu/sdma_7_0_0.bin\nfirmware:       amdgpu/sdma_7_1_0.bin\nfirmware:       amdgpu/gc_11_7_1_mes1.bin\nfirmware:       amdgpu/gc_11_7_1_mes_2.bin\nfirmware:       amdgpu/gc_11_7_0_mes1.bin\nfirmware:       amdgpu/gc_11_7_0_mes_2.bin\nfirmware:       amdgpu/gc_11_5_6_mes1.bin\nfirmware:       amdgpu/gc_11_5_6_mes_2.bin\nfirmware:       amdgpu/gc_11_5_4_mes1.bin\nfirmware:       amdgpu/gc_11_5_4_mes_2.bin\nfirmware:       amdgpu/gc_11_5_3_mes1.bin\nfirmware:       amdgpu/gc_11_5_3_mes_2.bin\nfirmware:       amdgpu/gc_11_5_2_mes1.bin\nfirmware:       amdgpu/gc_11_5_2_mes_2.bin\nfirmware:       amdgpu/gc_11_5_1_mes1.bin\nfirmware:       amdgpu/gc_11_5_1_mes_2.bin\nfirmware:       amdgpu/gc_11_5_0_mes1.bin\nfirmware:       amdgpu/gc_11_5_0_mes_2.bin\nfirmware:       amdgpu/gc_11_0_4_mes1.bin\nfirmware:       amdgpu/gc_11_0_4_mes_2.bin\nfirmware:       amdgpu/gc_11_0_4_mes.bin\nfirmware:       amdgpu/gc_11_0_3_mes1.bin\nfirmware:       amdgpu/gc_11_0_3_mes_2.bin\nfirmware:       amdgpu/gc_11_0_3_mes.bin\nfirmware:       amdgpu/gc_11_0_2_mes1.bin\nfirmware:       amdgpu/gc_11_0_2_mes_2.bin\nfirmware:       amdgpu/gc_11_0_2_mes.bin\nfirmware:       amdgpu/gc_11_0_1_mes1.bin\nfirmware:       amdgpu/gc_11_0_1_mes_2.bin\nfirmware:       amdgpu/gc_11_0_1_mes.bin\nfirmware:       amdgpu/gc_11_0_0_mes1.bin\nfirmware:       amdgpu/gc_11_0_0_mes_2.bin\nfirmware:       amdgpu/gc_11_0_0_mes.bin\nfirmware:       amdgpu/gc_12_0_1_uni_mes.bin\nfirmware:       amdgpu/gc_12_0_1_mes1.bin\nfirmware:       amdgpu/gc_12_0_1_mes.bin\nfirmware:       amdgpu/gc_12_0_0_uni_mes.bin\nfirmware:       amdgpu/gc_12_0_0_mes1.bin\nfirmware:       amdgpu/gc_12_0_0_mes.bin\nfirmware:       amdgpu/gc_12_1_0_uni_mes.bin\nfirmware:       amdgpu/gc_12_1_0_mes1.bin\nfirmware:       amdgpu/gc_12_1_0_mes.bin\nfirmware:       amdgpu/vega20_uvd.bin\nfirmware:       amdgpu/vega12_uvd.bin\nfirmware:       amdgpu/vega10_uvd.bin\nfirmware:       amdgpu/vegam_uvd.bin\nfirmware:       amdgpu/polaris12_uvd.bin\nfirmware:       amdgpu/polaris11_uvd.bin\nfirmware:       amdgpu/polaris10_uvd.bin\nfirmware:       amdgpu/stoney_uvd.bin\nfirmware:       amdgpu/fiji_uvd.bin\nfirmware:       amdgpu/carrizo_uvd.bin\nfirmware:       amdgpu/tonga_uvd.bin\nfirmware:       amdgpu/mullins_uvd.bin\nfirmware:       amdgpu/hawaii_uvd.bin\nfirmware:       amdgpu/kaveri_uvd.bin\nfirmware:       amdgpu/kabini_uvd.bin\nfirmware:       amdgpu/bonaire_uvd.bin\nfirmware:       amdgpu/oland_uvd.bin\nfirmware:       amdgpu/pitcairn_uvd.bin\nfirmware:       amdgpu/verde_uvd.bin\nfirmware:       amdgpu/tahiti_uvd.bin\nfirmware:       amdgpu/vega20_vce.bin\nfirmware:       amdgpu/vega12_vce.bin\nfirmware:       amdgpu/vega10_vce.bin\nfirmware:       amdgpu/vegam_vce.bin\nfirmware:       amdgpu/polaris12_vce.bin\nfirmware:       amdgpu/polaris11_vce.bin\nfirmware:       amdgpu/polaris10_vce.bin\nfirmware:       amdgpu/stoney_vce.bin\nfirmware:       amdgpu/fiji_vce.bin\nfirmware:       amdgpu/carrizo_vce.bin\nfirmware:       amdgpu/tonga_vce.bin\nfirmware:       amdgpu/mullins_vce.bin\nfirmware:       amdgpu/hawaii_vce.bin\nfirmware:       amdgpu/kaveri_vce.bin\nfirmware:       amdgpu/kabini_vce.bin\nfirmware:       amdgpu/bonaire_vce.bin\nfirmware:       amdgpu/vce_1_0_0.bin\nfirmware:       amdgpu/vcn_5_3_0.bin\nfirmware:       amdgpu/vcn_5_0_2.bin\nfirmware:       amdgpu/vcn_5_0_1.bin\nfirmware:       amdgpu/vcn_5_0_0.bin\nfirmware:       amdgpu/vcn_4_0_6_1.bin\nfirmware:       amdgpu/vcn_4_0_6.bin\nfirmware:       amdgpu/vcn_4_0_5.bin\nfirmware:       amdgpu/vcn_4_0_4.bin\nfirmware:       amdgpu/vcn_4_0_3.bin\nfirmware:       amdgpu/vcn_4_0_2.bin\nfirmware:       amdgpu/vcn_4_0_0.bin\nfirmware:       amdgpu/vcn_3_1_2.bin\nfirmware:       amdgpu/yellow_carp_vcn.bin\nfirmware:       amdgpu/beige_goby_vcn.bin\nfirmware:       amdgpu/dimgrey_cavefish_vcn.bin\nfirmware:       amdgpu/vangogh_vcn.bin\nfirmware:       amdgpu/navy_flounder_vcn.bin\nfirmware:       amdgpu/sienna_cichlid_vcn.bin\nfirmware:       amdgpu/navi12_vcn.bin\nfirmware:       amdgpu/navi14_vcn.bin\nfirmware:       amdgpu/navi10_vcn.bin\nfirmware:       amdgpu/aldebaran_vcn.bin\nfirmware:       amdgpu/green_sardine_vcn.bin\nfirmware:       amdgpu/renoir_vcn.bin\nfirmware:       amdgpu/arcturus_vcn.bin\nfirmware:       amdgpu/raven2_vcn.bin\nfirmware:       amdgpu/picasso_vcn.bin\nfirmware:       amdgpu/raven_vcn.bin\nfirmware:       amdgpu/vpe_6_1_3.bin\nfirmware:       amdgpu/vpe_6_1_1.bin\nfirmware:       amdgpu/vpe_6_1_0.bin\nfirmware:       amdgpu/vpe_2_2_0.bin\nfirmware:       amdgpu/vpe_2_0_0.bin\nfirmware:       amdgpu/umsch_mm_4_0_0.bin\nfirmware:       amdgpu/beige_goby_smc.bin\nfirmware:       amdgpu/dimgrey_cavefish_smc.bin\nfirmware:       amdgpu/navy_flounder_smc.bin\nfirmware:       amdgpu/sienna_cichlid_smc.bin\nfirmware:       amdgpu/navi12_smc.bin\nfirmware:       amdgpu/navi14_smc.bin\nfirmware:       amdgpu/navi10_smc.bin\nfirmware:       amdgpu/arcturus_smc.bin\nfirmware:       amdgpu/smu_13_0_10.bin\nfirmware:       amdgpu/smu_13_0_7.bin\nfirmware:       amdgpu/smu_13_0_0_kicker.bin\nfirmware:       amdgpu/smu_13_0_0.bin\nfirmware:       amdgpu/aldebaran_smc.bin\nfirmware:       amdgpu/smu_13_0_14.bin\nfirmware:       amdgpu/smu_13_0_6.bin\nfirmware:       amdgpu/smu_14_0_3_kicker.bin\nfirmware:       amdgpu/smu_14_0_3.bin\nfirmware:       amdgpu/smu_14_0_2.bin\nfirmware:       amdgpu/vega20_smc.bin\nfirmware:       amdgpu/vega12_smc.bin\nfirmware:       amdgpu/vega10_acg_smc.bin\nfirmware:       amdgpu/vega10_smc.bin\nfirmware:       amdgpu/vegam_smc.bin\nfirmware:       amdgpu/polaris12_k_smc.bin\nfirmware:       amdgpu/polaris12_smc.bin\nfirmware:       amdgpu/polaris11_k2_smc.bin\nfirmware:       amdgpu/polaris11_k_smc.bin\nfirmware:       amdgpu/polaris11_smc_sk.bin\nfirmware:       amdgpu/polaris11_smc.bin\nfirmware:       amdgpu/polaris10_k2_smc.bin\nfirmware:       amdgpu/polaris10_k_smc.bin\nfirmware:       amdgpu/polaris10_smc_sk.bin\nfirmware:       amdgpu/polaris10_smc.bin\nfirmware:       amdgpu/fiji_smc.bin\nfirmware:       amdgpu/tonga_k_smc.bin\nfirmware:       amdgpu/tonga_smc.bin\nfirmware:       amdgpu/topaz_k_smc.bin\nfirmware:       amdgpu/topaz_smc.bin\nfirmware:       amdgpu/hawaii_k_smc.bin\nfirmware:       amdgpu/hawaii_smc.bin\nfirmware:       amdgpu/bonaire_k_smc.bin\nfirmware:       amdgpu/bonaire_smc.bin\nfirmware:       amdgpu/banks_k_2_smc.bin\nfirmware:       amdgpu/hainan_k_smc.bin\nfirmware:       amdgpu/hainan_smc.bin\nfirmware:       amdgpu/oland_k_smc.bin\nfirmware:       amdgpu/oland_smc.bin\nfirmware:       amdgpu/verde_k_smc.bin\nfirmware:       amdgpu/verde_smc.bin\nfirmware:       amdgpu/pitcairn_k_smc.bin\nfirmware:       amdgpu/pitcairn_smc.bin\nfirmware:       amdgpu/tahiti_smc.bin\nfirmware:       amdgpu/navi12_dmcu.bin\nfirmware:       amdgpu/raven_dmcu.bin\nfirmware:       amdgpu/dcn_6_0_0_dmcub.bin\nfirmware:       amdgpu/dcn_4_2_1_dmcub.bin\nfirmware:       amdgpu/dcn_4_2_dmcub.bin\nfirmware:       amdgpu/dcn_4_0_1_dmcub.bin\nfirmware:       amdgpu/dcn_3_6_dmcub.bin\nfirmware:       amdgpu/dcn_3_5_1_dmcub.bin\nfirmware:       amdgpu/dcn_3_5_dmcub.bin\nfirmware:       amdgpu/dcn_3_2_1_dmcub.bin\nfirmware:       amdgpu/dcn_3_2_0_dmcub.bin\nfirmware:       amdgpu/dcn_3_1_6_dmcub.bin\nfirmware:       amdgpu/dcn_3_1_5_dmcub.bin\nfirmware:       amdgpu/dcn_3_1_4_dmcub.bin\nfirmware:       amdgpu/yellow_carp_dmcub.bin\nfirmware:       amdgpu/beige_goby_dmcub.bin\nfirmware:       amdgpu/dimgrey_cavefish_dmcub.bin\nfirmware:       amdgpu/vangogh_dmcub.bin\nfirmware:       amdgpu/green_sardine_dmcub.bin\nfirmware:       amdgpu/navy_flounder_dmcub.bin\nfirmware:       amdgpu/sienna_cichlid_dmcub.bin\nfirmware:       amdgpu/renoir_dmcub.bin\nfirmware:       amdgpu/isp_4_1_1.bin\nsuserelease:    openSUSE Tumbleweed\nsrcversion:     D99D34A06CD0EF7C02FEC1F\nalias:          pci:v00001002d*sv*sd*bc12sc00i00*\nalias:          pci:v00001002d*sv*sd*bc03sc80i00*\nalias:          pci:v00001002d*sv*sd*bc03sc00i00*\nalias:          pci:v00001002d0000743Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d00007424sv*sd*bc*sc*i*\nalias:          pci:v00001002d00007423sv*sd*bc*sc*i*\nalias:          pci:v00001002d00007422sv*sd*bc*sc*i*\nalias:          pci:v00001002d00007421sv*sd*bc*sc*i*\nalias:          pci:v00001002d00007420sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000143Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d000013FEsv*sd*bc*sc*i*\nalias:          pci:v00001002d000013FCsv*sd*bc*sc*i*\nalias:          pci:v00001002d000013FBsv*sd*bc*sc*i*\nalias:          pci:v00001002d000013FAsv*sd*bc*sc*i*\nalias:          pci:v00001002d000013F9sv*sd*bc*sc*i*\nalias:          pci:v00001002d000013DBsv*sd*bc*sc*i*\nalias:          pci:v00001002d00007410sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000740Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000740Csv*sd*bc*sc*i*\nalias:          pci:v00001002d00007408sv*sd*bc*sc*i*\nalias:          pci:v00001002d000073FFsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073EFsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073EDsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073ECsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073EBsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073EAsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073E9sv*sd*bc*sc*i*\nalias:          pci:v00001002d000073E8sv*sd*bc*sc*i*\nalias:          pci:v00001002d000073E3sv*sd*bc*sc*i*\nalias:          pci:v00001002d000073E2sv*sd*bc*sc*i*\nalias:          pci:v00001002d000073E1sv*sd*bc*sc*i*\nalias:          pci:v00001002d000073E0sv*sd*bc*sc*i*\nalias:          pci:v00001002d000073DFsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073DEsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073DDsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073DCsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073DBsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073DAsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073C3sv*sd*bc*sc*i*\nalias:          pci:v00001002d000073C1sv*sd*bc*sc*i*\nalias:          pci:v00001002d000073C0sv*sd*bc*sc*i*\nalias:          pci:v00001002d00001681sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000164Dsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073BFsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073AFsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073AEsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073ADsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073ACsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073ABsv*sd*bc*sc*i*\nalias:          pci:v00001002d000073A9sv*sd*bc*sc*i*\nalias:          pci:v00001002d000073A8sv*sd*bc*sc*i*\nalias:          pci:v00001002d000073A5sv*sd*bc*sc*i*\nalias:          pci:v00001002d000073A3sv*sd*bc*sc*i*\nalias:          pci:v00001002d000073A2sv*sd*bc*sc*i*\nalias:          pci:v00001002d000073A1sv*sd*bc*sc*i*\nalias:          pci:v00001002d000073A0sv*sd*bc*sc*i*\nalias:          pci:v00001002d00007362sv*sd*bc*sc*i*\nalias:          pci:v00001002d00007360sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000164Csv*sd*bc*sc*i*\nalias:          pci:v00001002d00001638sv*sd*bc*sc*i*\nalias:          pci:v00001002d00001636sv*sd*bc*sc*i*\nalias:          pci:v00001002d000015E7sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000734Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d00007347sv*sd*bc*sc*i*\nalias:          pci:v00001002d00007341sv*sd*bc*sc*i*\nalias:          pci:v00001002d00007340sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000731Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000731Esv*sd*bc*sc*i*\nalias:          pci:v00001002d0000731Bsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000731Asv*sd*bc*sc*i*\nalias:          pci:v00001002d00007319sv*sd*bc*sc*i*\nalias:          pci:v00001002d00007318sv*sd*bc*sc*i*\nalias:          pci:v00001002d00007312sv*sd*bc*sc*i*\nalias:          pci:v00001002d00007310sv*sd*bc*sc*i*\nalias:          pci:v00001002d00007390sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000738Esv*sd*bc*sc*i*\nalias:          pci:v00001002d00007388sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000738Csv*sd*bc*sc*i*\nalias:          pci:v00001002d000015D8sv*sd*bc*sc*i*\nalias:          pci:v00001002d000015DDsv*sd*bc*sc*i*\nalias:          pci:v00001002d000066AFsv*sd*bc*sc*i*\nalias:          pci:v00001002d000066A7sv*sd*bc*sc*i*\nalias:          pci:v00001002d000066A4sv*sd*bc*sc*i*\nalias:          pci:v00001002d000066A3sv*sd*bc*sc*i*\nalias:          pci:v00001002d000066A2sv*sd*bc*sc*i*\nalias:          pci:v00001002d000066A1sv*sd*bc*sc*i*\nalias:          pci:v00001002d000066A0sv*sd*bc*sc*i*\nalias:          pci:v00001002d000069AFsv*sd*bc*sc*i*\nalias:          pci:v00001002d000069A3sv*sd*bc*sc*i*\nalias:          pci:v00001002d000069A2sv*sd*bc*sc*i*\nalias:          pci:v00001002d000069A1sv*sd*bc*sc*i*\nalias:          pci:v00001002d000069A0sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000687Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000686Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000686Esv*sd*bc*sc*i*\nalias:          pci:v00001002d0000686Dsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000686Csv*sd*bc*sc*i*\nalias:          pci:v00001002d0000686Bsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000686Asv*sd*bc*sc*i*\nalias:          pci:v00001002d00006869sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006868sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006867sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006864sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006863sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006862sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006861sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006860sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000694Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000694Esv*sd*bc*sc*i*\nalias:          pci:v00001002d0000694Csv*sd*bc*sc*i*\nalias:          pci:v00001002d0000699Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d00006997sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006995sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000698Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d00006987sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006986sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006985sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006981sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006980sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006FDFsv*sd*bc*sc*i*\nalias:          pci:v00001002d000067CFsv*sd*bc*sc*i*\nalias:          pci:v00001002d000067CCsv*sd*bc*sc*i*\nalias:          pci:v00001002d000067CAsv*sd*bc*sc*i*\nalias:          pci:v00001002d000067C9sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067C8sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067DFsv*sd*bc*sc*i*\nalias:          pci:v00001002d000067D4sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067D0sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067C7sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067C4sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067C2sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067C1sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067C0sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067E9sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067E7sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067E1sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067FFsv*sd*bc*sc*i*\nalias:          pci:v00001002d000067EFsv*sd*bc*sc*i*\nalias:          pci:v00001002d000067EBsv*sd*bc*sc*i*\nalias:          pci:v00001002d000067E8sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067E3sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067E0sv*sd*bc*sc*i*\nalias:          pci:v00001002d000098E4sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009877sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009876sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009875sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009874sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009870sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000730Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d00007300sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000693Bsv*sd*bc*sc*i*\nalias:          pci:v00001002d00006939sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006938sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006930sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000692Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000692Bsv*sd*bc*sc*i*\nalias:          pci:v00001002d00006929sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006928sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006921sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006920sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006907sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006903sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006902sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006901sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006900sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000985Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000985Esv*sd*bc*sc*i*\nalias:          pci:v00001002d0000985Dsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000985Csv*sd*bc*sc*i*\nalias:          pci:v00001002d0000985Bsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000985Asv*sd*bc*sc*i*\nalias:          pci:v00001002d00009859sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009858sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009857sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009856sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009855sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009854sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009853sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009852sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009851sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009850sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000983Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000983Esv*sd*bc*sc*i*\nalias:          pci:v00001002d0000983Dsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000983Csv*sd*bc*sc*i*\nalias:          pci:v00001002d0000983Bsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000983Asv*sd*bc*sc*i*\nalias:          pci:v00001002d00009839sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009838sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009837sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009836sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009835sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009834sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009833sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009832sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009831sv*sd*bc*sc*i*\nalias:          pci:v00001002d00009830sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067BEsv*sd*bc*sc*i*\nalias:          pci:v00001002d000067BAsv*sd*bc*sc*i*\nalias:          pci:v00001002d000067B9sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067B8sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067B1sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067B0sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067AAsv*sd*bc*sc*i*\nalias:          pci:v00001002d000067A9sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067A8sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067A2sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067A1sv*sd*bc*sc*i*\nalias:          pci:v00001002d000067A0sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000665Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000665Dsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000665Csv*sd*bc*sc*i*\nalias:          pci:v00001002d00006658sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006651sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006650sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000664Dsv*sd*bc*sc*i*\nalias:          pci:v00001002d00006649sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006647sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006646sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006641sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006640sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000131Dsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000131Csv*sd*bc*sc*i*\nalias:          pci:v00001002d0000131Bsv*sd*bc*sc*i*\nalias:          pci:v00001002d00001318sv*sd*bc*sc*i*\nalias:          pci:v00001002d00001317sv*sd*bc*sc*i*\nalias:          pci:v00001002d00001316sv*sd*bc*sc*i*\nalias:          pci:v00001002d00001315sv*sd*bc*sc*i*\nalias:          pci:v00001002d00001313sv*sd*bc*sc*i*\nalias:          pci:v00001002d00001312sv*sd*bc*sc*i*\nalias:          pci:v00001002d00001311sv*sd*bc*sc*i*\nalias:          pci:v00001002d00001310sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000130Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000130Esv*sd*bc*sc*i*\nalias:          pci:v00001002d0000130Dsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000130Csv*sd*bc*sc*i*\nalias:          pci:v00001002d0000130Bsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000130Asv*sd*bc*sc*i*\nalias:          pci:v00001002d00001309sv*sd*bc*sc*i*\nalias:          pci:v00001002d00001307sv*sd*bc*sc*i*\nalias:          pci:v00001002d00001306sv*sd*bc*sc*i*\nalias:          pci:v00001002d00001305sv*sd*bc*sc*i*\nalias:          pci:v00001002d00001304sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000666Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d00006667sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006665sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006664sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006663sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006660sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000683Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000683Dsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000683Bsv*sd*bc*sc*i*\nalias:          pci:v00001002d00006839sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006838sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006837sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006835sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006831sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006830sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000682Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000682Dsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000682Csv*sd*bc*sc*i*\nalias:          pci:v00001002d0000682Bsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000682Asv*sd*bc*sc*i*\nalias:          pci:v00001002d00006829sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006828sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006827sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006826sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006825sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006824sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006823sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006822sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006821sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006820sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006631sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006623sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006621sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006620sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006617sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006613sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006611sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006610sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006608sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006607sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006606sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006605sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006604sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006603sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006602sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006601sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006600sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006819sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006818sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006817sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006816sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006811sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006810sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006809sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006808sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006806sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006802sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006801sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006800sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000679Fsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000679Esv*sd*bc*sc*i*\nalias:          pci:v00001002d0000679Bsv*sd*bc*sc*i*\nalias:          pci:v00001002d0000679Asv*sd*bc*sc*i*\nalias:          pci:v00001002d00006799sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006798sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006792sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006791sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006790sv*sd*bc*sc*i*\nalias:          pci:v00001002d0000678Asv*sd*bc*sc*i*\nalias:          pci:v00001002d00006788sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006784sv*sd*bc*sc*i*\nalias:          pci:v00001002d00006780sv*sd*bc*sc*i*\ndepends:        drm_exec,ttm,drm_display_helper,amdxcp,gpu-sched,drm_panel_backlight_quirks,cec,drm_suballoc_helper,video,drm_ttm_helper,drm_buddy,i2c-algo-bit,crc16\nintree:         Y\nname:           amdgpu\nretpoline:      Y\nvermagic:       7.3.1-1-default SMP preempt mod_unload modversions \nsig_id:         PKCS#7\nsigner:         openSUSE Secure Boot CA\nsig_key:        FA:BE:D8:BF:40:9A:5E:66\nsig_hashalgo:   sha256\nsignature:      9B:DD:FE:36:E8:09:2E:2A:F2:02:52:8C:0A:90:57:DB:75:EB:B9:84:\n\t\t5E:13:78:AD:0F:3E:79:3A:94:32:17:20:CD:74:54:2C:66:F8:D1:46:\n\t\t0B:24:9C:CB:7D:E0:76:06:DB:5D:E1:BF:52:C7:F8:A8:C6:0A:E4:2A:\n\t\t5F:4D:63:9C:42:71:04:3E:7A:E3:80:7E:92:E7:5B:C4:51:50:6B:0F:\n\t\t00:ED:54:33:53:13:37:26:39:D9:46:1E:14:4A:B8:C8:F9:A6:2B:6F:\n\t\t4D:A6:2D:24:39:C4:60:B9:20:B8:28:9F:35:57:85:35:5A:F6:2D:9F:\n\t\t9B:6D:0D:01:86:22:5A:D2:4A:90:97:8A:F3:96:5E:C5:C5:B4:CB:AD:\n\t\t8E:00:E4:74:06:7F:5C:CB:1B:0B:7D:5D:3B:F9:C9:3D:8B:CF:A5:1F:\n\t\t6D:AF:66:44:5B:6E:23:56:98:97:63:AB:6B:C6:80:F5:EB:7A:5D:06:\n\t\t31:54:D0:79:72:67:E2:97:FF:59:2A:4A:23:F2:AA:15:09:C2:99:47:\n\t\t44:03:63:3F:34:AA:B3:C3:20:FC:BD:90:07:03:D8:13:34:1C:D4:F1:\n\t\t10:C2:0E:59:0F:4D:36:DE:5B:BB:2F:6B:C5:4A:92:84:8A:D6:43:14:\n\t\t60:95:0A:C7:F0:17:EC:D2:72:2A:8A:C0:A9:CD:6E:63\nparm:           vramlimit:Restrict VRAM for testing, in megabytes (int)\nparm:           vis_vramlimit:Restrict visible VRAM for testing, in megabytes (int)\nparm:           gartsize:Size of kernel GART to setup in megabytes (32, 64, etc., -1=auto) (uint)\nparm:           gttsize:Size of the GTT userspace domain in megabytes (-1 = auto) (int)\nparm:           moverate:Maximum buffer migration rate in MB/s. (32, 64, etc., -1=auto, 0=1=disabled) (int)\nparm:           audio:HDMI/DP Audio enable for non DC displays (-1 = auto, 0 = disable, 1 = enable) (int)\nparm:           disp_priority:Display Priority (0 = auto, 1 = normal, 2 = high) (int)\nparm:           hw_i2c:hw i2c engine enable (0 = disable) (int)\nparm:           pcie_gen2:PCIE Gen2 mode (-1 = auto, 0 = disable, 1 = enable) (int)\nparm:           msi:MSI support (1 = enable, 0 = disable, -1 = auto) (int)\nparm:           svm_default_granularity:SVM's default granularity in log(2^Pages), default 9 = 2^9 = 2 MiB (uint)\nparm:           lockup_timeout:GPU lockup timeout in ms (default: 2000. 0: keep default value. negative: infinity timeout), format: [single value for all] or [GFX,Compute,SDMA,Video]. (string)\nparm:           dpm:DPM support (1 = enable, 0 = disable, -1 = auto) (int)\nparm:           fw_load_type:firmware loading type (3 = rlc backdoor autoload if supported, 2 = smu load if supported, 1 = psp load, 0 = force direct if supported, -1 = auto) (int)\nparm:           aspm:ASPM support (1 = enable, 0 = disable, -1 = auto) (int)\nparm:           runpm:PX runtime pm (2 = force enable with BAMACO, 1 = force enable with BACO, 0 = disable, -1 = auto, -2 = auto with displays) (int)\nparm:           ip_block_mask:IP Block Mask (all blocks enabled (default)) (uint)\nparm:           bapm:BAPM support (1 = enable, 0 = disable, -1 = auto) (int)\nparm:           deep_color:Deep Color support (1 = enable, 0 = disable (default)) (int)\nparm:           vm_size:VM address space size in gigabytes (default 64GB) (int)\nparm:           vm_fragment_size:VM fragment size in bits (4, 5, etc. 4 = 64K (default), Max 9 = 2M) (int)\nparm:           vm_block_size:VM page table size in bits (default depending on vm_size) (int)\nparm:           vm_fault_stop:Stop on VM fault (0 = never (default), 1 = print first, 2 = always) (int)\nparm:           vm_update_mode:VM update using CPU (0 = never (default except for large BAR(LB)), 1 = Graphics only, 2 = Compute only (default for LB), 3 = Both (int)\nparm:           exp_hw_support:experimental hw support (1 = enable, 0 = disable (default)) (int)\nparm:           dc:Display Core driver (1 = enable, 0 = disable, -1 = auto (default)) (int)\nparm:           sched_jobs:the max number of jobs supported in the sw queue (default 32) (int)\nparm:           sched_hw_submission:the max number of HW submissions (default 2) (int)\nparm:           ppfeaturemask:all power features enabled (default)) (hexint)\nparm:           forcelongtraining:force memory long training (uint)\nparm:           pcie_gen_cap:PCIE Gen Caps (0: autodetect (default)) (uint)\nparm:           pcie_lane_cap:PCIE Lane Caps (0: autodetect (default)) (uint)\nparm:           cg_mask:Clockgating flags mask (0 = disable clock gating) (ullong)\nparm:           pg_mask:Powergating flags mask (0 = disable power gating) (uint)\nparm:           sdma_phase_quantum:SDMA context switch phase quantum (x 1K GPU clock cycles, 0 = no change (default 32)) (uint)\nparm:           disable_cu:Disable CUs (se.sh.cu,...) (charp)\nparm:           virtual_display:Enable virtual display feature (the virtual_display will be set like xxxx:xx:xx.x,x;xxxx:xx:xx.x,x) (charp)\nparm:           lbpw:Load Balancing Per Watt (LBPW) support (1 = enable, 0 = disable, -1 = auto) (int)\nparm:           compute_multipipe:Force compute queues to be spread across pipes (1 = enable, 0 = disable, -1 = auto) (int)\nparm:           gpu_recovery:Enable GPU recovery mechanism, (1 = enable, 0 = disable, -1 = auto) (int)\nparm:           emu_mode:Emulation mode, (1 = enable, 0 = disable) (int)\nparm:           ras_enable:Enable RAS features on the GPU (0 = disable, 1 = enable, -1 = auto (default)) (int)\nparm:           ras_mask:Mask of RAS features to enable (default 0xffffffff), only valid when ras_enable == 1 (uint)\nparm:           timeout_fatal_disable:disable watchdog timeout fatal error (false = default) (bool)\nparm:           timeout_period:watchdog timeout period (0 = timeout disabled, 1 ~ 0x23 = timeout maxcycles = (1 << period) (uint)\nparm:           si_support:SI support (1 = enabled, 0 = disabled, -1 = default) (int)\nparm:           cik_support:CIK support  (1 = enabled, 0 = disabled, -1 = default) (int)\nparm:           smu_memory_pool_size:reserve gtt for smu debug usage, 0 = disable,0x1 = 256Mbyte, 0x2 = 512Mbyte, 0x4 = 1 Gbyte, 0x8 = 2GByte (uint)\nparm:           async_gfx_ring:Asynchronous GFX rings that could be configured with either different priorities (HP3D ring and LP3D ring), or equal priorities (0 = disabled, 1 = enabled (default)) (int)\nparm:           mcbp:Enable Mid-command buffer preemption (0 = disabled, 1 = enabled), -1 = auto (default) (int)\nparm:           discovery:Allow driver to discover hardware IPs from IP Discovery table at the top of VRAM (int)\nparm:           mes_log_enable:Enable Micro Engine Scheduler log (0 = disabled (default), 1 = enabled) (int)\nparm:           uni_mes:Enable Unified Micro Engine Scheduler (0 = disabled, 1 = enabled(default) (int)\nparm:           noretry:Disable retry faults (0 = retry enabled, 1 = retry disabled, -1 auto (default)) (int)\nparm:           force_asic_type:A non negative value used to specify the asic type for all supported GPUs (int)\nparm:           use_xgmi_p2p:Enable XGMI P2P interface (0 = disable; 1 = enable (default)) (int)\nparm:           sched_policy:Scheduling policy (0 = HWS (Default), 1 = HWS without over-subscription, 2 = Non-HWS (Used for debugging only) (int)\nparm:           hws_max_conc_proc:Max # processes HWS can execute concurrently when sched_policy=0 (0 = no concurrency, #VMIDs for KFD = Maximum(default)) (int)\nparm:           cwsr_enable:CWSR enable (0 = Off, 1 = On (Default)) (int)\nparm:           max_num_of_queues_per_device:Maximum number of supported queues per device (1 = Minimum, 4096 = default) (int)\nparm:           send_sigterm:Send sigterm to HSA process on unhandled exception (0 = disable, 1 = enable) (int)\nparm:           halt_if_hws_hang:Halt if HWS hang is detected (0 = off (default), 1 = on) (int)\nparm:           hws_gws_support:Assume MEC2 FW supports GWS barriers (false = rely on FW version check (Default), true = force supported) (bool)\nparm:           queue_preemption_timeout_ms:queue preemption timeout in ms (1 = Minimum, 9000 = default) (int)\nparm:           debug_evictions:enable eviction debug messages (false = default) (bool)\nparm:           no_system_mem_limit:disable system memory limit (false = default) (bool)\nparm:           no_queue_eviction_on_vm_fault:No queue eviction on VM fault (0 = queue eviction, 1 = no queue eviction) (int)\nparm:           mtype_local:MTYPE for local memory (default: ASIC dependent, 0 = MTYPE_RW, 1 = MTYPE_NC, 2 = MTYPE_CC) (int)\nparm:           pcie_p2p:Enable PCIe P2P (requires large-BAR). (N = off, Y = on(default)) (bool)\nparm:           dcfeaturemask:all stable DC features enabled (default)) (uint)\nparm:           dcdebugmask:all debug options disabled (default)) (uint)\nparm:           visualconfirm:Visual confirm (0 = off (default), 1 = MPO, 5 = PSR) (uint)\nparm:           abmlevel:ABM level (0 = off, 1-4 = backlight reduction level, -1 auto (default)) (int)\nparm:           backlight:Backlight control (0 = pwm, 1 = aux, -1 auto (default)) (bint)\nparm:           damageclips:Damage clips support (0 = disable, 1 = enable, -1 auto (default)) (int)\nparm:           tmz:Enable TMZ feature (-1 = auto (default), 0 = off, 1 = on) (int)\nparm:           freesync_video:Adds additional modes via VRR for refresh changes without a full modeset (0 = off (default), 1 = on) (uint)\nparm:           reset_method:GPU reset method (-1 = auto (default), 0 = legacy, 1 = mode0, 2 = mode1, 3 = mode2, 4 = baco/bamaco) (int)\nparm:           bad_page_threshold:Bad page threshold(-1 = ignore threshold (default value), 0 = disable bad page retirement, -2 = threshold determined by a formula, 0 < threshold < max records, user-defined threshold) (int)\nparm:           num_kcq:number of kernel compute queue user want to setup (8 if set to greater than 8 or less than 0, only affect gfx 8+) (int)\nparm:           vcnfw_log:Enable vcnfw log(0 = disable (default value), 1 = enable) (int)\nparm:           sg_display:S/G Display (-1 = auto (default), 0 = disable) (int)\nparm:           umsch_mm:Enable Multi Media User Mode Scheduler (0 = disabled (default), 1 = enabled) (int)\nparm:           umsch_mm_fwlog:Enable umschfw log(0 = disable (default value), 1 = enable) (int)\nparm:           smu_pptable_id:specify pptable id to be used (-1 = auto(default) value, 0 = use pptable from vbios, > 0 = soft pptable id) (int)\nparm:           user_partt_mode:specify partition mode to be used (-2 = AMDGPU_AUTO_COMPUTE_PARTITION_MODE(default value) \t\t\t\t\t\t0 = AMDGPU_SPX_PARTITION_MODE, \t\t\t\t\t\t1 = AMDGPU_DPX_PARTITION_MODE, \t\t\t\t\t\t2 = AMDGPU_TPX_PARTITION_MODE, \t\t\t\t\t\t3 = AMDGPU_QPX_PARTITION_MODE, \t\t\t\t\t\t4 = AMDGPU_CPX_PARTITION_MODE) (uint)\nparm:           enforce_isolation:enforce process isolation between graphics and compute. (-1 = auto, 0 = disable, 1 = enable, 2 = enable legacy mode, 3 = enable without cleaner shader) (int)\nparm:           modeset:Override nomodeset (1 = enable, -1 = auto) (int)\nparm:           seamless:Seamless boot (-1 = auto (default), 0 = disable, 1 = enable) (int)\nparm:           debug_mask:debug options for amdgpu, disabled by default (uint)\nparm:           agp:AGP (-1 = auto (default), 0 = disable, 1 = enable) (int)\nparm:           wbrf:Enable Wifi RFI interference mitigation (0 = disabled, 1 = enabled, -1 = auto(default) (int)\nparm:           rebar:Resizable BAR (-1 = auto (default), 0 = disable, 1 = enable) (int)\nparm:           user_queue:Enable user queues (-1 = auto (default), 0 = disable, 1 = enable, 2 = enable UQs and disable KQs) (int)\nparm:           hdmi_hpd_debounce_delay_ms:HDMI HPD disconnect debounce delay in milliseconds (0 to disable (by default), 1500 is common) (uint)\nparm:           ptl:Enable PTL (-1 = auto, 0 = disable (default), 1 = enable, 2 = permanently disable) (int)\n",
+    "stderr": ""
+  }
+}

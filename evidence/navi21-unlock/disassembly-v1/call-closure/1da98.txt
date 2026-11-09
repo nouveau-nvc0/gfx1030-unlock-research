@@ -1,0 +1,26 @@
+
+/tmp/tmpva9sv734/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001da98 <.data+0x1da98>:
+0001da98: 364100   entry        a1, 0x20 ; Capstone
+0001da9b: 65feff   call8        . -0x18 ; Capstone ; target=0x1da80
+   1da9e:	8d0a      	mov.n	a8, a10
+   1daa0:	a122d5        	l32r	a10, 0x12f28 (0xff8c)
+   1daa3:	8c38      	beqz.n	a8, 0x1daaa
+0001daa5: 252801   call8        . +0x1284 ; Capstone ; target=0x1ed28
+0001daa8: 1df0     retw.n        ; Capstone
+   1daaa:	91cad5        	l32r	a9, 0x131d4 (0x3010e00)
+   1daad:	c02000        	memw
+   1dab0:	922947        	l32i	a9, a9, 0x11c
+   1dab3:	66190f        	bnei	a9, 1, 0x1dac6
+   1dab6:	2d0a      	mov.n	a2, a10
+   1dab8:	0c0b      	movi.n	a11, 0
+   1daba:	0c0c      	movi.n	a12, 0
+0001dabc: 25090b   call8        . +0xb094 ; Capstone ; target=0x28b50
+   1dabf:	ad02      	mov.n	a10, a2
+0001dac1: 652601   call8        . +0x1268 ; Capstone ; target=0x1ed28
+0001dac4: 1df0     retw.n        ; Capstone
+0001dac6: 1df0     retw.n        ; Capstone

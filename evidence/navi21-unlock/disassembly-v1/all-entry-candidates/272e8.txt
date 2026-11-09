@@ -1,0 +1,46 @@
+
+/tmp/tmpciwle44s/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000272e8 <.data+0x272e8>:
+000272e8: 366100   entry        a1, 0x30 ; Capstone
+000272eb: 3000fa   const.s      f0, 0 ; Capstone
+000272ee: 5013fa   wfr          f1, a3 ; Capstone
+000272f1: 00014b   olt.s        b0, f1, f0 ; Capstone
+000272f4: 5022fa   wfr          f2, a2 ; Capstone
+000272f7: 3001fa   const.s      f0, 1 ; Capstone
+000272fa: 760007   bf           b0, . +0xb ; Capstone
+   272fd:	0c13      	movi.n	a3, 1
+000272ff: 6011fa   neg.s        f1, f1 ; Capstone
+   27302:	460000        	j	0x27307
+   27305:	0c03      	movi.n	a3, 0
+00027307: 0021ea   utrunc.s     a2, f1, 0 ; Capstone
+   2730a:	8cd2      	beqz.n	a2, 0x2731b
+0002730c: 134100   ssi          f1, a1, 0 ; Capstone
+0002730f: 769202   loopnez      a2, . +6 ; Capstone
+00027312: 00022a   mul.s        f0, f2, f0 ; Capstone
+00027315: 034101   ssi          f0, a1, 4 ; Capstone
+   27318:	460100        	j	0x27321
+0002731b: 034101   ssi          f0, a1, 4 ; Capstone
+0002731e: 134100   ssi          f1, a1, 0 ; Capstone
+00027321: 40a2fa   rfr          a10, f2 ; Capstone
+00027324: 65f2ff   call8        . -0xd8 ; Capstone ; target=0x2724c
+00027327: 0082da   ufloat.s     f8, a2, 0 ; Capstone
+0002732a: 730100   lsi          f7, a1, 0 ; Capstone
+0002732d: 80671a   sub.s        f6, f7, f8 ; Capstone
+00027330: 505afa   wfr          f5, a10 ; Capstone
+00027333: 60452a   mul.s        f4, f5, f6 ; Capstone
+00027336: 40a4fa   rfr          a10, f4 ; Capstone
+00027339: 65eaff   call8        . -0x158 ; Capstone ; target=0x271e0
+0002733c: 030101   lsi          f0, a1, 4 ; Capstone
+0002733f: 509afa   wfr          f9, a10 ; Capstone
+00027342: 00092a   mul.s        f0, f9, f0 ; Capstone
+   27345:	8c73      	beqz.n	a3, 0x27350
+00027347: 40a0fa   rfr          a10, f0 ; Capstone
+0002734a: 25a511   call8        . +0x11a54 ; Capstone ; target=0x38d9c
+0002734d: 500afa   wfr          f0, a10 ; Capstone
+00027350: 4020fa   rfr          a2, f0 ; Capstone
+00027353: 1df0     retw.n        ; Capstone
+   27355:	000000        	ill

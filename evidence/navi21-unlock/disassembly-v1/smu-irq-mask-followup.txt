@@ -1,0 +1,47 @@
+SMU second IRQ mask — offline follow-up, 2026-11-09
+
+Result: second-mask word2 (RAM7874) initially contains ffffffff in the pinned
+image. Bits24/25 for IRQ88/89 (channels7/8) are both set. The initial first
+mask785c..786b is zero; registration1794 sets requested bits there. Thus the
+second mask does not suppress these channels in the initial file state.
+Runtime values and physical request delivery have not been observed.
+
+1a44 writes03200300+4*i = [785c+4*i] & [786c+4*i], i=0..3.
+f10 writes ffffffff to all four second-mask words (f1d/f20/f23/f26), clears
+RAM7cf8 atf29, then calls1a44. This is a reset-to-ones helper, not by itself
+proof of unconditional startup execution. Known call1048 is conditional:
+[7cf8]!=0 and byte[7b90]<=14. f58 is also called indirectly at2aa6 through
+literal d78=f58; that call is skipped for EXCCAUSE16/24. This locates a real
+computed edge but does not establish the current runtime schedule.
+
+1a8c clears only bit0 of word0 at786c (ANDfffffffe at1aa2; store1aa5), sets
+7cf8=1, and calls1a44. It does not clear the channel7/8 bits in word2.
+1724/1794 clear/set an indexed bit of the first mask. 17c0 clears all four
+first-mask words. These are distinct from second-mask mutation.
+
+The existing 1438-root local locator yields five fixed-address stores in
+[786c,787c): four f10 stores and1aa5. This result does not exclude computed
+stores, bulk copies, context paths, or writers outside decoded coverage.
+No claim of complete mask lifecycle follows from these five hits.
+
+Reproducer: python3 scripts/navi21-smu-irq-mask-audit.py
+Receipt: smu-irq-mask-audit.json. It verifies the pinned decompressed hash,
+661 instruction-record bytes in eight existing listings and initial mask
+words. Byte agreement checks transcription; it does not independently prove
+instruction semantics, reachability, firmware placement, or live RAM values.
+
+Dependency ledger after this follow-up:
+- SMU invocation: startup registers channels7/8; second-mask initial bits now
+  established as1. Physical delivery, current first/second masks remain open.
+- SMU write condition: RAM69cc==0 OR register03210064==80000000. Initializer
+  reads bit19 of013101c0; actual value/lifecycle remains open.
+- SMU to RLC saved masks/gate: address translation to5ffedfc4/5ffee452 is not
+  established. Generic writer existence does not establish this connection.
+- RLC restore invocation: known callback chain and gate test are established.
+- RLC gate producer: no reachable nonzero producer established.
+- RLC changed CC-mask producer: custom-slot74c4 overlap is arithmetic only;
+  known6944 callers select31. Computed/engine producers remain open.
+- Hardware acceptance of restored CC: unproved; no device actions performed.
+
+Next useful work: trace concrete SMU address-window/transfer mapping or the
+69cc/03210064 condition lifecycle. Do not label all-vector work complete.

@@ -1,0 +1,26 @@
+
+/tmp/tmpopd6um21/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00036790 <.data+0x36790>:
+00036790: 364100   entry        a1, 0x20 ; Capstone
+   36793:	0c06      	movi.n	a6, 0
+   36795:	816277        	l32r	a8, 0x14520 (0xbecc)
+   36798:	716177        	l32r	a7, 0x1451c (0xba28)
+   3679b:	52a005        	movi	a5, 5
+   3679e:	224880        	s8i	a2, a8, 128
+000367a1: 76a51d   loopgtz      a5, . +0x21 ; Capstone
+   367a4:	6a93      	add.n	a9, a3, a6
+   367a6:	920900        	l8ui	a9, a9, 0
+   367a9:	6a84      	add.n	a8, a4, a6
+000367ab: 0019da   ufloat.s     f1, a9, 0 ; Capstone
+   367ae:	7096a0        	addx4	a9, a6, a7
+000367b1: 13497f   ssi          f1, a9, 0x1fc ; Capstone
+   367b4:	820800        	l8ui	a8, a8, 0
+   367b7:	1b66      	addi.n	a6, a6, 1
+000367b9: 0008da   ufloat.s     f0, a8, 0 ; Capstone
+   367bc:	606074        	extui	a6, a6, 0, 8
+000367bf: 034985   ssi          f0, a9, 0x214 ; Capstone
+000367c2: 1df0     retw.n        ; Capstone

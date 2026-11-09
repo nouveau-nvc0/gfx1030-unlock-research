@@ -1,0 +1,612 @@
+{
+  "firmware_sha256": "0eb99764288f764fd853d6973693ffa52419cc7ba62074aee85df4a3e8d0286d",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/umc_8_7_0_offset.h",
+      "sha256": "f2c4f3a4b23fe2678b0bc8a2433e2b257d519db2e2ddfa8f154d8d72796defcf"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/umc_8_7_0_sh_mask.h",
+      "sha256": "2ff9d87e8d6a6a8f23b18b9fce503c65b4bb49ecde40cb1194fb4aa1594641e1"
+    },
+    {
+      "path": "evidence/navi21-unlock/sources/sienna_cichlid_ip_offset.h",
+      "sha256": "27ce382f43a5df3fffdfb5abdaafc85dc8beb940f68e6b10f52f5731068f3bbd"
+    },
+    {
+      "path": "evidence/navi21-unlock/sources/umc_v8_7.c.v6.12",
+      "sha256": "cf806aedfda44b4913ab84b2bd385ef6c5631c02bbe9138a5d1e1b289838f894"
+    },
+    {
+      "path": "evidence/navi21-unlock/sources/umc_v8_7.h.v6.12",
+      "sha256": "9053d723dc0969cea177325e8984241bbd067c882a3c51c9e858c92c34fef64b"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/018d8.txt",
+      "sha256": "0e9cccb06e75382bdf9937ac5f93b4f354f7bb08f234285452043d3d8effd977"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/01920.txt",
+      "sha256": "0d6aa51e061f29bfa5a561ade54fdb26afc36ab256ec67ec31c6b6878c3cf8b6"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/30f50.txt",
+      "sha256": "681196b81dec98a5371d227fdfef004b958f4670d5685df5776993df51a8a978"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/01fcc.txt",
+      "sha256": "4827fc96c8cc1fb27a7bc5e31e329cf7835ad714792a0e4993079515d92ef8da"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/21540.txt",
+      "sha256": "db01f196e55633746229a4032a383266d4ad382e1d9782dcf1c76fb5f504f6ab"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/38d10.txt",
+      "sha256": "4486df918c6d8f49098d0d8d9673388d30ec09fd4e899b17b5f4607076bd85cc"
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-store-scan-rsync.json",
+      "sha256": "3140e13a421d08408f422fefc42494938de32159156be3758a77264516abc1a4"
+    }
+  ],
+  "table_matches": [
+    {
+      "table_cell": "0x11f10",
+      "register": "mmUMCCH0_0_GeccErrCntSel",
+      "umc": 0,
+      "channel": 0,
+      "window_argument": "0x50ca0",
+      "public_byte_coordinate": "0x50ca0"
+    },
+    {
+      "table_cell": "0x11f14",
+      "register": "mmUMCCH0_0_GeccErrCntSel",
+      "umc": 0,
+      "channel": 1,
+      "window_argument": "0x51ca0",
+      "public_byte_coordinate": "0x51ca0"
+    },
+    {
+      "table_cell": "0x11f18",
+      "register": "mmUMCCH0_0_GeccErrCntSel",
+      "umc": 1,
+      "channel": 0,
+      "window_argument": "0x150ca0",
+      "public_byte_coordinate": "0x150ca0"
+    },
+    {
+      "table_cell": "0x11f1c",
+      "register": "mmUMCCH0_0_GeccErrCntSel",
+      "umc": 1,
+      "channel": 1,
+      "window_argument": "0x151ca0",
+      "public_byte_coordinate": "0x151ca0"
+    },
+    {
+      "table_cell": "0x11f20",
+      "register": "mmUMCCH0_0_GeccErrCntSel",
+      "umc": 2,
+      "channel": 0,
+      "window_argument": "0x250ca0",
+      "public_byte_coordinate": "0x250ca0"
+    },
+    {
+      "table_cell": "0x11f24",
+      "register": "mmUMCCH0_0_GeccErrCntSel",
+      "umc": 2,
+      "channel": 1,
+      "window_argument": "0x251ca0",
+      "public_byte_coordinate": "0x251ca0"
+    },
+    {
+      "table_cell": "0x11f28",
+      "register": "mmUMCCH0_0_GeccErrCntSel",
+      "umc": 3,
+      "channel": 0,
+      "window_argument": "0x350ca0",
+      "public_byte_coordinate": "0x350ca0"
+    },
+    {
+      "table_cell": "0x11f2c",
+      "register": "mmUMCCH0_0_GeccErrCntSel",
+      "umc": 3,
+      "channel": 1,
+      "window_argument": "0x351ca0",
+      "public_byte_coordinate": "0x351ca0"
+    },
+    {
+      "table_cell": "0x11f30",
+      "register": "mmUMCCH0_0_GeccErrCntSel",
+      "umc": 4,
+      "channel": 0,
+      "window_argument": "0x450ca0",
+      "public_byte_coordinate": "0x450ca0"
+    },
+    {
+      "table_cell": "0x11f34",
+      "register": "mmUMCCH0_0_GeccErrCntSel",
+      "umc": 4,
+      "channel": 1,
+      "window_argument": "0x451ca0",
+      "public_byte_coordinate": "0x451ca0"
+    },
+    {
+      "table_cell": "0x11f38",
+      "register": "mmUMCCH0_0_GeccErrCntSel",
+      "umc": 5,
+      "channel": 0,
+      "window_argument": "0x550ca0",
+      "public_byte_coordinate": "0x550ca0"
+    },
+    {
+      "table_cell": "0x11f3c",
+      "register": "mmUMCCH0_0_GeccErrCntSel",
+      "umc": 5,
+      "channel": 1,
+      "window_argument": "0x551ca0",
+      "public_byte_coordinate": "0x551ca0"
+    },
+    {
+      "table_cell": "0x11f40",
+      "register": "mmUMCCH0_0_GeccErrCntSel",
+      "umc": 6,
+      "channel": 0,
+      "window_argument": "0x650ca0",
+      "public_byte_coordinate": "0x650ca0"
+    },
+    {
+      "table_cell": "0x11f44",
+      "register": "mmUMCCH0_0_GeccErrCntSel",
+      "umc": 6,
+      "channel": 1,
+      "window_argument": "0x651ca0",
+      "public_byte_coordinate": "0x651ca0"
+    },
+    {
+      "table_cell": "0x11f48",
+      "register": "mmUMCCH0_0_GeccErrCntSel",
+      "umc": 7,
+      "channel": 0,
+      "window_argument": "0x750ca0",
+      "public_byte_coordinate": "0x750ca0"
+    },
+    {
+      "table_cell": "0x11f4c",
+      "register": "mmUMCCH0_0_GeccErrCntSel",
+      "umc": 7,
+      "channel": 1,
+      "window_argument": "0x751ca0",
+      "public_byte_coordinate": "0x751ca0"
+    },
+    {
+      "table_cell": "0x11f50",
+      "register": "mmUMCCH0_0_GeccErrCnt",
+      "umc": 0,
+      "channel": 0,
+      "window_argument": "0x50ca4",
+      "public_byte_coordinate": "0x50ca4"
+    },
+    {
+      "table_cell": "0x11f54",
+      "register": "mmUMCCH0_0_GeccErrCnt",
+      "umc": 0,
+      "channel": 1,
+      "window_argument": "0x51ca4",
+      "public_byte_coordinate": "0x51ca4"
+    },
+    {
+      "table_cell": "0x11f58",
+      "register": "mmUMCCH0_0_GeccErrCnt",
+      "umc": 1,
+      "channel": 0,
+      "window_argument": "0x150ca4",
+      "public_byte_coordinate": "0x150ca4"
+    },
+    {
+      "table_cell": "0x11f5c",
+      "register": "mmUMCCH0_0_GeccErrCnt",
+      "umc": 1,
+      "channel": 1,
+      "window_argument": "0x151ca4",
+      "public_byte_coordinate": "0x151ca4"
+    },
+    {
+      "table_cell": "0x11f60",
+      "register": "mmUMCCH0_0_GeccErrCnt",
+      "umc": 2,
+      "channel": 0,
+      "window_argument": "0x250ca4",
+      "public_byte_coordinate": "0x250ca4"
+    },
+    {
+      "table_cell": "0x11f64",
+      "register": "mmUMCCH0_0_GeccErrCnt",
+      "umc": 2,
+      "channel": 1,
+      "window_argument": "0x251ca4",
+      "public_byte_coordinate": "0x251ca4"
+    },
+    {
+      "table_cell": "0x11f68",
+      "register": "mmUMCCH0_0_GeccErrCnt",
+      "umc": 3,
+      "channel": 0,
+      "window_argument": "0x350ca4",
+      "public_byte_coordinate": "0x350ca4"
+    },
+    {
+      "table_cell": "0x11f6c",
+      "register": "mmUMCCH0_0_GeccErrCnt",
+      "umc": 3,
+      "channel": 1,
+      "window_argument": "0x351ca4",
+      "public_byte_coordinate": "0x351ca4"
+    },
+    {
+      "table_cell": "0x11f70",
+      "register": "mmUMCCH0_0_GeccErrCnt",
+      "umc": 4,
+      "channel": 0,
+      "window_argument": "0x450ca4",
+      "public_byte_coordinate": "0x450ca4"
+    },
+    {
+      "table_cell": "0x11f74",
+      "register": "mmUMCCH0_0_GeccErrCnt",
+      "umc": 4,
+      "channel": 1,
+      "window_argument": "0x451ca4",
+      "public_byte_coordinate": "0x451ca4"
+    },
+    {
+      "table_cell": "0x11f78",
+      "register": "mmUMCCH0_0_GeccErrCnt",
+      "umc": 5,
+      "channel": 0,
+      "window_argument": "0x550ca4",
+      "public_byte_coordinate": "0x550ca4"
+    },
+    {
+      "table_cell": "0x11f7c",
+      "register": "mmUMCCH0_0_GeccErrCnt",
+      "umc": 5,
+      "channel": 1,
+      "window_argument": "0x551ca4",
+      "public_byte_coordinate": "0x551ca4"
+    },
+    {
+      "table_cell": "0x11f80",
+      "register": "mmUMCCH0_0_GeccErrCnt",
+      "umc": 6,
+      "channel": 0,
+      "window_argument": "0x650ca4",
+      "public_byte_coordinate": "0x650ca4"
+    },
+    {
+      "table_cell": "0x11f84",
+      "register": "mmUMCCH0_0_GeccErrCnt",
+      "umc": 6,
+      "channel": 1,
+      "window_argument": "0x651ca4",
+      "public_byte_coordinate": "0x651ca4"
+    },
+    {
+      "table_cell": "0x11f88",
+      "register": "mmUMCCH0_0_GeccErrCnt",
+      "umc": 7,
+      "channel": 0,
+      "window_argument": "0x750ca4",
+      "public_byte_coordinate": "0x750ca4"
+    },
+    {
+      "table_cell": "0x11f8c",
+      "register": "mmUMCCH0_0_GeccErrCnt",
+      "umc": 7,
+      "channel": 1,
+      "window_argument": "0x751ca4",
+      "public_byte_coordinate": "0x751ca4"
+    },
+    {
+      "table_cell": "0x11f90",
+      "register": "mmMCA_UMC_UMC0_MCUMC_STATUST0",
+      "umc": 0,
+      "channel": 0,
+      "window_argument": "0x50f08",
+      "public_byte_coordinate": "0x50f08"
+    },
+    {
+      "table_cell": "0x11f94",
+      "register": "mmMCA_UMC_UMC0_MCUMC_STATUST0",
+      "umc": 0,
+      "channel": 1,
+      "window_argument": "0x51f08",
+      "public_byte_coordinate": "0x51f08"
+    },
+    {
+      "table_cell": "0x11f98",
+      "register": "mmMCA_UMC_UMC0_MCUMC_STATUST0",
+      "umc": 1,
+      "channel": 0,
+      "window_argument": "0x150f08",
+      "public_byte_coordinate": "0x150f08"
+    },
+    {
+      "table_cell": "0x11f9c",
+      "register": "mmMCA_UMC_UMC0_MCUMC_STATUST0",
+      "umc": 1,
+      "channel": 1,
+      "window_argument": "0x151f08",
+      "public_byte_coordinate": "0x151f08"
+    },
+    {
+      "table_cell": "0x11fa0",
+      "register": "mmMCA_UMC_UMC0_MCUMC_STATUST0",
+      "umc": 2,
+      "channel": 0,
+      "window_argument": "0x250f08",
+      "public_byte_coordinate": "0x250f08"
+    },
+    {
+      "table_cell": "0x11fa4",
+      "register": "mmMCA_UMC_UMC0_MCUMC_STATUST0",
+      "umc": 2,
+      "channel": 1,
+      "window_argument": "0x251f08",
+      "public_byte_coordinate": "0x251f08"
+    },
+    {
+      "table_cell": "0x11fa8",
+      "register": "mmMCA_UMC_UMC0_MCUMC_STATUST0",
+      "umc": 3,
+      "channel": 0,
+      "window_argument": "0x350f08",
+      "public_byte_coordinate": "0x350f08"
+    },
+    {
+      "table_cell": "0x11fac",
+      "register": "mmMCA_UMC_UMC0_MCUMC_STATUST0",
+      "umc": 3,
+      "channel": 1,
+      "window_argument": "0x351f08",
+      "public_byte_coordinate": "0x351f08"
+    },
+    {
+      "table_cell": "0x11fb0",
+      "register": "mmMCA_UMC_UMC0_MCUMC_STATUST0",
+      "umc": 4,
+      "channel": 0,
+      "window_argument": "0x450f08",
+      "public_byte_coordinate": "0x450f08"
+    },
+    {
+      "table_cell": "0x11fb4",
+      "register": "mmMCA_UMC_UMC0_MCUMC_STATUST0",
+      "umc": 4,
+      "channel": 1,
+      "window_argument": "0x451f08",
+      "public_byte_coordinate": "0x451f08"
+    },
+    {
+      "table_cell": "0x11fb8",
+      "register": "mmMCA_UMC_UMC0_MCUMC_STATUST0",
+      "umc": 5,
+      "channel": 0,
+      "window_argument": "0x550f08",
+      "public_byte_coordinate": "0x550f08"
+    },
+    {
+      "table_cell": "0x11fbc",
+      "register": "mmMCA_UMC_UMC0_MCUMC_STATUST0",
+      "umc": 5,
+      "channel": 1,
+      "window_argument": "0x551f08",
+      "public_byte_coordinate": "0x551f08"
+    },
+    {
+      "table_cell": "0x11fc0",
+      "register": "mmMCA_UMC_UMC0_MCUMC_STATUST0",
+      "umc": 6,
+      "channel": 0,
+      "window_argument": "0x650f08",
+      "public_byte_coordinate": "0x650f08"
+    },
+    {
+      "table_cell": "0x11fc4",
+      "register": "mmMCA_UMC_UMC0_MCUMC_STATUST0",
+      "umc": 6,
+      "channel": 1,
+      "window_argument": "0x651f08",
+      "public_byte_coordinate": "0x651f08"
+    },
+    {
+      "table_cell": "0x11fc8",
+      "register": "mmMCA_UMC_UMC0_MCUMC_STATUST0",
+      "umc": 7,
+      "channel": 0,
+      "window_argument": "0x750f08",
+      "public_byte_coordinate": "0x750f08"
+    },
+    {
+      "table_cell": "0x11fcc",
+      "register": "mmMCA_UMC_UMC0_MCUMC_STATUST0",
+      "umc": 7,
+      "channel": 1,
+      "window_argument": "0x751f08",
+      "public_byte_coordinate": "0x751f08"
+    },
+    {
+      "table_cell": "0x11fd0",
+      "register": "mmMCA_UMC_UMC0_MCUMC_ADDRT0",
+      "umc": 0,
+      "channel": 0,
+      "window_argument": "0x50f10",
+      "public_byte_coordinate": "0x50f10"
+    },
+    {
+      "table_cell": "0x11fd4",
+      "register": "mmMCA_UMC_UMC0_MCUMC_ADDRT0",
+      "umc": 0,
+      "channel": 1,
+      "window_argument": "0x51f10",
+      "public_byte_coordinate": "0x51f10"
+    },
+    {
+      "table_cell": "0x11fd8",
+      "register": "mmMCA_UMC_UMC0_MCUMC_ADDRT0",
+      "umc": 1,
+      "channel": 0,
+      "window_argument": "0x150f10",
+      "public_byte_coordinate": "0x150f10"
+    },
+    {
+      "table_cell": "0x11fdc",
+      "register": "mmMCA_UMC_UMC0_MCUMC_ADDRT0",
+      "umc": 1,
+      "channel": 1,
+      "window_argument": "0x151f10",
+      "public_byte_coordinate": "0x151f10"
+    },
+    {
+      "table_cell": "0x11fe0",
+      "register": "mmMCA_UMC_UMC0_MCUMC_ADDRT0",
+      "umc": 2,
+      "channel": 0,
+      "window_argument": "0x250f10",
+      "public_byte_coordinate": "0x250f10"
+    },
+    {
+      "table_cell": "0x11fe4",
+      "register": "mmMCA_UMC_UMC0_MCUMC_ADDRT0",
+      "umc": 2,
+      "channel": 1,
+      "window_argument": "0x251f10",
+      "public_byte_coordinate": "0x251f10"
+    },
+    {
+      "table_cell": "0x11fe8",
+      "register": "mmMCA_UMC_UMC0_MCUMC_ADDRT0",
+      "umc": 3,
+      "channel": 0,
+      "window_argument": "0x350f10",
+      "public_byte_coordinate": "0x350f10"
+    },
+    {
+      "table_cell": "0x11fec",
+      "register": "mmMCA_UMC_UMC0_MCUMC_ADDRT0",
+      "umc": 3,
+      "channel": 1,
+      "window_argument": "0x351f10",
+      "public_byte_coordinate": "0x351f10"
+    },
+    {
+      "table_cell": "0x11ff0",
+      "register": "mmMCA_UMC_UMC0_MCUMC_ADDRT0",
+      "umc": 4,
+      "channel": 0,
+      "window_argument": "0x450f10",
+      "public_byte_coordinate": "0x450f10"
+    },
+    {
+      "table_cell": "0x11ff4",
+      "register": "mmMCA_UMC_UMC0_MCUMC_ADDRT0",
+      "umc": 4,
+      "channel": 1,
+      "window_argument": "0x451f10",
+      "public_byte_coordinate": "0x451f10"
+    },
+    {
+      "table_cell": "0x11ff8",
+      "register": "mmMCA_UMC_UMC0_MCUMC_ADDRT0",
+      "umc": 5,
+      "channel": 0,
+      "window_argument": "0x550f10",
+      "public_byte_coordinate": "0x550f10"
+    },
+    {
+      "table_cell": "0x11ffc",
+      "register": "mmMCA_UMC_UMC0_MCUMC_ADDRT0",
+      "umc": 5,
+      "channel": 1,
+      "window_argument": "0x551f10",
+      "public_byte_coordinate": "0x551f10"
+    },
+    {
+      "table_cell": "0x12000",
+      "register": "mmMCA_UMC_UMC0_MCUMC_ADDRT0",
+      "umc": 6,
+      "channel": 0,
+      "window_argument": "0x650f10",
+      "public_byte_coordinate": "0x650f10"
+    },
+    {
+      "table_cell": "0x12004",
+      "register": "mmMCA_UMC_UMC0_MCUMC_ADDRT0",
+      "umc": 6,
+      "channel": 1,
+      "window_argument": "0x651f10",
+      "public_byte_coordinate": "0x651f10"
+    },
+    {
+      "table_cell": "0x12008",
+      "register": "mmMCA_UMC_UMC0_MCUMC_ADDRT0",
+      "umc": 7,
+      "channel": 0,
+      "window_argument": "0x750f10",
+      "public_byte_coordinate": "0x750f10"
+    },
+    {
+      "table_cell": "0x1200c",
+      "register": "mmMCA_UMC_UMC0_MCUMC_ADDRT0",
+      "umc": 7,
+      "channel": 1,
+      "window_argument": "0x751f10",
+      "public_byte_coordinate": "0x751f10"
+    }
+  ],
+  "listing_checks": [
+    {
+      "root": "018d8",
+      "byte_checked_records": 27
+    },
+    {
+      "root": "01920",
+      "byte_checked_records": 27
+    },
+    {
+      "root": "30f50",
+      "byte_checked_records": 124
+    },
+    {
+      "root": "01fcc",
+      "byte_checked_records": 74
+    },
+    {
+      "root": "21540",
+      "byte_checked_records": 62
+    },
+    {
+      "root": "38d10",
+      "byte_checked_records": 40
+    }
+  ],
+  "condition_fixed_stores": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/38d10.txt",
+      "pc": "0x38d45",
+      "operation": "s32i.n",
+      "address": "0x69cc",
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "44"
+    }
+  ],
+  "scope": "64 initial table coordinates and inspected caller semantics support UMC identity. No universal window map, GC alias, live-state observation, or all-writer closure.",
+  "field_correspondence": {
+    "counter_low16": "30f87/30fd6",
+    "chip_select_bit0": "30f74..30f7c and30fc4..30fce",
+    "status_high_word_mask": "31026/3102e:6000 = UECC45/CECC46"
+  }
+}

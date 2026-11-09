@@ -1,0 +1,21 @@
+
+/tmp/tmpjn1mldkl/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005bc8 <.data+0x5bc8>:
+00005bc8: 364100   entry        a1, 0x20 ; Capstone
+    5bcb:	318ddd        	l32r	a3, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    5bce:	7cd4      	movi.n	a4, -3
+    5bd0:	a12dde        	l32r	a10, 0xffffd484 (0x5ffee57c) ; inferred DRAM map 0x5ffec000
+    5bd3:	22233b        	l32i	a2, a3, 236
+    5bd6:	0c09      	movi.n	a9, 0
+    5bd8:	924a22        	s8i	a9, a10, 34
+    5bdb:	402210        	and	a2, a2, a4
+    5bde:	22633b        	s32i	a2, a3, 236
+    5be1:	82233c        	l32i	a8, a3, 240
+    5be4:	57e8f9        	bbsi	a8, 5, 0x5be1
+    5be7:	991a      	s32i.n	a9, a10, 4
+00005be9: 1df0     retw.n        ; Capstone
+	...

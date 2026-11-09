@@ -1,0 +1,21 @@
+
+/tmp/tmp3_l8va17/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001ddec <.data+0x1ddec>:
+0001ddec: 364100   entry        a1, 0x20 ; Capstone
+   1ddef:	0c0a      	movi.n	a10, 0
+0001ddf1: a50100   call8        . +0x1c ; Capstone ; target=0x1de0c
+   1ddf4:	214dd4        	l32r	a2, 0x12f28 (0xff8c)
+   1ddf7:	0c1b      	movi.n	a11, 1
+   1ddf9:	0c1c      	movi.n	a12, 1
+   1ddfb:	ad02      	mov.n	a10, a2
+0001ddfd: 25d80a   call8        . +0xad84 ; Capstone ; target=0x28b80
+   1de00:	ad02      	mov.n	a10, a2
+   1de02:	0c2b      	movi.n	a11, 2
+   1de04:	0c0c      	movi.n	a12, 0
+0001de06: a5d70a   call8        . +0xad7c ; Capstone ; target=0x28b80
+0001de09: 1df0     retw.n        ; Capstone
+	...

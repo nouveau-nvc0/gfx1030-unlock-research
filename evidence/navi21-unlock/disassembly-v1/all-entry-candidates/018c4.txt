@@ -1,0 +1,15 @@
+
+/tmp/tmpjlmbsnjh/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000018c4 <.data+0x18c4>:
+000018c4: 364100   entry        a1, 0x20 ; Capstone
+    18c7:	bd03      	mov.n	a11, a3
+    18c9:	ad02      	mov.n	a10, a2
+    18cb:	c02000        	memw
+000018ce: 255401   call8        . +0x1544 ; Capstone ; target=0x2e10
+    18d1:	c02000        	memw
+000018d4: 1df0     retw.n        ; Capstone
+	...

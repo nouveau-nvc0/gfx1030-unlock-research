@@ -1,0 +1,41 @@
+
+/tmp/tmpk_3tr3wo/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001cbe0 <.data+0x1cbe0>:
+0001cbe0: 364100   entry        a1, 0x20 ; Capstone
+0001cbe3: 30c0fa   const.s      f12, 0 ; Capstone
+0001cbe6: 5002fa   wfr          f0, a2 ; Capstone
+0001cbe9: 9080fa   sqrt0.s      f8, f0 ; Capstone
+0001cbec: 80c86a   maddn.s      f12, f8, f8 ; Capstone
+0001cbef: b090fa   nexp01.s     f9, f0 ; Capstone
+0001cbf2: 30b3fa   const.s      f11, 3 ; Capstone
+0001cbf5: e09bfa   addexp.s     f9, f11 ; Capstone
+0001cbf8: 90bc6a   maddn.s      f11, f12, f9 ; Capstone
+0001cbfb: 3043fa   const.s      f4, 3 ; Capstone
+0001cbfe: b050fa   nexp01.s     f5, f0 ; Capstone
+0001cc01: 808b6a   maddn.s      f8, f11, f8 ; Capstone
+0001cc04: 3010fa   const.s      f1, 0 ; Capstone
+0001cc07: 0071fa   mov.s        f7, f1 ; Capstone
+0001cc0a: 60a5fa   neg.s        f10, f5 ; Capstone
+0001cc0d: 801a6a   maddn.s      f1, f10, f8 ; Capstone
+0001cc10: 0037fa   mov.s        f3, f7 ; Capstone
+0001cc13: 90786a   maddn.s      f7, f8, f9 ; Capstone
+0001cc16: 80346a   maddn.s      f3, f4, f8 ; Capstone
+0001cc19: 10516a   maddn.s      f5, f1, f1 ; Capstone
+0001cc1c: 80476a   maddn.s      f4, f7, f8 ; Capstone
+0001cc1f: 6063fa   neg.s        f6, f3 ; Capstone
+0001cc22: 60156a   maddn.s      f1, f5, f6 ; Capstone
+0001cc25: b020fa   nexp01.s     f2, f0 ; Capstone
+0001cc28: 30346a   maddn.s      f3, f4, f3 ; Capstone
+0001cc2b: c040fa   mksadj.s     f4, f0 ; Capstone
+0001cc2e: 10216a   maddn.s      f2, f1, f1 ; Capstone
+0001cc31: f014fa   addexpm.s    f1, f4 ; Capstone
+0001cc34: 6033fa   neg.s        f3, f3 ; Capstone
+0001cc37: e034fa   addexp.s     f3, f4 ; Capstone
+0001cc3a: 30127a   divn.s       f1, f2, f3 ; Capstone
+0001cc3d: 4021fa   rfr          a2, f1 ; Capstone
+0001cc40: 1df0     retw.n        ; Capstone
+	...

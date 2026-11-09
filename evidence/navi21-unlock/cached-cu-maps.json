@@ -1,0 +1,77 @@
+[
+  {
+    "card": "card0",
+    "cu": 60,
+    "bitmap": [
+      [
+        "0x3ff",
+        "0x3ff"
+      ],
+      [
+        "0x0",
+        "0x0"
+      ],
+      [
+        "0x3ff",
+        "0x3ff"
+      ],
+      [
+        "0x3ff",
+        "0x3ff"
+      ]
+    ],
+    "rb_mask": "0xff0f",
+    "enabled_rb": 12,
+    "max_rb": 16
+  },
+  {
+    "card": "card1",
+    "cu": 60,
+    "bitmap": [
+      [
+        "0x0",
+        "0x0"
+      ],
+      [
+        "0x3ff",
+        "0x3ff"
+      ],
+      [
+        "0x3ff",
+        "0x3ff"
+      ],
+      [
+        "0x3ff",
+        "0x3ff"
+      ]
+    ],
+    "rb_mask": "0xfff0",
+    "enabled_rb": 12,
+    "max_rb": 16
+  },
+  {
+    "card": "card2",
+    "cu": 60,
+    "bitmap": [
+      [
+        "0x0",
+        "0x0"
+      ],
+      [
+        "0x3ff",
+        "0x3ff"
+      ],
+      [
+        "0x3ff",
+        "0x3ff"
+      ],
+      [
+        "0x3ff",
+        "0x3ff"
+      ]
+    ],
+    "rb_mask": "0xfff0",
+    "enabled_rb": 12,
+    "max_rb": 16
+  }
+]

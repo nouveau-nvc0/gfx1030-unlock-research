@@ -1,0 +1,21 @@
+
+/tmp/tmpytpn8vog/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00035154 <.data+0x35154>:
+00035154: 364100   entry        a1, 0x20 ; Capstone
+   35157:	a22225        	l32i	a10, a2, 148
+   3515a:	9c9a      	beqz.n	a10, 0x35177
+   3515c:	82025e        	l8ui	a8, a2, 94
+   3515f:	8088a0        	addx4	a8, a8, a8
+   35162:	a0a8a0        	addx4	a10, a8, a10
+00035165: a52ecd   call8        . -0x32d14 ; Capstone ; target=0x2450
+   35168:	a2025d        	l8ui	a10, a2, 93
+   3516b:	b22225        	l32i	a11, a2, 148
+   3516e:	a0aaa0        	addx4	a10, a10, a10
+   35171:	b0aaa0        	addx4	a10, a10, a11
+00035174: e50ccc   call8        . -0x33f30 ; Capstone ; target=0x1244
+00035177: 1df0     retw.n        ; Capstone
+   35179:	000000        	ill

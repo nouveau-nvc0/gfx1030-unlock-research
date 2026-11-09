@@ -1,0 +1,25 @@
+
+/tmp/tmpoxq3_arc/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000032a4 <.data+0x32a4>:
+000032a4: 364100   entry        a1, 0x20 ; Capstone
+000032a7: 259202   call8        . +0x2924 ; Capstone ; target=0x5bc8
+000032aa: e53200   call8        . +0x330 ; Capstone ; target=0x35d8
+    32ad:	8c82      	beqz.n	a2, 0x32b9
+000032af: 25a600   call8        . +0xa64 ; Capstone ; target=0x3d10
+000032b2: 25d4fe   call8        . -0x12bc ; Capstone ; target=0x1ff4
+000032b5: 1df0     retw.n        ; Capstone
+    32b7:	000065        	extui	a0, a0, 16, 7
+    32ba:	1e          	.byte 0x1e
+000032bb: 000c0a   add.s        f0, f12, f0 ; Capstone
+    32be:	b2a000        	movi	a11, 0
+000032c1: 650600   call8        . +0x68 ; Capstone ; target=0x3328
+    32c4:	86faff        	j	0x32b2
+	...
+
+; Alternate branch-target decode
+000032b9: 651e00   call8        . +0x1e8 ; Capstone ; target=0x34a0
+    32bc:	0c0a      	movi.n	a10, 0

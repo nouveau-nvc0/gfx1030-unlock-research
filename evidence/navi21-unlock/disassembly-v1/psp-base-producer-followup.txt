@@ -1,0 +1,31 @@
+Conditional producer of SYS global e1fbe8
+
+Procedure file14cf8 (56 Thumb instructions) accepts a pointer to a64-bit
+address. If that address is nonzero it skips to14d5a. Zero case obtains
+values through SVC7b at a570 and378c, computes T=((A<<4)+B)<<20, subtracts
+800000, stores the result X through the incoming pointer and calls14808
+with output pointere1fbe8. Helper14808 (34instructions) obtains values at
+6a1b0 and6a15c; it stores
+G=X-((C&ffffff)<<24)+((D&ffffff)<<24) modulo2^64
+at e1fbe8 viaSTRD14850. This establishes a concrete conditional producer;
+SVC read semantics, register meaning and runtime execution remain open.
+The helper does not check SVC status and initializes its output slot only
+once, so successful-result assumptions must remain explicit.
+
+Combined with the earlier base-setup candidate, ID27 would beG+945000.
+This does not identifyGwiththe driverallocationbase. On this zero-input
+branch it is an address transformation, not a direct copy from a host
+command. Nonzero-input behavior does not execute this producer; other
+writers and ordering remain open.
+
+Correction to previous call locator: it compared branch target text with
+an expected leading# that Capstone does not print for branches. The earlier
+no-caller statement is withdrawn. Numeric operand scan yields Thumb BL
+candidates25f8/27a4/f118->1d158, andcba2->14cf8. These are file-relative
+candidates, requiring contextual entry/branch validation next. No ARM-mode
+candidate in the scanned SYS interval. This is not complete CFG closure.
+
+Reproduce with PYTHONPATH=/tmp/navi21-disasm/python and
+scripts/navi21-psp-base-producer-audit.py. Receipt records exact decoded bytes,
+source hash, literal occurrences, formulas and corrected branch candidates.
+No changed CC payload or hardware acceptance follows. No hardware changes.

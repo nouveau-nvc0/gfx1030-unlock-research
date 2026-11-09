@@ -1,0 +1,33 @@
+
+/tmp/tmpbjsn6ly7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00032f48 <.data+0x32f48>:
+00032f48: 364100   entry        a1, 0x20 ; Capstone
+   32f4b:	001440        	ssl	a4
+   32f4e:	712d80        	l32r	a7, 0x13004 (0xfffff)
+   32f51:	810385        	l32r	a8, 0x14360 (0x90002e0)
+   32f54:	205094        	extui	a5, a2, 0, 10
+   32f57:	405511        	slli	a5, a5, 12
+   32f5a:	62d503        	addmi	a6, a5, 0x300
+   32f5d:	62c6e0        	addi	a6, a6, -32
+   32f60:	8a55      	add.n	a5, a5, a8
+   32f62:	7cf8      	movi.n	a8, -1
+   32f64:	705510        	and	a5, a5, a7
+   32f67:	6064b5        	extui	a6, a6, 20, 12
+   32f6a:	710981        	l32r	a7, 0x13390 (0xfffe00)
+   32f6d:	c06601        	slli	a6, a6, 20
+   32f70:	6a55      	add.n	a5, a5, a6
+   32f72:	0c16      	movi.n	a6, 1
+   32f74:	0066a1        	sll	a6, a6
+   32f77:	7a55      	add.n	a5, a5, a7
+   32f79:	806630        	xor	a6, a6, a8
+   32f7c:	c02000        	memw
+   32f7f:	322580        	l32i	a3, a5, 0x200
+   32f82:	603310        	and	a3, a3, a6
+   32f85:	c02000        	memw
+   32f88:	326580        	s32i	a3, a5, 0x200
+00032f8b: 1df0     retw.n        ; Capstone
+   32f8d:	000000        	ill

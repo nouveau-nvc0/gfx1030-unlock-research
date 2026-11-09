@@ -1,0 +1,41 @@
+
+/tmp/tmp9ulnsrz_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005764 <.data+0x5764>:
+00005764: 368100   entry        a1, 0x40 ; Capstone
+    5767:	3144df        	l32r	a3, 0xffffd478 (0x5ffee578) ; inferred DRAM map 0x5ffec000
+    576a:	820300        	l8ui	a8, a3, 0
+    576d:	bcb8      	beqz.n	a8, 0x57ac
+    576f:	ad02      	mov.n	a10, a2
+00005771: a5acff   call8        . -0x534 ; Capstone ; target=0x523c
+    5774:	920301        	l8ui	a9, a3, 1
+    5777:	b911      	s32i.n	a11, a1, 4
+    5779:	a0c0f4        	extui	a12, a10, 0, 16
+    577c:	c25105        	s16i	a12, a1, 10
+    577f:	a0b0f5        	extui	a11, a10, 16, 16
+00005782: 030101   lsi          f0, a1, 4 ; Capstone
+00005785: 034104   ssi          f0, a1, 0x10 ; Capstone
+    5788:	b25106        	s16i	a11, a1, 12
+    578b:	0c5a      	movi.n	a10, 5
+0000578d: a0a2c2   quou         a10, a2, a10 ; Capstone
+    5790:	a25104        	s16i	a10, a1, 8
+    5793:	9c59      	beqz.n	a9, 0x57ac
+    5795:	b139df        	l32r	a11, 0xffffd47c (0x5ffedae4) ; inferred DRAM map 0x5ffec000
+    5798:	d20b3c        	l8ui	a13, a11, 60
+    579b:	e21b0c        	l16ui	a14, a11, 24
+    579e:	a0a0f4        	extui	a10, a10, 0, 16
+    57a1:	8c7d      	beqz.n	a13, 0x57ac
+    57a3:	e7ba05        	bgeu	a10, a14, 0x57ac
+    57a6:	f21b0f        	l16ui	a15, a11, 30
+    57a9:	f7ba01        	bgeu	a10, a15, 0x57ae
+000057ac: 1df0     retw.n        ; Capstone
+    57ae:	8bc1      	addi.n	a12, a1, 8
+    57b0:	a80c      	l32i.n	a10, a12, 0
+    57b2:	b81c      	l32i.n	a11, a12, 4
+    57b4:	c82c      	l32i.n	a12, a12, 8
+000057b6: 651100   call8        . +0x118 ; Capstone ; target=0x58cc
+000057b9: 1df0     retw.n        ; Capstone
+	...

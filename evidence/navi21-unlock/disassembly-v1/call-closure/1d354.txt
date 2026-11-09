@@ -1,0 +1,21 @@
+
+/tmp/tmpoxlnbcyc/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001d354 <.data+0x1d354>:
+0001d354: 364100   entry        a1, 0x20 ; Capstone
+   1d357:	a186d7        	l32r	a10, 0x13170 (0x1d00c)
+   1d35a:	b184d7        	l32r	a11, 0x1316c (0x1d0f4)
+   1d35d:	215bd7        	l32r	a2, 0x130cc (0x10b1c)
+   1d360:	3182d7        	l32r	a3, 0x13168 (0x10db8)
+   1d363:	8185d7        	l32r	a8, 0x13178 (0x1c9d4)
+   1d366:	9183d7        	l32r	a9, 0x13174 (0x1c9e4)
+   1d369:	92637f        	s32i	a9, a3, 0x1fc
+   1d36c:	826380        	s32i	a8, a3, 0x200
+   1d36f:	226381        	s32i	a2, a3, 0x204
+   1d372:	b2637d        	s32i	a11, a3, 0x1f4
+   1d375:	a2637e        	s32i	a10, a3, 0x1f8
+0001d378: 1df0     retw.n        ; Capstone
+	...

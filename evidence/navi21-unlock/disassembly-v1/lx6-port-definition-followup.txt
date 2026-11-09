@@ -1,0 +1,22 @@
+Exact LX6 port definition comparison
+
+Pinned local UMR archive 058a7045: GC10.3 has no definitions at segment1
+relative DWORD5b55/5b56 (TOC absolute DWORDfb55/fb56). Its named SRM DRAM
+pair is5b71/5b72, a different endpoint. GC9.4.2/9.4.3/9.5.0 entries at5b55/
+5b56 are SDMA IOV status registers; numeric coincidence is not identification.
+GC11.0.0 publishes LX6 DRAM at5b68/5b69, with ADDRbits0..10 and DATA0..31.
+Borrowing that index field is unjustified: a DWORD interpretation covers8KiB,
+whereas Sienna TOC boot/snapshot DRAM descriptors transfer16KiB. Neither this
+comparison nor the field name establishes actual port indexing units.
+
+The concrete Sienna TOC remains stronger evidence than names from another
+IP generation. It supports a boot/snapshot pair but does not by itself prove
+SMU alias0123ed54/58, index scaling, or port acceptance. Do not use an SRM
+or GC11 field mask when calculating offsets of savedCC or the restore gate.
+Next useful work must derive Sienna port semantics from actual code or a
+matching description; repeating broad searches for unrelated state writers
+would not close this edge. Changed-mask producer, callable restore and CC
+hardware acceptance remain open. No hardware changes.
+
+Reproduce: python3 scripts/navi21-lx6-port-definition-audit.py
+Receipt: lx6-port-definition-audit.json (archive/member hashes and fields).

@@ -1,0 +1,27 @@
+
+/tmp/tmpktw7h50l/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00036858 <.data+0x36858>:
+00036858: 364100   entry        a1, 0x20 ; Capstone
+0003685b: 3011fa   const.s      f1, 1 ; Capstone
+0003685e: 5022fa   wfr          f2, a2 ; Capstone
+   36861:	213277        	l32r	a2, 0x1452c (0xc2f8)
+00036864: 20010a   add.s        f0, f1, f2 ; Capstone
+   36867:	510074        	l32r	a5, 0x13868 (0xc104)
+   3686a:	31f973        	l32r	a3, 0x13850 (0xc210)
+   3686d:	42c298        	addi	a4, a2, -104
+00036870: 03457f   ssi          f0, a5, 0x1fc ; Capstone
+00036873: 53057f   lsi          f5, a5, 0x1fc ; Capstone
+00036876: 430200   lsi          f4, a2, 0 ; Capstone
+00036879: 50342a   mul.s        f3, f4, f5 ; Capstone
+   3687c:	ad03      	mov.n	a10, a3
+0003687e: 40b3fa   rfr          a11, f3 ; Capstone
+00036881: 2548ff   call8        . -0xb7c ; Capstone ; target=0x35d04
+   36884:	4b22      	addi.n	a2, a2, 4
+   36886:	32c340        	addi	a3, a3, 64
+   36889:	4793e6        	bne	a3, a4, 0x36873
+0003688c: 1df0     retw.n        ; Capstone
+	...

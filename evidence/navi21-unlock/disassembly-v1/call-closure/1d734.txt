@@ -1,0 +1,21 @@
+
+/tmp/tmpodjte3lt/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001d734 <.data+0x1d734>:
+0001d734: 364100   entry        a1, 0x20 ; Capstone
+   1d737:	0c2a      	movi.n	a10, 2
+0001d739: 65e4e4   call8        . -0x1b1b8 ; Capstone ; target=0x2580
+   1d73c:	b197d6        	l32r	a11, 0x13198 (0x15678)
+   1d73f:	b22b7f        	l32i	a11, a11, 0x1fc
+   1d742:	ad02      	mov.n	a10, a2
+   1d744:	b20b01        	l8ui	a11, a11, 1
+0001d747: a568e4   call8        . -0x1b974 ; Capstone ; target=0x1dd0
+   1d74a:	0c2a      	movi.n	a10, 2
+0001d74c: 65d2e4   call8        . -0x1b2d8 ; Capstone ; target=0x2474
+   1d74f:	ad02      	mov.n	a10, a2
+   1d751:	0c1b      	movi.n	a11, 1
+0001d753: a594e4   call8        . -0x1b6b4 ; Capstone ; target=0x209c
+0001d756: 1df0     retw.n        ; Capstone

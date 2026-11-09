@@ -1,0 +1,58 @@
+
+/tmp/tmpwgabh_he/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002f4f8 <.data+0x2f4f8>:
+0002f4f8: 364100   entry        a1, 0x20 ; Capstone
+0002f4fb: 65ef00   call8        . +0xef8 ; Capstone ; target=0x303f0
+   2f4fe:	8c6a      	beqz.n	a10, 0x2f508
+0002f500: 25e4d1   call8        . -0x2e1bc ; Capstone ; target=0x1344
+   2f503:	3d0a      	mov.n	a3, a10
+   2f505:	460000        	j	0x2f50a
+   2f508:	0c03      	movi.n	a3, 0
+0002f50a: e50600   call8        . +0x70 ; Capstone ; target=0x2f578
+   2f50d:	41de8e        	l32r	a4, 0x13088 (0x10000)
+   2f510:	51ba92        	l32r	a5, 0x13ff8 (0x30da8)
+   2f513:	cc0a      	bnez.n	a10, 0x2f517
+   2f515:	bc73      	beqz.n	a3, 0x2f550
+   2f517:	61b992        	l32r	a6, 0x13ffc (0x2f60c)
+   2f51a:	66321a        	bnei	a2, 3, 0x2f538
+0002f51d: a50500   call8        . +0x5c ; Capstone ; target=0x2f578
+   2f520:	160a04        	beqz	a10, 0x2f564
+   2f523:	dd06      	mov.n	a13, a6
+   2f525:	81b692        	l32r	a8, 0x14000 (0x50b2d05f)
+   2f528:	0c4a      	movi.n	a10, 4
+   2f52a:	0c1c      	movi.n	a12, 1
+0002f52c: 5008fa   wfr          f0, a8 ; Capstone
+0002f52f: 00b0ba   ceil.s       a11, f0, 0 ; Capstone
+0002f532: 257f08   call8        . +0x87f4 ; Capstone ; target=0x37d24
+   2f535:	c60900        	j	0x2f560
+   2f538:	0c4a      	movi.n	a10, 4
+0002f53a: a57008   call8        . +0x870c ; Capstone ; target=0x37c44
+   2f53d:	ad05      	mov.n	a10, a5
+   2f53f:	40c220        	or	a12, a2, a4
+   2f542:	0c7b      	movi.n	a11, 7
+   2f544:	0c0d      	movi.n	a13, 0
+   2f546:	0c1e      	movi.n	a14, 1
+   2f548:	0c0f      	movi.n	a15, 0
+0002f54a: e5bed2   call8        . -0x2d410 ; Capstone ; target=0x2138
+   2f54d:	c60300        	j	0x2f560
+   2f550:	ad05      	mov.n	a10, a5
+   2f552:	40c220        	or	a12, a2, a4
+   2f555:	0c7b      	movi.n	a11, 7
+   2f557:	0c0d      	movi.n	a13, 0
+   2f559:	0c1e      	movi.n	a14, 1
+   2f55b:	0c0f      	movi.n	a15, 0
+0002f55d: a5bdd2   call8        . -0x2d424 ; Capstone ; target=0x2138
+   2f560:	0c12      	movi.n	a2, 1
+0002f562: 1df0     retw.n        ; Capstone
+   2f564:	6632d0        	bnei	a2, 3, 0x2f538
+   2f567:	16d3fc        	beqz	a3, 0x2f538
+   2f56a:	dd06      	mov.n	a13, a6
+   2f56c:	bd03      	mov.n	a11, a3
+   2f56e:	0c4a      	movi.n	a10, 4
+   2f570:	0c0c      	movi.n	a12, 0
+0002f572: 257b08   call8        . +0x87b4 ; Capstone ; target=0x37d24
+   2f575:	c6f9ff        	j	0x2f560

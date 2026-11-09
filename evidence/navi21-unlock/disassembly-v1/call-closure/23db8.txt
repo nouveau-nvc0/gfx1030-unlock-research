@@ -1,0 +1,16 @@
+
+/tmp/tmpdvjisjr1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00023db8 <.data+0x23db8>:
+00023db8: 364100   entry        a1, 0x20 ; Capstone
+   23dbb:	315ebd        	l32r	a3, 0x13334 (0x125a200)
+   23dbe:	c02000        	memw
+   23dc1:	3223d7        	l32i	a3, a3, 0x35c
+   23dc4:	000240        	ssr	a2
+   23dc7:	302091        	srl	a2, a3
+   23dca:	202004        	extui	a2, a2, 0, 1
+00023dcd: 1df0     retw.n        ; Capstone
+	...

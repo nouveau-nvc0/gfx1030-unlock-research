@@ -1,0 +1,25 @@
+
+/tmp/tmpe7khm6kz/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00020260 <.data+0x20260>:
+00020260: 364100   entry        a1, 0x20 ; Capstone
+   20263:	ad02      	mov.n	a10, a2
+00020265: a55115   call8        . +0x1551c ; Capstone ; target=0x35780
+   20268:	4d0a      	mov.n	a4, a10
+   2026a:	ad02      	mov.n	a10, a2
+0002026c: 25e5e1   call8        . -0x1e1ac ; Capstone ; target=0x20c0
+   2026f:	3d0a      	mov.n	a3, a10
+   20271:	0caa      	movi.n	a10, 10
+00020273: e530e2   call8        . -0x1dcf0 ; Capstone ; target=0x2580
+   20276:	bd04      	mov.n	a11, a4
+   20278:	30a074        	extui	a10, a3, 0, 8
+0002027b: 252815   call8        . +0x15284 ; Capstone ; target=0x354fc
+   2027e:	ad02      	mov.n	a10, a2
+   20280:	0c1b      	movi.n	a11, 1
+00020282: a5e1e1   call8        . -0x1e1e4 ; Capstone ; target=0x209c
+   20285:	0caa      	movi.n	a10, 10
+00020287: e51ee2   call8        . -0x1de10 ; Capstone ; target=0x2474
+0002028a: 1df0     retw.n        ; Capstone

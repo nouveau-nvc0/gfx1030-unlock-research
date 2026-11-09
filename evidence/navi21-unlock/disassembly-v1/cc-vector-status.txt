@@ -1,0 +1,403 @@
+CC write-path investigation — active, not complete
+Offline evidence checkpoint, 2026-11-09
+
+Scope: identify possible routes for attempts to write CC, distinguish executable
+stores from accepted hardware writes, and trace initialization/protection sources.
+No firmware execution, messages, resets, bindings or persistent settings changed.
+
+Established mechanisms, conditional CC relevance:
+1. Host MMIO/indirect access: prior invasive-v1 trials ignored CC writes while USER
+   controls worked. This is evidence at the tested runtime stage only.
+2. SMU local DWORD store: channels7/8 commands31/32, saved address7564,
+   store34b4b. Permission04 and physical channel reachability remain conditions.
+   Internal GC candidate coordinates01208924/012089bc need access validation.
+3. SMU windowed DWORD store: commands1f/21 ->18d8, mapping03220038,
+   store1919 through02c00000 aperture. Different routing, same permission04
+   prerequisite; CC alias and acceptance unknown.
+4. Transfer engine:2aea8 and callers construct descriptors, including a known
+   GC/RLC-region destination. No independently controlled CC descriptor proved.
+5. Indexed commands41..43: selected pointer and callback tables, constrained
+   byte/DWORD state writes. Initial exact CC/CC-minus12 pointer search negative.
+   Runtime RAM and out-of-range index semantics are not closed.
+6. Initialization/reset/save-restore: distinguish power-on, unload, MODE1,
+   MODE2 and resume. USER_WGP restore is established; the twelve static saved
+   addresses omit CC in that SMU path. RLC71ac now contains explicit CC_WGP
+   and CC_RB save/restore stores (see rlc-cc-direct-restore.txt); hardware
+   acceptance and an early writable interval remain unproved.
+7. Firmware/table changes: ASIC_Init reference commands match XL/XT; descriptor
+   differences do not establish mask control. RLC SRM now has concrete packed
+   CC/USER register candidates (see new finding below). Main RLC microcode ISA, GOP and signed-load
+   acceptance remain unresolved. A file edit alone proves no executable route.
+Cache maintenance is a dependency for RAM changes, not an independent CC setter.
+8. GOP x64 generic register access now traced:XL6468/XT4fd4 write via PCI I/O
+   Mem.Write directly or index/data0/4 and30/34. Read/write/helper bodies are
+   byte-identical between these reference ROMs. Four direct writer references
+   identified; stock CC index selection remains unproved. Details:
+   gop-register-write-path.txt, gop-helper-comparison.json.
+   Indirect-I/O subpath8f08 now traced to ATOM data23. Both reference payloads
+   are zero, so stock dispatch exits without writes;8 emulator cases and a
+   synthetic handler-reachability control pass. Ordinary REG writes remain
+   separate/open. See gop-indirectio-analysis.txt.
+   Stock ATOM follow-up:all7 tables/56 REG writes per ROM byte-checked; no
+   base mutations or directCC destinations. Two REG1 stores have sole prior
+   REG0 selectors168e5/16061 (GOP byte addresses5a394/58184), notCC. Other GOP
+   callers and engine side effects remain open. See gop-stock-atom-destinations.txt.
+   Remaining wrappers:2cb8 adds FirmwareInfo+18 (4c in both references);
+   87dc uses data11 base0 and forces high-bit byte addresses80000000..8000fffc.
+   Forty original-instruction cases pass before writer entry; exhaustive low16
+   model excludes literal CC addresses for87dc, not hardware aliases.2cb8 can
+   representCC but stock caller reachability remains open. See
+   gop-wrapper-provenance.txt and gop-wrapper-replay.json.
+
+Latest dispatch expansion:
+event-dispatch-table.json extracts twenty24-byte records at7374, callback+20.
+Initialization144c has explicit count20 and stride24;335cc has matching end.
+Lookup1c50 returns7374+24*index. Dispatchers19c4/1cc8 call descriptor+20.
+Sixteen unique initial targets added to recursive closure. Newly reached2fde0
+has eight callbacks atb6d0, selected by eight-bit loop; those roots also added.
+Another newly reached indirect site2fd63 selects12010+4*[b697]. Initial words
+are303e8,3099c,303e8,303e8. Both identified direct writers bound parameter<4;
+3099c performs mapped and fixed register writes. See mode-callback-analysis.txt.
+Unresolved pointer writes prevent a global immutability/bounds claim.
+
+Current1236-function closure includes19 startup IRQ roots and47 identified
+registrations with59 unique targets. It has26 indirect sites, no rejected direct
+targets and no reachable EXCW in its windows. Store locator includes FP stores:
+4069 sites,2009 constant addresses, none matching four candidate CC aliases.
+Separate all-entry sweep covers1438 candidate windows with40 indirect sites,
+4566 stores and2334 constant addresses, again without candidate CC matches.
+The two remaining decoder gaps are at apparent data candidates14660/3c1b8;
+this is not proof they cannot execute. Two genuine cache-helper gaps were
+resolved as DHI/IHI from pinned QEMU encodings. See closure-progress.json.
+These numbers are not semantic completeness: RAM data, cross-call effects,
+non-ENTRY exception/boot code, other engines and function boundaries remain.
+RSYNC/JX register-effect correction rerun retains the same SMU all-entry
+counts and zero candidate-alias matches; receipt smu-rsync-rerun.json.
+The reported38d9c hardware-loop warning lies after its RETW at38dba in trailing
+data and is not reachable from that entry; avoid treating data as firmware code.
+
+New RLC finding:
+All11 nonempty segments have a $PS1 marker at+16 and length at+20 satisfying
+length+512=segment_size. Body begins at+256; prior first-word ISA comparisons
+included the wrapper. SRM body has2210 candidate8-byte records. Its first words
+include c0002249 once and8000226f/8400226f/9000226f/9400226f/a000226f/
+a400226f/b000226f/b400226f, matching CC_SA and eight CC_WGP low16 indices.
+The same patterns occur for USER_SA224a and USER_WGP2270. Second words are1
+for SA and0 for WGP; do NOT interpret them as values or permissions without
+decoding the consumer. This is a concrete RLC-table lead, not an accepted write.
+Artifact rlc-srm-packed-registers.json; reproducible script navi21-rlc-srm-locate.py.
+Follow-up: IRAM body is coherent Xtensa; inferred IRAM/DRAM map now resolves
+236 candidate windows. Functions65d8/6944/7670 connect GPM scratch ranges
+to SRM command writes, including the ranges containing CC/USER records.
+See rlc-iram-srm-analysis.txt and rlc-srm-command-ranges.json. OP direction,
+record semantics and accepted writes remain unproved; no completeness claim.
+Seven SRM caller argument structs recovered in rlc-srm-operation-followup.txt:
+bothOP values occur. CC-range selection depends on context+3 as well as mode;
+mode1 can reach the CC block when that flag is1. A save-only/restore-only
+interpretation of CC records is not supported yet. Ten additional RLC branch
+starts repaired. JX flow now terminates explicitly (jx-flow-validation.json).
+
+RLC direct-store follow-up supersedes the earlier absence of a concrete writer:
+71ac reads/writes CC_WGP and CC_RB plus matching USER registers, selecting
+eight instances and replaying four32-byte RAM arrays. Caller6944 passes its
+operation byte;0 reads and1 writes in this helper. Registered77cc reaches
+the restore caller35d8 through32a4, conditional on byte5ffee452. Deferred
+callback slot5ffee580 also reaches3a00, with the same gate on restore.
+Five registrations resolve to387c/3cbc/3a00; sixteen slot write/clear sites
+identified. Gate producer and accepted writes remain unresolved. Details:
+rlc-cc-direct-restore.{txt,json}, rlc-callback-gate-audit.json.
+Four RLC switch tables (213 entries) now have explicit initial CFG edges;
+22 additional target starts repaired, all four windows have no remaining
+unresolved edges/unknown operations under these table assumptions. Overall
+That pass had236 windows:13483 reached instructions,2395 stores,1566 constant destinations.
+This is still not full firmware coverage or a runtime immutability claim.
+Shared-body follow-up: seven backward target starts added; four timer-register
+EXCW sites resolved against pinned encodings. Current scan13587 window-local
+instruction sites/2399 stores, no reachable EXCW. Two debug-exception paths
+remain explicit; indirect CALLX effects and main RLC microcode are not closed.
+Two identified memory-copy calls do not overlap saved CC arrays or the gate.
+See rlc-shared-body-audit.txt and rlc-shared-flow-validation.json.
+
+Next concrete work:
+- RLC71ac explicit CC_WGP/CC_RB restore now identified, with source RAM arrays
+  and operation0=read/1=write in this helper. Trace state-machine invocation
+  and other writers of those arrays. See rlc-cc-direct-restore.txt.
+- Audit all40 locator indirect sites for initial and registered destinations.
+- Continue runtime-list lifecycle: zero-initialized model has0/0/3 callbacks;
+  all mask bits set produces24/16/8 calls across adjacent lists, still to the
+  eight source targets if surrounding RAM is unchanged. No clearing tail in
+  builder loop. See runtime-list-boundary-model.json.
+- Scheduler registration targets recovered for24 primary and3 secondary calls;
+  descriptor35448 registrations now cover all14 indices. Audit other mutations.
+- Validate complete CFG boundaries and non-ENTRY exception/boot instructions.
+- Trace address/value provenance for unresolved stores and engine descriptors.
+- Resolve physical mailbox routing/permission lifecycle and CC address aliases.
+- Decode RLC packed fields and SRM consumer; inspect GOP and load paths.
+  GOP extraction now complete for both reference ROMs and both architectures;
+  executable payloads differ. First linear/literal locator is negative for
+  six CC coordinates, without computed-access coverage. See gop-analysis.txt.
+
+Primary artifacts: call-closure.json, closure-cfg-store-scan.json,
+closure-progress.json, generic-memory-analysis.txt, windowed-access-analysis.txt,
+transfer-engine-analysis.txt, reset-handlers-analysis.txt, save-restore-analysis.txt.
+
+GOP direct scratch-caller audit:35 sites across14 XL x64 PE functions resolve
+to indices0/2/3/5/6/7/8/10 under function-entry and x64 ABI assumptions;
+with initial FirmwareInfo base4c none selectsCC. No unresolved graph edges
+in those14 functions. Indirect/alternate entry, base mutations and other
+architectures remain open. See gop-scratch-callers.json.
+
+XT scratch-caller audit independently resolves24 sites/14 functions to the
+same small index set asXL; noCC with initialbase4c. XL interpreter ROM pointer
+is selected from PCI_IO.RomImage or globalcdd0, then aliased in context+70.
+Optional global producer and runtime buffer mutations remain open. See
+gop-rom-source-followup.txt; do not equate matching structure offsets across
+different context types.
+
+Runtime-ROM correction:XL initialization7960 writes data11+4 at7a3c after
+ATOMcommand6. The prior87dc range80000000..8000fffc is file-initial only;
+normal runtime base can differ.24 original-instruction update cases pass.
+Bit31 remains set for anybase, but hardware aliasing remains unresolved.
+FirmwareInfo writes+10/+24/+28/+2c found, no+18 in this function. See
+gop-runtime-table-update.txt and gop-vram-base-replay.json.
+
+GOP leaf audit:14 XL/16 XT direct Mem.Write-wrapper refs mapped to four
+functions per image. Extra XL6734/XT5140 write FirmwareInfo-base+8 (initial54),
+with XL assignment versus XT OR semantics; other extra refs are read index
+selection. Linux MM_INDEX/MM_DATA source identifies87dc high-bit access as
+VRAM convention; exact VRAM position also depends onMM_INDEX_HI. See
+gop-write-leaves-analysis.txt and gop-write-leaf-inventory.json. Direct
+protocol writes outside these wrappers and indirect effects remain open.
+
+GOP protocol-level follow-up:189XL/191XT indirect transfers inventoried;
+three literal+18 callsites each classify as register Mem.Write, BAR transfer
+Mem.Write and BootServices.RaiseTPL. XL69fc/XT6bcc BAR-transfer bodies match;
+64 original-instruction forwarding cases pass. Context+106 initiallyzero
+(BAR0), syntheticBAR3 forwarding is not stock reachability. Field mutation
+coverage remains open. See gop-protocol-write-followup.txt.
+
+GOP computed tails:four XL register jumps select six-entry ATOM destination
+tablebb50;24 original tail cases pass before handler execution. No fixed
+displacement memory-write width overlaps BARfield106 in either x64 image;
+computed/implicit/external mutations remain open. Two XL register calls
+4e19/4e21 retain external callerR9 callback dependency. Details:
+gop-indirect-tail-analysis.txt and gop-indirect-tail-audit.json.
+
+GOP callback classification:XL4e19/4e21 andXT4e31/4e39 belong to registered
+EFI_DRIVER_HEALTH_PROTOCOL.Repair. GUID/method slots/signature verified against
+EDK2; callback is optional RepairNotify with50/100 then100/100. No internal
+CC selector in this routine; external callback implementation remains outside
+image scope. See gop-health-callback-analysis.txt/registration.json.
+
+User steering:defer ARM64 GOP parity; prioritize concrete RLC CC restore.
+Indexed gate candidate32c8 audited:five known direct calls use indices0/1/2,
+write state+9/+10/+11 and aggregate+1, not restore gate+6 (5ffee452).
+General computed stores/engine copies/indirect entry remain open. See
+rlc-gate-index-followup.txt and rlc-gate-index-audit.json.
+
+RLC startup expansion:non-ENTRY648..6e3 now separately scanned/byte-checked
+(59 instructions; old236-window totals unchanged). Zero-range[e240,ecb0)
+covers gatee452 but not savedCC arraysdfc4..e044. Initial constructor/cleanup
+lists and optional hooks areempty/null, so no additional initial gate setter
+from them. Runtime/engine changes remain open. See rlc-startup-state-followup.txt
+and rlc-startup-state-audit.json.
+
+RLC computed RAM route74c4:seven known6944 callers selectslot31, excluding
+CC-array/gate overlap for those arguments. Custom byte slots are not locally
+bounded to31:slot39 can overlap savedCC_WGP;184/216/248 can write DWORD e450
+overlapping gatee452. These are hardware snapshots with status/mode conditions,
+not arbitrary values or proved custom-slot reachability. See
+rlc-saved-array-overlap.txt/.json.
+
+RLC snapshot source mapping:74c4 lanes areCP_MQD_BASE_ADDR/HI/CONTROL.
+Gate-overlap slot184 would transferCONTROL.EXE_DISABLE to gatebit7;slot216
+has no documented gate-byte source bits;slot248 transfers MQD addressbyte2.
+Known callers stillslot31; no literal5fff6944/5fff74c4 pointer found. Actual
+custom-slot invocation/value control/CC acceptance remain unproved. See
+rlc-snapshot-source-followup.txt and rlc-snapshot-sources.json.
+
+RLC interrupt roots9874/9950 expanded:193 byte-checked instructions, two
+CALLX dispatch sites. Low8 interrupt table cells match9830 registration
+formula; seven known registrations add no6944/74c4 target. Second dispatcher
+mask84 selectsbits2/7; first hardware interrupt range remains unproved.
+Special-register/window semantics are not fully modeled by localCFG. See
+rlc-interrupt-dispatch-followup.txt andrlc-interrupt-dispatch-audit.json.
+
+RLC97f8 enable helper bounds index<8; known calls2/1/3. Context restore
+9d28 instead reloads unmasked INTENABLE from context+124 (knownRAMe168),
+paired with9c42/9c45 save. Initial magiczero skips restore; runtime context
+mutation remains open. EPC4/EPS4/EXCSAVE4 decoder repair expands separate
+9d28 CFG29->207 reached instructions, all208 listing instructions bytechecked.
+See rlc-interrupt-mask-followup.txt; no new proved CC path.
+
+RLC context save root9b70 expanded147 bytechecked/reached instructions.
+Known context[e044,e224) fixed fields exclude CC arrays/gatee452. Restore
+stack stores9e72..9ebd depend on savedSP/return-window fields and remain
+computed-address candidates; no proved control or CC overlap. Known7ce9
+save suppliesnull tail callback. See rlc-context-layout-followup.txt.
+
+RLC window-spill root9fd8 expanded102 reached instructions; two alternate
+branch starts repaired,121 listing records bytechecked. Known9a84 saves
+architecturalSP beforea0ec->9fd8; five computed spill store groups catalogued.
+No fixedCC address; runtime stack bounds/window invariants remain open.
+See rlc-window-spill-followup.txt andrlc-window-spill-audit.json.
+
+RLC alternate9ad0 expanded56 reached/57 bytechecked instructions; setsa1=0
+before9b70, so preservedcontext+cc skips restore stack-copy block. No direct
+caller/fullpointer found. SevenCFG inventories now contain668 direct call
+sites, all with separately available target roots. This is root bookkeeping,
+not indirect/vector/semantic closure. See rlc-alternate-save-followup.txt.
+
+RLC prefix0->24->648 expanded49 reached/59 bytechecked records. INTENABLE
+zeroed; initial hooknull;9950 installed inEXCSAVE2 andRAMd960. StartupSP
+5fff0000 identified, runtime stack bound unproved. Vector400+ linear survey
+requires exact roots/exception-return handling; not counted as closedCFG.
+See rlc-vector-prefix-followup.txt andrlc-vector-prefix-audit.json.
+
+RLC six window-vector roots400/440/480/4c0/500/540:58 instructions checked
+and reached,24 S32E stores; underflow roots load only. Dynamic exception
+returns now terminate localCFG explicitly. Raw441 CALLs were misaligned
+survey records. Stack/window provenance and exception stubs580+ remain open.
+See rlc-window-vectors-followup.txt andrlc-window-vectors-audit.json.
+
+RLC exception stubs57c/59c/5bc/5dc/5fc/61c decoded from exact starts.
+5fc dispatchesEXCCAUSE throughd860; first64 initialcells havefourtargets
+a370/9f78/9874/410. Hardwarecause bound/runtime mutations unproved; three
+new target roots pending. See rlc-exception-stubs-followup.txt.
+
+Gate-focused local-alias audit:13 statebase users,15 unresolved non-a1
+store sites narrowed to14 local-stack aliases plus known32c8 indexedsetter.
+No additional state+6 producer. Resume mask/gate provenance priority after
+user asked whether vector work still advances the chain. See
+rlc-gate-local-alias-followup.txt; exception target listings retained asWIP.
+
+Gate-width locator recorded19 unresolved non-a1 stores atoffset4/5/6;
+none at5/6. Two halfword sites54ea/5592 are local stack fields. Dispatcher
+stack-copy loop bounds remain to check; stack base alone is insufficient
+to exclude repeated-increment overlap. See rlc-gate-width-followup.txt.
+
+Nine local-copy loops bounded:seven64byte/two136byte; largest concatenated
+range[SP+10,SP+110), inside170hexframe. Lengths are constants, so these
+loops add no unbounded-copy gate producer under ordinary stack assumptions.
+See rlc-local-copy-bounds.txt/.json.
+
+Cross-engine RAM-port locator:8 header-derived GPM_IRAM/SRM_DRAM/SRM_ARAM/
+GPM_SCRATCH ports, no fixed-store hits in existing SMU scan under3candidate
+aliases. Port-name-to-LX6-state-RAM identity not established; computed/window/
+engine paths remain open. See smu-rlc-ram-port-followup.txt/.json.
+
+Linuxv6.12 reference loading: IRAM/DRAM sections separately staged forPSP;
+DRAM mapsGFX_FW_TYPE_RLC_DRAM_BOOT, command supplies sourceMC,size,type.
+InternalLX6 destination/transform/runtime producer remains unresolved;
+no inference that genericRLC RAMports aliasstateRAM. See
+rlc-psp-load-followup.txt andrlc-psp-load-provenance.json.
+
+SMU second IRQ-mask follow-up: initial786c..787b allffffffff; channel7/8
+IRQ88/89 word2 bits24/25 initially1. f10 resets allfour words toones;
+1a8c clears onlyword0 bit0. f10 caller1048 is conditional, not proved
+unconditional startup. Existing local scan hasfive fixed stores in range;
+computed/bulk/runtime mutation coverage remains open. Eight listings/661
+records bytechecked against pinnedfirmware. See smu-irq-mask-followup.txt,
+smu-irq-mask-audit.json; reproducer scripts/navi21-smu-irq-mask-audit.py.
+
+SMU window positive control:30f50 tables11f10/11f50/11f90/11fd0 match64UMC
+byte coordinates (selector/counter/status/address,8instances*2channels), with
+matching selector/counter/CECC/UECC operations. Linuxv6.12 stride/count sources
+retained. Window argument equals public byte coordinate for theseUMC accesses;
+universalGC/CC/LX6 alias remains open.354listing records bytechecked. Condition
+locator stillone69cc producer/zero fixed03210064 stores; no all-writer claim.
+See smu-window-umc-followup.txt andsmu-window-umc-audit.json.
+
+SMU transfer-program identification: PL330 opcodes/register offsets/CCR flags
+match;fca0 sourceinc1/destinc0. Offline reconstruction of140bytes gives35DWORDs
+tofixed0123ed68, preceded byd0 at0123ed64, not contiguousMMIO coverage. Runtime
+producer2b0fc fills19source words; other16/allmutations unresolved. GC11.0.3
+names sameindex offsetLX6_SCRATCH_ADDR, comparativelead only.349records checked.
+See smu-transfer-program-followup.txt and smu-transfer-program-audit.json.
+
+RLC receiving block found:1d10 reads35words78000340..3c8 and copies exactly
+[5ffee278,5ffee304),first19then16 layout.340=4*d0 matchesSMUport index and
+35word transfer. Strong interface correspondence, physicalalias/autoindex
+unobserved. Directcopy destinations exclude savedCC/gatee452; laterdataflow
+open. Dispatcher83fc tableentry32->8537->1d10 requiresnonzero arg; actualSMU
+sender32 unresolved.915records bytechecked/35origin-destination pairs audited.
+See rlc-scratch-consumer-followup.txt and rlc-scratch-consumer-audit.json.
+
+Final16SMU blockwords identified asPACE FlopsPerByteTable.26748 converts16u16
+Q8.8 values at a2d8 toFP32fd34 (zero->1.0);TABLE_PACE10 callbacks20820/20768
+import/export96bytes and copy16float words,32padding bytes. Publicheader size,
+format/count agree. These match RLCstatee278..e2b4. All35word positions nowhave
+concrete producers,not allproducer closure.477records bytechecked. Command32
+sender/update36fc0 chain stillopen. See smu-pace-source-followup.txt/.auditJSON
+(smu-pace-source-audit.json),reproducer scripts/navi21-smu-pace-source-audit.py.
+
+PACE conditional update-to-transfer chain traced:2b1b4->2b0ac->2b00c->2af90;
+post-transfer2af68(0) requests6,later2afec->2af68(1) requests5 via2ba54.
+HeadernamesRLC_SMU_COMMAND3b2a4/ARG1 3b2ac/SMU_RLC_RESPONSE3b01c verified.
+These differfrom83fc command32 interfaceb664/b668.7d24's16..36 unsignedrange
+excludes5/6;mainRLCG bridgingisopen,notassumed.1334records/7edges audited.
+See smu-pace-delivery-followup.txt and smu-pace-delivery-audit.json.
+
+PACE downstream bounds:29c4 coefficient selector/29ec derived selector return
+0..15 through15bounded comparisons.2a0c/2ab8 ringwrites[e3e4,e424) if indexe424
+follows knowninitializer0 and two(old+1)&15 writers. Index isusedbeforemask;
+index27 wouldhitgateDWORDe450,but importedcopydoesnotreachindex andknownwriters
+cannotproduce27. No fullindex/dataflowclosure.421records/32768booleanpatterns
+checked. See rlc-pace-bounds-followup.txt and rlc-pace-bounds-audit.json.
+
+PACE22d8 localdirect writes closed underfreshCFG:295reached/37stores,8stack
+and29to6fixeddestinations (RAMe272/e3c4/e3c5/e3c9,regs6803ba44/6803b274).
+No directCC/gatewrite. e3c4 producerincludeshardwarelow8/decrementlow8;0..15
+notprovedglobally.29b0 computedaccessisread-only. FieldLEVEL_MASKf documented,
+reservedbit/runtime behavior notassumed.321records audited. See
+rlc-pace-level-followup.txt,rlc-pace-level-audit.json,rlc-pace-level-cfg.json.
+
+RLCG commandbridge candidate: driverwordbase2000;2495eca9 dispatch inferred
+5->2a03(32,1),6->2a0a(32,0),both35e3 writesed9a/ed99 matchingXtensa83fc.
+31one-basedentries/7pairedcalls/77rawwords/678Xtensarecordschecked.
+ISAsemanticsstillinferred;notruntimeprooforCCproducer. See
+rlcg-command-bridge-followup.txt and rlcg-command-bridge-audit.json.
+
+MainRLCG3523 CC226f ->353e mode0 followedUSER2270;known17literalcalls
+reverseonly24d7/ec4b/ec6e. PartialISAconditionalread/copyconclusion,notglobal
+closure. CC_SAread-shaped212e/2201. GPM313f/30bd/3160 nextconcretetransfer.
+See rlcg-cc-operand-followup.txt/audit.json;17calls/88words/8instanceschecked.
+
+GPM313f candidate1024bytefixed-portimport toscratch200;completion35bd/35c8
+supports direction. SourceHYP_BOOTLOADwith6000/operator11unresolved.
+CP_DMA_MEfieldcomparisonconditional;notengineISAproof.91words/2callers.
+Next30d3/3173 descriptorconsumers. See rlcg-gpm-transfer-followup.txt/audit.json.
+
+SOS concreteTOC36entries:ID10boot/ID27snapshot sharefb55/fb56,4000size.
+ConditionalwholeLX6DRAMspanincludesCCsaved/gate;actualsnapshotunobserved.
+ID2 offset6000corroborates313fsourceaddition.36entries/132words/initialzeros.
+See rlcg-toc-followup.txt/audit.json. Nextdescriptor saveconsumers3226/3269.
+
+Correction3226/3269 arepostTOCregisterpairs;actualsave31e5 selects400flag,
+IDs23/24/25/26/27/35/36. ID27 fixedfb56port->base+545000,len4000.
+No payloadtransformationvisible;wholeDRAMpreservationcandidate,notCCproducer.
+157words/7IDs/2callers/40pairs checked; rlcg-dram-save-followup.txt/audit.json.
+
+ID27class2excludesalternate011e/011fbasebranch.40knownpostTOCpairs/39names,
+noCC/USERtargets;SRMcontrol3doesnotprovidepayload. Threebaseselectorschecked.
+Next30aeextra transfers361c/3620/3624/3632/3636. See rlcg-toc-effects-followup.txt.
+
+Remainingfive30aecallsarefixedSPMskewsetup,11values/70wordschecked.
+All10literal30aecallsand18literalengineoperandsitesaccounted;notglobalCFG.
+Separate2e7a/2e85 familye800..e805 stillopen. See rlcg-spm-transfer-followup.txt.
+
+Restoreentryprecision:e452route-specific,not71acuniversal.2edc/70d4 haveother
+conditionsbutnoestablishedentry. AllIRAMbytepositionsCALL/Jscanfindsonlyknown
+7calls6944/1call71ac;no2edc/70d4.1147recordschecked;see rlc-restore-entry-followup.txt.
+
+SavedCCneighborhelpers6e10/72f4/7390:18fixedRAMstoresendatdfc4,notinsideCC;
+279reachableinstructions/nocallees/307bytecheckedrecords. Localentryscope.
+See rlc-saved-neighbors-followup.txt/audit.json. Nochangedmask/gateproducer.
+
+3a00 lifecycle:gate0skiprestorebutlater3c0esavesactualCC;gate1restorethensave.
+76instructionlocaljoinpath/491recordschecked;calleecompletionconditional.
+Initialzerosarenotlaterstateproof. See rlc-saved-lifecycle-followup.txt/audit.json.
+
+Transition37d8/3724 andcallees1194/383c/59e4:RAMe453/e454/e25e,notgate/CC.
+SerialCTRL0cfffb REG_ADDR12 publicSERDESports;hardwaremeaningstillopen.
+197instructions/200records checked;rlc-transition-controls-followup.txt/audit.json.

@@ -1,0 +1,41 @@
+
+/tmp/tmp1y2ft37n/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001b6c8 <.data+0x1b6c8>:
+0001b6c8: 364100   entry        a1, 0x20 ; Capstone
+   1b6cb:	c12bde        	l32r	a12, 0x12f78 (0xc2f4)
+0001b6ce: 5002fa   wfr          f0, a2 ; Capstone
+   1b6d1:	cac3      	add.n	a12, a3, a12
+   1b6d3:	820c80        	l8ui	a8, a12, 128
+   1b6d6:	920c64        	l8ui	a9, a12, 100
+   1b6d9:	b20c84        	l8ui	a11, a12, 132
+   1b6dc:	ecb8      	bnez.n	a8, 0x1b70b
+   1b6de:	8127de        	l32r	a8, 0x12f7c (0xc184)
+   1b6e1:	f127de        	l32r	a15, 0x12f80 (0x3fc66666)
+   1b6e4:	8083a0        	addx4	a8, a3, a8
+0001b6e7: 63087f   lsi          f6, a8, 0x1fc ; Capstone
+0001b6ea: 60501a   sub.s        f5, f0, f6 ; Capstone
+   1b6ed:	d126de        	l32r	a13, 0x12f88 (0x37a7c5ac)
+   1b6f0:	e125de        	l32r	a14, 0x12f84 (0x43200000)
+0001b6f3: 504ffa   wfr          f4, a15 ; Capstone
+0001b6f6: 50241a   sub.s        f2, f4, f5 ; Capstone
+0001b6f9: 503efa   wfr          f3, a14 ; Capstone
+0001b6fc: 501dfa   wfr          f1, a13 ; Capstone
+0001b6ff: 30124a   madd.s       f1, f2, f3 ; Capstone
+0001b702: 00b1ea   utrunc.s     a11, f1, 0 ; Capstone
+   1b705:	b0b074        	extui	a11, a11, 0, 8
+   1b708:	c6ffff        	j	0x1b70b
+   1b70b:	b24c68        	s8i	a11, a12, 104
+   1b70e:	b71912        	beq	a9, a11, 0x1b724
+   1b711:	a20c88        	l8ui	a10, a12, 136
+   1b714:	d20c60        	l8ui	a13, a12, 96
+   1b717:	661a09        	bnei	a10, 1, 0x1b724
+   1b71a:	661d06        	bnei	a13, 1, 0x1b724
+   1b71d:	ad03      	mov.n	a10, a3
+0001b71f: e5e802   call8        . +0x2e90 ; Capstone ; target=0x1e5ac
+0001b722: 1df0     retw.n        ; Capstone
+0001b724: 1df0     retw.n        ; Capstone
+	...

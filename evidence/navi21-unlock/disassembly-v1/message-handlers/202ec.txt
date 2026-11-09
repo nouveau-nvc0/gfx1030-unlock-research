@@ -1,0 +1,21 @@
+
+/tmp/tmpk6bl427_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000202ec <.data+0x202ec>:
+000202ec: 364100   entry        a1, 0x20 ; Capstone
+   202ef:	0c8a      	movi.n	a10, 8
+000202f1: e528e2   call8        . -0x1dd70 ; Capstone ; target=0x2580
+   202f4:	ad02      	mov.n	a10, a2
+000202f6: a5dce1   call8        . -0x1e234 ; Capstone ; target=0x20c0
+   202f9:	8144cc        	l32r	a8, 0x1340c (0xfc58)
+   202fc:	0c1b      	movi.n	a11, 1
+   202fe:	a2487d        	s8i	a10, a8, 125
+   20301:	ad02      	mov.n	a10, a2
+00020303: a5d9e1   call8        . -0x1e264 ; Capstone ; target=0x209c
+   20306:	0c8a      	movi.n	a10, 8
+00020308: a516e2   call8        . -0x1de94 ; Capstone ; target=0x2474
+0002030b: 1df0     retw.n        ; Capstone
+   2030d:	000000        	ill

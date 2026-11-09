@@ -1,0 +1,11 @@
+
+/tmp/tmpix_zf8os/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002d104 <.data+0x2d104>:
+0002d104: 364100   entry        a1, 0x20 ; Capstone
+   2d107:	0c12      	movi.n	a2, 1
+0002d109: 1df0     retw.n        ; Capstone
+	...

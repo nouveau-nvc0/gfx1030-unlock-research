@@ -1,0 +1,53 @@
+
+/tmp/tmp371yji2g/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00030850 <.data+0x30850>:
+00030850: 364100   entry        a1, 0x20 ; Capstone
+   30853:	51b689        	l32r	a5, 0x12f2c (0x141d600)
+   30856:	0c33      	movi.n	a3, 3
+   30858:	c02000        	memw
+   3085b:	622543        	l32i	a6, a5, 0x10c
+   3085e:	81dd8d        	l32r	a8, 0x13fd4 (0xfffcffff)
+   30861:	7cfa      	movi.n	a10, -1
+   30863:	6040f5        	extui	a4, a6, 16, 16
+   30866:	470365        	bnone	a3, a4, 0x308cf
+   30869:	0c19      	movi.n	a9, 1
+   3086b:	42a000        	movi	a4, 0
+   3086e:	b2a002        	movi	a11, 2
+00030871: 76ab2e   loopgtz      a11, . +0x32 ; Capstone
+   30874:	000440        	ssr	a4
+   30877:	20c0b1        	sra	a12, a2
+   3087a:	076c20        	bbci	a12, 0, 0x3089e
+   3087d:	607015        	extui	a7, a6, 16, 2
+   30880:	70d0b1        	sra	a13, a7
+   30883:	076d17        	bbci	a13, 0, 0x3089e
+   30886:	806610        	and	a6, a6, a8
+   30889:	001440        	ssl	a4
+   3088c:	00b9a1        	sll	a11, a9
+   3088f:	a0bb30        	xor	a11, a11, a10
+   30892:	b0b710        	and	a11, a7, a11
+   30895:	b0b014        	extui	a11, a11, 0, 2
+   30898:	00bb11        	slli	a11, a11, 16
+   3089b:	b06620        	or	a6, a6, a11
+   3089e:	1b44      	addi.n	a4, a4, 1
+   308a0:	404074        	extui	a4, a4, 0, 8
+   308a3:	91f28d        	l32r	a9, 0x1406c (0x8000)
+   308a6:	218f8a        	l32r	a2, 0x132e4 (0x4000)
+   308a9:	909620        	or	a9, a6, a9
+   308ac:	c02000        	memw
+   308af:	926543        	s32i	a9, a5, 0x10c
+   308b2:	c02000        	memw
+   308b5:	822543        	l32i	a8, a5, 0x10c
+   308b8:	208810        	and	a8, a8, a2
+   308bb:	808e41        	srli	a8, a8, 14
+   308be:	8cd8      	beqz.n	a8, 0x308cf
+   308c0:	c02000        	memw
+   308c3:	a22543        	l32i	a10, a5, 0x10c
+   308c6:	20aa10        	and	a10, a10, a2
+   308c9:	a0ae41        	srli	a10, a10, 14
+   308cc:	560aff        	bnez	a10, 0x308c0
+000308cf: 1df0     retw.n        ; Capstone
+   308d1:	000000        	ill

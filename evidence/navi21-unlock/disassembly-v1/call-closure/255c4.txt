@@ -1,0 +1,29 @@
+
+/tmp/tmpy9bf62pf/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000255c4 <.data+0x255c4>:
+000255c4: 366100   entry        a1, 0x30 ; Capstone
+   255c7:	6158b7        	l32r	a6, 0x13328 (0x123ae00)
+   255ca:	c02000        	memw
+   255cd:	508004        	extui	a8, a5, 0, 1
+   255d0:	2090c4        	extui	a9, a2, 0, 13
+   255d3:	d09911        	slli	a9, a9, 3
+   255d6:	4266e0        	s32i	a4, a6, 0x380
+   255d9:	908820        	or	a8, a8, a9
+   255dc:	0c29      	movi.n	a9, 2
+   255de:	908820        	or	a8, a8, a9
+   255e1:	8901      	s32i.n	a8, a1, 0
+   255e3:	324102        	s8i	a3, a1, 2
+000255e6: 65fbff   call8        . -0x48 ; Capstone ; target=0x2559c
+   255e9:	b801      	l32i.n	a11, a1, 0
+   255eb:	c02000        	memw
+   255ee:	a1a3b8        	l32r	a10, 0x1387c (0x45c80000)
+   255f1:	b266df        	s32i	a11, a6, 0x37c
+000255f4: 500afa   wfr          f0, a10 ; Capstone
+000255f7: 00a0ba   ceil.s       a10, f0, 0 ; Capstone
+000255fa: a515dc   call8        . -0x23ea4 ; Capstone ; target=0x1754
+000255fd: 1df0     retw.n        ; Capstone
+	...

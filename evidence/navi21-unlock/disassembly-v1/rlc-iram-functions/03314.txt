@@ -1,0 +1,15 @@
+
+/tmp/tmpphp6ic37/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00003314 <.data+0x3314>:
+00003314: 364100   entry        a1, 0x20 ; Capstone
+    3317:	51f3e7        	l32r	a5, 0xffffd2e4 (0x2710) ; inferred DRAM map 0x5ffec000
+    331a:	41d8e7        	l32r	a4, 0xffffd27c (0x5ffed99c) ; inferred DRAM map 0x5ffec000
+    331d:	303583        	moveqz	a3, a5, a3
+    3320:	224408        	s8i	a2, a4, 8
+    3323:	3934      	s32i.n	a3, a4, 12
+00003325: 1df0     retw.n        ; Capstone
+	...

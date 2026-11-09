@@ -1,0 +1,20 @@
+
+/tmp/tmpep3595ga/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000370f0 <.data+0x370f0>:
+000370f0: 364100   entry        a1, 0x20 ; Capstone
+   370f3:	0c8a      	movi.n	a10, 8
+000370f5: a548cb   call8        . -0x34b74 ; Capstone ; target=0x2580
+000370f8: e5f9ff   call8        . -0x60 ; Capstone ; target=0x37098
+   370fb:	a2a0ff        	movi	a10, 255
+000370fe: 25ecff   call8        . -0x13c ; Capstone ; target=0x36fc0
+   37101:	0c8a      	movi.n	a10, 8
+00037103: 2537cb   call8        . -0x34c8c ; Capstone ; target=0x2474
+   37106:	ad02      	mov.n	a10, a2
+   37108:	0c1b      	movi.n	a11, 1
+0003710a: 25f9ca   call8        . -0x3506c ; Capstone ; target=0x209c
+0003710d: 1df0     retw.n        ; Capstone
+	...

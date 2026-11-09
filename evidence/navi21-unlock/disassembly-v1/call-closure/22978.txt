@@ -1,0 +1,22 @@
+
+/tmp/tmpms_byt50/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00022978 <.data+0x22978>:
+00022978: 364100   entry        a1, 0x20 ; Capstone
+   2297b:	4137c2        	l32r	a4, 0x13258 (0x31ffe00)
+   2297e:	c02000        	memw
+   22981:	0b82      	addi.n	a8, a2, -1
+   22983:	0c16      	movi.n	a6, 1
+   22985:	0c05      	movi.n	a5, 0
+   22987:	3224a2        	l32i	a3, a4, 0x288
+   2298a:	805683        	moveqz	a5, a6, a8
+   2298d:	7cb6      	movi.n	a6, -5
+   2298f:	e05511        	slli	a5, a5, 2
+   22992:	603310        	and	a3, a3, a6
+   22995:	503320        	or	a3, a3, a5
+   22998:	c02000        	memw
+   2299b:	3264a2        	s32i	a3, a4, 0x288
+0002299e: 1df0     retw.n        ; Capstone

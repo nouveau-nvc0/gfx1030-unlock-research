@@ -1,0 +1,2160 @@
+{
+  "scope": "Local targeted-listing locator; no memory-value propagation, indirect-call resolution or global completeness claim.",
+  "reports": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/user-wgp-save-restore.txt",
+      "reachable_in_window": 27,
+      "decoded_in_window": 28,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x333f2",
+          "operation": "s32i",
+          "address": "0x12089c0"
+        },
+        {
+          "pc": "0x333fe",
+          "operation": "s32i.n",
+          "address": null
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/grbm-selector.txt",
+      "reachable_in_window": 19,
+      "decoded_in_window": 19,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x37a7c",
+          "operation": "s32i.n",
+          "address": null
+        },
+        {
+          "pc": "0x37a81",
+          "operation": "s32i.n",
+          "address": null
+        },
+        {
+          "pc": "0x37a83",
+          "operation": "s8i",
+          "address": null
+        },
+        {
+          "pc": "0x37a97",
+          "operation": "s8i",
+          "address": null
+        },
+        {
+          "pc": "0x37a9f",
+          "operation": "s32i",
+          "address": "0x1230800"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/011c0.txt",
+      "reachable_in_window": 12,
+      "decoded_in_window": 12,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/011dc.txt",
+      "reachable_in_window": 15,
+      "decoded_in_window": 16,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x11e7",
+          "operation": "s32i",
+          "address": "0xf13c"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/0151c.txt",
+      "reachable_in_window": 37,
+      "decoded_in_window": 37,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x154e",
+          "operation": "s32i",
+          "address": "0x3200150"
+        },
+        {
+          "pc": "0x155f",
+          "operation": "s32i",
+          "address": "0x3200154"
+        },
+        {
+          "pc": "0x156b",
+          "operation": "s32i",
+          "address": "0x3200154"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/01584.txt",
+      "reachable_in_window": 5,
+      "decoded_in_window": 5,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/01590.txt",
+      "reachable_in_window": 5,
+      "decoded_in_window": 5,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/0159c.txt",
+      "reachable_in_window": 20,
+      "decoded_in_window": 20,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x15b6",
+          "operation": "s32i",
+          "address": "0x3200154"
+        },
+        {
+          "pc": "0x15c9",
+          "operation": "s8i",
+          "address": "0x6a21"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/016d4.txt",
+      "reachable_in_window": 16,
+      "decoded_in_window": 17,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x16e6",
+          "operation": "s32i.n",
+          "address": "0x1268e04"
+        },
+        {
+          "pc": "0x16f9",
+          "operation": "s32i",
+          "address": "0x1203024"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/01770.txt",
+      "reachable_in_window": 13,
+      "decoded_in_window": 13,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x1780",
+          "operation": "s8i",
+          "address": "0x756b"
+        },
+        {
+          "pc": "0x1783",
+          "operation": "s8i",
+          "address": "0x756c"
+        },
+        {
+          "pc": "0x1786",
+          "operation": "s32i",
+          "address": "0x755c"
+        },
+        {
+          "pc": "0x1789",
+          "operation": "s32i",
+          "address": "0x7560"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/01830.txt",
+      "reachable_in_window": 43,
+      "decoded_in_window": 43,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x184e",
+          "operation": "s8i",
+          "address": "0x756b"
+        },
+        {
+          "pc": "0x186d",
+          "operation": "s32i",
+          "address": "0x755c"
+        },
+        {
+          "pc": "0x188c",
+          "operation": "s32i",
+          "address": "0x7560"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/018a4.txt",
+      "reachable_in_window": 12,
+      "decoded_in_window": 12,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/01cac.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 10,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/1a588.txt",
+      "reachable_in_window": 9,
+      "decoded_in_window": 9,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x1a595",
+          "operation": "s32i",
+          "address": "0x14bb8"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/1a5d4.txt",
+      "reachable_in_window": 9,
+      "decoded_in_window": 9,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/1b14c.txt",
+      "reachable_in_window": 11,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x1b159",
+          "operation": "s32i.n",
+          "address": "0x69ac"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/1b798.txt",
+      "reachable_in_window": 23,
+      "decoded_in_window": 24,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x1b7b0",
+          "operation": "s8i",
+          "address": "0x1106c"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/1b7d8.txt",
+      "reachable_in_window": 41,
+      "decoded_in_window": 41,
+      "unresolved_or_external_edges": [
+        [
+          "0x1b802",
+          "0x1f"
+        ]
+      ],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x1b7fa",
+          "operation": "s8i",
+          "address": "0x1106c"
+        },
+        {
+          "pc": "0x1b819",
+          "operation": "s8i",
+          "address": "0x110f6"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/1c110.txt",
+      "reachable_in_window": 49,
+      "decoded_in_window": 49,
+      "unresolved_or_external_edges": [
+        [
+          "0x1c135",
+          "0x2a"
+        ],
+        [
+          "0x1c17d",
+          "0xc"
+        ]
+      ],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x1c14c",
+          "operation": "s8i",
+          "address": null
+        },
+        {
+          "pc": "0x1c14f",
+          "operation": "s32i.n",
+          "address": null
+        },
+        {
+          "pc": "0x1c154",
+          "operation": "s32i.n",
+          "address": null
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/1d714.txt",
+      "reachable_in_window": 12,
+      "decoded_in_window": 12,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/1d734.txt",
+      "reachable_in_window": 14,
+      "decoded_in_window": 14,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/1d758.txt",
+      "reachable_in_window": 14,
+      "decoded_in_window": 14,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/1d77c.txt",
+      "reachable_in_window": 17,
+      "decoded_in_window": 17,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/1d7a8.txt",
+      "reachable_in_window": 25,
+      "decoded_in_window": 25,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x1d7c8",
+          "operation": "s32i",
+          "address": "0x15874"
+        },
+        {
+          "pc": "0x1d7e2",
+          "operation": "s8i",
+          "address": null
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/1da08.txt",
+      "reachable_in_window": 5,
+      "decoded_in_window": 6,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/1dac8.txt",
+      "reachable_in_window": 32,
+      "decoded_in_window": 32,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/200fc.txt",
+      "reachable_in_window": 17,
+      "decoded_in_window": 17,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x20113",
+          "operation": "s32i",
+          "address": "0xff84"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/20128.txt",
+      "reachable_in_window": 17,
+      "decoded_in_window": 17,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x2013f",
+          "operation": "s32i",
+          "address": "0xff80"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/20260.txt",
+      "reachable_in_window": 18,
+      "decoded_in_window": 18,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2029c.txt",
+      "reachable_in_window": 30,
+      "decoded_in_window": 30,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x202cf",
+          "operation": "s32i",
+          "address": "0xfcdc"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/202ec.txt",
+      "reachable_in_window": 13,
+      "decoded_in_window": 14,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x202fe",
+          "operation": "s8i",
+          "address": "0xfcd5"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/20a6c.txt",
+      "reachable_in_window": 9,
+      "decoded_in_window": 9,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x20a79",
+          "operation": "s8i",
+          "address": "0xfcba"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/213fc.txt",
+      "reachable_in_window": 22,
+      "decoded_in_window": 23,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x2140c",
+          "operation": "s8i",
+          "address": "0xfa3b"
+        },
+        {
+          "pc": "0x21411",
+          "operation": "s32i",
+          "address": "0xfa4c"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/21454.txt",
+      "reachable_in_window": 13,
+      "decoded_in_window": 13,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x21462",
+          "operation": "s8i",
+          "address": "0xfa3b"
+        },
+        {
+          "pc": "0x21467",
+          "operation": "s32i",
+          "address": "0xfa48"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/22bd8.txt",
+      "reachable_in_window": 64,
+      "decoded_in_window": 64,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x22bf8",
+          "operation": "s32i",
+          "address": "0xf0fc"
+        },
+        {
+          "pc": "0x22c4d",
+          "operation": "s32i",
+          "address": "0xf144"
+        },
+        {
+          "pc": "0x22c50",
+          "operation": "s8i",
+          "address": "0xf015"
+        },
+        {
+          "pc": "0x22c75",
+          "operation": "s8i",
+          "address": "0xf012"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/22cd4.txt",
+      "reachable_in_window": 25,
+      "decoded_in_window": 25,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x22ce6",
+          "operation": "s32i",
+          "address": "0xf0f8"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/22f38.txt",
+      "reachable_in_window": 11,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "ufloat.s"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/22f58.txt",
+      "reachable_in_window": 15,
+      "decoded_in_window": 15,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x22f76",
+          "operation": "s8i",
+          "address": "0xbf78"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/22f80.txt",
+      "reachable_in_window": 21,
+      "decoded_in_window": 22,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "ufloat.s"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/22fbc.txt",
+      "reachable_in_window": 8,
+      "decoded_in_window": 8,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x22fc8",
+          "operation": "s8i",
+          "address": "0xbf67"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/22fd0.txt",
+      "reachable_in_window": 11,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x22fda",
+          "operation": "s8i",
+          "address": "0xbf67"
+        },
+        {
+          "pc": "0x22fe0",
+          "operation": "s8i",
+          "address": "0xbef6"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/23dd0.txt",
+      "reachable_in_window": 27,
+      "decoded_in_window": 27,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/23e18.txt",
+      "reachable_in_window": 59,
+      "decoded_in_window": 59,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x23ea9",
+          "operation": "s8i",
+          "address": "0x157b1"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/24788.txt",
+      "reachable_in_window": 29,
+      "decoded_in_window": 30,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "ufloat.s"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/24bf4.txt",
+      "reachable_in_window": 5,
+      "decoded_in_window": 5,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/24cdc.txt",
+      "reachable_in_window": 43,
+      "decoded_in_window": 44,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "ufloat.s",
+        "wfr"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/24d50.txt",
+      "reachable_in_window": 27,
+      "decoded_in_window": 27,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/24d98.txt",
+      "reachable_in_window": 40,
+      "decoded_in_window": 40,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "ufloat.s"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/250cc.txt",
+      "reachable_in_window": 34,
+      "decoded_in_window": 34,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "ufloat.s"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/252a8.txt",
+      "reachable_in_window": 11,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/258b8.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 10,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/27a50.txt",
+      "reachable_in_window": 54,
+      "decoded_in_window": 55,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "wfr"
+      ],
+      "stores": [
+        {
+          "pc": "0x27a67",
+          "operation": "s8i",
+          "address": "0xea7c"
+        },
+        {
+          "pc": "0x27aba",
+          "operation": "s8i",
+          "address": "0xea7d"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/27aec.txt",
+      "reachable_in_window": 15,
+      "decoded_in_window": 15,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/27d9c.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/27db8.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/27dd4.txt",
+      "reachable_in_window": 13,
+      "decoded_in_window": 14,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x27de4",
+          "operation": "s8i",
+          "address": "0xe1ea"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/297f8.txt",
+      "reachable_in_window": 47,
+      "decoded_in_window": 47,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "olt.s",
+        "ufloat.s",
+        "wfr"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/29d30.txt",
+      "reachable_in_window": 83,
+      "decoded_in_window": 83,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "mul16s"
+      ],
+      "stores": [
+        {
+          "pc": "0x29d67",
+          "operation": "s8i",
+          "address": "0xcf6f"
+        },
+        {
+          "pc": "0x29db8",
+          "operation": "s8i",
+          "address": null
+        },
+        {
+          "pc": "0x29dbb",
+          "operation": "s8i",
+          "address": null
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/29e04.txt",
+      "reachable_in_window": 96,
+      "decoded_in_window": 96,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "mul16s"
+      ],
+      "stores": [
+        {
+          "pc": "0x29e66",
+          "operation": "s8i",
+          "address": null
+        },
+        {
+          "pc": "0x29e69",
+          "operation": "s8i",
+          "address": null
+        },
+        {
+          "pc": "0x29ea7",
+          "operation": "s8i",
+          "address": "0xcf6f"
+        },
+        {
+          "pc": "0x29ebd",
+          "operation": "s8i",
+          "address": "0xcf6f"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/29ef8.txt",
+      "reachable_in_window": 101,
+      "decoded_in_window": 101,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "mul16s"
+      ],
+      "stores": [
+        {
+          "pc": "0x29f37",
+          "operation": "s32i.n",
+          "address": null
+        },
+        {
+          "pc": "0x29f6d",
+          "operation": "s8i",
+          "address": "0xcf6f"
+        },
+        {
+          "pc": "0x29fb5",
+          "operation": "s8i",
+          "address": null
+        },
+        {
+          "pc": "0x29fbb",
+          "operation": "s8i",
+          "address": null
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/29ffc.txt",
+      "reachable_in_window": 118,
+      "decoded_in_window": 118,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "mul16s"
+      ],
+      "stores": [
+        {
+          "pc": "0x2a03b",
+          "operation": "s32i.n",
+          "address": null
+        },
+        {
+          "pc": "0x2a09b",
+          "operation": "s16i",
+          "address": null
+        },
+        {
+          "pc": "0x2a09e",
+          "operation": "s8i",
+          "address": null
+        },
+        {
+          "pc": "0x2a0a1",
+          "operation": "s8i",
+          "address": null
+        },
+        {
+          "pc": "0x2a0a9",
+          "operation": "s16i",
+          "address": null
+        },
+        {
+          "pc": "0x2a0e2",
+          "operation": "s8i",
+          "address": "0xcf6f"
+        },
+        {
+          "pc": "0x2a0f8",
+          "operation": "s8i",
+          "address": "0xcf6f"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2a130.txt",
+      "reachable_in_window": 65,
+      "decoded_in_window": 65,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "mul16s",
+        "wfr"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2a1e4.txt",
+      "reachable_in_window": 93,
+      "decoded_in_window": 93,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "mul16s",
+        "ufloat.s",
+        "wfr"
+      ],
+      "stores": [
+        {
+          "pc": "0x2a1f9",
+          "operation": "s32i.n",
+          "address": null
+        },
+        {
+          "pc": "0x2a215",
+          "operation": "s32i.n",
+          "address": null
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2b7e8.txt",
+      "reachable_in_window": 21,
+      "decoded_in_window": 21,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "ufloat.s"
+      ],
+      "stores": [
+        {
+          "pc": "0x2b807",
+          "operation": "s8i",
+          "address": "0xce7a"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2c3e8.txt",
+      "reachable_in_window": 34,
+      "decoded_in_window": 34,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2c468.txt",
+      "reachable_in_window": 42,
+      "decoded_in_window": 42,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "mul.s",
+        "ufloat.s",
+        "wfr"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2c4d4.txt",
+      "reachable_in_window": 33,
+      "decoded_in_window": 34,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2c548.txt",
+      "reachable_in_window": 34,
+      "decoded_in_window": 34,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2c59c.txt",
+      "reachable_in_window": 33,
+      "decoded_in_window": 34,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2c62c.txt",
+      "reachable_in_window": 47,
+      "decoded_in_window": 47,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "mul.s",
+        "ufloat.s",
+        "wfr"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2c6a8.txt",
+      "reachable_in_window": 39,
+      "decoded_in_window": 39,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "wfr"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2cacc.txt",
+      "reachable_in_window": 38,
+      "decoded_in_window": 39,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "ufloat.s",
+        "wfr"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2cb34.txt",
+      "reachable_in_window": 43,
+      "decoded_in_window": 44,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "ufloat.s",
+        "wfr"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2cba8.txt",
+      "reachable_in_window": 46,
+      "decoded_in_window": 48,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "wfr"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2cc28.txt",
+      "reachable_in_window": 28,
+      "decoded_in_window": 28,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "wfr"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2cc70.txt",
+      "reachable_in_window": 28,
+      "decoded_in_window": 28,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "wfr"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2ccb8.txt",
+      "reachable_in_window": 28,
+      "decoded_in_window": 28,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "wfr"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2cd50.txt",
+      "reachable_in_window": 66,
+      "decoded_in_window": 66,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "wfr"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2ce10.txt",
+      "reachable_in_window": 66,
+      "decoded_in_window": 66,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "wfr"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2cec0.txt",
+      "reachable_in_window": 50,
+      "decoded_in_window": 51,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "wfr"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2cf90.txt",
+      "reachable_in_window": 50,
+      "decoded_in_window": 51,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "wfr"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2d018.txt",
+      "reachable_in_window": 42,
+      "decoded_in_window": 42,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "mul.s",
+        "ufloat.s",
+        "wfr"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2d5a4.txt",
+      "reachable_in_window": 17,
+      "decoded_in_window": 17,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2d60c.txt",
+      "reachable_in_window": 24,
+      "decoded_in_window": 25,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2dc90.txt",
+      "reachable_in_window": 30,
+      "decoded_in_window": 30,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x2dcc0",
+          "operation": "s8i",
+          "address": null
+        },
+        {
+          "pc": "0x2dcc3",
+          "operation": "s8i",
+          "address": null
+        },
+        {
+          "pc": "0x2dcc6",
+          "operation": "s8i",
+          "address": "0x1542f"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2dce0.txt",
+      "reachable_in_window": 12,
+      "decoded_in_window": 12,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x2dcef",
+          "operation": "s8i",
+          "address": "0x1542e"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2dd78.txt",
+      "reachable_in_window": 22,
+      "decoded_in_window": 22,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x2dd91",
+          "operation": "s8i",
+          "address": "0x1542d"
+        },
+        {
+          "pc": "0x2dd94",
+          "operation": "s8i",
+          "address": "0x1542e"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2de10.txt",
+      "reachable_in_window": 8,
+      "decoded_in_window": 8,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2ee8c.txt",
+      "reachable_in_window": 15,
+      "decoded_in_window": 15,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2eed8.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2eef4.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2ef10.txt",
+      "reachable_in_window": 9,
+      "decoded_in_window": 9,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x2ef1d",
+          "operation": "s32i",
+          "address": "0xb9fc"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2ef28.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2ef44.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2efe8.txt",
+      "reachable_in_window": 16,
+      "decoded_in_window": 16,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2f010.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2f02c.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2f048.txt",
+      "reachable_in_window": 9,
+      "decoded_in_window": 9,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x2f055",
+          "operation": "s32i",
+          "address": "0xb9d8"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2f060.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2f07c.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2f098.txt",
+      "reachable_in_window": 9,
+      "decoded_in_window": 9,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2f0c8.txt",
+      "reachable_in_window": 28,
+      "decoded_in_window": 28,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2f214.txt",
+      "reachable_in_window": 41,
+      "decoded_in_window": 41,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2f280.txt",
+      "reachable_in_window": 14,
+      "decoded_in_window": 14,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2f2a8.txt",
+      "reachable_in_window": 15,
+      "decoded_in_window": 15,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x2f2c2",
+          "operation": "s32i",
+          "address": "0x141d7cc"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/2f2d0.txt",
+      "reachable_in_window": 28,
+      "decoded_in_window": 28,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/30dc8.txt",
+      "reachable_in_window": 26,
+      "decoded_in_window": 26,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x30de6",
+          "operation": "s8i",
+          "address": "0xb692"
+        },
+        {
+          "pc": "0x30de9",
+          "operation": "s8i",
+          "address": "0xb697"
+        },
+        {
+          "pc": "0x30df8",
+          "operation": "s8i",
+          "address": null
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/30e0c.txt",
+      "reachable_in_window": 15,
+      "decoded_in_window": 16,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/30e34.txt",
+      "reachable_in_window": 24,
+      "decoded_in_window": 25,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x30e52",
+          "operation": "s8i",
+          "address": "0xb697"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/30e94.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/30eb0.txt",
+      "reachable_in_window": 5,
+      "decoded_in_window": 5,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/30f24.txt",
+      "reachable_in_window": 16,
+      "decoded_in_window": 17,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x30f39",
+          "operation": "s8i",
+          "address": "0xb62c"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/32e2c.txt",
+      "reachable_in_window": 15,
+      "decoded_in_window": 15,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x32e49",
+          "operation": "s32i",
+          "address": "0x125ac20"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/33284.txt",
+      "reachable_in_window": 22,
+      "decoded_in_window": 23,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x33298",
+          "operation": "s32i",
+          "address": "0x3010024"
+        },
+        {
+          "pc": "0x332b6",
+          "operation": "s32i",
+          "address": "0x3010024"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/33338.txt",
+      "reachable_in_window": 32,
+      "decoded_in_window": 32,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lsi",
+        "wfr"
+      ],
+      "stores": [
+        {
+          "pc": "0x3334c",
+          "operation": "s32i",
+          "address": "0x3010024"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/33660.txt",
+      "reachable_in_window": 54,
+      "decoded_in_window": 54,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x33665",
+          "operation": "s32i.n",
+          "address": null
+        },
+        {
+          "pc": "0x33667",
+          "operation": "s32i.n",
+          "address": null
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/34b10.txt",
+      "reachable_in_window": 13,
+      "decoded_in_window": 14,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/34b34.txt",
+      "reachable_in_window": 12,
+      "decoded_in_window": 12,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x34b4b",
+          "operation": "s32i.n",
+          "address": null
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/34b54.txt",
+      "reachable_in_window": 16,
+      "decoded_in_window": 16,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x34b6a",
+          "operation": "s32i",
+          "address": "0x7564"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/34ba4.txt",
+      "reachable_in_window": 23,
+      "decoded_in_window": 24,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/34c80.txt",
+      "reachable_in_window": 16,
+      "decoded_in_window": 17,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/34cec.txt",
+      "reachable_in_window": 28,
+      "decoded_in_window": 28,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/34d30.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "lict"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/34d4c.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "licw"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/34d68.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "ldct"
+      ],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/34d84.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 10,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/34d9c.txt",
+      "reachable_in_window": 14,
+      "decoded_in_window": 14,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/34dc0.txt",
+      "reachable_in_window": 15,
+      "decoded_in_window": 15,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/34de8.txt",
+      "reachable_in_window": 15,
+      "decoded_in_window": 15,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/34e10.txt",
+      "reachable_in_window": 9,
+      "decoded_in_window": 9,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x34e1d",
+          "operation": "s32i",
+          "address": "0x7558"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/34e7c.txt",
+      "reachable_in_window": 8,
+      "decoded_in_window": 8,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/35888.txt",
+      "reachable_in_window": 12,
+      "decoded_in_window": 12,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x35893",
+          "operation": "s32i",
+          "address": "0xa80c"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/358a8.txt",
+      "reachable_in_window": 13,
+      "decoded_in_window": 14,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x358ba",
+          "operation": "s32i",
+          "address": "0xa830"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/358cc.txt",
+      "reachable_in_window": 9,
+      "decoded_in_window": 9,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/358e4.txt",
+      "reachable_in_window": 9,
+      "decoded_in_window": 9,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/35938.txt",
+      "reachable_in_window": 14,
+      "decoded_in_window": 14,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/359ac.txt",
+      "reachable_in_window": 14,
+      "decoded_in_window": 14,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/359d0.txt",
+      "reachable_in_window": 9,
+      "decoded_in_window": 9,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x359dd",
+          "operation": "s32i",
+          "address": "0xa7d8"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/359e8.txt",
+      "reachable_in_window": 9,
+      "decoded_in_window": 9,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x359f5",
+          "operation": "s32i",
+          "address": "0xa7d4"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/35a00.txt",
+      "reachable_in_window": 21,
+      "decoded_in_window": 21,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x35a07",
+          "operation": "s32i.n",
+          "address": null
+        },
+        {
+          "pc": "0x35a09",
+          "operation": "s32i.n",
+          "address": null
+        },
+        {
+          "pc": "0x35a1c",
+          "operation": "s32i",
+          "address": "0xa5c0"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/35a34.txt",
+      "reachable_in_window": 21,
+      "decoded_in_window": 21,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x35a3b",
+          "operation": "s32i.n",
+          "address": null
+        },
+        {
+          "pc": "0x35a3d",
+          "operation": "s32i.n",
+          "address": null
+        },
+        {
+          "pc": "0x35a50",
+          "operation": "s32i",
+          "address": "0xa5bc"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/35a68.txt",
+      "reachable_in_window": 20,
+      "decoded_in_window": 21,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x35a6f",
+          "operation": "s32i.n",
+          "address": null
+        },
+        {
+          "pc": "0x35a71",
+          "operation": "s32i.n",
+          "address": null
+        },
+        {
+          "pc": "0x35a83",
+          "operation": "s32i",
+          "address": "0xa5c0"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/35c3c.txt",
+      "reachable_in_window": 20,
+      "decoded_in_window": 21,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x35c43",
+          "operation": "s32i.n",
+          "address": null
+        },
+        {
+          "pc": "0x35c45",
+          "operation": "s32i.n",
+          "address": null
+        },
+        {
+          "pc": "0x35c57",
+          "operation": "s32i",
+          "address": "0xa5bc"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/35c80.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 10,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/370f0.txt",
+      "reachable_in_window": 12,
+      "decoded_in_window": 12,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/37110.txt",
+      "reachable_in_window": 70,
+      "decoded_in_window": 71,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/3744c.txt",
+      "reachable_in_window": 103,
+      "decoded_in_window": 103,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/37558.txt",
+      "reachable_in_window": 9,
+      "decoded_in_window": 9,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/37570.txt",
+      "reachable_in_window": 9,
+      "decoded_in_window": 9,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/37588.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/375a4.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/375c0.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/375dc.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 11,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/375f8.txt",
+      "reachable_in_window": 21,
+      "decoded_in_window": 21,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/37630.txt",
+      "reachable_in_window": 21,
+      "decoded_in_window": 21,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/37668.txt",
+      "reachable_in_window": 8,
+      "decoded_in_window": 8,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/37698.txt",
+      "reachable_in_window": 13,
+      "decoded_in_window": 13,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/376cc.txt",
+      "reachable_in_window": 12,
+      "decoded_in_window": 13,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/377bc.txt",
+      "reachable_in_window": 25,
+      "decoded_in_window": 26,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x377e6",
+          "operation": "s8i",
+          "address": "0x69c0"
+        },
+        {
+          "pc": "0x377e9",
+          "operation": "s8i",
+          "address": "0x69c1"
+        },
+        {
+          "pc": "0x377ec",
+          "operation": "s8i",
+          "address": "0x69c2"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/37800.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 10,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/3781c.txt",
+      "reachable_in_window": 18,
+      "decoded_in_window": 18,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/37850.txt",
+      "reachable_in_window": 10,
+      "decoded_in_window": 10,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/37868.txt",
+      "reachable_in_window": 9,
+      "decoded_in_window": 9,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x37875",
+          "operation": "s32i.n",
+          "address": "0x69dc"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/37880.txt",
+      "reachable_in_window": 9,
+      "decoded_in_window": 9,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x3788d",
+          "operation": "s32i.n",
+          "address": "0x69d8"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/37898.txt",
+      "reachable_in_window": 9,
+      "decoded_in_window": 9,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x378a5",
+          "operation": "s8i",
+          "address": "0x69d0"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/378b0.txt",
+      "reachable_in_window": 17,
+      "decoded_in_window": 17,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x378c3",
+          "operation": "s16i",
+          "address": "0x69e8"
+        }
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/message-handlers/378dc.txt",
+      "reachable_in_window": 26,
+      "decoded_in_window": 26,
+      "unresolved_or_external_edges": [
+        [
+          "0x378f5",
+          "0x10"
+        ]
+      ],
+      "unknown_operations": [],
+      "stores": [
+        {
+          "pc": "0x378f2",
+          "operation": "s32i",
+          "address": "0x69e4"
+        },
+        {
+          "pc": "0x37905",
+          "operation": "s32i",
+          "address": "0x69e0"
+        }
+      ]
+    }
+  ]
+}

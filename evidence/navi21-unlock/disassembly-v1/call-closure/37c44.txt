@@ -1,0 +1,43 @@
+
+/tmp/tmpk4pbjpev/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00037c44 <.data+0x37c44>:
+00037c44: 364100   entry        a1, 0x20 ; Capstone
+   37c47:	20c074        	extui	a12, a2, 0, 8
+   37c4a:	0c0a      	movi.n	a10, 0
+   37c4c:	206200        	rsil	a2, 2
+   37c4f:	b16072        	l32r	a11, 0x145d0 (0x3200380)
+   37c52:	c09cb0        	addx8	a9, a12, a12
+   37c55:	e09911        	slli	a9, a9, 2
+   37c58:	bab9      	add.n	a11, a9, a11
+   37c5a:	c02000        	memw
+   37c5d:	a24b8c        	s8i	a10, a11, 140
+   37c60:	c02000        	memw
+   37c63:	a24b80        	s8i	a10, a11, 128
+   37c66:	c02000        	memw
+   37c69:	a24b82        	s8i	a10, a11, 130
+   37c6c:	c02000        	memw
+   37c6f:	a24b83        	s8i	a10, a11, 131
+   37c72:	c02000        	memw
+   37c75:	a24b84        	s8i	a10, a11, 132
+   37c78:	c02000        	memw
+   37c7b:	a24b85        	s8i	a10, a11, 133
+   37c7e:	c02000        	memw
+   37c81:	d1496d        	l32r	a13, 0x131a8 (0x3200200)
+   37c84:	a24b86        	s8i	a10, a11, 134
+   37c87:	82a004        	movi	a8, 4
+   37c8a:	d09980        	add	a9, a9, a13
+00037c8d: 76a807   loopgtz      a8, . +0xb ; Capstone
+   37c90:	c02000        	memw
+   37c93:	a26984        	s32i	a10, a9, 0x210
+   37c96:	4b99      	addi.n	a9, a9, 4
+   37c98:	c02000        	memw
+   37c9b:	a24b81        	s8i	a10, a11, 129
+   37c9e:	e0ac11        	slli	a10, a12, 2
+   37ca1:	a2ca60        	addi	a10, a10, 96
+00037ca4: e5a7c9   call8        . -0x36580 ; Capstone ; target=0x1724
+   37ca7:	20e613        	wsr.ps	a2
+00037caa: 1df0     retw.n        ; Capstone

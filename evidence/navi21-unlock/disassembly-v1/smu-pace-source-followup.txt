@@ -1,0 +1,61 @@
+SMU/RLC block: final16 words identified — offline,2026-11-09
+
+The final16 words fd34..fd70 of the140-byte block are PACE FlopsPerByteTable
+coefficients. Retained AMD smu11_driver_if_sienna_cichlid.h defines TABLE_PACE10,
+16levels, float override array and8DWORD padding. Its external layout is96bytes:
+64bytes coefficients+32bytes padding. This independently agrees with both
+firmware import/export callbacks, not just with a function name.
+
+Main-table producer26748:
+- Reads16 uint16 values at[a2d8,a2f8),viaa4=a1dc withoffset252 andstep2.
+- Writes16FP32 values at[fd34,fd74),viaa3=fb38 withoffset1fc andstep4.
+- Zero input selects1.0; nonzero input converts unsigned tofloat and multiplies
+  by literal3b800000 (=1/256). This matches the public Q8.8 coefficient format.
+- Known call370d2 in37098. Main-table contents at runtime are not observed.
+
+Import/export producer path:
+- Initial callback record9ee0 (base9e40+16*10) contains20820/20768.
+- 37110 selects the import callback for tableID10 after table/context checks;
+  it requires context byte11==3 via373e0. Channel/context selection and actual
+  transport remain conditions; a callback pointer is not a live transfer.
+- 20820 calls37750 with destinationSP andconstant96bytes. It then copies exactly
+ 16FP32 bit patterns fromSP[0,64) tofd34..fd70 using LSI/SSI, no arithmetic or
+  value-dependent destination computation. The final32 imported bytes are not
+  copied into the coefficient array by this loop.
+- 20768 performs the reverse16word copy into a96byte zero-filled stack buffer
+  and exports it via37230. This explains the32byte external padding.
+- 20820 marks update bit8 through31574 and calls36fc0(1). The full dynamic
+  update callback chain and actual eventualRLC command32 sender remain open.
+
+Connection to receiving RLC:
+These are words19..34 of the previously reconstructed35word transfer, matching
+RLC1d10 scratch7800038c..3c8 -> state5ffee278..5ffee2b4. Both producer loops use
+fixed16element bounds. The import updates data fields, not destination pointers.
+Together with2b0fc's first19 fields, every word position in the transferred
+block now has at least one concrete producer. This is not complete mutation
+coverage or proof all producers execute in every configuration.
+
+CC relevance:
+The direct destinations remain outside savedCC/gatee452. Identification asPACE
+coefficients removes the need to treat these16 words as unidentified masks.
+It does not close later dataflow, alternative scratch indices, or computed RAM
+writers. The next useful step is tracing36fc0's bit0 update record and the RLC
+command sender, or a concrete coefficient-to-gate/mask dependency if one exists.
+Do not spend further turns merely renaming the already identified fields.
+
+Reproducer: python3 scripts/navi21-smu-pace-source-audit.py
+Receipt smu-pace-source-audit.json records16source/destination correspondences,
+477bytechecked listing records, callback pair, header hash and65536 exactFP32
+Q8.8 conversion checks. Those numeric checks concern representation only, not
+execution of firmware instructions or GPU behavior. No hardware access made.
+
+Update-record follow-up in this continuation:
+Initial15450 pointer iszero. Indexed registrar35448 sets slot0 tocd4c through
+call2c37c in2c2b0, if the slot isempty. cd4c contains callbacks2b640/2b46c/
+2b1b4/2aea0 andcontextc958. With that registration,36fc0(1) selects thisrecord:
+its first callback phase callsrecord+4=2b46c; secondphase calls+8=2b1b4;
+thirdphase calls+12=2aea0 (constantreturn1). 2b1b4 calls2b0fc at2b1c9.
+Thus a concrete conditional update edge returns to the producer of the first19
+blockwords. Full callback traversal totransfer/submission remains unfinished;
+registration lifecycle andruntime values are not inferred from initialdata.
+Audit expanded to477listing records including registration/dispatcher/producer.

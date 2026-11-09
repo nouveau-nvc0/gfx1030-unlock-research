@@ -1,0 +1,23 @@
+
+/tmp/tmp8v1brt04/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00033b08 <.data+0x33b08>:
+00033b08: 364100   entry        a1, 0x20 ; Capstone
+   33b0b:	ac32      	beqz.n	a2, 0x33b32
+   33b0d:	31d37c        	l32r	a3, 0x12e5c (0x69a0)
+   33b10:	a06200        	rsil	a10, 2
+   33b13:	920332        	l8ui	a9, a3, 50
+   33b16:	a0e613        	wsr.ps	a10
+   33b19:	8c49      	beqz.n	a9, 0x33b21
+00033b1b: a566cd   call8        . -0x32994 ; Capstone ; target=0x1184
+   33b1e:	c60200        	j	0x33b2d
+   33b21:	b12882        	l32r	a11, 0x143c4 (0x11764)
+00033b24: 130b00   lsi          f1, a11, 0 ; Capstone
+00033b27: 00a1ba   ceil.s       a10, f1, 0 ; Capstone
+00033b2a: a5c2cd   call8        . -0x323d4 ; Capstone ; target=0x1754
+   33b2d:	0b22      	addi.n	a2, a2, -1
+   33b2f:	56d2fd        	bnez	a2, 0x33b10
+00033b32: 1df0     retw.n        ; Capstone

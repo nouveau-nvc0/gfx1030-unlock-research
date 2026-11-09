@@ -1,0 +1,29 @@
+
+/tmp/tmpr552ivdi/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00023088 <.data+0x23088>:
+00023088: 364100   entry        a1, 0x20 ; Capstone
+   2308b:	620209        	l8ui	a6, a2, 9
+0002308e: 0016ca   float.s      f1, a6, 0 ; Capstone
+00023091: 230200   lsi          f2, a2, 0 ; Capstone
+00023094: 20012a   mul.s        f0, f1, f2 ; Capstone
+   23097:	6832      	l32i.n	a6, a2, 12
+00023099: 034600   ssi          f0, a6, 0 ; Capstone
+   2309c:	320208        	l8ui	a3, a2, 8
+   2309f:	0c15      	movi.n	a5, 1
+   230a1:	b6231c        	bltui	a3, 2, 0x230c1
+000230a4: 530200   lsi          f5, a2, 0 ; Capstone
+   230a7:	6085a0        	addx4	a8, a5, a6
+   230aa:	92d8ff        	addmi	a9, a8, 0xffffff00
+000230ad: 43093f   lsi          f4, a9, 0xfc ; Capstone
+000230b0: 50341a   sub.s        f3, f4, f5 ; Capstone
+000230b3: 334800   ssi          f3, a8, 0 ; Capstone
+   230b6:	820208        	l8ui	a8, a2, 8
+   230b9:	1b55      	addi.n	a5, a5, 1
+   230bb:	505074        	extui	a5, a5, 0, 8
+   230be:	8735e2        	bltu	a5, a8, 0x230a4
+000230c1: 1df0     retw.n        ; Capstone
+	...

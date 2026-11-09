@@ -1,0 +1,41 @@
+
+/tmp/tmpa6zwr_9h/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001c50 <.data+0x1c50>:
+00001c50: 364100   entry        a1, 0x20 ; Capstone
+    1c53:	ad02      	mov.n	a10, a2
+    1c55:	bd03      	mov.n	a11, a3
+00001c57: e59a00   call8        . +0x9b0 ; Capstone ; target=0x2604
+    1c5a:	b10dfc        	l32r	a11, 0xc90 (0x7b40)
+    1c5d:	e2a080        	movi	a14, 128
+    1c60:	c1e6fb        	l32r	a12, 0xbf8 (0x7278)
+    1c63:	baaa      	add.n	a10, a10, a11
+    1c65:	a20a80        	l8ui	a10, a10, 128
+    1c68:	0c1f      	movi.n	a15, 1
+    1c6a:	d2a0ff        	movi	a13, 255
+    1c6d:	d71a2e        	beq	a10, a13, 0x1c9f
+    1c70:	a0ba90        	addx2	a11, a10, a10
+    1c73:	c0abb0        	addx8	a10, a11, a12
+    1c76:	821a7e        	l16ui	a8, a10, 252
+    1c79:	d0bb11        	slli	a11, a11, 3
+    1c7c:	279819        	bne	a8, a2, 0x1c99
+    1c7f:	820afe        	l8ui	a8, a10, 254
+    1c82:	ea9a      	add.n	a9, a10, a14
+    1c84:	920980        	l8ui	a9, a9, 128
+    1c87:	37980e        	bne	a8, a3, 0x1c99
+    1c8a:	47990b        	bne	a9, a4, 0x1c99
+    1c8d:	920aff        	l8ui	a9, a10, 255
+    1c90:	001940        	ssl	a9
+    1c93:	008fa1        	sll	a8, a15
+    1c96:	871509        	beq	a5, a8, 0x1ca3
+    1c99:	a29a86        	l16si	a10, a10, 0x10c
+    1c9c:	d79ad0        	bne	a10, a13, 0x1c70
+    1c9f:	0c02      	movi.n	a2, 0
+00001ca1: 1df0     retw.n        ; Capstone
+    1ca3:	21fcfb        	l32r	a2, 0xc94 (0x7374)
+    1ca6:	2a2b      	add.n	a2, a11, a2
+00001ca8: 1df0     retw.n        ; Capstone
+	...

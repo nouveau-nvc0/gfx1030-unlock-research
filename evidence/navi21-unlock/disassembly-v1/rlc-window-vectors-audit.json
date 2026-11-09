@@ -1,0 +1,43 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "roots": [
+    {
+      "root": "00400",
+      "checked": 5,
+      "sha256": "e4cf029ab4a5eb2cb4970d81d07e12d4e0de3e24ba313bf3d49dbb31c5b55dc4"
+    },
+    {
+      "root": "00440",
+      "checked": 5,
+      "sha256": "680f4e0c303dcc63d76ebc0f5b4b0fda1b5874e361525d627a1b4f01230d1b19"
+    },
+    {
+      "root": "00480",
+      "checked": 10,
+      "sha256": "2ede23d04f3bfdeed61d725af033a9421eb11cfde7ef27abc53a6c0792792cef"
+    },
+    {
+      "root": "004c0",
+      "checked": 10,
+      "sha256": "05bf74ecbe0ff9674ff0d7cd211eae02cc14a6c4e28a5ce1c4f42197c8c046fa"
+    },
+    {
+      "root": "00500",
+      "checked": 14,
+      "sha256": "3d7a7b78f1293f0f1b726dc8e8e662e3ebd31580abc0f8cb187565930097f0e4"
+    },
+    {
+      "root": "00540",
+      "checked": 14,
+      "sha256": "43964732b8395e8d83b99c21dcbf41a9741889d659cf4e9d5b3727fad53a50d2"
+    }
+  ],
+  "reached": 58,
+  "store_sites": 24,
+  "groups": {
+    "400": "4 DWORDs at entry a5-16..a5-4",
+    "480": "4 DWORDs at entry a9-16..a9-4; 4 at L32E(entry a1-12)-32..-20",
+    "500": "4 DWORDs at entry a13-16..a13-4; 8 at L32E(entry a1-12)-48..-20"
+  },
+  "limits": "Window overflow/underflow semantics inferred from exact S32E/L32E and RFWO/RFWU bodies. Hardware vector selection, window mapping, stack bounds and runtime address control remain unproved."
+}

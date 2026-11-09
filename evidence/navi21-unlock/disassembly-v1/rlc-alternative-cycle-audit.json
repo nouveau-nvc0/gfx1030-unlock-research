@@ -1,0 +1,76 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06f70.txt",
+      "sha256": "643c3efe82ed2d58038fdbe3e95347f25ac8b6c23da391c65be5c89a67128798",
+      "byte_checked_records": 122
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/070d4.txt",
+      "sha256": "9e26bf37a13e55a699c6dd7673017b58a7dd72d5dc04219c98e6993c9dd6163d",
+      "byte_checked_records": 75
+    }
+  ],
+  "scan_sha256": "11fb599c85902ca4e567c83a78d014389953f3856f237f0d362fa80c12c22e52",
+  "fixed_byte_writers": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06f70.txt",
+      "pc": "0x70cc",
+      "operation": "s8i",
+      "address": "0x5ffedb25",
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": 1,
+      "base": "a13",
+      "offset": "1"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/070d4.txt",
+      "pc": "0x71a4",
+      "operation": "s8i",
+      "address": "0x5ffedb25",
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a5",
+      "offset": "1"
+    }
+  ],
+  "return_to_flag_store_path": [
+    "0x70a5",
+    "0x70a8",
+    "0x70ab",
+    "0x70ae",
+    "0x70b1",
+    "0x70b4",
+    "0x70b7",
+    "0x70ba",
+    "0x70bd",
+    "0x70c0",
+    "0x70c3",
+    "0x70c6",
+    "0x70c9",
+    "0x70cc"
+  ],
+  "raw_reference_scan": {
+    "0x6f70": {
+      "immediate_calls": [],
+      "unconditional_jumps": [],
+      "absolute_pointer_file_offsets": []
+    },
+    "0x70d4": {
+      "immediate_calls": [],
+      "unconditional_jumps": [],
+      "absolute_pointer_file_offsets": []
+    }
+  },
+  "findings": [
+    "6f70 setsa2=1 at6f8a; ordinary CALL8 preserves this callee register. On its local success path70a2 calls6944(0,0), then70c6 calls4774, then70cc setsbyte5ffedb25=1. No conditional branch or save-result test between70a2 return and70cc.",
+    "70d4 testsdb25, calls6944(1,0) if nonzero, then after further operations clearsdb25 at71a4. This is a concrete paired local save/restore cycle with a different flag frome452.",
+    "Flag1 does not independently prove the CC snapshot was successfully saved:6944/71ac internal paths and hardware waits remain conditions, and this wrapper does not inspect a returned status.",
+    "Initial saved-mask zeros cannot be assumed at this alternative restore simply because the firmware file contains zeros; its known flag producer first calls the save operation.",
+    "No changed saved-CC producer is established. Raw entry-reference results are below; absent ordinary references are not proof against computed/conditional/other-engine entry."
+  ],
+  "limits": "Only fixed byte writers in current local scanner and exact local order. Wider writes, external transfers, other entries and actual runtime acceptance remain open. No hardware access."
+}

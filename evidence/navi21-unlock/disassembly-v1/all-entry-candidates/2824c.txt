@@ -1,0 +1,13 @@
+
+/tmp/tmphwn75h1_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002824c <.data+0x2824c>:
+0002824c: 364100   entry        a1, 0x20 ; Capstone
+   2824f:	3153ab        	l32r	a3, 0x12f9c (0x10fec)
+   28252:	0c12      	movi.n	a2, 1
+   28254:	22437d        	s8i	a2, a3, 125
+00028257: 1df0     retw.n        ; Capstone
+   28259:	000000        	ill

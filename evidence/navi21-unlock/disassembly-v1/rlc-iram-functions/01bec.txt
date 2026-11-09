@@ -1,0 +1,68 @@
+
+/tmp/tmpebvibckv/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001bec <.data+0x1bec>:
+00001bec: 364100   entry        a1, 0x20 ; Capstone
+    1bef:	b182ed        	l32r	a11, 0xffffd1f8 (0x5ffee260) ; inferred DRAM map 0x5ffec000
+    1bf2:	320b00        	l8ui	a3, a11, 0
+    1bf5:	8c43      	beqz.n	a3, 0x1bfd
+    1bf7:	0c02      	movi.n	a2, 0
+00001bf9: 1df0     retw.n        ; Capstone
+    1bfb:	0000d0        	subx2	a0, a0, a0
+    1bfe:	6f          	.byte 0x6f
+    1bff:	000c19        	excw
+    1c02:	7158ed        	l32r	a7, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    1c05:	817ded        	l32r	a8, 0xffffd1fc (0x6000fe00) ; inferred DRAM map 0x5ffec000
+    1c08:	3cba      	movi.n	a10, 59
+    1c0a:	a26780        	s32i	a10, a7, 0x200
+    1c0d:	92688c        	s32i	a9, a8, 0x230
+    1c10:	d0e613        	wsr.ps	a13
+    1c13:	102000        	rsync
+    1c16:	c06f00        	rsil	a12, 15
+    1c19:	a26780        	s32i	a10, a7, 0x200
+    1c1c:	42288c        	l32i	a4, a8, 0x230
+    1c1f:	c0e613        	wsr.ps	a12
+    1c22:	102000        	rsync
+    1c25:	26144b        	beqi	a4, 1, 0x1c74
+    1c28:	0c06      	movi.n	a6, 0
+    1c2a:	fcb2      	bnez.n	a2, 0x1c69
+    1c2c:	50ea03        	rsr.ccount	a5
+    1c2f:	f0ea03        	rsr.ccount	a15
+    1c32:	50ffc0        	sub	a15, a15, a5
+    1c35:	1cde      	movi.n	a14, 29
+    1c37:	f73e0a        	bltu	a14, a15, 0x1c45
+    1c3a:	40ea03        	rsr.ccount	a4
+    1c3d:	5044c0        	sub	a4, a4, a5
+    1c40:	1cd3      	movi.n	a3, 29
+    1c42:	47b3f4        	bgeu	a3, a4, 0x1c3a
+    1c45:	e06f00        	rsil	a14, 15
+    1c48:	a26780        	s32i	a10, a7, 0x200
+    1c4b:	92688c        	s32i	a9, a8, 0x230
+    1c4e:	e0e613        	wsr.ps	a14
+    1c51:	102000        	rsync
+    1c54:	d06f00        	rsil	a13, 15
+    1c57:	a26780        	s32i	a10, a7, 0x200
+    1c5a:	c2288c        	l32i	a12, a8, 0x230
+    1c5d:	d0e613        	wsr.ps	a13
+    1c60:	102000        	rsync
+    1c63:	261c0d        	beqi	a12, 1, 0x1c74
+    1c66:	1622fc        	beqz	a2, 0x1c2c
+    1c69:	1b66      	addi.n	a6, a6, 1
+    1c6b:	6792bd        	bne	a2, a6, 0x1c2c
+    1c6e:	0c12      	movi.n	a2, 1
+00001c70: 1df0     retw.n        ; Capstone
+    1c72:	000092        	excw
+    1c75:	4b00      	addi.n	a0, a0, 4
+    1c77:	0c02      	movi.n	a2, 0
+00001c79: 1df0     retw.n        ; Capstone
+	...
+
+; Alternate branch-target decode
+    1bfd:	d06f00        	rsil	a13, 15
+    1c00:	0c19      	movi.n	a9, 1
+
+; Alternate branch-target decode
+    1c74:	924b00        	s8i	a9, a11, 0

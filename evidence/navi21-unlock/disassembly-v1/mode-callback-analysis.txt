@@ -1,0 +1,31 @@
+Offline mode callback follow-up, 2026-11-09
+
+CALLX8 at2fd63 indexes12010+4*[b697]. The current closure has two
+constant-address writers to b697:30de9 and30e52. Both get the mailbox
+parameter via20c0, preserve it in a3, and check unsigned parameter<4.
+30dc8 is channel0 message17,30e34 is channel0 message15; both metadata06180000.
+The latter additionally checks35760(21). This supports four normal targets;
+it does not prove absence of writes through unresolved pointers or bulk copies.
+
+Initial targets:303e8,3099c,303e8,303e8.303e8 is an empty return.
+3099c is NOT an empty callback: it calls373f4, iterates up to8 mapping-window
+addresses5413c | (instance<<20), reads1920, conditionally sets bits11/5 from
+RAMb693, and writes18d8. Further fixed-register operations touch0141d704,
+01096008,0125a01c/0125a020 and helpers30850/3081c/3080c.
+No direct CC destination in this listing; nested effects are represented in
+the expanded1048-function closure. It is an initialization/state path that
+must not be confused with the separately empty33e4c entry/exit callbacks.
+
+All20 current indirect sites now have identified initial-table or registration
+sources, but this does not close dynamic mutation or unrestricted indexed
+commands. Complete-path proof remains outstanding.
+
+Store locator extended to SSI/SSIP/SSX/SSXP/S32C1I/S32E. FP-only operations
+retain integer address constants; address-updating loads/stores invalidate
+the affected base. SSI/SSX have fixture controls at both candidate CC addresses.
+SSIP/SSXP retain both base and base+offset as candidates rather than claiming
+an exact address: FPU option/decoder naming has not been attested. QEMU has
+distinct FPU2000 SSIU and newer SSIP semantics. Primary reference inspected:
+https://raw.githubusercontent.com/qemu/qemu/master/target/xtensa/translate.c
+translate_ldsti, translate_ldsti_s, fpu2000_ops and newer SSIP registration.
+The fixture checks dataflow bookkeeping, not actual firmware execution.

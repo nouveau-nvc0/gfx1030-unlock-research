@@ -1,0 +1,55 @@
+
+/tmp/tmp9hmb_c4r/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001bea8 <.data+0x1bea8>:
+0001bea8: 364100   entry        a1, 0x20 ; Capstone
+   1beab:	160207        	beqz	a2, 0x1bf1f
+   1beae:	16d306        	beqz	a3, 0x1bf1f
+   1beb1:	0c05      	movi.n	a5, 0
+   1beb3:	0c24      	movi.n	a4, 2
+0001beb5: 76a451   loopgtz      a4, . +0x55 ; Capstone
+   1beb8:	2065a0        	addx4	a6, a5, a2
+   1bebb:	7816      	l32i.n	a7, a6, 4
+0001bebd: 330203   lsi          f3, a2, 0xc ; Capstone
+0001bec0: 230700   lsi          f2, a7, 0 ; Capstone
+0001bec3: 30022a   mul.s        f0, f2, f3 ; Capstone
+   1bec6:	5a82      	add.n	a8, a2, a5
+0001bec8: 130200   lsi          f1, a2, 0 ; Capstone
+0001becb: 00014b   olt.s        b0, f1, f0 ; Capstone
+   1bece:	9846      	l32i.n	a9, a6, 16
+   1bed0:	720822        	l8ui	a7, a8, 34
+0001bed3: 760015   bf           b0, . +0x19 ; Capstone
+   1bed6:	a20221        	l8ui	a10, a2, 33
+   1bed9:	a966      	s32i.n	a10, a6, 24
+   1bedb:	8c59      	beqz.n	a9, 0x1bee4
+   1bedd:	0b99      	addi.n	a9, a9, -1
+   1bedf:	9946      	s32i.n	a9, a6, 16
+   1bee1:	460700        	j	0x1bf02
+   1bee4:	920220        	l8ui	a9, a2, 32
+   1bee7:	0c17      	movi.n	a7, 1
+   1bee9:	86fcff        	j	0x1bedf
+   1beec:	b20220        	l8ui	a11, a2, 32
+   1beef:	b946      	s32i.n	a11, a6, 16
+0001bef1: 430200   lsi          f4, a2, 0 ; Capstone
+0001bef4: 40104b   olt.s        b1, f0, f4 ; Capstone
+   1bef7:	9866      	l32i.n	a9, a6, 24
+0001bef9: 760117   bf           b1, . +0x1b ; Capstone
+   1befc:	8cc9      	beqz.n	a9, 0x1bf0c
+   1befe:	0b99      	addi.n	a9, a9, -1
+   1bf00:	9966      	s32i.n	a9, a6, 24
+   1bf02:	724822        	s8i	a7, a8, 34
+   1bf05:	1b55      	addi.n	a5, a5, 1
+   1bf07:	505074        	extui	a5, a5, 0, 8
+0001bf0a: 1df0     retw.n        ; Capstone
+   1bf0c:	920221        	l8ui	a9, a2, 33
+   1bf0f:	0c07      	movi.n	a7, 0
+   1bf11:	c6faff        	j	0x1bf00
+   1bf14:	920221        	l8ui	a9, a2, 33
+   1bf17:	5a73      	add.n	a7, a3, a5
+   1bf19:	720702        	l8ui	a7, a7, 2
+   1bf1c:	06f8ff        	j	0x1bf00
+0001bf1f: 1df0     retw.n        ; Capstone
+   1bf21:	000000        	ill

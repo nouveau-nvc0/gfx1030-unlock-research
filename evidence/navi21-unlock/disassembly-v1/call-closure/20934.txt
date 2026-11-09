@@ -1,0 +1,36 @@
+
+/tmp/tmprje0jky4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00020934 <.data+0x20934>:
+00020934: 364100   entry        a1, 0x20 ; Capstone
+00020937: 5003fa   wfr          f0, a3 ; Capstone
+   2093a:	9191c9        	l32r	a9, 0x12f80 (0x3fc66666)
+   2093d:	4192c9        	l32r	a4, 0x12f88 (0x37a7c5ac)
+   20940:	8191c9        	l32r	a8, 0x12f84 (0x43200000)
+00020943: 5019fa   wfr          f1, a9 ; Capstone
+00020946: 5044fa   wfr          f4, a4 ; Capstone
+   20949:	4193c9        	l32r	a4, 0x12f98 (0xc2c4)
+0002094c: 00511a   sub.s        f5, f1, f0 ; Capstone
+0002094f: 5068fa   wfr          f6, a8 ; Capstone
+   20952:	4a32      	add.n	a3, a2, a4
+00020954: 60454a   madd.s       f4, f5, f6 ; Capstone
+   20957:	21c1ca        	l32r	a2, 0x1345c (0xbbcccccd)
+   2095a:	320380        	l8ui	a3, a3, 128
+   2095d:	42c464        	addi	a4, a4, 100
+00020960: 0084ea   utrunc.s     a8, f4, 0 ; Capstone
+   20963:	4a33      	add.n	a3, a3, a4
+   20965:	420380        	l8ui	a4, a3, 128
+   20968:	32037c        	l8ui	a3, a3, 124
+   2096b:	808074        	extui	a8, a8, 0, 8
+0002096e: 804473   maxu         a4, a4, a8 ; Capstone
+   20971:	404074        	extui	a4, a4, 0, 8
+00020974: 403363   minu         a3, a3, a4 ; Capstone
+   20977:	303074        	extui	a3, a3, 0, 8
+0002097a: 0023da   ufloat.s     f2, a3, 0 ; Capstone
+0002097d: 5032fa   wfr          f3, a2 ; Capstone
+00020980: 30124a   madd.s       f1, f2, f3 ; Capstone
+00020983: 4021fa   rfr          a2, f1 ; Capstone
+00020986: 1df0     retw.n        ; Capstone

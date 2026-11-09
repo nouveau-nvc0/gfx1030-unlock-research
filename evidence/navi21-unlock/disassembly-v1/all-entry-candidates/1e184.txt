@@ -1,0 +1,49 @@
+
+/tmp/tmpxnfk2fr0/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001e184 <.data+0x1e184>:
+0001e184: 364100   entry        a1, 0x20 ; Capstone
+   1e187:	512cd4        	l32r	a5, 0x13238 (0xaebc)
+   1e18a:	81d8d3        	l32r	a8, 0x130ec (0xac0c)
+   1e18d:	2062b0        	addx8	a6, a2, a2
+   1e190:	52257f        	l32i	a5, a5, 0x1fc
+   1e193:	8066a0        	addx4	a6, a6, a8
+   1e196:	220680        	l8ui	a2, a6, 128
+   1e199:	57035a        	bnone	a3, a5, 0x1e1f7
+   1e19c:	f63301        	bgeui	a3, 3, 0x1e1a1
+   1e19f:	dc03      	bnez.n	a3, 0x1e1b3
+   1e1a1:	26430e        	beqi	a3, 4, 0x1e1b3
+   1e1a4:	26830b        	beqi	a3, 8, 0x1e1b3
+   1e1a7:	26b308        	beqi	a3, 16, 0x1e1b3
+   1e1aa:	26c305        	beqi	a3, 32, 0x1e1b3
+   1e1ad:	26d302        	beqi	a3, 64, 0x1e1b3
+   1e1b0:	66e343        	bnei	a3, 128, 0x1e1f7
+   1e1b3:	81a7d3        	l32r	a8, 0x13050 (0xaaf0)
+   1e1b6:	2072f0        	subx8	a7, a2, a2
+   1e1b9:	8077a0        	addx4	a7, a7, a8
+   1e1bc:	b2077d        	l8ui	a11, a7, 125
+   1e1bf:	a1a5d3        	l32r	a10, 0x13054 (0xaf48)
+   1e1c2:	1cac      	movi.n	a12, 26
+   1e1c4:	c0bbd1        	mul16s	a11, a11, a12
+   1e1c7:	72271c        	l32i	a7, a7, 112
+   1e1ca:	baaa      	add.n	a10, a10, a11
+   1e1cc:	a21a7e        	l16ui	a10, a10, 252
+   1e1cf:	918dd3        	l32r	a9, 0x13004 (0xfffff)
+   1e1d2:	81a1d3        	l32r	a8, 0x13058 (0x11ffe00)
+   1e1d5:	aa77      	add.n	a7, a7, a10
+   1e1d7:	907710        	and	a7, a7, a9
+   1e1da:	8a77      	add.n	a7, a7, a8
+   1e1dc:	c02000        	memw
+   1e1df:	9117d4        	l32r	a9, 0x1323c (0xfff7ffff)
+   1e1e2:	622780        	l32i	a6, a7, 0x200
+   1e1e5:	408004        	extui	a8, a4, 0, 1
+   1e1e8:	d08801        	slli	a8, a8, 19
+   1e1eb:	906610        	and	a6, a6, a9
+   1e1ee:	806620        	or	a6, a6, a8
+   1e1f1:	c02000        	memw
+   1e1f4:	626780        	s32i	a6, a7, 0x200
+0001e1f7: 1df0     retw.n        ; Capstone
+   1e1f9:	000000        	ill

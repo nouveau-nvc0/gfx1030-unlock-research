@@ -1,0 +1,51 @@
+
+/tmp/tmpl2jph4an/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001830 <.data+0x1830>:
+00001830: 364100   entry        a1, 0x20 ; Capstone
+    1833:	31fffc        	l32r	a3, 0xc30 (0x74e4)
+    1836:	406200        	rsil	a4, 2
+    1839:	820387        	l8ui	a8, a3, 135
+    183c:	dc18      	bnez.n	a8, 0x1851
+0000183e: 25faff   call8        . -0x5c ; Capstone ; target=0x17e0
+00001841: e5f7ff   call8        . -0x80 ; Capstone ; target=0x17c0
+    1844:	5c2a      	movi.n	a10, 82
+00001846: e5f4ff   call8        . -0xb0 ; Capstone ; target=0x1794
+00001849: 651300   call8        . +0x138 ; Capstone ; target=0x1980
+    184c:	0c19      	movi.n	a9, 1
+    184e:	924387        	s8i	a9, a3, 135
+    1851:	b1fafc        	l32r	a11, 0xc3c (0x7f58)
+    1854:	a2231e        	l32i	a10, a3, 120
+    1857:	d1fafc        	l32r	a13, 0xc40 (0x15cc0)
+    185a:	b7ba18        	bgeu	a10, a11, 0x1876
+    185d:	b80a      	l32i.n	a11, a10, 0
+    185f:	ad02      	mov.n	a10, a2
+00001861: e55600   call8        . +0x570 ; Capstone ; target=0x1dd0
+    1864:	c2231e        	l32i	a12, a3, 120
+    1867:	ad02      	mov.n	a10, a2
+    1869:	0c1b      	movi.n	a11, 1
+    186b:	4bcc      	addi.n	a12, a12, 4
+    186d:	c2631e        	s32i	a12, a3, 120
+00001870: a58200   call8        . +0x82c ; Capstone ; target=0x209c
+    1873:	860900        	j	0x189d
+    1876:	a2231f        	l32i	a10, a3, 124
+    1879:	d7ba18        	bgeu	a10, a13, 0x1895
+    187c:	b80a      	l32i.n	a11, a10, 0
+    187e:	ad02      	mov.n	a10, a2
+00001880: e55400   call8        . +0x550 ; Capstone ; target=0x1dd0
+    1883:	e2231f        	l32i	a14, a3, 124
+    1886:	ad02      	mov.n	a10, a2
+    1888:	0c1b      	movi.n	a11, 1
+    188a:	4bee      	addi.n	a14, a14, 4
+    188c:	e2631f        	s32i	a14, a3, 124
+0000188f: e58000   call8        . +0x810 ; Capstone ; target=0x209c
+    1892:	c60100        	j	0x189d
+    1895:	ad02      	mov.n	a10, a2
+    1897:	b2a0ff        	movi	a11, 255
+0000189a: 258000   call8        . +0x804 ; Capstone ; target=0x209c
+    189d:	40e613        	wsr.ps	a4
+000018a0: 1df0     retw.n        ; Capstone
+	...

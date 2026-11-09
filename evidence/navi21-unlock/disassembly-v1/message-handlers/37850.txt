@@ -1,0 +1,17 @@
+
+/tmp/tmp7vmyt_pn/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00037850 <.data+0x37850>:
+00037850: 364100   entry        a1, 0x20 ; Capstone
+   37853:	ad02      	mov.n	a10, a2
+00037855: a586ca   call8        . -0x35794 ; Capstone ; target=0x20c0
+   37858:	1bba      	addi.n	a11, a10, 1
+   3785a:	ad02      	mov.n	a10, a2
+0003785c: 2557ca   call8        . -0x35a8c ; Capstone ; target=0x1dd0
+   3785f:	ad02      	mov.n	a10, a2
+   37861:	0c1b      	movi.n	a11, 1
+00037863: a583ca   call8        . -0x357c4 ; Capstone ; target=0x209c
+00037866: 1df0     retw.n        ; Capstone

@@ -1,0 +1,99 @@
+
+/tmp/tmpb089kt0j/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00027f84 <.data+0x27f84>:
+00027f84: 366100   entry        a1, 0x30 ; Capstone
+   27f87:	a159ac        	l32r	a10, 0x130ec (0xac0c)
+   27f8a:	2092b0        	addx8	a9, a2, a2
+   27f8d:	a099a0        	addx4	a9, a9, a10
+   27f90:	220980        	l8ui	a2, a9, 128
+   27f93:	712fac        	l32r	a7, 0x13050 (0xaaf0)
+   27f96:	0c1c      	movi.n	a12, 1
+   27f98:	2022f0        	subx8	a2, a2, a2
+   27f9b:	7022a0        	addx4	a2, a2, a7
+   27f9e:	b2027d        	l8ui	a11, a2, 125
+   27fa1:	d141ac        	l32r	a13, 0x130a8 (0xafb8)
+   27fa4:	1ca7      	movi.n	a7, 26
+   27fa6:	70bbd1        	mul16s	a11, a11, a7
+   27fa9:	a2221c        	l32i	a10, a2, 112
+   27fac:	babd      	add.n	a11, a13, a11
+   27fae:	b20b7d        	l8ui	a11, a11, 125
+   27fb1:	e114ac        	l32r	a14, 0x13004 (0xfffff)
+   27fb4:	f129ac        	l32r	a15, 0x13058 (0x11ffe00)
+   27fb7:	baaa      	add.n	a10, a10, a11
+   27fb9:	e0aa10        	and	a10, a10, a14
+   27fbc:	faaa      	add.n	a10, a10, a15
+   27fbe:	c02000        	memw
+   27fc1:	822a80        	l32i	a8, a10, 0x200
+   27fc4:	1c0b      	movi.n	a11, 16
+   27fc6:	b08820        	or	a8, a8, a11
+   27fc9:	c02000        	memw
+   27fcc:	40b064        	extui	a11, a4, 0, 7
+   27fcf:	826a80        	s32i	a8, a10, 0x200
+   27fd2:	920981        	l8ui	a9, a9, 129
+   27fd5:	814fac        	l32r	a8, 0x13114 (0x40005000)
+   27fd8:	00bb11        	slli	a11, a11, 16
+   27fdb:	001940        	ssl	a9
+   27fde:	80bb20        	or	a11, a11, a8
+   27fe1:	814dac        	l32r	a8, 0x13118 (0x47fffff0)
+   27fe4:	00aca1        	sll	a10, a12
+   27fe7:	a0a034        	extui	a10, a10, 0, 4
+   27fea:	80bb10        	and	a11, a11, a8
+   27fed:	b0aa20        	or	a10, a10, a11
+   27ff0:	b2027d        	l8ui	a11, a2, 125
+   27ff3:	b0b7d1        	mul16s	a11, a7, a11
+   27ff6:	82221c        	l32i	a8, a2, 112
+   27ff9:	babd      	add.n	a11, a13, a11
+   27ffb:	b21b47        	l16ui	a11, a11, 142
+   27ffe:	8abb      	add.n	a11, a11, a8
+   28000:	e0bb10        	and	a11, a11, a14
+   28003:	fabb      	add.n	a11, a11, a15
+   28005:	c02000        	memw
+   28008:	a26b80        	s32i	a10, a11, 0x200
+   2800b:	0c09      	movi.n	a9, 0
+   2800d:	3080f5        	extui	a8, a3, 16, 16
+   28010:	9901      	s32i.n	a9, a1, 0
+   28012:	825101        	s16i	a8, a1, 2
+   28015:	a801      	l32i.n	a10, a1, 0
+   28017:	b2ae00        	movi	a11, 0xfffffe00
+   2801a:	b0aa10        	and	a10, a10, a11
+   2801d:	b2027d        	l8ui	a11, a2, 125
+   28020:	308084        	extui	a8, a3, 0, 9
+   28023:	80aa20        	or	a10, a10, a8
+   28026:	b0b7d1        	mul16s	a11, a7, a11
+   28029:	82221c        	l32i	a8, a2, 112
+   2802c:	babd      	add.n	a11, a13, a11
+   2802e:	b21b48        	l16ui	a11, a11, 144
+   28031:	8abb      	add.n	a11, a11, a8
+   28033:	e0bb10        	and	a11, a11, a14
+   28036:	fabb      	add.n	a11, a11, a15
+   28038:	c02000        	memw
+   2803b:	912cac        	l32r	a9, 0x130ec (0xac0c)
+   2803e:	a26b80        	s32i	a10, a11, 0x200
+   28041:	5085b0        	addx8	a8, a5, a5
+   28044:	4b99      	addi.n	a9, a9, 4
+   28046:	9088a0        	addx4	a8, a8, a9
+   28049:	92027d        	l8ui	a9, a2, 125
+   2804c:	82087d        	l8ui	a8, a8, 125
+   2804f:	22221c        	l32i	a2, a2, 112
+   28052:	9077d1        	mul16s	a7, a7, a9
+   28055:	001840        	ssl	a8
+   28058:	00cca1        	sll	a12, a12
+   2805b:	c0c034        	extui	a12, a12, 0, 4
+   2805e:	7add      	add.n	a13, a13, a7
+   28060:	d21d49        	l16ui	a13, a13, 146
+   28063:	607064        	extui	a7, a6, 0, 7
+   28066:	007711        	slli	a7, a7, 16
+   28069:	2add      	add.n	a13, a13, a2
+   2806b:	e0dd10        	and	a13, a13, a14
+   2806e:	e19dac        	l32r	a14, 0x132e4 (0x4000)
+   28071:	70cc20        	or	a12, a12, a7
+   28074:	fadd      	add.n	a13, a13, a15
+   28076:	e0cc20        	or	a12, a12, a14
+   28079:	c02000        	memw
+   2807c:	c26d80        	s32i	a12, a13, 0x200
+0002807f: 1df0     retw.n        ; Capstone
+   28081:	000000        	ill

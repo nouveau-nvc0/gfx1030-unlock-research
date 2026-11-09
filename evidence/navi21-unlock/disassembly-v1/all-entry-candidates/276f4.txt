@@ -1,0 +1,42 @@
+
+/tmp/tmpfwvwdcno/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000276f4 <.data+0x276f4>:
+000276f4: 364100   entry        a1, 0x20 ; Capstone
+   276f7:	c120b1        	l32r	a12, 0x13b78 (0x3ecccccd)
+   276fa:	0c0a      	movi.n	a10, 0
+   276fc:	0c0b      	movi.n	a11, 0
+000276fe: 25ef04   call8        . +0x4ef4 ; Capstone ; target=0x2c5f0
+   27701:	811eb1        	l32r	a8, 0x13b7c (0x118f0)
+   27704:	0c8a      	movi.n	a10, 8
+   27706:	0c0b      	movi.n	a11, 0
+00027708: 130800   lsi          f1, a8, 0 ; Capstone
+0002770b: 40c1fa   rfr          a12, f1 ; Capstone
+0002770e: 25ee04   call8        . +0x4ee4 ; Capstone ; target=0x2c5f0
+   27711:	0c2a      	movi.n	a10, 2
+   27713:	0c0b      	movi.n	a11, 0
+   27715:	0c0c      	movi.n	a12, 0
+00027717: a5ed04   call8        . +0x4edc ; Capstone ; target=0x2c5f0
+   2771a:	9118b1        	l32r	a9, 0x13b7c (0x118f0)
+   2771d:	0c1a      	movi.n	a10, 1
+   2771f:	0c0b      	movi.n	a11, 0
+00027721: 230900   lsi          f2, a9, 0 ; Capstone
+00027724: 40c2fa   rfr          a12, f2 ; Capstone
+00027727: a5ec04   call8        . +0x4ecc ; Capstone ; target=0x2c5f0
+   2772a:	a114b1        	l32r	a10, 0x13b7c (0x118f0)
+   2772d:	0c0b      	movi.n	a11, 0
+0002772f: 330a00   lsi          f3, a10, 0 ; Capstone
+00027732: 40c3fa   rfr          a12, f3 ; Capstone
+   27735:	0c3a      	movi.n	a10, 3
+00027737: a5eb04   call8        . +0x4ebc ; Capstone ; target=0x2c5f0
+   2773a:	a111b1        	l32r	a10, 0x13b80 (0xea84)
+0002773d: 25f1ff   call8        . -0xec ; Capstone ; target=0x27650
+   27740:	b111b1        	l32r	a11, 0x13b84 (0xea00)
+   27743:	c14aaf        	l32r	a12, 0x1346c (0xa218)
+   27746:	b20b7e        	l8ui	a11, a11, 126
+   27749:	b24c7e        	s8i	a11, a12, 126
+0002774c: 1df0     retw.n        ; Capstone
+	...

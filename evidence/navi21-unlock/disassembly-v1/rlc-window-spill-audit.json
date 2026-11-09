@@ -1,0 +1,276 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "listing_byte_checks": 121,
+  "reachable_in_window": 102,
+  "store_sites": [
+    {
+      "pc": "0xa028",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "0"
+    },
+    {
+      "pc": "0xa02a",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a5",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "4"
+    },
+    {
+      "pc": "0xa02c",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "8"
+    },
+    {
+      "pc": "0xa02e",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "12"
+    },
+    {
+      "pc": "0xa03c",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "0"
+    },
+    {
+      "pc": "0xa03e",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a5",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "4"
+    },
+    {
+      "pc": "0xa040",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "8"
+    },
+    {
+      "pc": "0xa042",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "12"
+    },
+    {
+      "pc": "0xa04c",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "0"
+    },
+    {
+      "pc": "0xa04e",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "4"
+    },
+    {
+      "pc": "0xa050",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a10",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "8"
+    },
+    {
+      "pc": "0xa052",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a11",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "12"
+    },
+    {
+      "pc": "0xa063",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a0",
+      "source_constant": null,
+      "base": "a13",
+      "offset": "0"
+    },
+    {
+      "pc": "0xa065",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a1",
+      "source_constant": null,
+      "base": "a13",
+      "offset": "4"
+    },
+    {
+      "pc": "0xa067",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a13",
+      "offset": "8"
+    },
+    {
+      "pc": "0xa069",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a13",
+      "offset": "12"
+    },
+    {
+      "pc": "0xa076",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "0"
+    },
+    {
+      "pc": "0xa078",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a5",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "4"
+    },
+    {
+      "pc": "0xa07a",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "8"
+    },
+    {
+      "pc": "0xa07c",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "12"
+    },
+    {
+      "pc": "0xa07e",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "16"
+    },
+    {
+      "pc": "0xa080",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "20"
+    },
+    {
+      "pc": "0xa082",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a10",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "24"
+    },
+    {
+      "pc": "0xa084",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a11",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "28"
+    }
+  ],
+  "entry_chain": [
+    "7ce9 CALL8 9a84",
+    "9a92 CALL4 a0ec",
+    "a102 CALL0 9fd8"
+  ],
+  "saved_stack_pointer": "9a8a stores entry-adjusted a1 into context+10 before spill helper",
+  "store_groups": [
+    {
+      "pcs": "a028..a02e",
+      "destination": "entry to this branch a9-16..a9-1"
+    },
+    {
+      "pcs": "a03c..a042",
+      "destination": "branch a13-16..a13-1"
+    },
+    {
+      "pcs": "a04c..a052",
+      "destination": "DWORD(branch a5-12)-32..-17"
+    },
+    {
+      "pcs": "a063..a069",
+      "destination": "post-ROTW a13-16..a13-1"
+    },
+    {
+      "pcs": "a076..a084",
+      "destination": "DWORD(post-ROTW a1-12)-48..-17"
+    }
+  ],
+  "limitations": "ROTW and physical-register/window invariants are not modeled. No proof of runtime stack bounds, arbitrary pointer choice, or CC reachability."
+}

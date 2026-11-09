@@ -1,0 +1,39 @@
+
+/tmp/tmpo0hh2gtj/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00029784 <.data+0x29784>:
+00029784: 364100   entry        a1, 0x20 ; Capstone
+   29787:	9162a9        	l32r	a9, 0x13d10 (0xaec4)
+   2978a:	0c18      	movi.n	a8, 1
+   2978c:	d141a6        	l32r	a13, 0x13090 (0xaaa8)
+   2978f:	42297f        	l32i	a4, a9, 0x1fc
+   29792:	30b004        	extui	a11, a3, 0, 1
+   29795:	000240        	ssr	a2
+   29798:	404091        	srl	a4, a4
+   2979b:	404004        	extui	a4, a4, 0, 1
+   2979e:	471337        	beq	a3, a4, 0x297d9
+   297a1:	20c2b0        	addx8	a12, a2, a2
+   297a4:	d0cca0        	addx4	a12, a12, a13
+   297a7:	c22c7f        	l32i	a12, a12, 0x1fc
+   297aa:	e116a6        	l32r	a14, 0x13004 (0xfffff)
+   297ad:	d139a6        	l32r	a13, 0x13094 (0x1200000)
+   297b0:	8bcc      	addi.n	a12, a12, 8
+   297b2:	e0cc10        	and	a12, a12, a14
+   297b5:	dacc      	add.n	a12, a12, a13
+   297b7:	c02000        	memw
+   297ba:	7cfa      	movi.n	a10, -1
+   297bc:	001240        	ssl	a2
+   297bf:	b90c      	s32i.n	a11, a12, 0
+   297c1:	62297f        	l32i	a6, a9, 0x1fc
+   297c4:	0078a1        	sll	a7, a8
+   297c7:	a07730        	xor	a7, a7, a10
+   297ca:	001240        	ssl	a2
+   297cd:	0053a1        	sll	a5, a3
+   297d0:	706610        	and	a6, a6, a7
+   297d3:	605520        	or	a5, a5, a6
+   297d6:	52697f        	s32i	a5, a9, 0x1fc
+000297d9: 1df0     retw.n        ; Capstone
+	...

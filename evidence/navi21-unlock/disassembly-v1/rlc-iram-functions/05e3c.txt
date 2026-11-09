@@ -1,0 +1,99 @@
+
+/tmp/tmpapw4cdd7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005e3c <.data+0x5e3c>:
+00005e3c: 36c100   entry        a1, 0x60 ; Capstone
+    5e3f:	4bf1      	addi.n	a15, a1, 4
+    5e41:	2971      	s32i.n	a2, a1, 28
+    5e43:	2911      	s32i.n	a2, a1, 4
+    5e45:	e1efdc        	l32r	a14, 0xffffd204 (0x6803b200) ; inferred DRAM map 0x5ffec000
+    5e48:	0c13      	movi.n	a3, 1
+    5e4a:	3981      	s32i.n	a3, a1, 32
+    5e4c:	e22e21        	l32i	a14, a14, 132
+    5e4f:	0c02      	movi.n	a2, 0
+    5e51:	2921      	s32i.n	a2, a1, 8
+    5e53:	e0a704        	extui	a10, a14, 7, 1
+    5e56:	e03024        	extui	a3, a14, 0, 3
+    5e59:	e08314        	extui	a8, a14, 3, 2
+    5e5c:	e09514        	extui	a9, a14, 5, 2
+    5e5f:	e0b824        	extui	a11, a14, 8, 3
+    5e62:	e0cb14        	extui	a12, a14, 11, 2
+    5e65:	e0dd14        	extui	a13, a14, 13, 2
+    5e68:	d9a1      	s32i.n	a13, a1, 40
+    5e6a:	c9b1      	s32i.n	a12, a1, 44
+    5e6c:	b9c1      	s32i.n	a11, a1, 48
+    5e6e:	9941      	s32i.n	a9, a1, 16
+    5e70:	8951      	s32i.n	a8, a1, 20
+    5e72:	3961      	s32i.n	a3, a1, 24
+    5e74:	a931      	s32i.n	a10, a1, 12
+    5e76:	a80f      	l32i.n	a10, a15, 0
+    5e78:	b81f      	l32i.n	a11, a15, 4
+    5e7a:	c82f      	l32i.n	a12, a15, 8
+    5e7c:	e0ef04        	extui	a14, a14, 15, 1
+    5e7f:	d83f      	l32i.n	a13, a15, 12
+    5e81:	e991      	s32i.n	a14, a1, 36
+    5e83:	e22f04        	l32i	a14, a15, 16
+    5e86:	f22f05        	l32i	a15, a15, 20
+00005e89: 650800   call8        . +0x88 ; Capstone ; target=0x5f10
+    5e8c:	f2c11c        	addi	a15, a1, 28
+    5e8f:	a80f      	l32i.n	a10, a15, 0
+    5e91:	b81f      	l32i.n	a11, a15, 4
+    5e93:	c82f      	l32i.n	a12, a15, 8
+    5e95:	d83f      	l32i.n	a13, a15, 12
+    5e97:	e84f      	l32i.n	a14, a15, 16
+    5e99:	f85f      	l32i.n	a15, a15, 20
+00005e9b: 650700   call8        . +0x78 ; Capstone ; target=0x5f10
+    5e9e:	4bf1      	addi.n	a15, a1, 4
+    5ea0:	a80f      	l32i.n	a10, a15, 0
+    5ea2:	b81f      	l32i.n	a11, a15, 4
+    5ea4:	c82f      	l32i.n	a12, a15, 8
+    5ea6:	d83f      	l32i.n	a13, a15, 12
+    5ea8:	e22f04        	l32i	a14, a15, 16
+    5eab:	f85f      	l32i.n	a15, a15, 20
+00005ead: a50b00   call8        . +0xbc ; Capstone ; target=0x5f68
+    5eb0:	f2c11c        	addi	a15, a1, 28
+    5eb3:	a80f      	l32i.n	a10, a15, 0
+    5eb5:	b81f      	l32i.n	a11, a15, 4
+    5eb7:	c82f      	l32i.n	a12, a15, 8
+    5eb9:	d83f      	l32i.n	a13, a15, 12
+    5ebb:	e84f      	l32i.n	a14, a15, 16
+    5ebd:	f85f      	l32i.n	a15, a15, 20
+00005ebf: a50a00   call8        . +0xac ; Capstone ; target=0x5f68
+    5ec2:	2971      	s32i.n	a2, a1, 28
+    5ec4:	2911      	s32i.n	a2, a1, 4
+    5ec6:	4bf1      	addi.n	a15, a1, 4
+    5ec8:	a80f      	l32i.n	a10, a15, 0
+    5eca:	b81f      	l32i.n	a11, a15, 4
+    5ecc:	c82f      	l32i.n	a12, a15, 8
+    5ece:	d83f      	l32i.n	a13, a15, 12
+    5ed0:	e22f04        	l32i	a14, a15, 16
+    5ed3:	f85f      	l32i.n	a15, a15, 20
+00005ed5: a50300   call8        . +0x3c ; Capstone ; target=0x5f10
+    5ed8:	f2c11c        	addi	a15, a1, 28
+    5edb:	a80f      	l32i.n	a10, a15, 0
+    5edd:	b81f      	l32i.n	a11, a15, 4
+    5edf:	c82f      	l32i.n	a12, a15, 8
+    5ee1:	d83f      	l32i.n	a13, a15, 12
+    5ee3:	e84f      	l32i.n	a14, a15, 16
+    5ee5:	f85f      	l32i.n	a15, a15, 20
+00005ee7: a50200   call8        . +0x2c ; Capstone ; target=0x5f10
+    5eea:	4bf1      	addi.n	a15, a1, 4
+    5eec:	a80f      	l32i.n	a10, a15, 0
+    5eee:	b81f      	l32i.n	a11, a15, 4
+    5ef0:	c82f      	l32i.n	a12, a15, 8
+    5ef2:	d83f      	l32i.n	a13, a15, 12
+    5ef4:	e22f04        	l32i	a14, a15, 16
+    5ef7:	f85f      	l32i.n	a15, a15, 20
+00005ef9: e50600   call8        . +0x70 ; Capstone ; target=0x5f68
+    5efc:	f2c11c        	addi	a15, a1, 28
+    5eff:	a80f      	l32i.n	a10, a15, 0
+    5f01:	b81f      	l32i.n	a11, a15, 4
+    5f03:	c82f      	l32i.n	a12, a15, 8
+    5f05:	d83f      	l32i.n	a13, a15, 12
+    5f07:	e84f      	l32i.n	a14, a15, 16
+    5f09:	f85f      	l32i.n	a15, a15, 20
+00005f0b: e50500   call8        . +0x60 ; Capstone ; target=0x5f68
+00005f0e: 1df0     retw.n        ; Capstone

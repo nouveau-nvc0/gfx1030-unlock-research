@@ -1,0 +1,31 @@
+
+/tmp/tmpyinlu5f8/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00034ba4 <.data+0x34ba4>:
+00034ba4: 366100   entry        a1, 0x30 ; Capstone
+   34ba7:	ad02      	mov.n	a10, a2
+00034ba9: 6551cd   call8        . -0x32ae8 ; Capstone ; target=0x20c0
+   34bac:	a08014        	extui	a8, a10, 0, 2
+   34baf:	dc68      	bnez.n	a8, 0x34bc9
+   34bb1:	bd01      	mov.n	a11, a1
+00034bb3: a5fcff   call8        . -0x34 ; Capstone ; target=0x34b7c
+   34bb6:	661a19        	bnei	a10, 1, 0x34bd3
+   34bb9:	ad02      	mov.n	a10, a2
+   34bbb:	b801      	l32i.n	a11, a1, 0
+00034bbd: 2521cd   call8        . -0x32dec ; Capstone ; target=0x1dd0
+   34bc0:	ad02      	mov.n	a10, a2
+   34bc2:	0c1b      	movi.n	a11, 1
+00034bc4: 654dcd   call8        . -0x32b28 ; Capstone ; target=0x209c
+00034bc7: 1df0     retw.n        ; Capstone
+   34bc9:	ad02      	mov.n	a10, a2
+   34bcb:	b2a0ff        	movi	a11, 255
+00034bce: e54ccd   call8        . -0x32b30 ; Capstone ; target=0x209c
+00034bd1: 1df0     retw.n        ; Capstone
+   34bd3:	ad02      	mov.n	a10, a2
+   34bd5:	b2a0ff        	movi	a11, 255
+00034bd8: 254ccd   call8        . -0x32b3c ; Capstone ; target=0x209c
+00034bdb: 1df0     retw.n        ; Capstone
+   34bdd:	000000        	ill

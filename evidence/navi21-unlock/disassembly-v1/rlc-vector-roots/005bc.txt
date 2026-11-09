@@ -1,0 +1,8 @@
+
+/tmp/tmpah0pawfm/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000005bc <.data+0x5bc>:
+     5bc:	103400        	rfi	4

@@ -1,0 +1,18 @@
+
+/tmp/tmple8l8cm2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001cdcc <.data+0x1cdcc>:
+0001cdcc: 366100   entry        a1, 0x30 ; Capstone
+   1cdcf:	203084        	extui	a3, a2, 0, 9
+   1cdd2:	2080f5        	extui	a8, a2, 16, 16
+0001cdd5: 0018da   ufloat.s     f1, a8, 0 ; Capstone
+0001cdd8: 0003da   ufloat.s     f0, a3, 0 ; Capstone
+   1cddb:	21ccd8        	l32r	a2, 0x1310c (0x37800000)
+0001cdde: 5022fa   wfr          f2, a2 ; Capstone
+0001cde1: 20014a   madd.s       f0, f1, f2 ; Capstone
+0001cde4: 4020fa   rfr          a2, f0 ; Capstone
+0001cde7: 1df0     retw.n        ; Capstone
+   1cde9:	000000        	ill

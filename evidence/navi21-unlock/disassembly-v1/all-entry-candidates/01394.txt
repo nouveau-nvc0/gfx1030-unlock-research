@@ -1,0 +1,36 @@
+
+/tmp/tmpggy7ecvl/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001394 <.data+0x1394>:
+00001394: 364100   entry        a1, 0x20 ; Capstone
+    1397:	6111fe        	l32r	a6, 0xbdc (0xfffff)
+    139a:	8113fe        	l32r	a8, 0xbe8 (0x9000218)
+    139d:	203094        	extui	a3, a2, 0, 10
+    13a0:	403311        	slli	a3, a3, 12
+    13a3:	72d302        	addmi	a7, a3, 0x200
+    13a6:	72c718        	addi	a7, a7, 24
+    13a9:	8a33      	add.n	a3, a3, a8
+    13ab:	603310        	and	a3, a3, a6
+    13ae:	7074b5        	extui	a7, a7, 20, 12
+    13b1:	610cfe        	l32r	a6, 0xbe4 (0xfffe00)
+    13b4:	c07701        	slli	a7, a7, 20
+    13b7:	7a33      	add.n	a3, a3, a7
+    13b9:	6a23      	add.n	a2, a3, a6
+    13bb:	8cf4      	beqz.n	a4, 0x13ce
+    13bd:	c02000        	memw
+    13c0:	822280        	l32i	a8, a2, 0x200
+    13c3:	508820        	or	a8, a8, a5
+    13c6:	c02000        	memw
+    13c9:	826280        	s32i	a8, a2, 0x200
+000013cc: 1df0     retw.n        ; Capstone
+    13ce:	7cfa      	movi.n	a10, -1
+    13d0:	a0a530        	xor	a10, a5, a10
+    13d3:	c02000        	memw
+    13d6:	922280        	l32i	a9, a2, 0x200
+    13d9:	a09910        	and	a9, a9, a10
+    13dc:	c02000        	memw
+    13df:	926280        	s32i	a9, a2, 0x200
+000013e2: 1df0     retw.n        ; Capstone

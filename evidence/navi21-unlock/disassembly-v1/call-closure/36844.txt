@@ -1,0 +1,14 @@
+
+/tmp/tmpk5uvv4j_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00036844 <.data+0x36844>:
+00036844: 364100   entry        a1, 0x20 ; Capstone
+   36847:	813877        	l32r	a8, 0x14528 (0xba1c)
+0003684a: 0002da   ufloat.s     f0, a2, 0 ; Capstone
+0003684d: 03487f   ssi          f0, a8, 0x1fc ; Capstone
+00036850: e568ec   call8        . -0x13970 ; Capstone ; target=0x22ee0
+00036853: 1df0     retw.n        ; Capstone
+   36855:	000000        	ill

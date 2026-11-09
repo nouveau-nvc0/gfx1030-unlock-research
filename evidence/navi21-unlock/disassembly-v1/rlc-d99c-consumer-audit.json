@@ -1,0 +1,150 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03314.txt",
+      "sha256": "12549915d7c263241ba7790bf4622c551d41828b31b5c3d88dc93bbf2902e786",
+      "byte_checked_records": 7
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0387c.txt",
+      "sha256": "7c3c2d7e05b0e969d52e196c15622c4fea84a68044c696670fe750c81f2453db",
+      "byte_checked_records": 41
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/038ec.txt",
+      "sha256": "25f6e5d0a2419211be98b3c70881e77420106438dd16f364d7894dedfb40621c",
+      "byte_checked_records": 103
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "sha256": "a1e684d1286313c6cf283e412c6cfd7cadd971a035611bbeafd448611e029daf",
+      "byte_checked_records": 247
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03cbc.txt",
+      "sha256": "7418608444935db3a8474bdb8ccbad5ca39edaca604d3d590ebdb3d8f87e2c1c",
+      "byte_checked_records": 32
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05a6c.txt",
+      "sha256": "f54abd7eeca6b88140807177cd25576afdbc353568375fa3d7a8945478483924",
+      "byte_checked_records": 18
+    }
+  ],
+  "selected_instruction_rows": {
+    "0x3320": {
+      "bytes": "224408",
+      "op": "s8i",
+      "operands": "a2, a4, 8"
+    },
+    "0x3323": {
+      "bytes": "3934",
+      "op": "s32i.n",
+      "operands": "a3, a4, 12"
+    },
+    "0x38d5": {
+      "bytes": "a83a",
+      "op": "l32i.n",
+      "operands": "a10, a10, 12"
+    },
+    "0x38d7": {
+      "bytes": "651902",
+      "op": "call8",
+      "operands": ". +0x2198 ; Capstone ; target=0x5a6c"
+    },
+    "0x39df": {
+      "bytes": "e20200",
+      "op": "l8ui",
+      "operands": "a14, a2, 0"
+    },
+    "0x39e2": {
+      "bytes": "162ef1",
+      "op": "beqz",
+      "operands": "a14, 0x38f8"
+    },
+    "0x39ec": {
+      "bytes": "d812",
+      "op": "l32i.n",
+      "operands": "a13, a2, 4"
+    },
+    "0x39f9": {
+      "bytes": "250702",
+      "op": "call8",
+      "operands": ". +0x2074 ; Capstone ; target=0x5a6c"
+    },
+    "0x3a3c": {
+      "bytes": "c20a00",
+      "op": "l8ui",
+      "operands": "a12, a10, 0"
+    },
+    "0x3a3f": {
+      "bytes": "165c27",
+      "op": "beqz",
+      "operands": "a12, 0x3cb8"
+    },
+    "0x3a42": {
+      "bytes": "a81a",
+      "op": "l32i.n",
+      "operands": "a10, a10, 4"
+    },
+    "0x3a47": {
+      "bytes": "650202",
+      "op": "call8",
+      "operands": ". +0x2028 ; Capstone ; target=0x5a6c"
+    },
+    "0x3a7c": {
+      "bytes": "d20d06",
+      "op": "l8ui",
+      "operands": "a13, a13, 6"
+    },
+    "0x3a81": {
+      "bytes": "163d0b",
+      "op": "beqz",
+      "operands": "a13, 0x3b38"
+    },
+    "0x3b32": {
+      "bytes": "25e102",
+      "op": "call8",
+      "operands": ". +0x2e14 ; Capstone ; target=0x6944"
+    },
+    "0x3ce1": {
+      "bytes": "8cf9",
+      "op": "beqz.n",
+      "operands": "a9, 0x3cf4"
+    },
+    "0x3ce8": {
+      "bytes": "d813",
+      "op": "l32i.n",
+      "operands": "a13, a3, 4"
+    },
+    "0x3cf1": {
+      "bytes": "a5d701",
+      "op": "call8",
+      "operands": ". +0x1d7c ; Capstone ; target=0x5a6c"
+    },
+    "0x5a7c": {
+      "bytes": "3914",
+      "op": "s32i.n",
+      "operands": "a3, a4, 4"
+    },
+    "0x5a83": {
+      "bytes": "d0d273",
+      "op": "maxu",
+      "operands": "a13, a2, a13 ; Capstone"
+    },
+    "0x5a86": {
+      "bytes": "d26b38",
+      "op": "s32i",
+      "operands": "a13, a11, 224"
+    }
+  },
+  "findings": [
+    "3cbc testsbyte[d99c]; if nonzero, passesDWORD[d9a0] andcallback5fff3a00 to5a6c at3cf1.38ec similarly schedules3a00 at39f9 when enabled.3a00 can reschedule itself at3a47 using the same enable/parameter.",
+    "5a6c stores callback at5ffee580, writesmax(arg0,8) to6803b6e0, sets its active byte5ffee59e and ORsbit1 into6803b6ec. Parameter units and actual delivery are not inferred here.",
+    "387c usesDWORD[d9a8], notd9a0, when scheduling3cbc at38d7.3314 sets separatebyte[d9a4] andDWORD[d9a8], applying default10000 whenarg1=0. Sharing a base pointer does not make these the same control.",
+    "3a00 still loads independent gatee452 at3a7c and branches around restore whenzero at3a81. Enablingd99c can sustain callback scheduling but does not establish a nonzeroe452 producer.",
+    "No call to2edc is established by these consumer paths. Concrete scheduled3a00 restore remains gated, and its later save can replace initial saved masks as previously documented."
+  ],
+  "limits": "Local code and initial literal placement; callee completion, callback timing, event delivery, table mutation and hardware acceptance not observed. No hardware access."
+}

@@ -1,0 +1,282 @@
+{
+  "scope": "Original XL x64 wrapper instructions, both reference ROM data sets, synthetic RAM; stop before generic writer. No hardware accesses. XT code not replayed.",
+  "image_sha256": "a9966b48d5bdfc35387eb38572b4babbf4537da8d2b2ae4796076af9ed44f54a",
+  "results": [
+    {
+      "variant": "baseline",
+      "rom_sha256": "6ffb1d8b93b75f9ef3e411b7fafeeca41764edea05aecf010f11ed9423158f40",
+      "table_offsets": {
+        "4": 2160,
+        "11": 3388
+      },
+      "scratch_base": "0x4c",
+      "vram_packed": "0x0",
+      "cases": [
+        {
+          "entry": "0x2cb8",
+          "input": "0x0",
+          "writer_index": "0x4c",
+          "byte_address": "0x130"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0x1",
+          "writer_index": "0x4d",
+          "byte_address": "0x134"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0x8",
+          "writer_index": "0x54",
+          "byte_address": "0x150"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0xa",
+          "writer_index": "0x56",
+          "byte_address": "0x158"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0x21fd",
+          "writer_index": "0x2249",
+          "byte_address": "0x8924"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0x2223",
+          "writer_index": "0x226f",
+          "byte_address": "0x89bc"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0x8924",
+          "writer_index": "0x8970",
+          "byte_address": "0x225c0"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0x89bc",
+          "writer_index": "0x8a08",
+          "byte_address": "0x22820"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0xffff",
+          "writer_index": "0x1004b",
+          "byte_address": "0x4012c"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0x10008",
+          "writer_index": "0x54",
+          "byte_address": "0x150"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0x0",
+          "writer_index": "0x20000000",
+          "byte_address": "0x80000000"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0x1",
+          "writer_index": "0x20000000",
+          "byte_address": "0x80000000"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0x8",
+          "writer_index": "0x20000002",
+          "byte_address": "0x80000008"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0xa",
+          "writer_index": "0x20000002",
+          "byte_address": "0x80000008"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0x21fd",
+          "writer_index": "0x2000087f",
+          "byte_address": "0x800021fc"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0x2223",
+          "writer_index": "0x20000888",
+          "byte_address": "0x80002220"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0x8924",
+          "writer_index": "0x20002249",
+          "byte_address": "0x80008924"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0x89bc",
+          "writer_index": "0x2000226f",
+          "byte_address": "0x800089bc"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0xffff",
+          "writer_index": "0x20003fff",
+          "byte_address": "0x8000fffc"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0x10008",
+          "writer_index": "0x20000002",
+          "byte_address": "0x80000008"
+        }
+      ],
+      "high_route_unique_addresses": 16384,
+      "high_route_min": "0x80000000",
+      "high_route_max": "0x8000fffc"
+    },
+    {
+      "variant": "candidate",
+      "rom_sha256": "ec4674da8cd311a3871b8ca565c5545caabcd359c54796c5f9752d71e9b65331",
+      "table_offsets": {
+        "4": 2168,
+        "11": 3396
+      },
+      "scratch_base": "0x4c",
+      "vram_packed": "0x0",
+      "cases": [
+        {
+          "entry": "0x2cb8",
+          "input": "0x0",
+          "writer_index": "0x4c",
+          "byte_address": "0x130"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0x1",
+          "writer_index": "0x4d",
+          "byte_address": "0x134"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0x8",
+          "writer_index": "0x54",
+          "byte_address": "0x150"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0xa",
+          "writer_index": "0x56",
+          "byte_address": "0x158"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0x21fd",
+          "writer_index": "0x2249",
+          "byte_address": "0x8924"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0x2223",
+          "writer_index": "0x226f",
+          "byte_address": "0x89bc"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0x8924",
+          "writer_index": "0x8970",
+          "byte_address": "0x225c0"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0x89bc",
+          "writer_index": "0x8a08",
+          "byte_address": "0x22820"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0xffff",
+          "writer_index": "0x1004b",
+          "byte_address": "0x4012c"
+        },
+        {
+          "entry": "0x2cb8",
+          "input": "0x10008",
+          "writer_index": "0x54",
+          "byte_address": "0x150"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0x0",
+          "writer_index": "0x20000000",
+          "byte_address": "0x80000000"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0x1",
+          "writer_index": "0x20000000",
+          "byte_address": "0x80000000"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0x8",
+          "writer_index": "0x20000002",
+          "byte_address": "0x80000008"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0xa",
+          "writer_index": "0x20000002",
+          "byte_address": "0x80000008"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0x21fd",
+          "writer_index": "0x2000087f",
+          "byte_address": "0x800021fc"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0x2223",
+          "writer_index": "0x20000888",
+          "byte_address": "0x80002220"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0x8924",
+          "writer_index": "0x20002249",
+          "byte_address": "0x80008924"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0x89bc",
+          "writer_index": "0x2000226f",
+          "byte_address": "0x800089bc"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0xffff",
+          "writer_index": "0x20003fff",
+          "byte_address": "0x8000fffc"
+        },
+        {
+          "entry": "0x87dc",
+          "input": "0x10008",
+          "writer_index": "0x20000002",
+          "byte_address": "0x80000008"
+        }
+      ],
+      "high_route_unique_addresses": 16384,
+      "high_route_min": "0x80000000",
+      "high_route_max": "0x8000fffc"
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "Caller reachability and mutable ROM copies not proved.",
+    "High-bit address hardware interpretation and aliasing not proved.",
+    "No accepted CC writes demonstrated."
+  ]
+}

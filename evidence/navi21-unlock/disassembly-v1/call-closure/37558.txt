@@ -1,0 +1,17 @@
+
+/tmp/tmp4ubm_jby/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00037558 <.data+0x37558>:
+00037558: 364100   entry        a1, 0x20 ; Capstone
+   3755b:	b1336e        	l32r	a11, 0x12e28 (0x9c00)
+   3755e:	ad02      	mov.n	a10, a2
+   37560:	b22b89        	l32i	a11, a11, 0x224
+00037563: e586ca   call8        . -0x35790 ; Capstone ; target=0x1dd0
+   37566:	ad02      	mov.n	a10, a2
+   37568:	0c1b      	movi.n	a11, 1
+0003756a: 25b3ca   call8        . -0x354cc ; Capstone ; target=0x209c
+0003756d: 1df0     retw.n        ; Capstone
+	...

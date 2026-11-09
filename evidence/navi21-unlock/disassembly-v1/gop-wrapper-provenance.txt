@@ -1,0 +1,55 @@
+GOP remaining writer wrappers — offline checkpoint
+
+Identity: XL x64 GOP SHA256 a9966b48d5bdfc35387eb38572b4babbf4537da8d2b2ae4796076af9ed44f54a.
+Original instructions replayed with each hash-checked reference ROM as data.
+Receipt: gop-wrapper-replay.json; reproducer: scripts/navi21-gop-wrapper-check.py.
+40 cases passed, stopping at6468 before any generic writer instruction executes.
+This tests XL code with both data sets, not XT caller/code equivalence.
+
+3168 reads the ROM pointer from global[cdb0]+70, ATOM header pointer atROM+48,
+master data pointer atheader+20, entry atmaster+4+2*index.
+2cb8 requests data4 (FirmwareInfo). Its register index is
+uint16(input)+DWORD(FirmwareInfo+18). Both reference fields equal4c.
+The original wrapper preserves the DWORD value and forwards nested context+78.
+Arguments21fd/2223 therefore produce2249/226f (byte addresses8924/89bc).
+This is interface representability only: no stock invocation with these
+arguments has been found/proved. Most inspected callers use small fixed
+scratch indices0,2,3,5,7,8,10; full caller CFG proof remains pending.
+
+3540 requests data11 (VRAM usage by firmware), reads DWORD at+4 and returns
+base=(packed<<10) mod2^32 and size=packed>>22. Both fields are zero in the
+reference table payloads.87dc adds uint16(input) to this base, sets bit31,
+shifts right2 and forwards the original DWORD value to6468.
+For all65536 possible low16 inputs, the stock-table model yields16384
+aligned byte addresses80000000..8000fffc, never literal8924 or89bc.
+Replay includes boundary/truncation inputs0,1,8,10,21fd,2223,8924,89bc,ffff,
+10008. High-bit addresses select the generic index/data0/4 route for normal
+thresholds. Hardware interpretation/aliasing is not established here.
+Neither the table name nor high bit alone proves absence of CC aliasing.
+
+Remaining work: complete caller argument/CFG provenance for2cb8; determine
+whether runtime ROM copies can change these fields; follow87dc's hardware
+address interpretation; trace equivalent XT and ARM64 callers. This narrows
+address formation but does not close GOP globally or establish accepted writes.
+
+Direct-caller follow-up:
+All35 direct references in the XL linear listing belong to14 PE runtime
+functions. Conservative constant flow follows both sides of conditional
+branches, merges differing values to unknown, invalidates unsupported register
+writes and partial writes, and kills all volatile integer registers at calls.
+All35 converge to input indices in{0,2,3,5,6,7,8,10}; no unresolved branch edges
+in these function graphs. The previously unresolved f3e site joins two paths
+that both setESI=8; one uses LEA at e3a after EBX=0 at e15.
+With the initial4c table base, resulting register indices are
+{4c,4e,4f,51,52,53,54,56}; none is2249 or226f.
+Receipt:gop-scratch-callers.json; script:navi21-gop-scratch-callers.py.
+Six transfer-rule fixtures check LEA, partial writes, volatile call clobbers,
+nonvolatile preservation, memory loads and unsupported arithmetic invalidation.
+Limits: assumes Microsoft x64 register preservation by callees, entry through
+PE function starts, unchanged initial table base. Does not inventory indirect
+calls into2cb8, alternate entries or mutated ROM data. These assumptions must
+remain explicit; this is not a global no-write proof.
+
+Runtime qualification: gop-runtime-table-update.txt identifies initialization
+writing data11+4. The finite range above is only the initial file-table model;
+it must not be applied after7960. The bit31 invariant survives this mutation.

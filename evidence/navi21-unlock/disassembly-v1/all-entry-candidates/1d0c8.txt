@@ -1,0 +1,23 @@
+
+/tmp/tmppc5lohyj/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001d0c8 <.data+0x1d0c8>:
+0001d0c8: 364100   entry        a1, 0x20 ; Capstone
+   1d0cb:	211cd8        	l32r	a2, 0x1313c (0x1093c)
+   1d0ce:	a10dd8        	l32r	a10, 0x13104 (0x10f9c)
+0001d0d1: 03027d   lsi          f0, a2, 0x1f4 ; Capstone
+0001d0d4: 03427e   ssi          f0, a2, 0x1f8 ; Capstone
+0001d0d7: e5520d   call8        . +0xd530 ; Capstone ; target=0x2a604
+   1d0da:	a1fcd7        	l32r	a10, 0x130cc (0x10b1c)
+   1d0dd:	b2227e        	l32i	a11, a2, 0x1f8
+0001d0e0: e51e18   call8        . +0x181f0 ; Capstone ; target=0x352d0
+   1d0e3:	bd0a      	mov.n	a11, a10
+0001d0e5: 501afa   wfr          f1, a10 ; Capstone
+0001d0e8: 134281   ssi          f1, a2, 0x204 ; Capstone
+   1d0eb:	0cba      	movi.n	a10, 11
+0001d0ed: 251718   call8        . +0x18174 ; Capstone ; target=0x35260
+   1d0f0:	0c02      	movi.n	a2, 0
+0001d0f2: 1df0     retw.n        ; Capstone

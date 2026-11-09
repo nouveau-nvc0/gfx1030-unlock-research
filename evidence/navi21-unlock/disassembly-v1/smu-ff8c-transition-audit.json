@@ -1,0 +1,384 @@
+{
+  "firmware_sha256": "0eb99764288f764fd853d6973693ffa52419cc7ba62074aee85df4a3e8d0286d",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/26798.txt",
+      "sha256": "cab80c0da5d9520db2fe1db62c96ea945c03e7c2f5f1e3024a9df8b579dd6f39",
+      "records": 104
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1efa0.txt",
+      "sha256": "15a118c478628078aef7fb3aa3059eb57203e0a4424ddce77e2acc0551121bfd",
+      "records": 15
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1ed28.txt",
+      "sha256": "9d16a25a3dae62fef511fd07d0bed310b5400dcd3dd45c778115739d158aa76c",
+      "records": 4
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/28b50.txt",
+      "sha256": "4e73626049cc58e5a428c83307ed184f2637190ac48aa7fbe6d7d669c13b7693",
+      "records": 18
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/25b68.txt",
+      "sha256": "cb91b40ba8aeb09dc73f9f2ef000559b9679dc3cbd1abbd520f02748dc7d3014",
+      "records": 25
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1d554.txt",
+      "sha256": "92da6c0a7116057cb8a108212363f1ab065d47a8597156762054ccd0a1a52faa",
+      "records": 24
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1ded8.txt",
+      "sha256": "b7c94bab957d0c6ded7ab1a1ceef090eed61ebeadc5d6cbf420dcd8965c5cacd",
+      "records": 41
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1ddec.txt",
+      "sha256": "ea8e801254eee1ec1f9907682dbc3a19b97626ca318b6735bb2616faf93be770",
+      "records": 13
+    }
+  ],
+  "scan_sha256": "ba239b21c05c8e5a8712ef682a7aab0ab379062dd1b2a86de7e8507d8284469e",
+  "transition_definitions": [
+    {
+      "call": "0x267b7",
+      "group": 0,
+      "source_state": 0,
+      "destination_state": 1
+    },
+    {
+      "call": "0x267c2",
+      "group": 6,
+      "source_state": 0,
+      "destination_state": 1
+    },
+    {
+      "call": "0x267cd",
+      "group": 7,
+      "source_state": 0,
+      "destination_state": 1
+    },
+    {
+      "call": "0x267d8",
+      "group": 9,
+      "source_state": 0,
+      "destination_state": 8
+    },
+    {
+      "call": "0x267e3",
+      "group": 7,
+      "source_state": 0,
+      "destination_state": 8
+    },
+    {
+      "call": "0x267ee",
+      "group": 3,
+      "source_state": 8,
+      "destination_state": 3
+    },
+    {
+      "call": "0x267f9",
+      "group": 7,
+      "source_state": 8,
+      "destination_state": 3
+    },
+    {
+      "call": "0x26804",
+      "group": 1,
+      "source_state": 1,
+      "destination_state": 2
+    },
+    {
+      "call": "0x2680f",
+      "group": 6,
+      "source_state": 1,
+      "destination_state": 2
+    },
+    {
+      "call": "0x2681a",
+      "group": 2,
+      "source_state": 0,
+      "destination_state": 1
+    },
+    {
+      "call": "0x26825",
+      "group": 2,
+      "source_state": 1,
+      "destination_state": 2
+    },
+    {
+      "call": "0x26830",
+      "group": 3,
+      "source_state": 3,
+      "destination_state": 4
+    },
+    {
+      "call": "0x2683b",
+      "group": 3,
+      "source_state": 2,
+      "destination_state": 4
+    },
+    {
+      "call": "0x26846",
+      "group": 7,
+      "source_state": 3,
+      "destination_state": 4
+    },
+    {
+      "call": "0x26851",
+      "group": 7,
+      "source_state": 2,
+      "destination_state": 4
+    },
+    {
+      "call": "0x2685c",
+      "group": 8,
+      "source_state": 2,
+      "destination_state": 7
+    },
+    {
+      "call": "0x26867",
+      "group": 4,
+      "source_state": 4,
+      "destination_state": 5
+    },
+    {
+      "call": "0x26872",
+      "group": 5,
+      "source_state": 5,
+      "destination_state": 6
+    }
+  ],
+  "groups": {
+    "0": [
+      [
+        0,
+        1
+      ]
+    ],
+    "6": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "7": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        8,
+        3
+      ]
+    ],
+    "9": [
+      [
+        0,
+        8
+      ]
+    ],
+    "3": [
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        8,
+        3
+      ]
+    ],
+    "1": [
+      [
+        1,
+        2
+      ]
+    ],
+    "2": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "8": [
+      [
+        2,
+        7
+      ]
+    ],
+    "4": [
+      [
+        4,
+        5
+      ]
+    ],
+    "5": [
+      [
+        5,
+        6
+      ]
+    ]
+  },
+  "initial_groups_used_by_1efa0": [
+    {
+      "group": 9,
+      "mask": "0x0",
+      "enabled": 0
+    },
+    {
+      "group": 1,
+      "mask": "0x0",
+      "enabled": 0
+    }
+  ],
+  "initial_state_callbacks": [
+    {
+      "state": 0,
+      "forward": [
+        "0x1d7fc"
+      ],
+      "reverse": [
+        "0x1d7fc"
+      ]
+    },
+    {
+      "state": 1,
+      "forward": [
+        "0x1ef4c"
+      ],
+      "reverse": [
+        "0x1ef20"
+      ]
+    },
+    {
+      "state": 2,
+      "forward": [
+        "0x1ed48",
+        "0x1ecb4",
+        "0x1dd54"
+      ],
+      "reverse": [
+        "0x1ebe0",
+        "0x1ead8",
+        "0x1dd48"
+      ]
+    },
+    {
+      "state": 3,
+      "forward": [
+        "0x1e488",
+        "0x1e448",
+        "0x1e320",
+        "0x1e14c",
+        "0x1d954",
+        "0x1d8c4",
+        "0x1e064"
+      ],
+      "reverse": [
+        "0x1e390",
+        "0x1d838",
+        "0x1e208",
+        "0x1eac8",
+        "0x1d914",
+        "0x1df5c"
+      ]
+    },
+    {
+      "state": 4,
+      "forward": [
+        "0x1e918",
+        "0x1d9f0",
+        "0x1df44",
+        "0x1e8b8"
+      ],
+      "reverse": [
+        "0x1d9c4",
+        "0x1e840",
+        "0x1e8a4"
+      ]
+    },
+    {
+      "state": 5,
+      "forward": [
+        "0x1ea80"
+      ],
+      "reverse": [
+        "0x1ea5c"
+      ]
+    },
+    {
+      "state": 6,
+      "forward": [
+        "0x1e98c",
+        "0x307c0",
+        "0x1e8e0",
+        "0x1e8c8",
+        "0x20b5c"
+      ],
+      "reverse": [
+        "0x20b48",
+        "0x1e58c",
+        "0x1e5a4",
+        "0x30408",
+        "0x1df44"
+      ]
+    },
+    {
+      "state": 7,
+      "forward": [
+        "0x2d670",
+        "0x2d6b8"
+      ],
+      "reverse": [
+        "0x2d694",
+        "0x2d64c"
+      ]
+    },
+    {
+      "state": 8,
+      "forward": [
+        "0x1ded8"
+      ],
+      "reverse": [
+        "0x1ddec"
+      ]
+    }
+  ],
+  "findings": [
+    "26798 configuresff8c through18 calls to25b68, defining nine distinct state pairs across ten group indices. It does not by itself establish that the group-enable bytes are1 at command time.",
+    "Scheduled1efa0 invokes28b50(ff8c,9,1) then28b50(ff8c,1,1). These groups correspond to configured pairs0->8 and1->2.28b50 first requires group-enable byte==1, and only drives state machinery when the requested mask changes.",
+    "State8 initial forward callback is1ded8, reverse1ddec. State2 forward callbacks1ed48/1ecb4/1dd54, reverse1ebe0/1ead8/1dd48. These are concrete destinations for further analysis, not proof that a given call reaches them.",
+    "1ed28 is a local state signal: writes2 toP+1. It does not itself write CC or change global15874.",
+    "Initial group masks/enables arezero. Runtime26798 execution and later enable changes must not be inferred from the presence of the definitions."
+  ],
+  "next": "Trace group9/1 enable producers and the concrete state8/state2 register operations; retain delivery and mask-change conditions.",
+  "scope": "Offline transition metadata and local calls only. Other writers, callback completion, hardware address aliases and acceptedCC writes remain unresolved."
+}

@@ -1,0 +1,32 @@
+
+/tmp/tmpni5tl4gp/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001f630 <.data+0x1f630>:
+0001f630: 364100   entry        a1, 0x20 ; Capstone
+   1f633:	0c46      	movi.n	a6, 4
+   1f635:	0c05      	movi.n	a5, 0
+   1f637:	26131c        	beqi	a3, 1, 0x1f657
+   1f63a:	263319        	beqi	a3, 3, 0x1f657
+   1f63d:	52420c        	s8i	a5, a2, 12
+   1f640:	920204        	l8ui	a9, a2, 4
+   1f643:	0c58      	movi.n	a8, 5
+   1f645:	0c73      	movi.n	a3, 7
+   1f647:	0c64      	movi.n	a4, 6
+   1f649:	42420d        	s8i	a4, a2, 13
+   1f64c:	32420e        	s8i	a3, a2, 14
+   1f64f:	908683        	moveqz	a8, a6, a9
+   1f652:	82420f        	s8i	a8, a2, 15
+0001f655: 1df0     retw.n        ; Capstone
+   1f657:	52420c        	s8i	a5, a2, 12
+   1f65a:	624210        	s8i	a6, a2, 16
+   1f65d:	0c3a      	movi.n	a10, 3
+   1f65f:	0c2b      	movi.n	a11, 2
+   1f661:	0c1c      	movi.n	a12, 1
+   1f663:	c2420d        	s8i	a12, a2, 13
+   1f666:	b2420e        	s8i	a11, a2, 14
+   1f669:	a2420f        	s8i	a10, a2, 15
+0001f66c: 1df0     retw.n        ; Capstone
+	...

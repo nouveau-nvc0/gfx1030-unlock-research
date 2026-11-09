@@ -1,0 +1,53 @@
+
+/tmp/tmpdnbb6mxy/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000057bc <.data+0x57bc>:
+000057bc: 368100   entry        a1, 0x40 ; Capstone
+    57bf:	912fdf        	l32r	a9, 0xffffd47c (0x5ffedae4) ; inferred DRAM map 0x5ffec000
+    57c2:	82093d        	l8ui	a8, a9, 61
+    57c5:	bcb8      	beqz.n	a8, 0x5804
+    57c7:	26323d        	beqi	a2, 3, 0x5808
+    57ca:	262242        	beqi	a2, 2, 0x5810
+    57cd:	261247        	beqi	a2, 1, 0x5818
+    57d0:	a2190c        	l16ui	a10, a9, 24
+    57d3:	0c03      	movi.n	a3, 0
+    57d5:	203a83        	moveqz	a3, a10, a2
+    57d8:	30a3a0        	addx4	a10, a3, a3
+    57db:	a0a0f4        	extui	a10, a10, 0, 16
+000057de: e5a5ff   call8        . -0x5a0 ; Capstone ; target=0x523c
+    57e1:	325104        	s16i	a3, a1, 8
+    57e4:	b911      	s32i.n	a11, a1, 4
+    57e6:	a0c0f5        	extui	a12, a10, 16, 16
+    57e9:	c25106        	s16i	a12, a1, 12
+000057ec: 030101   lsi          f0, a1, 4 ; Capstone
+    57ef:	a0b0f4        	extui	a11, a10, 0, 16
+    57f2:	b25105        	s16i	a11, a1, 10
+000057f5: 034104   ssi          f0, a1, 0x10 ; Capstone
+    57f8:	8ba1      	addi.n	a10, a1, 8
+    57fa:	c82a      	l32i.n	a12, a10, 8
+    57fc:	b81a      	l32i.n	a11, a10, 4
+    57fe:	a22a00        	l32i	a10, a10, 0
+00005801: a50c00   call8        . +0xcc ; Capstone ; target=0x58cc
+00005804: 1df0     retw.n        ; Capstone
+00005806: 000032   orbc         b0, b0, b0 ; Capstone
+    5809:	191b      	s32i.n	a1, a11, 4
+    580b:	46f2ff        	j	0x57d8
+0000580e: 000032   orbc         b0, b0, b0 ; Capstone
+    5811:	1918      	s32i.n	a1, a8, 4
+    5813:	46f0ff        	j	0x57d8
+00005816: 000032   orbc         b0, b0, b0 ; Capstone
+    5819:	1915      	s32i.n	a1, a5, 4
+    581b:	46eeff        	j	0x57d8
+	...
+
+; Alternate branch-target decode
+    5808:	32191b        	l16ui	a3, a9, 54
+
+; Alternate branch-target decode
+    5810:	321918        	l16ui	a3, a9, 48
+
+; Alternate branch-target decode
+    5818:	321915        	l16ui	a3, a9, 42

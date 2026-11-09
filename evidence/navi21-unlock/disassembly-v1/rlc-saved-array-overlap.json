@@ -1,0 +1,857 @@
+{
+  "scope": "Address calculation from byte-checked listings; seven caller words retain prior manual provenance in rlc-srm-operation-followup.txt. No hardware execution or arbitrary-index reachability proof.",
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "checked": {
+    "06944": {
+      "instruction_bytes_checked": 480,
+      "listing_sha256": "0a3a0fb69d32d65c9c27a40bad072dabd879ad206e631377478907f44fba9286"
+    },
+    "074c4": {
+      "instruction_bytes_checked": 197,
+      "listing_sha256": "a24910f38e8336069d539dd6bfce2d2f4cd19b7142ee5d95062fd8cc504a42e9"
+    }
+  },
+  "known_callers": [
+    {
+      "pc": "2f15",
+      "first_word": "0x1",
+      "second_word": "0x0",
+      "selector_enable": 0,
+      "slot": 31,
+      "overlaps": []
+    },
+    {
+      "pc": "36ca",
+      "first_word": "0x1",
+      "second_word": "0x1",
+      "selector_enable": 0,
+      "slot": 31,
+      "overlaps": []
+    },
+    {
+      "pc": "3982",
+      "first_word": "0x0",
+      "second_word": "0x1000001",
+      "selector_enable": 0,
+      "slot": 31,
+      "overlaps": []
+    },
+    {
+      "pc": "3b32",
+      "first_word": "0x1",
+      "second_word": "0x1",
+      "selector_enable": 0,
+      "slot": 31,
+      "overlaps": []
+    },
+    {
+      "pc": "3c0e",
+      "first_word": "0x0",
+      "second_word": "0x0",
+      "selector_enable": 0,
+      "slot": 31,
+      "overlaps": []
+    },
+    {
+      "pc": "70a2",
+      "first_word": "0x0",
+      "second_word": "0x0",
+      "selector_enable": 0,
+      "slot": 31,
+      "overlaps": []
+    },
+    {
+      "pc": "7142",
+      "first_word": "0x1",
+      "second_word": "0x0",
+      "selector_enable": 0,
+      "slot": 31,
+      "overlaps": []
+    }
+  ],
+  "modeled_custom_slot_overlaps": [
+    {
+      "slot": 39,
+      "overlaps": [
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfc4",
+          "offset": "0x20c"
+        },
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfc8",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 40,
+      "overlaps": [
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfcc",
+          "offset": "0x20c"
+        },
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfd0",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 41,
+      "overlaps": [
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfd4",
+          "offset": "0x20c"
+        },
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfd8",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 42,
+      "overlaps": [
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfdc",
+          "offset": "0x20c"
+        },
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfe0",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 43,
+      "overlaps": [
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedfe4",
+          "offset": "0x20c"
+        },
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedfe8",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 44,
+      "overlaps": [
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedfec",
+          "offset": "0x20c"
+        },
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedff0",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 45,
+      "overlaps": [
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedff4",
+          "offset": "0x20c"
+        },
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedff8",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 46,
+      "overlaps": [
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedffc",
+          "offset": "0x20c"
+        },
+        {
+          "region": "cc_rb",
+          "address": "0x5ffee000",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 47,
+      "overlaps": [
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee004",
+          "offset": "0x20c"
+        },
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee008",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 48,
+      "overlaps": [
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee00c",
+          "offset": "0x20c"
+        },
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee010",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 49,
+      "overlaps": [
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee014",
+          "offset": "0x20c"
+        },
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee018",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 50,
+      "overlaps": [
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee01c",
+          "offset": "0x20c"
+        },
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee020",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 51,
+      "overlaps": [
+        {
+          "region": "user_rb",
+          "address": "0x5ffee024",
+          "offset": "0x20c"
+        },
+        {
+          "region": "user_rb",
+          "address": "0x5ffee028",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 52,
+      "overlaps": [
+        {
+          "region": "user_rb",
+          "address": "0x5ffee02c",
+          "offset": "0x20c"
+        },
+        {
+          "region": "user_rb",
+          "address": "0x5ffee030",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 53,
+      "overlaps": [
+        {
+          "region": "user_rb",
+          "address": "0x5ffee034",
+          "offset": "0x20c"
+        },
+        {
+          "region": "user_rb",
+          "address": "0x5ffee038",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 54,
+      "overlaps": [
+        {
+          "region": "user_rb",
+          "address": "0x5ffee03c",
+          "offset": "0x20c"
+        },
+        {
+          "region": "user_rb",
+          "address": "0x5ffee040",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 71,
+      "overlaps": [
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfc4",
+          "offset": "0x10c"
+        },
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfc8",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 72,
+      "overlaps": [
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfcc",
+          "offset": "0x10c"
+        },
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfd0",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 73,
+      "overlaps": [
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfd4",
+          "offset": "0x10c"
+        },
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfd8",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 74,
+      "overlaps": [
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfdc",
+          "offset": "0x10c"
+        },
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfe0",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 75,
+      "overlaps": [
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedfe4",
+          "offset": "0x10c"
+        },
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedfe8",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 76,
+      "overlaps": [
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedfec",
+          "offset": "0x10c"
+        },
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedff0",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 77,
+      "overlaps": [
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedff4",
+          "offset": "0x10c"
+        },
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedff8",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 78,
+      "overlaps": [
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedffc",
+          "offset": "0x10c"
+        },
+        {
+          "region": "cc_rb",
+          "address": "0x5ffee000",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 79,
+      "overlaps": [
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee004",
+          "offset": "0x10c"
+        },
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee008",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 80,
+      "overlaps": [
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee00c",
+          "offset": "0x10c"
+        },
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee010",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 81,
+      "overlaps": [
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee014",
+          "offset": "0x10c"
+        },
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee018",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 82,
+      "overlaps": [
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee01c",
+          "offset": "0x10c"
+        },
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee020",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 83,
+      "overlaps": [
+        {
+          "region": "user_rb",
+          "address": "0x5ffee024",
+          "offset": "0x10c"
+        },
+        {
+          "region": "user_rb",
+          "address": "0x5ffee028",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 84,
+      "overlaps": [
+        {
+          "region": "user_rb",
+          "address": "0x5ffee02c",
+          "offset": "0x10c"
+        },
+        {
+          "region": "user_rb",
+          "address": "0x5ffee030",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 85,
+      "overlaps": [
+        {
+          "region": "user_rb",
+          "address": "0x5ffee034",
+          "offset": "0x10c"
+        },
+        {
+          "region": "user_rb",
+          "address": "0x5ffee038",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 86,
+      "overlaps": [
+        {
+          "region": "user_rb",
+          "address": "0x5ffee03c",
+          "offset": "0x10c"
+        },
+        {
+          "region": "user_rb",
+          "address": "0x5ffee040",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 103,
+      "overlaps": [
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfc4",
+          "offset": "0xc"
+        },
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfc8",
+          "offset": "0x10"
+        }
+      ]
+    },
+    {
+      "slot": 104,
+      "overlaps": [
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfcc",
+          "offset": "0xc"
+        },
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfd0",
+          "offset": "0x10"
+        }
+      ]
+    },
+    {
+      "slot": 105,
+      "overlaps": [
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfd4",
+          "offset": "0xc"
+        },
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfd8",
+          "offset": "0x10"
+        }
+      ]
+    },
+    {
+      "slot": 106,
+      "overlaps": [
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfdc",
+          "offset": "0xc"
+        },
+        {
+          "region": "cc_wgp",
+          "address": "0x5ffedfe0",
+          "offset": "0x10"
+        }
+      ]
+    },
+    {
+      "slot": 107,
+      "overlaps": [
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedfe4",
+          "offset": "0xc"
+        },
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedfe8",
+          "offset": "0x10"
+        }
+      ]
+    },
+    {
+      "slot": 108,
+      "overlaps": [
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedfec",
+          "offset": "0xc"
+        },
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedff0",
+          "offset": "0x10"
+        }
+      ]
+    },
+    {
+      "slot": 109,
+      "overlaps": [
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedff4",
+          "offset": "0xc"
+        },
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedff8",
+          "offset": "0x10"
+        }
+      ]
+    },
+    {
+      "slot": 110,
+      "overlaps": [
+        {
+          "region": "cc_rb",
+          "address": "0x5ffedffc",
+          "offset": "0xc"
+        },
+        {
+          "region": "cc_rb",
+          "address": "0x5ffee000",
+          "offset": "0x10"
+        }
+      ]
+    },
+    {
+      "slot": 111,
+      "overlaps": [
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee004",
+          "offset": "0xc"
+        },
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee008",
+          "offset": "0x10"
+        }
+      ]
+    },
+    {
+      "slot": 112,
+      "overlaps": [
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee00c",
+          "offset": "0xc"
+        },
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee010",
+          "offset": "0x10"
+        }
+      ]
+    },
+    {
+      "slot": 113,
+      "overlaps": [
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee014",
+          "offset": "0xc"
+        },
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee018",
+          "offset": "0x10"
+        }
+      ]
+    },
+    {
+      "slot": 114,
+      "overlaps": [
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee01c",
+          "offset": "0xc"
+        },
+        {
+          "region": "user_wgp",
+          "address": "0x5ffee020",
+          "offset": "0x10"
+        }
+      ]
+    },
+    {
+      "slot": 115,
+      "overlaps": [
+        {
+          "region": "user_rb",
+          "address": "0x5ffee024",
+          "offset": "0xc"
+        },
+        {
+          "region": "user_rb",
+          "address": "0x5ffee028",
+          "offset": "0x10"
+        }
+      ]
+    },
+    {
+      "slot": 116,
+      "overlaps": [
+        {
+          "region": "user_rb",
+          "address": "0x5ffee02c",
+          "offset": "0xc"
+        },
+        {
+          "region": "user_rb",
+          "address": "0x5ffee030",
+          "offset": "0x10"
+        }
+      ]
+    },
+    {
+      "slot": 117,
+      "overlaps": [
+        {
+          "region": "user_rb",
+          "address": "0x5ffee034",
+          "offset": "0xc"
+        },
+        {
+          "region": "user_rb",
+          "address": "0x5ffee038",
+          "offset": "0x10"
+        }
+      ]
+    },
+    {
+      "slot": 118,
+      "overlaps": [
+        {
+          "region": "user_rb",
+          "address": "0x5ffee03c",
+          "offset": "0xc"
+        },
+        {
+          "region": "user_rb",
+          "address": "0x5ffee040",
+          "offset": "0x10"
+        }
+      ]
+    },
+    {
+      "slot": 184,
+      "overlaps": [
+        {
+          "region": "restore_gate",
+          "address": "0x5ffee450",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 216,
+      "overlaps": [
+        {
+          "region": "restore_gate",
+          "address": "0x5ffee450",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 248,
+      "overlaps": [
+        {
+          "region": "restore_gate",
+          "address": "0x5ffee450",
+          "offset": "0x10"
+        }
+      ]
+    }
+  ],
+  "gate_overlaps": [
+    {
+      "slot": 184,
+      "overlaps": [
+        {
+          "region": "restore_gate",
+          "address": "0x5ffee450",
+          "offset": "0x210"
+        }
+      ]
+    },
+    {
+      "slot": 216,
+      "overlaps": [
+        {
+          "region": "restore_gate",
+          "address": "0x5ffee450",
+          "offset": "0x110"
+        }
+      ]
+    },
+    {
+      "slot": 248,
+      "overlaps": [
+        {
+          "region": "restore_gate",
+          "address": "0x5ffee450",
+          "offset": "0x10"
+        }
+      ]
+    }
+  ],
+  "limitation": "Stores are hardware register snapshots conditional on source status bit7 and operation=0. Overlap is not control of arbitrary values or proof these custom slots occur."
+}

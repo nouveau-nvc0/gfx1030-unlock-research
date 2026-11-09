@@ -1,0 +1,39 @@
+
+/tmp/tmpz77aaiso/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000062b0 <.data+0x62b0>:
+000062b0: 364100   entry        a1, 0x20 ; Capstone
+    62b3:	203004        	extui	a3, a2, 0, 1
+    62b6:	0c05      	movi.n	a5, 0
+    62b8:	6180dc        	l32r	a6, 0xffffd4b8 (0x5ffee5c0) ; inferred DRAM map 0x5ffec000
+    62bb:	4c08      	movi.n	a8, 64
+    62bd:	0c24      	movi.n	a4, 2
+    62bf:	404210        	and	a4, a2, a4
+    62c2:	8986      	s32i.n	a8, a6, 32
+    62c4:	89b6      	s32i.n	a8, a6, 44
+    62c6:	5996      	s32i.n	a5, a6, 36
+    62c8:	59a6      	s32i.n	a5, a6, 40
+    62ca:	59d6      	s32i.n	a5, a6, 52
+    62cc:	324600        	s8i	a3, a6, 0
+    62cf:	0c15      	movi.n	a5, 1
+    62d1:	404593        	movnez	a4, a5, a4
+    62d4:	424601        	s8i	a4, a6, 1
+    62d7:	176203        	bbci	a2, 1, 0x62de
+    62da:	98c6      	l32i.n	a9, a6, 48
+    62dc:	8c89      	beqz.n	a9, 0x62e8
+    62de:	a816      	l32i.n	a10, a6, 4
+    62e0:	b826      	l32i.n	a11, a6, 8
+    62e2:	b956      	s32i.n	a11, a6, 20
+    62e4:	a946      	s32i.n	a10, a6, 16
+000062e6: 1df0     retw.n        ; Capstone
+    62e8:	c1d9db        	l32r	a12, 0xffffd24c (0x100000) ; inferred DRAM map 0x5ffec000
+    62eb:	d816      	l32i.n	a13, a6, 4
+    62ed:	e826      	l32i.n	a14, a6, 8
+    62ef:	e956      	s32i.n	a14, a6, 20
+    62f1:	d946      	s32i.n	a13, a6, 16
+    62f3:	c9c6      	s32i.n	a12, a6, 48
+000062f5: 1df0     retw.n        ; Capstone
+	...

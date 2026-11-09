@@ -1,0 +1,20 @@
+
+/tmp/tmpa25w5qaa/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001dd0 <.data+0x1dd0>:
+00001dd0: 364100   entry        a1, 0x20 ; Capstone
+    1dd3:	406200        	rsil	a4, 2
+    1dd6:	ad02      	mov.n	a10, a2
+00001dd8: 250300   call8        . +0x34 ; Capstone ; target=0x1e0c
+    1ddb:	917ffb        	l32r	a9, 0xbd8 (0x69a0)
+    1dde:	208074        	extui	a8, a2, 0, 8
+    1de1:	808890        	addx2	a8, a8, a8
+    1de4:	9088a0        	addx4	a8, a8, a9
+    1de7:	822821        	l32i	a8, a8, 132
+    1dea:	c02000        	memw
+    1ded:	3908      	s32i.n	a3, a8, 0
+    1def:	40e613        	wsr.ps	a4
+00001df2: 1df0     retw.n        ; Capstone

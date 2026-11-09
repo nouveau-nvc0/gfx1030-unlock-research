@@ -1,0 +1,13 @@
+
+/tmp/tmp_1msamat/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002b868 <.data+0x2b868>:
+0002b868: 364100   entry        a1, 0x20 ; Capstone
+   2b86b:	316aa1        	l32r	a3, 0x13e14 (0xae20)
+0002b86e: 5002fa   wfr          f0, a2 ; Capstone
+0002b871: 03437f   ssi          f0, a3, 0x1fc ; Capstone
+0002b874: 1df0     retw.n        ; Capstone
+	...

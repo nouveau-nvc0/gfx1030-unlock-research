@@ -1,0 +1,59 @@
+
+/tmp/tmpo2dvm0t3/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002fc5c <.data+0x2fc5c>:
+0002fc5c: 366100   entry        a1, 0x30 ; Capstone
+   2fc5f:	31ea90        	l32r	a3, 0x14008 (0x1afbe00)
+   2fc62:	c02000        	memw
+   2fc65:	22239b        	l32i	a2, a3, 0x26c
+   2fc68:	7cea      	movi.n	a10, -2
+   2fc6a:	a0a210        	and	a10, a2, a10
+   2fc6d:	c02000        	memw
+   2fc70:	a2639b        	s32i	a10, a3, 0x26c
+   2fc73:	92a063        	movi	a9, 99
+   2fc76:	c02000        	memw
+   2fc79:	926380        	s32i	a9, a3, 0x200
+   2fc7c:	c02000        	memw
+   2fc7f:	522381        	l32i	a5, a3, 0x204
+   2fc82:	82ac00        	movi	a8, 0xfffffc00
+   2fc85:	805510        	and	a5, a5, a8
+   2fc88:	0c88      	movi.n	a8, 8
+   2fc8a:	805520        	or	a5, a5, a8
+   2fc8d:	c02000        	memw
+   2fc90:	526381        	s32i	a5, a3, 0x204
+   2fc93:	c02000        	memw
+   2fc96:	3c0f      	movi.n	a15, 48
+   2fc98:	42239f        	l32i	a4, a3, 0x27c
+   2fc9b:	4901      	s32i.n	a4, a1, 0
+   2fc9d:	f25100        	s16i	a15, a1, 0
+   2fca0:	e801      	l32i.n	a14, a1, 0
+   2fca2:	c02000        	memw
+   2fca5:	e2639f        	s32i	a14, a3, 0x27c
+   2fca8:	c02000        	memw
+   2fcab:	d22385        	l32i	a13, a3, 0x214
+   2fcae:	c2a1ae        	movi	a12, 0x1ae
+   2fcb1:	d911      	s32i.n	a13, a1, 4
+   2fcb3:	c25102        	s16i	a12, a1, 4
+   2fcb6:	b811      	l32i.n	a11, a1, 4
+   2fcb8:	c02000        	memw
+   2fcbb:	b26385        	s32i	a11, a3, 0x214
+   2fcbe:	c02000        	memw
+   2fcc1:	92a23a        	movi	a9, 0x23a
+   2fcc4:	a22386        	l32i	a10, a3, 0x218
+   2fcc7:	a921      	s32i.n	a10, a1, 8
+   2fcc9:	925104        	s16i	a9, a1, 8
+   2fccc:	8821      	l32i.n	a8, a1, 8
+   2fcce:	c02000        	memw
+   2fcd1:	826386        	s32i	a8, a3, 0x218
+   2fcd4:	52a24f        	movi	a5, 0x24f
+   2fcd7:	c02000        	memw
+   2fcda:	52638c        	s32i	a5, a3, 0x230
+   2fcdd:	0c14      	movi.n	a4, 1
+   2fcdf:	402220        	or	a2, a2, a4
+   2fce2:	c02000        	memw
+   2fce5:	22639b        	s32i	a2, a3, 0x26c
+0002fce8: 1df0     retw.n        ; Capstone
+	...

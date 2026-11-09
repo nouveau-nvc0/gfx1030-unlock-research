@@ -1,0 +1,12 @@
+
+/tmp/tmpjwf64ej3/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001e1fc <.data+0x1e1fc>:
+0001e1fc: 364100   entry        a1, 0x20 ; Capstone
+   1e1ff:	ad02      	mov.n	a10, a2
+0001e201: a5f5ff   call8        . -0xa4 ; Capstone ; target=0x1e15c
+0001e204: 1df0     retw.n        ; Capstone
+	...

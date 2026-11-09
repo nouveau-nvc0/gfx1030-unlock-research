@@ -1,0 +1,53 @@
+
+/tmp/tmp6dft6r1b/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000023b4 <.data+0x23b4>:
+000023b4: 364100   entry        a1, 0x20 ; Capstone
+    23b7:	5145fa        	l32r	a5, 0xccc (0x7ca0)
+    23ba:	306200        	rsil	a3, 2
+    23bd:	42251c        	l32i	a4, a5, 112
+    23c0:	ad02      	mov.n	a10, a2
+    23c2:	b2042b        	l8ui	a11, a4, 43
+000023c5: a5f0ff   call8        . -0xf4 ; Capstone ; target=0x22d0
+    23c8:	82020b        	l8ui	a8, a2, 11
+    23cb:	076855        	bbci	a8, 0, 0x2424
+    23ce:	0c1b      	movi.n	a11, 1
+    23d0:	9802      	l32i.n	a9, a2, 0
+    23d2:	a2020a        	l8ui	a10, a2, 10
+    23d5:	a24429        	s8i	a10, a4, 41
+    23d8:	a2442a        	s8i	a10, a4, 42
+    23db:	99d4      	s32i.n	a9, a4, 52
+    23dd:	ad04      	mov.n	a10, a4
+000023df: 65edff   call8        . -0x128 ; Capstone ; target=0x22b4
+    23e2:	d1eaf9        	l32r	a13, 0xb8c (0x31ffe00)
+    23e5:	c02000        	memw
+    23e8:	913afa        	l32r	a9, 0xcd0 (0x7cb0)
+    23eb:	82020a        	l8ui	a8, a2, 10
+    23ee:	d22dfc        	l32i	a13, a13, 0x3f0
+    23f1:	d26413        	s32i	a13, a4, 76
+    23f4:	c2253c        	l32i	a12, a5, 240
+    23f7:	a2253d        	l32i	a10, a5, 244
+    23fa:	9a88      	add.n	a8, a8, a9
+    23fc:	a26415        	s32i	a10, a4, 84
+    23ff:	c26414        	s32i	a12, a4, 80
+    2402:	1bbc      	addi.n	a11, a12, 1
+    2404:	b2653c        	s32i	a11, a5, 240
+    2407:	c7bb01        	bgeu	a11, a12, 0x240c
+    240a:	1baa      	addi.n	a10, a10, 1
+    240c:	a2653d        	s32i	a10, a5, 244
+    240f:	f20880        	l8ui	a15, a8, 128
+    2412:	1bff      	addi.n	a15, a15, 1
+    2414:	f24880        	s8i	a15, a8, 128
+    2417:	e2058c        	l8ui	a14, a5, 140
+    241a:	1bee      	addi.n	a14, a14, 1
+    241c:	e2458c        	s8i	a14, a5, 140
+    241f:	30e613        	wsr.ps	a3
+00002422: 1df0     retw.n        ; Capstone
+    2424:	30e613        	wsr.ps	a3
+00002427: 00f513   wsr.misc1    a0 ; verified QEMU encoding
+    242a:	457800        	call0	0x2bb0
+0000242d: 1df0     retw.n        ; Capstone
+	...

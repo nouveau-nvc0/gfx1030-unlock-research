@@ -1,0 +1,44 @@
+
+/tmp/tmp2315kuet/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002b244 <.data+0x2b244>:
+0002b244: 366100   entry        a1, 0x30 ; Capstone
+   2b247:	a20205        	l8ui	a10, a2, 5
+0002b24a: 5003fa   wfr          f0, a3 ; Capstone
+0002b24d: 034100   ssi          f0, a1, 0 ; Capstone
+0002b250: 25bd02   call8        . +0x2bd4 ; Capstone ; target=0x2de24
+   2b253:	820201        	l8ui	a8, a2, 1
+   2b256:	56b804        	bnez	a8, 0x2b2a5
+   2b259:	380a      	l32i.n	a3, a10, 0
+   2b25b:	0c09      	movi.n	a9, 0
+   2b25d:	bcf3      	beqz.n	a3, 0x2b2a0
+0002b25f: 33020a   lsi          f3, a2, 0x28 ; Capstone
+0002b262: 23020b   lsi          f2, a2, 0x2c ; Capstone
+0002b265: 30121a   sub.s        f1, f2, f3 ; Capstone
+0002b268: 0043da   ufloat.s     f4, a3, 0 ; Capstone
+0002b26b: 334102   ssi          f3, a1, 8 ; Capstone
+0002b26e: 40a4fa   rfr          a10, f4 ; Capstone
+0002b271: 134101   ssi          f1, a1, 4 ; Capstone
+0002b274: 65b20d   call8        . +0xdb28 ; Capstone ; target=0x38d9c
+0002b277: 030100   lsi          f0, a1, 0 ; Capstone
+0002b27a: 130102   lsi          f1, a1, 8 ; Capstone
+   2b27d:	92a000        	movi	a9, 0
+0002b280: 506afa   wfr          f6, a10 ; Capstone
+0002b283: 530101   lsi          f5, a1, 4 ; Capstone
+0002b286: 60452a   mul.s        f4, f5, f6 ; Capstone
+0002b289: 769310   loopnez      a3, . +0x14 ; Capstone
+0002b28c: 0089da   ufloat.s     f8, a9, 0 ; Capstone
+0002b28f: 0071fa   mov.s        f7, f1 ; Capstone
+0002b292: 40784a   madd.s       f7, f8, f4 ; Capstone
+0002b295: 70006b   ole.s        b0, f0, f7 ; Capstone
+0002b298: 761004   bt           b0, . +8 ; Capstone
+   2b29b:	1b99      	addi.n	a9, a9, 1
+   2b29d:	c6ffff        	j	0x2b2a0
+   2b2a0:	0b43      	addi.n	a4, a3, -1
+0002b2a2: 404963   minu         a4, a9, a4 ; Capstone
+   2b2a5:	42425d        	s8i	a4, a2, 93
+0002b2a8: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,27 @@
+
+/tmp/tmpv0rs2p2_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001ea2c <.data+0x1ea2c>:
+0001ea2c: 364100   entry        a1, 0x20 ; Capstone
+   1ea2f:	0caa      	movi.n	a10, 10
+0001ea31: e5b4e3   call8        . -0x1c4b0 ; Capstone ; target=0x2580
+   1ea34:	213dd1        	l32r	a2, 0x12f28 (0xff8c)
+   1ea37:	0c4b      	movi.n	a11, 4
+   1ea39:	0c0c      	movi.n	a12, 0
+   1ea3b:	ad02      	mov.n	a10, a2
+0001ea3d: 25110a   call8        . +0xa114 ; Capstone ; target=0x28b50
+   1ea40:	ad02      	mov.n	a10, a2
+   1ea42:	0c5b      	movi.n	a11, 5
+   1ea44:	0c0c      	movi.n	a12, 0
+0001ea46: a5100a   call8        . +0xa10c ; Capstone ; target=0x28b50
+   1ea49:	0c08      	movi.n	a8, 0
+   1ea4b:	9104d1        	l32r	a9, 0x12e5c (0x69a0)
+   1ea4e:	c02000        	memw
+   1ea51:	0caa      	movi.n	a10, 10
+   1ea53:	8929      	s32i.n	a8, a9, 8
+0001ea55: e5a1e3   call8        . -0x1c5e0 ; Capstone ; target=0x2474
+0001ea58: 1df0     retw.n        ; Capstone
+	...

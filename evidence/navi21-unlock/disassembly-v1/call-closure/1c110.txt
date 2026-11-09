@@ -1,0 +1,56 @@
+
+/tmp/tmp1w1b16kw/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001c110 <.data+0x1c110>:
+0001c110: 36c100   entry        a1, 0x60 ; Capstone
+   1c113:	ad02      	mov.n	a10, a2
+0001c115: a5fae5   call8        . -0x1a054 ; Capstone ; target=0x20c0
+   1c118:	0c0b      	movi.n	a11, 0
+   1c11a:	0c03      	movi.n	a3, 0
+   1c11c:	e2a07f        	movi	a14, 127
+   1c11f:	6d01      	mov.n	a6, a1
+   1c121:	52c110        	addi	a5, a1, 16
+   1c124:	42c120        	addi	a4, a1, 32
+   1c127:	0c0f      	movi.n	a15, 0
+   1c129:	c167db        	l32r	a12, 0x12ec8 (0x7684)
+   1c12c:	72a001        	movi	a7, 1
+   1c12f:	82a004        	movi	a8, 4
+   1c132:	d20c7c        	l8ui	a13, a12, 124
+0001c135: 76a826   loopgtz      a8, . +0x2a ; Capstone
+   1c138:	000b40        	ssr	a11
+   1c13b:	a09091        	srl	a9, a10
+   1c13e:	076919        	bbci	a9, 0, 0x1c15b
+   1c141:	820c80        	l8ui	a8, a12, 128
+   1c144:	6a93      	add.n	a9, a3, a6
+   1c146:	e71811        	beq	a8, a14, 0x1c15b
+   1c149:	4083a0        	addx4	a8, a3, a4
+   1c14c:	f24900        	s8i	a15, a9, 0
+   1c14f:	b908      	s32i.n	a11, a8, 0
+   1c151:	5083a0        	addx4	a8, a3, a5
+   1c154:	d908      	s32i.n	a13, a8, 0
+   1c156:	1b33      	addi.n	a3, a3, 1
+   1c158:	303074        	extui	a3, a3, 0, 8
+   1c15b:	1bbb      	addi.n	a11, a11, 1
+   1c15d:	1bcc      	addi.n	a12, a12, 1
+   1c15f:	a2c120        	addi	a10, a1, 32
+   1c162:	bd01      	mov.n	a11, a1
+   1c164:	c2c110        	addi	a12, a1, 16
+   1c167:	d2c130        	addi	a13, a1, 48
+   1c16a:	ed03      	mov.n	a14, a3
+0001c16c: e5edff   call8        . -0x120 ; Capstone ; target=0x1c04c
+   1c16f:	92cafe        	addi	a9, a10, -2
+   1c172:	a2a0ff        	movi	a10, 255
+   1c175:	bd0a      	mov.n	a11, a10
+   1c177:	90b783        	moveqz	a11, a7, a9
+   1c17a:	92c130        	addi	a9, a1, 48
+0001c17d: 769308   loopnez      a3, . +0xc ; Capstone
+   1c180:	c809      	l32i.n	a12, a9, 0
+   1c182:	4b99      	addi.n	a9, a9, 4
+   1c184:	0bcc      	addi.n	a12, a12, -1
+   1c186:	c0ba93        	movnez	a11, a10, a12
+   1c189:	ad02      	mov.n	a10, a2
+0001c18b: 25f1e5   call8        . -0x1a0ec ; Capstone ; target=0x209c
+0001c18e: 1df0     retw.n        ; Capstone

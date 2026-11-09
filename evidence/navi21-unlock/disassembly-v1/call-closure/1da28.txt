@@ -1,0 +1,21 @@
+
+/tmp/tmpk_dlu6dh/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001da28 <.data+0x1da28>:
+0001da28: 364100   entry        a1, 0x20 ; Capstone
+   1da2b:	81ead5        	l32r	a8, 0x131d4 (0x3010e00)
+   1da2e:	c02000        	memw
+   1da31:	822846        	l32i	a8, a8, 0x118
+   1da34:	661812        	bnei	a8, 1, 0x1da4a
+   1da37:	213cd5        	l32r	a2, 0x12f28 (0xff8c)
+   1da3a:	0c3b      	movi.n	a11, 3
+   1da3c:	0c0c      	movi.n	a12, 0
+   1da3e:	ad02      	mov.n	a10, a2
+0001da40: e5100b   call8        . +0xb110 ; Capstone ; target=0x28b50
+   1da43:	ad02      	mov.n	a10, a2
+0001da45: 252e01   call8        . +0x12e4 ; Capstone ; target=0x1ed28
+0001da48: 1df0     retw.n        ; Capstone
+0001da4a: 1df0     retw.n        ; Capstone

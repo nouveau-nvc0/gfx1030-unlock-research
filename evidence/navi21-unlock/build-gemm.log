@@ -1,0 +1,17 @@
+/work/probe.hip:41:66: error: variable 'e' declared with deduced type 'auto' cannot appear in its own initializer
+   41 |       hipEvent_t s,e;HIP(hipEventCreate(&s));HIP(hipEventCreate(&e));
+      |                                                                  ^
+/work/probe.hip:43:78: error: variable 'e' declared with deduced type 'auto' cannot appear in its own initializer
+   43 |       for(int i=0;i<7;i++) {HIP(hipEventRecord(s));gemm();HIP(hipEventRecord(e));HIP(hipEventSynchronize(e));float ms;HIP(hipEventElapsedTime(&ms,s,e));times.push_back(ms);}
+      |                                                                              ^
+/work/probe.hip:43:106: error: variable 'e' declared with deduced type 'auto' cannot appear in its own initializer
+   43 |       for(int i=0;i<7;i++) {HIP(hipEventRecord(s));gemm();HIP(hipEventRecord(e));HIP(hipEventSynchronize(e));float ms;HIP(hipEventElapsedTime(&ms,s,e));times.push_back(ms);}
+      |                                                                                                          ^
+/work/probe.hip:43:149: error: variable 'e' declared with deduced type 'auto' cannot appear in its own initializer
+   43 |       for(int i=0;i<7;i++) {HIP(hipEventRecord(s));gemm();HIP(hipEventRecord(e));HIP(hipEventSynchronize(e));float ms;HIP(hipEventElapsedTime(&ms,s,e));times.push_back(ms);}
+      |                                                                                                                                                     ^
+/work/probe.hip:56:51: error: variable 'e' declared with deduced type 'auto' cannot appear in its own initializer
+   56 |       HIP(hipEventDestroy(s));HIP(hipEventDestroy(e));HIP(hipFree(a));HIP(hipFree(b));HIP(hipFree(c));
+      |                                                   ^
+5 errors generated when compiling for gfx1030.
+failed to execute:/opt/rocm/core-10.1/lib/llvm/bin/clang++  --offload-arch=gfx1030 --driver-mode=g++ --hip-link  -O2 -std=c++17 -stdlib=libc++ -nostdinc++ -isystem /opt/llvm/include/c++/v1 -x hip /work/probe.hip -lrocblas -lc++abi -o "/out/navi21-gemm-baseline"

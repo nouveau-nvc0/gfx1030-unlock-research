@@ -1,0 +1,17 @@
+
+/tmp/tmpwf1_rx4g/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000359e8 <.data+0x359e8>:
+000359e8: 364100   entry        a1, 0x20 ; Capstone
+   359eb:	ad02      	mov.n	a10, a2
+000359ed: 256dcc   call8        . -0x3392c ; Capstone ; target=0x20c0
+   359f0:	81b37a        	l32r	a8, 0x144bc (0xa5d8)
+   359f3:	0c1b      	movi.n	a11, 1
+   359f5:	a2687f        	s32i	a10, a8, 0x1fc
+   359f8:	ad02      	mov.n	a10, a2
+000359fa: 256acc   call8        . -0x3395c ; Capstone ; target=0x209c
+000359fd: 1df0     retw.n        ; Capstone
+	...

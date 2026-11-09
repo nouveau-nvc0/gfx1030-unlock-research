@@ -1,0 +1,30 @@
+Two internal SYS selectors leading to RLC setup/start
+
+Local dispatcher reads selector from[r4], withr4 holding packet pointer,
+and constructs r7=r4+38. Earlier validation/input handling remains a
+prerequisite; this is not a newly established externally callable interface.
+
+Selector1059: comparisons select range1031..106e. Subtraction gives28;
+TBB at e0f6 uses byte at e122, targete2a2, whose branch leadse9c2. That
+branch callsf0dc(r0=packet+38,r1=0), then joins e8e0. Thus the input triple
+used byf0dc comes directly from packet+38 in this internal case.
+
+Selector1070: subtraction106f gives1. Comparisons at e138..e162 select
+TBB e168; byte at e16d gives targete366, which branches toe9cc. This loads
+DWORD[packet+38] and calls17210. The previously decoded17210 wrapper then
+constructsffffffff/ffff/0 and callsf0dc withsecondarg1, subject to its
+conditional14070 status check. Both dispatcher cases assign result tor6
+at e8e0 before proceeding to ed74.
+
+This supplies explicit internal selection paths to base/startup code.
+It does not identify1059/1070 with Linux PSP ring command numbers. The
+translation from an outer command to this SYS packet is still missing,
+as are implementation details ofSVC7b/7c and the snapshot's changed data
+producer. Do not call the internal selector a host command without that
+translation. Actual execution and CC acceptance remain unobserved.
+
+Evidence: psp-rlc-dispatch-audit.json;50instructions and two byte-table
+entries checked by scripts/navi21-psp-rlc-dispatch-audit.py using existing
+Capstone environment. No hardware/firmware/driver/service changes.
+Next trace outer command translation orSVC implementation, keeping the
+saved-mask producer as a separate unsatisfied requirement.

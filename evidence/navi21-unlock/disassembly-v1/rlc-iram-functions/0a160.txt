@@ -1,0 +1,63 @@
+
+/tmp/tmpm5vhtbzu/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000a160 <.data+0xa160>:
+0000a160: 362100   entry        a1, 0x10 ; Capstone
+0000a163: 5012fa   wfr          f1, a2 ; Capstone
+0000a166: 5023fa   wfr          f2, a3 ; Capstone
+0000a169: 7032fa   div0.s       f3, f2 ; Capstone
+0000a16c: b042fa   nexp01.s     f4, f2 ; Capstone
+0000a16f: 3051fa   const.s      f5, 1 ; Capstone
+0000a172: 30546a   maddn.s      f5, f4, f3 ; Capstone
+0000a175: 0063fa   mov.s        f6, f3 ; Capstone
+0000a178: 0072fa   mov.s        f7, f2 ; Capstone
+0000a17b: b021fa   nexp01.s     f2, f1 ; Capstone
+0000a17e: 60656a   maddn.s      f6, f5, f6 ; Capstone
+0000a181: 3051fa   const.s      f5, 1 ; Capstone
+0000a184: 3000fa   const.s      f0, 0 ; Capstone
+0000a187: 6082fa   neg.s        f8, f2 ; Capstone
+0000a18a: 60546a   maddn.s      f5, f4, f6 ; Capstone
+0000a18d: 30086a   maddn.s      f0, f8, f3 ; Capstone
+0000a190: d071fa   mkdadj.s     f7, f1 ; Capstone
+0000a193: 60656a   maddn.s      f6, f5, f6 ; Capstone
+0000a196: 00846a   maddn.s      f8, f4, f0 ; Capstone
+0000a199: 3031fa   const.s      f3, 1 ; Capstone
+0000a19c: 60346a   maddn.s      f3, f4, f6 ; Capstone
+0000a19f: 60086a   maddn.s      f0, f8, f6 ; Capstone
+0000a1a2: 6022fa   neg.s        f2, f2 ; Capstone
+0000a1a5: 60636a   maddn.s      f6, f3, f6 ; Capstone
+0000a1a8: 00246a   maddn.s      f2, f4, f0 ; Capstone
+0000a1ab: f007fa   addexpm.s    f0, f7 ; Capstone
+0000a1ae: e067fa   addexp.s     f6, f7 ; Capstone
+0000a1b1: 60027a   divn.s       f0, f2, f6 ; Capstone
+0000a1b4: 4020fa   rfr          a2, f0 ; Capstone
+0000a1b7: 1df0     retw.n        ; Capstone
+    a1b9:	000000        	ill
+    a1bc:	008cd4        	extui	a8, a0, 12, 14
+    a1bf:	4a73      	add.n	a7, a3, a4
+    a1c1:	620300        	l8ui	a6, a3, 0
+    a1c4:	1b33      	addi.n	a3, a3, 1
+    a1c6:	624500        	s8i	a6, a5, 0
+    a1c9:	1b55      	addi.n	a5, a5, 1
+    a1cb:	7733f2        	bltu	a3, a7, 0xa1c1
+0000a1ce: 1df0     retw.n        ; Capstone
+    a1d0:	b674e9        	bltui	a4, 7, 0xa1bd
+    a1d3:	620300        	l8ui	a6, a3, 0
+    a1d6:	1b33      	addi.n	a3, a3, 1
+    a1d8:	0b44      	addi.n	a4, a4, -1
+    a1da:	624500        	s8i	a6, a5, 0
+    a1dd:	1b55      	addi.n	a5, a5, 1
+    a1df:	176524        	bbci	a5, 1, 0xa207
+    a1e2:	b664d7        	bltui	a4, 6, 0xa1bd
+    a1e5:	620300        	l8ui	a6, a3, 0
+    a1e8:	720301        	l8ui	a7, a3, 1
+    a1eb:	2b33      	addi.n	a3, a3, 2
+    a1ed:	42c4fe        	addi	a4, a4, -2
+    a1f0:	624500        	s8i	a6, a5, 0
+    a1f3:	724501        	s8i	a7, a5, 1
+    a1f6:	2b55      	addi.n	a5, a5, 2
+    a1f8:	c60200        	j	0xa207
+	...

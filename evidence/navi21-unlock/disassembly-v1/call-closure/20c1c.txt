@@ -1,0 +1,20 @@
+
+/tmp/tmpnzdlk7tu/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00020c1c <.data+0x20c1c>:
+00020c1c: 364100   entry        a1, 0x20 ; Capstone
+   20c1f:	411dca        	l32r	a4, 0x13494 (0xc080)
+   20c22:	3204cc        	l8ui	a3, a4, 204
+   20c25:	2204cd        	l8ui	a2, a4, 205
+   20c28:	302290        	addx2	a2, a2, a3
+   20c2b:	3180c8        	l32r	a3, 0x12e2c (0xbf54)
+00020c2e: 230444   lsi          f2, a4, 0x110 ; Capstone
+   20c31:	3022a0        	addx4	a2, a2, a3
+00020c34: 13027f   lsi          f1, a2, 0x1fc ; Capstone
+00020c37: 20012a   mul.s        f0, f1, f2 ; Capstone
+00020c3a: 4020fa   rfr          a2, f0 ; Capstone
+00020c3d: 1df0     retw.n        ; Capstone
+	...

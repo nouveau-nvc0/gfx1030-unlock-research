@@ -1,0 +1,63 @@
+SMU transfer program and RLC destination — offline,2026-11-09
+
+Result: templates12d80/12dc0/12df0 and controller accesses match PL330
+instruction/control layout. This materially narrows the concrete RLC transfer:
+fca0 uses incrementing source and fixed destination. It is not a contiguous
+140-byte register-range write. No nearby GPM/SRM RAM-port access follows
+merely from adding length to destination0123ed68.
+
+Independent PL330 matches to Linuxv6.12 drivers/dma/pl330.c:
+- BC00/BC01/BC02 are MOV SAR/CCR/DAR with little-endian immediate DWORD.
+- 20/22 encode counted loops;38/3c finite loop ends;04 load;08 store;00 end;
+  18 no-op. The three templates use this consistent instruction grammar.
+- CCR bit0 is source increment; bit14 destination increment. Descriptor
+  bytes12/13 supply those bits at204cc..204ed. They are1/0 forfca0.
+- Controller offsetsd00/d04/d08/d0c match status/command/instruction0/1.
+  SMU's base03270000 plus these offsets agrees with its01204 channel-status
+  polling region and20490 command issue. Instruction word a00000 with channel
+  fields matches the driver's DMAGO packaging. This is static structural
+  identification, not a measured hardware revision or execution result.
+
+Pinned140-byte reconstruction:
+209e8:20a22/20a25 suppliesfce8 to209d4, which sets descriptor source and length.
+Descriptor destination0123ed68, length8c, source-inc1/dest-inc0, channel0.
+2af90 first writes d0 to0123ed64, then submits descriptorfca0 and waits.
+2aea8 selects20490 for this size. Template12dc0 gets:
+  SAR=fce8;DAR=0123ed68;
+  CCR=043d10f5 for two64-byte transfers (16 DWORDs each);
+  CCR=04011005 for three4-byte transfers.
+A bounded interpreter of the observed program gives35 DWORD transfers from
+[fce8,fd74) to one fixed destination0123ed68. This is an offline consequence
+of software inputs and the identified instruction semantics. It neither
+observes live descriptor values nor simulates target register side effects.
+Internal port auto-increment and actual target-memory mapping remain unknown.
+
+The preceding d0 index-like write plus fixed data destination is consistent
+with a RAM index/data interface. Current GC10.3 header has no names for
+relative5b59/5b5a (host3ed64/3ed68). Comparative UMR GC11.0.3 record names5b59
+RLC_LX6_SCRATCH_ADDR with ADDR bits0..7; recorded inrlc-lx6-port-comparison.json.
+This suggests a concrete LX6-scratch mapping lead, not proof that Navi21 shares
+that name, width, data port or memory destination. Other generations reuse
+these offsets, so do not silently transfer the GC11 definition to Navi21.
+
+Source provenance now has a concrete producer:
+209e8 calls2b0fc at20a1f before assigning the transfer source. Under its local
+conditions2b0fc iterates16 times:2b183 stores to fce8+4*i from a state record
+loaded at2b180;2b19e/1a3/1a8 fillfd28/fd30/fd2c. Floating-point calculations
+and referenced state records precede these writes. This is runtime-produced
+data, not the allzero initial buffer. The companion float stores2b17d begin
+atfd74, just outside the140-byte transfer. Values of the other16 source words
+and all possible mutations are not closed by this observation.
+
+CC implications: concrete engine-to-RLC port traffic is now supported more
+precisely. A connection from indexd0/data0123ed68 to savedCC or gate5ffee452
+still requires memory mapping and control-flow evidence. No changedCC-mask
+producer, nonzero gate producer, or hardwareCC acceptance is established.
+Next prioritize LX6 scratch port/address correspondence and the receiving RLC
+consumer of this35-word runtime block, rather than another generic port scan.
+
+Reproduce: python3 scripts/navi21-smu-transfer-program-audit.py
+Receipt smu-transfer-program-audit.json:349 listing records bytechecked,
+reconstructed40-byte program, instruction-offset trace and35 address pairs.
+PL330 source stored in../sources/pl330.c.v6.12 with URL/SHA256 receipt.
+No device access or operational changes performed.

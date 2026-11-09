@@ -1,0 +1,55 @@
+
+/tmp/tmpkk2q245j/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00024b74 <.data+0x24b74>:
+00024b74: 364100   entry        a1, 0x20 ; Capstone
+   24b77:	3124bb        	l32r	a3, 0x13808 (0xc154)
+   24b7a:	ec32      	bnez.n	a2, 0x24ba1
+   24b7c:	0c8a      	movi.n	a10, 8
+00024b7e: 25a0dd   call8        . -0x225fc ; Capstone ; target=0x2580
+   24b81:	81a9b8        	l32r	a8, 0x12e28 (0x9c00)
+   24b84:	8228e2        	l32i	a8, a8, 0x388
+00024b87: 0008da   ufloat.s     f0, a8, 0 ; Capstone
+   24b8a:	a1cfb9        	l32r	a10, 0x132c8 (0x80000)
+00024b8d: 03432d   ssi          f0, a3, 0xb4 ; Capstone
+00024b90: a56300   call8        . +0x63c ; Capstone ; target=0x251cc
+   24b93:	dd0a      	mov.n	a13, a10
+   24b95:	a11bbb        	l32r	a10, 0x13804 (0xc1d4)
+   24b98:	c2232d        	l32i	a12, a3, 180
+   24b9b:	b2cac0        	addi	a11, a10, -64
+00024b9e: e56000   call8        . +0x610 ; Capstone ; target=0x251ac
+   24ba1:	a1c9b9        	l32r	a10, 0x132c8 (0x80000)
+00024ba4: 656200   call8        . +0x628 ; Capstone ; target=0x251cc
+   24ba7:	ac7a      	beqz.n	a10, 0x24bd2
+   24ba9:	0c14      	movi.n	a4, 1
+   24bab:	424380        	s8i	a4, a3, 128
+00024bae: e5ea0d   call8        . +0xdeb0 ; Capstone ; target=0x32a5c
+   24bb1:	acaa      	beqz.n	a10, 0x24bdf
+   24bb3:	a1fbb9        	l32r	a10, 0x133a0 (0x125f600)
+   24bb6:	c02000        	memw
+   24bb9:	922aee        	l32i	a9, a10, 0x3b8
+   24bbc:	409920        	or	a9, a9, a4
+   24bbf:	c02000        	memw
+   24bc2:	926aee        	s32i	a9, a10, 0x3b8
+   24bc5:	b111bb        	l32r	a11, 0x1380c (0x24aa0)
+   24bc8:	0c6a      	movi.n	a10, 6
+00024bca: a5ec13   call8        . +0x13ecc ; Capstone ; target=0x38a94
+   24bcd:	0c13      	movi.n	a3, 1
+   24bcf:	460000        	j	0x24bd4
+   24bd2:	0c03      	movi.n	a3, 0
+   24bd4:	cc32      	bnez.n	a2, 0x24bdb
+   24bd6:	0c8a      	movi.n	a10, 8
+00024bd8: a589dd   call8        . -0x22764 ; Capstone ; target=0x2474
+   24bdb:	2d03      	mov.n	a2, a3
+00024bdd: 1df0     retw.n        ; Capstone
+   24bdf:	0c0c      	movi.n	a12, 0
+   24be1:	0ceb      	movi.n	a11, 14
+   24be3:	d1b8b8        	l32r	a13, 0x12ec4 (0x300fe00)
+   24be6:	1c0a      	movi.n	a10, 16
+   24be8:	c02000        	memw
+   24beb:	d22d8a        	l32i	a13, a13, 0x228
+00024bee: e5a1dd   call8        . -0x225e0 ; Capstone ; target=0x260c
+   24bf1:	000000        	ill

@@ -1,0 +1,17 @@
+
+/tmp/tmptytvbm__/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00021d14 <.data+0x21d14>:
+00021d14: 364100   entry        a1, 0x20 ; Capstone
+   21d17:	9151c4        	l32r	a9, 0x12e5c (0x69a0)
+   21d1a:	920933        	l8ui	a9, a9, 51
+   21d1d:	0c78      	movi.n	a8, 7
+   21d1f:	0cfa      	movi.n	a10, 15
+   21d21:	90a883        	moveqz	a10, a8, a9
+00021d24: e5e8ff   call8        . -0x170 ; Capstone ; target=0x21bb4
+   21d27:	0c12      	movi.n	a2, 1
+00021d29: 1df0     retw.n        ; Capstone
+	...

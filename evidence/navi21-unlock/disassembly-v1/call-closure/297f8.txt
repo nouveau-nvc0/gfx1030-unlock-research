@@ -1,0 +1,55 @@
+
+/tmp/tmpilbbnmjv/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000297f8 <.data+0x297f8>:
+000297f8: 366100   entry        a1, 0x30 ; Capstone
+   297fb:	ad02      	mov.n	a10, a2
+000297fd: 258cd8   call8        . -0x2773c ; Capstone ; target=0x20c0
+   29800:	313aa6        	l32r	a3, 0x130e8 (0x3a83126f)
+00029803: 001ada   ufloat.s     f1, a10, 0 ; Capstone
+00029806: 5023fa   wfr          f2, a3 ; Capstone
+00029809: 20012a   mul.s        f0, f1, f2 ; Capstone
+   2980c:	318aa6        	l32r	a3, 0x13234 (0xe170)
+   2980f:	ad03      	mov.n	a10, a3
+00029811: 034101   ssi          f0, a1, 4 ; Capstone
+00029814: 40b0fa   rfr          a11, f0 ; Capstone
+00029817: 65fcff   call8        . -0x38 ; Capstone ; target=0x297dc
+   2981a:	8120a6        	l32r	a8, 0x1309c (0x3c03126f)
+0002981d: 503afa   wfr          f3, a10 ; Capstone
+00029820: 5018fa   wfr          f1, a8 ; Capstone
+00029823: 10034b   olt.s        b0, f3, f1 ; Capstone
+00029826: 760005   bf           b0, . +9 ; Capstone
+00029829: 134100   ssi          f1, a1, 0 ; Capstone
+   2982c:	060400        	j	0x29840
+   2982f:	ad03      	mov.n	a10, a3
+00029831: 530101   lsi          f5, a1, 4 ; Capstone
+00029834: 40b5fa   rfr          a11, f5 ; Capstone
+00029837: 65faff   call8        . -0x58 ; Capstone ; target=0x297dc
+0002983a: 506afa   wfr          f6, a10 ; Capstone
+0002983d: 634100   ssi          f6, a1, 0 ; Capstone
+   29840:	0c8a      	movi.n	a10, 8
+00029842: e5d3d8   call8        . -0x272c0 ; Capstone ; target=0x2580
+   29845:	1c0a      	movi.n	a10, 16
+   29847:	0c0b      	movi.n	a11, 0
+00029849: a5f3ff   call8        . -0xc4 ; Capstone ; target=0x29784
+   2984c:	0c3a      	movi.n	a10, 3
+   2984e:	0c0b      	movi.n	a11, 0
+00029850: 25f3ff   call8        . -0xcc ; Capstone ; target=0x29784
+   29853:	0c3a      	movi.n	a10, 3
+00029855: 730101   lsi          f7, a1, 4 ; Capstone
+00029858: 40b7fa   rfr          a11, f7 ; Capstone
+0002985b: 252e04   call8        . +0x42e4 ; Capstone ; target=0x2db3c
+   2985e:	1c0a      	movi.n	a10, 16
+00029860: 830100   lsi          f8, a1, 0 ; Capstone
+00029863: 40b8fa   rfr          a11, f8 ; Capstone
+00029866: 652d04   call8        . +0x42d8 ; Capstone ; target=0x2db3c
+   29869:	ad02      	mov.n	a10, a2
+   2986b:	0c1b      	movi.n	a11, 1
+0002986d: e582d8   call8        . -0x277d0 ; Capstone ; target=0x209c
+   29870:	0c8a      	movi.n	a10, 8
+00029872: 25c0d8   call8        . -0x273fc ; Capstone ; target=0x2474
+00029875: 1df0     retw.n        ; Capstone
+	...

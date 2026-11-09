@@ -1,0 +1,27 @@
+
+/tmp/tmpd38nvp70/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000a3c4 <.data+0xa3c4>:
+0000a3c4: 362100   entry        a1, 0x10 ; Capstone
+    a3c7:	cc52      	bnez.n	a2, 0xa3d0
+    a3c9:	20f003        	rsr.ccompare0	a2
+0000a3cc: 1df0     retw.n        ; Capstone
+0000a3ce: 000066   ee.ldf.64.xp f0, f6, a0, a0 ; Capstone
+    a3d1:	120420        	l8ui	a1, a4, 32
+    a3d4:	f1031d        	l32r	a15, 0xfffd17e0
+0000a3d7: f06622   orb          b6, b6, b15 ; Capstone
+0000a3da: 0420f2   ee.vldbc.32.ip q6, a0, 0xa0 ; Capstone
+    a3dd:	031df0        	excw
+    a3e0:	0c02      	movi.n	a2, 0
+0000a3e2: 1df0     retw.n        ; Capstone
+
+; Alternate branch-target decode
+    a3d0:	661204        	bnei	a2, 1, 0xa3d8
+0000a3d3: 20f103 rsr.ccompare1 a2 ; verified pinned QEMU encoding
+0000a3d6: 1df0     retw.n        ; Capstone
+    a3d8:	662204        	bnei	a2, 2, 0xa3e0
+0000a3db: 20f203 rsr.ccompare2 a2 ; verified pinned QEMU encoding
+0000a3de: 1df0     retw.n        ; Capstone

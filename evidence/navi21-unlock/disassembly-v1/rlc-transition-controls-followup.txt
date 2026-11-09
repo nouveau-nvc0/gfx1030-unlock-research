@@ -1,0 +1,44 @@
+Transition helpers beside CC save/restore — offline,2026-11-09
+
+Five-function local group
+37d8 calls1194 and383c;383c calls59e4.3724 and1194 and59e4 have no calls.
+FreshCFG covers197instructions with no unresolved local edges or unknown
+operations. All non-stack stores have resolved constant addresses.
+The only RAM targets are5ffee453,5ffee454 and5ffee25e, all byte stores.
+No direct store reaches gate5ffee452 or savedCC[dfc4,e004).
+This includes the explicit callees, unlike a check of37d8 alone.
+
+State distinctions
+3724 compares requested state with bytee454(statebase+8), writes hardware
+values0 or201 to four fixed registers, waits for readback, then stores state
+bytee454.383c compares bytee453(statebase+7), submits a serial command, waits
+using a hardware counter, and stores bytee453.1194 updates separatebytee25e.
+These neighboring software controls are not writes to e452(statebase+6).
+37d8 itself changes RLC request/control registers and invokes these helpers;
+its name/position in the transition sequence is not evidence of a gate write.
+
+Concrete serial operation
+59e4 writes public GC10.3 RLC_SERDES_MASK at3b178,DATA at3b180,CTRL at3b17c,
+then waits onBUSY at3b184.383c supplies broadcast1,BPMaddress1fff,
+maskf0003,REG_ADDR12,and its requested state asDATA.
+The resultingCTRL is0cfffb: BROADCAST1,REG_WRITE1,LONG_CMD0,ADDR1fff,
+REG_ADDR12. Public fields identify the mask as both center hubs plus fourSEs.
+This is a hardware serial-control operation, not a RAM pointer/value copy.
+Its downstream meaning for CC acceptance is not established. The bounded
+RAM exclusion must not be generalized to 'no effect on hardware CC behavior'.
+
+Relevance
+These helpers do not provide the missing direct nonzero-gate or changedmask
+producer. They also do not justify assuming that every state transition is
+irrelevant to hardware acceptance: the serial command remains a concrete
+hardware-side condition, with no accepted-write evidence and no runtime test.
+Continue separating software-state provenance from hardware write acceptance.
+No firmware/register/boot/service action was performed.
+
+Reproduction
+Run scripts/navi21-smu-cfg-scan.py on037d8,03724,0383c,01194,059e4 listings,
+outputrlc-transition-controls-cfg.json; run
+python3 scripts/navi21-rlc-transition-controls-audit.py.
+Receipt checks200listingrecords,197instructions,all localcallee identities,
+threeRAMbyte targets and fourpublicSERDESport coordinates. Stackstores assume
+normalfunctionentry. Asynchronous/external effects are outside this proof.

@@ -1,0 +1,333 @@
+
+/tmp/tmpad1tnoqf/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000022d8 <.data+0x22d8>:
+000022d8: 36a100   entry        a1, 0x50 ; Capstone
+    22db:	0c16      	movi.n	a6, 1
+    22dd:	0c0d      	movi.n	a13, 0
+    22df:	41a4eb        	l32r	a4, 0xffffd170 (0x6803ba00) ; inferred DRAM map 0x5ffec000
+    22e2:	71d0eb        	l32r	a7, 0xffffd224 (0xfffe03ff) ; inferred DRAM map 0x5ffec000
+    22e5:	a1d1eb        	l32r	a10, 0xffffd22c (0x5ffee2b8) ; inferred DRAM map 0x5ffec000
+    22e8:	51c7eb        	l32r	a5, 0xffffd204 (0x6803b200) ; inferred DRAM map 0x5ffec000
+    22eb:	21cfeb        	l32r	a2, 0xffffd228 (0x5ffee348) ; inferred DRAM map 0x5ffec000
+    22ee:	f2cac0        	addi	a15, a10, -64
+    22f1:	32caac        	addi	a3, a10, -84
+    22f4:	820280        	l8ui	a8, a2, 128
+    22f7:	b2259b        	l32i	a11, a5, 0x26c
+    22fa:	c2259a        	l32i	a12, a5, 0x268
+    22fd:	c901      	s32i.n	a12, a1, 0
+    22ff:	e225a1        	l32i	a14, a5, 0x284
+    2302:	e911      	s32i.n	a14, a1, 4
+    2304:	16180e        	beqz	a8, 0x23e9
+    2307:	16eb0d        	beqz	a11, 0x23e9
+    230a:	b2027c        	l8ui	a11, a2, 124
+    230d:	e08bc0        	sub	a8, a11, a14
+    2310:	166815        	beqz	a8, 0x246a
+    2313:	b7be66        	bgeu	a14, a11, 0x237d
+    2316:	1b9b      	addi.n	a9, a11, 1
+    2318:	f0cba0        	addx4	a12, a11, a15
+    231b:	e0a074        	extui	a10, a14, 0, 8
+    231e:	a981      	s32i.n	a10, a1, 32
+    2320:	c22c23        	l32i	a12, a12, 140
+    2323:	e0e074        	extui	a14, a14, 0, 8
+    2326:	e961      	s32i.n	a14, a1, 24
+    2328:	c0c094        	extui	a12, a12, 0, 10
+    232b:	f6b919        	bgeui	a9, 16, 0x2348
+    232e:	d1bfeb        	l32r	a13, 0xffffd22c (0x5ffee2b8) ; inferred DRAM map 0x5ffec000
+    2331:	f0a9a0        	addx4	a10, a9, a15
+    2334:	822a23        	l32i	a8, a10, 140
+    2337:	a2ca04        	addi	a10, a10, 4
+    233a:	808094        	extui	a8, a8, 0, 10
+    233d:	879c05        	bne	a12, a8, 0x2346
+    2340:	b2cb01        	addi	a11, a11, 1
+    2343:	d79aed        	bne	a10, a13, 0x2334
+    2346:	a881      	l32i.n	a10, a1, 32
+    2348:	d1baeb        	l32r	a13, 0xffffd230 (0x5ffee2e4) ; inferred DRAM map 0x5ffec000
+    234b:	f0eea0        	addx4	a14, a14, a15
+    234e:	e22e23        	l32i	a14, a14, 140
+    2351:	d20de1        	l8ui	a13, a13, 225
+    2354:	e09094        	extui	a9, a14, 0, 10
+    2357:	f0dda0        	addx4	a13, a13, a15
+    235a:	d22d23        	l32i	a13, a13, 140
+    235d:	973c02        	bltu	a12, a9, 0x2363
+    2360:	465200        	j	0x24ad
+    2363:	0c0b      	movi.n	a11, 0
+    2365:	d08094        	extui	a8, a13, 0, 10
+    2368:	b2430e        	s8i	a11, a3, 14
+    236b:	972802        	blt	a8, a9, 0x2371
+    236e:	868d00        	j	0x25a8
+    2371:	f09aa0        	addx4	a9, a10, a15
+    2374:	922923        	l32i	a9, a9, 140
+    2377:	a2427d        	s8i	a10, a2, 125
+    237a:	864100        	j	0x2484
+    237d:	e73b02        	bltu	a11, a14, 0x2383
+    2380:	464500        	j	0x2499
+    2383:	1b9b      	addi.n	a9, a11, 1
+    2385:	f0cba0        	addx4	a12, a11, a15
+    2388:	c22c23        	l32i	a12, a12, 140
+    238b:	e0a074        	extui	a10, a14, 0, 8
+    238e:	a921      	s32i.n	a10, a1, 8
+    2390:	c0c094        	extui	a12, a12, 0, 10
+    2393:	f6b915        	bgeui	a9, 16, 0x23ac
+    2396:	d1a5eb        	l32r	a13, 0xffffd22c (0x5ffee2b8) ; inferred DRAM map 0x5ffec000
+    2399:	f0a9a0        	addx4	a10, a9, a15
+    239c:	822a23        	l32i	a8, a10, 140
+    239f:	4baa      	addi.n	a10, a10, 4
+    23a1:	808094        	extui	a8, a8, 0, 10
+    23a4:	879c04        	bne	a12, a8, 0x23ac
+    23a7:	1bbb      	addi.n	a11, a11, 1
+    23a9:	d79aef        	bne	a10, a13, 0x239c
+    23ac:	d1a1eb        	l32r	a13, 0xffffd230 (0x5ffee2e4) ; inferred DRAM map 0x5ffec000
+    23af:	e0a074        	extui	a10, a14, 0, 8
+    23b2:	f0eaa0        	addx4	a14, a10, a15
+    23b5:	e22e23        	l32i	a14, a14, 140
+    23b8:	d20de1        	l8ui	a13, a13, 225
+    23bb:	e09094        	extui	a9, a14, 0, 10
+    23be:	f0dda0        	addx4	a13, a13, a15
+    23c1:	d22d23        	l32i	a13, a13, 140
+    23c4:	973c02        	bltu	a12, a9, 0x23ca
+    23c7:	465c00        	j	0x253c
+    23ca:	c821      	l32i.n	a12, a1, 8
+    23cc:	0c0a      	movi.n	a10, 0
+    23ce:	d08094        	extui	a8, a13, 0, 10
+    23d1:	a2430e        	s8i	a10, a3, 14
+    23d4:	972802        	blt	a8, a9, 0x23da
+    23d7:	467700        	j	0x25b8
+    23da:	f09ca0        	addx4	a9, a12, a15
+    23dd:	922923        	l32i	a9, a9, 140
+    23e0:	c2427d        	s8i	a12, a2, 125
+    23e3:	466900        	j	0x258c
+    23e6:	000000        	ill
+    23e9:	b2027c        	l8ui	a11, a2, 124
+    23ec:	d911      	s32i.n	a13, a1, 4
+    23ee:	168b07        	beqz	a11, 0x246a
+    23f1:	f0cba0        	addx4	a12, a11, a15
+    23f4:	c22c23        	l32i	a12, a12, 140
+    23f7:	dd0a      	mov.n	a13, a10
+    23f9:	1b9b      	addi.n	a9, a11, 1
+    23fb:	c0c094        	extui	a12, a12, 0, 10
+    23fe:	f6b912        	bgeui	a9, 16, 0x2414
+    2401:	f0a9a0        	addx4	a10, a9, a15
+    2404:	e22a23        	l32i	a14, a10, 140
+    2407:	4baa      	addi.n	a10, a10, 4
+    2409:	3df0      	nop.n
+    240b:	e0e094        	extui	a14, a14, 0, 10
+    240e:	e79c02        	bne	a12, a14, 0x2414
+    2411:	d79aef        	bne	a10, a13, 0x2404
+    2414:	d187eb        	l32r	a13, 0xffffd230 (0x5ffee2e4) ; inferred DRAM map 0x5ffec000
+    2417:	a22f23        	l32i	a10, a15, 140
+    241a:	d20de1        	l8ui	a13, a13, 225
+    241d:	a0b094        	extui	a11, a10, 0, 10
+    2420:	f0dda0        	addx4	a13, a13, a15
+    2423:	d22d23        	l32i	a13, a13, 140
+    2426:	b73c02        	bltu	a12, a11, 0x242c
+    2429:	c62f00        	j	0x24ec
+    242c:	0c0f      	movi.n	a15, 0
+    242e:	d0e094        	extui	a14, a13, 0, 10
+    2431:	f2430e        	s8i	a15, a3, 14
+    2434:	b72e02        	blt	a14, a11, 0x243a
+    2437:	863b00        	j	0x2529
+    243a:	9d0a      	mov.n	a9, a10
+    243c:	0c08      	movi.n	a8, 0
+    243e:	82427d        	s8i	a8, a2, 125
+    2441:	063c00        	j	0x2535
+    2444:	62430e        	s8i	a6, a3, 14
+    2447:	0c0a      	movi.n	a10, 0
+    2449:	62430e        	s8i	a6, a3, 14
+    244c:	60cb11        	slli	a12, a11, 10
+    244f:	709d10        	and	a9, a13, a7
+    2452:	c09920        	or	a9, a9, a12
+    2455:	926411        	s32i	a9, a4, 68
+    2458:	62651d        	s32i	a6, a5, 116
+    245b:	d20307        	l8ui	a13, a3, 7
+    245e:	a2427c        	s8i	a10, a2, 124
+    2461:	8c5d      	beqz.n	a13, 0x246a
+    2463:	1c8a      	movi.n	a10, 24
+    2465:	0c0b      	movi.n	a11, 0
+00002467: e56d00   call8        . +0x6e0 ; Capstone ; target=0x2b44
+    246a:	e811      	l32i.n	a14, a1, 4
+    246c:	e24281        	s8i	a14, a2, 129
+0000246f: 1df0     retw.n        ; Capstone
+    2471:	a861      	l32i.n	a10, a1, 24
+    2473:	bd08      	mov.n	a11, a8
+    2475:	62430e        	s8i	a6, a3, 14
+    2478:	62430e        	s8i	a6, a3, 14
+    247b:	60cb11        	slli	a12, a11, 10
+    247e:	709d10        	and	a9, a13, a7
+    2481:	c09920        	or	a9, a9, a12
+    2484:	926411        	s32i	a9, a4, 68
+    2487:	62651d        	s32i	a6, a5, 116
+    248a:	d20307        	l8ui	a13, a3, 7
+    248d:	a2427c        	s8i	a10, a2, 124
+    2490:	8c5d      	beqz.n	a13, 0x2499
+    2492:	1c5a      	movi.n	a10, 21
+    2494:	0c0b      	movi.n	a11, 0
+00002496: e56a00   call8        . +0x6b0 ; Capstone ; target=0x2b44
+    2499:	e20307        	l8ui	a14, a3, 7
+    249c:	16aefc        	beqz	a14, 0x246a
+    249f:	1c4a      	movi.n	a10, 20
+    24a1:	4bb1      	addi.n	a11, a1, 4
+000024a3: 256a00   call8        . +0x6a4 ; Capstone ; target=0x2b44
+    24a6:	f811      	l32i.n	a15, a1, 4
+    24a8:	f24281        	s8i	a15, a2, 129
+000024ab: 1df0     retw.n        ; Capstone
+    24ad:	a21308        	l16ui	a10, a3, 16
+    24b0:	e08a64        	extui	a8, a14, 10, 7
+    24b3:	e160eb        	l32r	a14, 0xffffd234 (0x5ffec028) ; inferred DRAM map 0x5ffec000
+    24b6:	e0eaa0        	addx4	a14, a10, a14
+    24b9:	e80e      	l32i.n	a14, a14, 0
+    24bb:	d0ca64        	extui	a12, a13, 10, 7
+    24be:	e0aa11        	slli	a10, a10, 2
+    24c1:	cace      	add.n	a12, a14, a12
+    24c3:	87bcaa        	bgeu	a12, a8, 0x2471
+    24c6:	82030e        	l8ui	a8, a3, 14
+    24c9:	a931      	s32i.n	a10, a1, 12
+    24cb:	0b88      	addi.n	a8, a8, -1
+    24cd:	16780f        	beqz	a8, 0x25c8
+    24d0:	164e0f        	beqz	a14, 0x25c8
+    24d3:	a861      	l32i.n	a10, a1, 24
+    24d5:	62430e        	s8i	a6, a3, 14
+    24d8:	0baa      	addi.n	a10, a10, -1
+    24da:	a0a074        	extui	a10, a10, 0, 8
+    24dd:	f0baa0        	addx4	a11, a10, a15
+    24e0:	b22b23        	l32i	a11, a11, 140
+    24e3:	b0ba64        	extui	a11, a11, 10, 7
+    24e6:	b73cee        	bltu	a12, a11, 0x24d8
+    24e9:	c6e2ff        	j	0x2478
+    24ec:	8153eb        	l32r	a8, 0xffffd238 (0x5ffec038) ; inferred DRAM map 0x5ffec000
+    24ef:	e21308        	l16ui	a14, a3, 16
+    24f2:	80eea0        	addx4	a14, a14, a8
+    24f5:	e80e      	l32i.n	a14, a14, 0
+    24f7:	a0ba64        	extui	a11, a10, 10, 7
+    24fa:	d0ca64        	extui	a12, a13, 10, 7
+    24fd:	cace      	add.n	a12, a14, a12
+    24ff:	b73c02        	bltu	a12, a11, 0x2505
+    2502:	86cfff        	j	0x2444
+    2505:	92030e        	l8ui	a9, a3, 14
+    2508:	0b99      	addi.n	a9, a9, -1
+    250a:	16a90d        	beqz	a9, 0x25e8
+    250d:	167e0d        	beqz	a14, 0x25e8
+    2510:	62430e        	s8i	a6, a3, 14
+    2513:	0c0a      	movi.n	a10, 0
+    2515:	0baa      	addi.n	a10, a10, -1
+    2517:	a0a074        	extui	a10, a10, 0, 8
+    251a:	f0baa0        	addx4	a11, a10, a15
+    251d:	b22b23        	l32i	a11, a11, 140
+    2520:	b0ba64        	extui	a11, a11, 10, 7
+    2523:	b73cee        	bltu	a12, a11, 0x2515
+    2526:	c6c7ff        	j	0x2449
+    2529:	709d10        	and	a9, a13, a7
+    252c:	a0ba64        	extui	a11, a10, 10, 7
+    252f:	60bb11        	slli	a11, a11, 10
+    2532:	b09920        	or	a9, a9, a11
+    2535:	0c0a      	movi.n	a10, 0
+    2537:	86c6ff        	j	0x2455
+    253a:	000092        	excw
+0000253d: 1308e0   lsi          f1, a8, 0x380 ; Capstone
+    2540:	8a64      	add.n	a6, a4, a8
+    2542:	e13ceb        	l32r	a14, 0xffffd234 (0x5ffec028) ; inferred DRAM map 0x5ffec000
+    2545:	d0ca64        	extui	a12, a13, 10, 7
+    2548:	e0e9a0        	addx4	a14, a9, a14
+    254b:	e80e      	l32i.n	a14, a14, 0
+    254d:	e09911        	slli	a9, a9, 2
+    2550:	9931      	s32i.n	a9, a1, 12
+    2552:	cace      	add.n	a12, a14, a12
+    2554:	87bc21        	bgeu	a12, a8, 0x2579
+    2557:	82030e        	l8ui	a8, a3, 14
+    255a:	0b88      	addi.n	a8, a8, -1
+    255c:	164809        	beqz	a8, 0x25f4
+    255f:	161e09        	beqz	a14, 0x25f4
+    2562:	62430e        	s8i	a6, a3, 14
+    2565:	0baa      	addi.n	a10, a10, -1
+    2567:	a0a074        	extui	a10, a10, 0, 8
+    256a:	f0baa0        	addx4	a11, a10, a15
+    256d:	b22b23        	l32i	a11, a11, 140
+    2570:	b0ba64        	extui	a11, a11, 10, 7
+    2573:	b73cee        	bltu	a12, a11, 0x2565
+    2576:	060100        	j	0x257e
+    2579:	bd08      	mov.n	a11, a8
+    257b:	62430e        	s8i	a6, a3, 14
+    257e:	cd0a      	mov.n	a12, a10
+    2580:	62430e        	s8i	a6, a3, 14
+    2583:	60eb11        	slli	a14, a11, 10
+    2586:	709d10        	and	a9, a13, a7
+    2589:	e09920        	or	a9, a9, a14
+    258c:	926411        	s32i	a9, a4, 68
+    258f:	62651d        	s32i	a6, a5, 116
+    2592:	f20307        	l8ui	a15, a3, 7
+    2595:	c2427c        	s8i	a12, a2, 124
+    2598:	16dfef        	beqz	a15, 0x2499
+    259b:	a2a016        	movi	a10, 22
+    259e:	10b120        	or	a11, a1, a1
+000025a1: 255a00   call8        . +0x5a4 ; Capstone ; target=0x2b44
+    25a4:	46bcff        	j	0x2499
+    25a7:	00709d        	excw
+000025aa: 10e0ba   ceil.s       a14, f0, 1 ; Capstone
+000025ad: 6460bb   ee.vst.h.64.ip q6, a6, 0x60 ; Capstone
+    25b0:	11b099        	l32r	a1, 0xfffe8c70
+    25b3:	2006b3        	movgez	a0, a6, a2
+    25b6:	ff          	.byte 0xff
+    25b7:	00709d        	excw
+000025ba: 10e0aa   floor.s      a14, f0, 1 ; Capstone
+000025bd: 6460aa   ee.vst.128.ip q4, a6, 0x60 ; Capstone
+    25c0:	11a099        	l32r	a1, 0xfffe8c40
+000025c3: 2006f1   lict         a2, a6 ; verified cache-test encoding
+    25c6:	ff          	.byte 0xff
+    25c7:	00d11d        	excw
+    25ca:	ebc8      	addi.n	a12, a8, 14
+    25cc:	31dacc        	l32r	a3, 0xffff5934
+    25cf:	c80c      	l32i.n	a12, a12, 0
+    25d1:	d861      	l32i.n	a13, a1, 24
+    25d3:	bacc      	add.n	a12, a12, a11
+000025d5: d0cc63   minu         a12, a12, a13 ; Capstone
+    25d8:	c0a074        	extui	a10, a12, 0, 8
+    25db:	f09aa0        	addx4	a9, a10, a15
+    25de:	922923        	l32i	a9, a9, 140
+    25e1:	c2427d        	s8i	a12, a2, 125
+    25e4:	06a7ff        	j	0x2484
+000025e7: 009d0a   add.s        f9, f13, f0 ; Capstone
+    25ea:	0c0e      	movi.n	a14, 0
+    25ec:	e2427d        	s8i	a14, a2, 125
+    25ef:	0c0a      	movi.n	a10, 0
+    25f1:	0698ff        	j	0x2455
+    25f4:	9112eb        	l32r	a9, 0xffffd23c (0x5ffec020) ; inferred DRAM map 0x5ffec000
+    25f7:	8831      	l32i.n	a8, a1, 12
+    25f9:	9a88      	add.n	a8, a8, a9
+    25fb:	8808      	l32i.n	a8, a8, 0
+    25fd:	ba88      	add.n	a8, a8, a11
+000025ff: a08863   minu         a8, a8, a10 ; Capstone
+    2602:	80c074        	extui	a12, a8, 0, 8
+    2605:	f09ca0        	addx4	a9, a12, a15
+    2608:	922923        	l32i	a9, a9, 140
+    260b:	82427d        	s8i	a8, a2, 125
+    260e:	86deff        	j	0x258c
+    2611:	000000        	ill
+
+; Alternate branch-target decode
+    25a8:	709d10        	and	a9, a13, a7
+    25ab:	e0ba64        	extui	a11, a14, 10, 7
+    25ae:	60bb11        	slli	a11, a11, 10
+    25b1:	b09920        	or	a9, a9, a11
+    25b4:	06b3ff        	j	0x2484
+
+; Alternate branch-target decode
+    253c:	921308        	l16ui	a9, a3, 16
+    253f:	e08a64        	extui	a8, a14, 10, 7
+
+; Alternate branch-target decode
+    25b8:	709d10        	and	a9, a13, a7
+    25bb:	e0aa64        	extui	a10, a14, 10, 7
+    25be:	60aa11        	slli	a10, a10, 10
+    25c1:	a09920        	or	a9, a9, a10
+    25c4:	06f1ff        	j	0x258c
+
+; Alternate branch-target decode
+    25c8:	d11deb        	l32r	a13, 0xffffd23c (0x5ffec020) ; inferred DRAM map 0x5ffec000
+    25cb:	c831      	l32i.n	a12, a1, 12
+    25cd:	dacc      	add.n	a12, a12, a13
+
+; Alternate branch-target decode
+    25e8:	9d0a      	mov.n	a9, a10

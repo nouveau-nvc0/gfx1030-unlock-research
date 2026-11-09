@@ -1,0 +1,41 @@
+
+/tmp/tmp34mrt76q/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00020154 <.data+0x20154>:
+00020154: 364100   entry        a1, 0x20 ; Capstone
+   20157:	0c03      	movi.n	a3, 0
+   20159:	6133cb        	l32r	a6, 0x12e28 (0x9c00)
+   2015c:	51a4cc        	l32r	a5, 0x133ec (0x247c)
+   2015f:	0c17      	movi.n	a7, 1
+   20161:	3c44      	movi.n	a4, 52
+   20163:	4043d1        	mul16s	a4, a3, a4
+   20166:	bd02      	mov.n	a11, a2
+   20168:	4a46      	add.n	a4, a6, a4
+   2016a:	5a44      	add.n	a4, a4, a5
+   2016c:	ad04      	mov.n	a10, a4
+0002016e: 6551ff   call8        . -0xae8 ; Capstone ; target=0x1f684
+   20171:	dc53      	bnez.n	a3, 0x2018a
+   20173:	ac42      	beqz.n	a2, 0x2019b
+   20175:	262222        	beqi	a2, 2, 0x2019b
+   20178:	ad04      	mov.n	a10, a4
+   2017a:	0c0b      	movi.n	a11, 0
+0002017c: 254fff   call8        . -0xb0c ; Capstone ; target=0x1f670
+   2017f:	819ccc        	l32r	a8, 0x133f0 (0xbf38)
+   20182:	a09311        	slli	a9, a3, 6
+   20185:	9a88      	add.n	a8, a8, a9
+   20187:	724880        	s8i	a7, a8, 128
+   2018a:	ad04      	mov.n	a10, a4
+   2018c:	bd02      	mov.n	a11, a2
+0002018e: 254aff   call8        . -0xb5c ; Capstone ; target=0x1f630
+   20191:	1b33      	addi.n	a3, a3, 1
+   20193:	303074        	extui	a3, a3, 0, 8
+   20196:	6643c7        	bnei	a3, 4, 0x20161
+00020199: 1df0     retw.n        ; Capstone
+   2019b:	ad04      	mov.n	a10, a4
+   2019d:	0c1b      	movi.n	a11, 1
+0002019f: 254dff   call8        . -0xb2c ; Capstone ; target=0x1f670
+   201a2:	46f6ff        	j	0x2017f
+   201a5:	000000        	ill

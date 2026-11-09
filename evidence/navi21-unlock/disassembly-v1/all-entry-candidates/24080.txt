@@ -1,0 +1,37 @@
+
+/tmp/tmpd846if68/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00024080 <.data+0x24080>:
+00024080: 364100   entry        a1, 0x20 ; Capstone
+   24083:	51acbc        	l32r	a5, 0x13334 (0x125a200)
+   24086:	ccf3      	bnez.n	a3, 0x24099
+   24088:	c02000        	memw
+   2408b:	4225db        	l32i	a4, a5, 0x36c
+   2408e:	000240        	ssr	a2
+   24091:	402091        	srl	a2, a4
+   24094:	202004        	extui	a2, a2, 0, 1
+00024097: 1df0     retw.n        ; Capstone
+   24099:	66130e        	bnei	a3, 1, 0x240ab
+   2409c:	c02000        	memw
+   2409f:	8225dc        	l32i	a8, a5, 0x370
+   240a2:	000240        	ssr	a2
+   240a5:	802091        	srl	a2, a8
+   240a8:	06faff        	j	0x24094
+   240ab:	662312        	bnei	a3, 2, 0x240c1
+   240ae:	c02000        	memw
+   240b1:	9225dd        	l32i	a9, a5, 0x374
+   240b4:	000240        	ssr	a2
+   240b7:	902091        	srl	a2, a9
+   240ba:	86f5ff        	j	0x24094
+   240bd:	0c02      	movi.n	a2, 0
+000240bf: 1df0     retw.n        ; Capstone
+   240c1:	6633f8        	bnei	a3, 3, 0x240bd
+   240c4:	c02000        	memw
+   240c7:	a225de        	l32i	a10, a5, 0x378
+   240ca:	000240        	ssr	a2
+   240cd:	a02091        	srl	a2, a10
+   240d0:	06f0ff        	j	0x24094
+	...

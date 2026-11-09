@@ -1,0 +1,13 @@
+
+/tmp/tmparqbposd/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00030c64 <.data+0x30c64>:
+00030c64: 364100   entry        a1, 0x20 ; Capstone
+00030c67: a5fbff   call8        . -0x44 ; Capstone ; target=0x30c20
+00030c6a: 25faff   call8        . -0x5c ; Capstone ; target=0x30c0c
+00030c6d: 65e6ff   call8        . -0x198 ; Capstone ; target=0x30ad4
+00030c70: 1df0     retw.n        ; Capstone
+	...

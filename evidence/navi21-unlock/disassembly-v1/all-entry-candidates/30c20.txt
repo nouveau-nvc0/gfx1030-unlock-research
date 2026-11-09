@@ -1,0 +1,33 @@
+
+/tmp/tmpkmu5xgzc/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00030c20 <.data+0x30c20>:
+00030c20: 366100   entry        a1, 0x30 ; Capstone
+   30c23:	0c08      	movi.n	a8, 0
+   30c25:	8911      	s32i.n	a8, a1, 4
+   30c27:	8901      	s32i.n	a8, a1, 0
+00030c29: 65d6ff   call8        . -0x298 ; Capstone ; target=0x30990
+   30c2c:	bc1a      	beqz.n	a10, 0x30c61
+   30c2e:	0c0a      	movi.n	a10, 0
+00030c30: 25d5ff   call8        . -0x2ac ; Capstone ; target=0x30984
+00030c33: 25d1ff   call8        . -0x2ec ; Capstone ; target=0x30944
+   30c36:	0caa      	movi.n	a10, 10
+   30c38:	bd01      	mov.n	a11, a1
+00030c3a: 259f03   call8        . +0x39f4 ; Capstone ; target=0x3462c
+   30c3d:	a18689        	l32r	a10, 0x13258 (0x31ffe00)
+   30c40:	910b8d        	l32r	a9, 0x1406c (0x8000)
+   30c43:	c02000        	memw
+   30c46:	b22af0        	l32i	a11, a10, 0x3c0
+   30c49:	90bb10        	and	a11, a11, a9
+   30c4c:	b0bf41        	srli	a11, a11, 15
+   30c4f:	261b0e        	beqi	a11, 1, 0x30c61
+   30c52:	c02000        	memw
+   30c55:	c22af0        	l32i	a12, a10, 0x3c0
+   30c58:	90cc10        	and	a12, a12, a9
+   30c5b:	c0cf41        	srli	a12, a12, 15
+   30c5e:	661cf0        	bnei	a12, 1, 0x30c52
+00030c61: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,41 @@
+
+/tmp/tmpstesrp38/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00002d58 <.data+0x2d58>:
+00002d58: 368100   entry        a1, 0x40 ; Capstone
+    2d5b:	226104        	s32i	a2, a1, 16
+    2d5e:	4144e9        	l32r	a4, 0xffffd270 (0x5ffee438) ; inferred DRAM map 0x5ffec000
+    2d61:	3020f5        	extui	a2, a3, 16, 16
+    2d64:	3030f4        	extui	a3, a3, 0, 16
+    2d67:	325401        	s16i	a3, a4, 2
+    2d6a:	30a320        	or	a10, a3, a3
+00002d6d: 652601   call8        . +0x1268 ; Capstone ; target=0x3fd4
+    2d70:	a20111        	l8ui	a10, a1, 17
+    2d73:	165a00        	beqz	a10, 0x2d7c
+00002d76: 653702   call8        . +0x2378 ; Capstone ; target=0x50ec
+    2d79:	a25405        	s16i	a10, a4, 10
+    2d7c:	b20112        	l8ui	a11, a1, 18
+    2d7f:	f02000        	nop
+    2d82:	bc0b      	beqz.n	a11, 0x2db6
+    2d84:	9c12      	beqz.n	a2, 0x2d99
+    2d86:	ad02      	mov.n	a10, a2
+00002d88: 251efe   call8        . -0x1e1c ; Capstone ; target=0xf6c
+    2d8b:	a0c0f5        	extui	a12, a10, 16, 16
+    2d8e:	a0d0f4        	extui	a13, a10, 0, 16
+    2d91:	d25407        	s16i	a13, a4, 14
+    2d94:	c25409        	s16i	a12, a4, 18
+00002d97: 1df0     retw.n        ; Capstone
+    2d99:	ad03      	mov.n	a10, a3
+00002d9b: 25d5fe   call8        . -0x12ac ; Capstone ; target=0x1aec
+    2d9e:	810de9        	l32r	a8, 0xffffd1d4 (0x440e38e4) ; inferred DRAM map 0x5ffec000
+00002da1: 501afa   wfr          f1, a10 ; Capstone
+00002da4: 5028fa   wfr          f2, a8 ; Capstone
+00002da7: 20012a   mul.s        f0, f1, f2 ; Capstone
+00002daa: 0020ea   utrunc.s     a2, f0, 0 ; Capstone
+    2dad:	22c2d8        	addi	a2, a2, -40
+    2db0:	2020f4        	extui	a2, a2, 0, 16
+    2db3:	c6f3ff        	j	0x2d86
+00002db6: 1df0     retw.n        ; Capstone

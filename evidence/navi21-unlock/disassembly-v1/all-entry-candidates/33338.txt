@@ -1,0 +1,40 @@
+
+/tmp/tmpt07_nz58/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00033338 <.data+0x33338>:
+00033338: 364100   entry        a1, 0x20 ; Capstone
+   3333b:	91e27e        	l32r	a9, 0x12ec4 (0x300fe00)
+   3333e:	7cea      	movi.n	a10, -2
+   33340:	c02000        	memw
+   33343:	822989        	l32i	a8, a9, 0x224
+   33346:	a08810        	and	a8, a8, a10
+   33349:	c02000        	memw
+   3334c:	826989        	s32i	a8, a9, 0x224
+   3334f:	060100        	j	0x33357
+   33352:	0c1a      	movi.n	a10, 1
+00033354: 257b00   call8        . +0x7b4 ; Capstone ; target=0x33b08
+00033357: 652fce   call8        . -0x31d08 ; Capstone ; target=0x164c
+   3335a:	661af4        	bnei	a10, 1, 0x33352
+0003335d: 65f6ff   call8        . -0x98 ; Capstone ; target=0x332c4
+   33360:	b15c7f        	l32r	a11, 0x130d0 (0x44fa0000)
+00033363: 500bfa   wfr          f0, a11 ; Capstone
+00033366: 00a0ba   ceil.s       a10, f0, 0 ; Capstone
+00033369: a53ece   call8        . -0x31c14 ; Capstone ; target=0x1754
+0003336c: 2545ce   call8        . -0x31bac ; Capstone ; target=0x17c0
+   3336f:	c10784        	l32r	a12, 0x1438c (0x117ec)
+00033372: 130c00   lsi          f1, a12, 0 ; Capstone
+00033375: 00a1ba   ceil.s       a10, f1, 0 ; Capstone
+00033378: a53dce   call8        . -0x31c24 ; Capstone ; target=0x1754
+   3337b:	060100        	j	0x33383
+   3337e:	0c1a      	movi.n	a10, 1
+00033380: 657800   call8        . +0x788 ; Capstone ; target=0x33b08
+00033383: a52cce   call8        . -0x31d34 ; Capstone ; target=0x164c
+   33386:	661af4        	bnei	a10, 1, 0x3337e
+   33389:	ad02      	mov.n	a10, a2
+   3338b:	0c1b      	movi.n	a11, 1
+0003338d: e5d0ce   call8        . -0x312f0 ; Capstone ; target=0x209c
+00033390: 1df0     retw.n        ; Capstone
+	...

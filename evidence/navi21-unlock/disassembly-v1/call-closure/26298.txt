@@ -1,0 +1,22 @@
+
+/tmp/tmplk22xk45/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00026298 <.data+0x26298>:
+00026298: 364100   entry        a1, 0x20 ; Capstone
+0002629b: 430201   lsi          f4, a2, 4 ; Capstone
+0002629e: 830300   lsi          f8, a3, 0 ; Capstone
+000262a1: 730200   lsi          f7, a2, 0 ; Capstone
+000262a4: 80670a   add.s        f6, f7, f8 ; Capstone
+000262a7: 634200   ssi          f6, a2, 0 ; Capstone
+000262aa: 530301   lsi          f5, a3, 4 ; Capstone
+000262ad: 50340a   add.s        f3, f4, f5 ; Capstone
+000262b0: 130202   lsi          f1, a2, 8 ; Capstone
+000262b3: 334201   ssi          f3, a2, 4 ; Capstone
+000262b6: 230302   lsi          f2, a3, 8 ; Capstone
+000262b9: 20010a   add.s        f0, f1, f2 ; Capstone
+000262bc: 034202   ssi          f0, a2, 8 ; Capstone
+000262bf: 1df0     retw.n        ; Capstone
+   262c1:	000000        	ill

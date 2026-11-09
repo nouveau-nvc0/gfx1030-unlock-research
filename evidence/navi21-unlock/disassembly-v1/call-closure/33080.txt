@@ -1,0 +1,30 @@
+
+/tmp/tmpqbytxcna/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00033080 <.data+0x33080>:
+00033080: 364100   entry        a1, 0x20 ; Capstone
+   33083:	61e07f        	l32r	a6, 0x13004 (0xfffff)
+   33086:	81b984        	l32r	a8, 0x1436c (0x9000008)
+   33089:	205094        	extui	a5, a2, 0, 10
+   3308c:	405511        	slli	a5, a5, 12
+   3308f:	8b75      	addi.n	a7, a5, 8
+   33091:	7074b5        	extui	a7, a7, 20, 12
+   33094:	8a55      	add.n	a5, a5, a8
+   33096:	605510        	and	a5, a5, a6
+   33099:	61bd80        	l32r	a6, 0x13390 (0xfffe00)
+   3309c:	c07701        	slli	a7, a7, 20
+   3309f:	7a55      	add.n	a5, a5, a7
+   330a1:	6a55      	add.n	a5, a5, a6
+   330a3:	c02000        	memw
+   330a6:	72af9f        	movi	a7, -97
+   330a9:	322580        	l32i	a3, a5, 0x200
+   330ac:	406014        	extui	a6, a4, 0, 2
+   330af:	b06611        	slli	a6, a6, 5
+   330b2:	703310        	and	a3, a3, a7
+   330b5:	603320        	or	a3, a3, a6
+   330b8:	c02000        	memw
+   330bb:	326580        	s32i	a3, a5, 0x200
+000330be: 1df0     retw.n        ; Capstone

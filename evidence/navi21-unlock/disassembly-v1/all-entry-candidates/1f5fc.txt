@@ -1,0 +1,26 @@
+
+/tmp/tmpjo40qq7_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001f5fc <.data+0x1f5fc>:
+0001f5fc: 366100   entry        a1, 0x30 ; Capstone
+   1f5ff:	0c0a      	movi.n	a10, 0
+0001f601: 5003fa   wfr          f0, a3 ; Capstone
+0001f604: 034100   ssi          f0, a1, 0 ; Capstone
+0001f607: 65b611   call8        . +0x11b68 ; Capstone ; target=0x3116c
+0001f60a: 3000fa   const.s      f0, 0 ; Capstone
+   1f60d:	9c8a      	beqz.n	a10, 0x1f629
+   1f60f:	222a13        	l32i	a2, a10, 76
+   1f612:	9c32      	beqz.n	a2, 0x1f629
+   1f614:	a2224c        	l32i	a10, a2, 0x130
+0001f617: 657819   call8        . +0x19788 ; Capstone ; target=0x38d9c
+0001f61a: 430249   lsi          f4, a2, 0x124 ; Capstone
+0001f61d: 330100   lsi          f3, a1, 0 ; Capstone
+0001f620: 40231a   sub.s        f2, f3, f4 ; Capstone
+0001f623: 501afa   wfr          f1, a10 ; Capstone
+0001f626: 20012a   mul.s        f0, f1, f2 ; Capstone
+0001f629: 4020fa   rfr          a2, f0 ; Capstone
+0001f62c: 1df0     retw.n        ; Capstone
+	...

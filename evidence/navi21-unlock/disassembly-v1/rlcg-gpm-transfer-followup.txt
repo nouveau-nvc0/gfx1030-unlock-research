@@ -1,0 +1,66 @@
+RLCG GPM transfer at313f — offline, 2026-11-09
+
+Result
+313f is a concrete candidate for loading a1024-byte block through the GPM
+scratch data port, beginning at scratchword200. It is not evidence of a
+write to Xtensa savedCC arrays or restore gate. Its source is derived from
+HYP_BOOTLOAD_ADDR_HI/LO, with one arithmetic operator still unresolved.
+The direction is supported by a separate completion-marker operation and
+comparison with public CP_DMA_ME fields, not by documented names for every
+internal transfer register.
+
+Raw-word interpretation
+313f..3140: inferred immediate0200 -> GPM_SCRATCH_ADDR DWORDfb75.
+3141..3143: fb76 shifted left2 -> c066, giving publicbyte3edd8.
+3144: zero-shaped write to c067;3145: r0 -> c063.
+3146..3147: immediate1800 shifted left2 gives6000.
+3148..314d: bootload HI/LO fromfb5e/fb5d assembled with32-bit shifts and
+operation1a, then combined with6000 by operation11. The exact sign/semantics
+of operation11 are not independently established; do not state base+6000
+or base-6000 as fact.314e/314f place the resulting low/high pieces in c064/65.
+3150 c0162800 is an upper-half immediate, giving28000000, NOT00002800;
+3151 OR0400 produces28000400, sent to c0e8 at3152.
+
+Independent consistency check: completion marker
+35bd clears the register-like wordec29, sets r12=0,r11=1,r10=0,
+r9=ec29*4,r14=40000000,r13=bc000004, then calls30ae.
+30ae waits on c08a and writes r12->c065,r11->c064,r10->c067,r9->c066,
+r14->c063,r13->c0e8.35c8 repeatedly reads ec29 until it becomes nonzero.
+This gives a coherent candidate mapping: c064/65 source or immediate data,
+c066/67 destination, c063 control, c0e8 command. Reversing source/destination
+would not describe the apparent clear-then-wait marker operation.
+The public CP_DMA_CNTL coordinate c08a additionally matches the wait helper.
+Exact names for c063..67/c0e8 were not found in the retained GC10.3 headers or
+UMR GC10.3 record; do not rename them as documented CP_DMA_ME registers.
+
+Public field comparison
+GC10.3 CP_DMA_ME_COMMAND defines BYTE_COUNT bits0..25, SAS26,DAS27,
+SAIC28,DAIC29,RAW_WAIT30,DIS_WC31. Applied to the two candidate commands:
+28000400: count1024,SAS0,DAS1,SAIC0,DAIC1,RAW_WAIT0,DIS_WC0.
+bc000004: count4,SAS1,DAS1,SAIC1,DAIC1,RAW_WAIT0,DIS_WC1.
+Control40000000 gives SRC_SELECT2 under CP_DMA_ME_CONTROL fields.
+Together with the constant1 marker and fixed-port operands, these support
+memory-to-fixed-register data transfer and a separate immediate completion
+write. Similar field layout is corroboration, not independent proof of the
+internal engine's complete format or runtime completion.
+Assuming normal GPM port advancement,1024bytes=256words cover[200,300).
+Port advancement remains an assumption; this is not a measured write range.
+
+Source provenance and following work
+Driver gfx_v10_0.c prepares an autoload buffer from firmware/TOC entries and
+writes bufferGPUbase+RLC_G_offset to HYP_BOOTLOAD_ADDR_LO/HI, with RLC_G_size.
+This independently explains why the firmware reads those registers. It does
+not establish the current machine's active firmware-loading path, contents,
+or address arithmetic used by313f.
+Both literal callers30bd/3160 next invoke completion-marker35bd and wait35c8.
+They subsequently enter30d3 or3173, which read word02ff and descriptor words
+starting0208. The new256word candidate range includes these locations.
+Thus the concrete next obligation is the descriptor source/layout and its
+computed transfer destinations, not an assumed direct write to CC.
+No alias between this GPM storage and Xtensa5ffedfc4/e452 is established.
+
+Reproducer scripts/navi21-rlcg-gpm-transfer-audit.py records91raw words,
+two literal callers, exact command-field arithmetic and firmware/source hashes.
+It checks byte identity and field extraction; it does not certify ISA semantics,
+engine identity, boot state, scratch advancement, or hardware acceptance.
+No hardware, firmware, boot, driver or service state was changed.

@@ -1,0 +1,43 @@
+
+/tmp/tmpik7r4q7o/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00020ae8 <.data+0x20ae8>:
+00020ae8: 364100   entry        a1, 0x20 ; Capstone
+   20aeb:	215dc9        	l32r	a2, 0x13060 (0x80000001)
+   20aee:	31c9c9        	l32r	a3, 0x13214 (0x20000)
+   20af1:	415cc9        	l32r	a4, 0x13064 (0x1268e00)
+   20af4:	0c19      	movi.n	a9, 1
+   20af6:	c02000        	memw
+   20af9:	2914      	s32i.n	a2, a4, 4
+   20afb:	c02000        	memw
+   20afe:	88e4      	l32i.n	a8, a4, 56
+   20b00:	c02000        	memw
+   20b03:	78f4      	l32i.n	a7, a4, 60
+   20b05:	c02000        	memw
+   20b08:	622410        	l32i	a6, a4, 64
+   20b0b:	c02000        	memw
+   20b0e:	5804      	l32i.n	a5, a4, 0
+   20b10:	17f807        	bbsi	a8, 17, 0x20b1b
+   20b13:	30a820        	or	a10, a8, a3
+   20b16:	c02000        	memw
+   20b19:	a9e4      	s32i.n	a10, a4, 56
+   20b1b:	17f707        	bbsi	a7, 17, 0x20b26
+   20b1e:	30b720        	or	a11, a7, a3
+   20b21:	c02000        	memw
+   20b24:	b9f4      	s32i.n	a11, a4, 60
+   20b26:	17f608        	bbsi	a6, 17, 0x20b32
+   20b29:	30c620        	or	a12, a6, a3
+   20b2c:	c02000        	memw
+   20b2f:	c26410        	s32i	a12, a4, 64
+   20b32:	07e507        	bbsi	a5, 0, 0x20b3d
+   20b35:	90d520        	or	a13, a5, a9
+   20b38:	c02000        	memw
+   20b3b:	d904      	s32i.n	a13, a4, 0
+   20b3d:	c02000        	memw
+   20b40:	9914      	s32i.n	a9, a4, 4
+   20b42:	0c12      	movi.n	a2, 1
+00020b44: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,20 @@
+
+/tmp/tmpmg3noz01/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000371e8 <.data+0x371e8>:
+000371e8: 366100   entry        a1, 0x30 ; Capstone
+   371eb:	ad01      	mov.n	a10, a1
+   371ed:	8813      	l32i.n	a8, a3, 4
+   371ef:	9803      	l32i.n	a9, a3, 0
+   371f1:	9901      	s32i.n	a9, a1, 0
+   371f3:	8911      	s32i.n	a8, a1, 4
+000371f5: 25fdff   call8        . -0x2c ; Capstone ; target=0x371c8
+   371f8:	cd04      	mov.n	a12, a4
+   371fa:	ad02      	mov.n	a10, a2
+   371fc:	bd01      	mov.n	a11, a1
+000371fe: a5b9ca   call8        . -0x35464 ; Capstone ; target=0x1d98
+00037201: 1df0     retw.n        ; Capstone
+	...

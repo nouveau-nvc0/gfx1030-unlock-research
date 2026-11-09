@@ -1,0 +1,23 @@
+
+/tmp/tmp6fvq3qum/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00037c18 <.data+0x37c18>:
+00037c18: 364100   entry        a1, 0x20 ; Capstone
+   37c1b:	ac32      	beqz.n	a2, 0x37c42
+   37c1d:	a20200        	l8ui	a10, a2, 0
+   37c20:	32a0ff        	movi	a3, 255
+   37c23:	371a1b        	beq	a10, a3, 0x37c42
+00037c26: 00aa23   sext         a10, a10, 7 ; Capstone
+   37c29:	b20201        	l8ui	a11, a2, 1
+   37c2c:	c20202        	l8ui	a12, a2, 2
+   37c2f:	d20203        	l8ui	a13, a2, 3
+   37c32:	e812      	l32i.n	a14, a2, 4
+00037c34: a5f7ff   call8        . -0x84 ; Capstone ; target=0x37bb0
+   37c37:	820208        	l8ui	a8, a2, 8
+   37c3a:	8b22      	addi.n	a2, a2, 8
+00037c3c: 00a823   sext         a10, a8, 7 ; Capstone
+   37c3f:	3798e6        	bne	a8, a3, 0x37c29
+00037c42: 1df0     retw.n        ; Capstone

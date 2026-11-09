@@ -1,0 +1,129 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04664.txt",
+      "sha256": "258c92280dffda1920495e69f022a102ad28f82b493baadebbacc49f5f41fe58",
+      "byte_checked_records": 34
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/046c4.txt",
+      "sha256": "d7cd806ad90b17dcf7e87c3f1289d3462c3f4c6a932c836f49111bd19c64aac5",
+      "byte_checked_records": 34
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05138.txt",
+      "sha256": "026ba414925d59dbf800de8c534beb232b9f9f18723a2cdbbfce77425696367e",
+      "byte_checked_records": 52
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0542c.txt",
+      "sha256": "56e0ba05f197ff0252a419ad3a2f5b5f93f9b925a2f0ff30c5bf73da6d849da5",
+      "byte_checked_records": 17
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/08b3c.txt",
+      "sha256": "424820d167a95a7f0fcc247456703363ddf7832a54c55287ba28aaf45649da06",
+      "byte_checked_records": 21
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/08b78.txt",
+      "sha256": "5511ec9dd2c8ace7a428be3bc40aabcef5bb444627c501b335c5ed04943fa4ba",
+      "byte_checked_records": 225
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09830.txt",
+      "sha256": "ac403c6b60f94de4758d03b5e9eed2e590749fa1e04d5a72493aea7d2b8ee007",
+      "byte_checked_records": 222
+    }
+  ],
+  "bounded_local_store_ranges": [
+    {
+      "procedure": "4664",
+      "start": "0x5ffee464",
+      "end_exclusive": "0x5ffee4ec",
+      "written_bytes": 136,
+      "loop_iterations": 17,
+      "overlaps_CC_or_gate": false
+    },
+    {
+      "procedure": "46c4",
+      "start": "0x5ffee4ec",
+      "end_exclusive": "0x5ffee574",
+      "written_bytes": 136,
+      "loop_iterations": 17,
+      "overlaps_CC_or_gate": false
+    },
+    {
+      "procedure": "5138",
+      "start": "0x5ffed9e4",
+      "end_exclusive": "0x5ffedae4",
+      "written_bytes": 256,
+      "loop_iterations": 64,
+      "overlaps_CC_or_gate": false
+    },
+    {
+      "procedure": "542c",
+      "start": "0x5ffed9e4",
+      "end_exclusive": "0x5ffedae4",
+      "written_bytes": 256,
+      "loop_iterations": 64,
+      "overlaps_CC_or_gate": false
+    },
+    {
+      "procedure": "8b3c",
+      "start": "0x5ffee5fc",
+      "end_exclusive": "0x5ffee63c",
+      "written_bytes": 64,
+      "loop_iterations": 32,
+      "overlaps_CC_or_gate": false
+    }
+  ],
+  "known_9830_calls": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/076f8.txt",
+      "pc": "0x772e",
+      "output_pointer": 0
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/076f8.txt",
+      "pc": "0x773a",
+      "output_pointer": 0
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/076f8.txt",
+      "pc": "0x7746",
+      "output_pointer": 0
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/076f8.txt",
+      "pc": "0x7752",
+      "output_pointer": 0
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/076f8.txt",
+      "pc": "0x775e",
+      "output_pointer": 0
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07c3c.txt",
+      "pc": "0x7c5f",
+      "output_pointer": 0
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07cd8.txt",
+      "pc": "0x7d1d",
+      "output_pointer": 0
+    }
+  ],
+  "scan_sha256": "9cc4d7459fbed824ebcecf2ef6f8826a5b8a5c7db698ea01dac6332a536eabe1",
+  "findings": [
+    "4664 and46c4 each copy17 pairs ofDWORDs from hardware data registers to adjacent RAM ranges. Neither reaches gatee452, located18hex bytes before the first range, or savedCC arrays.",
+    "5138 and542c index64 DWORDs using even loop counter0..126 divided by2; their fixed table ends atdae4, below savedCCdfc4.",
+    "8b3c fills exactly64bytes frome5fc toe63b with50. 8d89 later writes one byte at e5fc+uint32[e63c]. Initializer sets index0 and8da0 writes(index+1)&63. Hence ring write stays in that range IF no other writer changes index; global exclusion is not claimed.",
+    "9830 accepts index<8 and writes callback cells in[d7e0,d820). Its optional store9868 uses output pointera5; seven known direct CALL8 sites passa13=0, becoming calleea5=0, so that store is skipped for those calls. Indirect callers remain unbounded.",
+    "These are exclusions of concrete candidate stores, not a proof that no LX6 instruction or engine can change CC/gate."
+  ],
+  "remaining": "Computed stores in other procedures, unobserved state changes and indirect callers; prioritize producer candidates rather than rechecking these bounded loops.",
+  "scope": "Offline listings checked against pinned code bytes and literal cells. Full interpretation retains inferred LX6 DRAM placement and existing partial CFG assumptions. No hardware access."
+}

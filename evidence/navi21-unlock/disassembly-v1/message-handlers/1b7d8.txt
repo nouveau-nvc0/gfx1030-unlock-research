@@ -1,0 +1,49 @@
+
+/tmp/tmpohscyp02/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001b7d8 <.data+0x1b7d8>:
+0001b7d8: 364100   entry        a1, 0x20 ; Capstone
+   1b7db:	ad02      	mov.n	a10, a2
+0001b7dd: 258ee6   call8        . -0x1971c ; Capstone ; target=0x20c0
+   1b7e0:	3d0a      	mov.n	a3, a10
+   1b7e2:	a2a088        	movi	a10, 136
+0001b7e5: a5d9e6   call8        . -0x19264 ; Capstone ; target=0x2580
+   1b7e8:	0c9a      	movi.n	a10, 9
+0001b7ea: 65f719   call8        . +0x19f78 ; Capstone ; target=0x35760
+   1b7ed:	165a04        	beqz	a10, 0x1b836
+   1b7f0:	30a074        	extui	a10, a3, 0, 8
+   1b7f3:	c1ebdd        	l32r	a12, 0x12fa0 (0x11064)
+   1b7f6:	0c28      	movi.n	a8, 2
+   1b7f8:	0c19      	movi.n	a9, 1
+   1b7fa:	924c08        	s8i	a9, a12, 8
+   1b7fd:	d2cc14        	addi	a13, a12, 20
+   1b800:	0c09      	movi.n	a9, 0
+0001b802: 76a81b   loopgtz      a8, . +0x1f ; Capstone
+   1b805:	b20cf8        	l8ui	a11, a12, 248
+   1b808:	000940        	ssr	a9
+   1b80b:	a0e0b1        	sra	a14, a10
+   1b80e:	b0b0b1        	sra	a11, a11
+   1b811:	076b07        	bbci	a11, 0, 0x1b81c
+   1b814:	daf9      	add.n	a15, a9, a13
+   1b816:	e0e004        	extui	a14, a14, 0, 1
+   1b819:	e24f7e        	s8i	a14, a15, 126
+   1b81c:	1b99      	addi.n	a9, a9, 1
+   1b81e:	909074        	extui	a9, a9, 0, 8
+   1b821:	a2a080        	movi	a10, 128
+0001b824: a5791b   call8        . +0x1b79c ; Capstone ; target=0x36fc0
+   1b827:	a2a088        	movi	a10, 136
+0001b82a: a5c4e6   call8        . -0x193b4 ; Capstone ; target=0x2474
+   1b82d:	ad02      	mov.n	a10, a2
+   1b82f:	0c1b      	movi.n	a11, 1
+0001b831: a586e6   call8        . -0x19794 ; Capstone ; target=0x209c
+0001b834: 1df0     retw.n        ; Capstone
+   1b836:	a2a088        	movi	a10, 136
+0001b839: a5c3e6   call8        . -0x193c4 ; Capstone ; target=0x2474
+   1b83c:	ad02      	mov.n	a10, a2
+   1b83e:	b2a0ff        	movi	a11, 255
+0001b841: a585e6   call8        . -0x197a4 ; Capstone ; target=0x209c
+0001b844: 1df0     retw.n        ; Capstone
+	...

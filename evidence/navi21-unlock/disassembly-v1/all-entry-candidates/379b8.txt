@@ -1,0 +1,48 @@
+
+/tmp/tmpi81ml6yh/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000379b8 <.data+0x379b8>:
+000379b8: 364100   entry        a1, 0x20 ; Capstone
+   379bb:	21286d        	l32r	a2, 0x12e5c (0x69a0)
+   379be:	0c13      	movi.n	a3, 1
+   379c0:	c02000        	memw
+   379c3:	8842      	l32i.n	a8, a2, 16
+   379c5:	dc58      	bnez.n	a8, 0x379de
+   379c7:	a1f772        	l32r	a10, 0x145a4 (0x37920)
+   379ca:	0c3b      	movi.n	a11, 3
+   379cc:	0c0c      	movi.n	a12, 0
+   379ce:	0c0d      	movi.n	a13, 0
+   379d0:	0c0e      	movi.n	a14, 0
+   379d2:	0c0f      	movi.n	a15, 0
+000379d4: 2576ca   call8        . -0x3589c ; Capstone ; target=0x2138
+   379d7:	cc3a      	bnez.n	a10, 0x379de
+   379d9:	c02000        	memw
+   379dc:	3942      	s32i.n	a3, a2, 16
+   379de:	a1126d        	l32r	a10, 0x12e28 (0x9c00)
+   379e1:	920ae2        	l8ui	a9, a10, 226
+   379e4:	1b99      	addi.n	a9, a9, 1
+   379e6:	909074        	extui	a9, a9, 0, 8
+   379e9:	662927        	bnei	a9, 2, 0x37a14
+   379ec:	0c0c      	movi.n	a12, 0
+   379ee:	c24ae2        	s8i	a12, a10, 226
+   379f1:	c02000        	memw
+   379f4:	b802      	l32i.n	a11, a2, 0
+   379f6:	dc5b      	bnez.n	a11, 0x37a0f
+   379f8:	a1ec72        	l32r	a10, 0x145a8 (0x3796c)
+   379fb:	0c4b      	movi.n	a11, 4
+   379fd:	0c0c      	movi.n	a12, 0
+   379ff:	0c0d      	movi.n	a13, 0
+   37a01:	0c0e      	movi.n	a14, 0
+   37a03:	0c0f      	movi.n	a15, 0
+00037a05: 2573ca   call8        . -0x358cc ; Capstone ; target=0x2138
+   37a08:	cc3a      	bnez.n	a10, 0x37a0f
+   37a0a:	c02000        	memw
+   37a0d:	3902      	s32i.n	a3, a2, 0
+00037a0f: 656dca   call8        . -0x35928 ; Capstone ; target=0x20e4
+00037a12: 1df0     retw.n        ; Capstone
+   37a14:	924ae2        	s8i	a9, a10, 226
+00037a17: 1df0     retw.n        ; Capstone
+   37a19:	000000        	ill

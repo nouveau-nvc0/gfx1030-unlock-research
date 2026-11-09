@@ -1,0 +1,22 @@
+
+/tmp/tmplmfg701t/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00036f98 <.data+0x36f98>:
+00036f98: 364100   entry        a1, 0x20 ; Capstone
+   36f9b:	0c8a      	movi.n	a10, 8
+00036f9d: 255ecb   call8        . -0x34a1c ; Capstone ; target=0x2580
+   36fa0:	ad02      	mov.n	a10, a2
+   36fa2:	b1bd71        	l32r	a11, 0x13698 (0x9f38)
+   36fa5:	c2a684        	movi	a12, 0x684
+00036fa8: 657a00   call8        . +0x7a8 ; Capstone ; target=0x37750
+00036fab: e50e00   call8        . +0xf0 ; Capstone ; target=0x37098
+   36fae:	a2a0ff        	movi	a10, 255
+00036fb1: e50000   call8        . +0x10 ; Capstone ; target=0x36fc0
+   36fb4:	0c8a      	movi.n	a10, 8
+00036fb6: e54bcb   call8        . -0x34b40 ; Capstone ; target=0x2474
+   36fb9:	0c02      	movi.n	a2, 0
+00036fbb: 1df0     retw.n        ; Capstone
+   36fbd:	000000        	ill

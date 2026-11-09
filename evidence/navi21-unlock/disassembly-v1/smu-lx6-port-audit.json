@@ -1,0 +1,36 @@
+{
+  "smu_sha256": "0eb99764288f764fd853d6973693ffa52419cc7ba62074aee85df4a3e8d0286d",
+  "toc_receipt_sha256": "07f497dcf1eced46ddf8f08f8e72bd49033214941eac8c73b1969c5826fbaf09",
+  "scan_receipt_sha256": "3140e13a421d08408f422fefc42494938de32159156be3758a77264516abc1a4",
+  "scan_roots": 1438,
+  "candidate_dwords": [
+    "0xfb55",
+    "0xfb56"
+  ],
+  "candidate_public_bytes": [
+    "0x3ed54",
+    "0x3ed58"
+  ],
+  "all_byte_literal_matches": {
+    "0xfb55": [],
+    "0xfb56": [],
+    "0x3ed54": [],
+    "0x3ed58": [],
+    "0x123ed54": [],
+    "0x123ed58": [],
+    "0x6003ed54": [],
+    "0x6003ed58": [],
+    "0x6803ed54": [],
+    "0x6803ed58": []
+  },
+  "fixed_store_matches": [],
+  "connection": "Concrete TOC boot/snapshot DRAM pair supplies a stronger LX6-memory endpoint candidate than earlier generic SRM_DRAM/GPM_SCRATCH names. SMU generic store can only be connected to it after its physical alias and acceptance are established.",
+  "open_dependencies": [
+    "TOC port pair to actual LX6 DRAM identity and indexing units",
+    "SMU address alias and allowed physical transactions at those ports",
+    "availability of generic store dispatch/channel and per-command conditions",
+    "state lifetime and callable CC restore path",
+    "hardware acceptance of changed CC values"
+  ],
+  "scope": "No literal or previously resolved fixed-store match for10candidate encodings. Does not exclude computed access. Cross-engine mapping remains an inference, not a demonstrated write route."
+}

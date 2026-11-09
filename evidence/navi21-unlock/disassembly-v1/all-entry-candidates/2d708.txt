@@ -1,0 +1,22 @@
+
+/tmp/tmpa6cbesy2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002d708 <.data+0x2d708>:
+0002d708: 364100   entry        a1, 0x20 ; Capstone
+0002d70b: 651500   call8        . +0x158 ; Capstone ; target=0x2d860
+   2d70e:	b1ad96        	l32r	a11, 0x131c4 (0x100000)
+   2d711:	c0a201        	slli	a10, a2, 20
+   2d714:	91c795        	l32r	a9, 0x12e30 (0x1259e00)
+   2d717:	b0aa10        	and	a10, a10, a11
+   2d71a:	b16d99        	l32r	a11, 0x13cd0 (0xffefffff)
+   2d71d:	c02000        	memw
+   2d720:	822989        	l32i	a8, a9, 0x224
+   2d723:	b08810        	and	a8, a8, a11
+   2d726:	a08820        	or	a8, a8, a10
+   2d729:	c02000        	memw
+   2d72c:	826989        	s32i	a8, a9, 0x224
+0002d72f: 1df0     retw.n        ; Capstone
+   2d731:	000000        	ill

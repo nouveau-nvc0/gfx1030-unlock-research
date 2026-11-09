@@ -1,0 +1,12 @@
+
+/tmp/tmput8reqmy/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0003167c <.data+0x3167c>:
+0003167c: 364100   entry        a1, 0x20 ; Capstone
+   3167f:	213c89        	l32r	a2, 0x13b70 (0xc82c)
+   31682:	22027d        	l8ui	a2, a2, 125
+00031685: 1df0     retw.n        ; Capstone
+	...

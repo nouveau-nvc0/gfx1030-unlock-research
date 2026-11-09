@@ -1,0 +1,30 @@
+
+/tmp/tmp8y3mfy7j/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000287c4 <.data+0x287c4>:
+000287c4: 364100   entry        a1, 0x20 ; Capstone
+   287c7:	a119ad        	l32r	a10, 0x13c2c (0x54a60)
+000287ca: 6515d9   call8        . -0x26ea8 ; Capstone ; target=0x1920
+   287cd:	bd0a      	mov.n	a11, a10
+   287cf:	a118ad        	l32r	a10, 0x13c30 (0x154a60)
+000287d2: 6510d9   call8        . -0x26ef8 ; Capstone ; target=0x18d8
+   287d5:	a117ad        	l32r	a10, 0x13c34 (0x354a60)
+000287d8: 6514d9   call8        . -0x26eb8 ; Capstone ; target=0x1920
+   287db:	bd0a      	mov.n	a11, a10
+   287dd:	a116ad        	l32r	a10, 0x13c38 (0x254a60)
+000287e0: 650fd9   call8        . -0x26f08 ; Capstone ; target=0x18d8
+   287e3:	a116ad        	l32r	a10, 0x13c3c (0x454a60)
+000287e6: a513d9   call8        . -0x26ec4 ; Capstone ; target=0x1920
+   287e9:	bd0a      	mov.n	a11, a10
+   287eb:	a115ad        	l32r	a10, 0x13c40 (0x554a60)
+000287ee: a50ed9   call8        . -0x26f14 ; Capstone ; target=0x18d8
+   287f1:	a114ad        	l32r	a10, 0x13c44 (0x754a60)
+000287f4: a512d9   call8        . -0x26ed4 ; Capstone ; target=0x1920
+   287f7:	bd0a      	mov.n	a11, a10
+   287f9:	a113ad        	l32r	a10, 0x13c48 (0x654a60)
+000287fc: a50dd9   call8        . -0x26f24 ; Capstone ; target=0x18d8
+000287ff: 1df0     retw.n        ; Capstone
+   28801:	000000        	ill

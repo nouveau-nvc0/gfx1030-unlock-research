@@ -1,0 +1,51 @@
+
+/tmp/tmpy3qaubd7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000207ac <.data+0x207ac>:
+000207ac: 364100   entry        a1, 0x20 ; Capstone
+   207af:	51ceca        	l32r	a5, 0x132e8 (0x4000000)
+   207b2:	b803      	l32i.n	a11, a3, 0
+   207b4:	c813      	l32i.n	a12, a3, 4
+   207b6:	920309        	l8ui	a9, a3, 9
+   207b9:	4d0b      	mov.n	a4, a11
+   207bb:	5a5c      	add.n	a5, a12, a5
+   207bd:	c7b501        	bgeu	a5, a12, 0x207c2
+   207c0:	1b4b      	addi.n	a4, a11, 1
+   207c2:	ec29      	bnez.n	a9, 0x207e8
+   207c4:	ad02      	mov.n	a10, a2
+   207c6:	d20308        	l8ui	a13, a3, 8
+000207c9: 65f8ff   call8        . -0x78 ; Capstone ; target=0x20750
+   207cc:	cd05      	mov.n	a12, a5
+   207ce:	bd04      	mov.n	a11, a4
+   207d0:	1ba2      	addi.n	a10, a2, 1
+   207d2:	d20308        	l8ui	a13, a3, 8
+000207d5: a5f7ff   call8        . -0x84 ; Capstone ; target=0x20750
+   207d8:	c813      	l32i.n	a12, a3, 4
+   207da:	911dcb        	l32r	a9, 0x13450 (0x3ffffff)
+   207dd:	608201        	slli	a8, a2, 26
+   207e0:	902c10        	and	a2, a12, a9
+   207e3:	802220        	or	a2, a2, a8
+000207e6: 1df0     retw.n        ; Capstone
+   207e8:	6619ee        	bnei	a9, 1, 0x207da
+   207eb:	ad02      	mov.n	a10, a2
+   207ed:	d20308        	l8ui	a13, a3, 8
+   207f0:	e2030a        	l8ui	a14, a3, 10
+   207f3:	f2030c        	l8ui	a15, a3, 12
+000207f6: a5eeff   call8        . -0x114 ; Capstone ; target=0x206e0
+   207f9:	cd05      	mov.n	a12, a5
+   207fb:	bd04      	mov.n	a11, a4
+   207fd:	1ba2      	addi.n	a10, a2, 1
+   207ff:	d20308        	l8ui	a13, a3, 8
+   20802:	e2030a        	l8ui	a14, a3, 10
+   20805:	f2030c        	l8ui	a15, a3, 12
+00020808: 65edff   call8        . -0x128 ; Capstone ; target=0x206e0
+   2080b:	46f2ff        	j	0x207d8
+0002080e: 000036   ee.ldf.64.xp f0, f3, a0, a0 ; Capstone
+   20811:	4100e5        	l32r	a4, 0x19c14 (0x0)
+00020814: 95e00c   call4        . +0xce0c ; Capstone ; target=0x2d620
+   20817:	32202a        	l32i	a3, a0, 168
+   2081a:	901df0        	subx8	a1, a13, a9
+   2081d:	000000        	ill

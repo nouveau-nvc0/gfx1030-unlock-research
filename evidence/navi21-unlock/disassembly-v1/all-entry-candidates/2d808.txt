@@ -1,0 +1,22 @@
+
+/tmp/tmpdkbceaen/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002d808 <.data+0x2d808>:
+0002d808: 364100   entry        a1, 0x20 ; Capstone
+0002d80b: e50a00   call8        . +0xb0 ; Capstone ; target=0x2d8b8
+   2d80e:	b1f695        	l32r	a11, 0x12fe8 (0x80000000)
+   2d811:	10a201        	slli	a10, a2, 31
+   2d814:	918795        	l32r	a9, 0x12e30 (0x1259e00)
+   2d817:	b0aa10        	and	a10, a10, a11
+   2d81a:	b11796        	l32r	a11, 0x13078 (0x7fffffff)
+   2d81d:	c02000        	memw
+   2d820:	82298a        	l32i	a8, a9, 0x228
+   2d823:	b08810        	and	a8, a8, a11
+   2d826:	a08820        	or	a8, a8, a10
+   2d829:	c02000        	memw
+   2d82c:	82698a        	s32i	a8, a9, 0x228
+0002d82f: 1df0     retw.n        ; Capstone
+   2d831:	000000        	ill

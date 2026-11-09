@@ -1,0 +1,32 @@
+{
+  "status": "PREPARED_ONLY_NOT_EXECUTABLE_NOT_APPLIED",
+  "authorization": "Not authorized; user permits bank selection for reads only and explicitly requests no changes",
+  "register": "CC_GC_SA_UNIT_DISABLE",
+  "byte_offset": "0x8924",
+  "trials": [
+    {
+      "bdf": "0000:07:00.0",
+      "required_before": "0x00000c01",
+      "test_value": "0x00000801",
+      "restore": "0x00000c01",
+      "clear_mask": "0x00000400"
+    },
+    {
+      "bdf": "0000:04:00.0",
+      "required_before": "0x00000301",
+      "test_value": "0x00000201",
+      "restore": "0x00000301",
+      "clear_mask": "0x00000100"
+    },
+    {
+      "bdf": "0000:0a:00.0",
+      "required_before": "0x00000301",
+      "test_value": "0x00000201",
+      "restore": "0x00000301",
+      "clear_mask": "0x00000100"
+    }
+  ],
+  "scope": "One board, single shadow-register bit test and immediate restore; no dispatch",
+  "reversibility": "Unproven. A failed restore or wedge may require cold reboot; not safe to apply on current active host",
+  "result": null
+}

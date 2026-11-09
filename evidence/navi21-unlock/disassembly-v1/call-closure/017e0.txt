@@ -1,0 +1,37 @@
+
+/tmp/tmp00zibdth/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000017e0 <.data+0x17e0>:
+000017e0: 364100   entry        a1, 0x20 ; Capstone
+    17e3:	91eefc        	l32r	a9, 0xb9c (0x7b1c)
+    17e6:	706200        	rsil	a7, 2
+    17e9:	62c9f8        	addi	a6, a9, -8
+    17ec:	4d09      	mov.n	a4, a9
+    17ee:	82a080        	movi	a8, 128
+    17f1:	0c4c      	movi.n	a12, 4
+    17f3:	52267f        	l32i	a5, a6, 0x1fc
+    17f6:	0c42      	movi.n	a2, 4
+    17f8:	0c03      	movi.n	a3, 0
+    17fa:	32452b        	s8i	a3, a5, 43
+000017fd: 76a215   loopgtz      a2, . +0x19 ; Capstone
+    1800:	a2267f        	l32i	a10, a6, 0x1fc
+    1803:	52247f        	l32i	a5, a4, 0x1fc
+    1806:	4b44      	addi.n	a4, a4, 4
+    1808:	571a08        	beq	a10, a5, 0x1814
+    180b:	b20528        	l8ui	a11, a5, 40
+    180e:	80bb20        	or	a11, a11, a8
+    1811:	b24528        	s8i	a11, a5, 40
+    1814:	3df0      	nop.n
+    1816:	904920        	or	a4, a9, a9
+00001819: 76ac0c   loopgtz      a12, . +0x10 ; Capstone
+    181c:	e2247f        	l32i	a14, a4, 0x1fc
+    181f:	d80e      	l32i.n	a13, a14, 0
+    1821:	4b44      	addi.n	a4, a4, 4
+    1823:	d22d15        	l32i	a13, a13, 84
+    1826:	d26e12        	s32i	a13, a14, 72
+    1829:	70e613        	wsr.ps	a7
+0000182c: 1df0     retw.n        ; Capstone
+	...

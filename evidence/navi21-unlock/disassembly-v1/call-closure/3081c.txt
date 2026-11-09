@@ -1,0 +1,28 @@
+
+/tmp/tmp3_4_2qdz/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0003081c <.data+0x3081c>:
+0003081c: 364100   entry        a1, 0x20 ; Capstone
+   3081f:	a1918a        	l32r	a10, 0x13264 (0xc2d4)
+   30822:	b1528c        	l32r	a11, 0x1396c (0xc488)
+   30825:	aaa2      	add.n	a10, a2, a10
+   30827:	820a80        	l8ui	a8, a10, 128
+   3082a:	bab2      	add.n	a11, a2, a11
+   3082c:	37181d        	beq	a8, a3, 0x3084d
+   3082f:	ccd3      	bnez.n	a3, 0x30840
+   30831:	0c0c      	movi.n	a12, 0
+   30833:	c24a80        	s8i	a12, a10, 128
+   30836:	ad02      	mov.n	a10, a2
+   30838:	b20b84        	l8ui	a11, a11, 132
+0003083b: 25d7ed   call8        . -0x1228c ; Capstone ; target=0x1e5ac
+0003083e: 1df0     retw.n        ; Capstone
+   30840:	0c1d      	movi.n	a13, 1
+   30842:	d24a80        	s8i	a13, a10, 128
+   30845:	ad02      	mov.n	a10, a2
+   30847:	b20b80        	l8ui	a11, a11, 128
+0003084a: 25d6ed   call8        . -0x1229c ; Capstone ; target=0x1e5ac
+0003084d: 1df0     retw.n        ; Capstone
+	...

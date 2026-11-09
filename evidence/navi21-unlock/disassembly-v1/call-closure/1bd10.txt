@@ -1,0 +1,50 @@
+
+/tmp/tmpdn4j0nfy/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001bd10 <.data+0x1bd10>:
+0001bd10: 364100   entry        a1, 0x20 ; Capstone
+   1bd13:	316ddc        	l32r	a3, 0x12ec8 (0x7684)
+   1bd16:	320380        	l8ui	a3, a3, 128
+   1bd19:	406200        	rsil	a4, 2
+   1bd1c:	0c0a      	movi.n	a10, 0
+0001bd1e: 25fcff   call8        . -0x3c ; Capstone ; target=0x1bce0
+   1bd21:	163a04        	beqz	a10, 0x1bd68
+   1bd24:	c1b6dc        	l32r	a12, 0x12ffc (0x7620)
+   1bd27:	d172dc        	l32r	a13, 0x12ef0 (0x7514)
+   1bd2a:	ccf3      	bnez.n	a3, 0x1bd3d
+   1bd2c:	820ce0        	l8ui	a8, a12, 224
+   1bd2f:	d088a0        	addx4	a8, a8, a13
+   1bd32:	82287f        	l32i	a8, a8, 0x1fc
+   1bd35:	c02000        	memw
+   1bd38:	2908      	s32i.n	a2, a8, 0
+   1bd3a:	460900        	j	0x1bd63
+   1bd3d:	92a07f        	movi	a9, 127
+   1bd40:	97132b        	beq	a3, a9, 0x1bd6f
+   1bd43:	e20ce0        	l8ui	a14, a12, 224
+   1bd46:	b1aedc        	l32r	a11, 0x13000 (0x1000000)
+   1bd49:	f1aedc        	l32r	a15, 0x13004 (0xfffff)
+   1bd4c:	d0eea0        	addx4	a14, a14, a13
+   1bd4f:	e22e7f        	l32i	a14, a14, 0x1fc
+   1bd52:	aba3      	addi.n	a10, a3, 10
+   1bd54:	c0aa01        	slli	a10, a10, 20
+   1bd57:	f0ee10        	and	a14, a14, a15
+   1bd5a:	eaaa      	add.n	a10, a10, a14
+   1bd5c:	baaa      	add.n	a10, a10, a11
+   1bd5e:	c02000        	memw
+   1bd61:	290a      	s32i.n	a2, a10, 0
+   1bd63:	0c02      	movi.n	a2, 0
+   1bd65:	460000        	j	0x1bd6a
+   1bd68:	0c12      	movi.n	a2, 1
+   1bd6a:	40e613        	wsr.ps	a4
+0001bd6d: 1df0     retw.n        ; Capstone
+   1bd6f:	0c0c      	movi.n	a12, 0
+   1bd71:	1c2b      	movi.n	a11, 18
+   1bd73:	d154dc        	l32r	a13, 0x12ec4 (0x300fe00)
+   1bd76:	1c0a      	movi.n	a10, 16
+   1bd78:	c02000        	memw
+   1bd7b:	d22d8a        	l32i	a13, a13, 0x228
+0001bd7e: e588e6   call8        . -0x19770 ; Capstone ; target=0x260c
+   1bd81:	000000        	ill

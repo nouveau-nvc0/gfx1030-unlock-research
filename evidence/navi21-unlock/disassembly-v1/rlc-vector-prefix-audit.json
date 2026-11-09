@@ -1,0 +1,19 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "checked_listing_records": 59,
+  "initial_iram_literals": {
+    "0x4": "0x2222112f",
+    "0x8": "0xe0000000",
+    "0xc": "0x5fff0054",
+    "0x10": "0x0",
+    "0x14": "0x5fff9950",
+    "0x18": "0x5ffed960"
+  },
+  "initial_stack": "5fff0000 at648:64d",
+  "entry_chain": [
+    "0->24",
+    "a9 CALL0 648"
+  ],
+  "handler_install": "9d loads5fff9950; a0 WSR.EXCSAVE2; a6 stores to5ffed960",
+  "limitations": "Entry at0 is an image entry candidate; external launch and reset timing not measured. TLB mappings, vector roots and runtime stack bounds remain incompletely modeled."
+}

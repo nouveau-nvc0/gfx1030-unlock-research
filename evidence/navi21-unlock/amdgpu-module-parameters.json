@@ -1,0 +1,11 @@
+{
+  "disable_cu": "(null)",
+  "cg_mask": "18446744073709551615",
+  "pg_mask": "4294967295",
+  "fw_load_type": "-1",
+  "force_asic_type": "-1",
+  "ip_block_mask": "4294967295",
+  "discovery": "-1",
+  "dpm": "-1",
+  "ppfeaturemask": "0xfff7bfff"
+}

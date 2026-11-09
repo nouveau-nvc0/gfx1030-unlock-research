@@ -1,0 +1,57 @@
+
+/tmp/tmp9lhotvwl/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000022d0 <.data+0x22d0>:
+000022d0: 364100   entry        a1, 0x20 ; Capstone
+    22d3:	a121fa        	l32r	a10, 0xb58 (0x7b14)
+    22d6:	420a7c        	l8ui	a4, a10, 124
+    22d9:	620a7d        	l8ui	a6, a10, 125
+    22dc:	b12ffa        	l32r	a11, 0xb98 (0x7a1c)
+    22df:	16b406        	beqz	a4, 0x234e
+    22e2:	609690        	addx2	a9, a6, a6
+    22e5:	b099a0        	addx4	a9, a9, a11
+    22e8:	82097f        	l8ui	a8, a9, 127
+    22eb:	fd0a      	mov.n	a15, a10
+    22ed:	b2193e        	l16ui	a11, a9, 124
+    22f0:	807034        	extui	a7, a8, 0, 4
+    22f3:	772357        	blt	a3, a7, 0x234e
+    22f6:	72420a        	s8i	a7, a2, 10
+    22f9:	520f7e        	l8ui	a5, a15, 126
+    22fc:	a2097e        	l8ui	a10, a9, 126
+    22ff:	b25204        	s16i	a11, a2, 8
+    2302:	d2291d        	l32i	a13, a9, 116
+    2305:	c2291e        	l32i	a12, a9, 120
+    2308:	c912      	s32i.n	a12, a2, 4
+    230a:	d902      	s32i.n	a13, a2, 0
+    230c:	0c2b      	movi.n	a11, 2
+    230e:	a24f7d        	s8i	a10, a15, 125
+    2311:	52497e        	s8i	a5, a9, 126
+    2314:	80a404        	extui	a10, a8, 4, 1
+    2317:	52cfec        	addi	a5, a15, -20
+    231a:	f0aa11        	slli	a10, a10, 1
+    231d:	624f7e        	s8i	a6, a15, 126
+    2320:	42097f        	l8ui	a4, a9, 127
+    2323:	b0aa10        	and	a10, a10, a11
+    2326:	62020b        	l8ui	a6, a2, 11
+    2329:	7cdb      	movi.n	a11, -3
+    232b:	404034        	extui	a4, a4, 0, 4
+    232e:	5a44      	add.n	a4, a4, a5
+    2330:	320480        	l8ui	a3, a4, 128
+    2333:	b06610        	and	a6, a6, a11
+    2336:	a06620        	or	a6, a6, a10
+    2339:	0b33      	addi.n	a3, a3, -1
+    233b:	324480        	s8i	a3, a4, 128
+    233e:	e20f7c        	l8ui	a14, a15, 124
+    2341:	0c1a      	movi.n	a10, 1
+    2343:	a06620        	or	a6, a6, a10
+    2346:	0bee      	addi.n	a14, a14, -1
+    2348:	e24f7c        	s8i	a14, a15, 124
+    234b:	060200        	j	0x2357
+    234e:	62020b        	l8ui	a6, a2, 11
+    2351:	82a0fe        	movi	a8, 254
+    2354:	806610        	and	a6, a6, a8
+    2357:	62420b        	s8i	a6, a2, 11
+0000235a: 1df0     retw.n        ; Capstone

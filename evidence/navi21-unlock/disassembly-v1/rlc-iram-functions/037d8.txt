@@ -1,0 +1,49 @@
+
+/tmp/tmpc9049_89/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000037d8 <.data+0x37d8>:
+000037d8: 364100   entry        a1, 0x20 ; Capstone
+    37db:	2c44      	movi.n	a4, 36
+    37dd:	3188e6        	l32r	a3, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    37e0:	acc2      	beqz.n	a2, 0x3810
+    37e2:	a2a001        	movi	a10, 1
+000037e5: e59afd   call8        . -0x2650 ; Capstone ; target=0x1194
+    37e8:	0c08      	movi.n	a8, 0
+    37ea:	8263e8        	s32i	a8, a3, 0x3a0
+    37ed:	9223e9        	l32i	a9, a3, 0x3a4
+    37f0:	4789f9        	bany	a9, a4, 0x37ed
+    37f3:	0c1a      	movi.n	a10, 1
+000037f5: 650400   call8        . +0x48 ; Capstone ; target=0x383c
+    37f8:	c223ec        	l32i	a12, a3, 0x3b0
+    37fb:	0c1b      	movi.n	a11, 1
+    37fd:	b0cc20        	or	a12, a12, a11
+    3800:	c263ec        	s32i	a12, a3, 0x3b0
+    3803:	a223ed        	l32i	a10, a3, 0x3b4
+    3806:	b0aa20        	or	a10, a10, a11
+    3809:	a263ed        	s32i	a10, a3, 0x3b4
+0000380c: 1df0     retw.n        ; Capstone
+0000380e: 0000f2   rems         a0, a0, a0 ; Capstone
+    3811:	23ec7c        	excw
+    3814:	ee          	.byte 0xee
+    3815:	e0ff10        	and	a15, a15, a14
+    3818:	f263ec        	s32i	a15, a3, 0x3b0
+    381b:	d223ed        	l32i	a13, a3, 0x3b4
+    381e:	0c0a      	movi.n	a10, 0
+    3820:	e0dd10        	and	a13, a13, a14
+    3823:	d263ed        	s32i	a13, a3, 0x3b4
+00003826: 650100   call8        . +0x18 ; Capstone ; target=0x383c
+    3829:	0c38      	movi.n	a8, 3
+    382b:	8263e8        	s32i	a8, a3, 0x3a0
+    382e:	9223e9        	l32i	a9, a3, 0x3a4
+    3831:	47c9f9        	bnall	a9, a4, 0x382e
+    3834:	0c0a      	movi.n	a10, 0
+00003836: e595fd   call8        . -0x26a0 ; Capstone ; target=0x1194
+00003839: 1df0     retw.n        ; Capstone
+	...
+
+; Alternate branch-target decode
+    3810:	f223ec        	l32i	a15, a3, 0x3b0
+    3813:	7cee      	movi.n	a14, -2

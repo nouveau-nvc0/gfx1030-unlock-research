@@ -1,0 +1,68 @@
+
+/tmp/tmphppp10_i/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001fcf0 <.data+0x1fcf0>:
+0001fcf0: 364100   entry        a1, 0x20 ; Capstone
+   1fcf3:	c189cd        	l32r	a12, 0x13318 (0xef90)
+   1fcf6:	b187cd        	l32r	a11, 0x13314 (0x3010f00)
+   1fcf9:	2c05      	movi.n	a5, 32
+   1fcfb:	524c80        	s8i	a5, a12, 128
+   1fcfe:	480b      	l32i.n	a4, a11, 0
+   1fd00:	d2ac03        	movi	a13, 0xfffffc03
+   1fd03:	52a080        	movi	a5, 128
+   1fd06:	d04410        	and	a4, a4, a13
+   1fd09:	504420        	or	a4, a4, a5
+   1fd0c:	490b      	s32i.n	a4, a11, 0
+   1fd0e:	9183cd        	l32r	a9, 0x1331c (0x3030600)
+   1fd11:	a184cd        	l32r	a10, 0x13324 (0x3010a00)
+   1fd14:	419ccd        	l32r	a4, 0x13384 (0x50010020)
+   1fd17:	c02000        	memw
+   1fd1a:	322a24        	l32i	a3, a10, 144
+   1fd1d:	803311        	slli	a3, a3, 8
+   1fd20:	403320        	or	a3, a3, a4
+   1fd23:	c02000        	memw
+   1fd26:	71b7cc        	l32r	a7, 0x13004 (0xfffff)
+   1fd29:	5198cd        	l32r	a5, 0x1338c (0xf7000000)
+   1fd2c:	4199cd        	l32r	a4, 0x13390 (0xfffe00)
+   1fd2f:	3909      	s32i.n	a3, a9, 0
+   1fd31:	0c32      	movi.n	a2, 3
+   1fd33:	3195cd        	l32r	a3, 0x13388 (0xeee8)
+0001fd36: 76a21c   loopgtz      a2, . +0x20 ; Capstone
+   1fd39:	82237e        	l32i	a8, a3, 0x1f8
+   1fd3c:	62237f        	l32i	a6, a3, 0x1fc
+   1fd3f:	5ae8      	add.n	a14, a8, a5
+   1fd41:	e0e4b5        	extui	a14, a14, 20, 12
+   1fd44:	708810        	and	a8, a8, a7
+   1fd47:	c0ee01        	slli	a14, a14, 20
+   1fd4a:	ea88      	add.n	a8, a8, a14
+   1fd4c:	4a88      	add.n	a8, a8, a4
+   1fd4e:	c02000        	memw
+   1fd51:	626880        	s32i	a6, a8, 0x200
+   1fd54:	8b33      	addi.n	a3, a3, 8
+   1fd56:	3182cc        	l32r	a3, 0x12f60 (0x100ae00)
+   1fd59:	42a081        	movi	a4, 129
+   1fd5c:	c02000        	memw
+   1fd5f:	42638d        	s32i	a4, a3, 0x234
+   1fd62:	2c12      	movi.n	a2, 33
+   1fd64:	224c80        	s8i	a2, a12, 128
+   1fd67:	f80b      	l32i.n	a15, a11, 0
+   1fd69:	22a084        	movi	a2, 132
+   1fd6c:	d0ff10        	and	a15, a15, a13
+   1fd6f:	20ff20        	or	a15, a15, a2
+   1fd72:	f90b      	s32i.n	a15, a11, 0
+   1fd74:	f188cd        	l32r	a15, 0x13394 (0x50010021)
+   1fd77:	c02000        	memw
+   1fd7a:	e22a24        	l32i	a14, a10, 144
+   1fd7d:	80ee11        	slli	a14, a14, 8
+   1fd80:	f0ee20        	or	a14, a14, a15
+   1fd83:	c02000        	memw
+   1fd86:	e909      	s32i.n	a14, a9, 0
+   1fd88:	c02000        	memw
+   1fd8b:	42238d        	l32i	a4, a3, 0x234
+   1fd8e:	1764f6        	bbci	a4, 1, 0x1fd88
+   1fd91:	8764f3        	bbci	a4, 8, 0x1fd88
+0001fd94: 1df0     retw.n        ; Capstone
+	...

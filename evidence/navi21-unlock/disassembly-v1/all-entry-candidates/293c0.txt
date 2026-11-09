@@ -1,0 +1,23 @@
+
+/tmp/tmpn9unestt/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000293c0 <.data+0x293c0>:
+000293c0: 364100   entry        a1, 0x20 ; Capstone
+   293c3:	41daa6        	l32r	a4, 0x12f2c (0x141d600)
+   293c6:	c02000        	memw
+   293c9:	0b82      	addi.n	a8, a2, -1
+   293cb:	0c16      	movi.n	a6, 1
+   293cd:	0c05      	movi.n	a5, 0
+   293cf:	322441        	l32i	a3, a4, 0x104
+   293d2:	805683        	moveqz	a5, a6, a8
+   293d5:	6199a7        	l32r	a6, 0x1323c (0xfff7ffff)
+   293d8:	d05501        	slli	a5, a5, 19
+   293db:	603310        	and	a3, a3, a6
+   293de:	503320        	or	a3, a3, a5
+   293e1:	c02000        	memw
+   293e4:	326441        	s32i	a3, a4, 0x104
+000293e7: 1df0     retw.n        ; Capstone
+   293e9:	000000        	ill

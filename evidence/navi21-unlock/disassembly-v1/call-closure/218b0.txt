@@ -1,0 +1,23 @@
+
+/tmp/tmpbg2_yte1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000218b0 <.data+0x218b0>:
+000218b0: 364100   entry        a1, 0x20 ; Capstone
+   218b3:	4c0a      	movi.n	a10, 64
+000218b5: a5cce0   call8        . -0x1f334 ; Capstone ; target=0x2580
+   218b8:	0c4a      	movi.n	a10, 4
+   218ba:	3ceb      	movi.n	a11, 62
+   218bc:	202175        	extui	a2, a2, 17, 8
+   218bf:	4c08      	movi.n	a8, 64
+   218c1:	c2a080        	movi	a12, 128
+   218c4:	20c883        	moveqz	a12, a8, a2
+000218c7: a535e0   call8        . -0x1fca4 ; Capstone ; target=0x1c20
+   218ca:	ad02      	mov.n	a10, a2
+   218cc:	0c1b      	movi.n	a11, 1
+000218ce: a50900   call8        . +0x9c ; Capstone ; target=0x21968
+   218d1:	4c0a      	movi.n	a10, 64
+000218d3: 25bae0   call8        . -0x1f45c ; Capstone ; target=0x2474
+000218d6: 1df0     retw.n        ; Capstone

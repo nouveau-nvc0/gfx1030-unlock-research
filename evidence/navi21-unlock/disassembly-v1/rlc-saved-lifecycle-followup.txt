@@ -1,0 +1,45 @@
+Saved-CC lifecycle in deferred callback3a00 — offline,2026-11-09
+
+Question and result
+Initial DRAM contains zero savedCC arrays. Can the known deferred cycle be
+assumed to restore those zeros? No: its local order explicitly contains a
+later hardware-to-RAM save, even when the earlier restore is skipped by gate0.
+This is a concrete reason that initial file bytes cannot stand for saved masks
+at a subsequent invocation. It does not prove that the cycle ran on this GPU.
+
+At3a7c the callback loads gatee452;3a81 branches to3b38 whenzero.
+If nonzero, it can reach3b32->6944(1,1), the restore operation, then3b35->3f04.
+Both paths join at3b38. From3b38 to3c0e there are76 contiguous instructions,
+with seven callsites and no local conditional branch or early return.
+3c0e->6944(0,0) saves hardware registers, including the71ac CC snapshot when
+its internal path and hardware waits complete. The eight argument bytes are
+explicitly zeroed before rebuilding the two call words.
+Therefore, conditional on reaching this region and all relevant calls returning:
+ gate0: no3b32restore, then3c0esave;
+ gate1:3b32restore, then3c0esave.
+This is not an assertion about timing, actual dispatch, or successful hardware
+completion. Earlier3a00 branches can return without reaching the gate test.
+
+Other local paths do not establish a global first-save order
+32a4 calls5bc8 then35d8.5bc8 cancels/clears deferred-callback state and has
+no local savedCC write.35d8 still checks gate and can restore before any local
+save in that wrapper. Thus the code does not prove a universal save-before-
+restore invariant for every possible callback history.
+38ec is a local gatezero save path and can register3a00 afterward, but raw
+all-byte immediateCALL search and full-container pointer search find no normal
+incoming reference to38ec. Do not use this unestablished invocation to prove
+that the registered3a00 route necessarily saved first.
+The2edc/70d4 alternative restore-entry gaps remain as previously documented.
+
+Consequence
+The remaining requirement is concrete state provenance at a callable restore
+point, not merely a changedmask-writing instruction. Initial zeros could only
+matter if that state persisted until such a point; this is unproved. The
+known cycle can overwrite them with hardware masks while gate remainszero.
+No new gate producer, modified masks, or accepted CC change is established.
+
+Reproduction: python3 scripts/navi21-rlc-saved-lifecycle-audit.py
+491listingrecords bytechecked;76-instruction local path checked; raw38ec
+reference searches recorded in rlc-saved-lifecycle-audit.json. Globalcall
+history, asynchronous writers, and fullcallee execution remain outside scope.
+No hardware,firmware,boot,driver or service state was changed.

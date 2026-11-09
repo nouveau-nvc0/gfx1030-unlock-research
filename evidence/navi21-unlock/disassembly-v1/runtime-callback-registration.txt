@@ -1,0 +1,14 @@
+Runtime descriptor registration, offline evidence
+
+UPDATE: full-entry CFG argument recovery supersedes the two-caller count below.
+18 direct35448 calls cover all14 indices with14 distinct descriptor addresses.
+Fields0/4/8/12 supply callbacks for2d08c/2d0cc and36fc0. All recovered targets
+are now closure roots. See registered-roots-audit.json and the reproducible
+scripts/navi21-smu-registered-roots.py. Previous two-caller observation was
+limited to the earlier partial closure, not all registrations in the image.
+
+35448 accepts index a2 and descriptor a3; stores descriptor at15450+4*index only when slot is empty, and increments count15448. 353d8 clears a populated slot and updates count/mask. 1be0c reads an indexed descriptor. No local index bound in these helpers; reachable callers and argument provenance still matter.
+
+Two direct callers in current closure:29d30 at29d6f and29ef8 at29f70 pass index1 and descriptor dbec. Descriptor callbacks at+4/+8/+12 are2a710/2a378/2d104. They feed36fc0 CALLX sites37004/37056/37082 respectively. 2d104 returns1 without stores. Other two callbacks use floating-point computations, RAM state and nested calls; their closure is now decoded, without a claimed CC producer. The14 initially zero slots do not imply absence of runtime callbacks.
+
+Coverage correction: Capstone relative branch operands must be parsed before absolute-hex suffixes. Local CFG now adds implicit loop-end repeat edges;107 such edges in current773-function closure. Positive USER_WGP and GRBM selector address controls pass. All address results remain locators because memory values, interprocedural side effects and dynamic tables are unresolved.

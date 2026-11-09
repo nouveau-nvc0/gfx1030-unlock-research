@@ -1,0 +1,21 @@
+
+/tmp/tmpho_1hpsk/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00002450 <.data+0x2450>:
+00002450: 364100   entry        a1, 0x20 ; Capstone
+    2453:	306200        	rsil	a3, 2
+    2456:	820200        	l8ui	a8, a2, 0
+    2459:	661812        	bnei	a8, 1, 0x246f
+    245c:	0c09      	movi.n	a9, 0
+    245e:	924200        	s8i	a9, a2, 0
+00002461: e5fcff   call8        . -0x30 ; Capstone ; target=0x2430
+    2464:	c812      	l32i.n	a12, a2, 4
+    2466:	b832      	l32i.n	a11, a2, 12
+    2468:	c0aac0        	sub	a10, a10, a12
+    246b:	aaab      	add.n	a10, a11, a10
+    246d:	a932      	s32i.n	a10, a2, 12
+    246f:	30e613        	wsr.ps	a3
+00002472: 1df0     retw.n        ; Capstone

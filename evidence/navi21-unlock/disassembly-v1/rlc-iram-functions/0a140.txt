@@ -1,0 +1,10 @@
+
+/tmp/tmpratxpsm7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000a140 <.data+0xa140>:
+0000a140: 364100   entry        a1, 0x20 ; Capstone
+0000a143: 1df0     retw.n        ; Capstone
+    a145:	000000        	ill

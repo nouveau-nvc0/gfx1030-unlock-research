@@ -1,0 +1,39 @@
+
+/tmp/tmpvmljgkq1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00024e48 <.data+0x24e48>:
+00024e48: 364100   entry        a1, 0x20 ; Capstone
+   24e4b:	0c03      	movi.n	a3, 0
+   24e4d:	5113b8        	l32r	a5, 0x12e9c (0xc0cc)
+   24e50:	6172ba        	l32r	a6, 0x13818 (0x237c)
+   24e53:	71f6b7        	l32r	a7, 0x12e2c (0xbf54)
+   24e56:	224580        	s8i	a2, a5, 128
+   24e59:	52c5b4        	addi	a5, a5, -76
+   24e5c:	f02311        	slli	a2, a3, 1
+   24e5f:	c10fb8        	l32r	a12, 0x12e9c (0xc0cc)
+   24e62:	b205cc        	l8ui	a11, a5, 204
+   24e65:	a1f0b7        	l32r	a10, 0x12e28 (0x9c00)
+00024e68: 230c31   lsi          f2, a12, 0xc4 ; Capstone
+   24e6b:	b0b390        	addx2	a11, a3, a11
+   24e6e:	70bba0        	addx4	a11, a11, a7
+00024e71: 130b7f   lsi          f1, a11, 0x1fc ; Capstone
+00024e74: 20012a   mul.s        f0, f1, f2 ; Capstone
+   24e77:	a04311        	slli	a4, a3, 6
+   24e7a:	6aaa      	add.n	a10, a10, a6
+   24e7c:	aaa4      	add.n	a10, a4, a10
+00024e7e: 40b0fa   rfr          a11, f0 ; Capstone
+00024e81: 25e810   call8        . +0x10e84 ; Capstone ; target=0x35d04
+   24e84:	d166ba        	l32r	a13, 0x1381c (0xbfa0)
+   24e87:	e205cc        	l8ui	a14, a5, 204
+   24e8a:	1b33      	addi.n	a3, a3, 1
+   24e8c:	303074        	extui	a3, a3, 0, 8
+   24e8f:	2aee      	add.n	a14, a14, a2
+   24e91:	70eea0        	addx4	a14, a14, a7
+00024e94: 330e87   lsi          f3, a14, 0x21c ; Capstone
+00024e97: d03448   ssx          f3, a4, a13 ; Capstone
+   24e9a:	6643be        	bnei	a3, 4, 0x24e5c
+00024e9d: 1df0     retw.n        ; Capstone
+	...

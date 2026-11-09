@@ -1,0 +1,46 @@
+Remaining direct30ae transfers are SPM skew setup — offline,2026-11-09
+
+35f8 is called directly at30c3, after the table-load path. It initializes
+local words300..30a, then performs five static transfer call sites:
+361c -> RLC_SPM_GLOBALS_SAMPLE_SKEW(dc8c):50 decimal.
+3620 -> RLC_SPM_GLOBALS_MUXSEL_SKEW(dc8d):56.
+3624 -> RLC_SPM_DESER_START_SKEW(dc8b):75.
+3632 -> RLC_SPM_SE_SAMPLE_SKEW(dc8e):13,21,16,23 across four iterations.
+3636 -> RLC_SPM_SE_MUXSEL_SKEW(dc8f):35,43,37,45 across four iterations.
+Public GC10.3 register names independently establish these coordinates.
+The bounded local initialization uses immediate assignments and mode3 stores;
+a small subset model reproduces all11 literal values from the pinned words.
+This is verification of that interpretation, not a complete RLCG emulator.
+
+Both transfer groups set r12/r10=0,controlr14=40000000 and commandr13=bc000004.
+As in the earlier completion-marker operation, this is consistent with an
+immediate4-byte register write. r9 is the fixed registerDWORD shiftedleft2;
+r11 is loaded from the freshly initialized local word/table.3637 increments
+the four-entry index;3638/3639 compare4 and repeat. The surrounding35ce calls
+select instances and restore the index afterward under the same partial ISA.
+No arbitrary external values or destination addresses are used in these
+five call sites on their ordinary entry path. Alternate entries are not closed.
+None targets CC/USER masks, LX6 DRAM ports, the saved mask arrays or gate.
+
+Bounded transfer inventory now complete for literal direct30ae calls
+3135/31c9 descriptor loads;321b descriptor save;35c6 completion marker;
+35d5 instance/index setup;361c/3620/3624/3632/3636 SPM skew setup.
+All ten occurrences of literal8c0030ae in the6144-word body are accounted for.
+Additionally, all low16 matches for c063,c064,c065,c066,c067,c0e8 form18words
+in three already examined programming blocks:30ae,313f,35d7. This closes that
+literal inventory, not computed access to those registers or a full CFG.
+
+What remains for the mainRLCG investigation
+The known transfer group adds a whole-DRAM preservation cycle, but no new
+producer of changed CC masks or nonzero restore gate. Opcode semantics,
+alternate/computed entries and independent writer families remain incomplete.
+A separate concrete read/write family2e7a/2e85 uses e800/e801/e803/e804/e805;
+it has not been covered by the30ae inventory and must not be silently excluded.
+Determine its address space and actual caller arguments if pursuing that
+family. Do not extend the narrow DMA inventory into a firmware-wide result.
+
+Evidence rlcg-spm-transfer-audit.json; reproducer
+python3 scripts/navi21-rlcg-spm-transfer-audit.py
+Checks70raw words,five named transfer sites,11constant values,ten direct
+calls and18engine-coordinate literal matches. No live execution was observed.
+No hardware,firmware,boot,driver or service state was changed.

@@ -1,0 +1,88 @@
+
+/tmp/tmp3oxaikaf/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00004894 <.data+0x4894>:
+00004894: 366100   entry        a1, 0x30 ; Capstone
+    4897:	62a101        	movi	a6, 0x101
+    489a:	203874        	extui	a3, a2, 8, 8
+    489d:	204004        	extui	a4, a2, 0, 1
+    48a0:	f05411        	slli	a5, a4, 1
+    48a3:	502420        	or	a2, a4, a5
+    48a6:	bc63      	beqz.n	a3, 0x48e0
+    48a8:	41d3e2        	l32r	a4, 0xffffd3f4 (0xff00f0ff) ; inferred DRAM map 0x5ffec000
+    48ab:	3df0      	nop.n
+    48ad:	404210        	and	a4, a2, a4
+    48b0:	606410        	and	a6, a4, a6
+    48b3:	806f00        	rsil	a8, 15
+    48b6:	212be2        	l32r	a2, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    48b9:	51cfe2        	l32r	a5, 0xffffd3f8 (0x6000be00) ; inferred DRAM map 0x5ffec000
+    48bc:	0c07      	movi.n	a7, 0
+    48be:	726280        	s32i	a7, a2, 0x200
+    48c1:	4265f8        	s32i	a4, a5, 0x3e0
+    48c4:	80e613        	wsr.ps	a8
+    48c7:	102000        	rsync
+    48ca:	906f00        	rsil	a9, 15
+    48cd:	726280        	s32i	a7, a2, 0x200
+    48d0:	8225f8        	l32i	a8, a5, 0x3e0
+    48d3:	90e613        	wsr.ps	a9
+    48d6:	102000        	rsync
+    48d9:	67c8ed        	bnall	a8, a6, 0x48ca
+000048dc: 1df0     retw.n        ; Capstone
+    48de:	000082        	mull	a0, a0, a0
+    48e1:	ae          	.byte 0xae
+    48e2:	ff          	.byte 0xff
+    48e3:	809411        	slli	a9, a4, 8
+    48e6:	808210        	and	a8, a2, a8
+    48e9:	908820        	or	a8, a8, a9
+    48ec:	92adff        	movi	a9, 0xfffffdff
+    48ef:	908810        	and	a8, a8, a9
+    48f2:	709411        	slli	a9, a4, 9
+    48f5:	908820        	or	a8, a8, a9
+    48f8:	92abff        	movi	a9, 0xfffffbff
+    48fb:	908810        	and	a8, a8, a9
+    48fe:	912ce2        	l32r	a9, 0xffffd1b0 (0xfffff7ff) ; inferred DRAM map 0x5ffec000
+    4901:	60a411        	slli	a10, a4, 10
+    4904:	a08820        	or	a8, a8, a10
+    4907:	908810        	and	a8, a8, a9
+    490a:	9167e2        	l32r	a9, 0xffffd2a8 (0xfffeffff) ; inferred DRAM map 0x5ffec000
+    490d:	50a411        	slli	a10, a4, 11
+    4910:	a08820        	or	a8, a8, a10
+    4913:	908810        	and	a8, a8, a9
+    4916:	9160e2        	l32r	a9, 0xffffd298 (0xfffdffff) ; inferred DRAM map 0x5ffec000
+    4919:	00a411        	slli	a10, a4, 16
+    491c:	a08820        	or	a8, a8, a10
+    491f:	908810        	and	a8, a8, a9
+    4922:	91b6e2        	l32r	a9, 0xffffd3fc (0xfffbffff) ; inferred DRAM map 0x5ffec000
+    4925:	f0a401        	slli	a10, a4, 17
+    4928:	a08820        	or	a8, a8, a10
+    492b:	908810        	and	a8, a8, a9
+    492e:	916ee2        	l32r	a9, 0xffffd2e8 (0xfff7ffff) ; inferred DRAM map 0x5ffec000
+    4931:	e0a401        	slli	a10, a4, 18
+    4934:	a08820        	or	a8, a8, a10
+    4937:	908810        	and	a8, a8, a9
+    493a:	91a9e2        	l32r	a9, 0xffffd3e0 (0xffefffff) ; inferred DRAM map 0x5ffec000
+    493d:	d0a401        	slli	a10, a4, 19
+    4940:	a08820        	or	a8, a8, a10
+    4943:	908810        	and	a8, a8, a9
+    4946:	9162e2        	l32r	a9, 0xffffd2d0 (0xffdfffff) ; inferred DRAM map 0x5ffec000
+    4949:	c0a401        	slli	a10, a4, 20
+    494c:	a08820        	or	a8, a8, a10
+    494f:	908810        	and	a8, a8, a9
+    4952:	915be2        	l32r	a9, 0xffffd2c0 (0xffbfffff) ; inferred DRAM map 0x5ffec000
+    4955:	b0a401        	slli	a10, a4, 21
+    4958:	a08820        	or	a8, a8, a10
+    495b:	908810        	and	a8, a8, a9
+    495e:	a09401        	slli	a9, a4, 22
+    4961:	908820        	or	a8, a8, a9
+    4964:	915ce2        	l32r	a9, 0xffffd2d4 (0xff7fffff) ; inferred DRAM map 0x5ffec000
+    4967:	905401        	slli	a5, a4, 23
+    496a:	904810        	and	a4, a8, a9
+    496d:	504420        	or	a4, a4, a5
+    4970:	06cfff        	j	0x48b0
+	...
+
+; Alternate branch-target decode
+    48e0:	82aeff        	movi	a8, 0xfffffeff

@@ -1,0 +1,62 @@
+
+/tmp/tmpy9hwwntt/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001260 <.data+0x1260>:
+00001260: 364100   entry        a1, 0x20 ; Capstone
+    1263:	5141fe        	l32r	a5, 0xb68 (0x300fe00)
+    1266:	b2a000        	movi	a11, 0
+    1269:	406200        	rsil	a4, 2
+    126c:	f6c251        	bgeui	a2, 32, 0x12c1
+    126f:	a14bfe        	l32r	a10, 0xb9c (0x7b1c)
+    1272:	82a005        	movi	a8, 5
+00001275: 76a812   loopgtz      a8, . +0x16 ; Capstone
+    1278:	322a7f        	l32i	a3, a10, 0x1fc
+    127b:	920328        	l8ui	a9, a3, 40
+    127e:	4baa      	addi.n	a10, a10, 4
+    1280:	664905        	bnei	a9, 4, 0x1289
+    1283:	c20338        	l8ui	a12, a3, 56
+    1286:	271c04        	beq	a12, a2, 0x128e
+    1289:	3df0      	nop.n
+    128b:	c60400        	j	0x12a2
+    128e:	ad03      	mov.n	a10, a3
+    1290:	0c1b      	movi.n	a11, 1
+00001292: 250201   call8        . +0x1024 ; Capstone ; target=0x22b4
+    1295:	d20339        	l8ui	a13, a3, 57
+    1298:	0c1b      	movi.n	a11, 1
+    129a:	f8f3      	l32i.n	a15, a3, 60
+    129c:	8c2d      	beqz.n	a13, 0x12a2
+    129e:	0c0e      	movi.n	a14, 0
+    12a0:	e90f      	s32i.n	a14, a15, 0
+    12a2:	acab      	beqz.n	a11, 0x12d0
+    12a4:	814afe        	l32r	a8, 0xbcc (0x7b18)
+    12a7:	82287f        	l32i	a8, a8, 0x1fc
+    12aa:	dc18      	bnez.n	a8, 0x12bf
+    12ac:	40e613        	wsr.ps	a4
+000012af: 00f513   wsr.misc1    a0 ; verified QEMU encoding
+    12b2:	c58f01        	call0	0x2bb0
+000012b5: 1df0     retw.n        ; Capstone
+    12b7:	1b9a      	addi.n	a9, a10, 1
+    12b9:	924b80        	s8i	a9, a11, 128
+    12bc:	40e613        	wsr.ps	a4
+000012bf: 1df0     retw.n        ; Capstone
+    12c1:	0c0c      	movi.n	a12, 0
+    12c3:	0c5b      	movi.n	a11, 5
+    12c5:	0c1a      	movi.n	a10, 1
+    12c7:	c02000        	memw
+    12ca:	d2258a        	l32i	a13, a5, 0x228
+000012cd: e53301   call8        . +0x1340 ; Capstone ; target=0x260c
+    12d0:	b140fe        	l32r	a11, 0xbd0 (0x7cbc)
+    12d3:	bab2      	add.n	a11, a2, a11
+    12d5:	a20b80        	l8ui	a10, a11, 128
+    12d8:	c2a0ff        	movi	a12, 255
+    12db:	c79ad8        	bne	a10, a12, 0x12b7
+    12de:	0c1a      	movi.n	a10, 1
+    12e0:	0c6b      	movi.n	a11, 6
+    12e2:	0c0c      	movi.n	a12, 0
+    12e4:	c02000        	memw
+    12e7:	d2258a        	l32i	a13, a5, 0x228
+000012ea: 253201   call8        . +0x1324 ; Capstone ; target=0x260c
+    12ed:	000000        	ill

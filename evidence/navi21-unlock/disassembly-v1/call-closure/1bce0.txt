@@ -1,0 +1,26 @@
+
+/tmp/tmpg4lgjzig/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001bce0 <.data+0x1bce0>:
+0001bce0: 364100   entry        a1, 0x20 ; Capstone
+   1bce3:	41c4dc        	l32r	a4, 0x12ff4 (0x768c)
+   1bce6:	4a42      	add.n	a4, a2, a4
+   1bce8:	220480        	l8ui	a2, a4, 128
+   1bceb:	dcf2      	bnez.n	a2, 0x1bd0e
+   1bced:	820478        	l8ui	a8, a4, 120
+   1bcf0:	91c2dc        	l32r	a9, 0x12ff8 (0x1010024)
+   1bcf3:	ab88      	addi.n	a8, a8, 10
+   1bcf5:	c08801        	slli	a8, a8, 20
+   1bcf8:	9a88      	add.n	a8, a8, a9
+   1bcfa:	c02000        	memw
+   1bcfd:	8808      	l32i.n	a8, a8, 0
+   1bcff:	0c15      	movi.n	a5, 1
+   1bd01:	0c02      	movi.n	a2, 0
+   1bd03:	808004        	extui	a8, a8, 0, 1
+   1bd06:	0b88      	addi.n	a8, a8, -1
+   1bd08:	802583        	moveqz	a2, a5, a8
+   1bd0b:	224480        	s8i	a2, a4, 128
+0001bd0e: 1df0     retw.n        ; Capstone

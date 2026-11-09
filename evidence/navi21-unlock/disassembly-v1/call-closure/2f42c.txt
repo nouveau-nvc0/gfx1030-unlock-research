@@ -1,0 +1,61 @@
+
+/tmp/tmp2hmkr_qr/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002f42c <.data+0x2f42c>:
+0002f42c: 364100   entry        a1, 0x20 ; Capstone
+0002f42f: a52204   call8        . +0x422c ; Capstone ; target=0x33658
+   2f432:	2d0a      	mov.n	a2, a10
+   2f434:	a2a081        	movi	a10, 129
+0002f437: a514d3   call8        . -0x2ceb4 ; Capstone ; target=0x2580
+   2f43a:	820200        	l8ui	a8, a2, 0
+   2f43d:	51e58e        	l32r	a5, 0x12fd4 (0x11e24)
+   2f440:	0c02      	movi.n	a2, 0
+   2f442:	16f806        	beqz	a8, 0x2f4b5
+   2f445:	42a400        	movi	a4, 0x400
+   2f448:	5032a0        	addx4	a3, a2, a5
+   2f44b:	32237f        	l32i	a3, a3, 0x1fc
+   2f44e:	b1e38e        	l32r	a11, 0x12fdc (0x1ce94)
+   2f451:	303074        	extui	a3, a3, 0, 8
+   2f454:	ad03      	mov.n	a10, a3
+0002f456: 250b02   call8        . +0x20b4 ; Capstone ; target=0x31508
+   2f459:	cd0a      	mov.n	a12, a10
+   2f45b:	b1e08e        	l32r	a11, 0x12fdc (0x1ce94)
+   2f45e:	ad03      	mov.n	a10, a3
+   2f460:	40cc20        	or	a12, a12, a4
+0002f463: e5f7ff   call8        . -0x80 ; Capstone ; target=0x2f3e0
+   2f466:	1b22      	addi.n	a2, a2, 1
+   2f468:	202074        	extui	a2, a2, 0, 8
+   2f46b:	6622d9        	bnei	a2, 2, 0x2f448
+   2f46e:	b1af8e        	l32r	a11, 0x12f2c (0x141d600)
+   2f471:	c02000        	memw
+   2f474:	81de92        	l32r	a8, 0x13fec (0xc0070000)
+   2f477:	e22b73        	l32i	a14, a11, 0x1cc
+   2f47a:	f1dd92        	l32r	a15, 0x13ff0 (0xaaf5768)
+   2f47d:	80ee10        	and	a14, a14, a8
+   2f480:	f0ee20        	or	a14, a14, a15
+   2f483:	c02000        	memw
+   2f486:	e26b73        	s32i	a14, a11, 0x1cc
+   2f489:	c02000        	memw
+   2f48c:	d1af8f        	l32r	a13, 0x13348 (0xff80ffff)
+   2f48f:	a22b55        	l32i	a10, a11, 0x154
+   2f492:	c1d892        	l32r	a12, 0x13ff4 (0x560000)
+   2f495:	d0aa10        	and	a10, a10, a13
+   2f498:	c0aa20        	or	a10, a10, a12
+   2f49b:	c02000        	memw
+   2f49e:	91cc92        	l32r	a9, 0x13fd0 (0xb6d0)
+   2f4a1:	a26b55        	s32i	a10, a11, 0x154
+   2f4a4:	0c18      	movi.n	a8, 1
+   2f4a6:	0c0a      	movi.n	a10, 0
+   2f4a8:	0c0b      	movi.n	a11, 0
+   2f4aa:	824980        	s8i	a8, a9, 128
+0002f4ad: e5eeff   call8        . -0x110 ; Capstone ; target=0x2f39c
+   2f4b0:	0c12      	movi.n	a2, 1
+   2f4b2:	460000        	j	0x2f4b7
+   2f4b5:	0c02      	movi.n	a2, 0
+   2f4b7:	a2a081        	movi	a10, 129
+0002f4ba: a5fbd2   call8        . -0x2d044 ; Capstone ; target=0x2474
+0002f4bd: 1df0     retw.n        ; Capstone
+	...

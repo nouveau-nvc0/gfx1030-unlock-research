@@ -1,0 +1,33 @@
+
+/tmp/tmpzef6tlo3/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00004774 <.data+0x4774>:
+00004774: 366100   entry        a1, 0x30 ; Capstone
+    4777:	611be3        	l32r	a6, 0xffffd3e4 (0x110000) ; inferred DRAM map 0x5ffec000
+    477a:	207004        	extui	a7, a2, 0, 1
+    477d:	8118e3        	l32r	a8, 0xffffd3e0 (0xffefffff) ; inferred DRAM map 0x5ffec000
+    4780:	c04701        	slli	a4, a7, 20
+    4783:	007711        	slli	a7, a7, 16
+    4786:	807710        	and	a7, a7, a8
+    4789:	208874        	extui	a8, a2, 8, 8
+    478c:	404720        	or	a4, a7, a4
+    478f:	804783        	moveqz	a4, a7, a8
+    4792:	606410        	and	a6, a4, a6
+    4795:	306f00        	rsil	a3, 15
+    4798:	2173e2        	l32r	a2, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    479b:	51dce2        	l32r	a5, 0xffffd30c (0x60007e00) ; inferred DRAM map 0x5ffec000
+    479e:	0c07      	movi.n	a7, 0
+    47a0:	726280        	s32i	a7, a2, 0x200
+    47a3:	4265a5        	s32i	a4, a5, 0x294
+    47a6:	30e613        	wsr.ps	a3
+    47a9:	102000        	rsync
+    47ac:	906f00        	rsil	a9, 15
+    47af:	726280        	s32i	a7, a2, 0x200
+    47b2:	8225a5        	l32i	a8, a5, 0x294
+    47b5:	90e613        	wsr.ps	a9
+    47b8:	102000        	rsync
+    47bb:	67c8ed        	bnall	a8, a6, 0x47ac
+000047be: 1df0     retw.n        ; Capstone

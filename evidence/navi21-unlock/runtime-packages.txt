@@ -1,0 +1,2 @@
+/opt/rocm/include/hip/hip_runtime.h
+/opt/rocm/include/hip/hip_runtime_api.h

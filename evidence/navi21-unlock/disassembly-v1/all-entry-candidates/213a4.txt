@@ -1,0 +1,18 @@
+
+/tmp/tmp77zgebg2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000213a4 <.data+0x213a4>:
+000213a4: 364100   entry        a1, 0x20 ; Capstone
+   213a7:	520206        	l8ui	a5, a2, 6
+000213aa: 3010fa   const.s      f1, 0 ; Capstone
+   213ad:	2803      	l32i.n	a2, a3, 0
+   213af:	77e507        	bbsi	a5, 7, 0x213ba
+000213b2: 0005da   ufloat.s     f0, a5, 0 ; Capstone
+000213b5: 034200   ssi          f0, a2, 0 ; Capstone
+000213b8: 1df0     retw.n        ; Capstone
+000213ba: 134200   ssi          f1, a2, 0 ; Capstone
+000213bd: 1df0     retw.n        ; Capstone
+	...

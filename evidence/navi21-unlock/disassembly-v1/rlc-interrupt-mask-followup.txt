@@ -1,0 +1,29 @@
+RLC interrupt mask and context restore follow-up (offline)
+
+97f8 rejects unsigned index>=8. Otherwise it ORs1<<index into RAMd7d8,
+then writes INTENABLE=d7d8 & d7dc. Known direct callers pass2,1,3.
+Main initializesd7d8=0,d7dc=ffffffff after its optional context restore.
+Therefore these enable calls alone do not introduce upper interrupt bits.
+This statement assumes no other mutation ofd7d8 and is not a hardware-range
+proof. Interrupt handlers also restore masked INTENABLE values.
+
+A distinct writer exists in context restore9d28:9f4b loads context+124 and
+9f4e writes INTENABLE without local low-eight-bit mask. Save routine9a84
+reads INTENABLE at9c42 and stores the same field at9c45. Known contexts use
+5ffee044, so this field is5ffee168. Initial context magic and field arezero;
+9d10 requires magicb1c5afed before entering9d28. Initial cold-image data alone
+therefore does not take this restore. Runtime saved-context integrity and
+other producers of this memory remain unresolved.
+
+Expanded separate CALL0 target9d28..9f76:208 listing instructions all checked
+against pinned firmware bytes. Three falsely undecoded WSR instructions at
+9d78/9d7e/9d84 are EPC4/EPS4/EXCSAVE4. Decoder now recognizes their RSR/WSR
+forms using six exact QEMU de233_fpu encodings (register field bits4..7).
+With these repairs CFG reaches207 instructions instead of29; no reachable
+EXCW or ordinary unresolved edges remain. Numerous special-register effects
+remain unmodeled, so this is decoding/CFG coverage, not execution validation.
+Existing09d10/09a84 historical listings/scans are not silently rewritten.
+
+Evidence:rlc-interrupt-mask-audit.json,rlc-context-restore-cfg.json,
+rlc-iram-functions/09d28.txt. Decoder:scripts/navi21-smu-disassemble.py.
+No additional CC data path has been established by this expansion.

@@ -1,0 +1,18 @@
+
+/tmp/tmpzkhchavb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001aec <.data+0x1aec>:
+00001aec: 364100   entry        a1, 0x20 ; Capstone
+    1aef:	31bfed        	l32r	a3, 0xffffd1ec (0x3bcccccd) ; inferred DRAM map 0x5ffec000
+00001af2: 0032ca   float.s      f3, a2, 0 ; Capstone
+    1af5:	21bbed        	l32r	a2, 0xffffd1e4 (0x3fc66666) ; inferred DRAM map 0x5ffec000
+00001af8: 5043fa   wfr          f4, a3 ; Capstone
+00001afb: 40232a   mul.s        f2, f3, f4 ; Capstone
+00001afe: 5012fa   wfr          f1, a2 ; Capstone
+00001b01: 20011a   sub.s        f0, f1, f2 ; Capstone
+00001b04: 4020fa   rfr          a2, f0 ; Capstone
+00001b07: 1df0     retw.n        ; Capstone
+    1b09:	000000        	ill

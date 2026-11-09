@@ -1,0 +1,19 @@
+
+/tmp/tmp0h516oz4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000a110 <.data+0xa110>:
+0000a110: 364100   entry        a1, 0x20 ; Capstone
+    a113:	81a1cd        	l32r	a8, 0xffffd798 (0x5ffecef0) ; inferred DRAM map 0x5ffec000
+    a116:	82287f        	l32i	a8, a8, 0x1fc
+    a119:	21a0cd        	l32r	a2, 0xffffd79c (0x5ffed0ec) ; inferred DRAM map 0x5ffec000
+    a11c:	26080c        	beqi	a8, -1, 0xa12c
+    a11f:	a802      	l32i.n	a10, a2, 0
+0000a121: e00a00   callx8       a10 ; Capstone
+    a124:	22c2fc        	addi	a2, a2, -4
+    a127:	a802      	l32i.n	a10, a2, 0
+    a129:	660af4        	bnei	a10, -1, 0xa121
+0000a12c: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,19 @@
+
+/tmp/tmpliktnpqb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001cc68 <.data+0x1cc68>:
+0001cc68: 364100   entry        a1, 0x20 ; Capstone
+0001cc6b: 5022fa   wfr          f2, a2 ; Capstone
+0001cc6e: 5014fa   wfr          f1, a4 ; Capstone
+0001cc71: 5006fa   wfr          f0, a6 ; Capstone
+   1cc74:	cca5      	bnez.n	a5, 0x1cc82
+0001cc76: 330300   lsi          f3, a3, 0 ; Capstone
+0001cc79: 030301   lsi          f0, a3, 4 ; Capstone
+0001cc7c: 20034a   madd.s       f0, f3, f2 ; Capstone
+0001cc7f: 00010a   add.s        f0, f1, f0 ; Capstone
+0001cc82: 4020fa   rfr          a2, f0 ; Capstone
+0001cc85: 1df0     retw.n        ; Capstone
+	...

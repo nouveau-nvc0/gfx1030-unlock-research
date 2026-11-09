@@ -1,0 +1,45 @@
+
+/tmp/tmpiy4wqdsp/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00025694 <.data+0x25694>:
+00025694: 364100   entry        a1, 0x20 ; Capstone
+   25697:	2cf6      	movi.n	a6, 47
+   25699:	518eb8        	l32r	a5, 0x138d4 (0xfffff02f)
+   2569c:	4183b8        	l32r	a4, 0x138a8 (0x125a600)
+   2569f:	a802      	l32i.n	a10, a2, 0
+   256a1:	c02000        	memw
+   256a4:	a264be        	s32i	a10, a4, 0x2f8
+   256a7:	9812      	l32i.n	a9, a2, 4
+   256a9:	c02000        	memw
+   256ac:	9264bf        	s32i	a9, a4, 0x2fc
+   256af:	c02000        	memw
+   256b2:	a264c0        	s32i	a10, a4, 0x300
+   256b5:	c02000        	memw
+   256b8:	9264c1        	s32i	a9, a4, 0x304
+   256bb:	c02000        	memw
+   256be:	a264c2        	s32i	a10, a4, 0x308
+   256c1:	c02000        	memw
+   256c4:	9264c3        	s32i	a9, a4, 0x30c
+   256c7:	c02000        	memw
+   256ca:	8224b8        	l32i	a8, a4, 0x2e0
+   256cd:	608820        	or	a8, a8, a6
+   256d0:	508810        	and	a8, a8, a5
+   256d3:	c02000        	memw
+   256d6:	8264b8        	s32i	a8, a4, 0x2e0
+   256d9:	c02000        	memw
+   256dc:	7224ba        	l32i	a7, a4, 0x2e8
+   256df:	607720        	or	a7, a7, a6
+   256e2:	507710        	and	a7, a7, a5
+   256e5:	c02000        	memw
+   256e8:	7264ba        	s32i	a7, a4, 0x2e8
+   256eb:	c02000        	memw
+   256ee:	3224bc        	l32i	a3, a4, 0x2f0
+   256f1:	603320        	or	a3, a3, a6
+   256f4:	503310        	and	a3, a3, a5
+   256f7:	c02000        	memw
+   256fa:	3264bc        	s32i	a3, a4, 0x2f0
+000256fd: 1df0     retw.n        ; Capstone
+	...

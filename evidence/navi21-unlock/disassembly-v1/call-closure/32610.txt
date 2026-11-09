@@ -1,0 +1,52 @@
+
+/tmp/tmp2m9e9f8n/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00032610 <.data+0x32610>:
+00032610: 364100   entry        a1, 0x20 ; Capstone
+   32613:	2c8a      	movi.n	a10, 40
+00032615: a5f6cf   call8        . -0x30094 ; Capstone ; target=0x2580
+   32618:	563205        	bnez	a2, 0x3266f
+0003261b: a5fcff   call8        . -0x34 ; Capstone ; target=0x325e4
+   3261e:	211387        	l32r	a2, 0x1426c (0xb03c)
+   32621:	0c03      	movi.n	a3, 0
+   32623:	617882        	l32r	a6, 0x13004 (0xfffff)
+   32626:	515983        	l32r	a5, 0x1338c (0xf7000000)
+   32629:	415983        	l32r	a4, 0x13390 (0xfffe00)
+   3262c:	0c07      	movi.n	a7, 0
+   3262e:	9c93      	beqz.n	a3, 0x3264b
+   32630:	82227f        	l32i	a8, a2, 0x1fc
+   32633:	5a98      	add.n	a9, a8, a5
+   32635:	9094b5        	extui	a9, a9, 20, 12
+   32638:	608810        	and	a8, a8, a6
+   3263b:	c09901        	slli	a9, a9, 20
+   3263e:	9a88      	add.n	a8, a8, a9
+   32640:	4a88      	add.n	a8, a8, a4
+   32642:	c02000        	memw
+   32645:	726880        	s32i	a7, a8, 0x200
+   32648:	060700        	j	0x32668
+0003264b: 254100   call8        . +0x414 ; Capstone ; target=0x32a5c
+   3264e:	9c6a      	beqz.n	a10, 0x32668
+   32650:	a2227f        	l32i	a10, a2, 0x1fc
+   32653:	609a10        	and	a9, a10, a6
+   32656:	5aaa      	add.n	a10, a10, a5
+   32658:	a0a4b5        	extui	a10, a10, 20, 12
+   3265b:	c0aa01        	slli	a10, a10, 20
+   3265e:	aa99      	add.n	a9, a9, a10
+   32660:	4a99      	add.n	a9, a9, a4
+   32662:	c02000        	memw
+   32665:	726980        	s32i	a7, a9, 0x200
+   32668:	4b22      	addi.n	a2, a2, 4
+   3266a:	1b33      	addi.n	a3, a3, 1
+   3266c:	66a3be        	bnei	a3, 12, 0x3262e
+   3266f:	0c0a      	movi.n	a10, 0
+00032671: 65f5ff   call8        . -0xa8 ; Capstone ; target=0x325c8
+   32674:	0c0a      	movi.n	a10, 0
+00032676: 65f3ff   call8        . -0xc8 ; Capstone ; target=0x325ac
+   32679:	2c8a      	movi.n	a10, 40
+0003267b: a5dfcf   call8        . -0x30204 ; Capstone ; target=0x2474
+   3267e:	0c12      	movi.n	a2, 1
+00032680: 1df0     retw.n        ; Capstone
+	...

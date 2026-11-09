@@ -1,0 +1,55 @@
+RLC scratch consumer corresponding to SMU35-word block — offline,2026-11-09
+
+Concrete receiving code found:
+RLC1d10, nonzero operation branch, loads35 consecutive DWORDs at1d4f..1e0c
+from78000340..780003c8. Source base78000200 is literal atDRAMd218. The segment
+1d46..1e11 stores those words to fixed RLC state addresses, with no calls or
+branches within the copy. Loaded data is never used as a destination address
+inside this segment.
+
+The complete positional correspondence is:
+  words0..18: scratch78000340..78000388 -> state5ffee2b8..5ffee300
+  words19..34: scratch7800038c..780003c8 -> state5ffee278..5ffee2b4
+Thus destinations exactly partition[5ffee278,5ffee304),140bytes, in rotated
+order. They do not overlap savedCC arrays[dfc4,e004) or gatee452.
+This is a direct-copy conclusion only; later calculations/callees need their
+own dataflow analysis before claiming the imported data cannot affect CC.
+
+Connection to previously identified SMU transfer:
+SMU2af90 writes indexd0 to0123ed64, transfers35 DWORDs fromfce8 tofixed0123ed68.
+RLC start offset340 equals4*d0, and all35 sequential word positions agree.
+Previously traced SMU16loopwords+3fixedfields align with the first19 RLC words;
+SMUremaining16words align with the second16-word state array. This is stronger
+than a shared port name or single address: offset,count,field-group boundaries
+all agree across two independent firmware images. It strongly supports the
+scratch interface correspondence, but physical alias/index auto-advance have
+not been observed or established by a Navi21 register definition. Do not
+extrapolate this correspondence to every scratch index or arbitrary LX6 RAM.
+
+Imported distinguished fields:
+  SMUfd28 -> candidate scratch78000380 -> RLC5ffee2f8 (word16)
+  SMUfd2c -> candidate scratch78000384 -> RLC5ffee2fc (word17)
+  SMUfd30 -> candidate scratch78000388 -> RLC5ffee300 (word18)
+RLC immediately extracts bits0..9 and10..16 of word17 at1db5/1db8. It later
+uses these values in bounded16-entry state calculations. Other word semantics
+and the remaining16 SMU source producers are not fully identified here.
+
+Invocation evidence:
+RLC83fc dispatcher reads command low16 from6803b664 and bounds it below102.
+Initial table5ffecd50 entry32 points to5fff8537. This arm reads6803b668,
+normalizes nonzero to1, obtains second argument low16 from6803b2ac, then calls
+1d10 at8545. Consequently copying requires the nonzero first argument.
+77cc calls83fc at7871 under its status-bit condition. This does not yet prove
+which SMU path submits command32. SMU2b00c transfer-following call2af68 uses
+a different command path (5/6 through2ba54), so do not conflate these numbers.
+
+Reproducer: python3 scripts/navi21-rlc-scratch-consumer-audit.py
+Receipt rlc-scratch-consumer-audit.json verifies35 load/store pairs, initial
+command32 table entry and915 listing-record bytes in1d10/83fc. Straight-line
+propagation tracks loaded-word origins separately from integer addresses.
+It does not simulate hardware or establish whole-function/caller completeness.
+
+Next: trace command32 sender and remaining16 SMU source words, then follow
+imported state calculations toward any actual CC/gate producer. No demonstrated
+changedCC-mask producer/nonzero gate producer or acceptedCC write yet.
+No device access, service/boot/firmware changes performed.

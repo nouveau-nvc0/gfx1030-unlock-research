@@ -1,0 +1,25 @@
+Ordinary component registration already depends on recipient1
+
+In the normal DR branch,3360e calls31830 and keeps its result inr5, later
+used as selector forSVC74 at33c94. 31830 requests propertyamd.dr.driverID
+through30b78. That helper builds internal packet1009 and submitsSVCf2 with
+recipient selector1. Both argument-packing branches use the same submission.
+Thus this route cannot independently explain initial registration of1.
+
+The recipient ID atsp+68 comes fromSVC64 at33740. The subsequentSVC71 call
+at33992 receives thisID and a prepared descriptor whosefirstword comes
+fromheader+10. Later successful setup reachesSVC74(selectorr5,recipientID).
+These are local dataflow links; full enclosing branch ordering, identity of
+the loaded image andSVC71 entry installation are not yet established.
+
+Important distinction: selection by property is useful for ordinary later
+component registration, but initial SYS setup must be traced separately.
+Do not treat a property query requiring recipient1 as proof that recipient1
+has been initialized with the known SYS dispatcher. Special loading paths
+may differ. Next find the initial table/record construction or direct setup
+of8428[1], preserving the distinction from ordinary registration.
+
+Evidence sos-recipient-property-audit.json;reproducer
+scripts/navi21-sos-recipient-property-audit.py checks108instructions and exact
+property bytes. No runtime state read or changed. ChangedCCpayload producer,
+invocation with changed state and hardware acceptance remain unresolved.

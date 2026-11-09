@@ -1,0 +1,94 @@
+
+/tmp/tmphdfduh_9/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001f4ec <.data+0x1f4ec>:
+0001f4ec: 364100   entry        a1, 0x20 ; Capstone
+   1f4ef:	0c3a      	movi.n	a10, 3
+0001f4f1: e508e3   call8        . -0x1cf70 ; Capstone ; target=0x2580
+   1f4f4:	317fcf        	l32r	a3, 0x132f0 (0xff10)
+   1f4f7:	82037c        	l8ui	a8, a3, 124
+   1f4fa:	cc78      	bnez.n	a8, 0x1f505
+   1f4fc:	0c3a      	movi.n	a10, 3
+0001f4fe: 65f7e2   call8        . -0x1d088 ; Capstone ; target=0x2474
+   1f501:	0c02      	movi.n	a2, 0
+0001f503: 1df0     retw.n        ; Capstone
+   1f505:	0c0b      	movi.n	a11, 0
+   1f507:	0c1c      	movi.n	a12, 1
+   1f509:	22c37c        	addi	a2, a3, 124
+   1f50c:	ad02      	mov.n	a10, a2
+0001f50e: 256709   call8        . +0x9674 ; Capstone ; target=0x28b80
+   1f511:	ad02      	mov.n	a10, a2
+   1f513:	0c1b      	movi.n	a11, 1
+   1f515:	0c1c      	movi.n	a12, 1
+0001f517: a56609   call8        . +0x966c ; Capstone ; target=0x28b80
+   1f51a:	ad02      	mov.n	a10, a2
+   1f51c:	0c5b      	movi.n	a11, 5
+   1f51e:	0c1c      	movi.n	a12, 1
+0001f520: e56509   call8        . +0x9660 ; Capstone ; target=0x28b80
+   1f523:	c169cf        	l32r	a12, 0x132c8 (0x80000)
+   1f526:	a181ce        	l32r	a10, 0x12f2c (0x141d600)
+   1f529:	0c17      	movi.n	a7, 1
+   1f52b:	c02000        	memw
+   1f52e:	b22a40        	l32i	a11, a10, 0x100
+   1f531:	c0bb20        	or	a11, a11, a12
+   1f534:	c02000        	memw
+   1f537:	b26a40        	s32i	a11, a10, 0x100
+   1f53a:	c02000        	memw
+   1f53d:	922a59        	l32i	a9, a10, 0x164
+   1f540:	709920        	or	a9, a9, a7
+   1f543:	c02000        	memw
+   1f546:	926a59        	s32i	a9, a10, 0x164
+   1f549:	921340        	l16ui	a9, a3, 128
+   1f54c:	376908        	bbci	a9, 3, 0x1f558
+0001f54f: a5f7ff   call8        . -0x84 ; Capstone ; target=0x1f4c8
+0001f552: 25f6ff   call8        . -0x9c ; Capstone ; target=0x1f4b4
+   1f555:	921340        	l16ui	a9, a3, 128
+   1f558:	476905        	bbci	a9, 4, 0x1f561
+0001f55b: e5eeff   call8        . -0x110 ; Capstone ; target=0x1f448
+   1f55e:	921340        	l16ui	a9, a3, 128
+   1f561:	576908        	bbci	a9, 5, 0x1f56d
+0001f564: 25e6ff   call8        . -0x19c ; Capstone ; target=0x1f3c8
+0001f567: e5e4ff   call8        . -0x1b0 ; Capstone ; target=0x1f3b4
+   1f56a:	921340        	l16ui	a9, a3, 128
+   1f56d:	97691e        	bbci	a9, 9, 0x1f58f
+   1f570:	612ecf        	l32r	a6, 0x13228 (0x11e78)
+   1f573:	0c04      	movi.n	a4, 0
+   1f575:	8b56      	addi.n	a5, a6, 8
+   1f577:	6aa4      	add.n	a10, a4, a6
+   1f579:	a20a80        	l8ui	a10, a10, 128
+0001f57c: 25deff   call8        . -0x21c ; Capstone ; target=0x1f360
+   1f57f:	5aa4      	add.n	a10, a4, a5
+   1f581:	a20a80        	l8ui	a10, a10, 128
+0001f584: a5ddff   call8        . -0x224 ; Capstone ; target=0x1f360
+   1f587:	1b44      	addi.n	a4, a4, 1
+   1f589:	404074        	extui	a4, a4, 0, 8
+   1f58c:	6644e7        	bnei	a4, 4, 0x1f577
+   1f58f:	ad02      	mov.n	a10, a2
+   1f591:	0c08      	movi.n	a8, 0
+   1f593:	82437d        	s8i	a8, a3, 125
+0001f596: e5dbff   call8        . -0x240 ; Capstone ; target=0x1f354
+   1f599:	0c3a      	movi.n	a10, 3
+0001f59b: a5ede2   call8        . -0x1d124 ; Capstone ; target=0x2474
+   1f59e:	912fce        	l32r	a9, 0x12e5c (0x69a0)
+   1f5a1:	92096c        	l8ui	a9, a9, 108
+   1f5a4:	9cf9      	beqz.n	a9, 0x1f5c7
+   1f5a6:	ad02      	mov.n	a10, a2
+   1f5a8:	d115cf        	l32r	a13, 0x131fc (0x1013c)
+   1f5ab:	0c3b      	movi.n	a11, 3
+   1f5ad:	0c1c      	movi.n	a12, 1
+   1f5af:	724d80        	s8i	a7, a13, 128
+0001f5b2: e55c09   call8        . +0x95d0 ; Capstone ; target=0x28b80
+   1f5b5:	ad02      	mov.n	a10, a2
+   1f5b7:	0c4b      	movi.n	a11, 4
+   1f5b9:	0c1c      	movi.n	a12, 1
+0001f5bb: 655c09   call8        . +0x95c8 ; Capstone ; target=0x28b80
+   1f5be:	ad02      	mov.n	a10, a2
+   1f5c0:	0c9b      	movi.n	a11, 9
+   1f5c2:	0c1c      	movi.n	a12, 1
+0001f5c4: a55b09   call8        . +0x95bc ; Capstone ; target=0x28b80
+   1f5c7:	0c12      	movi.n	a2, 1
+0001f5c9: 1df0     retw.n        ; Capstone
+	...

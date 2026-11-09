@@ -1,0 +1,22 @@
+
+/tmp/tmph_626z7y/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001a1b8 <.data+0x1a1b8>:
+0001a1b8: 364100   entry        a1, 0x20 ; Capstone
+   1a1bb:	4123e3        	l32r	a4, 0x12e48 (0x14820)
+   1a1be:	1c03      	movi.n	a3, 16
+   1a1c0:	511ce3        	l32r	a5, 0x12e30 (0x1259e00)
+   1a1c3:	1c22      	movi.n	a2, 18
+0001a1c5: 76a212   loopgtz      a2, . +0x16 ; Capstone
+   1a1c8:	c02000        	memw
+   1a1cb:	326540        	s32i	a3, a5, 0x100
+   1a1ce:	8224e1        	l32i	a8, a4, 0x384
+   1a1d1:	c02000        	memw
+   1a1d4:	826541        	s32i	a8, a5, 0x104
+   1a1d7:	1b33      	addi.n	a3, a3, 1
+   1a1d9:	4b44      	addi.n	a4, a4, 4
+0001a1db: 1df0     retw.n        ; Capstone
+   1a1dd:	000000        	ill

@@ -1,0 +1,195 @@
+{
+  "firmware_sha256": "0eb99764288f764fd853d6973693ffa52419cc7ba62074aee85df4a3e8d0286d",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1d488.txt",
+      "sha256": "85e7097053dc91143098a65d0b2731e33f63171cd0dd402ae3398b8911a76588",
+      "records": 65
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1d7ec.txt",
+      "sha256": "8702e9afa3b52ae02a5ae24e7732dc79337bb2ff77509b1a0e3d36f9626d9632",
+      "records": 6
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1d714.txt",
+      "sha256": "b067a75a0903d71f975f6551fe7d97e48fff3f8488428463f486ab1ddff7b7ac",
+      "records": 12
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1d77c.txt",
+      "sha256": "39d744909e921b93b6de5e4b8774676fcf70f11248c1fa351d6ba5b3b843e02d",
+      "records": 17
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/28b50.txt",
+      "sha256": "4e73626049cc58e5a428c83307ed184f2637190ac48aa7fbe6d7d669c13b7693",
+      "records": 18
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1f1a4.txt",
+      "sha256": "d96de45c59f80f17ac247f7509fa8d6134cd59f87583476d35aac4fe961bc6f0",
+      "records": 6
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1d6f8.txt",
+      "sha256": "e8945c4448599ebc6844a05cf6645174853f3fc4936903de50685c384ff5308a",
+      "records": 10
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1b42c.txt",
+      "sha256": "e44711f98bb6274cc90294cca7a3935cb885b9ba86b27830dbe7ba438b241afa",
+      "records": 27
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1bf68.txt",
+      "sha256": "33f88abbd12aa0a6acca08d5102ae6737f74e03316153b5d1cc8ec20c5a04577",
+      "records": 18
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1bf94.txt",
+      "sha256": "ae23957fceb799ed48b178458358b751283a363b019f2a8224c1e03954d85074",
+      "records": 68
+    }
+  ],
+  "scan_sha256": "ba239b21c05c8e5a8712ef682a7aab0ab379062dd1b2a86de7e8507d8284469e",
+  "callback_index_bound": [
+    0,
+    255
+  ],
+  "table_read_span_bytes": 1024,
+  "fixed_pointer_cell_locator_hits": [],
+  "same_offset_stores_not_automatically_related": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1fbc0.txt",
+      "pc": "0x1fc41",
+      "operation": "s32i",
+      "address": "0x100b02c",
+      "address_candidates": [],
+      "source": "a13",
+      "source_constant": 385948,
+      "base": "a2",
+      "offset": "0x22c"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/23150.txt",
+      "pc": "0x231a1",
+      "operation": "s32i",
+      "address": "0xbd2c",
+      "address_candidates": [],
+      "source": "a11",
+      "source_constant": 48436,
+      "base": "a2",
+      "offset": "0x22c"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2d7b4.txt",
+      "pc": "0x2d7d8",
+      "operation": "s32i",
+      "address": "0x125a02c",
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a9",
+      "offset": "0x22c"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2d894.txt",
+      "pc": "0x2d8b2",
+      "operation": "s32i",
+      "address": "0x125a02c",
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a9",
+      "offset": "0x22c"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2e038.txt",
+      "pc": "0x2e515",
+      "operation": "ssi",
+      "address": "0x15228",
+      "address_candidates": [],
+      "source": "f15",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "0x22c"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/31dbc.txt",
+      "pc": "0x31ec7",
+      "operation": "ssi",
+      "address": null,
+      "address_candidates": [],
+      "source": "f2",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "0x22c"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/31dbc.txt",
+      "pc": "0x31ef9",
+      "operation": "ssi",
+      "address": null,
+      "address_candidates": [],
+      "source": "f0",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "0x22c"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/31dbc.txt",
+      "pc": "0x31f05",
+      "operation": "ssi",
+      "address": null,
+      "address_candidates": [],
+      "source": "f4",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "0x22c"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/32304.txt",
+      "pc": "0x3234c",
+      "operation": "ssi",
+      "address": "0xb4ac",
+      "address_candidates": [],
+      "source": "f1",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "0x22c"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/32304.txt",
+      "pc": "0x323a3",
+      "operation": "ssi",
+      "address": "0xb4ac",
+      "address_candidates": [],
+      "source": "f2",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "0x22c"
+    }
+  ],
+  "known_1bf68_callers": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1bf94.txt",
+      "pc": "0x1bfb2",
+      "operation": "call8",
+      "target": "0x1bf68",
+      "integer_constants": {
+        "a10": "0x110d4",
+        "a12": "0x9c00"
+      }
+    }
+  ],
+  "findings": [
+    "1d488 sums cursor and start bytes without byte truncation, then compares against byte end BEFORE calling. Values256..510 skip the callback loop; subsequent indices remain<=the reloaded byte end. Hence each executed table lookup is within entries0..255, assuming ordinary callees preserve local state registers. This does not prove the table contains256 valid functions.",
+    "1d7ec, present in the initial second-level tables, writes1 to[P+1] using reloaded global15874; it does not assign global15874. This byte selects an early-return/resumption path in1d488 after callback.",
+    "1d714->1f1a4 clearsP+1 then drives1d6f8->1b42c.1d77c->28b50 updates maskP+12 and may drive the same machinery. These handlers do not locally assignP+22c or start/end bytes; their transitive effects remain open.",
+    "No fixed-address store to the four initialP+22c cells is located in the retained scan. Same-offset stores with different or unknown bases do not establish either a writer or its absence.",
+    "A separate helper1bf68 writes offsets32/33, but its only located caller passes110d4, not one of the four selected structures. Do not infer shared state solely from matching field offsets."
+  ],
+  "remaining": "Concrete startup/copy producers of state start/end and table contents, plus second-level callbacks and pointer stability. Initialzero state is not command-time state.",
+  "scope": "Offline local branch/index bounds and locator precision. Full writer/caller coverage, live address mapping and CC acceptance are not established."
+}

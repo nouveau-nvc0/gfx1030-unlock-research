@@ -1,0 +1,46 @@
+
+/tmp/tmphktd9hy8/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001f448 <.data+0x1f448>:
+0001f448: 364100   entry        a1, 0x20 ; Capstone
+   1f44b:	0c8a      	movi.n	a10, 8
+0001f44d: 2513e3   call8        . -0x1cecc ; Capstone ; target=0x2580
+   1f450:	0c0a      	movi.n	a10, 0
+   1f452:	b112cf        	l32r	a11, 0x1309c (0x3c03126f)
+   1f455:	0c0c      	movi.n	a12, 0
+0001f457: e5c515   call8        . +0x15c60 ; Capstone ; target=0x350b4
+   1f45a:	0c0a      	movi.n	a10, 0
+   1f45c:	0c0b      	movi.n	a11, 0
+0001f45e: 65320a   call8        . +0xa328 ; Capstone ; target=0x29784
+   1f461:	917dcf        	l32r	a9, 0x13258 (0x31ffe00)
+   1f464:	81ecce        	l32r	a8, 0x13014 (0x2000000)
+   1f467:	c02000        	memw
+   1f46a:	f229d9        	l32i	a15, a9, 0x364
+   1f46d:	80ff20        	or	a15, a15, a8
+   1f470:	c02000        	memw
+   1f473:	f269d9        	s32i	a15, a9, 0x364
+   1f476:	e19ccf        	l32r	a14, 0x132e8 (0x4000000)
+   1f479:	c02000        	memw
+   1f47c:	d229d9        	l32i	a13, a9, 0x364
+   1f47f:	e0dd20        	or	a13, a13, a14
+   1f482:	c02000        	memw
+   1f485:	d269d9        	s32i	a13, a9, 0x364
+   1f488:	c1dece        	l32r	a12, 0x13000 (0x1000000)
+   1f48b:	c02000        	memw
+   1f48e:	b229d9        	l32i	a11, a9, 0x364
+   1f491:	c0bb20        	or	a11, a11, a12
+   1f494:	c02000        	memw
+   1f497:	b269d9        	s32i	a11, a9, 0x364
+   1f49a:	a194cf        	l32r	a10, 0x132ec (0x20000000)
+   1f49d:	c02000        	memw
+   1f4a0:	8229d9        	l32i	a8, a9, 0x364
+   1f4a3:	a08820        	or	a8, a8, a10
+   1f4a6:	c02000        	memw
+   1f4a9:	0c8a      	movi.n	a10, 8
+   1f4ab:	8269d9        	s32i	a8, a9, 0x364
+0001f4ae: 65fce2   call8        . -0x1d038 ; Capstone ; target=0x2474
+0001f4b1: 1df0     retw.n        ; Capstone
+	...

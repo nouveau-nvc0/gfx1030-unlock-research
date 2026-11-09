@@ -1,0 +1,56 @@
+{
+  "scope": "Local targeted-listing locator; no memory-value propagation or global completeness claim. Optional JX edges describe initial tables, not runtime immutability.",
+  "functions": 236,
+  "reachable": 13483,
+  "stores": 2395,
+  "constant_stores": 1566,
+  "candidate_cc_aliases": [
+    "0x8924",
+    "0x89bc",
+    "0x60008924",
+    "0x600089bc",
+    "0x68008924",
+    "0x680089bc"
+  ],
+  "candidate_cc_hits": [
+    [
+      "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/071ac.txt",
+      {
+        "pc": "0x71fe",
+        "operation": "s32i",
+        "address": "0x600089bc",
+        "address_candidates": [],
+        "source": "a3",
+        "source_constant": null,
+        "base": "a9",
+        "offset": "0x3bc"
+      }
+    ]
+  ],
+  "switches": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "reachable_in_window": 170,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/07d24.txt",
+      "reachable_in_window": 390,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/082c0.txt",
+      "reachable_in_window": 107,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": []
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/083fc.txt",
+      "reachable_in_window": 637,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": []
+    }
+  ]
+}

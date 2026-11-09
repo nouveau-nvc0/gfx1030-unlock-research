@@ -1,0 +1,46 @@
+
+/tmp/tmprvkipu0m/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000298ac <.data+0x298ac>:
+000298ac: 364100   entry        a1, 0x20 ; Capstone
+   298af:	3119a9        	l32r	a3, 0x13d14 (0xb5b0)
+   298b2:	82037c        	l8ui	a8, a3, 124
+   298b5:	92037d        	l8ui	a9, a3, 125
+   298b8:	16b805        	beqz	a8, 0x29917
+   298bb:	271958        	beq	a9, a2, 0x29917
+   298be:	a188a6        	l32r	a10, 0x132e0 (0x42c80000)
+   298c1:	5175a6        	l32r	a5, 0x13298 (0x120e600)
+000298c4: 500afa   wfr          f0, a10 ; Capstone
+   298c7:	c02000        	memw
+   298ca:	6cfa      	movi.n	a10, -17
+   298cc:	82255d        	l32i	a8, a5, 0x174
+   298cf:	7cc9      	movi.n	a9, -4
+   298d1:	204014        	extui	a4, a2, 0, 2
+   298d4:	908810        	and	a8, a8, a9
+   298d7:	804420        	or	a4, a4, a8
+   298da:	a0a410        	and	a10, a4, a10
+   298dd:	c02000        	memw
+   298e0:	a2655d        	s32i	a10, a5, 0x174
+000298e3: 00a0ba   ceil.s       a10, f0, 0 ; Capstone
+000298e6: e5e6d7   call8        . -0x28190 ; Capstone ; target=0x1754
+   298e9:	c2aeef        	movi	a12, 0xfffffeef
+   298ec:	0c1e      	movi.n	a14, 1
+   298ee:	40d804        	extui	a13, a4, 8, 1
+   298f1:	e0dd30        	xor	a13, a13, a14
+   298f4:	c0c410        	and	a12, a4, a12
+   298f7:	d0d004        	extui	a13, a13, 0, 1
+   298fa:	80dd11        	slli	a13, a13, 8
+   298fd:	d0cc20        	or	a12, a12, a13
+   29900:	c02000        	memw
+   29903:	b105a9        	l32r	a11, 0x13d18 (0x1177c)
+   29906:	c2655d        	s32i	a12, a5, 0x174
+00029909: 130b00   lsi          f1, a11, 0 ; Capstone
+0002990c: 00a1ba   ceil.s       a10, f1, 0 ; Capstone
+0002990f: 65e4d7   call8        . -0x281b8 ; Capstone ; target=0x1754
+   29912:	22437d        	s8i	a2, a3, 125
+00029915: 1df0     retw.n        ; Capstone
+00029917: 1df0     retw.n        ; Capstone
+   29919:	000000        	ill

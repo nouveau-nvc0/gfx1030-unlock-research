@@ -1,0 +1,34 @@
+RLC non-ENTRY startup and initial callback lists — offline
+
+648..6e3 is a distinct startup sequence, previously visible as trailing text
+in00630.txt but unreachable from that function's RETW643 in the local scanner.
+It is now a separate00648.txt root with59 byte-checked instructions; dedicated
+rlc-startup-cfg.json has no unknown operations or unresolved ordinary edges.
+This does not assert where hardware transfers control on every reset.
+
+Startup loads optional function literals atd118/d124/d130; all arezero in the
+pinned DRAM. Their guarded CALLX sites653/667/681 are not taken under initial
+contents. The generic scanner retains both conditional branches, so its call
+inventory is a superset; null initial pointers are not executed in this model.
+
+The range-pair tabled0fc..d10c contains[e240,ecb0) and[60000000,60000000),
+with the first pair in inferred5ffe RAM address space. The explicitzero loop
+covers gate5ffee452 and callback statee65c, but not saved CC arraysdfc4..e044.
+The second interval is empty. This is a gate-clearing mechanism, not a producer
+of a nonzero enable value.
+
+CALL4 at6d0 passesa6..a10 intoa3e4's a2..a6. Its a5 is5fff0630, so a3fa
+invokes0630 under initial arguments.0630 calls0728 and a110 via constant
+pointers.0728's optional literald158 iszero. a110 reads sentinel-1 atd0ec
+and skips its constructor iteration. Later a400->a480->06e8 traverses a
+list pointed to by RAMd974; initial value is5ffed0f8 whose first entry iszero.
+06e8's separate optional literald150 iszero. a400's statepointere65c iszero,
+so its dynamic cleanup callbacks a432/a44e/a460 are initially skipped too.
+No extra initial callback body emerges from these lists to enable CC restore.
+
+Receipts:rlc-startup-state-audit.json contains initial words, ranges and pinned
+firmware hash; scripts/navi21-rlc-startup-state-audit.py verifies actual bytes.
+The earlier236-window scan is not silently overwritten; new startup evidence
+is separate, and old coverage counts do not include this new root.
+Open:loader/engine/runtime writes, saved-state restoration, callback mutation,
+full non-ENTRY closure and the producer of gate+6. No hardware access performed.

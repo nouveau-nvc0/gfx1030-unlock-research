@@ -1,0 +1,56 @@
+
+/tmp/tmp7equ8yv_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00023698 <.data+0x23698>:
+00023698: 364100   entry        a1, 0x20 ; Capstone
+   2369b:	920308        	l8ui	a9, a3, 8
+   2369e:	820208        	l8ui	a8, a2, 8
+   236a1:	9058d1        	mul16s	a5, a8, a9
+   236a4:	a6151b        	blti	a5, 1, 0x236c3
+   236a7:	0c07      	movi.n	a7, 0
+000236a9: 3000fa   const.s      f0, 0 ; Capstone
+   236ac:	4087a0        	addx4	a8, a7, a4
+000236af: 034800   ssi          f0, a8, 0 ; Capstone
+   236b2:	920308        	l8ui	a9, a3, 8
+   236b5:	820208        	l8ui	a8, a2, 8
+   236b8:	1b77      	addi.n	a7, a7, 1
+   236ba:	9068d1        	mul16s	a6, a8, a9
+   236bd:	707074        	extui	a7, a7, 0, 8
+   236c0:	6727e8        	blt	a7, a6, 0x236ac
+   236c3:	167905        	beqz	a9, 0x2371e
+   236c6:	b13fbe        	l32r	a11, 0x12fc4 (0x38d1b717)
+   236c9:	0c07      	movi.n	a7, 0
+   236cb:	0c0a      	movi.n	a10, 0
+000236cd: 500bfa   wfr          f0, a11 ; Capstone
+   236d0:	162804        	beqz	a8, 0x23716
+   236d3:	e0b711        	slli	a11, a7, 2
+   236d6:	0c09      	movi.n	a9, 0
+   236d8:	c843      	l32i.n	a12, a3, 16
+000236da: b02c08   lsx          f2, a12, a11 ; Capstone
+000236dd: 1012fa   abs.s        f1, f2 ; Capstone
+000236e0: 10006b   ole.s        b0, f0, f1 ; Capstone
+000236e3: 76001f   bf           b0, . +0x23 ; Capstone
+   236e6:	d842      	l32i.n	a13, a2, 16
+   236e8:	d0d9a0        	addx4	a13, a9, a13
+000236eb: 330d00   lsi          f3, a13, 0 ; Capstone
+000236ee: 1043fa   abs.s        f4, f3 ; Capstone
+000236f1: 40106b   ole.s        b1, f0, f4 ; Capstone
+   236f4:	40eaa0        	addx4	a14, a10, a4
+000236f7: 76010b   bf           b1, . +0xf ; Capstone
+000236fa: 30224b   olt.s        b2, f2, f3 ; Capstone
+000236fd: 2032db   movt.s       f3, f2, b2 ; Capstone
+00023700: 334e00   ssi          f3, a14, 0 ; Capstone
+   23703:	820208        	l8ui	a8, a2, 8
+   23706:	1b99      	addi.n	a9, a9, 1
+   23708:	1baa      	addi.n	a10, a10, 1
+   2370a:	a0a074        	extui	a10, a10, 0, 8
+   2370d:	909074        	extui	a9, a9, 0, 8
+   23710:	8739c4        	bltu	a9, a8, 0x236d8
+   23713:	920308        	l8ui	a9, a3, 8
+   23716:	1b77      	addi.n	a7, a7, 1
+   23718:	707074        	extui	a7, a7, 0, 8
+   2371b:	9737b1        	bltu	a7, a9, 0x236d0
+0002371e: 1df0     retw.n        ; Capstone

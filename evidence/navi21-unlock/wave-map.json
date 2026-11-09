@@ -1,0 +1,1076 @@
+{
+  "wave_size": 32,
+  "samples": [
+    {
+      "hip": 0,
+      "bdf": "0000:04:00.0",
+      "run": 0,
+      "reported_cu": 30,
+      "blocks": 4096,
+      "threads": 128,
+      "waves": 16384,
+      "checked_values": 524288,
+      "errors": 0,
+      "bad_id": 0,
+      "kernel_ms": 0.817993,
+      "banks": [
+        {
+          "se": 0,
+          "sh": 0,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 0,
+          "sh": 1,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 2756,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 2708,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 2736,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 2724,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 2740,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 2720,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "hip": 0,
+      "bdf": "0000:04:00.0",
+      "run": 1,
+      "reported_cu": 30,
+      "blocks": 16384,
+      "threads": 128,
+      "waves": 65536,
+      "checked_values": 2097152,
+      "errors": 0,
+      "bad_id": 0,
+      "kernel_ms": 0.677292,
+      "banks": [
+        {
+          "se": 0,
+          "sh": 0,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 0,
+          "sh": 1,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 10916,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 10928,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 10968,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 10880,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 10900,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 10944,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "hip": 0,
+      "bdf": "0000:04:00.0",
+      "run": 2,
+      "reported_cu": 30,
+      "blocks": 16384,
+      "threads": 256,
+      "waves": 131072,
+      "checked_values": 4194304,
+      "errors": 0,
+      "bad_id": 0,
+      "kernel_ms": 0.376001,
+      "banks": [
+        {
+          "se": 0,
+          "sh": 0,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 0,
+          "sh": 1,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 21872,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 21824,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 21808,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 21880,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 21904,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 21784,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "hip": 1,
+      "bdf": "0000:07:00.0",
+      "run": 0,
+      "reported_cu": 30,
+      "blocks": 4096,
+      "threads": 128,
+      "waves": 16384,
+      "checked_values": 524288,
+      "errors": 0,
+      "bad_id": 0,
+      "kernel_ms": 0.594362,
+      "banks": [
+        {
+          "se": 0,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 2724,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 0,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 2736,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 0,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 1,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 2760,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 2704,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 2732,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 2728,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "hip": 1,
+      "bdf": "0000:07:00.0",
+      "run": 1,
+      "reported_cu": 30,
+      "blocks": 16384,
+      "threads": 128,
+      "waves": 65536,
+      "checked_values": 2097152,
+      "errors": 0,
+      "bad_id": 0,
+      "kernel_ms": 0.730323,
+      "banks": [
+        {
+          "se": 0,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 10936,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 0,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 10912,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 0,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 1,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 10908,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 10936,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 10928,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 10916,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "hip": 1,
+      "bdf": "0000:07:00.0",
+      "run": 2,
+      "reported_cu": 30,
+      "blocks": 16384,
+      "threads": 256,
+      "waves": 131072,
+      "checked_values": 4194304,
+      "errors": 0,
+      "bad_id": 0,
+      "kernel_ms": 0.615163,
+      "banks": [
+        {
+          "se": 0,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 21872,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 0,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 21816,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 0,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 1,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 21856,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 21840,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 21816,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 21872,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "hip": 2,
+      "bdf": "0000:0a:00.0",
+      "run": 0,
+      "reported_cu": 30,
+      "blocks": 4096,
+      "threads": 128,
+      "waves": 16384,
+      "checked_values": 524288,
+      "errors": 0,
+      "bad_id": 0,
+      "kernel_ms": 0.512993,
+      "banks": [
+        {
+          "se": 0,
+          "sh": 0,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 0,
+          "sh": 1,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 2736,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 2728,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 2736,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 2724,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 2760,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 2700,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "hip": 2,
+      "bdf": "0000:0a:00.0",
+      "run": 1,
+      "reported_cu": 30,
+      "blocks": 16384,
+      "threads": 128,
+      "waves": 65536,
+      "checked_values": 2097152,
+      "errors": 0,
+      "bad_id": 0,
+      "kernel_ms": 0.410822,
+      "banks": [
+        {
+          "se": 0,
+          "sh": 0,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 0,
+          "sh": 1,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 10920,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 10928,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 10960,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 10884,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 10972,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 10872,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "hip": 2,
+      "bdf": "0000:0a:00.0",
+      "run": 2,
+      "reported_cu": 30,
+      "blocks": 16384,
+      "threads": 256,
+      "waves": 131072,
+      "checked_values": 4194304,
+      "errors": 0,
+      "bad_id": 0,
+      "kernel_ms": 0.703764,
+      "banks": [
+        {
+          "se": 0,
+          "sh": 0,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 0,
+          "sh": 1,
+          "wgp_mask": 0,
+          "waves": 0,
+          "simd_masks": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 21864,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 1,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 21824,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 21912,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 2,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 21784,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 0,
+          "wgp_mask": 31,
+          "waves": 21824,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        },
+        {
+          "se": 3,
+          "sh": 1,
+          "wgp_mask": 31,
+          "waves": 21864,
+          "simd_masks": [
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        }
+      ]
+    }
+  ]
+}

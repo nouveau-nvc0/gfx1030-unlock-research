@@ -1,0 +1,22 @@
+RLC IRAM prefix entry expansion
+
+Offset0 jumps24, bypassing literal pool4..18. At24/26 INTENABLE iszeroed.
+Initial optional hook pointer atIRAM10 iszero, so guardedCALLX0 at86 is not
+executed with file-initial contents. The genericCFG inventories both branches.
+At9d..a6, handler5fff9950 is installed in EXCSAVE2 andRAM5ffed960; CALL0 ata9
+enters648. Startup648 loadsSP5fff0000 at64d from its DRAM literal.
+
+PrefixCFG reaches49 instructions after repairing branch target40. All59
+listing records match pinned IRAM. Special-register/TLB effects are not
+fully modeled. This identifies startupSP but does not bound runtime stack
+depth or prove exclusion of computed stack stores from CC state.
+
+Prefix also initializes ITLB/DTLB through loops using2222112f ande0000000.
+Mapping semantics and physical alias implications need separate treatment;
+no new alias claim follows merely from decoding these operations.
+
+A linear survey180..630 locates additional window overflow/underflow and
+exception/vector bodies starting around400. That survey includes misaligned
+linear decodes and is not yet a verified vector-root CFG. Do not count its
+raw CALL targets as actual control-flow edges. Next step is exact-root
+reconstruction and exception-return termination handling.

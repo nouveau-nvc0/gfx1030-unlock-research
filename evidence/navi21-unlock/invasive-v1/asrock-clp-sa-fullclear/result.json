@@ -1,0 +1,18 @@
+{
+  "bdf": "0000:0a:00.0",
+  "register": "CC_GC_SA_UNIT_DISABLE",
+  "byte_offset": "0x8924",
+  "required_original": "0x301",
+  "target": "0x0",
+  "clear_mask": "0xff01",
+  "rollback": "0x301",
+  "compute_dispatch": false,
+  "execute": true,
+  "readback": "0x301",
+  "target_accepted": false,
+  "write_readback_ns": 53114,
+  "restored": "0x301",
+  "user_after": "0x0",
+  "cc_after": "0x301",
+  "rollback_verified": true
+}

@@ -1,0 +1,17 @@
+
+/tmp/tmp4tcpqjdu/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000311a0 <.data+0x311a0>:
+000311a0: 364100   entry        a1, 0x20 ; Capstone
+   311a3:	37340e        	bltu	a4, a3, 0x311b5
+   311a6:	3a22      	add.n	a2, a2, a3
+   311a8:	3064c0        	sub	a6, a4, a3
+   311ab:	1b66      	addi.n	a6, a6, 1
+000311ad: 769604   loopnez      a6, . +8 ; Capstone
+   311b0:	524200        	s8i	a5, a2, 0
+   311b3:	1b22      	addi.n	a2, a2, 1
+000311b5: 1df0     retw.n        ; Capstone
+	...

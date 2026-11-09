@@ -1,0 +1,58 @@
+[
+  {
+    "file": "database/ip/gc_10_3_0.reg",
+    "line": 3960,
+    "context": [
+      "\tINACTIVE_PA 4 19",
+      "mmCC_GC_SA_UNIT_DISABLE 0 0xfe9 1 0 0",
+      "\tSA_DISABLE 8 15",
+      "mmCC_GC_SHADER_ARRAY_CONFIG 0 0x100f 1 0 0",
+      "\tINACTIVE_WGPS 16 31",
+      "mmCC_GC_SHADER_ARRAY_CONFIG_GEN0 0 0x100b 1 0 0",
+      "\tGEN0_INACTIVE_CU 0 13",
+      "mmCC_GC_SHADER_ARRAY_CONFIG_GEN1 0 0x100a 1 0 0"
+    ]
+  },
+  {
+    "file": "database/ip/gc_10_3_0.reg",
+    "line": 3962,
+    "context": [
+      "\tSA_DISABLE 8 15",
+      "mmCC_GC_SHADER_ARRAY_CONFIG 0 0x100f 1 0 0",
+      "\tINACTIVE_WGPS 16 31",
+      "mmCC_GC_SHADER_ARRAY_CONFIG_GEN0 0 0x100b 1 0 0",
+      "\tGEN0_INACTIVE_CU 0 13",
+      "mmCC_GC_SHADER_ARRAY_CONFIG_GEN1 0 0x100a 1 0 0",
+      "\tGEN1_INACTIVE_CU 0 13",
+      "mmCC_GC_SHADER_RATE_CONFIG 0 0x10bc 2 0 0"
+    ]
+  },
+  {
+    "file": "database/ip/gc_10_3_0.reg",
+    "line": 3964,
+    "context": [
+      "\tINACTIVE_WGPS 16 31",
+      "mmCC_GC_SHADER_ARRAY_CONFIG_GEN0 0 0x100b 1 0 0",
+      "\tGEN0_INACTIVE_CU 0 13",
+      "mmCC_GC_SHADER_ARRAY_CONFIG_GEN1 0 0x100a 1 0 0",
+      "\tGEN1_INACTIVE_CU 0 13",
+      "mmCC_GC_SHADER_RATE_CONFIG 0 0x10bc 2 0 0",
+      "\tDPFP_RATE 1 2",
+      "\tSQC_BALANCE_DISABLE 3 3"
+    ]
+  },
+  {
+    "file": "database/ip/gc_10_3_0.reg",
+    "line": 3966,
+    "context": [
+      "\tGEN0_INACTIVE_CU 0 13",
+      "mmCC_GC_SHADER_ARRAY_CONFIG_GEN1 0 0x100a 1 0 0",
+      "\tGEN1_INACTIVE_CU 0 13",
+      "mmCC_GC_SHADER_RATE_CONFIG 0 0x10bc 2 0 0",
+      "\tDPFP_RATE 1 2",
+      "\tSQC_BALANCE_DISABLE 3 3",
+      "mmCC_RB_BACKEND_DISABLE 0 0x13dd 1 0 0",
+      "\tBACKEND_DISABLE 16 23"
+    ]
+  }
+]

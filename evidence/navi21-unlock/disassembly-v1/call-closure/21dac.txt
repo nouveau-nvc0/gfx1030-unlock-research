@@ -1,0 +1,19 @@
+
+/tmp/tmp_ci8ln68/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00021dac <.data+0x21dac>:
+00021dac: 364100   entry        a1, 0x20 ; Capstone
+   21daf:	a2a080        	movi	a10, 128
+   21db2:	3ceb      	movi.n	a11, 62
+   21db4:	0c2c      	movi.n	a12, 2
+   21db6:	0c1d      	movi.n	a13, 1
+00021db8: 65e9df   call8        . -0x20168 ; Capstone ; target=0x1c50
+   21dbb:	8c2a      	beqz.n	a10, 0x21dc1
+   21dbd:	283a      	l32i.n	a2, a10, 12
+00021dbf: 1df0     retw.n        ; Capstone
+   21dc1:	0c02      	movi.n	a2, 0
+00021dc3: 1df0     retw.n        ; Capstone
+   21dc5:	000000        	ill

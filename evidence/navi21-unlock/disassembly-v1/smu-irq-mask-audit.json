@@ -1,0 +1,137 @@
+{
+  "firmware_sha256": "0eb99764288f764fd853d6973693ffa52419cc7ba62074aee85df4a3e8d0286d",
+  "code_file_offset": "0x200",
+  "scope": "Byte consistency and initial file values; semantic interpretation is in companion text. Local store locator is not all-write coverage.",
+  "listing_inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/00f10.txt",
+      "sha256": "e6f23648b5a14b8e10d51257f54210114cd3b83a8843aae437a22bac35247b8a",
+      "byte_checked_records": 13
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/00f58.txt",
+      "sha256": "f5b7df5f9710791f26cca719e059089c5f1005b04f0e9641fcfa36bf2630b24e",
+      "byte_checked_records": 97
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/01724.txt",
+      "sha256": "cebda85ea15523cc5add16d4e767ef480f05725ab56a09fadf35760d304961f1",
+      "byte_checked_records": 17
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/01794.txt",
+      "sha256": "776855590fef1266bf6b7fb9c50a6d1721dc52454c30b378115e7ce035493740",
+      "byte_checked_records": 15
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/017c0.txt",
+      "sha256": "f6bb9309950353add082495e77fdfa973d7db0c2d9f41b61f3773040055d6b2b",
+      "byte_checked_records": 12
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/01a44.txt",
+      "sha256": "50ce7c4daffe638982ec534206247f4dc1e392268f145bc6d9e26c4b2754830e",
+      "byte_checked_records": 24
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/01a8c.txt",
+      "sha256": "9da9edc0748d6a7013bfabd2a1f51d937fb90ac5144462020c3df6659a7882aa",
+      "byte_checked_records": 13
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/0290c.txt",
+      "sha256": "b09a14801ad99737841ddf3ad75fd7f5fb375af749ccd8389131bd418cc1e3d5",
+      "byte_checked_records": 470
+    }
+  ],
+  "locator_sha256": "3140e13a421d08408f422fefc42494938de32159156be3758a77264516abc1a4",
+  "initial_first_mask": [
+    "0x0",
+    "0x0",
+    "0x0",
+    "0x0"
+  ],
+  "initial_second_mask": [
+    "0xffffffff",
+    "0xffffffff",
+    "0xffffffff",
+    "0xffffffff"
+  ],
+  "second_mask_fixed_store_hits": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/00f10.txt",
+      "pc": "0xf1d",
+      "operation": "s32i",
+      "address": "0x786c",
+      "address_candidates": [],
+      "source": "a10",
+      "source_constant": 4294967295,
+      "base": "a11",
+      "offset": "0x1f8"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/00f10.txt",
+      "pc": "0xf20",
+      "operation": "s32i",
+      "address": "0x7870",
+      "address_candidates": [],
+      "source": "a10",
+      "source_constant": 4294967295,
+      "base": "a11",
+      "offset": "0x1fc"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/00f10.txt",
+      "pc": "0xf23",
+      "operation": "s32i",
+      "address": "0x7874",
+      "address_candidates": [],
+      "source": "a10",
+      "source_constant": 4294967295,
+      "base": "a11",
+      "offset": "0x200"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/00f10.txt",
+      "pc": "0xf26",
+      "operation": "s32i",
+      "address": "0x7878",
+      "address_candidates": [],
+      "source": "a10",
+      "source_constant": 4294967295,
+      "base": "a11",
+      "offset": "0x204"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/01a8c.txt",
+      "pc": "0x1aa5",
+      "operation": "s32i",
+      "address": "0x786c",
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a9",
+      "offset": "0x1fc"
+    }
+  ],
+  "channel_bits": [
+    {
+      "channel": 7,
+      "irq": 88,
+      "word": 2,
+      "bit": 24,
+      "second_mask_address": "0x7874",
+      "initial_bit": 1
+    },
+    {
+      "channel": 8,
+      "irq": 89,
+      "word": 2,
+      "bit": 25,
+      "second_mask_address": "0x7874",
+      "initial_bit": 1
+    }
+  ],
+  "runtime_mask_observed": false,
+  "complete_write_coverage": false
+}

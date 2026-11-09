@@ -1,0 +1,61 @@
+
+/tmp/tmptkpn1wjd/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001c7c0 <.data+0x1c7c0>:
+0001c7c0: 364100   entry        a1, 0x20 ; Capstone
+   1c7c3:	8123da        	l32r	a8, 0x13050 (0xaaf0)
+   1c7c6:	2052f0        	subx8	a5, a2, a2
+   1c7c9:	8055a0        	addx4	a5, a5, a8
+   1c7cc:	820580        	l8ui	a8, a5, 128
+   1c7cf:	56f807        	bnez	a8, 0x1c852
+   1c7d2:	c2057d        	l8ui	a12, a5, 125
+   1c7d5:	b138da        	l32r	a11, 0x130b8 (0xafbc)
+   1c7d8:	1cad      	movi.n	a13, 26
+   1c7da:	d0ccd1        	mul16s	a12, a12, a13
+   1c7dd:	a2251c        	l32i	a10, a5, 112
+   1c7e0:	cabb      	add.n	a11, a11, a12
+   1c7e2:	b20b7d        	l8ui	a11, a11, 125
+   1c7e5:	7107da        	l32r	a7, 0x13004 (0xfffff)
+   1c7e8:	611cda        	l32r	a6, 0x13058 (0x11ffe00)
+   1c7eb:	baaa      	add.n	a10, a10, a11
+   1c7ed:	70aa10        	and	a10, a10, a7
+   1c7f0:	6aaa      	add.n	a10, a10, a6
+   1c7f2:	c02000        	memw
+   1c7f5:	b1f1d9        	l32r	a11, 0x12fbc (0x2000)
+   1c7f8:	922a80        	l32i	a9, a10, 0x200
+   1c7fb:	b09920        	or	a9, a9, a11
+   1c7fe:	c02000        	memw
+   1c801:	926a80        	s32i	a9, a10, 0x200
+   1c804:	40b0f4        	extui	a11, a4, 0, 16
+   1c807:	ad02      	mov.n	a10, a2
+0001c809: 65efff   call8        . -0x108 ; Capstone ; target=0x1c700
+   1c80c:	c2057d        	l8ui	a12, a5, 125
+   1c80f:	812ada        	l32r	a8, 0x130b8 (0xafbc)
+   1c812:	1caa      	movi.n	a10, 26
+   1c814:	c0cad1        	mul16s	a12, a10, a12
+   1c817:	d2251c        	l32i	a13, a5, 112
+   1c81a:	cac8      	add.n	a12, a8, a12
+   1c81c:	c20c7e        	l8ui	a12, a12, 126
+   1c81f:	dacc      	add.n	a12, a12, a13
+   1c821:	70cc10        	and	a12, a12, a7
+   1c824:	6acc      	add.n	a12, a12, a6
+   1c826:	c02000        	memw
+   1c829:	326c80        	s32i	a3, a12, 0x200
+   1c82c:	b2057d        	l8ui	a11, a5, 125
+   1c82f:	b0aad1        	mul16s	a10, a10, a11
+   1c832:	92251c        	l32i	a9, a5, 112
+   1c835:	aa88      	add.n	a8, a8, a10
+   1c837:	820878        	l8ui	a8, a8, 120
+   1c83a:	32651b        	s32i	a3, a5, 108
+   1c83d:	f2251a        	l32i	a15, a5, 104
+   1c840:	9a88      	add.n	a8, a8, a9
+   1c842:	708810        	and	a8, a8, a7
+   1c845:	6a88      	add.n	a8, a8, a6
+   1c847:	c02000        	memw
+   1c84a:	f26880        	s32i	a15, a8, 0x200
+   1c84d:	0c1e      	movi.n	a14, 1
+   1c84f:	e24580        	s8i	a14, a5, 128
+0001c852: 1df0     retw.n        ; Capstone

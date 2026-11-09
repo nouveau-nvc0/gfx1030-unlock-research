@@ -1,0 +1,26 @@
+[
+  {
+    "variant": "original",
+    "file": "/workspace/gfx1030-unlock-research/inputs/research/bios-reference/images/original.bin",
+    "source_name": "HNX99TF_200525_original_E5C88C6F.bin",
+    "bytes": 16777216,
+    "sha256": "7e9d25443d5955e990f5f24cd1e7288d82e6655eb9c0f9f8c1ec5851de6a1c5d",
+    "extract_exit": 0
+  },
+  {
+    "variant": "mod",
+    "file": "/workspace/gfx1030-unlock-research/inputs/research/bios-reference/images/mod.bin",
+    "source_name": "HNX99TF_200525_kot_v011_5B7C6A7F.bin",
+    "bytes": 16777216,
+    "sha256": "2e0af8a55411abc978805727c5d88048bfd72fdf950e039e34917494a006462e",
+    "extract_exit": 0
+  },
+  {
+    "variant": "nobeep",
+    "file": "/workspace/gfx1030-unlock-research/inputs/research/bios-reference/images/nobeep.bin",
+    "source_name": "HNX99TF_200525_kot_v011_nobeep_4B0F504A.bin",
+    "bytes": 16777216,
+    "sha256": "902294b405e18e7dc61d8c774aab99a584036837453a23139f15fa41feed9e4e",
+    "extract_exit": 0
+  }
+]

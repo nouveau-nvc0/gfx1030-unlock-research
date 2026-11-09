@@ -1,0 +1,25 @@
+
+/tmp/tmp2wh4jhm7/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001c6d4 <.data+0x1c6d4>:
+0001c6d4: 366100   entry        a1, 0x30 ; Capstone
+   1c6d7:	3040f5        	extui	a4, a3, 16, 16
+   1c6da:	2060f5        	extui	a6, a2, 16, 16
+   1c6dd:	208084        	extui	a8, a2, 0, 9
+   1c6e0:	305084        	extui	a5, a3, 0, 9
+   1c6e3:	005511        	slli	a5, a5, 16
+   1c6e6:	008811        	slli	a8, a8, 16
+   1c6e9:	8a66      	add.n	a6, a6, a8
+   1c6eb:	5a24      	add.n	a2, a4, a5
+   1c6ed:	67b203        	bgeu	a2, a6, 0x1c6f4
+   1c6f0:	0c12      	movi.n	a2, 1
+0001c6f2: 1df0     retw.n        ; Capstone
+   1c6f4:	27b603        	bgeu	a6, a2, 0x1c6fb
+   1c6f7:	7cf2      	movi.n	a2, -1
+0001c6f9: 1df0     retw.n        ; Capstone
+   1c6fb:	0c02      	movi.n	a2, 0
+0001c6fd: 1df0     retw.n        ; Capstone
+	...

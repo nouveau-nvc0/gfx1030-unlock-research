@@ -1,0 +1,90 @@
+RLC explicit CC register restore — offline instruction evidence
+
+Pinned RLC SHA256:
+19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0
+IRAM body file offset b360. Virtual mapping remains inferred, not live-attested.
+
+Function71ac has a concrete save/restore pair, independently of packed SRM
+record semantics. Argument low byte is captured at71c9. Zero branches71eb
+to7284 (register -> RAM); nonzero falls through to71ee (RAM -> register).
+
+Four paired ports, using the segment0 GC base1260 DWORD register mapping:
+writePC readPC aperture     register                    RAM first word
+71fe    7293   600089bc     CC_GC_SHADER_ARRAY_CONFIG    5ffedfc4
+7216    72ab   600098f4     CC_RB_BACKEND_DISABLE        5ffedfe4
+722e    72c3   600089c0     GC_USER_SHADER_ARRAY_CONFIG  5ffee004
+7246    72db   60009b7c     GC_USER_RB_BACKEND_DISABLE   5ffee024
+Header offsets are100f,13dd,1010,147f respectively. Each bank contains8 words.
+For example (1260+100f)*4=89bc;71bb loads60008600 and71fe stores at+3bc.
+
+Outer loop runs4 times, inner loop2 times. For outer i and inner j:
+  index = (i<<10) | (j<<8)
+  RAM word offset = 8*i + 4*j
+Indices are000,100,400,500,800,900,c00,d00. Code writes index at70000004,
+zero at70000000, accesses the selected register, then clears70000004.
+Each operation is enclosed by RSIL15 / saved PS restore / RSYNC.
+These bit positions match a four-by-two selection pattern; no live attestation
+of selected hardware instance or acceptance of CC data is implied.
+
+Source value for CC_WGP write71fe is the DWORD loaded at71fb from
+5ffedfc4+8*i+4*j. The paired read7293 stores there at7296. No mask or arithmetic
+is applied to the value in this helper. This is evidence of replaying saved
+values, not proof that changed values would be accepted.
+
+Identified direct caller:6944 at6a95. It passes a4 via byte stack slot+30,
+L8UI and SEXT; a4 comes from low byte of first argument saved at694d/696b.
+Thus the seven previously recovered caller structs imply save for operation0,
+restore for operation1 for THIS software helper. They do not independently
+prove the direction or per-record handling of the SRM engine OP bit.
+Call6a95 lies on the common tail after waiting at6a46 for status bit1 clear,
+writing2 to SRM_CNTL at6a57, helper72f4 and helper4fa8(0).
+Earlier mode/context branches and hardware waits still govern reachability.
+
+Another user of base5ffedc80 is74c4. Its ordinary slot selection defaults31
+or takes byte2 when byte1 is nonzero; it accesses8*slot+{c,10,10c,110,20c,210}.
+For slots0..31 these accesses do not overlap the four arrays above. Caller
+range and other computed memory writers require further audit; no immutable
+RAM or exclusive-writer claim is made.
+
+Discovery mechanism: retain integer constants across RSYNC in the locator.
+JX switch coverage separately expanded four guarded tables with213 entries
+and75 per-table unique targets.22 alternate instruction starts were repaired.
+Synthetic JX edge/no-fall-through and RSYNC retention checks pass in
+rlc-jump-flow-validation.json. No firmware or hardware execution performed.
+
+Next: establish the complete calling state machine and all writers of saved
+arrays; distinguish usable invocation conditions from mere static reachability.
+The separate CC_SA SRM-table route and other engine/GOP routes remain open.
+
+Registered-handler chain confirmed in current listings:
+76f8 registers5fff77cc via9830 at772e with index1. Handler77cc calls32a4 at
+7941/795a on hardware-status branches;32a4 calls35d8 at32aa.35d8 checks
+byte[5ffee452] at35de/35e1 and returns when zero. Its36ca call supplies6944
+words1,1, which select restore in71ac at the common tail6a95.
+This establishes a code chain from a registered handler, with an unresolved
+state gate. The flag lies in the boot-cleared BSS range; the current constant
+store locator found no exact writer of that byte. Computed, wider, cross-call,
+or other-engine writes are not excluded. Do not assert runtime reachability.
+The apparently standalone6f70/70d4 wrappers save/restore using contextdb24+1;
+no direct calls or exact absolute-pointer references to them were located in
+the current firmware scan. They are not yet an established invocation route.
+Byte/address checks and the32 saved-word coordinates:rlc-cc-direct-restore.json.
+
+Callback/gate audit follow-up:
+The eight CALLX8 sites in77cc read eight adjacent RAM callback slots at
+5ffee57c..5ffee598. Helpers5a40/5a6c/5a9c/5acc/5af8/5b20/5b4c/5b78
+write them from argument a3; paired helpers5ba4..5c94 clear them.
+Only5a6c has direct callers in the current reachable-window scan (five).
+Its slot5ffee580 is dispatched at79d5. Targets are387c,3cbc,3a00; the39f9
+registration is resolved manually through a local stack roundtrip to3a00.
+This closes a concrete deferred-callback chain to3a00, which contains both
+SRM calls3b32(operation1) and3c0e(operation0). Its restore portion also tests
+the same5ffee452 gate at3a7c/3a81. No host-controlled invocation is claimed.
+
+The gate search now checks overlap with byte/halfword/DWORD constant-address
+stores, not just exact destination equality: no matches in current236 windows.
+All identified literal references into5ffee440..5ffee45f point at5ffee44c
+or5ffee458; no exact pointer to5ffee452 was found in the decompressed image.
+This narrows the search but does not rule out computed addresses, indirect
+memory effects, main RLC microcode or hardware producers. Gate remains open.
+Machine-readable registration and store evidence:rlc-callback-gate-audit.json.

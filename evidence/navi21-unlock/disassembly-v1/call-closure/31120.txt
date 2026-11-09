@@ -1,0 +1,16 @@
+
+/tmp/tmplnsg3wa_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00031120 <.data+0x31120>:
+00031120: 364100   entry        a1, 0x20 ; Capstone
+   31123:	0c2a      	movi.n	a10, 2
+00031125: a545d1   call8        . -0x2eba4 ; Capstone ; target=0x2580
+   31128:	21198c        	l32r	a2, 0x1418c (0x153a4)
+   3112b:	0c2a      	movi.n	a10, 2
+   3112d:	220280        	l8ui	a2, a2, 128
+00031130: 2534d1   call8        . -0x2ecbc ; Capstone ; target=0x2474
+00031133: 1df0     retw.n        ; Capstone
+   31135:	000000        	ill

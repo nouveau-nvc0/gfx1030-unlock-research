@@ -1,0 +1,20 @@
+
+/tmp/tmpvcdz730t/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0003462c <.data+0x3462c>:
+0003462c: 364100   entry        a1, 0x20 ; Capstone
+   3462f:	1c0a      	movi.n	a10, 16
+00034631: e5f4cd   call8        . -0x320b0 ; Capstone ; target=0x2580
+   34634:	ad02      	mov.n	a10, a2
+   34636:	bd03      	mov.n	a11, a3
+00034638: e5e3fe   call8        . -0x11c0 ; Capstone ; target=0x33478
+   3463b:	ad03      	mov.n	a10, a3
+0003463d: e5ddfe   call8        . -0x1220 ; Capstone ; target=0x3341c
+   34640:	2d0a      	mov.n	a2, a10
+   34642:	1c0a      	movi.n	a10, 16
+00034644: e5e2cd   call8        . -0x321d0 ; Capstone ; target=0x2474
+00034647: 1df0     retw.n        ; Capstone
+   34649:	000000        	ill

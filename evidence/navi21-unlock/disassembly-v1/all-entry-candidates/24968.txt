@@ -1,0 +1,17 @@
+
+/tmp/tmpg0xkxpbr/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00024968 <.data+0x24968>:
+00024968: 364100   entry        a1, 0x20 ; Capstone
+   2496b:	3158bb        	l32r	a3, 0x136cc (0x1259600)
+   2496e:	c02000        	memw
+   24971:	419bbb        	l32r	a4, 0x137e0 (0x1f0000)
+   24974:	222385        	l32i	a2, a3, 0x214
+   24977:	402220        	or	a2, a2, a4
+   2497a:	c02000        	memw
+   2497d:	226385        	s32i	a2, a3, 0x214
+00024980: 1df0     retw.n        ; Capstone
+	...

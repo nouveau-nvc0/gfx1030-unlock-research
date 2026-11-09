@@ -1,0 +1,12 @@
+
+/tmp/tmpet_hf8f_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00002090 <.data+0x2090>:
+00002090: 364100   entry        a1, 0x20 ; Capstone
+    2093:	0cda      	movi.n	a10, 13
+00002095: 65f3ff   call8        . -0xc8 ; Capstone ; target=0x1fcc
+00002098: 1df0     retw.n        ; Capstone
+	...

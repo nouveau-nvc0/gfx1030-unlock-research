@@ -1,0 +1,21 @@
+
+/tmp/tmp0a1ibtfr/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000359ac <.data+0x359ac>:
+000359ac: 364100   entry        a1, 0x20 ; Capstone
+   359af:	ad02      	mov.n	a10, a2
+000359b1: e570cc   call8        . -0x338f0 ; Capstone ; target=0x20c0
+   359b4:	a0a074        	extui	a10, a10, 0, 8
+   359b7:	f65a0b        	bgeui	a10, 5, 0x359c6
+000359ba: 25faff   call8        . -0x5c ; Capstone ; target=0x3595c
+   359bd:	ad02      	mov.n	a10, a2
+   359bf:	0c1b      	movi.n	a11, 1
+000359c1: a56dcc   call8        . -0x33924 ; Capstone ; target=0x209c
+000359c4: 1df0     retw.n        ; Capstone
+   359c6:	ad02      	mov.n	a10, a2
+   359c8:	b2a0ff        	movi	a11, 255
+000359cb: 256dcc   call8        . -0x3392c ; Capstone ; target=0x209c
+000359ce: 1df0     retw.n        ; Capstone

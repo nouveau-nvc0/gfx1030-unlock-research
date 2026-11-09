@@ -1,0 +1,17 @@
+
+/tmp/tmpdnb6atqd/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000164c <.data+0x164c>:
+0000164c: 364100   entry        a1, 0x20 ; Capstone
+    164f:	406200        	rsil	a4, 2
+    1652:	2170fd        	l32r	a2, 0xc14 (0x7b10)
+    1655:	3170fd        	l32r	a3, 0xc18 (0x7cac)
+    1658:	220280        	l8ui	a2, a2, 128
+    165b:	320380        	l8ui	a3, a3, 128
+    165e:	40e613        	wsr.ps	a4
+    1661:	3a22      	add.n	a2, a2, a3
+00001663: 1df0     retw.n        ; Capstone
+    1665:	000000        	ill

@@ -1,0 +1,19 @@
+
+/tmp/tmp1zp4dhgz/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000018a4 <.data+0x18a4>:
+000018a4: 364100   entry        a1, 0x20 ; Capstone
+    18a7:	306200        	rsil	a3, 2
+000018aa: 650d00   call8        . +0xd8 ; Capstone ; target=0x1980
+    18ad:	41b8fc        	l32r	a4, 0xb90 (0xdeadbeef)
+    18b0:	ad02      	mov.n	a10, a2
+000018b2: e58000   call8        . +0x810 ; Capstone ; target=0x20c0
+    18b5:	479af7        	bne	a10, a4, 0x18b0
+    18b8:	ad02      	mov.n	a10, a2
+    18ba:	30e613        	wsr.ps	a3
+    18bd:	0c1b      	movi.n	a11, 1
+000018bf: e57d00   call8        . +0x7e0 ; Capstone ; target=0x209c
+000018c2: 1df0     retw.n        ; Capstone

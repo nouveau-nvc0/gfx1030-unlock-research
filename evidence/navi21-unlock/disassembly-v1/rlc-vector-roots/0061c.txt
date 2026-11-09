@@ -1,0 +1,9 @@
+
+/tmp/tmphks0tw1_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000061c <.data+0x61c>:
+     61c:	404100        	break	1, 4
+     61f:	46feff        	j	0x61c

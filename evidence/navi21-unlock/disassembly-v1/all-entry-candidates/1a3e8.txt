@@ -1,0 +1,67 @@
+
+/tmp/tmps6s7uo_9/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001a3e8 <.data+0x1a3e8>:
+0001a3e8: 364100   entry        a1, 0x20 ; Capstone
+   1a3eb:	0c05      	movi.n	a5, 0
+   1a3ed:	0c07      	movi.n	a7, 0
+   1a3ef:	62a000        	movi	a6, 0
+   1a3f2:	a18ee2        	l32r	a10, 0x12e2c (0xbf54)
+   1a3f5:	b1a4e2        	l32r	a11, 0x12e88 (0x9ef4)
+   1a3f8:	32a004        	movi	a3, 4
+   1a3fb:	9189e2        	l32r	a9, 0x12e20 (0x12264)
+   1a3fe:	822b2c        	l32i	a8, a11, 176
+0001a401: 76a326   loopgtz      a3, . +0x2a ; Capstone
+   1a404:	9045a0        	addx4	a4, a5, a9
+   1a407:	42247f        	l32i	a4, a4, 0x1fc
+   1a40a:	470818        	bnone	a8, a4, 0x1a426
+   1a40d:	a045b0        	addx8	a4, a5, a10
+0001a410: 03047f   lsi          f0, a4, 0x1fc ; Capstone
+   1a413:	fc46      	bnez.n	a6, 0x1a44b
+0001a415: 0060ea   utrunc.s     a6, f0, 0 ; Capstone
+   1a418:	6060f4        	extui	a6, a6, 0, 16
+0001a41b: 030480   lsi          f0, a4, 0x200 ; Capstone
+   1a41e:	fc87      	bnez.n	a7, 0x1a45a
+0001a420: 0040ea   utrunc.s     a4, f0, 0 ; Capstone
+   1a423:	4070f4        	extui	a7, a4, 0, 16
+   1a426:	1b55      	addi.n	a5, a5, 1
+   1a428:	505074        	extui	a5, a5, 0, 8
+   1a42b:	8198e2        	l32r	a8, 0x12e8c (0xa044)
+   1a42e:	5198e2        	l32r	a5, 0x12e90 (0x9f5c)
+   1a431:	4198e2        	l32r	a4, 0x12e94 (0x14a34)
+   1a434:	fcc2      	bnez.n	a2, 0x1a474
+   1a436:	22057e        	l8ui	a2, a5, 126
+   1a439:	625444        	s16i	a6, a4, 136
+   1a43c:	802290        	addx2	a2, a2, a8
+   1a43f:	22127f        	l16ui	a2, a2, 254
+   1a442:	225446        	s16i	a2, a4, 140
+   1a445:	2254c6        	s16i	a2, a4, 0x18c
+   1a448:	460700        	j	0x1a469
+0001a44b: 0016ca   float.s      f1, a6, 0 ; Capstone
+0001a44e: 10004b   olt.s        b0, f0, f1 ; Capstone
+0001a451: 7600c6   bf           b0, . -0x36 ; Capstone
+0001a454: 0060ea   utrunc.s     a6, f0, 0 ; Capstone
+   1a457:	46efff        	j	0x1a418
+0001a45a: 0027ca   float.s      f2, a7, 0 ; Capstone
+0001a45d: 20104b   olt.s        b1, f0, f2 ; Capstone
+0001a460: 7601c2   bf           b1, . -0x3a ; Capstone
+0001a463: 0040ea   utrunc.s     a4, f0, 0 ; Capstone
+   1a466:	46eeff        	j	0x1a423
+   1a469:	225438        	s16i	a2, a4, 112
+   1a46c:	2254b8        	s16i	a2, a4, 0x170
+   1a46f:	6254c4        	s16i	a6, a4, 0x188
+0001a472: 1df0     retw.n        ; Capstone
+   1a474:	261202        	beqi	a2, 1, 0x1a47a
+   1a477:	06ffff        	j	0x1a477
+   1a47a:	6d07      	mov.n	a6, a7
+   1a47c:	725444        	s16i	a7, a4, 136
+   1a47f:	22057e        	l8ui	a2, a5, 126
+   1a482:	322bd2        	l32i	a3, a11, 0x348
+   1a485:	325446        	s16i	a3, a4, 140
+   1a488:	3254c6        	s16i	a3, a4, 0x18c
+   1a48b:	802290        	addx2	a2, a2, a8
+   1a48e:	22127f        	l16ui	a2, a2, 254
+   1a491:	06f5ff        	j	0x1a469

@@ -1,0 +1,48 @@
+
+/tmp/tmp9kswynuk/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000a400 <.data+0xa400>:
+0000a400: 364100   entry        a1, 0x20 ; Capstone
+    a403:	8150cb        	l32r	a8, 0xffffd144 (0x5fffa480) ; inferred DRAM map 0x5ffec000
+    a406:	0c09      	movi.n	a9, 0
+    a408:	971805        	beq	a8, a9, 0xa411
+    a40b:	f02000        	nop
+0000a40e: 250700   call8        . +0x74 ; Capstone ; target=0xa480
+    a411:	31e5cc        	l32r	a3, 0xffffd7a8 (0x5ffee65c) ; inferred DRAM map 0x5ffec000
+    a414:	41e6cc        	l32r	a4, 0xffffd7ac (0x5ffed7bc) ; inferred DRAM map 0x5ffec000
+    a417:	a803      	l32i.n	a10, a3, 0
+    a419:	b814      	l32i.n	a11, a4, 4
+    a41b:	164a04        	beqz	a10, 0xa463
+    a41e:	a804      	l32i.n	a10, a4, 0
+    a420:	b7ba18        	bgeu	a10, a11, 0xa43c
+    a423:	8803      	l32i.n	a8, a3, 0
+    a425:	1b9a      	addi.n	a9, a10, 1
+    a427:	8089a0        	addx4	a8, a9, a8
+    a42a:	82d8ff        	addmi	a8, a8, 0xffffff00
+    a42d:	82283f        	l32i	a8, a8, 252
+    a430:	9904      	s32i.n	a9, a4, 0
+0000a432: e00800   callx8       a8 ; Capstone
+    a435:	9814      	l32i.n	a9, a4, 4
+    a437:	a804      	l32i.n	a10, a4, 0
+    a439:	973ae6        	bltu	a10, a9, 0xa423
+    a43c:	a813      	l32i.n	a10, a3, 4
+    a43e:	9c4a      	beqz.n	a10, 0xa456
+    a440:	822300        	l32i	a8, a3, 0
+    a443:	92caff        	addi	a9, a10, -1
+    a446:	8089a0        	addx4	a8, a9, a8
+    a449:	822800        	l32i	a8, a8, 0
+    a44c:	9913      	s32i.n	a9, a3, 4
+0000a44e: e00800   callx8       a8 ; Capstone
+    a451:	a813      	l32i.n	a10, a3, 4
+    a453:	569afe        	bnez	a10, 0xa440
+    a456:	9823      	l32i.n	a9, a3, 8
+    a458:	b824      	l32i.n	a11, a4, 8
+    a45a:	8c59      	beqz.n	a9, 0xa463
+    a45c:	8c3b      	beqz.n	a11, 0xa463
+    a45e:	a803      	l32i.n	a10, a3, 0
+0000a460: e00b00   callx8       a11 ; Capstone
+    a463:	ad02      	mov.n	a10, a2
+0000a465: a538ff   call8        . -0xc74 ; Capstone ; target=0x97f0

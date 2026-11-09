@@ -1,0 +1,15 @@
+
+/tmp/tmpc53l3yk4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000377a8 <.data+0x377a8>:
+000377a8: 364100   entry        a1, 0x20 ; Capstone
+   377ab:	42020b        	l8ui	a4, a2, 11
+   377ae:	3912      	s32i.n	a3, a2, 4
+   377b0:	0c25      	movi.n	a5, 2
+   377b2:	504420        	or	a4, a4, a5
+   377b5:	42420b        	s8i	a4, a2, 11
+000377b8: 1df0     retw.n        ; Capstone
+	...

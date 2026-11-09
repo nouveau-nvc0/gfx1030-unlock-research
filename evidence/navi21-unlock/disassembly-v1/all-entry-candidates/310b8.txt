@@ -1,0 +1,20 @@
+
+/tmp/tmp59rhfkn5/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000310b8 <.data+0x310b8>:
+000310b8: 364100   entry        a1, 0x20 ; Capstone
+   310bb:	41328c        	l32r	a4, 0x14184 (0xb620)
+   310be:	32a004        	movi	a3, 4
+000310c1: 76a315   loopgtz      a3, . +0x19 ; Capstone
+   310c4:	820488        	l8ui	a8, a4, 136
+   310c7:	920484        	l8ui	a9, a4, 132
+   310ca:	a20480        	l8ui	a10, a4, 128
+   310cd:	a2427c        	s8i	a10, a2, 124
+   310d0:	924280        	s8i	a9, a2, 128
+   310d3:	824284        	s8i	a8, a2, 132
+   310d6:	1b44      	addi.n	a4, a4, 1
+   310d8:	1b22      	addi.n	a2, a2, 1
+000310da: 1df0     retw.n        ; Capstone

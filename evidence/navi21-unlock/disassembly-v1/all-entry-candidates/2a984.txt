@@ -1,0 +1,15 @@
+
+/tmp/tmpiryf5a_k/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002a984 <.data+0x2a984>:
+0002a984: 364100   entry        a1, 0x20 ; Capstone
+   2a987:	ad02      	mov.n	a10, a2
+0002a989: a554f7   call8        . -0x8ab4 ; Capstone ; target=0x21ed4
+   2a98c:	ad02      	mov.n	a10, a2
+   2a98e:	0c0b      	movi.n	a11, 0
+0002a990: a57e0a   call8        . +0xa7ec ; Capstone ; target=0x3517c
+0002a993: 1df0     retw.n        ; Capstone
+   2a995:	000000        	ill

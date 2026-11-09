@@ -1,0 +1,280 @@
+{
+  "date": "2026-11-09",
+  "research_status": "paused",
+  "integrity": {
+    "archive_files_checked": 7151,
+    "catalog_scripts_checked": 103,
+    "python_syntax_checked": 104,
+    "curated_markdown_checked": 14,
+    "errors": [],
+    "passed": true
+  },
+  "portable_replay": {
+    "scope": "Selected local assertions on pinned bytes and existing listings; not full firmware or hardware validation",
+    "firmware_sha256_decompressed": {
+      "sienna_cichlid_rlc.bin.xz": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+      "sienna_cichlid_smc.bin.xz": "0eb99764288f764fd853d6973693ffa52419cc7ba62074aee85df4a3e8d0286d",
+      "sienna_cichlid_sos.bin.xz": "67706b9e1545bf68850bf9cea97660af5972574ecb0ca30041174efbb59fac37"
+    },
+    "path_adaptation": "In-memory AST string-prefix substitution only; original scripts unchanged",
+    "results": [
+      {
+        "script": "navi21-psp-buffer-ownership-audit.py",
+        "passed": true,
+        "script_sha256": "a8a9b2f334bd6ae09e8c6a4e34eea2c899c612156a40dd6f97b80daa14435f7b"
+      },
+      {
+        "script": "navi21-rlc-4004-destination-audit.py",
+        "passed": true,
+        "script_sha256": "bdd6b40dbf6049b3c772d6f91f2cd487f58e74ecb82fba1a8db6124ccb003b85"
+      },
+      {
+        "script": "navi21-rlc-alternative-cycle-audit.py",
+        "passed": true,
+        "script_sha256": "85a0dcc8706958c79f3d11eea2468679d5c9a50a86eaec47b36a57fbfe21b5b8"
+      },
+      {
+        "script": "navi21-rlc-callback-unused-entry-audit.py",
+        "passed": true,
+        "script_sha256": "3dd04debb3ff6211e3ec84f2e1f065c72f59a266d3a3f6dc3eb944a5d75b6741"
+      },
+      {
+        "script": "navi21-rlc-cc-incoming-edges-audit.py",
+        "passed": true,
+        "script_sha256": "45b4d827a34de090f031dad625e18bece21a6f48d9f541c950cbdecc3bbee9eb"
+      },
+      {
+        "script": "navi21-rlc-computed-store-bounds-audit.py",
+        "passed": true,
+        "script_sha256": "403c46e84bfa8a0bcc704be9cd50473799554f500445b652f36f8cfb0cd69f76"
+      },
+      {
+        "script": "navi21-rlc-copy-entry-audit.py",
+        "passed": true,
+        "script_sha256": "27a10d3739b0eb396a4280628087b22bbe11eeaeffa25547329151c1a37465f1"
+      },
+      {
+        "script": "navi21-rlc-d99c-consumer-audit.py",
+        "passed": true,
+        "script_sha256": "2d6bca46e4870bd7e3855b18f7a21bf97287876e694fb196a7e0522f4fd290a5"
+      },
+      {
+        "script": "navi21-rlc-d99c-producer-audit.py",
+        "passed": true,
+        "script_sha256": "198a78842f82f618871c35d8a8ce2d4446d19be3ecda92a8314d3afbbc9c5712"
+      },
+      {
+        "script": "navi21-rlc-derived-store-audit.py",
+        "passed": true,
+        "script_sha256": "16e147c9fd83d2fbe6af3d91e12f8f79612d93da399073f8aa18d7f440e5591a"
+      },
+      {
+        "script": "navi21-rlc-direct-root-audit.py",
+        "passed": true,
+        "script_sha256": "b793c655688a6565f2856862ed3065659457625d23d7256136d2da8e5053db6d"
+      },
+      {
+        "script": "navi21-rlc-gate-index-audit.py",
+        "passed": true,
+        "script_sha256": "68463927ce887d4da55236874f213c42e248beb5eed88bcf7240378a24af43c2"
+      },
+      {
+        "script": "navi21-rlc-pace-bounds-audit.py",
+        "passed": true,
+        "script_sha256": "bb51758e000f6411663061bb78654d5e0820f9d74ce140b8d512e27badae8e44"
+      },
+      {
+        "script": "navi21-rlc-pace-level-audit.py",
+        "passed": true,
+        "script_sha256": "c2cbc5c7d00e0eab97628da99d3481436491ea795f7bd42699aaa1b91edb882d"
+      },
+      {
+        "script": "navi21-rlc-restore-entry-audit.py",
+        "passed": true,
+        "script_sha256": "26bfef5d3eceb538cc7f87c460d7c049c753c7ef8e87e307479c5aaec740f989"
+      },
+      {
+        "script": "navi21-rlc-saved-lifecycle-audit.py",
+        "passed": true,
+        "script_sha256": "cea463cafbd7dad587a7b61edc1b9930cd9bed8a8e02b641bb51dfda20120d48"
+      },
+      {
+        "script": "navi21-rlc-saved-neighbors-audit.py",
+        "passed": true,
+        "script_sha256": "186d42b5ac5afecf99b1acda5811f21141d8e7a3b2abe8c3eac11171bc80b398"
+      },
+      {
+        "script": "navi21-rlc-scratch-consumer-audit.py",
+        "passed": true,
+        "script_sha256": "ad1bd09c1127ced650e5b5a81aee99fb64203ce7b87d12bb5ce568fce8e8f0f4"
+      },
+      {
+        "script": "navi21-rlc-snapshot-entry-range-audit.py",
+        "passed": true,
+        "script_sha256": "7da8eff3588edbf8736fa19d3d5f9c2a7b4ae75739bfcc369b66eac385ab7f15"
+      },
+      {
+        "script": "navi21-rlc-startup-state-audit.py",
+        "passed": true,
+        "script_sha256": "8b67b216072d3003189f55c0cf6651edda0824a94c1f9c5ea20332d7c0dbea08"
+      },
+      {
+        "script": "navi21-rlc-store-disposition-audit.py",
+        "passed": true,
+        "script_sha256": "cb78836a8bae4b41e5fab1f4a912a21456c79d084eb2f1c8f0c149b18ebe9b81"
+      },
+      {
+        "script": "navi21-rlc-transition-controls-audit.py",
+        "passed": true,
+        "script_sha256": "599cf71347c39967c3ac5f2241a350985ca842889b7d6f128c6be9ee09505a39"
+      },
+      {
+        "script": "navi21-rlc-window-store-audit.py",
+        "passed": true,
+        "script_sha256": "958c3293a6a1c1f8ff61c0a8b7324cf45007dae66e30ac14b9b439cb8dfb26ec"
+      },
+      {
+        "script": "navi21-rlcg-cc-operand-audit.py",
+        "passed": true,
+        "script_sha256": "ad425a4030f1972ab35ff059db94b2114a436b598d3d08f1963145c03c5b9a11"
+      },
+      {
+        "script": "navi21-rlcg-command-bridge-audit.py",
+        "passed": true,
+        "script_sha256": "f47ce89fb2fb0b3e2ec4e676ff4c85acab4e2f001accf6854f2b1a68f07527cc"
+      },
+      {
+        "script": "navi21-rlcg-dram-save-audit.py",
+        "passed": true,
+        "script_sha256": "0899d3fc69c297cf0b8e0ef4376ba4e64a4b45cee768090b0cce3157745301c1"
+      },
+      {
+        "script": "navi21-rlcg-e800-helper-audit.py",
+        "passed": true,
+        "script_sha256": "afe3e7412e229864c43463c73e1c46e8a07923608091592dd0db895e851cd61b"
+      },
+      {
+        "script": "navi21-rlcg-e800-write-indices-audit.py",
+        "passed": true,
+        "script_sha256": "554e48aa646c1c43ff1bae6baf399ba87ee43b4f5a77d65020c6da9e815a492e"
+      },
+      {
+        "script": "navi21-rlcg-gpm-transfer-audit.py",
+        "passed": true,
+        "script_sha256": "25f2058a011f9e8f38d2436a49ee9c4dac80ef6892c84a1453c22cfd646acf8b"
+      },
+      {
+        "script": "navi21-rlcg-lx6-index-audit.py",
+        "passed": true,
+        "script_sha256": "baacb7219509a454b55ab16aa4fa9b782ecd9464c2549a42be4b9c1519f2920f"
+      },
+      {
+        "script": "navi21-rlcg-spm-transfer-audit.py",
+        "passed": true,
+        "script_sha256": "31d0c05ee919316c6c5621af7f22a5e816a16ac39f574632c436f5c6a10e61c2"
+      },
+      {
+        "script": "navi21-rlcg-toc-audit.py",
+        "passed": true,
+        "script_sha256": "c01c372bc3191124307b71ab391335c59d96410ef7a1f42d48420b8dd5309612"
+      },
+      {
+        "script": "navi21-rlcg-toc-effects-audit.py",
+        "passed": true,
+        "script_sha256": "342740cd47e181d7d391ee6288dfe3a2eadea02234b489ad388c1ceacd68aeee"
+      },
+      {
+        "script": "navi21-smu-command41-initial-ranges-audit.py",
+        "passed": true,
+        "script_sha256": "35ed0f85b726fe05d401e715cd4ce20a1c0f7467504ec971fbeaaa0fcc1b1555"
+      },
+      {
+        "script": "navi21-smu-command41-pointer-candidates-audit.py",
+        "passed": true,
+        "script_sha256": "1f66439e5487a6addf0a4b1d6c3dc550c9ca78149cee17dcde40922d130f54a0"
+      },
+      {
+        "script": "navi21-smu-command41-state-audit.py",
+        "passed": true,
+        "script_sha256": "0c424d644841dd40b19e815124eee991e83b35e194fd10a56c17eaf956bd0fb3"
+      },
+      {
+        "script": "navi21-smu-command41-workers-audit.py",
+        "passed": true,
+        "script_sha256": "60e0d6438b59a748aab72ecd022c3b30bba8987ef024100a4f17be3ae244355d"
+      },
+      {
+        "script": "navi21-smu-e800-reference-audit.py",
+        "passed": true,
+        "script_sha256": "db55220559e7eaa4c870bfda75058f6cadb4fad2712aecfbdcb150a6ad2cc966"
+      },
+      {
+        "script": "navi21-smu-ff8c-enable-ports-audit.py",
+        "passed": true,
+        "script_sha256": "6d1837780ff8d63187a4ad589734e54b5f3783452a64314b85e6d6da84319d71"
+      },
+      {
+        "script": "navi21-smu-ff8c-transition-audit.py",
+        "passed": true,
+        "script_sha256": "8c63b1d3565bd8cd67f4fee165ef86dec92cb6ec536b4ca17c472d88dcbc1b7a"
+      },
+      {
+        "script": "navi21-smu-irq-mask-audit.py",
+        "passed": true,
+        "script_sha256": "6ac59e64106de6cd3462c6a6a24787084860fcfd50e3b090b7d66fc9642471d2"
+      },
+      {
+        "script": "navi21-smu-lx6-port-audit.py",
+        "passed": true,
+        "script_sha256": "15ecabdc4bd8f09fcfe2cfc94e35c30d3bd0c4d77e3fdc96d9358374746fe443"
+      },
+      {
+        "script": "navi21-smu-pace-delivery-audit.py",
+        "passed": true,
+        "script_sha256": "61b7571627ad3d7aac0c31cd10a21ad5d33cdb54c1d6686a040bde300db5203a"
+      },
+      {
+        "script": "navi21-smu-pace-source-audit.py",
+        "passed": true,
+        "script_sha256": "a2385f07b8f932c65b332992beebc51b42bcd6cd3f971d0d126dea9507f9056a"
+      },
+      {
+        "script": "navi21-smu-state2-list-audit.py",
+        "passed": true,
+        "script_sha256": "b41aa986d0533b8dd02726ba75f6e5b70cb9140c7a9b4c47b19cb4648fcb48d5"
+      },
+      {
+        "script": "navi21-smu-transfer-program-audit.py",
+        "passed": true,
+        "script_sha256": "bae8a357c8dc5cf9abd7210adecce70cf1c617d83ae51a68c804db70686c470e"
+      },
+      {
+        "script": "navi21-smu-window-umc-audit.py",
+        "passed": true,
+        "script_sha256": "fcf4cc7c98a359c3f49404fee18b9ea6d77dfa87c443a827ee0870f79d2ed7c2"
+      },
+      {
+        "script": "navi21-sys-staging-lifetime-audit.py",
+        "passed": true,
+        "script_sha256": "183809bd2739d2410b14587fa1403f4a3a528eb5743fedcaecfc130a73bab985"
+      }
+    ],
+    "passed": true
+  },
+  "public_export_checks": {
+    "passed": true,
+    "scope": "Published evidence, source variants and documentation; identifying observations and unrelated operational records are excluded.",
+    "negative_fixtures": [
+      "Identifying journal metadata rejected",
+      "Unrelated operational schema rejected",
+      "Transient hardware execution rejected before device/output access"
+    ],
+    "measurement_invariants": "All 48 local firmware audits pass after the export transformation; no additional hardware trial was performed."
+  },
+  "source_scope": "The catalog hashes the published source. Hardware collector/writer copies differ from historical executors in metadata selection, removed site-specific launch commands and disabled execution.",
+  "limitations": [
+    "External firmware/tool binaries are not distributed.",
+    "The 48-audit subset is not a complete firmware or hardware validation.",
+    "Offline assertions consume the retained byte listings."
+  ]
+}

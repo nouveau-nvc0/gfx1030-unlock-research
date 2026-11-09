@@ -1,0 +1,78 @@
+
+/tmp/tmpq4to3ppd/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001b20c <.data+0x1b20c>:
+0001b20c: 364100   entry        a1, 0x20 ; Capstone
+   1b20f:	3043b0        	addx8	a4, a3, a3
+   1b212:	2044a0        	addx4	a4, a4, a2
+   1b215:	82041e        	l8ui	a8, a4, 30
+   1b218:	160808        	beqz	a8, 0x1b29c
+   1b21b:	9842      	l32i.n	a9, a2, 16
+   1b21d:	8864      	l32i.n	a8, a4, 24
+   1b21f:	a20423        	l8ui	a10, a4, 35
+   1b222:	720422        	l8ui	a7, a4, 34
+   1b225:	970806        	bnone	a8, a9, 0x1b22f
+   1b228:	ad02      	mov.n	a10, a2
+0001b22a: e5af03   call8        . +0x3b00 ; Capstone ; target=0x1ed28
+0001b22d: 1df0     retw.n        ; Capstone
+   1b22f:	62041f        	l8ui	a6, a4, 31
+   1b232:	0c38      	movi.n	a8, 3
+   1b234:	82441e        	s8i	a8, a4, 30
+   1b237:	7a66      	add.n	a6, a6, a7
+   1b239:	0c07      	movi.n	a7, 0
+   1b23b:	673a27        	bltu	a10, a6, 0x1b266
+   1b23e:	e05611        	slli	a5, a6, 2
+   1b241:	82228b        	l32i	a8, a2, 0x22c
+   1b244:	5a88      	add.n	a8, a8, a5
+   1b246:	8808      	l32i.n	a8, a8, 0
+0001b248: e00800   callx8       a8 ; Capstone
+   1b24b:	a2041f        	l8ui	a10, a4, 31
+   1b24e:	b20423        	l8ui	a11, a4, 35
+   1b251:	920201        	l8ui	a9, a2, 1
+   1b254:	1baa      	addi.n	a10, a10, 1
+   1b256:	a2441f        	s8i	a10, a4, 31
+   1b259:	262941        	beqi	a9, 2, 0x1b29e
+   1b25c:	261950        	beqi	a9, 1, 0x1b2b0
+   1b25f:	4b55      	addi.n	a5, a5, 4
+   1b261:	1b66      	addi.n	a6, a6, 1
+   1b263:	67bbda        	bgeu	a11, a6, 0x1b241
+   1b266:	c20427        	l8ui	a12, a4, 39
+   1b269:	72441e        	s8i	a7, a4, 30
+   1b26c:	a2c428        	addi	a10, a4, 40
+   1b26f:	1bcc      	addi.n	a12, a12, 1
+   1b271:	c24427        	s8i	a12, a4, 39
+0001b274: a51de7   call8        . -0x18e24 ; Capstone ; target=0x2450
+   1b277:	72441f        	s8i	a7, a4, 31
+   1b27a:	f21203        	l16ui	a15, a2, 6
+   1b27d:	d852      	l32i.n	a13, a2, 20
+   1b27f:	e864      	l32i.n	a14, a4, 24
+   1b281:	7cf9      	movi.n	a9, -1
+   1b283:	001340        	ssl	a3
+   1b286:	0c18      	movi.n	a8, 1
+   1b288:	0088a1        	sll	a8, a8
+   1b28b:	908830        	xor	a8, a8, a9
+   1b28e:	90ee30        	xor	a14, a14, a9
+   1b291:	e0dd10        	and	a13, a13, a14
+   1b294:	80ff10        	and	a15, a15, a8
+   1b297:	f25203        	s16i	a15, a2, 6
+   1b29a:	d952      	s32i.n	a13, a2, 20
+0001b29c: 1df0     retw.n        ; Capstone
+   1b29e:	72441f        	s8i	a7, a4, 31
+   1b2a1:	a20424        	l8ui	a10, a4, 36
+   1b2a4:	0c29      	movi.n	a9, 2
+   1b2a6:	92441e        	s8i	a9, a4, 30
+   1b2a9:	1baa      	addi.n	a10, a10, 1
+   1b2ab:	a24424        	s8i	a10, a4, 36
+0001b2ae: 1df0     retw.n        ; Capstone
+   1b2b0:	b20422        	l8ui	a11, a4, 34
+   1b2b3:	c20425        	l8ui	a12, a4, 37
+   1b2b6:	b0b6c0        	sub	a11, a6, a11
+   1b2b9:	1bcc      	addi.n	a12, a12, 1
+   1b2bb:	c24425        	s8i	a12, a4, 37
+   1b2be:	1bbb      	addi.n	a11, a11, 1
+   1b2c0:	b2441f        	s8i	a11, a4, 31
+0001b2c3: 1df0     retw.n        ; Capstone
+   1b2c5:	000000        	ill

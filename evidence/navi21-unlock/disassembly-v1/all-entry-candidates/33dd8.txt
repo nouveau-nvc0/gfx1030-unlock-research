@@ -1,0 +1,32 @@
+
+/tmp/tmpuf18armc/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00033dd8 <.data+0x33dd8>:
+00033dd8: 364100   entry        a1, 0x20 ; Capstone
+   33ddb:	c1c27d        	l32r	a12, 0x134e4 (0xfc20)
+   33dde:	820c7e        	l8ui	a8, a12, 126
+   33de1:	a1517d        	l32r	a10, 0x13328 (0x123ae00)
+   33de4:	0c39      	movi.n	a9, 3
+   33de6:	ec08      	bnez.n	a8, 0x33e0a
+   33de8:	c02000        	memw
+   33deb:	926a89        	s32i	a9, a10, 0x224
+   33dee:	0c1b      	movi.n	a11, 1
+   33df0:	c02000        	memw
+   33df3:	922a89        	l32i	a9, a10, 0x224
+   33df6:	07690b        	bbci	a9, 0, 0x33e05
+   33df9:	90d134        	extui	a13, a9, 1, 4
+   33dfc:	261d05        	beqi	a13, 1, 0x33e05
+   33dff:	90e834        	extui	a14, a9, 8, 4
+   33e02:	56aefe        	bnez	a14, 0x33df0
+   33e05:	b24c7e        	s8i	a11, a12, 126
+00033e08: 1df0     retw.n        ; Capstone
+   33e0a:	0c0c      	movi.n	a12, 0
+   33e0c:	0cfb      	movi.n	a11, 15
+   33e0e:	d12d7c        	l32r	a13, 0x12ec4 (0x300fe00)
+   33e11:	1c0a      	movi.n	a10, 16
+   33e13:	c02000        	memw
+   33e16:	d22d8a        	l32i	a13, a13, 0x228
+00033e19: 257fce   call8        . -0x3180c ; Capstone ; target=0x260c

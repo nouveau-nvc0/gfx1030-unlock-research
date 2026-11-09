@@ -1,0 +1,15 @@
+
+/tmp/tmpkuvd1qmb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00006334 <.data+0x6334>:
+00006334: 368100   entry        a1, 0x40 ; Capstone
+    6337:	b2c110        	addi	a11, a1, 16
+    633a:	2941      	s32i.n	a2, a1, 16
+    633c:	0c0a      	movi.n	a10, 0
+    633e:	c2a001        	movi	a12, 1
+00006341: 650000   call8        . +8 ; Capstone ; target=0x6348
+00006344: 1df0     retw.n        ; Capstone
+	...

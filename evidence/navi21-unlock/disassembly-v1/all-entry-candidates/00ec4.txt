@@ -1,0 +1,36 @@
+
+/tmp/tmpauiibyle/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000ec4 <.data+0xec4>:
+00000ec4: 364100   entry        a1, 0x20 ; Capstone
+     ec7:	812dff        	l32r	a8, 0xb7c (0x7c7c)
+     eca:	225880        	s16i	a2, a8, 0x100
+     ecd:	326841        	s32i	a3, a8, 0x104
+     ed0:	42683f        	s32i	a4, a8, 252
+     ed3:	66420a        	bnei	a2, 4, 0xee1
+     ed6:	a12aff        	l32r	a10, 0xb80 (0x7d5c)
+00000ed9: a53600   call8        . +0x36c ; Capstone ; target=0x1244
+00000edc: e5f8ff   call8        . -0x70 ; Capstone ; target=0xe6c
+00000edf: 1df0     retw.n        ; Capstone
+     ee1:	26b220        	beqi	a2, 16, 0xf05
+     ee4:	1c89      	movi.n	a9, 24
+     ee6:	97121b        	beq	a2, a9, 0xf05
+     ee9:	0cda      	movi.n	a10, 13
+     eeb:	a79204        	bne	a2, a10, 0xef3
+00000eee: 65f1ff   call8        . -0xe8 ; Capstone ; target=0xe04
+00000ef1: 1df0     retw.n        ; Capstone
+     ef3:	cd02      	mov.n	a12, a2
+     ef5:	0ccb      	movi.n	a11, 12
+     ef7:	d11cff        	l32r	a13, 0xb68 (0x300fe00)
+     efa:	0c1a      	movi.n	a10, 1
+     efc:	c02000        	memw
+     eff:	d22d8a        	l32i	a13, a13, 0x228
+00000f02: a57001   call8        . +0x170c ; Capstone ; target=0x260c
+     f05:	bd03      	mov.n	a11, a3
+     f07:	ad02      	mov.n	a10, a2
+00000f09: a5f4ff   call8        . -0xb4 ; Capstone ; target=0xe54
+00000f0c: 1df0     retw.n        ; Capstone
+	...

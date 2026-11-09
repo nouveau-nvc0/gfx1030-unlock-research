@@ -1,0 +1,40 @@
+GOP PCI-protocol writes outside the register helper — offline
+
+Full executable-section linear inventory now records189 XL/191 XT indirect
+transfers. The three literal+18 memory-call sites per image are:
+XL6316/XT4e82: previously traced PCI_IO.Mem.Write DWORD wrapper.
+XL6ae9/XT6cb9: additional PCI_IO.Mem.Write in BAR transfer helper.
+XL6f69/XT7121: BootServices.RaiseTPL, not PCI I/O. XL pointer is loaded from
+ce90 (BootServices initialized at446), argumentECX=10 at6f4f. Matching offset
+alone must not classify a protocol operation.
+Register-loaded pointers and computed/alternate entries are not closed by the
+literal displacement inventory. Raw indirect sites retained in receipt.
+
+XL69fc andXT6bcc helper bodies are byte-identical. Input context+20 supplies
+PCI_IO, context byte+106 supplies BAR, inputR8D supplies byte offset, inputRDX
+supplies buffer, fifth stack argument supplies byte count, sixth selects
+read(nonzero)/write(zero). The helper chooses DWORD/WORD/BYTE width according
+to byte-count divisibility by4/2 and scales count accordingly. It performs no
+CC-specific rejection, address-range validation or index-port selection itself.
+Original-instruction replay passes64 cases across both images, all three
+widths/read-write modes/BAR0 and syntheticBAR3, stopping before PCI callback.
+The emulation stack layout was corrected before accepting results: the sixth
+argument is entryRSP+30, not+2c. No failing-run result is included as evidence.
+Receipts:gop-bar-transfer-replay.json,gop-write-leaf-inventory.json.
+Reproducer:scripts/navi21-gop-bar-transfer-check.py.
+
+XL four direct callers:2260,7100,7286,754c.7100/754c selectwrite;7286 read;
+2260 forwards a mode from its own caller. The latter three are in the image
+transfer function6e58 (boundary from PE runtime-function metadata).
+The context used for initialization is allocated with size9c0 at809 and
+zeroed viaa0a8 at81e before1914; thus+106 initiallyzero. a0a8 writes zero
+QWORDs/DWORDs/bytes. Unlike register access BAR+104 (set3 at1a1a), no direct
+literal+106 setter was found in the current listing. This supports initial
+BAR0 framebuffer usage but is not a full proof of immutability under computed
+stores, calls, callbacks or reuse of an existing context.
+
+CC implication: a BAR3 context would make this a general direct MMIO write
+interface, but replaying syntheticBAR3 establishes parameter forwarding only.
+Stock callers choosing BAR3 have not been established. Under initial BAR0,
+the helper transfers framebuffer data; no independent CC-writing caller is
+proved. Further closure requires context-field mutation and callback auditing.

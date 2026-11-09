@@ -1,0 +1,121 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "scan_sha256": "11fb599c85902ca4e567c83a78d014389953f3856f237f0d362fa80c12c22e52",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05a40.txt",
+      "sha256": "7fece66751a11ca7331c3c718511ad0a324380263f16b076576bbace007de265",
+      "byte_checked_records": 16
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05af8.txt",
+      "sha256": "7c6790fe106cf0b87513f3ffd2c6efb98c4eaf8bdf679b2a5e7c095d38a09f0c",
+      "byte_checked_records": 15
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05a6c.txt",
+      "sha256": "f54abd7eeca6b88140807177cd25576afdbc353568375fa3d7a8945478483924",
+      "byte_checked_records": 18
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05b20.txt",
+      "sha256": "a14c6b92708302b62ea1d19b7d17ba2a7caeb0323647b4089966aea783b13593",
+      "byte_checked_records": 16
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05a9c.txt",
+      "sha256": "3620a448b0b96e5258af5bcc3f27b219fb382c7c4406aa10b53f552e3c390160",
+      "byte_checked_records": 18
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05b4c.txt",
+      "sha256": "6cf47d67e58b50d1f7350160cbbecf5cc20e34184f7120a1e13bf26a43f1e9ad",
+      "byte_checked_records": 16
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05acc.txt",
+      "sha256": "21087ab1f7397e0ae4db181c9710775294053a3b22fd0c68d6fcf33128e5fbfb",
+      "byte_checked_records": 16
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05b78.txt",
+      "sha256": "c07719a2c56eb94b9c7e47489ab97b763b768fa53f1fc9fc79308fc3c82eace6",
+      "byte_checked_records": 16
+    }
+  ],
+  "callback_slots": [
+    {
+      "callx_pc": "0x7999",
+      "slot": "0x5ffee57c",
+      "registration_helper": "0x5a40",
+      "registration_store": "0x5a4e",
+      "initial_word": "0x0",
+      "ordinary_direct_entry_established": false
+    },
+    {
+      "callx_pc": "0x79b6",
+      "slot": "0x5ffee58c",
+      "registration_helper": "0x5af8",
+      "registration_store": "0x5b0b",
+      "initial_word": "0x0",
+      "ordinary_direct_entry_established": false
+    },
+    {
+      "callx_pc": "0x79d5",
+      "slot": "0x5ffee580",
+      "registration_helper": "0x5a6c",
+      "registration_store": "0x5a7c",
+      "initial_word": "0x0",
+      "ordinary_direct_entry_established": true
+    },
+    {
+      "callx_pc": "0x79f2",
+      "slot": "0x5ffee590",
+      "registration_helper": "0x5b20",
+      "registration_store": "0x5b35",
+      "initial_word": "0x0",
+      "ordinary_direct_entry_established": false
+    },
+    {
+      "callx_pc": "0x7a12",
+      "slot": "0x5ffee584",
+      "registration_helper": "0x5a9c",
+      "registration_store": "0x5aac",
+      "initial_word": "0x0",
+      "ordinary_direct_entry_established": false
+    },
+    {
+      "callx_pc": "0x7a2e",
+      "slot": "0x5ffee594",
+      "registration_helper": "0x5b4c",
+      "registration_store": "0x5b61",
+      "initial_word": "0x0",
+      "ordinary_direct_entry_established": false
+    },
+    {
+      "callx_pc": "0x7a49",
+      "slot": "0x5ffee588",
+      "registration_helper": "0x5acc",
+      "registration_store": "0x5ada",
+      "initial_word": "0x0",
+      "ordinary_direct_entry_established": false
+    },
+    {
+      "callx_pc": "0x7a6a",
+      "slot": "0x5ffee598",
+      "registration_helper": "0x5b78",
+      "registration_store": "0x5b8d",
+      "initial_word": "0x0",
+      "ordinary_direct_entry_established": false
+    }
+  ],
+  "raw_seven_helper_CALL_J_matches": [],
+  "raw_seven_helper_full_pointers": [],
+  "finding": "The seven setters without calls in the local scan also have no raw immediate CALL/J targets or full absolute pointer references anywhere in the pinned container. The eighth setter5a6c retains known registrations387c/3cbc/3a00. No alternative restore entry is established by these seven slots.",
+  "limits": [
+    "Absence of ordinary references is not proof of permanent zero or unreachable execution.",
+    "Slot stores through computed addresses, wider copies, engines, relative targets and other firmware versions remain outside this check.",
+    "Raw scans cover exact helper entry addresses, not arbitrary interior entry.",
+    "No runtime callback delivery or accepted CC changes observed. No hardware access."
+  ]
+}

@@ -1,0 +1,23 @@
+
+/tmp/tmpxes2van2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00034dc0 <.data+0x34dc0>:
+00034dc0: 364100   entry        a1, 0x20 ; Capstone
+   34dc3:	0c4a      	movi.n	a10, 4
+00034dc5: a57bcd   call8        . -0x32844 ; Capstone ; target=0x2580
+   34dc8:	ad02      	mov.n	a10, a2
+00034dca: 652fcd   call8        . -0x32d08 ; Capstone ; target=0x20c0
+   34dcd:	81a87d        	l32r	a8, 0x14470 (0x735c)
+   34dd0:	bd0a      	mov.n	a11, a10
+   34dd2:	a2287f        	l32i	a10, a8, 0x1fc
+00034dd5: 25b0cc   call8        . -0x334fc ; Capstone ; target=0x18d8
+   34dd8:	0c4a      	movi.n	a10, 4
+00034dda: a569cd   call8        . -0x32964 ; Capstone ; target=0x2474
+   34ddd:	ad02      	mov.n	a10, a2
+   34ddf:	0c1b      	movi.n	a11, 1
+00034de1: a52bcd   call8        . -0x32d44 ; Capstone ; target=0x209c
+00034de4: 1df0     retw.n        ; Capstone
+	...

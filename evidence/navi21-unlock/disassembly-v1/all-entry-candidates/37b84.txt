@@ -1,0 +1,14 @@
+
+/tmp/tmp1mai6342/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00037b84 <.data+0x37b84>:
+00037b84: 364100   entry        a1, 0x20 ; Capstone
+   37b87:	618f72        	l32r	a6, 0x145c4 (0xee04)
+   37b8a:	526681        	s32i	a5, a6, 0x204
+   37b8d:	426680        	s32i	a4, a6, 0x200
+   37b90:	32667f        	s32i	a3, a6, 0x1fc
+   37b93:	22667e        	s32i	a2, a6, 0x1f8
+00037b96: 1df0     retw.n        ; Capstone

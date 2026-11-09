@@ -1,0 +1,19 @@
+
+/tmp/tmpctnd_wfl/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002fa3c <.data+0x2fa3c>:
+0002fa3c: 364100   entry        a1, 0x20 ; Capstone
+   2fa3f:	917991        	l32r	a9, 0x14024 (0xfc38)
+   2fa42:	a18891        	l32r	a10, 0x14064 (0x1f8814)
+   2fa45:	0c38      	movi.n	a8, 3
+   2fa47:	824980        	s8i	a8, a9, 128
+0002fa4a: a5c3ff   call8        . -0x3c4 ; Capstone ; target=0x2f684
+0002fa4d: 65c1ff   call8        . -0x3e8 ; Capstone ; target=0x2f664
+   2fa50:	8c4a      	beqz.n	a10, 0x2fa58
+   2fa52:	a18591        	l32r	a10, 0x14068 (0x1f8a14)
+0002fa55: e5c2ff   call8        . -0x3d0 ; Capstone ; target=0x2f684
+0002fa58: 1df0     retw.n        ; Capstone
+	...

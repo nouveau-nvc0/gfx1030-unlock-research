@@ -1,0 +1,48 @@
+
+/tmp/tmp1lijt46c/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001668 <.data+0x1668>:
+00001668: 364100   entry        a1, 0x20 ; Capstone
+    166b:	d13ffd        	l32r	a13, 0xb68 (0x300fe00)
+    166e:	406200        	rsil	a4, 2
+    1671:	f6c22a        	bgeui	a2, 32, 0x169f
+    1674:	5139fd        	l32r	a5, 0xb58 (0x7b14)
+    1677:	a156fd        	l32r	a10, 0xbd0 (0x7cbc)
+    167a:	822580        	l32i	a8, a5, 0x200
+    167d:	aaa2      	add.n	a10, a2, a10
+    167f:	920a80        	l8ui	a9, a10, 128
+    1682:	8cd8      	beqz.n	a8, 0x1693
+    1684:	0c0c      	movi.n	a12, 0
+    1686:	0c8b      	movi.n	a11, 8
+    1688:	0c1a      	movi.n	a10, 1
+    168a:	c02000        	memw
+    168d:	d22d8a        	l32i	a13, a13, 0x228
+00001690: a5f700   call8        . +0xf7c ; Capstone ; target=0x260c
+    1693:	9c79      	beqz.n	a9, 0x16ae
+    1695:	0bb9      	addi.n	a11, a9, -1
+    1697:	b24a80        	s8i	a11, a10, 128
+    169a:	40e613        	wsr.ps	a4
+0000169d: 1df0     retw.n        ; Capstone
+    169f:	cd02      	mov.n	a12, a2
+    16a1:	0c7b      	movi.n	a11, 7
+    16a3:	0c1a      	movi.n	a10, 1
+    16a5:	c02000        	memw
+    16a8:	d22d8a        	l32i	a13, a13, 0x228
+000016ab: 25f600   call8        . +0xf64 ; Capstone ; target=0x260c
+    16ae:	a2257f        	l32i	a10, a5, 0x1fc
+    16b1:	0c4b      	movi.n	a11, 4
+000016b3: 25c000   call8        . +0xc04 ; Capstone ; target=0x22b4
+    16b6:	f2257f        	l32i	a15, a5, 0x1fc
+    16b9:	224f38        	s8i	a2, a15, 56
+    16bc:	e2257f        	l32i	a14, a5, 0x1fc
+    16bf:	0c0d      	movi.n	a13, 0
+    16c1:	d24e39        	s8i	a13, a14, 57
+    16c4:	c2257f        	l32i	a12, a5, 0x1fc
+    16c7:	39fc      	s32i.n	a3, a12, 60
+    16c9:	40e613        	wsr.ps	a4
+000016cc: 00f513   wsr.misc1    a0 ; verified QEMU encoding
+    16cf:	054e01        	call0	0x2bb0
+000016d2: 1df0     retw.n        ; Capstone

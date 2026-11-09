@@ -1,0 +1,23 @@
+
+/tmp/tmp0sk_yacx/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00034b54 <.data+0x34b54>:
+00034b54: 364100   entry        a1, 0x20 ; Capstone
+   34b57:	ad02      	mov.n	a10, a2
+00034b59: 6556cd   call8        . -0x32a98 ; Capstone ; target=0x20c0
+   34b5c:	cd0a      	mov.n	a12, a10
+   34b5e:	a08014        	extui	a8, a10, 0, 2
+   34b61:	ccd8      	bnez.n	a8, 0x34b72
+   34b63:	913c7e        	l32r	a9, 0x14454 (0x7368)
+   34b66:	ad02      	mov.n	a10, a2
+   34b68:	0c1b      	movi.n	a11, 1
+   34b6a:	c2697f        	s32i	a12, a9, 0x1fc
+00034b6d: e552cd   call8        . -0x32ad0 ; Capstone ; target=0x209c
+00034b70: 1df0     retw.n        ; Capstone
+   34b72:	ad02      	mov.n	a10, a2
+   34b74:	b2a0ff        	movi	a11, 255
+00034b77: 6552cd   call8        . -0x32ad8 ; Capstone ; target=0x209c
+00034b7a: 1df0     retw.n        ; Capstone

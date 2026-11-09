@@ -1,0 +1,27 @@
+# External firmware, tools, environments and generated replay output
+/work/
+/inputs/
+/.venv*/
+/downloads/
+/build/
+/dist/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+# Never publish local credentials or complete firmware/ROM images
+.env
+.env.*
+*.pem
+*.key
+*.rom
+*.efi
+*.bin
+*.xz
+*.deb
+*.zip
+*.tar.gz
+# Editor files
+*.swp
+*~
+.DS_Store

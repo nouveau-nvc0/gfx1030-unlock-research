@@ -1,0 +1,228 @@
+{
+  "scope": "XL x64 instructions7a0e..7a40 with both reference table data sets and synthetic command6 results, in emulated RAM. No ATOM/hardware execution.",
+  "image_sha256": "a9966b48d5bdfc35387eb38572b4babbf4537da8d2b2ae4796076af9ed44f54a",
+  "cases": [
+    {
+      "variant": "baseline",
+      "mode": "stock",
+      "synthetic_command6_result": "0x0",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0xfffff400",
+      "new_data11_8": "0xc00",
+      "wrapper_base": "0xffd00000"
+    },
+    {
+      "variant": "baseline",
+      "mode": "stock",
+      "synthetic_command6_result": "0x4000",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0xfff400",
+      "new_data11_8": "0xc00",
+      "wrapper_base": "0xffd00000"
+    },
+    {
+      "variant": "baseline",
+      "mode": "stock",
+      "synthetic_command6_result": "0xffffffff",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0xfffff000",
+      "new_data11_8": "0xc00",
+      "wrapper_base": "0xffc00000"
+    },
+    {
+      "variant": "baseline",
+      "mode": "nonzero_size",
+      "synthetic_command6_result": "0x0",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0xffffff80",
+      "new_data11_8": "0x80",
+      "wrapper_base": "0xfffe0000"
+    },
+    {
+      "variant": "baseline",
+      "mode": "nonzero_size",
+      "synthetic_command6_result": "0x4000",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0xffff80",
+      "new_data11_8": "0x80",
+      "wrapper_base": "0xfffe0000"
+    },
+    {
+      "variant": "baseline",
+      "mode": "nonzero_size",
+      "synthetic_command6_result": "0xffffffff",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0xfffffb80",
+      "new_data11_8": "0x80",
+      "wrapper_base": "0xffee0000"
+    },
+    {
+      "variant": "baseline",
+      "mode": "existing_base",
+      "synthetic_command6_result": "0x0",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0x12345678",
+      "new_data11_8": "0x80",
+      "wrapper_base": "0xd159e000"
+    },
+    {
+      "variant": "baseline",
+      "mode": "existing_base",
+      "synthetic_command6_result": "0x4000",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0x12345678",
+      "new_data11_8": "0x80",
+      "wrapper_base": "0xd159e000"
+    },
+    {
+      "variant": "baseline",
+      "mode": "existing_base",
+      "synthetic_command6_result": "0xffffffff",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0x12345678",
+      "new_data11_8": "0x80",
+      "wrapper_base": "0xd159e000"
+    },
+    {
+      "variant": "baseline",
+      "mode": "fallback_size",
+      "synthetic_command6_result": "0x0",
+      "firmware_info_54": "0x0",
+      "new_data11_4": "0xffffffc0",
+      "new_data11_8": "0x40",
+      "wrapper_base": "0xffff0000"
+    },
+    {
+      "variant": "baseline",
+      "mode": "fallback_size",
+      "synthetic_command6_result": "0x4000",
+      "firmware_info_54": "0x0",
+      "new_data11_4": "0xffffc0",
+      "new_data11_8": "0x40",
+      "wrapper_base": "0xffff0000"
+    },
+    {
+      "variant": "baseline",
+      "mode": "fallback_size",
+      "synthetic_command6_result": "0xffffffff",
+      "firmware_info_54": "0x0",
+      "new_data11_4": "0xfffffbc0",
+      "new_data11_8": "0x40",
+      "wrapper_base": "0xffef0000"
+    },
+    {
+      "variant": "candidate",
+      "mode": "stock",
+      "synthetic_command6_result": "0x0",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0xfffff400",
+      "new_data11_8": "0xc00",
+      "wrapper_base": "0xffd00000"
+    },
+    {
+      "variant": "candidate",
+      "mode": "stock",
+      "synthetic_command6_result": "0x4000",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0xfff400",
+      "new_data11_8": "0xc00",
+      "wrapper_base": "0xffd00000"
+    },
+    {
+      "variant": "candidate",
+      "mode": "stock",
+      "synthetic_command6_result": "0xffffffff",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0xfffff000",
+      "new_data11_8": "0xc00",
+      "wrapper_base": "0xffc00000"
+    },
+    {
+      "variant": "candidate",
+      "mode": "nonzero_size",
+      "synthetic_command6_result": "0x0",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0xffffff80",
+      "new_data11_8": "0x80",
+      "wrapper_base": "0xfffe0000"
+    },
+    {
+      "variant": "candidate",
+      "mode": "nonzero_size",
+      "synthetic_command6_result": "0x4000",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0xffff80",
+      "new_data11_8": "0x80",
+      "wrapper_base": "0xfffe0000"
+    },
+    {
+      "variant": "candidate",
+      "mode": "nonzero_size",
+      "synthetic_command6_result": "0xffffffff",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0xfffffb80",
+      "new_data11_8": "0x80",
+      "wrapper_base": "0xffee0000"
+    },
+    {
+      "variant": "candidate",
+      "mode": "existing_base",
+      "synthetic_command6_result": "0x0",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0x12345678",
+      "new_data11_8": "0x80",
+      "wrapper_base": "0xd159e000"
+    },
+    {
+      "variant": "candidate",
+      "mode": "existing_base",
+      "synthetic_command6_result": "0x4000",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0x12345678",
+      "new_data11_8": "0x80",
+      "wrapper_base": "0xd159e000"
+    },
+    {
+      "variant": "candidate",
+      "mode": "existing_base",
+      "synthetic_command6_result": "0xffffffff",
+      "firmware_info_54": "0xc00",
+      "new_data11_4": "0x12345678",
+      "new_data11_8": "0x80",
+      "wrapper_base": "0xd159e000"
+    },
+    {
+      "variant": "candidate",
+      "mode": "fallback_size",
+      "synthetic_command6_result": "0x0",
+      "firmware_info_54": "0x0",
+      "new_data11_4": "0xffffffc0",
+      "new_data11_8": "0x40",
+      "wrapper_base": "0xffff0000"
+    },
+    {
+      "variant": "candidate",
+      "mode": "fallback_size",
+      "synthetic_command6_result": "0x4000",
+      "firmware_info_54": "0x0",
+      "new_data11_4": "0xffffc0",
+      "new_data11_8": "0x40",
+      "wrapper_base": "0xffff0000"
+    },
+    {
+      "variant": "candidate",
+      "mode": "fallback_size",
+      "synthetic_command6_result": "0xffffffff",
+      "firmware_info_54": "0x0",
+      "new_data11_4": "0xfffffbc0",
+      "new_data11_8": "0x40",
+      "wrapper_base": "0xffef0000"
+    }
+  ],
+  "passed": true,
+  "limitations": [
+    "Actual command6 result not measured.",
+    "Hardware interpretation of bit31 addresses unresolved.",
+    "This update does not establish FirmwareInfo+18 immutability."
+  ]
+}

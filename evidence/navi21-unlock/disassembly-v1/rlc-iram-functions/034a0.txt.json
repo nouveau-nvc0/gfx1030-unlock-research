@@ -1,0 +1,11 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "code_file_offset": "0xb360",
+  "kind": "rlc-iram",
+  "start": "0x34a0",
+  "stop": "0x34ec",
+  "mapping_status": "analysis coordinates, global runtime base not attested",
+  "capstone": "6.0.0",
+  "objdump_sha256": "cbf7d56334ab03d467030fd3b7e30ffc992f4e5dcaf8f56e7e97d116cd61adcb",
+  "limitation": "targeted linear decode, not execution or complete CFG validation"
+}

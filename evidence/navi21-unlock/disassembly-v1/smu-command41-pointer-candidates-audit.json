@@ -1,0 +1,69 @@
+{
+  "firmware_sha256": "0eb99764288f764fd853d6973693ffa52419cc7ba62074aee85df4a3e8d0286d",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1d7a8.txt",
+      "sha256": "a184ff554e43110b959f3297c4085752185e90261ae75e001f37d9eaeded819d",
+      "records": 25
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1d480.txt",
+      "sha256": "914f79bc13e05609400d197fecb84b552b1159b73ccb362332edfba83d1bce41",
+      "records": 3
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/38b88.txt",
+      "sha256": "3366c6adbff2b09961d1e029739a7ff197f2d0ed758a39f7f97681877654c865",
+      "records": 9
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/1f77c.txt",
+      "sha256": "4b355ebdaab209fbfe6e6571c62067511ac02414c0f09b25e88edc8a2e924586",
+      "records": 133
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/2776c.txt",
+      "sha256": "6c700878a16ffd9186796517ac327c3c126a4fe359893fa289f0706fc5dfb5c8",
+      "records": 202
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/all-entry-candidates/36cfc.txt",
+      "sha256": "940949257f04b806ebc1fedf38b7093f2cae30b46b710f8510face4f08a7f725",
+      "records": 124
+    }
+  ],
+  "header_sha256": "96352168616063a2715ee676e8290b99e9fd0596ad442434ab08687450ecbda5",
+  "selection_range_start": "0x12d10",
+  "image_backed_entries": 42453,
+  "other_selector_entries_not_covered": 23083,
+  "coordinate_bases_checked": [
+    "0x0",
+    "0x1200000",
+    "0x60000000",
+    "0x68000000",
+    "0x70000000"
+  ],
+  "CC_byte_offsets_checked": [
+    "0x8924",
+    "0x89bc",
+    "0x98f4"
+  ],
+  "hits": [
+    {
+      "index": 929,
+      "index_hex": "0x3a1",
+      "cell": "0x13b94",
+      "value": "0x89bc",
+      "CC_coordinate_candidate": true,
+      "LX6_state_candidate": false
+    }
+  ],
+  "findings": [
+    "Known low selector3 chooses1d480, an immediate-return worker. Under normal return and stable global15874, final1d7e2 performs S8I value1 at the selected pointer. This isolates the direct byte-store candidate from nonempty worker callbacks.",
+    "The image-backed high-selector enumeration finds only89bc among the listed CC/state coordinate hypotheses. No reviewed full LX6 saved-mask/gate pointer appears in this subset. Remaining selector cells and runtime memory are not covered.",
+    "Literal89bc is consumed by2776c/36cfc through38b88 with width16.1f77c decomposes it into word index44d and bit28, and uses the separate0125d000-based read/cache mechanism. This is bit-coordinate usage, not proof that a direct S8I at89bc accesses CC.",
+    "Even if a direct byte-at-register-base alias existed, little-endian byte0 does not overlap documented INACTIVE_WGPS bits16..31. No claimed hardware behavior or accepted byte-write follows from this arithmetic."
+  ],
+  "next": "Retain runtime pointer/table mutation and unknown address relations as open. Do not treat the lone numeric89bc match as a changed-CC path.",
+  "scope": "Initial image-backed aligned pointer cells and known immediate-return worker only; command reachability, serialization, live table contents and other address aliases remain unproved. No hardware access."
+}

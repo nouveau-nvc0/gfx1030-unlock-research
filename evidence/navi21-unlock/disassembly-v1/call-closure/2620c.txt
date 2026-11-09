@@ -1,0 +1,56 @@
+
+/tmp/tmppqioghr5/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002620c <.data+0x2620c>:
+0002620c: 368100   entry        a1, 0x40 ; Capstone
+   2620f:	ad02      	mov.n	a10, a2
+   26211:	bd01      	mov.n	a11, a1
+00026213: 5003fa   wfr          f0, a3 ; Capstone
+00026216: 034104   ssi          f0, a1, 0x10 ; Capstone
+00026219: 65db0f   call8        . +0xfdb8 ; Capstone ; target=0x35fd0
+0002621c: 630100   lsi          f6, a1, 0 ; Capstone
+0002621f: 930104   lsi          f9, a1, 0x10 ; Capstone
+00026222: 830102   lsi          f8, a1, 8 ; Capstone
+00026225: 730101   lsi          f7, a1, 4 ; Capstone
+   26228:	81d2b5        	l32r	a8, 0x13970 (0xc0800000)
+0002622b: 70372a   mul.s        f3, f7, f7 ; Capstone
+0002622e: 90181a   sub.s        f1, f8, f9 ; Capstone
+00026231: 5058fa   wfr          f5, a8 ; Capstone
+00026234: 60452a   mul.s        f4, f5, f6 ; Capstone
+00026237: 10344a   madd.s       f3, f4, f1 ; Capstone
+0002623a: 3020fa   const.s      f2, 0 ; Capstone
+0002623d: 20034b   olt.s        b0, f3, f2 ; Capstone
+   26240:	0c02      	movi.n	a2, 0
+00026242: 134102   ssi          f1, a1, 8 ; Capstone
+00026245: 760001   bf           b0, . +5 ; Capstone
+00026248: 1df0     retw.n        ; Capstone
+   2624a:	b15eb3        	l32r	a11, 0x12fc4 (0x38d1b717)
+0002624d: 40a3fa   rfr          a10, f3 ; Capstone
+00026250: 10a3fa   abs.s        f10, f3 ; Capstone
+00026253: 50bbfa   wfr          f11, a11 ; Capstone
+00026256: b01a4b   olt.s        b1, f10, f11 ; Capstone
+   26259:	0c19      	movi.n	a9, 1
+   2625b:	0c22      	movi.n	a2, 2
+0002625d: 1029d3   movt         a2, a9, b1 ; Capstone
+00026260: e597f6   call8        . -0x9680 ; Capstone ; target=0x1cbe0
+00026263: f30100   lsi          f15, a1, 0 ; Capstone
+00026266: 30e2fa   const.s      f14, 2 ; Capstone
+00026269: f0ce2a   mul.s        f12, f14, f15 ; Capstone
+0002626c: 50dafa   wfr          f13, a10 ; Capstone
+0002626f: d34103   ssi          f13, a1, 0xc ; Capstone
+00026272: 40acfa   rfr          a10, f12 ; Capstone
+00026275: 65b212   call8        . +0x12b28 ; Capstone ; target=0x38d9c
+00026278: 630101   lsi          f6, a1, 4 ; Capstone
+0002627b: 530103   lsi          f5, a1, 0xc ; Capstone
+0002627e: 60451a   sub.s        f4, f5, f6 ; Capstone
+00026281: 60250a   add.s        f2, f5, f6 ; Capstone
+00026284: 503afa   wfr          f3, a10 ; Capstone
+00026287: 40132a   mul.s        f1, f3, f4 ; Capstone
+0002628a: 30022a   mul.s        f0, f2, f3 ; Capstone
+0002628d: 134400   ssi          f1, a4, 0 ; Capstone
+00026290: 6000fa   neg.s        f0, f0 ; Capstone
+00026293: 034500   ssi          f0, a5, 0 ; Capstone
+00026296: 1df0     retw.n        ; Capstone

@@ -1,0 +1,56 @@
+
+/tmp/tmp891t7wy1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000350b4 <.data+0x350b4>:
+000350b4: 366100   entry        a1, 0x30 ; Capstone
+   350b7:	ad02      	mov.n	a10, a2
+   350b9:	0c0b      	movi.n	a11, 0
+000350bb: 5013fa   wfr          f1, a3 ; Capstone
+   350be:	81f17c        	l32r	a8, 0x14484 (0xaaac)
+   350c1:	2052b0        	addx8	a5, a2, a2
+000350c4: 5004fa   wfr          f0, a4 ; Capstone
+000350c7: 034100   ssi          f0, a1, 0 ; Capstone
+   350ca:	8055a0        	addx4	a5, a5, a8
+000350cd: 13457d   ssi          f1, a5, 0x1f4 ; Capstone
+   350d0:	32257f        	l32i	a3, a5, 0x1fc
+000350d3: 256bf4   call8        . -0xb94c ; Capstone ; target=0x29784
+   350d6:	ad02      	mov.n	a10, a2
+000350d8: 230100   lsi          f2, a1, 0 ; Capstone
+000350db: 40b2fa   rfr          a11, f2 ; Capstone
+000350de: a555e7   call8        . -0x18aa4 ; Capstone ; target=0x1c638
+   350e1:	ad02      	mov.n	a10, a2
+000350e3: a552e7   call8        . -0x18ad4 ; Capstone ; target=0x1c60c
+   350e6:	0c16      	movi.n	a6, 1
+   350e8:	7cf7      	movi.n	a7, -1
+   350ea:	5911      	s32i.n	a5, a1, 4
+   350ec:	ac13      	beqz.n	a3, 0x35111
+   350ee:	0c04      	movi.n	a4, 0
+   350f0:	001440        	ssl	a4
+   350f3:	0056a1        	sll	a5, a6
+   350f6:	57030c        	bnone	a3, a5, 0x35106
+   350f9:	ad02      	mov.n	a10, a2
+   350fb:	bd05      	mov.n	a11, a5
+000350fd: 6536e7   call8        . -0x18c98 ; Capstone ; target=0x1c464
+   35100:	709530        	xor	a9, a5, a7
+   35103:	903310        	and	a3, a3, a9
+   35106:	1b44      	addi.n	a4, a4, 1
+   35108:	001440        	ssl	a4
+   3510b:	0056a1        	sll	a5, a6
+   3510e:	5643fe        	bnez	a3, 0x350f6
+   35111:	ad02      	mov.n	a10, a2
+   35113:	d1fe7a        	l32r	a13, 0x13d0c (0xaec0)
+   35116:	b811      	l32i.n	a11, a1, 4
+   35118:	001240        	ssl	a2
+   3511b:	e22d7f        	l32i	a14, a13, 0x1fc
+   3511e:	00c6a1        	sll	a12, a6
+   35121:	70fc30        	xor	a15, a12, a7
+   35124:	f0ee10        	and	a14, a14, a15
+   35127:	e0cc20        	or	a12, a12, a14
+   3512a:	c26d7f        	s32i	a12, a13, 0x1fc
+   3512d:	b22b7b        	l32i	a11, a11, 0x1ec
+00035130: e561f4   call8        . -0xb9e0 ; Capstone ; target=0x29750
+00035133: 1df0     retw.n        ; Capstone
+   35135:	000000        	ill

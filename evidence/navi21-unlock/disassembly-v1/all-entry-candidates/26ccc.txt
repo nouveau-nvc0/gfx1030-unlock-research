@@ -1,0 +1,55 @@
+
+/tmp/tmp7j8am9m8/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00026ccc <.data+0x26ccc>:
+00026ccc: 366100   entry        a1, 0x30 ; Capstone
+   26ccf:	0c12      	movi.n	a2, 1
+   26cd1:	6170b3        	l32r	a6, 0x13a94 (0xda10)
+   26cd4:	5171b3        	l32r	a5, 0x13a98 (0xa17c)
+   26cd7:	4171b3        	l32r	a4, 0x13a9c (0xdb9c)
+   26cda:	0c2a      	movi.n	a10, 2
+00026cdc: 654eff   call8        . -0xb18 ; Capstone ; target=0x261c4
+   26cdf:	dd01      	mov.n	a13, a1
+   26ce1:	503290        	addx2	a3, a2, a5
+   26ce4:	c2137e        	l16ui	a12, a3, 252
+   26ce7:	b16ab2        	l32r	a11, 0x13690 (0x11770)
+   26cea:	4be1      	addi.n	a14, a1, 4
+00026cec: 003cda   ufloat.s     f3, a12, 0 ; Capstone
+00026cef: 430b00   lsi          f4, a11, 0 ; Capstone
+00026cf2: 40232a   mul.s        f2, f3, f4 ; Capstone
+   26cf5:	0c0f      	movi.n	a15, 0
+   26cf7:	cd0a      	mov.n	a12, a10
+   26cf9:	0c2a      	movi.n	a10, 2
+00026cfb: 40b2fa   rfr          a11, f2 ; Capstone
+00026cfe: e537ff   call8        . -0xc80 ; Capstone ; target=0x2607c
+   26d01:	e20100        	l8ui	a14, a1, 0
+   26d04:	4af2      	add.n	a15, a2, a4
+   26d06:	0b82      	addi.n	a8, a2, -1
+   26d08:	60d2a0        	addx4	a13, a2, a6
+   26d0b:	a21380        	l16ui	a10, a3, 0x100
+   26d0e:	9122b3        	l32r	a9, 0x13998 (0x11894)
+00026d11: 630101   lsi          f6, a1, 4 ; Capstone
+00026d14: 007ada   ufloat.s     f7, a10, 0 ; Capstone
+00026d17: 830900   lsi          f8, a9, 0 ; Capstone
+00026d1a: 80572a   mul.s        f5, f7, f8 ; Capstone
+00026d1d: 634d7f   ssi          f6, a13, 0x1fc ; Capstone
+00026d20: 002823   sext         a2, a8, 7 ; Capstone
+   26d23:	e24f80        	s8i	a14, a15, 128
+00026d26: 534d81   ssi          f5, a13, 0x204 ; Capstone
+   26d29:	6602ad        	bnei	a2, -1, 0x26cda
+   26d2c:	0c0b      	movi.n	a11, 0
+   26d2e:	f2a100        	movi	a15, 0x100
+   26d31:	e155b1        	l32r	a14, 0x13288 (0xa1f4)
+   26d34:	c15bb3        	l32r	a12, 0x13aa0 (0xdb90)
+   26d37:	0c1d      	movi.n	a13, 1
+   26d39:	e22e7f        	l32i	a14, a14, 0x1fc
+   26d3c:	d24c8e        	s8i	a13, a12, 142
+   26d3f:	d24c72        	s8i	a13, a12, 114
+   26d42:	f0ee10        	and	a14, a14, a15
+   26d45:	e0bd83        	moveqz	a11, a13, a14
+   26d48:	b24c73        	s8i	a11, a12, 115
+00026d4b: 1df0     retw.n        ; Capstone
+   26d4d:	000000        	ill

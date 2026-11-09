@@ -1,0 +1,12 @@
+
+/tmp/tmpor_1nh06/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00020cec <.data+0x20cec>:
+00020cec: 364100   entry        a1, 0x20 ; Capstone
+   20cef:	3181c9        	l32r	a3, 0x132f4 (0xfe8c)
+   20cf2:	22437e        	s8i	a2, a3, 126
+00020cf5: 1df0     retw.n        ; Capstone
+	...

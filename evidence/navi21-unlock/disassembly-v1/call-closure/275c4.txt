@@ -1,0 +1,28 @@
+
+/tmp/tmpd9_7jclm/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000275c4 <.data+0x275c4>:
+000275c4: 366100   entry        a1, 0x30 ; Capstone
+   275c7:	918eae        	l32r	a9, 0x13000 (0x1000000)
+   275ca:	208004        	extui	a8, a2, 0, 1
+   275cd:	a162b1        	l32r	a10, 0x13b58 (0x3000000)
+   275d0:	a911      	s32i.n	a10, a1, 4
+   275d2:	908820        	or	a8, a8, a9
+   275d5:	a13fae        	l32r	a10, 0x12ed4 (0xffff03ff)
+   275d8:	92af7f        	movi	a9, -129
+   275db:	908810        	and	a8, a8, a9
+   275de:	92a300        	movi	a9, 0x300
+   275e1:	908820        	or	a8, a8, a9
+   275e4:	915eb1        	l32r	a9, 0x13b5c (0x2400)
+   275e7:	a08810        	and	a8, a8, a10
+   275ea:	ad01      	mov.n	a10, a1
+   275ec:	908820        	or	a8, a8, a9
+   275ef:	8901      	s32i.n	a8, a1, 0
+000275f1: 250afe   call8        . -0x1f5c ; Capstone ; target=0x25694
+   275f4:	ad01      	mov.n	a10, a1
+000275f6: e505fe   call8        . -0x1fa0 ; Capstone ; target=0x25654
+000275f9: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,43 @@
+PACE downstream address bounds — offline,2026-11-09
+
+Two concrete downstream mechanisms were checked, without treating them as
+complete PACE dataflow closure.
+
+Coefficient selector29c4 reads15FP32 values[e27c,e2b8), starting at imported
+array's second entry. It initializes counter0, advances pointer4 each iteration,
+returns early on the comparison branch or stops at fixedend e2b8. Counter is
+incremented at most15 times, hence result0..15 for every comparison outcome.
+This includes arbitrary coefficient values at the address-bound level; no
+floating-point trap/NaN execution behavior is assumed. Selector29ec has the
+same0..15 bound while reading15 derived integer values[e388,e3c4). Callers
+26a4/27cc use29ec or fallback15. These findings do not automatically establish
+bounds on every other path that writes a selected-level byte.
+
+Ring mechanism reached after import:
+1d10 calls2ab8 at1eb4. 2ab8 and2a0c use indexDWORD5ffee424 to form
+5ffee3dc+4*index+8, then write oneDWORD at2aef/2a61. With index0..15 the write
+range is[e3e4,e424), excluding gatee452 and savedCC. Ring initialization loops
+also write exactly the same16word range, eight iterations of paired stores.
+Known fixed index writers in the retained local scan:
+  1cfd: initialization0
+  2a70: (prior index+1)&15
+  2aff: (prior index+1)&15
+Thus these transitions preserve0..15 after initialization. The old index is
+used BEFORE masking; no local pre-use clamp exists. Index27 would place the
+DWORD write ate450, containing gatee452. The imported35word directcopy does
+not reach indexe424, and the known index writers cannot produce27. Therefore
+this is not a demonstrated gate producer from the imported values.
+Computed/other-engine/index mutations remain outside this local invariant.
+
+Useful remaining distinction:
+29b0 loads a separate bytee3c4 and uses it to index a read-only lookup at
+basee344. Its writer family22d8 is not closed by the two selector bounds above.
+Do not summarize this audit as 'all PACE indices are bounded' or as complete
+exclusion of later effects. A new gate-path claim would need an actual producer
+of an out-of-range ring index or another concrete write dependency.
+
+Reproduce: python3 scripts/navi21-rlc-pace-bounds-audit.py
+Receipt rlc-pace-bounds-audit.json records421 bytechecked listing records,
+all32768 abstract15comparison outcomes,16 ring addresses and3known fixed
+index writers. Enumeration verifies the decoded local bound, not a firmware
+execution or all-writer completeness certificate. No hardware changes made.

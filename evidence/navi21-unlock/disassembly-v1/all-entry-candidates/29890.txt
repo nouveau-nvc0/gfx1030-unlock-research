@@ -1,0 +1,19 @@
+
+/tmp/tmpy1da_rne/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00029890 <.data+0x29890>:
+00029890: 364100   entry        a1, 0x20 ; Capstone
+   29893:	0c8a      	movi.n	a10, 8
+00029895: a5ced8   call8        . -0x27314 ; Capstone ; target=0x2580
+   29898:	0c3a      	movi.n	a10, 3
+   2989a:	b101a8        	l32r	a11, 0x138a0 (0x40000000)
+   2989d:	0c0c      	movi.n	a12, 0
+0002989f: 65810b   call8        . +0xb818 ; Capstone ; target=0x350b4
+   298a2:	0c8a      	movi.n	a10, 8
+000298a4: e5bcd8   call8        . -0x27430 ; Capstone ; target=0x2474
+   298a7:	0c12      	movi.n	a2, 1
+000298a9: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,36 @@
+
+/tmp/tmpl_4b09qn/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00026748 <.data+0x26748>:
+00026748: 364100   entry        a1, 0x20 ; Capstone
+   2674b:	41aab4        	l32r	a4, 0x139f4 (0xa1dc)
+   2674e:	31aab4        	l32r	a3, 0x139f8 (0xfb38)
+00026751: 3021fa   const.s      f2, 1 ; Capstone
+   26754:	91abb4        	l32r	a9, 0x13a00 (0xfc54)
+   26757:	1c02      	movi.n	a2, 16
+   26759:	c1e8b3        	l32r	a12, 0x136fc (0xa21c)
+   2675c:	a2a018        	movi	a10, 24
+   2675f:	51a7b4        	l32r	a5, 0x139fc (0x3b800000)
+   26762:	822c20        	l32i	a8, a12, 128
+   26765:	b20c7e        	l8ui	a11, a12, 126
+00026768: 5005fa   wfr          f0, a5 ; Capstone
+   2676b:	c20c7d        	l8ui	a12, a12, 125
+   2676e:	a08820        	or	a8, a8, a10
+00026771: 76a217   loopgtz      a2, . +0x1b ; Capstone
+   26774:	52147e        	l16ui	a5, a4, 252
+   26777:	2b44      	addi.n	a4, a4, 2
+   26779:	cc45      	bnez.n	a5, 0x26781
+0002677b: 23437f   ssi          f2, a3, 0x1fc ; Capstone
+   2677e:	060200        	j	0x2678a
+00026781: 0035da   ufloat.s     f3, a5, 0 ; Capstone
+00026784: 00132a   mul.s        f1, f3, f0 ; Capstone
+00026787: 13437f   ssi          f1, a3, 0x1fc ; Capstone
+   2678a:	4b33      	addi.n	a3, a3, 4
+   2678c:	82691f        	s32i	a8, a9, 124
+   2678f:	b24983        	s8i	a11, a9, 131
+   26792:	c24982        	s8i	a12, a9, 130
+00026795: 1df0     retw.n        ; Capstone
+	...

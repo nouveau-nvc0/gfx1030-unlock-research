@@ -1,0 +1,19 @@
+
+/tmp/tmplp488ltd/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001b14c <.data+0x1b14c>:
+0001b14c: 364100   entry        a1, 0x20 ; Capstone
+   1b14f:	0c18      	movi.n	a8, 1
+   1b151:	9142df        	l32r	a9, 0x12e5c (0x69a0)
+   1b154:	c02000        	memw
+   1b157:	0c0a      	movi.n	a10, 0
+   1b159:	8939      	s32i.n	a8, a9, 12
+0001b15b: 25f7ff   call8        . -0x8c ; Capstone ; target=0x1b0cc
+   1b15e:	ad02      	mov.n	a10, a2
+   1b160:	0c1b      	movi.n	a11, 1
+0001b162: a5f3e6   call8        . -0x190c4 ; Capstone ; target=0x209c
+0001b165: 1df0     retw.n        ; Capstone
+	...

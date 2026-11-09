@@ -1,0 +1,19 @@
+
+/tmp/tmpieg4c8ug/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00007c98 <.data+0x7c98>:
+00007c98: 364100   entry        a1, 0x20 ; Capstone
+    7c9b:	32a400        	movi	a3, 0x400
+    7c9e:	0c1a      	movi.n	a10, 1
+00007ca0: 257202   call8        . +0x2724 ; Capstone ; target=0xa3c4
+    7ca3:	2d0a      	mov.n	a2, a10
+    7ca5:	0c1a      	movi.n	a10, 1
+    7ca7:	b2d204        	addmi	a11, a2, 0x400
+00007caa: 656f02   call8        . +0x26f8 ; Capstone ; target=0xa3a0
+    7cad:	80ea03        	rsr.ccount	a8
+    7cb0:	2088c0        	sub	a8, a8, a2
+    7cb3:	8733e7        	bltu	a3, a8, 0x7c9e
+00007cb6: 1df0     retw.n        ; Capstone

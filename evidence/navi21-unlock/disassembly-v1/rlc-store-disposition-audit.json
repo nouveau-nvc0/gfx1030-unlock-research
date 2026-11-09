@@ -1,0 +1,1786 @@
+{
+  "source_sha256": "69492509275ec04401ad33790b26bd118bf8ac96e519d625ba003f2c93c83b70",
+  "store_count": 108,
+  "counts": {
+    "bounded_derived_arrays": 6,
+    "conditional_ring_and_local_stack": 10,
+    "local_stack": 28,
+    "caller_dependent_index": 1,
+    "bounded_register_window": 1,
+    "bounded_destinations": 12,
+    "local_stack_new_byte_check": 4,
+    "known_CC_save": 4,
+    "slot_dependent_snapshot": 6,
+    "conditional_ring": 1,
+    "bounded_slots_and_optional_output": 5,
+    "context_pointer_dependent": 7,
+    "caller_dependent_copy": 23
+  },
+  "evidence_sha256": {
+    "rlc-derived-store-audit.json": "3cff7b8b6a323ffcd9614af160ab900725166a0b290bc1ee49abbc14156c64bf",
+    "rlc-pace-bounds-audit.json": "0aa80a6725a826a5730fae35625dc44ba53269346d02f1c75cdc69a74c56e380",
+    "rlc-local-copy-bounds.json": "8993b72f759d9693ac8c818da8303548a952d085c0d4befeeefbd59e90d165d1",
+    "rlc-gate-local-alias-audit.json": "38f97eb86bcf1cfe9c421b6dab724031aa58e62b5583cb35bbaae6e7207e72b5",
+    "rlc-gate-index-audit.json": "576512f9b43249e0e6e98427391e55a0c63c3c6423a0be3ae4de6ad8d7746d40",
+    "rlc-4004-destination-audit.json": "84718140bd4ae58fe4571b9ae63176d03802ef0d8ccf2fb755659019be372bba",
+    "rlc-window-store-audit.json": "1683a86964b2c6b4df6e97258e331ab34b73ac8d528c1d78d8660e30cd5c126c",
+    "rlc-computed-store-bounds-audit.json": "35adcf2e4e54a460f8f82538f2b79c401d6cc6117b023554e06f8824af6f7bef",
+    "rlc-snapshot-sources.json": "943bb595433bee1aa5730259b1300111632621a5cb7663df068275b22a9251b1",
+    "rlc-context-layout-audit.json": "425c5f7be3d1391af70b63533726b2c0efebb303ef3d1d62cde426906606612a",
+    "rlc-copy-entry-audit.json": "0e2db463532b0b151e46721cfee7cbdd29701c5a3906e31e44ce2c37536f82dd"
+  },
+  "new_stack_alias_checks": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/054c8.txt",
+      "sha256": "1d1f6ead372e85711f30481f76f9584efe292ac059b79dbb1a2ace7ee432e8b1",
+      "records": 34,
+      "stack_offsets": [
+        8,
+        12
+      ],
+      "widths": [
+        4,
+        2
+      ]
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05528.txt",
+      "sha256": "f706acc553fbba3cdbdeb471cc5f598c08a6235718524ae9eb70f0246cb8ca0c",
+      "records": 94,
+      "stack_offsets": [
+        16,
+        20
+      ],
+      "widths": [
+        4,
+        2
+      ]
+    }
+  ],
+  "stores": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+      "pc": "0x1e29",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a10",
+      "offset": "0x104",
+      "disposition": "bounded_derived_arrays",
+      "evidence": [
+        "rlc-derived-store-audit.json"
+      ],
+      "remaining_condition": "Three local loops; incoming values select stored values, not destination addresses. Other entries and later consumers remain outside this bound."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+      "pc": "0x1e2c",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a10",
+      "offset": "0x108",
+      "disposition": "bounded_derived_arrays",
+      "evidence": [
+        "rlc-derived-store-audit.json"
+      ],
+      "remaining_condition": "Three local loops; incoming values select stored values, not destination addresses. Other entries and later consumers remain outside this bound."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+      "pc": "0x1e44",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a10",
+      "offset": "140",
+      "disposition": "bounded_derived_arrays",
+      "evidence": [
+        "rlc-derived-store-audit.json"
+      ],
+      "remaining_condition": "Three local loops; incoming values select stored values, not destination addresses. Other entries and later consumers remain outside this bound."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+      "pc": "0x1e47",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a13",
+      "source_constant": null,
+      "base": "a10",
+      "offset": "204",
+      "disposition": "bounded_derived_arrays",
+      "evidence": [
+        "rlc-derived-store-audit.json"
+      ],
+      "remaining_condition": "Three local loops; incoming values select stored values, not destination addresses. Other entries and later consumers remain outside this bound."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+      "pc": "0x1e8d",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a13",
+      "source_constant": null,
+      "base": "a10",
+      "offset": "140",
+      "disposition": "bounded_derived_arrays",
+      "evidence": [
+        "rlc-derived-store-audit.json"
+      ],
+      "remaining_condition": "Three local loops; incoming values select stored values, not destination addresses. Other entries and later consumers remain outside this bound."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/01d10.txt",
+      "pc": "0x1e93",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a10",
+      "offset": "204",
+      "disposition": "bounded_derived_arrays",
+      "evidence": [
+        "rlc-derived-store-audit.json"
+      ],
+      "remaining_condition": "Three local loops; incoming values select stored values, not destination addresses. Other entries and later consumers remain outside this bound."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02a0c.txt",
+      "pc": "0x2a40",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a10",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "8",
+      "disposition": "conditional_ring_and_local_stack",
+      "evidence": [
+        "rlc-pace-bounds-audit.json",
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ring index must retain0..15. Known writers preserve that range; other writers remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02a0c.txt",
+      "pc": "0x2a42",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a10",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "12",
+      "disposition": "conditional_ring_and_local_stack",
+      "evidence": [
+        "rlc-pace-bounds-audit.json",
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ring index must retain0..15. Known writers preserve that range; other writers remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02a0c.txt",
+      "pc": "0x2a61",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a10",
+      "source_constant": null,
+      "base": "a15",
+      "offset": "8",
+      "disposition": "conditional_ring_and_local_stack",
+      "evidence": [
+        "rlc-pace-bounds-audit.json",
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ring index must retain0..15. Known writers preserve that range; other writers remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02a0c.txt",
+      "pc": "0x2a84",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0",
+      "disposition": "conditional_ring_and_local_stack",
+      "evidence": [
+        "rlc-pace-bounds-audit.json",
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ring index must retain0..15. Known writers preserve that range; other writers remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02a0c.txt",
+      "pc": "0x2a86",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4",
+      "disposition": "conditional_ring_and_local_stack",
+      "evidence": [
+        "rlc-pace-bounds-audit.json",
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ring index must retain0..15. Known writers preserve that range; other writers remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02ab8.txt",
+      "pc": "0x2ace",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a10",
+      "offset": "8",
+      "disposition": "conditional_ring_and_local_stack",
+      "evidence": [
+        "rlc-pace-bounds-audit.json",
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ring index must retain0..15. Known writers preserve that range; other writers remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02ab8.txt",
+      "pc": "0x2ad0",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a10",
+      "offset": "12",
+      "disposition": "conditional_ring_and_local_stack",
+      "evidence": [
+        "rlc-pace-bounds-audit.json",
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ring index must retain0..15. Known writers preserve that range; other writers remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02ab8.txt",
+      "pc": "0x2aef",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a14",
+      "offset": "8",
+      "disposition": "conditional_ring_and_local_stack",
+      "evidence": [
+        "rlc-pace-bounds-audit.json",
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ring index must retain0..15. Known writers preserve that range; other writers remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02ab8.txt",
+      "pc": "0x2b17",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0",
+      "disposition": "conditional_ring_and_local_stack",
+      "evidence": [
+        "rlc-pace-bounds-audit.json",
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ring index must retain0..15. Known writers preserve that range; other writers remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02ab8.txt",
+      "pc": "0x2b19",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4",
+      "disposition": "conditional_ring_and_local_stack",
+      "evidence": [
+        "rlc-pace-bounds-audit.json",
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ring index must retain0..15. Known writers preserve that range; other writers remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2ba8",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ordinary entry, register windows and unmodified live registers; copied values do not determine destination."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2baa",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ordinary entry, register windows and unmodified live registers; copied values do not determine destination."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2bdc",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ordinary entry, register windows and unmodified live registers; copied values do not determine destination."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2be0",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ordinary entry, register windows and unmodified live registers; copied values do not determine destination."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2c25",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ordinary entry, register windows and unmodified live registers; copied values do not determine destination."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2c29",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ordinary entry, register windows and unmodified live registers; copied values do not determine destination."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2c82",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ordinary entry, register windows and unmodified live registers; copied values do not determine destination."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2c84",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ordinary entry, register windows and unmodified live registers; copied values do not determine destination."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2c9a",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ordinary entry, register windows and unmodified live registers; copied values do not determine destination."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2c9c",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ordinary entry, register windows and unmodified live registers; copied values do not determine destination."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2cb2",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ordinary entry, register windows and unmodified live registers; copied values do not determine destination."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2cb4",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ordinary entry, register windows and unmodified live registers; copied values do not determine destination."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2cc6",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a15",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ordinary entry, register windows and unmodified live registers; copied values do not determine destination."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02b44.txt",
+      "pc": "0x2cc8",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "4",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-local-copy-bounds.json"
+      ],
+      "remaining_condition": "Ordinary entry, register windows and unmodified live registers; copied values do not determine destination."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02edc.txt",
+      "pc": "0x2fb0",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "2",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-gate-local-alias-audit.json"
+      ],
+      "remaining_condition": "Ordinary separate stack; no claim about other entries or stack placement at runtime."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02edc.txt",
+      "pc": "0x2fb3",
+      "operation": "s16i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "0",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-gate-local-alias-audit.json"
+      ],
+      "remaining_condition": "Ordinary separate stack; no claim about other entries or stack placement at runtime."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/032c8.txt",
+      "pc": "0x32de",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a8",
+      "offset": "9",
+      "disposition": "caller_dependent_index",
+      "evidence": [
+        "rlc-gate-index-audit.json"
+      ],
+      "remaining_condition": "Known direct indices0/1/2; indirect or interior entry is not bounded."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/035d8.txt",
+      "pc": "0x3672",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a9",
+      "offset": "0",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-gate-local-alias-audit.json"
+      ],
+      "remaining_condition": "Ordinary separate stack; no claim about other entries or stack placement at runtime."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/035d8.txt",
+      "pc": "0x3674",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a9",
+      "offset": "4",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-gate-local-alias-audit.json"
+      ],
+      "remaining_condition": "Ordinary separate stack; no claim about other entries or stack placement at runtime."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/038ec.txt",
+      "pc": "0x392a",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": 0,
+      "base": "a9",
+      "offset": "0",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-gate-local-alias-audit.json"
+      ],
+      "remaining_condition": "Ordinary separate stack; no claim about other entries or stack placement at runtime."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/038ec.txt",
+      "pc": "0x392c",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": 0,
+      "base": "a9",
+      "offset": "4",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-gate-local-alias-audit.json"
+      ],
+      "remaining_condition": "Ordinary separate stack; no claim about other entries or stack placement at runtime."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3a91",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a15",
+      "offset": "2",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-gate-local-alias-audit.json"
+      ],
+      "remaining_condition": "Ordinary separate stack; no claim about other entries or stack placement at runtime."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3a94",
+      "operation": "s16i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a15",
+      "offset": "0",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-gate-local-alias-audit.json"
+      ],
+      "remaining_condition": "Ordinary separate stack; no claim about other entries or stack placement at runtime."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3acf",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "4",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-gate-local-alias-audit.json"
+      ],
+      "remaining_condition": "Ordinary separate stack; no claim about other entries or stack placement at runtime."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3ad1",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "0",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-gate-local-alias-audit.json"
+      ],
+      "remaining_condition": "Ordinary separate stack; no claim about other entries or stack placement at runtime."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3b70",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a8",
+      "offset": "2",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-gate-local-alias-audit.json"
+      ],
+      "remaining_condition": "Ordinary separate stack; no claim about other entries or stack placement at runtime."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3b73",
+      "operation": "s16i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a8",
+      "offset": "0",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-gate-local-alias-audit.json"
+      ],
+      "remaining_condition": "Ordinary separate stack; no claim about other entries or stack placement at runtime."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3bac",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "4",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-gate-local-alias-audit.json"
+      ],
+      "remaining_condition": "Ordinary separate stack; no claim about other entries or stack placement at runtime."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3bae",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "0",
+      "disposition": "local_stack",
+      "evidence": [
+        "rlc-gate-local-alias-audit.json"
+      ],
+      "remaining_condition": "Ordinary separate stack; no claim about other entries or stack placement at runtime."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04004.txt",
+      "pc": "0x40a0",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a9",
+      "offset": "0x200",
+      "disposition": "bounded_register_window",
+      "evidence": [
+        "rlc-4004-destination-audit.json"
+      ],
+      "remaining_condition": "Decoded selector/chunk paths and ordinary calls; hardware side effects remain separate."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04374.txt",
+      "pc": "0x43a6",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a13",
+      "source_constant": null,
+      "base": "a14",
+      "offset": "0x200",
+      "disposition": "bounded_destinations",
+      "evidence": [
+        "rlc-window-store-audit.json"
+      ],
+      "remaining_condition": "Local paths only; does not establish complete firmware coverage."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04374.txt",
+      "pc": "0x43c7",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a15",
+      "offset": "0x200",
+      "disposition": "bounded_destinations",
+      "evidence": [
+        "rlc-window-store-audit.json"
+      ],
+      "remaining_condition": "Local paths only; does not establish complete firmware coverage."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04374.txt",
+      "pc": "0x43e8",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a6",
+      "offset": "0x200",
+      "disposition": "bounded_destinations",
+      "evidence": [
+        "rlc-window-store-audit.json"
+      ],
+      "remaining_condition": "Local paths only; does not establish complete firmware coverage."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04664.txt",
+      "pc": "0x469f",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0",
+      "disposition": "bounded_destinations",
+      "evidence": [
+        "rlc-computed-store-bounds-audit.json"
+      ],
+      "remaining_condition": "Local loop boundaries only."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/04664.txt",
+      "pc": "0x46b2",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a9",
+      "offset": "0",
+      "disposition": "bounded_destinations",
+      "evidence": [
+        "rlc-computed-store-bounds-audit.json"
+      ],
+      "remaining_condition": "Local loop boundaries only."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/046c4.txt",
+      "pc": "0x46ff",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a12",
+      "offset": "0",
+      "disposition": "bounded_destinations",
+      "evidence": [
+        "rlc-computed-store-bounds-audit.json"
+      ],
+      "remaining_condition": "Local loop boundaries only."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/046c4.txt",
+      "pc": "0x4712",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a9",
+      "offset": "0",
+      "disposition": "bounded_destinations",
+      "evidence": [
+        "rlc-computed-store-bounds-audit.json"
+      ],
+      "remaining_condition": "Local loop boundaries only."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05138.txt",
+      "pc": "0x5170",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a10",
+      "source_constant": null,
+      "base": "a11",
+      "offset": "0",
+      "disposition": "bounded_destinations",
+      "evidence": [
+        "rlc-computed-store-bounds-audit.json"
+      ],
+      "remaining_condition": "Local loop boundaries only."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0542c.txt",
+      "pc": "0x544a",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a10",
+      "source_constant": null,
+      "base": "a9",
+      "offset": "0",
+      "disposition": "bounded_destinations",
+      "evidence": [
+        "rlc-computed-store-bounds-audit.json"
+      ],
+      "remaining_condition": "Local loop boundaries only."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/054c8.txt",
+      "pc": "0x54e7",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "0",
+      "disposition": "local_stack_new_byte_check",
+      "evidence": [],
+      "remaining_condition": "Four stores use freshly formed a1 aliases; checks below establish offsets, not runtime stack placement."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/054c8.txt",
+      "pc": "0x54ea",
+      "operation": "s16i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": 0,
+      "base": "a12",
+      "offset": "4",
+      "disposition": "local_stack_new_byte_check",
+      "evidence": [],
+      "remaining_condition": "Four stores use freshly formed a1 aliases; checks below establish offsets, not runtime stack placement."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05528.txt",
+      "pc": "0x5590",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a13",
+      "offset": "0",
+      "disposition": "local_stack_new_byte_check",
+      "evidence": [],
+      "remaining_condition": "Four stores use freshly formed a1 aliases; checks below establish offsets, not runtime stack placement."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05528.txt",
+      "pc": "0x5592",
+      "operation": "s16i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": 0,
+      "base": "a13",
+      "offset": "4",
+      "disposition": "local_stack_new_byte_check",
+      "evidence": [],
+      "remaining_condition": "Four stores use freshly formed a1 aliases; checks below establish offsets, not runtime stack placement."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/065d8.txt",
+      "pc": "0x68fa",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a13",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "168",
+      "disposition": "bounded_destinations",
+      "evidence": [
+        "rlc-window-store-audit.json"
+      ],
+      "remaining_condition": "Local paths only; does not establish complete firmware coverage."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/071ac.txt",
+      "pc": "0x7296",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0x344",
+      "disposition": "known_CC_save",
+      "evidence": [],
+      "remaining_condition": "Known four arrays: CC WGP/RB and USER WGP/RB. These stores save register values; no transformation established."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/071ac.txt",
+      "pc": "0x72ae",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0x364",
+      "disposition": "known_CC_save",
+      "evidence": [],
+      "remaining_condition": "Known four arrays: CC WGP/RB and USER WGP/RB. These stores save register values; no transformation established."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/071ac.txt",
+      "pc": "0x72c6",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0x384",
+      "disposition": "known_CC_save",
+      "evidence": [],
+      "remaining_condition": "Known four arrays: CC WGP/RB and USER WGP/RB. These stores save register values; no transformation established."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/071ac.txt",
+      "pc": "0x72de",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0x3a4",
+      "disposition": "known_CC_save",
+      "evidence": [],
+      "remaining_condition": "Known four arrays: CC WGP/RB and USER WGP/RB. These stores save register values; no transformation established."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/074c4.txt",
+      "pc": "0x75e8",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a12",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "16",
+      "disposition": "slot_dependent_snapshot",
+      "evidence": [
+        "rlc-snapshot-sources.json"
+      ],
+      "remaining_condition": "Custom slots can overlap CC/gate; known default slot31 does not. Actual alternative slot invocation remains open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/074c4.txt",
+      "pc": "0x75ff",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "0x110",
+      "disposition": "slot_dependent_snapshot",
+      "evidence": [
+        "rlc-snapshot-sources.json"
+      ],
+      "remaining_condition": "Custom slots can overlap CC/gate; known default slot31 does not. Actual alternative slot invocation remains open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/074c4.txt",
+      "pc": "0x7617",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "0x210",
+      "disposition": "slot_dependent_snapshot",
+      "evidence": [
+        "rlc-snapshot-sources.json"
+      ],
+      "remaining_condition": "Custom slots can overlap CC/gate; known default slot31 does not. Actual alternative slot invocation remains open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/074c4.txt",
+      "pc": "0x7631",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a13",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "12",
+      "disposition": "slot_dependent_snapshot",
+      "evidence": [
+        "rlc-snapshot-sources.json"
+      ],
+      "remaining_condition": "Custom slots can overlap CC/gate; known default slot31 does not. Actual alternative slot invocation remains open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/074c4.txt",
+      "pc": "0x7648",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "0x10c",
+      "disposition": "slot_dependent_snapshot",
+      "evidence": [
+        "rlc-snapshot-sources.json"
+      ],
+      "remaining_condition": "Custom slots can overlap CC/gate; known default slot31 does not. Actual alternative slot invocation remains open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/074c4.txt",
+      "pc": "0x7660",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a2",
+      "offset": "0x20c",
+      "disposition": "slot_dependent_snapshot",
+      "evidence": [
+        "rlc-snapshot-sources.json"
+      ],
+      "remaining_condition": "Custom slots can overlap CC/gate; known default slot31 does not. Actual alternative slot invocation remains open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/08b3c.txt",
+      "pc": "0x8b58",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": 50,
+      "base": "a4",
+      "offset": "0",
+      "disposition": "bounded_destinations",
+      "evidence": [
+        "rlc-computed-store-bounds-audit.json"
+      ],
+      "remaining_condition": "Local loop boundaries only."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/08b3c.txt",
+      "pc": "0x8b5b",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": 50,
+      "base": "a4",
+      "offset": "1",
+      "disposition": "bounded_destinations",
+      "evidence": [
+        "rlc-computed-store-bounds-audit.json"
+      ],
+      "remaining_condition": "Local loop boundaries only."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/08b78.txt",
+      "pc": "0x8d89",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a14",
+      "source_constant": null,
+      "base": "a15",
+      "offset": "0",
+      "disposition": "conditional_ring",
+      "evidence": [
+        "rlc-computed-store-bounds-audit.json"
+      ],
+      "remaining_condition": "Requires ring index0..63; other index writers not excluded."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09830.txt",
+      "pc": "0x9851",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a7",
+      "offset": "60",
+      "disposition": "bounded_slots_and_optional_output",
+      "evidence": [
+        "rlc-computed-store-bounds-audit.json"
+      ],
+      "remaining_condition": "Seven known callers have null output. Other callers may supply another output address."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09830.txt",
+      "pc": "0x9853",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": 1610589024,
+      "base": "a7",
+      "offset": "56",
+      "disposition": "bounded_slots_and_optional_output",
+      "evidence": [
+        "rlc-computed-store-bounds-audit.json"
+      ],
+      "remaining_condition": "Seven known callers have null output. Other callers may supply another output address."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09830.txt",
+      "pc": "0x9858",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a3",
+      "source_constant": null,
+      "base": "a7",
+      "offset": "56",
+      "disposition": "bounded_slots_and_optional_output",
+      "evidence": [
+        "rlc-computed-store-bounds-audit.json"
+      ],
+      "remaining_condition": "Seven known callers have null output. Other callers may supply another output address."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09830.txt",
+      "pc": "0x985a",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": null,
+      "base": "a7",
+      "offset": "60",
+      "disposition": "bounded_slots_and_optional_output",
+      "evidence": [
+        "rlc-computed-store-bounds-audit.json"
+      ],
+      "remaining_condition": "Seven known callers have null output. Other callers may supply another output address."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09830.txt",
+      "pc": "0x9868",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0",
+      "disposition": "bounded_slots_and_optional_output",
+      "evidence": [
+        "rlc-computed-store-bounds-audit.json"
+      ],
+      "remaining_condition": "Seven known callers have null output. Other callers may supply another output address."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09a84.txt",
+      "pc": "0x9a87",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a0",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "12",
+      "disposition": "context_pointer_dependent",
+      "evidence": [
+        "rlc-context-layout-audit.json"
+      ],
+      "remaining_condition": "Known context path only; general pointer provenance is not established by this inventory."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09a84.txt",
+      "pc": "0x9a8a",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a1",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "16",
+      "disposition": "context_pointer_dependent",
+      "evidence": [
+        "rlc-context-layout-audit.json"
+      ],
+      "remaining_condition": "Known context path only; general pointer provenance is not established by this inventory."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09a84.txt",
+      "pc": "0x9a8d",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a2",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "20",
+      "disposition": "context_pointer_dependent",
+      "evidence": [
+        "rlc-context-layout-audit.json"
+      ],
+      "remaining_condition": "Known context path only; general pointer provenance is not established by this inventory."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09a84.txt",
+      "pc": "0x9a90",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "28",
+      "disposition": "context_pointer_dependent",
+      "evidence": [
+        "rlc-context-layout-audit.json"
+      ],
+      "remaining_condition": "Known context path only; general pointer provenance is not established by this inventory."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09a84.txt",
+      "pc": "0x9aa6",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "0x128",
+      "disposition": "context_pointer_dependent",
+      "evidence": [
+        "rlc-context-layout-audit.json"
+      ],
+      "remaining_condition": "Known context path only; general pointer provenance is not established by this inventory."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09a84.txt",
+      "pc": "0x9aa9",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a4",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "216",
+      "disposition": "context_pointer_dependent",
+      "evidence": [
+        "rlc-context-layout-audit.json"
+      ],
+      "remaining_condition": "Known context path only; general pointer provenance is not established by this inventory."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09a84.txt",
+      "pc": "0x9ab8",
+      "operation": "s32i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a5",
+      "source_constant": null,
+      "base": "a3",
+      "offset": "0x114",
+      "disposition": "context_pointer_dependent",
+      "evidence": [
+        "rlc-context-layout-audit.json"
+      ],
+      "remaining_condition": "Known context path only; general pointer provenance is not established by this inventory."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa1c6",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa1da",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa1f0",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa1f3",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "1",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa21b",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa21f",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "4",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa223",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "8",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa228",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "12",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa239",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa23b",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "4",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa250",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa261",
+      "operation": "s16i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa26e",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa290",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa297",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "4",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa29e",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a8",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "8",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa2a6",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a9",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "12",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa2ba",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa2c1",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "4",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa2cf",
+      "operation": "s32i.n",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa2e7",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa2ea",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a7",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "1",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0a1fc.txt",
+      "pc": "0xa2f7",
+      "operation": "s8i",
+      "address": null,
+      "address_candidates": [],
+      "source": "a6",
+      "source_constant": null,
+      "base": "a5",
+      "offset": "0",
+      "disposition": "caller_dependent_copy",
+      "evidence": [
+        "rlc-copy-entry-audit.json"
+      ],
+      "remaining_condition": "Two known calls copy20bytes away from CC/gate. Computed/interior entries remain open."
+    }
+  ],
+  "next": "All108 entries now have local dispositions. Prioritize actual alternate slot, pointer, index or entry producers; do not repeat bounded-loop checks without new evidence. This inventory is not a complete firmware absence proof.",
+  "scope": "Offline disposition of108 scanner-unknown non-a1 stores; conditional exclusions remain conditional. No hardware access."
+}

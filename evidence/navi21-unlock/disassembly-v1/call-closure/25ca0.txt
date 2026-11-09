@@ -1,0 +1,14 @@
+
+/tmp/tmpihn3h1mj/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00025ca0 <.data+0x25ca0>:
+00025ca0: 364100   entry        a1, 0x20 ; Capstone
+   25ca3:	a123b7        	l32r	a10, 0x13930 (0x12b74)
+   25ca6:	a0a2a0        	addx4	a10, a2, a10
+   25ca9:	a22a7f        	l32i	a10, a10, 0x1fc
+00025cac: 25c7db   call8        . -0x2438c ; Capstone ; target=0x1920
+   25caf:	a02024        	extui	a2, a10, 0, 3
+00025cb2: 1df0     retw.n        ; Capstone

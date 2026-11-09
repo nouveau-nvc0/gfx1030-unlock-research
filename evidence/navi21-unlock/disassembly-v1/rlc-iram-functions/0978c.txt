@@ -1,0 +1,47 @@
+
+/tmp/tmp4bhgvlo8/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000978c <.data+0x978c>:
+0000978c: 362100   entry        a1, 0x10 ; Capstone
+    978f:	205f05        	extui	a5, a2, 31, 1
+    9792:	105501        	slli	a5, a5, 31
+    9795:	f04211        	slli	a4, a2, 1
+    9798:	206775        	extui	a6, a2, 23, 8
+    979b:	aca6      	beqz.n	a6, 0x97c9
+    979d:	1b66      	addi.n	a6, a6, 1
+    979f:	26f611        	beqi	a6, 0x100, 0x97b4
+    97a2:	61efcf        	l32r	a6, 0xffffd760 (0x38000000) ; inferred DRAM map 0x5ffec000
+    97a5:	404441        	srli	a4, a4, 4
+    97a8:	302201        	slli	a2, a2, 29
+    97ab:	6a44      	add.n	a4, a4, a6
+    97ad:	503420        	or	a3, a4, a5
+000097b0: 1df0     retw.n        ; Capstone
+    97b2:	000041        	srli	a0, a0, 0
+    97b5:	eacf      	add.n	a12, a15, a14
+    97b7:	707211        	slli	a7, a2, 9
+    97ba:	8c47      	beqz.n	a7, 0x97c2
+    97bc:	506611        	slli	a6, a6, 11
+    97bf:	604420        	or	a4, a4, a6
+    97c2:	503420        	or	a3, a4, a5
+    97c5:	0c02      	movi.n	a2, 0
+000097c7: 1df0     retw.n        ; Capstone
+    97c9:	1654ff        	beqz	a4, 0x97c2
+    97cc:	70f440        	nsau	a7, a4
+    97cf:	72c7f8        	addi	a7, a7, -8
+    97d2:	001740        	ssl	a7
+    97d5:	0044a1        	sll	a4, a4
+    97d8:	302401        	slli	a2, a4, 29
+    97db:	404341        	srli	a4, a4, 3
+    97de:	62a37f        	movi	a6, 0x37f
+    97e1:	7066c0        	sub	a6, a6, a7
+    97e4:	c06601        	slli	a6, a6, 20
+    97e7:	6a44      	add.n	a4, a4, a6
+    97e9:	503420        	or	a3, a4, a5
+000097ec: 1df0     retw.n        ; Capstone
+	...
+
+; Alternate branch-target decode
+    97b4:	41eacf        	l32r	a4, 0xffffd75c (0x7ff00000) ; inferred DRAM map 0x5ffec000

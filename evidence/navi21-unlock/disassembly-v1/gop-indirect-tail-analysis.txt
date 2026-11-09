@@ -1,0 +1,33 @@
+GOP computed tails and BAR displacement audit — offline
+
+Original XL tail instructions replayed for four computed jumps:
+942e (entry9415),9504(entry94e9),9b23(entry9b09),9bca(entry9baf).
+All select QWORD tablebb50 by context byte+44 and preserve the context inRCX.
+Six defined entries are8fb8,9050,9064,90dc,9100,9100 (REG,parameter,
+workspace,framebuffer,and the two remaining shared handlers).24 cases pass,
+stopping before destination code executes. Tests seed image base0, synthetic
+context and RCX as established by preceding instructions; they do not prove
+full caller reachability or correct state formation. The first local replay
+attempt omittedRCX at entries after its setup; corrected before accepting
+results. Scope is six valid indices, not arbitrary8-bit context values.
+These four tails are ATOM destination dispatch, not new register-helper
+address materialization or PCI protocol operations.
+
+Remaining XL register-call sites4e19/4e21 use callerR9 saved intoRBX by4dca;
+if nonnull, invoke it with(50,100) then(100,100). No body is known from this
+routine alone. Treat as an external callback dependency; do not assume it
+writes registers or silently mark it closed. Caller/protocol registration and
+semantics need independent tracing.
+
+Both x64 executable sections scanned for explicit memory writes whose encoded
+displacement interval [disp,disp+width) includes106. No matches, including
+wide writes beginning before106. Every executable byte was accounted; one
+terminal padding byte skipped per image. This improves on searching only
+literal+106, but does not establish field immutability: shifted base pointers,
+index expressions, implicit writes/copy routines, external calls and reused
+contexts remain outside this locator. Context allocation/zeroing establishes
+initialBAR0 only (see gop-protocol-write-followup.txt).
+
+Reproducer:scripts/navi21-gop-indirect-tail-check.py.
+Receipt:gop-indirect-tail-audit.json includes image identities and all cases.
+No firmware, GPU, service, driver, or persistent machine state changed.

@@ -1,0 +1,34 @@
+
+/tmp/tmp1dvthfcz/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001920 <.data+0x1920>:
+00001920: 366100   entry        a1, 0x30 ; Capstone
+    1923:	91c8fc        	l32r	a9, 0xc44 (0x7d54)
+    1926:	306200        	rsil	a3, 2
+    1929:	a1c7fc        	l32r	a10, 0xc48 (0x7f50)
+    192c:	0c8b      	movi.n	a11, 8
+    192e:	0c08      	movi.n	a8, 0
+    1930:	22697f        	s32i	a2, a9, 0x1fc
+    1933:	826980        	s32i	a8, a9, 0x200
+00001936: a54d01   call8        . +0x14dc ; Capstone ; target=0x2e10
+    1939:	b1c4fc        	l32r	a11, 0xc4c (0x3220038)
+    193c:	c02000        	memw
+    193f:	20c4b5        	extui	a12, a2, 20, 12
+    1942:	d80b      	l32i.n	a13, a11, 0
+    1944:	d901      	s32i.n	a13, a1, 0
+    1946:	c25100        	s16i	a12, a1, 0
+    1949:	a801      	l32i.n	a10, a1, 0
+    194b:	c02000        	memw
+    194e:	91a3fc        	l32r	a9, 0xbdc (0xfffff)
+    1951:	a90b      	s32i.n	a10, a11, 0
+    1953:	81bffc        	l32r	a8, 0xc50 (0x2c00000)
+    1956:	c02000        	memw
+    1959:	902210        	and	a2, a2, a9
+    195c:	8a22      	add.n	a2, a2, a8
+    195e:	c02000        	memw
+    1961:	2802      	l32i.n	a2, a2, 0
+    1963:	30e613        	wsr.ps	a3
+00001966: 1df0     retw.n        ; Capstone

@@ -1,0 +1,72 @@
+
+/tmp/tmpb_1b_sp1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00003724 <.data+0x3724>:
+00003724: 364100   entry        a1, 0x20 ; Capstone
+    3727:	c1dae6        	l32r	a12, 0xffffd290 (0x5ffee44c) ; inferred DRAM map 0x5ffec000
+    372a:	52a201        	movi	a5, 0x201
+    372d:	0c07      	movi.n	a7, 0
+    372f:	320c08        	l8ui	a3, a12, 8
+    3732:	706720        	or	a6, a7, a7
+    3735:	206593        	movnez	a6, a5, a2
+    3738:	2033c0        	sub	a3, a3, a2
+    373b:	165309        	beqz	a3, 0x37d4
+    373e:	306f00        	rsil	a3, 15
+    3741:	5188e6        	l32r	a5, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    3744:	b1ede6        	l32r	a11, 0xffffd2f8 (0x60004a00) ; inferred DRAM map 0x5ffec000
+    3747:	726580        	s32i	a7, a5, 0x200
+    374a:	626b0a        	s32i	a6, a11, 40
+    374d:	30e613        	wsr.ps	a3
+    3750:	102000        	rsync
+    3753:	f06f00        	rsil	a15, 15
+    3756:	a1e9e6        	l32r	a10, 0xffffd2fc (0x60006200) ; inferred DRAM map 0x5ffec000
+    3759:	726580        	s32i	a7, a5, 0x200
+    375c:	69aa      	s32i.n	a6, a10, 40
+    375e:	f0e613        	wsr.ps	a15
+    3761:	102000        	rsync
+    3764:	e06f00        	rsil	a14, 15
+    3767:	91e6e6        	l32r	a9, 0xffffd300 (0x6006fe00) ; inferred DRAM map 0x5ffec000
+    376a:	726580        	s32i	a7, a5, 0x200
+    376d:	6269aa        	s32i	a6, a9, 0x2a8
+    3770:	e0e613        	wsr.ps	a14
+    3773:	102000        	rsync
+    3776:	d06f00        	rsil	a13, 15
+    3779:	81e2e6        	l32r	a8, 0xffffd304 (0x60070e00) ; inferred DRAM map 0x5ffec000
+    377c:	726580        	s32i	a7, a5, 0x200
+    377f:	6268aa        	s32i	a6, a8, 0x2a8
+    3782:	d0e613        	wsr.ps	a13
+    3785:	102000        	rsync
+    3788:	e06f00        	rsil	a14, 15
+    378b:	726580        	s32i	a7, a5, 0x200
+    378e:	d8ab      	l32i.n	a13, a11, 40
+    3790:	e0e613        	wsr.ps	a14
+    3793:	102000        	rsync
+    3796:	d796ee        	bne	a6, a13, 0x3788
+    3799:	306f00        	rsil	a3, 15
+    379c:	726580        	s32i	a7, a5, 0x200
+    379f:	f8aa      	l32i.n	a15, a10, 40
+    37a1:	30e613        	wsr.ps	a3
+    37a4:	102000        	rsync
+    37a7:	f796ee        	bne	a6, a15, 0x3799
+    37aa:	a06f00        	rsil	a10, 15
+    37ad:	726580        	s32i	a7, a5, 0x200
+    37b0:	4229aa        	l32i	a4, a9, 0x2a8
+    37b3:	a0e613        	wsr.ps	a10
+    37b6:	102000        	rsync
+    37b9:	4796ed        	bne	a6, a4, 0x37aa
+    37bc:	d06f00        	rsil	a13, 15
+    37bf:	726580        	s32i	a7, a5, 0x200
+    37c2:	b228aa        	l32i	a11, a8, 0x2a8
+    37c5:	d0e613        	wsr.ps	a13
+    37c8:	102000        	rsync
+    37cb:	b796ed        	bne	a6, a11, 0x37bc
+    37ce:	224c08        	s8i	a2, a12, 8
+000037d1: 1df0     retw.n        ; Capstone
+    37d3:	001df0        	subx8	a1, a13, a0
+	...
+
+; Alternate branch-target decode
+000037d4: 1df0     retw.n        ; Capstone

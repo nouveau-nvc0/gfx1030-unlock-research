@@ -1,0 +1,230 @@
+
+/tmp/tmpti16npj1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00009830 <.data+0x9830>:
+00009830: 364100   entry        a1, 0x20 ; Capstone
+    9833:	f68235        	bgeui	a2, 8, 0x986c
+    9836:	61cbcf        	l32r	a6, 0xffffd764 (0x5ffec000) ; inferred DRAM map 0x5ffec000
+    9839:	91cccf        	l32r	a9, 0xffffd76c (0x5fffa360) ; inferred DRAM map 0x5ffec000
+    983c:	71cbcf        	l32r	a7, 0xffffd768 (0x5ffed7e0) ; inferred DRAM map 0x5ffec000
+    983f:	6a62      	add.n	a6, a2, a6
+    9841:	620600        	l8ui	a6, a6, 0
+    9844:	d08211        	slli	a8, a2, 3
+    9847:	8077c0        	sub	a7, a7, a8
+    984a:	e6461e        	bgei	a6, 4, 0x986c
+    984d:	88e7      	l32i.n	a8, a7, 56
+    984f:	cc53      	bnez.n	a3, 0x9858
+    9851:	29f7      	s32i.n	a2, a7, 60
+    9853:	99e7      	s32i.n	a9, a7, 56
+    9855:	c60000        	j	0x985c
+    9858:	39e7      	s32i.n	a3, a7, 56
+    985a:	49f7      	s32i.n	a4, a7, 60
+    985c:	9c05      	beqz.n	a5, 0x9870
+    985e:	0c02      	movi.n	a2, 0
+    9860:	90b8c0        	sub	a11, a8, a9
+    9863:	0c0a      	movi.n	a10, 0
+    9865:	b08a83        	moveqz	a8, a10, a11
+    9868:	8905      	s32i.n	a8, a5, 0
+0000986a: 1df0     retw.n        ; Capstone
+    986c:	7cf2      	movi.n	a2, -1
+0000986e: 1df0     retw.n        ; Capstone
+    9870:	0c02      	movi.n	a2, 0
+00009872: 1df0     retw.n        ; Capstone
+    9874:	5971      	s32i.n	a5, a1, 28
+    9876:	21becf        	l32r	a2, 0xffffd770 (0x50021) ; inferred DRAM map 0x5ffec000
+    9879:	30b103        	rsr.epc1	a3
+    987c:	20e661        	xsr.ps	a2
+    987f:	3901      	s32i.n	a3, a1, 0
+    9881:	2911      	s32i.n	a2, a1, 4
+    9883:	12c160        	addi	a1, a1, 96
+    9886:	102000        	rsync
+    9889:	418cce        	l32r	a4, 0xffffd2bc (0xc0000000) ; inferred DRAM map 0x5ffec000
+    988c:	303420        	or	a3, a4, a3
+    988f:	304490        	addx2	a4, a4, a3
+00009892: 36c100   entry        a1, 0x60 ; Capstone
+    9895:	e123cf        	l32r	a14, 0xffffd524 (0x5ffed7d8) ; inferred DRAM map 0x5ffec000
+    9898:	f0e203        	rsr.interrupt	a15
+    989b:	c0e403        	rsr.intenable	a12
+    989e:	d81e      	l32i.n	a13, a14, 4
+    98a0:	c0ff10        	and	a15, a15, a12
+    98a3:	c00303        	rsr.sar	a12
+    98a6:	d931      	s32i.n	a13, a1, 12
+    98a8:	160f06        	beqz	a15, 0x990c
+    98ab:	c921      	s32i.n	a12, a1, 8
+    98ad:	2981      	s32i.n	a2, a1, 32
+    98af:	7cf2      	movi.n	a2, -1
+    98b1:	c0ff40        	nsau	a12, a15
+    98b4:	f12acf        	l32r	a15, 0xffffd55c (0x80000000) ; inferred DRAM map 0x5ffec000
+    98b7:	000c40        	ssr	a12
+    98ba:	f0f091        	srl	a15, a15
+    98bd:	f02230        	xor	a2, a2, a15
+    98c0:	d1adcf        	l32r	a13, 0xffffd774 (0x5ffed720) ; inferred DRAM map 0x5ffec000
+    98c3:	f0e313        	wsr.intclear	a15
+    98c6:	d0ccb0        	addx8	a12, a12, a13
+    98c9:	d22c10        	l32i	a13, a12, 64
+    98cc:	f06300        	rsil	a15, 3
+    98cf:	f80e      	l32i.n	a15, a14, 0
+    98d1:	d91e      	s32i.n	a13, a14, 4
+    98d3:	d0ff10        	and	a15, a15, a13
+    98d6:	f0e413        	wsr.intenable	a15
+    98d9:	102000        	rsync
+    98dc:	f06000        	rsil	a15, 0
+    98df:	d80c      	l32i.n	a13, a12, 0
+    98e1:	fd01      	mov.n	a15, a1
+    98e3:	e81c      	l32i.n	a14, a12, 4
+000098e5: f00d00   callx12      a13 ; Capstone
+    98e8:	e10fcf        	l32r	a14, 0xffffd524 (0x5ffed7d8) ; inferred DRAM map 0x5ffec000
+    98eb:	f0e203        	rsr.interrupt	a15
+    98ee:	d06300        	rsil	a13, 3
+    98f1:	d80e      	l32i.n	a13, a14, 0
+    98f3:	c831      	l32i.n	a12, a1, 12
+    98f5:	c0dd10        	and	a13, a13, a12
+    98f8:	d0ff10        	and	a15, a15, a13
+    98fb:	561f02        	bnez	a15, 0x9920
+    98fe:	2881      	l32i.n	a2, a1, 32
+    9900:	c26e01        	s32i	a12, a14, 4
+    9903:	c22102        	l32i	a12, a1, 8
+    9906:	d0e413        	wsr.intenable	a13
+    9909:	d06100        	rsil	a13, 1
+    990c:	019bcf        	l32r	a0, 0xffffd778 (0x5fffa380) ; inferred DRAM map 0x5ffec000
+    990f:	d16bce        	l32r	a13, 0xffffd2bc (0xc0000000) ; inferred DRAM map 0x5ffec000
+    9912:	c00313        	wsr.sar	a12
+    9915:	d00020        	or	a0, a0, a13
+    9918:	000d90        	addx2	a0, a13, a0
+    991b:	d06100        	rsil	a13, 1
+0000991e: 1df0     retw.n        ; Capstone
+    9920:	d0ff40        	nsau	a13, a15
+    9923:	c194cf        	l32r	a12, 0xffffd774 (0x5ffed720) ; inferred DRAM map 0x5ffec000
+    9926:	c0cdb0        	addx8	a12, a13, a12
+    9929:	e22c11        	l32i	a14, a12, 68
+    992c:	20ff10        	and	a15, a15, a2
+    992f:	e0ff10        	and	a15, a15, a14
+    9932:	e1fcce        	l32r	a14, 0xffffd524 (0x5ffed7d8) ; inferred DRAM map 0x5ffec000
+    9935:	568ff7        	bnez	a15, 0x98b1
+    9938:	f109cf        	l32r	a15, 0xffffd55c (0x80000000) ; inferred DRAM map 0x5ffec000
+    993b:	000d40        	ssr	a13
+    993e:	f0d091        	srl	a13, a15
+    9941:	f22c11        	l32i	a15, a12, 68
+    9944:	d0e313        	wsr.intclear	a13
+    9947:	f02220        	or	a2, a2, a15
+    994a:	d02230        	xor	a2, a2, a13
+    994d:	06deff        	j	0x98c9
+    9950:	218bcf        	l32r	a2, 0xffffd77c (0x5ffeeb70) ; inferred DRAM map 0x5ffec000
+    9953:	0982      	s32i.n	a0, a2, 32
+    9955:	018acf        	l32r	a0, 0xffffd780 (0x5ffed960) ; inferred DRAM map 0x5ffec000
+    9958:	1992      	s32i.n	a1, a2, 36
+    995a:	0800      	l32i.n	a0, a0, 0
+    995c:	39b2      	s32i.n	a3, a2, 44
+    995e:	00d261        	xsr.excsave2	a0
+    9961:	49c2      	s32i.n	a4, a2, 48
+    9963:	09a2      	s32i.n	a0, a2, 40
+    9965:	30b103        	rsr.epc1	a3
+    9968:	40e803        	rsr.exccause	a4
+    996b:	3932      	s32i.n	a3, a2, 12
+    996d:	4942      	s32i.n	a4, a2, 16
+    996f:	30ee03        	rsr.excvaddr	a3
+    9972:	3952      	s32i.n	a3, a2, 20
+    9974:	40d103        	rsr.excsave1	a4
+    9977:	4962      	s32i.n	a4, a2, 24
+    9979:	1c80      	movi.n	a0, 24
+    997b:	59d2      	s32i.n	a5, a2, 52
+    997d:	69e2      	s32i.n	a6, a2, 56
+    997f:	79f2      	s32i.n	a7, a2, 60
+    9981:	826210        	s32i	a8, a2, 64
+    9984:	926211        	s32i	a9, a2, 68
+    9987:	a26212        	s32i	a10, a2, 72
+    998a:	b26213        	s32i	a11, a2, 76
+    998d:	c26214        	s32i	a12, a2, 80
+    9990:	d26215        	s32i	a13, a2, 84
+    9993:	e26216        	s32i	a14, a2, 88
+    9996:	f26217        	s32i	a15, a2, 92
+    9999:	82c0f8        	addi	a8, a0, -8
+    999c:	a2c220        	addi	a10, a2, 32
+0000999f: 208040   rotw         2 ; Capstone
+    99a2:	56b0fd        	bnez	a0, 0x9981
+000099a5: 208040   rotw         2 ; Capstone
+000099a8: 304903   rsr          a3, windowstart ; Capstone
+000099ab: 404803   rsr          a4, windowbase ; Capstone
+    99ae:	3912      	s32i.n	a3, a2, 4
+    99b0:	4922      	s32i.n	a4, a2, 8
+    99b2:	0c13      	movi.n	a3, 1
+    99b4:	0c04      	movi.n	a4, 0
+000099b6: 304913   wsr          a3, windowstart ; Capstone
+000099b9: 404813   wsr          a4, windowbase ; Capstone
+    99bc:	102000        	rsync
+    99bf:	116fcf        	l32r	a1, 0xffffd77c (0x5ffeeb70) ; inferred DRAM map 0x5ffec000
+    99c2:	0c00      	movi.n	a0, 0
+    99c4:	2170cf        	l32r	a2, 0xffffd784 (0x50022) ; inferred DRAM map 0x5ffec000
+    99c7:	20e613        	wsr.ps	a2
+    99ca:	102000        	rsync
+    99cd:	e00303        	rsr.sar	a14
+    99d0:	e901      	s32i.n	a14, a1, 0
+    99d2:	f0e203        	rsr.interrupt	a15
+    99d5:	c0e403        	rsr.intenable	a12
+    99d8:	d2a084        	movi	a13, 132
+    99db:	c0ff10        	and	a15, a15, a12
+    99de:	d0ff10        	and	a15, a15, a13
+    99e1:	16af02        	beqz	a15, 0x9a0f
+    99e4:	f0e060        	neg	a14, a15
+    99e7:	f0ee10        	and	a14, a14, a15
+    99ea:	e0e313        	wsr.intclear	a14
+    99ed:	c161cf        	l32r	a12, 0xffffd774 (0x5ffed720) ; inferred DRAM map 0x5ffec000
+    99f0:	e0fe40        	nsau	a14, a14
+    99f3:	c0ceb0        	addx8	a12, a14, a12
+    99f6:	d80c      	l32i.n	a13, a12, 0
+    99f8:	681c      	l32i.n	a6, a12, 4
+000099fa: d00d00   callx4       a13 ; Capstone
+    99fd:	f0e203        	rsr.interrupt	a15
+    9a00:	c0e403        	rsr.intenable	a12
+    9a03:	d2a084        	movi	a13, 132
+    9a06:	c0ff10        	and	a15, a15, a12
+    9a09:	d0ff10        	and	a15, a15, a13
+    9a0c:	564ffd        	bnez	a15, 0x99e4
+    9a0f:	f801      	l32i.n	a15, a1, 0
+    9a11:	f00313        	wsr.sar	a15
+    9a14:	3c22      	movi.n	a2, 50
+    9a16:	20e613        	wsr.ps	a2
+    9a19:	102000        	rsync
+    9a1c:	2811      	l32i.n	a2, a1, 4
+    9a1e:	3821      	l32i.n	a3, a1, 8
+00009a20: 204913   wsr          a2, windowstart ; Capstone
+00009a23: 304813   wsr          a3, windowbase ; Capstone
+    9a26:	102000        	rsync
+    9a29:	1154cf        	l32r	a1, 0xffffd77c (0x5ffeeb70) ; inferred DRAM map 0x5ffec000
+    9a2c:	1c86      	movi.n	a6, 24
+    9a2e:	72c1e0        	addi	a7, a1, -32
+    9a31:	e2c6f8        	addi	a14, a6, -8
+    9a34:	f2c720        	addi	a15, a7, 32
+    9a37:	48cf      	l32i.n	a4, a15, 48
+    9a39:	58df      	l32i.n	a5, a15, 52
+    9a3b:	68ef      	l32i.n	a6, a15, 56
+    9a3d:	78ff      	l32i.n	a7, a15, 60
+    9a3f:	822f10        	l32i	a8, a15, 64
+    9a42:	922f11        	l32i	a9, a15, 68
+    9a45:	a22f12        	l32i	a10, a15, 72
+    9a48:	b22f13        	l32i	a11, a15, 76
+00009a4b: 208040   rotw         2 ; Capstone
+    9a4e:	56f6fd        	bnez	a6, 0x9a31
+    9a51:	422714        	l32i	a4, a7, 80
+    9a54:	522715        	l32i	a5, a7, 84
+    9a57:	622716        	l32i	a6, a7, 88
+    9a5a:	722717        	l32i	a7, a7, 92
+00009a5d: 208040   rotw         2 ; Capstone
+    9a60:	2831      	l32i.n	a2, a1, 12
+    9a62:	3841      	l32i.n	a3, a1, 16
+    9a64:	20b113        	wsr.epc1	a2
+    9a67:	30e813        	wsr.exccause	a3
+    9a6a:	2851      	l32i.n	a2, a1, 20
+    9a6c:	20ee13        	wsr.excvaddr	a2
+    9a6f:	3861      	l32i.n	a3, a1, 24
+    9a71:	30d113        	wsr.excsave1	a3
+    9a74:	0881      	l32i.n	a0, a1, 32
+    9a76:	28a1      	l32i.n	a2, a1, 40
+    9a78:	38b1      	l32i.n	a3, a1, 44
+    9a7a:	1891      	l32i.n	a1, a1, 36
+    9a7c:	103200        	rfi	2
+    9a7f:	00c600        	excw
+	...

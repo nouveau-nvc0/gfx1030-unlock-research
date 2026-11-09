@@ -1,0 +1,22 @@
+
+/tmp/tmpcewnrlbj/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001c794 <.data+0x1c794>:
+0001c794: 364100   entry        a1, 0x20 ; Capstone
+   1c797:	b146da        	l32r	a11, 0x130b0 (0xa96c)
+   1c79a:	20a2f0        	subx8	a10, a2, a2
+   1c79d:	b0aaa0        	addx4	a10, a10, a11
+   1c7a0:	a22a7f        	l32i	a10, a10, 0x1fc
+0001c7a3: a55f1c   call8        . +0x1c5fc ; Capstone ; target=0x38d9c
+   1c7a6:	c143da        	l32r	a12, 0x130b4 (0x3dcccccd)
+0001c7a9: 0033da   ufloat.s     f3, a3, 0 ; Capstone
+0001c7ac: 504cfa   wfr          f4, a12 ; Capstone
+0001c7af: 40132a   mul.s        f1, f3, f4 ; Capstone
+0001c7b2: 502afa   wfr          f2, a10 ; Capstone
+0001c7b5: 20012a   mul.s        f0, f1, f2 ; Capstone
+0001c7b8: 0020ea   utrunc.s     a2, f0, 0 ; Capstone
+0001c7bb: 1df0     retw.n        ; Capstone
+   1c7bd:	000000        	ill

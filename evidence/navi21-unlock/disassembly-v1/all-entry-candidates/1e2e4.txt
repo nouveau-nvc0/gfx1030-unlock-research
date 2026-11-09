@@ -1,0 +1,30 @@
+
+/tmp/tmp89dx1esk/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001e2e4 <.data+0x1e2e4>:
+0001e2e4: 364100   entry        a1, 0x20 ; Capstone
+   1e2e7:	81d7d3        	l32r	a8, 0x13244 (0xaab0)
+   1e2ea:	0c17      	movi.n	a7, 1
+   1e2ec:	2052b0        	addx8	a5, a2, a2
+   1e2ef:	8055a0        	addx4	a5, a5, a8
+   1e2f2:	52257f        	l32i	a5, a5, 0x1fc
+   1e2f5:	0c04      	movi.n	a4, 0
+   1e2f7:	001440        	ssl	a4
+   1e2fa:	ac05      	beqz.n	a5, 0x1e31e
+   1e2fc:	0067a1        	sll	a6, a7
+   1e2ff:	670510        	bnone	a5, a6, 0x1e313
+   1e302:	cd03      	mov.n	a12, a3
+   1e304:	ad02      	mov.n	a10, a2
+   1e306:	bd06      	mov.n	a11, a6
+0001e308: a5e7ff   call8        . -0x184 ; Capstone ; target=0x1e184
+   1e30b:	7cfa      	movi.n	a10, -1
+   1e30d:	a09630        	xor	a9, a6, a10
+   1e310:	905510        	and	a5, a5, a9
+   1e313:	1b44      	addi.n	a4, a4, 1
+   1e315:	001440        	ssl	a4
+   1e318:	0067a1        	sll	a6, a7
+   1e31b:	5605fe        	bnez	a5, 0x1e2ff
+0001e31e: 1df0     retw.n        ; Capstone

@@ -1,0 +1,182 @@
+[
+  {
+    "symbol": "ATHUB_BASE__INST0_SEG1",
+    "host_byte_base": "0x9023000",
+    "block": "0x23"
+  },
+  {
+    "symbol": "CLK_BASE__INST0_SEG1",
+    "host_byte_base": "0x9006000",
+    "block": "0x6"
+  },
+  {
+    "symbol": "CLK_BASE__INST1_SEG1",
+    "host_byte_base": "0x9007000",
+    "block": "0x7"
+  },
+  {
+    "symbol": "CLK_BASE__INST2_SEG1",
+    "host_byte_base": "0x9008000",
+    "block": "0x8"
+  },
+  {
+    "symbol": "CLK_BASE__INST3_SEG1",
+    "host_byte_base": "0x9009000",
+    "block": "0x9"
+  },
+  {
+    "symbol": "CLK_BASE__INST4_SEG1",
+    "host_byte_base": "0x90b6000",
+    "block": "0xb6"
+  },
+  {
+    "symbol": "CLK_BASE__INST5_SEG1",
+    "host_byte_base": "0x90b7000",
+    "block": "0xb7"
+  },
+  {
+    "symbol": "CLK_BASE__INST6_SEG1",
+    "host_byte_base": "0x90b8000",
+    "block": "0xb8"
+  },
+  {
+    "symbol": "DF_BASE__INST0_SEG1",
+    "host_byte_base": "0x902e000",
+    "block": "0x2e"
+  },
+  {
+    "symbol": "DIO_BASE__INST0_SEG0",
+    "host_byte_base": "0x9010000",
+    "block": "0x10"
+  },
+  {
+    "symbol": "DCN_BASE__INST0_SEG4",
+    "host_byte_base": "0x900f000",
+    "block": "0xf"
+  },
+  {
+    "symbol": "DPCS_BASE__INST0_SEG4",
+    "host_byte_base": "0x900f000",
+    "block": "0xf"
+  },
+  {
+    "symbol": "FUSE_BASE__INST0_SEG1",
+    "host_byte_base": "0x9005000",
+    "block": "0x5"
+  },
+  {
+    "symbol": "GC_BASE__INST0_SEG3",
+    "host_byte_base": "0x900b000",
+    "block": "0xb"
+  },
+  {
+    "symbol": "HDA_BASE__INST0_SEG1",
+    "host_byte_base": "0x9012000",
+    "block": "0x12"
+  },
+  {
+    "symbol": "HDP_BASE__INST0_SEG1",
+    "host_byte_base": "0x9029000",
+    "block": "0x29"
+  },
+  {
+    "symbol": "MMHUB_BASE__INST0_SEG1",
+    "host_byte_base": "0x9022000",
+    "block": "0x22"
+  },
+  {
+    "symbol": "MP0_BASE__INST0_SEG4",
+    "host_byte_base": "0x90ff000",
+    "block": "0xff"
+  },
+  {
+    "symbol": "MP1_BASE__INST0_SEG4",
+    "host_byte_base": "0x90ff000",
+    "block": "0xff"
+  },
+  {
+    "symbol": "NBIO_BASE__INST0_SEG4",
+    "host_byte_base": "0x906c000",
+    "block": "0x6c"
+  },
+  {
+    "symbol": "OSSSYS_BASE__INST0_SEG1",
+    "host_byte_base": "0x9028000",
+    "block": "0x28"
+  },
+  {
+    "symbol": "PCIE0_BASE__INST0_SEG4",
+    "host_byte_base": "0x906c000",
+    "block": "0x6c"
+  },
+  {
+    "symbol": "SDMA0_BASE__INST0_SEG3",
+    "host_byte_base": "0x900b000",
+    "block": "0xb"
+  },
+  {
+    "symbol": "SDMA1_BASE__INST0_SEG3",
+    "host_byte_base": "0x900b000",
+    "block": "0xb"
+  },
+  {
+    "symbol": "SMUIO_BASE__INST0_SEG3",
+    "host_byte_base": "0x9004000",
+    "block": "0x4"
+  },
+  {
+    "symbol": "THM_BASE__INST0_SEG1",
+    "host_byte_base": "0x9003000",
+    "block": "0x3"
+  },
+  {
+    "symbol": "UMC_BASE__INST0_SEG1",
+    "host_byte_base": "0x9096000",
+    "block": "0x96"
+  },
+  {
+    "symbol": "UMC_BASE__INST1_SEG1",
+    "host_byte_base": "0x9097000",
+    "block": "0x97"
+  },
+  {
+    "symbol": "UMC_BASE__INST2_SEG1",
+    "host_byte_base": "0x9098000",
+    "block": "0x98"
+  },
+  {
+    "symbol": "UMC_BASE__INST3_SEG1",
+    "host_byte_base": "0x9099000",
+    "block": "0x99"
+  },
+  {
+    "symbol": "UMC_BASE__INST4_SEG1",
+    "host_byte_base": "0x909a000",
+    "block": "0x9a"
+  },
+  {
+    "symbol": "UMC_BASE__INST5_SEG1",
+    "host_byte_base": "0x909b000",
+    "block": "0x9b"
+  },
+  {
+    "symbol": "UMC_BASE__INST6_SEG1",
+    "host_byte_base": "0x909c000",
+    "block": "0x9c"
+  },
+  {
+    "symbol": "USB0_BASE__INST0_SEG0",
+    "host_byte_base": "0x90aa000",
+    "block": "0xaa"
+  },
+  {
+    "symbol": "VCN_BASE__INST0_SEG2",
+    "host_byte_base": "0x900c000",
+    "block": "0xc"
+  },
+  {
+    "symbol": "VCN_BASE__INST1_SEG2",
+    "host_byte_base": "0x9114000",
+    "block": "0x114"
+  }
+]

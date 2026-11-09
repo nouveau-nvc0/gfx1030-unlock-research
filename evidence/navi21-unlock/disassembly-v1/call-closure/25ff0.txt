@@ -1,0 +1,14 @@
+
+/tmp/tmps7rai786/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00025ff0 <.data+0x25ff0>:
+00025ff0: 364100   entry        a1, 0x20 ; Capstone
+   25ff3:	3158b6        	l32r	a3, 0x13954 (0x3d800000)
+00025ff6: 0012da   ufloat.s     f1, a2, 0 ; Capstone
+00025ff9: 5023fa   wfr          f2, a3 ; Capstone
+00025ffc: 20012a   mul.s        f0, f1, f2 ; Capstone
+00025fff: 4020fa   rfr          a2, f0 ; Capstone
+00026002: 1df0     retw.n        ; Capstone

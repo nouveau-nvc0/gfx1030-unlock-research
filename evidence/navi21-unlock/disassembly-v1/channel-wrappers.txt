@@ -1,0 +1,114 @@
+
+/tmp/tmp_o3obk9_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001eb0 <.data+0x1eb0>:
+00001eb0: 364100   entry        a1, 0x20 ; Capstone
+    1eb3:	0cca      	movi.n	a10, 12
+00001eb5: 651100   call8        . +0x118 ; Capstone ; target=0x1fcc
+00001eb8: 1df0     retw.n        ; Capstone
+00001eba: 000036   ee.ldf.64.xp f0, f3, a0, a0 ; Capstone
+    1ebd:	41000c        	l32r	a4, 0xfffc4ec0
+    1ec0:	baa5      	add.n	a10, a5, a11
+    1ec2:	10001d        	excw
+00001ec5: f00000   callx12      a0 ; Capstone
+00001ec8: 364100   entry        a1, 0x20 ; Capstone
+    1ecb:	0c6a      	movi.n	a10, 6
+00001ecd: e50f00   call8        . +0x100 ; Capstone ; target=0x1fcc
+00001ed0: 1df0     retw.n        ; Capstone
+00001ed2: 000036   ee.ldf.64.xp f0, f3, a0, a0 ; Capstone
+    1ed5:	41000c        	l32r	a4, 0xfffc4ed8
+    1ed8:	5a25      	add.n	a2, a5, a5
+    1eda:	0f          	.byte 0xf
+    1edb:	001df0        	subx8	a1, a13, a0
+00001ede: 000036   ee.ldf.64.xp f0, f3, a0, a0 ; Capstone
+    1ee1:	41000c        	l32r	a4, 0xfffc4ee4
+    1ee4:	4a65      	add.n	a6, a5, a4
+    1ee6:	0e          	.byte 0xe
+    1ee7:	001df0        	subx8	a1, a13, a0
+00001eea: 000036   ee.ldf.64.xp f0, f3, a0, a0 ; Capstone
+    1eed:	41000c        	l32r	a4, 0xfffc4ef0
+    1ef0:	3aa5      	add.n	a10, a5, a3
+    1ef2:	0d00      	mov.n	a0, a0
+00001ef4: 1df0     retw.n        ; Capstone
+00001ef6: 000036   ee.ldf.64.xp f0, f3, a0, a0 ; Capstone
+    1ef9:	41000c        	l32r	a4, 0xfffc4efc
+    1efc:	2ae5      	add.n	a14, a5, a2
+    1efe:	0c00      	movi.n	a0, 0
+00001f00: 1df0     retw.n        ; Capstone
+00001f02: 000036   ee.ldf.64.xp f0, f3, a0, a0 ; Capstone
+    1f05:	41000c        	l32r	a4, 0xfffc4f08
+    1f08:	1a25      	add.n	a2, a5, a1
+    1f0a:	0c00      	movi.n	a0, 0
+00001f0c: 1df0     retw.n        ; Capstone
+00001f0e: 000036   ee.ldf.64.xp f0, f3, a0, a0 ; Capstone
+    1f11:	410021        	l32r	a4, 0xfffca314
+00001f14: 65fb22   call8        . +0x22fb8 ; Capstone ; target=0x24ecc
+    1f17:	027d1d        	excw
+00001f1a: f00036   ee.ldf.64.xp f0, f3, a15, a0 ; Capstone
+    1f1d:	410041        	l32r	a4, 0xfffd2320
+    1f20:	1bfb      	addi.n	a15, a11, 1
+    1f22:	c02000        	memw
+    1f25:	2224d6        	l32i	a2, a4, 0x358
+00001f28: 65feff   call8        . -0x18 ; Capstone ; target=0x1f10
+    1f2b:	b160fb        	l32r	a11, 0xcac (0x7fffffff)
+    1f2e:	661a13        	bnei	a10, 1, 0x1f45
+    1f31:	a15ffb        	l32r	a10, 0xcb0 (0x7150)
+    1f34:	270b4d        	bnone	a11, a2, 0x1f85
+    1f37:	922a7f        	l32i	a9, a10, 0x1fc
+    1f3a:	7c7b      	movi.n	a11, -9
+    1f3c:	b09910        	and	a9, a9, a11
+    1f3f:	926a7f        	s32i	a9, a10, 0x1fc
+    1f42:	060500        	j	0x1f5a
+    1f45:	b62a11        	bltui	a10, 2, 0x1f5a
+    1f48:	b0a210        	and	a10, a2, a11
+    1f4b:	b7020b        	bnone	a2, a11, 0x1f5a
+    1f4e:	c02000        	memw
+    1f51:	c12ffb        	l32r	a12, 0xc10 (0x80000000)
+    1f54:	a264d6        	s32i	a10, a4, 0x358
+    1f57:	c02210        	and	a2, a2, a12
+    1f5a:	ac52      	beqz.n	a2, 0x1f83
+    1f5c:	0c16      	movi.n	a6, 1
+    1f5e:	5124fb        	l32r	a5, 0xbf0 (0x1000000)
+    1f61:	0c03      	movi.n	a3, 0
+    1f63:	076214        	bbci	a2, 0, 0x1f7b
+    1f66:	00a311        	slli	a10, a3, 16
+    1f69:	50aa20        	or	a10, a10, a5
+00001f6c: e50500   call8        . +0x60 ; Capstone ; target=0x1fcc
+    1f6f:	001340        	ssl	a3
+    1f72:	00b6a1        	sll	a11, a6
+    1f75:	c02000        	memw
+    1f78:	b264d6        	s32i	a11, a4, 0x358
+    1f7b:	1b33      	addi.n	a3, a3, 1
+    1f7d:	202141        	srli	a2, a2, 1
+    1f80:	56f2fd        	bnez	a2, 0x1f63
+00001f83: 1df0     retw.n        ; Capstone
+    1f85:	d612fd        	bgez	a2, 0x1f5a
+    1f88:	922a7f        	l32i	a9, a10, 0x1fc
+    1f8b:	0c8b      	movi.n	a11, 8
+    1f8d:	b09920        	or	a9, a9, a11
+    1f90:	c6eaff        	j	0x1f3f
+    1f93:	003641        	srli	a3, a0, 6
+    1f96:	009110        	and	a9, a1, a0
+    1f99:	fb0c      	addi.n	a0, a12, 15
+    1f9b:	0a0c      	add.n	a0, a12, a0
+    1f9d:	1882      	l32i.n	a1, a2, 32
+    1f9f:	4980      	s32i.n	a4, a0, 32
+00001fa1: a50200   call8        . +0x2c ; Capstone ; target=0x1fcc
+00001fa4: 1df0     retw.n        ; Capstone
+00001fa6: 000036   ee.ldf.64.xp f0, f3, a0, a0 ; Capstone
+    1fa9:	41000c        	l32r	a4, 0xfffc4fac
+    1fac:	9ae5      	add.n	a14, a5, a9
+    1fae:	01001d        	l32r	a0, 0xfffc93b0
+00001fb1: f00000   callx12      a0 ; Capstone
+00001fb4: 364100   entry        a1, 0x20 ; Capstone
+    1fb7:	0c8a      	movi.n	a10, 8
+00001fb9: 250100   call8        . +0x14 ; Capstone ; target=0x1fcc
+00001fbc: 1df0     retw.n        ; Capstone
+00001fbe: 000036   ee.ldf.64.xp f0, f3, a0, a0 ; Capstone
+    1fc1:	41000c        	l32r	a4, 0xfffc4fc4
+    1fc4:	7a65      	add.n	a6, a5, a7
+    1fc6:	00001d        	excw
+00001fc9: f00000   callx12      a0 ; Capstone

@@ -1,0 +1,21 @@
+
+/tmp/tmpqkkdytut/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000307c0 <.data+0x307c0>:
+000307c0: 364100   entry        a1, 0x20 ; Capstone
+000307c3: 25f5ff   call8        . -0xac ; Capstone ; target=0x30714
+   307c6:	676a17        	bbci	a10, 6, 0x307e1
+   307c9:	206200        	rsil	a2, 2
+   307cc:	0c0a      	movi.n	a10, 0
+000307ce: 654707   call8        . +0x7478 ; Capstone ; target=0x37c44
+000307d1: 2591d1   call8        . -0x2e6ec ; Capstone ; target=0x20e4
+   307d4:	91a289        	l32r	a9, 0x12e5c (0x69a0)
+   307d7:	0c08      	movi.n	a8, 0
+   307d9:	824932        	s8i	a8, a9, 50
+   307dc:	20e613        	wsr.ps	a2
+000307df: 1df0     retw.n        ; Capstone
+000307e1: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,22 @@
+
+/tmp/tmpiecdd8fc/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00025320 <.data+0x25320>:
+00025320: 366100   entry        a1, 0x30 ; Capstone
+   25323:	8155b9        	l32r	a8, 0x13878 (0xfff9)
+   25326:	8901      	s32i.n	a8, a1, 0
+   25328:	224102        	s8i	a2, a1, 2
+0002532b: 252700   call8        . +0x274 ; Capstone ; target=0x2559c
+   2532e:	b1feb7        	l32r	a11, 0x13328 (0x123ae00)
+   25331:	a801      	l32i.n	a10, a1, 0
+   25333:	c02000        	memw
+   25336:	9151b9        	l32r	a9, 0x1387c (0x45c80000)
+   25339:	a26bdf        	s32i	a10, a11, 0x37c
+0002533c: 5009fa   wfr          f0, a9 ; Capstone
+0002533f: 00a0ba   ceil.s       a10, f0, 0 ; Capstone
+00025342: 2541dc   call8        . -0x23bec ; Capstone ; target=0x1754
+00025345: 1df0     retw.n        ; Capstone
+	...

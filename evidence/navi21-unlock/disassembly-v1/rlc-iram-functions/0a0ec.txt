@@ -1,0 +1,21 @@
+
+/tmp/tmp9cmn2vyn/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000a0ec <.data+0xa0ec>:
+0000a0ec: 362100   entry        a1, 0x10 ; Capstone
+    a0ef:	61a9cd        	l32r	a6, 0xffffd794 (0xfffbfff0) ; inferred DRAM map 0x5ffec000
+    a0f2:	50e603        	rsr.ps	a5
+    a0f5:	4d00      	mov.n	a4, a0
+    a0f7:	602510        	and	a2, a5, a6
+    a0fa:	1b22      	addi.n	a2, a2, 1
+    a0fc:	20e613        	wsr.ps	a2
+    a0ff:	102000        	rsync
+    a102:	45edff        	call0	0x9fd8 ; target=0x9fd8
+    a105:	0d04      	mov.n	a0, a4
+    a107:	50e613        	wsr.ps	a5
+    a10a:	102000        	rsync
+0000a10d: 1df0     retw.n        ; Capstone
+	...

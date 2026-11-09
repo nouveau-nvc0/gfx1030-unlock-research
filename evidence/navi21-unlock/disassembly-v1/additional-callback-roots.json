@@ -1,0 +1,2480 @@
+[
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x101fc",
+    "slot": "0x115a0",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1042c",
+    "slot": "0x115a0",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1042c",
+    "slot": "0x115a4",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1042c",
+    "slot": "0x115a8",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1042c",
+    "slot": "0x115b4",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1042c",
+    "slot": "0x115b8",
+    "target": "0x1d7ec",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1042c",
+    "slot": "0x115bc",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1065c",
+    "slot": "0x115a0",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1065c",
+    "slot": "0x115cc",
+    "target": "0x1ef4c",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1065c",
+    "slot": "0x115d4",
+    "target": "0x1da98",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1065c",
+    "slot": "0x115d8",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x115e0",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x115e4",
+    "target": "0x1ef4c",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x115ec",
+    "target": "0x1da98",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x115f0",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x115f4",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x115f8",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x11614",
+    "target": "0x1da28",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x11618",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x1161c",
+    "target": "0x1d7ec",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x11620",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x11628",
+    "target": "0x1da5c",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x1162c",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x11630",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x11634",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x11638",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x1163c",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x11640",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "initial state callback range; runtime mutation not excluded",
+    "context": "0x1088c",
+    "slot": "0x11644",
+    "target": "0x1d7fc",
+    "entry_candidate": true
+  },
+  {
+    "source": "35448 registration: index1 descriptor dbec, callers29d30/29ef8",
+    "context": "0xdbec",
+    "slot": "0xdbf0",
+    "target": "0x2a710",
+    "entry_candidate": true
+  },
+  {
+    "source": "35448 registration: index1 descriptor dbec, callers29d30/29ef8",
+    "context": "0xdbec",
+    "slot": "0xdbf4",
+    "target": "0x2a378",
+    "entry_candidate": true
+  },
+  {
+    "source": "35448 registration: index1 descriptor dbec, callers29d30/29ef8",
+    "context": "0xdbec",
+    "slot": "0xdbf8",
+    "target": "0x2d104",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa5d4",
+    "target": "0x32c44",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa5d8",
+    "target": "0x2c2b0",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa5dc",
+    "target": "0x209e8",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa5e0",
+    "target": "0x2961c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa5e4",
+    "target": "0x1d37c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa5e8",
+    "target": "0x35464",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa5ec",
+    "target": "0x29d10",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa5f0",
+    "target": "0x2ddc8",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa5f4",
+    "target": "0x29bb0",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa5f8",
+    "target": "0x1bf94",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa5fc",
+    "target": "0x293ec",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa600",
+    "target": "0x29450",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa604",
+    "target": "0x2ae38",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa608",
+    "target": "0x35138",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa60c",
+    "target": "0x1c67c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa610",
+    "target": "0x2d910",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa614",
+    "target": "0x29890",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa618",
+    "target": "0x292f8",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa61c",
+    "target": "0x2acac",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa620",
+    "target": "0x1f4ec",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa624",
+    "target": "0x22d3c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa628",
+    "target": "0x3037c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa62c",
+    "target": "0x2aa60",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa630",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa634",
+    "target": "0x24ec4",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa638",
+    "target": "0x251e8",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa63c",
+    "target": "0x24b74",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa640",
+    "target": "0x24258",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa644",
+    "target": "0x243f8",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa648",
+    "target": "0x24328",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa64c",
+    "target": "0x2428c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa650",
+    "target": "0x35c70",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa654",
+    "target": "0x23150",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa658",
+    "target": "0x2490c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa65c",
+    "target": "0x20078",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa660",
+    "target": "0x35c70",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa664",
+    "target": "0x23bd0",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa668",
+    "target": "0x2ad8c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa66c",
+    "target": "0x1a55c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa670",
+    "target": "0x35c70",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa674",
+    "target": "0x20ae8",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa678",
+    "target": "0x20ab4",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa67c",
+    "target": "0x2abe8",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa680",
+    "target": "0x35c70",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa684",
+    "target": "0x21d2c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa688",
+    "target": "0x2f4dc",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa68c",
+    "target": "0x35c70",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa690",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa694",
+    "target": "0x2f42c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa698",
+    "target": "0x24604",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa69c",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa6a0",
+    "target": "0x35c70",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa6a4",
+    "target": "0x35c70",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa6a8",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa6ac",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa6b0",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa6b4",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa6b8",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa6bc",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa6c0",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa6c4",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa6c8",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa6cc",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa5d4",
+    "slot": "0xa6d0",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa6d4",
+    "target": "0x32610",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa6d8",
+    "target": "0x2b878",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa6dc",
+    "target": "0x20864",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa6e0",
+    "target": "0x294a4",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa6e4",
+    "target": "0x1d288",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa6e8",
+    "target": "0x3540c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa6ec",
+    "target": "0x29cf4",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa6f0",
+    "target": "0x2ddb0",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa6f4",
+    "target": "0x29b3c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa6f8",
+    "target": "0x1bf3c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa6fc",
+    "target": "0x29340",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa700",
+    "target": "0x2940c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa704",
+    "target": "0x2ae08",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa708",
+    "target": "0x3509c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa70c",
+    "target": "0x1c3b4",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa710",
+    "target": "0x2d8f8",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa714",
+    "target": "0x29878",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa718",
+    "target": "0x292c4",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa71c",
+    "target": "0x2ac3c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa720",
+    "target": "0x1f1b4",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa724",
+    "target": "0x34864",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa728",
+    "target": "0x2fe80",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa72c",
+    "target": "0x2a810",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa730",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa734",
+    "target": "0x24e08",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa738",
+    "target": "0x25178",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa73c",
+    "target": "0x24b30",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa740",
+    "target": "0x24158",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa744",
+    "target": "0x2423c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa748",
+    "target": "0x24198",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa74c",
+    "target": "0x2417c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa750",
+    "target": "0x35c70",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa754",
+    "target": "0x22fec",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa758",
+    "target": "0x24880",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa75c",
+    "target": "0x20050",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa760",
+    "target": "0x35c70",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa764",
+    "target": "0x23ba8",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa768",
+    "target": "0x2acfc",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa76c",
+    "target": "0x1a398",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa770",
+    "target": "0x35c70",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa774",
+    "target": "0x20aa0",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa778",
+    "target": "0x20a84",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa77c",
+    "target": "0x2ab8c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa780",
+    "target": "0x35c70",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa784",
+    "target": "0x21d14",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa788",
+    "target": "0x2f4c0",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa78c",
+    "target": "0x35c70",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa790",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa794",
+    "target": "0x2f36c",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa798",
+    "target": "0x245f0",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa79c",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa7a0",
+    "target": "0x35c70",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa7a4",
+    "target": "0x35c70",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa7a8",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa7ac",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa7b0",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa7b4",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa7b8",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa7bc",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa7c0",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa7c4",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa7c8",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa7cc",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "35a9c initial64-byte dispatch order a838..a877; mutable state not proven immutable",
+    "context": "0xa6d4",
+    "slot": "0xa7d0",
+    "target": "0x35c78",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup38d10 registers failure callback through22a0",
+    "context": "0x7818",
+    "slot": "0x7818",
+    "target": "0x19a4",
+    "entry_candidate": true
+  },
+  {
+    "source": "33e4c exit table four identical entries, selected by saved mode",
+    "context": "0x11520",
+    "slot": "0x11520",
+    "target": "0x303e0",
+    "entry_candidate": true
+  },
+  {
+    "source": "33e4c entry table four identical entries, mailbox mode bounded<4",
+    "context": "0x11530",
+    "slot": "0x11530",
+    "target": "0x303e8",
+    "entry_candidate": true
+  },
+  {
+    "source": "1ab0 bounded dispatch index<7, initial table",
+    "context": "0x772c",
+    "slot": "0x772c",
+    "target": "0x1c228",
+    "entry_candidate": true
+  },
+  {
+    "source": "1ab0 bounded dispatch index<7, initial table",
+    "context": "0x772c",
+    "slot": "0x7734",
+    "target": "0x0",
+    "entry_candidate": false
+  },
+  {
+    "source": "1ab0 bounded dispatch index<7, initial table",
+    "context": "0x772c",
+    "slot": "0x773c",
+    "target": "0x1ba60",
+    "entry_candidate": true
+  },
+  {
+    "source": "1ab0 bounded dispatch index<7, initial table",
+    "context": "0x772c",
+    "slot": "0x7744",
+    "target": "0x1b970",
+    "entry_candidate": true
+  },
+  {
+    "source": "1ab0 bounded dispatch index<7, initial table",
+    "context": "0x772c",
+    "slot": "0x774c",
+    "target": "0x1b848",
+    "entry_candidate": true
+  },
+  {
+    "source": "1ab0 bounded dispatch index<7, initial table",
+    "context": "0x772c",
+    "slot": "0x7754",
+    "target": "0x0",
+    "entry_candidate": false
+  },
+  {
+    "source": "1ab0 bounded dispatch index<7, initial table",
+    "context": "0x772c",
+    "slot": "0x775c",
+    "target": "0x1b1c0",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x7374",
+    "slot": "0x7388",
+    "target": "0x3468c",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x738c",
+    "slot": "0x73a0",
+    "target": "0x3468c",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x73a4",
+    "slot": "0x73b8",
+    "target": "0x2fe40",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x73bc",
+    "slot": "0x73d0",
+    "target": "0x343b8",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x73d4",
+    "slot": "0x73e8",
+    "target": "0x33f78",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x73ec",
+    "slot": "0x7400",
+    "target": "0x240d4",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x7404",
+    "slot": "0x7418",
+    "target": "0x23fc4",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x741c",
+    "slot": "0x7430",
+    "target": "0x23f34",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x7434",
+    "slot": "0x7448",
+    "target": "0x23eb8",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x744c",
+    "slot": "0x7460",
+    "target": "0x218b0",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x7464",
+    "slot": "0x7478",
+    "target": "0x218b0",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x747c",
+    "slot": "0x7490",
+    "target": "0x218d8",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x7494",
+    "slot": "0x74a8",
+    "target": "0x218d8",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x74ac",
+    "slot": "0x74c0",
+    "target": "0x12f0",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x74c4",
+    "slot": "0x74d8",
+    "target": "0x1ef60",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x74dc",
+    "slot": "0x74f0",
+    "target": "0x35ce0",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x74f4",
+    "slot": "0x7508",
+    "target": "0x35ce0",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x750c",
+    "slot": "0x7520",
+    "target": "0x1db34",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x7524",
+    "slot": "0x7538",
+    "target": "0x21dc8",
+    "entry_candidate": true
+  },
+  {
+    "source": "20 event descriptors, bounded initialization144c and lookup1c50",
+    "context": "0x753c",
+    "slot": "0x7550",
+    "target": "0x1a140",
+    "entry_candidate": true
+  },
+  {
+    "source": "2fde0 eight-bit loop, callback table b6d0",
+    "context": "0xb6d0",
+    "slot": "0xb6d0",
+    "target": "0x2f590",
+    "entry_candidate": true
+  },
+  {
+    "source": "2fde0 eight-bit loop, callback table b6d0",
+    "context": "0xb6d0",
+    "slot": "0xb6d4",
+    "target": "0x2f4f8",
+    "entry_candidate": true
+  },
+  {
+    "source": "2fde0 eight-bit loop, callback table b6d0",
+    "context": "0xb6d0",
+    "slot": "0xb6d8",
+    "target": "0x2fa80",
+    "entry_candidate": true
+  },
+  {
+    "source": "2fde0 eight-bit loop, callback table b6d0",
+    "context": "0xb6d0",
+    "slot": "0xb6dc",
+    "target": "0x2fe78",
+    "entry_candidate": true
+  },
+  {
+    "source": "2fde0 eight-bit loop, callback table b6d0",
+    "context": "0xb6d0",
+    "slot": "0xb6e0",
+    "target": "0x2fe78",
+    "entry_candidate": true
+  },
+  {
+    "source": "2fde0 eight-bit loop, callback table b6d0",
+    "context": "0xb6d0",
+    "slot": "0xb6e4",
+    "target": "0x2fe78",
+    "entry_candidate": true
+  },
+  {
+    "source": "2fde0 eight-bit loop, callback table b6d0",
+    "context": "0xb6d0",
+    "slot": "0xb6e8",
+    "target": "0x2fe78",
+    "entry_candidate": true
+  },
+  {
+    "source": "2fde0 eight-bit loop, callback table b6d0",
+    "context": "0xb6d0",
+    "slot": "0xb6ec",
+    "target": "0x2fe78",
+    "entry_candidate": true
+  },
+  {
+    "source": "2fd63 mode table; observed writers30dc8/30e34 bound parameter<4",
+    "context": "0x12010",
+    "slot": "0x12010",
+    "target": "0x303e8",
+    "entry_candidate": true
+  },
+  {
+    "source": "2fd63 mode table; observed writers30dc8/30e34 bound parameter<4",
+    "context": "0x12010",
+    "slot": "0x12014",
+    "target": "0x3099c",
+    "entry_candidate": true
+  },
+  {
+    "source": "2fd63 mode table; observed writers30dc8/30e34 bound parameter<4",
+    "context": "0x12010",
+    "slot": "0x12018",
+    "target": "0x303e8",
+    "entry_candidate": true
+  },
+  {
+    "source": "2fd63 mode table; observed writers30dc8/30e34 bound parameter<4",
+    "context": "0x12010",
+    "slot": "0x1201c",
+    "target": "0x303e8",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x11950",
+    "slot": "0x11954",
+    "target": "0x1d7c",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x11958",
+    "slot": "0x1195c",
+    "target": "0x1fc0",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x11960",
+    "slot": "0x11964",
+    "target": "0x1fb4",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x11968",
+    "slot": "0x1196c",
+    "target": "0x1ee0",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x11970",
+    "slot": "0x11974",
+    "target": "0x1ed4",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x11978",
+    "slot": "0x1197c",
+    "target": "0x1f94",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x11980",
+    "slot": "0x11984",
+    "target": "0x1ec8",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x11988",
+    "slot": "0x1198c",
+    "target": "0x1eec",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x11990",
+    "slot": "0x11994",
+    "target": "0x1f04",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x11998",
+    "slot": "0x1199c",
+    "target": "0x1ef8",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x119a0",
+    "slot": "0x119a4",
+    "target": "0x1fa8",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x119a8",
+    "slot": "0x119ac",
+    "target": "0x1ebc",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x119b0",
+    "slot": "0x119b4",
+    "target": "0x1eb0",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x119b8",
+    "slot": "0x119bc",
+    "target": "0x2090",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x119c0",
+    "slot": "0x119c4",
+    "target": "0x1f1c",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x119c8",
+    "slot": "0x119cc",
+    "target": "0x1b58",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x119d0",
+    "slot": "0x119d4",
+    "target": "0x1dcb0",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x119d8",
+    "slot": "0x119dc",
+    "target": "0x1dc88",
+    "entry_candidate": true
+  },
+  {
+    "source": "Startup388a0 ->37c18 IRQ table11950 terminated by ff",
+    "context": "0x119e0",
+    "slot": "0x119e4",
+    "target": "0x2eeb4",
+    "entry_candidate": true
+  },
+  {
+    "source": "2ff84 eight-iteration builder copies12110 callbacks into159e0/15a00/15a20",
+    "context": "0x12110",
+    "slot": "0x12110",
+    "target": "0x2d808",
+    "entry_candidate": true
+  },
+  {
+    "source": "2ff84 eight-iteration builder copies12110 callbacks into159e0/15a00/15a20",
+    "context": "0x12110",
+    "slot": "0x12114",
+    "target": "0x2d7e0",
+    "entry_candidate": true
+  },
+  {
+    "source": "2ff84 eight-iteration builder copies12110 callbacks into159e0/15a00/15a20",
+    "context": "0x12110",
+    "slot": "0x12118",
+    "target": "0x2d7b4",
+    "entry_candidate": true
+  },
+  {
+    "source": "2ff84 eight-iteration builder copies12110 callbacks into159e0/15a00/15a20",
+    "context": "0x12110",
+    "slot": "0x1211c",
+    "target": "0x2d78c",
+    "entry_candidate": true
+  },
+  {
+    "source": "2ff84 eight-iteration builder copies12110 callbacks into159e0/15a00/15a20",
+    "context": "0x12110",
+    "slot": "0x12120",
+    "target": "0x2d760",
+    "entry_candidate": true
+  },
+  {
+    "source": "2ff84 eight-iteration builder copies12110 callbacks into159e0/15a00/15a20",
+    "context": "0x12110",
+    "slot": "0x12124",
+    "target": "0x2d734",
+    "entry_candidate": true
+  },
+  {
+    "source": "2ff84 eight-iteration builder copies12110 callbacks into159e0/15a00/15a20",
+    "context": "0x12110",
+    "slot": "0x12128",
+    "target": "0x2d708",
+    "entry_candidate": true
+  },
+  {
+    "source": "2ff84 eight-iteration builder copies12110 callbacks into159e0/15a00/15a20",
+    "context": "0x12110",
+    "slot": "0x1212c",
+    "target": "0x2d6dc",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x1a4e0",
+    "slot": "0x9c44",
+    "target": "0x1a324",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x1a52f",
+    "slot": "0x9c44",
+    "target": "0x1a294",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x1c014",
+    "slot": "0x9c28",
+    "target": "0x1b168",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x20d61",
+    "slot": "0x9c04",
+    "target": "0x1f5cc",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x21421",
+    "slot": "0x9c08",
+    "target": "0x21b14",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x23337",
+    "slot": "0x9c30",
+    "target": "0x239a8",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x23c34",
+    "slot": "0x9c38",
+    "target": "0x23c5c",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x2427f",
+    "slot": "0x9c54",
+    "target": "0x24430",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x2434f",
+    "slot": "0x9c50",
+    "target": "0x24538",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x2460c",
+    "slot": "0x9c58",
+    "target": "0x246a0",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x24959",
+    "slot": "0x9c1c",
+    "target": "0x249dc",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x24bca",
+    "slot": "0x9c18",
+    "target": "0x24aa0",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x25076",
+    "slot": "0x9c14",
+    "target": "0x25080",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x25263",
+    "slot": "0x9c10",
+    "target": "0x25270",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x266dc",
+    "slot": "0x9c24",
+    "target": "0x2d08c",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x26f9e",
+    "slot": "0x9c0c",
+    "target": "0x27b7c",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x2de04",
+    "slot": "0x9c2c",
+    "target": "0x2dd00",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x2e033",
+    "slot": "0x9c3c",
+    "target": "0x2e96c",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x2f0fc",
+    "slot": "0x9c40",
+    "target": "0x2f124",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x30d0b",
+    "slot": "0x9c08",
+    "target": "0x21b14",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x32dea",
+    "slot": "0x9c00",
+    "target": "0x322a4",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x37abb",
+    "slot": "0x9c48",
+    "target": "0x35010",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x37d1c",
+    "slot": "0x9c34",
+    "target": "0x23d08",
+    "entry_candidate": true
+  },
+  {
+    "source": "38a94 scheduler registration: local CFG constants at all24 direct callsites",
+    "context": "0x38ce9",
+    "slot": "0x9c4c",
+    "target": "0x376ec",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1a4e0",
+    "slot": "0x9c44",
+    "target": "0x1a324",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1a52f",
+    "slot": "0x9c44",
+    "target": "0x1a294",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1bff7",
+    "slot": "0x110c0",
+    "target": "0x1bf24",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1bff7",
+    "slot": "0x110c4",
+    "target": "0x1be54",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1bff7",
+    "slot": "0x110c8",
+    "target": "0x1bd84",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1bff7",
+    "slot": "0x110cc",
+    "target": "0x2d104",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1bfff",
+    "slot": "0x1117c",
+    "target": "0x2d11c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1bfff",
+    "slot": "0x11180",
+    "target": "0x1bc6c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1bfff",
+    "slot": "0x11184",
+    "target": "0x2d10c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1bfff",
+    "slot": "0x11188",
+    "target": "0x2d104",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1c007",
+    "slot": "0x11190",
+    "target": "0x2d11c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1c007",
+    "slot": "0x11194",
+    "target": "0x1bb4c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1c007",
+    "slot": "0x11198",
+    "target": "0x2d10c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1c007",
+    "slot": "0x1119c",
+    "target": "0x2d104",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1c014",
+    "slot": "0x9c28",
+    "target": "0x1b168",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1d3ad",
+    "slot": "0x10fac",
+    "target": "0x1d0f4",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1d3ad",
+    "slot": "0x10fb0",
+    "target": "0x1d05c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1d3ad",
+    "slot": "0x10fb4",
+    "target": "0x1c948",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1d3ad",
+    "slot": "0x10fb8",
+    "target": "0x2d104",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1d3df",
+    "slot": "0x11040",
+    "target": "0x2d11c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1d3df",
+    "slot": "0x11044",
+    "target": "0x1cf18",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1d3df",
+    "slot": "0x11048",
+    "target": "0x2d10c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1d3df",
+    "slot": "0x1104c",
+    "target": "0x2d104",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1d3e7",
+    "slot": "0x11054",
+    "target": "0x2d11c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1d3e7",
+    "slot": "0x11058",
+    "target": "0x1cd18",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1d3e7",
+    "slot": "0x1105c",
+    "target": "0x2d10c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1d3e7",
+    "slot": "0x11060",
+    "target": "0x2d104",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1d448",
+    "slot": "0x10fac",
+    "target": "0x1d0f4",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1d448",
+    "slot": "0x10fb0",
+    "target": "0x1d05c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1d448",
+    "slot": "0x10fb4",
+    "target": "0x1c948",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x1d448",
+    "slot": "0x10fb8",
+    "target": "0x2d104",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x20d61",
+    "slot": "0x9c04",
+    "target": "0x1f5cc",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x21421",
+    "slot": "0x9c08",
+    "target": "0x21b14",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x23337",
+    "slot": "0x9c30",
+    "target": "0x239a8",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x23c34",
+    "slot": "0x9c38",
+    "target": "0x23c5c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2427f",
+    "slot": "0x9c54",
+    "target": "0x24430",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2434f",
+    "slot": "0x9c50",
+    "target": "0x24538",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2460c",
+    "slot": "0x9c58",
+    "target": "0x246a0",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x24959",
+    "slot": "0x9c1c",
+    "target": "0x249dc",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x24bca",
+    "slot": "0x9c18",
+    "target": "0x24aa0",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x25076",
+    "slot": "0x9c14",
+    "target": "0x25080",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x25263",
+    "slot": "0x9c10",
+    "target": "0x25270",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x266dc",
+    "slot": "0x9c24",
+    "target": "0x2d08c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x266e4",
+    "slot": "0x9cc8",
+    "target": "0x2d0cc",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x26f9e",
+    "slot": "0x9c0c",
+    "target": "0x27b7c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29663",
+    "slot": "0xe564",
+    "target": "0x29268",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29663",
+    "slot": "0xe568",
+    "target": "0x290f0",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29663",
+    "slot": "0xe56c",
+    "target": "0x29080",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29663",
+    "slot": "0xe570",
+    "target": "0x28b20",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x296f8",
+    "slot": "0xe758",
+    "target": "0x2d11c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x296f8",
+    "slot": "0xe75c",
+    "target": "0x281b8",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x296f8",
+    "slot": "0xe760",
+    "target": "0x2d10c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x296f8",
+    "slot": "0xe764",
+    "target": "0x2d104",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29700",
+    "slot": "0xe76c",
+    "target": "0x2d11c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29700",
+    "slot": "0xe770",
+    "target": "0x27eec",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29700",
+    "slot": "0xe774",
+    "target": "0x2d10c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29700",
+    "slot": "0xe778",
+    "target": "0x2d104",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29bee",
+    "slot": "0xe1d4",
+    "target": "0x2d11c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29bee",
+    "slot": "0xe1d8",
+    "target": "0x29ac4",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29bee",
+    "slot": "0xe1dc",
+    "target": "0x29a00",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29bee",
+    "slot": "0xe1e0",
+    "target": "0x2d104",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29d1d",
+    "slot": "0xdc20",
+    "target": "0x29cd0",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29d1d",
+    "slot": "0xdc24",
+    "target": "0x29c58",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29d1d",
+    "slot": "0xdc28",
+    "target": "0x29c04",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29d1d",
+    "slot": "0xdc2c",
+    "target": "0x2d104",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29d6f",
+    "slot": "0xdbec",
+    "target": "0x2d11c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29d6f",
+    "slot": "0xdbf0",
+    "target": "0x2a710",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29d6f",
+    "slot": "0xdbf4",
+    "target": "0x2a378",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29d6f",
+    "slot": "0xdbf8",
+    "target": "0x2d104",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29f70",
+    "slot": "0xdbec",
+    "target": "0x2d11c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29f70",
+    "slot": "0xdbf0",
+    "target": "0x2a710",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29f70",
+    "slot": "0xdbf4",
+    "target": "0x2a378",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x29f70",
+    "slot": "0xdbf8",
+    "target": "0x2d104",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2a963",
+    "slot": "0xdbec",
+    "target": "0x2d11c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2a963",
+    "slot": "0xdbf0",
+    "target": "0x2a710",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2a963",
+    "slot": "0xdbf4",
+    "target": "0x2a378",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2a963",
+    "slot": "0xdbf8",
+    "target": "0x2d104",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2aab2",
+    "slot": "0xdbec",
+    "target": "0x2d11c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2aab2",
+    "slot": "0xdbf0",
+    "target": "0x2a710",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2aab2",
+    "slot": "0xdbf4",
+    "target": "0x2a378",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2aab2",
+    "slot": "0xdbf8",
+    "target": "0x2d104",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2c37c",
+    "slot": "0xcd4c",
+    "target": "0x2b640",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2c37c",
+    "slot": "0xcd50",
+    "target": "0x2b46c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2c37c",
+    "slot": "0xcd54",
+    "target": "0x2b1b4",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2c37c",
+    "slot": "0xcd58",
+    "target": "0x2aea0",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2de04",
+    "slot": "0x9c2c",
+    "target": "0x2dd00",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2e033",
+    "slot": "0x9c3c",
+    "target": "0x2e96c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2f0f4",
+    "slot": "0x9ccc",
+    "target": "0x2f124",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x2f0fc",
+    "slot": "0x9c40",
+    "target": "0x2f124",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x30d0b",
+    "slot": "0x9c08",
+    "target": "0x21b14",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x32dea",
+    "slot": "0x9c00",
+    "target": "0x322a4",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x32df2",
+    "slot": "0x9cc4",
+    "target": "0x32590",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x35490",
+    "slot": "0xab44",
+    "target": "0x2d11c",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x35490",
+    "slot": "0xab48",
+    "target": "0x35390",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x35490",
+    "slot": "0xab4c",
+    "target": "0x35210",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x35490",
+    "slot": "0xab50",
+    "target": "0x2d104",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x37abb",
+    "slot": "0x9c48",
+    "target": "0x35010",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x37d1c",
+    "slot": "0x9c34",
+    "target": "0x23d08",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x38ce1",
+    "slot": "0x2648",
+    "target": "0x1df4",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x38ce9",
+    "slot": "0x9c4c",
+    "target": "0x376ec",
+    "entry_candidate": true
+  },
+  {
+    "source": "All-entry local CFG registration arguments, registered-roots-v1",
+    "context": "0x38d16",
+    "slot": "0x22a0",
+    "target": "0x19a4",
+    "entry_candidate": true
+  }
+]

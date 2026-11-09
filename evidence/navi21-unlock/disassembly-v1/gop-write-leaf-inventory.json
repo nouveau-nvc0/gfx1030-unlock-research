@@ -1,0 +1,2448 @@
+{
+  "scope": "Complete executable-section linear scan with explicit skip bytes; direct leaf references only, not indirect-call closure.",
+  "images": [
+    {
+      "variant": "baseline",
+      "image_sha256": "a9966b48d5bdfc35387eb38572b4babbf4537da8d2b2ae4796076af9ed44f54a",
+      "leaf": "0x62e8",
+      "refs": [
+        {
+          "pc": "0x638d",
+          "owner": "0x6320"
+        },
+        {
+          "pc": "0x63e8",
+          "owner": "0x6320"
+        },
+        {
+          "pc": "0x64a6",
+          "owner": "0x6468"
+        },
+        {
+          "pc": "0x64cd",
+          "owner": "0x6468"
+        },
+        {
+          "pc": "0x651d",
+          "owner": "0x6468"
+        },
+        {
+          "pc": "0x6540",
+          "owner": "0x6468"
+        },
+        {
+          "pc": "0x6592",
+          "owner": "0x6468"
+        },
+        {
+          "pc": "0x668a",
+          "owner": "0x65d4"
+        },
+        {
+          "pc": "0x66c2",
+          "owner": "0x65d4"
+        },
+        {
+          "pc": "0x6807",
+          "owner": "0x6734"
+        },
+        {
+          "pc": "0x6827",
+          "owner": "0x6734"
+        },
+        {
+          "pc": "0x6864",
+          "owner": "0x6734"
+        },
+        {
+          "pc": "0x6876",
+          "owner": "0x6734"
+        },
+        {
+          "pc": "0x68b4",
+          "owner": "0x6734"
+        }
+      ],
+      "indirect_transfers": [
+        {
+          "pc": "0x304",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x32e",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x378",
+          "instruction": "call qword ptr [rax + 0x98]",
+          "kind": "memory",
+          "displacement": 152
+        },
+        {
+          "pc": "0x3d6",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0x40f",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0x454",
+          "instruction": "call qword ptr [r9 + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x472",
+          "instruction": "call qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x48f",
+          "instruction": "call qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x4ac",
+          "instruction": "call qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x4cd",
+          "instruction": "jmp qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x59e",
+          "instruction": "call qword ptr [rax + 0x118]",
+          "kind": "memory",
+          "displacement": 280
+        },
+        {
+          "pc": "0x5c8",
+          "instruction": "call qword ptr [rax + 0x30]",
+          "kind": "memory",
+          "displacement": 48
+        },
+        {
+          "pc": "0x6ed",
+          "instruction": "call qword ptr [rax + 0x120]",
+          "kind": "memory",
+          "displacement": 288
+        },
+        {
+          "pc": "0x772",
+          "instruction": "call qword ptr [rax + 0x118]",
+          "kind": "memory",
+          "displacement": 280
+        },
+        {
+          "pc": "0x7cc",
+          "instruction": "call qword ptr [rax + 0x120]",
+          "kind": "memory",
+          "displacement": 288
+        },
+        {
+          "pc": "0x840",
+          "instruction": "call qword ptr [rax + 0x120]",
+          "kind": "memory",
+          "displacement": 288
+        },
+        {
+          "pc": "0x955",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0xd59",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0xdc7",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0xfa1",
+          "instruction": "call qword ptr [rax + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0xfbd",
+          "instruction": "call qword ptr [rax + 0x120]",
+          "kind": "memory",
+          "displacement": 288
+        },
+        {
+          "pc": "0xff8",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x102d",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x1048",
+          "instruction": "call qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x1064",
+          "instruction": "call qword ptr [rax + 8]",
+          "kind": "memory",
+          "displacement": 8
+        },
+        {
+          "pc": "0x1087",
+          "instruction": "call qword ptr [rax + 0x120]",
+          "kind": "memory",
+          "displacement": 288
+        },
+        {
+          "pc": "0x10a7",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x10b4",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x1130",
+          "instruction": "call qword ptr [rax + 0x120]",
+          "kind": "memory",
+          "displacement": 288
+        },
+        {
+          "pc": "0x1167",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x119e",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x11ef",
+          "instruction": "call qword ptr [rax + 0x120]",
+          "kind": "memory",
+          "displacement": 288
+        },
+        {
+          "pc": "0x1217",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x125e",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x127d",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x12c6",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x141f",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x144e",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0x14b0",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0x1503",
+          "instruction": "call qword ptr [rax + 0x118]",
+          "kind": "memory",
+          "displacement": 280
+        },
+        {
+          "pc": "0x1554",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0x16d7",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0x1713",
+          "instruction": "call qword ptr [rax + 0x118]",
+          "kind": "memory",
+          "displacement": 280
+        },
+        {
+          "pc": "0x1772",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x1842",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0x1952",
+          "instruction": "call qword ptr [rax + 0x118]",
+          "kind": "memory",
+          "displacement": 280
+        },
+        {
+          "pc": "0x199e",
+          "instruction": "call qword ptr [rax + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x19c5",
+          "instruction": "call qword ptr [rax + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x1a02",
+          "instruction": "call qword ptr [rax + 0x80]",
+          "kind": "memory",
+          "displacement": 128
+        },
+        {
+          "pc": "0x1cee",
+          "instruction": "call qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x1d20",
+          "instruction": "call qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x22e8",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x232c",
+          "instruction": "call qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x2374",
+          "instruction": "call qword ptr [rax]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0x2519",
+          "instruction": "call qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x2588",
+          "instruction": "call qword ptr [rax]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0x25e3",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x2626",
+          "instruction": "call qword ptr [rax + 8]",
+          "kind": "memory",
+          "displacement": 8
+        },
+        {
+          "pc": "0x46e2",
+          "instruction": "call qword ptr [rax + 0x40]",
+          "kind": "memory",
+          "displacement": 64
+        },
+        {
+          "pc": "0x4702",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x4733",
+          "instruction": "call qword ptr [rax + 0x40]",
+          "kind": "memory",
+          "displacement": 64
+        },
+        {
+          "pc": "0x474f",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x4c21",
+          "instruction": "call qword ptr [rax + 0x118]",
+          "kind": "memory",
+          "displacement": 280
+        },
+        {
+          "pc": "0x4e19",
+          "instruction": "call rbx",
+          "kind": "register",
+          "displacement": null
+        },
+        {
+          "pc": "0x4e21",
+          "instruction": "call rbx",
+          "kind": "register",
+          "displacement": null
+        },
+        {
+          "pc": "0x58b9",
+          "instruction": "call qword ptr [rax + 0x70]",
+          "kind": "memory",
+          "displacement": 112
+        },
+        {
+          "pc": "0x5922",
+          "instruction": "call qword ptr [rax]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0x595d",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x5a39",
+          "instruction": "call qword ptr [r10]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0x5a69",
+          "instruction": "call qword ptr [rax + 8]",
+          "kind": "memory",
+          "displacement": 8
+        },
+        {
+          "pc": "0x5afe",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x5b21",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x5b44",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x5b7d",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x5b8f",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x5c10",
+          "instruction": "call qword ptr [rax + 0x40]",
+          "kind": "memory",
+          "displacement": 64
+        },
+        {
+          "pc": "0x5c34",
+          "instruction": "call qword ptr [r9 + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x5c51",
+          "instruction": "call qword ptr [r9 + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x5ca3",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x5cb0",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x5d77",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x5da3",
+          "instruction": "call qword ptr [rax + 8]",
+          "kind": "memory",
+          "displacement": 8
+        },
+        {
+          "pc": "0x5dbe",
+          "instruction": "call qword ptr [rax]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0x5df0",
+          "instruction": "call qword ptr [rax + 8]",
+          "kind": "memory",
+          "displacement": 8
+        },
+        {
+          "pc": "0x5e40",
+          "instruction": "call qword ptr [rdi + 0x70]",
+          "kind": "memory",
+          "displacement": 112
+        },
+        {
+          "pc": "0x5e6b",
+          "instruction": "call qword ptr [rdi + 0x30]",
+          "kind": "memory",
+          "displacement": 48
+        },
+        {
+          "pc": "0x5ed8",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x5efb",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x5f7b",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x6144",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x6294",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x62d9",
+          "instruction": "call qword ptr [rax + 0x58]",
+          "kind": "memory",
+          "displacement": 88
+        },
+        {
+          "pc": "0x6316",
+          "instruction": "call qword ptr [r10 + 0x18]",
+          "kind": "memory",
+          "displacement": 24
+        },
+        {
+          "pc": "0x63bf",
+          "instruction": "call qword ptr [r11 + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x641d",
+          "instruction": "call qword ptr [r11 + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x6457",
+          "instruction": "call qword ptr [r10 + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x64fc",
+          "instruction": "call qword ptr [r11 + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x6571",
+          "instruction": "call qword ptr [r11 + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x65c1",
+          "instruction": "call qword ptr [rax + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x65f8",
+          "instruction": "call qword ptr [rbx + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x6615",
+          "instruction": "call qword ptr [rbx + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x663f",
+          "instruction": "call qword ptr [rbx + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x666e",
+          "instruction": "call qword ptr [rbx + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x66b2",
+          "instruction": "call qword ptr [rbx + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x66e8",
+          "instruction": "call qword ptr [rbx + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x6707",
+          "instruction": "call qword ptr [rbx + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x671a",
+          "instruction": "call qword ptr [rbx + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x6798",
+          "instruction": "call qword ptr [rbx + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x67b5",
+          "instruction": "call qword ptr [rbx + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x67dd",
+          "instruction": "call qword ptr [rbx + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x6849",
+          "instruction": "call qword ptr [rbx + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x6898",
+          "instruction": "call qword ptr [rbx + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x68d9",
+          "instruction": "call qword ptr [rbx + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x68ea",
+          "instruction": "call qword ptr [rbx + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x6a85",
+          "instruction": "call qword ptr [r10 + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x6ae9",
+          "instruction": "call qword ptr [r10 + 0x18]",
+          "kind": "memory",
+          "displacement": 24
+        },
+        {
+          "pc": "0x6b71",
+          "instruction": "call qword ptr [rax + 0x40]",
+          "kind": "memory",
+          "displacement": 64
+        },
+        {
+          "pc": "0x6e30",
+          "instruction": "call qword ptr [rdi + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x6e3f",
+          "instruction": "call qword ptr [rdx + 0xf8]",
+          "kind": "memory",
+          "displacement": 248
+        },
+        {
+          "pc": "0x6f69",
+          "instruction": "call qword ptr [rax + 0x18]",
+          "kind": "memory",
+          "displacement": 24
+        },
+        {
+          "pc": "0x7070",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x7128",
+          "instruction": "call qword ptr [rax + 0x50]",
+          "kind": "memory",
+          "displacement": 80
+        },
+        {
+          "pc": "0x71af",
+          "instruction": "call qword ptr [rax + 0x50]",
+          "kind": "memory",
+          "displacement": 80
+        },
+        {
+          "pc": "0x71fb",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x72b3",
+          "instruction": "call qword ptr [rax + 0x50]",
+          "kind": "memory",
+          "displacement": 80
+        },
+        {
+          "pc": "0x7345",
+          "instruction": "call qword ptr [rax + 0x68]",
+          "kind": "memory",
+          "displacement": 104
+        },
+        {
+          "pc": "0x7372",
+          "instruction": "call qword ptr [rax + 0x50]",
+          "kind": "memory",
+          "displacement": 80
+        },
+        {
+          "pc": "0x73c6",
+          "instruction": "call qword ptr [rax + 0x20]",
+          "kind": "memory",
+          "displacement": 32
+        },
+        {
+          "pc": "0x74e2",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x7565",
+          "instruction": "call qword ptr [rax + 0x20]",
+          "kind": "memory",
+          "displacement": 32
+        },
+        {
+          "pc": "0x757c",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x7599",
+          "instruction": "call qword ptr [rax + 0x50]",
+          "kind": "memory",
+          "displacement": 80
+        },
+        {
+          "pc": "0x7723",
+          "instruction": "call qword ptr [rax + 0x40]",
+          "kind": "memory",
+          "displacement": 64
+        },
+        {
+          "pc": "0x7745",
+          "instruction": "call qword ptr [rax + 0x168]",
+          "kind": "memory",
+          "displacement": 360
+        },
+        {
+          "pc": "0x7765",
+          "instruction": "call qword ptr [rax + 0x40]",
+          "kind": "memory",
+          "displacement": 64
+        },
+        {
+          "pc": "0x778b",
+          "instruction": "call qword ptr [rax + 0x168]",
+          "kind": "memory",
+          "displacement": 360
+        },
+        {
+          "pc": "0x785e",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x7874",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x7890",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x789e",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x7bf3",
+          "instruction": "call qword ptr [rax + 0x30]",
+          "kind": "memory",
+          "displacement": 48
+        },
+        {
+          "pc": "0x7c39",
+          "instruction": "call qword ptr [rax + 0x30]",
+          "kind": "memory",
+          "displacement": 48
+        },
+        {
+          "pc": "0x7c81",
+          "instruction": "call qword ptr [rax + 0x30]",
+          "kind": "memory",
+          "displacement": 48
+        },
+        {
+          "pc": "0x7cc0",
+          "instruction": "call qword ptr [r10 + 0x38]",
+          "kind": "memory",
+          "displacement": 56
+        },
+        {
+          "pc": "0x7cfa",
+          "instruction": "call qword ptr [r10 + 0x38]",
+          "kind": "memory",
+          "displacement": 56
+        },
+        {
+          "pc": "0x7d32",
+          "instruction": "call qword ptr [r10 + 0x38]",
+          "kind": "memory",
+          "displacement": 56
+        },
+        {
+          "pc": "0x7d76",
+          "instruction": "call qword ptr [rax + 0x20]",
+          "kind": "memory",
+          "displacement": 32
+        },
+        {
+          "pc": "0x7dc3",
+          "instruction": "call qword ptr [rax + 0x20]",
+          "kind": "memory",
+          "displacement": 32
+        },
+        {
+          "pc": "0x7e15",
+          "instruction": "call qword ptr [rax + 0x20]",
+          "kind": "memory",
+          "displacement": 32
+        },
+        {
+          "pc": "0x7e5a",
+          "instruction": "call qword ptr [r10 + 0x28]",
+          "kind": "memory",
+          "displacement": 40
+        },
+        {
+          "pc": "0x7e97",
+          "instruction": "call qword ptr [r10 + 0x28]",
+          "kind": "memory",
+          "displacement": 40
+        },
+        {
+          "pc": "0x7ed5",
+          "instruction": "call qword ptr [r10 + 0x28]",
+          "kind": "memory",
+          "displacement": 40
+        },
+        {
+          "pc": "0x7fa6",
+          "instruction": "call qword ptr [rax + 0xf8]",
+          "kind": "memory",
+          "displacement": 248
+        },
+        {
+          "pc": "0x8976",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x8a18",
+          "instruction": "call qword ptr [r12 + rdx*2]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0x8d91",
+          "instruction": "call qword ptr [rdx + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x8f86",
+          "instruction": "call qword ptr [rdx + rsi]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0x9023",
+          "instruction": "call qword ptr [rdx + rax*8 + 0xba10]",
+          "kind": "memory",
+          "displacement": 47632
+        },
+        {
+          "pc": "0x9044",
+          "instruction": "call qword ptr [rdx + rax*8 + 0xba90]",
+          "kind": "memory",
+          "displacement": 47760
+        },
+        {
+          "pc": "0x9163",
+          "instruction": "call qword ptr [rdx + rax*8 + 0xba50]",
+          "kind": "memory",
+          "displacement": 47696
+        },
+        {
+          "pc": "0x917d",
+          "instruction": "call qword ptr [rdx + rax*8 + 0xbad0]",
+          "kind": "memory",
+          "displacement": 47824
+        },
+        {
+          "pc": "0x932a",
+          "instruction": "jmp qword ptr [rdx + rax*8]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0x9348",
+          "instruction": "call qword ptr [rdi + rax*8 + 0xbb80]",
+          "kind": "memory",
+          "displacement": 48000
+        },
+        {
+          "pc": "0x9359",
+          "instruction": "call qword ptr [rdi + rax*8 + 0xbbe0]",
+          "kind": "memory",
+          "displacement": 48096
+        },
+        {
+          "pc": "0x938e",
+          "instruction": "call qword ptr [rdi + rax*8 + 0xbb80]",
+          "kind": "memory",
+          "displacement": 48000
+        },
+        {
+          "pc": "0x939a",
+          "instruction": "call qword ptr [rdi + rax*8 + 0xbbb0]",
+          "kind": "memory",
+          "displacement": 48048
+        },
+        {
+          "pc": "0x93a8",
+          "instruction": "call qword ptr [rdi + rax*8 + 0xbbe0]",
+          "kind": "memory",
+          "displacement": 48096
+        },
+        {
+          "pc": "0x942e",
+          "instruction": "jmp rax",
+          "kind": "register",
+          "displacement": null
+        },
+        {
+          "pc": "0x9451",
+          "instruction": "call qword ptr [rsi + rax*8 + 0xbb80]",
+          "kind": "memory",
+          "displacement": 48000
+        },
+        {
+          "pc": "0x946d",
+          "instruction": "call qword ptr [rsi + rax*8 + 0xbb10]",
+          "kind": "memory",
+          "displacement": 47888
+        },
+        {
+          "pc": "0x947e",
+          "instruction": "call qword ptr [rsi + rax*8 + 0xbbe0]",
+          "kind": "memory",
+          "displacement": 48096
+        },
+        {
+          "pc": "0x9504",
+          "instruction": "jmp rax",
+          "kind": "register",
+          "displacement": null
+        },
+        {
+          "pc": "0x9569",
+          "instruction": "jmp qword ptr [r8 + rax*8 + 0xbb50]",
+          "kind": "memory",
+          "displacement": 47952
+        },
+        {
+          "pc": "0x95cf",
+          "instruction": "jmp qword ptr [r8 + rax*8 + 0xbb50]",
+          "kind": "memory",
+          "displacement": 47952
+        },
+        {
+          "pc": "0x9633",
+          "instruction": "jmp qword ptr [r8 + rax*8 + 0xbb50]",
+          "kind": "memory",
+          "displacement": 47952
+        },
+        {
+          "pc": "0x96d8",
+          "instruction": "jmp qword ptr [r9 + rax*8 + 0xbb50]",
+          "kind": "memory",
+          "displacement": 47952
+        },
+        {
+          "pc": "0x977c",
+          "instruction": "jmp qword ptr [r9 + rax*8 + 0xbb50]",
+          "kind": "memory",
+          "displacement": 47952
+        },
+        {
+          "pc": "0x981e",
+          "instruction": "jmp qword ptr [r9 + rax*8 + 0xbb50]",
+          "kind": "memory",
+          "displacement": 47952
+        },
+        {
+          "pc": "0x98c2",
+          "instruction": "jmp qword ptr [r9 + rax*8 + 0xbb50]",
+          "kind": "memory",
+          "displacement": 47952
+        },
+        {
+          "pc": "0x9ae0",
+          "instruction": "call qword ptr [rdi + rax*8 + 0xbb80]",
+          "kind": "memory",
+          "displacement": 48000
+        },
+        {
+          "pc": "0x9b23",
+          "instruction": "jmp rax",
+          "kind": "register",
+          "displacement": null
+        },
+        {
+          "pc": "0x9b5c",
+          "instruction": "call qword ptr [rsi + rax*8 + 0xbb80]",
+          "kind": "memory",
+          "displacement": 48000
+        },
+        {
+          "pc": "0x9bca",
+          "instruction": "jmp rax",
+          "kind": "register",
+          "displacement": null
+        },
+        {
+          "pc": "0x9c4c",
+          "instruction": "call qword ptr [rdi + rax*8 + 0xbbe0]",
+          "kind": "memory",
+          "displacement": 48096
+        },
+        {
+          "pc": "0x9ce6",
+          "instruction": "call qword ptr [rdx + rax*8]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0xb2d5",
+          "instruction": "call qword ptr [rax + 0x40]",
+          "kind": "memory",
+          "displacement": 64
+        },
+        {
+          "pc": "0xb5c2",
+          "instruction": "call qword ptr [rdx + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0xb7d5",
+          "instruction": "call qword ptr [rax]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0xb7f2",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        }
+      ],
+      "skipped": [
+        {
+          "rva": "0xb8bf",
+          "bytes": "00"
+        }
+      ],
+      "decoded_bytes": 46624,
+      "executable_bytes": 46624
+    },
+    {
+      "variant": "candidate",
+      "image_sha256": "9a68a83c01767545b9ba1713468731d6db1ea77946a142cbcbb4b4213e08674a",
+      "leaf": "0x4e54",
+      "refs": [
+        {
+          "pc": "0x4ef9",
+          "owner": "0x4e8c"
+        },
+        {
+          "pc": "0x4f54",
+          "owner": "0x4e8c"
+        },
+        {
+          "pc": "0x5012",
+          "owner": "0x4fd4"
+        },
+        {
+          "pc": "0x5039",
+          "owner": "0x4fd4"
+        },
+        {
+          "pc": "0x5089",
+          "owner": "0x4fd4"
+        },
+        {
+          "pc": "0x50ac",
+          "owner": "0x4fd4"
+        },
+        {
+          "pc": "0x50fe",
+          "owner": "0x4fd4"
+        },
+        {
+          "pc": "0x520c",
+          "owner": "0x5140"
+        },
+        {
+          "pc": "0x523f",
+          "owner": "0x5140"
+        },
+        {
+          "pc": "0x52ab",
+          "owner": "0x5140"
+        },
+        {
+          "pc": "0x52cb",
+          "owner": "0x5140"
+        },
+        {
+          "pc": "0x5308",
+          "owner": "0x5140"
+        },
+        {
+          "pc": "0x5315",
+          "owner": "0x5140"
+        },
+        {
+          "pc": "0x5352",
+          "owner": "0x5140"
+        },
+        {
+          "pc": "0x7f43",
+          "owner": "0x7e28"
+        },
+        {
+          "pc": "0x7f79",
+          "owner": "0x7e28"
+        }
+      ],
+      "indirect_transfers": [
+        {
+          "pc": "0x304",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x32e",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x378",
+          "instruction": "call qword ptr [rax + 0x98]",
+          "kind": "memory",
+          "displacement": 152
+        },
+        {
+          "pc": "0x3d6",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0x40f",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0x454",
+          "instruction": "call qword ptr [r9 + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x472",
+          "instruction": "call qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x48f",
+          "instruction": "call qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x4ac",
+          "instruction": "call qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x4cd",
+          "instruction": "jmp qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x5c5",
+          "instruction": "call qword ptr [rax + 0x118]",
+          "kind": "memory",
+          "displacement": 280
+        },
+        {
+          "pc": "0x5ef",
+          "instruction": "call qword ptr [rax + 0x30]",
+          "kind": "memory",
+          "displacement": 48
+        },
+        {
+          "pc": "0x723",
+          "instruction": "call qword ptr [rax + 0x120]",
+          "kind": "memory",
+          "displacement": 288
+        },
+        {
+          "pc": "0x7ae",
+          "instruction": "call qword ptr [rax + 0x118]",
+          "kind": "memory",
+          "displacement": 280
+        },
+        {
+          "pc": "0x808",
+          "instruction": "call qword ptr [rax + 0x120]",
+          "kind": "memory",
+          "displacement": 288
+        },
+        {
+          "pc": "0x8ba",
+          "instruction": "call qword ptr [rax + 0x120]",
+          "kind": "memory",
+          "displacement": 288
+        },
+        {
+          "pc": "0x9c9",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0xd6c",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0xdda",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0xfb5",
+          "instruction": "call qword ptr [rax + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0xfd1",
+          "instruction": "call qword ptr [rax + 0x120]",
+          "kind": "memory",
+          "displacement": 288
+        },
+        {
+          "pc": "0x100c",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x1041",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x105c",
+          "instruction": "call qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x1078",
+          "instruction": "call qword ptr [rax + 8]",
+          "kind": "memory",
+          "displacement": 8
+        },
+        {
+          "pc": "0x109b",
+          "instruction": "call qword ptr [rax + 0x120]",
+          "kind": "memory",
+          "displacement": 288
+        },
+        {
+          "pc": "0x10bb",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x10c8",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x1144",
+          "instruction": "call qword ptr [rax + 0x120]",
+          "kind": "memory",
+          "displacement": 288
+        },
+        {
+          "pc": "0x117b",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x11b2",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x1203",
+          "instruction": "call qword ptr [rax + 0x120]",
+          "kind": "memory",
+          "displacement": 288
+        },
+        {
+          "pc": "0x122b",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x1272",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x1291",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x12da",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x1433",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x1462",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0x14c4",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0x1517",
+          "instruction": "call qword ptr [rax + 0x118]",
+          "kind": "memory",
+          "displacement": 280
+        },
+        {
+          "pc": "0x1568",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0x16eb",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0x1727",
+          "instruction": "call qword ptr [rax + 0x118]",
+          "kind": "memory",
+          "displacement": 280
+        },
+        {
+          "pc": "0x1786",
+          "instruction": "call qword ptr [rax + 0x150]",
+          "kind": "memory",
+          "displacement": 336
+        },
+        {
+          "pc": "0x1856",
+          "instruction": "call qword ptr [rax + 0x148]",
+          "kind": "memory",
+          "displacement": 328
+        },
+        {
+          "pc": "0x1966",
+          "instruction": "call qword ptr [rax + 0x118]",
+          "kind": "memory",
+          "displacement": 280
+        },
+        {
+          "pc": "0x19b2",
+          "instruction": "call qword ptr [rax + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x19d9",
+          "instruction": "call qword ptr [rax + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x1a16",
+          "instruction": "call qword ptr [rax + 0x80]",
+          "kind": "memory",
+          "displacement": 128
+        },
+        {
+          "pc": "0x1d02",
+          "instruction": "call qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x1d34",
+          "instruction": "call qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x22fc",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x2340",
+          "instruction": "call qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x2388",
+          "instruction": "call qword ptr [rax]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0x252d",
+          "instruction": "call qword ptr [rax + 0x140]",
+          "kind": "memory",
+          "displacement": 320
+        },
+        {
+          "pc": "0x259c",
+          "instruction": "call qword ptr [rax]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0x25f7",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x263a",
+          "instruction": "call qword ptr [rax + 8]",
+          "kind": "memory",
+          "displacement": 8
+        },
+        {
+          "pc": "0x46fe",
+          "instruction": "call qword ptr [rax + 0x40]",
+          "kind": "memory",
+          "displacement": 64
+        },
+        {
+          "pc": "0x471e",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x474f",
+          "instruction": "call qword ptr [rax + 0x40]",
+          "kind": "memory",
+          "displacement": 64
+        },
+        {
+          "pc": "0x476b",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x4c3b",
+          "instruction": "call qword ptr [rax + 0x118]",
+          "kind": "memory",
+          "displacement": 280
+        },
+        {
+          "pc": "0x4e31",
+          "instruction": "call rbx",
+          "kind": "register",
+          "displacement": null
+        },
+        {
+          "pc": "0x4e39",
+          "instruction": "call rbx",
+          "kind": "register",
+          "displacement": null
+        },
+        {
+          "pc": "0x4e82",
+          "instruction": "call qword ptr [r10 + 0x18]",
+          "kind": "memory",
+          "displacement": 24
+        },
+        {
+          "pc": "0x4f2b",
+          "instruction": "call qword ptr [r11 + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x4f89",
+          "instruction": "call qword ptr [r11 + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x4fc3",
+          "instruction": "call qword ptr [r10 + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x5068",
+          "instruction": "call qword ptr [r11 + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x50dd",
+          "instruction": "call qword ptr [r11 + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x512d",
+          "instruction": "call qword ptr [rax + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x5186",
+          "instruction": "call qword ptr [rbx + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x51a1",
+          "instruction": "call qword ptr [rbx + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x51ca",
+          "instruction": "call qword ptr [rbx + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x5233",
+          "instruction": "call qword ptr [rbx + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x5266",
+          "instruction": "call qword ptr [rbx + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x5284",
+          "instruction": "call qword ptr [rbx + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x52ed",
+          "instruction": "call qword ptr [rbx + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x5337",
+          "instruction": "call qword ptr [rbx + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x5377",
+          "instruction": "call qword ptr [rbx + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x5387",
+          "instruction": "call qword ptr [rbx + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x60a1",
+          "instruction": "call qword ptr [rax + 0x70]",
+          "kind": "memory",
+          "displacement": 112
+        },
+        {
+          "pc": "0x610a",
+          "instruction": "call qword ptr [rax]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0x6145",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x6221",
+          "instruction": "call qword ptr [r10]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0x6251",
+          "instruction": "call qword ptr [rax + 8]",
+          "kind": "memory",
+          "displacement": 8
+        },
+        {
+          "pc": "0x62e6",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x6309",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x632c",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x6365",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x6377",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x63f8",
+          "instruction": "call qword ptr [rax + 0x40]",
+          "kind": "memory",
+          "displacement": 64
+        },
+        {
+          "pc": "0x641c",
+          "instruction": "call qword ptr [r9 + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x6439",
+          "instruction": "call qword ptr [r9 + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x648b",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x6498",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x655f",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x658b",
+          "instruction": "call qword ptr [rax + 8]",
+          "kind": "memory",
+          "displacement": 8
+        },
+        {
+          "pc": "0x65a6",
+          "instruction": "call qword ptr [rax]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0x65d8",
+          "instruction": "call qword ptr [rax + 8]",
+          "kind": "memory",
+          "displacement": 8
+        },
+        {
+          "pc": "0x6628",
+          "instruction": "call qword ptr [rdi + 0x70]",
+          "kind": "memory",
+          "displacement": 112
+        },
+        {
+          "pc": "0x6653",
+          "instruction": "call qword ptr [rdi + 0x30]",
+          "kind": "memory",
+          "displacement": 48
+        },
+        {
+          "pc": "0x66c0",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x66e3",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x6763",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x692c",
+          "instruction": "call qword ptr [rax + 0x160]",
+          "kind": "memory",
+          "displacement": 352
+        },
+        {
+          "pc": "0x6a7c",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x6ac1",
+          "instruction": "call qword ptr [rax + 0x58]",
+          "kind": "memory",
+          "displacement": 88
+        },
+        {
+          "pc": "0x6c55",
+          "instruction": "call qword ptr [r10 + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x6cb9",
+          "instruction": "call qword ptr [r10 + 0x18]",
+          "kind": "memory",
+          "displacement": 24
+        },
+        {
+          "pc": "0x6d41",
+          "instruction": "call qword ptr [rax + 0x40]",
+          "kind": "memory",
+          "displacement": 64
+        },
+        {
+          "pc": "0x6fe9",
+          "instruction": "call qword ptr [rdi + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x6ff8",
+          "instruction": "call qword ptr [rdx + 0xf8]",
+          "kind": "memory",
+          "displacement": 248
+        },
+        {
+          "pc": "0x7121",
+          "instruction": "call qword ptr [rax + 0x18]",
+          "kind": "memory",
+          "displacement": 24
+        },
+        {
+          "pc": "0x7228",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x72d1",
+          "instruction": "call qword ptr [rax + 0x50]",
+          "kind": "memory",
+          "displacement": 80
+        },
+        {
+          "pc": "0x738b",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x7434",
+          "instruction": "call qword ptr [rax + 0x50]",
+          "kind": "memory",
+          "displacement": 80
+        },
+        {
+          "pc": "0x74c6",
+          "instruction": "call qword ptr [rax + 0x68]",
+          "kind": "memory",
+          "displacement": 104
+        },
+        {
+          "pc": "0x74e4",
+          "instruction": "call qword ptr [rax + 0x50]",
+          "kind": "memory",
+          "displacement": 80
+        },
+        {
+          "pc": "0x752e",
+          "instruction": "call qword ptr [rax + 0x20]",
+          "kind": "memory",
+          "displacement": 32
+        },
+        {
+          "pc": "0x764a",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x76be",
+          "instruction": "call qword ptr [rax + 0x20]",
+          "kind": "memory",
+          "displacement": 32
+        },
+        {
+          "pc": "0x76d5",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x76f2",
+          "instruction": "call qword ptr [rax + 0x50]",
+          "kind": "memory",
+          "displacement": 80
+        },
+        {
+          "pc": "0x787b",
+          "instruction": "call qword ptr [rax + 0x40]",
+          "kind": "memory",
+          "displacement": 64
+        },
+        {
+          "pc": "0x789d",
+          "instruction": "call qword ptr [rax + 0x168]",
+          "kind": "memory",
+          "displacement": 360
+        },
+        {
+          "pc": "0x78bd",
+          "instruction": "call qword ptr [rax + 0x40]",
+          "kind": "memory",
+          "displacement": 64
+        },
+        {
+          "pc": "0x78e3",
+          "instruction": "call qword ptr [rax + 0x168]",
+          "kind": "memory",
+          "displacement": 360
+        },
+        {
+          "pc": "0x79b6",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x79cc",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x79e8",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x79f6",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x7aeb",
+          "instruction": "call qword ptr [rax + 0x30]",
+          "kind": "memory",
+          "displacement": 48
+        },
+        {
+          "pc": "0x7b31",
+          "instruction": "call qword ptr [rax + 0x30]",
+          "kind": "memory",
+          "displacement": 48
+        },
+        {
+          "pc": "0x7b79",
+          "instruction": "call qword ptr [rax + 0x30]",
+          "kind": "memory",
+          "displacement": 48
+        },
+        {
+          "pc": "0x7bb8",
+          "instruction": "call qword ptr [r10 + 0x38]",
+          "kind": "memory",
+          "displacement": 56
+        },
+        {
+          "pc": "0x7bf2",
+          "instruction": "call qword ptr [r10 + 0x38]",
+          "kind": "memory",
+          "displacement": 56
+        },
+        {
+          "pc": "0x7c2a",
+          "instruction": "call qword ptr [r10 + 0x38]",
+          "kind": "memory",
+          "displacement": 56
+        },
+        {
+          "pc": "0x7c6e",
+          "instruction": "call qword ptr [rax + 0x20]",
+          "kind": "memory",
+          "displacement": 32
+        },
+        {
+          "pc": "0x7cbb",
+          "instruction": "call qword ptr [rax + 0x20]",
+          "kind": "memory",
+          "displacement": 32
+        },
+        {
+          "pc": "0x7d0d",
+          "instruction": "call qword ptr [rax + 0x20]",
+          "kind": "memory",
+          "displacement": 32
+        },
+        {
+          "pc": "0x7d52",
+          "instruction": "call qword ptr [r10 + 0x28]",
+          "kind": "memory",
+          "displacement": 40
+        },
+        {
+          "pc": "0x7d8f",
+          "instruction": "call qword ptr [r10 + 0x28]",
+          "kind": "memory",
+          "displacement": 40
+        },
+        {
+          "pc": "0x7dcd",
+          "instruction": "call qword ptr [r10 + 0x28]",
+          "kind": "memory",
+          "displacement": 40
+        },
+        {
+          "pc": "0x7ea8",
+          "instruction": "call qword ptr [rbx + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x7ec6",
+          "instruction": "call qword ptr [rbx + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x7ef2",
+          "instruction": "call qword ptr [rbx + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x7f24",
+          "instruction": "call qword ptr [rbx + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x7f66",
+          "instruction": "call qword ptr [rbx + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x7f9c",
+          "instruction": "call qword ptr [rbx + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x7fbe",
+          "instruction": "call qword ptr [rbx + 0x10]",
+          "kind": "memory",
+          "displacement": 16
+        },
+        {
+          "pc": "0x7fcf",
+          "instruction": "call qword ptr [rbx + 0x78]",
+          "kind": "memory",
+          "displacement": 120
+        },
+        {
+          "pc": "0x7fea",
+          "instruction": "call qword ptr [rax + 0xf8]",
+          "kind": "memory",
+          "displacement": 248
+        },
+        {
+          "pc": "0x89ae",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x8a50",
+          "instruction": "call qword ptr [r12 + rdx*2]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0x8dc9",
+          "instruction": "call qword ptr [rdx + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0x8fc2",
+          "instruction": "call qword ptr [rdx + rsi]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0x905f",
+          "instruction": "call qword ptr [rdx + rax*8 + 0xba50]",
+          "kind": "memory",
+          "displacement": 47696
+        },
+        {
+          "pc": "0x9080",
+          "instruction": "call qword ptr [rdx + rax*8 + 0xbad0]",
+          "kind": "memory",
+          "displacement": 47824
+        },
+        {
+          "pc": "0x919f",
+          "instruction": "call qword ptr [rdx + rax*8 + 0xba90]",
+          "kind": "memory",
+          "displacement": 47760
+        },
+        {
+          "pc": "0x91b9",
+          "instruction": "call qword ptr [rdx + rax*8 + 0xbb10]",
+          "kind": "memory",
+          "displacement": 47888
+        },
+        {
+          "pc": "0x9366",
+          "instruction": "jmp qword ptr [rdx + rax*8]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0x9384",
+          "instruction": "call qword ptr [rdi + rax*8 + 0xbbc0]",
+          "kind": "memory",
+          "displacement": 48064
+        },
+        {
+          "pc": "0x9395",
+          "instruction": "call qword ptr [rdi + rax*8 + 0xbc20]",
+          "kind": "memory",
+          "displacement": 48160
+        },
+        {
+          "pc": "0x93ca",
+          "instruction": "call qword ptr [rdi + rax*8 + 0xbbc0]",
+          "kind": "memory",
+          "displacement": 48064
+        },
+        {
+          "pc": "0x93d6",
+          "instruction": "call qword ptr [rdi + rax*8 + 0xbbf0]",
+          "kind": "memory",
+          "displacement": 48112
+        },
+        {
+          "pc": "0x93e4",
+          "instruction": "call qword ptr [rdi + rax*8 + 0xbc20]",
+          "kind": "memory",
+          "displacement": 48160
+        },
+        {
+          "pc": "0x946a",
+          "instruction": "jmp rax",
+          "kind": "register",
+          "displacement": null
+        },
+        {
+          "pc": "0x948d",
+          "instruction": "call qword ptr [rsi + rax*8 + 0xbbc0]",
+          "kind": "memory",
+          "displacement": 48064
+        },
+        {
+          "pc": "0x94a9",
+          "instruction": "call qword ptr [rsi + rax*8 + 0xbb50]",
+          "kind": "memory",
+          "displacement": 47952
+        },
+        {
+          "pc": "0x94ba",
+          "instruction": "call qword ptr [rsi + rax*8 + 0xbc20]",
+          "kind": "memory",
+          "displacement": 48160
+        },
+        {
+          "pc": "0x9540",
+          "instruction": "jmp rax",
+          "kind": "register",
+          "displacement": null
+        },
+        {
+          "pc": "0x95a5",
+          "instruction": "jmp qword ptr [r8 + rax*8 + 0xbb90]",
+          "kind": "memory",
+          "displacement": 48016
+        },
+        {
+          "pc": "0x960b",
+          "instruction": "jmp qword ptr [r8 + rax*8 + 0xbb90]",
+          "kind": "memory",
+          "displacement": 48016
+        },
+        {
+          "pc": "0x966f",
+          "instruction": "jmp qword ptr [r8 + rax*8 + 0xbb90]",
+          "kind": "memory",
+          "displacement": 48016
+        },
+        {
+          "pc": "0x9714",
+          "instruction": "jmp qword ptr [r9 + rax*8 + 0xbb90]",
+          "kind": "memory",
+          "displacement": 48016
+        },
+        {
+          "pc": "0x97b8",
+          "instruction": "jmp qword ptr [r9 + rax*8 + 0xbb90]",
+          "kind": "memory",
+          "displacement": 48016
+        },
+        {
+          "pc": "0x985a",
+          "instruction": "jmp qword ptr [r9 + rax*8 + 0xbb90]",
+          "kind": "memory",
+          "displacement": 48016
+        },
+        {
+          "pc": "0x98fe",
+          "instruction": "jmp qword ptr [r9 + rax*8 + 0xbb90]",
+          "kind": "memory",
+          "displacement": 48016
+        },
+        {
+          "pc": "0x9b1c",
+          "instruction": "call qword ptr [rdi + rax*8 + 0xbbc0]",
+          "kind": "memory",
+          "displacement": 48064
+        },
+        {
+          "pc": "0x9b5f",
+          "instruction": "jmp rax",
+          "kind": "register",
+          "displacement": null
+        },
+        {
+          "pc": "0x9b98",
+          "instruction": "call qword ptr [rsi + rax*8 + 0xbbc0]",
+          "kind": "memory",
+          "displacement": 48064
+        },
+        {
+          "pc": "0x9c06",
+          "instruction": "jmp rax",
+          "kind": "register",
+          "displacement": null
+        },
+        {
+          "pc": "0x9c88",
+          "instruction": "call qword ptr [rdi + rax*8 + 0xbc20]",
+          "kind": "memory",
+          "displacement": 48160
+        },
+        {
+          "pc": "0x9d22",
+          "instruction": "call qword ptr [rdx + rax*8]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0xb30d",
+          "instruction": "call qword ptr [rax + 0x40]",
+          "kind": "memory",
+          "displacement": 64
+        },
+        {
+          "pc": "0xb5fa",
+          "instruction": "call qword ptr [rdx + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        },
+        {
+          "pc": "0xb80d",
+          "instruction": "call qword ptr [rax]",
+          "kind": "memory",
+          "displacement": 0
+        },
+        {
+          "pc": "0xb82a",
+          "instruction": "call qword ptr [rax + 0x48]",
+          "kind": "memory",
+          "displacement": 72
+        }
+      ],
+      "skipped": [
+        {
+          "rva": "0xb8ff",
+          "bytes": "00"
+        }
+      ],
+      "decoded_bytes": 46688,
+      "executable_bytes": 46688
+    }
+  ],
+  "vram_source": {
+    "file": "amdgpu_device.c",
+    "sha256": "3d91a5755f1513378d544e56f840cdf6773706b2f7de17dace3df099ac1a1a8c",
+    "url": "https://raw.githubusercontent.com/gregkh/linux/v7.3.1/drivers/gpu/drm/amd/amdgpu/amdgpu_device.c"
+  },
+  "register_constants_source": {
+    "file": "evidence/navi21-unlock/sources/amdgpu_discovery.c",
+    "sha256": "453490aaca40862b021102a19deab78c3647fbac09828713470170b4798763f9"
+  }
+}

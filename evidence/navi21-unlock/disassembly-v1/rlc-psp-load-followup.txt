@@ -1,0 +1,19 @@
+RLC initial RAM source: driver-to-PSP boundary
+
+Pinned Linuxv6.12 reference sources saved with URLs/SHA256. RLCheader2.2
+fields select separate IRAM/DRAM payloads. UnderFW_LOAD_PSP, driver registers
+AMDGPU_UCODE_ID_RLC_IRAM/DRAM; firmware staging picks those byte ranges.
+PSP mapping isGFX_FW_TYPE_RLC_IRAM andGFX_FW_TYPE_RLC_DRAM_BOOT. LOAD_IP_FW
+carries sourceMCaddress,size,type; no caller-selected LX6 destination address
+is constructed by this command builder.
+
+This establishes the host-side typed loading boundary, not PSP internal
+placement or acceptance of modified payloads. It also does not prove that
+SRM_DRAM/GPM_SCRATCH ports map the analyzed LX6 state. Searching such ports
+cannot substitute for resolving this distinction. Driver load mode currently
+active on hardware has not been read or changed in this offline follow-up.
+
+Initial file gatezero plus startupBSSzeroing remains the established gate
+state. A PSP runtime setter or image transformation has not been found here.
+No new CC mask/control capability follows from buffer staging alone.
+Evidence:rlc-psp-load-provenance.json; sources/*.v6.12 and.source.json.

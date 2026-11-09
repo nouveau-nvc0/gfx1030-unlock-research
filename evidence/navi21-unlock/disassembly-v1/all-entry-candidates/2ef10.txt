@@ -1,0 +1,17 @@
+
+/tmp/tmpilaf_cdf/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002ef10 <.data+0x2ef10>:
+0002ef10: 364100   entry        a1, 0x20 ; Capstone
+   2ef13:	ad02      	mov.n	a10, a2
+0002ef15: a51ad3   call8        . -0x2ce54 ; Capstone ; target=0x20c0
+   2ef18:	812394        	l32r	a8, 0x13fa4 (0xb800)
+   2ef1b:	0c1b      	movi.n	a11, 1
+   2ef1d:	a2687f        	s32i	a10, a8, 0x1fc
+   2ef20:	ad02      	mov.n	a10, a2
+0002ef22: a517d3   call8        . -0x2ce84 ; Capstone ; target=0x209c
+0002ef25: 1df0     retw.n        ; Capstone
+	...

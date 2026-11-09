@@ -1,0 +1,24 @@
+
+/tmp/tmp4eg3v8jx/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001680 <.data+0x1680>:
+00001680: 364100   entry        a1, 0x20 ; Capstone
+    1683:	51bbee        	l32r	a5, 0xffffd170 (0x6803ba00) ; inferred DRAM map 0x5ffec000
+    1686:	226555        	s32i	a2, a5, 0x154
+    1689:	326554        	s32i	a3, a5, 0x150
+    168c:	222557        	l32i	a2, a5, 0x15c
+    168f:	7cd9      	movi.n	a9, -3
+    1691:	0c24      	movi.n	a4, 2
+    1693:	404220        	or	a4, a2, a4
+    1696:	426557        	s32i	a4, a5, 0x15c
+    1699:	822558        	l32i	a8, a5, 0x160
+    169c:	0768f9        	bbci	a8, 0, 0x1699
+    169f:	909210        	and	a9, a2, a9
+    16a2:	926557        	s32i	a9, a5, 0x15c
+    16a5:	a22558        	l32i	a10, a5, 0x160
+    16a8:	176af9        	bbci	a10, 1, 0x16a5
+000016ab: 1df0     retw.n        ; Capstone
+    16ad:	000000        	ill

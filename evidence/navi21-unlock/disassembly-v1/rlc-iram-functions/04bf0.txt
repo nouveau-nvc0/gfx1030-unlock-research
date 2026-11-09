@@ -1,0 +1,62 @@
+
+/tmp/tmp9tykn3y_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00004bf0 <.data+0x4bf0>:
+00004bf0: 364100   entry        a1, 0x20 ; Capstone
+    4bf3:	1c48      	movi.n	a8, 20
+    4bf5:	0c0a      	movi.n	a10, 0
+    4bf7:	7105e2        	l32r	a7, 0xffffd40c (0x60003a00) ; inferred DRAM map 0x5ffec000
+    4bfa:	615ae1        	l32r	a6, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    4bfd:	169206        	beqz	a2, 0x4c6a
+    4c00:	306f00        	rsil	a3, 15
+    4c03:	92a077        	movi	a9, 119
+    4c06:	826680        	s32i	a8, a6, 0x200
+    4c09:	92677e        	s32i	a9, a7, 0x1f8
+    4c0c:	30e613        	wsr.ps	a3
+    4c0f:	102000        	rsync
+    4c12:	860000        	j	0x4c18
+    4c15:	97153c        	beq	a5, a9, 0x4c55
+    4c18:	50ea03        	rsr.ccount	a5
+    4c1b:	b0ea03        	rsr.ccount	a11
+    4c1e:	50bbc0        	sub	a11, a11, a5
+    4c21:	2c74      	movi.n	a4, 39
+    4c23:	b7340a        	bltu	a4, a11, 0x4c31
+    4c26:	d0ea03        	rsr.ccount	a13
+    4c29:	50ddc0        	sub	a13, a13, a5
+    4c2c:	2c7c      	movi.n	a12, 39
+    4c2e:	d7bcf4        	bgeu	a12, a13, 0x4c26
+    4c31:	206f00        	rsil	a2, 15
+    4c34:	826680        	s32i	a8, a6, 0x200
+    4c37:	e2276f        	l32i	a14, a7, 0x1bc
+    4c3a:	20e613        	wsr.ps	a2
+    4c3d:	102000        	rsync
+    4c40:	f06f00        	rsil	a15, 15
+    4c43:	826680        	s32i	a8, a6, 0x200
+    4c46:	52277e        	l32i	a5, a7, 0x1f8
+    4c49:	f0e613        	wsr.ps	a15
+    4c4c:	102000        	rsync
+    4c4f:	e02004        	extui	a2, a14, 0, 1
+    4c52:	076ebf        	bbci	a14, 0, 0x4c15
+    4c55:	8cf2      	beqz.n	a2, 0x4c68
+    4c57:	306f00        	rsil	a3, 15
+    4c5a:	826680        	s32i	a8, a6, 0x200
+    4c5d:	a2677e        	s32i	a10, a7, 0x1f8
+    4c60:	30e613        	wsr.ps	a3
+    4c63:	102000        	rsync
+00004c66: 1df0     retw.n        ; Capstone
+00004c68: 1df0     retw.n        ; Capstone
+    4c6a:	2d0a      	mov.n	a2, a10
+    4c6c:	b06f00        	rsil	a11, 15
+    4c6f:	826680        	s32i	a8, a6, 0x200
+    4c72:	22677e        	s32i	a2, a7, 0x1f8
+    4c75:	b0e613        	wsr.ps	a11
+    4c78:	102000        	rsync
+    4c7b:	906f00        	rsil	a9, 15
+    4c7e:	826680        	s32i	a8, a6, 0x200
+    4c81:	22676f        	s32i	a2, a7, 0x1bc
+    4c84:	90e613        	wsr.ps	a9
+    4c87:	102000        	rsync
+00004c8a: 1df0     retw.n        ; Capstone

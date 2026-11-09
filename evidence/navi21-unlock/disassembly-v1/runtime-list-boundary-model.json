@@ -1,0 +1,105 @@
+{
+  "scope": "Instruction-derived list model, zero initial destination and unchanged zero at15a40; not execution or arbitrary RAM proof",
+  "initial_masks": [
+    0,
+    0,
+    50
+  ],
+  "initial_result": [
+    {
+      "group": 0,
+      "calls": [],
+      "stop_word": 0,
+      "crosses_own_eight": false
+    },
+    {
+      "group": 1,
+      "calls": [],
+      "stop_word": 8,
+      "crosses_own_eight": false
+    },
+    {
+      "group": 2,
+      "calls": [
+        "0x2d7e0",
+        "0x2d760",
+        "0x2d734"
+      ],
+      "stop_word": 19,
+      "crosses_own_eight": false
+    }
+  ],
+  "all_bits_case": [
+    {
+      "group": 0,
+      "calls": [
+        "0x2d808",
+        "0x2d7e0",
+        "0x2d7b4",
+        "0x2d78c",
+        "0x2d760",
+        "0x2d734",
+        "0x2d708",
+        "0x2d6dc",
+        "0x2d808",
+        "0x2d7e0",
+        "0x2d7b4",
+        "0x2d78c",
+        "0x2d760",
+        "0x2d734",
+        "0x2d708",
+        "0x2d6dc",
+        "0x2d808",
+        "0x2d7e0",
+        "0x2d7b4",
+        "0x2d78c",
+        "0x2d760",
+        "0x2d734",
+        "0x2d708",
+        "0x2d6dc"
+      ],
+      "stop_word": 24,
+      "crosses_own_eight": true
+    },
+    {
+      "group": 1,
+      "calls": [
+        "0x2d808",
+        "0x2d7e0",
+        "0x2d7b4",
+        "0x2d78c",
+        "0x2d760",
+        "0x2d734",
+        "0x2d708",
+        "0x2d6dc",
+        "0x2d808",
+        "0x2d7e0",
+        "0x2d7b4",
+        "0x2d78c",
+        "0x2d760",
+        "0x2d734",
+        "0x2d708",
+        "0x2d6dc"
+      ],
+      "stop_word": 24,
+      "crosses_own_eight": true
+    },
+    {
+      "group": 2,
+      "calls": [
+        "0x2d808",
+        "0x2d7e0",
+        "0x2d7b4",
+        "0x2d78c",
+        "0x2d760",
+        "0x2d734",
+        "0x2d708",
+        "0x2d6dc"
+      ],
+      "stop_word": 24,
+      "crosses_own_eight": false
+    }
+  ],
+  "builder": "301b9 eight iterations; three independent compacted outputs; no terminator write seen before3020f",
+  "conclusion": "Initial masks select zero, zero, and three callbacks. All-bits case traverses24/16/8 targets until shared zero; every modeled target still belongs to12110 source table. Reinitialization does not clear unused old entries in this loop."
+}

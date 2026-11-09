@@ -1,0 +1,50 @@
+
+/tmp/tmpso8ghe9x/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002c468 <.data+0x2c468>:
+0002c468: 364100   entry        a1, 0x20 ; Capstone
+   2c46b:	ad02      	mov.n	a10, a2
+0002c46d: 25c5d5   call8        . -0x2a3ac ; Capstone ; target=0x20c0
+   2c470:	4d0a      	mov.n	a4, a10
+   2c472:	a03075        	extui	a3, a10, 16, 8
+   2c475:	0cc8      	movi.n	a8, 12
+   2c477:	37b809        	bgeu	a8, a3, 0x2c484
+   2c47a:	ad02      	mov.n	a10, a2
+   2c47c:	b2a0ff        	movi	a11, 255
+0002c47f: e5c1d5   call8        . -0x2a3e0 ; Capstone ; target=0x209c
+0002c482: 1df0     retw.n        ; Capstone
+   2c484:	0c8a      	movi.n	a10, 8
+0002c486: a50fd6   call8        . -0x29f04 ; Capstone ; target=0x2580
+   2c489:	ad03      	mov.n	a10, a3
+0002c48b: 25ce04   call8        . +0x4ce4 ; Capstone ; target=0x3116c
+   2c48e:	bc2a      	beqz.n	a10, 0x2c4c4
+   2c490:	922a13        	l32i	a9, a10, 76
+   2c493:	acd9      	beqz.n	a9, 0x2c4c4
+   2c495:	a1149b        	l32r	a10, 0x130e8 (0x3a83126f)
+   2c498:	0c4c      	movi.n	a12, 4
+   2c49a:	40b875        	extui	a11, a4, 24, 8
+   2c49d:	b0bc83        	moveqz	a11, a12, a11
+0002c4a0: 001bda   ufloat.s     f1, a11, 0 ; Capstone
+0002c4a3: 502afa   wfr          f2, a10 ; Capstone
+0002c4a6: 20012a   mul.s        f0, f1, f2 ; Capstone
+   2c4a9:	40c0f4        	extui	a12, a4, 0, 16
+   2c4ac:	ad03      	mov.n	a10, a3
+   2c4ae:	0c1b      	movi.n	a11, 1
+0002c4b0: 40d0fa   rfr          a13, f0 ; Capstone
+0002c4b3: a5f8ff   call8        . -0x74 ; Capstone ; target=0x2c43c
+   2c4b6:	0c8a      	movi.n	a10, 8
+0002c4b8: a5fbd5   call8        . -0x2a044 ; Capstone ; target=0x2474
+   2c4bb:	ad02      	mov.n	a10, a2
+   2c4bd:	0c1b      	movi.n	a11, 1
+0002c4bf: e5bdd5   call8        . -0x2a420 ; Capstone ; target=0x209c
+0002c4c2: 1df0     retw.n        ; Capstone
+   2c4c4:	0c8a      	movi.n	a10, 8
+0002c4c6: e5fad5   call8        . -0x2a050 ; Capstone ; target=0x2474
+   2c4c9:	ad02      	mov.n	a10, a2
+   2c4cb:	b2a0ff        	movi	a11, 255
+0002c4ce: e5bcd5   call8        . -0x2a430 ; Capstone ; target=0x209c
+0002c4d1: 1df0     retw.n        ; Capstone
+	...

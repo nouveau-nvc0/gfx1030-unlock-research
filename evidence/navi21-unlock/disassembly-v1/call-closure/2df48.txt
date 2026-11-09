@@ -1,0 +1,17 @@
+
+/tmp/tmpf9j_sl91/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002df48 <.data+0x2df48>:
+0002df48: 364100   entry        a1, 0x20 ; Capstone
+   2df4b:	a15195        	l32r	a10, 0x13490 (0xff60)
+0002df4e: a56c03   call8        . +0x36cc ; Capstone ; target=0x31618
+   2df51:	21e394        	l32r	a2, 0x132e0 (0x42c80000)
+0002df54: 501afa   wfr          f1, a10 ; Capstone
+0002df57: 5022fa   wfr          f2, a2 ; Capstone
+0002df5a: 20012a   mul.s        f0, f1, f2 ; Capstone
+0002df5d: 4020fa   rfr          a2, f0 ; Capstone
+0002df60: 1df0     retw.n        ; Capstone
+	...

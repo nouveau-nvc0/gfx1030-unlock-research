@@ -1,0 +1,73 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "snapshot_body_IRAM_offsets": [
+    "0x74c4",
+    "0x766f"
+  ],
+  "raw_scan_positions": 65534,
+  "external_range_hits": [
+    {
+      "pc": "0x2101",
+      "target": "0x7537",
+      "kind": "J",
+      "raw": "860c15",
+      "classification": "inside an existing decoded instruction",
+      "containing_pc": "0x2100",
+      "containing_instruction": "beqz.n\ta6, 0x212c"
+    },
+    {
+      "pc": "0x3cda",
+      "target": "0x7608",
+      "kind": "CALL",
+      "raw": "e59203",
+      "classification": "inside an existing decoded instruction",
+      "containing_pc": "0x3cd8",
+      "containing_instruction": "l32r\ta10, 0xffffd2a0 (0x6803ae00) ; inferred DRAM map 0x5ffec000"
+    },
+    {
+      "pc": "0x6360",
+      "target": "0x75f8",
+      "kind": "CALL",
+      "raw": "752901",
+      "classification": "inside an existing decoded instruction",
+      "containing_pc": "0x635f",
+      "containing_instruction": "l32i.n\ta9, a5, 28"
+    },
+    {
+      "pc": "0x6de5",
+      "target": "0x74c4",
+      "kind": "CALL",
+      "raw": "e56d00",
+      "classification": "known direct CALL8 from6944 to74c4"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/02068.txt",
+      "sha256": "1a75b0e2b744595c12480618f75378d26a91a2ddcfde5b0733a002bad82e8082",
+      "byte_checked_records": 77
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03cbc.txt",
+      "sha256": "7418608444935db3a8474bdb8ccbad5ca39edaca604d3d590ebdb3d8f87e2c1c",
+      "byte_checked_records": 32
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06348.txt",
+      "sha256": "9a5434c1db84deb72b398063feee736eaccd9103bc7e83361a36c6e25631cd28",
+      "byte_checked_records": 132
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/06944.txt",
+      "sha256": "0a3a0fb69d32d65c9c27a40bad072dabd879ad206e631377478907f44fba9286",
+      "byte_checked_records": 480
+    }
+  ],
+  "finding": "Range-wide immediate CALL/J check retains only known6de5->74c4 on reviewed instruction streams. Three other byte matches start inside existing instructions. No initial full absolute pointer to any byte in the body.",
+  "limits": [
+    "Computed and conditional transitions, alternate instruction streams, other engines and relative addresses remain open.",
+    "Known direct6944 callers retain earlier default-slot31 finding; this scan adds no custom-slot producer.",
+    "Does not establish hardware execution, changed CC masks or acceptance of writes. No hardware access."
+  ],
+  "full_container_absolute_pointers": []
+}

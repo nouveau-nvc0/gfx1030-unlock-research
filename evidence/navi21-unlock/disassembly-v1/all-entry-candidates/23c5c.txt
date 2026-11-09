@@ -1,0 +1,68 @@
+
+/tmp/tmpv03d2xb2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00023c5c <.data+0x23c5c>:
+00023c5c: 364100   entry        a1, 0x20 ; Capstone
+00023c5f: 653402   call8        . +0x2348 ; Capstone ; target=0x25fa4
+   23c62:	2d0a      	mov.n	a2, a10
+   23c64:	0c8a      	movi.n	a10, 8
+00023c66: a591de   call8        . -0x216e4 ; Capstone ; target=0x2580
+   23c69:	31c3be        	l32r	a3, 0x13778 (0x157c4)
+   23c6c:	41c4be        	l32r	a4, 0x1377c (0xa4a4)
+   23c6f:	92037d        	l8ui	a9, a3, 125
+   23c72:	0c7a      	movi.n	a10, 7
+   23c74:	0c78      	movi.n	a8, 7
+   23c76:	076964        	bbci	a9, 0, 0x23cde
+   23c79:	91c2be        	l32r	a9, 0x13784 (0x3e000000)
+00023c7c: 43020a   lsi          f4, a2, 0x28 ; Capstone
+00023c7f: 23020b   lsi          f2, a2, 0x2c ; Capstone
+00023c82: 40021a   sub.s        f0, f2, f4 ; Capstone
+00023c85: 5019fa   wfr          f1, a9 ; Capstone
+00023c88: 10002a   mul.s        f0, f0, f1 ; Capstone
+00023c8b: 330205   lsi          f3, a2, 0x14 ; Capstone
+00023c8e: 76a813   loopgtz      a8, . +0x17 ; Capstone
+00023c91: 006aca   float.s      f6, a10, 0 ; Capstone
+00023c94: 0054fa   mov.s        f5, f4 ; Capstone
+00023c97: 00564a   madd.s       f5, f6, f0 ; Capstone
+00023c9a: 30056b   ole.s        b0, f5, f3 ; Capstone
+00023c9d: 761004   bt           b0, . +8 ; Capstone
+   23ca0:	0baa      	addi.n	a10, a10, -1
+   23ca2:	a0a074        	extui	a10, a10, 0, 8
+00023ca5: 034322   ssi          f0, a3, 0x88 ; Capstone
+   23ca8:	d2047c        	l8ui	a13, a4, 124
+   23cab:	a0c004        	extui	a12, a10, 0, 1
+   23cae:	a0e104        	extui	a14, a10, 1, 1
+   23cb1:	a0b204        	extui	a11, a10, 2, 1
+   23cb4:	f2047d        	l8ui	a15, a4, 125
+   23cb7:	a22320        	l32i	a10, a3, 128
+   23cba:	001d40        	ssl	a13
+   23cbd:	00cca1        	sll	a12, a12
+   23cc0:	d2047e        	l8ui	a13, a4, 126
+   23cc3:	001f40        	ssl	a15
+   23cc6:	00eea1        	sll	a14, a14
+   23cc9:	e0cc20        	or	a12, a12, a14
+   23ccc:	001d40        	ssl	a13
+   23ccf:	00bba1        	sll	a11, a11
+   23cd2:	c0bb20        	or	a11, a11, a12
+   23cd5:	b26321        	s32i	a11, a3, 132
+00023cd8: 65f6ff   call8        . -0x98 ; Capstone ; target=0x23c40
+   23cdb:	92037d        	l8ui	a9, a3, 125
+   23cde:	17691e        	bbci	a9, 1, 0x23d00
+   23ce1:	e1a9be        	l32r	a14, 0x13788 (0x1840200)
+   23ce4:	c02000        	memw
+   23ce7:	e22e24        	l32i	a14, a14, 144
+   23cea:	a20480        	l8ui	a10, a4, 128
+   23ced:	e0ee14        	extui	a14, a14, 14, 2
+   23cf0:	663e07        	bnei	a14, 3, 0x23cfb
+   23cf3:	0c1b      	movi.n	a11, 1
+00023cf5: 251311   call8        . +0x11134 ; Capstone ; target=0x34e28
+   23cf8:	060100        	j	0x23d00
+   23cfb:	0c0b      	movi.n	a11, 0
+00023cfd: a51211   call8        . +0x1112c ; Capstone ; target=0x34e28
+   23d00:	0c8a      	movi.n	a10, 8
+00023d02: 2577de   call8        . -0x2188c ; Capstone ; target=0x2474
+00023d05: 1df0     retw.n        ; Capstone
+	...

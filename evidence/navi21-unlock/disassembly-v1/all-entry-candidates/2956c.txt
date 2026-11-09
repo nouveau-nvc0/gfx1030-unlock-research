@@ -1,0 +1,26 @@
+
+/tmp/tmp8dl5fw3r/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002956c <.data+0x2956c>:
+0002956c: 364100   entry        a1, 0x20 ; Capstone
+0002956f: 3030fa   const.s      f3, 0 ; Capstone
+   29572:	420309        	l8ui	a4, a3, 9
+   29575:	820308        	l8ui	a8, a3, 8
+00029578: 430202   lsi          f4, a2, 8 ; Capstone
+0002957b: 230300   lsi          f2, a3, 0 ; Capstone
+0002957e: 130301   lsi          f1, a3, 4 ; Capstone
+00029581: 134205   ssi          f1, a2, 0x14 ; Capstone
+   29584:	42421a        	s8i	a4, a2, 26
+   29587:	42421b        	s8i	a4, a2, 27
+0002958a: 40021a   sub.s        f0, f2, f4 ; Capstone
+   2958d:	824218        	s8i	a8, a2, 24
+   29590:	824219        	s8i	a8, a2, 25
+00029593: 234200   ssi          f2, a2, 0 ; Capstone
+00029596: 30004b   olt.s        b0, f0, f3 ; Capstone
+00029599: 0003db   movt.s       f0, f3, b0 ; Capstone
+0002959c: 034201   ssi          f0, a2, 4 ; Capstone
+0002959f: 1df0     retw.n        ; Capstone
+   295a1:	000000        	ill

@@ -1,0 +1,78 @@
+
+/tmp/tmp7ec12sn9/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00031868 <.data+0x31868>:
+00031868: 364100   entry        a1, 0x20 ; Capstone
+   3186b:	817c85        	l32r	a8, 0x12e5c (0x69a0)
+   3186e:	615c8a        	l32r	a6, 0x141e0 (0xd9c8)
+   31871:	515c8a        	l32r	a5, 0x141e4 (0xb3a4)
+   31874:	82086d        	l8ui	a8, a8, 109
+   31877:	0c23      	movi.n	a3, 2
+   31879:	0c02      	movi.n	a2, 0
+   3187b:	0b88      	addi.n	a8, a8, -1
+   3187d:	16280a        	beqz	a8, 0x31923
+   31880:	2042a0        	addx4	a4, a2, a2
+   31883:	6044a0        	addx4	a4, a4, a6
+   31886:	92247f        	l32i	a9, a4, 0x1fc
+   31889:	16b907        	beqz	a9, 0x31908
+   3188c:	ad02      	mov.n	a10, a2
+0003188e: 252602   call8        . +0x2264 ; Capstone ; target=0x33af0
+   31891:	cc6a      	bnez.n	a10, 0x3189b
+   31893:	ad02      	mov.n	a10, a2
+00031895: 251602   call8        . +0x2164 ; Capstone ; target=0x339f8
+   31898:	16ca06        	beqz	a10, 0x31908
+   3189b:	a2247f        	l32i	a10, a4, 0x1fc
+   3189e:	c02000        	memw
+   318a1:	922480        	l32i	a9, a4, 0x200
+   318a4:	a80a      	l32i.n	a10, a10, 0
+   318a6:	c02000        	memw
+   318a9:	9809      	l32i.n	a9, a9, 0
+   318ab:	a0a164        	extui	a10, a10, 1, 7
+   318ae:	176a0d        	bbci	a10, 1, 0x318bf
+   318b1:	20c2f0        	subx8	a12, a2, a2
+   318b4:	50cca0        	addx4	a12, a12, a5
+   318b7:	b22c79        	l32i	a11, a12, 0x1e4
+   318ba:	1bbb      	addi.n	a11, a11, 1
+   318bc:	b26c79        	s32i	a11, a12, 0x1e4
+   318bf:	90f014        	extui	a15, a9, 0, 2
+   318c2:	a0a474        	extui	a10, a10, 4, 8
+   318c5:	9c1a      	beqz.n	a10, 0x318da
+   318c7:	f65a0f        	bgeui	a10, 5, 0x318da
+   318ca:	20e2f0        	subx8	a14, a2, a2
+   318cd:	eaea      	add.n	a14, a10, a14
+   318cf:	50eea0        	addx4	a14, a14, a5
+   318d2:	d22e79        	l32i	a13, a14, 0x1e4
+   318d5:	1bdd      	addi.n	a13, a13, 1
+   318d7:	d26e79        	s32i	a13, a14, 0x1e4
+   318da:	90b615        	extui	a11, a9, 22, 2
+   318dd:	cccf      	bnez.n	a15, 0x318ed
+   318df:	20a2f0        	subx8	a10, a2, a2
+   318e2:	50aaa0        	addx4	a10, a10, a5
+   318e5:	822a7e        	l32i	a8, a10, 0x1f8
+   318e8:	1b88      	addi.n	a8, a8, 1
+   318ea:	826a7e        	s32i	a8, a10, 0x1f8
+   318ed:	dc7b      	bnez.n	a11, 0x31908
+   318ef:	c22481        	l32i	a12, a4, 0x204
+   318f2:	c02000        	memw
+   318f5:	20e2f0        	subx8	a14, a2, a2
+   318f8:	c80c      	l32i.n	a12, a12, 0
+   318fa:	50eea0        	addx4	a14, a14, a5
+   318fd:	d22e7f        	l32i	a13, a14, 0x1fc
+   31900:	17ec04        	bbsi	a12, 1, 0x31908
+   31903:	1bdd      	addi.n	a13, a13, 1
+   31905:	d26e7f        	s32i	a13, a14, 0x1fc
+   31908:	0b33      	addi.n	a3, a3, -1
+   3190a:	1b22      	addi.n	a2, a2, 1
+   3190c:	202074        	extui	a2, a2, 0, 8
+   3190f:	2042a0        	addx4	a4, a2, a2
+   31912:	6044a0        	addx4	a4, a4, a6
+   31915:	56d3f6        	bnez	a3, 0x31886
+   31918:	917d89        	l32r	a9, 0x13f0c (0xb3c4)
+   3191b:	82297f        	l32i	a8, a9, 0x1fc
+   3191e:	1b88      	addi.n	a8, a8, 1
+   31920:	82697f        	s32i	a8, a9, 0x1fc
+00031923: 1df0     retw.n        ; Capstone
+   31925:	000000        	ill

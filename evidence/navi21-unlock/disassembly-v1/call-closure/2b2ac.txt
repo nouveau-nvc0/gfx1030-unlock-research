@@ -1,0 +1,104 @@
+
+/tmp/tmpwngmldli/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002b2ac <.data+0x2b2ac>:
+0002b2ac: 364100   entry        a1, 0x20 ; Capstone
+0002b2af: 5004fa   wfr          f0, a4 ; Capstone
+   2b2b2:	b20202        	l8ui	a11, a2, 2
+   2b2b5:	f20201        	l8ui	a15, a2, 1
+   2b2b8:	a822      	l32i.n	a10, a2, 8
+   2b2ba:	161b05        	beqz	a11, 0x2b30f
+   2b2bd:	82a000        	movi	a8, 0
+   2b2c0:	c1769f        	l32r	a12, 0x13098 (0x447a0000)
+   2b2c3:	71409f        	l32r	a7, 0x12fc4 (0x38d1b717)
+   2b2c6:	91889f        	l32r	a9, 0x130e8 (0x3a83126f)
+   2b2c9:	a04a20        	or	a4, a10, a10
+0002b2cc: 5027fa   wfr          f2, a7 ; Capstone
+0002b2cf: 5039fa   wfr          f3, a9 ; Capstone
+0002b2d2: 504cfa   wfr          f4, a12 ; Capstone
+0002b2d5: 769b2d   loopnez      a11, . +0x31 ; Capstone
+0002b2d8: 130400   lsi          f1, a4, 0 ; Capstone
+0002b2db: 40712a   mul.s        f7, f1, f4 ; Capstone
+0002b2de: 00e7aa   floor.s      a14, f7, 0 ; Capstone
+0002b2e1: 006eca   float.s      f6, a14, 0 ; Capstone
+0002b2e4: 0050fa   mov.s        f5, f0 ; Capstone
+0002b2e7: 30565a   msub.s       f5, f6, f3 ; Capstone
+0002b2ea: 6055fa   neg.s        f5, f5 ; Capstone
+0002b2ed: 1055fa   abs.s        f5, f5 ; Capstone
+0002b2f0: 20054b   olt.s        b0, f5, f2 ; Capstone
+   2b2f3:	0c1d      	movi.n	a13, 1
+   2b2f5:	0c09      	movi.n	a9, 0
+0002b2f7: 009dd3   movt         a9, a13, b0 ; Capstone
+   2b2fa:	ccb9      	bnez.n	a9, 0x2b309
+0002b2fc: 10104b   olt.s        b1, f0, f1 ; Capstone
+   2b2ff:	4b44      	addi.n	a4, a4, 4
+0002b301: 761104   bt           b1, . +8 ; Capstone
+   2b304:	1b88      	addi.n	a8, a8, 1
+   2b306:	c60100        	j	0x2b311
+   2b309:	804074        	extui	a4, a8, 0, 8
+   2b30c:	c60000        	j	0x2b313
+   2b30f:	0c09      	movi.n	a9, 0
+   2b311:	0c04      	movi.n	a4, 0
+   2b313:	0b7b      	addi.n	a7, a11, -1
+0002b315: 704443   min          a4, a4, a7 ; Capstone
+   2b318:	404074        	extui	a4, a4, 0, 8
+   2b31b:	ccaf      	bnez.n	a15, 0x2b329
+   2b31d:	e03411        	slli	a3, a4, 2
+   2b320:	a084a0        	addx4	a8, a4, a10
+0002b323: 130800   lsi          f1, a8, 0 ; Capstone
+   2b326:	860200        	j	0x2b334
+   2b329:	ac69      	beqz.n	a9, 0x2b353
+   2b32b:	e03411        	slli	a3, a4, 2
+   2b32e:	a0b4a0        	addx4	a11, a4, a10
+0002b331: 130b00   lsi          f1, a11, 0 ; Capstone
+0002b334: 134500   ssi          f1, a5, 0 ; Capstone
+   2b337:	424600        	s8i	a4, a6, 0
+   2b33a:	c842      	l32i.n	a12, a2, 16
+   2b33c:	5832      	l32i.n	a5, a2, 12
+   2b33e:	4acc      	add.n	a12, a12, a4
+   2b340:	c20c00        	l8ui	a12, a12, 0
+   2b343:	c2425c        	s8i	a12, a2, 92
+   2b346:	8c55      	beqz.n	a5, 0x2b34f
+   2b348:	5ad3      	add.n	a13, a3, a5
+   2b34a:	d80d      	l32i.n	a13, a13, 0
+   2b34c:	d26214        	s32i	a13, a2, 80
+   2b34f:	2d09      	mov.n	a2, a9
+0002b351: 1df0     retw.n        ; Capstone
+   2b353:	66130b        	bnei	a3, 1, 0x2b362
+   2b356:	e03411        	slli	a3, a4, 2
+   2b359:	a0e4a0        	addx4	a14, a4, a10
+0002b35c: 130e00   lsi          f1, a14, 0 ; Capstone
+   2b35f:	46f4ff        	j	0x2b334
+   2b362:	dc23      	bnez.n	a3, 0x2b378
+   2b364:	0b34      	addi.n	a3, a4, -1
+   2b366:	303074        	extui	a3, a3, 0, 8
+   2b369:	404393        	movnez	a4, a3, a4
+   2b36c:	e03411        	slli	a3, a4, 2
+   2b36f:	a0f4a0        	addx4	a15, a4, a10
+0002b372: 130f00   lsi          f1, a15, 0 ; Capstone
+   2b375:	c6eeff        	j	0x2b334
+   2b378:	66232e        	bnei	a3, 2, 0x2b3aa
+   2b37b:	e03411        	slli	a3, a4, 2
+   2b37e:	a074a0        	addx4	a7, a4, a10
+   2b381:	82d7fe        	addmi	a8, a7, 0xfffffe00
+0002b384: 130700   lsi          f1, a7, 0 ; Capstone
+   2b387:	1694fa        	beqz	a4, 0x2b334
+0002b38a: 00911a   sub.s        f9, f1, f0 ; Capstone
+0002b38d: a3087f   lsi          f10, a8, 0x1fc ; Capstone
+0002b390: a0801a   sub.s        f8, f0, f10 ; Capstone
+0002b393: 90284b   olt.s        b2, f8, f9 ; Capstone
+0002b396: 76029a   bf           b2, . -0x62 ; Capstone
+   2b399:	0b44      	addi.n	a4, a4, -1
+   2b39b:	404074        	extui	a4, a4, 0, 8
+   2b39e:	e03411        	slli	a3, a4, 2
+   2b3a1:	a084a0        	addx4	a8, a4, a10
+0002b3a4: 130800   lsi          f1, a8, 0 ; Capstone
+   2b3a7:	46e2ff        	j	0x2b334
+   2b3aa:	e03411        	slli	a3, a4, 2
+   2b3ad:	a074a0        	addx4	a7, a4, a10
+0002b3b0: 130700   lsi          f1, a7, 0 ; Capstone
+   2b3b3:	46dfff        	j	0x2b334
+	...

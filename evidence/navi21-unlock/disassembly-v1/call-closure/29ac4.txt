@@ -1,0 +1,50 @@
+
+/tmp/tmpuigf06pt/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00029ac4 <.data+0x29ac4>:
+00029ac4: 366100   entry        a1, 0x30 ; Capstone
+   29ac7:	319aa8        	l32r	a3, 0x13d30 (0xdafc)
+   29aca:	419aa8        	l32r	a4, 0x13d34 (0xe014)
+   29acd:	52a0a4        	movi	a5, 164
+   29ad0:	21d6a7        	l32r	a2, 0x13a28 (0xdce0)
+00029ad3: 3000fa   const.s      f0, 0 ; Capstone
+00029ad6: 034100   ssi          f0, a1, 0 ; Capstone
+   29ad9:	ad02      	mov.n	a10, a2
+00029adb: a5840b   call8        . +0xb84c ; Capstone ; target=0x35324
+   29ade:	ad02      	mov.n	a10, a2
+   29ae0:	b2237f        	l32i	a11, a3, 0x1fc
+00029ae3: e57e0b   call8        . +0xb7f0 ; Capstone ; target=0x352d0
+   29ae6:	5a22      	add.n	a2, a2, a5
+00029ae8: 501afa   wfr          f1, a10 ; Capstone
+00029aeb: 230100   lsi          f2, a1, 0 ; Capstone
+00029aee: 0032fa   mov.s        f3, f2 ; Capstone
+00029af1: 134382   ssi          f1, a3, 0x208 ; Capstone
+00029af4: 20014b   olt.s        b0, f1, f2 ; Capstone
+   29af7:	5a33      	add.n	a3, a3, a5
+00029af9: 0021fa   mov.s        f2, f1 ; Capstone
+00029afc: 0023db   movt.s       f2, f3, b0 ; Capstone
+00029aff: 234100   ssi          f2, a1, 0 ; Capstone
+   29b02:	4792d3        	bne	a2, a4, 0x29ad9
+   29b05:	a18ca8        	l32r	a10, 0x13d38 (0xe17c)
+00029b08: a5af00   call8        . +0xafc ; Capstone ; target=0x2a604
+   29b0b:	41d2a7        	l32r	a4, 0x13a54 (0xdfd0)
+   29b0e:	3d0a      	mov.n	a3, a10
+   29b10:	a2247f        	l32i	a10, a4, 0x1fc
+00029b13: 658a01   call8        . +0x18a8 ; Capstone ; target=0x2b3b8
+   29b16:	2d0a      	mov.n	a2, a10
+   29b18:	0c3a      	movi.n	a10, 3
+00029b1a: 657a0b   call8        . +0xb7a8 ; Capstone ; target=0x352c0
+00029b1d: 530100   lsi          f5, a1, 0 ; Capstone
+00029b20: 504afa   wfr          f4, a10 ; Capstone
+00029b23: 50144b   olt.s        b1, f4, f5 ; Capstone
+00029b26: 760107   bf           b1, . +0xb ; Capstone
+   29b29:	0c3a      	movi.n	a10, 3
+00029b2b: 40b5fa   rfr          a11, f5 ; Capstone
+00029b2e: 25730b   call8        . +0xb734 ; Capstone ; target=0x35260
+   29b31:	202320        	or	a2, a3, a2
+00029b34: 730100   lsi          f7, a1, 0 ; Capstone
+00029b37: 734480   ssi          f7, a4, 0x200 ; Capstone
+00029b3a: 1df0     retw.n        ; Capstone

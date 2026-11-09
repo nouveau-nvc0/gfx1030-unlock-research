@@ -1,0 +1,46 @@
+
+/tmp/tmpujs4b68u/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000238ec <.data+0x238ec>:
+000238ec: 364100   entry        a1, 0x20 ; Capstone
+   238ef:	306074        	extui	a6, a3, 0, 8
+   238f2:	202074        	extui	a2, a2, 0, 8
+   238f5:	82aeff        	movi	a8, 0xfffffeff
+   238f8:	51b5be        	l32r	a5, 0x133cc (0x1217600)
+   238fb:	706200        	rsil	a7, 2
+   238fe:	bcc2      	beqz.n	a2, 0x2393e
+   23900:	26123a        	beqi	a2, 1, 0x2393e
+   23903:	662232        	bnei	a2, 2, 0x23939
+   23906:	c02000        	memw
+   23909:	222531        	l32i	a2, a5, 196
+   2390c:	0c14      	movi.n	a4, 1
+   2390e:	606493        	movnez	a6, a4, a6
+   23911:	804611        	slli	a4, a6, 8
+   23914:	802210        	and	a2, a2, a8
+   23917:	402220        	or	a2, a2, a4
+   2391a:	c02000        	memw
+   2391d:	226531        	s32i	a2, a5, 196
+   23920:	460500        	j	0x23939
+   23923:	66120d        	bnei	a2, 1, 0x23934
+   23926:	803310        	and	a3, a3, a8
+   23929:	0c19      	movi.n	a9, 1
+   2392b:	606993        	movnez	a6, a9, a6
+   2392e:	804611        	slli	a4, a6, 8
+   23931:	403320        	or	a3, a3, a4
+   23934:	c02000        	memw
+   23937:	3995      	s32i.n	a3, a5, 36
+   23939:	70e613        	wsr.ps	a7
+0002393c: 1df0     retw.n        ; Capstone
+   2393e:	c02000        	memw
+   23941:	3895      	l32i.n	a3, a5, 36
+   23943:	56c2fd        	bnez	a2, 0x23923
+   23946:	0c18      	movi.n	a8, 1
+   23948:	7ce4      	movi.n	a4, -2
+   2394a:	403310        	and	a3, a3, a4
+   2394d:	606893        	movnez	a6, a8, a6
+   23950:	303620        	or	a3, a6, a3
+   23953:	46f7ff        	j	0x23934
+	...

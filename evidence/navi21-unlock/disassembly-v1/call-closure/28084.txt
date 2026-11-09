@@ -1,0 +1,37 @@
+
+/tmp/tmpksjsl7xq/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00028084 <.data+0x28084>:
+00028084: 364100   entry        a1, 0x20 ; Capstone
+   28087:	5175ab        	l32r	a5, 0x12e5c (0x69a0)
+   2808a:	8c93      	beqz.n	a3, 0x28097
+   2808c:	9186ab        	l32r	a9, 0x12ea4 (0x147e0)
+   2808f:	92091f        	l8ui	a9, a9, 31
+   28092:	0c08      	movi.n	a8, 0
+   28094:	902893        	movnez	a2, a8, a9
+   28097:	0c14      	movi.n	a4, 1
+   28099:	7149ac        	l32r	a7, 0x131c0 (0x5421c)
+   2809c:	0c03      	movi.n	a3, 0
+   2809e:	206014        	extui	a6, a2, 0, 2
+   280a1:	d06601        	slli	a6, a6, 19
+   280a4:	82251a        	l32i	a8, a5, 104
+   280a7:	001340        	ssl	a3
+   280aa:	0094a1        	sll	a9, a4
+   280ad:	978819        	bany	a8, a9, 0x280ca
+   280b0:	c02301        	slli	a2, a3, 20
+   280b3:	7a22      	add.n	a2, a2, a7
+   280b5:	ad02      	mov.n	a10, a2
+000280b7: a586d9   call8        . -0x26794 ; Capstone ; target=0x1920
+   280ba:	c144ac        	l32r	a12, 0x131cc (0xffe7ffff)
+   280bd:	bd0a      	mov.n	a11, a10
+   280bf:	ad02      	mov.n	a10, a2
+   280c1:	c0bb10        	and	a11, a11, a12
+   280c4:	b0b620        	or	a11, a6, a11
+000280c7: 2581d9   call8        . -0x267ec ; Capstone ; target=0x18d8
+   280ca:	1b33      	addi.n	a3, a3, 1
+   280cc:	303074        	extui	a3, a3, 0, 8
+   280cf:	6683d1        	bnei	a3, 8, 0x280a4
+000280d2: 1df0     retw.n        ; Capstone

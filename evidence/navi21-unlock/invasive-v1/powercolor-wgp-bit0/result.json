@@ -1,0 +1,118 @@
+{
+  "bdf": "0000:07:00.0",
+  "se": 0,
+  "sh": 0,
+  "register": "cc",
+  "byte_offset": "0x89bc",
+  "original": "0xffe00001",
+  "target": "0xffe00000",
+  "action": "CC low-bit0 readback",
+  "compute_dispatch": false,
+  "execute": true,
+  "readback": "0xffe00001",
+  "target_accepted": false,
+  "during": [
+    {
+      "se": 0,
+      "sh": 0,
+      "cc": "0xffe00001",
+      "user": "0x0"
+    },
+    {
+      "se": 0,
+      "sh": 1,
+      "cc": "0xffe00001",
+      "user": "0x0"
+    },
+    {
+      "se": 1,
+      "sh": 0,
+      "cc": "0xffe00001",
+      "user": "0x0"
+    },
+    {
+      "se": 1,
+      "sh": 1,
+      "cc": "0xffe00001",
+      "user": "0x0"
+    },
+    {
+      "se": 2,
+      "sh": 0,
+      "cc": "0xffe00001",
+      "user": "0x0"
+    },
+    {
+      "se": 2,
+      "sh": 1,
+      "cc": "0xffe00001",
+      "user": "0x0"
+    },
+    {
+      "se": 3,
+      "sh": 0,
+      "cc": "0xffe00001",
+      "user": "0x0"
+    },
+    {
+      "se": 3,
+      "sh": 1,
+      "cc": "0xffe00001",
+      "user": "0x0"
+    }
+  ],
+  "snapshot_window_ns": 376571,
+  "restored": [
+    {
+      "se": 0,
+      "sh": 0,
+      "cc": "0xffe00001",
+      "user": "0x0"
+    },
+    {
+      "se": 0,
+      "sh": 1,
+      "cc": "0xffe00001",
+      "user": "0x0"
+    },
+    {
+      "se": 1,
+      "sh": 0,
+      "cc": "0xffe00001",
+      "user": "0x0"
+    },
+    {
+      "se": 1,
+      "sh": 1,
+      "cc": "0xffe00001",
+      "user": "0x0"
+    },
+    {
+      "se": 2,
+      "sh": 0,
+      "cc": "0xffe00001",
+      "user": "0x0"
+    },
+    {
+      "se": 2,
+      "sh": 1,
+      "cc": "0xffe00001",
+      "user": "0x0"
+    },
+    {
+      "se": 3,
+      "sh": 0,
+      "cc": "0xffe00001",
+      "user": "0x0"
+    },
+    {
+      "se": 3,
+      "sh": 1,
+      "cc": "0xffe00001",
+      "user": "0x0"
+    }
+  ],
+  "cc_sa_after": "0xc01",
+  "user_sa_after": "0x0",
+  "rollback_verified": true
+}

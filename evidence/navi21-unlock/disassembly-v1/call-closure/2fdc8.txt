@@ -1,0 +1,16 @@
+
+/tmp/tmpwdux4oq6/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002fdc8 <.data+0x2fdc8>:
+0002fdc8: 364100   entry        a1, 0x20 ; Capstone
+   2fdcb:	0c2a      	movi.n	a10, 2
+0002fdcd: 257bd2   call8        . -0x2d84c ; Capstone ; target=0x2580
+0002fdd0: 65faff   call8        . -0x58 ; Capstone ; target=0x2fd78
+0002fdd3: 25f6ff   call8        . -0x9c ; Capstone ; target=0x2fd34
+   2fdd6:	0c2a      	movi.n	a10, 2
+0002fdd8: a569d2   call8        . -0x2d964 ; Capstone ; target=0x2474
+0002fddb: 1df0     retw.n        ; Capstone
+   2fddd:	000000        	ill

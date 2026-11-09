@@ -1,0 +1,10 @@
+{
+  "positive_controls": {
+    "USER_WGP": "0x12089c0",
+    "GRBM_GFX_INDEX": "0x1230800"
+  },
+  "passed": true,
+  "known_store_sites": 86,
+  "unknown_store_sites": 37,
+  "limitations": "Window-local only; calls not followed. Unknown addresses retained. No global CC absence claim."
+}

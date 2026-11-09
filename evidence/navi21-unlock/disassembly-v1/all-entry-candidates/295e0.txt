@@ -1,0 +1,21 @@
+
+/tmp/tmpu4wtkc20/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000295e0 <.data+0x295e0>:
+000295e0: 364100   entry        a1, 0x20 ; Capstone
+   295e3:	a1c1a9        	l32r	a10, 0x13ce8 (0x28278)
+   295e6:	b1bfa9        	l32r	a11, 0x13ce4 (0x2d11c)
+   295e9:	21cfa8        	l32r	a2, 0x13928 (0xe284)
+   295ec:	31bda9        	l32r	a3, 0x13ce0 (0xe370)
+   295ef:	81c0a9        	l32r	a8, 0x13cf0 (0x27e04)
+   295f2:	91bea9        	l32r	a9, 0x13cec (0x27e14)
+   295f5:	92637f        	s32i	a9, a3, 0x1fc
+   295f8:	826380        	s32i	a8, a3, 0x200
+   295fb:	226381        	s32i	a2, a3, 0x204
+   295fe:	b2637d        	s32i	a11, a3, 0x1f4
+   29601:	a2637e        	s32i	a10, a3, 0x1f8
+00029604: 1df0     retw.n        ; Capstone
+	...

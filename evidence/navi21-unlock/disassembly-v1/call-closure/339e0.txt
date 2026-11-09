@@ -1,0 +1,16 @@
+
+/tmp/tmplhaszry_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000339e0 <.data+0x339e0>:
+000339e0: 364100   entry        a1, 0x20 ; Capstone
+   339e3:	c17582        	l32r	a12, 0x143b8 (0xac18)
+   339e6:	ad02      	mov.n	a10, a2
+   339e8:	20b2b0        	addx8	a11, a2, a2
+   339eb:	c0bba0        	addx4	a11, a11, a12
+   339ee:	b20b7f        	l8ui	a11, a11, 127
+000339f1: a57801   call8        . +0x178c ; Capstone ; target=0x3517c
+000339f4: 1df0     retw.n        ; Capstone
+	...

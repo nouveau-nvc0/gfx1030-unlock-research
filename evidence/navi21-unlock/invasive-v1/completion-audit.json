@@ -1,0 +1,68 @@
+{
+  "utc": "2026-11-09T11:06:22.627524+00:00",
+  "drm_clients": {
+    "0": "             command  tgid dev master a   uid      magic                                                             name                   id\n",
+    "1": "             command  tgid dev master a   uid      magic                                                             name                   id\n",
+    "2": "             command  tgid dev master a   uid      magic                                                             name                   id\n"
+  },
+  "loaded_vbios_sha256": {
+    "0": "e258121695fd5ae029132cdcc328e5c34065876a5612e3a2260487ac196a5b5e",
+    "1": "e258121695fd5ae029132cdcc328e5c34065876a5612e3a2260487ac196a5b5e",
+    "2": "e258121695fd5ae029132cdcc328e5c34065876a5612e3a2260487ac196a5b5e"
+  },
+  "kernel_tainted": "0",
+  "reset_messages": [
+    {
+      "realtime_us": "1794222068667847",
+      "message": "amdgpu 0000:07:00.0: GPU reset begin!. Source:  4"
+    },
+    {
+      "realtime_us": "1794222069285666",
+      "message": "amdgpu 0000:07:00.0: GPU reset succeeded, trying to resume"
+    },
+    {
+      "realtime_us": "1794222069288216",
+      "message": "amdgpu 0000:07:00.0: VRAM is lost due to GPU reset!"
+    },
+    {
+      "realtime_us": "1794222069620077",
+      "message": "amdgpu 0000:07:00.0: GPU reset(1) succeeded!"
+    }
+  ],
+  "last_kernel_message": {
+    "realtime_us": "1794222069631672",
+    "message": "amdgpu 0000:07:00.0: [drm] device wedged, but no recovery needed"
+  },
+  "registers_equal_baseline": true,
+  "last_readonly_recheck_utc": "2026-11-09T11:12:03.824792+00:00",
+  "power_profile_checks": {
+    "0": {
+      "pp_table_sha256": "14be9b474a0a50d5a8e20421b5fece954c39ccd7d3e2b79d9daab8d29cb4b679",
+      "pp_table_unchanged": true,
+      "power_dpm_force_performance_level": "auto",
+      "power_profile_text_unchanged": true,
+      "active_power_profile_lines": [
+        " 0 BOOTUP_DEFAULT*:"
+      ]
+    },
+    "1": {
+      "pp_table_sha256": "14be9b474a0a50d5a8e20421b5fece954c39ccd7d3e2b79d9daab8d29cb4b679",
+      "pp_table_unchanged": true,
+      "power_dpm_force_performance_level": "auto",
+      "power_profile_text_unchanged": true,
+      "active_power_profile_lines": [
+        " 0 BOOTUP_DEFAULT*:"
+      ]
+    },
+    "2": {
+      "pp_table_sha256": "14be9b474a0a50d5a8e20421b5fece954c39ccd7d3e2b79d9daab8d29cb4b679",
+      "pp_table_unchanged": true,
+      "power_dpm_force_performance_level": "auto",
+      "power_profile_text_unchanged": true,
+      "active_power_profile_lines": [
+        " 0 BOOTUP_DEFAULT*:"
+      ]
+    }
+  },
+  "no_additional_kernel_messages_through_last_recheck": true
+}

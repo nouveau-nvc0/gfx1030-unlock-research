@@ -1,0 +1,12 @@
+
+/tmp/tmpk_fze5ur/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002df64 <.data+0x2df64>:
+0002df64: 364100   entry        a1, 0x20 ; Capstone
+   2df67:	21ee97        	l32r	a2, 0x13f20 (0xef30)
+   2df6a:	22227f        	l32i	a2, a2, 0x1fc
+0002df6d: 1df0     retw.n        ; Capstone
+	...

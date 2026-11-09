@@ -1,0 +1,45 @@
+
+/tmp/tmp0r1yhyki/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001e840 <.data+0x1e840>:
+0001e840: 364100   entry        a1, 0x20 ; Capstone
+   1e843:	9158d2        	l32r	a9, 0x131a4 (0xfe94)
+   1e846:	92197e        	l16ui	a9, a9, 252
+   1e849:	0c47      	movi.n	a7, 4
+   1e84b:	276952        	bbci	a9, 2, 0x1e8a1
+   1e84e:	976905        	bbci	a9, 9, 0x1e857
+0001e851: 65fdff   call8        . -0x28 ; Capstone ; target=0x1e828
+0001e854: a5fbff   call8        . -0x44 ; Capstone ; target=0x1e810
+0001e857: 65faff   call8        . -0x58 ; Capstone ; target=0x1e7fc
+   1e85a:	bd0a      	mov.n	a11, a10
+   1e85c:	0c3a      	movi.n	a10, 3
+0001e85e: 659807   call8        . +0x7988 ; Capstone ; target=0x261e4
+   1e861:	0c3a      	movi.n	a10, 3
+   1e863:	0c1b      	movi.n	a11, 1
+0001e865: 65fb11   call8        . +0x11fb8 ; Capstone ; target=0x3081c
+   1e868:	0c02      	movi.n	a2, 0
+   1e86a:	417cd1        	l32r	a4, 0x12e5c (0x69a0)
+   1e86d:	616ad2        	l32r	a6, 0x13218 (0x5413c)
+   1e870:	0c13      	movi.n	a3, 1
+   1e872:	a2241a        	l32i	a10, a4, 104
+   1e875:	001240        	ssl	a2
+   1e878:	00b3a1        	sll	a11, a3
+   1e87b:	b78a14        	bany	a10, a11, 0x1e893
+   1e87e:	c05201        	slli	a5, a2, 20
+   1e881:	605520        	or	a5, a5, a6
+   1e884:	ad05      	mov.n	a10, a5
+0001e886: a509e3   call8        . -0x1cf64 ; Capstone ; target=0x1920
+   1e889:	bd0a      	mov.n	a11, a10
+   1e88b:	ad05      	mov.n	a10, a5
+   1e88d:	70bb20        	or	a11, a11, a7
+0001e890: 6504e3   call8        . -0x1cfb8 ; Capstone ; target=0x18d8
+   1e893:	1b22      	addi.n	a2, a2, 1
+   1e895:	202074        	extui	a2, a2, 0, 8
+   1e898:	6682d6        	bnei	a2, 8, 0x1e872
+   1e89b:	816cd2        	l32r	a8, 0x1324c (0x10174)
+   1e89e:	324880        	s8i	a3, a8, 128
+0001e8a1: 1df0     retw.n        ; Capstone
+	...

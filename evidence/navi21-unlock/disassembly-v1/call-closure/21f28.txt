@@ -1,0 +1,30 @@
+
+/tmp/tmpnjginczo/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00021f28 <.data+0x21f28>:
+00021f28: 364100   entry        a1, 0x20 ; Capstone
+   21f2b:	5149c4        	l32r	a5, 0x13050 (0xaaf0)
+   21f2e:	2042f0        	subx8	a4, a2, a2
+   21f31:	5044a0        	addx4	a4, a4, a5
+   21f34:	82047d        	l8ui	a8, a4, 125
+   21f37:	1ca9      	movi.n	a9, 26
+   21f39:	5196c5        	l32r	a5, 0x13594 (0xaf44)
+   21f3c:	9088d1        	mul16s	a8, a8, a9
+   21f3f:	42241c        	l32i	a4, a4, 112
+   21f42:	8a55      	add.n	a5, a5, a8
+   21f44:	52157f        	l16ui	a5, a5, 254
+   21f47:	812fc4        	l32r	a8, 0x13004 (0xfffff)
+   21f4a:	5a44      	add.n	a4, a4, a5
+   21f4c:	5143c4        	l32r	a5, 0x13058 (0x11ffe00)
+   21f4f:	804410        	and	a4, a4, a8
+   21f52:	5a44      	add.n	a4, a4, a5
+   21f54:	c02000        	memw
+   21f57:	5190c5        	l32r	a5, 0x13598 (0xfffdffff)
+   21f5a:	322480        	l32i	a3, a4, 0x200
+   21f5d:	503310        	and	a3, a3, a5
+   21f60:	c02000        	memw
+   21f63:	326480        	s32i	a3, a4, 0x200
+00021f66: 1df0     retw.n        ; Capstone

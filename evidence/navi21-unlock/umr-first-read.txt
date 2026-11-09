@@ -1,0 +1,6 @@
+gfx1030.mmCC_GC_SHADER_ARRAY_CONFIG => 0xffe00001
+	.INACTIVE_WGPS[16:31]                                            ==    65504 (0x0000ffe0)
+gfx1030.mmCC_GC_SHADER_ARRAY_CONFIG_GEN0 => 0x00000000
+	.GEN0_INACTIVE_CU[0:13]                                          ==        0 (0x00000000)
+gfx1030.mmCC_GC_SHADER_ARRAY_CONFIG_GEN1 => 0x00000000
+	.GEN1_INACTIVE_CU[0:13]                                          ==        0 (0x00000000)

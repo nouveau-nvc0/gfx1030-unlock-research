@@ -1,0 +1,56 @@
+
+/tmp/tmpt8wf_aq5/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000332c4 <.data+0x332c4>:
+000332c4: 364100   entry        a1, 0x20 ; Capstone
+   332c7:	a2a06c        	movi	a10, 108
+   332ca:	3ceb      	movi.n	a11, 62
+   332cc:	0c0c      	movi.n	a12, 0
+   332ce:	0c8d      	movi.n	a13, 8
+000332d0: e597ce   call8        . -0x31680 ; Capstone ; target=0x1c50
+   332d3:	3d0a      	mov.n	a3, a10
+   332d5:	0c02      	movi.n	a2, 0
+   332d7:	9c2a      	beqz.n	a10, 0x332ed
+   332d9:	820a06        	l8ui	a8, a10, 6
+   332dc:	8cd8      	beqz.n	a8, 0x332ed
+   332de:	a2a06c        	movi	a10, 108
+   332e1:	3ceb      	movi.n	a11, 62
+   332e3:	cd02      	mov.n	a12, a2
+   332e5:	0c8d      	movi.n	a13, 8
+000332e7: 2532ce   call8        . -0x31cdc ; Capstone ; target=0x1608
+   332ea:	224306        	s8i	a2, a3, 6
+   332ed:	a2a06c        	movi	a10, 108
+   332f0:	3ceb      	movi.n	a11, 62
+   332f2:	0c1c      	movi.n	a12, 1
+   332f4:	0c8d      	movi.n	a13, 8
+000332f6: a595ce   call8        . -0x316a4 ; Capstone ; target=0x1c50
+   332f9:	3d0a      	mov.n	a3, a10
+   332fb:	9c2a      	beqz.n	a10, 0x33311
+   332fd:	920a06        	l8ui	a9, a10, 6
+   33300:	8cd9      	beqz.n	a9, 0x33311
+   33302:	a2a06c        	movi	a10, 108
+   33305:	3ceb      	movi.n	a11, 62
+   33307:	0c1c      	movi.n	a12, 1
+   33309:	0c8d      	movi.n	a13, 8
+0003330b: e52fce   call8        . -0x31d00 ; Capstone ; target=0x1608
+   3330e:	224306        	s8i	a2, a3, 6
+   33311:	a2a06c        	movi	a10, 108
+   33314:	3ceb      	movi.n	a11, 62
+   33316:	0c2c      	movi.n	a12, 2
+   33318:	0c8d      	movi.n	a13, 8
+0003331a: 6593ce   call8        . -0x316c8 ; Capstone ; target=0x1c50
+   3331d:	3d0a      	mov.n	a3, a10
+   3331f:	9c2a      	beqz.n	a10, 0x33335
+   33321:	a20a06        	l8ui	a10, a10, 6
+   33324:	8cda      	beqz.n	a10, 0x33335
+   33326:	a2a06c        	movi	a10, 108
+   33329:	3ceb      	movi.n	a11, 62
+   3332b:	0c2c      	movi.n	a12, 2
+   3332d:	0c8d      	movi.n	a13, 8
+0003332f: a52dce   call8        . -0x31d24 ; Capstone ; target=0x1608
+   33332:	224306        	s8i	a2, a3, 6
+00033335: 1df0     retw.n        ; Capstone
+	...

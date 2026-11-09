@@ -1,0 +1,23 @@
+
+/tmp/tmp5cujti_i/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00022f58 <.data+0x22f58>:
+00022f58: 364100   entry        a1, 0x20 ; Capstone
+   22f5b:	ad02      	mov.n	a10, a2
+00022f5d: 2516df   call8        . -0x20e9c ; Capstone ; target=0x20c0
+   22f60:	cd0a      	mov.n	a12, a10
+   22f62:	b69a09        	bltui	a10, 10, 0x22f6f
+   22f65:	ad02      	mov.n	a10, a2
+   22f67:	b2a0ff        	movi	a11, 255
+00022f6a: 2513df   call8        . -0x20ecc ; Capstone ; target=0x209c
+00022f6d: 1df0     retw.n        ; Capstone
+   22f6f:	81cec1        	l32r	a8, 0x136a8 (0xbef8)
+   22f72:	ad02      	mov.n	a10, a2
+   22f74:	0c1b      	movi.n	a11, 1
+   22f76:	c24880        	s8i	a12, a8, 128
+00022f79: 2512df   call8        . -0x20edc ; Capstone ; target=0x209c
+00022f7c: 1df0     retw.n        ; Capstone
+	...

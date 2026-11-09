@@ -1,0 +1,25 @@
+{
+  "objective": "Detailed CC access-policy study and better-grounded hypotheses",
+  "report": "navi21-cc-access-report.md",
+  "report_sha256": "945402ea007157612b42dfe38b89b43b3af2ecd1d001182d69e734e724555481",
+  "local_links_checked": 15,
+  "missing_links": [],
+  "covered": [
+    "experimental readback limits",
+    "RPM-matched host write path",
+    "SRIOV/RLCG gates and limitations",
+    "UMR field format and unnamed bit0",
+    "GRBM remapping",
+    "RLC container bounds and decoding limits",
+    "ATOM callbacks",
+    "SMU AVFS distinction",
+    "ranked hypotheses and discriminating evidence"
+  ],
+  "unresolved_not_claimed": [
+    "physical irreversibility",
+    "CC-specific internal writer or lock",
+    "decoded firmware permission list",
+    "working unlock"
+  ],
+  "hardware_mutations": false
+}

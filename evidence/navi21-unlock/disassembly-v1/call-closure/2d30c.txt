@@ -1,0 +1,14 @@
+
+/tmp/tmptadr834x/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002d30c <.data+0x2d30c>:
+0002d30c: 364100   entry        a1, 0x20 ; Capstone
+   2d30f:	31c696        	l32r	a3, 0x12e28 (0x9c00)
+   2d312:	202290        	addx2	a2, a2, a2
+   2d315:	3022a0        	addx4	a2, a2, a3
+   2d318:	22d24b        	addmi	a2, a2, 0x4b00
+   2d31b:	22c2f8        	addi	a2, a2, -8
+0002d31e: 1df0     retw.n        ; Capstone

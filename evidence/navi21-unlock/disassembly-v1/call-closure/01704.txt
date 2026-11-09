@@ -1,0 +1,19 @@
+
+/tmp/tmpwb795ux9/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001704 <.data+0x1704>:
+00001704: 364100   entry        a1, 0x20 ; Capstone
+    1707:	204541        	srli	a4, a2, 5
+    170a:	0c13      	movi.n	a3, 1
+    170c:	208044        	extui	a8, a2, 0, 5
+    170f:	001840        	ssl	a8
+    1712:	8145fd        	l32r	a8, 0xc28 (0x32003b0)
+    1715:	e04411        	slli	a4, a4, 2
+    1718:	0033a1        	sll	a3, a3
+    171b:	8a44      	add.n	a4, a4, a8
+    171d:	c02000        	memw
+    1720:	3904      	s32i.n	a3, a4, 0
+00001722: 1df0     retw.n        ; Capstone

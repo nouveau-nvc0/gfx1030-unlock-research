@@ -1,0 +1,86 @@
+
+/tmp/tmp0okjaqgz/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002991c <.data+0x2991c>:
+0002991c: 364100   entry        a1, 0x20 ; Capstone
+   2991f:	b1ffa8        	l32r	a11, 0x13d1c (0xb5ac)
+00029922: 5003fa   wfr          f0, a3 ; Capstone
+00029925: 5012fa   wfr          f1, a2 ; Capstone
+   29928:	820b80        	l8ui	a8, a11, 128
+   2992b:	0c02      	movi.n	a2, 0
+   2992d:	d2cb40        	addi	a13, a11, 64
+   29930:	cc28      	bnez.n	a8, 0x29936
+00029932: 1df0     retw.n        ; Capstone
+00029934: 000056   ee.ldf.64.xp f0, f5, a0, a0 ; Capstone
+00029937: d405e1   ee.ld.128.usar.ip q4, a13, 0x850 ; Capstone
+   2993a:	d7a550        	bge	a5, a13, 0x2998e
+   2993d:	4e          	.byte 0x4e
+   2993e:	fa10      	add.n	a1, a0, a15
+00029940: 342a00   ee.ld.qacc_l.l.128.ip a3, 0x2a0 ; Capstone
+00029943: 242a00   ee.ld.qacc_l.l.128.ip a2, 0x2a0 ; Capstone
+   29946:	c3aa00        	excw
+   29949:	e2aa0c        	movi	a14, 0xfffffa0c
+   2994c:	0a0c      	add.n	a0, a12, a0
+   2994e:	49c0      	s32i.n	a4, a0, 48
+   29950:	c0f4e0        	subx4	a15, a4, a12
+00029953: e0f476   ee.ldf.64.xp f15, f7, a14, a4 ; Capstone
+   29956:	a92f      	s32i.n	a10, a15, 8
+   29958:	a0ba90        	addx2	a11, a10, a10
+   2995b:	d0bba0        	addx4	a11, a11, a13
+   2995e:	f21b3a        	l16ui	a15, a11, 116
+   29961:	f73c1c        	bltu	a12, a15, 0x29981
+   29964:	f21b3b        	l16ui	a15, a11, 118
+   29967:	821b3c        	l16ui	a8, a11, 120
+   2996a:	c73f13        	bltu	a15, a12, 0x29981
+   2996d:	873e10        	bltu	a14, a8, 0x29981
+   29970:	921b3d        	l16ui	a9, a11, 122
+   29973:	f20b7d        	l8ui	a15, a11, 125
+   29976:	e73907        	bltu	a9, a14, 0x29981
+   29979:	f73404        	bltu	a4, a15, 0x29981
+   2997c:	9d0a      	mov.n	a9, a10
+   2997e:	460000        	j	0x29983
+   29981:	0c09      	movi.n	a9, 0
+   29983:	1baa      	addi.n	a10, a10, 1
+   29985:	a0a0f4        	extui	a10, a10, 0, 16
+   29988:	81e6a8        	l32r	a8, 0x13d20 (0xb5e8)
+   2998b:	902990        	addx2	a2, a9, a9
+   2998e:	8022a0        	addx4	a2, a2, a8
+   29991:	220280        	l8ui	a2, a2, 128
+00029994: 1df0     retw.n        ; Capstone
+   29996:	002614        	extui	a2, a0, 6, 2
+   29999:	026624        	s32i	a0, a6, 144
+   2999c:	170c0a        	bnone	a12, a1, 0x299aa
+   2999f:	0c49      	movi.n	a9, 4
+000299a1: 76a910   loopgtz      a9, . +0x14 ; Capstone
+   299a4:	a0ba90        	addx2	a11, a10, a10
+   299a7:	d0bba0        	addx4	a11, a11, a13
+   299aa:	c20b7d        	l8ui	a12, a11, 125
+   299ad:	1baa      	addi.n	a10, a10, 1
+   299af:	a0a0f4        	extui	a10, a10, 0, 16
+   299b2:	471c11        	beq	a12, a4, 0x299c7
+   299b5:	0c0c      	movi.n	a12, 0
+   299b7:	3c1b      	movi.n	a11, 49
+   299b9:	d142a5        	l32r	a13, 0x12ec4 (0x300fe00)
+   299bc:	1c0a      	movi.n	a10, 16
+   299be:	c02000        	memw
+   299c1:	d22d8a        	l32i	a13, a13, 0x228
+000299c4: 65c4d8   call8        . -0x273b8 ; Capstone ; target=0x260c
+   299c7:	220b7c        	l8ui	a2, a11, 124
+000299ca: 1df0     retw.n        ; Capstone
+
+; Alternate branch-target decode
+   29936:	56d405        	bnez	a4, 0x29997
+   29939:	e1d7a5        	l32r	a14, 0x13098 (0x447a0000)
+0002993c: 504efa   wfr          f4, a14 ; Capstone
+0002993f: 10342a   mul.s        f3, f4, f1 ; Capstone
+00029942: 00242a   mul.s        f2, f4, f0 ; Capstone
+00029945: 00c3aa   floor.s      a12, f3, 0 ; Capstone
+00029948: 00e2aa   floor.s      a14, f2, 0 ; Capstone
+   2994b:	0c0a      	movi.n	a10, 0
+   2994d:	0c49      	movi.n	a9, 4
+   2994f:	c0c0f4        	extui	a12, a12, 0, 16
+   29952:	e0e0f4        	extui	a14, a14, 0, 16
+00029955: 76a92f   loopgtz      a9, . +0x33 ; Capstone

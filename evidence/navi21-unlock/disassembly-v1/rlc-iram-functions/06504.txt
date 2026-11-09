@@ -1,0 +1,79 @@
+
+/tmp/tmps2j2cb9r/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00006504 <.data+0x6504>:
+00006504: 368100   entry        a1, 0x40 ; Capstone
+    6507:	513edb        	l32r	a5, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    650a:	0c26      	movi.n	a6, 2
+    650c:	91f1db        	l32r	a9, 0xffffd4d0 (0xf0ffffff) ; inferred DRAM map 0x5ffec000
+    650f:	0c7e      	movi.n	a14, 7
+    6511:	20c074        	extui	a12, a2, 0, 8
+    6514:	20a874        	extui	a10, a2, 8, 8
+    6517:	0c0d      	movi.n	a13, 0
+    6519:	d26100        	s32i	a13, a1, 0
+    651c:	a24102        	s8i	a10, a1, 2
+    651f:	c24101        	s8i	a12, a1, 1
+    6522:	e24100        	s8i	a14, a1, 0
+    6525:	722100        	l32i	a7, a1, 0
+    6528:	208035        	extui	a8, a2, 16, 4
+    652b:	808801        	slli	a8, a8, 24
+    652e:	907710        	and	a7, a7, a9
+    6531:	807720        	or	a7, a7, a8
+    6534:	6265fd        	s32i	a6, a5, 0x3f4
+    6537:	f225fd        	l32i	a15, a5, 0x3f4
+    653a:	662ff6        	bnei	a15, 2, 0x6534
+    653d:	614edb        	l32r	a6, 0xffffd278 (0x6803ea00) ; inferred DRAM map 0x5ffec000
+    6540:	2266c2        	s32i	a2, a6, 0x308
+    6543:	2226c2        	l32i	a2, a6, 0x308
+    6546:	204014        	extui	a4, a2, 0, 2
+    6549:	1634ff        	beqz	a4, 0x6540
+    654c:	406f00        	rsil	a4, 15
+    654f:	9105db        	l32r	a9, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    6552:	61e0db        	l32r	a6, 0xffffd4d4 (0x7fffffff) ; inferred DRAM map 0x5ffec000
+    6555:	81e0db        	l32r	a8, 0xffffd4d8 (0x6003ea00) ; inferred DRAM map 0x5ffec000
+    6558:	d26980        	s32i	a13, a9, 0x200
+    655b:	606710        	and	a6, a7, a6
+    655e:	6268c1        	s32i	a6, a8, 0x304
+    6561:	40e613        	wsr.ps	a4
+    6564:	102000        	rsync
+    6567:	206f00        	rsil	a2, 15
+    656a:	d26980        	s32i	a13, a9, 0x200
+    656d:	d268c1        	s32i	a13, a8, 0x304
+    6570:	20e613        	wsr.ps	a2
+    6573:	102000        	rsync
+    6576:	f06f00        	rsil	a15, 15
+    6579:	d26980        	s32i	a13, a9, 0x200
+    657c:	d268c1        	s32i	a13, a8, 0x304
+    657f:	f0e613        	wsr.ps	a15
+    6582:	102000        	rsync
+    6585:	e06f00        	rsil	a14, 15
+    6588:	d26980        	s32i	a13, a9, 0x200
+    658b:	d268c1        	s32i	a13, a8, 0x304
+    658e:	e0e613        	wsr.ps	a14
+    6591:	102000        	rsync
+    6594:	c06f00        	rsil	a12, 15
+    6597:	d26980        	s32i	a13, a9, 0x200
+    659a:	3268c1        	s32i	a3, a8, 0x304
+    659d:	c0e613        	wsr.ps	a12
+    65a0:	102000        	rsync
+    65a3:	b06f00        	rsil	a11, 15
+    65a6:	d26980        	s32i	a13, a9, 0x200
+    65a9:	d268c1        	s32i	a13, a8, 0x304
+    65ac:	b0e613        	wsr.ps	a11
+    65af:	102000        	rsync
+    65b2:	a06f00        	rsil	a10, 15
+    65b5:	d26980        	s32i	a13, a9, 0x200
+    65b8:	d268c1        	s32i	a13, a8, 0x304
+    65bb:	a0e613        	wsr.ps	a10
+    65be:	102000        	rsync
+    65c1:	606f00        	rsil	a6, 15
+    65c4:	d26980        	s32i	a13, a9, 0x200
+    65c7:	d268c1        	s32i	a13, a8, 0x304
+    65ca:	60e613        	wsr.ps	a6
+    65cd:	102000        	rsync
+    65d0:	d265fd        	s32i	a13, a5, 0x3f4
+000065d3: 1df0     retw.n        ; Capstone
+    65d5:	000000        	ill

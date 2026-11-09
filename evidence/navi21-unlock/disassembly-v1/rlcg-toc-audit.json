@@ -1,0 +1,1616 @@
+{
+  "sos_sha256": "67706b9e1545bf68850bf9cea97660af5972574ecb0ca30041174efbb59fac37",
+  "rlc_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "toc_wrapper_file_offset": "0x35bd0",
+  "toc_body_file_interval": [
+    "0x35cd0",
+    "0x360d0"
+  ],
+  "toc_body_sha256": "98d306740c6358c4681f0be43f3e53d3d1858f8d44cfbd7e7121e1889258fe2c",
+  "sources": {
+    "evidence/navi21-unlock/sources/amdgpu_rlc.h.v6.12": "d85e5492f27fdc84f8450fae6d80bd0d31ab8843ae19b1812a6940faf2b086c8",
+    "evidence/navi21-unlock/sources/amdgpu_psp.c.v6.12": "1e73faa87fc8fe3456a054973bc87265fc3c7827904189563f6825b42362ee25",
+    "evidence/navi21-unlock/sources/gfx_v10_0.c": "3b2013dcb603845c3785fe02fc9aeee848b391f10d462e9384a1e4f370a4fb1b",
+    "evidence/navi21-unlock/cc-access-v1/amdgpu_ucode.h": "222b508dfd40897ead5aecd207ab54c015c311c50e96246a962c1eb29c63b1e0"
+  },
+  "entries": [
+    {
+      "id": 1,
+      "file_offset": "0x35cd0",
+      "raw_words": [
+        "02000000",
+        "06002003",
+        "0000fb5f",
+        "2000fb60"
+      ],
+      "offset_bytes": 0,
+      "size_bytes_base_units": 24576,
+      "fields": {
+        "load_at_boot": 1,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 6144
+      },
+      "address_register": "0xfb5f",
+      "index": 0,
+      "data_register": "0xfb60",
+      "start_word": 8192
+    },
+    {
+      "id": 2,
+      "file_offset": "0x35ce0",
+      "raw_words": [
+        "04001800",
+        "00402003",
+        "0000fb75",
+        "0200fb76"
+      ],
+      "offset_bytes": 24576,
+      "size_bytes_base_units": 1024,
+      "fields": {
+        "load_at_boot": 1,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 256
+      },
+      "address_register": "0xfb75",
+      "index": 0,
+      "data_register": "0xfb76",
+      "start_word": 512
+    },
+    {
+      "id": 3,
+      "file_offset": "0x35cf0",
+      "raw_words": [
+        "06001900",
+        "00802003",
+        "0000fb75",
+        "0000fb76"
+      ],
+      "offset_bytes": 25600,
+      "size_bytes_base_units": 2048,
+      "fields": {
+        "load_at_boot": 1,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 512
+      },
+      "address_register": "0xfb75",
+      "index": 0,
+      "data_register": "0xfb76",
+      "start_word": 0
+    },
+    {
+      "id": 4,
+      "file_offset": "0x35d00",
+      "raw_words": [
+        "08001b00",
+        "06002003",
+        "0000fb73",
+        "0000fb74"
+      ],
+      "offset_bytes": 27648,
+      "size_bytes_base_units": 24576,
+      "fields": {
+        "load_at_boot": 1,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 6144
+      },
+      "address_register": "0xfb73",
+      "index": 0,
+      "data_register": "0xfb74",
+      "start_word": 0
+    },
+    {
+      "id": 5,
+      "file_offset": "0x35d10",
+      "raw_words": [
+        "0a003300",
+        "00022a07",
+        "00000000",
+        "0000ec8b"
+      ],
+      "offset_bytes": 52224,
+      "size_bytes_base_units": 32,
+      "fields": {
+        "load_at_boot": 1,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 1,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 1,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 1,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 8
+      },
+      "address_register": "0x0",
+      "index": 0,
+      "data_register": "0xec8b",
+      "start_word": 0
+    },
+    {
+      "id": 6,
+      "file_offset": "0x35d20",
+      "raw_words": [
+        "0c003310",
+        "00022a07",
+        "00000000",
+        "0000ec93"
+      ],
+      "offset_bytes": 52288,
+      "size_bytes_base_units": 32,
+      "fields": {
+        "load_at_boot": 1,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 1,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 1,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 1,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 8
+      },
+      "address_register": "0x0",
+      "index": 0,
+      "data_register": "0xec93",
+      "start_word": 0
+    },
+    {
+      "id": 7,
+      "file_offset": "0x35d30",
+      "raw_words": [
+        "0e003320",
+        "02002003",
+        "0000fb6b",
+        "0000fb6c"
+      ],
+      "offset_bytes": 52352,
+      "size_bytes_base_units": 8192,
+      "fields": {
+        "load_at_boot": 1,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 2048
+      },
+      "address_register": "0xfb6b",
+      "index": 0,
+      "data_register": "0xfb6c",
+      "start_word": 0
+    },
+    {
+      "id": 8,
+      "file_offset": "0x35d40",
+      "raw_words": [
+        "10003b20",
+        "03002003",
+        "0000fb69",
+        "0000fb6a"
+      ],
+      "offset_bytes": 60544,
+      "size_bytes_base_units": 12288,
+      "fields": {
+        "load_at_boot": 1,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 3072
+      },
+      "address_register": "0xfb69",
+      "index": 0,
+      "data_register": "0xfb6a",
+      "start_word": 0
+    },
+    {
+      "id": 9,
+      "file_offset": "0x35d50",
+      "raw_words": [
+        "12004720",
+        "10002003",
+        "0000fb57",
+        "0000fb58"
+      ],
+      "offset_bytes": 72832,
+      "size_bytes_base_units": 65536,
+      "fields": {
+        "load_at_boot": 1,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 16384
+      },
+      "address_register": "0xfb57",
+      "index": 0,
+      "data_register": "0xfb58",
+      "start_word": 0
+    },
+    {
+      "id": 10,
+      "file_offset": "0x35d60",
+      "raw_words": [
+        "14008720",
+        "04002001",
+        "0000fb55",
+        "0000fb56"
+      ],
+      "offset_bytes": 138368,
+      "size_bytes_base_units": 16384,
+      "fields": {
+        "load_at_boot": 1,
+        "load_at_vddgfx": 0,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 4096
+      },
+      "address_register": "0xfb55",
+      "index": 0,
+      "data_register": "0xfb56",
+      "start_word": 0
+    },
+    {
+      "id": 11,
+      "file_offset": "0x35d70",
+      "raw_words": [
+        "16009720",
+        "00102807",
+        "0000dc90",
+        "0000dc91"
+      ],
+      "offset_bytes": 154752,
+      "size_bytes_base_units": 256,
+      "fields": {
+        "load_at_boot": 1,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 1,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 1,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 64
+      },
+      "address_register": "0xdc90",
+      "index": 0,
+      "data_register": "0xdc91",
+      "start_word": 0
+    },
+    {
+      "id": 12,
+      "file_offset": "0x35d80",
+      "raw_words": [
+        "18009760",
+        "00182003",
+        "0001dc92",
+        "0000dc93"
+      ],
+      "offset_bytes": 155008,
+      "size_bytes_base_units": 384,
+      "fields": {
+        "load_at_boot": 1,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 96
+      },
+      "address_register": "0xdc92",
+      "index": 1,
+      "data_register": "0xdc93",
+      "start_word": 0
+    },
+    {
+      "id": 13,
+      "file_offset": "0x35d90",
+      "raw_words": [
+        "1a0097c0",
+        "00182003",
+        "0002dc92",
+        "0000dc93"
+      ],
+      "offset_bytes": 155392,
+      "size_bytes_base_units": 384,
+      "fields": {
+        "load_at_boot": 1,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 96
+      },
+      "address_register": "0xdc92",
+      "index": 2,
+      "data_register": "0xdc93",
+      "start_word": 0
+    },
+    {
+      "id": 14,
+      "file_offset": "0x35da0",
+      "raw_words": [
+        "1c009820",
+        "00182003",
+        "0003dc92",
+        "0000dc93"
+      ],
+      "offset_bytes": 155776,
+      "size_bytes_base_units": 384,
+      "fields": {
+        "load_at_boot": 1,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 96
+      },
+      "address_register": "0xdc92",
+      "index": 3,
+      "data_register": "0xdc93",
+      "start_word": 0
+    },
+    {
+      "id": 15,
+      "file_offset": "0x35db0",
+      "raw_words": [
+        "1e009880",
+        "00182003",
+        "0004dc92",
+        "0000dc93"
+      ],
+      "offset_bytes": 156160,
+      "size_bytes_base_units": 384,
+      "fields": {
+        "load_at_boot": 1,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 96
+      },
+      "address_register": "0xdc92",
+      "index": 4,
+      "data_register": "0xdc93",
+      "start_word": 0
+    },
+    {
+      "id": 16,
+      "file_offset": "0x35dc0",
+      "raw_words": [
+        "200098e0",
+        "08202003",
+        "0000f89c",
+        "0000f89d"
+      ],
+      "offset_bytes": 156544,
+      "size_bytes_base_units": 33280,
+      "fields": {
+        "load_at_boot": 1,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 8320
+      },
+      "address_register": "0xf89c",
+      "index": 0,
+      "data_register": "0xf89d",
+      "start_word": 0
+    },
+    {
+      "id": 17,
+      "file_offset": "0x35dd0",
+      "raw_words": [
+        "2200c000",
+        "41002200",
+        "00000000",
+        "00000000"
+      ],
+      "offset_bytes": 196608,
+      "size_bytes_base_units": 266240,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 0,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 1,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 66560
+      },
+      "address_register": "0x0",
+      "index": 0,
+      "data_register": "0x0",
+      "start_word": 0
+    },
+    {
+      "id": 18,
+      "file_offset": "0x35de0",
+      "raw_words": [
+        "2401d000",
+        "41002200",
+        "00000000",
+        "00000000"
+      ],
+      "offset_bytes": 475136,
+      "size_bytes_base_units": 266240,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 0,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 1,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 66560
+      },
+      "address_register": "0x0",
+      "index": 0,
+      "data_register": "0x0",
+      "start_word": 0
+    },
+    {
+      "id": 19,
+      "file_offset": "0x35df0",
+      "raw_words": [
+        "2602e000",
+        "41002200",
+        "00000000",
+        "00000000"
+      ],
+      "offset_bytes": 753664,
+      "size_bytes_base_units": 266240,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 0,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 1,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 66560
+      },
+      "address_register": "0x0",
+      "index": 0,
+      "data_register": "0x0",
+      "start_word": 0
+    },
+    {
+      "id": 20,
+      "file_offset": "0x35e00",
+      "raw_words": [
+        "2803f000",
+        "42002200",
+        "00000000",
+        "00000000"
+      ],
+      "offset_bytes": 1032192,
+      "size_bytes_base_units": 270336,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 0,
+        "load_at_reset": 0,
+        "memory_destination": 0,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 1,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 1,
+        "size": 67584
+      },
+      "address_register": "0x0",
+      "index": 0,
+      "data_register": "0x0",
+      "start_word": 0
+    },
+    {
+      "id": 21,
+      "file_offset": "0x35e10",
+      "raw_words": [
+        "2a080000",
+        "20003208",
+        "00000000",
+        "00000000"
+      ],
+      "offset_bytes": 2097152,
+      "size_bytes_base_units": 131072,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 0,
+        "load_at_reset": 0,
+        "memory_destination": 1,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 1,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 1,
+        "signed_source": 1,
+        "size": 32768
+      },
+      "address_register": "0x0",
+      "index": 0,
+      "data_register": "0x0",
+      "start_word": 0
+    },
+    {
+      "id": 22,
+      "file_offset": "0x35e20",
+      "raw_words": [
+        "2c140000",
+        "40000210",
+        "00000000",
+        "00000000"
+      ],
+      "offset_bytes": 5242880,
+      "size_bytes_base_units": 262144,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 0,
+        "load_at_reset": 0,
+        "memory_destination": 2,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 1,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 0,
+        "size": 65536
+      },
+      "address_register": "0x0",
+      "index": 0,
+      "data_register": "0x0",
+      "start_word": 0
+    },
+    {
+      "id": 23,
+      "file_offset": "0x35e30",
+      "raw_words": [
+        "2e150000",
+        "03000412",
+        "0000fb71",
+        "0000fb72"
+      ],
+      "offset_bytes": 5505024,
+      "size_bytes_base_units": 12288,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 2,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 1,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 0,
+        "size": 3072
+      },
+      "address_register": "0xfb71",
+      "index": 0,
+      "data_register": "0xfb72",
+      "start_word": 0
+    },
+    {
+      "id": 24,
+      "file_offset": "0x35e40",
+      "raw_words": [
+        "30150c00",
+        "00800412",
+        "0000fb75",
+        "0000fb76"
+      ],
+      "offset_bytes": 5517312,
+      "size_bytes_base_units": 2048,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 2,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 1,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 0,
+        "size": 512
+      },
+      "address_register": "0xfb75",
+      "index": 0,
+      "data_register": "0xfb76",
+      "start_word": 0
+    },
+    {
+      "id": 25,
+      "file_offset": "0x35e50",
+      "raw_words": [
+        "32150e00",
+        "00c00412",
+        "0000ee04",
+        "0000ee05"
+      ],
+      "offset_bytes": 5519360,
+      "size_bytes_base_units": 3072,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 2,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 1,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 0,
+        "size": 768
+      },
+      "address_register": "0xee04",
+      "index": 0,
+      "data_register": "0xee05",
+      "start_word": 0
+    },
+    {
+      "id": 26,
+      "file_offset": "0x35e60",
+      "raw_words": [
+        "34151100",
+        "00c00412",
+        "0000fb67",
+        "0000fb68"
+      ],
+      "offset_bytes": 5522432,
+      "size_bytes_base_units": 3072,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 2,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 1,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 0,
+        "size": 768
+      },
+      "address_register": "0xfb67",
+      "index": 0,
+      "data_register": "0xfb68",
+      "start_word": 0
+    },
+    {
+      "id": 27,
+      "file_offset": "0x35e70",
+      "raw_words": [
+        "36151400",
+        "04000412",
+        "0000fb55",
+        "0000fb56"
+      ],
+      "offset_bytes": 5525504,
+      "size_bytes_base_units": 16384,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 2,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 1,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 0,
+        "size": 4096
+      },
+      "address_register": "0xfb55",
+      "index": 0,
+      "data_register": "0xfb56",
+      "start_word": 0
+    },
+    {
+      "id": 28,
+      "file_offset": "0x35e80",
+      "raw_words": [
+        "38152400",
+        "02580210",
+        "00000000",
+        "00000000"
+      ],
+      "offset_bytes": 5541888,
+      "size_bytes_base_units": 9600,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 0,
+        "load_at_reset": 0,
+        "memory_destination": 2,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 1,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 0,
+        "size": 2400
+      },
+      "address_register": "0x0",
+      "index": 0,
+      "data_register": "0x0",
+      "start_word": 0
+    },
+    {
+      "id": 29,
+      "file_offset": "0x35e90",
+      "raw_words": [
+        "3a152d60",
+        "02580210",
+        "00000000",
+        "00000000"
+      ],
+      "offset_bytes": 5551488,
+      "size_bytes_base_units": 9600,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 0,
+        "load_at_reset": 0,
+        "memory_destination": 2,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 1,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 0,
+        "size": 2400
+      },
+      "address_register": "0x0",
+      "index": 0,
+      "data_register": "0x0",
+      "start_word": 0
+    },
+    {
+      "id": 30,
+      "file_offset": "0x35ea0",
+      "raw_words": [
+        "3c1536c0",
+        "02580210",
+        "00000000",
+        "00000000"
+      ],
+      "offset_bytes": 5561088,
+      "size_bytes_base_units": 9600,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 0,
+        "load_at_reset": 0,
+        "memory_destination": 2,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 1,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 0,
+        "size": 2400
+      },
+      "address_register": "0x0",
+      "index": 0,
+      "data_register": "0x0",
+      "start_word": 0
+    },
+    {
+      "id": 31,
+      "file_offset": "0x35eb0",
+      "raw_words": [
+        "3e154020",
+        "02580210",
+        "00000000",
+        "00000000"
+      ],
+      "offset_bytes": 5570688,
+      "size_bytes_base_units": 9600,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 0,
+        "load_at_reset": 0,
+        "memory_destination": 2,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 1,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 0,
+        "size": 2400
+      },
+      "address_register": "0x0",
+      "index": 0,
+      "data_register": "0x0",
+      "start_word": 0
+    },
+    {
+      "id": 32,
+      "file_offset": "0x35ec0",
+      "raw_words": [
+        "40154980",
+        "00000010",
+        "0000dc89",
+        "0000dc8a"
+      ],
+      "offset_bytes": 5580288,
+      "size_bytes_base_units": 0,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 0,
+        "load_at_reset": 0,
+        "memory_destination": 2,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 0,
+        "size": 0
+      },
+      "address_register": "0xdc89",
+      "index": 0,
+      "data_register": "0xdc8a",
+      "start_word": 0
+    },
+    {
+      "id": 33,
+      "file_offset": "0x35ed0",
+      "raw_words": [
+        "42154980",
+        "00000010",
+        "0001dc87",
+        "0000dc88"
+      ],
+      "offset_bytes": 5580288,
+      "size_bytes_base_units": 0,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 0,
+        "load_at_reset": 0,
+        "memory_destination": 2,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 0,
+        "size": 0
+      },
+      "address_register": "0xdc87",
+      "index": 1,
+      "data_register": "0xdc88",
+      "start_word": 0
+    },
+    {
+      "id": 34,
+      "file_offset": "0x35ee0",
+      "raw_words": [
+        "44154980",
+        "00000010",
+        "0000dc97",
+        "0000dc98"
+      ],
+      "offset_bytes": 5580288,
+      "size_bytes_base_units": 0,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 0,
+        "load_at_reset": 0,
+        "memory_destination": 2,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 0,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 0,
+        "size": 0
+      },
+      "address_register": "0xdc97",
+      "index": 0,
+      "data_register": "0xdc98",
+      "start_word": 0
+    },
+    {
+      "id": 35,
+      "file_offset": "0x35ef0",
+      "raw_words": [
+        "46154980",
+        "00400412",
+        "0000ee00",
+        "0000ee01"
+      ],
+      "offset_bytes": 5580288,
+      "size_bytes_base_units": 1024,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 2,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 1,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 0,
+        "size": 256
+      },
+      "address_register": "0xee00",
+      "index": 0,
+      "data_register": "0xee01",
+      "start_word": 0
+    },
+    {
+      "id": 36,
+      "file_offset": "0x35f00",
+      "raw_words": [
+        "48154a80",
+        "00400412",
+        "0000ee02",
+        "0000ee03"
+      ],
+      "offset_bytes": 5581312,
+      "size_bytes_base_units": 1024,
+      "fields": {
+        "load_at_boot": 0,
+        "load_at_vddgfx": 1,
+        "load_at_reset": 0,
+        "memory_destination": 2,
+        "vfflr_image_code": 0,
+        "load_mode_direct": 0,
+        "save_for_vddgfx": 1,
+        "save_for_vfflr": 0,
+        "reserved": 0,
+        "signed_source": 0,
+        "size": 256
+      },
+      "address_register": "0xee02",
+      "index": 0,
+      "data_register": "0xee03",
+      "start_word": 0
+    }
+  ],
+  "raw_rlcg_words": [
+    {
+      "pc": "0x3101",
+      "word": "c54b020a"
+    },
+    {
+      "pc": "0x3102",
+      "word": "14ac0010"
+    },
+    {
+      "pc": "0x3103",
+      "word": "96c00005"
+    },
+    {
+      "pc": "0x3104",
+      "word": "cec300eb"
+    },
+    {
+      "pc": "0x3105",
+      "word": "0aec0001"
+    },
+    {
+      "pc": "0x3106",
+      "word": "12ec0010"
+    },
+    {
+      "pc": "0x3107",
+      "word": "8c0035ce"
+    },
+    {
+      "pc": "0x3108",
+      "word": "c54b0209"
+    },
+    {
+      "pc": "0x3109",
+      "word": "1490000e"
+    },
+    {
+      "pc": "0x310a",
+      "word": "11100002"
+    },
+    {
+      "pc": "0x310b",
+      "word": "248c1000"
+    },
+    {
+      "pc": "0x310c",
+      "word": "94c00002"
+    },
+    {
+      "pc": "0x310d",
+      "word": "11100004"
+    },
+    {
+      "pc": "0x310e",
+      "word": "c0360800"
+    },
+    {
+      "pc": "0x310f",
+      "word": "7f53400a"
+    },
+    {
+      "pc": "0x3110",
+      "word": "24a00200"
+    },
+    {
+      "pc": "0x3111",
+      "word": "9a00000d"
+    },
+    {
+      "pc": "0x3112",
+      "word": "c0362800"
+    },
+    {
+      "pc": "0x3113",
+      "word": "7f53400a"
+    },
+    {
+      "pc": "0x3114",
+      "word": "c0260000"
+    },
+    {
+      "pc": "0x3115",
+      "word": "c42300eb"
+    },
+    {
+      "pc": "0x3116",
+      "word": "96000001"
+    },
+    {
+      "pc": "0x3117",
+      "word": "c54b020a"
+    },
+    {
+      "pc": "0x3118",
+      "word": "c020ffff"
+    },
+    {
+      "pc": "0x3119",
+      "word": "7e0a0009"
+    },
+    {
+      "pc": "0x311a",
+      "word": "7e62400a"
+    },
+    {
+      "pc": "0x311b",
+      "word": "c54b020b"
+    },
+    {
+      "pc": "0x311c",
+      "word": "14ac0010"
+    },
+    {
+      "pc": "0x311d",
+      "word": "8c0035d7"
+    },
+    {
+      "pc": "0x311e",
+      "word": "c54b020b"
+    },
+    {
+      "pc": "0x311f",
+      "word": "c024ffff"
+    },
+    {
+      "pc": "0x3120",
+      "word": "7e4a4009"
+    },
+    {
+      "pc": "0x3121",
+      "word": "12640002"
+    },
+    {
+      "pc": "0x3122",
+      "word": "c0280000"
+    },
+    {
+      "pc": "0x3123",
+      "word": "c54b0208"
+    },
+    {
+      "pc": "0x3124",
+      "word": "c02f01ff"
+    },
+    {
+      "pc": "0x3125",
+      "word": "7ecac009"
+    },
+    {
+      "pc": "0x3126",
+      "word": "12ec0002"
+    },
+    {
+      "pc": "0x3127",
+      "word": "c433fb5e"
+    },
+    {
+      "pc": "0x3128",
+      "word": "c43bfb5d"
+    },
+    {
+      "pc": "0x3129",
+      "word": "c54b0209"
+    },
+    {
+      "pc": "0x312a",
+      "word": "14880003"
+    },
+    {
+      "pc": "0x312b",
+      "word": "24880003"
+    },
+    {
+      "pc": "0x312c",
+      "word": "30880003"
+    },
+    {
+      "pc": "0x312d",
+      "word": "94800003"
+    },
+    {
+      "pc": "0x312e",
+      "word": "c433011f"
+    },
+    {
+      "pc": "0x312f",
+      "word": "c43b011e"
+    },
+    {
+      "pc": "0x3130",
+      "word": "53300020"
+    },
+    {
+      "pc": "0x3131",
+      "word": "7f3b001a"
+    },
+    {
+      "pc": "0x3132",
+      "word": "7ef2c011"
+    },
+    {
+      "pc": "0x3133",
+      "word": "56f00020"
+    },
+    {
+      "pc": "0x3134",
+      "word": "c0380000"
+    },
+    {
+      "pc": "0x3135",
+      "word": "8c0030ae"
+    },
+    {
+      "pc": "0x3136",
+      "word": "8c0031d3"
+    },
+    {
+      "pc": "0x3137",
+      "word": "c43300eb"
+    },
+    {
+      "pc": "0x3138",
+      "word": "97000004"
+    },
+    {
+      "pc": "0x3139",
+      "word": "d80300eb"
+    },
+    {
+      "pc": "0x313a",
+      "word": "c02ee000"
+    },
+    {
+      "pc": "0x313b",
+      "word": "8c0035ce"
+    },
+    {
+      "pc": "0x313c",
+      "word": "05540004"
+    },
+    {
+      "pc": "0x313d",
+      "word": "800030d8"
+    },
+    {
+      "pc": "0x3173",
+      "word": "c40b02ff"
+    },
+    {
+      "pc": "0x3174",
+      "word": "24880001"
+    },
+    {
+      "pc": "0x3175",
+      "word": "94800000"
+    },
+    {
+      "pc": "0x3176",
+      "word": "d80300eb"
+    },
+    {
+      "pc": "0x3177",
+      "word": "c0140000"
+    },
+    {
+      "pc": "0x3178",
+      "word": "c54b0208"
+    },
+    {
+      "pc": "0x3179",
+      "word": "94800059"
+    },
+    {
+      "pc": "0x317a",
+      "word": "c54b0209"
+    },
+    {
+      "pc": "0x317b",
+      "word": "248801e0"
+    },
+    {
+      "pc": "0x317c",
+      "word": "94800054"
+    },
+    {
+      "pc": "0x317d",
+      "word": "c54b0208"
+    },
+    {
+      "pc": "0x317e",
+      "word": "14880019"
+    },
+    {
+      "pc": "0x317f",
+      "word": "38bc001f"
+    },
+    {
+      "pc": "0x3180",
+      "word": "c7cf02ff"
+    },
+    {
+      "pc": "0x3181",
+      "word": "97c00002"
+    },
+    {
+      "pc": "0x3182",
+      "word": "0888001f"
+    },
+    {
+      "pc": "0x3183",
+      "word": "7ccbc005"
+    },
+    {
+      "pc": "0x3184",
+      "word": "27fc0001"
+    },
+    {
+      "pc": "0x3185",
+      "word": "97c0004b"
+    },
+    {
+      "pc": "0x3186",
+      "word": "c54b0209"
+    },
+    {
+      "pc": "0x3187",
+      "word": "248c0001"
+    },
+    {
+      "pc": "0x3188",
+      "word": "94c00048"
+    },
+    {
+      "pc": "0x3189",
+      "word": "c54b020a"
+    },
+    {
+      "pc": "0x31a2",
+      "word": "c0360800"
+    },
+    {
+      "pc": "0x31a3",
+      "word": "7f53400a"
+    },
+    {
+      "pc": "0x31a4",
+      "word": "24a00200"
+    },
+    {
+      "pc": "0x31a5",
+      "word": "9a00000c"
+    },
+    {
+      "pc": "0x31a6",
+      "word": "c0362800"
+    },
+    {
+      "pc": "0x31a7",
+      "word": "7f53400a"
+    },
+    {
+      "pc": "0x31a8",
+      "word": "c0260000"
+    },
+    {
+      "pc": "0x31a9",
+      "word": "c42300eb"
+    },
+    {
+      "pc": "0x31aa",
+      "word": "c54b020a"
+    },
+    {
+      "pc": "0x31ab",
+      "word": "c020ffff"
+    },
+    {
+      "pc": "0x31ac",
+      "word": "7e0a0009"
+    },
+    {
+      "pc": "0x31ad",
+      "word": "7e62400a"
+    },
+    {
+      "pc": "0x31ae",
+      "word": "c54b020b"
+    },
+    {
+      "pc": "0x31af",
+      "word": "14ac0010"
+    },
+    {
+      "pc": "0x31b0",
+      "word": "8c0035d7"
+    },
+    {
+      "pc": "0x31b1",
+      "word": "c54b020b"
+    },
+    {
+      "pc": "0x31b2",
+      "word": "c024ffff"
+    },
+    {
+      "pc": "0x31b3",
+      "word": "7e4a4009"
+    },
+    {
+      "pc": "0x31b4",
+      "word": "12640002"
+    },
+    {
+      "pc": "0x31b5",
+      "word": "c0280000"
+    },
+    {
+      "pc": "0x31b6",
+      "word": "c54b0208"
+    },
+    {
+      "pc": "0x31b7",
+      "word": "c02f01ff"
+    },
+    {
+      "pc": "0x31b8",
+      "word": "7ecac009"
+    },
+    {
+      "pc": "0x31b9",
+      "word": "12ec0002"
+    },
+    {
+      "pc": "0x31ba",
+      "word": "7edec001"
+    },
+    {
+      "pc": "0x31bb",
+      "word": "c433fb5e"
+    },
+    {
+      "pc": "0x31bc",
+      "word": "c43bfb5d"
+    },
+    {
+      "pc": "0x31bd",
+      "word": "c54b0209"
+    },
+    {
+      "pc": "0x31be",
+      "word": "14880003"
+    },
+    {
+      "pc": "0x31bf",
+      "word": "24880003"
+    },
+    {
+      "pc": "0x31c0",
+      "word": "30880003"
+    },
+    {
+      "pc": "0x31c1",
+      "word": "94800003"
+    },
+    {
+      "pc": "0x31c2",
+      "word": "c433011f"
+    },
+    {
+      "pc": "0x31c3",
+      "word": "c43b011e"
+    },
+    {
+      "pc": "0x31c4",
+      "word": "53300020"
+    },
+    {
+      "pc": "0x31c5",
+      "word": "7f3b001a"
+    },
+    {
+      "pc": "0x31c6",
+      "word": "7ef2c011"
+    },
+    {
+      "pc": "0x31c7",
+      "word": "56f00020"
+    },
+    {
+      "pc": "0x31c8",
+      "word": "c0380000"
+    },
+    {
+      "pc": "0x31c9",
+      "word": "8c0030ae"
+    },
+    {
+      "pc": "0x31ca",
+      "word": "8c0031d3"
+    },
+    {
+      "pc": "0x31cb",
+      "word": "c43300eb"
+    },
+    {
+      "pc": "0x31cc",
+      "word": "97000004"
+    },
+    {
+      "pc": "0x31cd",
+      "word": "d80300eb"
+    },
+    {
+      "pc": "0x31ce",
+      "word": "c02ee000"
+    },
+    {
+      "pc": "0x31cf",
+      "word": "8c0035ce"
+    },
+    {
+      "pc": "0x31d0",
+      "word": "05540004"
+    },
+    {
+      "pc": "0x31d1",
+      "word": "80003178"
+    }
+  ],
+  "initial_dram_regions": {
+    "CC_WGP": {
+      "dram_offset": "0x1fc4",
+      "initial_bytes": "0000000000000000000000000000000000000000000000000000000000000000",
+      "candidate_snapshot_offset": "0x546fc4"
+    },
+    "CC_RB": {
+      "dram_offset": "0x1fe4",
+      "initial_bytes": "0000000000000000000000000000000000000000000000000000000000000000",
+      "candidate_snapshot_offset": "0x546fe4"
+    },
+    "restore_gate": {
+      "dram_offset": "0x2452",
+      "initial_bytes": "00",
+      "candidate_snapshot_offset": "0x547452"
+    }
+  },
+  "interpretation_limits": [
+    "Entries use36 numbered IDs. Linuxv6.12 enum after first10 is not a reliable name map for this Sienna table; keep numeric IDs.",
+    "Bit12 is reserved in older struct but firmware uses it for an extra leftshift4 of size: base size units above are not final transfer length for every row.",
+    "TOC offset6000 positively corroborates inferred addition in313f but is not an independent proof of all RLCG arithmetic opcodes.",
+    "Samefb55/fb56 ports and4000 size identify boot/snapshot descriptor pair by correspondence. Physical LX6 DRAM mapping and actual snapshot contents are not observed.",
+    "Initial zero masks with gatezero are not evidence of enabling hardware units."
+  ]
+}

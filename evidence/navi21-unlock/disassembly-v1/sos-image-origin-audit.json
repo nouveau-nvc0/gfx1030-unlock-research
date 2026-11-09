@@ -1,0 +1,252 @@
+{
+  "firmware_sha256": "67706b9e1545bf68850bf9cea97660af5972574ecb0ca30041174efbb59fac37",
+  "windows": {
+    "0x24cb4": [
+      {
+        "file_offset": "0x24cb4",
+        "bytes": "1548",
+        "mnemonic": "ldr",
+        "operands": "r0, [pc, #0x54]"
+      },
+      {
+        "file_offset": "0x24cb6",
+        "bytes": "40f2e031",
+        "mnemonic": "movw",
+        "operands": "r1, #0x3e0"
+      },
+      {
+        "file_offset": "0x24cba",
+        "bytes": "10b5",
+        "mnemonic": "push",
+        "operands": "{r4, lr}"
+      },
+      {
+        "file_offset": "0x24cbc",
+        "bytes": "fdf7b6f9",
+        "mnemonic": "bl",
+        "operands": "0x2202c"
+      },
+      {
+        "file_offset": "0x24cc0",
+        "bytes": "1349",
+        "mnemonic": "ldr",
+        "operands": "r1, [pc, #0x4c]"
+      },
+      {
+        "file_offset": "0x24cc2",
+        "bytes": "4ff04972",
+        "mnemonic": "mov.w",
+        "operands": "r2, #0x3240000"
+      },
+      {
+        "file_offset": "0x24cc6",
+        "bytes": "1148",
+        "mnemonic": "ldr",
+        "operands": "r0, [pc, #0x44]"
+      },
+      {
+        "file_offset": "0x24cc8",
+        "bytes": "0123",
+        "mnemonic": "movs",
+        "operands": "r3, #1"
+      },
+      {
+        "file_offset": "0x24cca",
+        "bytes": "0968",
+        "mnemonic": "ldr",
+        "operands": "r1, [r1]"
+      },
+      {
+        "file_offset": "0x24ccc",
+        "bytes": "d1f83c12",
+        "mnemonic": "ldr.w",
+        "operands": "r1, [r1, #0x23c]"
+      },
+      {
+        "file_offset": "0x24cd0",
+        "bytes": "0360",
+        "mnemonic": "str",
+        "operands": "r3, [r0]"
+      },
+      {
+        "file_offset": "0x24cd2",
+        "bytes": "1368",
+        "mnemonic": "ldr",
+        "operands": "r3, [r2]"
+      },
+      {
+        "file_offset": "0x24cd4",
+        "bytes": "21f07c41",
+        "mnemonic": "bic",
+        "operands": "r1, r1, #0xfc000000"
+      },
+      {
+        "file_offset": "0x24cd8",
+        "bytes": "4360",
+        "mnemonic": "str",
+        "operands": "r3, [r0, #4]"
+      },
+      {
+        "file_offset": "0x24cda",
+        "bytes": "9268",
+        "mnemonic": "ldr",
+        "operands": "r2, [r2, #8]"
+      },
+      {
+        "file_offset": "0x24cdc",
+        "bytes": "0d4b",
+        "mnemonic": "ldr",
+        "operands": "r3, [pc, #0x34]"
+      },
+      {
+        "file_offset": "0x24cde",
+        "bytes": "1a40",
+        "mnemonic": "ands",
+        "operands": "r2, r3"
+      },
+      {
+        "file_offset": "0x24ce0",
+        "bytes": "0e4b",
+        "mnemonic": "ldr",
+        "operands": "r3, [pc, #0x38]"
+      },
+      {
+        "file_offset": "0x24ce2",
+        "bytes": "c260",
+        "mnemonic": "str",
+        "operands": "r2, [r0, #0xc]"
+      },
+      {
+        "file_offset": "0x24ce4",
+        "bytes": "0c4a",
+        "mnemonic": "ldr",
+        "operands": "r2, [pc, #0x30]"
+      },
+      {
+        "file_offset": "0x24ce6",
+        "bytes": "8260",
+        "mnemonic": "str",
+        "operands": "r2, [r0, #8]"
+      },
+      {
+        "file_offset": "0x24ce8",
+        "bytes": "1a60",
+        "mnemonic": "str",
+        "operands": "r2, [r3]"
+      },
+      {
+        "file_offset": "0x24cea",
+        "bytes": "01f18062",
+        "mnemonic": "add.w",
+        "operands": "r2, r1, #0x4000000"
+      },
+      {
+        "file_offset": "0x24cee",
+        "bytes": "0c4b",
+        "mnemonic": "ldr",
+        "operands": "r3, [pc, #0x30]"
+      },
+      {
+        "file_offset": "0x24cf0",
+        "bytes": "1a60",
+        "mnemonic": "str",
+        "operands": "r2, [r3]"
+      },
+      {
+        "file_offset": "0x24cf2",
+        "bytes": "0022",
+        "mnemonic": "movs",
+        "operands": "r2, #0"
+      },
+      {
+        "file_offset": "0x24cf4",
+        "bytes": "4068",
+        "mnemonic": "ldr",
+        "operands": "r0, [r0, #4]"
+      },
+      {
+        "file_offset": "0x24cf6",
+        "bytes": "9206",
+        "mnemonic": "lsls",
+        "operands": "r2, r2, #0x1a"
+      },
+      {
+        "file_offset": "0x24cf8",
+        "bytes": "42ea9012",
+        "mnemonic": "orr.w",
+        "operands": "r2, r2, r0, lsr #6"
+      },
+      {
+        "file_offset": "0x24cfc",
+        "bytes": "8006",
+        "mnemonic": "lsls",
+        "operands": "r0, r0, #0x1a"
+      },
+      {
+        "file_offset": "0x24cfe",
+        "bytes": "4118",
+        "mnemonic": "adds",
+        "operands": "r1, r0, r1"
+      },
+      {
+        "file_offset": "0x24d00",
+        "bytes": "0848",
+        "mnemonic": "ldr",
+        "operands": "r0, [pc, #0x20]"
+      },
+      {
+        "file_offset": "0x24d02",
+        "bytes": "42f10002",
+        "mnemonic": "adc",
+        "operands": "r2, r2, #0"
+      },
+      {
+        "file_offset": "0x24d06",
+        "bytes": "c0e90412",
+        "mnemonic": "strd",
+        "operands": "r1, r2, [r0, #0x10]"
+      },
+      {
+        "file_offset": "0x24d0a",
+        "bytes": "10bd",
+        "mnemonic": "pop",
+        "operands": "{r4, pc}"
+      }
+    ],
+    "0x2424e": [
+      {
+        "file_offset": "0x2424e",
+        "bytes": "4ff42020",
+        "mnemonic": "mov.w",
+        "operands": "r0, #0xa0000"
+      },
+      {
+        "file_offset": "0x24252",
+        "bytes": "2063",
+        "mnemonic": "str",
+        "operands": "r0, [r4, #0x30]"
+      }
+    ]
+  },
+  "literals": {
+    "0x24d0c": "0x8438",
+    "0x24d10": "0x6034",
+    "0x24d14": "0xfc0fff",
+    "0x24d18": "0xc0808000",
+    "0x24d1c": "0x32404d8",
+    "0x24d20": "0x601c",
+    "0x24d24": "0x60d0"
+  },
+  "image_origin": "24cb4 reads P=DWORD[6034],then F=DWORD[P+23c]. Computes O=F&03ffffff;24cf0 writes04000000+O to601c.",
+  "parallel_address": "Reads R=DWORD[03240000], storesR at843c, constructs64-bit(R<<26)+O and writes it at60e0/60e4. This separates local-window pointer04000000+O from the wider address.",
+  "window_setup": "Record8438 gets1,R,c0808000,andDWORD[03240008]&00fc0fff;032404d8 gets c0808000. Exact physical meaning and runtime completion remain unobserved.",
+  "conditional_early_pointer": "In boot branch2424e, r4=6004 andSTR[r4+30]=a0000 sets6034=a0000. If unchanged before24cb4, field source is a023c. Ordering/other writers not yet closed.",
+  "locator_correction": "A raw linear candidate at24d20 is literal601c bytes decoded as STR, not an instruction in this routine. Actual producer is24cf0. Exclude24d20 from code evidence.",
+  "next_dependency": "Identify the producer and meaning of input field[P+23c] and connect it with stagedSYS image bytes. Track invocation of24cb4 to validate ordering.",
+  "limits": [
+    "No observation ofP/F/R oractualimagebytes",
+    "No proofloadedSYS equals offlinecontainer merely from addressformula",
+    "No changedCCpayload or acceptance"
+  ],
+  "scope": "Offline exact instructions and arithmetic; no hardware changes."
+}

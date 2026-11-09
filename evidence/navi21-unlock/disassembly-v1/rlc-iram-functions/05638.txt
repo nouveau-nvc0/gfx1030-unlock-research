@@ -1,0 +1,87 @@
+
+/tmp/tmp8gpcnfn0/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005638 <.data+0x5638>:
+00005638: 36a100   entry        a1, 0x50 ; Capstone
+    563b:	a18fdf        	l32r	a10, 0xffffd478 (0x5ffee578) ; inferred DRAM map 0x5ffec000
+    563e:	820a00        	l8ui	a8, a10, 0
+    5641:	16880a        	beqz	a8, 0x56ed
+    5644:	4080f4        	extui	a8, a4, 0, 16
+    5647:	30c0f5        	extui	a12, a3, 16, 16
+    564a:	20d0f5        	extui	a13, a2, 16, 16
+    564d:	718bdf        	l32r	a7, 0xffffd47c (0x5ffedae4) ; inferred DRAM map 0x5ffec000
+    5650:	3090f4        	extui	a9, a3, 0, 16
+    5653:	20b0f4        	extui	a11, a2, 0, 16
+    5656:	0c1f      	movi.n	a15, 1
+    5658:	f24a01        	s8i	a15, a10, 1
+    565b:	b0eba0        	addx4	a14, a11, a11
+    565e:	92570e        	s16i	a9, a7, 28
+    5661:	e0a0f4        	extui	a10, a14, 0, 16
+    5664:	d2570d        	s16i	a13, a7, 26
+    5667:	c2570f        	s16i	a12, a7, 30
+    566a:	b2570c        	s16i	a11, a7, 24
+    566d:	825710        	s16i	a8, a7, 32
+    5670:	40b0f5        	extui	a11, a4, 16, 16
+    5673:	b25711        	s16i	a11, a7, 34
+00005676: 65bcff   call8        . -0x438 ; Capstone ; target=0x523c
+    5679:	521700        	l16ui	a5, a7, 0
+    567c:	b26101        	s32i	a11, a1, 4
+    567f:	62170c        	l16ui	a6, a7, 24
+    5682:	a020f5        	extui	a2, a10, 16, 16
+    5685:	a030f4        	extui	a3, a10, 0, 16
+    5688:	325105        	s16i	a3, a1, 10
+    568b:	225106        	s16i	a2, a1, 12
+    568e:	625104        	s16i	a6, a1, 8
+00005691: 030101   lsi          f0, a1, 4 ; Capstone
+00005694: 034105   ssi          f0, a1, 0x14 ; Capstone
+00005697: 034104   ssi          f0, a1, 0x10 ; Capstone
+    569a:	a2a000        	movi	a10, 0
+    569d:	6046a0        	addx4	a4, a6, a6
+    56a0:	5055a0        	addx4	a5, a5, a5
+    56a3:	5050f4        	extui	a5, a5, 0, 16
+    56a6:	4040f4        	extui	a4, a4, 0, 16
+000056a9: 25c1fb   call8        . -0x43ec ; Capstone ; target=0x12bc
+    56ac:	573441        	bltu	a4, a5, 0x56f1
+    56af:	47b517        	bgeu	a5, a4, 0x56ca
+    56b2:	8bc1      	addi.n	a12, a1, 8
+    56b4:	a80c      	l32i.n	a10, a12, 0
+    56b6:	b81c      	l32i.n	a11, a12, 4
+    56b8:	c82c      	l32i.n	a12, a12, 8
+000056ba: a52800   call8        . +0x28c ; Capstone ; target=0x5944
+    56bd:	ad06      	mov.n	a10, a6
+000056bf: 65cafb   call8        . -0x4358 ; Capstone ; target=0x1364
+000056c2: 030105   lsi          f0, a1, 0x14 ; Capstone
+    56c5:	c60300        	j	0x56d8
+000056c8: 00008b   moveqz.s     f0, f0, a0 ; Capstone
+    56cb:	c1a80c        	l32r	a12, 0xfffc896c
+    56ce:	b81c      	l32i.n	a11, a12, 4
+    56d0:	c82c      	l32i.n	a12, a12, 8
+000056d2: 252700   call8        . +0x274 ; Capstone ; target=0x5944
+000056d5: 030105   lsi          f0, a1, 0x14 ; Capstone
+    56d8:	625700        	s16i	a6, a7, 0
+    56db:	325701        	s16i	a3, a7, 2
+    56de:	225702        	s16i	a2, a7, 4
+000056e1: 034702   ssi          f0, a7, 8 ; Capstone
+    56e4:	0c1a      	movi.n	a10, 1
+000056e6: 65bdfb   call8        . -0x4428 ; Capstone ; target=0x12bc
+    56e9:	0c02      	movi.n	a2, 0
+000056eb: 1df0     retw.n        ; Capstone
+    56ed:	0c12      	movi.n	a2, 1
+000056ef: 1df0     retw.n        ; Capstone
+    56f1:	ad06      	mov.n	a10, a6
+000056f3: 25c7fb   call8        . -0x438c ; Capstone ; target=0x1364
+    56f6:	8bc1      	addi.n	a12, a1, 8
+    56f8:	a80c      	l32i.n	a10, a12, 0
+    56fa:	b81c      	l32i.n	a11, a12, 4
+    56fc:	c82c      	l32i.n	a12, a12, 8
+000056fe: 652400   call8        . +0x248 ; Capstone ; target=0x5944
+00005701: 030105   lsi          f0, a1, 0x14 ; Capstone
+    5704:	06f4ff        	j	0x56d8
+	...
+
+; Alternate branch-target decode
+    56ca:	8bc1      	addi.n	a12, a1, 8
+    56cc:	a80c      	l32i.n	a10, a12, 0

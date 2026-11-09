@@ -1,0 +1,18 @@
+
+/tmp/tmpsy4vx4gc/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00027f4c <.data+0x27f4c>:
+00027f4c: 366100   entry        a1, 0x30 ; Capstone
+   27f4f:	41f7ab        	l32r	a4, 0x12f2c (0x141d600)
+   27f52:	c02000        	memw
+   27f55:	82244b        	l32i	a8, a4, 0x12c
+   27f58:	8901      	s32i.n	a8, a1, 0
+   27f5a:	224101        	s8i	a2, a1, 1
+   27f5d:	3801      	l32i.n	a3, a1, 0
+   27f5f:	c02000        	memw
+   27f62:	32644b        	s32i	a3, a4, 0x12c
+00027f65: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,24 @@
+
+/tmp/tmph2h3t4cu/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00003fd4 <.data+0x3fd4>:
+00003fd4: 364100   entry        a1, 0x20 ; Capstone
+    3fd7:	81d7e4        	l32r	a8, 0xffffd334 (0xfffff7fe) ; inferred DRAM map 0x5ffec000
+    3fda:	203084        	extui	a3, a2, 0, 9
+    3fdd:	0c14      	movi.n	a4, 1
+    3fdf:	2164e4        	l32r	a2, 0xffffd170 (0x6803ba00) ; inferred DRAM map 0x5ffec000
+    3fe2:	403390        	addx2	a3, a3, a4
+    3fe5:	42abff        	movi	a4, 0xfffffbff
+    3fe8:	403310        	and	a3, a3, a4
+    3feb:	32626e        	s32i	a3, a2, 0x1b8
+    3fee:	42226e        	l32i	a4, a2, 0x1b8
+    3ff1:	3df0      	nop.n
+    3ff3:	b764f7        	bbci	a4, 11, 0x3fee
+    3ff6:	808410        	and	a8, a4, a8
+    3ff9:	82626e        	s32i	a8, a2, 0x1b8
+    3ffc:	92226e        	l32i	a9, a2, 0x1b8
+    3fff:	b7e9f9        	bbsi	a9, 11, 0x3ffc
+00004002: 1df0     retw.n        ; Capstone

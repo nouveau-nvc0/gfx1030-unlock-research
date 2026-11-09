@@ -1,0 +1,5 @@
+{
+  "scope": "Conservative straight-line literal-base scan; branch clears state. Not a complete dataflow analysis or proof of absence. Linear input may include data.",
+  "hits": [],
+  "calibration": "Misses known USER accesses because branch clearing loses a7. Unsuitable for negative coverage claims; replace with CFG propagation."
+}

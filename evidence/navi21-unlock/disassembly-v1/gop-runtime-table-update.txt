@@ -1,0 +1,39 @@
+GOP runtime table mutation — correction to initial-ROM-only address range
+
+XL1914 calls7960 at1a79, after establishing the ROM pointer in context+70.
+7960 loads FirmwareInfo (data4) intoRDI at79ca/79d2 and data11 intoRBX at79d5.
+It invokes ATOM command6 via319c at7a09 with parameter byte0=1. Returned
+DWORD atstack+90 is shifted left10 at7a16. Its actual hardware-derived value
+is not measured in this offline work.
+If data11 WORD+8 is zero, choose FirmwareInfo DWORD+54 if nonzero, else40;
+write its low16 bits into data11+8 at7a2a, subtract the chosen DWORD from the
+shifted result, and write the difference into data11 DWORD+4 at7a3c.
+If WORD+8 already nonzero and DWORD+4 zero, subtract WORD+8 and write+4.
+If both nonzero, preserve+4. Arithmetic is modulo2^32.
+Both reference FirmwareInfo+54 values arec00, with data11+4/+8 initiallyzero.
+Thus data11+4 is mutable during ordinary initialization. The earlier bounded
+range80000000..8000fffc describes unmodified file tables only, not the normal
+post-initialization range. Do not use that range as a runtime exclusion.
+
+Original instructions7a0e..7a40 replayed in synthetic RAM with both reference
+data sets, stock/size-existing/base-existing/fallback branches and three
+synthetic command results:24 cases pass. No actual command6 or writer execution.
+For example synthetic command result4000 yields data11+4=fff400 and wrapper
+baseffd00000 with either reference; this is an illustrative calculation, not
+a measurement from a GPU. See gop-vram-base-replay.json and reproducer
+scripts/navi21-gop-vram-base-check.py.
+
+The stronger algebraic statement remains valid for any mutable DWORD base:
+87dc's final byte address is (((base+uint16(offset)) mod2^32)|80000000)&fffffffc.
+Bit31 is always set, so literal8924/89bc cannot result. Hardware aliasing and
+interpretation of the high-bit indexed route remain unresolved.
+
+FirmwareInfo itself is also modified by7960: conditional stores at7a8b/+2c,
+7a8e/+28,7aab/+24 and7afe/+10. These do not overlap+18 but disprove any blanket
+claim that GOP keeps the ROM tables read-only. Complete mutation coverage is
+still required before asserting the scratch register base remains unchanged.
+
+Optional-ROM globalcdd0 (XTce10) is initiallyzero. Current RIP-relative locator
+finds only the two known loads and no direct store/address formation; raw
+QWORD scans do not find a pointer to it. This is not a proof against computed
+access or external writes. Do not invent an initializer from absence of xrefs.

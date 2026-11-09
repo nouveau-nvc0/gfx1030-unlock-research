@@ -1,0 +1,30 @@
+
+/tmp/tmpj0b__g0s/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002de88 <.data+0x2de88>:
+0002de88: 364100   entry        a1, 0x20 ; Capstone
+   2de8b:	a12098        	l32r	a10, 0x13f0c (0xb3c4)
+   2de8e:	a22a7f        	l32i	a10, a10, 0x1fc
+   2de91:	acca      	beqz.n	a10, 0x2dec1
+0002de93: 000ada   ufloat.s     f0, a10, 0 ; Capstone
+   2de96:	2022f0        	subx8	a2, a2, a2
+   2de99:	2a23      	add.n	a2, a3, a2
+0002de9b: 40a0fa   rfr          a10, f0 ; Capstone
+0002de9e: e5ef0a   call8        . +0xaf00 ; Capstone ; target=0x38d9c
+   2dea1:	911b98        	l32r	a9, 0x13f10 (0xb38c)
+   2dea4:	9092a0        	addx4	a9, a2, a9
+   2dea7:	92297f        	l32i	a9, a9, 0x1fc
+   2deaa:	810d95        	l32r	a8, 0x132e0 (0x42c80000)
+0002dead: 0049da   ufloat.s     f4, a9, 0 ; Capstone
+0002deb0: 5058fa   wfr          f5, a8 ; Capstone
+0002deb3: 50242a   mul.s        f2, f4, f5 ; Capstone
+0002deb6: 503afa   wfr          f3, a10 ; Capstone
+0002deb9: 30122a   mul.s        f1, f2, f3 ; Capstone
+0002debc: 4021fa   rfr          a2, f1 ; Capstone
+0002debf: 1df0     retw.n        ; Capstone
+   2dec1:	0c02      	movi.n	a2, 0
+0002dec3: 1df0     retw.n        ; Capstone
+   2dec5:	000000        	ill

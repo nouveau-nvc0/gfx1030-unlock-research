@@ -1,0 +1,24 @@
+
+/tmp/tmpesy25pwv/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001b1e0 <.data+0x1b1e0>:
+0001b1e0: 364100   entry        a1, 0x20 ; Capstone
+   1b1e3:	414edf        	l32r	a4, 0x12f1c (0xef74)
+   1b1e6:	4033a0        	addx4	a3, a3, a4
+   1b1e9:	620380        	l8ui	a6, a3, 128
+   1b1ec:	720381        	l8ui	a7, a3, 129
+   1b1ef:	7cf3      	movi.n	a3, -1
+   1b1f1:	27360e        	bltu	a6, a2, 0x1b203
+   1b1f4:	77b20e        	bgeu	a2, a7, 0x1b206
+   1b1f7:	273608        	bltu	a6, a2, 0x1b203
+   1b1fa:	0c13      	movi.n	a3, 1
+   1b1fc:	27b706        	bgeu	a7, a2, 0x1b206
+   1b1ff:	2d03      	mov.n	a2, a3
+0001b201: 1df0     retw.n        ; Capstone
+   1b203:	06feff        	j	0x1b1ff
+   1b206:	0c03      	movi.n	a3, 0
+   1b208:	c6fcff        	j	0x1b1ff
+	...

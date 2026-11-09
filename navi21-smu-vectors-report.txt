@@ -1,0 +1,60 @@
+Navi21 SMU CC-write vector investigation — working report, 2026-11-09
+
+Status: offline analysis in progress. No GPU writes, resets, firmware loads, flashes, VM changes or service changes were performed for this analysis. Physical CC writability and an early write window remain unproved. This report consolidates findings; it does not certify exhaustive reverse engineering.
+
+Image and coordinates
+Analyzed installed sienna_cichlid_smc.bin.xz, decompressed SHA256
+0eb99764288f764fd853d6973693ffa52419cc7ba62074aee85df4a3e8d0286d.
+Code coordinates below are file offsets minus0x200. Xtensa windowed instructions decoded with GNU lx106 plus Capstone; three cache-test instructions independently resolved against QEMU/Cadence. Analysis is of this image, not every Navi21 firmware revision or PSP/RLC ROM stage.
+
+CC address evidence
+Host bytes: CC_SA8924,CC_WGP89bc; USER_SA8928,USER_WGP89c0.
+Internal GC mapping inferred as host byte+01200000, supported by matched GRBM_GFX_INDEX selector fields, USER_WGP bank loops and USER_RB register accesses. Therefore candidate SMU CPU addresses are01208924/012089bc. No successful write to these addresses is observed. No inspected instruction has yet been established as the normal producer of CC masks.
+Literal89bc at2905 is NOT a CC reference: it is a bit offset passed to a reader using0125d000+(bit_index>>5)*4. The resulting identity-like value is compared to73a1. Do not conflate fuse/bitfield indices, host MMIO offsets and SMU addresses.
+
+Vector1: direct SMU CPU store — concrete instruction, runtime access unresolved
+Channels7/8 message31 saves aligned address in RAM7564; message32 executes S32I at34b4b with supplied value. Message30 provides an independent address-based read with an exception-status flag. No range allowlist in these handlers. Response1 does not prove target accepted write.
+Mailbox channel7 message/parameter/response host bytes58a20/58a88/58a80; channel8 58a24/58a8c/58a84. Mapping grounded in public MP1 register definitions and standard channel0 driver triple. IRQ callbacks88/89 are registered during startup. A second dynamic IRQ mask still affects delivery.
+Dispatcher requires flag04. Allowed when RAM69cc==0 OR register03210064==80000000. Startup derives69cc from bit19 of013101c0. Earlier inverted comparison in notes was corrected. Actual runtime values/replies not read.
+Evidence: generic-memory-analysis.txt, mailbox-reachability.txt, dispatcher.txt.
+
+Vector2: windowed SMU CPU store — concrete separate route, CC alias unresolved
+Channels7/8 message1f saves address7558;20 reads;21 writes through18d8. Helper programs low16 of03220038 with address>>20, then stores at02c00000+(address&fffff). Upper mapping bits preserved; previous mapping not restored. Requires flags14 and scheduled execution; shared address state/setter serialization matters.
+This selects a32-bit target address space in1MiB windows. It is not safe to equate that space to0120xxxx CPU addresses. Existing callers target0005421c+n*00100000 and other addresses. UMC public instance stride is also00100000 bytes, supporting but not proving the complete target mapping. No CC alias established.
+Evidence: windowed-access-analysis.txt, transfer-workers/018d8.txt,01920.txt.
+
+Vector3: internal transfer engine — concrete GC-region use, redirection unresolved
+2aea8 validates aligned source/destination/length and channel<8, builds an engine program through20310/20490/205dc, submits it via03270d00..03270d0c, waits for status03270100+8*channel through1204. It is not a CPU memcpy.
+Standard consumer2af90 submits descriptorfca0: source set to RAMfce8 by209d4, destination0123ed68,length140. Destination lies in GC/RLC-region coordinates, exact register name absent from inspected header. This supports a possible distinct bus-master route, not acceptance by CC. Redirecting to CC needs descriptor control or another submission interface. Generic write could supply that control only if already accessible; it is not an independent solution to the permission barrier.
+Standard table imports have fixed local destinations/lengths and mapped external sources; exports reverse them. Unusual address aliases and transitive table effects remain under review.
+Evidence: transfer-engine-analysis.txt, transfer-table.json, transfer-workers/.
+
+Vector4: indexed dispatch/pointer selection — concrete unchecked indexing, CC action unresolved
+Channels7/8 message41 takes two16-bit indices: pointer table12d10 and function table12d20. Stores pointer15874, calls indexed function, writes byte1 through selected pointer. No bounds checks in handler. Function index3 is a no-op, leaving the pointer write without worker setup. Requires flags14, including the same04 barrier.
+Messages42/43 operate through selected pointer:42 conditionally changes DWORD+12 using indexed mask/enable fields and then invokes another worker;43 writes byte0 to+1 and invokes a worker. These can cause collateral writes/calls and are not interchangeable with a clean CC DWORD store. Simple static selected values equal to CC or CC-minus12 were not found; mutable/out-of-image table reads not excluded. No validated CC-writing chain constructed.
+Evidence: message-vector-audit.txt, windowed-access-analysis.txt, indexed-pointer-cc-locator.json.
+
+Vector5: existing initialization/reset or table-driven execution — timing candidate
+Unload message2e reaches334d8, saves/restores USER WGP/RB banks and12 GC registers, including USER_SA. Static save table contains no CC entries. This chain was initially confused with reset; mapping corrected to PrepareMp1ForUnload.
+Mode1 handler16d4 selects reset descriptor record0; driver Mode2 handler34b10 uses record1. Graphics-domain block0b also covers SDMA bases. Reset control helper acts at0100b008 with different descriptor flags. No proof this resets CC latch/protection, opens a writable interval or permits host intervention between internal steps. No change to reset type has been executed.
+Data-table imports and AVFS tables are not themselves proven harvest control. Their consumers still require semantic coverage before a negative claim.
+Evidence: reset-handlers-analysis.txt, reset-descriptors.json, save-restore-analysis.txt.
+
+Vector6: modified SMU executable or RAM patch — delivery/execute barrier
+Offline code patching could add a CPU-store probe at selected timing. That does not establish that a modified image will execute: driver requests separate SMC microcode and the observed configuration uses PSP loading. Signature/boot-policy acceptance has not been bypassed or tested. V620 romfile changes VBIOS/PowerPlay data; it does not demonstrate acceptance of modified SMU instructions. A RAM patch through an accessible internal writer additionally needs executable-memory mapping/cache coherence and a verified entry path. Cache read/maintenance commands exist, but no complete RAM-code-patch chain established.
+Evidence: smu_v11_0.c init_microcode, cache-op-source.json, message-vector-audit.txt.
+
+Read/control facilities, not separate CC writers
+Messages3c/3d/3e are LDCT/LICW/LICT reads.3b is ordinary memory read;3a performs DHWBI then read.47 performs maintenance then waits fordeadbeef with raised interrupt level; it can stall and is not a writer. USER mask writes are known working controls but are additive masks, not CC unlock evidence. Host MMIO/ATOM/RLCG investigations are covered in navi21-cc-access-report.md and must not be confused with an accepted SMU write.
+
+Completion gaps
+All14 static message tables and165 nonzero unique handlers are enumerated and have targeted decode windows. This is NOT full transitive semantic coverage. Next aligned ENTRY is only a candidate window boundary; whole linear disassembly includes data/misalignment. A global negative CC-reference conclusion requires control-flow-aware address analysis with positive controls, not raw literal search. Remaining tasks: transitive writer/indirect-call coverage, window target identity, permission/IRQ state semantics, table consumers, initialization/early-reset CC producer, microcode-execution barriers. No all-vectors completion claim until those gaps are explicitly resolved or bounded by evidence.
+
+All relative evidence paths in this report resolve under
+evidence/navi21-unlock/disassembly-v1/ unless otherwise specified.
+
+Coverage tooling update: scripts/navi21-smu-cfg-scan.py now propagates integer constants across local control-flow joins (disagreeing values become unknown) with CALL8 volatile-register handling. Positive controls resolve USER_WGP012089c0 and GRBM_GFX_INDEX01230800. Initial165-handler+2-control run has81 resolved and42 unresolved integer-store sites. It does not follow callees, trust arbitrary RAM data as immutable, or prove global absence. Receipt local-cfg-validation.json; detailed local-cfg-store-scan.json. This supersedes the earlier linear scan that failed USER positive control.
+
+Closure update: WSR.MISC1 and observed zero-displacement DHWBI decoded against QEMU instruction encodings. Recursive direct-call closure plus callbacks selected by initial indexed-state ranges now includes747 functions,0 rejected direct targets,0 reachable EXCW gaps,18 indirect call sites. These are coverage counts, not semantic completion. The14 descriptor pointer slots at15450 used by36fc0 are initially zero, requiring runtime registration tracing. Six initial-state callback targets add8 functions to closure. See additional-callback-roots.json and closure-progress.json. Local store constants remain locators: implicit hardware-loop backedges still need modeling before using them as absence evidence.
+
+Latest closure correction:773 functions after adding registered descriptor dbec callbacks2a710/2a378/2d104. Registration35448 called by29d30 and29ef8 installs slot1 at15454;2d104 returns1. Relative branch parsing and107 hardware-loop backedges corrected. Current scan:1914 integer-store sites,633 locally resolved addresses, no exact candidate-CC matches; unresolved stores preclude an absence claim. USER_WGP/selector positive controls pass. Earlier747-function and no-loop coverage counts are superseded. Evidence runtime-callback-registration.txt, closure-progress.json.

@@ -1,0 +1,26 @@
+
+/tmp/tmpfwmwj6ct/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001d308 <.data+0x1d308>:
+0001d308: 366100   entry        a1, 0x30 ; Capstone
+   1d30b:	ad03      	mov.n	a10, a3
+   1d30d:	bd02      	mov.n	a11, a2
+   1d30f:	0ccc      	movi.n	a12, 12
+0001d311: 5004fa   wfr          f0, a4 ; Capstone
+0001d314: 034100   ssi          f0, a1, 0 ; Capstone
+0001d317: a52be4   call8        . -0x1bd44 ; Capstone ; target=0x15d0
+   1d31a:	ad02      	mov.n	a10, a2
+0001d31c: 130100   lsi          f1, a1, 0 ; Capstone
+0001d31f: 40b1fa   rfr          a11, f1 ; Capstone
+0001d322: a54b0c   call8        . +0xc4bc ; Capstone ; target=0x297dc
+0001d325: 502afa   wfr          f2, a10 ; Capstone
+0001d328: 234101   ssi          f2, a1, 4 ; Capstone
+0001d32b: 25a71b   call8        . +0x1ba74 ; Capstone ; target=0x38d9c
+0001d32e: 503afa   wfr          f3, a10 ; Capstone
+0001d331: 430101   lsi          f4, a1, 4 ; Capstone
+0001d334: 434203   ssi          f4, a2, 0xc ; Capstone
+0001d337: 334204   ssi          f3, a2, 0x10 ; Capstone
+0001d33a: 1df0     retw.n        ; Capstone

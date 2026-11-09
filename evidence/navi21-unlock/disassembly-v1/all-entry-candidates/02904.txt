@@ -1,0 +1,11 @@
+
+/tmp/tmp661kexeh/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00002904 <.data+0x2904>:
+00002904: 36a10d   entry        a1, 0x6d0 ; Capstone
+    2907:	f91c      	s32i.n	a15, a12, 4
+    2909:	0be5      	addi.n	a14, a5, -1
+    290b:	        	bltu	a6, a2, 0x28f0

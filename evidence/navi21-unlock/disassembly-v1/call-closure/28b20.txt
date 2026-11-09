@@ -1,0 +1,25 @@
+
+/tmp/tmp2vf3gx0e/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00028b20 <.data+0x28b20>:
+00028b20: 364100   entry        a1, 0x20 ; Capstone
+   28b23:	21daab        	l32r	a2, 0x13a8c (0xe16c)
+00028b26: 0302b4   lsi          f0, a2, 0x2d0 ; Capstone
+00028b29: 13024b   lsi          f1, a2, 0x12c ; Capstone
+00028b2c: 00016b   ole.s        b0, f1, f0 ; Capstone
+   28b2f:	32027d        	l8ui	a3, a2, 125
+00028b32: 760012   bf           b0, . +0x16 ; Capstone
+   28b35:	ccf3      	bnez.n	a3, 0x28b48
+00028b37: 2302b5   lsi          f2, a2, 0x2d4 ; Capstone
+00028b3a: 20104b   olt.s        b1, f0, f2 ; Capstone
+   28b3d:	0c12      	movi.n	a2, 1
+00028b3f: 761109   bt           b1, . +0xd ; Capstone
+00028b42: 10226b   ole.s        b2, f2, f1 ; Capstone
+00028b45: 761203   bt           b2, . +7 ; Capstone
+   28b48:	0c02      	movi.n	a2, 0
+00028b4a: 1df0     retw.n        ; Capstone
+00028b4c: 1df0     retw.n        ; Capstone
+	...

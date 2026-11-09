@@ -1,0 +1,14 @@
+
+/tmp/tmpv46avw40/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002fec8 <.data+0x2fec8>:
+0002fec8: 364100   entry        a1, 0x20 ; Capstone
+   2fecb:	bd03      	mov.n	a11, a3
+   2fecd:	ad02      	mov.n	a10, a2
+   2fecf:	c17090        	l32r	a12, 0x14090 (0x7fff)
+0002fed2: 65fbff   call8        . -0x48 ; Capstone ; target=0x2fe88
+0002fed5: 1df0     retw.n        ; Capstone
+	...

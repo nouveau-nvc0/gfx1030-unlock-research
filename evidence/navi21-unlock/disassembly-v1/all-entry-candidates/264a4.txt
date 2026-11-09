@@ -1,0 +1,22 @@
+
+/tmp/tmp6daprusj/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000264a4 <.data+0x264a4>:
+000264a4: 366100   entry        a1, 0x30 ; Capstone
+   264a7:	8812      	l32i.n	a8, a2, 4
+   264a9:	4802      	l32i.n	a4, a2, 0
+   264ab:	9822      	l32i.n	a9, a2, 8
+   264ad:	9921      	s32i.n	a9, a1, 8
+   264af:	4901      	s32i.n	a4, a1, 0
+   264b1:	8911      	s32i.n	a8, a1, 4
+000264b3: 030102   lsi          f0, a1, 8 ; Capstone
+000264b6: 034302   ssi          f0, a3, 8 ; Capstone
+000264b9: 130101   lsi          f1, a1, 4 ; Capstone
+000264bc: 230100   lsi          f2, a1, 0 ; Capstone
+000264bf: 234300   ssi          f2, a3, 0 ; Capstone
+000264c2: 134301   ssi          f1, a3, 4 ; Capstone
+000264c5: 1df0     retw.n        ; Capstone
+	...

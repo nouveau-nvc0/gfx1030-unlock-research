@@ -1,0 +1,321 @@
+
+/tmp/tmp9_y6f5xp/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000065d8 <.data+0x65d8>:
+000065d8: 364100   entry        a1, 0x20 ; Capstone
+    65db:	906f00        	rsil	a9, 15
+    65de:	81bedb        	l32r	a8, 0xffffd4d8 (0x6003ea00) ; inferred DRAM map 0x5ffec000
+    65e1:	71e0da        	l32r	a7, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    65e4:	0c0b      	movi.n	a11, 0
+    65e6:	a2a060        	movi	a10, 96
+    65e9:	b26780        	s32i	a11, a7, 0x200
+    65ec:	a268f5        	s32i	a10, a8, 0x3d4
+    65ef:	ad0b      	mov.n	a10, a11
+    65f1:	90e613        	wsr.ps	a9
+    65f4:	102000        	rsync
+    65f7:	506f00        	rsil	a5, 15
+    65fa:	c1b8db        	l32r	a12, 0xffffd4dc (0x5ffedb24) ; inferred DRAM map 0x5ffec000
+    65fd:	b26780        	s32i	a11, a7, 0x200
+    6600:	6228f6        	l32i	a6, a8, 0x3d8
+    6603:	691c      	s32i.n	a6, a12, 4
+    6605:	50e613        	wsr.ps	a5
+    6608:	102000        	rsync
+    660b:	206f00        	rsil	a2, 15
+    660e:	b26780        	s32i	a11, a7, 0x200
+    6611:	4228f6        	l32i	a4, a8, 0x3d8
+    6614:	492c      	s32i.n	a4, a12, 8
+    6616:	20e613        	wsr.ps	a2
+    6619:	102000        	rsync
+    661c:	e06f00        	rsil	a14, 15
+    661f:	b26780        	s32i	a11, a7, 0x200
+    6622:	f228f6        	l32i	a15, a8, 0x3d8
+    6625:	f93c      	s32i.n	a15, a12, 12
+    6627:	e0e613        	wsr.ps	a14
+    662a:	102000        	rsync
+    662d:	906f00        	rsil	a9, 15
+    6630:	b26780        	s32i	a11, a7, 0x200
+    6633:	d228f6        	l32i	a13, a8, 0x3d8
+    6636:	d94c      	s32i.n	a13, a12, 16
+    6638:	90e613        	wsr.ps	a9
+    663b:	102000        	rsync
+    663e:	506f00        	rsil	a5, 15
+    6641:	b26780        	s32i	a11, a7, 0x200
+    6644:	6228f6        	l32i	a6, a8, 0x3d8
+    6647:	695c      	s32i.n	a6, a12, 20
+    6649:	50e613        	wsr.ps	a5
+    664c:	102000        	rsync
+    664f:	206f00        	rsil	a2, 15
+    6652:	b26780        	s32i	a11, a7, 0x200
+    6655:	4228f6        	l32i	a4, a8, 0x3d8
+    6658:	496c      	s32i.n	a4, a12, 24
+    665a:	20e613        	wsr.ps	a2
+    665d:	102000        	rsync
+    6660:	e06f00        	rsil	a14, 15
+    6663:	b26780        	s32i	a11, a7, 0x200
+    6666:	f228f6        	l32i	a15, a8, 0x3d8
+    6669:	f97c      	s32i.n	a15, a12, 28
+    666b:	e0e613        	wsr.ps	a14
+    666e:	102000        	rsync
+    6671:	906f00        	rsil	a9, 15
+    6674:	b26780        	s32i	a11, a7, 0x200
+    6677:	d228f6        	l32i	a13, a8, 0x3d8
+    667a:	d98c      	s32i.n	a13, a12, 32
+    667c:	90e613        	wsr.ps	a9
+    667f:	102000        	rsync
+    6682:	506f00        	rsil	a5, 15
+    6685:	b26780        	s32i	a11, a7, 0x200
+    6688:	6228f6        	l32i	a6, a8, 0x3d8
+    668b:	699c      	s32i.n	a6, a12, 36
+    668d:	50e613        	wsr.ps	a5
+    6690:	102000        	rsync
+    6693:	206f00        	rsil	a2, 15
+    6696:	b26780        	s32i	a11, a7, 0x200
+    6699:	4228f6        	l32i	a4, a8, 0x3d8
+    669c:	49ac      	s32i.n	a4, a12, 40
+    669e:	20e613        	wsr.ps	a2
+    66a1:	102000        	rsync
+    66a4:	e06f00        	rsil	a14, 15
+    66a7:	b26780        	s32i	a11, a7, 0x200
+    66aa:	f228f6        	l32i	a15, a8, 0x3d8
+    66ad:	f9bc      	s32i.n	a15, a12, 44
+    66af:	e0e613        	wsr.ps	a14
+    66b2:	102000        	rsync
+    66b5:	906f00        	rsil	a9, 15
+    66b8:	b26780        	s32i	a11, a7, 0x200
+    66bb:	d228f6        	l32i	a13, a8, 0x3d8
+    66be:	d9cc      	s32i.n	a13, a12, 48
+    66c0:	90e613        	wsr.ps	a9
+    66c3:	102000        	rsync
+    66c6:	506f00        	rsil	a5, 15
+    66c9:	b26780        	s32i	a11, a7, 0x200
+    66cc:	6228f6        	l32i	a6, a8, 0x3d8
+    66cf:	69dc      	s32i.n	a6, a12, 52
+    66d1:	50e613        	wsr.ps	a5
+    66d4:	102000        	rsync
+    66d7:	206f00        	rsil	a2, 15
+    66da:	b26780        	s32i	a11, a7, 0x200
+    66dd:	4228f6        	l32i	a4, a8, 0x3d8
+    66e0:	49ec      	s32i.n	a4, a12, 56
+    66e2:	20e613        	wsr.ps	a2
+    66e5:	102000        	rsync
+    66e8:	e06f00        	rsil	a14, 15
+    66eb:	b26780        	s32i	a11, a7, 0x200
+    66ee:	f228f6        	l32i	a15, a8, 0x3d8
+    66f1:	f9fc      	s32i.n	a15, a12, 60
+    66f3:	e0e613        	wsr.ps	a14
+    66f6:	102000        	rsync
+    66f9:	906f00        	rsil	a9, 15
+    66fc:	b26780        	s32i	a11, a7, 0x200
+    66ff:	d228f6        	l32i	a13, a8, 0x3d8
+    6702:	d26c10        	s32i	a13, a12, 64
+    6705:	90e613        	wsr.ps	a9
+    6708:	102000        	rsync
+    670b:	506f00        	rsil	a5, 15
+    670e:	b26780        	s32i	a11, a7, 0x200
+    6711:	6228f6        	l32i	a6, a8, 0x3d8
+    6714:	626c11        	s32i	a6, a12, 68
+    6717:	50e613        	wsr.ps	a5
+    671a:	102000        	rsync
+    671d:	206f00        	rsil	a2, 15
+    6720:	b26780        	s32i	a11, a7, 0x200
+    6723:	4228f6        	l32i	a4, a8, 0x3d8
+    6726:	426c12        	s32i	a4, a12, 72
+    6729:	20e613        	wsr.ps	a2
+    672c:	102000        	rsync
+    672f:	e06f00        	rsil	a14, 15
+    6732:	b26780        	s32i	a11, a7, 0x200
+    6735:	f228f6        	l32i	a15, a8, 0x3d8
+    6738:	f26c13        	s32i	a15, a12, 76
+    673b:	e0e613        	wsr.ps	a14
+    673e:	102000        	rsync
+    6741:	906f00        	rsil	a9, 15
+    6744:	b26780        	s32i	a11, a7, 0x200
+    6747:	d228f6        	l32i	a13, a8, 0x3d8
+    674a:	d26c14        	s32i	a13, a12, 80
+    674d:	90e613        	wsr.ps	a9
+    6750:	102000        	rsync
+    6753:	506f00        	rsil	a5, 15
+    6756:	b26780        	s32i	a11, a7, 0x200
+    6759:	6228f6        	l32i	a6, a8, 0x3d8
+    675c:	626c15        	s32i	a6, a12, 84
+    675f:	50e613        	wsr.ps	a5
+    6762:	102000        	rsync
+    6765:	206f00        	rsil	a2, 15
+    6768:	b26780        	s32i	a11, a7, 0x200
+    676b:	4228f6        	l32i	a4, a8, 0x3d8
+    676e:	426c16        	s32i	a4, a12, 88
+    6771:	20e613        	wsr.ps	a2
+    6774:	102000        	rsync
+    6777:	e06f00        	rsil	a14, 15
+    677a:	b26780        	s32i	a11, a7, 0x200
+    677d:	f228f6        	l32i	a15, a8, 0x3d8
+    6780:	f26c17        	s32i	a15, a12, 92
+    6783:	e0e613        	wsr.ps	a14
+    6786:	102000        	rsync
+    6789:	906f00        	rsil	a9, 15
+    678c:	b26780        	s32i	a11, a7, 0x200
+    678f:	d228f6        	l32i	a13, a8, 0x3d8
+    6792:	d26c18        	s32i	a13, a12, 96
+    6795:	90e613        	wsr.ps	a9
+    6798:	102000        	rsync
+    679b:	506f00        	rsil	a5, 15
+    679e:	b26780        	s32i	a11, a7, 0x200
+    67a1:	6228f6        	l32i	a6, a8, 0x3d8
+    67a4:	626c19        	s32i	a6, a12, 100
+    67a7:	50e613        	wsr.ps	a5
+    67aa:	102000        	rsync
+    67ad:	206f00        	rsil	a2, 15
+    67b0:	b26780        	s32i	a11, a7, 0x200
+    67b3:	4228f6        	l32i	a4, a8, 0x3d8
+    67b6:	426c1a        	s32i	a4, a12, 104
+    67b9:	20e613        	wsr.ps	a2
+    67bc:	102000        	rsync
+    67bf:	e06f00        	rsil	a14, 15
+    67c2:	b26780        	s32i	a11, a7, 0x200
+    67c5:	f228f6        	l32i	a15, a8, 0x3d8
+    67c8:	f26c1b        	s32i	a15, a12, 108
+    67cb:	e0e613        	wsr.ps	a14
+    67ce:	102000        	rsync
+    67d1:	906f00        	rsil	a9, 15
+    67d4:	b26780        	s32i	a11, a7, 0x200
+    67d7:	d228f6        	l32i	a13, a8, 0x3d8
+    67da:	d26c1c        	s32i	a13, a12, 112
+    67dd:	90e613        	wsr.ps	a9
+    67e0:	102000        	rsync
+    67e3:	506f00        	rsil	a5, 15
+    67e6:	b26780        	s32i	a11, a7, 0x200
+    67e9:	6228f6        	l32i	a6, a8, 0x3d8
+    67ec:	626c1d        	s32i	a6, a12, 116
+    67ef:	50e613        	wsr.ps	a5
+    67f2:	102000        	rsync
+    67f5:	206f00        	rsil	a2, 15
+    67f8:	b26780        	s32i	a11, a7, 0x200
+    67fb:	4228f6        	l32i	a4, a8, 0x3d8
+    67fe:	426c1e        	s32i	a4, a12, 120
+    6801:	20e613        	wsr.ps	a2
+    6804:	102000        	rsync
+    6807:	e06f00        	rsil	a14, 15
+    680a:	b26780        	s32i	a11, a7, 0x200
+    680d:	f228f6        	l32i	a15, a8, 0x3d8
+    6810:	f26c1f        	s32i	a15, a12, 124
+    6813:	e0e613        	wsr.ps	a14
+    6816:	102000        	rsync
+    6819:	906f00        	rsil	a9, 15
+    681c:	b26780        	s32i	a11, a7, 0x200
+    681f:	d228f6        	l32i	a13, a8, 0x3d8
+    6822:	d26c20        	s32i	a13, a12, 128
+    6825:	90e613        	wsr.ps	a9
+    6828:	102000        	rsync
+    682b:	506f00        	rsil	a5, 15
+    682e:	b26780        	s32i	a11, a7, 0x200
+    6831:	6228f6        	l32i	a6, a8, 0x3d8
+    6834:	626c21        	s32i	a6, a12, 132
+    6837:	50e613        	wsr.ps	a5
+    683a:	102000        	rsync
+    683d:	206f00        	rsil	a2, 15
+    6840:	b26780        	s32i	a11, a7, 0x200
+    6843:	4228f6        	l32i	a4, a8, 0x3d8
+    6846:	426c22        	s32i	a4, a12, 136
+    6849:	20e613        	wsr.ps	a2
+    684c:	102000        	rsync
+    684f:	e06f00        	rsil	a14, 15
+    6852:	b26780        	s32i	a11, a7, 0x200
+    6855:	f228f6        	l32i	a15, a8, 0x3d8
+    6858:	f26c23        	s32i	a15, a12, 140
+    685b:	e0e613        	wsr.ps	a14
+    685e:	102000        	rsync
+    6861:	906f00        	rsil	a9, 15
+    6864:	b26780        	s32i	a11, a7, 0x200
+    6867:	d228f6        	l32i	a13, a8, 0x3d8
+    686a:	d26c24        	s32i	a13, a12, 144
+    686d:	90e613        	wsr.ps	a9
+    6870:	102000        	rsync
+    6873:	506f00        	rsil	a5, 15
+    6876:	b26780        	s32i	a11, a7, 0x200
+    6879:	6228f6        	l32i	a6, a8, 0x3d8
+    687c:	626c25        	s32i	a6, a12, 148
+    687f:	50e613        	wsr.ps	a5
+    6882:	102000        	rsync
+    6885:	206f00        	rsil	a2, 15
+    6888:	b26780        	s32i	a11, a7, 0x200
+    688b:	4228f6        	l32i	a4, a8, 0x3d8
+    688e:	426c26        	s32i	a4, a12, 152
+    6891:	20e613        	wsr.ps	a2
+    6894:	102000        	rsync
+    6897:	e06f00        	rsil	a14, 15
+    689a:	b26780        	s32i	a11, a7, 0x200
+    689d:	f228f6        	l32i	a15, a8, 0x3d8
+    68a0:	f26c27        	s32i	a15, a12, 156
+    68a3:	e0e613        	wsr.ps	a14
+    68a6:	102000        	rsync
+    68a9:	906f00        	rsil	a9, 15
+    68ac:	b26780        	s32i	a11, a7, 0x200
+    68af:	d228f6        	l32i	a13, a8, 0x3d8
+    68b2:	d26c28        	s32i	a13, a12, 160
+    68b5:	90e613        	wsr.ps	a9
+    68b8:	102000        	rsync
+    68bb:	506f00        	rsil	a5, 15
+    68be:	b26780        	s32i	a11, a7, 0x200
+    68c1:	6228f6        	l32i	a6, a8, 0x3d8
+    68c4:	626c29        	s32i	a6, a12, 164
+    68c7:	50e613        	wsr.ps	a5
+    68ca:	102000        	rsync
+    68cd:	206f00        	rsil	a2, 15
+    68d0:	b26780        	s32i	a11, a7, 0x200
+    68d3:	4228f6        	l32i	a4, a8, 0x3d8
+    68d6:	426c2a        	s32i	a4, a12, 168
+    68d9:	20e613        	wsr.ps	a2
+    68dc:	102000        	rsync
+    68df:	4b5c      	addi.n	a5, a12, 4
+    68e1:	0c04      	movi.n	a4, 0
+    68e3:	0c06      	movi.n	a6, 0
+    68e5:	92a028        	movi	a9, 40
+    68e8:	97b454        	bgeu	a4, a9, 0x6940
+    68eb:	e06f00        	rsil	a14, 15
+    68ee:	b26780        	s32i	a11, a7, 0x200
+    68f1:	d228f6        	l32i	a13, a8, 0x3d8
+    68f4:	e0e613        	wsr.ps	a14
+    68f7:	102000        	rsync
+    68fa:	d2652a        	s32i	a13, a5, 168
+    68fd:	1b44      	addi.n	a4, a4, 1
+    68ff:	4b55      	addi.n	a5, a5, 4
+    6901:	260d0f        	beqi	a13, -1, 0x6914
+    6904:	b646e0        	bltui	a6, 4, 0x68e8
+    6907:	b24c02        	s8i	a11, a12, 2
+    690a:	b24c03        	s8i	a11, a12, 3
+    690d:	0c1f      	movi.n	a15, 1
+    690f:	f24c00        	s8i	a15, a12, 0
+00006912: 1df0     retw.n        ; Capstone
+    6914:	26361d        	beqi	a6, 3, 0x6935
+    6917:	262611        	beqi	a6, 2, 0x692c
+    691a:	261607        	beqi	a6, 1, 0x6925
+    691d:	dc76      	bnez.n	a6, 0x6938
+    691f:	a26c53        	s32i	a10, a12, 0x14c
+    6922:	860400        	j	0x6938
+    6925:	a26c54        	s32i	a10, a12, 0x150
+    6928:	060300        	j	0x6938
+    692b:	00a26c        	excw
+0000692e: 554601   call4        . +0x1468 ; Capstone ; target=0x7d94
+    6931:	000000        	ill
+    6934:	00a26c        	excw
+    6937:	561b66        	bnez	a11, 0x6f9c
+    693a:	ad04      	mov.n	a10, a4
+    693c:	06f1ff        	j	0x6904
+    693f:	0006ff        	excw
+    6942:	ff          	.byte 0xff
+	...
+
+; Alternate branch-target decode
+    6940:	06ffff        	j	0x6940
+
+; Alternate branch-target decode
+    6935:	a26c56        	s32i	a10, a12, 0x158
+    6938:	1b66      	addi.n	a6, a6, 1
+
+; Alternate branch-target decode
+    692c:	a26c55        	s32i	a10, a12, 0x154
+    692f:	460100        	j	0x6938
+    6932:	000000        	ill

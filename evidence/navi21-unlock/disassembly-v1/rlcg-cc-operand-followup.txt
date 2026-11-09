@@ -1,0 +1,68 @@
+RLCG CC operands and indexed copy direction — offline, 2026-11-09
+
+New CC-related result
+Main RLCG has a concrete CC_WGP operand at3523, not just the previously
+identified Xtensa71ac save/restore. Its local operation is consistent with
+reading CC and USER into a combined disabled-WGP mask. Under the partial
+instruction interpretation, it is not a new CC-writing path.
+
+Exact operands and caller chain
+3523 c024226f loads inferred r9 with CC_WGP DWORD226f (publicbyte89bc).
+3524 c0200000 sets r8=0;3525 c01c0000 sets r7=0;3526 calls353e.
+3527..352d read the resulting eight words and shift each right16 into
+word18..1f.352e c0242270 selects USER_WGP;352f sets r7=0;3530 calls353e,
+inheriting r8=0.3531..353c combine USER>>16 with the saved CC high field,
+mask1f and accumulate a combined result. Precise arithmetic semantics remain
+inferred, but register constants and copied-word locations are reproducible.
+Two literal direct calls of3523 occur at2072 and340a. The latter sits in a
+larger WGP power-management path; its presence does not imply a CC write.
+
+353e copy helper and direction distinction
+Initial r2/r3/r4=0; r10 combines r2<<25, r3<<27 and r9; r11=r7+r4.
+Loops increment r2 up to2 and r3 up to4, giving eight instance addresses and
+scratch indices0..7 for r7=0. These are inferred encoded instance operands,
+not proof of an arbitrary host MMIO alias.
+3546 9a000004 branches on r8 to354a under the current opcode reading.
+Mode0:3547 c6b10000 reads into r12 from r10 in addressing mode1;
+      3548 cf2f0000 writes r12 to r11 in addressing mode3.
+Mode1:354a c6f30000 reads from r11 in mode3;
+      354b cf290000 writes to r10 in mode1.
+All four instructions retain their raw words in the receipt. Mode1/3 names
+here are encoded address-mode bits, not a claim that the entire address space
+is documented. The paired reads/writes establish the candidate direction.
+
+All17 literal direct353e calls were inventoried. Their nearby r9/r8 constants
+are checked; only3530 inherits r8 from3524 through the first copy and bounded
+local loop. No inferred assignment to r8 occurs there or inside353e.
+Known reverse-mode destinations are24d7,ec4b,ec6e. GC10.3 identifies these as
+SPI_PG_ENABLE_STATIC_WGP_MASK, RLC_DYN_PG_STATUS, RLC_STATIC_PG_STATUS.
+Both CC226f and USER2270 calls use mode0. Other read-mode operands include
+RLC_PG_ALWAYS_ON_WGP_MASK(ec53). Do not equate power-management masks with
+changing the physical CC mask.
+This is a conclusion about known literal direct calls with the inferred ISA;
+indirect callers, alternate entries, other encoded operands, and the rest of
+the firmware remain outside that conclusion.
+
+Other CC and scratch matches
+CC_SA2249 occurs at212e/2201 beside USER_SA224a at212f/2202 in read-shaped
+instructions. No low16 match for CC_RB263d exists in the6144-word body. This
+literal result does not exclude computed construction of that address.
+USER_WGP/USER_RB also have separate read/write sequences217b..2200 using
+mode1 addresses with explicit instance bits. They concern USER, not CC.
+GPM_SCRATCH_ADDRfb75 occurs at3140 after immediate0200;3141 materializes
+GPM_SCRATCH_DATAfb76 and3142 shifts it left2. The function programs other
+transfer-related words and reads RLC_HYP_BOOTLOAD_ADDR_LO/HI(fb5d/fb5e).
+Its literal callers are30bd/3160. Direction, memory destination and dependence
+on bootload metadata are the next concrete questions. No directfb59/fb5a
+low16 operands were found; alternate constructions remain possible.
+
+Scope and reproduction
+python3 scripts/navi21-rlcg-cc-operand-audit.py
+Receipt rlcg-cc-operand-audit.json records firmware/header hashes, all low16
+matches for eight selected coordinates,17direct call arguments,88raw words,
+and eight instance-address arithmetic examples. These checks validate the
+bytes and stated arithmetic, not an independently documented RLCG ISA.
+The local backing words used by353e are not established aliases of the
+Xtensa savedCC arrays or restore gatee452. No modified-mask producer,
+nonzero restore gate, accepted hardware CC write, or extra CU is established.
+No hardware, firmware, boot, driver or service changes were made.

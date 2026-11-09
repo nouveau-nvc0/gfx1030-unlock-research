@@ -1,0 +1,27 @@
+
+/tmp/tmppqyalg40/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001418 <.data+0x1418>:
+00001418: 364100   entry        a1, 0x20 ; Capstone
+    141b:	61f0fd        	l32r	a6, 0xbdc (0xfffff)
+    141e:	203094        	extui	a3, a2, 0, 10
+    1421:	81f4fd        	l32r	a8, 0xbf4 (0x90001f0)
+    1424:	603311        	slli	a3, a3, 10
+    1427:	3a34      	add.n	a3, a4, a3
+    1429:	e03311        	slli	a3, a3, 2
+    142c:	72d302        	addmi	a7, a3, 0x200
+    142f:	8a33      	add.n	a3, a3, a8
+    1431:	72c7f0        	addi	a7, a7, -16
+    1434:	7074b5        	extui	a7, a7, 20, 12
+    1437:	603310        	and	a3, a3, a6
+    143a:	61edfd        	l32r	a6, 0xbf0 (0x1000000)
+    143d:	c07701        	slli	a7, a7, 20
+    1440:	7a33      	add.n	a3, a3, a7
+    1442:	6a33      	add.n	a3, a3, a6
+    1444:	c02000        	memw
+    1447:	5903      	s32i.n	a5, a3, 0
+00001449: 1df0     retw.n        ; Capstone
+	...

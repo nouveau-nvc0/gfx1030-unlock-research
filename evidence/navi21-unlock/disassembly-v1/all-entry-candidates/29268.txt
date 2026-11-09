@@ -1,0 +1,43 @@
+
+/tmp/tmp_vdcrlkb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00029268 <.data+0x29268>:
+00029268: 364100   entry        a1, 0x20 ; Capstone
+   2926b:	9108aa        	l32r	a9, 0x13a8c (0xe16c)
+   2926e:	82097c        	l8ui	a8, a9, 124
+   29271:	920983        	l8ui	a9, a9, 131
+   29274:	dc68      	bnez.n	a8, 0x2928e
+   29276:	dc69      	bnez.n	a9, 0x29290
+   29278:	a192aa        	l32r	a10, 0x13cc0 (0xe484)
+   2927b:	b192aa        	l32r	a11, 0x13cc4 (0xe328)
+0002927e: 652602   call8        . +0x2268 ; Capstone ; target=0x2b4e4
+   29281:	0c0b      	movi.n	a11, 0
+   29283:	dd0a      	mov.n	a13, a10
+   29285:	0c0c      	movi.n	a12, 0
+   29287:	0c2a      	movi.n	a10, 2
+00029289: e5d70c   call8        . +0xcd80 ; Capstone ; target=0x36008
+0002928c: 1df0     retw.n        ; Capstone
+0002928e: 1df0     retw.n        ; Capstone
+   29290:	66191c        	bnei	a9, 1, 0x292b0
+   29293:	a18daa        	l32r	a10, 0x13cc8 (0xe6d8)
+   29296:	b1a4a9        	l32r	a11, 0x13928 (0xe284)
+00029299: e5edff   call8        . -0x120 ; Capstone ; target=0x29178
+   2929c:	d107a8        	l32r	a13, 0x132b8 (0xe008)
+   2929f:	0c0b      	movi.n	a11, 0
+   292a1:	0c0c      	movi.n	a12, 0
+   292a3:	d0daa0        	addx4	a13, a10, a13
+   292a6:	d22d7f        	l32i	a13, a13, 0x1fc
+   292a9:	0c2a      	movi.n	a10, 2
+000292ab: e5d50c   call8        . +0xcd60 ; Capstone ; target=0x36008
+000292ae: 1df0     retw.n        ; Capstone
+   292b0:	0c0c      	movi.n	a12, 0
+   292b2:	2cbb      	movi.n	a11, 43
+   292b4:	d104a7        	l32r	a13, 0x12ec4 (0x300fe00)
+   292b7:	1c0a      	movi.n	a10, 16
+   292b9:	c02000        	memw
+   292bc:	d22d8a        	l32i	a13, a13, 0x228
+000292bf: e534d9   call8        . -0x26cb0 ; Capstone ; target=0x260c
+	...

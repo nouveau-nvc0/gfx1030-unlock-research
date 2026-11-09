@@ -1,0 +1,21 @@
+
+/tmp/tmpea2t0cv3/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002559c <.data+0x2559c>:
+0002559c: 364100   entry        a1, 0x20 ; Capstone
+   2559f:	9162b7        	l32r	a9, 0x13328 (0x123ae00)
+   255a2:	c02000        	memw
+   255a5:	8229e1        	l32i	a8, a9, 0x384
+   255a8:	8c78      	beqz.n	a8, 0x255b3
+   255aa:	c02000        	memw
+   255ad:	a229e1        	l32i	a10, a9, 0x384
+   255b0:	566aff        	bnez	a10, 0x255aa
+   255b3:	b1c6b8        	l32r	a11, 0x138cc (0x461c4000)
+000255b6: 500bfa   wfr          f0, a11 ; Capstone
+000255b9: 00a0ba   ceil.s       a10, f0, 0 ; Capstone
+000255bc: 6519dc   call8        . -0x23e68 ; Capstone ; target=0x1754
+000255bf: 1df0     retw.n        ; Capstone
+   255c1:	000000        	ill

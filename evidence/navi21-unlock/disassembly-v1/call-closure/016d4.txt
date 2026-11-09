@@ -1,0 +1,24 @@
+
+/tmp/tmpktnkecy9/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000016d4 <.data+0x16d4>:
+000016d4: 364100   entry        a1, 0x20 ; Capstone
+000016d7: 65c132   call8        . +0x32c18 ; Capstone ; target=0x342ec
+    16da:	b150fd        	l32r	a11, 0xc1c (0x80000001)
+    16dd:	c151fd        	l32r	a12, 0xc24 (0x1268e00)
+    16e0:	9150fd        	l32r	a9, 0xc20 (0x1202e00)
+    16e3:	c02000        	memw
+    16e6:	b91c      	s32i.n	a11, a12, 4
+    16e8:	a2aeff        	movi	a10, 0xfffffeff
+    16eb:	c02000        	memw
+    16ee:	822989        	l32i	a8, a9, 0x224
+    16f1:	a08810        	and	a8, a8, a10
+    16f4:	c02000        	memw
+    16f7:	0c0a      	movi.n	a10, 0
+    16f9:	826989        	s32i	a8, a9, 0x224
+000016fc: a59032   call8        . +0x3290c ; Capstone ; target=0x34008
+000016ff: 1df0     retw.n        ; Capstone
+    1701:	000000        	ill

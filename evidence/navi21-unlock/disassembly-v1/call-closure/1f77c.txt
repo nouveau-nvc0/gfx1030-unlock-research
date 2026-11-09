@@ -1,0 +1,140 @@
+
+/tmp/tmp402d1tdz/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001f77c <.data+0x1f77c>:
+0001f77c: 368100   entry        a1, 0x40 ; Capstone
+   1f77f:	cc23      	bnez.n	a3, 0x1f785
+   1f781:	0c02      	movi.n	a2, 0
+0001f783: 1df0     retw.n        ; Capstone
+   1f785:	a1dece        	l32r	a10, 0x13300 (0x125ce04)
+   1f788:	b1c7cd        	l32r	a11, 0x12ea4 (0x147e0)
+   1f78b:	71dece        	l32r	a7, 0x13304 (0x125d000)
+   1f78e:	d1dece        	l32r	a13, 0x13308 (0x157cc)
+   1f791:	b22b77        	l32i	a11, a11, 0x1dc
+   1f794:	2095f4        	extui	a9, a2, 5, 16
+   1f797:	e0e911        	slli	a14, a9, 2
+   1f79a:	b0c004        	extui	a12, a11, 0, 1
+   1f79d:	e08c11        	slli	a8, a12, 2
+   1f7a0:	daf8      	add.n	a15, a8, a13
+   1f7a2:	f22f7f        	l32i	a15, a15, 0x1fc
+   1f7a5:	7a7e      	add.n	a7, a14, a7
+   1f7a7:	8bdd      	addi.n	a13, a13, 8
+   1f7a9:	771f1a        	beq	a15, a7, 0x1f7c7
+   1f7ac:	1bcb      	addi.n	a12, a11, 1
+   1f7ae:	61d6ce        	l32r	a6, 0x13308 (0x157cc)
+   1f7b1:	c941      	s32i.n	a12, a1, 16
+   1f7b3:	c0c004        	extui	a12, a12, 0, 1
+   1f7b6:	e05c11        	slli	a5, a12, 2
+   1f7b9:	5951      	s32i.n	a5, a1, 20
+   1f7bb:	6a55      	add.n	a5, a5, a6
+   1f7bd:	5961      	s32i.n	a5, a1, 24
+   1f7bf:	52257f        	l32i	a5, a5, 0x1fc
+   1f7c2:	aa6e      	add.n	a6, a14, a10
+   1f7c4:	779505        	bne	a5, a7, 0x1f7cd
+   1f7c7:	d06ca0        	addx4	a6, a12, a13
+   1f7ca:	c60700        	j	0x1f7ed
+   1f7cd:	81b5cd        	l32r	a8, 0x12ea4 (0x147e0)
+   1f7d0:	f861      	l32i.n	a15, a1, 24
+   1f7d2:	b841      	l32i.n	a11, a1, 16
+   1f7d4:	b26877        	s32i	a11, a8, 0x1dc
+   1f7d7:	726f7f        	s32i	a7, a15, 0x1fc
+   1f7da:	fd07      	mov.n	a15, a7
+   1f7dc:	8851      	l32i.n	a8, a1, 20
+   1f7de:	d07ca0        	addx4	a7, a12, a13
+   1f7e1:	c02000        	memw
+   1f7e4:	52267f        	l32i	a5, a6, 0x1fc
+   1f7e7:	52677f        	s32i	a5, a7, 0x1fc
+   1f7ea:	c02000        	memw
+   1f7ed:	20c044        	extui	a12, a2, 0, 5
+   1f7f0:	8901      	s32i.n	a8, a1, 0
+   1f7f2:	0be3      	addi.n	a14, a3, -1
+   1f7f4:	72267f        	l32i	a7, a6, 0x1fc
+   1f7f7:	2c06      	movi.n	a6, 32
+0001f7f9: 60eed2   quos         a14, a14, a6 ; Capstone
+   1f7fc:	e0e0f4        	extui	a14, a14, 0, 16
+   1f7ff:	bc9e      	beqz.n	a14, 0x1f83c
+   1f801:	0c08      	movi.n	a8, 0
+   1f803:	c0d6c0        	sub	a13, a6, a12
+   1f806:	f921      	s32i.n	a15, a1, 8
+   1f808:	b911      	s32i.n	a11, a1, 4
+0001f80a: 769e2b   loopnez      a14, . +0x2f ; Capstone
+   1f80d:	1b99      	addi.n	a9, a9, 1
+   1f80f:	9090f4        	extui	a9, a9, 0, 16
+   1f812:	a0f9a0        	addx4	a15, a9, a10
+   1f815:	c02000        	memw
+   1f818:	001d40        	ssl	a13
+   1f81b:	4058a0        	addx4	a5, a8, a4
+   1f81e:	f22f7f        	l32i	a15, a15, 0x1fc
+   1f821:	1b88      	addi.n	a8, a8, 1
+   1f823:	8080f4        	extui	a8, a8, 0, 16
+   1f826:	00bfa1        	sll	a11, a15
+   1f829:	000c40        	ssr	a12
+   1f82c:	706091        	srl	a6, a7
+   1f82f:	b06620        	or	a6, a6, a11
+   1f832:	c07693        	movnez	a7, a6, a12
+   1f835:	7905      	s32i.n	a7, a5, 0
+   1f837:	7d0f      	mov.n	a7, a15
+   1f839:	460100        	j	0x1f842
+   1f83c:	0c08      	movi.n	a8, 0
+   1f83e:	f921      	s32i.n	a15, a1, 8
+   1f840:	b911      	s32i.n	a11, a1, 4
+   1f842:	d1b2ce        	l32r	a13, 0x1330c (0x157d4)
+   1f845:	2c05      	movi.n	a5, 32
+   1f847:	3a22      	add.n	a2, a2, a3
+   1f849:	0b22      	addi.n	a2, a2, -1
+0001f84b: 5022d2   quos         a2, a2, a5 ; Capstone
+   1f84e:	2020f4        	extui	a2, a2, 0, 16
+   1f851:	271906        	beq	a9, a2, 0x1f85b
+   1f854:	ecec      	bnez.n	a12, 0x1f886
+   1f856:	6d07      	mov.n	a6, a7
+   1f858:	860200        	j	0x1f866
+   1f85b:	000c40        	ssr	a12
+   1f85e:	705091        	srl	a5, a7
+   1f861:	c07593        	movnez	a7, a5, a12
+   1f864:	6d07      	mov.n	a6, a7
+   1f866:	4098a0        	addx4	a9, a8, a4
+   1f869:	7cfb      	movi.n	a11, -1
+   1f86b:	30a044        	extui	a10, a3, 0, 5
+   1f86e:	1b2e      	addi.n	a2, a14, 1
+   1f870:	2020f4        	extui	a2, a2, 0, 16
+   1f873:	001a40        	ssl	a10
+   1f876:	007ba1        	sll	a7, a11
+   1f879:	b07730        	xor	a7, a7, a11
+   1f87c:	707610        	and	a7, a6, a7
+   1f87f:	a07683        	moveqz	a7, a6, a10
+   1f882:	7909      	s32i.n	a7, a9, 0
+0001f884: 1df0     retw.n        ; Capstone
+   1f886:	919fce        	l32r	a9, 0x13304 (0x125d000)
+   1f889:	5821      	l32i.n	a5, a1, 8
+   1f88b:	b811      	l32i.n	a11, a1, 4
+   1f88d:	9092a0        	addx4	a9, a2, a9
+   1f890:	97950f        	bne	a5, a9, 0x1f8a3
+   1f893:	2801      	l32i.n	a2, a1, 0
+   1f895:	da22      	add.n	a2, a2, a13
+   1f897:	62227f        	l32i	a6, a2, 0x1fc
+   1f89a:	000c40        	ssr	a12
+   1f89d:	706681        	src	a6, a6, a7
+   1f8a0:	86f0ff        	j	0x1f866
+   1f8a3:	f2cdf8        	addi	a15, a13, -8
+   1f8a6:	1bbb      	addi.n	a11, a11, 1
+   1f8a8:	b931      	s32i.n	a11, a1, 12
+   1f8aa:	b0b004        	extui	a11, a11, 0, 1
+   1f8ad:	f0fba0        	addx4	a15, a11, a15
+   1f8b0:	522f7f        	l32i	a5, a15, 0x1fc
+   1f8b3:	617ccd        	l32r	a6, 0x12ea4 (0x147e0)
+   1f8b6:	a022a0        	addx4	a2, a2, a10
+   1f8b9:	979505        	bne	a5, a9, 0x1f8c2
+   1f8bc:	d02ba0        	addx4	a2, a11, a13
+   1f8bf:	06f5ff        	j	0x1f897
+   1f8c2:	926f7f        	s32i	a9, a15, 0x1fc
+   1f8c5:	5831      	l32i.n	a5, a1, 12
+   1f8c7:	526677        	s32i	a5, a6, 0x1dc
+   1f8ca:	d06ba0        	addx4	a6, a11, a13
+   1f8cd:	c02000        	memw
+   1f8d0:	52227f        	l32i	a5, a2, 0x1fc
+   1f8d3:	52667f        	s32i	a5, a6, 0x1fc
+   1f8d6:	c02000        	memw
+   1f8d9:	86eeff        	j	0x1f897

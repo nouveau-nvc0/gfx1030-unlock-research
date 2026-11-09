@@ -1,0 +1,35 @@
+
+/tmp/tmp4gnknpbb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000034a0 <.data+0x34a0>:
+000034a0: 364100   entry        a1, 0x20 ; Capstone
+    34a3:	317be7        	l32r	a3, 0xffffd290 (0x5ffee44c) ; inferred DRAM map 0x5ffec000
+    34a6:	820303        	l8ui	a8, a3, 3
+    34a9:	920302        	l8ui	a9, a3, 2
+    34ac:	cc08      	bnez.n	a8, 0x34b0
+    34ae:	bc89      	beqz.n	a9, 0x34ea
+    34b0:	2154e7        	l32r	a2, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    34b3:	d222ec        	l32i	a13, a2, 0x3b0
+    34b6:	7cec      	movi.n	a12, -2
+    34b8:	c0dd10        	and	a13, a13, a12
+    34bb:	d262ec        	s32i	a13, a2, 0x3b0
+    34be:	b222ed        	l32i	a11, a2, 0x3b4
+    34c1:	0c1a      	movi.n	a10, 1
+    34c3:	c0bb10        	and	a11, a11, a12
+    34c6:	b262ed        	s32i	a11, a2, 0x3b4
+000034c9: 650b00   call8        . +0xb8 ; Capstone ; target=0x3580
+    34cc:	0c0a      	movi.n	a10, 0
+000034ce: 250500   call8        . +0x54 ; Capstone ; target=0x3520
+    34d1:	2c4a      	movi.n	a10, 36
+    34d3:	82a000        	movi	a8, 0
+    34d6:	e2a003        	movi	a14, 3
+    34d9:	e262e8        	s32i	a14, a2, 0x3a0
+    34dc:	f222e9        	l32i	a15, a2, 0x3a4
+    34df:	a7cff9        	bnall	a15, a10, 0x34dc
+    34e2:	824303        	s8i	a8, a3, 3
+    34e5:	824302        	s8i	a8, a3, 2
+000034e8: 1df0     retw.n        ; Capstone
+000034ea: 1df0     retw.n        ; Capstone

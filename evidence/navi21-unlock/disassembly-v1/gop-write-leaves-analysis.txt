@@ -1,0 +1,42 @@
+GOP lowest-level direct write-wrapper inventory, offline
+
+Reproducer:scripts/navi21-gop-write-leaves.py; receipt:gop-write-leaf-inventory.json.
+All executable-section bytes decoded/accounted with explicit one-byte trailing
+padding skips. XL14 references to62e8 belong to6320/6468/65d4/6734;
+XT16 references to4e54 belong to4e8c/4fd4/5140/7e28. This closes the list of
+linear direct references to those leaves, not indirect PCI protocol callbacks.
+
+XL6320 andXT4e8c are reads; their leaf writes select an index before reading
+data. XL6468/XT4fd4 are previously traced generic writers. XL65d4 is another
+reader: index inputEDX<<2; only index-port writes. It temporarily manipulates
+PCI_IO.Attributes around accesses and restores saved attributes.
+XL6734 is an additional data writer missed by the6468-only caller inventory.
+It obtains FirmwareInfo from PCI_IO.RomImage, checks version bytes+2/+3>=3
+and base+18 nonzero, computes byte address(base<<2)+20, and writes inputR8D.
+It uses BAR3, threshold80000, and the same high-bit0/4 versus low-bit30/34
+routes. Direct caller6d0 supplies value20000000 or10000000; inputEDX=8 is
+not used in address calculation. Initialbase4c selects register54 (byte150).
+XT5140 independently computes the same(base<<2)+20, reads current value,
+ORs callerR8D at528b and writes it back. Its direct writes select this same
+scratch location with initialbase4c. Do not assume XL/XT value semantics match.
+XT7e28 is a polling reader: FirmwareInfo version minor>=4, field+58 nonzero;
+reads addressfield+58<<2, repetition bound derived from+60/10. Its only leaf
+writes are index selection; no data-port write in the traced body.
+
+High-bit route interpretation:
+Saved/hash-checked amdgpu_device.c function amdgpu_device_mm_access explicitly
+implements VRAM access with MM_INDEX=pos|80000000 and MM_DATA reads/writes.
+Saved amdgpu_discovery.c defines DWORD indices MM_INDEX=0, MM_DATA=1,
+MM_INDEX_HI=6. GOP's byte0/4 accesses and forced bit31 match this documented
+VRAM access convention. Thus87dc should be classified as a VRAM-write route,
+not as evidence of direct GC CC register selection. Its base can mutate as
+recorded in gop-runtime-table-update.txt. Exact VRAM position also depends on
+MM_INDEX_HI state, which87dc does not set in its immediate wrapper.
+This interpretation is source-supported, not a hardware acceptance test or
+a proof excluding every indirect effect of writing VRAM.
+
+Independent upstream confirmations:
+https://linux.googlesource.com/linux/kernel/git/torvalds/linux/+/1200d84f4c0a929a0780180d25063d93773be79c/drivers/gpu/drm/amd/amdgpu/amdgpu_device.c
+https://code.googlesource.com/linux/torvalds/linux/+/9f7853d7609d59172eecfc5e7ccf503bc1b690bd/drivers/gpu/drm/amd/amdgpu/amdgpu_discovery.c
+Remaining: direct protocol Mem.Write sites outside the helper, pointer/data
+mutation coverage, ARM64 counterpart analysis, and remaining SMU/RLC work.

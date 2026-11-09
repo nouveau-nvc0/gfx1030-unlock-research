@@ -1,0 +1,37 @@
+
+/tmp/tmpaonrfhuo/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00031d68 <.data+0x31d68>:
+00031d68: 364100   entry        a1, 0x20 ; Capstone
+   31d6b:	313089        	l32r	a3, 0x1422c (0xb220)
+   31d6e:	a22336        	l32i	a10, a3, 216
+   31d71:	1baa      	addi.n	a10, a10, 1
+   31d73:	a26336        	s32i	a10, a3, 216
+   31d76:	b2a3e8        	movi	a11, 0x3e8
+   31d79:	216a85        	l32r	a2, 0x13324 (0x3010a00)
+   31d7c:	c02000        	memw
+   31d7f:	822338        	l32i	a8, a3, 224
+   31d82:	222244        	l32i	a2, a2, 0x110
+   31d85:	226337        	s32i	a2, a3, 220
+   31d88:	279802        	bne	a8, a2, 0x31d8e
+   31d8b:	a7bb2a        	bgeu	a11, a10, 0x31db9
+   31d8e:	9c9a      	beqz.n	a10, 0x31dab
+   31d90:	a73b17        	bltu	a11, a10, 0x31dab
+00031d93: 000ada   ufloat.s     f0, a10, 0 ; Capstone
+00031d96: 40a0fa   rfr          a10, f0 ; Capstone
+00031d99: 250007   call8        . +0x7004 ; Capstone ; target=0x38d9c
+00031d9c: 503afa   wfr          f3, a10 ; Capstone
+00031d9f: 2303c9   lsi          f2, a3, 0x324 ; Capstone
+00031da2: 30122a   mul.s        f1, f2, f3 ; Capstone
+00031da5: 13433f   ssi          f1, a3, 0xfc ; Capstone
+   31da8:	460100        	j	0x31db1
+00031dab: 3040fa   const.s      f4, 0 ; Capstone
+00031dae: 43433f   ssi          f4, a3, 0xfc ; Capstone
+   31db1:	226338        	s32i	a2, a3, 224
+   31db4:	0c0b      	movi.n	a11, 0
+   31db6:	b26336        	s32i	a11, a3, 216
+00031db9: 1df0     retw.n        ; Capstone
+	...

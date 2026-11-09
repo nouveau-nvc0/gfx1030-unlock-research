@@ -1,0 +1,67 @@
+
+/tmp/tmpdgjbjvdi/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000286e8 <.data+0x286e8>:
+000286e8: 366100   entry        a1, 0x30 ; Capstone
+   286eb:	4d02      	mov.n	a4, a2
+   286ed:	92023c        	l8ui	a9, a2, 60
+000286f0: 3021fa   const.s      f2, 1 ; Capstone
+000286f3: 130209   lsi          f1, a2, 0x24 ; Capstone
+   286f6:	66194a        	bnei	a9, 1, 0x28744
+000286f9: 10421a   sub.s        f4, f2, f1 ; Capstone
+   286fc:	8862      	l32i.n	a8, a2, 24
+000286fe: 330207   lsi          f3, a2, 0x1c ; Capstone
+00028701: 40032a   mul.s        f0, f3, f4 ; Capstone
+00028704: 230800   lsi          f2, a8, 0 ; Capstone
+00028707: 10024a   madd.s       f0, f2, f1 ; Capstone
+   2870a:	ad02      	mov.n	a10, a2
+   2870c:	bd03      	mov.n	a11, a3
+0002870e: 034100   ssi          f0, a1, 0 ; Capstone
+00028711: 034207   ssi          f0, a2, 0x1c ; Capstone
+00028714: 650c01   call8        . +0x10c8 ; Capstone ; target=0x297dc
+   28717:	912baa        	l32r	a9, 0x12fc4 (0x38d1b717)
+0002871a: 730403   lsi          f7, a4, 0xc ; Capstone
+0002871d: 500afa   wfr          f0, a10 ; Capstone
+00028720: 70601a   sub.s        f6, f0, f7 ; Capstone
+00028723: 5059fa   wfr          f5, a9 ; Capstone
+00028726: 1066fa   abs.s        f6, f6 ; Capstone
+00028729: 60056b   ole.s        b0, f5, f6 ; Capstone
+0002872c: 034101   ssi          f0, a1, 4 ; Capstone
+0002872f: 760035   bf           b0, . +0x39 ; Capstone
+00028732: a56610   call8        . +0x1066c ; Capstone ; target=0x38d9c
+00028735: 501afa   wfr          f1, a10 ; Capstone
+00028738: 030101   lsi          f0, a1, 4 ; Capstone
+0002873b: 034403   ssi          f0, a4, 0xc ; Capstone
+0002873e: 134404   ssi          f1, a4, 0x10 ; Capstone
+   28741:	860900        	j	0x2876b
+00028744: 3000fa   const.s      f0, 0 ; Capstone
+   28747:	262904        	beqi	a9, 2, 0x2874f
+0002874a: 4020fa   rfr          a2, f0 ; Capstone
+0002874d: 1df0     retw.n        ; Capstone
+0002874f: 10c21a   sub.s        f12, f2, f1 ; Capstone
+   28752:	a862      	l32i.n	a10, a2, 24
+00028754: b30207   lsi          f11, a2, 0x1c ; Capstone
+00028757: c09b2a   mul.s        f9, f11, f12 ; Capstone
+0002875a: a30a00   lsi          f10, a10, 0 ; Capstone
+0002875d: 109a4a   madd.s       f9, f10, f1 ; Capstone
+00028760: 4020fa   rfr          a2, f0 ; Capstone
+00028763: 934407   ssi          f9, a4, 0x1c ; Capstone
+00028766: 1df0     retw.n        ; Capstone
+00028768: 130404   lsi          f1, a4, 0x10 ; Capstone
+0002876b: 630100   lsi          f6, a1, 0 ; Capstone
+0002876e: 60501a   sub.s        f5, f0, f6 ; Capstone
+00028771: 50e12a   mul.s        f14, f1, f5 ; Capstone
+00028774: 43040b   lsi          f4, a4, 0x2c ; Capstone
+00028777: 403e1a   sub.s        f3, f14, f4 ; Capstone
+0002877a: 23040d   lsi          f2, a4, 0x34 ; Capstone
+0002877d: 30d22a   mul.s        f13, f2, f3 ; Capstone
+00028780: f3040c   lsi          f15, a4, 0x30 ; Capstone
+00028783: e0df4a   madd.s       f13, f15, f14 ; Capstone
+00028786: e3440b   ssi          f14, a4, 0x2c ; Capstone
+00028789: d3440e   ssi          f13, a4, 0x38 ; Capstone
+0002878c: 402dfa   rfr          a2, f13 ; Capstone
+0002878f: 1df0     retw.n        ; Capstone
+   28791:	000000        	ill

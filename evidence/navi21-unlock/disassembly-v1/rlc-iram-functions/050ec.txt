@@ -1,0 +1,33 @@
+
+/tmp/tmpxa0k1xo2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000050ec <.data+0x50ec>:
+000050ec: 366100   entry        a1, 0x30 ; Capstone
+    50ef:	a2a08a        	movi	a10, 138
+000050f2: 652500   call8        . +0x258 ; Capstone ; target=0x5348
+    50f5:	b13ae0        	l32r	a11, 0xffffd1e0 (0x1000) ; inferred DRAM map 0x5ffec000
+    50f8:	a02a20        	or	a2, a10, a10
+    50fb:	b0ba20        	or	a11, a10, a11
+    50fe:	a2a08a        	movi	a10, 138
+00005101: 652b00   call8        . +0x2b8 ; Capstone ; target=0x53b8
+    5104:	a2a0a3        	movi	a10, 163
+00005107: 252400   call8        . +0x244 ; Capstone ; target=0x5348
+    510a:	a0c0f4        	extui	a12, a10, 0, 16
+    510d:	66fcf3        	bnei	a12, 0x100, 0x5104
+    5110:	a2a089        	movi	a10, 137
+00005113: 652300   call8        . +0x238 ; Capstone ; target=0x5348
+    5116:	b1cee0        	l32r	a11, 0xffffd450 (0xffffefff) ; inferred DRAM map 0x5ffec000
+    5119:	3d0a      	mov.n	a3, a10
+    511b:	a2a08a        	movi	a10, 138
+    511e:	b0b210        	and	a11, a2, a11
+00005121: 652900   call8        . +0x298 ; Capstone ; target=0x53b8
+    5124:	a2a0a3        	movi	a10, 163
+00005127: 252200   call8        . +0x224 ; Capstone ; target=0x5348
+    512a:	a0c0f4        	extui	a12, a10, 0, 16
+    512d:	662cf3        	bnei	a12, 2, 0x5124
+    5130:	302a94        	extui	a2, a3, 10, 10
+00005133: 1df0     retw.n        ; Capstone
+    5135:	000000        	ill

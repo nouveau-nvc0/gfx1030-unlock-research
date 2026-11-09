@@ -1,0 +1,61 @@
+
+/tmp/tmpme4fxgr0/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001c700 <.data+0x1c700>:
+0001c700: 366100   entry        a1, 0x30 ; Capstone
+   1c703:	6153da        	l32r	a6, 0x13050 (0xaaf0)
+   1c706:	2052f0        	subx8	a5, a2, a2
+   1c709:	6055a0        	addx4	a5, a5, a6
+   1c70c:	42057d        	l8ui	a4, a5, 125
+   1c70f:	8166da        	l32r	a8, 0x130a8 (0xafb8)
+   1c712:	1caa      	movi.n	a10, 26
+   1c714:	a044d1        	mul16s	a4, a4, a10
+   1c717:	f2251c        	l32i	a15, a5, 112
+   1c71a:	4a48      	add.n	a4, a8, a4
+   1c71c:	42047d        	l8ui	a4, a4, 125
+   1c71f:	7139da        	l32r	a7, 0x13004 (0xfffff)
+   1c722:	614dda        	l32r	a6, 0x13058 (0x11ffe00)
+   1c725:	4aff      	add.n	a15, a15, a4
+   1c727:	70ff10        	and	a15, a15, a7
+   1c72a:	6aff      	add.n	a15, a15, a6
+   1c72c:	c02000        	memw
+   1c72f:	e22f80        	l32i	a14, a15, 0x200
+   1c732:	1c04      	movi.n	a4, 16
+   1c734:	40ee20        	or	a14, a14, a4
+   1c737:	c02000        	memw
+   1c73a:	e26f80        	s32i	a14, a15, 0x200
+   1c73d:	d2057d        	l8ui	a13, a5, 125
+   1c740:	a0ddd1        	mul16s	a13, a13, a10
+   1c743:	c2251c        	l32i	a12, a5, 112
+   1c746:	dad8      	add.n	a13, a8, a13
+   1c748:	d20d7e        	l8ui	a13, a13, 126
+   1c74b:	dacc      	add.n	a12, a12, a13
+   1c74d:	70cc10        	and	a12, a12, a7
+   1c750:	6acc      	add.n	a12, a12, a6
+   1c752:	c02000        	memw
+   1c755:	d155da        	l32r	a13, 0x130ac (0xffc000ff)
+   1c758:	b22c80        	l32i	a11, a12, 0x200
+   1c75b:	d0bb10        	and	a11, a11, a13
+   1c75e:	d2a100        	movi	a13, 0x100
+   1c761:	d0bb20        	or	a11, a11, a13
+   1c764:	c02000        	memw
+   1c767:	b26c80        	s32i	a11, a12, 0x200
+   1c76a:	92057d        	l8ui	a9, a5, 125
+   1c76d:	a099d1        	mul16s	a9, a9, a10
+   1c770:	52251c        	l32i	a5, a5, 112
+   1c773:	9a88      	add.n	a8, a8, a9
+   1c775:	820883        	l8ui	a8, a8, 131
+   1c778:	8a55      	add.n	a5, a5, a8
+   1c77a:	705510        	and	a5, a5, a7
+   1c77d:	6a55      	add.n	a5, a5, a6
+   1c77f:	c02000        	memw
+   1c782:	622580        	l32i	a6, a5, 0x200
+   1c785:	6901      	s32i.n	a6, a1, 0
+   1c787:	325100        	s16i	a3, a1, 0
+   1c78a:	4801      	l32i.n	a4, a1, 0
+   1c78c:	c02000        	memw
+   1c78f:	426580        	s32i	a4, a5, 0x200
+0001c792: 1df0     retw.n        ; Capstone

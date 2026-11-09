@@ -1,0 +1,118 @@
+
+/tmp/tmpgw2jl3g4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000ac4 <.data+0xac4>:
+00000ac4: 368100   entry        a1, 0x40 ; Capstone
+     ac7:	61a6f1        	l32r	a6, 0xffffd160 (0x5ffee25c) ; inferred DRAM map 0x5ffec000
+     aca:	420600        	l8ui	a4, a6, 0
+     acd:	820601        	l8ui	a8, a6, 1
+     ad0:	2941      	s32i.n	a2, a1, 16
+     ad2:	166407        	beqz	a4, 0xb4c
+     ad5:	563807        	bnez	a8, 0xb4c
+     ad8:	61a6f1        	l32r	a6, 0xffffd170 (0x6803ba00) ; inferred DRAM map 0x5ffec000
+     adb:	20b0f4        	extui	a11, a2, 0, 16
+     ade:	c2264c        	l32i	a12, a6, 0x130
+     ae1:	81aff1        	l32r	a8, 0xffffd1a0 (0xfc00) ; inferred DRAM map 0x5ffec000
+     ae4:	c901      	s32i.n	a12, a1, 0
+     ae6:	c0c0f4        	extui	a12, a12, 0, 16
+     ae9:	80cc10        	and	a12, a12, a8
+     aec:	c0bb20        	or	a11, a11, a12
+     aef:	b25100        	s16i	a11, a1, 0
+     af2:	a801      	l32i.n	a10, a1, 0
+     af4:	a2664c        	s32i	a10, a6, 0x130
+     af7:	222657        	l32i	a2, a6, 0x15c
+     afa:	e2afdf        	movi	a14, -33
+     afd:	2c09      	movi.n	a9, 32
+     aff:	909220        	or	a9, a2, a9
+     b02:	926657        	s32i	a9, a6, 0x15c
+     b05:	d22658        	l32i	a13, a6, 0x160
+     b08:	876df9        	bbci	a13, 8, 0xb05
+     b0b:	7cbb      	movi.n	a11, -5
+     b0d:	0c04      	movi.n	a4, 0
+     b0f:	3070f4        	extui	a7, a3, 0, 16
+     b12:	0c1a      	movi.n	a10, 1
+     b14:	0c09      	movi.n	a9, 0
+     b16:	e0e210        	and	a14, a2, a14
+     b19:	e26657        	s32i	a14, a6, 0x15c
+     b1c:	f22658        	l32i	a15, a6, 0x160
+     b1f:	87eff9        	bbsi	a15, 8, 0xb1c
+     b22:	221109        	l16ui	a2, a1, 18
+     b25:	322656        	l32i	a3, a6, 0x158
+     b28:	709a83        	moveqz	a9, a10, a7
+     b2b:	204a83        	moveqz	a4, a10, a2
+     b2e:	0c4a      	movi.n	a10, 4
+     b30:	904430        	xor	a4, a4, a9
+     b33:	922661        	l32i	a9, a6, 0x184
+     b36:	16a40a        	beqz	a4, 0xbe4
+     b39:	9c32      	beqz.n	a2, 0xb50
+     b3b:	371211        	beq	a2, a3, 0xb50
+     b3e:	273302        	bltu	a3, a2, 0xb44
+     b41:	c62400        	j	0xbd8
+     b44:	0b33      	addi.n	a3, a3, -1
+     b46:	3030f4        	extui	a3, a3, 0, 16
+     b49:	062400        	j	0xbdd
+     b4c:	0c12      	movi.n	a2, 1
+00000b4e: 1df0     retw.n        ; Capstone
+     b50:	903094        	extui	a3, a9, 0, 10
+     b53:	77b307        	bgeu	a3, a7, 0xb5e
+     b56:	0b33      	addi.n	a3, a3, -1
+     b58:	060100        	j	0xb60
+     b5b:	000000        	ill
+     b5e:	1b33      	addi.n	a3, a3, 1
+     b60:	922661        	l32i	a9, a6, 0x184
+     b63:	926101        	s32i	a9, a1, 4
+     b66:	9090f4        	extui	a9, a9, 0, 16
+     b69:	809910        	and	a9, a9, a8
+     b6c:	909320        	or	a9, a3, a9
+     b6f:	925102        	s16i	a9, a1, 4
+     b72:	422101        	l32i	a4, a1, 4
+     b75:	426661        	s32i	a4, a6, 0x184
+     b78:	322657        	l32i	a3, a6, 0x15c
+     b7b:	b0e310        	and	a14, a3, a11
+     b7e:	a0c320        	or	a12, a3, a10
+     b81:	c26657        	s32i	a12, a6, 0x15c
+     b84:	d22658        	l32i	a13, a6, 0x160
+     b87:	276df9        	bbci	a13, 2, 0xb84
+     b8a:	e26657        	s32i	a14, a6, 0x15c
+     b8d:	f22658        	l32i	a15, a6, 0x160
+     b90:	27eff9        	bbsi	a15, 2, 0xb8d
+     b93:	8c12      	beqz.n	a2, 0xb98
+     b95:	226656        	s32i	a2, a6, 0x158
+     b98:	9c57      	beqz.n	a7, 0xbb1
+     b9a:	922661        	l32i	a9, a6, 0x184
+     b9d:	9911      	s32i.n	a9, a1, 4
+     b9f:	9090f4        	extui	a9, a9, 0, 16
+     ba2:	809910        	and	a9, a9, a8
+     ba5:	709920        	or	a9, a9, a7
+     ba8:	925102        	s16i	a9, a1, 4
+     bab:	422101        	l32i	a4, a1, 4
+     bae:	426661        	s32i	a4, a6, 0x184
+     bb1:	322657        	l32i	a3, a6, 0x15c
+     bb4:	b0e310        	and	a14, a3, a11
+     bb7:	a0c320        	or	a12, a3, a10
+     bba:	c26657        	s32i	a12, a6, 0x15c
+     bbd:	d22658        	l32i	a13, a6, 0x160
+     bc0:	276df9        	bbci	a13, 2, 0xbbd
+     bc3:	e26657        	s32i	a14, a6, 0x15c
+     bc6:	0c02      	movi.n	a2, 0
+     bc8:	f22658        	l32i	a15, a6, 0x160
+     bcb:	3df0      	nop.n
+     bcd:	27eff7        	bbsi	a15, 2, 0xbc8
+     bd0:	422658        	l32i	a4, a6, 0x160
+     bd3:	3764f9        	bbci	a4, 3, 0xbd0
+00000bd6: 1df0     retw.n        ; Capstone
+     bd8:	1b33      	addi.n	a3, a3, 1
+     bda:	3030f4        	extui	a3, a3, 0, 16
+     bdd:	326656        	s32i	a3, a6, 0x158
+     be0:	06e5ff        	j	0xb78
+00000be3: 0056d2   quos         a5, a6, a0 ; Capstone
+     be6:	fa46      	add.n	a4, a6, a15
+     be8:	ebff      	addi.n	a15, a15, 14
+	...
+
+; Alternate branch-target decode
+     be4:	56d2fa        	bnez	a2, 0xb95
+     be7:	46ebff        	j	0xb98

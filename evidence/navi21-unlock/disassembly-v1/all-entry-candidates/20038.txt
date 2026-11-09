@@ -1,0 +1,16 @@
+
+/tmp/tmp3iwndmrt/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00020038 <.data+0x20038>:
+00020038: 364100   entry        a1, 0x20 ; Capstone
+   2003b:	41e6cc        	l32r	a4, 0x133d4 (0xfd28)
+   2003e:	42247f        	l32i	a4, a4, 0x1fc
+   20041:	0c13      	movi.n	a3, 1
+   20043:	0c02      	movi.n	a2, 0
+   20045:	42c4c1        	addi	a4, a4, -63
+   20048:	402383        	moveqz	a2, a3, a4
+0002004b: 1df0     retw.n        ; Capstone
+   2004d:	000000        	ill

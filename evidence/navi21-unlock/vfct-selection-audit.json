@@ -1,0 +1,137 @@
+{
+  "vfct_length": 135356,
+  "checksum_valid": true,
+  "vbios_image_offset": 76,
+  "lib1_image_offset": 0,
+  "all_entries": [
+    {
+      "offset": 76,
+      "bdf": "0000:04:00.0",
+      "bus": 4,
+      "dev": 0,
+      "fn": 0,
+      "vendor": 4098,
+      "device": 29631,
+      "ssvid": 0,
+      "ssid": 0,
+      "revision": 1,
+      "bytes": 45056,
+      "sha256": "e258121695fd5ae029132cdcc328e5c34065876a5612e3a2260487ac196a5b5e",
+      "empty": false,
+      "vbios_identifiers": [
+        "113-EXT800240-L04"
+      ],
+      "rom_subsystem": "1849:5204"
+    },
+    {
+      "offset": 45160,
+      "bdf": "0000:07:00.0",
+      "bus": 7,
+      "dev": 0,
+      "fn": 0,
+      "vendor": 4098,
+      "device": 29631,
+      "ssvid": 0,
+      "ssid": 0,
+      "revision": 1,
+      "bytes": 45056,
+      "sha256": "0ac0bf87efde17a956bd7015667d0eb7689546d75d0a5534c902867fac01b32d",
+      "empty": false,
+      "vbios_identifiers": [
+        "113-D4140EXL-XL"
+      ],
+      "rom_subsystem": "148c:2407"
+    },
+    {
+      "offset": 90244,
+      "bdf": "0000:0a:00.0",
+      "bus": 10,
+      "dev": 0,
+      "fn": 0,
+      "vendor": 4098,
+      "device": 29631,
+      "ssvid": 0,
+      "ssid": 0,
+      "revision": 1,
+      "bytes": 45056,
+      "sha256": "94ccebfe9c30cb2377596b5db4d6642cb2e35fd1091aef4382f36530e9418253",
+      "empty": false,
+      "vbios_identifiers": [
+        "113-EXT800241-L04"
+      ],
+      "rom_subsystem": "1849:5203"
+    },
+    {
+      "offset": 135328,
+      "bdf": "0000:00:00.0",
+      "bus": 0,
+      "dev": 0,
+      "fn": 0,
+      "vendor": 0,
+      "device": 0,
+      "ssvid": 0,
+      "ssid": 0,
+      "revision": 0,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "empty": true
+    }
+  ],
+  "devices": [
+    {
+      "card": "card0",
+      "bdf": "0000:07:00.0",
+      "cached_vbios_sha256": "e258121695fd5ae029132cdcc328e5c34065876a5612e3a2260487ac196a5b5e",
+      "old_algorithm_bdf": "0000:04:00.0",
+      "old_algorithm_sha256": "e258121695fd5ae029132cdcc328e5c34065876a5612e3a2260487ac196a5b5e",
+      "exact_bdf": "0000:07:00.0",
+      "exact_sha256": "0ac0bf87efde17a956bd7015667d0eb7689546d75d0a5534c902867fac01b32d",
+      "loaded_matches_old": true,
+      "loaded_matches_exact": false,
+      "live_pp_sha256": "14be9b474a0a50d5a8e20421b5fece954c39ccd7d3e2b79d9daab8d29cb4b679",
+      "expected_pp_sha256": "8c06a2e78a49a180e6d58fbf6a382c34b60ddba26cf1d3af7faae54ee849086c",
+      "live_pp_matches_selected": true,
+      "physical_rom": "Not directly read. VFCT is the firmware POST copy, not an independent flash dump."
+    },
+    {
+      "card": "card1",
+      "bdf": "0000:04:00.0",
+      "cached_vbios_sha256": "e258121695fd5ae029132cdcc328e5c34065876a5612e3a2260487ac196a5b5e",
+      "old_algorithm_bdf": "0000:04:00.0",
+      "old_algorithm_sha256": "e258121695fd5ae029132cdcc328e5c34065876a5612e3a2260487ac196a5b5e",
+      "exact_bdf": "0000:04:00.0",
+      "exact_sha256": "e258121695fd5ae029132cdcc328e5c34065876a5612e3a2260487ac196a5b5e",
+      "loaded_matches_old": true,
+      "loaded_matches_exact": true,
+      "live_pp_sha256": "14be9b474a0a50d5a8e20421b5fece954c39ccd7d3e2b79d9daab8d29cb4b679",
+      "expected_pp_sha256": "14be9b474a0a50d5a8e20421b5fece954c39ccd7d3e2b79d9daab8d29cb4b679",
+      "live_pp_matches_selected": true,
+      "physical_rom": "Not directly read. VFCT is the firmware POST copy, not an independent flash dump."
+    },
+    {
+      "card": "card2",
+      "bdf": "0000:0a:00.0",
+      "cached_vbios_sha256": "e258121695fd5ae029132cdcc328e5c34065876a5612e3a2260487ac196a5b5e",
+      "old_algorithm_bdf": "0000:04:00.0",
+      "old_algorithm_sha256": "e258121695fd5ae029132cdcc328e5c34065876a5612e3a2260487ac196a5b5e",
+      "exact_bdf": "0000:0a:00.0",
+      "exact_sha256": "94ccebfe9c30cb2377596b5db4d6642cb2e35fd1091aef4382f36530e9418253",
+      "loaded_matches_old": true,
+      "loaded_matches_exact": false,
+      "live_pp_sha256": "14be9b474a0a50d5a8e20421b5fece954c39ccd7d3e2b79d9daab8d29cb4b679",
+      "expected_pp_sha256": "b8ffa94ae79ab19070a8ced6710f47733e527c718113b8c62b6ac61383a3dfd7",
+      "live_pp_matches_selected": true,
+      "physical_rom": "Not directly read. VFCT is the firmware POST copy, not an independent flash dump."
+    }
+  ],
+  "boot_messages": [
+    "2026-11-09T04:09:21+03:00 research-host kernel: amdgpu 0000:04:00.0: Fetched VBIOS from VFCT",
+    "2026-11-09T04:09:21+03:00 research-host kernel: amdgpu 0000:04:00.0: [drm] ATOM BIOS: 113-EXT800240-L04, build: 563260  , ver: 020.001.000.060.800240, 2021/05/05",
+    "2026-11-09T04:09:23+03:00 research-host kernel: amdgpu 0000:07:00.0: VFCT bus number mismatch: table 4 != runtime 7, matching by device identity (vendor 0x1002 device 0x73bf)",
+    "2026-11-09T04:09:23+03:00 research-host kernel: amdgpu 0000:07:00.0: Fetched VBIOS from VFCT",
+    "2026-11-09T04:09:23+03:00 research-host kernel: amdgpu 0000:07:00.0: [drm] ATOM BIOS: 113-EXT800240-L04, build: 563260  , ver: 020.001.000.060.800240, 2021/05/05",
+    "2026-11-09T04:09:25+03:00 research-host kernel: amdgpu 0000:0a:00.0: VFCT bus number mismatch: table 4 != runtime 10, matching by device identity (vendor 0x1002 device 0x73bf)",
+    "2026-11-09T04:09:25+03:00 research-host kernel: amdgpu 0000:0a:00.0: Fetched VBIOS from VFCT",
+    "2026-11-09T04:09:25+03:00 research-host kernel: amdgpu 0000:0a:00.0: [drm] ATOM BIOS: 113-EXT800240-L04, build: 563260  , ver: 020.001.000.060.800240, 2021/05/05"
+  ]
+}

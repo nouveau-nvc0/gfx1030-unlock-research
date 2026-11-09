@@ -1,0 +1,29 @@
+
+/tmp/tmpcbj4spw1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001364 <.data+0x1364>:
+00001364: 364100   entry        a1, 0x20 ; Capstone
+    1367:	317eef        	l32r	a3, 0xffffd160 (0x5ffee25c) ; inferred DRAM map 0x5ffec000
+    136a:	4181ef        	l32r	a4, 0xffffd170 (0x6803ba00) ; inferred DRAM map 0x5ffec000
+    136d:	320300        	l8ui	a3, a3, 0
+    1370:	92a014        	movi	a9, 20
+    1373:	0c28      	movi.n	a8, 2
+    1375:	ac43      	beqz.n	a3, 0x139d
+    1377:	926455        	s32i	a9, a4, 0x154
+    137a:	226454        	s32i	a2, a4, 0x150
+    137d:	222457        	l32i	a2, a4, 0x15c
+    1380:	b2affd        	movi	a11, -3
+    1383:	b0b210        	and	a11, a2, a11
+    1386:	808220        	or	a8, a2, a8
+    1389:	826457        	s32i	a8, a4, 0x15c
+    138c:	a22458        	l32i	a10, a4, 0x160
+    138f:	076af9        	bbci	a10, 0, 0x138c
+    1392:	b26457        	s32i	a11, a4, 0x15c
+    1395:	c22458        	l32i	a12, a4, 0x160
+    1398:	3df0      	nop.n
+    139a:	176cf7        	bbci	a12, 1, 0x1395
+0000139d: 1df0     retw.n        ; Capstone
+	...

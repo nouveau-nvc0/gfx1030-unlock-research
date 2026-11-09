@@ -1,0 +1,254 @@
+{
+  "status": "Static firmware table with verified parameter/message/response helper indexing. Host translation matched to public MP1 base and channel0 driver registers; live reachability untested. C2PMSG names valid only within corresponding public register range.",
+  "rows": [
+    {
+      "channel": 0,
+      "parameter_response_message": [
+        "0x3010a48",
+        "0x3010a68",
+        "0x3010a08"
+      ],
+      "inferred_host_bytes": [
+        "0x58a48",
+        "0x58a68",
+        "0x58a08"
+      ],
+      "inferred_C2PMSG_indices": [
+        82,
+        90,
+        66
+      ]
+    },
+    {
+      "channel": 1,
+      "parameter_response_message": [
+        "0x3010a58",
+        "0x3010a78",
+        "0x3010a18"
+      ],
+      "inferred_host_bytes": [
+        "0x58a58",
+        "0x58a78",
+        "0x58a18"
+      ],
+      "inferred_C2PMSG_indices": [
+        86,
+        94,
+        70
+      ]
+    },
+    {
+      "channel": 2,
+      "parameter_response_message": [
+        "0x3010a54",
+        "0x3010a74",
+        "0x3010a14"
+      ],
+      "inferred_host_bytes": [
+        "0x58a54",
+        "0x58a74",
+        "0x58a14"
+      ],
+      "inferred_C2PMSG_indices": [
+        85,
+        93,
+        69
+      ]
+    },
+    {
+      "channel": 3,
+      "parameter_response_message": [
+        "0x3010a50",
+        "0x3010a70",
+        "0x3010a10"
+      ],
+      "inferred_host_bytes": [
+        "0x58a50",
+        "0x58a70",
+        "0x58a10"
+      ],
+      "inferred_C2PMSG_indices": [
+        84,
+        92,
+        68
+      ]
+    },
+    {
+      "channel": 4,
+      "parameter_response_message": [
+        "0x3010a40",
+        "0x3010a60",
+        "0x3010a00"
+      ],
+      "inferred_host_bytes": [
+        "0x58a40",
+        "0x58a60",
+        "0x58a00"
+      ],
+      "inferred_C2PMSG_indices": [
+        80,
+        88,
+        64
+      ]
+    },
+    {
+      "channel": 5,
+      "parameter_response_message": [
+        "0x3010a44",
+        "0x3010a64",
+        "0x3010a04"
+      ],
+      "inferred_host_bytes": [
+        "0x58a44",
+        "0x58a64",
+        "0x58a04"
+      ],
+      "inferred_C2PMSG_indices": [
+        81,
+        89,
+        65
+      ]
+    },
+    {
+      "channel": 6,
+      "parameter_response_message": [
+        "0x3010a4c",
+        "0x3010a6c",
+        "0x3010a0c"
+      ],
+      "inferred_host_bytes": [
+        "0x58a4c",
+        "0x58a6c",
+        "0x58a0c"
+      ],
+      "inferred_C2PMSG_indices": [
+        83,
+        91,
+        67
+      ]
+    },
+    {
+      "channel": 7,
+      "parameter_response_message": [
+        "0x3010a88",
+        "0x3010a80",
+        "0x3010a20"
+      ],
+      "inferred_host_bytes": [
+        "0x58a88",
+        "0x58a80",
+        "0x58a20"
+      ],
+      "inferred_C2PMSG_indices": [
+        98,
+        96,
+        72
+      ]
+    },
+    {
+      "channel": 8,
+      "parameter_response_message": [
+        "0x3010a8c",
+        "0x3010a84",
+        "0x3010a24"
+      ],
+      "inferred_host_bytes": [
+        "0x58a8c",
+        "0x58a84",
+        "0x58a24"
+      ],
+      "inferred_C2PMSG_indices": [
+        99,
+        97,
+        73
+      ]
+    },
+    {
+      "channel": 9,
+      "parameter_response_message": [
+        "0x3010700",
+        "0x3010704",
+        "0x3010718"
+      ],
+      "inferred_host_bytes": [
+        "0x58700",
+        "0x58704",
+        "0x58718"
+      ],
+      "inferred_C2PMSG_indices": null,
+      "note": "Addresses outside C2PMSG mapping range; do not assign names by extrapolation."
+    },
+    {
+      "channel": 10,
+      "parameter_response_message": [
+        "0x3010a5c",
+        "0x3010a7c",
+        "0x3010a1c"
+      ],
+      "inferred_host_bytes": [
+        "0x58a5c",
+        "0x58a7c",
+        "0x58a1c"
+      ],
+      "inferred_C2PMSG_indices": [
+        87,
+        95,
+        71
+      ]
+    },
+    {
+      "channel": 11,
+      "parameter_response_message": [
+        "0x30109c4",
+        "0x30109c8",
+        "0x3010a38"
+      ],
+      "inferred_host_bytes": [
+        "0x589c4",
+        "0x589c8",
+        "0x58a38"
+      ],
+      "inferred_C2PMSG_indices": [
+        49,
+        50,
+        78
+      ]
+    },
+    {
+      "channel": 12,
+      "parameter_response_message": [
+        "0x30109cc",
+        "0x30109d0",
+        "0x3010a28"
+      ],
+      "inferred_host_bytes": [
+        "0x589cc",
+        "0x589d0",
+        "0x58a28"
+      ],
+      "inferred_C2PMSG_indices": [
+        51,
+        52,
+        74
+      ]
+    },
+    {
+      "channel": 13,
+      "parameter_response_message": [
+        "0x30109d4",
+        "0x30109d8",
+        "0x3010a2c"
+      ],
+      "inferred_host_bytes": [
+        "0x589d4",
+        "0x589d8",
+        "0x58a2c"
+      ],
+      "inferred_C2PMSG_indices": [
+        53,
+        54,
+        75
+      ]
+    }
+  ]
+}

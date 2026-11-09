@@ -1,0 +1,35 @@
+SYS RLC base setup in a local start sequence
+
+Six Thumb windows,163instructions, validate the previously located calls.
+25f8/27a4 follow88b4 and local status tests. Their full enclosing entry and
+case selection remain untraced. More useful is the complete local procedure
+f0dc..f166: it reads an input selector fromargument+4. Selectorffff calls
+1d158 (base setup). A nonzero result exits. Otherwise it invokesSVC7b with
+address3b000, stack result pointer andsize4. It rejects an already-setbit0;
+otherwise it ORsbit0 and passes the result toSVC7c with the same address.
+The GC10.3 definitions independently identify3b000 asRLC_CNTL andbit0 as
+RLC_ENABLE_F32. This gives concrete local ordering: base setup precedes the
+RLC enable-shaped operation. It does not proveSVC implementation or actual
+execution on hardware. Other selectors skip base setup and use3ed50/bit80.
+
+Procedure17210 calls169b4, then conditionally14070(18,originalargument) when
+byte[e5c978+13] is nonzero. Nonzero14070 result returns early. Otherwise it
+constructs three input wordsffffffff/ffff/0 and callsf0dc withsecondarg1.
+Thus a concrete caller selects the RLC-start branch; this is no longer just
+an unexplained literal reference. The return of169b4 is not tested here.
+The outer caller/command selection remains to be identified.
+
+Another call at e9c6 supplies r0=r7,r1=0; its argument source and enclosing
+dispatch remain open. The global-producer callcba2 passes sp+8 to14cf8,
+but stack input initialization and case selection must be traced before
+relating that producer to this startup sequence.
+
+Next concrete work: connect outer SYS dispatch to17210/f0dc and determine
+SVC7b/7c implementations. Preserve the distinction between base/startup
+ordering, changed snapshot payload, later CC restore and hardware acceptance.
+No changed CC producer was found in these start wrappers. No hardware work.
+
+Reproduce: PYTHONPATH=/tmp/navi21-disasm/python python3
+scripts/navi21-psp-rlc-start-audit.py
+Receipt psp-rlc-start-audit.json contains exact bytes, public header hashes,
+163decoded instructions and the local conditional paths.

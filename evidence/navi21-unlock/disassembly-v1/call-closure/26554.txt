@@ -1,0 +1,12 @@
+
+/tmp/tmp5_iq8uv_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00026554 <.data+0x26554>:
+00026554: 364100   entry        a1, 0x20 ; Capstone
+   26557:	2117b5        	l32r	a2, 0x139b4 (0xe938)
+   2655a:	22227f        	l32i	a2, a2, 0x1fc
+0002655d: 1df0     retw.n        ; Capstone
+	...

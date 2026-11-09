@@ -1,0 +1,28 @@
+
+/tmp/tmp1my5_zay/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00029750 <.data+0x29750>:
+00029750: 364100   entry        a1, 0x20 ; Capstone
+   29753:	bd03      	mov.n	a11, a3
+   29755:	ad02      	mov.n	a10, a2
+00029757: 25ccf2   call8        . -0xd33c ; Capstone ; target=0x1c418
+   2975a:	3d0a      	mov.n	a3, a10
+   2975c:	0c0b      	movi.n	a11, 0
+   2975e:	ad02      	mov.n	a10, a2
+00029760: 250200   call8        . +0x24 ; Capstone ; target=0x29784
+   29763:	816aa9        	l32r	a8, 0x13d0c (0xaec0)
+   29766:	82287f        	l32i	a8, a8, 0x1fc
+   29769:	000240        	ssr	a2
+   2976c:	808091        	srl	a8, a8
+   2976f:	07680f        	bbci	a8, 0, 0x29782
+   29772:	8cc3      	beqz.n	a3, 0x29782
+   29774:	bd03      	mov.n	a11, a3
+   29776:	ad02      	mov.n	a10, a2
+00029778: 25c5f2   call8        . -0xd3ac ; Capstone ; target=0x1c3cc
+   2977b:	ad02      	mov.n	a10, a2
+   2977d:	0c1b      	movi.n	a11, 1
+0002977f: 650000   call8        . +8 ; Capstone ; target=0x29784
+00029782: 1df0     retw.n        ; Capstone

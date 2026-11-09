@@ -1,0 +1,28 @@
+
+/tmp/tmp4epwpcy3/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001be1c <.data+0x1be1c>:
+0001be1c: 364100   entry        a1, 0x20 ; Capstone
+   1be1f:	a17fdc        	l32r	a10, 0x1301c (0x1103c)
+   1be22:	920abc        	l8ui	a9, a10, 188
+   1be25:	66190b        	bnei	a9, 1, 0x1be34
+0001be28: 030a14   lsi          f0, a10, 0x50 ; Capstone
+0001be2b: 0090ea   utrunc.s     a9, f0, 0 ; Capstone
+   1be2e:	90c0f4        	extui	a12, a9, 0, 16
+   1be31:	060300        	j	0x1be41
+   1be34:	cc79      	bnez.n	a9, 0x1be3f
+0001be36: 130a11   lsi          f1, a10, 0x44 ; Capstone
+0001be39: 0091ea   utrunc.s     a9, f1, 0 ; Capstone
+   1be3c:	86fbff        	j	0x1be2e
+   1be3f:	0c0c      	movi.n	a12, 0
+   1be41:	0c3a      	movi.n	a10, 3
+   1be43:	0cab      	movi.n	a11, 10
+0001be45: 002cda   ufloat.s     f2, a12, 0 ; Capstone
+   1be48:	0c0c      	movi.n	a12, 0
+0001be4a: 40d2fa   rfr          a13, f2 ; Capstone
+0001be4d: e5591a   call8        . +0x1a5a0 ; Capstone ; target=0x363ec
+   1be50:	2c02      	movi.n	a2, 32
+0001be52: 1df0     retw.n        ; Capstone

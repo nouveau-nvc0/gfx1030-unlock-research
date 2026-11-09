@@ -1,0 +1,37 @@
+
+/tmp/tmpu_wg9t53/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00038aac <.data+0x38aac>:
+00038aac: 366100   entry        a1, 0x30 ; Capstone
+   38aaf:	c29200        	l16si	a12, a2, 0
+   38ab2:	b13c6f        	l32r	a11, 0x147a4 (0x321fe04)
+   38ab5:	260c2f        	beqi	a12, -1, 0x38ae8
+   38ab8:	f6cc31        	bgeui	a12, 32, 0x38aed
+   38abb:	c0a141        	srli	a10, a12, 1
+   38abe:	b0aaa0        	addx4	a10, a10, a11
+   38ac1:	c02000        	memw
+   38ac4:	921201        	l16ui	a9, a2, 2
+   38ac7:	822a7f        	l32i	a8, a10, 0x1fc
+   38aca:	8901      	s32i.n	a8, a1, 0
+   38acc:	076c05        	bbci	a12, 0, 0x38ad5
+   38acf:	925101        	s16i	a9, a1, 2
+   38ad2:	860000        	j	0x38ad8
+   38ad5:	925100        	s16i	a9, a1, 0
+   38ad8:	d801      	l32i.n	a13, a1, 0
+   38ada:	c02000        	memw
+   38add:	c29202        	l16si	a12, a2, 4
+   38ae0:	d26a7f        	s32i	a13, a10, 0x1fc
+   38ae3:	4b22      	addi.n	a2, a2, 4
+   38ae5:	660ccf        	bnei	a12, -1, 0x38ab8
+   38ae8:	c02000        	memw
+00038aeb: 1df0     retw.n        ; Capstone
+   38aed:	0c2b      	movi.n	a11, 2
+   38aef:	d1f568        	l32r	a13, 0x12ec4 (0x300fe00)
+   38af2:	0cba      	movi.n	a10, 11
+   38af4:	c02000        	memw
+   38af7:	d22d8a        	l32i	a13, a13, 0x228
+00038afa: 25b1c9   call8        . -0x364ec ; Capstone ; target=0x260c
+   38afd:	000000        	ill

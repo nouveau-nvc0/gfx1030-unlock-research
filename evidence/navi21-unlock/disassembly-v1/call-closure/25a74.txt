@@ -1,0 +1,24 @@
+
+/tmp/tmp3z518qm1/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00025a74 <.data+0x25a74>:
+00025a74: 364100   entry        a1, 0x20 ; Capstone
+   25a77:	ad03      	mov.n	a10, a3
+00025a79: 3081fa   const.s      f8, 1 ; Capstone
+00025a7c: 730400   lsi          f7, a4, 0 ; Capstone
+00025a7f: 80470a   add.s        f4, f7, f8 ; Capstone
+00025a82: 330202   lsi          f3, a2, 8 ; Capstone
+00025a85: 530201   lsi          f5, a2, 4 ; Capstone
+00025a88: 630200   lsi          f6, a2, 0 ; Capstone
+00025a8b: 40262a   mul.s        f2, f6, f4 ; Capstone
+00025a8e: 40152a   mul.s        f1, f5, f4 ; Capstone
+00025a91: 40032a   mul.s        f0, f3, f4 ; Capstone
+   25a94:	bd04      	mov.n	a11, a4
+00025a96: 234200   ssi          f2, a2, 0 ; Capstone
+00025a99: 134201   ssi          f1, a2, 4 ; Capstone
+00025a9c: 034202   ssi          f0, a2, 8 ; Capstone
+00025a9f: 650000   call8        . +8 ; Capstone ; target=0x25aa4
+00025aa2: 1df0     retw.n        ; Capstone

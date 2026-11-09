@@ -1,0 +1,40 @@
+RLC SRM operation/caller follow-up — offline, 2026-11-09
+
+Seven CALL8 sites to6944 reconstruct two words from local byte structs.
+Manual byte provenance from the targeted listings gives:
+2f15: a10=00000001, a11=00000000 (a3=1 at2ee5).
+36ca: a10=00000001, a11=00000001 (a4=0, a5=1).
+3982: a10=00000000, a11=01000001 (a2=0, a10=1 at3926).
+3b32: a10=00000001, a11=00000001 (a2=1, a4=0 at3a7f).
+3c0e: a10=00000000, a11=00000000 (all eight bytes overwritten with a4=0).
+70a2: a10=00000000, a11=00000000 (all eight bytes stored from a3=0).
+7142: a10=00000001, a11=00000000 (a3=1, a4=0).
+These are local argument constructions on paths reaching each call, not a
+claim that all paths are selected on the running board. No hardware code ran.
+
+6944 retains operation byte as a4. Both0/1 reach7670, which passes its low bit
+to the hardware OP field. Their semantic direction is not established by the
+register name alone. Paired calls3b32 then3c0e demonstrate a software sequence
+using1 then0 with substantial intermediate hardware activity; that is not yet
+sufficient to label save/restore direction without tracing that activity.
+
+CC range selection is stateful. RAM context=5ffedb24:
+- Mode0:69d5 selects6c59. If context+3!=0,6c5e jumps to69d8 and skips the
+  initial-range block. If zero, execution can reach6c61..6cbd.
+- Mode1:6ab3 tests context+3; when it equals1,6abb jumps directly to6c61.
+  Otherwise it returns to69d5 and enters the other range sequence.
+- In6c61 block, first-word byte2 gates CC_WGP call6c9d (byte must be0),
+  and byte3 gates CC_SA/USER_SA call6cba (byte must be0).
+- Other sequence contains USER_WGP call69f9, gated by byte2==0.
+Thus it would be wrong to conclude from mode0 at6c59 that CC is never selected
+with OP1. Context+3 is set to1 at6e08; complete initialization/reset lifecycle
+still needs tracing. Context+2 governs another preparation path via6aa9/6ac0.
+
+No mapping of OP0/1 to accepted CC writes is claimed. The packed SRM table
+can have per-record behavior independent of the global command operation.
+
+CFG refinement:92 first-pass branch-target repairs plus9+1 follow-up repairs
+in RLC listings. Remaining known branch-window crossings occur in953c/a1fc;
+a304/a360 contain register-directed branches requiring explicit handling.
+The scanner now terminates local flow at JX and records the unresolved target,
+rather than incorrectly following bytes after an unconditional indirect jump.

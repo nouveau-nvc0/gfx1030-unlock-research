@@ -1,0 +1,10 @@
+
+/tmp/tmptvpbf_1z/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00034ce4 <.data+0x34ce4>:
+00034ce4: 364100   entry        a1, 0x20 ; Capstone
+   34ce7:	21e17d        	l32r	a2, 0x1446c (0x9e20)
+00034cea: 1df0     retw.n        ; Capstone

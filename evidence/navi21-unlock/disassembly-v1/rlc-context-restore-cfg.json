@@ -1,0 +1,189 @@
+{
+  "scope": "Local targeted-listing locator; no memory-value propagation or global completeness claim. Optional JX edges describe initial tables, not runtime immutability.",
+  "indirect_edges": null,
+  "reports": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/09d28.txt",
+      "reachable_in_window": 207,
+      "calls": [],
+      "hardware_loop_backedges": [],
+      "decoded_in_window": 208,
+      "unresolved_or_external_edges": [],
+      "unknown_operations": [
+        "esync",
+        "wdtlb",
+        "witlb",
+        "wsr",
+        "wsr.ccompare0",
+        "wsr.ccompare1",
+        "wsr.ccompare2",
+        "wsr.ccount",
+        "wsr.dbreaka0",
+        "wsr.dbreakc0",
+        "wsr.depc",
+        "wsr.epc1",
+        "wsr.epc2",
+        "wsr.epc3",
+        "wsr.epc4",
+        "wsr.eps2",
+        "wsr.eps3",
+        "wsr.eps4",
+        "wsr.excsave1",
+        "wsr.excsave2",
+        "wsr.excsave3",
+        "wsr.excsave4",
+        "wsr.ibreaka0",
+        "wsr.ibreakenable",
+        "wsr.icount",
+        "wsr.icountlevel",
+        "wsr.intenable",
+        "wsr.intset",
+        "wsr.sar",
+        "wur.fcr",
+        "wur.fsr"
+      ],
+      "stores": [
+        {
+          "pc": "0x9d28",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a2",
+          "source_constant": null,
+          "base": "a3",
+          "offset": "20"
+        },
+        {
+          "pc": "0x9e72",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a5",
+          "source_constant": null,
+          "base": "a4",
+          "offset": "0"
+        },
+        {
+          "pc": "0x9e74",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": null,
+          "base": "a4",
+          "offset": "4"
+        },
+        {
+          "pc": "0x9e7c",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a5",
+          "source_constant": null,
+          "base": "a4",
+          "offset": "8"
+        },
+        {
+          "pc": "0x9e7e",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": null,
+          "base": "a4",
+          "offset": "12"
+        },
+        {
+          "pc": "0x9e86",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a5",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "0"
+        },
+        {
+          "pc": "0x9e88",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "4"
+        },
+        {
+          "pc": "0x9e90",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a5",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "8"
+        },
+        {
+          "pc": "0x9e92",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a6",
+          "source_constant": null,
+          "base": "a1",
+          "offset": "12"
+        },
+        {
+          "pc": "0x9eb2",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": null,
+          "base": "a4",
+          "offset": "0"
+        },
+        {
+          "pc": "0x9eb4",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a8",
+          "source_constant": null,
+          "base": "a4",
+          "offset": "4"
+        },
+        {
+          "pc": "0x9eba",
+          "operation": "s32i",
+          "address": null,
+          "address_candidates": [],
+          "source": "a7",
+          "source_constant": null,
+          "base": "a4",
+          "offset": "8"
+        },
+        {
+          "pc": "0x9ebd",
+          "operation": "s32i",
+          "address": null,
+          "address_candidates": [],
+          "source": "a8",
+          "source_constant": null,
+          "base": "a4",
+          "offset": "12"
+        },
+        {
+          "pc": "0x9f73",
+          "operation": "s32i.n",
+          "address": null,
+          "address_candidates": [],
+          "source": "a4",
+          "source_constant": 0,
+          "base": "a3",
+          "offset": "0"
+        }
+      ]
+    }
+  ]
+}

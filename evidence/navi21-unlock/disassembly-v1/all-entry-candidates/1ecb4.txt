@@ -1,0 +1,49 @@
+
+/tmp/tmpncqf9om8/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001ecb4 <.data+0x1ecb4>:
+0001ecb4: 364100   entry        a1, 0x20 ; Capstone
+   1ecb7:	2181d1        	l32r	a2, 0x132bc (0xfeac)
+   1ecba:	821272        	l16ui	a8, a2, 228
+   1ecbd:	07685e        	bbci	a8, 0, 0x1ed1f
+0001ecc0: 65feff   call8        . -0x18 ; Capstone ; target=0x1eca8
+   1ecc3:	16ca04        	beqz	a10, 0x1ed13
+   1ecc6:	d2a005        	movi	a13, 5
+   1ecc9:	b1ced0        	l32r	a11, 0x13004 (0xfffff)
+   1eccc:	c1e3d0        	l32r	a12, 0x13058 (0x11ffe00)
+   1eccf:	a17cd1        	l32r	a10, 0x132c0 (0x11ad4)
+   1ecd2:	92a006        	movi	a9, 6
+0001ecd5: 76a915   loopgtz      a9, . +0x19 ; Capstone
+   1ecd8:	e22a7f        	l32i	a14, a10, 0x1fc
+   1ecdb:	b0ee10        	and	a14, a14, a11
+   1ecde:	caee      	add.n	a14, a14, a12
+   1ece0:	c02000        	memw
+   1ece3:	e22e80        	l32i	a14, a14, 0x200
+   1ece6:	4baa      	addi.n	a10, a10, 4
+   1ece8:	e0ec25        	extui	a14, a14, 28, 3
+   1eceb:	e78d32        	bany	a13, a14, 0x1ed21
+   1ecee:	0c09      	movi.n	a9, 0
+   1ecf0:	816ad1        	l32r	a8, 0x13298 (0x120e600)
+   1ecf3:	f2a100        	movi	a15, 0x100
+   1ecf6:	c02000        	memw
+   1ecf9:	f26847        	s32i	a15, a8, 0x11c
+   1ecfc:	dc39      	bnez.n	a9, 0x1ed13
+   1ecfe:	9157d0        	l32r	a9, 0x12e5c (0x69a0)
+   1ed01:	920961        	l8ui	a9, a9, 97
+   1ed04:	ccb9      	bnez.n	a9, 0x1ed13
+   1ed06:	0c1a      	movi.n	a10, 1
+0001ed08: e5f4ff   call8        . -0xb0 ; Capstone ; target=0x1ec58
+   1ed0b:	a222c6        	l32i	a10, a2, 0x318
+   1ed0e:	1baa      	addi.n	a10, a10, 1
+   1ed10:	a262c6        	s32i	a10, a2, 0x318
+0001ed13: a5f2ff   call8        . -0xd4 ; Capstone ; target=0x1ec3c
+0001ed16: 65f1ff   call8        . -0xe8 ; Capstone ; target=0x1ec2c
+0001ed19: 65f0ff   call8        . -0xf8 ; Capstone ; target=0x1ec20
+0001ed1c: e5edff   call8        . -0x120 ; Capstone ; target=0x1ebfc
+0001ed1f: 1df0     retw.n        ; Capstone
+   1ed21:	0c19      	movi.n	a9, 1
+   1ed23:	46f2ff        	j	0x1ecf0
+	...

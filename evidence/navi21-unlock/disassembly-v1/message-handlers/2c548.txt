@@ -1,0 +1,41 @@
+
+/tmp/tmpar2gownr/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002c548 <.data+0x2c548>:
+0002c548: 364100   entry        a1, 0x20 ; Capstone
+   2c54b:	ad02      	mov.n	a10, a2
+0002c54d: 25b7d5   call8        . -0x2a48c ; Capstone ; target=0x20c0
+   2c550:	4d0a      	mov.n	a4, a10
+   2c552:	a03075        	extui	a3, a10, 16, 8
+   2c555:	0cc8      	movi.n	a8, 12
+   2c557:	37b809        	bgeu	a8, a3, 0x2c564
+   2c55a:	ad02      	mov.n	a10, a2
+   2c55c:	b2a0ff        	movi	a11, 255
+0002c55f: e5b3d5   call8        . -0x2a4c0 ; Capstone ; target=0x209c
+0002c562: 1df0     retw.n        ; Capstone
+   2c564:	0c8a      	movi.n	a10, 8
+0002c566: a501d6   call8        . -0x29fe4 ; Capstone ; target=0x2580
+   2c569:	ad03      	mov.n	a10, a3
+0002c56b: 25c004   call8        . +0x4c04 ; Capstone ; target=0x3116c
+   2c56e:	9cba      	beqz.n	a10, 0x2c58d
+   2c570:	922a13        	l32i	a9, a10, 76
+   2c573:	9c69      	beqz.n	a9, 0x2c58d
+   2c575:	ad03      	mov.n	a10, a3
+   2c577:	40c0f4        	extui	a12, a4, 0, 16
+   2c57a:	0c1b      	movi.n	a11, 1
+0002c57c: a5faff   call8        . -0x54 ; Capstone ; target=0x2c528
+   2c57f:	0c8a      	movi.n	a10, 8
+0002c581: 25efd5   call8        . -0x2a10c ; Capstone ; target=0x2474
+   2c584:	ad02      	mov.n	a10, a2
+   2c586:	0c1b      	movi.n	a11, 1
+0002c588: 25b1d5   call8        . -0x2a4ec ; Capstone ; target=0x209c
+0002c58b: 1df0     retw.n        ; Capstone
+   2c58d:	0c8a      	movi.n	a10, 8
+0002c58f: 65eed5   call8        . -0x2a118 ; Capstone ; target=0x2474
+   2c592:	ad02      	mov.n	a10, a2
+   2c594:	b2a0ff        	movi	a11, 255
+0002c597: 65b0d5   call8        . -0x2a4f8 ; Capstone ; target=0x209c
+0002c59a: 1df0     retw.n        ; Capstone

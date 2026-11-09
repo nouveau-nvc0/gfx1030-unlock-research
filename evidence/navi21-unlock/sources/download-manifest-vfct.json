@@ -1,0 +1,26 @@
+[
+  {
+    "file": "upstream-bios-commits-oct-nov.json",
+    "url": "https://api.github.com/repos/torvalds/linux/commits?path=drivers/gpu/drm/amd/amdgpu/amdgpu_bios.c&since=2026-10-01T00:00:00Z&until=2026-11-10T00:00:00Z&per_page=100",
+    "bytes": 4522,
+    "sha256": "8597b88e0853afa5bc9ef2a6e9ccea944eda4a4c6f34773ae2e28d98cc0f38bd"
+  },
+  {
+    "file": "stable-bios-commits-oct-nov.json",
+    "url": "https://api.github.com/repos/gregkh/linux/commits?sha=linux-7.3.y&path=drivers/gpu/drm/amd/amdgpu/amdgpu_bios.c&since=2026-10-01T00:00:00Z&until=2026-11-10T00:00:00Z&per_page=100",
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "file": "amdgpu_bios-current.c",
+    "url": "https://raw.githubusercontent.com/torvalds/linux/master/drivers/gpu/drm/amd/amdgpu/amdgpu_bios.c",
+    "bytes": 17390,
+    "sha256": "02add0c6016b27bd5218a9e0a03feba64243d8e2655548ed14c90e72ec81de50"
+  },
+  {
+    "file": "upstream-bios-commits-all.json",
+    "url": "https://api.github.com/repos/torvalds/linux/commits?path=drivers/gpu/drm/amd/amdgpu/amdgpu_bios.c&per_page=30",
+    "bytes": 111220,
+    "sha256": "9d4d23eab98ab83040077e1c1bafb1286c71cacbaebfa5fc2f3dbafa68fe566c"
+  }
+]

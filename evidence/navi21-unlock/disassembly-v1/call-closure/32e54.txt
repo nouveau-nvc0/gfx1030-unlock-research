@@ -1,0 +1,30 @@
+
+/tmp/tmpw272kwxe/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00032e54 <.data+0x32e54>:
+00032e54: 364100   entry        a1, 0x20 ; Capstone
+   32e57:	001440        	ssl	a4
+   32e5a:	716a80        	l32r	a7, 0x13004 (0xfffff)
+   32e5d:	814085        	l32r	a8, 0x14360 (0x90002e0)
+   32e60:	205094        	extui	a5, a2, 0, 10
+   32e63:	405511        	slli	a5, a5, 12
+   32e66:	62d503        	addmi	a6, a5, 0x300
+   32e69:	8a55      	add.n	a5, a5, a8
+   32e6b:	62c6e0        	addi	a6, a6, -32
+   32e6e:	6064b5        	extui	a6, a6, 20, 12
+   32e71:	c06601        	slli	a6, a6, 20
+   32e74:	705510        	and	a5, a5, a7
+   32e77:	6a55      	add.n	a5, a5, a6
+   32e79:	714581        	l32r	a7, 0x13390 (0xfffe00)
+   32e7c:	0c16      	movi.n	a6, 1
+   32e7e:	0066a1        	sll	a6, a6
+   32e81:	7a55      	add.n	a5, a5, a7
+   32e83:	c02000        	memw
+   32e86:	322580        	l32i	a3, a5, 0x200
+   32e89:	603320        	or	a3, a3, a6
+   32e8c:	c02000        	memw
+   32e8f:	326580        	s32i	a3, a5, 0x200
+00032e92: 1df0     retw.n        ; Capstone

@@ -1,0 +1,93 @@
+[
+  {
+    "offset": 76,
+    "bdf": "0000:04:00.0",
+    "vendor": "0x1002",
+    "device": "0x73bf",
+    "ssvendor": "0x0",
+    "ssdevice": "0x0",
+    "revision": 1,
+    "bytes": 45056,
+    "sha256": "e258121695fd5ae029132cdcc328e5c34065876a5612e3a2260487ac196a5b5e",
+    "file": "vfct-04-00-0.bin",
+    "strings": [
+      "05/05/21 05:00",
+      "113-EXT800240-L04",
+      "NAVI21EXT Gaming XL D414                                                    ",
+      "(C) 1988-2020, Advanced Micro Devices, Inc.",
+      "ATOMBIOSBK-AMD VER020.001.000.060.800240",
+      "68XL16GPGDO_",
+      "ASROCK_NAVI21EXT_D414_PGD_XL_GDR6_16G\\config.h",
+      "AMD ATOMBIOS",
+      "dmu1241_D4120EXT.041",
+      "fPfQfRfSfUfVfW",
+      "f_f^f]f[fZfYfX",
+      "f_f^f]f[fZfYfX"
+    ]
+  },
+  {
+    "offset": 45160,
+    "bdf": "0000:07:00.0",
+    "vendor": "0x1002",
+    "device": "0x73bf",
+    "ssvendor": "0x0",
+    "ssdevice": "0x0",
+    "revision": 1,
+    "bytes": 45056,
+    "sha256": "0ac0bf87efde17a956bd7015667d0eb7689546d75d0a5534c902867fac01b32d",
+    "file": "vfct-07-00-0.bin",
+    "strings": [
+      "12/11/20 04:09",
+      "113-D4140EXL-XL",
+      "NAVI21EXT Gaming XL D414 203/210 L3B16OAM.SMG 2020                          ",
+      "(C) 1988-2020, Advanced Micro Devices, Inc.",
+      "ATOMBIOSBK-AMD VER020.001.000.044.000000",
+      "L3B16OAM.SMG",
+      "TUL_P28GA_LQ4_F_16_662_RX680020321021052000\\config.h",
+      "AMD ATOMBIOS",
+      "dmu1241_D4120EXT.041",
+      "fPfQfRfSfUfVfW",
+      "f_f^f]f[fZfYfX",
+      "f_f^f]f[fZfYfX"
+    ]
+  },
+  {
+    "offset": 90244,
+    "bdf": "0000:0a:00.0",
+    "vendor": "0x1002",
+    "device": "0x73bf",
+    "ssvendor": "0x0",
+    "ssdevice": "0x0",
+    "revision": 1,
+    "bytes": 45056,
+    "sha256": "94ccebfe9c30cb2377596b5db4d6642cb2e35fd1091aef4382f36530e9418253",
+    "file": "vfct-0a-00-0.bin",
+    "strings": [
+      "05/05/21 05:11",
+      "113-EXT800241-L04",
+      "NAVI21EXT Gaming XL D414                                                    ",
+      "(C) 1988-2020, Advanced Micro Devices, Inc.",
+      "ATOMBIOSBK-AMD VER020.001.000.060.800241",
+      "68XL16GCLPO_",
+      "ASROCK_NAVI21EXT_D414_CLP_XL_GDR6_16G_MELVIN\\config.h",
+      "AMD ATOMBIOS",
+      "dmu1241_D4120EXT.041",
+      "fPfQfRfSfUfVfW",
+      "f_f^f]f[fZfYfX",
+      "f_f^f]f[fZfYfX"
+    ]
+  },
+  {
+    "offset": 135328,
+    "bdf": "0000:00:00.0",
+    "vendor": "0x0",
+    "device": "0x0",
+    "ssvendor": "0x0",
+    "ssdevice": "0x0",
+    "revision": 0,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "file": "vfct-00-00-0.bin",
+    "strings": []
+  }
+]

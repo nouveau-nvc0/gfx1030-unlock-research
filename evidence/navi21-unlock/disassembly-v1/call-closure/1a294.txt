@@ -1,0 +1,59 @@
+
+/tmp/tmpt03faqbi/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001a294 <.data+0x1a294>:
+0001a294: 364100   entry        a1, 0x20 ; Capstone
+0001a297: a5e8e6   call8        . -0x19174 ; Capstone ; target=0x1120
+   1a29a:	31f1e2        	l32r	a3, 0x12e60 (0x14958)
+   1a29d:	c1efe2        	l32r	a12, 0x12e5c (0x69a0)
+   1a2a0:	9d0a      	mov.n	a9, a10
+   1a2a2:	21f0e2        	l32r	a2, 0x12e64 (0xb1b4)
+   1a2a5:	a22c1d        	l32i	a10, a12, 116
+   1a2a8:	822c1c        	l32i	a8, a12, 112
+   1a2ab:	d20282        	l8ui	a13, a2, 130
+   1a2ae:	baaa      	add.n	a10, a10, a11
+   1a2b0:	9ab8      	add.n	a11, a8, a9
+   1a2b2:	87bb01        	bgeu	a11, a8, 0x1a2b7
+   1a2b5:	1baa      	addi.n	a10, a10, 1
+   1a2b7:	a26c1d        	s32i	a10, a12, 116
+   1a2ba:	b26c1c        	s32i	a11, a12, 112
+   1a2bd:	8c5d      	beqz.n	a13, 0x1a2c6
+   1a2bf:	e20283        	l8ui	a14, a2, 131
+   1a2c2:	0c19      	movi.n	a9, 1
+   1a2c4:	cc3e      	bnez.n	a14, 0x1a2cb
+   1a2c6:	0c09      	movi.n	a9, 0
+   1a2c8:	c6ffff        	j	0x1a2cb
+   1a2cb:	9263a2        	s32i	a9, a3, 0x288
+   1a2ce:	07694c        	bbci	a9, 0, 0x1a31e
+0001a2d1: 65f1ff   call8        . -0xe8 ; Capstone ; target=0x1a1e8
+   1a2d4:	41e5e2        	l32r	a4, 0x12e68 (0xaf80)
+0001a2d7: 0304a8   lsi          f0, a4, 0x2a0 ; Capstone
+0001a2da: 0080ea   utrunc.s     a8, f0, 0 ; Capstone
+   1a2dd:	f2235d        	l32i	a15, a3, 0x174
+   1a2e0:	8aff      	add.n	a15, a15, a8
+   1a2e2:	f2635d        	s32i	a15, a3, 0x174
+0001a2e5: a5c616   call8        . +0x16c6c ; Capstone ; target=0x30f50
+0001a2e8: 65efff   call8        . -0x108 ; Capstone ; target=0x1a1e0
+0001a2eb: 1304ab   lsi          f1, a4, 0x2ac ; Capstone
+0001a2ee: 00a1ea   utrunc.s     a10, f1, 0 ; Capstone
+   1a2f1:	a0a0f4        	extui	a10, a10, 0, 16
+0001a2f4: 65f4ff   call8        . -0xb8 ; Capstone ; target=0x1a23c
+   1a2f7:	f20281        	l8ui	a15, a2, 129
+   1a2fa:	c1dce2        	l32r	a12, 0x12e6c (0x14b44)
+0001a2fd: 430453   lsi          f4, a4, 0x14c ; Capstone
+0001a300: 330454   lsi          f3, a4, 0x150 ; Capstone
+0001a303: 23021f   lsi          f2, a2, 0x7c ; Capstone
+0001a306: 00b2ea   utrunc.s     a11, f2, 0 ; Capstone
+0001a309: 00d3ea   utrunc.s     a13, f3, 0 ; Capstone
+0001a30c: 00e4ea   utrunc.s     a14, f4, 0 ; Capstone
+   1a30f:	a25c3d        	s16i	a10, a12, 122
+   1a312:	f24c9a        	s8i	a15, a12, 154
+   1a315:	e25c4b        	s16i	a14, a12, 150
+   1a318:	d25c4c        	s16i	a13, a12, 152
+   1a31b:	b25c31        	s16i	a11, a12, 98
+0001a31e: a5e9ff   call8        . -0x164 ; Capstone ; target=0x1a1b8
+0001a321: 1df0     retw.n        ; Capstone
+	...

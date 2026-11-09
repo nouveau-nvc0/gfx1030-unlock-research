@@ -1,0 +1,263 @@
+{
+  "scope": "Reachable local-window stores and direct CALL8 registrations only; computed stores and other engines remain unresolved.",
+  "registrations": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03260.txt",
+      "pc": "0x329d",
+      "helper": "0x5a6c",
+      "target": "0x5fff387c",
+      "basis": "precall local constant"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/0387c.txt",
+      "pc": "0x38d7",
+      "helper": "0x5a6c",
+      "target": "0x5fff3cbc",
+      "basis": "precall local constant"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/038ec.txt",
+      "pc": "0x39f9",
+      "helper": "0x5a6c",
+      "target": "0x5fff3a00",
+      "basis": "manual stack roundtrip:39ee literal ->39f1 stack+16 ->39f7 a11"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "pc": "0x3a47",
+      "helper": "0x5a6c",
+      "target": "0x5fff3a00",
+      "basis": "precall local constant"
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03cbc.txt",
+      "pc": "0x3cf1",
+      "helper": "0x5a6c",
+      "target": "0x5fff3a00",
+      "basis": "precall local constant"
+    }
+  ],
+  "pointer_writes": [
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05a40.txt",
+      "store": {
+        "pc": "0x5a4e",
+        "operation": "s32i.n",
+        "address": "0x5ffee57c",
+        "address_candidates": [],
+        "source": "a3",
+        "source_constant": null,
+        "base": "a4",
+        "offset": "0"
+      }
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05a6c.txt",
+      "store": {
+        "pc": "0x5a7c",
+        "operation": "s32i.n",
+        "address": "0x5ffee580",
+        "address_candidates": [],
+        "source": "a3",
+        "source_constant": null,
+        "base": "a4",
+        "offset": "4"
+      }
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05a9c.txt",
+      "store": {
+        "pc": "0x5aac",
+        "operation": "s32i.n",
+        "address": "0x5ffee584",
+        "address_candidates": [],
+        "source": "a3",
+        "source_constant": null,
+        "base": "a4",
+        "offset": "8"
+      }
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05acc.txt",
+      "store": {
+        "pc": "0x5ada",
+        "operation": "s32i.n",
+        "address": "0x5ffee588",
+        "address_candidates": [],
+        "source": "a3",
+        "source_constant": null,
+        "base": "a4",
+        "offset": "12"
+      }
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05af8.txt",
+      "store": {
+        "pc": "0x5b0b",
+        "operation": "s32i.n",
+        "address": "0x5ffee58c",
+        "address_candidates": [],
+        "source": "a3",
+        "source_constant": null,
+        "base": "a4",
+        "offset": "16"
+      }
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05b20.txt",
+      "store": {
+        "pc": "0x5b35",
+        "operation": "s32i.n",
+        "address": "0x5ffee590",
+        "address_candidates": [],
+        "source": "a3",
+        "source_constant": null,
+        "base": "a4",
+        "offset": "20"
+      }
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05b4c.txt",
+      "store": {
+        "pc": "0x5b61",
+        "operation": "s32i.n",
+        "address": "0x5ffee594",
+        "address_candidates": [],
+        "source": "a3",
+        "source_constant": null,
+        "base": "a4",
+        "offset": "24"
+      }
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05b78.txt",
+      "store": {
+        "pc": "0x5b8d",
+        "operation": "s32i.n",
+        "address": "0x5ffee598",
+        "address_candidates": [],
+        "source": "a3",
+        "source_constant": null,
+        "base": "a4",
+        "offset": "28"
+      }
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05ba4.txt",
+      "store": {
+        "pc": "0x5bc3",
+        "operation": "s32i.n",
+        "address": "0x5ffee57c",
+        "address_candidates": [],
+        "source": "a9",
+        "source_constant": 0,
+        "base": "a10",
+        "offset": "0"
+      }
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05bc8.txt",
+      "store": {
+        "pc": "0x5be7",
+        "operation": "s32i.n",
+        "address": "0x5ffee580",
+        "address_candidates": [],
+        "source": "a9",
+        "source_constant": 0,
+        "base": "a10",
+        "offset": "4"
+      }
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05bec.txt",
+      "store": {
+        "pc": "0x5c0b",
+        "operation": "s32i.n",
+        "address": "0x5ffee584",
+        "address_candidates": [],
+        "source": "a9",
+        "source_constant": 0,
+        "base": "a10",
+        "offset": "8"
+      }
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05c10.txt",
+      "store": {
+        "pc": "0x5c2f",
+        "operation": "s32i.n",
+        "address": "0x5ffee588",
+        "address_candidates": [],
+        "source": "a9",
+        "source_constant": 0,
+        "base": "a10",
+        "offset": "12"
+      }
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05c34.txt",
+      "store": {
+        "pc": "0x5c4d",
+        "operation": "s32i.n",
+        "address": "0x5ffee58c",
+        "address_candidates": [],
+        "source": "a2",
+        "source_constant": 0,
+        "base": "a3",
+        "offset": "16"
+      }
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05c54.txt",
+      "store": {
+        "pc": "0x5c6d",
+        "operation": "s32i.n",
+        "address": "0x5ffee590",
+        "address_candidates": [],
+        "source": "a2",
+        "source_constant": 0,
+        "base": "a3",
+        "offset": "20"
+      }
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05c74.txt",
+      "store": {
+        "pc": "0x5c8d",
+        "operation": "s32i.n",
+        "address": "0x5ffee594",
+        "address_candidates": [],
+        "source": "a2",
+        "source_constant": 0,
+        "base": "a3",
+        "offset": "24"
+      }
+    },
+    {
+      "listing": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05c94.txt",
+      "store": {
+        "pc": "0x5cad",
+        "operation": "s32i.n",
+        "address": "0x5ffee598",
+        "address_candidates": [],
+        "source": "a2",
+        "source_constant": 0,
+        "base": "a3",
+        "offset": "28"
+      }
+    }
+  ],
+  "gate": "0x5ffee452",
+  "constant_store_overlap_matches": [],
+  "callback_dispatch": {
+    "pc": "0x79d5",
+    "pointer": "0x5ffee580",
+    "initial": "zero via BSS initialization",
+    "identified_targets": [
+      "0x5fff387c",
+      "0x5fff3cbc",
+      "0x5fff3a00"
+    ]
+  },
+  "other_slots": "Seven other helpers have no direct callers in current scan; not proof of permanent zero."
+}

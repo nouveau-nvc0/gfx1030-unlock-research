@@ -1,0 +1,27 @@
+
+/tmp/tmphmo2v79k/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00036cc4 <.data+0x36cc4>:
+00036cc4: 364100   entry        a1, 0x20 ; Capstone
+   36cc7:	0c0a      	movi.n	a10, 0
+00036cc9: e5c5f7   call8        . -0x83a0 ; Capstone ; target=0x2e928
+   36ccc:	820a3c        	l8ui	a8, a10, 60
+   36ccf:	918471        	l32r	a9, 0x132e0 (0x42c80000)
+   36cd2:	661805        	bnei	a8, 1, 0x36cdb
+00036cd5: 030a03   lsi          f0, a10, 0xc ; Capstone
+   36cd8:	860000        	j	0x36cde
+00036cdb: 5009fa   wfr          f0, a9 ; Capstone
+   36cde:	b19d72        	l32r	a11, 0x13754 (0xaecc)
+   36ce1:	0c1c      	movi.n	a12, 1
+   36ce3:	0c0a      	movi.n	a10, 0
+   36ce5:	20ac83        	moveqz	a10, a12, a2
+00036ce8: 130b7f   lsi          f1, a11, 0x1fc ; Capstone
+00036ceb: a0019b   movnez.s     f0, f1, a10 ; Capstone
+00036cee: 40a0fa   rfr          a10, f0 ; Capstone
+00036cf1: 25a7fb   call8        . -0x458c ; Capstone ; target=0x32764
+00036cf4: e5e1f0   call8        . -0xf1e0 ; Capstone ; target=0x27b14
+00036cf7: 1df0     retw.n        ; Capstone
+   36cf9:	000000        	ill

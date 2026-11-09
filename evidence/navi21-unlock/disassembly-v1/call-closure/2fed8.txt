@@ -1,0 +1,38 @@
+
+/tmp/tmpxubehvyd/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002fed8 <.data+0x2fed8>:
+0002fed8: 364100   entry        a1, 0x20 ; Capstone
+   2fedb:	ad02      	mov.n	a10, a2
+   2fedd:	0c0b      	movi.n	a11, 0
+0002fedf: 2582f1   call8        . -0xe7dc ; Capstone ; target=0x21700
+   2fee2:	ad02      	mov.n	a10, a2
+   2fee4:	0c0b      	movi.n	a11, 0
+0002fee6: a583f1   call8        . -0xe7c4 ; Capstone ; target=0x21720
+   2fee9:	b1468c        	l32r	a11, 0x13004 (0xfffff)
+   2feec:	c18d8d        	l32r	a12, 0x13520 (0x5a100)
+   2feef:	809211        	slli	a9, a2, 8
+   2fef2:	a1598c        	l32r	a10, 0x13058 (0x11ffe00)
+   2fef5:	ca99      	add.n	a9, a9, a12
+   2fef7:	b09910        	and	a9, a9, a11
+   2fefa:	aa99      	add.n	a9, a9, a10
+   2fefc:	c02000        	memw
+   2feff:	822980        	l32i	a8, a9, 0x200
+   2ff02:	b2a063        	movi	a11, 99
+   2ff05:	6c3a      	movi.n	a10, -29
+   2ff07:	b08820        	or	a8, a8, a11
+   2ff0a:	a08810        	and	a8, a8, a10
+   2ff0d:	c02000        	memw
+   2ff10:	ad02      	mov.n	a10, a2
+   2ff12:	0c1b      	movi.n	a11, 1
+   2ff14:	826980        	s32i	a8, a9, 0x200
+0002ff17: a580f1   call8        . -0xe7f4 ; Capstone ; target=0x21720
+   2ff1a:	ad02      	mov.n	a10, a2
+0002ff1c: 65e2f1   call8        . -0xe1d8 ; Capstone ; target=0x21d44
+   2ff1f:	ad02      	mov.n	a10, a2
+   2ff21:	0c1b      	movi.n	a11, 1
+0002ff23: e57df1   call8        . -0xe820 ; Capstone ; target=0x21700
+0002ff26: 1df0     retw.n        ; Capstone

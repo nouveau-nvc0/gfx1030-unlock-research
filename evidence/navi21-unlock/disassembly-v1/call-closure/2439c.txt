@@ -1,0 +1,27 @@
+
+/tmp/tmphplw74t3/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002439c <.data+0x2439c>:
+0002439c: 364100   entry        a1, 0x20 ; Capstone
+   2439f:	51e5bb        	l32r	a5, 0x13334 (0x125a200)
+   243a2:	001240        	ssl	a2
+   243a5:	0c14      	movi.n	a4, 1
+   243a7:	0024a1        	sll	a2, a4
+   243aa:	261315        	beqi	a3, 1, 0x243c3
+   243ad:	7cf9      	movi.n	a9, -1
+   243af:	909230        	xor	a9, a2, a9
+   243b2:	c02000        	memw
+   243b5:	8225d2        	l32i	a8, a5, 0x348
+   243b8:	908810        	and	a8, a8, a9
+   243bb:	c02000        	memw
+   243be:	8265d2        	s32i	a8, a5, 0x348
+000243c1: 1df0     retw.n        ; Capstone
+   243c3:	c02000        	memw
+   243c6:	a225d2        	l32i	a10, a5, 0x348
+   243c9:	20aa20        	or	a10, a10, a2
+   243cc:	c02000        	memw
+   243cf:	a265d2        	s32i	a10, a5, 0x348
+000243d2: 1df0     retw.n        ; Capstone

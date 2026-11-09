@@ -1,0 +1,16 @@
+
+/tmp/tmp1_3rcfm6/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00038b88 <.data+0x38b88>:
+00038b88: 366100   entry        a1, 0x30 ; Capstone
+   38b8b:	bd03      	mov.n	a11, a3
+   38b8d:	ad02      	mov.n	a10, a2
+   38b8f:	cd01      	mov.n	a12, a1
+   38b91:	0c08      	movi.n	a8, 0
+   38b93:	8901      	s32i.n	a8, a1, 0
+00038b95: 65bee6   call8        . -0x19418 ; Capstone ; target=0x1f77c
+   38b98:	2801      	l32i.n	a2, a1, 0
+00038b9a: 1df0     retw.n        ; Capstone

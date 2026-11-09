@@ -1,0 +1,15 @@
+
+/tmp/tmpd8b_nyeu/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000221e8 <.data+0x221e8>:
+000221e8: 364100   entry        a1, 0x20 ; Capstone
+   221eb:	3184c4        	l32r	a3, 0x133fc (0xfe90)
+   221ee:	0c02      	movi.n	a2, 0
+   221f0:	22437e        	s8i	a2, a3, 126
+   221f3:	22437d        	s8i	a2, a3, 125
+   221f6:	22437c        	s8i	a2, a3, 124
+000221f9: 1df0     retw.n        ; Capstone
+	...

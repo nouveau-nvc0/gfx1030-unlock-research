@@ -1,0 +1,24 @@
+
+/tmp/tmpti0haxde/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00037204 <.data+0x37204>:
+00037204: 364100   entry        a1, 0x20 ; Capstone
+   37207:	5813      	l32i.n	a5, a3, 4
+   37209:	f6c210        	bgeui	a2, 32, 0x3721d
+   3720c:	001240        	ssl	a2
+   3720f:	2803      	l32i.n	a2, a3, 0
+   37211:	0045a1        	sll	a4, a5
+   37214:	4913      	s32i.n	a4, a3, 4
+   37216:	502281        	src	a2, a2, a5
+   37219:	2903      	s32i.n	a2, a3, 0
+0003721b: 1df0     retw.n        ; Capstone
+   3721d:	92c2e0        	addi	a9, a2, -32
+   37220:	0c08      	movi.n	a8, 0
+   37222:	8913      	s32i.n	a8, a3, 4
+   37224:	001940        	ssl	a9
+   37227:	0025a1        	sll	a2, a5
+   3722a:	c6faff        	j	0x37219
+   3722d:	000000        	ill

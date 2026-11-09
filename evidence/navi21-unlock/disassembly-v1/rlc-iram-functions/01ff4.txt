@@ -1,0 +1,52 @@
+
+/tmp/tmpaobwvor8/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00001ff4 <.data+0x1ff4>:
+00001ff4: 364100   entry        a1, 0x20 ; Capstone
+    1ff7:	2185ec        	l32r	a2, 0xffffd20c (0x5ffee264) ; inferred DRAM map 0x5ffec000
+    1ffa:	820200        	l8ui	a8, a2, 0
+    1ffd:	163805        	beqz	a8, 0x2054
+    2000:	a2a001        	movi	a10, 1
+00002003: 255b02   call8        . +0x25b4 ; Capstone ; target=0x45b4
+    2006:	0c1b      	movi.n	a11, 1
+    2008:	0c0c      	movi.n	a12, 0
+    200a:	c24204        	s8i	a12, a2, 4
+    200d:	0c88      	movi.n	a8, 8
+    200f:	d20203        	l8ui	a13, a2, 3
+    2012:	a20204        	l8ui	a10, a2, 4
+    2015:	920205        	l8ui	a9, a2, 5
+    2018:	d0db93        	movnez	a13, a11, a13
+    201b:	d0aa20        	or	a10, a10, a13
+    201e:	a0ab93        	movnez	a10, a11, a10
+    2021:	a09920        	or	a9, a9, a10
+    2024:	a178ec        	l32r	a10, 0xffffd204 (0x6803b200) ; inferred DRAM map 0x5ffec000
+    2027:	909b93        	movnez	a9, a11, a9
+    202a:	924206        	s8i	a9, a2, 6
+    202d:	ac79      	beqz.n	a9, 0x2058
+    202f:	f22a8c        	l32i	a15, a10, 0x230
+    2032:	80ff20        	or	a15, a15, a8
+    2035:	f26a8c        	s32i	a15, a10, 0x230
+    2038:	90ea03        	rsr.ccount	a9
+    203b:	e0ea03        	rsr.ccount	a14
+    203e:	90eec0        	sub	a14, a14, a9
+    2041:	f65e08        	bgeui	a14, 5, 0x204d
+    2044:	b0ea03        	rsr.ccount	a11
+    2047:	90bbc0        	sub	a11, a11, a9
+    204a:	b65bf6        	bltui	a11, 5, 0x2044
+    204d:	0cac      	movi.n	a12, 10
+    204f:	c26aa4        	s32i	a12, a10, 0x290
+00002052: 1df0     retw.n        ; Capstone
+00002054: 1df0     retw.n        ; Capstone
+00002056: 0000d2   quos         a0, a0, a0 ; Capstone
+    2059:	2a8c      	add.n	a8, a12, a2
+    205b:	7c7e      	movi.n	a14, -9
+    205d:	e0dd10        	and	a13, a13, a14
+    2060:	d26a8c        	s32i	a13, a10, 0x230
+    2063:	c26aa4        	s32i	a12, a10, 0x290
+00002066: 1df0     retw.n        ; Capstone
+
+; Alternate branch-target decode
+    2058:	d22a8c        	l32i	a13, a10, 0x230

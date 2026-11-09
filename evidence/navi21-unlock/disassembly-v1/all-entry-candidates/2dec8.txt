@@ -1,0 +1,20 @@
+
+/tmp/tmp6j4_n64t/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002dec8 <.data+0x2dec8>:
+0002dec8: 366100   entry        a1, 0x30 ; Capstone
+   2decb:	0c2a      	movi.n	a10, 2
+0002decd: 256bd4   call8        . -0x2b94c ; Capstone ; target=0x2580
+   2ded0:	811198        	l32r	a8, 0x13f14 (0x15238)
+   2ded3:	0c2a      	movi.n	a10, 2
+   2ded5:	8082b0        	addx8	a8, a2, a8
+0002ded8: 03087f   lsi          f0, a8, 0x1fc ; Capstone
+0002dedb: 034100   ssi          f0, a1, 0 ; Capstone
+0002dede: 6559d4   call8        . -0x2ba68 ; Capstone ; target=0x2474
+0002dee1: 130100   lsi          f1, a1, 0 ; Capstone
+0002dee4: 4021fa   rfr          a2, f1 ; Capstone
+0002dee7: 1df0     retw.n        ; Capstone
+   2dee9:	000000        	ill

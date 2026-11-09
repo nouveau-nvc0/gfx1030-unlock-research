@@ -1,0 +1,94 @@
+
+/tmp/tmp9rosjup4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000274b0 <.data+0x274b0>:
+000274b0: 368100   entry        a1, 0x40 ; Capstone
+000274b3: e5f7da   call8        . -0x25080 ; Capstone ; target=0x2430
+   274b6:	d15ab1        	l32r	a13, 0x13a20 (0x3983126f)
+   274b9:	81a5b1        	l32r	a8, 0x13b50 (0xa3a8)
+   274bc:	2d0a      	mov.n	a2, a10
+000274be: 508dfa   wfr          f8, a13 ; Capstone
+   274c1:	b21841        	l16ui	a11, a8, 130
+   274c4:	c2183f        	l16ui	a12, a8, 126
+   274c7:	e22821        	l32i	a14, a8, 132
+   274ca:	322824        	l32i	a3, a8, 144
+   274cd:	922823        	l32i	a9, a8, 140
+   274d0:	f22822        	l32i	a15, a8, 136
+   274d3:	a21840        	l16ui	a10, a8, 128
+   274d6:	f911      	s32i.n	a15, a1, 4
+   274d8:	9921      	s32i.n	a9, a1, 8
+   274da:	3931      	s32i.n	a3, a1, 12
+   274dc:	e901      	s32i.n	a14, a1, 0
+000274de: 030100   lsi          f0, a1, 0 ; Capstone
+   274e1:	31e9b0        	l32r	a3, 0x13888 (0xe800)
+000274e4: 330102   lsi          f3, a1, 8 ; Capstone
+000274e7: 130103   lsi          f1, a1, 0xc ; Capstone
+000274ea: 230101   lsi          f2, a1, 4 ; Capstone
+000274ed: 234105   ssi          f2, a1, 0x14 ; Capstone
+000274f0: 134106   ssi          f1, a1, 0x18 ; Capstone
+000274f3: 007cda   ufloat.s     f7, a12, 0 ; Capstone
+000274f6: 00abda   ufloat.s     f10, a11, 0 ; Capstone
+000274f9: 009ada   ufloat.s     f9, a10, 0 ; Capstone
+000274fc: 3343c4   ssi          f3, a3, 0x310 ; Capstone
+000274ff: 0343c2   ssi          f0, a3, 0x308 ; Capstone
+00027502: 2343c3   ssi          f2, a3, 0x30c ; Capstone
+00027505: 1343c5   ssi          f1, a3, 0x314 ; Capstone
+00027508: 804a2a   mul.s        f4, f10, f8 ; Capstone
+0002750b: 80672a   mul.s        f6, f7, f8 ; Capstone
+0002750e: 80592a   mul.s        f5, f9, f8 ; Capstone
+   27511:	82087d        	l8ui	a8, a8, 125
+   27514:	8263be        	s32i	a8, a3, 0x2f8
+00027517: 6343bf   ssi          f6, a3, 0x2fc ; Capstone
+0002751a: 4343c1   ssi          f4, a3, 0x304 ; Capstone
+0002751d: 5343c0   ssi          f5, a3, 0x300 ; Capstone
+   27520:	66187c        	bnei	a8, 1, 0x275a0
+00027523: 40a0fa   rfr          a10, f0 ; Capstone
+00027526: 658711   call8        . +0x11878 ; Capstone ; target=0x38d9c
+00027529: 50eafa   wfr          f14, a10 ; Capstone
+0002752c: d303b6   lsi          f13, a3, 0x2d8 ; Capstone
+0002752f: e0bd2a   mul.s        f11, f13, f14 ; Capstone
+00027532: c30105   lsi          f12, a1, 0x14 ; Capstone
+00027535: 40acfa   rfr          a10, f12 ; Capstone
+00027538: b34104   ssi          f11, a1, 0x10 ; Capstone
+0002753b: b343c8   ssi          f11, a3, 0x320 ; Capstone
+0002753e: e58511   call8        . +0x11860 ; Capstone ; target=0x38d9c
+00027541: 230106   lsi          f2, a1, 0x18 ; Capstone
+00027544: 501afa   wfr          f1, a10 ; Capstone
+00027547: 20f12a   mul.s        f15, f1, f2 ; Capstone
+0002754a: 030104   lsi          f0, a1, 0x10 ; Capstone
+0002754d: 40a0fa   rfr          a10, f0 ; Capstone
+00027550: f343c9   ssi          f15, a3, 0x324 ; Capstone
+00027553: 40bffa   rfr          a11, f15 ; Capstone
+00027556: 25d9ff   call8        . -0x26c ; Capstone ; target=0x272e8
+   27559:	0c18      	movi.n	a8, 1
+0002755b: 7303bf   lsi          f7, a3, 0x2fc ; Capstone
+0002755e: 5303c0   lsi          f5, a3, 0x300 ; Capstone
+   27561:	910db1        	l32r	a9, 0x13998 (0x11894)
+   27564:	b17cb1        	l32r	a11, 0x13b54 (0x9ec0)
+00027567: 50bafa   wfr          f11, a10 ; Capstone
+0002756a: d303c4   lsi          f13, a3, 0x310 ; Capstone
+0002756d: b06d2a   mul.s        f6, f13, f11 ; Capstone
+00027570: c303c1   lsi          f12, a3, 0x304 ; Capstone
+   27573:	a21b7e        	l16ui	a10, a11, 252
+00027576: b343ca   ssi          f11, a3, 0x328 ; Capstone
+00027579: 608c0a   add.s        f8, f12, f6 ; Capstone
+0002757c: 009ada   ufloat.s     f9, a10, 0 ; Capstone
+0002757f: a30900   lsi          f10, a9, 0 ; Capstone
+00027582: a0392a   mul.s        f3, f9, f10 ; Capstone
+00027585: 80154b   olt.s        b1, f5, f8 ; Capstone
+00027588: 1058db   movt.s       f5, f8, b1 ; Capstone
+0002758b: 50470a   add.s        f4, f7, f5 ; Capstone
+   2758e:	8263cd        	s32i	a8, a3, 0x334
+00027591: 6343c6   ssi          f6, a3, 0x318 ; Capstone
+00027594: 5343cb   ssi          f5, a3, 0x32c ; Capstone
+00027597: 30044b   olt.s        b0, f4, f3 ; Capstone
+0002759a: 0034db   movt.s       f3, f4, b0 ; Capstone
+0002759d: 3343c7   ssi          f3, a3, 0x31c ; Capstone
+000275a0: e5e8da   call8        . -0x25170 ; Capstone ; target=0x2430
+   275a3:	20cac0        	sub	a12, a10, a2
+   275a6:	c263cc        	s32i	a12, a3, 0x330
+000275a9: 1df0     retw.n        ; Capstone
+	...

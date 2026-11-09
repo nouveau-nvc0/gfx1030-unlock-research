@@ -1,0 +1,53 @@
+
+/tmp/tmpluj1y96p/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000019c4 <.data+0x19c4>:
+000019c4: 364100   entry        a1, 0x20 ; Capstone
+    19c7:	167307        	beqz	a3, 0x1a42
+    19ca:	71a6fc        	l32r	a7, 0xc64 (0xfffe007f)
+    19cd:	204464        	extui	a4, a2, 4, 7
+    19d0:	206b94        	extui	a6, a2, 11, 10
+    19d3:	bd04      	mov.n	a11, a4
+    19d5:	ad06      	mov.n	a10, a6
+    19d7:	2d03      	mov.n	a2, a3
+    19d9:	0c2c      	movi.n	a12, 2
+    19db:	30d060        	neg	a13, a3
+    19de:	d0d310        	and	a13, a3, a13
+    19e1:	d0d0f4        	extui	a13, a13, 0, 16
+000019e4: a52600   call8        . +0x26c ; Capstone ; target=0x1c50
+    19e7:	5d0a      	mov.n	a5, a10
+    19e9:	16aa04        	beqz	a10, 0x1a37
+    19ec:	e20a06        	l8ui	a14, a10, 6
+    19ef:	164e04        	beqz	a14, 0x1a37
+    19f2:	b20509        	l8ui	a11, a5, 9
+    19f5:	885a      	l32i.n	a8, a10, 20
+    19f7:	c21500        	l16ui	a12, a5, 0
+    19fa:	a20a02        	l8ui	a10, a10, 2
+    19fd:	f0bb01        	slli	a11, a11, 17
+    1a00:	c0c094        	extui	a12, a12, 0, 10
+    1a03:	90cc11        	slli	a12, a12, 7
+    1a06:	70bb10        	and	a11, a11, a7
+    1a09:	a0a064        	extui	a10, a10, 0, 7
+    1a0c:	c0bb20        	or	a11, a11, a12
+    1a0f:	c2af80        	movi	a12, -128
+    1a12:	c0bb10        	and	a11, a11, a12
+    1a15:	b0aa20        	or	a10, a10, a11
+00001a18: e00800   callx8       a8 ; Capstone
+    1a1b:	b2050a        	l8ui	a11, a5, 10
+    1a1e:	9c5b      	beqz.n	a11, 0x1a37
+    1a20:	a21500        	l16ui	a10, a5, 0
+    1a23:	d20503        	l8ui	a13, a5, 3
+    1a26:	b20502        	l8ui	a11, a5, 2
+    1a29:	0c1c      	movi.n	a12, 1
+    1a2b:	001d40        	ssl	a13
+    1a2e:	00cca1        	sll	a12, a12
+    1a31:	c0c0f4        	extui	a12, a12, 0, 16
+00001a34: a51e00   call8        . +0x1ec ; Capstone ; target=0x1c20
+    1a37:	0b33      	addi.n	a3, a3, -1
+    1a39:	303210        	and	a3, a2, a3
+    1a3c:	3030f4        	extui	a3, a3, 0, 16
+    1a3f:	5603f9        	bnez	a3, 0x19d3
+00001a42: 1df0     retw.n        ; Capstone

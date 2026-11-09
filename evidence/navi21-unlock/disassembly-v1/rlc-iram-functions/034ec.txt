@@ -1,0 +1,25 @@
+
+/tmp/tmprmo_n81a/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000034ec <.data+0x34ec>:
+000034ec: 364100   entry        a1, 0x20 ; Capstone
+    34ef:	2c47      	movi.n	a7, 36
+    34f1:	6143e7        	l32r	a6, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    34f4:	92afdf        	movi	a9, -33
+    34f7:	204004        	extui	a4, a2, 0, 1
+    34fa:	30a004        	extui	a10, a3, 0, 1
+    34fd:	b08a11        	slli	a8, a10, 5
+    3500:	e05411        	slli	a5, a4, 2
+    3503:	f0aa11        	slli	a10, a10, 1
+    3506:	905510        	and	a5, a5, a9
+    3509:	802520        	or	a2, a5, a8
+    350c:	a04420        	or	a4, a4, a10
+    350f:	4266e8        	s32i	a4, a6, 0x3a0
+    3512:	b226e9        	l32i	a11, a6, 0x3a4
+    3515:	70bb10        	and	a11, a11, a7
+    3518:	b792f6        	bne	a2, a11, 0x3512
+0000351b: 1df0     retw.n        ; Capstone
+    351d:	000000        	ill

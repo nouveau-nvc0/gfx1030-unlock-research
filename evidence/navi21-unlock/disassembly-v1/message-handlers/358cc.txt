@@ -1,0 +1,17 @@
+
+/tmp/tmpnia10g1p/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000358cc <.data+0x358cc>:
+000358cc: 364100   entry        a1, 0x20 ; Capstone
+   358cf:	b1f97a        	l32r	a11, 0x144b4 (0xa3cc)
+   358d2:	ad02      	mov.n	a10, a2
+   358d4:	b22b7f        	l32i	a11, a11, 0x1fc
+000358d7: a54fcc   call8        . -0x33b04 ; Capstone ; target=0x1dd0
+   358da:	ad02      	mov.n	a10, a2
+   358dc:	0c1b      	movi.n	a11, 1
+000358de: e57bcc   call8        . -0x33840 ; Capstone ; target=0x209c
+000358e1: 1df0     retw.n        ; Capstone
+	...

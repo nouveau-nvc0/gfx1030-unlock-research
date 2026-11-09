@@ -1,0 +1,32 @@
+
+/tmp/tmpnmm3os5c/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00032fcc <.data+0x32fcc>:
+00032fcc: 364100   entry        a1, 0x20 ; Capstone
+   32fcf:	610d80        	l32r	a6, 0x13004 (0xfffff)
+   32fd2:	205094        	extui	a5, a2, 0, 10
+   32fd5:	81e384        	l32r	a8, 0x14364 (0x9000780)
+   32fd8:	405511        	slli	a5, a5, 12
+   32fdb:	72d508        	addmi	a7, a5, 0x800
+   32fde:	8a55      	add.n	a5, a5, a8
+   32fe0:	72c780        	addi	a7, a7, -128
+   32fe3:	7074b5        	extui	a7, a7, 20, 12
+   32fe6:	605510        	and	a5, a5, a6
+   32fe9:	61e980        	l32r	a6, 0x13390 (0xfffe00)
+   32fec:	c07701        	slli	a7, a7, 20
+   32fef:	7a55      	add.n	a5, a5, a7
+   32ff1:	6a55      	add.n	a5, a5, a6
+   32ff3:	c02000        	memw
+   32ff6:	7c37      	movi.n	a7, -13
+   32ff8:	322580        	l32i	a3, a5, 0x200
+   32ffb:	406014        	extui	a6, a4, 0, 2
+   32ffe:	e06611        	slli	a6, a6, 2
+   33001:	703310        	and	a3, a3, a7
+   33004:	603320        	or	a3, a3, a6
+   33007:	c02000        	memw
+   3300a:	326580        	s32i	a3, a5, 0x200
+0003300d: 1df0     retw.n        ; Capstone
+	...

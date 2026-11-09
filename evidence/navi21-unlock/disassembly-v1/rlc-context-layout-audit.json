@@ -1,0 +1,31 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "save_instructions_byte_checked": 147,
+  "context_base": "0x5ffee044",
+  "context_end_exclusive": "0x5ffee224",
+  "layout": {
+    "tlb": [
+      "0x5ffee198",
+      "0x5ffee1d8"
+    ],
+    "fp_boolean": [
+      "0x5ffee1d8",
+      "0x5ffee224"
+    ],
+    "saved_intenable": "0x5ffee168"
+  },
+  "restore_stack_writes": {
+    "guard": "context+0xcc !=0",
+    "pointer": "P=DWORD(context+0x10)",
+    "first_range": "[P-16,P+16), eight DWORDs from context+0x8c..0xa8",
+    "additional": "n=(DWORD(context+0xc)>>30)&3; if n>=2, Q=DWORD(P+4) after first writes; copy 16-byte blocks from context+0xac to Q-16*n, advancing destination/source16, signed comparison against Q-16",
+    "limitations": "Addresses require actual saved context. Loop behavior near 32-bit wrap/signed boundaries is not bounded here."
+  },
+  "tail_jump": {
+    "pc": "0x9d01",
+    "source": "DWORD(context+0x1c)",
+    "known_save_call": "7ce9 passes third argument0;9a90 saves it at+1c",
+    "scope": "No new callback from this known invocation; alternate entry9ad0 and other producers remain open"
+  },
+  "scope": "Manual dataflow of byte-checked instructions, not whole-firmware symbolic execution."
+}

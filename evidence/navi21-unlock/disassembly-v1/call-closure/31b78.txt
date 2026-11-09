@@ -1,0 +1,38 @@
+
+/tmp/tmpifc8dd5x/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00031b78 <.data+0x31b78>:
+00031b78: 364100   entry        a1, 0x20 ; Capstone
+   31b7b:	51a889        	l32r	a5, 0x1421c (0x9050270)
+   31b7e:	41a889        	l32r	a4, 0x14220 (0x50270)
+   31b81:	31a889        	l32r	a3, 0x14224 (0xb0d0)
+   31b84:	812085        	l32r	a8, 0x13004 (0xfffff)
+   31b87:	710286        	l32r	a7, 0x13390 (0xfffe00)
+   31b8a:	0c22      	movi.n	a2, 2
+   31b8c:	a1a789        	l32r	a10, 0x14228 (0x42c70000)
+   31b8f:	915685        	l32r	a9, 0x130e8 (0x3a83126f)
+   31b92:	61d385        	l32r	a6, 0x132e0 (0x42c80000)
+00031b95: 502afa   wfr          f2, a10 ; Capstone
+00031b98: 5019fa   wfr          f1, a9 ; Capstone
+00031b9b: 5006fa   wfr          f0, a6 ; Capstone
+00031b9e: 76a22c   loopgtz      a2, . +0x30 ; Capstone
+   31ba1:	40c4b5        	extui	a12, a4, 20, 12
+   31ba4:	80b510        	and	a11, a5, a8
+   31ba7:	c0cc01        	slli	a12, a12, 20
+   31baa:	cabb      	add.n	a11, a11, a12
+   31bac:	7abb      	add.n	a11, a11, a7
+   31bae:	c02000        	memw
+   31bb1:	b22b80        	l32i	a11, a11, 0x200
+00031bb4: 004bda   ufloat.s     f4, a11, 0 ; Capstone
+00031bb7: 10342a   mul.s        f3, f4, f1 ; Capstone
+   31bba:	42d410        	addmi	a4, a4, 0x1000
+   31bbd:	52d510        	addmi	a5, a5, 0x1000
+   31bc0:	b2637f        	s32i	a11, a3, 0x1fc
+00031bc3: 30024b   olt.s        b0, f2, f3 ; Capstone
+00031bc6: 0030db   movt.s       f3, f0, b0 ; Capstone
+00031bc9: 334381   ssi          f3, a3, 0x204 ; Capstone
+   31bcc:	4b33      	addi.n	a3, a3, 4
+00031bce: 1df0     retw.n        ; Capstone

@@ -1,0 +1,59 @@
+
+/tmp/tmp39ozduat/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000230c4 <.data+0x230c4>:
+000230c4: 364100   entry        a1, 0x20 ; Capstone
+   230c7:	72a100        	movi	a7, 0x100
+   230ca:	0c14      	movi.n	a4, 1
+   230cc:	209074        	extui	a9, a2, 0, 8
+   230cf:	506200        	rsil	a5, 2
+   230d2:	21bec0        	l32r	a2, 0x133cc (0x1217600)
+   230d5:	bcb9      	beqz.n	a9, 0x23114
+   230d7:	261939        	beqi	a9, 1, 0x23114
+   230da:	662959        	bnei	a9, 2, 0x23137
+   230dd:	0c2a      	movi.n	a10, 2
+   230df:	0c0b      	movi.n	a11, 0
+000230e1: a58000   call8        . +0x80c ; Capstone ; target=0x238ec
+   230e4:	c02000        	memw
+   230e7:	922232        	l32i	a9, a2, 200
+   230ea:	c02000        	memw
+   230ed:	822230        	l32i	a8, a2, 192
+   230f0:	a179c1        	l32r	a10, 0x136d4 (0xfffff5ff)
+   230f3:	708820        	or	a8, a8, a7
+   230f6:	a08810        	and	a8, a8, a10
+   230f9:	c02000        	memw
+   230fc:	826230        	s32i	a8, a2, 192
+   230ff:	c02000        	memw
+   23102:	a22233        	l32i	a10, a2, 204
+   23105:	87eaf6        	bbsi	a10, 8, 0x230ff
+   23108:	70b920        	or	a11, a9, a7
+   2310b:	c02000        	memw
+   2310e:	b26232        	s32i	a11, a2, 200
+   23111:	860800        	j	0x23137
+   23114:	c02000        	memw
+   23117:	38a2      	l32i.n	a3, a2, 40
+   23119:	c02000        	memw
+   2311c:	6882      	l32i.n	a6, a2, 32
+   2311e:	dca9      	bnez.n	a9, 0x2313c
+   23120:	0c0a      	movi.n	a10, 0
+   23122:	0c1b      	movi.n	a11, 1
+00023124: 657c00   call8        . +0x7c8 ; Capstone ; target=0x238ec
+   23127:	403320        	or	a3, a3, a4
+   2312a:	406620        	or	a6, a6, a4
+   2312d:	c02000        	memw
+   23130:	6982      	s32i.n	a6, a2, 32
+   23132:	c02000        	memw
+   23135:	39a2      	s32i.n	a3, a2, 40
+   23137:	50e613        	wsr.ps	a5
+0002313a: 1df0     retw.n        ; Capstone
+   2313c:	6619ed        	bnei	a9, 1, 0x2312d
+   2313f:	0c1a      	movi.n	a10, 1
+   23141:	0c0b      	movi.n	a11, 0
+00023143: a57a00   call8        . +0x7ac ; Capstone ; target=0x238ec
+   23146:	703320        	or	a3, a3, a7
+   23149:	1c04      	movi.n	a4, 16
+   2314b:	c6f6ff        	j	0x2312a
+	...

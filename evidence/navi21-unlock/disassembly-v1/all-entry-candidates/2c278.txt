@@ -1,0 +1,28 @@
+
+/tmp/tmp3furbvbh/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002c278 <.data+0x2c278>:
+0002c278: 364100   entry        a1, 0x20 ; Capstone
+   2c27b:	917c9c        	l32r	a9, 0x1346c (0xa218)
+   2c27e:	a13c9e        	l32r	a10, 0x13b70 (0xc82c)
+   2c281:	92097e        	l8ui	a9, a9, 126
+   2c284:	b20a7d        	l8ui	a11, a10, 125
+   2c287:	661906        	bnei	a9, 1, 0x2c291
+   2c28a:	cc3b      	bnez.n	a11, 0x2c291
+0002c28c: a5d4ff   call8        . -0x2b4 ; Capstone ; target=0x2bfd8
+0002c28f: 1df0     retw.n        ; Capstone
+   2c291:	dc69      	bnez.n	a9, 0x2c2ab
+   2c293:	c20a7d        	l8ui	a12, a10, 125
+   2c296:	661c11        	bnei	a12, 1, 0x2c2ab
+   2c299:	d10a9b        	l32r	a13, 0x12ec4 (0x300fe00)
+   2c29c:	1c0a      	movi.n	a10, 16
+   2c29e:	1c0b      	movi.n	a11, 16
+   2c2a0:	0c0c      	movi.n	a12, 0
+   2c2a2:	c02000        	memw
+   2c2a5:	d22d8a        	l32i	a13, a13, 0x228
+0002c2a8: 2536d6   call8        . -0x29c9c ; Capstone ; target=0x260c
+0002c2ab: 1df0     retw.n        ; Capstone
+   2c2ad:	000000        	ill

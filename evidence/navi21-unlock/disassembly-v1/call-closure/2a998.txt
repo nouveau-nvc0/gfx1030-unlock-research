@@ -1,0 +1,53 @@
+
+/tmp/tmp9mmh2ve2/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002a998 <.data+0x2a998>:
+0002a998: 364100   entry        a1, 0x20 ; Capstone
+   2a99b:	821201        	l16ui	a8, a2, 2
+   2a99e:	321200        	l16ui	a3, a2, 0
+   2a9a1:	168806        	beqz	a8, 0x2aa0d
+   2a9a4:	ad03      	mov.n	a10, a3
+0002a9a6: 255b09   call8        . +0x95b4 ; Capstone ; target=0x33f58
+   2a9a9:	160a06        	beqz	a10, 0x2aa0d
+   2a9ac:	e196a1        	l32r	a14, 0x13004 (0xfffff)
+   2a9af:	81fda4        	l32r	a8, 0x13da4 (0x9000790)
+   2a9b2:	30d094        	extui	a13, a3, 0, 10
+   2a9b5:	40dd11        	slli	a13, a13, 12
+   2a9b8:	f2dd08        	addmi	a15, a13, 0x800
+   2a9bb:	f2cf90        	addi	a15, a15, -112
+   2a9be:	8add      	add.n	a13, a13, a8
+   2a9c0:	e0dd10        	and	a13, a13, a14
+   2a9c3:	f0f4b5        	extui	a15, a15, 20, 12
+   2a9c6:	e18ea1        	l32r	a14, 0x13000 (0x1000000)
+   2a9c9:	c0ff01        	slli	a15, a15, 20
+   2a9cc:	fadd      	add.n	a13, a13, a15
+   2a9ce:	eadd      	add.n	a13, a13, a14
+   2a9d0:	c02000        	memw
+   2a9d3:	d80d      	l32i.n	a13, a13, 0
+   2a9d5:	c21201        	l16ui	a12, a2, 2
+   2a9d8:	0c0a      	movi.n	a10, 0
+   2a9da:	0c09      	movi.n	a9, 0
+   2a9dc:	0c3b      	movi.n	a11, 3
+   2a9de:	0c08      	movi.n	a8, 0
+   2a9e0:	1c0e      	movi.n	a14, 16
+0002a9e2: 76ae15   loopgtz      a14, . +0x19 ; Capstone
+   2a9e5:	000940        	ssr	a9
+   2a9e8:	1b99      	addi.n	a9, a9, 1
+   2a9ea:	c0e0b1        	sra	a14, a12
+   2a9ed:	076e08        	bbci	a14, 0, 0x2a9f9
+   2a9f0:	000a40        	ssr	a10
+   2a9f3:	d0f091        	srl	a15, a13
+   2a9f6:	f0bb10        	and	a11, a11, a15
+   2a9f9:	2baa      	addi.n	a10, a10, 2
+   2a9fb:	0c19      	movi.n	a9, 1
+   2a9fd:	0c2a      	movi.n	a10, 2
+   2a9ff:	a0ab10        	and	a10, a11, a10
+   2aa02:	a08983        	moveqz	a8, a9, a10
+   2aa05:	824207        	s8i	a8, a2, 7
+   2aa08:	824206        	s8i	a8, a2, 6
+0002aa0b: 1df0     retw.n        ; Capstone
+0002aa0d: 1df0     retw.n        ; Capstone
+	...

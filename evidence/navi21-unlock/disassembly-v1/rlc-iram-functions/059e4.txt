@@ -1,0 +1,39 @@
+
+/tmp/tmpym09g159/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000059e4 <.data+0x59e4>:
+000059e4: 36a100   entry        a1, 0x50 ; Capstone
+    59e7:	812ede        	l32r	a8, 0xffffd2a0 (0x6803ae00) ; inferred DRAM map 0x5ffec000
+    59ea:	0c2b      	movi.n	a11, 2
+    59ec:	20a004        	extui	a10, a2, 0, 1
+    59ef:	30d0c4        	extui	a13, a3, 0, 13
+    59f2:	d0dd11        	slli	a13, a13, 3
+    59f5:	d0aa20        	or	a10, a10, a13
+    59f8:	b0aa20        	or	a10, a10, a11
+    59fb:	4268de        	s32i	a4, a8, 0x378
+    59fe:	6268e0        	s32i	a6, a8, 0x380
+    5a01:	a26100        	s32i	a10, a1, 0
+    5a04:	524102        	s8i	a5, a1, 2
+    5a07:	9801      	l32i.n	a9, a1, 0
+    5a09:	9268df        	s32i	a9, a8, 0x37c
+    5a0c:	20ea03        	rsr.ccount	a2
+    5a0f:	70ea03        	rsr.ccount	a7
+    5a12:	2077c0        	sub	a7, a7, a2
+    5a15:	f6d708        	bgeui	a7, 64, 0x5a21
+    5a18:	e0ea03        	rsr.ccount	a14
+    5a1b:	20eec0        	sub	a14, a14, a2
+    5a1e:	b6def6        	bltui	a14, 64, 0x5a18
+    5a21:	f228e1        	l32i	a15, a8, 0x384
+    5a24:	3df0      	nop.n
+    5a26:	567fff        	bnez	a15, 0x5a21
+    5a29:	20ea03        	rsr.ccount	a2
+    5a2c:	70ea03        	rsr.ccount	a7
+    5a2f:	2077c0        	sub	a7, a7, a2
+    5a32:	f6d708        	bgeui	a7, 64, 0x5a3e
+    5a35:	80ea03        	rsr.ccount	a8
+    5a38:	2088c0        	sub	a8, a8, a2
+    5a3b:	b6d8f6        	bltui	a8, 64, 0x5a35
+00005a3e: 1df0     retw.n        ; Capstone

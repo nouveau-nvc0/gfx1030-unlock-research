@@ -1,0 +1,14 @@
+
+/tmp/tmp8h_05dig/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001ed34 <.data+0x1ed34>:
+0001ed34: 364100   entry        a1, 0x20 ; Capstone
+   1ed37:	221203        	l16ui	a2, a2, 6
+   1ed3a:	000340        	ssr	a3
+   1ed3d:	2020b1        	sra	a2, a2
+   1ed40:	202004        	extui	a2, a2, 0, 1
+0001ed43: 1df0     retw.n        ; Capstone
+   1ed45:	000000        	ill

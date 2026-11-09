@@ -1,0 +1,72 @@
+{
+  "source": "evidence/navi21-unlock/sources/amdgpu_psp.c.v6.12",
+  "source_sha256": "1e73faa87fc8fe3456a054973bc87265fc3c7827904189563f6825b42362ee25",
+  "checked_regions": {
+    "mp0_11_0_7_configuration": {
+      "first_line": 162,
+      "last_line": 200,
+      "sha256": "31b4abca1fb6c242d0263b6ba2a01fb998f34e18b66cda300253f033204f08f5"
+    },
+    "toc_size_return": {
+      "first_line": 798,
+      "last_line": 816,
+      "sha256": "e1abd92c118b47993a941157584d30dff9a566fa788007a7eee66ea1f1742da3"
+    },
+    "allocation": {
+      "first_line": 819,
+      "last_line": 860,
+      "sha256": "38e1b0c72e3075449743e5ece9b22e4783ad4ff9b6a839f8a0847948399b632b"
+    },
+    "setup_command": {
+      "first_line": 762,
+      "last_line": 785,
+      "sha256": "22f279e488ddebfa969a95e2186a536a23c496ab59ec8a5e0adcfa4ffcdf3bdd"
+    },
+    "source_command": {
+      "first_line": 2663,
+      "last_line": 2680,
+      "sha256": "673fd908f68e866cd30fa5c6f28facd363e204f8256a8aacdacc219e4b850490"
+    },
+    "returned_destination": {
+      "first_line": 737,
+      "last_line": 740,
+      "sha256": "b3a661253c85f2c3923b478566abe21b4c8dcc3aa8e72e24770a422b8364913f"
+    },
+    "autoload_trigger": {
+      "first_line": 2856,
+      "last_line": 2865,
+      "sha256": "2c78189ad43058177954b0a7b8e8fcba3472923a8a7f17b70d61bab8002bc1ff"
+    },
+    "autoload_command": {
+      "first_line": 3176,
+      "last_line": 3190,
+      "sha256": "17ca3cc5fd181d8135e99ad3d9beda24ea6707840542207eda9c246f6879f078"
+    }
+  },
+  "conditional_model": {
+    "assumptions": [
+      "retained Linuxv6.12 source path",
+      "MP0 11.0.7",
+      "ordinary device rather than VF",
+      "VRAM present",
+      "successful allocation and command completion"
+    ],
+    "facts": [
+      "autoload enabled and boot_time_tmr false in this branch",
+      "TOC can determine requested allocation size",
+      "driver allocates VRAM and stores GPU address; CPU mapping output is NULL",
+      "LOAD_IP_FW names source bytes and type",
+      "response supplies a separate per-firmware destination address",
+      "AUTOLOAD_RLC command builder supplies no new destination address"
+    ]
+  },
+  "not_established": [
+    "active driver load mode or actual addresses",
+    "relationship between returned firmware address, allocation base and RLC HYP_BOOTLOAD base",
+    "snapshot ID27 ownership within the allocation",
+    "CPU access behavior merely from lack of a mapped pointer",
+    "a producer of changed saved CC values"
+  ],
+  "next_code_edge": "PSP placement/initialization that connects per-firmware destination or allocation base to HYP_BOOTLOAD_ADDR. Do not treat staging buffer as live RLC snapshot.",
+  "scope": "Offline source analysis. No driver, memory, register or firmware changes."
+}

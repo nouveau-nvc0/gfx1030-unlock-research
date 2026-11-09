@@ -1,0 +1,30 @@
+
+/tmp/tmpovncy4b5/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002ac3c <.data+0x2ac3c>:
+0002ac3c: 364100   entry        a1, 0x20 ; Capstone
+   2ac3f:	eca2      	bnez.n	a2, 0x2ac6d
+   2ac41:	0c8a      	movi.n	a10, 8
+0002ac43: e593d7   call8        . -0x286c0 ; Capstone ; target=0x2580
+0002ac46: 65e107   call8        . +0x7e18 ; Capstone ; target=0x32a5c
+   2ac49:	9cba      	beqz.n	a10, 0x2ac68
+   2ac4b:	0c0a      	movi.n	a10, 0
+   2ac4d:	0c0b      	movi.n	a11, 0
+   2ac4f:	0c0c      	movi.n	a12, 0
+0002ac51: 250200   call8        . +0x24 ; Capstone ; target=0x2ac74
+   2ac54:	9c0a      	beqz.n	a10, 0x2ac68
+   2ac56:	0c0c      	movi.n	a12, 0
+   2ac58:	0cbb      	movi.n	a11, 11
+   2ac5a:	d19aa0        	l32r	a13, 0x12ec4 (0x300fe00)
+   2ac5d:	1c0a      	movi.n	a10, 16
+   2ac5f:	c02000        	memw
+   2ac62:	d22d8a        	l32i	a13, a13, 0x228
+0002ac65: 659ad7   call8        . -0x28658 ; Capstone ; target=0x260c
+   2ac68:	0c8a      	movi.n	a10, 8
+0002ac6a: a580d7   call8        . -0x287f4 ; Capstone ; target=0x2474
+   2ac6d:	0c12      	movi.n	a2, 1
+0002ac6f: 1df0     retw.n        ; Capstone
+   2ac71:	000000        	ill

@@ -1,0 +1,27 @@
+
+/tmp/tmptio4p2mb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00023034 <.data+0x23034>:
+00023034: 364100   entry        a1, 0x20 ; Capstone
+   23037:	0c02      	movi.n	a2, 0
+   23039:	31a5c1        	l32r	a3, 0x136d0 (0xba00)
+   2303c:	ad02      	mov.n	a10, a2
+0002303e: a58e0b   call8        . +0xb8ec ; Capstone ; target=0x2e928
+00023041: 530a03   lsi          f5, a10, 0xc ; Capstone
+   23044:	91b0bf        	l32r	a9, 0x12f04 (0x1176c)
+   23047:	30a2a0        	addx4	a10, a2, a3
+   2304a:	1b22      	addi.n	a2, a2, 1
+0002304c: 630917   lsi          f6, a9, 0x5c ; Capstone
+0002304f: 60350a   add.s        f3, f5, f6 ; Capstone
+   23052:	202074        	extui	a2, a2, 0, 8
+00023055: 430900   lsi          f4, a9, 0 ; Capstone
+00023058: 0024fa   mov.s        f2, f4 ; Capstone
+0002305b: 40034b   olt.s        b0, f3, f4 ; Capstone
+0002305e: 0023db   movt.s       f2, f3, b0 ; Capstone
+00023061: 234a00   ssi          f2, a10, 0 ; Capstone
+   23064:	6692d4        	bnei	a2, 10, 0x2303c
+00023067: 1df0     retw.n        ; Capstone
+   23069:	000000        	ill

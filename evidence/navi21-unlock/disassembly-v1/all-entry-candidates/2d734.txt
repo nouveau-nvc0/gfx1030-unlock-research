@@ -1,0 +1,22 @@
+
+/tmp/tmp_yq01gcb/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002d734 <.data+0x2d734>:
+0002d734: 364100   entry        a1, 0x20 ; Capstone
+0002d737: a51200   call8        . +0x12c ; Capstone ; target=0x2d860
+   2d73a:	b2a100        	movi	a11, 0x100
+   2d73d:	80a211        	slli	a10, a2, 8
+   2d740:	91bc95        	l32r	a9, 0x12e30 (0x1259e00)
+   2d743:	b0aa10        	and	a10, a10, a11
+   2d746:	b2aeff        	movi	a11, 0xfffffeff
+   2d749:	c02000        	memw
+   2d74c:	822987        	l32i	a8, a9, 0x21c
+   2d74f:	b08810        	and	a8, a8, a11
+   2d752:	a08820        	or	a8, a8, a10
+   2d755:	c02000        	memw
+   2d758:	826987        	s32i	a8, a9, 0x21c
+0002d75b: 1df0     retw.n        ; Capstone
+   2d75d:	000000        	ill

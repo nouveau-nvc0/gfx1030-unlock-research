@@ -1,0 +1,13 @@
+
+/tmp/tmpxo05qu6_/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00008e08 <.data+0x8e08>:
+00008e08: 364100   entry        a1, 0x20 ; Capstone
+    8e0b:	312bd2        	l32r	a3, 0xffffd6b8 (0x5ffee654) ; inferred DRAM map 0x5ffec000
+    8e0e:	0c12      	movi.n	a2, 1
+    8e10:	224300        	s8i	a2, a3, 0
+00008e13: 1df0     retw.n        ; Capstone
+    8e15:	000000        	ill

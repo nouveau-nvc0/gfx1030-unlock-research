@@ -1,0 +1,183 @@
+{
+  "archive": "/workspace/gfx1030-unlock-research/inputs/research/umr-058a7045-source.tar.gz",
+  "archive_sha256": "7be2d26ba6a8ec5c32c3c08c19566465b499d39741ac278aae83eb7d5bec1dca",
+  "reports": {
+    "database/ip/gc_10_3_0.reg": {
+      "sha256": "3c85b71d45186a2f0a8336239d8c31117b057d2eff927c4544b89b1bd047a2a9",
+      "entries": [
+        {
+          "name": "mmRLC_SRM_DRAM_ADDR",
+          "offset": "0x5b71",
+          "fields": [
+            "ADDR 0 11",
+            "RESERVED 12 31"
+          ]
+        },
+        {
+          "name": "mmRLC_SRM_DRAM_DATA",
+          "offset": "0x5b72",
+          "fields": [
+            "DATA 0 31"
+          ]
+        }
+      ]
+    },
+    "database/ip/gc_11_0_0.reg": {
+      "sha256": "2e7dd03278d455dd769b40fa497e5a811b39ef7fecda3fa32713312159f22094",
+      "entries": [
+        {
+          "name": "regRLC_LX6_DRAM_ADDR",
+          "offset": "0x5b68",
+          "fields": [
+            "ADDR 0 10"
+          ]
+        },
+        {
+          "name": "regRLC_LX6_DRAM_DATA",
+          "offset": "0x5b69",
+          "fields": [
+            "DATA 0 31"
+          ]
+        }
+      ]
+    },
+    "database/ip/gc_11_0_3.reg": {
+      "sha256": "2fd3c9e4e50e1351df84b3590baa1e70ec3b412abe1f211330eab69306d8d3c7",
+      "entries": [
+        {
+          "name": "regRLC_LX6_DRAM_ADDR",
+          "offset": "0x5b68",
+          "fields": [
+            "ADDR 0 10"
+          ]
+        },
+        {
+          "name": "regRLC_LX6_DRAM_DATA",
+          "offset": "0x5b69",
+          "fields": [
+            "DATA 0 31"
+          ]
+        }
+      ]
+    },
+    "database/ip/gc_11_5_0.reg": {
+      "sha256": "dd3e10d22fe8fea13d12718885f12b5d521a46ac6ef7138e97e466bfa099ebc6",
+      "entries": [
+        {
+          "name": "regRLC_LX6_DRAM_ADDR",
+          "offset": "0x5b68",
+          "fields": [
+            "ADDR 0 10"
+          ]
+        },
+        {
+          "name": "regRLC_LX6_DRAM_DATA",
+          "offset": "0x5b69",
+          "fields": [
+            "DATA 0 31"
+          ]
+        }
+      ]
+    },
+    "database/ip/gc_12_0_0.reg": {
+      "sha256": "7de297fd569d4397d118cc3e0445a06378eb4de99a8941bcda1abf790fe26353",
+      "entries": [
+        {
+          "name": "regRLC_LX6_DRAM_ADDR",
+          "offset": "0x5b68",
+          "fields": [
+            "ADDR 0 10"
+          ]
+        },
+        {
+          "name": "regRLC_LX6_DRAM_DATA",
+          "offset": "0x5b69",
+          "fields": [
+            "DATA 0 31"
+          ]
+        }
+      ]
+    },
+    "database/ip/gc_12_1_0.reg": {
+      "sha256": "5a9cfa743c1c247e387ad32435a785d52a14480d41f22e611a1f7d133dd647e3",
+      "entries": [
+        {
+          "name": "regRLC_LX6_DRAM_ADDR",
+          "offset": "0x5b68",
+          "fields": [
+            "ADDR 0 10"
+          ]
+        },
+        {
+          "name": "regRLC_LX6_DRAM_DATA",
+          "offset": "0x5b69",
+          "fields": [
+            "DATA 0 31"
+          ]
+        }
+      ]
+    },
+    "database/ip/gc_9_4_2.reg": {
+      "sha256": "fe1e2e25823e4ec4efddaf302623e84a9770c66e4262691c149aa8843d90f524",
+      "entries": [
+        {
+          "name": "regRLC_GPU_IOV_SDMA3_STATUS",
+          "offset": "0x5b55",
+          "fields": [
+            "PREEMPTED 0 0",
+            "RESERVED 1 7",
+            "SAVED 8 8",
+            "RESERVED1 9 11",
+            "RESTORED 12 12",
+            "RESERVED2 13 31"
+          ]
+        },
+        {
+          "name": "regRLC_GPU_IOV_SDMA4_STATUS",
+          "offset": "0x5b56",
+          "fields": [
+            "PREEMPTED 0 0",
+            "RESERVED 1 7",
+            "SAVED 8 8",
+            "RESERVED1 9 11",
+            "RESTORED 12 12",
+            "RESERVED2 13 31"
+          ]
+        }
+      ]
+    },
+    "database/ip/gc_9_4_3.reg": {
+      "sha256": "def88a812b3230084bc5e2480546c5a15335eebbb674a8729b98375fb927e573",
+      "entries": [
+        {
+          "name": "regRLC_GPU_IOV_SDMA3_STATUS",
+          "offset": "0x5b55",
+          "fields": [
+            "PREEMPTED 0 0",
+            "RESERVED 1 7",
+            "SAVED 8 8",
+            "RESERVED1 9 11",
+            "RESTORED 12 12",
+            "RESERVED2 13 31"
+          ]
+        },
+        {
+          "name": "regRLC_GPU_IOV_SDMA4_STATUS",
+          "offset": "0x5b56",
+          "fields": [
+            "PREEMPTED 0 0",
+            "RESERVED 1 7",
+            "SAVED 8 8",
+            "RESERVED1 9 11",
+            "RESTORED 12 12",
+            "RESERVED2 13 31"
+          ]
+        }
+      ]
+    }
+  },
+  "conclusion": "No Navi21 register-name or index-width confirmation for TOC ports fb55/fb56. Published SRM ports are a different pair. GC11 LX6 names and widths cannot be transferred to GC10.3.",
+  "index_limit": "GC11 ADDR field has 11 bits. Treating it as a DWORD index covers 8192 bytes, whereas Sienna TOC DRAM size is 16384 bytes. This does not establish either actual index unit; it prevents borrowing the GC11 field definition without further evidence.",
+  "next_dependency": "Resolve port/index semantics from Sienna code or a matching primary register description. SMU regional alias still requires separate evidence.",
+  "scope": "Offline database comparison only; no hardware transactions."
+}

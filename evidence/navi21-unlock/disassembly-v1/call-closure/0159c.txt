@@ -1,0 +1,28 @@
+
+/tmp/tmpfptl8gb0/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000159c <.data+0x159c>:
+0000159c: 364100   entry        a1, 0x20 ; Capstone
+    159f:	ad02      	mov.n	a10, a2
+    15a1:	0c1b      	movi.n	a11, 1
+000015a3: a5af00   call8        . +0xafc ; Capstone ; target=0x209c
+    15a6:	0cea      	movi.n	a10, 14
+000015a8: a51700   call8        . +0x17c ; Capstone ; target=0x1724
+    15ab:	0c09      	movi.n	a9, 0
+    15ad:	b177fd        	l32r	a11, 0xb8c (0x31ffe00)
+    15b0:	a18afd        	l32r	a10, 0xbd8 (0x69a0)
+    15b3:	c02000        	memw
+    15b6:	926bd5        	s32i	a9, a11, 0x354
+    15b9:	820a80        	l8ui	a8, a10, 128
+    15bc:	0c1c      	movi.n	a12, 1
+    15be:	cc78      	bnez.n	a8, 0x15c9
+    15c0:	ad02      	mov.n	a10, a2
+    15c2:	0c1b      	movi.n	a11, 1
+000015c4: 258700   call8        . +0x874 ; Capstone ; target=0x1e38
+000015c7: 1df0     retw.n        ; Capstone
+    15c9:	c24a81        	s8i	a12, a10, 129
+000015cc: 1df0     retw.n        ; Capstone
+	...

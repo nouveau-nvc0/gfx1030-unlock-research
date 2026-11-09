@@ -1,0 +1,80 @@
+; Separate interrupt entry; bytes checked against pinned IRAM.
+    9874:	5971      	s32i.n	a5, a1, 28
+    9876:	21becf        	l32r	a2, 0xffffd770 (0x50021) ; inferred DRAM map 0x5ffec000
+    9879:	30b103        	rsr.epc1	a3
+    987c:	20e661        	xsr.ps	a2
+    987f:	3901      	s32i.n	a3, a1, 0
+    9881:	2911      	s32i.n	a2, a1, 4
+    9883:	12c160        	addi	a1, a1, 96
+    9886:	102000        	rsync
+    9889:	418cce        	l32r	a4, 0xffffd2bc (0xc0000000) ; inferred DRAM map 0x5ffec000
+    988c:	303420        	or	a3, a4, a3
+    988f:	304490        	addx2	a4, a4, a3
+00009892: 36c100   entry        a1, 0x60 ; Capstone
+    9895:	e123cf        	l32r	a14, 0xffffd524 (0x5ffed7d8) ; inferred DRAM map 0x5ffec000
+    9898:	f0e203        	rsr.interrupt	a15
+    989b:	c0e403        	rsr.intenable	a12
+    989e:	d81e      	l32i.n	a13, a14, 4
+    98a0:	c0ff10        	and	a15, a15, a12
+    98a3:	c00303        	rsr.sar	a12
+    98a6:	d931      	s32i.n	a13, a1, 12
+    98a8:	160f06        	beqz	a15, 0x990c
+    98ab:	c921      	s32i.n	a12, a1, 8
+    98ad:	2981      	s32i.n	a2, a1, 32
+    98af:	7cf2      	movi.n	a2, -1
+    98b1:	c0ff40        	nsau	a12, a15
+    98b4:	f12acf        	l32r	a15, 0xffffd55c (0x80000000) ; inferred DRAM map 0x5ffec000
+    98b7:	000c40        	ssr	a12
+    98ba:	f0f091        	srl	a15, a15
+    98bd:	f02230        	xor	a2, a2, a15
+    98c0:	d1adcf        	l32r	a13, 0xffffd774 (0x5ffed720) ; inferred DRAM map 0x5ffec000
+    98c3:	f0e313        	wsr.intclear	a15
+    98c6:	d0ccb0        	addx8	a12, a12, a13
+    98c9:	d22c10        	l32i	a13, a12, 64
+    98cc:	f06300        	rsil	a15, 3
+    98cf:	f80e      	l32i.n	a15, a14, 0
+    98d1:	d91e      	s32i.n	a13, a14, 4
+    98d3:	d0ff10        	and	a15, a15, a13
+    98d6:	f0e413        	wsr.intenable	a15
+    98d9:	102000        	rsync
+    98dc:	f06000        	rsil	a15, 0
+    98df:	d80c      	l32i.n	a13, a12, 0
+    98e1:	fd01      	mov.n	a15, a1
+    98e3:	e81c      	l32i.n	a14, a12, 4
+000098e5: f00d00   callx12      a13 ; Capstone
+    98e8:	e10fcf        	l32r	a14, 0xffffd524 (0x5ffed7d8) ; inferred DRAM map 0x5ffec000
+    98eb:	f0e203        	rsr.interrupt	a15
+    98ee:	d06300        	rsil	a13, 3
+    98f1:	d80e      	l32i.n	a13, a14, 0
+    98f3:	c831      	l32i.n	a12, a1, 12
+    98f5:	c0dd10        	and	a13, a13, a12
+    98f8:	d0ff10        	and	a15, a15, a13
+    98fb:	561f02        	bnez	a15, 0x9920
+    98fe:	2881      	l32i.n	a2, a1, 32
+    9900:	c26e01        	s32i	a12, a14, 4
+    9903:	c22102        	l32i	a12, a1, 8
+    9906:	d0e413        	wsr.intenable	a13
+    9909:	d06100        	rsil	a13, 1
+    990c:	019bcf        	l32r	a0, 0xffffd778 (0x5fffa380) ; inferred DRAM map 0x5ffec000
+    990f:	d16bce        	l32r	a13, 0xffffd2bc (0xc0000000) ; inferred DRAM map 0x5ffec000
+    9912:	c00313        	wsr.sar	a12
+    9915:	d00020        	or	a0, a0, a13
+    9918:	000d90        	addx2	a0, a13, a0
+    991b:	d06100        	rsil	a13, 1
+0000991e: 1df0     retw.n        ; Capstone
+    9920:	d0ff40        	nsau	a13, a15
+    9923:	c194cf        	l32r	a12, 0xffffd774 (0x5ffed720) ; inferred DRAM map 0x5ffec000
+    9926:	c0cdb0        	addx8	a12, a13, a12
+    9929:	e22c11        	l32i	a14, a12, 68
+    992c:	20ff10        	and	a15, a15, a2
+    992f:	e0ff10        	and	a15, a15, a14
+    9932:	e1fcce        	l32r	a14, 0xffffd524 (0x5ffed7d8) ; inferred DRAM map 0x5ffec000
+    9935:	568ff7        	bnez	a15, 0x98b1
+    9938:	f109cf        	l32r	a15, 0xffffd55c (0x80000000) ; inferred DRAM map 0x5ffec000
+    993b:	000d40        	ssr	a13
+    993e:	f0d091        	srl	a13, a15
+    9941:	f22c11        	l32i	a15, a12, 68
+    9944:	d0e313        	wsr.intclear	a13
+    9947:	f02220        	or	a2, a2, a15
+    994a:	d02230        	xor	a2, a2, a13
+    994d:	06deff        	j	0x98c9

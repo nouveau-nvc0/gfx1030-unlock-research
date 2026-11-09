@@ -1,0 +1,81 @@
+{
+  "header_sha256": "abd09080e4b06fd2d3e14145e5ceafa580a1987da59f076d2598e8753957b614",
+  "scan_sha256": "3140e13a421d08408f422fefc42494938de32159156be3758a77264516abc1a4",
+  "gc_segment1_dword_base": "0xa000",
+  "ports": [
+    {
+      "name": "RLC_GPM_IRAM_ADDR",
+      "offset": "0x3ed7c",
+      "candidate_addresses": [
+        "0x3ed7c",
+        "0x123ed7c",
+        "0x6003ed7c"
+      ]
+    },
+    {
+      "name": "RLC_GPM_IRAM_DATA",
+      "offset": "0x3ed80",
+      "candidate_addresses": [
+        "0x3ed80",
+        "0x123ed80",
+        "0x6003ed80"
+      ]
+    },
+    {
+      "name": "RLC_SRM_DRAM_ADDR",
+      "offset": "0x3edc4",
+      "candidate_addresses": [
+        "0x3edc4",
+        "0x123edc4",
+        "0x6003edc4"
+      ]
+    },
+    {
+      "name": "RLC_SRM_DRAM_DATA",
+      "offset": "0x3edc8",
+      "candidate_addresses": [
+        "0x3edc8",
+        "0x123edc8",
+        "0x6003edc8"
+      ]
+    },
+    {
+      "name": "RLC_SRM_ARAM_ADDR",
+      "offset": "0x3edcc",
+      "candidate_addresses": [
+        "0x3edcc",
+        "0x123edcc",
+        "0x6003edcc"
+      ]
+    },
+    {
+      "name": "RLC_SRM_ARAM_DATA",
+      "offset": "0x3edd0",
+      "candidate_addresses": [
+        "0x3edd0",
+        "0x123edd0",
+        "0x6003edd0"
+      ]
+    },
+    {
+      "name": "RLC_GPM_SCRATCH_ADDR",
+      "offset": "0x3edd4",
+      "candidate_addresses": [
+        "0x3edd4",
+        "0x123edd4",
+        "0x6003edd4"
+      ]
+    },
+    {
+      "name": "RLC_GPM_SCRATCH_DATA",
+      "offset": "0x3edd8",
+      "candidate_addresses": [
+        "0x3edd8",
+        "0x123edd8",
+        "0x6003edd8"
+      ]
+    }
+  ],
+  "fixed_store_hits": [],
+  "scope": "Fixed-address store locator in existing SMU scan; candidate alias mapping only. Unknown addresses, runtime window mappings, engine transfers and actual RLC LX6 RAM identity are not resolved."
+}

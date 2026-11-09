@@ -1,0 +1,57 @@
+
+/tmp/tmppp6vht0u/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00002580 <.data+0x2580>:
+00002580: 364100   entry        a1, 0x20 ; Capstone
+    2583:	31d4f9        	l32r	a3, 0xcd4 (0x7b28)
+    2586:	406200        	rsil	a4, 2
+    2589:	c2237a        	l32i	a12, a3, 0x1e8
+    258c:	a8bc      	l32i.n	a10, a12, 44
+    258e:	a70211        	bnone	a2, a10, 0x25a3
+    2591:	cd02      	mov.n	a12, a2
+    2593:	0c3b      	movi.n	a11, 3
+    2595:	d174f9        	l32r	a13, 0xb68 (0x300fe00)
+    2598:	0c1a      	movi.n	a10, 1
+    259a:	c02000        	memw
+    259d:	d22d8a        	l32i	a13, a13, 0x228
+000025a0: a50600   call8        . +0x6c ; Capstone ; target=0x260c
+    25a3:	20ea20        	or	a14, a10, a2
+    25a6:	e9bc      	s32i.n	a14, a12, 44
+    25a8:	a22384        	l32i	a10, a3, 0x210
+    25ab:	278a0a        	bany	a10, a2, 0x25b9
+    25ae:	20fa20        	or	a15, a10, a2
+    25b1:	f26384        	s32i	a15, a3, 0x210
+    25b4:	40e613        	wsr.ps	a4
+000025b7: 1df0     retw.n        ; Capstone
+    25b9:	a2237a        	l32i	a10, a3, 0x1e8
+    25bc:	0c2b      	movi.n	a11, 2
+000025be: 65cfff   call8        . -0x308 ; Capstone ; target=0x22b4
+    25c1:	0c0a      	movi.n	a10, 0
+    25c3:	92237a        	l32i	a9, a3, 0x1e8
+    25c6:	d175f9        	l32r	a13, 0xb9c (0x7b1c)
+    25c9:	0c58      	movi.n	a8, 5
+    25cb:	29c9      	s32i.n	a2, a9, 48
+000025cd: 76a827   loopgtz      a8, . +0x2b ; Capstone
+    25d0:	d0baa0        	addx4	a11, a10, a13
+    25d3:	b22b7f        	l32i	a11, a11, 0x1fc
+    25d6:	1baa      	addi.n	a10, a10, 1
+    25d8:	a0a074        	extui	a10, a10, 0, 8
+    25db:	c20b28        	l8ui	a12, a11, 40
+    25de:	f8bb      	l32i.n	a15, a11, 44
+    25e0:	820b29        	l8ui	a8, a11, 41
+    25e3:	8cfc      	beqz.n	a12, 0x25f6
+    25e5:	c2237a        	l32i	a12, a3, 0x1e8
+    25e8:	e8bc      	l32i.n	a14, a12, 44
+    25ea:	c20c29        	l8ui	a12, a12, 41
+    25ed:	f70e05        	bnone	a14, a15, 0x25f6
+    25f0:	87bc02        	bgeu	a12, a8, 0x25f6
+    25f3:	c24b29        	s8i	a12, a11, 41
+    25f6:	3df0      	nop.n
+    25f8:	40e613        	wsr.ps	a4
+000025fb: 00f513   wsr.misc1    a0 ; verified QEMU encoding
+    25fe:	055b00        	call0	0x2bb0
+00002601: 1df0     retw.n        ; Capstone
+	...

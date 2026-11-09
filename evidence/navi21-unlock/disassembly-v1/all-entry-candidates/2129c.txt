@@ -1,0 +1,89 @@
+
+/tmp/tmpx3y0n8di/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0002129c <.data+0x2129c>:
+0002129c: 364100   entry        a1, 0x20 ; Capstone
+   2129f:	e20208        	l8ui	a14, a2, 8
+   212a2:	f2020e        	l8ui	a15, a2, 14
+   212a5:	420206        	l8ui	a4, a2, 6
+   212a8:	52020c        	l8ui	a5, a2, 12
+   212ab:	b191c8        	l32r	a11, 0x134f0 (0x3a2ec33e)
+   212ae:	d18ec8        	l32r	a13, 0x134e8 (0x41000000)
+   212b1:	a18dc7        	l32r	a10, 0x130e8 (0x3a83126f)
+   212b4:	c18ec8        	l32r	a12, 0x134ec (0x42200000)
+000212b7: 50adfa   wfr          f10, a13 ; Capstone
+   212ba:	804411        	slli	a4, a4, 8
+   212bd:	805511        	slli	a5, a5, 8
+000212c0: 508cfa   wfr          f8, a12 ; Capstone
+   212c3:	50ff20        	or	a15, a15, a5
+   212c6:	40ee20        	or	a14, a14, a4
+   212c9:	e0e3c4        	extui	a14, a14, 3, 13
+   212cc:	f0f3c4        	extui	a15, a15, 3, 13
+000212cf: 00bfda   ufloat.s     f11, a15, 0 ; Capstone
+000212d2: 00ceda   ufloat.s     f12, a14, 0 ; Capstone
+000212d5: a09b2a   mul.s        f9, f11, f10 ; Capstone
+000212d8: 807c2a   mul.s        f7, f12, f8 ; Capstone
+000212db: 500bfa   wfr          f0, a11 ; Capstone
+000212de: 506afa   wfr          f6, a10 ; Capstone
+000212e1: 60492a   mul.s        f4, f9, f6 ; Capstone
+000212e4: 00572a   mul.s        f5, f7, f0 ; Capstone
+   212e7:	8813      	l32i.n	a8, a3, 4
+   212e9:	9803      	l32i.n	a9, a3, 0
+000212eb: 40352a   mul.s        f3, f5, f4 ; Capstone
+   212ee:	7823      	l32i.n	a7, a3, 8
+000212f0: 534900   ssi          f5, a9, 0 ; Capstone
+000212f3: 434800   ssi          f4, a8, 0 ; Capstone
+000212f6: 334700   ssi          f3, a7, 0 ; Capstone
+   212f9:	420214        	l8ui	a4, a2, 20
+   212fc:	620212        	l8ui	a6, a2, 18
+   212ff:	520218        	l8ui	a5, a2, 24
+   21302:	f2021a        	l8ui	a15, a2, 26
+   21305:	806611        	slli	a6, a6, 8
+   21308:	805511        	slli	a5, a5, 8
+   2130b:	50ff20        	or	a15, a15, a5
+   2130e:	604420        	or	a4, a4, a6
+   21311:	4043c4        	extui	a4, a4, 3, 13
+   21314:	f0f3c4        	extui	a15, a15, 3, 13
+00021317: 001fda   ufloat.s     f1, a15, 0 ; Capstone
+0002131a: 0024da   ufloat.s     f2, a4, 0 ; Capstone
+0002131d: a0e12a   mul.s        f14, f1, f10 ; Capstone
+00021320: 80f22a   mul.s        f15, f2, f8 ; Capstone
+00021323: 60ce2a   mul.s        f12, f14, f6 ; Capstone
+00021326: 00df2a   mul.s        f13, f15, f0 ; Capstone
+   21329:	d843      	l32i.n	a13, a3, 16
+   2132b:	c853      	l32i.n	a12, a3, 20
+   2132d:	e833      	l32i.n	a14, a3, 12
+0002132f: c0bd2a   mul.s        f11, f13, f12 ; Capstone
+   21332:	7170c8        	l32r	a7, 0x134f4 (0x39aec33e)
+00021335: d34e00   ssi          f13, a14, 0 ; Capstone
+00021338: c34d00   ssi          f12, a13, 0 ; Capstone
+0002133b: b34c00   ssi          f11, a12, 0 ; Capstone
+   2133e:	820220        	l8ui	a8, a2, 32
+   21341:	92021e        	l8ui	a9, a2, 30
+   21344:	b20224        	l8ui	a11, a2, 36
+   21347:	a20226        	l8ui	a10, a2, 38
+   2134a:	809911        	slli	a9, a9, 8
+   2134d:	80bb11        	slli	a11, a11, 8
+   21350:	b0aa20        	or	a10, a10, a11
+   21353:	908820        	or	a8, a8, a9
+   21356:	8083c4        	extui	a8, a8, 3, 13
+   21359:	a0a3c4        	extui	a10, a10, 3, 13
+0002135c: 009ada   ufloat.s     f9, a10, 0 ; Capstone
+0002135f: 0078da   ufloat.s     f7, a8, 0 ; Capstone
+00021362: a0592a   mul.s        f5, f9, f10 ; Capstone
+00021365: 80372a   mul.s        f3, f7, f8 ; Capstone
+00021368: 5047fa   wfr          f4, a7 ; Capstone
+0002136b: 60152a   mul.s        f1, f5, f6 ; Capstone
+0002136e: 40232a   mul.s        f2, f3, f4 ; Capstone
+   21371:	5873      	l32i.n	a5, a3, 28
+   21373:	6863      	l32i.n	a6, a3, 24
+00021375: 10022a   mul.s        f0, f2, f1 ; Capstone
+   21378:	4883      	l32i.n	a4, a3, 32
+0002137a: 234600   ssi          f2, a6, 0 ; Capstone
+0002137d: 134500   ssi          f1, a5, 0 ; Capstone
+00021380: 034400   ssi          f0, a4, 0 ; Capstone
+00021383: 1df0     retw.n        ; Capstone
+   21385:	000000        	ill

@@ -1,0 +1,38 @@
+
+/tmp/tmpvusyjhlc/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00024984 <.data+0x24984>:
+00024984: 364100   entry        a1, 0x20 ; Capstone
+   24987:	5187bb        	l32r	a5, 0x137a4 (0xef6c)
+   2498a:	92057f        	l8ui	a9, a5, 127
+   2498d:	82057e        	l8ui	a8, a5, 126
+   24990:	420580        	l8ui	a4, a5, 128
+   24993:	908820        	or	a8, a8, a9
+   24996:	804420        	or	a4, a4, a8
+   24999:	42457d        	s8i	a4, a5, 125
+   2499c:	514cbb        	l32r	a5, 0x136cc (0x1259600)
+   2499f:	c02000        	memw
+   249a2:	322584        	l32i	a3, a5, 0x210
+   249a5:	404074        	extui	a4, a4, 0, 8
+   249a8:	661416        	bnei	a4, 1, 0x249c2
+   249ab:	17f313        	bbsi	a3, 17, 0x249c2
+   249ae:	a18dbb        	l32r	a10, 0x137e4 (0x70000)
+   249b1:	b122ba        	l32r	a11, 0x1323c (0xfff7ffff)
+   249b4:	a0a320        	or	a10, a3, a10
+   249b7:	b0aa10        	and	a10, a10, a11
+   249ba:	c02000        	memw
+   249bd:	a26584        	s32i	a10, a5, 0x210
+000249c0: 1df0     retw.n        ; Capstone
+   249c2:	dc34      	bnez.n	a4, 0x249d9
+   249c4:	177311        	bbci	a3, 17, 0x249d9
+   249c7:	b13fba        	l32r	a11, 0x132c4 (0x50000)
+   249ca:	c187bb        	l32r	a12, 0x137e8 (0xfff5ffff)
+   249cd:	b0b320        	or	a11, a3, a11
+   249d0:	c0bb10        	and	a11, a11, a12
+   249d3:	c02000        	memw
+   249d6:	b26584        	s32i	a11, a5, 0x210
+000249d9: 1df0     retw.n        ; Capstone
+	...

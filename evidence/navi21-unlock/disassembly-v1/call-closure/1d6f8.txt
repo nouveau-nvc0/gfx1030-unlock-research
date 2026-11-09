@@ -1,0 +1,18 @@
+
+/tmp/tmpos_odyob/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0001d6f8 <.data+0x1d6f8>:
+0001d6f8: 364100   entry        a1, 0x20 ; Capstone
+   1d6fb:	820201        	l8ui	a8, a2, 1
+   1d6fe:	cce8      	bnez.n	a8, 0x1d710
+   1d700:	ad02      	mov.n	a10, a2
+0001d702: a5d2fd   call8        . -0x22d4 ; Capstone ; target=0x1b42c
+   1d705:	920201        	l8ui	a9, a2, 1
+   1d708:	0c0a      	movi.n	a10, 0
+   1d70a:	261902        	beqi	a9, 1, 0x1d710
+   1d70d:	a24201        	s8i	a10, a2, 1
+0001d710: 1df0     retw.n        ; Capstone
+	...

@@ -1,0 +1,19 @@
+
+/tmp/tmpehlmxfva/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00005c74 <.data+0x5c74>:
+00005c74: 364100   entry        a1, 0x20 ; Capstone
+    5c77:	8162dd        	l32r	a8, 0xffffd200 (0x6803b600) ; inferred DRAM map 0x5ffec000
+    5c7a:	7cb9      	movi.n	a9, -5
+    5c7c:	3102de        	l32r	a3, 0xffffd484 (0x5ffee57c) ; inferred DRAM map 0x5ffec000
+    5c7f:	422835        	l32i	a4, a8, 212
+    5c82:	0c02      	movi.n	a2, 0
+    5c84:	224327        	s8i	a2, a3, 39
+    5c87:	904410        	and	a4, a4, a9
+    5c8a:	426835        	s32i	a4, a8, 212
+    5c8d:	2963      	s32i.n	a2, a3, 24
+00005c8f: 1df0     retw.n        ; Capstone
+    5c91:	000000        	ill

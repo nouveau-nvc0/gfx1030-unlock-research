@@ -1,0 +1,55 @@
+
+/tmp/tmpb1kx4den/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000209e8 <.data+0x209e8>:
+000209e8: 364100   entry        a1, 0x20 ; Capstone
+   209eb:	81a0ca        	l32r	a8, 0x1346c (0xa218)
+   209ee:	4187ca        	l32r	a4, 0x1340c (0xfc58)
+   209f1:	820880        	l8ui	a8, a8, 128
+   209f4:	32047d        	l8ui	a3, a4, 125
+   209f7:	803310        	and	a3, a3, a8
+   209fa:	cc32      	bnez.n	a2, 0x20a01
+   209fc:	0c8a      	movi.n	a10, 8
+000209fe: 25b8e1   call8        . -0x1e47c ; Capstone ; target=0x2580
+   20a01:	0c1a      	movi.n	a10, 1
+00020a03: e5d514   call8        . +0x14d60 ; Capstone ; target=0x35760
+   20a06:	166a04        	beqz	a10, 0x20a50
+00020a09: 25c710   call8        . +0x10c74 ; Capstone ; target=0x3167c
+   20a0c:	661a40        	bnei	a10, 1, 0x20a50
+   20a0f:	0c15      	movi.n	a5, 1
+   20a11:	07e302        	bbsi	a3, 0, 0x20a17
+   20a14:	176333        	bbci	a3, 1, 0x20a4b
+   20a17:	32447c        	s8i	a3, a4, 124
+   20a1a:	0c8a      	movi.n	a10, 8
+00020a1c: 65b510   call8        . +0x10b58 ; Capstone ; target=0x31574
+00020a1f: e56d0a   call8        . +0xa6e0 ; Capstone ; target=0x2b0fc
+   20a22:	a193ca        	l32r	a10, 0x13470 (0xfce8)
+00020a25: e5faff   call8        . -0x50 ; Capstone ; target=0x209d4
+00020a28: e53a13   call8        . +0x133b0 ; Capstone ; target=0x33dd8
+   20a2b:	9192ca        	l32r	a9, 0x13474 (0x123b200)
+   20a2e:	c02000        	memw
+   20a31:	52698c        	s32i	a5, a9, 0x230
+   20a34:	c02000        	memw
+   20a37:	92298c        	l32i	a9, a9, 0x230
+00020a3a: e53613   call8        . +0x13370 ; Capstone ; target=0x33da8
+   20a3d:	524482        	s8i	a5, a4, 130
+00020a40: e5f10d   call8        . +0xdf20 ; Capstone ; target=0x2e960
+00020a43: e5a814   call8        . +0x14a90 ; Capstone ; target=0x354d0
+   20a46:	0c1a      	movi.n	a10, 1
+00020a48: 655716   call8        . +0x16578 ; Capstone ; target=0x36fc0
+   20a4b:	0c13      	movi.n	a3, 1
+   20a4d:	460300        	j	0x20a5e
+   20a50:	0c03      	movi.n	a3, 0
+   20a52:	32447c        	s8i	a3, a4, 124
+   20a55:	324481        	s8i	a3, a4, 129
+   20a58:	324480        	s8i	a3, a4, 128
+   20a5b:	324482        	s8i	a3, a4, 130
+   20a5e:	cc32      	bnez.n	a2, 0x20a65
+   20a60:	0c8a      	movi.n	a10, 8
+00020a62: 25a1e1   call8        . -0x1e5ec ; Capstone ; target=0x2474
+   20a65:	2d03      	mov.n	a2, a3
+00020a67: 1df0     retw.n        ; Capstone
+   20a69:	000000        	ill

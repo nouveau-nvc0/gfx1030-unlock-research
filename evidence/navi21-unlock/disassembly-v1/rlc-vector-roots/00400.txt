@@ -1,0 +1,13 @@
+
+/tmp/tmp5c75wrs4/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00000400 <.data+0x400>:
+00000400: 00c549   s32e         a0, a5, -0x10 ; Capstone
+00000403: 10d549   s32e         a1, a5, -0xc ; Capstone
+00000406: 20e549   s32e         a2, a5, -8 ; Capstone
+00000409: 30f549   s32e         a3, a5, -4 ; Capstone
+0000040c: 003400   rfwo          ; Capstone
+	...

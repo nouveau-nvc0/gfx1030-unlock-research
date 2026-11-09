@@ -1,0 +1,152 @@
+{
+  "firmware_sha256": "19d19bce396b6dc725acb87cdf419e6151a1b2961ff43d6e026e17ecf20c83d0",
+  "inputs": [
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/03a00.txt",
+      "sha256": "a1e684d1286313c6cf283e412c6cfd7cadd971a035611bbeafd448611e029daf",
+      "records": 247
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/032a4.txt",
+      "sha256": "a54ea21ef668a55a2cd76feaf52fafc41da5c73bc9291b05e492810f78d4ea34",
+      "records": 14
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/035d8.txt",
+      "sha256": "4331ffccb2b0547fa6af53a3ffc83ffb86efd5682174f889220244125df1574c",
+      "records": 114
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/038ec.txt",
+      "sha256": "25f6e5d0a2419211be98b3c70881e77420106438dd16f364d7894dedfb40621c",
+      "records": 103
+    },
+    {
+      "path": "evidence/navi21-unlock/disassembly-v1/rlc-iram-functions/05bc8.txt",
+      "sha256": "e344f4bfb190cd2e902df0fe09c2771a8facaa3823e7fc82975aed19829e30a1",
+      "records": 13
+    }
+  ],
+  "gate_branch": "3a81 zero->3b38",
+  "local_order": {
+    "gate_zero_at_test": [
+      "skip3b32restore",
+      "3c0e save(0,0)"
+    ],
+    "gate_nonzero_at_test": [
+      "3b32 restore(1,1)",
+      "3c0e save(0,0)"
+    ]
+  },
+  "straightline_skip_to_save": [
+    "0x3b38",
+    "0x3b3a",
+    "0x3b3d",
+    "0x3b40",
+    "0x3b43",
+    "0x3b45",
+    "0x3b48",
+    "0x3b4b",
+    "0x3b4d",
+    "0x3b4f",
+    "0x3b51",
+    "0x3b54",
+    "0x3b57",
+    "0x3b5a",
+    "0x3b5d",
+    "0x3b60",
+    "0x3b62",
+    "0x3b65",
+    "0x3b68",
+    "0x3b6a",
+    "0x3b6d",
+    "0x3b70",
+    "0x3b73",
+    "0x3b76",
+    "0x3b79",
+    "0x3b7c",
+    "0x3b7f",
+    "0x3b82",
+    "0x3b85",
+    "0x3b88",
+    "0x3b8b",
+    "0x3b8e",
+    "0x3b91",
+    "0x3b94",
+    "0x3b97",
+    "0x3b9a",
+    "0x3b9d",
+    "0x3ba0",
+    "0x3ba3",
+    "0x3ba6",
+    "0x3ba9",
+    "0x3bac",
+    "0x3bae",
+    "0x3bb0",
+    "0x3bb2",
+    "0x3bb4",
+    "0x3bb7",
+    "0x3bba",
+    "0x3bbd",
+    "0x3bc0",
+    "0x3bc3",
+    "0x3bc6",
+    "0x3bc9",
+    "0x3bcc",
+    "0x3bcf",
+    "0x3bd2",
+    "0x3bd5",
+    "0x3bd8",
+    "0x3bdb",
+    "0x3bde",
+    "0x3be1",
+    "0x3be4",
+    "0x3be7",
+    "0x3bea",
+    "0x3bed",
+    "0x3bf0",
+    "0x3bf3",
+    "0x3bf6",
+    "0x3bf9",
+    "0x3bfc",
+    "0x3bff",
+    "0x3c02",
+    "0x3c05",
+    "0x3c08",
+    "0x3c0b",
+    "0x3c0e"
+  ],
+  "intervening_calls": [
+    {
+      "pc": "0x3b3d",
+      "operand": ". +0xf94 ; Capstone ; target=0x4ad0"
+    },
+    {
+      "pc": "0x3b45",
+      "operand": ". -0x81c ; Capstone ; target=0x3328"
+    },
+    {
+      "pc": "0x3b57",
+      "operand": ". +0x22e8 ; Capstone ; target=0x5e3c"
+    },
+    {
+      "pc": "0x3b5d",
+      "operand": ". +0x22e0 ; Capstone ; target=0x5e3c"
+    },
+    {
+      "pc": "0x3b62",
+      "operand": ". +0x2154 ; Capstone ; target=0x5cb4"
+    },
+    {
+      "pc": "0x3ba3",
+      "operand": ". +0xbd4 ; Capstone ; target=0x4774"
+    },
+    {
+      "pc": "0x3c0e",
+      "operand": ". +0x2d38 ; Capstone ; target=0x6944"
+    }
+  ],
+  "38ec_immediate_call_hits": [],
+  "38ec_absolute_pointer_hits": [],
+  "scope": "Local order after reaching3a81 and conditional on intervening calls returning. No global guarantee of entering callback or completion. Gate may change externally; current saved arrays are unknown. Initial zero image does not determine later restore data."
+}

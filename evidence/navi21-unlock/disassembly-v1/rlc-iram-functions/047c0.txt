@@ -1,0 +1,103 @@
+
+/tmp/tmpk5gwij6c/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+000047c0 <.data+0x47c0>:
+000047c0: 366100   entry        a1, 0x30 ; Capstone
+    47c3:	226100        	s32i	a2, a1, 0
+    47c6:	204074        	extui	a4, a2, 0, 8
+    47c9:	16c406        	beqz	a4, 0x4839
+    47cc:	82a001        	movi	a8, 1
+    47cf:	205075        	extui	a5, a2, 16, 8
+    47d2:	505893        	movnez	a5, a8, a5
+    47d5:	f05511        	slli	a5, a5, 1
+    47d8:	820101        	l8ui	a8, a1, 1
+    47db:	6103e3        	l32r	a6, 0xffffd3e8 (0xc003) ; inferred DRAM map 0x5ffec000
+    47de:	16e805        	beqz	a8, 0x4840
+    47e1:	906f00        	rsil	a9, 15
+    47e4:	2160e2        	l32r	a2, 0xffffd164 (0x6ffffe00) ; inferred DRAM map 0x5ffec000
+    47e7:	41c9e2        	l32r	a4, 0xffffd30c (0x60007e00) ; inferred DRAM map 0x5ffec000
+    47ea:	72a000        	movi	a7, 0
+    47ed:	726280        	s32i	a7, a2, 0x200
+    47f0:	626483        	s32i	a6, a4, 0x20c
+    47f3:	90e613        	wsr.ps	a9
+    47f6:	102000        	rsync
+    47f9:	263534        	beqi	a5, 3, 0x4831
+    47fc:	a06f00        	rsil	a10, 15
+    47ff:	726280        	s32i	a7, a2, 0x200
+    4802:	622483        	l32i	a6, a4, 0x20c
+    4805:	a0e613        	wsr.ps	a10
+    4808:	102000        	rsync
+    480b:	26253d        	beqi	a5, 2, 0x484c
+    480e:	ec35      	bnez.n	a5, 0x4835
+    4810:	164804        	beqz	a8, 0x4858
+    4813:	605614        	extui	a5, a6, 6, 2
+    4816:	67661b        	bbci	a6, 6, 0x4835
+    4819:	263514        	beqi	a5, 3, 0x4831
+    481c:	c06f00        	rsil	a12, 15
+    481f:	726280        	s32i	a7, a2, 0x200
+    4822:	b22483        	l32i	a11, a4, 0x20c
+    4825:	c0e613        	wsr.ps	a12
+    4828:	102000        	rsync
+    482b:	b0b614        	extui	a11, a11, 6, 2
+    482e:	663bea        	bnei	a11, 3, 0x481c
+    4831:	0c02      	movi.n	a2, 0
+00004833: 1df0     retw.n        ; Capstone
+    4835:	0c12      	movi.n	a2, 1
+00004837: 1df0     retw.n        ; Capstone
+    4839:	0c35      	movi.n	a5, 3
+    483b:	46e6ff        	j	0x47d8
+    483e:	0000d1        	mul16s	a0, a0, a0
+    4841:	ebe2      	addi.n	a14, a2, 14
+    4843:	61ebe2        	l32r	a6, 0xffffd3f0 (0xc000) ; inferred DRAM map 0x5ffec000
+    4846:	406d83        	moveqz	a6, a13, a4
+    4849:	06e5ff        	j	0x47e1
+    484c:	bc88      	beqz.n	a8, 0x4888
+    484e:	60e614        	extui	a14, a6, 6, 2
+    4851:	661eb9        	bnei	a14, 1, 0x480e
+    4854:	46f6ff        	j	0x4831
+    4857:	006084        	extui	a6, a0, 0, 9
+    485a:	144766        	excw
+    485d:	d66056        	bgez	a0, 0x4dc7
+    4860:	146766        	excw
+    4863:	d02638        	excw
+    4866:	c926      	s32i.n	a12, a6, 8
+00004868: 35c630   call12       . +0x30c64 ; Capstone ; target=0x354cc
+    486b:	6f          	.byte 0x6f
+    486c:	007262        	excw
+    486f:	806224        	extui	a6, a8, 2, 3
+    4872:	8330e6        	excw
+    4875:	131020        	excw
+    4878:	0060f4        	extui	a6, a0, 0, 16
+    487b:	14263f        	excw
+    487e:	b16086        	l32r	a11, 0xfffe6200
+    4881:	146638        	excw
+00004884: e406ea   ee.vst.128.ip q4, a14, 0x860 ; Capstone
+    4887:	ff          	.byte 0xff
+    4888:	609414        	extui	a9, a6, 4, 2
+    488b:	261902        	beqi	a9, 1, 0x4891
+    488e:	06dfff        	j	0x480e
+    4891:	06e7ff        	j	0x4831
+
+; Alternate branch-target decode
+    4840:	d1ebe2        	l32r	a13, 0xffffd3ec (0xc00f) ; inferred DRAM map 0x5ffec000
+
+; Alternate branch-target decode
+    4858:	608414        	extui	a8, a6, 4, 2
+    485b:	4766d6        	bbci	a6, 4, 0x4835
+    485e:	605614        	extui	a5, a6, 6, 2
+    4861:	6766d0        	bbci	a6, 6, 0x4835
+    4864:	2638c9        	beqi	a8, 3, 0x4831
+    4867:	2635c6        	beqi	a5, 3, 0x4831
+    486a:	306f00        	rsil	a3, 15
+    486d:	726280        	s32i	a7, a2, 0x200
+    4870:	622483        	l32i	a6, a4, 0x20c
+    4873:	30e613        	wsr.ps	a3
+    4876:	102000        	rsync
+    4879:	60f414        	extui	a15, a6, 4, 2
+    487c:	263fb1        	beqi	a15, 3, 0x4831
+    487f:	608614        	extui	a8, a6, 6, 2
+    4882:	6638e4        	bnei	a8, 3, 0x486a
+    4885:	06eaff        	j	0x4831

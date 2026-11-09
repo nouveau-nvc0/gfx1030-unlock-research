@@ -1,0 +1,278 @@
+
+/tmp/tmpl_l5id7i/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+0000953c <.data+0x953c>:
+0000953c: 364100   entry        a1, 0x20 ; Capstone
+    953f:	6187d0        	l32r	a6, 0xffffd75c (0x7ff00000) ; inferred DRAM map 0x5ffec000
+    9542:	507330        	xor	a7, a3, a5
+    9545:	6743ad        	ball	a3, a6, 0x94f6
+    9548:	6745d9        	ball	a5, a6, 0x9525
+    954b:	3084a5        	extui	a8, a3, 20, 11
+    954e:	5094a5        	extui	a9, a5, 20, 11
+    9551:	1638f0        	beqz	a8, 0x9458
+    9554:	1699f4        	beqz	a9, 0x94a1
+    9557:	a119cf        	l32r	a10, 0xffffd1bc (0x1fffff) ; inferred DRAM map 0x5ffec000
+    955a:	40d0f5        	extui	a13, a4, 16, 16
+    955d:	20c0f5        	extui	a12, a2, 16, 16
+    9560:	605520        	or	a5, a5, a6
+    9563:	603320        	or	a3, a3, a6
+    9566:	40bcc1        	mul16u	a11, a12, a4
+    9569:	a05510        	and	a5, a5, a10
+    956c:	a03310        	and	a3, a3, a10
+    956f:	d0a2c1        	mul16u	a10, a2, a13
+    9572:	7911      	s32i.n	a7, a1, 4
+    9574:	baaa      	add.n	a10, a10, a11
+    9576:	9a88      	add.n	a8, a8, a9
+    9578:	50f0f5        	extui	a15, a5, 16, 16
+    957b:	30e0f5        	extui	a14, a3, 16, 16
+    957e:	0c09      	movi.n	a9, 0
+    9580:	b7ba01        	bgeu	a10, a11, 0x9585
+    9583:	1b99      	addi.n	a9, a9, 1
+    9585:	104040        	ssai	16
+    9588:	a06981        	src	a6, a9, a10
+    958b:	40b2c1        	mul16u	a11, a2, a4
+    958e:	00aaa1        	sll	a10, a10
+    9591:	baaa      	add.n	a10, a10, a11
+    9593:	b7ba02        	bgeu	a10, a11, 0x9599
+    9596:	62c601        	addi	a6, a6, 1
+    9599:	50b2c1        	mul16u	a11, a2, a5
+    959c:	0c09      	movi.n	a9, 0
+    959e:	ba66      	add.n	a6, a6, a11
+    95a0:	b7b601        	bgeu	a6, a11, 0x95a5
+    95a3:	1b99      	addi.n	a9, a9, 1
+    95a5:	d0bcc1        	mul16u	a11, a12, a13
+    95a8:	b06680        	add	a6, a6, a11
+    95ab:	b7b601        	bgeu	a6, a11, 0x95b0
+    95ae:	1b99      	addi.n	a9, a9, 1
+    95b0:	40b3c1        	mul16u	a11, a3, a4
+    95b3:	ba66      	add.n	a6, a6, a11
+    95b5:	b7b601        	bgeu	a6, a11, 0x95ba
+    95b8:	1b99      	addi.n	a9, a9, 1
+    95ba:	8c3a      	beqz.n	a10, 0x95c1
+    95bc:	0c1b      	movi.n	a11, 1
+    95be:	b06620        	or	a6, a6, a11
+    95c1:	f072c1        	mul16u	a7, a2, a15
+    95c4:	40bec1        	mul16u	a11, a14, a4
+    95c7:	0c0a      	movi.n	a10, 0
+    95c9:	7abb      	add.n	a11, a11, a7
+    95cb:	77bb02        	bgeu	a11, a7, 0x95d1
+    95ce:	a2ca01        	addi	a10, a10, 1
+    95d1:	507cc1        	mul16u	a7, a12, a5
+    95d4:	70bb80        	add	a11, a11, a7
+    95d7:	77bb01        	bgeu	a11, a7, 0x95dc
+    95da:	1baa      	addi.n	a10, a10, 1
+    95dc:	d073c1        	mul16u	a7, a3, a13
+    95df:	f02000        	nop
+    95e2:	7abb      	add.n	a11, a11, a7
+    95e4:	77bb01        	bgeu	a11, a7, 0x95e9
+    95e7:	1baa      	addi.n	a10, a10, 1
+    95e9:	b0aa81        	src	a10, a10, a11
+    95ec:	9aaa      	add.n	a10, a10, a9
+    95ee:	00bba1        	sll	a11, a11
+    95f1:	ba66      	add.n	a6, a6, a11
+    95f3:	b7b602        	bgeu	a6, a11, 0x95f9
+    95f6:	a2ca01        	addi	a10, a10, 1
+    95f9:	f02cc1        	mul16u	a2, a12, a15
+    95fc:	0c09      	movi.n	a9, 0
+    95fe:	aa22      	add.n	a2, a2, a10
+    9600:	a7b201        	bgeu	a2, a10, 0x9605
+    9603:	1b99      	addi.n	a9, a9, 1
+    9605:	50a3c1        	mul16u	a10, a3, a5
+    9608:	a02280        	add	a2, a2, a10
+    960b:	a7b201        	bgeu	a2, a10, 0x9610
+    960e:	1b99      	addi.n	a9, a9, 1
+    9610:	d0aec1        	mul16u	a10, a14, a13
+    9613:	f02000        	nop
+    9616:	aa22      	add.n	a2, a2, a10
+    9618:	a7b201        	bgeu	a2, a10, 0x961d
+    961b:	1b99      	addi.n	a9, a9, 1
+    961d:	f0b3c1        	mul16u	a11, a3, a15
+    9620:	507ec1        	mul16u	a7, a14, a5
+    9623:	0c0a      	movi.n	a10, 0
+    9625:	7abb      	add.n	a11, a11, a7
+    9627:	77bb02        	bgeu	a11, a7, 0x962d
+    962a:	a2ca01        	addi	a10, a10, 1
+    962d:	b0aa81        	src	a10, a10, a11
+    9630:	9aaa      	add.n	a10, a10, a9
+    9632:	00bba1        	sll	a11, a11
+    9635:	ba22      	add.n	a2, a2, a11
+    9637:	b7b201        	bgeu	a2, a11, 0x963c
+    963a:	1baa      	addi.n	a10, a10, 1
+    963c:	f03ec1        	mul16u	a3, a14, a15
+    963f:	7811      	l32i.n	a7, a1, 4
+    9641:	aa33      	add.n	a3, a3, a10
+    9643:	305941        	srli	a5, a3, 9
+    9646:	0cb4      	movi.n	a4, 11
+    9648:	564500        	bnez	a5, 0x9650
+    964b:	1b44      	addi.n	a4, a4, 1
+    964d:	82c8ff        	addi	a8, a8, -1
+    9650:	001440        	ssl	a4
+    9653:	203381        	src	a3, a3, a2
+    9656:	602281        	src	a2, a2, a6
+    9659:	0066a1        	sll	a6, a6
+    965c:	42a3ff        	movi	a4, 0x3ff
+    965f:	4088c0        	sub	a8, a8, a4
+    9662:	f04411        	slli	a4, a4, 1
+    9665:	47b82b        	bgeu	a8, a4, 0x9694
+    9668:	d68600        	bgez	a6, 0x9674
+    966b:	1b22      	addi.n	a2, a2, 1
+    966d:	9cc2      	beqz.n	a2, 0x968d
+    966f:	f06611        	slli	a6, a6, 1
+    9672:	8ce6      	beqz.n	a6, 0x9684
+    9674:	c08801        	slli	a8, a8, 20
+    9677:	8a33      	add.n	a3, a3, a8
+    9679:	707f05        	extui	a7, a7, 31, 1
+    967c:	107701        	slli	a7, a7, 31
+    967f:	703320        	or	a3, a3, a7
+00009682: 1df0     retw.n        ; Capstone
+    9684:	202141        	srli	a2, a2, 1
+    9687:	f02211        	slli	a2, a2, 1
+    968a:	86f9ff        	j	0x9674
+    968d:	1b33      	addi.n	a3, a3, 1
+    968f:	46f8ff        	j	0x9674
+00009692: 000096   ee.ldf.64.xp f0, f9, a0, a0 ; Capstone
+    9695:	9800      	l32i.n	a9, a0, 0
+    9697:	1b84      	addi.n	a8, a4, 1
+    9699:	c03801        	slli	a3, a8, 20
+    969c:	0c02      	movi.n	a2, 0
+    969e:	c6f5ff        	j	0x9679
+    96a1:	808060        	neg	a8, a8
+    96a4:	9d06      	mov.n	a9, a6
+    96a6:	000840        	ssr	a8
+    96a9:	f6c80b        	bgeui	a8, 32, 0x96b8
+    96ac:	0062a1        	sll	a6, a2
+    96af:	202381        	src	a2, a3, a2
+    96b2:	303091        	srl	a3, a3
+    96b5:	060400        	j	0x96c9
+    96b8:	f6d81c        	bgeui	a8, 64, 0x96d8
+    96bb:	00a2a1        	sll	a10, a2
+    96be:	206381        	src	a6, a3, a2
+    96c1:	302091        	srl	a2, a3
+    96c4:	0c03      	movi.n	a3, 0
+    96c6:	a09920        	or	a9, a9, a10
+    96c9:	0c08      	movi.n	a8, 0
+    96cb:	1699f9        	beqz	a9, 0x9668
+    96ce:	0c19      	movi.n	a9, 1
+    96d0:	906620        	or	a6, a6, a9
+    96d3:	46e4ff        	j	0x9668
+    96d6:	000070        	excw
+    96d9:	3f          	.byte 0x3f
+    96da:	051033        	call0	0x3c7dc ; target=0x3c7dc
+    96dd:	010c02        	l32r	a0, 0xfffc9f10
+    96e0:	86e7ff        	j	0x9682
+	...
+
+; Alternate branch-target decode
+    9694:	969800        	bltz	a8, 0x96a1
+
+; Alternate branch-target decode
+    96d8:	703f05        	extui	a3, a7, 31, 1
+    96db:	103301        	slli	a3, a3, 31
+    96de:	0c02      	movi.n	a2, 0
+
+; Alternate branch-target decode
+    94f6:	cc34      	bnez.n	a4, 0x94fd
+    94f8:	f08511        	slli	a8, a5, 1
+    94fb:	bc18      	beqz.n	a8, 0x9530
+    94fd:	67c50b        	bnall	a5, a6, 0x950c
+    9500:	408511        	slli	a8, a5, 12
+    9503:	408820        	or	a8, a8, a4
+    9506:	8c28      	beqz.n	a8, 0x950c
+    9508:	3d05      	mov.n	a3, a5
+    950a:	2d04      	mov.n	a2, a4
+    950c:	408311        	slli	a8, a3, 12
+    950f:	208820        	or	a8, a8, a2
+    9512:	dca8      	bnez.n	a8, 0x9530
+    9514:	707f05        	extui	a7, a7, 31, 1
+    9517:	f03311        	slli	a3, a3, 1
+    951a:	004140        	ssai	1
+    951d:	303781        	src	a3, a7, a3
+    9520:	865700        	j	0x9682
+00009523: 000056   ee.ldf.64.xp f0, f5, a0, a0 ; Capstone
+    9526:	f2fdf0        	excw
+    9529:	831156        	excw
+    952c:	98fd      	l32i.n	a9, a13, 60
+    952e:	3d05      	mov.n	a3, a5
+    9530:	417fcf        	l32r	a4, 0xffffd32c (0x80000) ; inferred DRAM map 0x5ffec000
+    9533:	403320        	or	a3, a3, a4
+    9536:	065200        	j	0x9682
+    9539:	000000        	ill
+
+; Alternate branch-target decode
+    9525:	56f2fd        	bnez	a2, 0x9508
+    9528:	f08311        	slli	a8, a3, 1
+    952b:	5698fd        	bnez	a8, 0x9508
+
+; Alternate branch-target decode
+    9458:	f03311        	slli	a3, a3, 1
+    945b:	303141        	srli	a3, a3, 1
+    945e:	20a320        	or	a10, a3, a2
+    9461:	164a08        	beqz	a10, 0x94e9
+    9464:	9c53      	beqz.n	a3, 0x947d
+    9466:	a0f340        	nsau	a10, a3
+    9469:	a2caf5        	addi	a10, a10, -11
+    946c:	001a40        	ssl	a10
+    946f:	203381        	src	a3, a3, a2
+    9472:	0022a1        	sll	a2, a2
+    9475:	0c18      	movi.n	a8, 1
+    9477:	a088c0        	sub	a8, a8, a10
+    947a:	863500        	j	0x9554
+    947d:	a0f240        	nsau	a10, a2
+    9480:	a2caf5        	addi	a10, a10, -11
+    9483:	6c18      	movi.n	a8, -31
+    9485:	a088c0        	sub	a8, a8, a10
+    9488:	001a40        	ssl	a10
+    948b:	969a00        	bltz	a10, 0x9498
+    948e:	0032a1        	sll	a3, a2
+    9491:	0c02      	movi.n	a2, 0
+    9493:	462f00        	j	0x9554
+    9496:	000020        	or	a0, a0, a0
+00009499: 309100   all4         b3, b1 ; Capstone
+    949c:	22a186        	movi	a2, 0x186
+    949f:	2c00      	movi.n	a0, 32
+    94a1:	f05511        	slli	a5, a5, 1
+    94a4:	505141        	srli	a5, a5, 1
+    94a7:	40a520        	or	a10, a5, a4
+    94aa:	bcba      	beqz.n	a10, 0x94e9
+    94ac:	9c55      	beqz.n	a5, 0x94c5
+    94ae:	a0f540        	nsau	a10, a5
+    94b1:	a2caf5        	addi	a10, a10, -11
+    94b4:	001a40        	ssl	a10
+    94b7:	405581        	src	a5, a5, a4
+    94ba:	0044a1        	sll	a4, a4
+    94bd:	0c19      	movi.n	a9, 1
+    94bf:	a099c0        	sub	a9, a9, a10
+    94c2:	462400        	j	0x9557
+    94c5:	a0f440        	nsau	a10, a4
+    94c8:	a2caf5        	addi	a10, a10, -11
+    94cb:	6c19      	movi.n	a9, -31
+    94cd:	a099c0        	sub	a9, a9, a10
+    94d0:	001a40        	ssl	a10
+    94d3:	969a00        	bltz	a10, 0x94e0
+    94d6:	0054a1        	sll	a5, a4
+    94d9:	0c04      	movi.n	a4, 0
+    94db:	061e00        	j	0x9557
+    94de:	000040        	ssr	a0
+000094e1: 509100   all4         b5, b1 ; Capstone
+    94e4:	44a146        	excw
+    94e7:	1b00      	addi.n	a0, a0, 1
+    94e9:	703f05        	extui	a3, a7, 31, 1
+    94ec:	103301        	slli	a3, a3, 31
+    94ef:	0c02      	movi.n	a2, 0
+    94f1:	466300        	j	0x9682
+    94f4:	0000cc        	excw
+000094f7: 34f085   ee.vldbc.16.ip q1, a3, 0x70 ; Capstone
+    94fa:	11bc18        	l32r	a1, 0xfffcf7ec
+
+; Alternate branch-target decode
+    9498:	203091        	srl	a3, a2
+    949b:	0022a1        	sll	a2, a2
+    949e:	862c00        	j	0x9554
+
+; Alternate branch-target decode
+    94e0:	405091        	srl	a5, a4
+    94e3:	0044a1        	sll	a4, a4
+    94e6:	461b00        	j	0x9557

@@ -1,0 +1,149 @@
+[
+  {
+    "file": "vfct-04-00-0.bin",
+    "rom_header": "0x344",
+    "master_data": "0x3c8",
+    "master_command": "0xa74c",
+    "rom_subsystem": "1849:5204",
+    "tables": {
+      "gfx_info": {
+        "offset": "0xd48",
+        "bytes": 88,
+        "format": 2,
+        "content": 6,
+        "sha256": "b0618cd4e0e269f16b058566c3cfc484d40da301a6c9da762f2968e17992ea8e",
+        "first_80_hex": "58000206030a04000a02040264c0000065c0000066c0000067c00000e8c00000a0210000036b0100102700000a040300000000009f330000000000000000000000000000000000000000000000000000"
+      },
+      "powerplay": {
+        "offset": "0x1f0c",
+        "bytes": 2470,
+        "format": 15,
+        "content": 0,
+        "sha256": "14be9b474a0a50d5a8e20421b5fece954c39ccd7d3e2b79d9daab8d29cb4b679",
+        "first_80_hex": "a6090f00022203ac090000bc3f00008000180000001c000000000000760000000000000000000000000001000000010000000d000000ab090000b0040000e80300000e060000ab04000056050000ab04"
+      },
+      "asic_init": {
+        "offset": "0xa7f2",
+        "bytes": 99,
+        "format": 2,
+        "content": 1,
+        "sha256": "e38686d6f7b6093da2f9a7c11f929717a5912cc99317bdcb04cd66f5a8f1c45b",
+        "first_80_hex": "6300020100003700004be5000449370056004001050000616001003ce501008044370051142d0540010000003e054020a107004513005b520d030041e30d3e054100000000446200330541010000001b"
+      }
+    },
+    "gfx_limits": {
+      "max_se": 4,
+      "max_cu_per_sh": 10,
+      "max_sh_per_se": 2,
+      "max_rb_per_se": 4
+    },
+    "gfx_shared_layout_bytes_44_to_47": {
+      "hex": "0a040300",
+      "v3_0_interpretation": {
+        "active_wgp_per_se": 10,
+        "active_rb_per_se": 4,
+        "active_se": 3,
+        "reserved": 0
+      },
+      "caveat": "v2.6 has no complete named structure in this kernel; common prefix interpretation, not proof of a writeable fuse override"
+    }
+  },
+  {
+    "file": "vfct-07-00-0.bin",
+    "rom_header": "0x348",
+    "master_data": "0x3cc",
+    "master_command": "0xa756",
+    "rom_subsystem": "148c:2407",
+    "tables": {
+      "gfx_info": {
+        "offset": "0xd4c",
+        "bytes": 88,
+        "format": 2,
+        "content": 6,
+        "sha256": "b0618cd4e0e269f16b058566c3cfc484d40da301a6c9da762f2968e17992ea8e",
+        "first_80_hex": "58000206030a04000a02040264c0000065c0000066c0000067c00000e8c00000a0210000036b0100102700000a040300000000009f330000000000000000000000000000000000000000000000000000"
+      },
+      "powerplay": {
+        "offset": "0x1f30",
+        "bytes": 2470,
+        "format": 15,
+        "content": 0,
+        "sha256": "8c06a2e78a49a180e6d58fbf6a382c34b60ddba26cf1d3af7faae54ee849086c",
+        "first_80_hex": "a6090f00022203ac090000bc3f00008000180000001c000000000000760000000000000000000000000001000000010000000d000000ab090000b0040000e80300000e060000ab04000056050000ab04"
+      },
+      "asic_init": {
+        "offset": "0xa7fc",
+        "bytes": 99,
+        "format": 2,
+        "content": 1,
+        "sha256": "e38686d6f7b6093da2f9a7c11f929717a5912cc99317bdcb04cd66f5a8f1c45b",
+        "first_80_hex": "6300020100003700004be5000449370056004001050000616001003ce501008044370051142d0540010000003e054020a107004513005b520d030041e30d3e054100000000446200330541010000001b"
+      }
+    },
+    "gfx_limits": {
+      "max_se": 4,
+      "max_cu_per_sh": 10,
+      "max_sh_per_se": 2,
+      "max_rb_per_se": 4
+    },
+    "gfx_shared_layout_bytes_44_to_47": {
+      "hex": "0a040300",
+      "v3_0_interpretation": {
+        "active_wgp_per_se": 10,
+        "active_rb_per_se": 4,
+        "active_se": 3,
+        "reserved": 0
+      },
+      "caveat": "v2.6 has no complete named structure in this kernel; common prefix interpretation, not proof of a writeable fuse override"
+    }
+  },
+  {
+    "file": "vfct-0a-00-0.bin",
+    "rom_header": "0x34a",
+    "master_data": "0x3d0",
+    "master_command": "0xa754",
+    "rom_subsystem": "1849:5203",
+    "tables": {
+      "gfx_info": {
+        "offset": "0xd50",
+        "bytes": 88,
+        "format": 2,
+        "content": 6,
+        "sha256": "b0618cd4e0e269f16b058566c3cfc484d40da301a6c9da762f2968e17992ea8e",
+        "first_80_hex": "58000206030a04000a02040264c0000065c0000066c0000067c00000e8c00000a0210000036b0100102700000a040300000000009f330000000000000000000000000000000000000000000000000000"
+      },
+      "powerplay": {
+        "offset": "0x1f14",
+        "bytes": 2470,
+        "format": 15,
+        "content": 0,
+        "sha256": "b8ffa94ae79ab19070a8ced6710f47733e527c718113b8c62b6ac61383a3dfd7",
+        "first_80_hex": "a6090f00022203ac090000bc3f00008000180000001c000000000000760000000000000000000000000001000000010000000d000000ab090000b0040000e80300000e060000ab04000056050000ab04"
+      },
+      "asic_init": {
+        "offset": "0xa7fa",
+        "bytes": 99,
+        "format": 2,
+        "content": 1,
+        "sha256": "e38686d6f7b6093da2f9a7c11f929717a5912cc99317bdcb04cd66f5a8f1c45b",
+        "first_80_hex": "6300020100003700004be5000449370056004001050000616001003ce501008044370051142d0540010000003e054020a107004513005b520d030041e30d3e054100000000446200330541010000001b"
+      }
+    },
+    "gfx_limits": {
+      "max_se": 4,
+      "max_cu_per_sh": 10,
+      "max_sh_per_se": 2,
+      "max_rb_per_se": 4
+    },
+    "gfx_shared_layout_bytes_44_to_47": {
+      "hex": "0a040300",
+      "v3_0_interpretation": {
+        "active_wgp_per_se": 10,
+        "active_rb_per_se": 4,
+        "active_se": 3,
+        "reserved": 0
+      },
+      "caveat": "v2.6 has no complete named structure in this kernel; common prefix interpretation, not proof of a writeable fuse override"
+    }
+  }
+]

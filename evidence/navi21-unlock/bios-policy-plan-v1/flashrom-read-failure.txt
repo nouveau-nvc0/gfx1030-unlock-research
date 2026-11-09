@@ -1,0 +1,14 @@
+flashrom v1.8.0 on Linux 7.3.1-1-default (x86_64)
+flashrom is free software, get the source code at https://flashrom.org
+
+No DMI table found.
+Found chipset "Intel C610/X99 (Wellsburg)".
+This chipset is marked as untested. If you are using an up-to-date version
+of flashrom *and* were (not) able to successfully update your firmware with it,
+then please email a report to flashrom@flashrom.org including a verbose (-V) log.
+Thank you!
+Enabling flash write... Error accessing ICH RCRB, 0x4000 bytes at 0x00000000fed1c000
+/dev/mem mmap failed: Operation not permitted
+FAILED!
+FATAL ERROR!
+Error: Programmer initialization failed.

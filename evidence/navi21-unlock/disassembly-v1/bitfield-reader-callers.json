@@ -1,0 +1,562 @@
+[
+  {
+    "call": "0000290a: e52736   call8        . +0x36280 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "000028fc: a5e5ff   call8        . -0x1a4 ; capstone fallback ; target=0x2758",
+      "000028ff: 652b36   call8        . +0x362b8 ; capstone fallback ; target=0x38bb4",
+      "00002902: a52936   call8        . +0x3629c ; capstone fallback ; target=0x38b9c",
+      "    2905:\ta10df9        \tl32r\ta10, 0xd3c (0x89bc)",
+      "    2908:\t1c0b      \tmovi.n\ta11, 16"
+    ]
+  },
+  {
+    "call": "0001fc06: 25f818   call8        . +0x18f84 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   1fbf9:\t3908      \ts32i.n\ta3, a8, 0",
+      "   1fbfb:\tc02000        \tmemw",
+      "   1fbfe:\t32228a        \tl32i\ta3, a2, 0x228",
+      "   1fc01:\ta1dbcd        \tl32r\ta10, 0x13370 (0x19c5)",
+      "   1fc04:\t0c1b      \tmovi.n\ta11, 1"
+    ]
+  },
+  {
+    "call": "00027781: 654011   call8        . +0x11408 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   27774:\t420680        \tl8ui\ta4, a6, 128",
+      "00027777: a5cbda   call8        . -0x25344 ; capstone fallback ; target=0x2430",
+      "   2777a:\t7d0a      \tmov.n\ta7, a10",
+      "   2777c:\t0c4b      \tmovi.n\ta11, 4",
+      "   2777e:\ta103b1        \tl32r\ta10, 0x13b8c (0x8a0c)"
+    ]
+  },
+  {
+    "call": "0002778b: e53f11   call8        . +0x11400 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   2777e:\ta103b1        \tl32r\ta10, 0x13b8c (0x8a0c)",
+      "00027781: 654011   call8        . +0x11408 ; capstone fallback ; target=0x38b88",
+      "   27784:\t0c4b      \tmovi.n\ta11, 4",
+      "   27786:\t5d0a      \tmov.n\ta5, a10",
+      "   27788:\ta102b1        \tl32r\ta10, 0x13b90 (0x89fc)"
+    ]
+  },
+  {
+    "call": "00027795: 253f11   call8        . +0x113f4 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   27788:\ta102b1        \tl32r\ta10, 0x13b90 (0x89fc)",
+      "0002778b: e53f11   call8        . +0x11400 ; capstone fallback ; target=0x38b88",
+      "   2778e:\t1c0b      \tmovi.n\ta11, 16",
+      "   27790:\t3d0a      \tmov.n\ta3, a10",
+      "   27792:\ta100b1        \tl32r\ta10, 0x13b94 (0x89bc)"
+    ]
+  },
+  {
+    "call": "0002ff60: 65c208   call8        . +0x8c28 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "0002ff54: 1df0     retw.n        ; capstone fallback",
+      "0002ff56: 000036   ee.ldf.64.xp f0, f3, a0, a0 ; capstone fallback",
+      "   2ff59:\t4100a1        \tl32r\ta4, 0x1835c (0x0)",
+      "   2ff5c:\t4f          \t.byte 0x4f",
+      "0002ff5d: 900c1b   un.s         b0, f12, f9 ; capstone fallback"
+    ]
+  },
+  {
+    "call": "00032c9c: a5ee05   call8        . +0x5eec ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   32c8f:\t1baa      \taddi.n\ta10, a10, 1",
+      "00032c91: a5e6ff   call8        . -0x194 ; capstone fallback ; target=0x32afc",
+      "00032c94: 25ddff   call8        . -0x22c ; capstone fallback ; target=0x32a68",
+      "   32c97:\ta1a185        \tl32r\ta10, 0x1431c (0x7d76)",
+      "   32c9a:\t2c0b      \tmovi.n\ta11, 32"
+    ]
+  },
+  {
+    "call": "00032caa: e5ed05   call8        . +0x5ee0 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "00032c9c: a5ee05   call8        . +0x5eec ; capstone fallback ; target=0x38b88",
+      "   32c9f:\te1a085        \tl32r\ta14, 0x14320 (0xb1f4)",
+      "   32ca2:\t2c0b      \tmovi.n\ta11, 32",
+      "   32ca4:\ta26ef4        \ts32i\ta10, a14, 0x3d0",
+      "   32ca7:\ta19f85        \tl32r\ta10, 0x14324 (0x7d96)"
+    ]
+  },
+  {
+    "call": "00036d04: 25e801   call8        . +0x1e84 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "00036cf7: 1df0     retw.n        ; capstone fallback",
+      "   36cf9:\t000000        \till",
+      "00036cfc: 360102   entry        a1, 0x100 ; capstone fallback",
+      "   36cff:\ta1a573        \tl32r\ta10, 0x13b94 (0x89bc)",
+      "   36d02:\t1c0b      \tmovi.n\ta11, 16"
+    ]
+  },
+  {
+    "call": "00036d0e: a5e701   call8        . +0x1e7c ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   36d02:\t1c0b      \tmovi.n\ta11, 16",
+      "00036d04: 25e801   call8        . +0x1e84 ; capstone fallback ; target=0x38b88",
+      "   36d07:\t2d0a      \tmov.n\ta2, a10",
+      "   36d09:\ta1a073        \tl32r\ta10, 0x13b8c (0x8a0c)",
+      "   36d0c:\t0c4b      \tmovi.n\ta11, 4"
+    ]
+  },
+  {
+    "call": "00036d18: e5e601   call8        . +0x1e70 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   36d0c:\t0c4b      \tmovi.n\ta11, 4",
+      "00036d0e: a5e701   call8        . +0x1e7c ; capstone fallback ; target=0x38b88",
+      "   36d11:\t3d0a      \tmov.n\ta3, a10",
+      "   36d13:\t0c4b      \tmovi.n\ta11, 4",
+      "   36d15:\ta19e73        \tl32r\ta10, 0x13b90 (0x89fc)"
+    ]
+  },
+  {
+    "call": "00037ba1: 65fe00   call8        . +0xfe8 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   37b93:\t22667e        \ts32i\ta2, a6, 0x1f8",
+      "00037b96: 1df0     retw.n        ; capstone fallback",
+      "00037b98: 364100   entry        a1, 0x20 ; capstone fallback",
+      "   37b9b:\t20a0f4        \textui\ta10, a2, 0, 16",
+      "   37b9e:\t30b0f4        \textui\ta11, a3, 0, 16"
+    ]
+  },
+  {
+    "call": "00037fb4: 25bd00   call8        . +0xbd4 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   37fa7:\tf26880        \ts32i\ta15, a8, 0x200",
+      "00037faa: 1df0     retw.n        ; capstone fallback",
+      "00037fac: 364100   entry        a1, 0x20 ; capstone fallback",
+      "   37faf:\ta18e71        \tl32r\ta10, 0x145e8 (0x8001)",
+      "   37fb2:\t0c4b      \tmovi.n\ta11, 4"
+    ]
+  },
+  {
+    "call": "00037fc2: 65bc00   call8        . +0xbc8 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "00037fb4: 25bd00   call8        . +0xbd4 ; capstone fallback ; target=0x38b88",
+      "   37fb7:\t218d71        \tl32r\ta2, 0x145ec (0xc500)",
+      "   37fba:\t2c0b      \tmovi.n\ta11, 32",
+      "   37fbc:\ta24250        \ts8i\ta10, a2, 80",
+      "   37fbf:\ta18c71        \tl32r\ta10, 0x145f0 (0x82cf)"
+    ]
+  },
+  {
+    "call": "00037fd4: 25bb00   call8        . +0xbb4 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   37fc7:\t7cf4      \tmovi.n\ta4, -1",
+      "   37fc9:\t318a71        \tl32r\ta3, 0x145f4 (0xc678)",
+      "   37fcc:\t408a30        \txor\ta8, a10, a4",
+      "   37fcf:\ta18a71        \tl32r\ta10, 0x145f8 (0x82ef)",
+      "   37fd2:\t8903      \ts32i.n\ta8, a3, 0"
+    ]
+  },
+  {
+    "call": "00037fe1: 65ba00   call8        . +0xba8 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "00037fd4: 25bb00   call8        . +0xbb4 ; capstone fallback ; target=0x38b88",
+      "   37fd7:\t0cbb      \tmovi.n\ta11, 11",
+      "   37fd9:\t409a30        \txor\ta9, a10, a4",
+      "   37fdc:\t9913      \ts32i.n\ta9, a3, 4",
+      "   37fde:\ta18771        \tl32r\ta10, 0x145fc (0x830f)"
+    ]
+  },
+  {
+    "call": "00037fee: a5b900   call8        . +0xb9c ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "00037fe1: 65ba00   call8        . +0xba8 ; capstone fallback ; target=0x38b88",
+      "   37fe4:\t40aa30        \txor\ta10, a10, a4",
+      "   37fe7:\t0c1b      \tmovi.n\ta11, 1",
+      "   37fe9:\ta923      \ts32i.n\ta10, a3, 8",
+      "   37feb:\ta18571        \tl32r\ta10, 0x14600 (0x8005)"
+    ]
+  },
+  {
+    "call": "00038098: e5ae00   call8        . +0xaf0 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   3808a:\t42430c        \ts8i\ta4, a3, 12",
+      "   3808d:\t860000        \tj\t0x38093",
+      "   38090:\t52430c        \ts8i\ta5, a3, 12",
+      "   38093:\ta16371        \tl32r\ta10, 0x14620 (0x839f)",
+      "   38096:\t0c8b      \tmovi.n\ta11, 8"
+    ]
+  },
+  {
+    "call": "0003810f: a5a700   call8        . +0xa7c ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "00038101: 65a9ff   call8        . -0x568 ; capstone fallback ; target=0x37b98",
+      "   38104:\t0c8b      \tmovi.n\ta11, 8",
+      "00038106: 500afa   wfr          f0, a10 ; capstone fallback",
+      "00038109: 034236   ssi          f0, a2, 0xd8 ; capstone fallback",
+      "   3810c:\ta14d71        \tl32r\ta10, 0x14640 (0x8072)"
+    ]
+  },
+  {
+    "call": "0003811d: a5a600   call8        . +0xa6c ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "0003810f: a5a700   call8        . +0xa7c ; capstone fallback ; target=0x38b88",
+      "   38112:\t0c8b      \tmovi.n\ta11, 8",
+      "00038114: 001ada   ufloat.s     f1, a10, 0 ; capstone fallback",
+      "   38117:\ta14b71        \tl32r\ta10, 0x14644 (0x807a)",
+      "0003811a: 134216   ssi          f1, a2, 0x58 ; capstone fallback"
+    ]
+  },
+  {
+    "call": "0003812b: e5a500   call8        . +0xa60 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "0003811d: a5a600   call8        . +0xa6c ; capstone fallback ; target=0x38b88",
+      "   38120:\t0c8b      \tmovi.n\ta11, 8",
+      "00038122: 002ada   ufloat.s     f2, a10, 0 ; capstone fallback",
+      "   38125:\ta14871        \tl32r\ta10, 0x14648 (0x8082)",
+      "00038128: 234217   ssi          f2, a2, 0x5c ; capstone fallback"
+    ]
+  },
+  {
+    "call": "00038139: e5a400   call8        . +0xa50 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "0003812b: e5a500   call8        . +0xa60 ; capstone fallback ; target=0x38b88",
+      "   3812e:\t0ccb      \tmovi.n\ta11, 12",
+      "00038130: 003ada   ufloat.s     f3, a10, 0 ; capstone fallback",
+      "   38133:\ta14671        \tl32r\ta10, 0x1464c (0x80fe)",
+      "00038136: 334218   ssi          f3, a2, 0x60 ; capstone fallback"
+    ]
+  },
+  {
+    "call": "000381aa: e59d00   call8        . +0x9e0 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "0003819c: b0506b   ole.s        b5, f0, f11 ; capstone fallback",
+      "0003819f: 760502   bf           b5, . +6 ; capstone fallback",
+      "   381a2:\t42532a        \ts16i\ta4, a3, 84",
+      "   381a5:\ta12e71        \tl32r\ta10, 0x14660 (0x8136)",
+      "   381a8:\t1c0b      \tmovi.n\ta11, 16"
+    ]
+  },
+  {
+    "call": "000381c1: 659c00   call8        . +0x9c8 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "000381b3: e30f00   lsi          f14, a15, 0 ; capstone fallback",
+      "000381b6: e0cd2a   mul.s        f12, f13, f14 ; capstone fallback",
+      "   381b9:\t0c8b      \tmovi.n\ta11, 8",
+      "   381bb:\ta12a71        \tl32r\ta10, 0x14664 (0x812e)",
+      "000381be: c3430b   ssi          f12, a3, 0x2c ; capstone fallback"
+    ]
+  },
+  {
+    "call": "00038229: e59500   call8        . +0x960 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "0003821b: 40806b   ole.s        b8, f0, f4 ; capstone fallback",
+      "0003821e: 760802   bf           b8, . +6 ; capstone fallback",
+      "   38221:\t42532c        \ts16i\ta4, a3, 88",
+      "   38224:\ta11471        \tl32r\ta10, 0x14674 (0x844a)",
+      "   38227:\t0ccb      \tmovi.n\ta11, 12"
+    ]
+  },
+  {
+    "call": "00038240: 659400   call8        . +0x948 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "00038232: 730900   lsi          f7, a9, 0 ; capstone fallback",
+      "00038235: 70562a   mul.s        f5, f6, f7 ; capstone fallback",
+      "   38238:\t0ccb      \tmovi.n\ta11, 12",
+      "   3823a:\ta10f71        \tl32r\ta10, 0x14678 (0x8460)",
+      "0003823d: 534341   ssi          f5, a3, 0x104 ; capstone fallback"
+    ]
+  },
+  {
+    "call": "00038257: 259300   call8        . +0x934 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "00038249: a30a00   lsi          f10, a10, 0 ; capstone fallback",
+      "0003824c: a0892a   mul.s        f8, f9, f10 ; capstone fallback",
+      "   3824f:\t0ccb      \tmovi.n\ta11, 12",
+      "   38251:\ta10a71        \tl32r\ta10, 0x1467c (0x8476)",
+      "00038254: 834342   ssi          f8, a3, 0x108 ; capstone fallback"
+    ]
+  },
+  {
+    "call": "0003826e: a59100   call8        . +0x91c ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "00038260: d30b00   lsi          f13, a11, 0 ; capstone fallback",
+      "00038263: d0bc2a   mul.s        f11, f12, f13 ; capstone fallback",
+      "   38266:\ta10671        \tl32r\ta10, 0x14680 (0x848c)",
+      "   38269:\t0ccb      \tmovi.n\ta11, 12",
+      "0003826b: b34343   ssi          f11, a3, 0x10c ; capstone fallback"
+    ]
+  },
+  {
+    "call": "00038285: 259000   call8        . +0x904 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "00038277: 030c00   lsi          f0, a12, 0 ; capstone fallback",
+      "0003827a: 00ef2a   mul.s        f14, f15, f0 ; capstone fallback",
+      "   3827d:\t0ccb      \tmovi.n\ta11, 12",
+      "   3827f:\ta10171        \tl32r\ta10, 0x14684 (0x84a2)",
+      "00038282: e34344   ssi          f14, a3, 0x110 ; capstone fallback"
+    ]
+  },
+  {
+    "call": "0003829c: a58e00   call8        . +0x8ec ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "0003828e: 330d00   lsi          f3, a13, 0 ; capstone fallback",
+      "00038291: 30122a   mul.s        f1, f2, f3 ; capstone fallback",
+      "   38294:\t0cab      \tmovi.n\ta11, 10",
+      "   38296:\ta1fc70        \tl32r\ta10, 0x14688 (0x8456)",
+      "00038299: 134345   ssi          f1, a3, 0x114 ; capstone fallback"
+    ]
+  },
+  {
+    "call": "000382b3: 658d00   call8        . +0x8d8 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "000382a5: 630e00   lsi          f6, a14, 0 ; capstone fallback",
+      "000382a8: 60452a   mul.s        f4, f5, f6 ; capstone fallback",
+      "   382ab:\t0cab      \tmovi.n\ta11, 10",
+      "   382ad:\ta1f770        \tl32r\ta10, 0x1468c (0x846c)",
+      "000382b0: 434346   ssi          f4, a3, 0x118 ; capstone fallback"
+    ]
+  },
+  {
+    "call": "000382ca: e58b00   call8        . +0x8c0 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "000382bc: 930f00   lsi          f9, a15, 0 ; capstone fallback",
+      "000382bf: 90782a   mul.s        f7, f8, f9 ; capstone fallback",
+      "   382c2:\t0cab      \tmovi.n\ta11, 10",
+      "   382c4:\ta1f370        \tl32r\ta10, 0x14690 (0x8482)",
+      "000382c7: 734347   ssi          f7, a3, 0x11c ; capstone fallback"
+    ]
+  },
+  {
+    "call": "000382e1: 658a00   call8        . +0x8a8 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "000382d3: c30800   lsi          f12, a8, 0 ; capstone fallback",
+      "000382d6: c0ab2a   mul.s        f10, f11, f12 ; capstone fallback",
+      "   382d9:\t0cab      \tmovi.n\ta11, 10",
+      "   382db:\ta1ee70        \tl32r\ta10, 0x14694 (0x8498)",
+      "000382de: a34348   ssi          f10, a3, 0x120 ; capstone fallback"
+    ]
+  },
+  {
+    "call": "000382f8: e58800   call8        . +0x890 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "000382ea: f30900   lsi          f15, a9, 0 ; capstone fallback",
+      "000382ed: f0de2a   mul.s        f13, f14, f15 ; capstone fallback",
+      "   382f0:\t0cab      \tmovi.n\ta11, 10",
+      "   382f2:\ta1e970        \tl32r\ta10, 0x14698 (0x84ae)",
+      "000382f5: d34349   ssi          f13, a3, 0x124 ; capstone fallback"
+    ]
+  },
+  {
+    "call": "0003830f: a58700   call8        . +0x87c ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "00038301: 230a00   lsi          f2, a10, 0 ; capstone fallback",
+      "00038304: 20012a   mul.s        f0, f1, f2 ; capstone fallback",
+      "   38307:\t0c1b      \tmovi.n\ta11, 1",
+      "   38309:\ta1e470        \tl32r\ta10, 0x1469c (0x816a)",
+      "0003830c: 03434a   ssi          f0, a3, 0x128 ; capstone fallback"
+    ]
+  },
+  {
+    "call": "000383b3: 657d00   call8        . +0x7d8 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   383a5:\t42430d        \ts8i\ta4, a3, 13",
+      "   383a8:\t860000        \tj\t0x383ae",
+      "   383ab:\t52430d        \ts8i\ta5, a3, 13",
+      "   383ae:\ta1c270        \tl32r\ta10, 0x146b8 (0x83a7)",
+      "   383b1:\t0c8b      \tmovi.n\ta11, 8"
+    ]
+  },
+  {
+    "call": "0003842a: e57500   call8        . +0x760 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "0003841c: a577ff   call8        . -0x884 ; capstone fallback ; target=0x37b98",
+      "   3841f:\t0c8b      \tmovi.n\ta11, 8",
+      "00038421: 503afa   wfr          f3, a10 ; capstone fallback",
+      "00038424: 334239   ssi          f3, a2, 0xe4 ; capstone fallback",
+      "   38427:\ta1ac70        \tl32r\ta10, 0x146d8 (0x81d7)"
+    ]
+  },
+  {
+    "call": "00038438: e57400   call8        . +0x750 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "0003842a: e57500   call8        . +0x760 ; capstone fallback ; target=0x38b88",
+      "   3842d:\t0c8b      \tmovi.n\ta11, 8",
+      "0003842f: 004ada   ufloat.s     f4, a10, 0 ; capstone fallback",
+      "   38432:\ta1aa70        \tl32r\ta10, 0x146dc (0x81df)",
+      "00038435: 434219   ssi          f4, a2, 0x64 ; capstone fallback"
+    ]
+  },
+  {
+    "call": "00038446: 257400   call8        . +0x744 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "00038438: e57400   call8        . +0x750 ; capstone fallback ; target=0x38b88",
+      "   3843b:\t0c8b      \tmovi.n\ta11, 8",
+      "0003843d: 005ada   ufloat.s     f5, a10, 0 ; capstone fallback",
+      "   38440:\ta1a870        \tl32r\ta10, 0x146e0 (0x81e7)",
+      "00038443: 53421a   ssi          f5, a2, 0x68 ; capstone fallback"
+    ]
+  },
+  {
+    "call": "00038454: 257300   call8        . +0x734 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "00038446: 257400   call8        . +0x744 ; capstone fallback ; target=0x38b88",
+      "   38449:\t0ccb      \tmovi.n\ta11, 12",
+      "0003844b: 006ada   ufloat.s     f6, a10, 0 ; capstone fallback",
+      "   3844e:\ta1a570        \tl32r\ta10, 0x146e4 (0x8263)",
+      "00038451: 63421b   ssi          f6, a2, 0x6c ; capstone fallback"
+    ]
+  },
+  {
+    "call": "000384c5: 256c00   call8        . +0x6c4 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "000384b7: e0e06b   ole.s        b14, f0, f14 ; capstone fallback",
+      "000384ba: 760e02   bf           b14, . +6 ; capstone fallback",
+      "   384bd:\t42532b        \ts16i\ta4, a3, 86",
+      "   384c0:\ta18d70        \tl32r\ta10, 0x146f4 (0x829b)",
+      "   384c3:\t1c0b      \tmovi.n\ta11, 16"
+    ]
+  },
+  {
+    "call": "000384dc: a56a00   call8        . +0x6ac ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "000384ce: 130f00   lsi          f1, a15, 0 ; capstone fallback",
+      "000384d1: 10f02a   mul.s        f15, f0, f1 ; capstone fallback",
+      "   384d4:\t0c8b      \tmovi.n\ta11, 8",
+      "   384d6:\ta18870        \tl32r\ta10, 0x146f8 (0x8293)",
+      "000384d9: f3430c   ssi          f15, a3, 0x30 ; capstone fallback"
+    ]
+  },
+  {
+    "call": "00038544: 256400   call8        . +0x644 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "00038536: 70106b   ole.s        b1, f0, f7 ; capstone fallback",
+      "00038539: 760102   bf           b1, . +6 ; capstone fallback",
+      "   3853c:\t42532d        \ts16i\ta4, a3, 90",
+      "   3853f:\ta17270        \tl32r\ta10, 0x14708 (0x2ec0)",
+      "   38542:\t2c0b      \tmovi.n\ta11, 32"
+    ]
+  },
+  {
+    "call": "00038552: 656300   call8        . +0x638 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "00038544: 256400   call8        . +0x644 ; capstone fallback ; target=0x38b88",
+      "   38547:\t2c0b      \tmovi.n\ta11, 32",
+      "   38549:\ta09841        \tsrli\ta9, a10, 8",
+      "   3854c:\t9243f8        \ts8i\ta9, a3, 248",
+      "   3854f:\ta16e70        \tl32r\ta10, 0x14708 (0x2ec0)"
+    ]
+  },
+  {
+    "call": "0003855d: a56200   call8        . +0x62c ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   3854f:\ta16e70        \tl32r\ta10, 0x14708 (0x2ec0)",
+      "00038552: 656300   call8        . +0x638 ; capstone fallback ; target=0x38b88",
+      "   38555:\ta243f9        \ts8i\ta10, a3, 249",
+      "   38558:\t0c4b      \tmovi.n\ta11, 4",
+      "   3855a:\ta18c6d        \tl32r\ta10, 0x13b8c (0x8a0c)"
+    ]
+  },
+  {
+    "call": "00038567: 256200   call8        . +0x624 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   3855a:\ta18c6d        \tl32r\ta10, 0x13b8c (0x8a0c)",
+      "0003855d: a56200   call8        . +0x62c ; capstone fallback ; target=0x38b88",
+      "   38560:\t0c4b      \tmovi.n\ta11, 4",
+      "   38562:\t3d0a      \tmov.n\ta3, a10",
+      "   38564:\ta18b6d        \tl32r\ta10, 0x13b90 (0x89fc)"
+    ]
+  },
+  {
+    "call": "0003857e: a56000   call8        . +0x60c ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   38570:\tc0aa11        \tslli\ta10, a10, 4",
+      "   38573:\ta0ab20        \tor\ta10, a11, a10",
+      "   38576:\ta262e9        \ts32i\ta10, a2, 0x3a4",
+      "   38579:\t1c0b      \tmovi.n\ta11, 16",
+      "   3857b:\ta1866d        \tl32r\ta10, 0x13b94 (0x89bc)"
+    ]
+  },
+  {
+    "call": "00038589: e55f00   call8        . +0x600 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   3857b:\ta1866d        \tl32r\ta10, 0x13b94 (0x89bc)",
+      "0003857e: a56000   call8        . +0x60c ; capstone fallback ; target=0x38b88",
+      "   38581:\ta262e8        \ts32i\ta10, a2, 0x3a0",
+      "   38584:\t0c8b      \tmovi.n\ta11, 8",
+      "   38586:\ta16170        \tl32r\ta10, 0x1470c (0x7dcd)"
+    ]
+  },
+  {
+    "call": "000385a5: 255e00   call8        . +0x5e4 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   38596:\te2a0ff        \tmovi\ta14, 255",
+      "   38599:\ta15d70        \tl32r\ta10, 0x14710 (0x19e7)",
+      "   3859c:\te0ddc0        \tsub\ta13, a13, a14",
+      "   3859f:\td0cb83        \tmoveqz\ta12, a11, a13",
+      "   385a2:\tc2436c        \ts8i\ta12, a3, 108"
+    ]
+  },
+  {
+    "call": "000385b3: 655d00   call8        . +0x5d8 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "000385a5: 255e00   call8        . +0x5e4 ; capstone fallback ; target=0x38b88",
+      "   385a8:\t2c0b      \tmovi.n\ta11, 32",
+      "   385aa:\ta0f004        \textui\ta15, a10, 0, 1",
+      "   385ad:\tf2436d        \ts8i\ta15, a3, 109",
+      "   385b0:\ta15970        \tl32r\ta10, 0x14714 (0xbc20)"
+    ]
+  },
+  {
+    "call": "000385ca: e55b00   call8        . +0x5c0 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "000385bc: a30800   lsi          f10, a8, 0 ; capstone fallback",
+      "000385bf: a0892a   mul.s        f8, f9, f10 ; capstone fallback",
+      "   385c2:\t2c0b      \tmovi.n\ta11, 32",
+      "   385c4:\ta15570        \tl32r\ta10, 0x14718 (0xbc40)",
+      "000385c7: 8342a9   ssi          f8, a2, 0x2a4 ; capstone fallback"
+    ]
+  },
+  {
+    "call": "000385ed: a55900   call8        . +0x59c ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   385de:\ta14f70        \tl32r\ta10, 0x1471c (0xbc80)",
+      "000385e1: c342aa   ssi          f12, a2, 0x2a8 ; capstone fallback",
+      "000385e4: c02b4b   olt.s        b2, f11, f12 ; capstone fallback",
+      "000385e7: 20bcdb   movt.s       f11, f12, b2 ; capstone fallback",
+      "000385ea: b342ab   ssi          f11, a2, 0x2ac ; capstone fallback"
+    ]
+  },
+  {
+    "call": "000385f8: e55800   call8        . +0x590 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "000385ea: b342ab   ssi          f11, a2, 0x2ac ; capstone fallback",
+      "000385ed: a55900   call8        . +0x59c ; capstone fallback ; target=0x38b88",
+      "   385f0:\ta262ac        \ts32i\ta10, a2, 0x2b0",
+      "   385f3:\t2c0b      \tmovi.n\ta11, 32",
+      "   385f5:\ta14a70        \tl32r\ta10, 0x14720 (0xbc60)"
+    ]
+  },
+  {
+    "call": "00038603: 655800   call8        . +0x588 ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   385f5:\ta14a70        \tl32r\ta10, 0x14720 (0xbc60)",
+      "000385f8: e55800   call8        . +0x590 ; capstone fallback ; target=0x38b88",
+      "   385fb:\ta262ad        \ts32i\ta10, a2, 0x2b4",
+      "   385fe:\t2c0b      \tmovi.n\ta11, 32",
+      "   38600:\ta14970        \tl32r\ta10, 0x14724 (0xbcc0)"
+    ]
+  },
+  {
+    "call": "0003860e: a55700   call8        . +0x57c ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   38600:\ta14970        \tl32r\ta10, 0x14724 (0xbcc0)",
+      "00038603: 655800   call8        . +0x588 ; capstone fallback ; target=0x38b88",
+      "   38606:\ta262ae        \ts32i\ta10, a2, 0x2b8",
+      "   38609:\t2c0b      \tmovi.n\ta11, 32",
+      "   3860b:\ta14770        \tl32r\ta10, 0x14728 (0xbca0)"
+    ]
+  },
+  {
+    "call": "0003863f: a55400   call8        . +0x54c ; capstone fallback ; target=0x38b88",
+    "preceding": [
+      "   38631:\td2a0c0        \tmovi\ta13, 192",
+      "   38634:\td0ccc0        \tsub\ta12, a12, a13",
+      "   38637:\t566c11        \tbnez\ta12, 0x38751",
+      "   3863a:\ta13c70        \tl32r\ta10, 0x1472c (0x87f4)",
+      "   3863d:\t0ccb      \tmovi.n\ta11, 12"
+    ]
+  }
+]

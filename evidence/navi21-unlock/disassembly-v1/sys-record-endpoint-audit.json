@@ -1,0 +1,53 @@
+{
+  "firmware_sha256": "67706b9e1545bf68850bf9cea97660af5972574ecb0ca30041174efbb59fac37",
+  "database_archive": "/workspace/gfx1030-unlock-research/inputs/research/umr-058a7045-source.tar.gz",
+  "database_archive_sha256": "7be2d26ba6a8ec5c32c3c08c19566465b499d39741ac278aae83eb7d5bec1dca",
+  "database_member": "database/ip/vcn_3_0_0.reg",
+  "database_member_sha256": "b06f0cc9e85dfb5843d8eed03bdeab828f1c25ae3f25152471ed6a47ab071f15",
+  "ip_base_source_sha256": "27ce382f43a5df3fffdfb5abdaafc85dc8beb940f68e6b10f52f5731068f3bbd",
+  "register_matches": [
+    {
+      "name": "mmMMSCH_VF_MAILBOX1_DATA",
+      "public_byte_coordinate": "0x1e130",
+      "type": 0,
+      "offset": 76,
+      "base_index": 0,
+      "line": "mmMMSCH_VF_MAILBOX1_DATA 0 0x4c 1 0 0"
+    },
+    {
+      "name": "mmMMSCH_VF_MAILBOX_1",
+      "public_byte_coordinate": "0x1e058",
+      "type": 0,
+      "offset": 22,
+      "base_index": 0,
+      "line": "mmMMSCH_VF_MAILBOX_1 0 0x16 1 0 0"
+    },
+    {
+      "name": "mmMMSCH_VF_MAILBOX_1_RESP",
+      "public_byte_coordinate": "0x1e05c",
+      "type": 0,
+      "offset": 23,
+      "base_index": 0,
+      "line": "mmMMSCH_VF_MAILBOX_1_RESP 0 0x17 1 0 0"
+    }
+  ],
+  "SYS_literal_words": {
+    "0x14064": "0x1e05c",
+    "0x14068": "0x80000001",
+    "0x1406c": "0x80000302",
+    "0x141cc": "0x1e130"
+  },
+  "findings": [
+    "14190 uses1e130 for high then low words and1e058 for commands1 then2;14018 clears1e05c and polls it for80000001 when writing command register1e058. These three addresses exactly match VCN segment0 MMSCH names, including base-index0.",
+    "Do not use UVD_SCRATCH2(offset16,base-index1) or UVD_GPCNT2_TARGET_LOWER(offset4c,base-index1): matching offsets alone selects the wrong segment.",
+    "This identifies a VCN/MMSCH register endpoint for the record address. It does not identify the processor-side consumer code or prove command1/2 semantics beyond the observed high/low-word sequence.",
+    "The existing SMU channel-table coordinates do not supply this endpoint. A speculative SMU alias based on low-address similarity is unnecessary and unsupported.",
+    "Combined with conditional record/snapshot non-overlap, this path is not a demonstrated direct CC producer. Any proposed indirect relationship now requires concrete VCN/MMSCH consumer evidence."
+  ],
+  "limits": [
+    "Public coordinate match assumes the audited SVC window represents those coordinates; hardware completion was not observed.",
+    "A VCN endpoint does not prove all downstream effects are confined to VCN.",
+    "No hardware access or configuration changes."
+  ],
+  "next": "Prioritize known LX6 saved-CC/gate producer gaps; inspect MMSCH only if a concrete record consumer lead emerges."
+}

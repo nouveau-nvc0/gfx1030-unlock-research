@@ -1,0 +1,18 @@
+
+/tmp/tmpky_mu2if/smc.bin:     file format binary
+
+
+Disassembly of section .data:
+
+00026488 <.data+0x26488>:
+00026488: 366100   entry        a1, 0x30 ; Capstone
+   2648b:	4802      	l32i.n	a4, a2, 0
+   2648d:	8812      	l32i.n	a8, a2, 4
+   2648f:	8911      	s32i.n	a8, a1, 4
+   26491:	4901      	s32i.n	a4, a1, 0
+00026493: 030101   lsi          f0, a1, 4 ; Capstone
+00026496: 034301   ssi          f0, a3, 4 ; Capstone
+00026499: 130100   lsi          f1, a1, 0 ; Capstone
+0002649c: 134300   ssi          f1, a3, 0 ; Capstone
+0002649f: 1df0     retw.n        ; Capstone
+   264a1:	000000        	ill
